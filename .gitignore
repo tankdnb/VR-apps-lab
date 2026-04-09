@@ -1,0 +1,33 @@
+## .NET
+bin/
+obj/
+*.user
+*.rsuser
+*.suo
+*.userprefs
+
+## Visual Studio / JetBrains
+.vs/
+.idea/
+
+## Android / Gradle / NDK
+.gradle/
+**/.gradle/
+build/
+**/build/
+.cxx/
+**/.cxx/
+local.properties
+captures/
+
+## Workspace-generated outputs
+artifacts/
+.tmp/
+
+## Packages / bundles
+*.apk
+*.aab
+
+## OS files
+Thumbs.db
+.DS_Store

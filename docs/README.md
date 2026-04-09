@@ -1,0 +1,44 @@
+# Documentation Index
+
+This folder contains both product-facing plans and technical research gathered
+while exploring VR overlays, passthrough, OpenXR/OpenVR integration, and future
+utility directions.
+
+## Foundation docs
+
+- `platform-foundation.md`  
+  Repository charter, reusable capabilities, and design principles.
+
+- `public-roadmap.md`  
+  Recommended roadmap for turning this repository into a family of VR utility
+  applications.
+
+- `vr-utilities-repo-landscape.md`  
+  Consolidated landscape of public VR utility repositories worth learning from.
+
+## Original Reality Window docs
+
+- `overlay-vr-mvp-spec.md`  
+  Initial MVP spec for the camera-backed overlay window concept.
+
+- `current-feasibility-status.md`  
+  Current engineering status across desktop OpenVR and PICO/OpenXR paths.
+
+- `pico-openxr-camera-path.md`  
+  Findings from official PICO/OpenXR extension probing.
+
+- `pico-connect-constraint.md`  
+  Why `Pico Connect` coexistence became a hard product requirement.
+
+- `pico-connect-passthrough-spike.md`  
+  Notes for testing passthrough coexistence during active streaming.
+
+## Reuse and research docs
+
+- `external-repos-reuse-plan.md`
+- `vrperfkit-reuse-plan.md`
+- `alvr-reuse-plan.md`
+- `openxr-steamvr-passthrough-reuse-plan.md`
+
+These files summarize what is reusable, what is only architectural inspiration,
+and where the sharp edges are.

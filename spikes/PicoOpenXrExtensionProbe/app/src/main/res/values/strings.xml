@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PICO OpenXR Passthrough Probe</string>
+    <string name="status_starting">Preparing probe...</string>
+    <string name="status_running">Probe is running. Creating OpenXR runtime objects and passthrough test path...</string>
+    <string name="status_finished">Probe finished. Compare this result in Home mode and while Pico Connect is active.</string>
+    <string name="run_again">Run probe again</string>
+    <string name="report_placeholder">The probe report will appear here.</string>
+    <string name="report_running">Collecting OpenXR extension data, session state, and passthrough capability data from the runtime...</string>
+</resources>

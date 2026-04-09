@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{24392173-CE5B-476D-807C-1BC4A24BE49F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRRealityWindow.Core", "src\VRRealityWindow.Core\VRRealityWindow.Core.csproj", "{CCA103B9-2B8A-46D5-8E3F-20019A45E58F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRRealityWindow.OpenVr", "src\VRRealityWindow.OpenVr\VRRealityWindow.OpenVr.csproj", "{EEDA5092-082F-4528-8BC3-9CD6414066D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRRealityWindow.App", "src\VRRealityWindow.App\VRRealityWindow.App.csproj", "{2E298F27-D8B2-4069-B488-28AB08CA7864}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCA103B9-2B8A-46D5-8E3F-20019A45E58F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA103B9-2B8A-46D5-8E3F-20019A45E58F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA103B9-2B8A-46D5-8E3F-20019A45E58F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA103B9-2B8A-46D5-8E3F-20019A45E58F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEDA5092-082F-4528-8BC3-9CD6414066D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEDA5092-082F-4528-8BC3-9CD6414066D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEDA5092-082F-4528-8BC3-9CD6414066D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEDA5092-082F-4528-8BC3-9CD6414066D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E298F27-D8B2-4069-B488-28AB08CA7864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E298F27-D8B2-4069-B488-28AB08CA7864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E298F27-D8B2-4069-B488-28AB08CA7864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E298F27-D8B2-4069-B488-28AB08CA7864}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CCA103B9-2B8A-46D5-8E3F-20019A45E58F} = {24392173-CE5B-476D-807C-1BC4A24BE49F}
+		{EEDA5092-082F-4528-8BC3-9CD6414066D5} = {24392173-CE5B-476D-807C-1BC4A24BE49F}
+		{2E298F27-D8B2-4069-B488-28AB08CA7864} = {24392173-CE5B-476D-807C-1BC4A24BE49F}
+	EndGlobalSection
+EndGlobal
