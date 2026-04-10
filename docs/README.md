@@ -16,6 +16,10 @@ utility directions.
 - `vr-utilities-repo-landscape.md`  
   Consolidated landscape of public VR utility repositories worth learning from.
 
+- `vr-projects-master-index.md`  
+  Combined index of already tracked projects plus an additional research wave of
+  useful VR repositories.
+
 ## Original Reality Window docs
 
 - `overlay-vr-mvp-spec.md`  

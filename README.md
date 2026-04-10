@@ -101,6 +101,7 @@ Start here:
 - `docs/README.md`
 - `docs/platform-foundation.md`
 - `docs/public-roadmap.md`
+- `docs/vr-projects-master-index.md`
 
 Original Reality Window and passthrough research:
 
