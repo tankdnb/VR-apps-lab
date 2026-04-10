@@ -20,6 +20,11 @@ utility directions.
   Combined index of already tracked projects plus an additional research wave of
   useful VR repositories.
 
+- `vr-projects-wave-3-utilities.md`  
+  Additional wave focused on OpenXR layer tools, runtime switchers, overlay
+  services, accessibility utilities, lighthouse managers, and VR automation
+  tooling.
+
 ## Original Reality Window docs
 
 - `overlay-vr-mvp-spec.md`  

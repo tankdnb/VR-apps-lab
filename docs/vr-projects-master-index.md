@@ -10,6 +10,7 @@ This file complements:
 - `openxr-steamvr-passthrough-reuse-plan.md`
 - `alvr-reuse-plan.md`
 - `vrperfkit-reuse-plan.md`
+- `vr-projects-wave-3-utilities.md`
 
 ## How to use this index
 
@@ -17,6 +18,8 @@ This file complements:
   already reviewed in this repository.
 - Use this file as the combined index plus the second wave of additional
   projects that were not yet documented in `VR.app`.
+- Use `vr-projects-wave-3-utilities.md` for the next wave centered on utility
+  apps, service tools, runtime switchers, and accessibility-focused overlays.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

@@ -102,6 +102,7 @@ Start here:
 - `docs/platform-foundation.md`
 - `docs/public-roadmap.md`
 - `docs/vr-projects-master-index.md`
+- `docs/vr-projects-wave-3-utilities.md`
 
 Original Reality Window and passthrough research:
 
