@@ -4,6 +4,21 @@ This folder contains both product-facing plans and technical research gathered
 while exploring VR overlays, passthrough, OpenXR/OpenVR integration, and future
 utility directions.
 
+## Research synthesis
+
+- `research/landscape/README.md`  
+  Entry point for documents that group repositories by overlap families and
+  track what still needs deeper study.
+
+- `research/landscape/project-families.md`  
+  Logical overlap map for the repository landscape: runtime tools, overlay
+  suites, tracker bridges, Lighthouse managers, battery/device monitors,
+  accessibility tools, driver learning paths, and vendor enhancement tooling.
+
+- `research/landscape/not-yet-studied-deeply.md`  
+  Prioritized backlog of repositories and families that are either missing from
+  `VR.app` or still only lightly covered.
+
 ## Foundation docs
 
 - `platform-foundation.md`  

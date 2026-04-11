@@ -99,6 +99,8 @@ dotnet run --project .\src\VRRealityWindow.App -- overlay --duration-seconds 20
 Start here:
 
 - `docs/README.md`
+- `docs/research/landscape/project-families.md`
+- `docs/research/landscape/not-yet-studied-deeply.md`
 - `docs/platform-foundation.md`
 - `docs/public-roadmap.md`
 - `docs/vr-projects-master-index.md`
