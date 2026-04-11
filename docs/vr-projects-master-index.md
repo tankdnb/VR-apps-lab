@@ -13,6 +13,7 @@ This file complements:
 - `vr-projects-wave-3-utilities.md`
 - `vr-projects-wave-4-gap-fill.md`
 - `vr-projects-wave-5-osc-tracking-tools.md`
+- `vr-projects-wave-6-driver-bridges.md`
 
 ## How to use this index
 
@@ -28,6 +29,9 @@ This file complements:
 - Use `vr-projects-wave-5-osc-tracking-tools.md` for later niche waves around
   OSC bridges, device markers, marker tracking, room tools, and battery
   utilities.
+- Use `vr-projects-wave-6-driver-bridges.md` for driver-centric waves around
+  virtual trackers, vendor enhancement tooling, hardware bridges, and runtime
+  services.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

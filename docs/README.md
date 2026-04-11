@@ -34,6 +34,10 @@ utility directions.
   Niche utility wave focused on OSC bridges, tracked-device markers,
   marker-based tracking, Lighthouse setup helpers, and battery micro-tools.
 
+- `vr-projects-wave-6-driver-bridges.md`  
+  Driver-focused wave covering vendor enhancement tooling, virtual trackers,
+  remote tracking, custom hardware bridges, and micro desktop helpers.
+
 ## Original Reality Window docs
 
 - `overlay-vr-mvp-spec.md`  
