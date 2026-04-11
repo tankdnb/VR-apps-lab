@@ -106,6 +106,7 @@ Start here:
 - `docs/vr-projects-wave-4-gap-fill.md`
 - `docs/vr-projects-wave-5-osc-tracking-tools.md`
 - `docs/vr-projects-wave-6-driver-bridges.md`
+- `docs/vr-projects-wave-7-depth-pass.md`
 
 Original Reality Window and passthrough research:
 

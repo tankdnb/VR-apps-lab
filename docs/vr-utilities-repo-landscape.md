@@ -223,16 +223,19 @@ For a future product, licensing matters.
 ### 10. `Nyabsi/openvr-metrics`
 
 - What it is:
-  the GitHub repo was not reliably retrievable in this pass, but Steam pages describe it as a real-time VR profiling and monitoring utility with an in-VR overlay for frame timing, device metrics, and resource usage.
+  real-time VR profiling and monitoring utility with an in-VR overlay for frame
+  timing, per-process metrics, resource usage, and device status.
 - Useful for us:
   strong product reference for a `metrics overlay`.
 - Best ideas to borrow:
-  per-process metrics, FPS/frame timing, resource visibility, device status in overlay form.
+  per-process metrics, FPS/frame timing, controller-mounted versus dashboard
+  overlay split, resource visibility, device status, and in-overlay runtime
+  controls.
 - Caveat:
-  current information gathered here came from Steam metadata rather than a readable public GitHub repo page.
+  uses a source-available but non-standard license (`Source First License
+  1.1`), so treat it carefully as a donor.
 - Source:
-  [Steam store page](https://store.steampowered.com/app/4361360/OpenVR_Metrics/)
-  [SteamDB page](https://steamdb.info/app/4361360/)
+  [repo](https://github.com/Nyabsi/openvr-metrics)
 
 ### 11. `matzman666/OpenVR-InputEmulator`
 

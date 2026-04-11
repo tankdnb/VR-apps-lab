@@ -38,6 +38,11 @@ utility directions.
   Driver-focused wave covering vendor enhancement tooling, virtual trackers,
   remote tracking, custom hardware bridges, and micro desktop helpers.
 
+- `vr-projects-wave-7-depth-pass.md`  
+  Follow-up depth pass on under-documented repositories, with stronger
+  implementation notes for early overlay, helper, passthrough, metrics, and
+  creator-tool projects.
+
 ## Original Reality Window docs
 
 - `overlay-vr-mvp-spec.md`  
