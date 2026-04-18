@@ -77,6 +77,8 @@ Every meaningful project note should eventually capture:
 
 ### Step 3: Repository structure pass
 
+- sync the repo into `.research-sources/github/` when it deserves a real
+  code-level pass;
 - inspect top-level folders;
 - identify app/driver/service/plugin splits;
 - note packaging, install flow, and runtime assumptions.

@@ -37,5 +37,7 @@ bridges, device managers, and experimental XR workflows.
 3. `catalog/project-registry.md`
 4. `program/repository-restructuring-plan.md`
 5. `program/restructuring-backlog.md`
-6. `discovery/intake-pipeline.md`
-7. `landscape/not-yet-studied-deeply.md`
+6. `program/github-research-wave-8-plan.md`
+7. `discovery/local-source-cache-workflow.md`
+8. `discovery/intake-pipeline.md`
+9. `landscape/not-yet-studied-deeply.md`

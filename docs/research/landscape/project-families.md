@@ -1,6 +1,6 @@
 # Project Families
 
-- Date: `2026-04-11`
+- Date: `2026-04-18`
 - Goal: reorganize the `VR.app` research corpus around logical overlap
   families instead of a long flat list of repositories.
 
@@ -106,6 +106,8 @@ panel, and logging utility.
 | `zeroae/VRBattery` | Partially studied | Good battery-only overlay/product reference |
 | `Black4Blade/SteamVR-Devices-Battery-Status` | Already studied | Tiny battery micro-tool reference |
 | `rhaamo/OpenVR-Display-Devices` | Already studied | Broader device inventory view |
+| `copperpixel/steamvrbattery` | Already studied | Minimal CLI property-polling battery monitor |
+| `KaftanOS/SteamVR-Battery-Checker` | Not studied deeply | Charging-state micro-tool worth comparison |
 | `jangxx/openvr-battery-monitoring` | Not studied deeply | Likely useful for notifications/logging behavior |
 | `mutr/openvr_battery_monitor` | Not studied deeply | Another narrow monitoring variant worth comparing |
 
@@ -137,6 +139,7 @@ external data into `SteamVR/OpenVR devices`, `pose streams`, or `OSC events`.
 | `ZekkVRC/OpenVR2OSC` | Already studied | VRChat-oriented input bridge |
 | `BarakChamo/OpenVR-OSC` | Not studied deeply | Should be added for broader OSC comparison |
 | `jangxx/steamvr-osc-control` | Already studied | Control bridge for SteamVR functions |
+| `choyai/SteamVRTrackerUtility` | Not studied deeply | Tracker role/power helper worth comparison with tracker bridge family |
 
 ### Consolidation note
 
@@ -165,6 +168,10 @@ by runtime or operating system.
 | `wayvr` | Already studied | Low-overhead desktop/app-launching view |
 | `CrispyPin/ovr-utils` | Partially studied | GitHub snapshot is stale and moved off-platform |
 | `mittorn/ovr-utils-dashboard` | Partially studied | Useful dashboard-style variant |
+| `artumino/SteamVR_HUDCenter` | Not studied deeply | Centered HUD micro-utility worth a later pass |
+| `LapisGit/LapisOverlay` | Not studied deeply | Multi-purpose overlay shell in progress |
+| `elvissteinjr/SteamVR-PrimaryDesktopOverlay` | Not studied deeply | Focused desktop-overlay sample from a strong maintainer |
+| `Nexz/turncountervr` | Not studied deeply | Rotation counter / cable-awareness overlay node |
 
 ### Consolidation note
 
@@ -187,6 +194,8 @@ product direction.
 |---|---|---|
 | `Vinventive/live-captions-vr` | Already studied | Speech-to-text overlay reference |
 | `MochiDoesVR/OpenVRCaptions` | Already studied | C#/SteamVR captions reference |
+| `matzman666/OpenVR-MicrophoneControl` | Already studied | Dashboard mute/PTT overlay with OS audio integration |
+| `Beyley/eepyxr` | Already studied | OpenXR overlay utility framed around comfort/sleep use |
 | `OpenVROverlayPipe` / notification tools | Already studied | Assistive notification angle |
 | `TurnSignal` | Already studied | Comfort/safety micro-utility |
 | `SteamVR_ClockOverlay_Public` | Already studied | Minimal assistive wrist-clock pattern |
@@ -327,6 +336,55 @@ creator-facing XR use than about simple end-user overlays.
 
 This family supports a separate `creator and diagnostics` branch inside
 `VR.app`, not just consumer-facing overlays.
+
+## Family 14: Overlay implementation references and host scaffolds
+
+These repos are especially useful for understanding `how to build` overlays,
+not only how finished utility products behave.
+
+| Project | Status | Notes |
+|---|---|---|
+| `sh-akira/VROverlay` | Already studied | Unity/OpenVR overlay sample with VR UI pointer plumbing |
+| `BenWoodford/SteamVR-Webkit` | Already studied | Browser-backed overlay toolkit with JS interop |
+| `beniwtv/vr-streaming-overlay` | Already studied | Godot multi-overlay shell with widget/config split |
+| `Nyabsi/steamvr_overlay_vulkan` | Already studied | Modern Vulkan/ImGui overlay template |
+| `KainosSoftwareLtd/VRSceneOverlay` | Not studied deeply | Unity scene-overlay implementation reference |
+| `vrkit-platform/vrkit-platform` | Not studied deeply | OpenXR monitor/overlay platform worth deeper inspection |
+| `LunarG/OpenXR-Overlays-UE4-Plugin` | Not studied deeply | Engine-side overlay integration sample |
+| `mbucchia/_ARCHIVE_OverXR` | Fork / variant only | Current GitHub state is an archive shell with little code to inspect |
+
+### Consolidation note
+
+This family should feed `VR.app` as a methods donor layer:
+
+- overlay lifecycle references
+- graphics-path references
+- UI stack references
+- host-scene and render-loop scaffolds
+
+## Family 15: SteamVR environment helpers and runtime hygiene tools
+
+These utilities improve the way SteamVR behaves around startup, dashboard
+interaction, distortion, or overlay-heavy workflows.
+
+| Project | Status | Notes |
+|---|---|---|
+| `MuffinTastic/steamvr-exconfig` | Partially studied | Pre-launch SteamVR config editor and cleanup helper |
+| `simonowen/dashfix` | Already studied | Dashboard-input fix via SDL hook injection |
+| `W-Drew/SteamVR-Toggle` | Already studied | Tray utility that toggles SteamVR by renaming install path |
+| `sencercoltu/steamvr-undistort` | Already studied | Lens distortion adjustment tool for custom optics |
+| `elvissteinjr/SteamVR-VoidScene` | Already studied | Minimal scene app to lower baseline cost for overlay use |
+| `DavidRisch/steamvr_utils` | Not studied deeply | Linux SteamVR helper collection worth future comparison |
+
+### Consolidation note
+
+This family points toward a separate `environment helper` track inside
+`VR.app`, not just overlays:
+
+- tray toggles
+- dashboard fixes
+- scene-host helpers
+- compositor and distortion helpers
 
 ## Recommended synthesis path for `VR.app`
 

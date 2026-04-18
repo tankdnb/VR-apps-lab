@@ -10,6 +10,10 @@ and experimental XR workflows.
   Search streams, query patterns, and discovery channels for finding new
   relevant repositories.
 
+- `local-source-cache-workflow.md`  
+  Rules for cloning shortlisted repositories into a local-only source cache for
+  code-level study.
+
 - `intake-pipeline.md`  
   Step-by-step process for taking a newly found project from discovery to
   catalog entry and deeper study.

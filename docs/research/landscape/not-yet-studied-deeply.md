@@ -1,6 +1,6 @@
 # Not Yet Studied Deeply
 
-- Date: `2026-04-11`
+- Date: `2026-04-18`
 - Goal: keep a prioritized list of repositories that either:
   - are not yet represented in `VR.app`;
   - are only lightly covered;
@@ -52,6 +52,26 @@ main upstream or main family representative is understood.
 | `mutr/openvr_battery_monitor` | Battery-monitor family comparison node | Check whether it focuses on overlay, tray, or logging behavior |
 | `TrueOpenVR/SteamVR-TrueOpenVR` | Custom driver/device learning path | Identify whether it is a teaching repo, compatibility shim, or device emulator |
 
+## Priority batch C: newly discovered GitHub wave candidates
+
+These were discovered in the latest GitHub source pass and added to the
+registry, but not yet studied deeply enough to promote beyond `Not studied
+deeply`.
+
+| Project | Current status in `VR.app` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `KainosSoftwareLtd/VRSceneOverlay` | Not studied deeply | Unity scene-overlay implementation sample | Medium | Medium | Overlay bootstrap, scene composition, Unity package layout |
+| `artumino/SteamVR_HUDCenter` | Not studied deeply | HUD-centering micro-tool | Low | Medium | Transform logic and comfort UX |
+| `LapisGit/LapisOverlay` | Not studied deeply | Multi-purpose overlay shell in progress | Medium | Medium | Panel model, settings, interaction approach |
+| `elvissteinjr/SteamVR-PrimaryDesktopOverlay` | Not studied deeply | Focused primary-desktop crop overlay | Medium | Medium | Desktop crop logic, overlay bounds, startup model |
+| `Nexz/turncountervr` | Not studied deeply | Rotation/cable-awareness overlay variant | Low | Medium | Counter logic, world-space placement, comfort framing |
+| `vrkit-platform/vrkit-platform` | Not studied deeply | OpenXR monitor and overlay platform | High | High | Platform boundaries, monitor surfaces, runtime assumptions |
+| `LunarG/OpenXR-Overlays-UE4-Plugin` | Not studied deeply | Engine-side route into OpenXR overlay support | Medium | Medium | Unreal integration boundary and extension assumptions |
+| `KaftanOS/SteamVR-Battery-Checker` | Not studied deeply | Charging-state battery micro-helper | Low | Medium | Charging workflow, UX scale, whether it is tray or CLI driven |
+| `DavidRisch/steamvr_utils` | Not studied deeply | Linux-side SteamVR helper collection | Medium | Medium | Which utilities are included and how they are packaged |
+| `choyai/SteamVRTrackerUtility` | Not studied deeply | Tracker wake/role helper | Medium | Medium | Tracker management flow, role mapping, power handling |
+| `mbucchia/_ARCHIVE_OverXR` | Fork / variant only | Archive shell pointing to a once-promising overlay compatibility idea | Low | Medium | Whether useful code exists in releases, tags, or external mirrors |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.
@@ -92,6 +112,24 @@ These are larger than a single repo and should guide the next research wave.
   the repository has enough device-side references now to justify a dedicated
   learning track.
 
+### 6. `Overlay implementation references and templates`
+
+- Main entries:
+  `VROverlay`, `SteamVR-Webkit`, `vr-streaming-overlay`,
+  `steamvr_overlay_vulkan`, `VRSceneOverlay`
+- Why it matters:
+  this is where `VR.app` can learn concrete overlay construction techniques
+  across Unity, Godot, C#, and modern native C++.
+
+### 7. `SteamVR environment helpers and runtime hygiene tools`
+
+- Main entries:
+  `dashfix`, `SteamVR-Toggle`, `steamvr-undistort`, `SteamVR-VoidScene`,
+  `steamvr-exconfig`
+- Why it matters:
+  these tools solve real VR pain points without being traditional overlays,
+  which makes them especially useful for future `desktop companion` modules.
+
 ## Recommended next move
 
 If `VR.app` continues this research, the next most valuable deep-pass order is:
@@ -101,3 +139,5 @@ If `VR.app` continues this research, the next most valuable deep-pass order is:
 3. `PSVR2Toolkit / vendor enhancement path`
 4. `Accessibility overlays`
 5. `Low-level driver tutorial and custom-device plumbing`
+6. `Overlay implementation references`
+7. `SteamVR environment helpers`

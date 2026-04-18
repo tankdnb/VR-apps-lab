@@ -15,3 +15,10 @@ repeatable way.
 - `study-method.md`  
   Operating method for studying a new repository and extracting useful VR
   utility patterns from it.
+
+- `github-research-wave-8-plan.md`  
+  First serious post-restructure GitHub discovery wave with refined execution
+  order.
+
+- `github-research-wave-8-backlog.md`  
+  Fully executed backlog for the same wave.

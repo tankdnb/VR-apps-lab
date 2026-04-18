@@ -41,6 +41,7 @@ Use this section for:
 - `research/landscape/vr-projects-wave-5-osc-tracking-tools.md`
 - `research/landscape/vr-projects-wave-6-driver-bridges.md`
 - `research/landscape/vr-projects-wave-7-depth-pass.md`
+- `research/landscape/vr-projects-wave-8-github-source-pass.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
 
@@ -55,6 +56,7 @@ Use this section for:
 - `research/methods/vr-utility-methods-catalog.md`
 - `research/discovery/README.md`
 - `research/discovery/discovery-sources.md`
+- `research/discovery/local-source-cache-workflow.md`
 - `research/discovery/intake-pipeline.md`
 - `research/discovery/watchlist.md`
 
@@ -64,6 +66,8 @@ Use this section for:
 - `research/program/repository-restructuring-plan.md`
 - `research/program/restructuring-backlog.md`
 - `research/program/study-method.md`
+- `research/program/github-research-wave-8-plan.md`
+- `research/program/github-research-wave-8-backlog.md`
 
 ### Reuse plans
 

@@ -1,6 +1,6 @@
 # VR Projects Master Index
 
-- Date: `2026-04-10`
+- Date: `2026-04-18`
 - Goal: maintain a single index of VR-related GitHub projects that are useful as
   references, code donors, or product inspiration for `VR.app`.
 
@@ -18,6 +18,7 @@ This file complements:
 - `vr-projects-wave-5-osc-tracking-tools.md`
 - `vr-projects-wave-6-driver-bridges.md`
 - `vr-projects-wave-7-depth-pass.md`
+- `vr-projects-wave-8-github-source-pass.md`
 
 ## How to use this index
 
@@ -45,6 +46,9 @@ This file complements:
   services.
 - Use `vr-projects-wave-7-depth-pass.md` for follow-up deep dives on projects
   that were previously tracked with relatively light coverage.
+- Use `vr-projects-wave-8-github-source-pass.md` for the first large
+  post-restructure GitHub search wave driven by local source clones and
+  code-level extraction.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

@@ -50,6 +50,9 @@ src/
 spikes/
   PicoOpenXrExtensionProbe/  Android OpenXR probe app for PICO runtime testing
 
+scripts/
+  research/                  local helper scripts for GitHub research waves
+
 docs/
   README.md                  docs index
   foundation/                stable platform and roadmap docs
@@ -105,17 +108,21 @@ Start here:
 - `docs/research/methods/vr-utility-methods-catalog.md`
 - `docs/research/landscape/project-families.md`
 - `docs/research/catalog/project-registry.md`
+- `docs/research/discovery/local-source-cache-workflow.md`
 - `docs/research/discovery/intake-pipeline.md`
 - `docs/research/discovery/watchlist.md`
 - `docs/research/landscape/not-yet-studied-deeply.md`
 - `docs/research/program/repository-restructuring-plan.md`
 - `docs/research/program/restructuring-backlog.md`
+- `docs/research/program/github-research-wave-8-plan.md`
+- `docs/research/program/github-research-wave-8-backlog.md`
 - `docs/research/landscape/vr-projects-master-index.md`
 - `docs/research/landscape/vr-projects-wave-3-utilities.md`
 - `docs/research/landscape/vr-projects-wave-4-gap-fill.md`
 - `docs/research/landscape/vr-projects-wave-5-osc-tracking-tools.md`
 - `docs/research/landscape/vr-projects-wave-6-driver-bridges.md`
 - `docs/research/landscape/vr-projects-wave-7-depth-pass.md`
+- `docs/research/landscape/vr-projects-wave-8-github-source-pass.md`
 
 Original Reality Window and passthrough research:
 

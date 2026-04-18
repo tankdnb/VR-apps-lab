@@ -46,6 +46,8 @@ Make repository research repeatable and contributor-friendly.
 - `Done` Add per-folder `README` files for research navigation
 - `Done` Add methods catalog
 - `Done` Add discovery intake and watchlist docs
+- `Done` Add local source cache workflow
+- `Done` Add first serious GitHub wave plan/backlog pair
 
 ## Epic C: Canonical registry and overlap tracking
 

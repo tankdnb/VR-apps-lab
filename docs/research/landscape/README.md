@@ -12,10 +12,17 @@ Use these files when you want to understand:
 
 ## Files
 
+- `vr-projects-master-index.md`  
+  Broad combined index of tracked and historically added waves.
+
 - `project-families.md`  
   Groups the currently tracked repositories by overlap family such as
   `runtime/layer tools`, `desktop overlays`, `tracker bridges`, and
   `battery/device monitors`.
+
+- `vr-projects-wave-8-github-source-pass.md`  
+  New GitHub discovery wave built around local source clones and code-level
+  extraction.
 
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR.app` or only

@@ -36,12 +36,19 @@ Useful combined searches:
 - `vrchat osc steamvr`
 - `passthrough openxr layer`
 
+Helpful command-line path:
+
+- `gh search repos "steamvr overlay" --limit 20`
+- `gh search repos "openxr layer" --limit 20`
+- `gh search repos "steamvr utility" --limit 20`
+- `gh search repos "openvr driver tracker" --limit 20`
+
 ### 2. Family expansion from known repos
 
 For every already tracked project, look for:
 
 - forks with meaningful commits;
-- “similar repositories” in GitHub UI;
+- "similar repositories" in GitHub UI;
 - issue threads linking competitor tools;
 - projects mentioned in README comparisons;
 - projects listed in release notes or migration notes.
@@ -76,6 +83,7 @@ Look for:
 - diagnostics
 - motion compensation
 - passthrough experiments
+- overlay utilities
 
 #### VRChat / OSC stream
 

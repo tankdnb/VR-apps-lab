@@ -73,6 +73,34 @@ What to look for:
 - dashboard suites
 - window portal UX patterns
 
+### 6. Overlay implementation templates and host scaffolds
+
+Why:
+
+- useful for extracting methods, not only product ideas
+- strongest path to better `VR.app` implementation guidance
+
+What to look for:
+
+- minimal overlay samples
+- browser-backed overlay shells
+- Vulkan/OpenGL/Unity/Godot reference implementations
+- scene-host helpers for overlay-first workflows
+
+### 7. SteamVR environment helpers and runtime hygiene tools
+
+Why:
+
+- small but high-value problem-solving tools are underrepresented in the repo
+- they often reveal unusual but very practical engineering tricks
+
+What to look for:
+
+- dashboard fixes
+- SteamVR toggles
+- compositor or distortion adjustment helpers
+- performance support scene apps
+
 ## Next recommended discovery pass
 
 If expanding `VR.app` further, the next best pass should combine:
@@ -81,3 +109,4 @@ If expanding `VR.app` further, the next best pass should combine:
 2. `OSC/control export`
 3. `vendor enhancement`
 4. `battery/device monitoring micro-tools`
+5. `overlay implementation references and runtime hygiene helpers`

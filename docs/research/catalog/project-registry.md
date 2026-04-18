@@ -40,7 +40,7 @@ Primary docs:
 - `StardustXR/server` - `Already studied`
 - `WiVRn/WiVRn` - `Already studied`
 
-## 2. OpenXR runtime tools, API layers, and diagnostics
+## 2. OpenXR runtime tools, API layers, overlay utilities, and diagnostics
 
 Primary docs:
 
@@ -55,10 +55,11 @@ Primary docs:
 - `jonyrh/OXR_Switcher` - `Already studied`
 - `Jabbah/OpenXR-Layer-OBSMirror` - `Already studied`
 - `maluoi/openxr-explorer` - `Already studied`
-- `BuzzteeBear/OpenXR-MotionCompensation` - `Already studied`
 - `LunarG/OpenXR-OverlayLayer` - `Already studied`
 - `PlutoVR/OpenXR-OverlayLayer-1` - `Not studied deeply`
-- `fredemmott/XRFrameTools` - `Already studied`
+- `vrkit-platform/vrkit-platform` - `Not studied deeply`
+- `LunarG/OpenXR-Overlays-UE4-Plugin` - `Not studied deeply`
+- `mbucchia/_ARCHIVE_OverXR` - `Fork / variant only`
 - `mbucchia/Quad-Views-Foveated` - `Partially studied`
 - `mbucchia/OpenXR-Eye-Trackers` - `Partially studied`
 
@@ -96,10 +97,12 @@ Primary docs:
 - `benotter/OVRLay` - `Already studied`
 - `BenWoodford/OVROverlayManager` - `Partially studied`
 - `SDraw/openvr_widgets` - `Already studied`
+- `artumino/SteamVR_HUDCenter` - `Not studied deeply`
+- `LapisGit/LapisOverlay` - `Not studied deeply`
+- `elvissteinjr/SteamVR-PrimaryDesktopOverlay` - `Not studied deeply`
+- `Nexz/turncountervr` - `Not studied deeply`
 - `OpenKneeboard/OpenKneeboard` - `Already studied`
 - `dantman/elite-vr-cockpit` - `Already studied`
-- `Deryck2000/SteamVR_ClockOverlay_Public` - `Already studied`
-- `Otter-Co/TurnSignal` - `Already studied`
 - `OVRTools/WhereIsForward` - `Already studied`
 
 ## 5. Notification, remote-control, and automation overlays
@@ -143,7 +146,9 @@ Primary docs:
 
 - `OVRTools/OpenVRDeviceBattery` - `Already studied`
 - `zeroae/VRBattery` - `Partially studied`
+- `copperpixel/steamvrbattery` - `Already studied`
 - `Black4Blade/SteamVR-Devices-Battery-Status` - `Already studied`
+- `KaftanOS/SteamVR-Battery-Checker` - `Not studied deeply`
 - `rhaamo/OpenVR-Display-Devices` - `Already studied`
 - `jangxx/openvr-battery-monitoring` - `Not studied deeply`
 - `mutr/openvr_battery_monitor` - `Not studied deeply`
@@ -167,6 +172,7 @@ Primary docs:
 - `ZekkVRC/OpenVR2OSC` - `Already studied`
 - `BarakChamo/OpenVR-OSC` - `Not studied deeply`
 - `jangxx/steamvr-osc-control` - `Already studied`
+- `choyai/SteamVRTrackerUtility` - `Not studied deeply`
 - `jangxx/UniversalTrackerMarkers` - `Already studied`
 - `ShayBox/VRC-OSC` - `Already studied`
 - `VolcanicArts/VRCOSC` - `Already studied`
@@ -233,7 +239,6 @@ Primary docs:
 - `../landscape/not-yet-studied-deeply.md`
 
 - `BnuuySolutions/PSVR2Toolkit` - `Partially studied`
-- `MuffinTastic/steamvr-exconfig` - `Partially studied`
 - `LucidVR/opengloves-driver` - `Partially studied`
 - `HoboVR-Labs/hobo_vr` - `Partially studied`
 - `r57zone/OpenVR-ArduinoHMD` - `Partially studied`
@@ -248,7 +253,34 @@ Primary docs:
 - `Erimelowo/OpenVR-InputEmulator-Fixed` - `Already studied`
 - `wirelessdreamer/OpenVR-InputEmulator` - `Already studied`
 
-## 14. Creator, capture, metrics, and workflow tools
+## 14. SteamVR environment helpers and runtime hygiene tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-8-github-source-pass.md`
+- `../landscape/project-families.md`
+
+- `MuffinTastic/steamvr-exconfig` - `Partially studied`
+- `simonowen/dashfix` - `Already studied`
+- `sencercoltu/steamvr-undistort` - `Already studied`
+- `W-Drew/SteamVR-Toggle` - `Already studied`
+- `elvissteinjr/SteamVR-VoidScene` - `Already studied`
+- `DavidRisch/steamvr_utils` - `Not studied deeply`
+
+## 15. Overlay implementation references and templates
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-8-github-source-pass.md`
+- `../landscape/project-families.md`
+
+- `sh-akira/VROverlay` - `Already studied`
+- `BenWoodford/SteamVR-Webkit` - `Already studied`
+- `beniwtv/vr-streaming-overlay` - `Already studied`
+- `Nyabsi/steamvr_overlay_vulkan` - `Already studied`
+- `KainosSoftwareLtd/VRSceneOverlay` - `Not studied deeply`
+
+## 16. Creator, capture, metrics, and workflow tools
 
 Primary docs:
 
@@ -261,15 +293,18 @@ Primary docs:
 - `fredemmott/XRFrameTools` - `Already studied`
 - `peacepenguin/Virtual-Display-Driver` - `Already studied`
 
-## 15. Accessibility, assistive HUDs, and comfort tools
+## 17. Accessibility, assistive HUDs, and comfort tools
 
 Primary docs:
 
 - `../landscape/project-families.md`
 - `../landscape/vr-projects-wave-3-utilities.md`
+- `../landscape/vr-projects-wave-8-github-source-pass.md`
 
+- `Beyley/eepyxr` - `Already studied`
 - `Vinventive/live-captions-vr` - `Already studied`
 - `MochiDoesVR/OpenVRCaptions` - `Already studied`
+- `matzman666/OpenVR-MicrophoneControl` - `Already studied`
 - `Otter-Co/TurnSignal` - `Already studied`
 - `Deryck2000/SteamVR_ClockOverlay_Public` - `Already studied`
 

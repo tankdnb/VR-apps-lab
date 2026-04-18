@@ -63,10 +63,12 @@ Use:
 
 - `../templates/project-study-template.md`
 - `../program/study-method.md`
+- `local-source-cache-workflow.md`
 
 Deep passes should inspect:
 
 - README and public docs
+- local source tree from `.research-sources/` when the repo justifies it
 - top-level tree
 - app/driver/plugin/service boundaries
 - settings/config model

@@ -32,7 +32,8 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `DesktopPlus`, `OpenVRDesktopDisplayPortal`, `openvr_widgets`,
   `OpenVR-AdvancedSettings`, `WhereIsForward`, `OpenVRDeviceBattery`,
-  `openvr-metrics`.
+  `openvr-metrics`, `VROverlay`, `SteamVR-Webkit`,
+  `steamvr_overlay_vulkan`.
 - Best fit for `VR.app`:
   near-term product work.
 
@@ -80,7 +81,7 @@ Use this document when designing a new module or utility and ask:
   many useful VR tools solve friction outside the headset, not only inside it.
 - Strong references:
   `OpenXR-API-Layers-GUI`, `OpenXR-Runtime-Switcher` family,
-  `steamvr-exconfig`, `OpenVRDeviceBattery`.
+  `steamvr-exconfig`, `OpenVRDeviceBattery`, `SteamVR-Toggle`, `dashfix`.
 - Best fit for `VR.app`:
   setup utilities and companion workflows.
 
@@ -109,7 +110,7 @@ Use this document when designing a new module or utility and ask:
   it reduces startup friction and encourages reuse of runtime scaffolding.
 - Strong references:
   `openvr_widgets`, `OpenVR-AdvancedSettings`, `DesktopPortal`,
-  `openvr-metrics`.
+  `openvr-metrics`, `vr-streaming-overlay`.
 - Best fit for `VR.app`:
   long-term suite architecture.
 
@@ -188,7 +189,7 @@ Use this document when designing a new module or utility and ask:
   small but very practical user value.
 - Strong references:
   `OpenVRDeviceBattery`, `VRBattery`, `OpenVR-Display-Devices`,
-  `SteamVR-Devices-Battery-Status`.
+  `SteamVR-Devices-Battery-Status`, `steamvrbattery`.
 - Best fit for `VR.app`:
   diagnostics and device health tools.
 
@@ -268,6 +269,39 @@ Use this document when designing a new module or utility and ask:
   `hotas-vr-controller`, `hobo_vr`, `Simple-OpenVR-Driver-Tutorial`.
 - Best fit for `VR.app`:
   advanced research and hardware bridge branch.
+
+## Method 17: Web-rendered overlay surface
+
+- What it is:
+  render a web UI or browser surface into a VR overlay and treat the browser as
+  the primary UI layer.
+- Good for:
+  rich dashboards, remote-control panels, streamer tools, HTML/CSS-based
+  interfaces, plugin-friendly control surfaces.
+- Why it matters:
+  this can dramatically speed up UI iteration and lowers the cost of complex
+  panel design.
+- Strong references:
+  `SteamVR-Webkit`.
+- Best fit for `VR.app`:
+  advanced dashboards and external-control surfaces.
+
+## Method 18: SteamVR environment helper and runtime hygiene tool
+
+- What it is:
+  a narrow helper that improves the way SteamVR behaves around startup,
+  dashboard input, compositor state, or overlay-heavy workflows.
+- Good for:
+  toggles, dashboard fixes, distortion tuning, headroom helpers, tray tools,
+  pre-launch configuration.
+- Why it matters:
+  many valuable VR utilities are not overlays at all - they remove runtime
+  friction around SteamVR.
+- Strong references:
+  `steamvr-exconfig`, `dashfix`, `SteamVR-Toggle`, `steamvr-undistort`,
+  `SteamVR-VoidScene`.
+- Best fit for `VR.app`:
+  desktop-side support tools and maintenance helpers.
 
 ## Recommended usage inside `VR.app`
 

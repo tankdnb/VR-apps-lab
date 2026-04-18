@@ -23,6 +23,8 @@ captures/
 ## Workspace-generated outputs
 artifacts/
 .tmp/
+.research-sources/
+.tmp_tracked_repos.txt
 
 ## Packages / bundles
 *.apk
