@@ -5,6 +5,10 @@ repeatable way.
 
 ## Files
 
+- `new-session-quickstart.md`  
+  Fast re-entry guide for new sessions, fresh clones, and assistants that do
+  not have prior chat history.
+
 - `repository-restructuring-plan.md`  
   The target information architecture for turning the repo into a scalable
   research base.

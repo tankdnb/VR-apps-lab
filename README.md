@@ -93,6 +93,9 @@ Start here:
 - `docs/README.ru.md` for the Russian documentation index
 - `docs/foundation/repository-positioning.md` for the public-facing repository
   identity
+- `docs/foundation/current-operating-context.md` for the current handoff context
+- `docs/research/program/new-session-quickstart.md` for a fresh-session reading
+  path
 - `docs/research/methods/vr-utility-methods-catalog.md` for reusable methods
 - `docs/research/catalog/project-registry.md` for the canonical tracked-project
   list

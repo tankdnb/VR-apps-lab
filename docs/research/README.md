@@ -32,16 +32,18 @@ bridges, device managers, and experimental XR workflows.
 
 ## Recommended reading order
 
-1. `methods/vr-utility-methods-catalog.md`
-2. `landscape/project-families.md`
-3. `catalog/project-registry.md`
-4. `program/repository-restructuring-plan.md`
-5. `program/restructuring-backlog.md`
-6. `program/github-research-wave-8-plan.md`
-7. `program/github-research-wave-9-plan.md`
-8. `program/github-research-wave-10-plan.md`
-9. `program/github-research-wave-11-plan.md`
-10. `landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
-11. `discovery/local-source-cache-workflow.md`
-12. `discovery/intake-pipeline.md`
-13. `landscape/not-yet-studied-deeply.md`
+1. `../foundation/current-operating-context.md`
+2. `program/new-session-quickstart.md`
+3. `methods/vr-utility-methods-catalog.md`
+4. `landscape/project-families.md`
+5. `catalog/project-registry.md`
+6. `program/repository-restructuring-plan.md`
+7. `program/restructuring-backlog.md`
+8. `program/github-research-wave-8-plan.md`
+9. `program/github-research-wave-9-plan.md`
+10. `program/github-research-wave-10-plan.md`
+11. `program/github-research-wave-11-plan.md`
+12. `landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
+13. `discovery/local-source-cache-workflow.md`
+14. `discovery/intake-pipeline.md`
+15. `landscape/not-yet-studied-deeply.md`
