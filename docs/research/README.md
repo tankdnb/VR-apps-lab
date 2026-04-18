@@ -8,6 +8,13 @@ bridges, device managers, and experimental XR workflows.
 
 ## Subfolders
 
+- `methods/`  
+  Extracted implementation methods and product approaches for building VR
+  utilities.
+
+- `discovery/`  
+  Discovery sources, intake flow, and watchlists for finding new repositories.
+
 - `landscape/`  
   Cross-project landscape research, waves, overlap families, and synthesis.
 
@@ -25,8 +32,10 @@ bridges, device managers, and experimental XR workflows.
 
 ## Recommended reading order
 
-1. `landscape/project-families.md`
-2. `catalog/project-registry.md`
-3. `program/repository-restructuring-plan.md`
-4. `program/restructuring-backlog.md`
-5. `landscape/not-yet-studied-deeply.md`
+1. `methods/vr-utility-methods-catalog.md`
+2. `landscape/project-families.md`
+3. `catalog/project-registry.md`
+4. `program/repository-restructuring-plan.md`
+5. `program/restructuring-backlog.md`
+6. `discovery/intake-pipeline.md`
+7. `landscape/not-yet-studied-deeply.md`

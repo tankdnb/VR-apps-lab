@@ -109,6 +109,7 @@ Update:
 - `catalog/project-registry.md`
 - `landscape/project-families.md`
 - `landscape/not-yet-studied-deeply.md` when relevant
+- `methods/vr-utility-methods-catalog.md` when a reusable method becomes clearer
 
 ### Step 7: Follow-up decision
 

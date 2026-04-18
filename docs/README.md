@@ -49,6 +49,15 @@ Use this section for:
 - `research/catalog/README.md`
 - `research/catalog/project-registry.md`
 
+### Methods and discovery
+
+- `research/methods/README.md`
+- `research/methods/vr-utility-methods-catalog.md`
+- `research/discovery/README.md`
+- `research/discovery/discovery-sources.md`
+- `research/discovery/intake-pipeline.md`
+- `research/discovery/watchlist.md`
+
 ### Research program
 
 - `research/program/README.md`

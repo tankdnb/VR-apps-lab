@@ -44,6 +44,8 @@ Make repository research repeatable and contributor-friendly.
 - `Done` Write a study method
 - `Done` Add a reusable project-study template
 - `Done` Add per-folder `README` files for research navigation
+- `Done` Add methods catalog
+- `Done` Add discovery intake and watchlist docs
 
 ## Epic C: Canonical registry and overlap tracking
 
@@ -120,6 +122,8 @@ Stop future research from becoming another unordered pile.
   - `catalog/project-registry.md`
   - `landscape/project-families.md` if overlap changed
   - `landscape/not-yet-studied-deeply.md` if follow-up work is needed
+- `Next` Require every meaningful deep pass to update
+  `methods/vr-utility-methods-catalog.md` when it reveals a reusable method
 - `Next` Require every deep-pass doc to use the standard study template
 - `Later` Add scripts or checks to validate internal doc links
 

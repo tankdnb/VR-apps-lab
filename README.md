@@ -102,8 +102,11 @@ Start here:
 - `docs/foundation/platform-foundation.md`
 - `docs/foundation/public-roadmap.md`
 - `docs/research/README.md`
+- `docs/research/methods/vr-utility-methods-catalog.md`
 - `docs/research/landscape/project-families.md`
 - `docs/research/catalog/project-registry.md`
+- `docs/research/discovery/intake-pipeline.md`
+- `docs/research/discovery/watchlist.md`
 - `docs/research/landscape/not-yet-studied-deeply.md`
 - `docs/research/program/repository-restructuring-plan.md`
 - `docs/research/program/restructuring-backlog.md`
