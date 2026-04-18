@@ -98,3 +98,45 @@ Before starting a new utility in this repo, ask:
 4. Can it be validated in a small MVP?
 
 If the answer is mostly yes, it is a good candidate for this repository.
+
+## Repository verification model
+
+`VR.app` should not use one single validation rule for every change.
+
+This repository is both:
+
+- a `knowledge base`
+- a `pattern library`
+- a `prototype foundation`
+
+Because of that, the expected verification depends on the type of change.
+
+### For research and documentation changes
+
+The required verification is:
+
+- navigation remains clear and consistent;
+- links are valid and public-facing paths are not broken;
+- new material is placed in the right section of the repository;
+- registry, families, methods, and backlog references stay aligned;
+- the repository description does not over-promise product readiness.
+
+For this class of changes, running a code build is optional and usually not the
+main quality signal.
+
+### For prototype and code changes
+
+When a change touches actual prototype code, tooling, or runnable experiments,
+the expected verification becomes stronger and may include:
+
+- build validation for the affected project;
+- local smoke tests for the touched workflow;
+- runtime or hardware notes when testing cannot be completed;
+- documentation updates that explain the real support boundary.
+
+### Rule of thumb
+
+If the change improves repository knowledge, structure, or discovery, validate
+`repository integrity`.
+
+If the change affects runnable code paths, validate the `affected prototype`.

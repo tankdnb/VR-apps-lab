@@ -143,6 +143,20 @@ dotnet run --project .\src\VRRealityWindow.App -- overlay --duration-seconds 20
 - reusable methods for overlay, OpenXR layer, tracker bridge, and diagnostics
 - contribution-ready public knowledge for other VR developers
 
+## How changes are validated here
+
+`VR.app` is not maintained like a single shipping app.
+
+For `research` and `documentation` changes, the main quality checks are:
+
+- repository structure stays coherent;
+- links and navigation remain valid;
+- registry, families, methods, and backlog stay aligned;
+- the repository description stays honest about support boundaries.
+
+For `prototype` or runnable `tool` changes, validation may also include build
+checks, smoke tests, and runtime notes for the affected component.
+
 ## Documentation map
 
 Start here:

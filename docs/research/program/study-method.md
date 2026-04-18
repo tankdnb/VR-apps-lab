@@ -143,3 +143,43 @@ They also include:
   status;
 - do not treat forks as first-class priorities before understanding the
   upstream family.
+
+## Verification rules for repository work
+
+`VR.app` is not validated like a normal single-product application.
+
+The repository contains:
+
+- research material
+- structured documentation
+- reusable patterns
+- prototype code
+
+Because of that, verification must match the type of work.
+
+### For research-only and documentation-only updates
+
+The required checks are:
+
+- correct placement in the repository structure;
+- consistent updates to registry, families, methods, and backlog when needed;
+- no broken or misleading links;
+- public wording stays accurate about what is experimental versus reusable;
+- overlap with existing material is handled cleanly.
+
+For this type of change, a code build is optional and should not be treated as
+the main definition of correctness.
+
+### For code-aware research notes
+
+If a study references local source cache, prototype code, or extracted modules,
+also verify:
+
+- referenced paths still make sense;
+- local-only paths are not exposed as broken public links;
+- donor notes and reuse guidance remain understandable without private context.
+
+### For actual prototype/tool changes
+
+If the change modifies runnable code, then verification should include the
+affected prototype workflow when realistically possible.
