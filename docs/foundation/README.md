@@ -1,11 +1,11 @@
 # Foundation Docs
 
-This folder contains the stable, product-level foundation for `VR.app`.
+This folder contains the stable, product-level foundation for `VR-apps-lab`.
 
 ## Files
 
 - `repository-positioning.md`  
-  Canonical public-facing description of `VR.app` as a knowledge repository and
+  Canonical public-facing description of `VR-apps-lab` as a knowledge repository and
   reusable VR development base.
 
 - `repository-positioning-backlog.md`  

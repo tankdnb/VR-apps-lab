@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Scope: canonical grouped registry of repositories currently tracked by
-  `VR.app`
+  `VR-apps-lab`
 - Purpose: make every tracked project discoverable through one file, with a
   visible family and current study status.
 
@@ -381,7 +381,7 @@ Primary docs:
 
 ## Registry maintenance rule
 
-Any future repository added to `VR.app` should update:
+Any future repository added to `VR-apps-lab` should update:
 
 1. this file;
 2. `../landscape/project-families.md` if the overlap model changes;

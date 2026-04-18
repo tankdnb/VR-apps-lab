@@ -1,7 +1,7 @@
 # Restructuring Backlog
 
 - Date: `2026-04-18`
-- Goal: track the work needed to turn `VR.app` into a scalable research base
+- Goal: track the work needed to turn `VR-apps-lab` into a scalable research base
   and keep the next research phases explicit.
 
 ## Status legend

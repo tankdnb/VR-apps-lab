@@ -1,6 +1,6 @@
 # Research Docs
 
-This folder contains the reusable research system behind `VR.app`.
+This folder contains the reusable research system behind `VR-apps-lab`.
 
 The goal is to make the repository useful not just as a codebase, but as a
 curated knowledge base for VR utilities, overlays, runtime tools, tracker

@@ -1,7 +1,7 @@
 # Repository Positioning Backlog
 
 - Date: `2026-04-18`
-- Goal: reposition `VR.app` publicly as a `knowledge repository and reusable
+- Goal: reposition `VR-apps-lab` publicly as a `knowledge repository and reusable
   VR development base`, not only as one application.
 
 ## Status legend
@@ -11,7 +11,7 @@
 
 ## Work package A: Public-facing positioning
 
-- `Done` Define the canonical public positioning of `VR.app`
+- `Done` Define the canonical public positioning of `VR-apps-lab`
 - `Done` Add a dedicated foundation document for repository positioning
 - `Done` Rewrite the root README around the new project identity
 - `Done` Make the root README describe code as one layer of the repository, not

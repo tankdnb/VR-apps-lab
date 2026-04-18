@@ -3,7 +3,7 @@
 - Date: `2026-04-18`
 - Scope: next GitHub discovery wave focused on untracked repositories that add
   new runtime, overlay, dashboard, or tracking-development patterns to
-  `VR.app`.
+  `VR-apps-lab`.
 
 ## Status legend
 

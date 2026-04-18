@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Purpose: extract reusable implementation methods and product patterns from the
-  tracked VR repositories, so `VR.app` can grow around proven approaches rather
+  tracked VR repositories, so `VR-apps-lab` can grow around proven approaches rather
   than only around named projects.
 
 ## How to use this file
@@ -34,7 +34,7 @@ Use this document when designing a new module or utility and ask:
   `OpenVR-AdvancedSettings`, `WhereIsForward`, `OpenVRDeviceBattery`,
   `openvr-metrics`, `VROverlay`, `SteamVR-Webkit`,
   `steamvr_overlay_vulkan`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   near-term product work.
 
 ## Method 2: OpenXR API-layer utility
@@ -51,7 +51,7 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `OpenXR-Toolkit`, `OpenXR-Layer-Template`, `OpenXR-Layer-OBSMirror`,
   `OpenXR-OverlayLayer`, `WMR-Passthrough`, `XRFrameTools`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   medium-term and advanced tooling.
 
 ## Method 3: Wrist dashboard / controller-attached UI
@@ -66,7 +66,7 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `DesktopPortal`, `wlx-overlay-s`, `SteamVR_ClockOverlay_Public`,
   `OpenVR-AdvancedSettings`, `openvr_widgets`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   first user-facing utility family.
 
 ## Method 4: Desktop-side companion utility
@@ -84,7 +84,7 @@ Use this document when designing a new module or utility and ask:
   `steamvr-exconfig`, `OpenVRDeviceBattery`, `SteamVR-Toggle`, `dashfix`,
   `OculusKiller`, `WFOVFix`, `SteamVRAdaptiveBrightness`,
   `SteamVR-ActionsManifestValidator`, `Lighthouse-Scale-Fix`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   setup utilities and companion workflows.
 
 ## Method 5: Micro-utility overlay
@@ -99,7 +99,7 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `WhereIsForward`, `TurnSignal`, `SteamVR_ClockOverlay_Public`,
   `VRBattery`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   fast MVPs and proof-of-value utilities.
 
 ## Method 6: Widget suite / utility shell
@@ -113,7 +113,7 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `openvr_widgets`, `OpenVR-AdvancedSettings`, `DesktopPortal`,
   `openvr-metrics`, `vr-streaming-overlay`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   long-term suite architecture.
 
 ## Method 7: Runtime switcher and doctor tool
@@ -130,7 +130,7 @@ Use this document when designing a new module or utility and ask:
   `OpenXR-API-Layers-GUI`, `OpenXR-Runtime-Switcher` family,
   `openxr-explorer`, `OpenXR-Inventory`, `xr-picker`,
   `OpenXR-Simulator`, `VirtualDesktop-OpenXR`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   `OpenXR Doctor`.
 
 ## Method 8: Notification and remote-control service bus
@@ -145,7 +145,7 @@ Use this document when designing a new module or utility and ask:
   it turns VR utilities into a platform rather than a closed app.
 - Strong references:
   `OpenVROverlayPipe`, `OpenVRNotificationPipe`, `OpenVR2WS`, `VnotifieR`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   automation and integration layer.
 
 ## Method 9: Virtual tracker bridge
@@ -162,7 +162,7 @@ Use this document when designing a new module or utility and ask:
   `VirtualMotionTracker`, `PSMoveServiceEx-VMT`,
   `OpenVR-Tracker-Websocket-Driver`, `OpenVR-Driver`,
   `VirtualDesktop-OpenVR-Trackers`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   tracker bridge platform and experimentation tools.
 
 ## Method 10: OSC and external automation bridge
@@ -178,7 +178,7 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `SteamVR_To_OSC`, `OpenVR2OSC`, `steamvr-osc-control`, `VRCOSC`,
   `VRC-OSC`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   external integration modules.
 
 ## Method 11: Device monitor and battery watcher
@@ -193,7 +193,7 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `OpenVRDeviceBattery`, `VRBattery`, `OpenVR-Display-Devices`,
   `SteamVR-Devices-Battery-Status`, `steamvrbattery`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   diagnostics and device health tools.
 
 ## Method 12: Calibration wizard
@@ -211,7 +211,7 @@ Use this document when designing a new module or utility and ask:
   `OpenVR-SpaceCalibrator`, `OpenXR-MotionCompensation`,
   `EyeTrackVR-OpenVR-Calibration-Overlay`,
   `OpenXR-Canonical-Pose-Tool`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   tracking helpers and setup tools.
 
 ## Method 13: Vendor enhancement layer
@@ -225,7 +225,7 @@ Use this document when designing a new module or utility and ask:
   useful when the official stack exists but leaves value on the table.
 - Strong references:
   `PSVR2Toolkit`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   future vendor-specific research branches.
 
 ## Method 14: Creator and research capture tool
@@ -242,7 +242,7 @@ Use this document when designing a new module or utility and ask:
   `clovr`, `tracking-toolkit`, `XRFrameTools`, `openvr-metrics`,
   `OpenKneeboard`, `OBS-OpenVR-Input-Plugin`, `Valve virtual_display`,
   `SuperScreenShotterVR`, `Periodic-Immersive-SteamVR-Screenshots`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   diagnostics and creator tools branch.
 
 ## Method 15: Passthrough and scoped reality layer experiment
@@ -257,7 +257,7 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `openxr-steamvr-passthrough`, `WMR-Passthrough`, `VRPassthrough`,
   `LeapOVRPassthrough`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   experiments only unless hardware support is proven.
 
 ## Method 16: Runtime graphics adapter layer
@@ -273,7 +273,7 @@ Use this document when designing a new module or utility and ask:
   need a true graphics adapter in the middle.
 - Strong references:
   `OpenXR-Vk-D3D12`, `VirtualDesktop-OpenXR`, `OpenComposite`, `xrizer`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   advanced compatibility and runtime research.
 
 ## Method 17: Library plus sandbox learning harness
@@ -289,7 +289,7 @@ Use this document when designing a new module or utility and ask:
   reusable development asset.
 - Strong references:
   `OpenXRProvider`, `OpenXR-SDK-Source` samples, `Simple-OpenVR-Driver-Tutorial`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   future sample apps and reusable experimental foundations.
 
 ## Method 18: Virtual display and remote presentation driver
@@ -306,7 +306,7 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `ValveSoftware/virtual_display`, `VRto3D`, `Virtual-Display-Driver`,
   `OpenDisplayXR-VDD`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   advanced workflow tooling and repurposed-output experiments.
 
 ## Method 19: Validation and config-patch micro-tool
@@ -323,7 +323,7 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `SteamVR-ActionsManifestValidator`, `Lighthouse-Scale-Fix`, `WFOVFix`,
   `steamvr-exconfig`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   desktop-side helpers and future doctor/preflight tools.
 
 ## Method 16: Custom device plumbing and driver prototyping
@@ -340,7 +340,7 @@ Use this document when designing a new module or utility and ask:
   `hotas-vr-controller`, `hobo_vr`, `Simple-OpenVR-Driver-Tutorial`,
   `SteamVR-OpenHMD`, `Oculus_Touch_Steam_Link`,
   `SlimeVR-OpenVR-Driver`, `VirtualSteamVRDriver`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   advanced research and hardware bridge branch.
 
 ## Method 17: Web-rendered overlay surface
@@ -356,7 +356,7 @@ Use this document when designing a new module or utility and ask:
   panel design.
 - Strong references:
   `SteamVR-Webkit`, `overlay_experiments`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   advanced dashboards and external-control surfaces.
 
 ## Method 18: SteamVR environment helper and runtime hygiene tool
@@ -374,7 +374,7 @@ Use this document when designing a new module or utility and ask:
   `steamvr-exconfig`, `dashfix`, `SteamVR-Toggle`, `steamvr-undistort`,
   `SteamVR-VoidScene`, `OculusKiller`, `SteamVRNoHeadset`,
   `ViveTrackerExample`, `WFOVFix`, `SteamVRLinuxFixes`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   desktop-side support tools and maintenance helpers.
 
 ## Method 19: Headless overlay host
@@ -390,7 +390,7 @@ Use this document when designing a new module or utility and ask:
   like normal foreground desktop apps.
 - Strong references:
   `HeadlessOverlayToolkit`, `SteaMeeter`, `VRCMicOverlay`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   always-on utility hosts and background helper surfaces.
 
 ## Method 20: Runtime inventory and capability matrix
@@ -406,7 +406,7 @@ Use this document when designing a new module or utility and ask:
   runtimes, layers, and clients.
 - Strong references:
   `OpenXR-Inventory`, `xr-picker`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   capability intelligence behind `OpenXR Doctor` and related research tools.
 
 ## Method 21: Vendor shell replacement and runtime auto-redirect
@@ -422,7 +422,7 @@ Use this document when designing a new module or utility and ask:
   fixing runtime launch behavior.
 - Strong references:
   `OculusKiller`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   advanced environment-helper and compatibility research.
 
 ## Method 22: Headsetless and null-driver development workflow
@@ -438,7 +438,7 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `SteamVRNoHeadset`, `ViveTrackerExample`, `VirtualSteamVRDriver`,
   `OpenXR-Simulator`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   developer tooling, research harnesses, and workflow docs.
 
 ## Method 23: OpenVR mirror-surface capture bridge
@@ -454,7 +454,7 @@ Use this document when designing a new module or utility and ask:
   output to non-VR tools.
 - Strong references:
   `OBS-OpenVR-Input-Plugin`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   creator workflows and runtime-inspection side tools.
 
 ## Method 24: Mixed tracking and controller bridge
@@ -471,17 +471,17 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `Oculus_Touch_Steam_Link`, `SteamVR-OpenHMD`,
   `SlimeVR-OpenVR-Driver`.
-- Best fit for `VR.app`:
+- Best fit for `VR-apps-lab`:
   tracker-bridge and driver-plumbing research.
 
-## Recommended usage inside `VR.app`
+## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:
 
 1. classify it first by `method`;
 2. then map it to a `project family`;
 3. then look up which repositories already demonstrate that method;
-4. then decide whether `VR.app` should build it as:
+4. then decide whether `VR-apps-lab` should build it as:
    - overlay
    - desktop companion
    - service

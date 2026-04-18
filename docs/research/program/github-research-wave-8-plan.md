@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Goal: run a serious GitHub discovery wave for VR utility/tool/helper app
-  repositories that are not yet in `VR.app`, then turn the results into
+  repositories that are not yet in `VR-apps-lab`, then turn the results into
   structured research artifacts.
 
 ## Adjustment to the original idea

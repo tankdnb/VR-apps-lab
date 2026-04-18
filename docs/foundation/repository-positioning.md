@@ -1,12 +1,12 @@
-# VR.app Repository Positioning
+# VR-apps-lab Repository Positioning
 
 - Date: `2026-04-18`
-- Goal: define what `VR.app` is as a public repository and how it should be
+- Goal: define what `VR-apps-lab` is as a public repository and how it should be
   presented to new users and contributors.
 
 ## Short version
 
-`VR.app` is not just one VR program.
+`VR-apps-lab` is not just one VR program.
 
 It is a public `knowledge repository`, `pattern library`, and `working base`
 for building VR utilities, overlays, diagnostics tools, tracking helpers, and
@@ -14,7 +14,7 @@ experimental runtime integrations.
 
 ## What the repository is
 
-`VR.app` combines three layers:
+`VR-apps-lab` combines three layers:
 
 1. `Knowledge repository`
    - curated notes on public VR-related repositories
@@ -68,7 +68,7 @@ The right framing is:
 
 ## Public-facing messaging rule
 
-When describing `VR.app` publicly, prefer wording like:
+When describing `VR-apps-lab` publicly, prefer wording like:
 
 - `knowledge repository for VR utility development`
 - `curated research base for VR tools and overlays`

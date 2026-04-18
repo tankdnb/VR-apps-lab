@@ -1,12 +1,12 @@
 # Project Families
 
 - Date: `2026-04-18`
-- Goal: reorganize the `VR.app` research corpus around logical overlap
+- Goal: reorganize the `VR-apps-lab` research corpus around logical overlap
   families instead of a long flat list of repositories.
 
 ## Why this file exists
 
-At this point `VR.app` already contains:
+At this point `VR-apps-lab` already contains:
 
 - a large initial landscape pass;
 - multiple follow-up research waves;
@@ -21,7 +21,7 @@ The next useful step is not more random expansion. It is `grouping`,
 - `Already studied`
   covered well enough across one or more existing docs.
 - `Partially studied`
-  present in `VR.app`, but still deserving a dedicated deeper code-level pass.
+  present in `VR-apps-lab`, but still deserving a dedicated deeper code-level pass.
 - `Not studied deeply`
   either missing from the repo or only known through a quick mention.
 - `Fork / variant only`
@@ -56,7 +56,7 @@ This family is already converging into the future `OpenXR Doctor` direction.
 ### Consolidation note
 
 This is one of the highest-overlap families in the whole repository. The main
-output of this family for `VR.app` should be a single future product concept:
+output of this family for `VR-apps-lab` should be a single future product concept:
 
 - `OpenXR Doctor`
 - `runtime capability matrix`
@@ -131,7 +131,7 @@ panel, and logging utility.
 
 ### Consolidation note
 
-This should become a single `Device Monitor` family inside `VR.app`, with
+This should become a single `Device Monitor` family inside `VR-apps-lab`, with
 sub-modes like:
 
 - wrist/device overlay
@@ -259,7 +259,7 @@ knowledge needed for `device-side tooling`.
 
 ### Consolidation note
 
-This should eventually become a dedicated learning track in `VR.app`:
+This should eventually become a dedicated learning track in `VR-apps-lab`:
 
 - `driver tutorial`
 - `custom device plumbing`
@@ -374,7 +374,7 @@ creator-facing XR use than about simple end-user overlays.
 ### Consolidation note
 
 This family supports a separate `creator and diagnostics` branch inside
-`VR.app`, not just consumer-facing overlays.
+`VR-apps-lab`, not just consumer-facing overlays.
 
 It also strengthens a smaller but useful sub-branch:
 
@@ -404,7 +404,7 @@ not only how finished utility products behave.
 
 ### Consolidation note
 
-This family should feed `VR.app` as a methods donor layer:
+This family should feed `VR-apps-lab` as a methods donor layer:
 
 - overlay lifecycle references
 - graphics-path references
@@ -436,7 +436,7 @@ interaction, distortion, or overlay-heavy workflows.
 ### Consolidation note
 
 This family points toward a separate `environment helper` track inside
-`VR.app`, not just overlays:
+`VR-apps-lab`, not just overlays:
 
 - tray toggles
 - dashboard fixes
@@ -447,7 +447,7 @@ This family points toward a separate `environment helper` track inside
 - validation and lint micro-tools
 - backup-safe config patchers
 
-## Recommended synthesis path for `VR.app`
+## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.
 

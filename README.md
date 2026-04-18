@@ -1,8 +1,8 @@
-# VR.app
+# VR-apps-lab
 
 English | [Русский](README.ru.md)
 
-`VR.app` is a public `knowledge repository`, `pattern library`, and `working
+`VR-apps-lab` is a public `knowledge repository`, `pattern library`, and `working
 base` for building VR utilities, overlays, diagnostics tools, tracking helpers,
 and experimental XR integrations.
 
@@ -15,7 +15,7 @@ future VR tools.
 
 ## What this repository is
 
-`VR.app` combines three layers:
+`VR-apps-lab` combines three layers:
 
 1. `Knowledge repository`
    - studied public VR-related repositories
@@ -50,7 +50,7 @@ future VR tools.
 
 ## Current identity of the project
 
-The most accurate way to describe `VR.app` today is:
+The most accurate way to describe `VR-apps-lab` today is:
 
 - `knowledge repository for VR utility development`
 - `curated research base for VR tools and overlays`
@@ -145,7 +145,7 @@ dotnet run --project .\src\VRRealityWindow.App -- overlay --duration-seconds 20
 
 ## How changes are validated here
 
-`VR.app` is not maintained like a single shipping app.
+`VR-apps-lab` is not maintained like a single shipping app.
 
 For `research` and `documentation` changes, the main quality checks are:
 

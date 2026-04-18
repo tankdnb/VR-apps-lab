@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Goal: run the next serious GitHub research wave for repositories that are not
-  yet tracked by `VR.app`, then convert the useful findings into structured
+  yet tracked by `VR-apps-lab`, then convert the useful findings into structured
   research artifacts.
 
 ## Why this wave exists

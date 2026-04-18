@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Goal: add the next serious GitHub discovery wave for repositories that were
-  not yet in `VR.app`, focusing on runtime adapters, driver examples,
+  not yet in `VR-apps-lab`, focusing on runtime adapters, driver examples,
   virtual-display workflows, validation helpers, and creator-oriented
   micro-utilities.
 
@@ -69,7 +69,7 @@ This wave followed the repository's post-restructure research pipeline:
   an OpenXR API layer that adapts Vulkan and OpenGL applications to runtimes
   that expect `D3D12`.
 - Why it matters:
-  it adds a very strong `runtime adapter` reference to `VR.app`, not just a
+  it adds a very strong `runtime adapter` reference to `VR-apps-lab`, not just a
   runtime selector or inspector.
 - Interesting ideas:
   graphics API bridging via an OpenXR layer; swapchain import instead of an
@@ -208,7 +208,7 @@ This wave followed the repository's post-restructure research pipeline:
   intentionally minimal and not a full hardware bridge.
 - What to inspect next:
   wiki/tutorial material, how it differs from Valve's own sample, and whether
-  it can become the default learning reference in `VR.app`.
+  it can become the default learning reference in `VR-apps-lab`.
 
 ## `SecondReality/VirtualControllerDriver`
 
@@ -303,7 +303,7 @@ This wave followed the repository's post-restructure research pipeline:
   abstracted away.
 - What to inspect next:
   remote server implementation, screenshot file tagging, and how its
-  overlay-plus-server split compares with other automation tools in `VR.app`.
+  overlay-plus-server split compares with other automation tools in `VR-apps-lab`.
 
 ## `iigomaru/Periodic-Immersive-SteamVR-Screenshots`
 
@@ -331,7 +331,7 @@ This wave followed the repository's post-restructure research pipeline:
 - Caveats:
   intentionally tiny and not extensible by itself.
 - What to inspect next:
-  whether `VR.app` should keep a dedicated category for automation-style
+  whether `VR-apps-lab` should keep a dedicated category for automation-style
   microtools this small.
 
 ## `Virus-vr/SteamVRAdaptiveBrightness`
@@ -390,7 +390,7 @@ This wave followed the repository's post-restructure research pipeline:
 - Caveats:
   narrow by design and scoped to one SteamVR manifest type.
 - What to inspect next:
-  whether `VR.app` should eventually group similar tools under a general `XR
+  whether `VR-apps-lab` should eventually group similar tools under a general `XR
   manifest validator` track.
 
 ## `Erimelowo/Lighthouse-Scale-Fix`
@@ -417,12 +417,12 @@ This wave followed the repository's post-restructure research pipeline:
 - Caveats:
   hardcodes the SteamVR path and intentionally solves only one narrow issue.
 - What to inspect next:
-  whether a generalized `VR.app` config patch helper should standardize backup,
+  whether a generalized `VR-apps-lab` config patch helper should standardize backup,
   diff, and rollback behavior across multiple SteamVR fixes.
 
 ## Cross-wave synthesis
 
-Wave 11 sharpened several families that already existed in `VR.app`, but were
+Wave 11 sharpened several families that already existed in `VR-apps-lab`, but were
 not yet dense enough:
 
 - `OpenXR runtime and layer tools`

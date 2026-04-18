@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Goal: run the next serious GitHub research wave for repositories not yet
-  represented in `VR.app`, focusing on runtime adapters, virtual-display
+  represented in `VR-apps-lab`, focusing on runtime adapters, virtual-display
   drivers, validation helpers, driver examples, and creator/workflow
   micro-utilities.
 

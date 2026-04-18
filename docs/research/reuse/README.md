@@ -7,7 +7,7 @@ These documents answer questions such as:
 
 - what can be reused directly;
 - what is only an architecture reference;
-- what not to import into `VR.app`;
+- what not to import into `VR-apps-lab`;
 - what licensing or technical caveats matter.
 
 ## Files

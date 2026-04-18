@@ -1,4 +1,4 @@
-﻿# PICO OpenXR Passthrough Probe
+# PICO OpenXR Passthrough Probe
 
 This spike has moved beyond simple extension enumeration.
 
@@ -53,7 +53,7 @@ This spike was successfully built in this workspace with:
 
 ## Build
 
-From `C:\Users\Username\Documents\VR.app\spikes\PicoOpenXrExtensionProbe`:
+From `C:\Users\Username\Documents\VR-apps-lab\spikes\PicoOpenXrExtensionProbe`:
 
 ```powershell
 $env:JAVA_HOME='C:\Users\Username\.gradle\jdks\jetbrains_s_r_o_-17-amd64-windows.2'
@@ -65,7 +65,7 @@ $env:ANDROID_SDK_ROOT='C:\Users\Username\AppData\Local\Android\Sdk'
 ## Install
 
 ```powershell
-& 'C:\Users\Username\AppData\Local\Android\Sdk\platform-tools\adb.exe' install -r 'C:\Users\Username\Documents\VR.app\spikes\PicoOpenXrExtensionProbe\app\build\outputs\apk\debug\app-debug.apk'
+& 'C:\Users\Username\AppData\Local\Android\Sdk\platform-tools\adb.exe' install -r 'C:\Users\Username\Documents\VR-apps-lab\spikes\PicoOpenXrExtensionProbe\app\build\outputs\apk\debug\app-debug.apk'
 ```
 
 ## Test flow

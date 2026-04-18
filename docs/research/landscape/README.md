@@ -38,7 +38,7 @@ Use these files when you want to understand:
   workflows, validation helpers, driver examples, and workflow micro-utilities.
 
 - `not-yet-studied-deeply.md`  
-  Prioritized list of projects that are either missing from `VR.app` or only
+  Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
 
 - the canonical grouped registry lives in `../catalog/project-registry.md`.

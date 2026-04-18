@@ -1,10 +1,10 @@
-﻿# vrperfkit Reuse Plan
+# vrperfkit Reuse Plan
 
 ## Purpose
 
 Р­С‚РѕС‚ РґРѕРєСѓРјРµРЅС‚ С„РёРєСЃРёСЂСѓРµС‚, РєР°РєРёРµ С‡Р°СЃС‚Рё `vrperfkit` СЃС‚РѕРёС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РІ `VR Reality Window MVP`, Р° РєР°РєРёРµ РЅРµ РїРѕРґС…РѕРґСЏС‚ РёР·-Р·Р° РґСЂСѓРіРѕР№ Р°СЂС…РёС‚РµРєС‚СѓСЂС‹ РїСЂРѕРµРєС‚Р°.
 
-РСЃС‚РѕС‡РЅРёРє Р°РЅР°Р»РёР·Р°: Р»РѕРєР°Р»СЊРЅС‹Р№ РєР»РѕРЅ `vrperfkit` РІ `C:\Users\Username\Documents\VR.app\.tmp\vrperfkit`.
+РСЃС‚РѕС‡РЅРёРє Р°РЅР°Р»РёР·Р°: Р»РѕРєР°Р»СЊРЅС‹Р№ РєР»РѕРЅ `vrperfkit` РІ `C:\Users\Username\Documents\VR-apps-lab\.tmp\vrperfkit`.
 
 ## Short Summary
 

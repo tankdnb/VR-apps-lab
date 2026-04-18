@@ -6,5 +6,5 @@ documents that make future deep-study work manageable.
 ## Files
 
 - `project-registry.md`  
-  Canonical grouped registry of repositories currently tracked by `VR.app`,
+  Canonical grouped registry of repositories currently tracked by `VR-apps-lab`,
   with family, study status, and where to look next.

@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Goal: add a new serious research wave based on GitHub search results that did
-  not already exist in the `VR.app` registry, then push the useful findings
+  not already exist in the `VR-apps-lab` registry, then push the useful findings
   back into the structured research system.
 
 ## Why this wave exists
@@ -31,7 +31,7 @@ wave used a tighter process:
 5. inspect code and extract methods;
 6. promote the results into the repository structure.
 
-This keeps `VR.app` scalable and makes future waves repeatable.
+This keeps `VR-apps-lab` scalable and makes future waves repeatable.
 
 ## Repositories deeply studied in this wave
 
@@ -98,7 +98,7 @@ This keeps `VR.app` scalable and makes future waves repeatable.
   (`Absolute`, `Hmd`, `Overlay`, etc.); keyboard routing only when focused node
   needs text; optional non-dashboard input for in-game overlays.
 - Code donor value:
-  high if `VR.app` ever wants HTML/CSS dashboards.
+  high if `VR-apps-lab` ever wants HTML/CSS dashboards.
 - Product reference value:
   high for browser-based control surfaces.
 - Architecture reference value:
@@ -117,7 +117,7 @@ This keeps `VR.app` scalable and makes future waves repeatable.
   overlays, widgets, and connectors.
 - Why it matters:
   it treats overlays as `configurable instances`, not one fixed panel, which is
-  very relevant to `VR.app` as a future utility suite.
+  very relevant to `VR-apps-lab` as a future utility suite.
 - Interesting ideas:
   signal-driven overlay lifecycle; per-overlay configuration dictionaries;
   split between overlay config, widgets, and connectors; tracker-relative or
@@ -315,7 +315,7 @@ This keeps `VR.app` scalable and makes future waves repeatable.
   a minimal SteamVR scene application that submits a static eye texture in order
   to reduce the cost of SteamVR's default blank space when using overlays.
 - Why it matters:
-  this introduces a useful pattern that `VR.app` had not documented before:
+  this introduces a useful pattern that `VR-apps-lab` had not documented before:
   `support scene app for overlay-heavy workflows`.
 - Interesting ideas:
   use a tiny scene app as a performance helper; expose settings through
@@ -392,7 +392,7 @@ This keeps `VR.app` scalable and makes future waves repeatable.
 
 ## Main conclusions from this wave
 
-1. `VR.app` needed stronger coverage of `implementation reference repos`, not
+1. `VR-apps-lab` needed stronger coverage of `implementation reference repos`, not
    only end-user utility products.
 2. `SteamVR environment helpers` are now clearly a separate family:
    toggles, dashboard fixes, distortion tools, and support-scene apps.

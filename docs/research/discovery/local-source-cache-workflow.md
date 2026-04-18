@@ -1,7 +1,7 @@
-﻿# Local Source Cache Workflow
+# Local Source Cache Workflow
 
 - Date: `2026-04-18`
-- Goal: define how `VR.app` should download GitHub repositories for code-level
+- Goal: define how `VR-apps-lab` should download GitHub repositories for code-level
   inspection without bloating the main repo.
 
 ## Why this exists
@@ -17,7 +17,7 @@ To extract implementation ideas, we often need:
 - config and manifest layout.
 
 That means cloning repositories locally. However, cloning everything into the
-main git history would make `VR.app` noisy and heavy.
+main git history would make `VR-apps-lab` noisy and heavy.
 
 ## Rule
 

@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Status: `Executed in this change`
-- Goal: restructure `VR.app` so it can scale from a pile of research waves into
+- Goal: restructure `VR-apps-lab` so it can scale from a pile of research waves into
   a maintainable system where every tracked VR repository has:
   - a place in a logical family;
   - a visible study status;
@@ -11,7 +11,7 @@
 
 ## Problem statement
 
-`VR.app` had already accumulated a lot of valuable research, but it had three
+`VR-apps-lab` had already accumulated a lot of valuable research, but it had three
 structural weaknesses:
 
 1. documents had grown in `waves`, which made chronology clearer than

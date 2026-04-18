@@ -1,9 +1,9 @@
-﻿# OpenVR-AdvancedSettings Reuse Plan
+# OpenVR-AdvancedSettings Reuse Plan
 
 - Date: `2026-04-10`
 - Source repository:
   [OpenVR-Advanced-Settings/OpenVR-AdvancedSettings](https://github.com/OpenVR-Advanced-Settings/OpenVR-AdvancedSettings)
-- Goal: capture what `VR.app` can realistically learn from and apply from
+- Goal: capture what `VR-apps-lab` can realistically learn from and apply from
   `OpenVR-AdvancedSettings`.
 
 ## Why this project matters
@@ -36,7 +36,7 @@ The biggest lesson is product-level:
 - one overlay shell
 - many small utilities inside it
 
-This is exactly aligned with the direction `VR.app` has been moving toward.
+This is exactly aligned with the direction `VR-apps-lab` has been moving toward.
 
 Useful evidence from the upstream repo:
 
@@ -45,7 +45,7 @@ Useful evidence from the upstream repo:
 - the UI is split into focused pages instead of one overloaded panel
 - the same functionality is exposed in both VR and desktop contexts
 
-## What is most reusable for VR.app
+## What is most reusable for VR-apps-lab
 
 ### 1. Tabbed utility architecture
 
@@ -65,7 +65,7 @@ This is visible in:
 
 - `.tmp/OpenVR-AdvancedSettings/src/tabcontrollers`
 
-What to apply in `VR.app`:
+What to apply in `VR-apps-lab`:
 
 - keep features modular by domain
 - one controller per utility area
@@ -79,7 +79,7 @@ This is one of the clearest architecture patterns we should reuse.
 The README explicitly says all major features are available in VR and from a
 desktop window.
 
-What to apply in `VR.app`:
+What to apply in `VR-apps-lab`:
 
 - do not force every workflow to happen only in-headset
 - keep a desktop companion for diagnostics, setup, and advanced configuration
@@ -110,7 +110,7 @@ Primary source:
 - `.tmp/OpenVR-AdvancedSettings/docs/SteamVRInputGuide.md`
 - `.tmp/OpenVR-AdvancedSettings/docs/keyboard_input_guide.md`
 
-What to apply in `VR.app`:
+What to apply in `VR-apps-lab`:
 
 - action-based bindings instead of hard-coded controller buttons
 - chord support for global utility actions
@@ -136,7 +136,7 @@ What is valuable:
 - explicit save/load API
 - separate object-persistence API for more complex profile-like objects
 
-What to apply in `VR.app`:
+What to apply in `VR-apps-lab`:
 
 - move beyond plain JSON bag-of-fields over time
 - define typed categories for settings
@@ -154,7 +154,7 @@ Primary source:
 
 - `.tmp/OpenVR-AdvancedSettings/src/overlaycontroller.cpp`
 
-What to apply in `VR.app`:
+What to apply in `VR-apps-lab`:
 
 - one shell/controller that owns runtime lifecycle
 - domain-specific controllers registered into the UI layer
@@ -176,7 +176,7 @@ Primary source:
 
 - `.tmp/OpenVR-AdvancedSettings/src/tabcontrollers/UtilitiesTabController.h`
 
-What to apply in `VR.app`:
+What to apply in `VR-apps-lab`:
 
 - battery widgets
 - keyboard/macro actions
@@ -184,7 +184,7 @@ What to apply in `VR.app`:
 - tiny focused wrist widgets
 - feature flags for optional micro-tools
 
-This strongly supports the "many small useful tools" direction for `VR.app`.
+This strongly supports the "many small useful tools" direction for `VR-apps-lab`.
 
 ### 7. Statistics and health panels
 
@@ -195,14 +195,14 @@ Primary source:
 
 - `.tmp/OpenVR-AdvancedSettings/src/tabcontrollers/StatisticsTabController.h`
 
-What to apply in `VR.app`:
+What to apply in `VR-apps-lab`:
 
 - metrics overlay
 - movement/session statistics
 - controller-speed diagnostics
 - session resettable counters
 
-This is a strong reference for a future `VR.app metrics` feature set.
+This is a strong reference for a future `VR-apps-lab metrics` feature set.
 
 ### 8. SteamVR system integration and per-app bindings
 
@@ -219,7 +219,7 @@ Primary source:
 
 - `.tmp/OpenVR-AdvancedSettings/src/tabcontrollers/SteamVRTabController.h`
 
-What to apply in `VR.app`:
+What to apply in `VR-apps-lab`:
 
 - per-app profiles
 - pairing helpers
@@ -238,12 +238,12 @@ The strongest product-level ideas from `OpenVR-AdvancedSettings` are:
 6. `Metrics and health stats`
 7. `Profiles and per-app behavior`
 
-## What VR.app should not copy directly
+## What VR-apps-lab should not copy directly
 
 ### 1. The whole suite as one monolith
 
 `OpenVR-AdvancedSettings` is powerful, but it is also broad.
-For `VR.app`, it is better to preserve modularity and build smaller utilities
+For `VR-apps-lab`, it is better to preserve modularity and build smaller utilities
 that share one foundation.
 
 ### 2. Direct GPL code reuse without a licensing decision
@@ -270,9 +270,9 @@ The reusable part is:
 - dual VR/desktop surface model
 - modular utility tabs
 
-## Concrete VR.app applications
+## Concrete VR-apps-lab applications
 
-The most direct uses for `VR.app` are:
+The most direct uses for `VR-apps-lab` are:
 
 ### Near-term
 
@@ -294,7 +294,7 @@ The most direct uses for `VR.app` are:
 ## Bottom line
 
 `OpenVR-AdvancedSettings` is one of the most important repositories in the
-entire `VR.app` research base because it proves that:
+entire `VR-apps-lab` research base because it proves that:
 
 - utility overlays can become a serious product
 - one shared shell can host many tools

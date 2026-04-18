@@ -1,6 +1,6 @@
 # Research Program
 
-This folder defines how `VR.app` should conduct repository research in a
+This folder defines how `VR-apps-lab` should conduct repository research in a
 repeatable way.
 
 ## Files

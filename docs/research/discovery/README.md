@@ -1,6 +1,6 @@
 # Discovery
 
-This folder defines how `VR.app` should keep finding new repositories related to
+This folder defines how `VR-apps-lab` should keep finding new repositories related to
 VR utilities, overlays, diagnostics, bridges, runtimes, accessibility tools,
 and experimental XR workflows.
 

@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Goal: keep a prioritized list of repositories that either:
-  - are not yet represented in `VR.app`;
+  - are not yet represented in `VR-apps-lab`;
   - are only lightly covered;
   - or belong to a high-value overlap family that deserves a deeper code-level
     pass.
@@ -24,7 +24,7 @@ implementation details.
 
 These are the strongest next candidates.
 
-| Project | Current status in `VR.app` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
 | `BnuuySolutions/PSVR2Toolkit` | Partially studied | Vendor-enhancement layer over an official headset stack | Medium | High | IPC layout, developer API surface, driver patch boundaries |
 | `MuffinTastic/steamvr-exconfig` | Partially studied | Pre-launch SteamVR config utility with narrow focus | Medium | High | SteamVR settings model, disabled overlay/driver flow, restart assumptions |
@@ -58,7 +58,7 @@ These were discovered in the latest GitHub source pass and added to the
 registry, but not yet studied deeply enough to promote beyond `Not studied
 deeply`.
 
-| Project | Current status in `VR.app` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
 | `KainosSoftwareLtd/VRSceneOverlay` | Not studied deeply | Unity scene-overlay implementation sample | Medium | Medium | Overlay bootstrap, scene composition, Unity package layout |
 | `artumino/SteamVR_HUDCenter` | Not studied deeply | HUD-centering micro-tool | Low | Medium | Transform logic and comfort UX |
@@ -77,7 +77,7 @@ deeply`.
 These were discovered during the Wave 9 source pass, added to the registry, and
 kept for the next deeper inspection round.
 
-| Project | Current status in `VR.app` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
 | `Ybalrid/OpenXR-Runtime-Manager` | Not studied deeply | Yet another runtime-manager implementation with a likely different UX and detection model | Medium | High | Runtime discovery logic, registry handling, layer-awareness, UX differences versus `xr-picker` and other switchers |
 | `clear-xr/clearxr-server` | Not studied deeply | Runtime-side or service-side XR infrastructure that may broaden the runtime-intelligence family | Medium | Medium | Determine actual scope, runtime/service boundary, and whether it fits doctor/monitor tooling or a different family |
@@ -95,7 +95,7 @@ kept for the next deeper inspection round.
 These were discovered during the Wave 10 source pass, or identified as the
 next comparison nodes after the new code-level study.
 
-| Project | Current status in `VR.app` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
 | `alexander-clarke/openvr-room-mapping` | Not studied deeply | Spatial and room-mapping angle adjacent to passthrough and environment-capture research | Medium | Medium | Mapping method, output artifacts, whether it belongs closer to calibration, passthrough, or creator-tool families |
 
@@ -103,7 +103,7 @@ next comparison nodes after the new code-level study.
 
 These were surfaced or only partially exhausted during the Wave 11 source pass.
 
-| Project | Current status in `VR.app` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
 | `1runeberg/OpenXRProvider` | Partially studied | Library plus sandbox wrapper around raw OpenXR bring-up | High | Medium | Input profiles, extension wrappers, sandbox render loop, and where the wrapper surface stops abstracting raw OpenXR |
 | `OpenDisplayXR/OpenDisplayXR-VDD` | Not studied deeply | Simulated OpenVR/OpenXR virtual hardware driver path | Medium | Medium | Wait for stronger source/docs, then compare with `virtual_display`, `Virtual-Display-Driver`, and `VRto3D` |
@@ -154,7 +154,7 @@ These are larger than a single repo and should guide the next research wave.
   `VROverlay`, `SteamVR-Webkit`, `vr-streaming-overlay`,
   `steamvr_overlay_vulkan`, `VRSceneOverlay`
 - Why it matters:
-  this is where `VR.app` can learn concrete overlay construction techniques
+  this is where `VR-apps-lab` can learn concrete overlay construction techniques
   across Unity, Godot, C#, and modern native C++.
 
 ### 7. `SteamVR environment helpers and runtime hygiene tools`
@@ -212,7 +212,7 @@ These are larger than a single repo and should guide the next research wave.
 
 ## Recommended next move
 
-If `VR.app` continues this research, the next most valuable deep-pass order is:
+If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
 
 1. `WebSocket tracker drivers`
 2. `VirtualMotionTracker and OSC bridge family`

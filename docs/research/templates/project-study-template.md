@@ -13,7 +13,7 @@ Short description of the project.
 
 ## Why it matters
 
-Why this repository is relevant to `VR.app`.
+Why this repository is relevant to `VR-apps-lab`.
 
 ## Interesting ideas
 
@@ -63,7 +63,7 @@ Why:
 - runtime paths
 - feature areas
 
-## Recommended `VR.app` follow-up
+## Recommended `VR-apps-lab` follow-up
 
 - none
 - add to family matrix

@@ -1,7 +1,7 @@
 # VR Projects Wave 7: Depth Pass for Under-Documented Repos
 
 - Date: `2026-04-11`
-- Goal: identify the projects in `VR.app` that still had relatively light
+- Goal: identify the projects in `VR-apps-lab` that still had relatively light
   coverage, download them, inspect their current repository state, and add
   deeper notes that are useful for future implementation work.
 
@@ -56,7 +56,7 @@ These were selected because they had one or more of the following issues:
   toolkit. The repo emphasizes `MSI installer`, `automatic layer
   registration`, `DX11/DX12 support`, and a lightweight `OpenXR API layer`
   positioning.
-- Why that matters for `VR.app`:
+- Why that matters for `VR-apps-lab`:
   it is a useful reference for `distribution model`, `installer-driven OpenXR
   layer registration`, and a minimal user-facing pitch for an XR utility.
 - Reuse value:
@@ -206,7 +206,7 @@ These were selected because they had one or more of the following issues:
 - Reuse value:
   none from the current GitHub snapshot beyond tracking the migration.
 - Caveat:
-  this project remains under-documented inside `VR.app` unless we decide to
+  this project remains under-documented inside `VR-apps-lab` unless we decide to
   explicitly follow the non-GitHub upstream later.
 - Sources:
   [repo](https://github.com/CrispyPin/ovr-utils)
@@ -290,7 +290,7 @@ These were selected because they had one or more of the following issues:
 ### 11. `Nyabsi/openvr-metrics`
 
 - Previous coverage weakness:
-  the original note in `VR.app` relied on store metadata because repo access was
+  the original note in `VR-apps-lab` relied on store metadata because repo access was
   unreliable at that time.
 - New findings from the current repo:
   the project is fully inspectable and significantly richer than the earlier
@@ -347,7 +347,7 @@ product is not a single overlay but a `container for multiple utility views`.
 `inspection`, `export`, and `creator-facing XR utilities`, not just overlays
 for headset users.
 
-## Best backlog updates for `VR.app`
+## Best backlog updates for `VR-apps-lab`
 
 Based on this pass, these additions are now better justified:
 
@@ -364,7 +364,7 @@ Based on this pass, these additions are now better justified:
 
 ## Bottom line
 
-This pass confirmed that the weakest-covered projects in `VR.app` were not
+This pass confirmed that the weakest-covered projects in `VR-apps-lab` were not
 unimportant projects. In several cases, they were some of the best references
 for:
 

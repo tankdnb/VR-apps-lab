@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Goal: define how a newly discovered repository should be processed and added
-  to `VR.app`.
+  to `VR-apps-lab`.
 
 ## Step 1: Candidate intake
 
@@ -88,7 +88,7 @@ Decide where the result belongs:
 
 Always answer:
 
-- does this repo unlock or strengthen a possible `VR.app` module?
+- does this repo unlock or strengthen a possible `VR-apps-lab` module?
 
 If yes, note the likely product category:
 

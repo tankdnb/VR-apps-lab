@@ -13,4 +13,4 @@ The point is to answer a different question than the project registry:
 
 - `vr-utility-methods-catalog.md`  
   Canonical catalog of methods and implementation approaches that can be used
-  when designing new VR tools inside `VR.app`.
+  when designing new VR tools inside `VR-apps-lab`.

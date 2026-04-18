@@ -3,13 +3,13 @@
 - Date: `2026-04-10`
 - Goal: close the gaps from an additional user-provided list of VR utility
   repositories by separating:
-  - projects already covered in `VR.app`
+  - projects already covered in `VR-apps-lab`
   - projects newly added in this pass
   - the strongest new ideas that emerge from them
 
 ## Coverage status for the submitted list
 
-The following projects were already covered in earlier `VR.app` research docs,
+The following projects were already covered in earlier `VR-apps-lab` research docs,
 primarily in:
 
 - `vr-projects-wave-3-utilities.md`
@@ -66,7 +66,7 @@ Newly added in this pass:
   layer enable/disable, custom rename support, CLI and GUI modes in one small
   app.
 - Best reuse value:
-  direct feature inspiration for a future `VR.app OpenXR Doctor`, especially the
+  direct feature inspiration for a future `VR-apps-lab OpenXR Doctor`, especially the
   idea that runtime switching and layer toggling should live together.
 - Caveat:
   requires admin rights and is `GPL-3.0`.
@@ -102,7 +102,7 @@ Newly added in this pass:
   tracking state, low-battery notifications, charge-state notifications, support
   for both standalone desktop view and in-VR overlay.
 - Best reuse value:
-  direct inspiration for a `VR.app Device Monitor` and battery/tracking health
+  direct inspiration for a `VR-apps-lab Device Monitor` and battery/tracking health
   overlay.
 - Caveat:
   OpenVR-specific and partly geared toward power users.
@@ -122,7 +122,7 @@ Newly added in this pass:
   configurable poll interval, Windows Service installation path, `appsettings`
   driven configuration.
 - Best reuse value:
-  future `VR.app` service-mode device management and auto-start automation.
+  future `VR-apps-lab` service-mode device management and auto-start automation.
 - Caveat:
   command-line first and tightly scoped to base stations.
 - Sources:
@@ -139,7 +139,7 @@ Newly added in this pass:
   monitoring `pi_server.exe` instead of generic SteamVR server, service-based
   automation, MSI installer packaging, `.NET 8`-based utility/service split.
 - Best reuse value:
-  reminder that `VR.app` device services should support pluggable runtime
+  reminder that `VR-apps-lab` device services should support pluggable runtime
   watchers rather than hardcoding only SteamVR.
 - Caveat:
   narrower audience and vendor-specific focus.
@@ -158,7 +158,7 @@ Newly added in this pass:
   that keeps updating during use, explicit flow for switching from regular to
   continuous calibration.
 - Best reuse value:
-  strong product direction for `VR.app calibration helpers`, especially for
+  strong product direction for `VR-apps-lab calibration helpers`, especially for
   mixed-tracking or long-session drift correction tools.
 - Caveat:
   requires a tracker on the headset and remains a specialist tool.
@@ -196,7 +196,7 @@ answers:
 - whether tracking is good
 - what vendor/model each device really is
 
-This strengthens the case for a `VR.app Device Monitor`.
+This strengthens the case for a `VR-apps-lab Device Monitor`.
 
 ### 3. Service-backed automation is a recurring pattern
 
@@ -218,7 +218,7 @@ That pattern is reusable beyond base stations.
 
 That makes calibration helpers more compelling as an ongoing utility family.
 
-## Recommended updates to the VR.app backlog
+## Recommended updates to the VR-apps-lab backlog
 
 These additions reinforce four especially strong directions:
 
@@ -244,5 +244,5 @@ This pass did not just add more projects; it filled specific capability gaps:
 - service-backed VR hardware automation
 - continuous calibration
 
-Those are all directly useful to `VR.app` and strengthen it as a platform for
+Those are all directly useful to `VR-apps-lab` and strengthen it as a platform for
 practical VR tools.

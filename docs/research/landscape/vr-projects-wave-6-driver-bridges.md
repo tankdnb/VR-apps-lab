@@ -20,7 +20,7 @@ This wave adds a different but very important layer of knowledge:
 - how a desktop app can augment an official vendor stack
 - how small hardware-specific tools become useful bridge products
 
-It also strengthens the idea that `VR.app` should not think only in terms of
+It also strengthens the idea that `VR-apps-lab` should not think only in terms of
 "overlay apps". There is also a whole product space in:
 
 - driver-backed utilities
@@ -89,7 +89,7 @@ It also strengthens the idea that `VR.app` should not think only in terms of
   the codebase is a small WinForms app with classes like `SteamVRConfig`,
   `OpenVRPaths`, `VRAppSetting`, and `Config`.
 - Best reuse value:
-  direct inspiration for a future `VR.app quick config tool` and lightweight
+  direct inspiration for a future `VR-apps-lab quick config tool` and lightweight
   desktop companions.
 - Caveat:
   very narrow scope, which is also its strength.
@@ -129,7 +129,7 @@ It also strengthens the idea that `VR.app` should not think only in terms of
   page, WebSocket and local IPC-friendly architecture, multi-tracker updates in
   a single request.
 - Best reuse value:
-  `VR.app tracker service`, remote tracker injection, local automation bridge,
+  `VR-apps-lab tracker service`, remote tracker injection, local automation bridge,
   WebSocket-based device services.
 - Caveat:
   driver-level deployment complexity and no higher-level polished UX.
@@ -223,7 +223,7 @@ It also strengthens the idea that `VR.app` should not think only in terms of
   body-state bridge, translation layer from an existing external ecosystem into
   SteamVR tracking objects, specialized but very practical interoperability.
 - Best reuse value:
-  future `VR.app` bridge modules that translate third-party state into VR device
+  future `VR-apps-lab` bridge modules that translate third-party state into VR device
   abstractions.
 - Caveat:
   tightly coupled to the Virtual Desktop ecosystem.
@@ -267,7 +267,7 @@ It also strengthens the idea that `VR.app` should not think only in terms of
   external "poser" processes that implement tracking or input systems, Python
   and C++ bindings, Linux support.
 - Best reuse value:
-  `VR.app` future driver experimentation, protocol design, and "driver plus
+  `VR-apps-lab` future driver experimentation, protocol design, and "driver plus
   external process" patterns.
 - Caveat:
   more of a developer foundation than an end-user utility.
@@ -346,7 +346,7 @@ It also strengthens the idea that `VR.app` should not think only in terms of
   devices, tracking references, custom render models, explicit SteamVR debugging
   guidance.
 - Best reuse value:
-  baseline architecture reference for any future driver-side work in `VR.app`.
+  baseline architecture reference for any future driver-side work in `VR-apps-lab`.
 - Caveat:
   tutorial foundation, not a product utility.
 - Sources:
@@ -363,7 +363,7 @@ It also strengthens the idea that `VR.app` should not think only in terms of
   VR utility, separation of calibration UX from the underlying eye-tracking
   stack.
 - Best reuse value:
-  calibration-flow design for `VR.app`, especially where a visual guided wizard
+  calibration-flow design for `VR-apps-lab`, especially where a visual guided wizard
   is needed in-VR.
 - Caveat:
   README is very minimal, so this is more a direction signal than a fully
@@ -400,7 +400,7 @@ This pattern shows up repeatedly:
 - `OpenGloves`
 - various lighthouse/device tools from earlier waves
 
-This suggests that `VR.app` should not assume everything belongs in one process.
+This suggests that `VR-apps-lab` should not assume everything belongs in one process.
 For harder utility domains, a good architecture is often:
 
 - runtime driver/service
@@ -442,7 +442,7 @@ Even among all the complex driver systems, there is still strong evidence for:
 - external config editors
 - calibration-only overlays
 
-So `VR.app` should continue to allow very small utilities to exist beside bigger
+So `VR-apps-lab` should continue to allow very small utilities to exist beside bigger
 systems.
 
 ### 5. `Domain-specific hardware bridges` are unusually strong ideas
@@ -454,10 +454,10 @@ The most interesting products in this wave are often very specific:
 - Arduino HMD
 - glove driver
 
-That suggests `VR.app` could eventually host highly focused utility modules for
+That suggests `VR-apps-lab` could eventually host highly focused utility modules for
 specific niches without needing them to be mass-market.
 
-## Recommended additions to the VR.app backlog
+## Recommended additions to the VR-apps-lab backlog
 
 This wave especially strengthens these directions:
 
@@ -482,7 +482,7 @@ This wave especially strengthens these directions:
 
 ## Bottom line
 
-This wave pushes `VR.app` closer to a full VR tooling ecosystem:
+This wave pushes `VR-apps-lab` closer to a full VR tooling ecosystem:
 
 - overlays
 - desktop helpers

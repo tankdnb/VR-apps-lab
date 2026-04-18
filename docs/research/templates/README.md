@@ -1,7 +1,7 @@
 # Research Templates
 
 This folder contains templates used when adding a new repository study to
-`VR.app`.
+`VR-apps-lab`.
 
 ## Files
 

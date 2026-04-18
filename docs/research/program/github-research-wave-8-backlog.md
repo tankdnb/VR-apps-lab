@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Scope: new GitHub discovery wave focused on repositories missing from the
-  current `VR.app` registry.
+  current `VR-apps-lab` registry.
 
 ## Status legend
 

@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Goal: add the next serious GitHub discovery wave for repositories that were
-  not yet in `VR.app`, focusing on runtime intelligence tools, headless overlay
+  not yet in `VR-apps-lab`, focusing on runtime intelligence tools, headless overlay
   hosts, dashboard micro-utilities, and tracking-development helpers.
 
 ## Why this wave exists
@@ -61,7 +61,7 @@ This wave followed the repository's post-restructure research pipeline:
   a machine-readable inventory of OpenXR runtime and middleware extension
   support that is rendered into a public support report.
 - Why it matters:
-  it adds a pattern `VR.app` did not previously represent clearly enough:
+  it adds a pattern `VR-apps-lab` did not previously represent clearly enough:
   capability intelligence as structured data instead of only prose notes.
 - Interesting ideas:
   split inventories for `runtimes` and `clients`; schema-backed JSON files;
@@ -81,7 +81,7 @@ This wave followed the repository's post-restructure research pipeline:
   this is a community-maintained knowledge source, not an always-live runtime
   probe.
 - What to inspect next:
-  diff/report generation paths and whether `VR.app` should adopt a similar
+  diff/report generation paths and whether `VR-apps-lab` should adopt a similar
   machine-readable compatibility layer.
 
 ## `rpavlik/xr-picker`
@@ -143,7 +143,7 @@ This wave followed the repository's post-restructure research pipeline:
   it is much more of a vendor/dev workflow tool than a consumer utility.
 - What to inspect next:
   additional item sets, runtime reference comparison flow, and whether similar
-  ideas can support `VR.app` calibration helpers.
+  ideas can support `VR-apps-lab` calibration helpers.
 
 ## `elliotttate/OpenXR-Simulator`
 
@@ -234,7 +234,7 @@ This wave followed the repository's post-restructure research pipeline:
   the integration broke when Spotify changed the desktop client behavior.
 - What to inspect next:
   manifest generation, thumbnail refresh path, and whether the Qt input-routing
-  pattern can inform future `VR.app` overlays.
+  pattern can inform future `VR-apps-lab` overlays.
 
 ## `cnlohr/openvr_overlay_model`
 
@@ -324,7 +324,7 @@ This wave followed the repository's post-restructure research pipeline:
   optimized for one problem and one ecosystem rather than broad reusability.
 - What to inspect next:
   autostart flow, asset packaging, and whether the same loop pattern can support
-  other tiny status overlays in `VR.app`.
+  other tiny status overlays in `VR-apps-lab`.
 
 ## `I5UCC/VRCTextboxSTT`
 
@@ -445,7 +445,7 @@ This wave followed the repository's post-restructure research pipeline:
   still depends on the underlying `pyopenvr` ecosystem and older Python/OpenVR
   assumptions.
 - What to inspect next:
-  UDP paths, device-role handling, and whether a modernized `VR.app` Python tool
+  UDP paths, device-role handling, and whether a modernized `VR-apps-lab` Python tool
   layer should adopt similar serial-stable naming behavior.
 
 ## Repositories discovered in this wave but not yet deeply studied
@@ -465,7 +465,7 @@ This wave followed the repository's post-restructure research pipeline:
 
 ## Main conclusions from this wave
 
-1. `VR.app` needed better coverage of `runtime intelligence` as a first-class
+1. `VR-apps-lab` needed better coverage of `runtime intelligence` as a first-class
    utility category, not only switchers and overlays.
 2. `Headless or hidden-window overlay hosts` are now clearly a reusable method,
    not just an implementation quirk.

@@ -1,7 +1,7 @@
 # VR Projects Wave 5: OSC, Marker Tracking, and Device Micro-Tools
 
 - Date: `2026-04-10`
-- Goal: add another niche-focused wave of VR projects that strengthen `VR.app`
+- Goal: add another niche-focused wave of VR projects that strengthen `VR-apps-lab`
   in three areas:
   - `OSC and external automation bridges`
   - `marker-based tracking and low-cost tracking utilities`
@@ -10,7 +10,7 @@
 ## Coverage status for the submitted list
 
 The following projects from the submitted list were already covered in earlier
-`VR.app` docs:
+`VR-apps-lab` docs:
 
 - `fredemmott/OpenXR-API-Layers-GUI`
 - `ytdlder/OpenXR-Switcher`
@@ -55,7 +55,7 @@ Newly documented in this pass:
   device selection, automatic transform placement relative to another device.
 - Best reuse value:
   visual debugging, navigation markers, calibration hints, and device-label
-  overlays for `VR.app`.
+  overlays for `VR-apps-lab`.
 - Caveat:
   narrow scope, but that is also its strength.
 - Sources:
@@ -74,7 +74,7 @@ Newly documented in this pass:
   developer/debug commands, lightweight command server instead of heavy overlay
   UI.
 - Best reuse value:
-  external automation bridge for `VR.app`, especially if we expose VR actions to
+  external automation bridge for `VR-apps-lab`, especially if we expose VR actions to
   OSC or other event buses.
 - Caveat:
   focused on a small set of commands rather than a broad automation platform.
@@ -91,7 +91,7 @@ Newly documented in this pass:
   configurable parameter names via `config.json`, reusing SteamVR bindings as
   the input side while treating OSC as the output side, simple bridge design.
 - Best reuse value:
-  controller-to-automation bridges and app integration tooling in `VR.app`.
+  controller-to-automation bridges and app integration tooling in `VR-apps-lab`.
 - Caveat:
   narrow scope and older UX.
 - Sources:
@@ -110,7 +110,7 @@ Newly documented in this pass:
   "while-held = true" semantics, lightweight companion app with direct user
   configuration.
 - Best reuse value:
-  button automation and event routing modules for `VR.app`.
+  button automation and event routing modules for `VR-apps-lab`.
 - Caveat:
   VRChat-centered and more specific than a general bridge.
 - Sources:
@@ -131,7 +131,7 @@ Newly documented in this pass:
   speech-to-text as overlay content, captions as a dedicated assistive tool, C#
   overlay pipeline for accessibility instead of entertainment.
 - Best reuse value:
-  a future `VR.app accessibility overlay` family.
+  a future `VR-apps-lab accessibility overlay` family.
 - Caveat:
   transcription accuracy and latency depend on the speech pipeline.
 - Sources:
@@ -188,7 +188,7 @@ Newly documented in this pass:
   tracking positioned as a practical alternative to expensive hardware.
 - Best reuse value:
   low-cost tracking research, community documentation patterns, and hardware
-  accessibility ideas for `VR.app`.
+  accessibility ideas for `VR-apps-lab`.
 - Caveat:
   much larger than a simple utility and primarily focused on full-body tracking.
 - Sources:
@@ -264,7 +264,7 @@ Newly documented in this pass:
   battery-only micro-tooling, extremely narrow focus, possibility of a tiny
   always-on companion app.
 - Best reuse value:
-  supports the case for modular battery widgets inside `VR.app`.
+  supports the case for modular battery widgets inside `VR-apps-lab`.
 - Caveat:
   low confidence. The public repo page currently looks partially inconsistent,
   with sample content visible alongside the repo description. Treat it as a
@@ -282,7 +282,7 @@ This wave strongly reinforces OSC as a useful interface layer:
 - `SteamVR_To_OSC`
 - `OpenVR2OSC`
 
-That suggests `VR.app` should eventually consider:
+That suggests `VR-apps-lab` should eventually consider:
 
 - `OSC in`
 - `OSC out`
@@ -310,7 +310,7 @@ The ArUco/AprilTag projects together show a useful subdomain:
 - camera calibration workflows
 - data-driven tracker definitions
 
-This may not be the first `VR.app` product line, but it is a valuable research
+This may not be the first `VR-apps-lab` product line, but it is a valuable research
 branch.
 
 ### 4. Setup backup/restore is a separate utility class
@@ -322,7 +322,7 @@ management:
 - transportable room setups
 - setup deployment helpers
 
-That can become part of a broader `VR.app room tools` family.
+That can become part of a broader `VR-apps-lab room tools` family.
 
 ### 5. Battery tools can stay tiny
 
@@ -334,7 +334,7 @@ be:
 - wrist widgets
 - notification-only services
 
-## Recommended updates to the VR.app backlog
+## Recommended updates to the VR-apps-lab backlog
 
 This wave strengthens these candidate directions:
 
@@ -368,5 +368,5 @@ repository:
 - battery micro-utilities
 
 These are exactly the kinds of specialized utilities that fit the long-term
-vision of `VR.app` as a platform for many focused VR tools instead of a single
+vision of `VR-apps-lab` as a platform for many focused VR tools instead of a single
 app.

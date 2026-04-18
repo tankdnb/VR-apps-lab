@@ -3,7 +3,7 @@
 - Date: `2026-04-18`
 - Scope: next GitHub discovery wave focused on runtime adapters,
   virtual-display drivers, validation helpers, driver examples, and workflow
-  micro-utilities that were not yet tracked in `VR.app`.
+  micro-utilities that were not yet tracked in `VR-apps-lab`.
 
 ## Status legend
 

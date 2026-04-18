@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Goal: maintain a single index of VR-related GitHub projects that are useful as
-  references, code donors, or product inspiration for `VR.app`.
+  references, code donors, or product inspiration for `VR-apps-lab`.
 
 This file complements:
 
@@ -67,7 +67,7 @@ This file complements:
   - `product reference`
   - `research only`
 
-## Already tracked in VR.app
+## Already tracked in VR-apps-lab
 
 These projects already have dedicated notes or are part of the existing
 landscape document:
@@ -145,7 +145,7 @@ ones that were not yet documented in the repository.
   remote overlay session model, layer-host split, RPC/shared-memory style
   communication, "overlay session inside unaware host app" concept.
 - Best reuse value:
-  architecture reference if `VR.app` ever grows from companion overlays into a
+  architecture reference if `VR-apps-lab` ever grows from companion overlays into a
   true OpenXR layer utility.
 - Caveat:
   archived, experimental, and not a shipping-ready production basis.
@@ -164,7 +164,7 @@ ones that were not yet documented in the repository.
   runtime switching, extension enumeration, human-readable spec inspection,
   separate elevated helper for switching runtime, CLI and GUI parity.
 - Best reuse value:
-  `VR.app doctor` and future `OpenXR diagnostics` tools.
+  `VR-apps-lab doctor` and future `OpenXR diagnostics` tools.
 - Caveat:
   it is a developer tool, not a user-facing overlay product.
 - Sources:
@@ -218,7 +218,7 @@ ones that were not yet documented in the repository.
   recording, optional mirror-view frame capture, compatibility with OBS-style
   workflows.
 - Best reuse value:
-  `VR.app` diagnostics and experiment logging tools.
+  `VR-apps-lab` diagnostics and experiment logging tools.
 - Caveat:
   more research-oriented than end-user polished.
 - Sources:
@@ -236,7 +236,7 @@ ones that were not yet documented in the repository.
   virtual tracker abstraction, OSC pose bridge, "your own hardware becomes a VR
   tracker" model.
 - Best reuse value:
-  future `VR.app tracker bridge`, external-sensor experiments, calibration
+  future `VR-apps-lab tracker bridge`, external-sensor experiments, calibration
   tools.
 - Caveat:
   very specific to the virtual-tracker path.
@@ -253,7 +253,7 @@ ones that were not yet documented in the repository.
   per-title key configs, fixed SteamVR actions mapped to flexible desktop
   output, startup with SteamVR, explicit chord support.
 - Best reuse value:
-  controller-to-hotkey module for `VR.app`, useful for streamer tools,
+  controller-to-hotkey module for `VR-apps-lab`, useful for streamer tools,
   simulators, and quick actions.
 - Caveat:
   keyboard output is only part of a larger utility vision, not the whole
@@ -306,7 +306,7 @@ ones that were not yet documented in the repository.
   `runtime/app/render/wait` timing separation, D3D11 VRAM and NVIDIA throttle
   data.
 - Best reuse value:
-  future `OpenXR metrics` and frame-loop diagnostics in `VR.app`.
+  future `OpenXR metrics` and frame-loop diagnostics in `VR-apps-lab`.
 - Caveat:
   explicitly "not a profiler"; diagnostic scope is focused.
 - Sources:
@@ -376,7 +376,7 @@ ones that were not yet documented in the repository.
   approachable OpenXR app model, built-in UI and interactions, rapid C#
   prototyping, mixed-reality friendly API surface.
 - Best reuse value:
-  fast prototype branch if `VR.app` starts building native OpenXR tools instead
+  fast prototype branch if `VR-apps-lab` starts building native OpenXR tools instead
   of only overlays.
 - Caveat:
   it is an engine-level framework, not just a utility toolkit.
@@ -414,7 +414,7 @@ ones that were not yet documented in the repository.
 - Best reuse value:
   architecture inspiration for Linux streaming/tooling scenarios.
 - Caveat:
-  streaming infrastructure is much larger than what `VR.app` needs right now.
+  streaming infrastructure is much larger than what `VR-apps-lab` needs right now.
 - Sources:
   [repo](https://github.com/WiVRn/WiVRn)
 
@@ -430,7 +430,7 @@ ones that were not yet documented in the repository.
   spatial display server, clients instead of overlays, app launchers, object
   management, desktop-peek-like spatial UX.
 - Best reuse value:
-  long-term product inspiration if `VR.app` ever grows beyond overlays into a
+  long-term product inspiration if `VR-apps-lab` ever grows beyond overlays into a
   real XR workspace shell.
 - Caveat:
   Linux-first, much larger scope than our current repo.
@@ -448,7 +448,7 @@ ones that were not yet documented in the repository.
   clean layer bootstrap flow, shim loading model, extension filtering logic,
   environment-variable activation guidance.
 - Best reuse value:
-  future `VR.app` OpenXR API-layer experiments.
+  future `VR-apps-lab` OpenXR API-layer experiments.
 - Caveat:
   template only; still needs product logic.
 - Sources:
@@ -532,14 +532,14 @@ Best references:
 
 ### 6. Virtual displays and reference desktops are underrated enablers
 
-If `VR.app` wants better desktop/reference workflows, these ideas matter:
+If `VR-apps-lab` wants better desktop/reference workflows, these ideas matter:
 
 - `DesktopPlus`
 - `WayVR`
 - `Virtual-Display-Driver`
 - `OpenVRDesktopDisplayPortal`
 
-## Best next additions to VR.app backlog
+## Best next additions to VR-apps-lab backlog
 
 Based on the full tracked project set, the highest-value additions are:
 
@@ -576,5 +576,5 @@ future tools:
 - `diagnostics and developer tools`
 - `tracking / calibration / integration helpers`
 
-That is a stronger and more realistic direction for `VR.app` than continuing to
+That is a stronger and more realistic direction for `VR-apps-lab` than continuing to
 bet everything on unsupported vendor passthrough paths.

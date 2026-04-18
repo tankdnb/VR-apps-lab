@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Goal: add the next serious GitHub discovery wave for repositories that were
-  not yet in `VR.app`, focusing on runtime implementations, vendor-shell
+  not yet in `VR-apps-lab`, focusing on runtime implementations, vendor-shell
   redirectors, headsetless workflows, mixed-runtime bridges, and SteamVR
   environment helpers.
 
@@ -164,7 +164,7 @@ This wave followed the repository's post-restructure research pipeline:
 - Caveats:
   mostly documentation, not reusable source code.
 - What to inspect next:
-  whether `VR.app` should keep a dedicated headsetless-workflow playbook and
+  whether `VR-apps-lab` should keep a dedicated headsetless-workflow playbook and
   compare this with richer virtual-driver approaches.
 
 ## `baffler/OBS-OpenVR-Input-Plugin`
@@ -306,7 +306,7 @@ This wave followed the repository's post-restructure research pipeline:
   mostly a setup recipe, not a full utility.
 - What to inspect next:
   how it compares with richer virtual-driver approaches and whether its Unity
-  helper pattern deserves a small snippet collection in `VR.app`.
+  helper pattern deserves a small snippet collection in `VR-apps-lab`.
 
 ## `BnuuySolutions/SteamVRLinuxFixes`
 
@@ -390,7 +390,7 @@ This wave followed the repository's post-restructure research pipeline:
 - Caveats:
   extremely narrow in scope.
 - What to inspect next:
-  whether `VR.app` should keep a sub-collection of config patchers and
+  whether `VR-apps-lab` should keep a sub-collection of config patchers and
   environment fixers as a distinct product family.
 
 ## Cross-cutting patterns extracted in this wave
@@ -443,7 +443,7 @@ the repository looks only at in-headset tools:
 `SteamVRLinuxFixes`, `WFOVFix`, and `OculusKiller` are not overlay products,
 but they solve painful real-world VR problems with focused engineering.
 
-## Most useful additions to `VR.app` from this wave
+## Most useful additions to `VR-apps-lab` from this wave
 
 - stronger support for `headsetless development` as a first-class research
   direction;
@@ -459,7 +459,7 @@ but they solve painful real-world VR problems with focused engineering.
 
 - GitHub:
   [alexander-clarke/openvr-room-mapping](https://github.com/alexander-clarke/openvr-room-mapping)
-- Current status in `VR.app`:
+- Current status in `VR-apps-lab`:
   `Not studied deeply`
 - Why it matters:
   it may add a useful room-scan or spatial-mapping angle to the

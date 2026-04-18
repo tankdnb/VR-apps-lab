@@ -49,9 +49,9 @@
 
 Это зафиксировано в коде:
 
-- [IFrameProcessor.cs](/Users/Username/Documents/VR.app/src/VRRealityWindow.Core/Abstractions/IFrameProcessor.cs)
-- [FrameProcessingPipeline.cs](/Users/Username/Documents/VR.app/src/VRRealityWindow.Core/Processing/FrameProcessingPipeline.cs)
-- [BottomFocusCropProcessor.cs](/Users/Username/Documents/VR.app/src/VRRealityWindow.Core/Processing/BottomFocusCropProcessor.cs)
+- [IFrameProcessor.cs](/Users/Username/Documents/VR-apps-lab/src/VRRealityWindow.Core/Abstractions/IFrameProcessor.cs)
+- [FrameProcessingPipeline.cs](/Users/Username/Documents/VR-apps-lab/src/VRRealityWindow.Core/Processing/FrameProcessingPipeline.cs)
+- [BottomFocusCropProcessor.cs](/Users/Username/Documents/VR-apps-lab/src/VRRealityWindow.Core/Processing/BottomFocusCropProcessor.cs)
 
 Почему это важно:
 

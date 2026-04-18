@@ -120,7 +120,7 @@ appear.
 
 ## Discovery quality filter
 
-A newly found repository is relevant to `VR.app` if it contributes at least one
+A newly found repository is relevant to `VR-apps-lab` if it contributes at least one
 of the following:
 
 - a reusable implementation method;

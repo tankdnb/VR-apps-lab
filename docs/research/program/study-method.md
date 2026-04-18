@@ -2,7 +2,7 @@
 
 - Date: `2026-04-18`
 - Goal: define a consistent way to study a VR-related repository and extract
-  useful implementation knowledge for `VR.app`.
+  useful implementation knowledge for `VR-apps-lab`.
 
 ## Core principle
 
@@ -13,7 +13,7 @@ For every repository, we want to understand:
 1. what user problem it solves;
 2. what technical pattern it uses;
 3. what parts are reusable;
-4. what product ideas it unlocks for `VR.app`;
+4. what product ideas it unlocks for `VR-apps-lab`;
 5. what still needs deeper inspection.
 
 ## Required fields for every project study
@@ -50,12 +50,12 @@ Every meaningful project note should eventually capture:
 
 ### Level 3: Donor extraction
 
-- concrete reusable patterns are extracted for `VR.app`;
+- concrete reusable patterns are extracted for `VR-apps-lab`;
 - integration risks and licensing constraints are clearly written.
 
 ### Level 4: Prototype influence
 
-- ideas from the repo directly inform a `VR.app` module, prototype, or code
+- ideas from the repo directly inform a `VR-apps-lab` module, prototype, or code
   experiment.
 
 ## Recommended study flow
@@ -102,7 +102,7 @@ Ask:
 
 - what is the smallest user-visible feature here?
 - is this a micro-utility, dashboard, service, or framework?
-- could this become a `VR.app` module?
+- could this become a `VR-apps-lab` module?
 
 ### Step 6: Registry update
 
@@ -139,14 +139,14 @@ They also include:
 
 - do not duplicate the repository README without adding interpretation;
 - do not mix "mentioned" and "deeply studied" as if they were the same;
-- do not add a repo to `VR.app` without updating family placement and study
+- do not add a repo to `VR-apps-lab` without updating family placement and study
   status;
 - do not treat forks as first-class priorities before understanding the
   upstream family.
 
 ## Verification rules for repository work
 
-`VR.app` is not validated like a normal single-product application.
+`VR-apps-lab` is not validated like a normal single-product application.
 
 The repository contains:
 

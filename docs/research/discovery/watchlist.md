@@ -51,7 +51,7 @@ What to look for:
 
 Why:
 
-- still underrepresented as a formal product branch in `VR.app`
+- still underrepresented as a formal product branch in `VR-apps-lab`
 
 What to look for:
 
@@ -78,7 +78,7 @@ What to look for:
 Why:
 
 - useful for extracting methods, not only product ideas
-- strongest path to better `VR.app` implementation guidance
+- strongest path to better `VR-apps-lab` implementation guidance
 
 What to look for:
 
@@ -103,7 +103,7 @@ What to look for:
 
 ## Next recommended discovery pass
 
-If expanding `VR.app` further, the next best pass should combine:
+If expanding `VR-apps-lab` further, the next best pass should combine:
 
 1. `tracker bridges`
 2. `OSC/control export`

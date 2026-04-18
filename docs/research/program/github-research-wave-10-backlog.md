@@ -3,7 +3,7 @@
 - Date: `2026-04-18`
 - Scope: next GitHub discovery wave focused on untracked repositories that add
   new runtime, bridge-driver, no-headset, capture, and SteamVR environment
-  patterns to `VR.app`.
+  patterns to `VR-apps-lab`.
 
 ## Status legend
 

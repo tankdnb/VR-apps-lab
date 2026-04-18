@@ -1,8 +1,8 @@
-# VR.app Platform Foundation
+# VR-apps-lab Platform Foundation
 
 ## Purpose
 
-`VR.app` is a public knowledge repository and reusable foundation for VR
+`VR-apps-lab` is a public knowledge repository and reusable foundation for VR
 utility development, not a single one-off prototype.
 
 The repository keeps the original `Reality Window` work, but now treats it as a
@@ -101,7 +101,7 @@ If the answer is mostly yes, it is a good candidate for this repository.
 
 ## Repository verification model
 
-`VR.app` should not use one single validation rule for every change.
+`VR-apps-lab` should not use one single validation rule for every change.
 
 This repository is both:
 

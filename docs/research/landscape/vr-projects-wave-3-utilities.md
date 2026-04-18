@@ -2,7 +2,7 @@
 
 - Date: `2026-04-10`
 - Goal: add another curated wave of VR-related repositories that were not yet
-  documented in `VR.app`, with a focus on utilities, overlay/app-layer tools,
+  documented in `VR-apps-lab`, with a focus on utilities, overlay/app-layer tools,
   managers, accessibility helpers, and service-style integrations.
 
 ## Executive summary
@@ -39,7 +39,7 @@ The strongest product and engineering ideas from this wave are:
   error detection for common API layer problems, actual layer ordering view,
   "fix common issues" UX, layer enable/disable/add/remove flow.
 - Best reuse value:
-  direct inspiration for a future `VR.app OpenXR Doctor / Layer Manager`.
+  direct inspiration for a future `VR-apps-lab OpenXR Doctor / Layer Manager`.
 - Caveat:
   mainly a desktop diagnostic/configuration tool, not an in-headset utility.
 - Sources:
@@ -56,7 +56,7 @@ The strongest product and engineering ideas from this wave are:
   presets for common runtimes, custom runtime entries, registry-based detection,
   explicit admin-elevation requirement, zero vendor app dependency for switching.
 - Best reuse value:
-  runtime-management features in a future `VR.app doctor` desktop companion.
+  runtime-management features in a future `VR-apps-lab doctor` desktop companion.
 - Caveat:
   only changes the system default runtime; app-specific runtime selection is a
   separate issue.
@@ -87,7 +87,7 @@ The strongest product and engineering ideas from this wave are:
 - What it is:
   template repository for building a basic OpenXR API layer.
 - Why it matters:
-  probably the strongest bootstrap for any future `VR.app` OpenXR-layer work on
+  probably the strongest bootstrap for any future `VR-apps-lab` OpenXR-layer work on
   Windows.
 - Interesting ideas:
   layer bootstrap flow, customization docs, example branches, script-assisted
@@ -133,7 +133,7 @@ The strongest product and engineering ideas from this wave are:
   window spawning into playspace, anchor/resize/curve/opacity actions, wrist
   watch controls, utility suite framing, app/library replacement inside VR.
 - Best reuse value:
-  `VR.app` wrist dashboard, desktop/reference windows, utility watch, and
+  `VR-apps-lab` wrist dashboard, desktop/reference windows, utility watch, and
   overlay profile system.
 - Caveat:
   archived and `GPL-3.0`.
@@ -361,7 +361,7 @@ The strongest product and engineering ideas from this wave are:
   addon installation scripts, auto-start with SteamVR, GUI plus CLI split,
   manual and automatic operating modes.
 - Best reuse value:
-  future `VR.app` service-mode utilities, especially Linux-side helpers.
+  future `VR-apps-lab` service-mode utilities, especially Linux-side helpers.
 - Caveat:
   Linux-specific.
 - Sources:
@@ -397,7 +397,7 @@ The strongest product and engineering ideas from this wave are:
   JSON payloads for overlays, channels, anchor targets, placement/animation
   parameters, custom image notifications, browser-testable WebSocket interface.
 - Best reuse value:
-  `VR.app remote overlay server`, desktop companion apps, automation hooks, and
+  `VR-apps-lab remote overlay server`, desktop companion apps, automation hooks, and
   multi-process control architecture.
 - Caveat:
   `GPL-3.0`; focus is notifications and overlay payload dispatch more than full
@@ -415,7 +415,7 @@ The strongest product and engineering ideas from this wave are:
   payload schema, transition/animation options, remote notifications from other
   applications, SteamVR-native plus custom notification blending.
 - Best reuse value:
-  notification subsystem design for `VR.app`.
+  notification subsystem design for `VR-apps-lab`.
 - Caveat:
   focused scope and appears lightly adopted.
 - Sources:
@@ -447,7 +447,7 @@ The strongest product and engineering ideas from this wave are:
   JSON bridge for SteamVR state, settings access, I/O exposure to external apps,
   service architecture that lets non-VR tools react to VR runtime state.
 - Best reuse value:
-  `VR.app automation bridge`, external integrations, dashboards, device state
+  `VR-apps-lab automation bridge`, external integrations, dashboards, device state
   mirroring.
 - Caveat:
   data bridge rather than end-user polished utility.
@@ -466,7 +466,7 @@ The strongest product and engineering ideas from this wave are:
   minimal overlay UX, one-job-only product focus, body-orientation utility
   design.
 - Best reuse value:
-  reminder that `VR.app` does not need every tool to be huge; simple utilities
+  reminder that `VR-apps-lab` does not need every tool to be huge; simple utilities
   can still be valuable and polished.
 - Caveat:
   narrow scope by design.
@@ -483,7 +483,7 @@ The strongest product and engineering ideas from this wave are:
   left-wrist anchored micro-overlay, "always glanceable" information design,
   tiny-product simplicity.
 - Best reuse value:
-  direct inspiration for a `VR.app wrist dashboard` and small modular wrist
+  direct inspiration for a `VR-apps-lab wrist dashboard` and small modular wrist
   widgets.
 - Caveat:
   very small scope and minimal codebase.
@@ -556,7 +556,7 @@ The strongest product and engineering ideas from this wave are:
   plugin loader design, small focused plugins, auto-start/stop via SteamVR
   overlay registration, media/chatbox/control integrations.
 - Best reuse value:
-  future plugin architecture for `VR.app`, especially for desktop-side services.
+  future plugin architecture for `VR-apps-lab`, especially for desktop-side services.
 - Caveat:
   VRChat-centric rather than general VR tooling.
 - Sources:
@@ -574,7 +574,7 @@ The strongest product and engineering ideas from this wave are:
   control, AFK detection, process management, extensible desktop utility
   platform.
 - Best reuse value:
-  inspiration for an eventual `VR.app automation hub` or plugin/graph system.
+  inspiration for an eventual `VR-apps-lab automation hub` or plugin/graph system.
 - Caveat:
   large scope and VRChat-specific center of gravity.
 - Sources:
@@ -591,7 +591,7 @@ This wave strongly reinforces a desktop-side XR configuration toolchain:
 - `OpenXR-Layer-Template`
 - `OpenXR-Layer-OBSMirror`
 
-This is enough to justify a serious `VR.app OpenXR Doctor` direction with:
+This is enough to justify a serious `VR-apps-lab OpenXR Doctor` direction with:
 
 - runtime detection
 - runtime switching
@@ -608,7 +608,7 @@ Projects like these point to a modular service model:
 - `OpenVR2WS`
 - `VnotifieR`
 
-This suggests a future `VR.app service bus` with:
+This suggests a future `VR-apps-lab service bus` with:
 
 - WebSocket/JSON control
 - notifications
@@ -638,7 +638,7 @@ Multiple projects point to wrist-first UX:
 - `DesktopPortal` watch
 - `SteamVR_ClockOverlay_Public`
 
-This makes `Wrist Dashboard` one of the best next `VR.app` products.
+This makes `Wrist Dashboard` one of the best next `VR-apps-lab` products.
 
 ### 5. Device management is worth treating as its own family
 
@@ -651,7 +651,7 @@ This wave adds a lot of proof for `VR device management`:
 
 This is a broader and more practical direction than passthrough alone.
 
-## Best additions to the VR.app backlog
+## Best additions to the VR-apps-lab backlog
 
 Based on this wave, the best concrete additions are:
 
@@ -680,7 +680,7 @@ Based on this wave, the best concrete additions are:
 
 ## Bottom line
 
-This wave pushes `VR.app` in a strong direction:
+This wave pushes `VR-apps-lab` in a strong direction:
 
 - not just overlays
 - not just passthrough experiments
