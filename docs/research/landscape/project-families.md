@@ -28,12 +28,15 @@ The next useful step is not more random expansion. It is `grouping`,
   valuable for comparison, but probably not worth a full standalone deep dive
   before the main upstream is understood.
 
-## Family 1: OpenXR runtime switchers and layer managers
+## Family 1: OpenXR runtime switchers, inventories, and layer managers
 
 This family is already converging into the future `OpenXR Doctor` direction.
 
 | Project | Status | Notes |
 |---|---|---|
+| `KhronosGroup/OpenXR-Inventory` | Already studied | Structured capability matrix for runtime and middleware support |
+| `rpavlik/xr-picker` | Already studied | Clean core/GUI split for runtime picking and manifest inspection |
+| `elliotttate/OpenXR-Simulator` | Already studied | Headsetless runtime and runtime-registration reference |
 | `fredemmott/OpenXR-API-Layers-GUI` | Already studied | Strongest layer diagnostics and enable/disable UX reference |
 | `WaGi-Coding/OpenXR-Runtime-Switcher` | Already studied | Runtime switching reference with admin-aware UX |
 | `UniStuttgart-VISUS/OpenXR-Runtime-Switcher` | Already studied | Alternate runtime switcher framing |
@@ -42,6 +45,9 @@ This family is already converging into the future `OpenXR Doctor` direction.
 | `mbucchia/OpenXR-Layer-Template` | Already studied | Bootstrap template for future layer work |
 | `Jabbah/OpenXR-Layer-OBSMirror` | Already studied | Practical example of a layer built from a template |
 | `maluoi/openxr-explorer` | Already studied | Strongest single reference for `OpenXR doctor/runtime inspector` |
+| `Ybalrid/OpenXR-Runtime-Manager` | Not studied deeply | Additional runtime-manager variant for comparison |
+| `pembem22/etvr-openxr-layer` | Not studied deeply | Niche OpenXR layer worth comparing with diagnostics/layer family |
+| `clear-xr/clearxr-server` | Not studied deeply | Candidate runtime-side service node to inspect later |
 
 ### Consolidation note
 
@@ -49,6 +55,7 @@ This is one of the highest-overlap families in the whole repository. The main
 output of this family for `VR.app` should be a single future product concept:
 
 - `OpenXR Doctor`
+- `runtime capability matrix`
 
 ## Family 2: SteamVR/OpenVR notification and remote-control overlays
 
@@ -61,6 +68,10 @@ notification behavior.
 | `jeppevinkel/OpenVRNotificationPipe` | Already studied | Focused notification pipe reference |
 | `WiiPlayer2/VnotifieR` | Partially studied | Same product family, useful as a comparison point |
 | `BOLL7708/OpenVR2WS` | Already studied | Broader runtime I/O and settings bridge |
+| `I5UCC/SteaMeeter` | Already studied | Dashboard bridge into an external audio/control system |
+| `I5UCC/ParameterSaveStates` | Not studied deeply | Related automation/control-surface family node |
+| `hai-vr/h-view` | Not studied deeply | Candidate remote/control utility worth a follow-up pass |
+| `MeroFune/GOpy` | Not studied deeply | Additional control/integration utility candidate |
 
 ### Consolidation note
 
@@ -83,6 +94,7 @@ need for flat duplication in the index.
 | `FennecLabsLtd/LighthouseManager` | Already studied | Config backup/restore framing |
 | `risa2000/lhctrl` | Already studied | Linux BLE micro-tool for v1 |
 | `risa2000/lh2ctrl` | Already studied | Linux BLE micro-tool for v2 |
+| `ugokutennp/watchman-pairing-assistant` | Already studied | GUI wrapper around pairing flows and `lighthouse_console` |
 
 ### Consolidation note
 
@@ -107,6 +119,7 @@ panel, and logging utility.
 | `Black4Blade/SteamVR-Devices-Battery-Status` | Already studied | Tiny battery micro-tool reference |
 | `rhaamo/OpenVR-Display-Devices` | Already studied | Broader device inventory view |
 | `copperpixel/steamvrbattery` | Already studied | Minimal CLI property-polling battery monitor |
+| `Denwa/vive-wireless-info-overlay` | Not studied deeply | Wireless-link and device-health overlay candidate |
 | `KaftanOS/SteamVR-Battery-Checker` | Not studied deeply | Charging-state micro-tool worth comparison |
 | `jangxx/openvr-battery-monitoring` | Not studied deeply | Likely useful for notifications/logging behavior |
 | `mutr/openvr_battery_monitor` | Not studied deeply | Another narrow monitoring variant worth comparing |
@@ -140,6 +153,8 @@ external data into `SteamVR/OpenVR devices`, `pose streams`, or `OSC events`.
 | `BarakChamo/OpenVR-OSC` | Not studied deeply | Should be added for broader OSC comparison |
 | `jangxx/steamvr-osc-control` | Already studied | Control bridge for SteamVR functions |
 | `choyai/SteamVRTrackerUtility` | Not studied deeply | Tracker role/power helper worth comparison with tracker bridge family |
+| `TriadSemi/triad_openvr` | Already studied | Strong Python wrapper for scripting, events, and device polling |
+| `biosmanager/unity-openvr-tracking` | Not studied deeply | Unity-side tracking bridge/reference candidate |
 
 ### Consolidation note
 
@@ -166,6 +181,7 @@ by runtime or operating system.
 | `wlx-overlay-x` | Already studied | Transitional OpenXR overlay path |
 | `fnuidesktop-VR` | Already studied | Direct desktop interaction patterns |
 | `wayvr` | Already studied | Low-overhead desktop/app-launching view |
+| `rrkpp/SpotifyOverlay` | Already studied | Qt dashboard micro-utility rendered offscreen into OpenVR |
 | `CrispyPin/ovr-utils` | Partially studied | GitHub snapshot is stale and moved off-platform |
 | `mittorn/ovr-utils-dashboard` | Partially studied | Useful dashboard-style variant |
 | `artumino/SteamVR_HUDCenter` | Not studied deeply | Centered HUD micro-utility worth a later pass |
@@ -196,6 +212,8 @@ product direction.
 | `MochiDoesVR/OpenVRCaptions` | Already studied | C#/SteamVR captions reference |
 | `matzman666/OpenVR-MicrophoneControl` | Already studied | Dashboard mute/PTT overlay with OS audio integration |
 | `Beyley/eepyxr` | Already studied | OpenXR overlay utility framed around comfort/sleep use |
+| `rrazgriz/VRCMicOverlay` | Already studied | Minimal HMD-relative mic-state overlay with OSC/audio hooks |
+| `I5UCC/VRCTextboxSTT` | Already studied | Local STT service with SteamVR overlay as one output surface |
 | `OpenVROverlayPipe` / notification tools | Already studied | Assistive notification angle |
 | `TurnSignal` | Already studied | Comfort/safety micro-utility |
 | `SteamVR_ClockOverlay_Public` | Already studied | Minimal assistive wrist-clock pattern |
@@ -331,6 +349,7 @@ creator-facing XR use than about simple end-user overlays.
 | `Nyabsi/openvr-metrics` | Already studied | Strong metrics + control overlay product reference |
 | `fredemmott/XRFrameTools` | Already studied | OpenXR frame-loop metrics reference |
 | `peacepenguin/Virtual-Display-Driver` | Already studied | Infrastructure for desktop and workflow scenarios |
+| `ValveSoftware/OpenXR-Canonical-Pose-Tool` | Already studied | Runtime-vendor pose validation and canonical-pose comparison tool |
 
 ### Consolidation note
 
@@ -348,6 +367,10 @@ not only how finished utility products behave.
 | `BenWoodford/SteamVR-Webkit` | Already studied | Browser-backed overlay toolkit with JS interop |
 | `beniwtv/vr-streaming-overlay` | Already studied | Godot multi-overlay shell with widget/config split |
 | `Nyabsi/steamvr_overlay_vulkan` | Already studied | Modern Vulkan/ImGui overlay template |
+| `Hotrian/HeadlessOverlayToolkit` | Already studied | Hidden-window and background-host overlay pattern in Unity |
+| `cnlohr/openvr_overlay_model` | Already studied | Experimental stereo-per-eye overlay technique for pseudo-3D content |
+| `JoeLudwig/overlay_experiments` | Already studied | Historical browser-backed OpenVR dashboard experiments |
+| `Martin-Oehler/SteamVR-WebApps` | Not studied deeply | Web-app-driven overlay direction worth comparing later |
 | `KainosSoftwareLtd/VRSceneOverlay` | Not studied deeply | Unity scene-overlay implementation reference |
 | `vrkit-platform/vrkit-platform` | Not studied deeply | OpenXR monitor/overlay platform worth deeper inspection |
 | `LunarG/OpenXR-Overlays-UE4-Plugin` | Not studied deeply | Engine-side overlay integration sample |

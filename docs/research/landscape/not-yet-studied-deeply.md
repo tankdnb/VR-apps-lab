@@ -72,6 +72,24 @@ deeply`.
 | `choyai/SteamVRTrackerUtility` | Not studied deeply | Tracker wake/role helper | Medium | Medium | Tracker management flow, role mapping, power handling |
 | `mbucchia/_ARCHIVE_OverXR` | Fork / variant only | Archive shell pointing to a once-promising overlay compatibility idea | Low | Medium | Whether useful code exists in releases, tags, or external mirrors |
 
+## Priority batch D: Wave 9 follow-up candidates
+
+These were discovered during the Wave 9 source pass, added to the registry, and
+kept for the next deeper inspection round.
+
+| Project | Current status in `VR.app` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `Ybalrid/OpenXR-Runtime-Manager` | Not studied deeply | Yet another runtime-manager implementation with a likely different UX and detection model | Medium | High | Runtime discovery logic, registry handling, layer-awareness, UX differences versus `xr-picker` and other switchers |
+| `clear-xr/clearxr-server` | Not studied deeply | Runtime-side or service-side XR infrastructure that may broaden the runtime-intelligence family | Medium | Medium | Determine actual scope, runtime/service boundary, and whether it fits doctor/monitor tooling or a different family |
+| `pembem22/etvr-openxr-layer` | Not studied deeply | Niche OpenXR layer candidate that may expose uncommon integration patterns | Medium | Medium | Layer bootstrap, extension assumptions, how it differs from generic OpenXR layer templates |
+| `Martin-Oehler/SteamVR-WebApps` | Not studied deeply | Web-app-centric SteamVR overlay direction | Medium | Medium | Browser/runtime integration model, overlay-host architecture, security and maintenance tradeoffs |
+| `I5UCC/ParameterSaveStates` | Not studied deeply | VRChat or control-surface state management that may complement remote-control overlays | Medium | Medium | State model, persistence approach, OSC or app-integration flow, overlap with `SteaMeeter` |
+| `Denwa/vive-wireless-info-overlay` | Not studied deeply | Micro-overlay focused on wireless headset/link diagnostics | Low | Medium | Data source, polling cadence, narrow-device UX, whether it generalizes into device-health overlays |
+| `hai-vr/h-view` | Not studied deeply | Specialized utility/control surface in the broader remote-control overlay family | Medium | Medium | Feature boundaries, external integration points, whether it is a dashboard or helper service |
+| `MeroFune/GOpy` | Not studied deeply | Experimental integration helper that may add a new desktop-to-VR bridge angle | Medium | Low | Actual problem scope, packaging model, and whether it contributes reusable bridge patterns |
+| `biosmanager/unity-openvr-tracking` | Not studied deeply | Unity-side helper for pulling OpenVR tracking into engine code | Medium | Medium | Tracking abstraction, device-role handling, and whether it belongs in the tracker-bridge learning path |
+| `MuffinTastic/openvr-device-positions` | Not studied deeply | Narrow device-position inspection helper | Medium | Medium | Pose enumeration model, output surface, diagnostic usefulness, overlap with `triad_openvr` and device monitors |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.

@@ -19,6 +19,7 @@ This file complements:
 - `vr-projects-wave-6-driver-bridges.md`
 - `vr-projects-wave-7-depth-pass.md`
 - `vr-projects-wave-8-github-source-pass.md`
+- `vr-projects-wave-9-runtime-overlay-devtools.md`
 
 ## How to use this index
 
@@ -31,8 +32,8 @@ This file complements:
   tracked repositories.
 - Use `not-yet-studied-deeply.md` as the backlog for the
   next code-level and architecture-level research passes.
-- Use this file as the combined index plus the second wave of additional
-  projects that were not yet documented in `VR.app`.
+- Use this file as the combined top-level index that points into the detailed
+  wave documents, family maps, registry, and deeper follow-up backlog.
 - Use `vr-projects-wave-3-utilities.md` for the next wave centered on utility
   apps, service tools, runtime switchers, and accessibility-focused overlays.
 - Use `vr-projects-wave-4-gap-fill.md` for later gap-filling passes that map a
@@ -49,6 +50,9 @@ This file complements:
 - Use `vr-projects-wave-8-github-source-pass.md` for the first large
   post-restructure GitHub search wave driven by local source clones and
   code-level extraction.
+- Use `vr-projects-wave-9-runtime-overlay-devtools.md` for the next wave
+  centered on runtime intelligence, headless overlay hosts, dashboard
+  micro-utilities, and developer helper tools.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

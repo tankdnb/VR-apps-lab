@@ -45,9 +45,13 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-3-utilities.md`
+- `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/project-families.md`
 
 - `mbucchia/OpenXR-Toolkit` - `Already studied`
+- `KhronosGroup/OpenXR-Inventory` - `Already studied`
+- `rpavlik/xr-picker` - `Already studied`
+- `elliotttate/OpenXR-Simulator` - `Already studied`
 - `fredemmott/OpenXR-API-Layers-GUI` - `Already studied`
 - `WaGi-Coding/OpenXR-Runtime-Switcher` - `Already studied`
 - `UniStuttgart-VISUS/OpenXR-Runtime-Switcher` - `Already studied`
@@ -57,6 +61,9 @@ Primary docs:
 - `maluoi/openxr-explorer` - `Already studied`
 - `LunarG/OpenXR-OverlayLayer` - `Already studied`
 - `PlutoVR/OpenXR-OverlayLayer-1` - `Not studied deeply`
+- `Ybalrid/OpenXR-Runtime-Manager` - `Not studied deeply`
+- `clear-xr/clearxr-server` - `Not studied deeply`
+- `pembem22/etvr-openxr-layer` - `Not studied deeply`
 - `vrkit-platform/vrkit-platform` - `Not studied deeply`
 - `LunarG/OpenXR-Overlays-UE4-Plugin` - `Not studied deeply`
 - `mbucchia/_ARCHIVE_OverXR` - `Fork / variant only`
@@ -81,6 +88,7 @@ Primary docs:
 - `../landscape/vr-utilities-repo-landscape.md`
 - `../landscape/vr-projects-wave-3-utilities.md`
 - `../landscape/vr-projects-wave-7-depth-pass.md`
+- `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 
 - `glenimp617/DesktopXR` - `Already studied`
 - `elvissteinjr/DesktopPlus` - `Already studied`
@@ -92,6 +100,7 @@ Primary docs:
 - `galister/wlx-overlay-x` - `Already studied`
 - `PhialsBasement/fnuidesktop-VR` - `Already studied`
 - `wayvr-org/wayvr` - `Already studied`
+- `rrkpp/SpotifyOverlay` - `Already studied`
 - `CrispyPin/ovr-utils` - `Partially studied`
 - `mittorn/ovr-utils-dashboard` - `Partially studied`
 - `benotter/OVRLay` - `Already studied`
@@ -101,6 +110,7 @@ Primary docs:
 - `LapisGit/LapisOverlay` - `Not studied deeply`
 - `elvissteinjr/SteamVR-PrimaryDesktopOverlay` - `Not studied deeply`
 - `Nexz/turncountervr` - `Not studied deeply`
+- `Martin-Oehler/SteamVR-WebApps` - `Not studied deeply`
 - `OpenKneeboard/OpenKneeboard` - `Already studied`
 - `dantman/elite-vr-cockpit` - `Already studied`
 - `OVRTools/WhereIsForward` - `Already studied`
@@ -110,6 +120,7 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-3-utilities.md`
+- `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/project-families.md`
 
 - `BOLL7708/OpenVROverlayPipe` - `Already studied`
@@ -118,12 +129,17 @@ Primary docs:
 - `BOLL7708/OpenVR2WS` - `Already studied`
 - `BOLL7708/OpenVR2Key` - `Already studied`
 - `Raphiiko/OyasumiVR` - `Already studied`
+- `I5UCC/SteaMeeter` - `Already studied`
+- `I5UCC/ParameterSaveStates` - `Not studied deeply`
+- `hai-vr/h-view` - `Not studied deeply`
+- `MeroFune/GOpy` - `Not studied deeply`
 
 ## 6. Lighthouse managers, room state, and device power control
 
 Primary docs:
 
 - `../landscape/vr-projects-wave-3-utilities.md`
+- `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/project-families.md`
 
 - `kurotu/OVR-Lighthouse-Manager` - `Already studied`
@@ -135,12 +151,14 @@ Primary docs:
 - `seader/LighthouseManagerPimax` - `Already studied`
 - `risa2000/lhctrl` - `Already studied`
 - `risa2000/lh2ctrl` - `Already studied`
+- `ugokutennp/watchman-pairing-assistant` - `Already studied`
 
 ## 7. Battery, device inventory, and micro-monitor utilities
 
 Primary docs:
 
 - `../landscape/vr-projects-wave-4-gap-fill.md`
+- `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/project-families.md`
 - `../landscape/vr-projects-wave-7-depth-pass.md`
 
@@ -149,6 +167,7 @@ Primary docs:
 - `copperpixel/steamvrbattery` - `Already studied`
 - `Black4Blade/SteamVR-Devices-Battery-Status` - `Already studied`
 - `KaftanOS/SteamVR-Battery-Checker` - `Not studied deeply`
+- `Denwa/vive-wireless-info-overlay` - `Not studied deeply`
 - `rhaamo/OpenVR-Display-Devices` - `Already studied`
 - `jangxx/openvr-battery-monitoring` - `Not studied deeply`
 - `mutr/openvr_battery_monitor` - `Not studied deeply`
@@ -159,6 +178,7 @@ Primary docs:
 
 - `../landscape/vr-projects-wave-5-osc-tracking-tools.md`
 - `../landscape/vr-projects-wave-6-driver-bridges.md`
+- `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/project-families.md`
 
 - `Timocop/PSMoveServiceEx-VMT` - `Already studied`
@@ -174,6 +194,8 @@ Primary docs:
 - `jangxx/steamvr-osc-control` - `Already studied`
 - `choyai/SteamVRTrackerUtility` - `Not studied deeply`
 - `jangxx/UniversalTrackerMarkers` - `Already studied`
+- `TriadSemi/triad_openvr` - `Already studied`
+- `biosmanager/unity-openvr-tracking` - `Not studied deeply`
 - `ShayBox/VRC-OSC` - `Already studied`
 - `VolcanicArts/VRCOSC` - `Already studied`
 - `pottedmeat7/OpenVR-WalkInPlace` - `Already studied`
@@ -258,6 +280,7 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-8-github-source-pass.md`
+- `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/project-families.md`
 
 - `MuffinTastic/steamvr-exconfig` - `Partially studied`
@@ -272,12 +295,16 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-8-github-source-pass.md`
+- `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/project-families.md`
 
 - `sh-akira/VROverlay` - `Already studied`
 - `BenWoodford/SteamVR-Webkit` - `Already studied`
 - `beniwtv/vr-streaming-overlay` - `Already studied`
 - `Nyabsi/steamvr_overlay_vulkan` - `Already studied`
+- `Hotrian/HeadlessOverlayToolkit` - `Already studied`
+- `cnlohr/openvr_overlay_model` - `Already studied`
+- `JoeLudwig/overlay_experiments` - `Already studied`
 - `KainosSoftwareLtd/VRSceneOverlay` - `Not studied deeply`
 
 ## 16. Creator, capture, metrics, and workflow tools
@@ -286,12 +313,15 @@ Primary docs:
 
 - `../landscape/vr-projects-master-index.md`
 - `../landscape/vr-projects-wave-7-depth-pass.md`
+- `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 
 - `xrtlab/clovr` - `Already studied`
 - `Nyabsi/openvr-metrics` - `Already studied`
 - `ethanporcaro/tracking-toolkit` - `Already studied`
 - `fredemmott/XRFrameTools` - `Already studied`
 - `peacepenguin/Virtual-Display-Driver` - `Already studied`
+- `ValveSoftware/OpenXR-Canonical-Pose-Tool` - `Already studied`
+- `MuffinTastic/openvr-device-positions` - `Not studied deeply`
 
 ## 17. Accessibility, assistive HUDs, and comfort tools
 
@@ -300,11 +330,14 @@ Primary docs:
 - `../landscape/project-families.md`
 - `../landscape/vr-projects-wave-3-utilities.md`
 - `../landscape/vr-projects-wave-8-github-source-pass.md`
+- `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 
 - `Beyley/eepyxr` - `Already studied`
 - `Vinventive/live-captions-vr` - `Already studied`
 - `MochiDoesVR/OpenVRCaptions` - `Already studied`
 - `matzman666/OpenVR-MicrophoneControl` - `Already studied`
+- `rrazgriz/VRCMicOverlay` - `Already studied`
+- `I5UCC/VRCTextboxSTT` - `Already studied`
 - `Otter-Co/TurnSignal` - `Already studied`
 - `Deryck2000/SteamVR_ClockOverlay_Public` - `Already studied`
 

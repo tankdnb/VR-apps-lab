@@ -38,6 +38,8 @@ bridges, device managers, and experimental XR workflows.
 4. `program/repository-restructuring-plan.md`
 5. `program/restructuring-backlog.md`
 6. `program/github-research-wave-8-plan.md`
-7. `discovery/local-source-cache-workflow.md`
-8. `discovery/intake-pipeline.md`
-9. `landscape/not-yet-studied-deeply.md`
+7. `program/github-research-wave-9-plan.md`
+8. `landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
+9. `discovery/local-source-cache-workflow.md`
+10. `discovery/intake-pipeline.md`
+11. `landscape/not-yet-studied-deeply.md`

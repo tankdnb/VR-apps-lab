@@ -47,6 +47,7 @@ implementation patterns.
 - `research/landscape/vr-projects-wave-6-driver-bridges.md`
 - `research/landscape/vr-projects-wave-7-depth-pass.md`
 - `research/landscape/vr-projects-wave-8-github-source-pass.md`
+- `research/landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
 
@@ -73,6 +74,8 @@ implementation patterns.
 - `research/program/study-method.md`
 - `research/program/github-research-wave-8-plan.md`
 - `research/program/github-research-wave-8-backlog.md`
+- `research/program/github-research-wave-9-plan.md`
+- `research/program/github-research-wave-9-backlog.md`
 
 ### Reuse plans
 

@@ -22,3 +22,10 @@ repeatable way.
 
 - `github-research-wave-8-backlog.md`  
   Fully executed backlog for the same wave.
+
+- `github-research-wave-9-plan.md`  
+  Follow-up GitHub research wave centered on runtime intelligence, overlay
+  hosts, dashboard micro-utilities, and dev helpers.
+
+- `github-research-wave-9-backlog.md`  
+  Executed backlog for the Wave 9 pass.

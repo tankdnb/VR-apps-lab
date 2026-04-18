@@ -126,7 +126,8 @@ Use this document when designing a new module or utility and ask:
   this is a natural product category for advanced XR users and developers.
 - Strong references:
   `OpenXR-API-Layers-GUI`, `OpenXR-Runtime-Switcher` family,
-  `openxr-explorer`.
+  `openxr-explorer`, `OpenXR-Inventory`, `xr-picker`,
+  `OpenXR-Simulator`.
 - Best fit for `VR.app`:
   `OpenXR Doctor`.
 
@@ -206,7 +207,8 @@ Use this document when designing a new module or utility and ask:
   tool.
 - Strong references:
   `OpenVR-SpaceCalibrator`, `OpenXR-MotionCompensation`,
-  `EyeTrackVR-OpenVR-Calibration-Overlay`.
+  `EyeTrackVR-OpenVR-Calibration-Overlay`,
+  `OpenXR-Canonical-Pose-Tool`.
 - Best fit for `VR.app`:
   tracking helpers and setup tools.
 
@@ -282,7 +284,7 @@ Use this document when designing a new module or utility and ask:
   this can dramatically speed up UI iteration and lowers the cost of complex
   panel design.
 - Strong references:
-  `SteamVR-Webkit`.
+  `SteamVR-Webkit`, `overlay_experiments`.
 - Best fit for `VR.app`:
   advanced dashboards and external-control surfaces.
 
@@ -302,6 +304,38 @@ Use this document when designing a new module or utility and ask:
   `SteamVR-VoidScene`.
 - Best fit for `VR.app`:
   desktop-side support tools and maintenance helpers.
+
+## Method 19: Headless overlay host
+
+- What it is:
+  an app whose real job is to keep one or more VR overlays alive while the
+  desktop window stays hidden, minimized, or visually irrelevant.
+- Good for:
+  background overlay suites, tray-driven utilities, Unity-based dashboards
+  without desktop clutter, status indicators that should feel always-on.
+- Why it matters:
+  many practical VR tools are valuable precisely because they do not behave
+  like normal foreground desktop apps.
+- Strong references:
+  `HeadlessOverlayToolkit`, `SteaMeeter`, `VRCMicOverlay`.
+- Best fit for `VR.app`:
+  always-on utility hosts and background helper surfaces.
+
+## Method 20: Runtime inventory and capability matrix
+
+- What it is:
+  a structured catalog of runtime, middleware, or client capabilities that can
+  be parsed, compared, and rendered into human-readable reports or diagnostics.
+- Good for:
+  capability dashboards, compatibility reports, runtime-health tools, extension
+  support matrices, and environment triage.
+- Why it matters:
+  prose notes alone do not scale once the repository starts comparing many XR
+  runtimes, layers, and clients.
+- Strong references:
+  `OpenXR-Inventory`, `xr-picker`.
+- Best fit for `VR.app`:
+  capability intelligence behind `OpenXR Doctor` and related research tools.
 
 ## Recommended usage inside `VR.app`
 

@@ -24,6 +24,10 @@ Use these files when you want to understand:
   New GitHub discovery wave built around local source clones and code-level
   extraction.
 
+- `vr-projects-wave-9-runtime-overlay-devtools.md`  
+  Follow-up GitHub discovery wave focused on runtime intelligence, headless
+  overlay hosts, dashboard micro-utilities, and developer helper tools.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR.app` or only
   lightly covered so far, with suggested next inspection angles.
