@@ -36,3 +36,10 @@ repeatable way.
 
 - `github-research-wave-10-backlog.md`  
   Executed backlog for the Wave 10 pass.
+
+- `github-research-wave-11-plan.md`  
+  Wave 11 research plan focused on runtime adapters, virtual-display
+  workflows, validation tools, driver examples, and workflow micro-utilities.
+
+- `github-research-wave-11-backlog.md`  
+  Executed backlog for the Wave 11 pass.

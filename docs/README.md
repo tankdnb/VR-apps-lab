@@ -48,6 +48,7 @@ Use this section for:
 - `research/landscape/vr-projects-wave-8-github-source-pass.md`
 - `research/landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `research/landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
+- `research/landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
 
@@ -78,6 +79,8 @@ Use this section for:
 - `research/program/github-research-wave-9-backlog.md`
 - `research/program/github-research-wave-10-plan.md`
 - `research/program/github-research-wave-10-backlog.md`
+- `research/program/github-research-wave-11-plan.md`
+- `research/program/github-research-wave-11-backlog.md`
 
 ### Reuse plans
 

@@ -33,6 +33,10 @@ Use these files when you want to understand:
   drivers, no-headset workflows, capture bridges, and SteamVR environment
   helpers.
 
+- `vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`  
+  Next GitHub discovery wave focused on runtime adapters, virtual-display
+  workflows, validation helpers, driver examples, and workflow micro-utilities.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR.app` or only
   lightly covered so far, with suggested next inspection angles.

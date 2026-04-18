@@ -82,7 +82,8 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `OpenXR-API-Layers-GUI`, `OpenXR-Runtime-Switcher` family,
   `steamvr-exconfig`, `OpenVRDeviceBattery`, `SteamVR-Toggle`, `dashfix`,
-  `OculusKiller`, `WFOVFix`.
+  `OculusKiller`, `WFOVFix`, `SteamVRAdaptiveBrightness`,
+  `SteamVR-ActionsManifestValidator`, `Lighthouse-Scale-Fix`.
 - Best fit for `VR.app`:
   setup utilities and companion workflows.
 
@@ -239,7 +240,8 @@ Use this document when designing a new module or utility and ask:
   creator tools open a different product track than end-user overlays.
 - Strong references:
   `clovr`, `tracking-toolkit`, `XRFrameTools`, `openvr-metrics`,
-  `OpenKneeboard`, `OBS-OpenVR-Input-Plugin`.
+  `OpenKneeboard`, `OBS-OpenVR-Input-Plugin`, `Valve virtual_display`,
+  `SuperScreenShotterVR`, `Periodic-Immersive-SteamVR-Screenshots`.
 - Best fit for `VR.app`:
   diagnostics and creator tools branch.
 
@@ -257,6 +259,72 @@ Use this document when designing a new module or utility and ask:
   `LeapOVRPassthrough`.
 - Best fit for `VR.app`:
   experiments only unless hardware support is proven.
+
+## Method 16: Runtime graphics adapter layer
+
+- What it is:
+  an API layer or runtime-side component that bridges incompatible graphics
+  paths between the app and the active XR runtime.
+- Good for:
+  Vulkan-to-D3D runtime bridging, compatibility experiments, graphics
+  interop, and runtime bring-up on awkward platform combinations.
+- Why it matters:
+  not every XR compatibility problem is solved by a runtime switcher; some
+  need a true graphics adapter in the middle.
+- Strong references:
+  `OpenXR-Vk-D3D12`, `VirtualDesktop-OpenXR`, `OpenComposite`, `xrizer`.
+- Best fit for `VR.app`:
+  advanced compatibility and runtime research.
+
+## Method 17: Library plus sandbox learning harness
+
+- What it is:
+  a reusable runtime wrapper paired with a small sandbox executable that proves
+  the wrapper in practice.
+- Good for:
+  onboarding, engine bring-up, extension experimentation, and keeping complex
+  runtime setup reusable without hiding it completely.
+- Why it matters:
+  this is one of the best ways to turn raw XR bring-up knowledge into a
+  reusable development asset.
+- Strong references:
+  `OpenXRProvider`, `OpenXR-SDK-Source` samples, `Simple-OpenVR-Driver-Tutorial`.
+- Best fit for `VR.app`:
+  future sample apps and reusable experimental foundations.
+
+## Method 18: Virtual display and remote presentation driver
+
+- What it is:
+  a driver or utility path that repurposes XR compositor output for another
+  display, transport, or presentation flow rather than a standard HMD.
+- Good for:
+  wireless transport, creator capture, 3D displays, AR glasses, simulated
+  hardware, and special-purpose stereo output workflows.
+- Why it matters:
+  this opens a whole class of VR-adjacent tools that are not classic overlays
+  and not classic runtime switchers either.
+- Strong references:
+  `ValveSoftware/virtual_display`, `VRto3D`, `Virtual-Display-Driver`,
+  `OpenDisplayXR-VDD`.
+- Best fit for `VR.app`:
+  advanced workflow tooling and repurposed-output experiments.
+
+## Method 19: Validation and config-patch micro-tool
+
+- What it is:
+  a very focused utility that validates one XR artifact or applies one safe
+  configuration fix with backup and rollback behavior.
+- Good for:
+  manifest linting, SteamVR settings hygiene, one-off environment fixes,
+  repair flows, and preflight checks.
+- Why it matters:
+  tiny helpers like these often solve real workflow pain faster than larger
+  dashboard products.
+- Strong references:
+  `SteamVR-ActionsManifestValidator`, `Lighthouse-Scale-Fix`, `WFOVFix`,
+  `steamvr-exconfig`.
+- Best fit for `VR.app`:
+  desktop-side helpers and future doctor/preflight tools.
 
 ## Method 16: Custom device plumbing and driver prototyping
 

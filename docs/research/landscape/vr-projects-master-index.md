@@ -21,6 +21,7 @@ This file complements:
 - `vr-projects-wave-8-github-source-pass.md`
 - `vr-projects-wave-9-runtime-overlay-devtools.md`
 - `vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
+- `vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 
 ## How to use this index
 
@@ -57,6 +58,9 @@ This file complements:
 - Use `vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md` for the
   next wave centered on runtime implementations, bridge drivers, headsetless
   workflows, capture bridges, and SteamVR environment helpers.
+- Use `vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
+  for the next wave centered on runtime adapters, virtual displays, validation
+  helpers, driver examples, and workflow micro-utilities.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

@@ -37,12 +37,15 @@ This family is already converging into the future `OpenXR Doctor` direction.
 | `KhronosGroup/OpenXR-Inventory` | Already studied | Structured capability matrix for runtime and middleware support |
 | `rpavlik/xr-picker` | Already studied | Clean core/GUI split for runtime picking and manifest inspection |
 | `elliotttate/OpenXR-Simulator` | Already studied | Headsetless runtime and runtime-registration reference |
+| `mbucchia/OpenXR-Vk-D3D12` | Already studied | Graphics API adapter layer bridging Vulkan/OpenGL apps into D3D12-only runtime paths |
 | `mbucchia/VirtualDesktop-OpenXR` | Already studied | Full runtime implementation reference with registration, settings watch, and precompositor paths |
 | `fredemmott/OpenXR-API-Layers-GUI` | Already studied | Strongest layer diagnostics and enable/disable UX reference |
 | `WaGi-Coding/OpenXR-Runtime-Switcher` | Already studied | Runtime switching reference with admin-aware UX |
 | `UniStuttgart-VISUS/OpenXR-Runtime-Switcher` | Already studied | Alternate runtime switcher framing |
 | `ytdlder/OpenXR-Switcher` | Already studied | Runtime and layer toggling overlap |
 | `jonyrh/OXR_Switcher` | Already studied | Runtime manager UX variant with CLI angle |
+| `shiena/OpenXRRuntimeSelector` | Already studied | Engine-side runtime selection helper built around runtime providers and registry enumeration |
+| `1runeberg/OpenXRProvider` | Partially studied | Library plus sandbox wrapper around OpenXR core, render, and input bring-up |
 | `mbucchia/OpenXR-Layer-Template` | Already studied | Bootstrap template for future layer work |
 | `Jabbah/OpenXR-Layer-OBSMirror` | Already studied | Practical example of a layer built from a template |
 | `maluoi/openxr-explorer` | Already studied | Strongest single reference for `OpenXR doctor/runtime inspector` |
@@ -57,6 +60,7 @@ output of this family for `VR.app` should be a single future product concept:
 
 - `OpenXR Doctor`
 - `runtime capability matrix`
+- `runtime adapter and bring-up playbook`
 
 ## Family 2: SteamVR/OpenVR notification and remote-control overlays
 
@@ -242,6 +246,10 @@ knowledge needed for `device-side tooling`.
 | `mm0zct/Oculus_Touch_Steam_Link` | Already studied | Mixed-VR controller, tracker, and sensor bridge driver |
 | `SlimeVR/SlimeVR-OpenVR-Driver` | Already studied | Modern tracker bridge driver with external service transport |
 | `oleuzop/VirtualSteamVRDriver` | Already studied | Virtual HMD driver for no-headset development and testing |
+| `finallyfunctional/openvr-driver-example` | Already studied | Beginner-friendly controller/input-emulation driver tutorial |
+| `SecondReality/VirtualControllerDriver` | Already studied | Tiny synthetic controller driver for mixed-reality workflows |
+| `oneup03/VRto3D` | Already studied | Productized stereo-display and AR-glasses driver that heavily reshapes SteamVR behavior |
+| `OpenDisplayXR/OpenDisplayXR-VDD` | Not studied deeply | Sparse but relevant signal for a simulated OpenVR/OpenXR virtual hardware path |
 | `LucidVR/opengloves-driver` | Partially studied | Hand-specific custom device path |
 | `r57zone/OpenVR-ArduinoHMD` | Partially studied | DIY HMD and config-driven setup |
 | `DaniXmir/GlassVr` | Partially studied | XR/AR glasses bridge and emulation |
@@ -256,6 +264,7 @@ This should eventually become a dedicated learning track in `VR.app`:
 - `driver tutorial`
 - `custom device plumbing`
 - `domain-specific hardware bridges`
+- `virtual display and repurposed output drivers`
 
 ## Family 9: Vendor enhancement and mod layers
 
@@ -352,6 +361,9 @@ creator-facing XR use than about simple end-user overlays.
 |---|---|---|
 | `OpenKneeboard/OpenKneeboard` | Already studied | Strong simulator and workflow-oriented overlay reference |
 | `baffler/OBS-OpenVR-Input-Plugin` | Already studied | OpenVR mirror-texture capture into OBS through D3D11 shared resources |
+| `ValveSoftware/virtual_display` | Already studied | `IVRVirtualDisplay` sample with out-of-process remote presentation transport |
+| `BOLL7708/SuperScreenShotterVR` | Already studied | Screenshot utility combining viewfinder overlays, notifications, timers, and WebSocket automation |
+| `iigomaru/Periodic-Immersive-SteamVR-Screenshots` | Already studied | Ultra-small timed screenshot micro-utility for startup-overlay workflows |
 | `xrtlab/clovr` | Already studied | Session capture and research-tooling reference |
 | `ethanporcaro/tracking-toolkit` | Already studied | Creator-facing OpenXR recording and Blender integration |
 | `Nyabsi/openvr-metrics` | Already studied | Strong metrics + control overlay product reference |
@@ -363,6 +375,12 @@ creator-facing XR use than about simple end-user overlays.
 
 This family supports a separate `creator and diagnostics` branch inside
 `VR.app`, not just consumer-facing overlays.
+
+It also strengthens a smaller but useful sub-branch:
+
+- screenshot workflow helpers
+- creator micro-automation tools
+- remote-triggered capture flows
 
 ## Family 14: Overlay implementation references and host scaffolds
 
@@ -410,6 +428,9 @@ interaction, distortion, or overlay-heavy workflows.
 | `W-Drew/SteamVR-Toggle` | Already studied | Tray utility that toggles SteamVR by renaming install path |
 | `sencercoltu/steamvr-undistort` | Already studied | Lens distortion adjustment tool for custom optics |
 | `elvissteinjr/SteamVR-VoidScene` | Already studied | Minimal scene app to lower baseline cost for overlay use |
+| `Virus-vr/SteamVRAdaptiveBrightness` | Already studied | Mirror-texture analysis helper that continuously rewrites SteamVR brightness |
+| `username223/SteamVR-ActionsManifestValidator` | Already studied | CLI manifest validator for SteamVR input/action metadata |
+| `Erimelowo/Lighthouse-Scale-Fix` | Already studied | Backup-safe one-shot patcher for lighthouse scale configuration |
 | `DavidRisch/steamvr_utils` | Not studied deeply | Linux SteamVR helper collection worth future comparison |
 
 ### Consolidation note
@@ -423,6 +444,8 @@ This family points toward a separate `environment helper` track inside
 - compositor and distortion helpers
 - headsetless/null-driver helpers
 - vendor-shell redirects and focused config patchers
+- validation and lint micro-tools
+- backup-safe config patchers
 
 ## Recommended synthesis path for `VR.app`
 

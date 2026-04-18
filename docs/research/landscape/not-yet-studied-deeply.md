@@ -99,6 +99,15 @@ next comparison nodes after the new code-level study.
 |---|---|---|---|---|---|
 | `alexander-clarke/openvr-room-mapping` | Not studied deeply | Spatial and room-mapping angle adjacent to passthrough and environment-capture research | Medium | Medium | Mapping method, output artifacts, whether it belongs closer to calibration, passthrough, or creator-tool families |
 
+## Priority batch F: Wave 11 follow-up candidates
+
+These were surfaced or only partially exhausted during the Wave 11 source pass.
+
+| Project | Current status in `VR.app` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `1runeberg/OpenXRProvider` | Partially studied | Library plus sandbox wrapper around raw OpenXR bring-up | High | Medium | Input profiles, extension wrappers, sandbox render loop, and where the wrapper surface stops abstracting raw OpenXR |
+| `OpenDisplayXR/OpenDisplayXR-VDD` | Not studied deeply | Simulated OpenVR/OpenXR virtual hardware driver path | Medium | Medium | Wait for stronger source/docs, then compare with `virtual_display`, `Virtual-Display-Driver`, and `VRto3D` |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.
@@ -175,6 +184,32 @@ These are larger than a single repo and should guide the next research wave.
   this is one of the strongest architectural zones for turning foreign
   runtimes, services, or hardware stacks into usable SteamVR devices.
 
+### 10. `Runtime adapters and graphics interop`
+
+- Main entries:
+  `OpenXR-Vk-D3D12`, `VirtualDesktop-OpenXR`, `OpenComposite`, `xrizer`
+- Why it matters:
+  these projects show how to bridge graphics and runtime expectations, not
+  just how to switch runtimes or patch settings around them.
+
+### 11. `Virtual display and repurposed output workflows`
+
+- Main entries:
+  `virtual_display`, `VRto3D`, `Virtual-Display-Driver`,
+  `OpenDisplayXR-VDD`
+- Why it matters:
+  this family turns XR compositor output into creator, stereo-display, AR
+  glasses, or simulated-hardware workflows.
+
+### 12. `Validation and workflow micro-utilities`
+
+- Main entries:
+  `SteamVR-ActionsManifestValidator`, `Lighthouse-Scale-Fix`,
+  `SteamVRAdaptiveBrightness`, `steamvr-exconfig`, `WFOVFix`
+- Why it matters:
+  these tiny tools solve real setup and workflow pain without needing to grow
+  into full dashboard suites.
+
 ## Recommended next move
 
 If `VR.app` continues this research, the next most valuable deep-pass order is:
@@ -188,3 +223,6 @@ If `VR.app` continues this research, the next most valuable deep-pass order is:
 7. `SteamVR environment helpers`
 8. `Headsetless and no-HMD development workflows`
 9. `Mixed-VR controller and tracker bridges`
+10. `Runtime adapters and graphics interop`
+11. `Virtual display and repurposed output workflows`
+12. `Validation and workflow micro-utilities`

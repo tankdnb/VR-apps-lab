@@ -27,11 +27,13 @@ Primary docs:
 
 - `../landscape/vr-utilities-repo-landscape.md`
 - `../landscape/project-families.md`
+- `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 
 - `ValveSoftware/openvr` - `Already studied`
 - `ValveSoftware/steamvr_unity_plugin` - `Already studied`
 - `ValveSoftware/unity-xr-plugin` - `Already studied`
 - `KhronosGroup/OpenXR-SDK-Source` - `Already studied`
+- `1runeberg/OpenXRProvider` - `Partially studied`
 - `mbucchia/OpenXR-Layer-Template` - `Already studied`
 - `Ybalrid/OpenXR-API-Layer-Template` - `Already studied`
 - `StereoKit/StereoKit` - `Already studied`
@@ -46,10 +48,12 @@ Primary docs:
 
 - `../landscape/vr-projects-wave-3-utilities.md`
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
+- `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/project-families.md`
 
 - `mbucchia/OpenXR-Toolkit` - `Already studied`
+- `mbucchia/OpenXR-Vk-D3D12` - `Already studied`
 - `mbucchia/VirtualDesktop-OpenXR` - `Already studied`
 - `KhronosGroup/OpenXR-Inventory` - `Already studied`
 - `rpavlik/xr-picker` - `Already studied`
@@ -59,6 +63,7 @@ Primary docs:
 - `UniStuttgart-VISUS/OpenXR-Runtime-Switcher` - `Already studied`
 - `ytdlder/OpenXR-Switcher` - `Already studied`
 - `jonyrh/OXR_Switcher` - `Already studied`
+- `shiena/OpenXRRuntimeSelector` - `Already studied`
 - `Jabbah/OpenXR-Layer-OBSMirror` - `Already studied`
 - `maluoi/openxr-explorer` - `Already studied`
 - `LunarG/OpenXR-OverlayLayer` - `Already studied`
@@ -267,12 +272,17 @@ Primary docs:
 
 - `../landscape/vr-projects-wave-6-driver-bridges.md`
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
+- `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `../landscape/not-yet-studied-deeply.md`
 
 - `BnuuySolutions/PSVR2Toolkit` - `Partially studied`
 - `ChristophHaag/SteamVR-OpenHMD` - `Already studied`
 - `mm0zct/Oculus_Touch_Steam_Link` - `Already studied`
 - `oleuzop/VirtualSteamVRDriver` - `Already studied`
+- `finallyfunctional/openvr-driver-example` - `Already studied`
+- `SecondReality/VirtualControllerDriver` - `Already studied`
+- `oneup03/VRto3D` - `Already studied`
+- `OpenDisplayXR/OpenDisplayXR-VDD` - `Not studied deeply`
 - `LucidVR/opengloves-driver` - `Partially studied`
 - `HoboVR-Labs/hobo_vr` - `Partially studied`
 - `r57zone/OpenVR-ArduinoHMD` - `Partially studied`
@@ -293,6 +303,7 @@ Primary docs:
 
 - `../landscape/vr-projects-wave-8-github-source-pass.md`
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
+- `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/project-families.md`
 
@@ -306,6 +317,9 @@ Primary docs:
 - `sencercoltu/steamvr-undistort` - `Already studied`
 - `W-Drew/SteamVR-Toggle` - `Already studied`
 - `elvissteinjr/SteamVR-VoidScene` - `Already studied`
+- `Virus-vr/SteamVRAdaptiveBrightness` - `Already studied`
+- `username223/SteamVR-ActionsManifestValidator` - `Already studied`
+- `Erimelowo/Lighthouse-Scale-Fix` - `Already studied`
 - `DavidRisch/steamvr_utils` - `Not studied deeply`
 
 ## 15. Overlay implementation references and templates
@@ -332,9 +346,13 @@ Primary docs:
 - `../landscape/vr-projects-master-index.md`
 - `../landscape/vr-projects-wave-7-depth-pass.md`
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
+- `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 
 - `baffler/OBS-OpenVR-Input-Plugin` - `Already studied`
+- `ValveSoftware/virtual_display` - `Already studied`
+- `BOLL7708/SuperScreenShotterVR` - `Already studied`
+- `iigomaru/Periodic-Immersive-SteamVR-Screenshots` - `Already studied`
 - `xrtlab/clovr` - `Already studied`
 - `Nyabsi/openvr-metrics` - `Already studied`
 - `ethanporcaro/tracking-toolkit` - `Already studied`
