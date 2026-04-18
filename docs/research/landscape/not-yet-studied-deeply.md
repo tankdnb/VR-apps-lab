@@ -90,6 +90,15 @@ kept for the next deeper inspection round.
 | `biosmanager/unity-openvr-tracking` | Not studied deeply | Unity-side helper for pulling OpenVR tracking into engine code | Medium | Medium | Tracking abstraction, device-role handling, and whether it belongs in the tracker-bridge learning path |
 | `MuffinTastic/openvr-device-positions` | Not studied deeply | Narrow device-position inspection helper | Medium | Medium | Pose enumeration model, output surface, diagnostic usefulness, overlap with `triad_openvr` and device monitors |
 
+## Priority batch E: Wave 10 follow-up candidates
+
+These were discovered during the Wave 10 source pass, or identified as the
+next comparison nodes after the new code-level study.
+
+| Project | Current status in `VR.app` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `alexander-clarke/openvr-room-mapping` | Not studied deeply | Spatial and room-mapping angle adjacent to passthrough and environment-capture research | Medium | Medium | Mapping method, output artifacts, whether it belongs closer to calibration, passthrough, or creator-tool families |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.
@@ -148,6 +157,24 @@ These are larger than a single repo and should guide the next research wave.
   these tools solve real VR pain points without being traditional overlays,
   which makes them especially useful for future `desktop companion` modules.
 
+### 8. `Headsetless and no-HMD development workflows`
+
+- Main entries:
+  `SteamVRNoHeadset`, `ViveTrackerExample`, `VirtualSteamVRDriver`,
+  `OpenXR-Simulator`
+- Why it matters:
+  this family turns scattered setup tricks into a real development and testing
+  strategy for VR tooling without physical hardware.
+
+### 9. `Mixed-VR controller and tracker bridges`
+
+- Main entries:
+  `Oculus_Touch_Steam_Link`, `SteamVR-OpenHMD`,
+  `SlimeVR-OpenVR-Driver`
+- Why it matters:
+  this is one of the strongest architectural zones for turning foreign
+  runtimes, services, or hardware stacks into usable SteamVR devices.
+
 ## Recommended next move
 
 If `VR.app` continues this research, the next most valuable deep-pass order is:
@@ -159,3 +186,5 @@ If `VR.app` continues this research, the next most valuable deep-pass order is:
 5. `Low-level driver tutorial and custom-device plumbing`
 6. `Overlay implementation references`
 7. `SteamVR environment helpers`
+8. `Headsetless and no-HMD development workflows`
+9. `Mixed-VR controller and tracker bridges`

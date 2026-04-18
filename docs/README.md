@@ -47,6 +47,7 @@ Use this section for:
 - `research/landscape/vr-projects-wave-7-depth-pass.md`
 - `research/landscape/vr-projects-wave-8-github-source-pass.md`
 - `research/landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
+- `research/landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
 
@@ -75,6 +76,8 @@ Use this section for:
 - `research/program/github-research-wave-8-backlog.md`
 - `research/program/github-research-wave-9-plan.md`
 - `research/program/github-research-wave-9-backlog.md`
+- `research/program/github-research-wave-10-plan.md`
+- `research/program/github-research-wave-10-backlog.md`
 
 ### Reuse plans
 

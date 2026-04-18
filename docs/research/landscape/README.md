@@ -28,6 +28,11 @@ Use these files when you want to understand:
   Follow-up GitHub discovery wave focused on runtime intelligence, headless
   overlay hosts, dashboard micro-utilities, and developer helper tools.
 
+- `vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`  
+  Next GitHub discovery wave focused on runtime implementations, bridge
+  drivers, no-headset workflows, capture bridges, and SteamVR environment
+  helpers.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR.app` or only
   lightly covered so far, with suggested next inspection angles.

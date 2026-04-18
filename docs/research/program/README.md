@@ -29,3 +29,10 @@ repeatable way.
 
 - `github-research-wave-9-backlog.md`  
   Executed backlog for the Wave 9 pass.
+
+- `github-research-wave-10-plan.md`  
+  Wave 10 research plan focused on runtime implementations, headsetless
+  workflows, bridge drivers, capture bridges, and SteamVR hygiene helpers.
+
+- `github-research-wave-10-backlog.md`  
+  Executed backlog for the Wave 10 pass.

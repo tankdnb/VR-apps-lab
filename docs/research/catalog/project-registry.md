@@ -45,10 +45,12 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-3-utilities.md`
+- `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/project-families.md`
 
 - `mbucchia/OpenXR-Toolkit` - `Already studied`
+- `mbucchia/VirtualDesktop-OpenXR` - `Already studied`
 - `KhronosGroup/OpenXR-Inventory` - `Already studied`
 - `rpavlik/xr-picker` - `Already studied`
 - `elliotttate/OpenXR-Simulator` - `Already studied`
@@ -88,6 +90,7 @@ Primary docs:
 - `../landscape/vr-utilities-repo-landscape.md`
 - `../landscape/vr-projects-wave-3-utilities.md`
 - `../landscape/vr-projects-wave-7-depth-pass.md`
+- `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 
 - `glenimp617/DesktopXR` - `Already studied`
@@ -101,6 +104,7 @@ Primary docs:
 - `PhialsBasement/fnuidesktop-VR` - `Already studied`
 - `wayvr-org/wayvr` - `Already studied`
 - `rrkpp/SpotifyOverlay` - `Already studied`
+- `Hotrian/OpenVRTwitchChat` - `Already studied`
 - `CrispyPin/ovr-utils` - `Partially studied`
 - `mittorn/ovr-utils-dashboard` - `Partially studied`
 - `benotter/OVRLay` - `Already studied`
@@ -178,10 +182,12 @@ Primary docs:
 
 - `../landscape/vr-projects-wave-5-osc-tracking-tools.md`
 - `../landscape/vr-projects-wave-6-driver-bridges.md`
+- `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/project-families.md`
 
 - `Timocop/PSMoveServiceEx-VMT` - `Already studied`
+- `SlimeVR/SlimeVR-OpenVR-Driver` - `Already studied`
 - `gpsnmeajp/VirtualMotionTracker` - `Partially studied`
 - `John-Dean/OpenVR-Tracker-Websocket-Driver` - `Partially studied`
 - `surplex-io/OpenVR-Driver` - `Partially studied`
@@ -231,12 +237,14 @@ Primary docs:
 
 - `../reuse/openxr-steamvr-passthrough-reuse-plan.md`
 - `../landscape/vr-utilities-repo-landscape.md`
+- `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/project-families.md`
 
 - `Rectus/openxr-steamvr-passthrough` - `Already studied`
 - `zhangxuelei86/WMR-Passthrough` - `Already studied`
 - `Danealor/VRPassthrough` - `Already studied`
 - `jangxx/LeapOVRPassthrough` - `Already studied`
+- `alexander-clarke/openvr-room-mapping` - `Not studied deeply`
 
 ## 12. Performance, image processing, and rendering mods
 
@@ -258,9 +266,13 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-6-driver-bridges.md`
+- `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/not-yet-studied-deeply.md`
 
 - `BnuuySolutions/PSVR2Toolkit` - `Partially studied`
+- `ChristophHaag/SteamVR-OpenHMD` - `Already studied`
+- `mm0zct/Oculus_Touch_Steam_Link` - `Already studied`
+- `oleuzop/VirtualSteamVRDriver` - `Already studied`
 - `LucidVR/opengloves-driver` - `Partially studied`
 - `HoboVR-Labs/hobo_vr` - `Partially studied`
 - `r57zone/OpenVR-ArduinoHMD` - `Partially studied`
@@ -280,9 +292,15 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-8-github-source-pass.md`
+- `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/project-families.md`
 
+- `BnuuySolutions/OculusKiller` - `Already studied`
+- `username223/SteamVRNoHeadset` - `Already studied`
+- `n1ckfg/ViveTrackerExample` - `Already studied`
+- `craftyinsomniac/WFOVFix` - `Already studied`
+- `BnuuySolutions/SteamVRLinuxFixes` - `Already studied`
 - `MuffinTastic/steamvr-exconfig` - `Partially studied`
 - `simonowen/dashfix` - `Already studied`
 - `sencercoltu/steamvr-undistort` - `Already studied`
@@ -313,8 +331,10 @@ Primary docs:
 
 - `../landscape/vr-projects-master-index.md`
 - `../landscape/vr-projects-wave-7-depth-pass.md`
+- `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 
+- `baffler/OBS-OpenVR-Input-Plugin` - `Already studied`
 - `xrtlab/clovr` - `Already studied`
 - `Nyabsi/openvr-metrics` - `Already studied`
 - `ethanporcaro/tracking-toolkit` - `Already studied`

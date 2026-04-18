@@ -182,6 +182,8 @@ Start here:
 - `docs/research/program/github-research-wave-8-backlog.md`
 - `docs/research/program/github-research-wave-9-plan.md`
 - `docs/research/program/github-research-wave-9-backlog.md`
+- `docs/research/program/github-research-wave-10-plan.md`
+- `docs/research/program/github-research-wave-10-backlog.md`
 - `docs/research/landscape/vr-projects-master-index.md`
 - `docs/research/landscape/vr-projects-wave-3-utilities.md`
 - `docs/research/landscape/vr-projects-wave-4-gap-fill.md`
@@ -190,6 +192,7 @@ Start here:
 - `docs/research/landscape/vr-projects-wave-7-depth-pass.md`
 - `docs/research/landscape/vr-projects-wave-8-github-source-pass.md`
 - `docs/research/landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
+- `docs/research/landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 
 Original Reality Window and passthrough research:
 

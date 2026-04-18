@@ -81,7 +81,8 @@ Use this document when designing a new module or utility and ask:
   many useful VR tools solve friction outside the headset, not only inside it.
 - Strong references:
   `OpenXR-API-Layers-GUI`, `OpenXR-Runtime-Switcher` family,
-  `steamvr-exconfig`, `OpenVRDeviceBattery`, `SteamVR-Toggle`, `dashfix`.
+  `steamvr-exconfig`, `OpenVRDeviceBattery`, `SteamVR-Toggle`, `dashfix`,
+  `OculusKiller`, `WFOVFix`.
 - Best fit for `VR.app`:
   setup utilities and companion workflows.
 
@@ -127,7 +128,7 @@ Use this document when designing a new module or utility and ask:
 - Strong references:
   `OpenXR-API-Layers-GUI`, `OpenXR-Runtime-Switcher` family,
   `openxr-explorer`, `OpenXR-Inventory`, `xr-picker`,
-  `OpenXR-Simulator`.
+  `OpenXR-Simulator`, `VirtualDesktop-OpenXR`.
 - Best fit for `VR.app`:
   `OpenXR Doctor`.
 
@@ -238,7 +239,7 @@ Use this document when designing a new module or utility and ask:
   creator tools open a different product track than end-user overlays.
 - Strong references:
   `clovr`, `tracking-toolkit`, `XRFrameTools`, `openvr-metrics`,
-  `OpenKneeboard`.
+  `OpenKneeboard`, `OBS-OpenVR-Input-Plugin`.
 - Best fit for `VR.app`:
   diagnostics and creator tools branch.
 
@@ -268,7 +269,9 @@ Use this document when designing a new module or utility and ask:
   it is the main path for hardware experimentation in PCVR.
 - Strong references:
   `opengloves-driver`, `GlassVr`, `OpenVR-ArduinoHMD`,
-  `hotas-vr-controller`, `hobo_vr`, `Simple-OpenVR-Driver-Tutorial`.
+  `hotas-vr-controller`, `hobo_vr`, `Simple-OpenVR-Driver-Tutorial`,
+  `SteamVR-OpenHMD`, `Oculus_Touch_Steam_Link`,
+  `SlimeVR-OpenVR-Driver`, `VirtualSteamVRDriver`.
 - Best fit for `VR.app`:
   advanced research and hardware bridge branch.
 
@@ -301,7 +304,8 @@ Use this document when designing a new module or utility and ask:
   friction around SteamVR.
 - Strong references:
   `steamvr-exconfig`, `dashfix`, `SteamVR-Toggle`, `steamvr-undistort`,
-  `SteamVR-VoidScene`.
+  `SteamVR-VoidScene`, `OculusKiller`, `SteamVRNoHeadset`,
+  `ViveTrackerExample`, `WFOVFix`, `SteamVRLinuxFixes`.
 - Best fit for `VR.app`:
   desktop-side support tools and maintenance helpers.
 
@@ -336,6 +340,71 @@ Use this document when designing a new module or utility and ask:
   `OpenXR-Inventory`, `xr-picker`.
 - Best fit for `VR.app`:
   capability intelligence behind `OpenXR Doctor` and related research tools.
+
+## Method 21: Vendor shell replacement and runtime auto-redirect
+
+- What it is:
+  replace, intercept, or supervise a vendor launcher or dashboard process so it
+  redirects into a different VR runtime or workflow.
+- Good for:
+  Oculus-to-SteamVR flows, startup cleanup, desktop runtime redirection, and
+  narrow environment helpers.
+- Why it matters:
+  not every valuable VR tool lives inside the headset; some remove friction by
+  fixing runtime launch behavior.
+- Strong references:
+  `OculusKiller`.
+- Best fit for `VR.app`:
+  advanced environment-helper and compatibility research.
+
+## Method 22: Headsetless and null-driver development workflow
+
+- What it is:
+  run SteamVR or OpenXR tooling without a real headset through null drivers,
+  virtual HMDs, or simulator runtimes.
+- Good for:
+  tool development, test harnesses, tracker-only workflows, manual QA without
+  full hardware, and reproducible dev setups.
+- Why it matters:
+  this method lowers the barrier to developing VR utilities and diagnostics.
+- Strong references:
+  `SteamVRNoHeadset`, `ViveTrackerExample`, `VirtualSteamVRDriver`,
+  `OpenXR-Simulator`.
+- Best fit for `VR.app`:
+  developer tooling, research harnesses, and workflow docs.
+
+## Method 23: OpenVR mirror-surface capture bridge
+
+- What it is:
+  acquire SteamVR/OpenVR mirror textures and route them into an external
+  desktop application or capture pipeline.
+- Good for:
+  OBS plugins, creator tools, debugging, stream production, and research
+  recording.
+- Why it matters:
+  capture bridges are a distinct class of VR utility that connects runtime
+  output to non-VR tools.
+- Strong references:
+  `OBS-OpenVR-Input-Plugin`.
+- Best fit for `VR.app`:
+  creator workflows and runtime-inspection side tools.
+
+## Method 24: Mixed tracking and controller bridge
+
+- What it is:
+  convert foreign runtime devices, external services, or non-native hardware
+  into SteamVR/OpenVR controllers, trackers, sensors, or HMD-like devices.
+- Good for:
+  MixedVR setups, controller reuse, tracker bridging, external pose services,
+  and hardware interoperability experiments.
+- Why it matters:
+  this is one of the richest paths for turning external ecosystems into usable
+  VR devices.
+- Strong references:
+  `Oculus_Touch_Steam_Link`, `SteamVR-OpenHMD`,
+  `SlimeVR-OpenVR-Driver`.
+- Best fit for `VR.app`:
+  tracker-bridge and driver-plumbing research.
 
 ## Recommended usage inside `VR.app`
 

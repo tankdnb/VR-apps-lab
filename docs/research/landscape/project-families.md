@@ -37,6 +37,7 @@ This family is already converging into the future `OpenXR Doctor` direction.
 | `KhronosGroup/OpenXR-Inventory` | Already studied | Structured capability matrix for runtime and middleware support |
 | `rpavlik/xr-picker` | Already studied | Clean core/GUI split for runtime picking and manifest inspection |
 | `elliotttate/OpenXR-Simulator` | Already studied | Headsetless runtime and runtime-registration reference |
+| `mbucchia/VirtualDesktop-OpenXR` | Already studied | Full runtime implementation reference with registration, settings watch, and precompositor paths |
 | `fredemmott/OpenXR-API-Layers-GUI` | Already studied | Strongest layer diagnostics and enable/disable UX reference |
 | `WaGi-Coding/OpenXR-Runtime-Switcher` | Already studied | Runtime switching reference with admin-aware UX |
 | `UniStuttgart-VISUS/OpenXR-Runtime-Switcher` | Already studied | Alternate runtime switcher framing |
@@ -182,6 +183,7 @@ by runtime or operating system.
 | `fnuidesktop-VR` | Already studied | Direct desktop interaction patterns |
 | `wayvr` | Already studied | Low-overhead desktop/app-launching view |
 | `rrkpp/SpotifyOverlay` | Already studied | Qt dashboard micro-utility rendered offscreen into OpenVR |
+| `Hotrian/OpenVRTwitchChat` | Already studied | Twitch-specific chat overlay with threaded service layer and profile persistence |
 | `CrispyPin/ovr-utils` | Partially studied | GitHub snapshot is stale and moved off-platform |
 | `mittorn/ovr-utils-dashboard` | Partially studied | Useful dashboard-style variant |
 | `artumino/SteamVR_HUDCenter` | Not studied deeply | Centered HUD micro-utility worth a later pass |
@@ -236,6 +238,10 @@ knowledge needed for `device-side tooling`.
 |---|---|---|
 | `terminal29/Simple-OpenVR-Driver-Tutorial` | Partially studied | Important learning-path repo |
 | `ValveSoftware/openvr` tutorial/sample code | Already studied | Foundational reference |
+| `ChristophHaag/SteamVR-OpenHMD` | Already studied | OpenHMD hardware bridge into SteamVR/OpenVR |
+| `mm0zct/Oculus_Touch_Steam_Link` | Already studied | Mixed-VR controller, tracker, and sensor bridge driver |
+| `SlimeVR/SlimeVR-OpenVR-Driver` | Already studied | Modern tracker bridge driver with external service transport |
+| `oleuzop/VirtualSteamVRDriver` | Already studied | Virtual HMD driver for no-headset development and testing |
 | `LucidVR/opengloves-driver` | Partially studied | Hand-specific custom device path |
 | `r57zone/OpenVR-ArduinoHMD` | Partially studied | DIY HMD and config-driven setup |
 | `DaniXmir/GlassVr` | Partially studied | XR/AR glasses bridge and emulation |
@@ -326,6 +332,7 @@ hardware.
 | `zhangxuelei86/WMR-Passthrough` | Already studied | OpenXR API-layer plus camera-service pattern |
 | `Danealor/VRPassthrough` | Already studied | Lightweight USB-camera passthrough utility path |
 | `jangxx/LeapOVRPassthrough` | Already studied | Gesture-triggered passthrough UX reference |
+| `alexander-clarke/openvr-room-mapping` | Not studied deeply | Possible room-scan and environment-capture comparison node |
 
 ### Consolidation note
 
@@ -344,6 +351,7 @@ creator-facing XR use than about simple end-user overlays.
 | Project | Status | Notes |
 |---|---|---|
 | `OpenKneeboard/OpenKneeboard` | Already studied | Strong simulator and workflow-oriented overlay reference |
+| `baffler/OBS-OpenVR-Input-Plugin` | Already studied | OpenVR mirror-texture capture into OBS through D3D11 shared resources |
 | `xrtlab/clovr` | Already studied | Session capture and research-tooling reference |
 | `ethanporcaro/tracking-toolkit` | Already studied | Creator-facing OpenXR recording and Blender integration |
 | `Nyabsi/openvr-metrics` | Already studied | Strong metrics + control overlay product reference |
@@ -393,6 +401,11 @@ interaction, distortion, or overlay-heavy workflows.
 | Project | Status | Notes |
 |---|---|---|
 | `MuffinTastic/steamvr-exconfig` | Partially studied | Pre-launch SteamVR config editor and cleanup helper |
+| `BnuuySolutions/OculusKiller` | Already studied | Vendor-shell replacement that redirects Oculus launch flow into SteamVR |
+| `username223/SteamVRNoHeadset` | Already studied | Null-driver and no-HMD recipe for SteamVR workflows |
+| `n1ckfg/ViveTrackerExample` | Already studied | Tracker-without-HMD workflow and tiny Unity helper |
+| `craftyinsomniac/WFOVFix` | Already studied | Guided SteamVR settings patcher for wide-FOV headsets |
+| `BnuuySolutions/SteamVRLinuxFixes` | Already studied | Vulkan-layer and compositor-fix utility for Linux SteamVR |
 | `simonowen/dashfix` | Already studied | Dashboard-input fix via SDL hook injection |
 | `W-Drew/SteamVR-Toggle` | Already studied | Tray utility that toggles SteamVR by renaming install path |
 | `sencercoltu/steamvr-undistort` | Already studied | Lens distortion adjustment tool for custom optics |
@@ -408,6 +421,8 @@ This family points toward a separate `environment helper` track inside
 - dashboard fixes
 - scene-host helpers
 - compositor and distortion helpers
+- headsetless/null-driver helpers
+- vendor-shell redirects and focused config patchers
 
 ## Recommended synthesis path for `VR.app`
 

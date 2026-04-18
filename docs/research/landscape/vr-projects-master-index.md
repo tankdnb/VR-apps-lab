@@ -20,6 +20,7 @@ This file complements:
 - `vr-projects-wave-7-depth-pass.md`
 - `vr-projects-wave-8-github-source-pass.md`
 - `vr-projects-wave-9-runtime-overlay-devtools.md`
+- `vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 
 ## How to use this index
 
@@ -53,6 +54,9 @@ This file complements:
 - Use `vr-projects-wave-9-runtime-overlay-devtools.md` for the next wave
   centered on runtime intelligence, headless overlay hosts, dashboard
   micro-utilities, and developer helper tools.
+- Use `vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md` for the
+  next wave centered on runtime implementations, bridge drivers, headsetless
+  workflows, capture bridges, and SteamVR environment helpers.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`
