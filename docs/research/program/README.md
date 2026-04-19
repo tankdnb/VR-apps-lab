@@ -315,3 +315,31 @@ repeatable way.
 
 - `github-research-wave-47-backlog.md`
   Executed backlog for the Wave 47 pass.
+
+- `github-research-wave-48-plan.md`
+  Wave 48 research plan focused on mobile chatbox relays, translation and
+  transcription shells, and avatar text-surface installers.
+
+- `github-research-wave-48-backlog.md`
+  Executed backlog for the Wave 48 pass.
+
+- `github-research-wave-49-plan.md`
+  Wave 49 research plan focused on OSCQuery companion frameworks, AI or
+  automation bridges, and avatar-parameter smoothing layers.
+
+- `github-research-wave-49-backlog.md`
+  Executed backlog for the Wave 49 pass.
+
+- `github-research-wave-50-plan.md`
+  Wave 50 research plan focused on XR-glasses workspace shells, OpenVR HMD
+  paths, and head-tracked screen tools.
+
+- `github-research-wave-50-backlog.md`
+  Executed backlog for the Wave 50 pass.
+
+- `github-research-wave-51-plan.md`
+  Wave 51 research plan focused on biometric bridges, neurofeedback OSC, and
+  avatar-facing accessory-control platforms.
+
+- `github-research-wave-51-backlog.md`
+  Executed backlog for the Wave 51 pass.

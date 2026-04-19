@@ -572,9 +572,14 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-40-vrchat-chatbox-stt-and-text-surface-sidecars.md`
+- `../landscape/vr-projects-wave-48-chatbox-mobile-relays-translation-shells-and-avatar-text-surfaces.md`
 - `../landscape/project-families.md`
 
-- `BoiHanny/vrcosc-magicchatbox` - `Partially studied`
+- `BoiHanny/vrcosc-magicchatbox` - `Already studied`
+- `ScrapW/Chatbox` - `Already studied`
+- `misyaguziya/VRCT` - `Already studied`
+- `killfrenzy96/KillFrenzyAvatarText` - `Already studied`
+- `dbqt/VRCOSCChatbox` - `Already studied`
 - `yum-food/TaSTT` - `Already studied`
 - `cyberkitsune/vrc-osc-scripts` - `Already studied`
 - `nyakowint/xsoverlay-keyboard-osc` - `Already studied`
@@ -587,30 +592,37 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-41-avatar-facing-osc-companions-routers-and-consumer-automation.md`
+- `../landscape/vr-projects-wave-49-oscquery-companion-frameworks-ai-bridges-and-parameter-smoothing.md`
 - `../landscape/project-families.md`
 
-- `OscToys/OscGoesBrrr` - `Partially studied`
+- `OscToys/OscGoesBrrr` - `Already studied`
 - `valuef/VRCRouter` - `Already studied`
 - `Sergey004/Quest2-VRC` - `Already studied`
 - `I5UCC/VRCMeeter` - `Already studied`
 - `I5UCC/VRCAvatarParameterSync` - `Already studied`
 - `ZenithVal/OSCLeash` - `Already studied`
 - `ZenithVal/OSCLock` - `Already studied`
-- `lenoobkinda/VRCOSCUtils` - `Not studied deeply`
+- `lenoobkinda/VRCOSCUtils` - `Partially studied`
+- `vrchat-community/vrc-oscquery-lib` - `Already studied`
+- `Krekun/vrchat-mcp-osc` - `Already studied`
+- `regzo2/OSCmooth` - `Already studied`
 
 ## 28. XR-glasses virtual displays, workspace shells, and spatial screen utilities
 
 Primary docs:
 
 - `../landscape/vr-projects-wave-42-xr-glasses-virtual-display-stacks-and-spatial-screen-utilities.md`
+- `../landscape/vr-projects-wave-50-xr-glasses-workspace-shells-openvr-hmd-paths-and-head-tracked-screen-tools.md`
 - `../landscape/project-families.md`
 
 - `wheaney/XRLinuxDriver` - `Already studied`
-- `wheaney/breezy-desktop` - `Partially studied`
+- `wheaney/breezy-desktop` - `Already studied`
 - `wheaney/decky-XRGaming` - `Already studied`
 - `MolotovCherry/virtual-display-rs` - `Already studied`
 - `mgschwan/viture_virtual_display` - `Already studied`
-- `lc700x/desktop2stereo` - `Partially studied`
+- `lc700x/desktop2stereo` - `Already studied`
+- `wheaney/OpenVR-xrealAirGlassesHMD` - `Already studied`
+- `iVideoGameBoss/PhoenixHeadTracker` - `Already studied`
 - `peacepenguin/Virtual-Display-Driver` - `Already studied`
 
 ## 29. Wearable haptics, tactile bridges, and avatar-driven feedback systems
@@ -684,6 +696,20 @@ Primary docs:
 - `SimFeedback/SimFeedback-AC-Servo` - `Already studied`
 - `HARPLab/DReyeVR` - `Already studied`
 - `giuseppdimaria/Unity-VRlines` - `Partially studied`
+
+## 34. Biometric, neurofeedback, and accessory-control bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-51-biometric-bridges-neurofeedback-osc-and-accessory-control-platforms.md`
+- `../landscape/project-families.md`
+
+- `Honzackcz/PulsoidToOSC` - `Already studied`
+- `nullstalgia/iron-heart` - `Already studied`
+- `vard88508/vrc-osc-miband-hrm` - `Already studied`
+- `DASPRiD/vrc-osc-manager` - `Already studied`
+- `nullstalgia/OpenShock-ESP-Legacy` - `Already studied`
+- `ChilloutCharles/BrainFlowsIntoVRChat` - `Already studied`
 
 ## Registry maintenance rule
 

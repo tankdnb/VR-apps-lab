@@ -87,6 +87,10 @@ Use this section for:
 - `research/landscape/vr-projects-wave-45-redirected-walking-toolkits-locomotion-sidecars-and-space-redirection-research.md`
 - `research/landscape/vr-projects-wave-46-xr-latency-measurement-recording-parsers-and-experiment-harnesses.md`
 - `research/landscape/vr-projects-wave-47-telemetry-overlays-motion-cueing-bridges-and-sim-sidecar-platforms.md`
+- `research/landscape/vr-projects-wave-48-chatbox-mobile-relays-translation-shells-and-avatar-text-surfaces.md`
+- `research/landscape/vr-projects-wave-49-oscquery-companion-frameworks-ai-bridges-and-parameter-smoothing.md`
+- `research/landscape/vr-projects-wave-50-xr-glasses-workspace-shells-openvr-hmd-paths-and-head-tracked-screen-tools.md`
+- `research/landscape/vr-projects-wave-51-biometric-bridges-neurofeedback-osc-and-accessory-control-platforms.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
 
@@ -194,6 +198,14 @@ Use this section for:
 - `research/program/github-research-wave-46-backlog.md`
 - `research/program/github-research-wave-47-plan.md`
 - `research/program/github-research-wave-47-backlog.md`
+- `research/program/github-research-wave-48-plan.md`
+- `research/program/github-research-wave-48-backlog.md`
+- `research/program/github-research-wave-49-plan.md`
+- `research/program/github-research-wave-49-backlog.md`
+- `research/program/github-research-wave-50-plan.md`
+- `research/program/github-research-wave-50-backlog.md`
+- `research/program/github-research-wave-51-plan.md`
+- `research/program/github-research-wave-51-backlog.md`
 - `research/program/foundational-waves-1-7-retro-normalization-plan.md`
 - `research/program/foundational-waves-1-7-retro-normalization-backlog.md`
 

@@ -768,7 +768,11 @@ chatbox output, avatar parameter surfaces, or compact desktop-side text tools.
 
 | Project | Status | Notes |
 |---|---|---|
-| `BoiHanny/vrcosc-magicchatbox` | Partially studied | Broad modular chatbox composer that squeezes many live status modules into one bounded text surface |
+| `BoiHanny/vrcosc-magicchatbox` | Already studied | Broad modular chatbox composer that squeezes many live status modules into one bounded text surface |
+| `ScrapW/Chatbox` | Already studied | Android relay with floating overlay entry surface and configurable local or remote chatbox targets |
+| `misyaguziya/VRCT` | Already studied | Tauri and Python translation shell with overlay output, Whisper management, and OSCQuery-aware VRChat delivery |
+| `killfrenzy96/KillFrenzyAvatarText` | Already studied | Unity-side installer for avatar text surfaces built around pointer-indexed parameter grids |
+| `dbqt/VRCOSCChatbox` | Already studied | Tiny buffered WPF chatbox sender with explicit rate-limited background queue |
 | `yum-food/TaSTT` | Already studied | STT-to-avatar text surface built around generated parameter grids and animator assets |
 | `cyberkitsune/vrc-osc-scripts` | Already studied | Small Python donors for rate-limited chatbox updates and narrow status helpers |
 | `nyakowint/xsoverlay-keyboard-osc` | Already studied | Harmony patch that reuses an existing overlay keyboard as VRChat chat input |
@@ -782,6 +786,8 @@ This family matters because `text workflows` in social VR are broader than one
 caption or subtitle app:
 
 - character-budgeted status composition
+- mobile relay surfaces
+- translation and transcription shells over local models and overlays
 - avatar text surfaces driven by parameter grids
 - patched overlay keyboards for in-VR text entry
 - thin textbox or STT micro-utilities
@@ -790,6 +796,8 @@ caption or subtitle app:
 It suggests a stronger product branch inside `VR-apps-lab` around:
 
 - chatbox-sidecar composition
+- relay-first handheld chat tools
+- translation and transcription shells for social VR
 - speech-to-avatar text surfaces
 - text-entry helpers for overlay-first workflows
 
@@ -801,14 +809,17 @@ consumer actions.
 
 | Project | Status | Notes |
 |---|---|---|
-| `OscToys/OscGoesBrrr` | Partially studied | Broad Electron companion with typed IPC, diagnostics pages, and OSCQuery-aware services |
+| `OscToys/OscGoesBrrr` | Already studied | Broad Electron companion with typed IPC, diagnostics pages, and OSCQuery-aware services |
 | `valuef/VRCRouter` | Already studied | Config-driven OSC router with route presets, sidecar launch, and cleanup handling |
 | `Sergey004/Quest2-VRC` | Already studied | Plugin-based Quest telemetry host that fans device state into OSC and side integrations |
 | `I5UCC/VRCMeeter` | Already studied | Focused avatar-parameter bridge into Voicemeeter actions and profiles |
 | `I5UCC/VRCAvatarParameterSync` | Already studied | Snapshot and replay helper for selected avatar parameters across avatar changes |
 | `ZenithVal/OSCLeash` | Already studied | Config-driven avatar or physbone sidecar that turns state into control behavior |
 | `ZenithVal/OSCLock` | Already studied | Avatar-driven timer and Bluetooth-actuator workflow with a clear desktop safety surface |
-| `lenoobkinda/VRCOSCUtils` | Not studied deeply | Broader comparison node for mixed VRChat OSC helpers that is weaker than the mainline donors above |
+| `lenoobkinda/VRCOSCUtils` | Partially studied | Broader comparison node for mixed VRChat OSC helpers that is weaker than the mainline donors above |
+| `vrchat-community/vrc-oscquery-lib` | Already studied | Reusable OSCQuery discovery library and example set for chatbox, tracker, and monitor clients |
+| `Krekun/vrchat-mcp-osc` | Already studied | Relay-based automation bridge that exposes VRChat OSC to higher-level MCP tools |
+| `regzo2/OSCmooth` | Already studied | Unity-side smoothing and proxy-parameter generator for noisy OSC-driven avatar inputs |
 
 ### Consolidation note
 
@@ -816,14 +827,19 @@ This family matters because it turns `avatar-facing OSC` into a broader product
 branch than simple parameter export:
 
 - focused routers and sidecar launchers
+- diagnostics-rich desktop companion shells
+- reusable OSCQuery discovery and auto-connect libraries
 - plugin-based telemetry hosts
+- AI or automation relays over safer transport boundaries
 - avatar parameter bridges into desktop services
 - parameter continuity helpers across avatar changes
-- consumer automation or actuator tools
+- consumer automation flows and consumer-side smoothing layers
 
 It suggests a stronger branch inside `VR-apps-lab` around:
 
 - OSC-aware desktop companion shells
+- OSCQuery-first discovery helpers
+- AI and automation relays into avatar-facing surfaces
 - avatar-state automation tools
 - headset telemetry hosts with modular consumers
 
@@ -836,11 +852,13 @@ dashboard.
 | Project | Status | Notes |
 |---|---|---|
 | `wheaney/XRLinuxDriver` | Already studied | Base Linux XR-glasses driver with device backends and feature hooks |
-| `wheaney/breezy-desktop` | Partially studied | Broad workspace shell over the glasses driver with desktop-environment and Vulkan-mode split |
+| `wheaney/breezy-desktop` | Already studied | Broad workspace shell over the glasses driver with desktop-environment and Vulkan-mode split |
 | `wheaney/decky-XRGaming` | Already studied | SteamOS/Game Mode wrapper over the Breezy and XR driver stack |
 | `MolotovCherry/virtual-display-rs` | Already studied | User-session virtual-display service stack with named-pipe IPC and control layers |
 | `mgschwan/viture_virtual_display` | Already studied | Capture-to-head-tracked screen utility built around Viture IMU data |
-| `lc700x/desktop2stereo` | Partially studied | AI depth pipeline that turns ordinary desktop or video content into a stereoscopic screen workflow |
+| `lc700x/desktop2stereo` | Already studied | AI depth pipeline that turns ordinary desktop or video content into a stereoscopic screen workflow |
+| `wheaney/OpenVR-xrealAirGlassesHMD` | Already studied | Thin OpenVR HMD path that adapts XREAL IMU data into a runtime-facing headset device |
+| `iVideoGameBoss/PhoenixHeadTracker` | Already studied | Head-tracking sidecar that exports glasses orientation into opentrack-style or mouse-look consumers |
 | `peacepenguin/Virtual-Display-Driver` | Already studied | Generic Windows virtual-display comparison node without glasses-specific shell logic |
 
 ### Consolidation note
@@ -853,10 +871,13 @@ product branch rather than a pile of isolated driver experiments:
 - Game Mode or platform-native wrappers
 - user-session virtual-display services
 - head-tracked screen utilities
+- thin runtime-facing HMD paths
+- screen-transformation pipelines
 
 It suggests a stronger branch inside `VR-apps-lab` around:
 
 - XR-glasses workspace shells
+- runtime-facing glasses device paths
 - managed virtual-display service tooling
 - spatial screen helpers outside ordinary headset runtime flows
 
@@ -893,6 +914,11 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - avatar-driven haptics routers
 - tactile solver experiments
 - DIY wearable platform references
+
+This family is now distinct from the newer
+`biometric, neurofeedback, and accessory-control bridges`
+branch, which focuses on measurements, host shells, and safety-aware accessory
+platforms rather than tactile output specifically.
 
 ## Family 30: Playspace editors, boundary importers, and shared-space helpers
 
@@ -990,6 +1016,39 @@ construction patterns that also matter for `VR-apps-lab`:
 - telemetry-to-device sidecars
 - output normalization bridges
 - simulator platforms with replay and analytics
+
+## Family 34: Biometric, neurofeedback, and accessory-control bridges
+
+This family covers repositories where biometric measurements, richer biosignal
+trees, or avatar-facing `OSC` become the control plane for monitoring,
+accessory behavior, or safety-aware sidecar platforms.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Honzackcz/PulsoidToOSC` | Already studied | Thin biometric bridge with OSCQuery-aware discovery, chatbox templating, and multi-client fan-out |
+| `nullstalgia/iron-heart` | Already studied | Rich Rust companion shell with BLE or WebSocket inputs, charts, logs, and many output sinks |
+| `vard88508/vrc-osc-miband-hrm` | Already studied | Minimal browser-plus-node wearable bridge with multiple parameter encodings |
+| `DASPRiD/vrc-osc-manager` | Already studied | Plugin-oriented avatar-facing accessory manager with persisted settings and OSCQuery services |
+| `nullstalgia/OpenShock-ESP-Legacy` | Already studied | Embedded ESP32 accessory-control firmware with OSC, browser config, and emergency-stop surfaces |
+| `ChilloutCharles/BrainFlowsIntoVRChat` | Already studied | Biosignal pipeline that preserves a nested parameter tree before flattening it into VRChat OSC paths |
+
+### Consolidation note
+
+This family matters because it makes a previously diffuse branch explicit:
+
+- thin wearable or heart-rate bridges
+- richer operator-facing biometrics shells
+- browser-plus-local wearable relays
+- plugin-oriented accessory hosts
+- embedded safety-aware controllers
+- neurofeedback or biosignal exporters
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- biometric sidecars for avatar-facing consumers
+- accessory-control hosts with plugin boundaries
+- embedded controller research with explicit safety surfaces
+- richer biosignal schemas instead of flat parameter bags
 
 ## Recommended synthesis path for `VR-apps-lab`
 

@@ -264,6 +264,14 @@ Start here:
 - `docs/research/program/github-research-wave-46-backlog.md`
 - `docs/research/program/github-research-wave-47-plan.md`
 - `docs/research/program/github-research-wave-47-backlog.md`
+- `docs/research/program/github-research-wave-48-plan.md`
+- `docs/research/program/github-research-wave-48-backlog.md`
+- `docs/research/program/github-research-wave-49-plan.md`
+- `docs/research/program/github-research-wave-49-backlog.md`
+- `docs/research/program/github-research-wave-50-plan.md`
+- `docs/research/program/github-research-wave-50-backlog.md`
+- `docs/research/program/github-research-wave-51-plan.md`
+- `docs/research/program/github-research-wave-51-backlog.md`
 - `docs/research/landscape/vr-projects-master-index.md`
 - `docs/research/landscape/vr-projects-wave-3-utilities.md`
 - `docs/research/landscape/vr-projects-wave-4-gap-fill.md`
@@ -310,6 +318,10 @@ Start here:
 - `docs/research/landscape/vr-projects-wave-45-redirected-walking-toolkits-locomotion-sidecars-and-space-redirection-research.md`
 - `docs/research/landscape/vr-projects-wave-46-xr-latency-measurement-recording-parsers-and-experiment-harnesses.md`
 - `docs/research/landscape/vr-projects-wave-47-telemetry-overlays-motion-cueing-bridges-and-sim-sidecar-platforms.md`
+- `docs/research/landscape/vr-projects-wave-48-chatbox-mobile-relays-translation-shells-and-avatar-text-surfaces.md`
+- `docs/research/landscape/vr-projects-wave-49-oscquery-companion-frameworks-ai-bridges-and-parameter-smoothing.md`
+- `docs/research/landscape/vr-projects-wave-50-xr-glasses-workspace-shells-openvr-hmd-paths-and-head-tracked-screen-tools.md`
+- `docs/research/landscape/vr-projects-wave-51-biometric-bridges-neurofeedback-osc-and-accessory-control-platforms.md`
 
 Original Reality Window and passthrough research:
 

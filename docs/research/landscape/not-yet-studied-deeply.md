@@ -169,11 +169,7 @@ immediately.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `BoiHanny/vrcosc-magicchatbox` | Partially studied | Broad modular chatbox composer that treats the VRChat chatbox as a compact multi-status utility surface | Medium-high | High | Revisit only if a future pass needs narrower module-boundary analysis, provider extensibility, or a clearer licensing picture |
-| `OscToys/OscGoesBrrr` | Partially studied | Typed IPC companion platform that could grow into a broader OSC-aware desktop utility shell | High | High | Inspect plugin envelope, diagnostics surfaces, and service boundaries in more detail if `VR-apps-lab` needs a broader desktop host donor |
-| `lenoobkinda/VRCOSCUtils` | Not studied deeply | Broader mixed helper repo that may still add a useful comparison angle around small VRChat-side automation tools | Medium | Medium | Inspect exact feature split and determine whether it teaches anything that the clearer router and parameter-bridge donors do not |
-| `wheaney/breezy-desktop` | Partially studied | Driver-backed XR-glasses workspace shell with environment-specific branches and gaming-mode overlap | High | High | Revisit Linux desktop-environment integrations, UX flow, and Vulkan-mode split if a future branch needs a fuller workspace-shell donor |
-| `lc700x/desktop2stereo` | Partially studied | AI depth-driven screen transformation path for nontraditional displays | Medium | High | Revisit only if a future branch needs a deeper comparison between display-driver approaches and screen-transformation pipelines |
+| `lenoobkinda/VRCOSCUtils` | Partially studied | Broader mixed helper repo that still adds a useful comparison angle around small VRChat-side automation tools | Medium | Medium | Revisit only if a future pass needs a sharper comparison between weakly-structured helper bundles and the clearer companion-framework donors |
 
 ## Priority batch O: Waves 44-47 surfaced follow-up candidates
 
@@ -187,6 +183,18 @@ over-promoted immediately.
 | `Knerten0815/VR_Dodge_Study` | Fork / variant only | Thesis-driven OpenRDW fork focused on dodging-informed reset research | Low-Medium | Medium | Revisit only if a future redirected-walking pass needs thesis-specific trial-data and sampling-interval changes rather than the main OpenRDW architecture |
 | `Greendayle/VR-Motion-to-photon-latency-` | Partially studied | VRChat world plus smartphone slow-motion methodology for quick motion-to-photon checks | Low-Medium | High | Revisit if `VR-apps-lab` needs a more reproducible consumer-grade latency workflow or clearer asset breakdown beyond the Udon script and spreadsheet results |
 | `giuseppdimaria/Unity-VRlines` | Partially studied | XR flight-sim prototype with modular aircraft physics and VR controller input mapping | Medium | Medium-high | Inspect the moved manuscript repo, scene architecture, and aircraft-control modules if a future pass needs richer embodied-control or simulator-shell references |
+
+## Priority batch P: Waves 48-51 surfaced follow-up candidates
+
+These were surfaced while deepening VRChat text workflows, OSC companion
+frameworks, XR-glasses shells, and biometric or accessory-control families, but
+they were intentionally kept as honest follow-up nodes instead of being
+over-promoted immediately.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `MaurerKrisztian/vrc-tts-osc` | Not studied deeply | Narrow speech or TTS-to-chatbox path that could sharpen the `text workflow` comparison line without requiring a broader desktop shell | Medium | Medium | Inspect voice selection, message pacing, and whether it adds anything distinct beyond `VRCT`, `VRCTextboxSTT`, and other clearer text donors |
+| `samyk/myo-osc` | Not studied deeply | Historical armband-to-OSC bridge that could add a useful `wearable input to avatar-facing signal` comparison node | Medium | Medium | Inspect whether it teaches more about wearable acquisition and gesture routing than the newer biometric and accessory-control donors |
 
 ## Family-level gaps that now deserve deeper passes
 
@@ -289,36 +297,49 @@ These are larger than a single repo and should guide the next research wave.
   exists because the live `ovr-utils` code moved off GitHub and the public
   donor picture is still partly archival.
 
-### 11. `VRChat chatbox and avatar-text sidecars`
+### 11. `VRChat text workflow refinements and TTS follow-up`
 
 - Main entries:
-  `vrcosc-magicchatbox`, `TaSTT`, `VRCTextboxOSC`,
-  `xsoverlay-keyboard-osc`, `OSC-Chat-Tools`
+  `vrcosc-magicchatbox`, `Chatbox`, `VRCT`, `TaSTT`, `KillFrenzyAvatarText`,
+  `VRCOSCChatbox`
 - Why it matters:
-  the repo now has clear donors for `bounded text composition`,
-  `avatar text surfaces`, `patched overlay keyboard entry`, and
-  `thin textbox utilities`, which makes this a stronger product branch than a
-  generic communication bucket.
+  the repo now has strong donors for `bounded text composition`,
+  `mobile relay`, `translation shell`, `avatar text surfaces`, and
+  `tiny senders`, so the remaining value is in sharper TTS follow-up and
+  cleaner product comparison rather than basic discovery.
 
-### 12. `Avatar-facing OSC companion and consumer automation sidecars`
+### 12. `Avatar-facing OSC companion frameworks and automation relays`
 
 - Main entries:
-  `OscGoesBrrr`, `VRCRouter`, `Quest2-VRC`, `VRCMeeter`,
-  `VRCAvatarParameterSync`, `OSCLock`
+  `OscGoesBrrr`, `VRCRouter`, `Quest2-VRC`, `vrc-oscquery-lib`,
+  `vrchat-mcp-osc`, `OSCmooth`
 - Why it matters:
-  these repos confirm that avatar parameters and headset telemetry can anchor a
-  distinct family of desktop companions, routers, and consumer-action bridges.
+  these repos now clarify desktop companions, discovery frameworks, relays, and
+  smoothing layers; the next value lies in sharper comparison and productization
+  rather than proving the family exists.
 
-### 13. `XR glasses virtual-display stacks and spatial screen utilities`
+### 13. `XR glasses workspace shells and head-tracked screen tools`
 
 - Main entries:
-  `XRLinuxDriver`, `breezy-desktop`, `virtual-display-rs`,
-  `viture_virtual_display`, `desktop2stereo`
+  `XRLinuxDriver`, `breezy-desktop`, `OpenVR-xrealAirGlassesHMD`,
+  `virtual-display-rs`, `viture_virtual_display`, `desktop2stereo`,
+  `PhoenixHeadTracker`
 - Why it matters:
-  special-display workflows now span driver stacks, workspace shells,
-  user-session virtual-display services, and head-tracked screen utilities.
+  special-display workflows now span platform shells, runtime-facing HMD paths,
+  virtual-display services, screen-transformation tools, and non-XR tracking
+  sidecars.
 
-### 14. `Wearable haptics and avatar-driven feedback systems`
+### 14. `Biometric, neurofeedback, and accessory-control bridges`
+
+- Main entries:
+  `PulsoidToOSC`, `iron-heart`, `vrc-osc-miband-hrm`, `vrc-osc-manager`,
+  `OpenShock-ESP-Legacy`, `BrainFlowsIntoVRChat`
+- Why it matters:
+  the repo now has a distinct branch for measurements, biosignal trees,
+  accessory plugins, and safety-aware embedded controllers, which is different
+  from ordinary haptics bridges.
+
+### 15. `Wearable haptics and avatar-driven feedback systems`
 
 - Main entries:
   `ShockOSC`, `VRChatOSC`, `VRC-Haptic-Pancake`, `vrc-patpatpat`,
@@ -327,7 +348,7 @@ These are larger than a single repo and should guide the next research wave.
   tactile tooling now has clear layers around avatar authoring, bridge routing,
   solver logic, and firmware or hardware reference stacks.
 
-### 15. `Playspace editors and room-boundary tooling`
+### 16. `Playspace editors and room-boundary tooling`
 
 - Main entries:
   `ChaperoneTweak`, `xr-chaperone`, `Guardian2Chaperone`,
@@ -336,7 +357,7 @@ These are larger than a single repo and should guide the next research wave.
   this family now clearly spans room authoring, boundary import, live room
   transform control, and shared-space helper patterns.
 
-### 16. `Redirected walking and locomotion adaptation toolkits`
+### 17. `Redirected walking and locomotion adaptation toolkits`
 
 - Main entries:
   `RDWT`, `OpenRDW`, `OpenRDW2`, `ArmSwinger`
@@ -344,7 +365,7 @@ These are larger than a single repo and should guide the next research wave.
   algorithm harnesses and comfort locomotion are now a distinct reusable
   family rather than just scattered movement experiments.
 
-### 17. `XR latency measurement and replay-analysis tooling`
+### 18. `XR latency measurement and replay-analysis tooling`
 
 - Main entries:
   `motion-to-photon-measurement`, `VRLate`, `vrlatency`,
@@ -353,7 +374,7 @@ These are larger than a single repo and should guide the next research wave.
   this family now spans lab-style measurement, consumer-grade checks, and
   parser or analyzer tooling for XR replay data.
 
-### 18. `Simulation telemetry overlays and motion-cueing sidecars`
+### 19. `Simulation telemetry overlays and motion-cueing sidecars`
 
 - Main entries:
   `TinyPedal`, `VPforce-TelemFFB`, `SpaceMonkey`, `SimFeedback-AC-Servo`,
@@ -366,20 +387,22 @@ These are larger than a single repo and should guide the next research wave.
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
 
-1. `VRChat chatbox and avatar-text sidecars`
-2. `Avatar-facing OSC companion and consumer automation sidecars`
-3. `Wearable haptics and avatar-driven feedback systems`
-4. `XR glasses virtual-display stacks and spatial screen utilities`
-5. `VirtualMotionTracker and broader OSC export family`
-6. `Low-level driver tutorial and custom-device plumbing`
+1. `VirtualMotionTracker and broader OSC export family`
+2. `Overlay implementation references and overlay-first hosts`
+3. `Runtime-side service hosts and broader OpenXR utility platforms`
+4. `Mixed-VR controller and tracker bridges`
+5. `Low-level driver tutorial and custom-device plumbing`
+6. `Vision-based hand and body tracking bridges`
 7. `Virtual display and repurposed output workflows`
-8. `Vision-based hand and body tracking bridges`
-9. `PSVR2-specific OpenXR eye-tracking and calibration follow-up`
-10. `Runtime-side service hosts and broader OpenXR utility platforms`
-11. `Mixed-VR controller and tracker bridges`
-12. `Historical utility-suite recovery`
-13. `Validation and workflow micro-utilities`
-14. `Playspace editors and room-boundary tooling`
-15. `XR latency measurement and replay-analysis tooling`
-16. `Simulation telemetry overlays and motion-cueing sidecars`
-17. `Redirected walking and locomotion adaptation toolkits`
+8. `PSVR2-specific OpenXR eye-tracking and calibration follow-up`
+9. `Historical utility-suite recovery`
+10. `Validation and workflow micro-utilities`
+11. `Biometric, neurofeedback, and accessory-control bridges`
+12. `VRChat text workflow refinements and TTS follow-up`
+13. `Avatar-facing OSC companion frameworks and automation relays`
+14. `XR glasses workspace shells and head-tracked screen tools`
+15. `Wearable haptics and avatar-driven feedback systems`
+16. `Playspace editors and room-boundary tooling`
+17. `XR latency measurement and replay-analysis tooling`
+18. `Simulation telemetry overlays and motion-cueing sidecars`
+19. `Redirected walking and locomotion adaptation toolkits`

@@ -2011,6 +2011,313 @@ Use this document when designing a new module or utility and ask:
 - Best fit for `VR-apps-lab`:
   platform-level research references and replay-aware simulator tooling.
 
+## Method 115: Mobile or handheld chatbox relay with a floating overlay entry surface
+
+- What it is:
+  a mobile-first tool exposes a floating entry surface, local history, and
+  configurable local or remote targets, then forwards text into VRChat chatbox
+  `OSC`.
+- Good for:
+  handheld relay tools, phone-assisted VR text entry, companion-device chatbox
+  workflows, and lightweight in-headset communication helpers that do not
+  require a desktop textbox.
+- Why it matters:
+  it turns `chat entry away from the desktop` into a distinct reusable product
+  shape.
+- Strong references:
+  `Chatbox`.
+- Best fit for `VR-apps-lab`:
+  handheld relay utilities and remote-first text-entry experiments.
+
+## Method 116: Translation and transcription desktop shell over overlay, local-model, and OSCQuery services
+
+- What it is:
+  a desktop shell keeps visible UI thin while backend services manage local
+  speech models, translation or transcription, overlay surfaces, and
+  `OSCQuery`-aware VRChat output.
+- Good for:
+  speech tools, translation sidecars, caption-adjacent social utilities,
+  overlay-assisted chat helpers, and desktop companions that need richer local
+  model management.
+- Why it matters:
+  it shows how `speech shell plus overlay plus OSC` can remain modular instead
+  of collapsing into one monolith.
+- Strong references:
+  `VRCT`.
+- Best fit for `VR-apps-lab`:
+  speech-oriented social VR sidecars and overlay-plus-OSC desktop hosts.
+
+## Method 117: Avatar text-surface installer driven by pointer-indexed parameter grids
+
+- What it is:
+  an editor-side system installs parameters, menus, and animator content, then
+  uses a pointer plus chunked parameter blocks to display text directly on the
+  avatar.
+- Good for:
+  avatar-visible text systems, reusable Unity installers, generated animator
+  scaffolding, and communication tools that need more than one bounded chatbox
+  line.
+- Why it matters:
+  it treats `avatar parameters as a display bus` rather than only a control
+  surface.
+- Strong references:
+  `KillFrenzyAvatarText`, `TaSTT`.
+- Best fit for `VR-apps-lab`:
+  avatar-text tooling and editor-time install workflows.
+
+## Method 118: Tiny buffered chatbox micro-utility with one background sender task
+
+- What it is:
+  a very small desktop utility keeps UI and user flow minimal while a single
+  background queue task enforces chatbox timing and optional typing behavior.
+- Good for:
+  minimal VRChat helpers, one-value desktop utilities, rate-limited text
+  senders, and compact companion tools that should stay legible and easy to
+  reason about.
+- Why it matters:
+  it shows how little product surface is needed for a useful `text sender`
+  utility.
+- Strong references:
+  `VRCOSCChatbox`.
+- Best fit for `VR-apps-lab`:
+  micro-utilities and single-purpose desktop helper patterns.
+
+## Method 119: OSCQuery-aware discovery and auto-connect library for chatbox, tracker, or monitoring clients
+
+- What it is:
+  a reusable library exposes service discovery, advertising, and auto-connect
+  flows so end-user tools can find compatible `OSCQuery` peers rather than rely
+  on hardcoded endpoints.
+- Good for:
+  chatbox utilities, tracker bridges, monitor tools, desktop companions, and
+  any future donor line that benefits from local auto-discovery.
+- Why it matters:
+  it turns `peer discovery` into a shareable utility layer instead of many
+  one-off implementations.
+- Strong references:
+  `vrc-oscquery-lib`.
+- Best fit for `VR-apps-lab`:
+  shared discovery helpers and auto-connect infrastructure for future sidecars.
+
+## Method 120: AI or automation bridge into VRChat OSC over a WebSocket relay
+
+- What it is:
+  a bridge keeps raw `OSC` behind a relay server while higher-level automation
+  clients talk to a safer WebSocket or tool-oriented interface.
+- Good for:
+  AI companions, automation frameworks, tool servers, scripted control
+  surfaces, and sidecars that should not embed low-level VRChat transport logic
+  everywhere.
+- Why it matters:
+  it adds an explicit `relay boundary` between VRChat `OSC` and higher-level
+  tools.
+- Strong references:
+  `vrchat-mcp-osc`.
+- Best fit for `VR-apps-lab`:
+  automation bridges and tool-facing service layers over avatar-facing inputs.
+
+## Method 121: Animator-side smoothing layer generated from avatar-facing OSC parameters
+
+- What it is:
+  editor tooling generates proxy parameters, blendtrees, and behaviors so noisy
+  avatar-facing `OSC` inputs can be smoothed on the consumer side.
+- Good for:
+  avatar animation cleanup, hand or face parameter smoothing, remote-input
+  refinement, and Unity-side generators that save repetitive manual setup.
+- Why it matters:
+  it makes `parameter hygiene on the consumer side` a reusable construction
+  method.
+- Strong references:
+  `OSCmooth`.
+- Best fit for `VR-apps-lab`:
+  avatar tooling and editor-generated refinement layers.
+
+## Method 122: Diagnostics-rich desktop companion shell over typed IPC and service status surfaces
+
+- What it is:
+  a desktop host separates frontend and backend through typed IPC while
+  exposing transport health, discovery status, config state, and diagnostics as
+  first-class product surfaces.
+- Good for:
+  OSC companions, runtime helpers, desktop service shells, device-control apps,
+  and broader utilities that need more than a hidden tray process.
+- Why it matters:
+  it gives `desktop companion architecture` a clearer blueprint than a single
+  script or form.
+- Strong references:
+  `OscGoesBrrr`.
+- Best fit for `VR-apps-lab`:
+  larger desktop hosts with explicit diagnostics and service coordination.
+
+## Method 123: XR-glasses workspace shell layered over driver, compositor, and environment hooks
+
+- What it is:
+  a workspace shell sits above the base hardware driver and integrates with the
+  host compositor or environment instead of bundling every layer into one repo
+  role.
+- Good for:
+  XR-glasses productivity shells, special-display workspace tools,
+  platform-native wrappers, and display stacks that need clear ownership
+  between device access and UX.
+- Why it matters:
+  it keeps `special-display UX` separate from `special-display hardware access`.
+- Strong references:
+  `breezy-desktop`, `XRLinuxDriver`.
+- Best fit for `VR-apps-lab`:
+  workspace-shell research and layered special-display utility design.
+
+## Method 124: 2D-to-stereo screen pipeline with latest-frame capture, depth estimation, and multi-output modes
+
+- What it is:
+  a utility captures ordinary desktop or video content, estimates depth, and
+  emits stereoscopic or other special-display outputs through a latest-frame
+  processing pipeline.
+- Good for:
+  XR-glasses screen tools, nontraditional display experiments, creator-facing
+  screen pipelines, and display workflows that do not own the runtime.
+- Why it matters:
+  it treats `screen transformation` as its own reusable product branch instead
+  of a side effect of a driver stack.
+- Strong references:
+  `desktop2stereo`.
+- Best fit for `VR-apps-lab`:
+  screen-transformation utilities and special-display comparison work.
+
+## Method 125: Lightweight OpenVR HMD driver over a glasses IMU backend
+
+- What it is:
+  a thin OpenVR driver adapts glasses orientation data into a tracked-device and
+  display-component path that looks like a headset to the runtime.
+- Good for:
+  custom HMD experiments, special-display runtime paths, driver learning,
+  glasses integrations, and minimal device-plumbing prototypes.
+- Why it matters:
+  it shows the minimum useful structure for `nonstandard display as an HMD`.
+- Strong references:
+  `OpenVR-xrealAirGlassesHMD`.
+- Best fit for `VR-apps-lab`:
+  device-plumbing research and thin runtime-facing display adapters.
+
+## Method 126: 3DoF glasses head-tracking sidecar for UDP or mouse-look consumers
+
+- What it is:
+  a thin desktop sidecar reads head orientation from a glasses device, applies
+  filtering and mappings, and exports that motion to non-XR consumers such as
+  opentrack or mouse-look.
+- Good for:
+  non-VR head tracking, sim or creator tools, hybrid display workflows, and
+  situations where a full XR runtime would be overkill.
+- Why it matters:
+  it turns `special-display tracking` into a reusable sidecar problem rather
+  than only a runtime-integration problem.
+- Strong references:
+  `PhoenixHeadTracker`.
+- Best fit for `VR-apps-lab`:
+  tracking sidecars and non-runtime head-orientation bridges.
+
+## Method 127: Thin biometric bridge with OSCQuery auto-config, multi-client fan-out, and chatbox templating
+
+- What it is:
+  a focused bridge discovers VRChat clients automatically, fans biometric values
+  out to several avatar or chatbox targets, and supports small template-driven
+  message output.
+- Good for:
+  heart-rate overlays, wearable-to-avatar bridges, in-VR status surfaces, and
+  thin monitoring tools that still need clean discovery.
+- Why it matters:
+  it shows how `one-value bridge` tools can still have strong discovery and UX
+  polish.
+- Strong references:
+  `PulsoidToOSC`.
+- Best fit for `VR-apps-lab`:
+  biometric bridges and small telemetry-to-avatar utilities.
+
+## Method 128: Rich biometric sidecar platform with multiple inputs, charts, logs, and output sinks
+
+- What it is:
+  a richer host keeps transport inputs, charts, logs, files, and output sinks
+  coordinated through one operator-facing companion shell.
+- Good for:
+  biometrics companions, multi-source monitoring apps, research sidecars,
+  operator dashboards, and desktop tools that must expose state rather than act
+  like invisible bridges.
+- Why it matters:
+  it turns `biometric tooling` into a full sidecar-platform pattern rather than
+  a single sensor relay.
+- Strong references:
+  `iron-heart`.
+- Best fit for `VR-apps-lab`:
+  operator-facing biometrics shells and richer telemetry companions.
+
+## Method 129: Plugin-oriented avatar-facing accessory manager with persisted settings and OSCQuery services
+
+- What it is:
+  a host application provides logging, config, and plugin registration while
+  individual accessory plugins expose their own parameters and settings
+  callbacks on top of avatar-facing `OSC`.
+- Good for:
+  actuator ecosystems, modular consumer-device bridges, settings-heavy desktop
+  hosts, and broader accessory-control platforms.
+- Why it matters:
+  it keeps `one host, many accessories` maintainable instead of hardwiring each
+  target device into the core app.
+- Strong references:
+  `vrc-osc-manager`.
+- Best fit for `VR-apps-lab`:
+  accessory-control hosts and plugin-oriented sidecar platforms.
+
+## Method 130: Minimal browser-plus-local bridge for wearable telemetry into avatar-facing OSC
+
+- What it is:
+  a browser acquires wearable data through WebBluetooth or a similar web-facing
+  input API while a tiny local bridge forwards normalized values into avatar-
+  facing `OSC`.
+- Good for:
+  fast wearable experiments, low-overhead heart-rate bridges, browser-assisted
+  device integrations, and situations where a full desktop host would be
+  unnecessary.
+- Why it matters:
+  it makes `web plus local bridge` a clear reusable pattern for simple device
+  integrations.
+- Strong references:
+  `vrc-osc-miband-hrm`.
+- Best fit for `VR-apps-lab`:
+  lightweight wearable bridges and quick acquisition-to-OSC prototypes.
+
+## Method 131: Embedded accessory-control firmware with OSC, browser config, and emergency-stop surfaces
+
+- What it is:
+  embedded firmware owns Wi-Fi onboarding, local config, accessory control, and
+  an emergency-stop path while exposing `OSC` and browser configuration
+  surfaces.
+- Good for:
+  safety-aware controllers, standalone accessory devices, networked DIY
+  hardware, and embedded companions that should not depend on a large desktop
+  host.
+- Why it matters:
+  it treats `controller safety and config UX` as a first-class architecture
+  concern on the device itself.
+- Strong references:
+  `OpenShock-ESP-Legacy`.
+- Best fit for `VR-apps-lab`:
+  embedded controller research and accessory-control platform design.
+
+## Method 132: Hierarchical biosignal schema flattened into VRChat-friendly OSC paths
+
+- What it is:
+  an internal signal model keeps biometrics and other measurements structured as
+  a nested tree, then a reporter layer flattens that tree into the path format
+  VRChat and similar consumers expect.
+- Good for:
+  neurofeedback tools, biosignal exporters, complex telemetry-to-avatar
+  bridges, and systems that should preserve richer semantics internally.
+- Why it matters:
+  it avoids collapsing all signal meaning into one flat parameter bag too early.
+- Strong references:
+  `BrainFlowsIntoVRChat`.
+- Best fit for `VR-apps-lab`:
+  richer telemetry schemas and measurement-heavy avatar-facing tools.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

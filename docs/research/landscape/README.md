@@ -188,6 +188,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on telemetry overlays,
   motion-cueing bridges, and sim-sidecar platforms.
 
+- `vr-projects-wave-48-chatbox-mobile-relays-translation-shells-and-avatar-text-surfaces.md`
+  Next GitHub discovery wave focused on mobile chatbox relays,
+  translation and transcription shells, and avatar text-surface installers.
+
+- `vr-projects-wave-49-oscquery-companion-frameworks-ai-bridges-and-parameter-smoothing.md`
+  Next GitHub discovery wave focused on OSCQuery companion frameworks,
+  AI or automation bridges, and avatar-parameter smoothing layers.
+
+- `vr-projects-wave-50-xr-glasses-workspace-shells-openvr-hmd-paths-and-head-tracked-screen-tools.md`
+  Next GitHub discovery wave focused on XR-glasses workspace shells,
+  OpenVR HMD paths, and head-tracked screen tools.
+
+- `vr-projects-wave-51-biometric-bridges-neurofeedback-osc-and-accessory-control-platforms.md`
+  Next GitHub discovery wave focused on biometric bridges,
+  neurofeedback OSC, and accessory-control platforms.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

@@ -121,3 +121,11 @@ bridges, device managers, and experimental XR workflows.
 87. `landscape/vr-projects-wave-46-xr-latency-measurement-recording-parsers-and-experiment-harnesses.md`
 88. `program/github-research-wave-47-plan.md`
 89. `landscape/vr-projects-wave-47-telemetry-overlays-motion-cueing-bridges-and-sim-sidecar-platforms.md`
+90. `program/github-research-wave-48-plan.md`
+91. `landscape/vr-projects-wave-48-chatbox-mobile-relays-translation-shells-and-avatar-text-surfaces.md`
+92. `program/github-research-wave-49-plan.md`
+93. `landscape/vr-projects-wave-49-oscquery-companion-frameworks-ai-bridges-and-parameter-smoothing.md`
+94. `program/github-research-wave-50-plan.md`
+95. `landscape/vr-projects-wave-50-xr-glasses-workspace-shells-openvr-hmd-paths-and-head-tracked-screen-tools.md`
+96. `program/github-research-wave-51-plan.md`
+97. `landscape/vr-projects-wave-51-biometric-bridges-neurofeedback-osc-and-accessory-control-platforms.md`

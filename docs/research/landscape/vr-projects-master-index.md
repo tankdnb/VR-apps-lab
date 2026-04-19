@@ -59,6 +59,10 @@ This file complements:
 - `vr-projects-wave-45-redirected-walking-toolkits-locomotion-sidecars-and-space-redirection-research.md`
 - `vr-projects-wave-46-xr-latency-measurement-recording-parsers-and-experiment-harnesses.md`
 - `vr-projects-wave-47-telemetry-overlays-motion-cueing-bridges-and-sim-sidecar-platforms.md`
+- `vr-projects-wave-48-chatbox-mobile-relays-translation-shells-and-avatar-text-surfaces.md`
+- `vr-projects-wave-49-oscquery-companion-frameworks-ai-bridges-and-parameter-smoothing.md`
+- `vr-projects-wave-50-xr-glasses-workspace-shells-openvr-hmd-paths-and-head-tracked-screen-tools.md`
+- `vr-projects-wave-51-biometric-bridges-neurofeedback-osc-and-accessory-control-platforms.md`
 
 ## How to use this index
 
@@ -210,6 +214,18 @@ This file complements:
 - Use `vr-projects-wave-47-telemetry-overlays-motion-cueing-bridges-and-sim-sidecar-platforms.md`
   for the next wave centered on telemetry overlays, motion-cueing bridges, and
   sim-sidecar platforms.
+- Use `vr-projects-wave-48-chatbox-mobile-relays-translation-shells-and-avatar-text-surfaces.md`
+  for the next wave centered on mobile chatbox relays, translation and
+  transcription shells, and avatar text-surface installers.
+- Use `vr-projects-wave-49-oscquery-companion-frameworks-ai-bridges-and-parameter-smoothing.md`
+  for the next wave centered on OSCQuery companion frameworks, AI or
+  automation bridges, and avatar-parameter smoothing layers.
+- Use `vr-projects-wave-50-xr-glasses-workspace-shells-openvr-hmd-paths-and-head-tracked-screen-tools.md`
+  for the next wave centered on XR-glasses workspace shells,
+  OpenVR HMD paths, and head-tracked screen tools.
+- Use `vr-projects-wave-51-biometric-bridges-neurofeedback-osc-and-accessory-control-platforms.md`
+  for the next wave centered on biometric bridges, neurofeedback OSC, and
+  accessory-control platforms.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`
