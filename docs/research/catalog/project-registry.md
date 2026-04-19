@@ -195,6 +195,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
+- `../landscape/vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
 - `../landscape/project-families.md`
 
 - `Timocop/PSMoveServiceEx-VMT` - `Already studied`
@@ -202,18 +203,22 @@ Primary docs:
 - `gpsnmeajp/VirtualMotionTracker` - `Already studied`
 - `John-Dean/OpenVR-Tracker-Websocket-Driver` - `Already studied`
 - `surplex-io/OpenVR-Driver` - `Fork / variant only`
-- `ju1ce/Simple-OpenVR-Bridge-Driver` - `Not studied deeply`
-- `3NekoSystem/OpenVR-Tracker-Websocket-Driver` - `Not studied deeply`
-- `v0xie/OpenVR-Tracker-Websocket-Driver` - `Not studied deeply`
+- `ju1ce/Simple-OpenVR-Bridge-Driver` - `Already studied`
+- `3NekoSystem/OpenVR-Tracker-Websocket-Driver` - `Fork / variant only`
+- `v0xie/OpenVR-Tracker-Websocket-Driver` - `Fork / variant only`
 - `krazysh01/VirtualDesktop-OpenVR-Trackers` - `Partially studied`
 - `Greendayle/SteamVR_To_OSC` - `Already studied`
 - `ZekkVRC/OpenVR2OSC` - `Already studied`
-- `BarakChamo/OpenVR-OSC` - `Not studied deeply`
+- `BarakChamo/OpenVR-OSC` - `Already studied`
 - `jangxx/steamvr-osc-control` - `Already studied`
-- `choyai/SteamVRTrackerUtility` - `Not studied deeply`
+- `choyai/SteamVRTrackerUtility` - `Already studied`
 - `jangxx/UniversalTrackerMarkers` - `Already studied`
 - `TriadSemi/triad_openvr` - `Already studied`
-- `biosmanager/unity-openvr-tracking` - `Not studied deeply`
+- `biosmanager/unity-openvr-tracking` - `Already studied`
+- `JLChnToZ/axis-vrc-osc-bridge` - `Already studied`
+- `I5UCC/VRCThumbParamsOSC` - `Already studied`
+- `TheNexusAvenger/Enigma` - `Not studied deeply`
+- `ThatGuyThimo/leapmotion-osc` - `Not studied deeply`
 - `ShayBox/VRC-OSC` - `Already studied`
 - `VolcanicArts/VRCOSC` - `Already studied`
 - `pottedmeat7/OpenVR-WalkInPlace` - `Already studied`

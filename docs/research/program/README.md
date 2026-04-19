@@ -75,3 +75,10 @@ repeatable way.
 
 - `github-research-wave-13-backlog.md`
   Executed backlog for the Wave 13 pass.
+
+- `github-research-wave-14-plan.md`
+  Wave 14 research plan focused on tracker-ingress drivers, OSC/input export,
+  SteamVR role reuse, and direct-to-consumer bridge utilities.
+
+- `github-research-wave-14-backlog.md`
+  Executed backlog for the Wave 14 pass.

@@ -196,6 +196,8 @@ Start here:
 - `docs/research/program/github-research-wave-12-backlog.md`
 - `docs/research/program/github-research-wave-13-plan.md`
 - `docs/research/program/github-research-wave-13-backlog.md`
+- `docs/research/program/github-research-wave-14-plan.md`
+- `docs/research/program/github-research-wave-14-backlog.md`
 - `docs/research/landscape/vr-projects-master-index.md`
 - `docs/research/landscape/vr-projects-wave-3-utilities.md`
 - `docs/research/landscape/vr-projects-wave-4-gap-fill.md`
@@ -208,6 +210,7 @@ Start here:
 - `docs/research/landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `docs/research/landscape/vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md`
 - `docs/research/landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
+- `docs/research/landscape/vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
 
 Original Reality Window and passthrough research:
 

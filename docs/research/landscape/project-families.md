@@ -150,17 +150,21 @@ external data into `SteamVR/OpenVR devices`, `pose streams`, or `OSC events`.
 | `gpsnmeajp/VirtualMotionTracker` | Already studied | Mature OSC tracker platform with manager/driver split and skeletal input support |
 | `John-Dean/OpenVR-Tracker-Websocket-Driver` | Already studied | Mainline WebSocket tracker-service driver with local HTTP test surface and pose echo |
 | `surplex-io/OpenVR-Driver` | Fork / variant only | Near-clone of the John-Dean line that mainly adds tracker-role mapping |
-| `ju1ce/Simple-OpenVR-Bridge-Driver` | Not studied deeply | Generic bridge-driver path with external program ingress and locomotion-side comparison value |
-| `3NekoSystem/OpenVR-Tracker-Websocket-Driver` | Not studied deeply | Variant/fork comparison target |
-| `v0xie/OpenVR-Tracker-Websocket-Driver` | Not studied deeply | Variant/fork comparison target |
+| `ju1ce/Simple-OpenVR-Bridge-Driver` | Already studied | Named-pipe bridge-driver skeleton with explicit tracker lifecycle, timing sync, and pose readback helpers |
+| `3NekoSystem/OpenVR-Tracker-Websocket-Driver` | Fork / variant only | Simpler JSON/WebSocket fork on `8082` that trims the broader local-service ambitions of the main WebSocket line |
+| `v0xie/OpenVR-Tracker-Websocket-Driver` | Fork / variant only | Near-mirror of the John-Dean line with the same local web page, HTTPS helpers, and device-state echo surfaces |
 | `krazysh01/VirtualDesktop-OpenVR-Trackers` | Partially studied | Body-state bridge from an external ecosystem |
 | `Greendayle/SteamVR_To_OSC` | Already studied | SteamVR to OSC bridge |
 | `ZekkVRC/OpenVR2OSC` | Already studied | VRChat-oriented input bridge |
-| `BarakChamo/OpenVR-OSC` | Not studied deeply | Should be added for broader OSC comparison |
+| `BarakChamo/OpenVR-OSC` | Already studied | Minimal OpenVR pose-to-OSC exporter built around `triad_openvr` and OSC bundles |
 | `jangxx/steamvr-osc-control` | Already studied | Control bridge for SteamVR functions |
-| `choyai/SteamVRTrackerUtility` | Not studied deeply | Tracker role/power helper worth comparison with tracker bridge family |
+| `choyai/SteamVRTrackerUtility` | Already studied | Tiny serial-based identity helper for deterministic tracker binding workflows |
 | `TriadSemi/triad_openvr` | Already studied | Strong Python wrapper for scripting, events, and device polling |
-| `biosmanager/unity-openvr-tracking` | Not studied deeply | Unity-side tracking bridge/reference candidate |
+| `biosmanager/unity-openvr-tracking` | Already studied | Unity-side OpenVR adapter with no-HMD-friendly initialization and SteamVR tracker-role reuse |
+| `JLChnToZ/axis-vrc-osc-bridge` | Already studied | Standalone vendor-tracker-to-VRChat OSC bridge that bypasses the SteamVR driver path |
+| `I5UCC/VRCThumbParamsOSC` | Already studied | Configurable SteamVR/XInput-to-VRChat OSC exporter with OSCQuery and auto-launch support |
+| `TheNexusAvenger/Enigma` | Not studied deeply | Consumer-side export of SteamVR tracker roles into a non-XR client with a companion plugin path |
+| `ThatGuyThimo/leapmotion-osc` | Not studied deeply | Finger-only OSC egress utility adjacent to the hand-tracking and avatar-parameter bridge family |
 
 ### Consolidation note
 
@@ -169,6 +173,7 @@ This family is the clearest foundation for a future:
 - `Tracker Bridge Service`
 - `SteamVR/OSC bridge`
 - `external sensor -> virtual tracker` platform
+- `engine-side role reuse and direct consumer export`
 
 ## Family 6: Desktop and overlay utility suites
 

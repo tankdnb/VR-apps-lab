@@ -160,7 +160,8 @@ Use this document when designing a new module or utility and ask:
   this is one of the richest architectural spaces in the entire repo.
 - Strong references:
   `VirtualMotionTracker`, `PSMoveServiceEx-VMT`,
-  `OpenVR-Tracker-Websocket-Driver`, `OpenVR-Driver`,
+  `OpenVR-Tracker-Websocket-Driver`, `Simple-OpenVR-Bridge-Driver`,
+  `OpenVR-Driver`,
   `VirtualDesktop-OpenVR-Trackers`.
 - Best fit for `VR-apps-lab`:
   tracker bridge platform and experimentation tools.
@@ -176,8 +177,8 @@ Use this document when designing a new module or utility and ask:
 - Why it matters:
   OSC is a low-friction control plane for VR automation.
 - Strong references:
-  `SteamVR_To_OSC`, `OpenVR2OSC`, `steamvr-osc-control`, `VRCOSC`,
-  `VRC-OSC`.
+  `SteamVR_To_OSC`, `OpenVR2OSC`, `steamvr-osc-control`, `OpenVR-OSC`,
+  `VRCThumbParamsOSC`, `axis-vrc-osc-bridge`, `VRCOSC`, `VRC-OSC`.
 - Best fit for `VR-apps-lab`:
   external integration modules.
 
@@ -442,7 +443,7 @@ Use this document when designing a new module or utility and ask:
   this method lowers the barrier to developing VR utilities and diagnostics.
 - Strong references:
   `SteamVRNoHeadset`, `ViveTrackerExample`, `VirtualSteamVRDriver`,
-  `OpenXR-Simulator`.
+  `OpenXR-Simulator`, `unity-openvr-tracking`.
 - Best fit for `VR-apps-lab`:
   developer tooling, research harnesses, and workflow docs.
 
@@ -548,6 +549,60 @@ Use this document when designing a new module or utility and ask:
   `OVRLay`, `OVROverlayManager`, `openvr_widgets`, `ovr-utils-dashboard`.
 - Best fit for `VR-apps-lab`:
   future overlay host abstractions and reusable prototype scaffolds.
+
+## Method 29: Driver ingress endpoint for external tracker feeds
+
+- What it is:
+  an OpenVR driver exposes a transport endpoint such as a `named pipe` or local
+  `WebSocket` so external programs can spawn, update, or query trackers without
+  embedding the whole tracking stack inside the driver.
+- Good for:
+  CV sidecars, locomotion helpers, browser-based prototypes, mixed-language
+  experiments, and custom sensors that should stay out-of-process.
+- Why it matters:
+  this is one of the cleanest ways to decouple `tracking producer` from
+  `SteamVR driver lifecycle`.
+- Strong references:
+  `Simple-OpenVR-Bridge-Driver`, `OpenVR-Tracker-Websocket-Driver`,
+  `3NekoSystem/OpenVR-Tracker-Websocket-Driver`,
+  `SegsVRControllerDriverSample`.
+- Best fit for `VR-apps-lab`:
+  tracker bridge services and experimental sensor ingress.
+
+## Method 30: Engine-side tracked-device adapter with SteamVR role reuse
+
+- What it is:
+  a game-engine package reads OpenVR device poses directly and reuses
+  SteamVR tracker-role bindings or serial mappings inside scene objects,
+  without needing the full end-user SteamVR app stack.
+- Good for:
+  Unity tools, no-HMD tracker workflows, previs, device visualization, and
+  internal lab apps.
+- Why it matters:
+  it turns SteamVR device state into a reusable engine subsystem instead of a
+  one-off integration script.
+- Strong references:
+  `unity-openvr-tracking`, `SteamVRTrackerUtility`, `ViveTrackerExample`.
+- Best fit for `VR-apps-lab`:
+  engine plugins, no-HMD development workflows, and internal research tools.
+
+## Method 31: Direct tracker and controller state export to OSC consumers
+
+- What it is:
+  a desktop sidecar turns SteamVR state, tracker roles, controller actions, or
+  vendor-specific body data into OSC messages for VRChat or other consumers,
+  without requiring a new SteamVR driver.
+- Good for:
+  avatar parameters, Quest-friendly workflows, remote control surfaces, and
+  thin consumer-facing bridges.
+- Why it matters:
+  sometimes the shortest and most honest utility path is
+  `SteamVR or vendor SDK -> OSC consumer`, not `new driver`.
+- Strong references:
+  `OpenVR-OSC`, `VRCThumbParamsOSC`, `axis-vrc-osc-bridge`,
+  `OpenVR2OSC`, `SteamVR_To_OSC`.
+- Best fit for `VR-apps-lab`:
+  direct consumer bridges, avatar utilities, and quick automation prototypes.
 
 ## Recommended usage inside `VR-apps-lab`
 

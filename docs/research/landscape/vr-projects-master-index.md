@@ -25,6 +25,7 @@ This file complements:
 - `vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md`
 - `vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
+- `vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
 
 ## How to use this index
 
@@ -73,6 +74,9 @@ This file complements:
 - Use `vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
   for the next wave centered on vision-based tracking, hand-input bridges, and
   headsetless camera runtimes.
+- Use `vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
+  for the next wave centered on tracker-ingress drivers, OSC/input export,
+  SteamVR role reuse, and direct-to-consumer bridge utilities.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

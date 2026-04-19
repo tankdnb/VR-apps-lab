@@ -50,6 +50,10 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on vision-based tracking,
   hand-input bridges, and headsetless camera runtimes.
 
+- `vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
+  Next GitHub discovery wave focused on tracker-ingress drivers, OSC/input
+  export, SteamVR role reuse, and direct-to-consumer bridge utilities.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
