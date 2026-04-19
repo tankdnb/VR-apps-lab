@@ -97,6 +97,8 @@ Start here:
 - `docs/foundation/current-operating-context.md` for the current handoff context
 - `docs/research/program/new-session-quickstart.md` for a fresh-session reading
   path
+- `docs/research/program/new-chat-prompt-block.md` for a ready-to-paste prompt
+  when starting a new chat
 - `docs/research/methods/vr-utility-methods-catalog.md` for reusable methods
 - `docs/research/catalog/project-registry.md` for the canonical tracked-project
   list

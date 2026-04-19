@@ -72,6 +72,7 @@ Use this section for:
 
 - `research/program/README.md`
 - `research/program/new-session-quickstart.md`
+- `research/program/new-chat-prompt-block.md`
 - `research/program/research-operator-quick-reference.md`
 - `research/program/repository-restructuring-plan.md`
 - `research/program/restructuring-backlog.md`

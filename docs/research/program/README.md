@@ -9,6 +9,10 @@ repeatable way.
   Fast re-entry guide for new sessions, fresh clones, and assistants that do
   not have prior chat history.
 
+- `new-chat-prompt-block.md`  
+  Ready-to-paste prompt blocks for starting a fresh chat with the right
+  repository context and research workflow.
+
 - `research-operator-quick-reference.md`  
   One-screen operational checklist for running the next GitHub research wave.
 

@@ -96,6 +96,7 @@ docs/
 - [Current operating context](docs/foundation/current-operating-context.md)
 - [Platform foundation](docs/foundation/platform-foundation.md)
 - [New session quickstart](docs/research/program/new-session-quickstart.md)
+- [New chat prompt block](docs/research/program/new-chat-prompt-block.md)
 - [Research operator quick reference](docs/research/program/research-operator-quick-reference.md)
 - [Methods catalog](docs/research/methods/vr-utility-methods-catalog.md)
 - [Project families](docs/research/landscape/project-families.md)
