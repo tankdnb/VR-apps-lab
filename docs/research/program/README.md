@@ -343,3 +343,31 @@ repeatable way.
 
 - `github-research-wave-51-backlog.md`
   Executed backlog for the Wave 51 pass.
+
+- `github-research-wave-52-plan.md`
+  Wave 52 research plan focused on overlay render scaffolds, UI-to-texture
+  bridges, and engine-native projection-overlay extensions.
+
+- `github-research-wave-52-backlog.md`
+  Executed backlog for the Wave 52 pass.
+
+- `github-research-wave-53-plan.md`
+  Wave 53 research plan focused on media launcher overlays, playback surfaces,
+  and lightweight in-headset display shells.
+
+- `github-research-wave-53-backlog.md`
+  Executed backlog for the Wave 53 pass.
+
+- `github-research-wave-54-plan.md`
+  Wave 54 research plan focused on Discord voice overlays, note surfaces, and
+  context-status micro-overlays.
+
+- `github-research-wave-54-backlog.md`
+  Executed backlog for the Wave 54 pass.
+
+- `github-research-wave-55-plan.md`
+  Wave 55 research plan focused on creator control overlays, research
+  stations, and specialized companion-presence surfaces.
+
+- `github-research-wave-55-backlog.md`
+  Executed backlog for the Wave 55 pass.

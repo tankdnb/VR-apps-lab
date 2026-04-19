@@ -204,6 +204,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on biometric bridges,
   neurofeedback OSC, and accessory-control platforms.
 
+- `vr-projects-wave-52-overlay-render-scaffolds-ui-to-texture-bridges-and-engine-native-projection-overlays.md`
+  Next GitHub discovery wave focused on overlay render scaffolds,
+  UI-to-texture bridges, and engine-native projection-overlay extensions.
+
+- `vr-projects-wave-53-media-launcher-overlays-playback-surfaces-and-lightweight-in-headset-display-shells.md`
+  Next GitHub discovery wave focused on media launcher overlays, playback
+  surfaces, and lightweight in-headset display shells.
+
+- `vr-projects-wave-54-discord-voice-overlays-note-surfaces-and-context-status-micro-overlays.md`
+  Next GitHub discovery wave focused on Discord voice overlays, note surfaces,
+  and context-status micro-overlays.
+
+- `vr-projects-wave-55-creator-control-overlays-research-stations-and-specialized-companion-presence-surfaces.md`
+  Next GitHub discovery wave focused on creator control overlays, research
+  stations, and specialized companion-presence surfaces.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

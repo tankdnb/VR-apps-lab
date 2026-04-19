@@ -207,6 +207,13 @@ by runtime or operating system.
 | `elvissteinjr/SteamVR-PrimaryDesktopOverlay` | Already studied | Micro-tool that patches SteamVR's existing desktop overlay instead of rendering a new one |
 | `Nexz/turncountervr` | Not studied deeply | Rotation counter / cable-awareness overlay node |
 | `Martin-Oehler/SteamVR-WebApps` | Already studied | Thin browser-backed dashboard wrappers built on top of `SteamVR-Webkit` |
+| `Mon-Ouie/launcher-openvr-overlay` | Already studied | Linux launcher shell that hands app windows and videos off to external display tools such as `gamescope` and `vr-video-player` |
+| `Mon-Ouie/mpris-openvr-overlay` | Already studied | Very small egui-based media-state and transport-control surface over the desktop `MPRIS` bus |
+| `Mon-Ouie/vr-video-player-overlay` | Already studied | Focused `window or video -> VR display surface` path with flat, plane, sphere, and overlay modes |
+| `iigomaru/MPVR` | Partially studied | Rough libmpv-in-overlay proof of concept that is weaker as a product but still useful as a lower-bound media-embed comparison node |
+| `hiinaspace/vr-notes-anywhere` | Already studied | Projection-overlay note surface that proves annotation can be treated as a tiny scene-state problem instead of a desktop mirror |
+| `jacklul/SteamVR-PhasmoMatrix` | Already studied | Ultra-thin website-wrapper overlay whose main value is focused domain packaging, not a broad host shell |
+| `SteveMarkhamGIT/SmudgeTimerOpenVR` | Already studied | Wrist-mounted game-status overlay with controller-tip gesture triggering and generated-texture updates |
 
 ### Consolidation note
 
@@ -218,6 +225,9 @@ individual project entries. The real overlap axes are:
 - `wrist/watch controls`
 - `dashboard suite`
 - `overlay patch micro-tool`
+- `media/player overlay`
+- `annotation surface`
+- `game-specific status surface`
 - `Linux vs Windows UX`
 - `OpenVR overlay vs OpenXR layer`
 
@@ -239,6 +249,7 @@ direction.
 | `OpenVROverlayPipe` / notification tools | Already studied | Assistive notification angle |
 | `TurnSignal` | Already studied | Comfort/safety micro-utility |
 | `SteamVR_ClockOverlay_Public` | Already studied | Minimal assistive wrist-clock pattern |
+| `lukis101/VRPoleOverlay` | Already studied | Spatial-awareness overlay that renders a known room object and borrows chaperone color and height as configuration defaults |
 
 ### Consolidation note
 
@@ -248,6 +259,7 @@ This is big enough to be treated as a product family:
 - status hints
 - assistive HUDs
 - comfort and orientation helpers
+- anchored room-awareness overlays
 
 ## Family 8: Driver tutorials and custom-device plumbing
 
@@ -409,6 +421,8 @@ creator-facing XR use than about simple end-user overlays.
 | `peacepenguin/Virtual-Display-Driver` | Already studied | Infrastructure for desktop and workflow scenarios |
 | `ValveSoftware/OpenXR-Canonical-Pose-Tool` | Already studied | Runtime-vendor pose validation and canonical-pose comparison tool |
 | `MuffinTastic/openvr-device-positions` | Already studied | Creator-side pose inventory exporter with dashboard overlay and FBX output path |
+| `99oblivius/VRBro-Overlay` | Already studied | OBS-control overlay with wrist-menu and dashboard split over a local plugin protocol |
+| `kuentzel/ROVER` | Already studied | Standalone questionnaire and study station whose overlay manager, operator UI, and importable study schema matter more than any one screen |
 
 ### Consolidation note
 
@@ -420,6 +434,8 @@ It also strengthens a smaller but useful sub-branch:
 - screenshot workflow helpers
 - creator micro-automation tools
 - remote-triggered capture flows
+- creator control surfaces
+- standalone study stations
 
 ## Family 14: Overlay implementation references and host scaffolds
 
@@ -444,6 +460,13 @@ not only how finished utility products behave.
 | `vrkit-platform/vrkit-platform` | Partially studied | OpenXR monitor/overlay platform with plugin-manager and native-interop signals that still deserves a narrower future pass |
 | `LunarG/OpenXR-Overlays-UE4-Plugin` | Already studied | Tiny Unreal-side reference for injecting `XR_EXTX_overlay` session-create info |
 | `mbucchia/_ARCHIVE_OverXR` | Fork / variant only | Current GitHub state is an archive shell with little code to inspect |
+| `foxt/csharp-openvr-overlay-imgui` | Already studied | C# overlay host with Dear ImGui input forwarding, fake desktop debug view, and adjacent desktop-duplication slice |
+| `hiinaspace/godot-openvr-overlay` | Already studied | Godot-native projection-overlay extension that exposes tracker poses, action state, and stereo eye submission through an XR interface |
+| `ondorela/OpenVROverlay_imgui` | Already studied | Small D3D11 plus ImGui sample showing direct overlay-event forwarding into the UI stack |
+| `thomasmo/SampleVRO` | Already studied | Explicit Win32 plus D3D11 texture-to-overlay sample with forwarded keyboard or pointer interaction |
+| `ovrlay/LibOverlay` | Already studied | Minimal Unity helper over raw OpenVR overlay calls with tracked-device attachment and texture refresh |
+| `Marlamin/VROverlayTest` | Not studied deeply | Additional D3D11 overlay scratchpad that may matter only if a future pass needs an even thinner Windows baseline |
+| `ephemeral-laboratories/ComposeVR` | Not studied deeply | Prototype of rendering Jetpack Compose into an OpenVR overlay, useful mainly if a future pass needs `Compose-style UI -> overlay texture` |
 
 ### Consolidation note
 
@@ -455,6 +478,8 @@ This family should feed `VR-apps-lab` as a methods donor layer:
 - host-scene and render-loop scaffolds
 - overlay patch helpers
 - engine-side overlay extension hooks
+- engine-native projection-overlay extensions
+- UI-to-texture bridges with explicit event forwarding
 
 ## Family 15: SteamVR environment helpers and runtime hygiene tools
 
@@ -670,6 +695,10 @@ through overlays, `OSC`, `WebSocket`, or desktop companion surfaces.
 | `I5UCC/VRCTextboxSTT` | Already studied | Local speech-to-text helper where the SteamVR overlay is one output surface among others |
 | `gt0777/VRCLiveCaptionsMod` | Already studied | App-internal speech surface comparison node from the accessibility and social boundary |
 | `rrazgriz/VRCMicOverlay` | Already studied | Minimal status-overlay node for avatar-facing communication state |
+| `Larsundso/SteamVR-Discord-Overlay` | Already studied | Rich Discord-local-IPC overlay with message subscriptions, button overlays, and a localhost control dashboard |
+| `Artemol/DiscOverlay` | Already studied | Thin Unity shell around the Discord Streamkit voice widget with an in-VR positioning dashboard |
+| `imagitama/steamvr-overlay-vrbuddy` | Already studied | Remote companion visualization overlay that renders another person's head and hands in your local playspace |
+| `beareogaming/BD-XSOverlay-notify` | Not studied deeply | BetterDiscord plugin that treats an existing external overlay host as the render target for notifications |
 
 ### Consolidation note
 
@@ -680,6 +709,8 @@ utility branch, not just an accessibility afterthought:
 - desktop-native chat companions
 - service-first speech utilities
 - VRChat-facing sidecars with optional overlay control surfaces
+- Discord-local-IPC overlays with companion dashboards
+- companion-visualization overlays for other people or remote collaborators
 
 ## Family 23: Alternative OpenXR runtimes, special-display paths, and platform experiments
 

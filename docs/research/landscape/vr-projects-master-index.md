@@ -60,6 +60,10 @@ This file complements:
 - `vr-projects-wave-49-oscquery-companion-frameworks-ai-bridges-and-parameter-smoothing.md`
 - `vr-projects-wave-50-xr-glasses-workspace-shells-openvr-hmd-paths-and-head-tracked-screen-tools.md`
 - `vr-projects-wave-51-biometric-bridges-neurofeedback-osc-and-accessory-control-platforms.md`
+- `vr-projects-wave-52-overlay-render-scaffolds-ui-to-texture-bridges-and-engine-native-projection-overlays.md`
+- `vr-projects-wave-53-media-launcher-overlays-playback-surfaces-and-lightweight-in-headset-display-shells.md`
+- `vr-projects-wave-54-discord-voice-overlays-note-surfaces-and-context-status-micro-overlays.md`
+- `vr-projects-wave-55-creator-control-overlays-research-stations-and-specialized-companion-presence-surfaces.md`
 
 ## How to use this index
 
@@ -223,6 +227,18 @@ This file complements:
 - Use `vr-projects-wave-51-biometric-bridges-neurofeedback-osc-and-accessory-control-platforms.md`
   for the next wave centered on biometric bridges, neurofeedback OSC, and
   accessory-control platforms.
+- Use `vr-projects-wave-52-overlay-render-scaffolds-ui-to-texture-bridges-and-engine-native-projection-overlays.md`
+  for the next wave centered on overlay render scaffolds, UI-to-texture
+  bridges, and engine-native projection-overlay extensions.
+- Use `vr-projects-wave-53-media-launcher-overlays-playback-surfaces-and-lightweight-in-headset-display-shells.md`
+  for the next wave centered on media launcher overlays, playback surfaces, and
+  lightweight in-headset display shells.
+- Use `vr-projects-wave-54-discord-voice-overlays-note-surfaces-and-context-status-micro-overlays.md`
+  for the next wave centered on Discord voice overlays, note surfaces, and
+  context-status micro-overlays.
+- Use `vr-projects-wave-55-creator-control-overlays-research-stations-and-specialized-companion-presence-surfaces.md`
+  for the next wave centered on creator control overlays, research stations,
+  and specialized companion-presence surfaces.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

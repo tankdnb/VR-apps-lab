@@ -196,6 +196,20 @@ over-promoted immediately.
 | `MaurerKrisztian/vrc-tts-osc` | Not studied deeply | Narrow speech or TTS-to-chatbox path that could sharpen the `text workflow` comparison line without requiring a broader desktop shell | Medium | Medium | Inspect voice selection, message pacing, and whether it adds anything distinct beyond `VRCT`, `VRCTextboxSTT`, and other clearer text donors |
 | `samyk/myo-osc` | Not studied deeply | Historical armband-to-OSC bridge that could add a useful `wearable input to avatar-facing signal` comparison node | Medium | Medium | Inspect whether it teaches more about wearable acquisition and gesture routing than the newer biometric and accessory-control donors |
 
+## Priority batch Q: Waves 52-55 surfaced follow-up candidates
+
+These were surfaced while deepening overlay scaffolds, media display shells,
+Discord or note overlays, and specialized creator or companion surfaces, but
+they were intentionally kept as honest follow-up nodes instead of being
+over-promoted immediately.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `Marlamin/VROverlayTest` | Not studied deeply | Extra-thin D3D11/OpenVR overlay scratchpad that might matter if a future pass needs a smaller Windows baseline than `SampleVRO` | Medium | Low-Medium | Compare exact texture-upload path and event handling against `SampleVRO`, `OpenVROverlay_imgui`, and `csharp-openvr-overlay-imgui` |
+| `ephemeral-laboratories/ComposeVR` | Not studied deeply | Jetpack Compose rendered into an OpenVR overlay, hinting at a different `UI runtime -> overlay texture` donor line | Medium-High | Medium | Inspect whether the prototype exposes a reusable `Compose-style UI bridge` or remains too experimental and one-off |
+| `beareogaming/BD-XSOverlay-notify` | Not studied deeply | Desktop plugin that pushes notifications into an existing overlay host over the official XSOverlay WebSocket contract | Medium | Medium | Inspect the exact WebSocket payload model and whether the `plugin -> host` split generalizes beyond Discord notifications |
+| `iigomaru/MPVR` | Partially studied | Very rough `libmpv inside OpenVR overlay` proof of concept that may still matter as a lower-bound media embed comparison node | Medium | Medium | Revisit only if a future pass needs a cleaner comparison between full `vr-video-player-overlay` style shells and direct media-engine embedding |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.
@@ -213,11 +227,13 @@ These are larger than a single repo and should guide the next research wave.
 
 - Main entries:
   `VROverlay`, `SteamVR-Webkit`, `SteamVR_HUDCenter`, `SteamVR-WebApps`,
-  `OVROverlayManager`, `LapisOverlay`, `h-view`, `VRSceneOverlay`
+  `OVROverlayManager`, `LapisOverlay`, `h-view`, `VRSceneOverlay`,
+  `godot-openvr-overlay`, `csharp-openvr-overlay-imgui`, `SampleVRO`
 - Why it matters:
   this remains the clearest place to compare `scene-overlay scaffolds`,
-  `desktop UI rasterization bridges`, `overlay-first hosts`, and
-  `micro-overlay patches` as distinct construction strategies.
+  `desktop UI rasterization bridges`, `overlay-first hosts`,
+  `engine-native projection overlays`, and `micro-overlay patches`
+  as distinct construction strategies.
 
 ### 3. `Runtime-side service hosts and broader OpenXR utility platforms`
 
@@ -383,6 +399,16 @@ These are larger than a single repo and should guide the next research wave.
   mature sim sidecars and research simulator stacks are now clear donor lines
   for future VR utility and helper-app design.
 
+### 20. `Context-aware overlay surfaces and specialized display shells`
+
+- Main entries:
+  `SteamVR-Discord-Overlay`, `vr-notes-anywhere`, `SmudgeTimerOpenVR`,
+  `VRBro-Overlay`, `ROVER`, `steamvr-overlay-vrbuddy`, `VRPoleOverlay`
+- Why it matters:
+  the latest waves made it clear that some of the best overlay donors are not
+  desktop mirrors at all, but narrow contextual surfaces with their own local
+  state, control panel, study schema, collaborator view, or room anchor.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -406,3 +432,4 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 17. `XR latency measurement and replay-analysis tooling`
 18. `Simulation telemetry overlays and motion-cueing sidecars`
 19. `Redirected walking and locomotion adaptation toolkits`
+20. `Context-aware overlay surfaces and specialized display shells`

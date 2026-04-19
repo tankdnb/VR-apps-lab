@@ -2318,6 +2318,107 @@ Use this document when designing a new module or utility and ask:
 - Best fit for `VR-apps-lab`:
   richer telemetry schemas and measurement-heavy avatar-facing tools.
 
+## Method 133: Engine-native projection-overlay extension over an existing scene graph
+
+- What it is:
+  an engine extension exposes overlay-specific runtime hooks so an ordinary 3D
+  scene can render as an `OpenVR` projection overlay instead of becoming the
+  main scene app.
+- Good for:
+  in-VR annotation, helper scenes, tracked debug visuals, room markup, and
+  narrow overlay tools that still want full engine rendering and input.
+- Why it matters:
+  it avoids rebuilding scene logic in a separate overlay process when the real
+  donor value is `engine-native scene content as overlay`.
+- Strong references:
+  `godot-openvr-overlay`, `VRSceneOverlay`.
+- Best fit for `VR-apps-lab`:
+  future engine-backed overlays and scene-native helper surfaces.
+
+## Method 134: Offscreen UI stack bridged into an overlay texture with explicit OpenVR event forwarding
+
+- What it is:
+  a UI stack such as `ImGui`, Win32, or Unity UI renders offscreen, then the
+  resulting texture is submitted to `OpenVR` while overlay events are translated
+  back into the UI input model.
+- Good for:
+  dashboard tools, settings panels, debug UIs, and focused control surfaces
+  that need ordinary widgets without adopting a full browser stack.
+- Why it matters:
+  it turns `overlay UI` into a reusable bridge pattern instead of a one-off
+  sample.
+- Strong references:
+  `csharp-openvr-overlay-imgui`, `OpenVROverlay_imgui`, `SampleVRO`,
+  `LibOverlay`.
+- Best fit for `VR-apps-lab`:
+  desktop-backed panels, debug tools, and lightweight in-headset control UIs.
+
+## Method 135: Focused overlay wrapper over external launcher or media toolchains
+
+- What it is:
+  an overlay stays intentionally small and delegates launching, playback,
+  capture, or media state to external desktop tools or buses.
+- Good for:
+  quick-launch panels, media controls, video surfaces, and cases where the
+  overlay should orchestrate rather than own the full media stack.
+- Why it matters:
+  it is often cheaper and cleaner to wrap a capable external tool than to turn
+  the overlay itself into a heavyweight desktop suite.
+- Strong references:
+  `launcher-openvr-overlay`, `mpris-openvr-overlay`, `vr-video-player-overlay`,
+  `MPVR`.
+- Best fit for `VR-apps-lab`:
+  focused display shells and narrow media/control surfaces.
+
+## Method 136: Overlay plus localhost dashboard sidecar for live communication or creator control state
+
+- What it is:
+  the headset overlay is paired with a localhost web panel or local client API
+  so the same tool can be adjusted from desktop while staying visible in VR.
+- Good for:
+  communication overlays, creator control surfaces, operator tools, and any
+  stateful overlay that benefits from richer out-of-headset configuration.
+- Why it matters:
+  it keeps the VR surface compact while preserving a stronger operator
+  experience on desktop.
+- Strong references:
+  `SteamVR-Discord-Overlay`, `VRBro-Overlay`, `h-view`.
+- Best fit for `VR-apps-lab`:
+  dual-surface sidecars that need both in-headset presence and desktop control.
+
+## Method 137: Session-scoped annotation or questionnaire station driven by an explicit scene or data model
+
+- What it is:
+  an overlay owns a small scene state or study schema rather than mirroring a
+  desktop window, and updates that state directly from controller actions or
+  operator inputs.
+- Good for:
+  drawing, markup, guided studies, questionnaires, checklists, and operator-led
+  VR tasks that need structure rather than raw screen sharing.
+- Why it matters:
+  it treats the overlay as a first-class application with its own state model,
+  not as a thin visual wrapper over another app.
+- Strong references:
+  `vr-notes-anywhere`, `ROVER`.
+- Best fit for `VR-apps-lab`:
+  research stations, annotation tools, and structured workflow surfaces.
+
+## Method 138: Context-aware companion or anchored-awareness overlay driven by remote state, gestures, or room geometry
+
+- What it is:
+  an overlay exists to visualize one contextual thing in the user's space:
+  another person, a wrist timer, or a known environmental object.
+- Good for:
+  collaborator awareness, safety helpers, equipment awareness, game-specific
+  status overlays, and remote-presence markers.
+- Why it matters:
+  it shows that a good overlay can be defined by `what contextual state it
+  knows`, not by how much generic desktop functionality it exposes.
+- Strong references:
+  `steamvr-overlay-vrbuddy`, `SmudgeTimerOpenVR`, `VRPoleOverlay`.
+- Best fit for `VR-apps-lab`:
+  contextual micro-overlays and specialized awareness surfaces.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

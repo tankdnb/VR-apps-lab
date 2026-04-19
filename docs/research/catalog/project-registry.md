@@ -111,6 +111,9 @@ Primary docs:
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/vr-projects-wave-39-overlay-host-lineage-dashboard-shells-and-browser-backed-surfaces.md`
+- `../landscape/vr-projects-wave-53-media-launcher-overlays-playback-surfaces-and-lightweight-in-headset-display-shells.md`
+- `../landscape/vr-projects-wave-54-discord-voice-overlays-note-surfaces-and-context-status-micro-overlays.md`
+- `../landscape/vr-projects-wave-55-creator-control-overlays-research-stations-and-specialized-companion-presence-surfaces.md`
 
 - `glenimp617/DesktopXR` - `Already studied`
 - `elvissteinjr/DesktopPlus` - `Already studied`
@@ -136,6 +139,13 @@ Primary docs:
 - `OpenKneeboard/OpenKneeboard` - `Already studied`
 - `dantman/elite-vr-cockpit` - `Already studied`
 - `OVRTools/WhereIsForward` - `Already studied`
+- `Mon-Ouie/launcher-openvr-overlay` - `Already studied`
+- `Mon-Ouie/mpris-openvr-overlay` - `Already studied`
+- `Mon-Ouie/vr-video-player-overlay` - `Already studied`
+- `iigomaru/MPVR` - `Partially studied`
+- `hiinaspace/vr-notes-anywhere` - `Already studied`
+- `jacklul/SteamVR-PhasmoMatrix` - `Already studied`
+- `SteveMarkhamGIT/SmudgeTimerOpenVR` - `Already studied`
 
 ## 5. Notification, remote-control, and automation overlays
 
@@ -187,6 +197,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-7-depth-pass.md`
 - `../landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
 - `../landscape/vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
+- `../landscape/vr-projects-wave-55-creator-control-overlays-research-stations-and-specialized-companion-presence-surfaces.md`
 
 - `OVRTools/OpenVRDeviceBattery` - `Already studied`
 - `zeroae/VRBattery` - `Already studied`
@@ -400,6 +411,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/vr-projects-wave-39-overlay-host-lineage-dashboard-shells-and-browser-backed-surfaces.md`
 - `../landscape/project-families.md`
+- `../landscape/vr-projects-wave-52-overlay-render-scaffolds-ui-to-texture-bridges-and-engine-native-projection-overlays.md`
 
 - `sh-akira/VROverlay` - `Already studied`
 - `BenWoodford/SteamVR-Webkit` - `Already studied`
@@ -410,6 +422,13 @@ Primary docs:
 - `cnlohr/openvr_overlay_model` - `Already studied`
 - `JoeLudwig/overlay_experiments` - `Already studied`
 - `KainosSoftwareLtd/VRSceneOverlay` - `Already studied`
+- `foxt/csharp-openvr-overlay-imgui` - `Already studied`
+- `hiinaspace/godot-openvr-overlay` - `Already studied`
+- `ondorela/OpenVROverlay_imgui` - `Already studied`
+- `thomasmo/SampleVRO` - `Already studied`
+- `ovrlay/LibOverlay` - `Already studied`
+- `Marlamin/VROverlayTest` - `Not studied deeply`
+- `ephemeral-laboratories/ComposeVR` - `Not studied deeply`
 
 ## 16. Creator, capture, metrics, and workflow tools
 
@@ -421,6 +440,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
+- `../landscape/vr-projects-wave-55-creator-control-overlays-research-stations-and-specialized-companion-presence-surfaces.md`
 
 - `baffler/OBS-OpenVR-Input-Plugin` - `Already studied`
 - `ValveSoftware/virtual_display` - `Already studied`
@@ -433,6 +453,8 @@ Primary docs:
 - `peacepenguin/Virtual-Display-Driver` - `Already studied`
 - `ValveSoftware/OpenXR-Canonical-Pose-Tool` - `Already studied`
 - `MuffinTastic/openvr-device-positions` - `Already studied`
+- `99oblivius/VRBro-Overlay` - `Already studied`
+- `kuentzel/ROVER` - `Already studied`
 
 ## 17. Accessibility, assistive HUDs, and comfort tools
 
@@ -443,6 +465,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-8-github-source-pass.md`
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/vr-projects-wave-24-accessibility-captions-and-assistive-overlay-utilities.md`
+- `../landscape/vr-projects-wave-55-creator-control-overlays-research-stations-and-specialized-companion-presence-surfaces.md`
 
 - `Beyley/eepyxr` - `Already studied`
 - `Vinventive/live-captions-vr` - `Already studied`
@@ -454,6 +477,7 @@ Primary docs:
 - `I5UCC/VRCTextboxSTT` - `Already studied`
 - `Otter-Co/TurnSignal` - `Already studied`
 - `Deryck2000/SteamVR_ClockOverlay_Public` - `Already studied`
+- `lukis101/VRPoleOverlay` - `Already studied`
 
 ## 18. Text entry, tracked keyboards, and non-native input surfaces
 
@@ -518,11 +542,17 @@ Primary docs:
 
 - `../landscape/vr-projects-wave-32-social-overlays-communication-sidecars-and-vrchat-companion-surfaces.md`
 - `../landscape/project-families.md`
+- `../landscape/vr-projects-wave-54-discord-voice-overlays-note-surfaces-and-context-status-micro-overlays.md`
+- `../landscape/vr-projects-wave-55-creator-control-overlays-research-stations-and-specialized-companion-presence-surfaces.md`
 
 - `designeerlabs/discord-vr` - `Already studied`
 - `kittynXR/VRCattoChatto` - `Already studied`
 - `Wolf-G88/vrchat-proximity-app` - `Already studied`
 - `Sharrnah/whispering` - `Partially studied`
+- `Larsundso/SteamVR-Discord-Overlay` - `Already studied`
+- `Artemol/DiscOverlay` - `Already studied`
+- `imagitama/steamvr-overlay-vrbuddy` - `Already studied`
+- `beareogaming/BD-XSOverlay-notify` - `Not studied deeply`
 
 ## 23. Alternative OpenXR runtimes, special-display paths, and platform experiments
 

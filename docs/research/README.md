@@ -129,3 +129,11 @@ bridges, device managers, and experimental XR workflows.
 95. `landscape/vr-projects-wave-50-xr-glasses-workspace-shells-openvr-hmd-paths-and-head-tracked-screen-tools.md`
 96. `program/github-research-wave-51-plan.md`
 97. `landscape/vr-projects-wave-51-biometric-bridges-neurofeedback-osc-and-accessory-control-platforms.md`
+98. `program/github-research-wave-52-plan.md`
+99. `landscape/vr-projects-wave-52-overlay-render-scaffolds-ui-to-texture-bridges-and-engine-native-projection-overlays.md`
+100. `program/github-research-wave-53-plan.md`
+101. `landscape/vr-projects-wave-53-media-launcher-overlays-playback-surfaces-and-lightweight-in-headset-display-shells.md`
+102. `program/github-research-wave-54-plan.md`
+103. `landscape/vr-projects-wave-54-discord-voice-overlays-note-surfaces-and-context-status-micro-overlays.md`
+104. `program/github-research-wave-55-plan.md`
+105. `landscape/vr-projects-wave-55-creator-control-overlays-research-stations-and-specialized-companion-presence-surfaces.md`
