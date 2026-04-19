@@ -14,6 +14,10 @@ Read:
 5. `docs/research/landscape/project-families.md`
 6. `docs/research/landscape/not-yet-studied-deeply.md`
 
+For a full `what goes where` guide when documenting a repository addition, use:
+
+- `docs/research/program/repository-documentation-playbook.md`
+
 ## Research Workflow
 
 1. Choose one coherent family or theme.

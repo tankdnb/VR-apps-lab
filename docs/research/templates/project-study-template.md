@@ -7,6 +7,10 @@
 - Study depth:
 - Analyst note:
 
+Use together with:
+
+- `../program/repository-documentation-playbook.md`
+
 ## What it is
 
 Short description of the project.

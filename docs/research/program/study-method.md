@@ -16,6 +16,11 @@ For every repository, we want to understand:
 4. what product ideas it unlocks for `VR-apps-lab`;
 5. what still needs deeper inspection.
 
+For the full documentation-placement guide and exact `what files must change`
+rules, use:
+
+- `repository-documentation-playbook.md`
+
 ## Required fields for every project study
 
 Every meaningful project note should eventually capture:

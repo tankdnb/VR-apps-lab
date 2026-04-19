@@ -37,6 +37,7 @@ methods, reuse plans, and operating workflow.
 ### High-value entry points
 
 - `research/current-focus.md`
+- `research/program/repository-documentation-playbook.md`
 - `research/catalog/project-registry.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`

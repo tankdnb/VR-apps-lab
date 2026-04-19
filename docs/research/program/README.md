@@ -16,6 +16,11 @@ repeatable way.
 - `research-operator-quick-reference.md`  
   One-screen operational checklist for running the next GitHub research wave.
 
+- `repository-documentation-playbook.md`
+  Canonical detailed guide for how repository additions and study updates should
+  be documented, where each kind of information belongs, and what must be
+  updated before commit.
+
 - `documentation-navigation-refactoring-plan.md`
   Dedicated refactor plan for reducing documentation sprawl, clarifying
   canonical roles, and improving navigation.

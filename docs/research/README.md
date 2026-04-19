@@ -35,6 +35,12 @@ bridges, device managers, and experimental XR workflows.
 - `program/documentation-navigation-refactoring-plan.md`
 - `program/documentation-navigation-refactoring-backlog.md`
 
+## Canonical contribution guide
+
+- `program/repository-documentation-playbook.md`
+  Use this when adding or deepening a repository and deciding exactly which
+  canonical files should change.
+
 ## Fast Current Route
 
 Use this path if you want useful context without reopening the whole archive:
