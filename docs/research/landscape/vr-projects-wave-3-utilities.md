@@ -288,7 +288,7 @@ The strongest product and engineering ideas from this wave are:
 - Sources:
   [repo](https://github.com/jangxx/LeapOVRPassthrough)
 
-## Category D: Passthrough and reality-window experiments
+## Category D: Passthrough and real-world view experiments
 
 ### 15. `Danealor/VRPassthrough`
 
@@ -296,9 +296,9 @@ The strongest product and engineering ideas from this wave are:
   lightweight standalone OpenXR + DirectX 11 app for real-time stereo USB-camera
   passthrough to VR headsets.
 - Why it matters:
-  this is one of the closest practical references to the original
-  `Reality Window` dream, but built around external cameras instead of hidden
-  vendor headset cameras.
+  this is one of the closest practical references for
+  `external-camera real-world view utility workflows`, built around external
+  cameras instead of hidden vendor headset cameras.
 - Interesting ideas:
   direct camera-to-compositor pipeline, minimal-latency design, debug overlay,
   auto-reconnect, compute-shader conversion, strong architecture notes,

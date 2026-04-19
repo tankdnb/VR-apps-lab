@@ -2,11 +2,18 @@
 
 [English](README.md) | Русский
 
-Документация в `VR-apps-lab` организована не как плоский набор markdown-файлов, а
-как структурированная база знаний по VR-утилитам, VR-инструментам и reusable
-implementation patterns.
+Документация в репозитории теперь организована вокруг двух устойчивых слоёв:
+
+- `foundation`
+- `research`
+
+В mainline-структуре больше не поддерживается старый app-first или legacy
+experiment track.
 
 ## 1. Foundation
+
+Используй этот раздел для понимания идентичности репозитория, правил работы и
+публичного позиционирования.
 
 - `foundation/README.md`
 - `foundation/repository-positioning.md`
@@ -15,140 +22,43 @@ implementation patterns.
 - `foundation/platform-foundation.md`
 - `foundation/public-roadmap.md`
 
-Используй этот раздел для:
+## 2. Research
 
-- понимания, чем является репозиторий публично;
-- общей цели проекта;
-- product direction и platform assumptions.
-
-## 2. Experiments
-
-- `experiments/README.md`
-- `experiments/reality-window/README.md`
-
-Используй этот раздел для:
-
-- исходной passthrough-ветки;
-- feasibility notes;
-- hardware-specific экспериментов;
-- тупиковых, но полезных инженерных выводов.
-
-## 3. Research
+Здесь находится сама research-система: catalog, families, waves, methods,
+reuse plans и operating workflow.
 
 - `research/README.md`
-
-### Landscape and synthesis
-
+- `research/catalog/README.md`
 - `research/landscape/README.md`
-- `research/landscape/vr-utilities-repo-landscape.md`
-- `research/landscape/vr-projects-master-index.md`
-- `research/landscape/vr-projects-wave-3-utilities.md`
-- `research/landscape/vr-projects-wave-4-gap-fill.md`
-- `research/landscape/vr-projects-wave-5-osc-tracking-tools.md`
-- `research/landscape/vr-projects-wave-6-driver-bridges.md`
-- `research/landscape/vr-projects-wave-7-depth-pass.md`
-- `research/landscape/vr-projects-foundational-waves-1-7-retro-normalization.md`
-- `research/landscape/vr-projects-wave-8-github-source-pass.md`
-- `research/landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
-- `research/landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
-- `research/landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
-- `research/landscape/vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md`
-- `research/landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
-- `research/landscape/vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
-- `research/landscape/vr-projects-wave-15-overlay-hosts-and-scaffolds.md`
-- `research/landscape/vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
-- `research/landscape/vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md`
-- `research/landscape/vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md`
-- `research/landscape/vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
-- `research/landscape/vr-projects-wave-20-performance-mods-graphics-injection-and-vr-sweet-spot-shaders.md`
-- `research/landscape/vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
-- `research/landscape/vr-projects-wave-22-vision-tracking-hosts-camera-full-body-bridges-and-hand-input-sidecars.md`
-- `research/landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
-- `research/landscape/vr-projects-wave-24-accessibility-captions-and-assistive-overlay-utilities.md`
-- `research/landscape/vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
-- `research/landscape/vr-projects-wave-26-vendor-ipc-ecosystems-glasses-bridges-and-official-stack-enhancement-tools.md`
-- `research/landscape/vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md`
+- `research/program/README.md`
+- `research/methods/README.md`
+- `research/discovery/README.md`
+- `research/reuse/README.md`
+
+### Основные точки входа
+
+- `research/catalog/project-registry.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
-
-### Canonical registry
-
-- `research/catalog/README.md`
-- `research/catalog/project-registry.md`
-
-### Methods and discovery
-
-- `research/methods/README.md`
 - `research/methods/vr-utility-methods-catalog.md`
-- `research/discovery/README.md`
-- `research/discovery/discovery-sources.md`
-- `research/discovery/local-source-cache-workflow.md`
-- `research/discovery/intake-pipeline.md`
-- `research/discovery/watchlist.md`
-
-### Research program
-
-- `research/program/README.md`
 - `research/program/new-session-quickstart.md`
-- `research/program/new-chat-prompt-block.md`
 - `research/program/research-operator-quick-reference.md`
-- `research/program/repository-restructuring-plan.md`
-- `research/program/restructuring-backlog.md`
-- `research/program/study-method.md`
-- `research/program/github-research-wave-8-plan.md`
-- `research/program/github-research-wave-8-backlog.md`
-- `research/program/github-research-wave-9-plan.md`
-- `research/program/github-research-wave-9-backlog.md`
-- `research/program/github-research-wave-10-plan.md`
-- `research/program/github-research-wave-10-backlog.md`
-- `research/program/github-research-wave-11-plan.md`
-- `research/program/github-research-wave-11-backlog.md`
-- `research/program/github-research-wave-12-plan.md`
-- `research/program/github-research-wave-12-backlog.md`
-- `research/program/github-research-wave-13-plan.md`
-- `research/program/github-research-wave-13-backlog.md`
-- `research/program/github-research-wave-14-plan.md`
-- `research/program/github-research-wave-14-backlog.md`
-- `research/program/github-research-wave-15-plan.md`
-- `research/program/github-research-wave-15-backlog.md`
-- `research/program/github-research-wave-16-plan.md`
-- `research/program/github-research-wave-16-backlog.md`
-- `research/program/github-research-wave-17-plan.md`
-- `research/program/github-research-wave-17-backlog.md`
-- `research/program/github-research-wave-18-plan.md`
-- `research/program/github-research-wave-18-backlog.md`
-- `research/program/github-research-wave-19-plan.md`
-- `research/program/github-research-wave-19-backlog.md`
-- `research/program/github-research-wave-20-plan.md`
-- `research/program/github-research-wave-20-backlog.md`
-- `research/program/github-research-wave-21-plan.md`
-- `research/program/github-research-wave-21-backlog.md`
-- `research/program/github-research-wave-22-plan.md`
-- `research/program/github-research-wave-22-backlog.md`
-- `research/program/github-research-wave-23-plan.md`
-- `research/program/github-research-wave-23-backlog.md`
-- `research/program/github-research-wave-24-plan.md`
-- `research/program/github-research-wave-24-backlog.md`
-- `research/program/github-research-wave-25-plan.md`
-- `research/program/github-research-wave-25-backlog.md`
-- `research/program/github-research-wave-26-plan.md`
-- `research/program/github-research-wave-26-backlog.md`
-- `research/program/github-research-wave-27-plan.md`
-- `research/program/github-research-wave-27-backlog.md`
-- `research/program/foundational-waves-1-7-retro-normalization-plan.md`
-- `research/program/foundational-waves-1-7-retro-normalization-backlog.md`
 
-### Reuse plans
+## 3. Reuse plans
 
-- `research/reuse/README.md`
-- `research/reuse/external-repos-reuse-plan.md`
-- `research/reuse/vrperfkit-reuse-plan.md`
-- `research/reuse/alvr-reuse-plan.md`
-- `research/reuse/openxr-steamvr-passthrough-reuse-plan.md`
+Активный reuse-layer сейчас сознательно узкий и сфокусирован только на тех
+донорах, которые остаются напрямую релевантны текущей foundation-линии.
+
 - `research/reuse/openvr-advancedsettings-reuse-plan.md`
 - `research/reuse/h-view-overlay-host-reuse-plan.md`
 
-### Templates
+## Рекомендуемый порядок чтения
 
-- `research/templates/README.md`
-- `research/templates/project-study-template.md`
+1. `foundation/repository-positioning.md`
+2. `foundation/current-operating-context.md`
+3. `foundation/platform-foundation.md`
+4. `research/README.md`
+5. `research/methods/vr-utility-methods-catalog.md`
+6. `research/landscape/project-families.md`
+7. `research/catalog/project-registry.md`
+8. `research/landscape/not-yet-studied-deeply.md`

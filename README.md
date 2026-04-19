@@ -2,346 +2,82 @@
 
 English | [Русский](README.ru.md)
 
-`VR-apps-lab` is a public `knowledge repository`, `pattern library`, and `working
-base` for building VR utilities, overlays, diagnostics tools, tracking helpers,
-and experimental XR integrations.
+`VR-apps-lab` is a public `knowledge repository`, `pattern library`, and
+`working lab` for VR utilities, overlays, diagnostics, tracking helpers,
+runtime tools, and experimental XR integrations.
 
-This repo is no longer best described as one standalone VR app.
-
-It started from a `Reality Window` prototype, but it has grown into something
-more useful: a curated place where we collect studied repositories, reusable
-methods, implementation patterns, prototype code, and research workflows for
-future VR tools.
-
-## What this repository is
-
-`VR-apps-lab` combines three layers:
-
-1. `Knowledge repository`
-   - studied public VR-related repositories
-   - extracted implementation methods
-   - overlap families and research waves
-   - backlog-driven discovery and deep-pass workflow
-2. `Working foundation`
-   - reusable `OpenVR` prototype code in `C# / .NET 8`
-   - shared runtime and processing abstractions
-   - spike apps and helper scripts
-3. `Experiment archive`
-   - passthrough and camera experiments
-   - feasibility notes
-   - dead ends that still produced useful engineering knowledge
-
-## Who this repository is for
-
-- VR developers looking for implementation references
-- people building utilities, overlays, dashboards, and VR power-user tools
-- researchers comparing public VR projects and extracting methods
-- contributors who want to add new repositories in a structured way
-- Russian-speaking users who need an additional entry point in Russian
+This repository should be understood as a structured research and foundation
+repo, not as one standalone application.
 
 ## What this repository contains
 
-- a canonical registry of tracked VR repositories
-- reusable methods and product patterns for VR utility development
-- landscape docs grouped by families and research waves
-- a working `OpenVR` companion overlay prototype
-- `PICO/OpenXR` spike apps and feasibility research
-- helper scripts for repeatable GitHub research passes
+- a canonical registry of studied VR repositories
+- reusable implementation methods and product patterns
+- overlap families and wave-based landscape research
+- reuse plans for especially strong donor repositories
+- operating docs for repeatable research and repository maintenance
+- helper scripts and repo-level workflows that support research work
 
-## Current identity of the project
+## What this repository is not
 
-The most accurate way to describe `VR-apps-lab` today is:
+This repository does not present itself as:
 
-- `knowledge repository for VR utility development`
-- `curated research base for VR tools and overlays`
-- `pattern library plus working prototypes`
+- one finished end-user VR product
+- a single app that contributors are expected to complete
+- a promise of production-ready support for every headset or runtime
+- a flat list of links without synthesis
 
-What it should not promise:
+## Start here
 
-- one finished end-user product
-- universal passthrough support
-- production-ready support for every runtime and headset
+- [AGENTS.md](AGENTS.md)
+- [Documentation Index](docs/README.md)
+- [Русский индекс документации](docs/README.ru.md)
+- [Repository Positioning](docs/foundation/repository-positioning.md)
+- [Current Operating Context](docs/foundation/current-operating-context.md)
+- [Platform Foundation](docs/foundation/platform-foundation.md)
+- [Research Docs](docs/research/README.md)
+- [Methods Catalog](docs/research/methods/vr-utility-methods-catalog.md)
+- [Project Families](docs/research/landscape/project-families.md)
+- [Project Registry](docs/research/catalog/project-registry.md)
+- [Not Yet Studied Deeply](docs/research/landscape/not-yet-studied-deeply.md)
+- [New Session Quickstart](docs/research/program/new-session-quickstart.md)
 
 ## Repository layout
 
 ```text
-src/
-  VRRealityWindow.Core/      shared models, providers, processing pipeline
-  VRRealityWindow.OpenVr/    OpenVR runtime integration and overlay presenter
-  VRRealityWindow.App/       desktop CLI app for doctor/probe/overlay
-
-spikes/
-  PicoOpenXrExtensionProbe/  Android OpenXR probe app for PICO runtime testing
+docs/
+  foundation/   positioning, roadmap, operating context
+  research/     catalog, families, waves, methods, reuse plans
 
 scripts/
-  research/                  local helper scripts for GitHub research waves
-
-docs/
-  README.md                  docs index
-  README.ru.md               docs index in Russian
-  foundation/                stable platform and roadmap docs
-  experiments/               feasibility notes and original passthrough track
-  research/                  landscape, reuse plans, registry, and templates
+  research/     helper scripts for repeatable research work
 ```
 
-## Repository entry points
+The mainline repository is intentionally centered on `foundation` and
+`research` materials. Donor-worthy examples and future prototypes can be added
+when they materially strengthen the repository, but they are not the primary
+identity of the repo.
 
-Start here:
-
-- `AGENTS.md` for the repository operating instructions
-- `README.ru.md` for the Russian-language overview
-- `docs/README.md` for the English documentation index
-- `docs/README.ru.md` for the Russian documentation index
-- `docs/foundation/repository-positioning.md` for the public-facing repository
-  identity
-- `docs/foundation/current-operating-context.md` for the current handoff context
-- `docs/research/program/new-session-quickstart.md` for a fresh-session reading
-  path
-- `docs/research/program/new-chat-prompt-block.md` for a ready-to-paste prompt
-  when starting a new chat
-- `docs/research/methods/vr-utility-methods-catalog.md` for reusable methods
-- `docs/research/catalog/project-registry.md` for the canonical tracked-project
-  list
-
-## Working code and prototypes
-
-The repository still includes real code and experiments.
-
-The main code foundation currently includes:
-
-- `OpenVR` overlay prototype code
-- reusable camera/source abstractions
-- frame-processing pipeline building blocks
-- `PICO/OpenXR` probing experiments
-
-## Desktop app commands
-
-From the repository root:
-
-```powershell
-dotnet build .\VRRealityWindowMvp.sln
-dotnet run --project .\src\VRRealityWindow.App -- doctor
-dotnet run --project .\src\VRRealityWindow.App -- probe --source test-pattern
-dotnet run --project .\src\VRRealityWindow.App -- overlay --source test-pattern
-```
-
-Useful variants:
-
-```powershell
-dotnet run --project .\src\VRRealityWindow.App -- doctor --target-headset pico-4-pro
-dotnet run --project .\src\VRRealityWindow.App -- probe --source tracked-camera
-dotnet run --project .\src\VRRealityWindow.App -- overlay --anchor left-hand
-dotnet run --project .\src\VRRealityWindow.App -- overlay --duration-seconds 20
-```
-
-## Reusable building blocks
-
-- `ICameraProvider` abstraction for interchangeable video sources
-- `FrameProcessingPipeline` for CPU-side processing and future GPU upgrades
-- `OpenVrOverlayPresenter` for world-space utility windows
-- JSON settings and experiment configuration
-- `PicoOpenXrExtensionProbe` for Android/OpenXR capability discovery
-
-## Best next outputs from this repository
-
-- new VR utilities built on top of the existing foundation
-- structured deep-pass research waves
-- reusable methods for overlay, OpenXR layer, tracker bridge, and diagnostics
-- contribution-ready public knowledge for other VR developers
-
-## How changes are validated here
-
-`VR-apps-lab` is not maintained like a single shipping app.
+## Validation model
 
 For `research` and `documentation` changes, the main quality checks are:
 
-- repository structure stays coherent;
-- links and navigation remain valid;
-- registry, families, methods, and backlog stay aligned;
-- the repository description stays honest about support boundaries.
+- structure stays coherent
+- navigation stays clear
+- registry, families, methods, and backlog stay aligned
+- the repository description stays honest about support boundaries
 
-For `prototype` or runnable `tool` changes, validation may also include build
-checks, smoke tests, and runtime notes for the affected component.
+If a future change adds or updates runnable examples, validate only the
+affected example or tool path.
 
 ## Documentation map
 
-Start here:
-
-- `README.ru.md`
-- `docs/README.md`
-- `docs/README.ru.md`
-- `docs/foundation/repository-positioning.md`
-- `docs/foundation/repository-positioning-backlog.md`
-- `docs/foundation/platform-foundation.md`
-- `docs/foundation/public-roadmap.md`
-- `docs/research/README.md`
-- `docs/research/methods/vr-utility-methods-catalog.md`
-- `docs/research/landscape/project-families.md`
-- `docs/research/catalog/project-registry.md`
-- `docs/research/discovery/local-source-cache-workflow.md`
-- `docs/research/discovery/intake-pipeline.md`
-- `docs/research/discovery/watchlist.md`
-- `docs/research/landscape/not-yet-studied-deeply.md`
-- `docs/research/program/repository-restructuring-plan.md`
-- `docs/research/program/restructuring-backlog.md`
-- `docs/research/program/github-research-wave-8-plan.md`
-- `docs/research/program/github-research-wave-8-backlog.md`
-- `docs/research/program/github-research-wave-9-plan.md`
-- `docs/research/program/github-research-wave-9-backlog.md`
-- `docs/research/program/github-research-wave-10-plan.md`
-- `docs/research/program/github-research-wave-10-backlog.md`
-- `docs/research/program/github-research-wave-11-plan.md`
-- `docs/research/program/github-research-wave-11-backlog.md`
-- `docs/research/program/github-research-wave-12-plan.md`
-- `docs/research/program/github-research-wave-12-backlog.md`
-- `docs/research/program/github-research-wave-13-plan.md`
-- `docs/research/program/github-research-wave-13-backlog.md`
-- `docs/research/program/github-research-wave-14-plan.md`
-- `docs/research/program/github-research-wave-14-backlog.md`
-- `docs/research/program/github-research-wave-15-plan.md`
-- `docs/research/program/github-research-wave-15-backlog.md`
-- `docs/research/program/github-research-wave-16-plan.md`
-- `docs/research/program/github-research-wave-16-backlog.md`
-- `docs/research/program/github-research-wave-17-plan.md`
-- `docs/research/program/github-research-wave-17-backlog.md`
-- `docs/research/program/github-research-wave-18-plan.md`
-- `docs/research/program/github-research-wave-18-backlog.md`
-- `docs/research/program/github-research-wave-19-plan.md`
-- `docs/research/program/github-research-wave-19-backlog.md`
-- `docs/research/program/github-research-wave-20-plan.md`
-- `docs/research/program/github-research-wave-20-backlog.md`
-- `docs/research/program/github-research-wave-21-plan.md`
-- `docs/research/program/github-research-wave-21-backlog.md`
-- `docs/research/program/github-research-wave-22-plan.md`
-- `docs/research/program/github-research-wave-22-backlog.md`
-- `docs/research/program/github-research-wave-23-plan.md`
-- `docs/research/program/github-research-wave-23-backlog.md`
-- `docs/research/program/github-research-wave-24-plan.md`
-- `docs/research/program/github-research-wave-24-backlog.md`
-- `docs/research/program/github-research-wave-25-plan.md`
-- `docs/research/program/github-research-wave-25-backlog.md`
-- `docs/research/program/github-research-wave-26-plan.md`
-- `docs/research/program/github-research-wave-26-backlog.md`
-- `docs/research/program/github-research-wave-27-plan.md`
-- `docs/research/program/github-research-wave-27-backlog.md`
-- `docs/research/program/github-research-wave-28-plan.md`
-- `docs/research/program/github-research-wave-28-backlog.md`
-- `docs/research/program/github-research-wave-29-plan.md`
-- `docs/research/program/github-research-wave-29-backlog.md`
-- `docs/research/program/github-research-wave-30-plan.md`
-- `docs/research/program/github-research-wave-30-backlog.md`
-- `docs/research/program/github-research-wave-31-plan.md`
-- `docs/research/program/github-research-wave-31-backlog.md`
-- `docs/research/program/github-research-wave-32-plan.md`
-- `docs/research/program/github-research-wave-32-backlog.md`
-- `docs/research/program/github-research-wave-33-plan.md`
-- `docs/research/program/github-research-wave-33-backlog.md`
-- `docs/research/program/github-research-wave-34-plan.md`
-- `docs/research/program/github-research-wave-34-backlog.md`
-- `docs/research/program/github-research-wave-35-plan.md`
-- `docs/research/program/github-research-wave-35-backlog.md`
-- `docs/research/program/github-research-wave-36-plan.md`
-- `docs/research/program/github-research-wave-36-backlog.md`
-- `docs/research/program/github-research-wave-37-plan.md`
-- `docs/research/program/github-research-wave-37-backlog.md`
-- `docs/research/program/github-research-wave-38-plan.md`
-- `docs/research/program/github-research-wave-38-backlog.md`
-- `docs/research/program/github-research-wave-39-plan.md`
-- `docs/research/program/github-research-wave-39-backlog.md`
-- `docs/research/program/github-research-wave-40-plan.md`
-- `docs/research/program/github-research-wave-40-backlog.md`
-- `docs/research/program/github-research-wave-41-plan.md`
-- `docs/research/program/github-research-wave-41-backlog.md`
-- `docs/research/program/github-research-wave-42-plan.md`
-- `docs/research/program/github-research-wave-42-backlog.md`
-- `docs/research/program/github-research-wave-43-plan.md`
-- `docs/research/program/github-research-wave-43-backlog.md`
-- `docs/research/program/github-research-wave-44-plan.md`
-- `docs/research/program/github-research-wave-44-backlog.md`
-- `docs/research/program/github-research-wave-45-plan.md`
-- `docs/research/program/github-research-wave-45-backlog.md`
-- `docs/research/program/github-research-wave-46-plan.md`
-- `docs/research/program/github-research-wave-46-backlog.md`
-- `docs/research/program/github-research-wave-47-plan.md`
-- `docs/research/program/github-research-wave-47-backlog.md`
-- `docs/research/program/github-research-wave-48-plan.md`
-- `docs/research/program/github-research-wave-48-backlog.md`
-- `docs/research/program/github-research-wave-49-plan.md`
-- `docs/research/program/github-research-wave-49-backlog.md`
-- `docs/research/program/github-research-wave-50-plan.md`
-- `docs/research/program/github-research-wave-50-backlog.md`
-- `docs/research/program/github-research-wave-51-plan.md`
-- `docs/research/program/github-research-wave-51-backlog.md`
-- `docs/research/landscape/vr-projects-master-index.md`
-- `docs/research/landscape/vr-projects-wave-3-utilities.md`
-- `docs/research/landscape/vr-projects-wave-4-gap-fill.md`
-- `docs/research/landscape/vr-projects-wave-5-osc-tracking-tools.md`
-- `docs/research/landscape/vr-projects-wave-6-driver-bridges.md`
-- `docs/research/landscape/vr-projects-wave-7-depth-pass.md`
-- `docs/research/landscape/vr-projects-wave-8-github-source-pass.md`
-- `docs/research/landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
-- `docs/research/landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
-- `docs/research/landscape/vr-projects-wave-11-runtime-adapters-virtual-displays-and-validation.md`
-- `docs/research/landscape/vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md`
-- `docs/research/landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
-- `docs/research/landscape/vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
-- `docs/research/landscape/vr-projects-wave-15-overlay-hosts-and-scaffolds.md`
-- `docs/research/landscape/vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
-- `docs/research/landscape/vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md`
-- `docs/research/landscape/vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md`
-- `docs/research/landscape/vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md`
-- `docs/research/landscape/vr-projects-wave-20-performance-mods-graphics-injection-and-vr-sweet-spot-shaders.md`
-- `docs/research/landscape/vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
-- `docs/research/landscape/vr-projects-wave-22-vision-tracking-hosts-camera-full-body-bridges-and-hand-input-sidecars.md`
-- `docs/research/landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
-- `docs/research/landscape/vr-projects-wave-24-accessibility-captions-and-assistive-overlay-utilities.md`
-- `docs/research/landscape/vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
-- `docs/research/landscape/vr-projects-wave-26-vendor-ipc-ecosystems-glasses-bridges-and-official-stack-enhancement-tools.md`
-- `docs/research/landscape/vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md`
-- `docs/research/landscape/vr-projects-wave-28-text-entry-tracked-keyboards-and-non-native-input-surfaces.md`
-- `docs/research/landscape/vr-projects-wave-29-hand-palm-radial-and-quick-access-menus.md`
-- `docs/research/landscape/vr-projects-wave-30-spatial-ui-interaction-frameworks-and-input-stacks.md`
-- `docs/research/landscape/vr-projects-wave-31-teleoperation-workspaces-and-embodied-control-surfaces.md`
-- `docs/research/landscape/vr-projects-wave-32-social-overlays-communication-sidecars-and-vrchat-companion-surfaces.md`
-- `docs/research/landscape/vr-projects-wave-33-alternative-openxr-runtimes-and-special-display-paths.md`
-- `docs/research/landscape/vr-projects-wave-34-tracked-device-geometry-cad-and-auxiliary-tracker-tooling.md`
-- `docs/research/landscape/vr-projects-wave-35-expressive-tracking-and-avatar-facing-input-bridges.md`
-- `docs/research/landscape/vr-projects-wave-36-runtime-service-hosts-openxr-utility-platforms-and-layer-doctoring.md`
-- `docs/research/landscape/vr-projects-wave-37-mixed-vr-controller-bridges-driver-side-input-emulation-and-hand-tracking-adaptation.md`
-- `docs/research/landscape/vr-projects-wave-38-steamvr-validation-patchers-and-environment-hygiene-micro-tools.md`
-- `docs/research/landscape/vr-projects-wave-39-overlay-host-lineage-dashboard-shells-and-browser-backed-surfaces.md`
-- `docs/research/landscape/vr-projects-wave-40-vrchat-chatbox-stt-and-text-surface-sidecars.md`
-- `docs/research/landscape/vr-projects-wave-41-avatar-facing-osc-companions-routers-and-consumer-automation.md`
-- `docs/research/landscape/vr-projects-wave-42-xr-glasses-virtual-display-stacks-and-spatial-screen-utilities.md`
-- `docs/research/landscape/vr-projects-wave-43-wearable-haptics-tactile-bridges-and-avatar-driven-feedback.md`
-- `docs/research/landscape/vr-projects-wave-44-playspace-editors-boundary-importers-and-shared-space-helpers.md`
-- `docs/research/landscape/vr-projects-wave-45-redirected-walking-toolkits-locomotion-sidecars-and-space-redirection-research.md`
-- `docs/research/landscape/vr-projects-wave-46-xr-latency-measurement-recording-parsers-and-experiment-harnesses.md`
-- `docs/research/landscape/vr-projects-wave-47-telemetry-overlays-motion-cueing-bridges-and-sim-sidecar-platforms.md`
-- `docs/research/landscape/vr-projects-wave-48-chatbox-mobile-relays-translation-shells-and-avatar-text-surfaces.md`
-- `docs/research/landscape/vr-projects-wave-49-oscquery-companion-frameworks-ai-bridges-and-parameter-smoothing.md`
-- `docs/research/landscape/vr-projects-wave-50-xr-glasses-workspace-shells-openvr-hmd-paths-and-head-tracked-screen-tools.md`
-- `docs/research/landscape/vr-projects-wave-51-biometric-bridges-neurofeedback-osc-and-accessory-control-platforms.md`
-
-Original Reality Window and passthrough research:
-
-- `docs/experiments/reality-window/overlay-vr-mvp-spec.md`
-- `docs/experiments/reality-window/current-feasibility-status.md`
-- `docs/experiments/reality-window/pico-openxr-camera-path.md`
-- `docs/experiments/reality-window/pico-connect-constraint.md`
-- `docs/experiments/reality-window/pico-connect-passthrough-spike.md`
-
-Landscape and reuse research:
-
-- `docs/research/landscape/vr-utilities-repo-landscape.md`
-- `docs/research/reuse/openxr-steamvr-passthrough-reuse-plan.md`
-- `docs/research/reuse/alvr-reuse-plan.md`
-- `docs/research/reuse/openvr-advancedsettings-reuse-plan.md`
-- `docs/research/reuse/h-view-overlay-host-reuse-plan.md`
-- `docs/research/reuse/vrperfkit-reuse-plan.md`
-- `docs/research/reuse/external-repos-reuse-plan.md`
+Use [docs/README.md](docs/README.md) as the main documentation index and
+[docs/research/README.md](docs/research/README.md) as the main entry point for
+the research system.
 
 ## Notes on licensing
 
-This repository is released under `MIT`, with third-party notices documented in
-`THIRD_PARTY_NOTICES.md`. Vendored SDK files keep their original notices.
+This repository is released under `MIT`. See
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the current third-party
+notice status.

@@ -10,9 +10,6 @@ This file complements:
 - `not-yet-studied-deeply.md`
 - `../catalog/project-registry.md`
 - `vr-utilities-repo-landscape.md`
-- `../reuse/openxr-steamvr-passthrough-reuse-plan.md`
-- `../reuse/alvr-reuse-plan.md`
-- `../reuse/vrperfkit-reuse-plan.md`
 - `vr-projects-wave-3-utilities.md`
 - `vr-projects-wave-4-gap-fill.md`
 - `vr-projects-wave-5-osc-tracking-tools.md`

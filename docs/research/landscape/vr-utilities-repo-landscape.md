@@ -589,7 +589,9 @@ Potential feature set:
 - desk/keyboard view tool
 - sim cockpit utility window
 
-This is the most realistic way to revisit the original reality-window idea if onboard `PICO` camera access stays blocked.
+This is one of the most realistic ways to revisit
+`external-camera real-world view utilities`
+if onboard `PICO` camera access stays blocked.
 
 ## Recommended next steps
 
@@ -620,8 +622,8 @@ Why:
 
 Prototype:
 
-- `external camera reality window`
-
+- `external camera real-world view utility`
 Why:
 
-- salvages the original idea without depending on proprietary HMD passthrough access.
+- preserves the useful utility direction without depending on proprietary HMD
+  passthrough access.

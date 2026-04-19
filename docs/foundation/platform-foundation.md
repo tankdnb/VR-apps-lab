@@ -3,140 +3,107 @@
 ## Purpose
 
 `VR-apps-lab` is a public knowledge repository and reusable foundation for VR
-utility development, not a single one-off prototype.
+utility development.
 
-The repository keeps the original `Reality Window` work, but now treats it as a
-technical seed that produced:
+Its mainline value is not one retained application, but a structured system for
+capturing:
 
-- a working overlay runtime path;
-- reusable camera and processing abstractions;
-- a PICO/OpenXR probing workflow;
-- a large body of architecture, product, and repository research.
+- reusable engineering methods
+- product patterns
+- architecture references
+- donor-worthy implementation ideas
+- backlog-ready future directions
 
 ## Core design principles
 
 1. Preserve and structure knowledge, not only code.
-2. Build reusable infrastructure before niche UX.
-3. Keep runtime-specific integration isolated behind clear interfaces.
-4. Favor practical utility tools that can ship on current hardware.
-5. Preserve experiments and findings, even when a product hypothesis fails.
-6. Design around overlays, diagnostics, and control surfaces first.
+2. Prefer families, methods, and synthesis over flat link collection.
+3. Keep the repository honest about what is current versus what has been
+   retired.
+4. Favor practical utility-tool directions over vague all-in-one product
+   narratives.
+5. Keep local study cache and temporary acquisition outside tracked history.
+6. Add runnable examples only when they materially strengthen the public
+   repository.
 
-## Reusable capabilities already in repo
+## Current repository layers
 
-### Desktop OpenVR foundation
+### Foundation layer
 
-- overlay lifecycle management
-- world-locked and hand-locked placement
-- basic controller-driven interaction
-- desktop-side diagnostics via `doctor`, `probe`, and `overlay`
+- positioning and public framing
+- operating context
+- roadmap and repository rules
 
-### Shared core layer
+### Research layer
 
-- source/provider abstraction via `ICameraProvider`
-- shared frame model and status reporting
-- CPU-side frame processing pipeline
-- JSON-backed settings model
+- discovery and intake workflow
+- canonical project registry
+- family synthesis
+- methods catalog
+- wave-by-wave deep-pass research
+- reuse plans for strong donors
 
-### Android OpenXR spike infrastructure
+### Working-lab layer
 
-- Android project structure for standalone headset testing
-- OpenXR extension probing on PICO hardware
-- a repeatable path for testing runtime capabilities before product investment
+- optional donor-ready examples or small prototypes when they still serve the
+  repository
+- scripts and repeatable helper workflows
 
 ## What this repo should become
 
 The repository is best suited to become:
 
-- a durable knowledge base for VR utility development;
-- a pattern library for overlays, bridges, diagnostics, and helpers;
-- a working prototype foundation for future VR tools.
-
-The most natural utility directions inside that frame are:
-
-- wrist dashboards
-- quick action panels
-- desktop/reference windows in VR
-- device metrics overlays
-- tracking and calibration helpers
-- external-camera and mixed-reality experiments
-- developer diagnostics tools
+- a durable knowledge base for VR utility development
+- a pattern library for overlays, bridges, diagnostics, and helpers
+- a strong public research base that lets future contributors recover context
+  quickly
 
 ## What this repo should not promise
 
 Right now the repository should not promise:
 
-- that it is one finished application;
-- universal passthrough access across all headsets
-- raw camera access from `Pico Connect`
-- production-ready mixed reality
-- vendor-independent headset camera support
-
-These remain research areas, not shipped capabilities.
-
-## Recommended architecture direction
-
-Short term:
-
-- `OpenVR companion overlay` architecture for useful SteamVR tools
-
-Medium term:
-
-- `OpenXR runtime/app-layer` experiments for headset-native utilities
-
-Long term:
-
-- selected runtime integrations or API-layer work where device support is real
+- that it is one finished application
+- that every research branch implies an imminent product
+- production-ready support for every runtime and headset
+- a requirement that every change must be build-validated
 
 ## Product evaluation filter
 
-Before starting a new utility in this repo, ask:
+Before starting a new utility direction in this repo, ask:
 
-1. Does it reuse the current overlay/runtime foundation?
-2. Can it work on real hardware without vendor-locked hidden APIs?
-3. Is it useful even without passthrough?
-4. Can it be validated in a small MVP?
+1. Does it strengthen a real family or method already present in the research?
+2. Does it add reusable donor value rather than one-off novelty?
+3. Can it be described honestly without over-promising hardware support?
+4. Is it small enough to validate as a focused utility or example?
 
-If the answer is mostly yes, it is a good candidate for this repository.
+If the answer is mostly yes, it is a good candidate for `VR-apps-lab`.
 
 ## Repository verification model
 
 `VR-apps-lab` should not use one single validation rule for every change.
 
-This repository is both:
-
-- a `knowledge base`
-- a `pattern library`
-- a `prototype foundation`
-
-Because of that, the expected verification depends on the type of change.
-
 ### For research and documentation changes
 
-The required verification is:
+Required verification:
 
-- navigation remains clear and consistent;
-- links are valid and public-facing paths are not broken;
-- new material is placed in the right section of the repository;
-- registry, families, methods, and backlog references stay aligned;
-- the repository description does not over-promise product readiness.
+- navigation remains clear and consistent
+- links and referenced paths stay valid
+- new material lands in the right canonical place
+- registry, families, methods, and backlog stay aligned
+- public positioning remains honest
 
-For this class of changes, running a code build is optional and usually not the
-main quality signal.
+### For prototype or example changes
 
-### For prototype and code changes
+When a change touches runnable examples or future small tools, verification may
+include:
 
-When a change touches actual prototype code, tooling, or runnable experiments,
-the expected verification becomes stronger and may include:
-
-- build validation for the affected project;
-- local smoke tests for the touched workflow;
-- runtime or hardware notes when testing cannot be completed;
-- documentation updates that explain the real support boundary.
+- build validation for the affected example
+- focused smoke checks for the touched path
+- documentation updates that explain real support boundaries
 
 ### Rule of thumb
 
 If the change improves repository knowledge, structure, or discovery, validate
 `repository integrity`.
 
-If the change affects runnable code paths, validate the `affected prototype`.
+If the change affects a runnable example, validate only the `affected example`.

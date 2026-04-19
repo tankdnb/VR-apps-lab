@@ -12,9 +12,5 @@ These documents answer questions such as:
 
 ## Files
 
-- `external-repos-reuse-plan.md`
-- `vrperfkit-reuse-plan.md`
-- `alvr-reuse-plan.md`
-- `openxr-steamvr-passthrough-reuse-plan.md`
 - `openvr-advancedsettings-reuse-plan.md`
 - `h-view-overlay-host-reuse-plan.md`

@@ -369,9 +369,9 @@ This family should feed:
 
 ## Family 12: Passthrough, reality layers, and camera experiments
 
-This family is directly relevant to the original `Reality Window` concept, even
-though not all projects are practical product donors for current target
-hardware.
+This family matters because it covers real-world view, passthrough, and
+camera-adjacent utility directions, even though not all projects are practical
+product donors for current target hardware.
 
 | Project | Status | Notes |
 |---|---|---|

@@ -1,6 +1,6 @@
 # New Session Quickstart
 
-- Date: `2026-04-18`
+- Date: `2026-04-19`
 - Purpose: help a new session, contributor, or assistant recover repository
   intent quickly without needing prior chat history.
 
@@ -19,14 +19,13 @@ Use this file when:
 
 Treat it as a combination of:
 
+- `foundation`
 - `research base`
 - `pattern library`
-- `prototype lab`
+- `working lab`
 
-The most common mistake is to open `src/` first and assume the repository is
-only about the old `Reality Window` prototype.
-
-That prototype still matters, but it is only one branch of the repository.
+The most common mistake is to look for a hidden main application instead of the
+canonical docs and research system.
 
 ## Required reading order
 
@@ -46,7 +45,7 @@ Then choose the branch of work:
 - `research/discovery` if the task is to find new repositories
 - `research/landscape` if the task is to synthesize or deepen existing studies
 - `research/reuse` if the task is to extract donor patterns
-- `src/` or `spikes/` if the task is to extend examples or prototypes
+- `scripts/` if the task is to improve helper workflows
 
 ## Standard workflow for a new GitHub research wave
 
@@ -59,7 +58,7 @@ Follow this sequence:
 5. Perform a code-level pass.
 6. Extract methods, product patterns, and reuse value.
 7. Update the registry, families, methods, and backlog.
-8. Add one canonical wave document.
+8. Add one canonical wave document plus plan and backlog.
 
 This prevents the repository from turning back into a flat pile of links.
 
@@ -70,26 +69,20 @@ Some useful research data should stay outside git history:
 - `.research-sources/`
 - `.tmp/`
 - `artifacts/`
-- generated Android or .NET build outputs
 
-These support research and experiments, but they are not part of the canonical
-public repository history.
+These support research work, but they are not part of the canonical public
+repository history.
 
 ## Validation rule
-
-Use the correct validation model for the type of change.
 
 For `documentation / research` changes:
 
 - verify navigation
 - verify link consistency
-- verify registry/families/methods alignment
-- verify that the new material has a correct place in the structure
+- verify registry, families, methods, and backlog alignment
+- verify that new material lands in the correct canonical place
 
-For `prototype code` changes:
-
-- add the relevant build or smoke-check only if the change actually affects a
-  runnable prototype
+If a future change adds runnable examples, validate only the affected example.
 
 ## If the task is vague
 
@@ -108,11 +101,9 @@ then the safest next step is:
 
 ## If the task is about product direction
 
-If the session is choosing what the repository should build or prioritize next,
-start from:
+If the session is choosing what the repository should prioritize next, start
+from:
 
 1. `docs/foundation/public-roadmap.md`
 2. `docs/research/landscape/project-families.md`
 3. `docs/research/methods/vr-utility-methods-catalog.md`
-
-This keeps product direction tied to studied evidence instead of guesswork.

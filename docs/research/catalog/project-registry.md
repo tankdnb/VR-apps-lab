@@ -280,7 +280,6 @@ Primary docs:
 
 Primary docs:
 
-- `../reuse/openxr-steamvr-passthrough-reuse-plan.md`
 - `../landscape/vr-utilities-repo-landscape.md`
 - `../landscape/vr-projects-wave-10-runtime-bridge-and-headsetless-tools.md`
 - `../landscape/vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md`
@@ -296,8 +295,6 @@ Primary docs:
 
 Primary docs:
 
-- `../reuse/vrperfkit-reuse-plan.md`
-- `../reuse/external-repos-reuse-plan.md`
 - `../landscape/vr-projects-wave-20-performance-mods-graphics-injection-and-vr-sweet-spot-shaders.md`
 
 - `fholger/vrperfkit` - `Already studied`

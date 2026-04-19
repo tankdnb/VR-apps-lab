@@ -4,83 +4,73 @@
 
 Grow this repository as both:
 
-- a practical base for multiple VR utilities
-- a public knowledge base for VR utility development
+- a strong public research base for VR utility development
+- a reusable foundation for future VR tools, helpers, and overlays
 
-while keeping the original passthrough research documented and reusable.
-
-## Phase 1: Utility Overlay Base
+## Phase 1: Foundation clarity
 
 Target:
 
-- stabilize the desktop `OpenVR` utility foundation
+- keep the repository easy to understand as a `research and foundation repo`
 
 Deliverables:
 
-- cleaner overlay interaction model
-- wrist dashboard on the right hand
-- quick toggles and simple world-space buttons
-- persistent settings and profiles
-- public-facing docs and repo hygiene
+- clean public positioning
+- clear documentation entry points
+- consistent naming and repo hygiene
+- removal of obsolete app-first artifacts
 
-## Phase 2: Reference Windows and Productivity Tools
+## Phase 2: Research system strength
 
 Target:
 
-- make the overlay foundation useful even without camera passthrough
+- make discovery and deep-pass work more repeatable and easier to continue
 
 Deliverables:
 
-- desktop/reference windows in VR
-- notes/checklists/timers
-- quick launcher panel
-- configurable presets for common use cases
+- stronger family synthesis
+- deeper methods catalog
+- clearer backlog batches
+- more complete wave coverage
 
-## Phase 3: Diagnostics and Power Tools
+## Phase 3: Reuse and donor extraction
 
 Target:
 
-- provide utilities that advanced users and VR developers can rely on
+- convert more studied repositories into actionable reuse guidance
 
 Deliverables:
 
-- battery and device status overlays
-- tracking/debug info
-- input inspection tools
-- runtime/overlay metrics
-- calibration helpers
+- focused reuse plans for high-value donors
+- better side-by-side comparisons inside strong families
+- explicit product branches suggested by research evidence
 
-## Phase 4: Experimental Reality Tools
+## Phase 4: Selective working-lab additions
 
 Target:
 
-- continue reality-window and passthrough experiments only where support exists
+- add small donor-ready examples only where they clearly strengthen the repo
 
 Deliverables:
 
-- external camera provider path
-- research-grade projection/cropping/alignment tools
-- selected OpenXR passthrough spikes on supported runtimes
+- narrowly scoped reference examples
+- utility-oriented helpers that demonstrate methods already captured in docs
+- examples that stay subordinate to the research system instead of redefining
+  the whole repository
 
-## Suggested first products
+## Suggested near-term priorities
 
-If the goal is to ship something useful quickly, the strongest order is:
-
-1. `Wrist Dashboard`
-2. `Utility Overlay Suite`
-3. `Reference Window`
-4. `VR Metrics / Device Status Overlay`
-5. `Tracking / Calibration Helper`
+1. Keep strengthening `project-families`, `project-registry`, and the methods
+   catalog.
+2. Continue deep-pass waves around the strongest unresolved families.
+3. Add reuse plans when a repo becomes especially strong as a donor.
+4. Keep public docs concise and aligned with the true repository shape.
 
 ## Success criteria for the repository
 
-- The repository is clearly understandable as a knowledge base, not just one
-  app.
-- New tools share one runtime foundation instead of starting from scratch.
-- Research findings stay documented and discoverable.
-- Reusable methods and implementation patterns keep growing over time.
-- Russian-speaking users can understand the project through dedicated public
-  entry points.
-- Public contributors can understand what is production-ready versus
-  experimental.
-- Each new utility can be built as a focused layer on top of the same base.
+- The repository is clearly understandable as a knowledge base and pattern
+  library.
+- New contributors can recover context quickly from docs alone.
+- Research findings remain discoverable and well integrated.
+- Reusable methods keep growing in a structured way.
+- The repo does not drift back into a single-product narrative.

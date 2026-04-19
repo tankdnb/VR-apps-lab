@@ -2,147 +2,83 @@
 
 [English](README.md) | Русский
 
-`VR-apps-lab` - это не просто одна VR-программа.
+`VR-apps-lab` — это публичный `репозиторий знаний`, `pattern library` и
+`working lab` для VR-утилит, overlay-инструментов, diagnostics, tracking
+helpers, runtime tools и experimental XR integrations.
 
-Это публичный `репозиторий знаний`, `база наработок`, и `концентрат готовых
-подходов` для разработки VR-утилит, overlay-приложений, инструментов,
-диагностических средств, tracking helper-ов и экспериментальных XR-интеграций.
+Репозиторий нужно воспринимать не как одну программу, а как системную базу
+изученных решений и переиспользуемых подходов.
 
-Проект начался как `Reality Window` MVP, но в процессе вырос в гораздо более
-ценную вещь: не в один продукт, а в систематизированную базу знаний и рабочих
-прототипов для будущих VR-инструментов.
+## Что здесь находится
 
-## Что это за репозиторий
+- канонический registry изученных VR-репозиториев
+- каталог reusable methods и product patterns
+- family-группы и wave-документы по исследовательским срезам
+- reuse plans для самых ценных donor-репозиториев
+- operating docs для повторяемой research-работы
+- вспомогательные repo-level workflows и research scripts
 
-`VR-apps-lab` объединяет три слоя:
-
-1. `Репозиторий знаний`
-   - исследования GitHub-проектов, связанных с VR
-   - выделенные методы и паттерны реализации
-   - семейства похожих решений и overlap-анализ
-   - backlog дальнейшего исследования
-
-2. `Рабочая техническая база`
-   - кодовые прототипы `OpenVR` overlay
-   - reusable abstractions и экспериментальные модули
-   - вспомогательные research-скрипты
-
-3. `Архив экспериментов`
-   - passthrough и camera-исследования
-   - hardware-specific feasibility notes
-   - тупиковые ветки, из которых всё равно были извлечены полезные инженерные
-     выводы
-
-## Для кого этот репозиторий
-
-- для разработчиков VR-утилит и инструментов
-- для тех, кто хочет быстро находить готовые подходы и архитектурные идеи
-- для исследователей, которые хотят изучать public VR ecosystem системно
-- для авторов overlay/dashboard/diagnostics/tracker-bridge решений
-- для русскоязычных пользователей, которым удобнее заходить в тему через
-  структурированную базу на русском
-
-## Что здесь уже есть
-
-- карта и каталог VR-проектов, полезных как reference или code donor
-- методы и способы реализации VR utility software
-- registry изученных репозиториев
-- discovery workflow для поиска новых проектов
-- code-level research waves
-- рабочие прототипы `OpenVR` и `PICO/OpenXR` experiments
-
-## Что не стоит обещать от этого репозитория
+## Чем этот репозиторий не является
 
 Это не:
 
-- один законченный пользовательский продукт
-- универсальное решение для passthrough на всех устройствах
-- готовый SDK на все случаи жизни
-- гарантия, что любой эксперимент в репозитории production-ready
-
-Правильнее воспринимать `VR-apps-lab` как:
-
-- `knowledge repository` для VR utility development
-- `pattern library` по построению VR tools
-- `working base` для новых утилит и исследований
-
-## Структура репозитория
-
-```text
-src/
-  VRRealityWindow.Core/      shared models, providers, processing pipeline
-  VRRealityWindow.OpenVr/    OpenVR runtime integration and overlay presenter
-  VRRealityWindow.App/       desktop CLI app for doctor/probe/overlay
-
-spikes/
-  PicoOpenXrExtensionProbe/  Android OpenXR probe app for PICO runtime testing
-
-scripts/
-  research/                  local helper scripts for GitHub research waves
-
-docs/
-  README.md                  docs index (EN)
-  README.ru.md               docs index (RU)
-  foundation/                позиционирование, roadmap, базовые документы
-  experiments/               passthrough и feasibility-ветки
-  research/                  catalog, methods, families, waves, reuse plans
-```
+- один готовый VR-продукт
+- репозиторий, где нужно “дописать главное приложение”
+- обещание production-ready поддержки всех headset/runtime комбинаций
+- плоский список ссылок без систематизации
 
 ## С чего начать
 
 - [AGENTS.md](AGENTS.md)
-- [Русский индекс документации](docs/README.ru.md)
-- [Repository positioning](docs/foundation/repository-positioning.md)
-- [Current operating context](docs/foundation/current-operating-context.md)
-- [Platform foundation](docs/foundation/platform-foundation.md)
-- [New session quickstart](docs/research/program/new-session-quickstart.md)
-- [New chat prompt block](docs/research/program/new-chat-prompt-block.md)
-- [Research operator quick reference](docs/research/program/research-operator-quick-reference.md)
-- [Methods catalog](docs/research/methods/vr-utility-methods-catalog.md)
-- [Project families](docs/research/landscape/project-families.md)
-- [Project registry](docs/research/catalog/project-registry.md)
-- [Discovery intake pipeline](docs/research/discovery/intake-pipeline.md)
-- [Wave 12 research](docs/research/landscape/vr-projects-wave-12-synthetic-devices-input-emulation-and-diy-driver-paths.md)
-- [Wave 13 research](docs/research/landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md)
-- [Wave 14 research](docs/research/landscape/vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md)
-- [Wave 15 research](docs/research/landscape/vr-projects-wave-15-overlay-hosts-and-scaffolds.md)
-- [Wave 16 research](docs/research/landscape/vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md)
-- [Wave 17 research](docs/research/landscape/vr-projects-wave-17-openxr-runtime-managers-layers-and-service-hosts.md)
-- [Wave 18 research](docs/research/landscape/vr-projects-wave-18-driver-learning-paths-and-repurposed-display-bridges.md)
-- [Wave 19 research](docs/research/landscape/vr-projects-wave-19-vendor-mods-repurposed-output-bridges-and-alternative-hardware-paths.md)
-- [Wave 20 research](docs/research/landscape/vr-projects-wave-20-performance-mods-graphics-injection-and-vr-sweet-spot-shaders.md)
-- [Wave 21 research](docs/research/landscape/vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md)
-- [Wave 22 research](docs/research/landscape/vr-projects-wave-22-vision-tracking-hosts-camera-full-body-bridges-and-hand-input-sidecars.md)
-- [Wave 23 research](docs/research/landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md)
-- [Wave 24 research](docs/research/landscape/vr-projects-wave-24-accessibility-captions-and-assistive-overlay-utilities.md)
-- [Wave 25 research](docs/research/landscape/vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md)
-- [Wave 26 research](docs/research/landscape/vr-projects-wave-26-vendor-ipc-ecosystems-glasses-bridges-and-official-stack-enhancement-tools.md)
-- [Wave 27 research](docs/research/landscape/vr-projects-wave-27-motion-compensation-calibration-overlays-and-spatial-alignment-tools.md)
+- [Индекс документации](docs/README.ru.md)
+- [Documentation Index (EN)](docs/README.md)
+- [Repository Positioning](docs/foundation/repository-positioning.md)
+- [Current Operating Context](docs/foundation/current-operating-context.md)
+- [Platform Foundation](docs/foundation/platform-foundation.md)
+- [Research Docs](docs/research/README.md)
+- [Methods Catalog](docs/research/methods/vr-utility-methods-catalog.md)
+- [Project Families](docs/research/landscape/project-families.md)
+- [Project Registry](docs/research/catalog/project-registry.md)
+- [Not Yet Studied Deeply](docs/research/landscape/not-yet-studied-deeply.md)
+- [New Session Quickstart](docs/research/program/new-session-quickstart.md)
 
-## Главная идея репозитория
+## Структура репозитория
 
-Не хранить просто список ссылок, а собирать:
+```text
+docs/
+  foundation/   позиционирование, roadmap, operating context
+  research/     catalog, families, waves, methods, reuse plans
 
-- изученные методы и подходы
-- сильные product patterns
-- архитектурные решения
-- reusable implementation ideas
-- структурированный backlog дальнейшего изучения
+scripts/
+  research/     helper scripts для повторяемой research-работы
+```
 
-Если коротко: `VR-apps-lab` - это публичная база знаний и рабочих наработок для
-создания VR-приложений, утилит и инструментов.
+Mainline-ветка репозитория сознательно сосредоточена на `foundation` и
+`research`-слоях. Если в будущем появятся полезные donor-ready примеры или
+малые прототипы, они должны усиливать репозиторий, а не снова превращать его в
+один app-first проект.
 
 ## Как здесь проверяются изменения
 
-`VR-apps-lab` не сопровождается как один shipping-продукт.
+Для `research` и `documentation` изменений главное:
 
-Для `research`- и `documentation`-изменений главные критерии качества такие:
+- целостность структуры
+- понятная навигация
+- согласованность `registry / families / methods / backlog`
+- честное описание реальных границ репозитория
 
-- структура репозитория остаётся целостной;
-- ссылки и навигация не ломаются;
-- registry, families, methods и backlog остаются согласованными;
-- описание проекта честно отражает границы реальной поддержки.
+Если когда-нибудь добавляется runnable example, проверять нужно только
+затронутый пример, а не воображаемое “главное приложение”.
 
-Для изменений в `prototype`-коде и runnable-инструментах проверка может
-дополнительно включать build-check, smoke test и runtime notes для затронутого
-модуля.
+## Навигация по документации
+
+Главный индекс: [docs/README.md](docs/README.md) и
+[docs/README.ru.md](docs/README.ru.md).
+
+Для research-системы основной вход:
+[docs/research/README.md](docs/research/README.md).
+
+## Лицензия
+
+Репозиторий распространяется под `MIT`. Актуальный статус third-party notices
+описан в [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
