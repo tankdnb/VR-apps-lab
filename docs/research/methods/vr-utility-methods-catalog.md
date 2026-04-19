@@ -1207,6 +1207,242 @@ Use this document when designing a new module or utility and ask:
   thin bridge apps, embodied input exporters, and sidecar-controlled workflow
   tools.
 
+## Method 68: Browser-automation sidecar that turns a social service into a VR overlay surface
+
+- What it is:
+  a desktop automation layer extracts presence or voice state from a social
+  service, while a separate OpenVR app renders that state as a configurable VR
+  overlay.
+- Good for:
+  voice presence, chat status, social participation indicators, and
+  communication overlays when no direct public API gives the exact UI surface
+  the product needs.
+- Why it matters:
+  it separates `service scraping or automation` from `VR presentation`, which
+  keeps the overlay side simpler and more reusable.
+- Strong references:
+  `discord-vr`.
+- Best fit for `VR-apps-lab`:
+  social overlays, companion presence surfaces, and communication-sidecar
+  experiments.
+
+## Method 69: Native chat companion with dual social-service and OSC outputs
+
+- What it is:
+  a small desktop-native app owns chat composition and history, while the same
+  surface can send messages to both a social platform and a local `OSC`
+  consumer.
+- Good for:
+  VRChat-adjacent chat helpers, streaming companions, desktop-side message
+  entry, and bridge tools where XR-facing consumers should not own service auth.
+- Why it matters:
+  it turns a simple chat utility into a reusable `dual-output communication
+  surface`.
+- Strong references:
+  `VRCattoChatto`.
+- Best fit for `VR-apps-lab`:
+  desktop-side VR companions, OSC chat bridges, and social utility micro-tools.
+
+## Method 70: Service-first communication utility where the overlay is only one consumer
+
+- What it is:
+  the core product is a background service or engine, while the VR overlay or
+  VR-specific UI is only one optional consumer of the real service outputs.
+- Good for:
+  proximity systems, social-safety tools, local communication helpers, and
+  products where VR should have controls or visibility but not necessarily own
+  the whole architecture.
+- Why it matters:
+  many useful VR utilities should be `service-first`, with overlay UX treated
+  as a thin control layer rather than the whole app.
+- Strong references:
+  `vrchat-proximity-app`.
+- Best fit for `VR-apps-lab`:
+  hybrid utilities, overlay-optional helpers, and VR companions that sit on
+  top of a broader desktop-side engine.
+
+## Method 71: Local speech platform with OSC and websocket multi-consumer outputs
+
+- What it is:
+  a speech, translation, or assistant host keeps capture and inference local,
+  then fans results out through `OSC`, `WebSocket`, files, playback, or plugin
+  channels for many downstream consumers.
+- Good for:
+  captions, avatar chat helpers, translation overlays, accessibility tools, and
+  any VR workflow that should consume speech without owning the inference stack.
+- Why it matters:
+  it treats VR as one consumer of a broader local speech platform instead of
+  rebuilding a speech pipeline inside each overlay utility.
+- Strong references:
+  `whispering`, `VRCTextboxSTT`.
+- Best fit for `VR-apps-lab`:
+  speech-sidecar research, accessibility tools, and communication hosts with
+  multiple VR or non-VR outputs.
+
+## Method 72: Cleanly layered alternative OpenXR runtime for special displays
+
+- What it is:
+  an OpenXR runtime is decomposed into strict layers for state tracking,
+  compositing, device drivers, and display processors, with explicit rules
+  about what each layer must not own.
+- Good for:
+  spatial displays, 3D monitors, glasses, and future runtime experiments where
+  ordinary headset assumptions do not apply.
+- Why it matters:
+  explicit runtime decomposition makes alternative platform work easier to
+  reason about and reuse.
+- Strong references:
+  `displayxr-runtime`.
+- Best fit for `VR-apps-lab`:
+  runtime-architecture research, special-display experiments, and future
+  nontraditional OpenXR platform work.
+
+## Method 73: Embedded or platform-native OpenXR runtime framework
+
+- What it is:
+  the OpenXR runtime is packaged as a framework or library inside a
+  platform-native app rather than as a normal desktop runtime registered for
+  general system-wide use.
+- Good for:
+  mobile platforms, Apple-platform XR experiments, tightly integrated vendor
+  apps, and runtimes where the host app should own lifecycle and services.
+- Why it matters:
+  not every useful runtime path should look like a Windows desktop runtime
+  installation.
+- Strong references:
+  `OpenXRKit`.
+- Best fit for `VR-apps-lab`:
+  platform-native runtime research, embedded-framework experiments, and
+  alternative XR host architectures.
+
+## Method 74: Runtime-server split with local IPC for experimental OpenXR platforms
+
+- What it is:
+  the runtime surface and the controlling host application are separated by a
+  local IPC boundary, so the runtime primitives can stay lean while the host
+  owns lifecycle, bridges, or UI integration.
+- Good for:
+  proof-of-concept runtimes, nontraditional platforms, WebXR bridges, and
+  experimental runtime ownership models.
+- Why it matters:
+  it provides a cleaner way to explore runtime behavior on platforms where one
+  monolithic process is awkward or unnatural.
+- Strong references:
+  `FruitXR`.
+- Best fit for `VR-apps-lab`:
+  platform experiments, runtime-service research, and bridge-heavy runtime
+  prototypes.
+
+## Method 75: CAD-to-SteamVR tracking JSON generation from physical design geometry
+
+- What it is:
+  a CAD or authoring environment produces SteamVR tracking definitions by
+  converting construction axes, points, or other design-time geometry into the
+  sensor map that the runtime expects.
+- Good for:
+  custom tracked-device design, Lighthouse hardware experiments, and repeatable
+  authoring of tracker geometry without hand-editing large JSON payloads.
+- Why it matters:
+  it moves a complex device-definition step into a tool where the physical
+  design already exists.
+- Strong references:
+  `Fusion360_SteamVR_Json`.
+- Best fit for `VR-apps-lab`:
+  custom-device research, tracked-hardware authoring workflows, and future
+  design-tool utilities.
+
+## Method 76: Derived virtual tracker from existing tracked nodes with role-specific device registration
+
+- What it is:
+  a driver derives a missing tracked role from other tracked nodes, then
+  registers the result as if it were a real device with believable metadata and
+  role hints.
+- Good for:
+  synthetic waist or torso trackers, missing-role reconstruction, lightweight
+  augmentation of partial body-tracking setups, and role-specific helpers.
+- Why it matters:
+  it treats synthetic tracking as `runtime-visible device generation`, not only
+  as app-local math.
+- Strong references:
+  `augmented-hip`.
+- Best fit for `VR-apps-lab`:
+  derived-tracker helpers, role reconstruction tools, and synthetic device
+  experiments.
+
+## Method 77: DIY tracker ecosystem split across firmware, desktop control app, and driver
+
+- What it is:
+  a custom tracking system is intentionally split into hardware firmware, a
+  desktop configurator or calibration app, and a runtime driver that registers
+  the tracked devices.
+- Good for:
+  IMU trackers, WiFi-connected custom devices, maker hardware projects, and
+  future custom sensor ecosystems.
+- Why it matters:
+  it keeps hardware bring-up, user configuration, and runtime registration from
+  collapsing into one hard-to-maintain component.
+- Strong references:
+  `IMU-VR-Full-Body-Tracker`.
+- Best fit for `VR-apps-lab`:
+  DIY hardware research, driver-plus-companion patterns, and custom-device
+  ecosystem design.
+
+## Method 78: Overlay-assisted calibration over modular expressive-tracking capture sources
+
+- What it is:
+  an expressive-tracking platform keeps capture backends modular, then runs
+  calibration or trainer flows through a dedicated overlay surface or overlay
+  program.
+- Good for:
+  face tracking, eye tracking, trainer UX, multi-camera or multi-source
+  platforms, and any expressive-input tool that needs a guided user flow.
+- Why it matters:
+  calibration becomes a reusable `service plus overlay` boundary rather than an
+  ad hoc scene or one-off window.
+- Strong references:
+  `Baballonia`.
+- Best fit for `VR-apps-lab`:
+  expressive-tracking platforms, overlay-guided trainer tools, and reusable
+  calibration-host infrastructure.
+
+## Method 79: Cross-provider hand-input remapping into a common interaction model
+
+- What it is:
+  a compatibility layer swaps or adapts multiple hand or controller providers
+  into one shared interaction stack, without forcing the rest of the app to
+  care which provider is active.
+- Good for:
+  hand-tracking fallbacks, mixed controller or optical input, provider
+  migration, and interoperability between existing XR interaction stacks.
+- Why it matters:
+  it lets a future tool reuse one `hand interaction contract` across multiple
+  tracking backends.
+- Strong references:
+  `HandshakeVR`, `HandOfLesser`.
+- Best fit for `VR-apps-lab`:
+  input-compatibility layers, shared hand abstractions, and future bridge tools
+  that should tolerate multiple tracking sources.
+
+## Method 80: Vendor-specific gaze IPC translated into an OpenXR API layer
+
+- What it is:
+  a vendor-specific eye-tracking source is exposed through local IPC and then
+  adapted into standard OpenXR gaze extensions by an API layer that only
+  activates when the relevant extensions are requested.
+- Good for:
+  vendor eye-tracking unlocks, custom gaze hardware, experimental gaze sources,
+  and XR runtimes where the standard app contract should hide vendor-specific
+  plumbing.
+- Why it matters:
+  it creates a reusable bridge from `custom gaze backend` to
+  `standard OpenXR-facing surface`.
+- Strong references:
+  `PSVR2_OpenXR_Eye_Tracking`, `OpenXR-Eye-Trackers`,
+  `etvr-openxr-layer`.
+- Best fit for `VR-apps-lab`:
+  gaze-layer research, vendor enhancement paths, and future eye-tracking bridge
+  experiments.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

@@ -71,6 +71,10 @@ Use this section for:
 - `research/landscape/vr-projects-wave-29-hand-palm-radial-and-quick-access-menus.md`
 - `research/landscape/vr-projects-wave-30-spatial-ui-interaction-frameworks-and-input-stacks.md`
 - `research/landscape/vr-projects-wave-31-teleoperation-workspaces-and-embodied-control-surfaces.md`
+- `research/landscape/vr-projects-wave-32-social-overlays-communication-sidecars-and-vrchat-companion-surfaces.md`
+- `research/landscape/vr-projects-wave-33-alternative-openxr-runtimes-and-special-display-paths.md`
+- `research/landscape/vr-projects-wave-34-tracked-device-geometry-cad-and-auxiliary-tracker-tooling.md`
+- `research/landscape/vr-projects-wave-35-expressive-tracking-and-avatar-facing-input-bridges.md`
 - `research/landscape/project-families.md`
 - `research/landscape/not-yet-studied-deeply.md`
 
@@ -146,6 +150,14 @@ Use this section for:
 - `research/program/github-research-wave-30-backlog.md`
 - `research/program/github-research-wave-31-plan.md`
 - `research/program/github-research-wave-31-backlog.md`
+- `research/program/github-research-wave-32-plan.md`
+- `research/program/github-research-wave-32-backlog.md`
+- `research/program/github-research-wave-33-plan.md`
+- `research/program/github-research-wave-33-backlog.md`
+- `research/program/github-research-wave-34-plan.md`
+- `research/program/github-research-wave-34-backlog.md`
+- `research/program/github-research-wave-35-plan.md`
+- `research/program/github-research-wave-35-backlog.md`
 - `research/program/foundational-waves-1-7-retro-normalization-plan.md`
 - `research/program/foundational-waves-1-7-retro-normalization-backlog.md`
 

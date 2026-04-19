@@ -30,7 +30,7 @@ These are the strongest next candidates.
 | `hai-vr/h-view` | Partially studied | Overlay-first utility host with desktop parity, ImGui rendering, and broader OSCQuery or hardware-tooling scope | High | High | Inspect the non-overlay boundaries next: OSCQuery, hardware inventory, OCR, external-service integration, and true product scope |
 | `puresoul/Barebone` | Partially studied | HMD-relative synthetic Vive controllers driven by XInput | High | Medium | Driver/helper-app split, offset persistence, and long-term maintainability of the repo cluster |
 | `krazysh01/VirtualDesktop-OpenVR-Trackers` | Partially studied | Product direction suggests body-state-to-tracker bridging, but the current public snapshot looks much thinner than expected | Medium | Medium | Re-check only if the public repo grows a real data-ingress surface or visible tracker-role mapping logic |
-| `BattleAxeVR/PSVR2_OpenXR_Eye_Tracking` | Not studied deeply | PSVR2-specific OpenXR eye-tracking path that may overlap with broader gaze-layer tooling | Medium | Medium | Compare its backend assumptions, extension surface, and donor value against `OpenXR-Eye-Trackers` and `PSVR2Toolkit` |
+| `Sharrnah/whispering` | Partially studied | Broad local speech platform where VR is one consumer among OSC, websocket, TTS, and plugin outputs | High | High | Narrow the next pass to plugin boundaries, overlay-facing surfaces, and which slices matter most for future VR utility work |
 
 ## Priority batch B: comparison variants and forks
 
@@ -134,6 +134,20 @@ nodes instead of being over-promoted immediately.
 | `MixedRealityToolkit/MixedRealityToolkit-Unity` | Not studied deeply | Current-generation continuation of the MRTK spatial-UI line, which may clarify how palm-menu, keyboard, and solver ideas evolved after the legacy repo | High | High | Inspect package split, successor UI primitives, and whether the modern line still exposes the same reusable menu and keyboard donors |
 | `nakama-lab/VR_Teleop_Interface` | Not studied deeply | Teleoperation stack whose architectural decomposition may matter more than any single widget | Medium | Medium-high | Inspect non-main branches, scene structure, and transport boundaries to see whether it is a better system-design donor than a UI donor |
 | `h2r/GHOST` | Not studied deeply | Visualization-rich teleoperation sidecar with point-cloud and gesture-control overlap | Medium | Medium-high | Inspect visualization pipeline, gesture boundary, and how tightly it couples to `ros_reality` |
+
+## Priority batch L: Waves 32-35 surfaced follow-up candidates
+
+These were surfaced while deepening communication-sidecar, alternative-runtime,
+tracked-device, and expressive-input families, but they were intentionally kept
+as honest follow-up nodes instead of being over-promoted immediately.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `maximum-game-22/openxr-3d-display` | Not studied deeply | Monado-derived spatial-display runtime that may clarify what parts of the special-display branch are generic versus product-specific | Medium | Medium | Compare its runtime layering and display assumptions directly against `displayxr-runtime` |
+| `Kartaverse/OpenDisplayXR` | Not studied deeply | Nonstandard-display project cluster that may expose additional runtime packaging and deployment patterns | Medium | Medium | Inspect the exact split between runtime code, resources, and surrounding platform assets |
+| `fughilli/ViveTrackedDevice` | Partially studied | Documentation-first reverse-engineering donor whose main code still sits behind submodules | Medium | Medium | Revisit only when a deeper submodule-aware pass on Lighthouse device internals becomes worthwhile |
+| `ebadier/ViveTrackers` | Not studied deeply | Unity-side consumer library for Vive tracker hardware that may clarify the `hardware consumer` side of tracker tooling | Medium | Medium | Inspect API surface, data model, and whether it teaches more than the existing tracker-helper nodes |
+| `takana-v/quest_steamvr_fbt_tool` | Not studied deeply | Quest-derived body-state export path aimed at avatar-facing consumers | Medium | Medium | Compare export model and consumer assumptions with `Baballonia`, `VRCThumbParamsOSC`, and other avatar-facing bridges |
 
 ## Family-level gaps that now deserve deeper passes
 

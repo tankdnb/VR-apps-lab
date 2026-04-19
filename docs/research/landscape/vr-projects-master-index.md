@@ -43,6 +43,10 @@ This file complements:
 - `vr-projects-wave-29-hand-palm-radial-and-quick-access-menus.md`
 - `vr-projects-wave-30-spatial-ui-interaction-frameworks-and-input-stacks.md`
 - `vr-projects-wave-31-teleoperation-workspaces-and-embodied-control-surfaces.md`
+- `vr-projects-wave-32-social-overlays-communication-sidecars-and-vrchat-companion-surfaces.md`
+- `vr-projects-wave-33-alternative-openxr-runtimes-and-special-display-paths.md`
+- `vr-projects-wave-34-tracked-device-geometry-cad-and-auxiliary-tracker-tooling.md`
+- `vr-projects-wave-35-expressive-tracking-and-avatar-facing-input-bridges.md`
 
 ## How to use this index
 
@@ -145,6 +149,19 @@ This file complements:
 - Use `vr-projects-wave-31-teleoperation-workspaces-and-embodied-control-surfaces.md`
   for the next wave centered on teleoperation workspaces, embodied control
   surfaces, and VR command menus for external systems.
+- Use `vr-projects-wave-32-social-overlays-communication-sidecars-and-vrchat-companion-surfaces.md`
+  for the next wave centered on social overlays, communication sidecars, and
+  VRChat-facing companion surfaces.
+- Use `vr-projects-wave-33-alternative-openxr-runtimes-and-special-display-paths.md`
+  for the next wave centered on alternative OpenXR runtimes,
+  special-display paths, and platform experiments outside the ordinary headset
+  runtime model.
+- Use `vr-projects-wave-34-tracked-device-geometry-cad-and-auxiliary-tracker-tooling.md`
+  for the next wave centered on tracked-device geometry,
+  CAD-to-tracker workflows, and auxiliary tracker tooling.
+- Use `vr-projects-wave-35-expressive-tracking-and-avatar-facing-input-bridges.md`
+  for the next wave centered on expressive tracking, face and eye input, and
+  avatar-facing input bridges.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

@@ -506,6 +506,58 @@ Primary docs:
 - `nakama-lab/VR_Teleop_Interface` - `Not studied deeply`
 - `h2r/GHOST` - `Not studied deeply`
 
+## 22. Social overlays, communication sidecars, and companion surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-32-social-overlays-communication-sidecars-and-vrchat-companion-surfaces.md`
+- `../landscape/project-families.md`
+
+- `designeerlabs/discord-vr` - `Already studied`
+- `kittynXR/VRCattoChatto` - `Already studied`
+- `Wolf-G88/vrchat-proximity-app` - `Already studied`
+- `Sharrnah/whispering` - `Partially studied`
+
+## 23. Alternative OpenXR runtimes, special-display paths, and platform experiments
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-33-alternative-openxr-runtimes-and-special-display-paths.md`
+- `../landscape/project-families.md`
+
+- `DisplayXR/displayxr-runtime` - `Already studied`
+- `JoeyAnthony/XRGameBridge` - `Already studied`
+- `warrenm/OpenXRKit` - `Already studied`
+- `rinsuki/FruitXR` - `Already studied`
+- `maximum-game-22/openxr-3d-display` - `Not studied deeply`
+- `Kartaverse/OpenDisplayXR` - `Not studied deeply`
+
+## 24. Tracked-device geometry, CAD, and auxiliary tracker tooling
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-34-tracked-device-geometry-cad-and-auxiliary-tracker-tooling.md`
+- `../landscape/project-families.md`
+
+- `fughilli/ViveTrackedDevice` - `Partially studied`
+- `TriadSemi/Fusion360_SteamVR_Json` - `Already studied`
+- `aughip/augmented-hip` - `Already studied`
+- `m9cd0n9ld/IMU-VR-Full-Body-Tracker` - `Already studied`
+- `ebadier/ViveTrackers` - `Not studied deeply`
+
+## 25. Expressive tracking and avatar-facing input bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-35-expressive-tracking-and-avatar-facing-input-bridges.md`
+- `../landscape/project-families.md`
+
+- `Project-Babble/Baballonia` - `Already studied`
+- `jcorvinus/HandshakeVR` - `Already studied`
+- `moshimeow/mercury_steamvr_driver` - `Already studied`
+- `BattleAxeVR/PSVR2_OpenXR_Eye_Tracking` - `Already studied`
+- `takana-v/quest_steamvr_fbt_tool` - `Not studied deeply`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

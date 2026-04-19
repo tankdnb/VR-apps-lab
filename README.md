@@ -232,6 +232,14 @@ Start here:
 - `docs/research/program/github-research-wave-30-backlog.md`
 - `docs/research/program/github-research-wave-31-plan.md`
 - `docs/research/program/github-research-wave-31-backlog.md`
+- `docs/research/program/github-research-wave-32-plan.md`
+- `docs/research/program/github-research-wave-32-backlog.md`
+- `docs/research/program/github-research-wave-33-plan.md`
+- `docs/research/program/github-research-wave-33-backlog.md`
+- `docs/research/program/github-research-wave-34-plan.md`
+- `docs/research/program/github-research-wave-34-backlog.md`
+- `docs/research/program/github-research-wave-35-plan.md`
+- `docs/research/program/github-research-wave-35-backlog.md`
 - `docs/research/landscape/vr-projects-master-index.md`
 - `docs/research/landscape/vr-projects-wave-3-utilities.md`
 - `docs/research/landscape/vr-projects-wave-4-gap-fill.md`
@@ -262,6 +270,10 @@ Start here:
 - `docs/research/landscape/vr-projects-wave-29-hand-palm-radial-and-quick-access-menus.md`
 - `docs/research/landscape/vr-projects-wave-30-spatial-ui-interaction-frameworks-and-input-stacks.md`
 - `docs/research/landscape/vr-projects-wave-31-teleoperation-workspaces-and-embodied-control-surfaces.md`
+- `docs/research/landscape/vr-projects-wave-32-social-overlays-communication-sidecars-and-vrchat-companion-surfaces.md`
+- `docs/research/landscape/vr-projects-wave-33-alternative-openxr-runtimes-and-special-display-paths.md`
+- `docs/research/landscape/vr-projects-wave-34-tracked-device-geometry-cad-and-auxiliary-tracker-tooling.md`
+- `docs/research/landscape/vr-projects-wave-35-expressive-tracking-and-avatar-facing-input-bridges.md`
 
 Original Reality Window and passthrough research:
 

@@ -650,6 +650,114 @@ utility overlays:
 - staged setup-to-operation room flows
 - thin VR frontends that hand control to an external process
 
+## Family 22: Social overlays, communication sidecars, and companion surfaces
+
+This family covers repositories where the core value is not a generic dashboard
+but an ongoing social, speech, or communication workflow that can feed VR
+through overlays, `OSC`, `WebSocket`, or desktop companion surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `designeerlabs/discord-vr` | Already studied | Browser-automation sidecar that turns Discord voice presence into a prefab-driven OpenVR overlay |
+| `kittynXR/VRCattoChatto` | Already studied | Desktop-native chat companion with Twitch plus OSC outputs and persisted broadcaster/auth state |
+| `Wolf-G88/vrchat-proximity-app` | Already studied | Service-first proximity sidecar with OSC transport and optional SteamVR overlay controls |
+| `Sharrnah/whispering` | Partially studied | Broad local speech platform whose VR value comes from OSC and websocket fan-out rather than a single overlay |
+| `Hotrian/OpenVRTwitchChat` | Already studied | Twitch-chat overlay reference with a stronger in-headset presentation bias |
+| `MeroFune/GOpy` | Not studied deeply | Smaller integration-helper comparison node that may still add another desktop-to-VR communication angle |
+| `I5UCC/VRCTextboxSTT` | Already studied | Local speech-to-text helper where the SteamVR overlay is one output surface among others |
+| `gt0777/VRCLiveCaptionsMod` | Already studied | App-internal speech surface comparison node from the accessibility and social boundary |
+| `rrazgriz/VRCMicOverlay` | Already studied | Minimal status-overlay node for avatar-facing communication state |
+
+### Consolidation note
+
+This family matters because it shows that `communication tooling` is its own VR
+utility branch, not just an accessibility afterthought:
+
+- social-presence overlays
+- desktop-native chat companions
+- service-first speech utilities
+- VRChat-facing sidecars with optional overlay control surfaces
+
+## Family 23: Alternative OpenXR runtimes, special-display paths, and platform experiments
+
+This family covers runtime implementations that target nontraditional hardware,
+embedded platform contexts, or proof-of-concept runtime architectures rather
+than ordinary HMD-first desktop setups.
+
+| Project | Status | Notes |
+|---|---|---|
+| `DisplayXR/displayxr-runtime` | Already studied | Clean layered runtime architecture for spatial displays and 3D monitors |
+| `JoeyAnthony/XRGameBridge` | Already studied | Focused runtime wrapper for UEVR-style game flows on special displays |
+| `warrenm/OpenXRKit` | Already studied | Embedded Apple-platform OpenXR runtime framework with platform-specific system implementations |
+| `rinsuki/FruitXR` | Already studied | Local IPC and runtime-server proof-of-concept for macOS |
+| `maximum-game-22/openxr-3d-display` | Not studied deeply | Monado-derived spatial-display comparison node |
+| `Kartaverse/OpenDisplayXR` | Not studied deeply | Project cluster around OpenXR paths for nonstandard displays |
+| `chnoblouch/aethervr` | Already studied | Webcam-driven custom OpenXR runtime that reinforces the broader nonstandard-runtime branch |
+
+### Consolidation note
+
+This family matters because it expands `runtime research` beyond switchers and
+layers into `runtime ownership for nontraditional targets`:
+
+- special-display runtimes
+- embedded platform runtimes
+- local IPC runtime experiments
+- custom runtimes that are better understood as architecture donors than as products
+
+## Family 24: Tracked-device geometry, CAD, and auxiliary tracker tooling
+
+This family covers the point where tracked-device design becomes an explicit
+engineering workflow rather than only a pose-ingestion problem.
+
+| Project | Status | Notes |
+|---|---|---|
+| `fughilli/ViveTrackedDevice` | Partially studied | Documentation-first reverse-engineering donor for Lighthouse-tracked device internals |
+| `TriadSemi/Fusion360_SteamVR_Json` | Already studied | CAD-authored path from construction geometry to SteamVR tracking JSON |
+| `aughip/augmented-hip` | Already studied | Derived waist-tracker driver built from existing tracked body nodes |
+| `m9cd0n9ld/IMU-VR-Full-Body-Tracker` | Already studied | Full-stack DIY tracker ecosystem spanning firmware, desktop tooling, and driver registration |
+| `ebadier/ViveTrackers` | Not studied deeply | Unity-side consumer node for Vive tracker hardware data |
+| `choyai/SteamVRTrackerUtility` | Already studied | Narrow tracker-identity and serial helper for deterministic role workflows |
+| `jangxx/UniversalTrackerMarkers` | Already studied | Marker and identity helper that reinforces the auxiliary tracker-tooling side of the family |
+
+### Consolidation note
+
+This family matters because `tracked-device work` is not only about network
+bridges:
+
+- reverse-engineered device geometry
+- CAD authoring for sensor definitions
+- derived or synthetic role devices
+- auxiliary tracker identity and hardware workflows
+
+## Family 25: Expressive tracking, face and eye input, and avatar-facing bridges
+
+This family covers the branches where the input is not only a body pose but a
+more expressive face, eye, hand, or avatar-facing signal that must be adapted
+into SteamVR, OpenXR, or avatar-consumer surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Project-Babble/Baballonia` | Already studied | Cross-platform expressive-tracking host with overlay-assisted calibration and modular capture sources |
+| `jcorvinus/HandshakeVR` | Already studied | Hand-provider remapping layer that normalizes incompatible input models |
+| `moshimeow/mercury_steamvr_driver` | Already studied | SteamVR hand-driver path built around an out-of-process tracking source |
+| `BattleAxeVR/PSVR2_OpenXR_Eye_Tracking` | Already studied | Vendor-specific gaze source translated into standard OpenXR layer surfaces |
+| `Nordskog/HandOfLesser` | Already studied | Quest or OpenXR hand-tracking bridge into SteamVR and avatar-facing consumers |
+| `mbucchia/OpenXR-Eye-Trackers` | Already studied | OpenXR-side gaze and eye-tracking adaptation donor |
+| `pembem22/etvr-openxr-layer` | Already studied | OSC eye-tracking to OpenXR gaze adaptation path |
+| `ThatGuyThimo/leapmotion-osc` | Not studied deeply | Finger-only avatar-facing OSC output comparison node |
+| `takana-v/quest_steamvr_fbt_tool` | Not studied deeply | Quest-derived body state and avatar-facing export follow-up node |
+
+### Consolidation note
+
+This family matters because it pulls together several adaptation layers that
+would otherwise look unrelated:
+
+- overlay-assisted expressive calibration
+- hand-provider remapping
+- driver plus subprocess expressive input
+- vendor-specific gaze adaptation into standard XR surfaces
+- avatar-facing exports built on top of those richer inputs
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

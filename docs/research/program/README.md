@@ -202,3 +202,32 @@ repeatable way.
 
 - `github-research-wave-31-backlog.md`
   Executed backlog for the Wave 31 pass.
+
+- `github-research-wave-32-plan.md`
+  Wave 32 research plan focused on social overlays, communication sidecars, and
+  VRChat-facing companion surfaces.
+
+- `github-research-wave-32-backlog.md`
+  Executed backlog for the Wave 32 pass.
+
+- `github-research-wave-33-plan.md`
+  Wave 33 research plan focused on alternative OpenXR runtimes,
+  special-display paths, and platform experiments outside the ordinary headset
+  runtime model.
+
+- `github-research-wave-33-backlog.md`
+  Executed backlog for the Wave 33 pass.
+
+- `github-research-wave-34-plan.md`
+  Wave 34 research plan focused on tracked-device geometry,
+  CAD-to-tracker workflows, and auxiliary tracker tooling.
+
+- `github-research-wave-34-backlog.md`
+  Executed backlog for the Wave 34 pass.
+
+- `github-research-wave-35-plan.md`
+  Wave 35 research plan focused on expressive tracking, face and eye input, and
+  avatar-facing input bridges.
+
+- `github-research-wave-35-backlog.md`
+  Executed backlog for the Wave 35 pass.

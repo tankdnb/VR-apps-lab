@@ -123,6 +123,23 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on teleoperation workspaces, embodied
   control surfaces, and VR command menus for external systems.
 
+- `vr-projects-wave-32-social-overlays-communication-sidecars-and-vrchat-companion-surfaces.md`
+  Next GitHub discovery wave focused on social overlays,
+  communication sidecars, and VRChat-facing companion surfaces.
+
+- `vr-projects-wave-33-alternative-openxr-runtimes-and-special-display-paths.md`
+  Next GitHub discovery wave focused on alternative OpenXR runtimes,
+  special-display paths, and platform experiments outside the ordinary headset
+  runtime model.
+
+- `vr-projects-wave-34-tracked-device-geometry-cad-and-auxiliary-tracker-tooling.md`
+  Next GitHub discovery wave focused on tracked-device geometry,
+  CAD-to-tracker workflows, and auxiliary tracker tooling.
+
+- `vr-projects-wave-35-expressive-tracking-and-avatar-facing-input-bridges.md`
+  Next GitHub discovery wave focused on expressive tracking, face and eye
+  input, and avatar-facing input bridges.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
