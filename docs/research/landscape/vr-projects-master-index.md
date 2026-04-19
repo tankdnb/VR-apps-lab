@@ -55,6 +55,10 @@ This file complements:
 - `vr-projects-wave-41-avatar-facing-osc-companions-routers-and-consumer-automation.md`
 - `vr-projects-wave-42-xr-glasses-virtual-display-stacks-and-spatial-screen-utilities.md`
 - `vr-projects-wave-43-wearable-haptics-tactile-bridges-and-avatar-driven-feedback.md`
+- `vr-projects-wave-44-playspace-editors-boundary-importers-and-shared-space-helpers.md`
+- `vr-projects-wave-45-redirected-walking-toolkits-locomotion-sidecars-and-space-redirection-research.md`
+- `vr-projects-wave-46-xr-latency-measurement-recording-parsers-and-experiment-harnesses.md`
+- `vr-projects-wave-47-telemetry-overlays-motion-cueing-bridges-and-sim-sidecar-platforms.md`
 
 ## How to use this index
 
@@ -194,6 +198,18 @@ This file complements:
 - Use `vr-projects-wave-43-wearable-haptics-tactile-bridges-and-avatar-driven-feedback.md`
   for the next wave centered on wearable haptics, tactile bridge sidecars, and
   avatar-driven feedback systems.
+- Use `vr-projects-wave-44-playspace-editors-boundary-importers-and-shared-space-helpers.md`
+  for the next wave centered on playspace editors, boundary importers, and
+  shared-space helpers.
+- Use `vr-projects-wave-45-redirected-walking-toolkits-locomotion-sidecars-and-space-redirection-research.md`
+  for the next wave centered on redirected-walking toolkits, locomotion
+  sidecars, and space-redirection research.
+- Use `vr-projects-wave-46-xr-latency-measurement-recording-parsers-and-experiment-harnesses.md`
+  for the next wave centered on XR latency measurement, recording parsers, and
+  experiment harnesses.
+- Use `vr-projects-wave-47-telemetry-overlays-motion-cueing-bridges-and-sim-sidecar-platforms.md`
+  for the next wave centered on telemetry overlays, motion-cueing bridges, and
+  sim-sidecar platforms.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

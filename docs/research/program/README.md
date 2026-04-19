@@ -287,3 +287,31 @@ repeatable way.
 
 - `github-research-wave-43-backlog.md`
   Executed backlog for the Wave 43 pass.
+
+- `github-research-wave-44-plan.md`
+  Wave 44 research plan focused on playspace editors, boundary importers, and
+  shared-space helpers.
+
+- `github-research-wave-44-backlog.md`
+  Executed backlog for the Wave 44 pass.
+
+- `github-research-wave-45-plan.md`
+  Wave 45 research plan focused on redirected-walking toolkits, locomotion
+  sidecars, and space-redirection research.
+
+- `github-research-wave-45-backlog.md`
+  Executed backlog for the Wave 45 pass.
+
+- `github-research-wave-46-plan.md`
+  Wave 46 research plan focused on XR latency measurement, recording parsers,
+  and experiment harnesses.
+
+- `github-research-wave-46-backlog.md`
+  Executed backlog for the Wave 46 pass.
+
+- `github-research-wave-47-plan.md`
+  Wave 47 research plan focused on telemetry overlays, motion-cueing bridges,
+  and sim-sidecar platforms.
+
+- `github-research-wave-47-backlog.md`
+  Executed backlog for the Wave 47 pass.

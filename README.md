@@ -256,6 +256,14 @@ Start here:
 - `docs/research/program/github-research-wave-42-backlog.md`
 - `docs/research/program/github-research-wave-43-plan.md`
 - `docs/research/program/github-research-wave-43-backlog.md`
+- `docs/research/program/github-research-wave-44-plan.md`
+- `docs/research/program/github-research-wave-44-backlog.md`
+- `docs/research/program/github-research-wave-45-plan.md`
+- `docs/research/program/github-research-wave-45-backlog.md`
+- `docs/research/program/github-research-wave-46-plan.md`
+- `docs/research/program/github-research-wave-46-backlog.md`
+- `docs/research/program/github-research-wave-47-plan.md`
+- `docs/research/program/github-research-wave-47-backlog.md`
 - `docs/research/landscape/vr-projects-master-index.md`
 - `docs/research/landscape/vr-projects-wave-3-utilities.md`
 - `docs/research/landscape/vr-projects-wave-4-gap-fill.md`
@@ -298,6 +306,10 @@ Start here:
 - `docs/research/landscape/vr-projects-wave-41-avatar-facing-osc-companions-routers-and-consumer-automation.md`
 - `docs/research/landscape/vr-projects-wave-42-xr-glasses-virtual-display-stacks-and-spatial-screen-utilities.md`
 - `docs/research/landscape/vr-projects-wave-43-wearable-haptics-tactile-bridges-and-avatar-driven-feedback.md`
+- `docs/research/landscape/vr-projects-wave-44-playspace-editors-boundary-importers-and-shared-space-helpers.md`
+- `docs/research/landscape/vr-projects-wave-45-redirected-walking-toolkits-locomotion-sidecars-and-space-redirection-research.md`
+- `docs/research/landscape/vr-projects-wave-46-xr-latency-measurement-recording-parsers-and-experiment-harnesses.md`
+- `docs/research/landscape/vr-projects-wave-47-telemetry-overlays-motion-cueing-bridges-and-sim-sidecar-platforms.md`
 
 Original Reality Window and passthrough research:
 

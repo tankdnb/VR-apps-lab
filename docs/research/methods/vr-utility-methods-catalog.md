@@ -1783,6 +1783,234 @@ Use this document when designing a new module or utility and ask:
 - Best fit for `VR-apps-lab`:
   DIY tactile wearable research and broader custom-hardware donor systems.
 
+## Method 101: Live chaperone editor over the SteamVR working copy
+
+- What it is:
+  a utility loads the current SteamVR chaperone working copy, exposes walls or
+  playspace surfaces as editable geometry, and writes updates back without
+  forcing the user through raw file edits.
+- Good for:
+  room-boundary editors, capture-space tools, in-headset setup utilities, and
+  advanced room-alignment helpers.
+- Why it matters:
+  it turns `room setup` into a manipulable runtime surface rather than a hidden
+  config file.
+- Strong references:
+  `ChaperoneTweak`, `RotatoExpress`.
+- Best fit for `VR-apps-lab`:
+  playspace tools and room-boundary authoring utilities.
+
+## Method 102: Boundary import or file-editor workflow over chaperone geometry
+
+- What it is:
+  a tool imports room geometry from another runtime or edits raw chaperone files
+  in a higher-level editor, then rewrites boundary data back into the target
+  format.
+- Good for:
+  vendor-boundary importers, Unity-based room editors, desktop setup tools, and
+  migration helpers between XR ecosystems.
+- Why it matters:
+  it separates `where boundaries come from` from `where they are consumed`.
+- Strong references:
+  `Guardian2Chaperone`, `unity-chaperone-tweaker`, `xr-chaperone`.
+- Best fit for `VR-apps-lab`:
+  boundary conversion tools and desktop-oriented room authoring flows.
+
+## Method 103: Shared-playspace peer overlay over lightweight LAN pose broadcast
+
+- What it is:
+  a tool broadcasts local room-space pose to peers over a simple LAN protocol,
+  then visualizes remote users as overlays or room markers with distance-aware
+  presentation.
+- Good for:
+  co-located VR helpers, shared-room awareness, safety markers, and lightweight
+  multi-user presence tools.
+- Why it matters:
+  it gives `shared physical space` its own minimal product shape without
+  requiring a full session platform.
+- Strong references:
+  `OpenVRSharedPlayspace`.
+- Best fit for `VR-apps-lab`:
+  shared-space utilities and safety-oriented peer-visibility helpers.
+
+## Method 104: Redirected-walking manager with pluggable redirectors, resetters, and motion controllers
+
+- What it is:
+  a central manager owns user-state updates and delegates behavior to swappable
+  redirector, resetter, movement-controller, and statistics modules.
+- Good for:
+  redirected-walking toolkits, locomotion research, algorithm benchmarks, and
+  configurable movement experiments.
+- Why it matters:
+  it keeps locomotion algorithms comparable instead of hard-wiring one method
+  into one scene.
+- Strong references:
+  `RDWT`, `OpenRDW`.
+- Best fit for `VR-apps-lab`:
+  locomotion research notes and future movement-experiment scaffolds.
+
+## Method 105: Batchable space-redirection experiment harness with path seeds, tracking spaces, and networked avatars
+
+- What it is:
+  a research stack models path generation, tracking-space variation, multi-user
+  state, and batch command-file generation as first-class experiment surfaces.
+- Good for:
+  repeated locomotion experiments, multi-user redirected walking, fairness or
+  synchronized-reset studies, and large parameter sweeps.
+- Why it matters:
+  it treats `space-redirection research` as a platform, not a single demo.
+- Strong references:
+  `OpenRDW2`.
+- Best fit for `VR-apps-lab`:
+  research-platform references and batchable locomotion study designs.
+
+## Method 106: Comfort-heavy locomotion module with smoothing, prevention, and rewind layers
+
+- What it is:
+  a locomotion component layers controller smoothing, inertia, collision
+  prevention, climb or fall checks, and rewind or pushback behavior into one
+  movement stack.
+- Good for:
+  arm-swing movement, small-room locomotion, comfort-heavy prototypes, and
+  movement systems that need guard rails.
+- Why it matters:
+  it makes `movement hygiene` an explicit reusable system instead of scattered
+  one-off checks.
+- Strong references:
+  `ArmSwinger`.
+- Best fit for `VR-apps-lab`:
+  locomotion helpers and movement-comfort experiments.
+
+## Method 107: Video-aligned motion-to-photon harness with scene-coded visual markers
+
+- What it is:
+  an XR scene tracks real movement proxies while encoding timing or state
+  changes into visible screen colors so later video analysis can align physical
+  and virtual motion.
+- Good for:
+  motion-to-photon measurement, controller-latency experiments, high-speed video
+  workflows, and scene-based latency validation.
+- Why it matters:
+  it creates a reusable `alignment surface` between the engine and a camera.
+- Strong references:
+  `motion-to-photon-measurement`.
+- Best fit for `VR-apps-lab`:
+  measurement tools and latency-validation research.
+
+## Method 108: External latency rig with microcontroller capture and brightness-coded engine output
+
+- What it is:
+  a utility couples a microcontroller-based measurement rig with engine-side
+  visual encoding, so physical sensors can record end-to-end delay rather than
+  only software timestamps.
+- Good for:
+  serious latency validation, distributed XR experiments, external validation of
+  headset or streaming claims, and lab-grade measurement setups.
+- Why it matters:
+  it bridges `what the engine thinks happened` and `what the hardware actually
+  showed`.
+- Strong references:
+  `VRLate`.
+- Best fit for `VR-apps-lab`:
+  measurement methodology and external-validation donor lines.
+
+## Method 109: Scriptable XR latency lab built from reusable experiment classes
+
+- What it is:
+  a framework exposes display, tracking, and total-latency experiments as
+  reusable classes over shared stimulus and Arduino abstractions.
+- Good for:
+  research labs, repeatable latency tests, custom experiment automation, and
+  lightweight validation frameworks.
+- Why it matters:
+  it turns `latency testing` into a reusable library problem rather than a one
+  off script or scene.
+- Strong references:
+  `vrlatency`.
+- Best fit for `VR-apps-lab`:
+  experiment harness design and validation-tool architecture.
+
+## Method 110: Cacheable parser layer over rich XR recording logs with notebook analyzers on top
+
+- What it is:
+  a parser normalizes recorder output into cached structured arrays, then higher
+  level notebook or analysis code consumes that cached representation.
+- Good for:
+  replay analytics, simulator research, offline investigation tools, and
+  recording-debug workflows.
+- Why it matters:
+  it keeps parsing reusable while letting domain analysis evolve separately.
+- Strong references:
+  `dreyevr_recording_analyzer`, `DReyeVR-parser`.
+- Best fit for `VR-apps-lab`:
+  offline analysis tools and recording-introspection research.
+
+## Method 111: Modular telemetry overlay host with adapters, widgets, and preset-aware lifecycle control
+
+- What it is:
+  a desktop host separates telemetry adapters, overlay state, widgets or
+  modules, and preset loading into explicit layers rather than one monolithic
+  overlay process.
+- Good for:
+  racing or sim overlays, compact status HUDs, tray-controlled overlays, and
+  modular always-on-top utilities.
+- Why it matters:
+  it gives `overlay host architecture` a clear reusable blueprint.
+- Strong references:
+  `TinyPedal`.
+- Best fit for `VR-apps-lab`:
+  overlay hosts and modular desktop companion utilities.
+
+## Method 112: Multi-instance telemetry sidecar with device-role ownership and IPC coordination
+
+- What it is:
+  a sidecar platform splits ownership of several device roles across master and
+  child instances, then coordinates them over IPC while sharing telemetry and
+  settings logic.
+- Good for:
+  multi-peripheral control stacks, FFB or haptics sidecars, specialized device
+  shells, and large desktop companions.
+- Why it matters:
+  it prevents multi-device systems from collapsing into one opaque process with
+  tangled state.
+- Strong references:
+  `VPforce-TelemFFB`.
+- Best fit for `VR-apps-lab`:
+  device-sidecar platforms and multi-role desktop services.
+
+## Method 113: Telemetry normalization bridge from unsupported games into UDP, MMF, or callback outputs
+
+- What it is:
+  a platform acquires telemetry from many incompatible or injected sources, then
+  normalizes that data into common transport formats for downstream tools.
+- Good for:
+  telemetry bridges, motion rigs, simulator sidecars, cross-game helper
+  platforms, and protocol adapters.
+- Why it matters:
+  it treats `integration breadth` as a reusable bridge layer instead of one
+  provider at a time.
+- Strong references:
+  `SpaceMonkey`.
+- Best fit for `VR-apps-lab`:
+  cross-runtime bridges and adapter-heavy utility platforms.
+
+## Method 114: Research simulator platform split across VR runtime, sensor stream, and recorder or replayer pipeline
+
+- What it is:
+  a simulator stack separates immersive runtime behavior from structured sensor
+  output and replay infrastructure, so the platform can serve both live use and
+  offline analysis.
+- Good for:
+  research simulators, replay-aware VR platforms, richer experimental
+  environments, and analytics-ready XR systems.
+- Why it matters:
+  it shows how `VR platform plus research data product` can be one coherent
+  architecture.
+- Strong references:
+  `DReyeVR`.
+- Best fit for `VR-apps-lab`:
+  platform-level research references and replay-aware simulator tooling.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

@@ -894,6 +894,103 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - tactile solver experiments
 - DIY wearable platform references
 
+## Family 30: Playspace editors, boundary importers, and shared-space helpers
+
+This family covers repositories where the main value is not generic
+`recentering`, but explicit ownership of room boundaries, playspace transforms,
+or shared physical-space awareness.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Xavr0k/ChaperoneTweak` | Already studied | In-headset SteamVR chaperone editor with controller hit-zones for wall and playspace edits |
+| `FrostyCoolSlug/xr-chaperone` | Already studied | Desktop setup wizard plus headless OpenXR room-boundary service with polygon-distance fading |
+| `Sgeo/Guardian2Chaperone` | Already studied | Vendor-boundary import utility from Oculus Guardian into SteamVR chaperone |
+| `hai-vr/unity-chaperone-tweaker` | Already studied | Unity-editor workflow over raw `.vrchap` universes and boundary points |
+| `Rafacasari/Playspace-Mover` | Already studied | Runtime local playspace offset mover driven by controller deltas inside an existing VR app |
+| `mdovgialo/OpenVRSharedPlayspace` | Already studied | LAN peer-visibility helper that shows shared-room companions as distance-faded overlays |
+| `LIV/RotatoExpress` | Already studied | Live playspace transform rotator with explicit restore-on-exit behavior |
+
+### Consolidation note
+
+This family matters because `room-space tooling` is broader than calibration:
+
+- live in-headset boundary editors
+- desktop setup plus service-mode boundary tools
+- vendor-boundary import utilities
+- runtime local playspace movers
+- shared-room peer overlays
+
+## Family 31: Redirected-walking toolkits, locomotion adaptation, and space-redirection research
+
+This family covers repositories that explicitly study, simulate, or implement
+ways of adapting user motion to limited physical space.
+
+| Project | Status | Notes |
+|---|---|---|
+| `USC-ICT-MxR/RDWT` | Already studied | Foundational redirected-walking toolkit with pluggable redirectors, resetters, and simulation manager |
+| `yaoling1997/OpenRDW` | Already studied | Expanded redirected-walking research platform with richer configuration, algorithms, and multi-avatar ownership |
+| `omegafantasy/OpenRDW2` | Already studied | Multi-user online redirected-walking platform with networking, separate-space logic, and batch experiment generation |
+| `ElectricNightOwl/ArmSwinger` | Already studied | Comfort-heavy locomotion module with smoothing, prevention, rewind, and pushback layers |
+| `Knerten0815/VR_Dodge_Study` | Fork / variant only | Thesis-oriented OpenRDW variation focused on dodging and reset research rather than a new mainline platform |
+
+### Consolidation note
+
+This family matters because it separates two related but different answers to
+`small-room movement`:
+
+- research-grade redirected-walking platforms
+- user-facing locomotion modules with safety or comfort stacks
+
+## Family 32: XR latency measurement, recording parsers, and experiment harnesses
+
+This family covers tools that explicitly measure XR latency, encode signals for
+later video alignment, or parse and analyze rich simulator recordings.
+
+| Project | Status | Notes |
+|---|---|---|
+| `immersivecognition/motion-to-photon-measurement` | Already studied | Unity motion-to-photon harness with combined scene coding and tracked output |
+| `vr-thi/VRLate` | Already studied | External hardware latency rig with GPS synchronization, serial capture, and brightness encoding |
+| `Greendayle/VR-Motion-to-photon-latency-` | Partially studied | VRChat-world and smartphone slow-motion methodology for low-cost latency checks |
+| `HARPLab/dreyevr_recording_analyzer` | Already studied | Parser-plus-notebook stack for rich DReyeVR replay analysis |
+| `HARPLab/DReyeVR-parser` | Already studied | Thin standalone parser and cache layer for DReyeVR recordings |
+| `ratcave/vrlatency` | Already studied | Scriptable Python latency lab with display, tracking, and total-latency experiment classes |
+
+### Consolidation note
+
+This family matters because `XR measurement tooling` is now broader than
+generic metrics:
+
+- engine-side visual coding for later alignment
+- external hardware latency rigs
+- consumer-grade latency methodologies
+- replay parsers and notebook analyzers
+- reusable experiment-lab frameworks
+
+## Family 33: Simulation telemetry overlays, motion-cueing bridges, and sim-sidecar platforms
+
+This family covers repositories where simulator telemetry becomes the backbone
+for overlays, force-feedback sidecars, motion-platform tooling, or broader VR
+simulator platforms.
+
+| Project | Status | Notes |
+|---|---|---|
+| `TinyPedal/TinyPedal` | Already studied | Modular telemetry overlay host with adapters, widget lifecycle control, and preset-aware behavior |
+| `walmis/VPforce-TelemFFB` | Already studied | Multi-instance telemetry sidecar that maps simulator state into force-feedback device roles |
+| `PHARTGAMES/SpaceMonkey` | Already studied | Telemetry normalization bridge that translates unsupported games into common outputs |
+| `SimFeedback/SimFeedback-AC-Servo` | Already studied | Motion-platform ecosystem with telemetry providers and extension facade boundaries |
+| `HARPLab/DReyeVR` | Already studied | VR simulator platform with ego sensor, replay pipeline, and research-oriented data streaming |
+| `giuseppdimaria/Unity-VRlines` | Partially studied | XR flight-simulator prototype with modular aircraft physics and VR controller mappings |
+
+### Consolidation note
+
+This family matters because mature simulator tooling reinforces several
+construction patterns that also matter for `VR-apps-lab`:
+
+- desktop plus overlay host splits
+- telemetry-to-device sidecars
+- output normalization bridges
+- simulator platforms with replay and analytics
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

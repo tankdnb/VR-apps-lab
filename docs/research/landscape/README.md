@@ -172,6 +172,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on wearable haptics, tactile bridge
   sidecars, and avatar-driven feedback systems.
 
+- `vr-projects-wave-44-playspace-editors-boundary-importers-and-shared-space-helpers.md`
+  Next GitHub discovery wave focused on playspace editors, boundary importers,
+  and shared-space helpers.
+
+- `vr-projects-wave-45-redirected-walking-toolkits-locomotion-sidecars-and-space-redirection-research.md`
+  Next GitHub discovery wave focused on redirected-walking toolkits,
+  locomotion sidecars, and space-redirection research.
+
+- `vr-projects-wave-46-xr-latency-measurement-recording-parsers-and-experiment-harnesses.md`
+  Next GitHub discovery wave focused on XR latency measurement,
+  recording parsers, and experiment harnesses.
+
+- `vr-projects-wave-47-telemetry-overlays-motion-cueing-bridges-and-sim-sidecar-platforms.md`
+  Next GitHub discovery wave focused on telemetry overlays,
+  motion-cueing bridges, and sim-sidecar platforms.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

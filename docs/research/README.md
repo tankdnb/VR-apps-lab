@@ -113,3 +113,11 @@ bridges, device managers, and experimental XR workflows.
 79. `discovery/local-source-cache-workflow.md`
 80. `discovery/intake-pipeline.md`
 81. `landscape/not-yet-studied-deeply.md`
+82. `program/github-research-wave-44-plan.md`
+83. `landscape/vr-projects-wave-44-playspace-editors-boundary-importers-and-shared-space-helpers.md`
+84. `program/github-research-wave-45-plan.md`
+85. `landscape/vr-projects-wave-45-redirected-walking-toolkits-locomotion-sidecars-and-space-redirection-research.md`
+86. `program/github-research-wave-46-plan.md`
+87. `landscape/vr-projects-wave-46-xr-latency-measurement-recording-parsers-and-experiment-harnesses.md`
+88. `program/github-research-wave-47-plan.md`
+89. `landscape/vr-projects-wave-47-telemetry-overlays-motion-cueing-bridges-and-sim-sidecar-platforms.md`

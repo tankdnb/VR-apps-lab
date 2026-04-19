@@ -629,6 +629,62 @@ Primary docs:
 - `shadorki/vrc-owo-suit` - `Already studied`
 - `Python1320/vrcjoycon` - `Already studied`
 
+## 30. Playspace editors, boundary importers, and shared-space helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-44-playspace-editors-boundary-importers-and-shared-space-helpers.md`
+- `../landscape/project-families.md`
+
+- `Xavr0k/ChaperoneTweak` - `Already studied`
+- `FrostyCoolSlug/xr-chaperone` - `Already studied`
+- `Sgeo/Guardian2Chaperone` - `Already studied`
+- `hai-vr/unity-chaperone-tweaker` - `Already studied`
+- `Rafacasari/Playspace-Mover` - `Already studied`
+- `mdovgialo/OpenVRSharedPlayspace` - `Already studied`
+- `LIV/RotatoExpress` - `Already studied`
+
+## 31. Redirected-walking toolkits, locomotion adaptation, and space-redirection research
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-45-redirected-walking-toolkits-locomotion-sidecars-and-space-redirection-research.md`
+- `../landscape/project-families.md`
+
+- `USC-ICT-MxR/RDWT` - `Already studied`
+- `yaoling1997/OpenRDW` - `Already studied`
+- `omegafantasy/OpenRDW2` - `Already studied`
+- `ElectricNightOwl/ArmSwinger` - `Already studied`
+- `Knerten0815/VR_Dodge_Study` - `Fork / variant only`
+
+## 32. XR latency measurement, recording parsers, and experiment harnesses
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-46-xr-latency-measurement-recording-parsers-and-experiment-harnesses.md`
+- `../landscape/project-families.md`
+
+- `immersivecognition/motion-to-photon-measurement` - `Already studied`
+- `vr-thi/VRLate` - `Already studied`
+- `Greendayle/VR-Motion-to-photon-latency-` - `Partially studied`
+- `HARPLab/dreyevr_recording_analyzer` - `Already studied`
+- `HARPLab/DReyeVR-parser` - `Already studied`
+- `ratcave/vrlatency` - `Already studied`
+
+## 33. Simulation telemetry overlays, motion-cueing bridges, and sim-sidecar platforms
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-47-telemetry-overlays-motion-cueing-bridges-and-sim-sidecar-platforms.md`
+- `../landscape/project-families.md`
+
+- `TinyPedal/TinyPedal` - `Already studied`
+- `walmis/VPforce-TelemFFB` - `Already studied`
+- `PHARTGAMES/SpaceMonkey` - `Already studied`
+- `SimFeedback/SimFeedback-AC-Servo` - `Already studied`
+- `HARPLab/DReyeVR` - `Already studied`
+- `giuseppdimaria/Unity-VRlines` - `Partially studied`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

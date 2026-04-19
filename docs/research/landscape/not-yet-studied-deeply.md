@@ -175,6 +175,19 @@ immediately.
 | `wheaney/breezy-desktop` | Partially studied | Driver-backed XR-glasses workspace shell with environment-specific branches and gaming-mode overlap | High | High | Revisit Linux desktop-environment integrations, UX flow, and Vulkan-mode split if a future branch needs a fuller workspace-shell donor |
 | `lc700x/desktop2stereo` | Partially studied | AI depth-driven screen transformation path for nontraditional displays | Medium | High | Revisit only if a future branch needs a deeper comparison between display-driver approaches and screen-transformation pipelines |
 
+## Priority batch O: Waves 44-47 surfaced follow-up candidates
+
+These were surfaced while deepening playspace tooling, redirected-walking
+platforms, XR latency measurement stacks, and simulator-sidecar families, but
+they were intentionally kept as honest follow-up nodes instead of being
+over-promoted immediately.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `Knerten0815/VR_Dodge_Study` | Fork / variant only | Thesis-driven OpenRDW fork focused on dodging-informed reset research | Low-Medium | Medium | Revisit only if a future redirected-walking pass needs thesis-specific trial-data and sampling-interval changes rather than the main OpenRDW architecture |
+| `Greendayle/VR-Motion-to-photon-latency-` | Partially studied | VRChat world plus smartphone slow-motion methodology for quick motion-to-photon checks | Low-Medium | High | Revisit if `VR-apps-lab` needs a more reproducible consumer-grade latency workflow or clearer asset breakdown beyond the Udon script and spreadsheet results |
+| `giuseppdimaria/Unity-VRlines` | Partially studied | XR flight-sim prototype with modular aircraft physics and VR controller input mapping | Medium | Medium-high | Inspect the moved manuscript repo, scene architecture, and aircraft-control modules if a future pass needs richer embodied-control or simulator-shell references |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.
@@ -314,6 +327,41 @@ These are larger than a single repo and should guide the next research wave.
   tactile tooling now has clear layers around avatar authoring, bridge routing,
   solver logic, and firmware or hardware reference stacks.
 
+### 15. `Playspace editors and room-boundary tooling`
+
+- Main entries:
+  `ChaperoneTweak`, `xr-chaperone`, `Guardian2Chaperone`,
+  `Playspace-Mover`, `RotatoExpress`
+- Why it matters:
+  this family now clearly spans room authoring, boundary import, live room
+  transform control, and shared-space helper patterns.
+
+### 16. `Redirected walking and locomotion adaptation toolkits`
+
+- Main entries:
+  `RDWT`, `OpenRDW`, `OpenRDW2`, `ArmSwinger`
+- Why it matters:
+  algorithm harnesses and comfort locomotion are now a distinct reusable
+  family rather than just scattered movement experiments.
+
+### 17. `XR latency measurement and replay-analysis tooling`
+
+- Main entries:
+  `motion-to-photon-measurement`, `VRLate`, `vrlatency`,
+  `dreyevr_recording_analyzer`
+- Why it matters:
+  this family now spans lab-style measurement, consumer-grade checks, and
+  parser or analyzer tooling for XR replay data.
+
+### 18. `Simulation telemetry overlays and motion-cueing sidecars`
+
+- Main entries:
+  `TinyPedal`, `VPforce-TelemFFB`, `SpaceMonkey`, `SimFeedback-AC-Servo`,
+  `DReyeVR`
+- Why it matters:
+  mature sim sidecars and research simulator stacks are now clear donor lines
+  for future VR utility and helper-app design.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -331,3 +379,7 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 11. `Mixed-VR controller and tracker bridges`
 12. `Historical utility-suite recovery`
 13. `Validation and workflow micro-utilities`
+14. `Playspace editors and room-boundary tooling`
+15. `XR latency measurement and replay-analysis tooling`
+16. `Simulation telemetry overlays and motion-cueing sidecars`
+17. `Redirected walking and locomotion adaptation toolkits`
