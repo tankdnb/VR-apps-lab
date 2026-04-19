@@ -76,6 +76,10 @@ This file complements:
 - `vr-projects-wave-65-openxr-language-bindings-generator-backed-wrappers-and-sdk-facades.md`
 - `vr-projects-wave-66-openvr-language-bindings-managed-wrappers-and-scripting-access-layers.md`
 - `vr-projects-wave-67-openvr-tracking-export-recording-and-robotics-bridge-tooling.md`
+- `vr-projects-wave-68-vmt-adapters-osc-action-compilers-and-skeletal-validation-utilities.md`
+- `vr-projects-wave-69-openxr-platform-shells-layer-managers-and-runtime-inspection-workbenches.md`
+- `vr-projects-wave-70-mixed-vr-controller-bridges-hand-emulation-and-external-tracker-interop.md`
+- `vr-projects-wave-71-openvr-driver-learning-paths-synthetic-devices-and-remote-input-ingress.md`
 
 ## How to use this index
 
@@ -287,6 +291,18 @@ This file complements:
 - Use `vr-projects-wave-67-openvr-tracking-export-recording-and-robotics-bridge-tooling.md`
   for the next wave centered on OpenVR tracking export, recording, and
   robotics bridge tooling.
+- Use `vr-projects-wave-68-vmt-adapters-osc-action-compilers-and-skeletal-validation-utilities.md`
+  for the next wave centered on `VMT` adapters, OSC action compilers, and
+  skeletal validation utilities.
+- Use `vr-projects-wave-69-openxr-platform-shells-layer-managers-and-runtime-inspection-workbenches.md`
+  for the next wave centered on OpenXR platform shells, layer managers, and
+  runtime inspection workbenches.
+- Use `vr-projects-wave-70-mixed-vr-controller-bridges-hand-emulation-and-external-tracker-interop.md`
+  for the next wave centered on mixed-VR controller bridges, hand emulation,
+  and external-tracker interop.
+- Use `vr-projects-wave-71-openvr-driver-learning-paths-synthetic-devices-and-remote-input-ingress.md`
+  for the next wave centered on OpenVR driver learning paths, synthetic
+  devices, and remote-input ingress.
 - Treat each project as one of:
   - `code donor`
   - `architecture reference`

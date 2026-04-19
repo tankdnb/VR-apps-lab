@@ -161,3 +161,11 @@ bridges, device managers, and experimental XR workflows.
 127. `landscape/vr-projects-wave-66-openvr-language-bindings-managed-wrappers-and-scripting-access-layers.md`
 128. `program/github-research-wave-67-plan.md`
 129. `landscape/vr-projects-wave-67-openvr-tracking-export-recording-and-robotics-bridge-tooling.md`
+130. `program/github-research-wave-68-plan.md`
+131. `landscape/vr-projects-wave-68-vmt-adapters-osc-action-compilers-and-skeletal-validation-utilities.md`
+132. `program/github-research-wave-69-plan.md`
+133. `landscape/vr-projects-wave-69-openxr-platform-shells-layer-managers-and-runtime-inspection-workbenches.md`
+134. `program/github-research-wave-70-plan.md`
+135. `landscape/vr-projects-wave-70-mixed-vr-controller-bridges-hand-emulation-and-external-tracker-interop.md`
+136. `program/github-research-wave-71-plan.md`
+137. `landscape/vr-projects-wave-71-openvr-driver-learning-paths-synthetic-devices-and-remote-input-ingress.md`

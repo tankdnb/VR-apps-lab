@@ -2916,6 +2916,223 @@ Use this document when designing a new module or utility and ask:
 - Best fit for `VR-apps-lab`:
   robotics-facing XR clients and external-data visualization tools.
 
+## Method 169: Manager-plus-driver virtual-tracker platform with OSC ingress, runtime health checks, and synthetic-device pooling
+
+- What it is:
+  a desktop manager owns transport, runtime checks, skeletal or tracker
+  configuration, and user-facing control while a paired driver exposes a larger
+  pool of synthetic SteamVR devices.
+- Good for:
+  virtual tracker platforms, calibration helpers, motion-compensation tools,
+  and reusable ingress hosts that should support many upstream sources.
+- Why it matters:
+  it separates `transport and operator UX` from `SteamVR device exposure`,
+  which scales much better than one-off tracker drivers.
+- Strong references:
+  `VirtualMotionTracker`.
+- Best fit for `VR-apps-lab`:
+  tracker hosts, OSC-driven synthetic devices, and validation-friendly virtual
+  tracker services.
+
+## Method 170: Action-manifest OpenVR utility that exports controller state to OSC through config-defined mappings
+
+- What it is:
+  a small OpenVR utility reads action-manifest values, converts them into OSC
+  messages, and lets mapping logic stay mostly in configuration instead of deep
+  custom runtime code.
+- Good for:
+  avatar-facing bridges, control-surface exports, quick controller-to-OSC
+  tools, and thin automation helpers.
+- Why it matters:
+  it shows that `controller to OSC` can be a narrow utility layer instead of a
+  full driver or heavyweight companion stack.
+- Strong references:
+  `SteamVR_To_OSC`, `OVR-VRC-OSC-Bridge`.
+- Best fit for `VR-apps-lab`:
+  small controller export tools and declarative input-translation surfaces.
+
+## Method 171: Protocol adapter and validation layer around an existing virtual-tracker host
+
+- What it is:
+  a repo does not reinvent SteamVR device exposure; instead it adapts another
+  upstream protocol or data model into an existing tracker host and adds small
+  validation utilities around that boundary.
+- Good for:
+  protocol bridges, fast experiments, compatibility layers, and skeletal or
+  tracker integration testing.
+- Why it matters:
+  it reduces duplicated driver work and keeps new experiments focused on the
+  data contract that is actually changing.
+- Strong references:
+  `VMC2VMT`, `SkeletonPoseTester`.
+- Best fit for `VR-apps-lab`:
+  adapter layers into established tracker platforms and small validation nodes.
+
+## Method 172: Plugin-manifest runtime or overlay platform with service-daemon sidecars
+
+- What it is:
+  a host platform loads plugins from explicit manifests while background
+  daemons or services own long-running runtime coordination and lower-level
+  integration work.
+- Good for:
+  extensible utility platforms, multi-plugin runtime tools, service-backed
+  overlay shells, and larger research labs that should stay modular.
+- Why it matters:
+  it turns `plugin platform` into a reusable architecture pattern rather than a
+  product-specific implementation accident.
+- Strong references:
+  `vrkit-platform`.
+- Best fit for `VR-apps-lab`:
+  extensible runtime-tool hosts and multi-module research platforms.
+
+## Method 173: Desktop XR shell split across session host, OpenXR API layer, and XR landing-space app
+
+- What it is:
+  one repo divides responsibility between a desktop session or streamer host,
+  an API-layer integration surface, and an XR-side client or landing-space
+  application.
+- Good for:
+  runtime-side platforms, desktop-to-XR shells, session-owning workbenches, and
+  hybrid OpenXR utility products.
+- Why it matters:
+  it makes `XR shell` a composable system of cooperating processes instead of a
+  monolith.
+- Strong references:
+  `clearxr-server`.
+- Best fit for `VR-apps-lab`:
+  runtime-side utility platforms and future desktop-plus-XR companion systems.
+
+## Method 174: OpenXR inspector or layer manager that shares one loader-state model across GUI, CLI, linting, and fix flows
+
+- What it is:
+  a runtime inspector keeps one canonical view of loader or layer state and
+  reuses it across GUI displays, CLI summaries, lint passes, and repair
+  actions.
+- Good for:
+  doctor tools, runtime diagnostics, repair assistants, and any project that
+  should expose the same truth in multiple operator surfaces.
+- Why it matters:
+  it prevents `diagnostic drift` between interfaces and makes fix actions more
+  trustworthy.
+- Strong references:
+  `openxr-explorer`, `OpenXR-API-Layers-GUI`.
+- Best fit for `VR-apps-lab`:
+  OpenXR doctor tools, runtime inspectors, and layer-state fixers.
+
+## Method 175: Mixed-VR bridge that reuses official controller profiles and render models while sourcing pose or input from another runtime
+
+- What it is:
+  a bridge surfaces foreign-runtime devices inside SteamVR while deliberately
+  reusing official controller bindings, render models, or role semantics.
+- Good for:
+  mixed-runtime controller bridges, alternative-hardware reuse, and
+  controller-emulation paths that should feel native inside SteamVR.
+- Why it matters:
+  it makes the bridge more maintainable and more compatible than inventing a
+  completely custom controller identity.
+- Strong references:
+  `Oculus_Touch_Steam_Link`, `SteamVR-OpenHMD`, `PSVR-SteamVR-openHMD`.
+- Best fit for `VR-apps-lab`:
+  mixed-runtime controller bridges and hardware-adaptation experiments.
+
+## Method 176: External-command synthetic-device driver with named-pipe or socket command grammar, state updates, and fixed-pose fallback
+
+- What it is:
+  a SteamVR driver exposes trackers or controllers that are fed by an external
+  process over sockets or named pipes using a clear command grammar for
+  creation, pose updates, input, and fallback states.
+- Good for:
+  remote control, simulator ingress, custom hardware bridges, automation, and
+  experiments where a non-driver process owns the real data source.
+- Why it matters:
+  it turns `external program controls SteamVR devices` into a reusable and
+  debuggable contract.
+- Strong references:
+  `Yet-Another-OpenVR-IPC-Driver`.
+- Best fit for `VR-apps-lab`:
+  remote-ingress drivers and external-process synthetic-device platforms.
+
+## Method 177: Declarative hand-gesture mapping into SteamVR controller semantics through per-action config
+
+- What it is:
+  hand-tracking gestures are translated into controller-style trigger, grip,
+  button, and joystick semantics mostly through explicit config rather than
+  hard-coded action logic.
+- Good for:
+  hand-emulation bridges, accessibility remappers, experimental controllerless
+  flows, and user-tunable gesture systems.
+- Why it matters:
+  it keeps `gesture meaning` editable and avoids burying every behavior inside
+  driver code.
+- Strong references:
+  `Quest-Link-Hand-Tracking`.
+- Best fit for `VR-apps-lab`:
+  configurable hand-to-controller bridges and input-remapping prototypes.
+
+## Method 178: Tutorial-grade OpenVR driver shell with central provider, reusable device classes, and debugger-friendly workflow
+
+- What it is:
+  a small but complete driver tutorial keeps provider setup, device classes,
+  registration, and update flow obvious enough to serve as a learning baseline.
+- Good for:
+  onboarding, new driver experiments, custom-device bring-up, and future
+  synthetic-device research that should start from an honest baseline.
+- Why it matters:
+  it lowers the cost of entering OpenVR driver work without hiding the real
+  structure under excessive framework code.
+- Strong references:
+  `Simple-OpenVR-Driver-Tutorial`.
+- Best fit for `VR-apps-lab`:
+  driver learning paths and low-level SteamVR experimentation notes.
+
+## Method 179: Narrow input-emulation driver that exposes controller scalar components for external locomotion hardware
+
+- What it is:
+  a tiny driver surface focuses on only the controller components needed for an
+  external hardware scenario, such as scalar axes or a small set of buttons.
+- Good for:
+  locomotion hardware, purpose-built accessories, low-complexity control
+  bridges, and minimal driver proofs.
+- Why it matters:
+  it shows that not every donor-worthy driver needs full controller parity.
+- Strong references:
+  `openvr-driver-example`.
+- Best fit for `VR-apps-lab`:
+  small custom-hardware drivers and minimalist input-emulation experiments.
+
+## Method 180: DIY HMD or tracker driver fed by serial, file, or lightweight remote channels with configurable display and pose sources
+
+- What it is:
+  an OpenVR device is driven by serial IMU data, text files, or other
+  lightweight remote channels while display assumptions and pose sources remain
+  configurable.
+- Good for:
+  hobby hardware, quick hardware bridges, prototype remote feeds, and low-cost
+  synthetic device experiments.
+- Why it matters:
+  it reveals the simplest viable ingress contracts for custom HMD or tracker
+  work without requiring a heavyweight protocol stack.
+- Strong references:
+  `OpenVR-ArduinoHMD`, `RemoteVVR`.
+- Best fit for `VR-apps-lab`:
+  DIY device plumbing and remote-input research baselines.
+
+## Method 181: Tracking-override generic tracker used to replace head pose or test third-party tracking systems
+
+- What it is:
+  a generic tracker driver is structured so it can substitute for head pose or
+  act as an override harness when validating external tracking pipelines.
+- Good for:
+  calibration experiments, head-pose replacement, third-party tracker
+  validation, and tracking-system comparison work.
+- Why it matters:
+  it turns `generic tracker driver` into a reusable testing surface rather than
+  only another synthetic device example.
+- Strong references:
+  `OpenVR-Tracker-Driver-Example`.
+- Best fit for `VR-apps-lab`:
+  tracking-override harnesses and external tracking validation tools.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

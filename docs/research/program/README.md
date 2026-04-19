@@ -455,3 +455,31 @@ repeatable way.
 
 - `github-research-wave-67-backlog.md`
   Executed backlog for the Wave 67 pass.
+
+- `github-research-wave-68-plan.md`
+  Wave 68 research plan focused on `VMT` adapters, OSC action compilers,
+  and skeletal validation utilities.
+
+- `github-research-wave-68-backlog.md`
+  Executed backlog for the Wave 68 pass.
+
+- `github-research-wave-69-plan.md`
+  Wave 69 research plan focused on OpenXR platform shells,
+  layer managers, and runtime inspection workbenches.
+
+- `github-research-wave-69-backlog.md`
+  Executed backlog for the Wave 69 pass.
+
+- `github-research-wave-70-plan.md`
+  Wave 70 research plan focused on mixed-VR controller bridges,
+  hand emulation, and external-tracker interop.
+
+- `github-research-wave-70-backlog.md`
+  Executed backlog for the Wave 70 pass.
+
+- `github-research-wave-71-plan.md`
+  Wave 71 research plan focused on OpenVR driver learning paths,
+  synthetic devices, and remote-input ingress.
+
+- `github-research-wave-71-backlog.md`
+  Executed backlog for the Wave 71 pass.

@@ -268,6 +268,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on OpenVR tracking export,
   recording, and robotics bridge tooling.
 
+- `vr-projects-wave-68-vmt-adapters-osc-action-compilers-and-skeletal-validation-utilities.md`
+  Next GitHub discovery wave focused on `VMT` adapters,
+  OSC action compilers, and skeletal validation utilities.
+
+- `vr-projects-wave-69-openxr-platform-shells-layer-managers-and-runtime-inspection-workbenches.md`
+  Next GitHub discovery wave focused on OpenXR platform shells,
+  layer managers, and runtime inspection workbenches.
+
+- `vr-projects-wave-70-mixed-vr-controller-bridges-hand-emulation-and-external-tracker-interop.md`
+  Next GitHub discovery wave focused on mixed-VR controller bridges,
+  hand emulation, and external-tracker interop.
+
+- `vr-projects-wave-71-openvr-driver-learning-paths-synthetic-devices-and-remote-input-ingress.md`
+  Next GitHub discovery wave focused on OpenVR driver learning paths,
+  synthetic devices, and remote-input ingress.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

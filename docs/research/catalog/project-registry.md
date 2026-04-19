@@ -56,6 +56,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-21-openxr-provider-stacks-gaze-layers-and-runtime-side-utility-platforms.md`
 - `../landscape/vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
 - `../landscape/vr-projects-wave-36-runtime-service-hosts-openxr-utility-platforms-and-layer-doctoring.md`
+- `../landscape/vr-projects-wave-69-openxr-platform-shells-layer-managers-and-runtime-inspection-workbenches.md`
 - `../landscape/project-families.md`
 
 - `mbucchia/OpenXR-Toolkit` - `Already studied`
@@ -80,7 +81,7 @@ Primary docs:
 - `Ybalrid/OpenXR-Runtime-Manager` - `Already studied`
 - `clear-xr/clearxr-server` - `Already studied`
 - `pembem22/etvr-openxr-layer` - `Already studied`
-- `vrkit-platform/vrkit-platform` - `Partially studied`
+- `vrkit-platform/vrkit-platform` - `Already studied`
 - `LunarG/OpenXR-Overlays-UE4-Plugin` - `Already studied`
 - `mbucchia/_ARCHIVE_OverXR` - `Fork / variant only`
 - `mbucchia/Quad-Views-Foveated` - `Already studied`
@@ -221,11 +222,14 @@ Primary docs:
 - `../landscape/vr-projects-wave-13-vision-tracking-hand-bridges-and-headsetless-camera-runtimes.md`
 - `../landscape/vr-projects-wave-14-tracker-ingress-osc-egress-and-role-binding-utilities.md`
 - `../landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
+- `../landscape/vr-projects-wave-68-vmt-adapters-osc-action-compilers-and-skeletal-validation-utilities.md`
 - `../landscape/project-families.md`
 
 - `Timocop/PSMoveServiceEx-VMT` - `Already studied`
 - `SlimeVR/SlimeVR-OpenVR-Driver` - `Already studied`
 - `gpsnmeajp/VirtualMotionTracker` - `Already studied`
+- `faidra/VMC2VMT` - `Already studied`
+- `gpsnmeajp/SkeletonPoseTester` - `Already studied`
 - `John-Dean/OpenVR-Tracker-Websocket-Driver` - `Already studied`
 - `surplex-io/OpenVR-Driver` - `Fork / variant only`
 - `ju1ce/Simple-OpenVR-Bridge-Driver` - `Already studied`
@@ -237,6 +241,7 @@ Primary docs:
 - `Greendayle/SteamVR_To_OSC` - `Already studied`
 - `ZekkVRC/OpenVR2OSC` - `Already studied`
 - `BarakChamo/OpenVR-OSC` - `Already studied`
+- `logicmachine/OVR-VRC-OSC-Bridge` - `Already studied`
 - `jangxx/steamvr-osc-control` - `Already studied`
 - `choyai/SteamVRTrackerUtility` - `Already studied`
 - `jangxx/UniversalTrackerMarkers` - `Already studied`
@@ -330,6 +335,8 @@ Primary docs:
 - `../landscape/vr-projects-wave-23-glove-platforms-poser-stacks-and-nonstandard-hardware-bridge-drivers.md`
 - `../landscape/vr-projects-wave-26-vendor-ipc-ecosystems-glasses-bridges-and-official-stack-enhancement-tools.md`
 - `../landscape/vr-projects-wave-37-mixed-vr-controller-bridges-driver-side-input-emulation-and-hand-tracking-adaptation.md`
+- `../landscape/vr-projects-wave-70-mixed-vr-controller-bridges-hand-emulation-and-external-tracker-interop.md`
+- `../landscape/vr-projects-wave-71-openvr-driver-learning-paths-synthetic-devices-and-remote-input-ingress.md`
 - `../landscape/not-yet-studied-deeply.md`
 
 - `BnuuySolutions/PSVR2Toolkit` - `Already studied`
@@ -340,9 +347,11 @@ Primary docs:
 - `mm0zct/Oculus_Touch_Steam_Link` - `Already studied`
 - `kodowiec/Yet-Another-OpenVR-IPC-Driver` - `Already studied`
 - `bdub1011/Quest-Link-Hand-Tracking` - `Partially studied`
-- `mSparks43/PSVR-SteamVR-openHMD` - `Not studied deeply`
+- `mSparks43/PSVR-SteamVR-openHMD` - `Already studied`
 - `oleuzop/VirtualSteamVRDriver` - `Already studied`
 - `finallyfunctional/openvr-driver-example` - `Already studied`
+- `Somebody32x2/RemoteVVR` - `Already studied`
+- `codeysun/OpenVR-Tracker-Driver-Example` - `Already studied`
 - `SecondReality/VirtualControllerDriver` - `Already studied`
 - `oneup03/VRto3D` - `Already studied`
 - `ValveSoftware/driver_hydra` - `Already studied`
@@ -350,7 +359,7 @@ Primary docs:
 - `alatnet/OpenPSVR` - `Already studied`
 - `r57zone/OpenVR-driver-for-DIY` - `Already studied`
 - `gpsnmeajp/SegsVRControllerDriverSample` - `Already studied`
-- `puresoul/Barebone` - `Partially studied`
+- `puresoul/Barebone` - `Already studied`
 - `mmorselli/Joy2OpenVR` - `Already studied`
 - `mdovgialo/SteamVR-Glove` - `Already studied`
 - `ultraleap/driver_ultraleap` - `Already studied`
@@ -362,7 +371,7 @@ Primary docs:
 - `LucidVR/opengloves-driver` - `Already studied`
 - `LucidVR/lucidgloves` - `Already studied`
 - `HoboVR-Labs/hobo_vr` - `Already studied`
-- `r57zone/OpenVR-ArduinoHMD` - `Partially studied`
+- `r57zone/OpenVR-ArduinoHMD` - `Already studied`
 - `DaniXmir/GlassVr` - `Already studied`
 - `terminal29/Simple-OpenVR-Driver-Tutorial` - `Already studied`
 - `Copprhead/hotas-vr-controller` - `Already studied`

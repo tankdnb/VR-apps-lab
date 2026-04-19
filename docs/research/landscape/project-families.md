@@ -55,7 +55,7 @@ This family is already converging into the future `OpenXR Doctor` direction.
 | `PlutoVR/OpenXR-OverlayLayer-1` | Already studied | Remote overlay client plus API-layer experiment using shared-memory RPC |
 | `pembem22/etvr-openxr-layer` | Already studied | Android-side implicit API layer that adapts OSC eye-tracking data into OpenXR gaze surfaces |
 | `clear-xr/clearxr-server` | Already studied | Runtime-side platform split across desktop streamer, landing-space app, and action-rewriting OpenXR API layer |
-| `vrkit-platform/vrkit-platform` | Partially studied | Electron or native-interop utility platform with strong plugin and overlay-manager slices, but still broad and scope-shifted |
+| `vrkit-platform/vrkit-platform` | Already studied | Plugin-manifest runtime and overlay platform with service-daemon slices, native interop, and explicit OpenXR-facing modules |
 
 ### Consolidation note
 
@@ -152,6 +152,8 @@ external data into `SteamVR/OpenVR devices`, `pose streams`, or `OSC events`.
 |---|---|---|
 | `Timocop/PSMoveServiceEx-VMT` | Already studied | Core virtual-tracker reference |
 | `gpsnmeajp/VirtualMotionTracker` | Already studied | Mature OSC tracker platform with manager/driver split and skeletal input support |
+| `faidra/VMC2VMT` | Already studied | Unity-side protocol adapter that forwards performer data into `VMT` instead of creating a new driver |
+| `gpsnmeajp/SkeletonPoseTester` | Already studied | Tiny skeletal-input validation utility that complements the heavier `VMT` host line |
 | `John-Dean/OpenVR-Tracker-Websocket-Driver` | Already studied | Mainline WebSocket tracker-service driver with local HTTP test surface and pose echo |
 | `surplex-io/OpenVR-Driver` | Fork / variant only | Near-clone of the John-Dean line that mainly adds tracker-role mapping |
 | `ju1ce/Simple-OpenVR-Bridge-Driver` | Already studied | Named-pipe bridge-driver skeleton with explicit tracker lifecycle, timing sync, and pose readback helpers |
@@ -163,6 +165,7 @@ external data into `SteamVR/OpenVR devices`, `pose streams`, or `OSC events`.
 | `Greendayle/SteamVR_To_OSC` | Already studied | SteamVR to OSC bridge |
 | `ZekkVRC/OpenVR2OSC` | Already studied | VRChat-oriented input bridge |
 | `BarakChamo/OpenVR-OSC` | Already studied | Minimal OpenVR pose-to-OSC exporter built around `triad_openvr` and OSC bundles |
+| `logicmachine/OVR-VRC-OSC-Bridge` | Already studied | Config-defined action-set compiler that generates an OpenVR manifest and maps controller state into OSC bundles |
 | `jangxx/steamvr-osc-control` | Already studied | Control bridge for SteamVR functions |
 | `choyai/SteamVRTrackerUtility` | Already studied | Tiny serial-based identity helper for deterministic tracker binding workflows |
 | `TriadSemi/triad_openvr` | Already studied | Strong Python wrapper for scripting, events, and device polling |
@@ -274,17 +277,19 @@ knowledge needed for `device-side tooling`.
 | `mm0zct/Oculus_Touch_Steam_Link` | Already studied | Mixed-VR controller, tracker, and sensor bridge driver |
 | `kodowiec/Yet-Another-OpenVR-IPC-Driver` | Already studied | Named-pipe or Unix-socket bridge driver that spawns synthetic trackers and controllers from external commands |
 | `bdub1011/Quest-Link-Hand-Tracking` | Partially studied | Gesture-configurable Quest hand-tracking to SteamVR controller-emulation path whose current public source is thin |
-| `mSparks43/PSVR-SteamVR-openHMD` | Not studied deeply | PSVR-specific Linux/OpenHMD comparison node for the mixed-VR bridge family |
+| `mSparks43/PSVR-SteamVR-openHMD` | Already studied | PSVR-specific OpenHMD bridge variant with extra helper code and hardware-focused adaptations |
 | `SlimeVR/SlimeVR-OpenVR-Driver` | Already studied | Modern tracker bridge driver with external service transport |
 | `oleuzop/VirtualSteamVRDriver` | Already studied | Virtual HMD driver for no-headset development and testing |
 | `finallyfunctional/openvr-driver-example` | Already studied | Beginner-friendly controller/input-emulation driver tutorial |
+| `Somebody32x2/RemoteVVR` | Already studied | Rough but explicit file-fed and browser-fed synthetic HMD/controller driver |
+| `codeysun/OpenVR-Tracker-Driver-Example` | Already studied | Minimal generic tracker plus tracking-override harness for head-pose experiments |
 | `SecondReality/VirtualControllerDriver` | Already studied | Tiny synthetic controller driver for mixed-reality workflows |
 | `oneup03/VRto3D` | Already studied | Productized stereo-display and AR-glasses driver that heavily reshapes SteamVR behavior |
 | `ValveSoftware/driver_hydra` | Already studied | Official peripheral bridge driver with controller realignment and calibration monitor |
 | `alatnet/OpenPSVR` | Already studied | Full PSVR HMD/display driver with monitor detection, power control, display component, and IMU-based tracking |
 | `r57zone/OpenVR-driver-for-DIY` | Already studied | Keyboard-driven DIY null-HMD plus controller path built close to the stock sample |
 | `gpsnmeajp/SegsVRControllerDriverSample` | Already studied | Controller-driver sample with a shared-memory helper client and JSON payloads |
-| `puresoul/Barebone` | Partially studied | XInput-driven synthetic Vive controller path anchored relative to the HMD |
+| `puresoul/Barebone` | Already studied | XInput-driven synthetic Vive controller path anchored relative to the HMD |
 | `mmorselli/Joy2OpenVR` | Already studied | DirectInput-to-InputEmulator sidecar for unusual physical controllers |
 | `mdovgialo/SteamVR-Glove` | Already studied | Arduino glove proof of concept piggybacking on existing Vive controller tracking |
 | `openvrmc/OpenVR-MotionCompensation` | Already studied | Pose-rewrite driver with shared library and in-VR dashboard configuration |
@@ -293,7 +298,7 @@ knowledge needed for `device-side tooling`.
 | `verncat/RayNeo-Air-3S-Pro-OpenVR-Driver` | Already studied | Dedicated RayNeo OpenVR driver repo with bindings, prelauncher, and clearer device-provider split |
 | `LucidVR/opengloves-driver` | Already studied | Hand-specific custom device path with driver, service, and overlay split |
 | `LucidVR/lucidgloves` | Already studied | Matching firmware and hardware ecosystem for the same glove family |
-| `r57zone/OpenVR-ArduinoHMD` | Partially studied | DIY HMD and config-driven setup |
+| `r57zone/OpenVR-ArduinoHMD` | Already studied | DIY HMD path with serial IMU ingest, display tuning, and helper monitor workflow |
 | `DaniXmir/GlassVr` | Already studied | XR/AR glasses bridge with Python sidecar, headset/controller/tracker emulation, and hand-simulation path |
 | `Copprhead/hotas-vr-controller` | Already studied | Domain-specific cockpit/device bridge with config-driven offsets and hook-based clicks |
 | `TrueOpenVR/SteamVR-TrueOpenVR` | Partially studied | Sample-derived bridge that feeds SteamVR from an external TrueOpenVR DLL surface |
@@ -457,7 +462,7 @@ not only how finished utility products behave.
 | `LapisGit/LapisOverlay` | Already studied | Unity overlay host with dashboard, wrist-surface, and sidecar-fed media panel pattern |
 | `KainosSoftwareLtd/VRSceneOverlay` | Already studied | Unity scene-overlay scaffold with tracked helpers and Leap-oriented augmentation |
 | `hai-vr/h-view` | Already studied | Modern overlay-first utility host with ImGui rendering, desktop parity, and action-manifest-driven overlay management |
-| `vrkit-platform/vrkit-platform` | Partially studied | OpenXR monitor/overlay platform with plugin-manager and native-interop signals that still deserves a narrower future pass |
+| `vrkit-platform/vrkit-platform` | Already studied | OpenXR monitor/overlay platform with plugin-manager, native interop, and service-daemon boundaries now clarified by a deeper pass |
 | `LunarG/OpenXR-Overlays-UE4-Plugin` | Already studied | Tiny Unreal-side reference for injecting `XR_EXTX_overlay` session-create info |
 | `mbucchia/_ARCHIVE_OverXR` | Fork / variant only | Current GitHub state is an archive shell with little code to inspect |
 | `foxt/csharp-openvr-overlay-imgui` | Already studied | C# overlay host with Dear ImGui input forwarding, fake desktop debug view, and adjacent desktop-duplication slice |
@@ -1436,6 +1441,128 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - pluggable tracking-export services
 - motion recording and replay harnesses
 - robotics-facing XR integration patterns
+
+## Family 47: VMT adapters, OSC action compilers, and skeletal validation utilities
+
+This family covers repositories that orbit `VirtualMotionTracker` and adjacent
+OSC exporter lines without all solving the same problem in the same layer.
+
+| Project | Status | Notes |
+|---|---|---|
+| `gpsnmeajp/VirtualMotionTracker` | Already studied | Mature manager-plus-driver tracker host with OSC transport and skeletal-input support |
+| `Greendayle/SteamVR_To_OSC` | Already studied | Thin action-manifest-driven OpenVR utility that exports mapped controller values to OSC |
+| `BarakChamo/OpenVR-OSC` | Already studied | Lower-bound pose-bundle exporter over `triad_openvr` |
+| `faidra/VMC2VMT` | Already studied | Protocol adapter that feeds `VMT` instead of implementing a new SteamVR driver |
+| `gpsnmeajp/SkeletonPoseTester` | Already studied | Tiny skeletal-input validation node for `VMT` and custom driver experiments |
+| `logicmachine/OVR-VRC-OSC-Bridge` | Already studied | Config-defined controller-state compiler into OSC with analog mapping and rotate actions |
+
+### Consolidation note
+
+This family matters because `VMT and OSC tooling` is not one donor line. It now
+splits into:
+
+- a mature tracker host
+- thin OpenVR-to-OSC exporters
+- protocol adapters into an existing host
+- skeletal validation utilities
+- config-defined input-to-OSC compilers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- `VMT`-centric adapter layers
+- controller-to-OSC compilers
+- skeletal-input validation tools
+
+## Family 48: OpenXR platform shells, layer managers, and runtime inspection workbenches
+
+This family covers repositories where the main value is not one tiny switcher
+or one tiny layer template, but a fuller runtime-side utility surface.
+
+| Project | Status | Notes |
+|---|---|---|
+| `vrkit-platform/vrkit-platform` | Already studied | Plugin-manifest runtime or overlay platform with service-daemon and native-interop slices |
+| `clear-xr/clearxr-server` | Already studied | Desktop session host plus OpenXR API layer plus XR landing-space application |
+| `maluoi/openxr-explorer` | Already studied | Shared GUI plus CLI runtime inspector with a common runtime data model |
+| `fredemmott/OpenXR-API-Layers-GUI` | Already studied | Lint-and-fix layer manager with loader-state snapshots and repair actions |
+
+### Consolidation note
+
+This family matters because `OpenXR utilities` now split more cleanly into:
+
+- plugin-manifest platforms
+- session-owning desktop shells
+- shared GUI plus CLI inspectors
+- repair-oriented layer managers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- runtime-side OpenXR utility platforms
+- layer-state diagnostics and fixers
+- `OpenXR doctor` style workbenches
+
+## Family 49: Mixed-VR controller bridges, hand emulation, and external-tracker interop
+
+This family covers repositories where foreign runtime state, hand tracking, or
+external hardware is translated into SteamVR controllers or adjacent tracker
+surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mm0zct/Oculus_Touch_Steam_Link` | Already studied | Mixed-runtime Oculus Touch bridge that can also surface devices in tracker-like modes |
+| `ChristophHaag/SteamVR-OpenHMD` | Already studied | OpenHMD-backed bridge with explicit device-role mapping and controller-profile reuse |
+| `kodowiec/Yet-Another-OpenVR-IPC-Driver` | Already studied | Command-driven synthetic controller and tracker host over named pipes or sockets |
+| `bdub1011/Quest-Link-Hand-Tracking` | Partially studied | Gesture-configurable hand-emulation line whose public code remains thin |
+| `mSparks43/PSVR-SteamVR-openHMD` | Already studied | PSVR-specific OpenHMD bridge variant and hardware-focused comparison donor |
+| `krazysh01/VirtualDesktop-OpenVR-Trackers` | Partially studied | Promising tracker-bridge direction whose public snapshot still under-exposes ingress logic |
+
+### Consolidation note
+
+This family matters because `controller bridge` work is not only about pose
+transport. It now clearly includes:
+
+- native profile and render-model reuse
+- external-command synthetic controller hosts
+- declarative hand-emulation mappings
+- hardware-specific OpenHMD variants
+- thin public snapshots whose product direction is stronger than visible code
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- mixed-runtime controller reuse
+- hand-tracking emulation into SteamVR semantics
+- explicit external-command controller bridges
+
+## Family 50: OpenVR driver learning paths, synthetic devices, and remote-input ingress
+
+This family covers repositories whose main value is teaching or exposing the
+lower-bound path into synthetic OpenVR devices.
+
+| Project | Status | Notes |
+|---|---|---|
+| `terminal29/Simple-OpenVR-Driver-Tutorial` | Already studied | Best tutorial-grade central driver shell for learning OpenVR device classes |
+| `finallyfunctional/openvr-driver-example` | Already studied | Tiny controller-scalar input example for locomotion or external hardware |
+| `puresoul/Barebone` | Already studied | HMD-relative synthetic controller helper driven by XInput |
+| `r57zone/OpenVR-ArduinoHMD` | Already studied | DIY HMD path over serial IMU data and config-defined display setup |
+| `Somebody32x2/RemoteVVR` | Already studied | File-fed and browser-fed synthetic HMD/controller experiment |
+| `codeysun/OpenVR-Tracker-Driver-Example` | Already studied | Generic tracker plus tracking-override harness for head-pose replacement |
+
+### Consolidation note
+
+This family matters because `driver learning path` is not one sample repo. It
+now splits into:
+
+- full tutorial shells
+- narrow controller-input examples
+- HMD-relative controller helpers
+- DIY HMD baselines
+- remote-ingress experiments
+- tracking-override harnesses
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- onboarding and learning-path driver references
+- synthetic-device ingress baselines
+- very small remote-input contracts into OpenVR drivers
 
 ## Recommended synthesis path for `VR-apps-lab`
 

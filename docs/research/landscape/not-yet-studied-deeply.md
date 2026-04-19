@@ -27,8 +27,6 @@ overlay-host waves.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `vrkit-platform/vrkit-platform` | Partially studied | Domain-specific overlay/runtime platform with plugin-manager and native-interop signals, but still broad and scope-shifted | High | High | Keep the next pass narrow: plugin manifests, native overlay interop, and real OpenXR boundaries instead of the whole product shell |
-| `puresoul/Barebone` | Partially studied | HMD-relative synthetic Vive controllers driven by XInput | High | Medium | Driver/helper-app split, offset persistence, and long-term maintainability of the repo cluster |
 | `krazysh01/VirtualDesktop-OpenVR-Trackers` | Partially studied | Product direction suggests body-state-to-tracker bridging, but the current public snapshot looks much thinner than expected | Medium | Medium | Re-check only if the public repo grows a real data-ingress surface or visible tracker-role mapping logic |
 | `Sharrnah/whispering` | Partially studied | Broad local speech platform where VR is one consumer among OSC, websocket, TTS, and plugin outputs | High | High | Narrow the next pass to plugin boundaries, overlay-facing surfaces, and which slices matter most for future VR utility work |
 
@@ -158,7 +156,6 @@ over-promoted immediately.
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
 | `bdub1011/Quest-Link-Hand-Tracking` | Partially studied | Gesture-configurable Quest hand tracking mapped to SteamVR controller semantics | Low-Medium | Medium-high | Revisit only if the public driver source grows beyond the current thin placeholder snapshot |
-| `mSparks43/PSVR-SteamVR-openHMD` | Not studied deeply | PSVR-specific Linux/OpenHMD bridge variant that could clarify how far the mixed-VR bridge family extends outside the mainline donors | Medium | Medium | Inspect the exact PSVR adaptations, packaging model, and overlap with `SteamVR-OpenHMD` before promoting it further |
 
 ## Priority batch N: Waves 40-43 surfaced follow-up candidates
 
@@ -548,39 +545,80 @@ These are larger than a single repo and should guide the next research wave.
   includes pluggable publishers, record-replay harnesses, and VR-native
   consumers for robotics topics.
 
+### 33. `VMT adapters, OSC action compilers, and skeletal validation utilities`
+
+- Main entries:
+  `VirtualMotionTracker`, `SteamVR_To_OSC`, `OpenVR-OSC`, `VMC2VMT`,
+  `SkeletonPoseTester`, `OVR-VRC-OSC-Bridge`
+- Why it matters:
+  this branch now separates `mature tracker host`, `thin OSC exporter`,
+  `protocol adapter`, `skeletal validation node`, and `config-defined
+  controller-state compiler` into one coherent product family.
+
+### 34. `OpenXR platform shells, layer managers, and runtime inspection workbenches`
+
+- Main entries:
+  `vrkit-platform`, `clearxr-server`, `openxr-explorer`,
+  `OpenXR-API-Layers-GUI`
+- Why it matters:
+  this family turns `OpenXR doctor` from a vague idea into a concrete cluster
+  of runtime-side platforms, session-owning shells, shared GUI-plus-CLI
+  inspectors, and repair-oriented layer managers.
+
+### 35. `Mixed-VR controller bridges, hand emulation, and external-tracker interop`
+
+- Main entries:
+  `Oculus_Touch_Steam_Link`, `SteamVR-OpenHMD`,
+  `Yet-Another-OpenVR-IPC-Driver`, `Quest-Link-Hand-Tracking`,
+  `PSVR-SteamVR-openHMD`, `VirtualDesktop-OpenVR-Trackers`
+- Why it matters:
+  controller reuse is now broader than pose transport alone; it spans profile
+  reuse, command-driven synthetic devices, declarative hand emulation, and
+  hardware-specific OpenHMD variants.
+
+### 36. `OpenVR driver learning paths, synthetic devices, and remote-input ingress`
+
+- Main entries:
+  `Simple-OpenVR-Driver-Tutorial`, `openvr-driver-example`, `Barebone`,
+  `OpenVR-ArduinoHMD`, `RemoteVVR`, `OpenVR-Tracker-Driver-Example`
+- Why it matters:
+  this family exposes the smallest honest `driver baseline` path, from
+  tutorial shells and narrow input examples to DIY HMDs, remote/file-fed
+  ingress, and tracking-override harnesses.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
 
-1. `VirtualMotionTracker and broader OSC export family`
-2. `Overlay implementation references and overlay-first hosts`
-3. `Runtime-side service hosts and broader OpenXR utility platforms`
-4. `Mixed-VR controller and tracker bridges`
-5. `Low-level driver tutorial and custom-device plumbing`
-6. `Vision-based hand and body tracking bridges`
-7. `Virtual display and repurposed output workflows`
-8. `PSVR2-specific OpenXR eye-tracking and calibration follow-up`
-9. `Historical utility-suite recovery`
-10. `Validation and workflow micro-utilities`
-11. `Biometric, neurofeedback, and accessory-control bridges`
-12. `VRChat text workflow refinements and TTS follow-up`
-13. `Avatar-facing OSC companion frameworks and automation relays`
-14. `XR glasses workspace shells and head-tracked screen tools`
-15. `Wearable haptics and avatar-driven feedback systems`
-16. `Playspace editors and room-boundary tooling`
-17. `XR latency measurement and replay-analysis tooling`
-18. `Simulation telemetry overlays and motion-cueing sidecars`
-19. `Redirected walking and locomotion adaptation toolkits`
-20. `Context-aware overlay surfaces and specialized display shells`
-21. `Browser-backed overlay runtimes and web-tech UI hosts`
-22. `Linux overlay control shells and desktop-service panels`
-23. `Micro-overlays, timed status surfaces, and informational display helpers`
-24. `Embodied workflow overlays and external-device control panels`
-25. `Code-first overlay scaffolds and projection-overlay baselines`
-26. `Managed-language overlay starters and Unity event-bridge scaffolds`
-27. `Desktop-adjacent companion overlays and phone or media control surfaces`
-28. `Specialized effect overlays and visibility-shaping comfort surfaces`
-29. `OpenXR sample-app bring-up references and rendering baselines`
-30. `OpenXR language bindings and wrapper-generation systems`
-31. `OpenVR language bindings and runtime facades`
-32. `OpenVR tracking export, record-replay, and robotics integration`
+1. `Overlay implementation references and overlay-first hosts`
+2. `Vision-based hand and body tracking bridges`
+3. `Virtual display and repurposed output workflows`
+4. `PSVR2-specific OpenXR eye-tracking and calibration follow-up`
+5. `Historical utility-suite recovery`
+6. `Validation and workflow micro-utilities`
+7. `Biometric, neurofeedback, and accessory-control bridges`
+8. `VRChat text workflow refinements and TTS follow-up`
+9. `Avatar-facing OSC companion frameworks and automation relays`
+10. `XR glasses workspace shells and head-tracked screen tools`
+11. `Wearable haptics and avatar-driven feedback systems`
+12. `Playspace editors and room-boundary tooling`
+13. `XR latency measurement and replay-analysis tooling`
+14. `Simulation telemetry overlays and motion-cueing sidecars`
+15. `Redirected walking and locomotion adaptation toolkits`
+16. `Context-aware overlay surfaces and specialized display shells`
+17. `Browser-backed overlay runtimes and web-tech UI hosts`
+18. `Linux overlay control shells and desktop-service panels`
+19. `Micro-overlays, timed status surfaces, and informational display helpers`
+20. `Embodied workflow overlays and external-device control panels`
+21. `Code-first overlay scaffolds and projection-overlay baselines`
+22. `Managed-language overlay starters and Unity event-bridge scaffolds`
+23. `Desktop-adjacent companion overlays and phone or media control surfaces`
+24. `Specialized effect overlays and visibility-shaping comfort surfaces`
+25. `OpenXR sample-app bring-up references and rendering baselines`
+26. `OpenXR language bindings and wrapper-generation systems`
+27. `OpenVR language bindings and runtime facades`
+28. `OpenVR tracking export, record-replay, and robotics integration`
+29. `VMT adapters, OSC action compilers, and skeletal validation utilities`
+30. `OpenXR platform shells, layer managers, and runtime inspection workbenches`
+31. `Mixed-VR controller bridges, hand emulation, and external-tracker interop`
+32. `OpenVR driver learning paths, synthetic devices, and remote-input ingress`
