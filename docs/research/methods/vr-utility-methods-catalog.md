@@ -3133,6 +3133,160 @@ Use this document when designing a new module or utility and ask:
 - Best fit for `VR-apps-lab`:
   tracking-override harnesses and external tracking validation tools.
 
+## Method 182: Overlay-focused OpenVR wrapper with context-owned managers and feature-gated subsystem access
+
+- What it is:
+  a binding or wrapper layer initializes OpenVR in overlay mode and exposes
+  only the subsystem managers the client actually needs through a typed
+  context.
+- Good for:
+  reusable overlay backplanes, Rust or managed helper libraries, and projects
+  that want to stay narrow instead of wrapping the entire runtime equally.
+- Why it matters:
+  it keeps overlay ownership explicit while avoiding a monolithic binding
+  surface.
+- Strong references:
+  `ovr_overlay`.
+- Best fit for `VR-apps-lab`:
+  reusable overlay helper libraries and focused implementation backends.
+
+## Method 183: Minimal dashboard overlay starter that keeps manifest, image surfaces, and visibility loop explicit
+
+- What it is:
+  a tiny overlay app creates a dashboard overlay, sets images or textures,
+  polls visibility, and keeps almost the entire runtime lifecycle visible in
+  one place.
+- Good for:
+  lower-bound overlay learning, quick proofs, bootstrap templates, and sanity
+  checks around overlay lifecycle.
+- Why it matters:
+  it gives the smallest honest dashboard overlay baseline without hiding the
+  important calls under extra abstraction.
+- Strong references:
+  `OpenVROverlayTest`, `UniversalVROverlay`.
+- Best fit for `VR-apps-lab`:
+  small dashboard starters and lower-bound overlay examples.
+
+## Method 184: Shared overlay backend plus desktop-window control shell
+
+- What it is:
+  a desktop shell owns settings, navigation, and operator UX while a shared
+  backend owns SteamVR checks, overlay registration, render loop, and event
+  polling.
+- Good for:
+  configurable overlay apps, operator dashboards, and tools that need richer
+  settings than a pure in-headset shell should own.
+- Why it matters:
+  it keeps desktop UX and overlay runtime internals separate without losing
+  coordination between them.
+- Strong references:
+  `OpenVR.ALBRT.overlay`.
+- Best fit for `VR-apps-lab`:
+  desktop-plus-overlay utilities with richer configuration flow.
+
+## Method 185: Overlay host extension through explicit IPC protocol, dedicated dashboard client, and embeddable compositor core
+
+- What it is:
+  a VR host ecosystem is split between compositor-capable core, standalone
+  protocol crate, and external dashboard client that talks over local IPC.
+- Good for:
+  Linux desktop-in-VR hosts, multi-process overlay platforms, dashboard
+  clients, and protocolized plugin ecosystems.
+- Why it matters:
+  it lets the host grow through stable extension boundaries instead of one
+  monolithic application.
+- Strong references:
+  `wayvr`, `wayvr-dashboard`, `wayvr-ipc`.
+- Best fit for `VR-apps-lab`:
+  Linux overlay hosts and protocolized runtime-side utility ecosystems.
+
+## Method 186: Panel-XML and script-driven live content module inside a larger VR host
+
+- What it is:
+  a host exposes panel schema and script hooks so a small extension can fetch
+  external content, mutate panel state, and add live surfaces without changing
+  the host core.
+- Good for:
+  plugin-fed panels, shared content surfaces, low-ceremony extensions, and
+  host ecosystems that should stay mod-friendly.
+- Why it matters:
+  it proves that meaningful overlay extensions can live in declarative panel
+  files and small shell helpers rather than compiled host code.
+- Strong references:
+  `WayvrWalltaker`.
+- Best fit for `VR-apps-lab`:
+  scriptable panel modules and lightweight host-extension patterns.
+
+## Method 187: Capture-to-tape and replay-driver workflow with helper utilities and automation flags
+
+- What it is:
+  runtime state is captured into structured artifacts, then replayed through
+  synthetic devices, with helper tools and simple file-based automation flags
+  around the pipeline.
+- Good for:
+  regression harnesses, reproducible VR testing, record-and-replay workflows,
+  and validation scenarios around motion or input data.
+- Why it matters:
+  it turns transient VR runtime behavior into reusable artifacts for later
+  debugging and automation.
+- Strong references:
+  `vr-capture-replay`.
+- Best fit for `VR-apps-lab`:
+  record-replay harnesses and regression-friendly capture tooling.
+
+## Method 188: XR orchestration workspace that couples synchronized capture, inference loops, and operator controls
+
+- What it is:
+  a host captures synchronized runtime state, routes it through inference or
+  automation loops, and exposes control surfaces that feed actions or device
+  commands back into VR.
+- Good for:
+  agent testing, automation, closed-loop research, and creator or operator
+  workspaces that combine capture with control.
+- Why it matters:
+  it shows that capture becomes much more powerful when it participates in an
+  explicit control loop instead of only producing offline logs.
+- Strong references:
+  `VRScout_Agent_Orchestration_Unity_Project`, `ViRe`.
+- Best fit for `VR-apps-lab`:
+  orchestration sidecars, agent-workspace tooling, and in-VR recording shells.
+
+## Method 189: Per-application OpenXR layer that bootstraps local config from a global template and exposes operator micro-controls
+
+- What it is:
+  a layer resolves application identity, creates per-app config and log files
+  from shared defaults, and applies runtime overrides or hotkeys inside the
+  layer hook path.
+- Good for:
+  recenter overrides, crop or FOV utilities, app-specific runtime patches, and
+  small operator-facing OpenXR tools.
+- Why it matters:
+  it turns API layers into usable micro-utilities instead of one-off hacks with
+  one global toggle.
+- Strong references:
+  `OpenXR-RecenterOverride`, `OpenXR-Layer-crop-fov`.
+- Best fit for `VR-apps-lab`:
+  per-app OpenXR utility layers and runtime micro-tools.
+
+## Method 190: Frame-lifecycle OpenXR layer that plugs external tools or transports into swapchain and session hooks
+
+- What it is:
+  an API layer intercepts session, swapchain, or frame lifecycle calls so it
+  can trigger developer tools, stream output outward, or run staged
+  intervention logic.
+- Good for:
+  RenderDoc-style capture layers, stream-out utilities, transport bridges, and
+  heavier frame-processing experiments.
+- Why it matters:
+  it shows that OpenXR layers can act as tool or transport adapters, not only
+  compatibility patches.
+- Strong references:
+  `openxr-renderdoc-layer`, `openxr_streamout_layer`,
+  `Smoothing-OpenXR-Layer`.
+- Best fit for `VR-apps-lab`:
+  developer-tool bridges, output-stream layers, and advanced intervention
+  research.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

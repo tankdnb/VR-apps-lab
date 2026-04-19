@@ -591,25 +591,66 @@ These are larger than a single repo and should guide the next research wave.
   tutorial shells and narrow input examples to DIY HMDs, remote/file-fed
   ingress, and tracking-override harnesses.
 
+### 37. `OpenVR overlay access layers, starter variants, and minimal shell experiments`
+
+- Main entries:
+  `ovr_overlay`, `OpenVROverlayTest`, `UniversalVROverlay`,
+  `OpenVR.ALBRT.overlay`
+- Why it matters:
+  this family now makes the `smallest honest overlay implementation layers`
+  explicit, from focused access wrappers to dashboard starters and desktop
+  shells over shared overlay backends.
+
+### 38. `WayVR ecosystem add-ons, Linux dashboard extensions, and IPC-backed overlay surfaces`
+
+- Main entries:
+  `wayvr`, `wayvr-dashboard`, `wayvr-ipc`, `WayvrWalltaker`
+- Why it matters:
+  the latest pass made it clear that some Linux desktop-in-VR families are
+  really `host ecosystems`, not single tools, with reusable splits across
+  compositor core, protocol crate, dashboard client, and script extension.
+
+### 39. `OpenVR capture, replay, and orchestration toolchains`
+
+- Main entries:
+  `vr-capture-replay`, `virtual-camera-offset`,
+  `VRScout_Agent_Orchestration_Unity_Project`, `ViRe`
+- Why it matters:
+  this branch now separates `capture artifact`, `replay driver`,
+  `post-capture alignment`, `closed-loop orchestration`, and
+  `VR-native recording studio`
+  into one coherent product family.
+
+### 40. `OpenXR micro-layers for view shaping, streamout, debugging capture, and frame-time intervention`
+
+- Main entries:
+  `OpenXR-RecenterOverride`, `OpenXR-Layer-crop-fov`,
+  `openxr_streamout_layer`, `openxr-renderdoc-layer`,
+  `Smoothing-OpenXR-Layer`
+- Why it matters:
+  the latest pass made it clear that `OpenXR layer` is not only about generic
+  templates or compatibility work; it now includes operator-facing micro-tools,
+  stream bridges, developer-tool integration, and advanced frame intervention.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
 
 1. `Overlay implementation references and overlay-first hosts`
-2. `Vision-based hand and body tracking bridges`
-3. `Virtual display and repurposed output workflows`
-4. `PSVR2-specific OpenXR eye-tracking and calibration follow-up`
-5. `Historical utility-suite recovery`
-6. `Validation and workflow micro-utilities`
-7. `Biometric, neurofeedback, and accessory-control bridges`
-8. `VRChat text workflow refinements and TTS follow-up`
-9. `Avatar-facing OSC companion frameworks and automation relays`
-10. `XR glasses workspace shells and head-tracked screen tools`
-11. `Wearable haptics and avatar-driven feedback systems`
-12. `Playspace editors and room-boundary tooling`
-13. `XR latency measurement and replay-analysis tooling`
-14. `Simulation telemetry overlays and motion-cueing sidecars`
-15. `Redirected walking and locomotion adaptation toolkits`
+2. `OpenXR micro-layers and runtime-side intervention tooling`
+3. `Vision-based hand and body tracking bridges`
+4. `Virtual display and repurposed output workflows`
+5. `OpenVR capture, replay, and orchestration toolchains`
+6. `WayVR ecosystem and Linux overlay surfaces`
+7. `PSVR2-specific OpenXR eye-tracking and calibration follow-up`
+8. `Historical utility-suite recovery`
+9. `Validation and workflow micro-utilities`
+10. `Biometric, neurofeedback, and accessory-control bridges`
+11. `VRChat text workflow refinements and TTS follow-up`
+12. `Avatar-facing OSC companion frameworks and automation relays`
+13. `XR glasses workspace shells and head-tracked screen tools`
+14. `Wearable haptics and avatar-driven feedback systems`
+15. `Simulation telemetry overlays and motion-cueing sidecars`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

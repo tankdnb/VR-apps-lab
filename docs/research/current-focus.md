@@ -23,10 +23,10 @@ These are the clearest current product and research lines:
 
 1. `Overlay implementation references and overlay-first utility hosts`
    small and medium overlay surfaces remain one of the strongest donor areas in
-   the whole repo.
-2. `OpenXR runtime and layer diagnostics`
-   the repository now has enough material to support an `OpenXR doctor /
-   runtime inspector` branch.
+   the whole repo, now including thinner access layers and starter variants.
+2. `OpenXR runtime, layer diagnostics, and micro-layer utilities`
+   the repository now has enough material to support both an `OpenXR doctor /
+   runtime inspector` branch and smaller operator-facing layer utilities.
 3. `Tracker, OSC, and virtual-device tooling`
    `VMT`, OSC exporters, and synthetic-device hosts form a strong reusable
    implementation family.
@@ -62,6 +62,10 @@ instead of full history:
 - `landscape/vr-projects-wave-69-openxr-platform-shells-layer-managers-and-runtime-inspection-workbenches.md`
 - `landscape/vr-projects-wave-70-mixed-vr-controller-bridges-hand-emulation-and-external-tracker-interop.md`
 - `landscape/vr-projects-wave-71-openvr-driver-learning-paths-synthetic-devices-and-remote-input-ingress.md`
+- `landscape/vr-projects-wave-72-openvr-overlay-access-layers-starter-variants-and-minimal-shell-experiments.md`
+- `landscape/vr-projects-wave-73-wayvr-ecosystem-add-ons-linux-dashboard-extensions-and-ipc-backed-overlay-surfaces.md`
+- `landscape/vr-projects-wave-74-openvr-capture-replay-and-orchestration-toolchains.md`
+- `landscape/vr-projects-wave-75-openxr-micro-layers-for-view-shaping-streamout-debugging-capture-and-frame-time-intervention.md`
 
 ## Strong donor clusters right now
 
@@ -81,6 +85,15 @@ the strongest current clusters:
 - `DesktopPlus`, `OpenKneeboard`, `h-view`, `SteamVR-WebApps`,
   `VRSceneOverlay`
   for overlay-first utility shells and in-headset workflow surfaces.
+- `ovr_overlay`, `OpenVR.ALBRT.overlay`, `wayvr`, `wayvr-ipc`
+  for overlay backplanes, Linux host ecosystems, and desktop-shell plus
+  overlay-backend splits.
+- `vr-capture-replay`, `VRScout_Agent_Orchestration_Unity_Project`, `ViRe`
+  for record-replay harnesses, orchestration loops, and VR-native recording
+  studios.
+- `OpenXR-RecenterOverride`, `OpenXR-Layer-crop-fov`,
+  `openxr-renderdoc-layer`, `openxr_streamout_layer`
+  for operator-facing and developer-facing OpenXR micro-layers.
 
 ## Highest-value next follow-up passes
 
@@ -88,10 +101,10 @@ If a new research wave should start soon, these remain especially strong next
 directions:
 
 1. `Overlay implementation references and overlay-first hosts`
-2. `Vision-based hand and body tracking bridges`
-3. `Virtual display and repurposed output workflows`
-4. `PSVR2-specific OpenXR eye-tracking and calibration follow-up`
-5. `Validation and workflow micro-utilities`
+2. `OpenXR micro-layers and runtime-side intervention tooling`
+3. `Vision-based hand and body tracking bridges`
+4. `Virtual display and repurposed output workflows`
+5. `OpenVR capture, replay, and orchestration toolchains`
 6. `Historical utility-suite recovery`
 
 ## Current repository-maintenance priorities

@@ -60,6 +60,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-25-headsetless-qa-runtimes-null-driver-helpers-and-virtual-device-simulators.md`
 - `../landscape/vr-projects-wave-36-runtime-service-hosts-openxr-utility-platforms-and-layer-doctoring.md`
 - `../landscape/vr-projects-wave-69-openxr-platform-shells-layer-managers-and-runtime-inspection-workbenches.md`
+- `../landscape/vr-projects-wave-75-openxr-micro-layers-for-view-shaping-streamout-debugging-capture-and-frame-time-intervention.md`
 - `../landscape/project-families.md`
 
 - `mbucchia/OpenXR-Toolkit` - `Already studied`
@@ -86,9 +87,14 @@ Primary docs:
 - `pembem22/etvr-openxr-layer` - `Already studied`
 - `vrkit-platform/vrkit-platform` - `Already studied`
 - `LunarG/OpenXR-Overlays-UE4-Plugin` - `Already studied`
+- `rublev/OpenXR-RecenterOverride` - `Already studied`
+- `mledour/OpenXR-Layer-crop-fov` - `Already studied`
+- `haraldsteinlechner/openxr_streamout_layer` - `Already studied`
+- `rAzoR8/openxr-renderdoc-layer` - `Already studied`
 - `mbucchia/_ARCHIVE_OverXR` - `Fork / variant only`
 - `mbucchia/Quad-Views-Foveated` - `Already studied`
 - `mbucchia/OpenXR-Eye-Trackers` - `Already studied`
+- `fzeruhn/Smoothing-OpenXR-Layer` - `Partially studied`
 
 ## 3. Compatibility layers and runtime translation
 
@@ -453,6 +459,7 @@ Primary docs:
 - `../landscape/vr-projects-wave-9-runtime-overlay-devtools.md`
 - `../landscape/vr-projects-wave-16-device-monitors-pose-exporters-and-environment-helpers.md`
 - `../landscape/vr-projects-wave-55-creator-control-overlays-research-stations-and-specialized-companion-presence-surfaces.md`
+- `../landscape/vr-projects-wave-74-openvr-capture-replay-and-orchestration-toolchains.md`
 
 - `baffler/OBS-OpenVR-Input-Plugin` - `Already studied`
 - `ValveSoftware/virtual_display` - `Already studied`
@@ -467,6 +474,10 @@ Primary docs:
 - `MuffinTastic/openvr-device-positions` - `Already studied`
 - `99oblivius/VRBro-Overlay` - `Already studied`
 - `kuentzel/ROVER` - `Already studied`
+- `NVIDIA/vr-capture-replay` - `Already studied`
+- `CodeSmith2000/virtual-camera-offset` - `Already studied`
+- `wrainw/VRScout_Agent_Orchestration_Unity_Project` - `Partially studied`
+- `TrackLab/ViRe` - `Already studied`
 
 ## 17. Accessibility, assistive HUDs, and comfort tools
 
@@ -755,23 +766,29 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-56-browser-backed-overlay-runtimes-web-tech-hosts-and-ui-runtime-experiments.md`
+- `../landscape/vr-projects-wave-73-wayvr-ecosystem-add-ons-linux-dashboard-extensions-and-ipc-backed-overlay-surfaces.md`
 - `../landscape/project-families.md`
 
 - `mekanoe/ovrsalt` - `Already studied`
 - `mekanoe/electron-openvr` - `Already studied`
 - `joshperry/ovrly` - `Already studied`
 - `ephemeral-laboratories/ComposeVR` - `Already studied`
+- `oo8dev/wayvr-dashboard` - `Already studied`
 
 ## 36. Linux overlay control shells, desktop-service panels, and interaction variants
 
 Primary docs:
 
 - `../landscape/vr-projects-wave-57-linux-overlay-control-shells-desktop-service-panels-and-interaction-variants.md`
+- `../landscape/vr-projects-wave-73-wayvr-ecosystem-add-ons-linux-dashboard-extensions-and-ipc-backed-overlay-surfaces.md`
 - `../landscape/project-families.md`
 
 - `galister/OVR4X11` - `Already studied`
 - `DrogonMar/SVRLinuxTools` - `Already studied`
 - `Dragon092/OpenVR_Audio_Manager` - `Already studied`
+- `oo8dev/wayvr` - `Already studied`
+- `oo8dev/wayvr-ipc` - `Already studied`
+- `noideaman/WayvrWalltaker` - `Already studied`
 - `CrispyPin/sinpin-vr` - `Not studied deeply`
 
 ## 37. Micro-overlays, timed status surfaces, and plugin-fed informational display helpers
@@ -804,23 +821,28 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-60-code-first-overlay-scaffolds-projection-samples-and-window-to-texture-baselines.md`
+- `../landscape/vr-projects-wave-72-openvr-overlay-access-layers-starter-variants-and-minimal-shell-experiments.md`
 - `../landscape/project-families.md`
 
 - `stevenjwheeler/OpenGL-VROverlay` - `Already studied`
 - `ChristophHaag/OpenVRWindowOverlay` - `Already studied`
 - `pfgithub/openvr-overlay-test` - `Already studied`
 - `hiinaspace/openvr-overlay-bunny` - `Already studied`
+- `ViveIsAwesome/OpenVROverlayTest` - `Already studied`
+- `scudzey/UniversalVROverlay` - `Already studied`
 
 ## 40. Managed-language overlay starters, UIToolkit templates, and higher-level scaffolds
 
 Primary docs:
 
 - `../landscape/vr-projects-wave-61-managed-language-overlay-starters-uitoolkit-templates-and-higher-level-scaffolds.md`
+- `../landscape/vr-projects-wave-72-openvr-overlay-access-layers-starter-variants-and-minimal-shell-experiments.md`
 - `../landscape/project-families.md`
 
 - `someka-vrc/uitoko-ovr` - `Already studied`
 - `AanthonyRusso/BasicOverlay` - `Already studied`
 - `Spacefish/OpenVR-Overlay` - `Already studied`
+- `albrt-vr/OpenVR.ALBRT.overlay` - `Already studied`
 - `Daniel-Webster/WT-OpenVR-Overlay` - `Partially studied`
 - `kurohuku7/zenn-overlay-tutorial` - `Not studied deeply`
 
@@ -882,6 +904,7 @@ Primary docs:
 Primary docs:
 
 - `../landscape/vr-projects-wave-66-openvr-language-bindings-managed-wrappers-and-scripting-access-layers.md`
+- `../landscape/vr-projects-wave-72-openvr-overlay-access-layers-starter-variants-and-minimal-shell-experiments.md`
 - `../landscape/project-families.md`
 
 - `rust-openvr/rust-openvr` - `Already studied`
@@ -889,6 +912,7 @@ Primary docs:
 - `tbogdala/openvr-go` - `Already studied`
 - `node-xr/node-openvr` - `Already studied`
 - `Flutterish/OpenVR.NET` - `Already studied`
+- `TheButlah/ovr_overlay` - `Already studied`
 - `java-graphics/openvr` - `Not studied deeply`
 - `matinas/openvrsimplexamples` - `Not studied deeply`
 

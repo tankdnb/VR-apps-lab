@@ -1571,6 +1571,121 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - synthetic-device ingress baselines
 - very small remote-input contracts into OpenVR drivers
 
+## Family 51: OpenVR overlay access layers, starter variants, and minimal shell experiments
+
+This family covers repositories where the main value is not a finished overlay
+product, but the smallest reusable layer that makes overlay ownership,
+bootstrap, and shell split visible.
+
+| Project | Status | Notes |
+|---|---|---|
+| `TheButlah/ovr_overlay` | Already studied | Overlay-focused Rust access layer with explicit context ownership and subsystem managers |
+| `ViveIsAwesome/OpenVROverlayTest` | Already studied | Tiny C# dashboard overlay bootstrap with explicit image surfaces and visibility loop |
+| `scudzey/UniversalVROverlay` | Already studied | C++ architecture sketch with `OverlayManager`, static overlays, and unfinished window-overlay split |
+| `albrt-vr/OpenVR.ALBRT.overlay` | Already studied | Managed desktop shell plus shared overlay backend and evented runtime ownership |
+
+### Consolidation note
+
+This family matters because `overlay implementation` now splits more cleanly
+into:
+
+- focused access layers
+- tiny dashboard starters
+- early architecture-sketch shells
+- desktop shell plus shared overlay backend patterns
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- reusable overlay backplanes
+- lower-bound dashboard starters
+- configurable overlay apps with desktop control shells
+
+## Family 52: WayVR ecosystem add-ons, Linux dashboard extensions, and IPC-backed overlay surfaces
+
+This family covers repositories where the interesting lesson is not one Linux
+overlay app in isolation, but how a host ecosystem is split across core,
+protocol, dashboard, and extension repos.
+
+| Project | Status | Notes |
+|---|---|---|
+| `oo8dev/wayvr` | Already studied | Embedded compositor and display host for Linux apps inside VR surfaces |
+| `oo8dev/wayvr-dashboard` | Already studied | External dashboard client over explicit IPC into the host |
+| `oo8dev/wayvr-ipc` | Already studied | Standalone protocol crate with handshake, queueing, and local-socket transport |
+| `noideaman/WayvrWalltaker` | Already studied | Script and panel-XML extension that injects live content into a WayVR panel |
+
+### Consolidation note
+
+This family matters because `Linux desktop-in-VR host` is not one repo or one
+binary. It now clearly splits into:
+
+- compositor-capable host core
+- external dashboard client
+- standalone host protocol crate
+- panel and script extension module
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- protocolized overlay-host ecosystems
+- Linux dashboard clients over local IPC
+- scriptable panel-extension surfaces
+
+## Family 53: OpenVR capture, replay, and orchestration toolchains
+
+This family covers repositories where VR state is recorded, transformed,
+replayed, or routed into orchestration loops and creator workflows.
+
+| Project | Status | Notes |
+|---|---|---|
+| `NVIDIA/vr-capture-replay` | Already studied | Mature capture-to-tape and replay-driver toolchain with helper utilities and automation flags |
+| `CodeSmith2000/virtual-camera-offset` | Already studied | Narrow post-capture alignment helper for tracker-to-camera offsets |
+| `wrainw/VRScout_Agent_Orchestration_Unity_Project` | Partially studied | Broad orchestration shell for synchronized capture, inference, and virtual-device control |
+| `TrackLab/ViRe` | Already studied | VR-native mocap studio with recorder, settings UI, and operator workflow |
+
+### Consolidation note
+
+This family matters because `capture tooling` is now clearly broader than
+`log some poses`. It splits into:
+
+- capture artifact plus replay-driver pipelines
+- post-capture normalization helpers
+- capture plus inference orchestration shells
+- VR-native recording studios
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- record-replay harnesses
+- closed-loop XR orchestration
+- creator-facing VR recording shells
+
+## Family 54: OpenXR micro-layers for view shaping, streamout, debugging capture, and frame-time intervention
+
+This family covers repositories where the main value is a narrow but strong
+OpenXR API-layer intervention rather than a general runtime utility platform.
+
+| Project | Status | Notes |
+|---|---|---|
+| `rublev/OpenXR-RecenterOverride` | Already studied | Per-app recenter override layer with operator-facing controls and logging |
+| `mledour/OpenXR-Layer-crop-fov` | Already studied | Per-app FOV shaping layer with bootstrapped settings and bypass logic |
+| `haraldsteinlechner/openxr_streamout_layer` | Already studied | Swapchain and frame-hook layer that streams rendered output outward |
+| `rAzoR8/openxr-renderdoc-layer` | Already studied | Developer-tool bridge layer that wraps RenderDoc capture around XR frames |
+| `fzeruhn/Smoothing-OpenXR-Layer` | Partially studied | Heavier staged frame-intervention pipeline with Vulkan and compute components |
+
+### Consolidation note
+
+This family matters because `OpenXR layers` now split more cleanly into:
+
+- operator-facing per-app micro-layers
+- per-app view-shaping and patch layers
+- stream-out transport layers
+- developer-tool bridge layers
+- heavier staged frame-intervention systems
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- per-app OpenXR utility layers
+- tool-bridge and transport-bridge API layers
+- advanced frame-intervention research
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

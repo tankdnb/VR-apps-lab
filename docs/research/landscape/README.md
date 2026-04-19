@@ -284,6 +284,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on OpenVR driver learning paths,
   synthetic devices, and remote-input ingress.
 
+- `vr-projects-wave-72-openvr-overlay-access-layers-starter-variants-and-minimal-shell-experiments.md`
+  Next GitHub discovery wave focused on OpenVR overlay access layers,
+  starter variants, and minimal shell experiments.
+
+- `vr-projects-wave-73-wayvr-ecosystem-add-ons-linux-dashboard-extensions-and-ipc-backed-overlay-surfaces.md`
+  Next GitHub discovery wave focused on the WayVR ecosystem,
+  Linux dashboard extensions, and IPC-backed overlay surfaces.
+
+- `vr-projects-wave-74-openvr-capture-replay-and-orchestration-toolchains.md`
+  Next GitHub discovery wave focused on OpenVR capture, replay, and
+  orchestration toolchains.
+
+- `vr-projects-wave-75-openxr-micro-layers-for-view-shaping-streamout-debugging-capture-and-frame-time-intervention.md`
+  Next GitHub discovery wave focused on OpenXR micro-layers, view shaping,
+  streamout, debugging capture, and frame-time intervention.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

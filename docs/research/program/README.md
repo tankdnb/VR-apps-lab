@@ -495,3 +495,31 @@ repeatable way.
 
 - `github-research-wave-71-backlog.md`
   Executed backlog for the Wave 71 pass.
+
+- `github-research-wave-72-plan.md`
+  Wave 72 research plan focused on OpenVR overlay access layers,
+  starter variants, and minimal shell experiments.
+
+- `github-research-wave-72-backlog.md`
+  Executed backlog for the Wave 72 pass.
+
+- `github-research-wave-73-plan.md`
+  Wave 73 research plan focused on the WayVR ecosystem,
+  Linux dashboard extensions, and IPC-backed overlay surfaces.
+
+- `github-research-wave-73-backlog.md`
+  Executed backlog for the Wave 73 pass.
+
+- `github-research-wave-74-plan.md`
+  Wave 74 research plan focused on OpenVR capture, replay, and orchestration
+  toolchains.
+
+- `github-research-wave-74-backlog.md`
+  Executed backlog for the Wave 74 pass.
+
+- `github-research-wave-75-plan.md`
+  Wave 75 research plan focused on OpenXR micro-layers, view shaping,
+  streamout, debugging capture, and frame-time intervention.
+
+- `github-research-wave-75-backlog.md`
+  Executed backlog for the Wave 75 pass.

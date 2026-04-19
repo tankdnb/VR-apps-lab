@@ -1,6 +1,6 @@
 # VR Projects Master Index
 
-- Date: `2026-04-19`
+- Date: `2026-04-20`
 - Goal: maintain a single index of VR-related GitHub projects that are useful as
   references, code donors, or product inspiration for `VR-apps-lab`.
 
@@ -80,6 +80,10 @@ This file complements:
 - `vr-projects-wave-69-openxr-platform-shells-layer-managers-and-runtime-inspection-workbenches.md`
 - `vr-projects-wave-70-mixed-vr-controller-bridges-hand-emulation-and-external-tracker-interop.md`
 - `vr-projects-wave-71-openvr-driver-learning-paths-synthetic-devices-and-remote-input-ingress.md`
+- `vr-projects-wave-72-openvr-overlay-access-layers-starter-variants-and-minimal-shell-experiments.md`
+- `vr-projects-wave-73-wayvr-ecosystem-add-ons-linux-dashboard-extensions-and-ipc-backed-overlay-surfaces.md`
+- `vr-projects-wave-74-openvr-capture-replay-and-orchestration-toolchains.md`
+- `vr-projects-wave-75-openxr-micro-layers-for-view-shaping-streamout-debugging-capture-and-frame-time-intervention.md`
 
 ## How to use this index
 
