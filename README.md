@@ -88,6 +88,7 @@ docs/
 
 Start here:
 
+- `AGENTS.md` for the repository operating instructions
 - `README.ru.md` for the Russian-language overview
 - `docs/README.md` for the English documentation index
 - `docs/README.ru.md` for the Russian documentation index

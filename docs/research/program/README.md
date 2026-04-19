@@ -9,6 +9,9 @@ repeatable way.
   Fast re-entry guide for new sessions, fresh clones, and assistants that do
   not have prior chat history.
 
+- `research-operator-quick-reference.md`  
+  One-screen operational checklist for running the next GitHub research wave.
+
 - `repository-restructuring-plan.md`  
   The target information architecture for turning the repo into a scalable
   research base.

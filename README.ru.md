@@ -90,9 +90,13 @@ docs/
 
 ## С чего начать
 
+- [AGENTS.md](AGENTS.md)
 - [Русский индекс документации](docs/README.ru.md)
 - [Repository positioning](docs/foundation/repository-positioning.md)
+- [Current operating context](docs/foundation/current-operating-context.md)
 - [Platform foundation](docs/foundation/platform-foundation.md)
+- [New session quickstart](docs/research/program/new-session-quickstart.md)
+- [Research operator quick reference](docs/research/program/research-operator-quick-reference.md)
 - [Methods catalog](docs/research/methods/vr-utility-methods-catalog.md)
 - [Project families](docs/research/landscape/project-families.md)
 - [Project registry](docs/research/catalog/project-registry.md)

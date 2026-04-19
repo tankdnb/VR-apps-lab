@@ -10,6 +10,7 @@ implementation patterns.
 
 - `foundation/README.md`
 - `foundation/repository-positioning.md`
+- `foundation/current-operating-context.md`
 - `foundation/repository-positioning-backlog.md`
 - `foundation/platform-foundation.md`
 - `foundation/public-roadmap.md`
@@ -71,6 +72,8 @@ implementation patterns.
 ### Research program
 
 - `research/program/README.md`
+- `research/program/new-session-quickstart.md`
+- `research/program/research-operator-quick-reference.md`
 - `research/program/repository-restructuring-plan.md`
 - `research/program/restructuring-backlog.md`
 - `research/program/study-method.md`
