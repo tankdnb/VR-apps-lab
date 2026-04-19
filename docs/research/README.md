@@ -145,3 +145,11 @@ bridges, device managers, and experimental XR workflows.
 111. `landscape/vr-projects-wave-58-micro-overlays-timed-status-surfaces-and-plugin-fed-informational-display-helpers.md`
 112. `program/github-research-wave-59-plan.md`
 113. `landscape/vr-projects-wave-59-embodied-locomotion-overlays-live-tuning-surfaces-and-external-device-control-panels.md`
+114. `program/github-research-wave-60-plan.md`
+115. `landscape/vr-projects-wave-60-code-first-overlay-scaffolds-projection-samples-and-window-to-texture-baselines.md`
+116. `program/github-research-wave-61-plan.md`
+117. `landscape/vr-projects-wave-61-managed-language-overlay-starters-uitoolkit-templates-and-higher-level-scaffolds.md`
+118. `program/github-research-wave-62-plan.md`
+119. `landscape/vr-projects-wave-62-desktop-adjacent-companion-overlays-phone-bridges-and-media-or-text-control-surfaces.md`
+120. `program/github-research-wave-63-plan.md`
+121. `landscape/vr-projects-wave-63-specialized-effect-overlays-visibility-shaping-and-passthrough-cutout-surfaces.md`

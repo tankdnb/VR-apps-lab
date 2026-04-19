@@ -2564,6 +2564,176 @@ Use this document when designing a new module or utility and ask:
 - Best fit for `VR-apps-lab`:
   remote-device overlays and external-accessory control surfaces.
 
+## Method 148: Raw OpenVR texture-submit baseline over a tiny GL or rawdraw render loop
+
+- What it is:
+  a very small overlay host renders into a local OpenGL surface, copies or
+  uploads that surface into a texture, and submits the texture directly to
+  `OpenVR`.
+- Good for:
+  bring-up references, minimal overlay experiments, language-port baselines,
+  and cases where the real need is understanding the smallest working overlay
+  loop.
+- Why it matters:
+  it keeps `minimum viable overlay` explicit instead of forcing every future
+  idea through a large host framework.
+- Strong references:
+  `OpenGL-VROverlay`, `openvr-overlay-test`.
+- Best fit for `VR-apps-lab`:
+  low-level overlay prototypes and implementation references.
+
+## Method 149: Desktop or app-window capture pipeline mirrored into an OpenVR overlay texture
+
+- What it is:
+  a real desktop or application window is captured, converted into a GPU-ready
+  image or texture, and then mirrored into an `OpenVR` overlay.
+- Good for:
+  desktop proxy surfaces, app-window overlays, Linux capture helpers, and
+  focused workflows where one external window should appear in-headset.
+- Why it matters:
+  it turns `window capture -> overlay texture` into a reusable bridge pattern
+  instead of a one-off hack.
+- Strong references:
+  `OpenVRWindowOverlay`, `OVR_SLDO`.
+- Best fit for `VR-apps-lab`:
+  desktop-adjacent overlays and focused reference-window utilities.
+
+## Method 150: Projection-overlay wrapper with explicit per-eye frusta and transform-direction notes
+
+- What it is:
+  an overlay host reads per-eye frusta and eye transforms from the runtime,
+  renders matching textures, and pushes the corresponding projection metadata
+  back into `OpenVR` while documenting the correct transform direction.
+- Good for:
+  projection overlays, per-eye experimental surfaces, passthrough-style
+  overlays, and math-heavy runtime bring-up work.
+- Why it matters:
+  public documentation for this corner of `OpenVR` is thin, so a verified
+  worked example is unusually valuable.
+- Strong references:
+  `openvr-overlay-bunny`.
+- Best fit for `VR-apps-lab`:
+  projection-overlay experiments and transform-debug references.
+
+## Method 151: UIToolkit overlay scaffold with explicit OpenVR event-to-UI bridging
+
+- What it is:
+  a Unity overlay template owns a `RenderTexture` or UI document while a
+  dedicated bridge translates `OpenVR` overlay events into UI pointer, click,
+  hover, and scroll semantics.
+- Good for:
+  Unity utility overlays, structured in-headset tools, reusable UI templates,
+  and cases where conventional UI widgets should behave correctly in VR.
+- Why it matters:
+  it makes `overlay input bridge` an explicit reusable layer instead of hiding
+  it inside one project.
+- Strong references:
+  `uitoko-ovr`.
+- Best fit for `VR-apps-lab`:
+  Unity overlay templates and higher-level UI scaffolds.
+
+## Method 152: Managed-language overlay host with GPU-native texture interop and controller-attached defaults
+
+- What it is:
+  a managed-language host initializes `OpenVR`, prepares GPU-native texture data
+  such as Vulkan or DXGI handles, and attaches the overlay to a controller or
+  tracked node with minimal extra framework.
+- Good for:
+  managed-language experiments, narrow utility overlays, texture interop demos,
+  and scaffolds where the runtime behavior should stay visible.
+- Why it matters:
+  it proves that `managed-language overlay host` does not have to give up direct
+  compositor-facing texture transport.
+- Strong references:
+  `OpenVR-Overlay`.
+- Best fit for `VR-apps-lab`:
+  managed overlay hosts and GPU interop experiments.
+
+## Method 153: Desktop-side content feeder that refreshes a narrow overlay through scripts, files, or local services
+
+- What it is:
+  a helper script, file contract, or local service owns content acquisition
+  while the overlay only refreshes a small in-headset surface from those
+  external artifacts.
+- Good for:
+  media status overlays, now-playing surfaces, app-specific overlays, and tools
+  where desktop context should remain outside the overlay host itself.
+- Why it matters:
+  it preserves a clean split between `data producer` and `overlay renderer`.
+- Strong references:
+  `BasicOverlay`, `WT-OpenVR-Overlay`.
+- Best fit for `VR-apps-lab`:
+  desktop-first companion overlays and app-specific control surfaces.
+
+## Method 154: Secure companion bridge that feeds a tabbed overlay shell over encrypted local networking
+
+- What it is:
+  an external device or phone talks to a local overlay shell through an
+  encrypted transport, while the overlay exposes richer state, keyboard input,
+  and tabbed workflows in VR.
+- Good for:
+  phone companions, secure notification mirrors, message or chat utilities, and
+  device-facing overlay shells.
+- Why it matters:
+  it makes `companion overlay` a serious architecture pattern rather than a
+  throwaway notification mirror.
+- Strong references:
+  `OVRPhoneBridge`.
+- Best fit for `VR-apps-lab`:
+  secure device companions and stateful bridge-driven overlays.
+
+## Method 155: Desktop-authored text or image micro-overlay generated on demand from local UI state
+
+- What it is:
+  a small desktop utility lets the operator type, paste, or assemble content,
+  rasterizes that content locally, and sends it into a transient or narrow VR
+  overlay surface.
+- Good for:
+  text pushers, notification helpers, ephemeral notes, operator cues, and other
+  small one-value overlays.
+- Why it matters:
+  it shows that a useful overlay can be driven by a tiny desktop authoring tool
+  instead of a full local service or dashboard host.
+- Strong references:
+  `ViveOverlayPaster`.
+- Best fit for `VR-apps-lab`:
+  operator-driven micro-tools and transient content surfaces.
+
+## Method 156: Spatial passthrough cutout overlay managed through a dashboard and controller grab or resize flow
+
+- What it is:
+  an overlay host manages one or more world-space colored boxes or quads that
+  are edited from a dashboard and manipulated physically with controllers so an
+  external passthrough or chroma-key system can turn them into view cutouts.
+- Good for:
+  desk cutouts, keyboard visibility windows, passthrough helpers, and other
+  spatial masking tools.
+- Why it matters:
+  it turns `overlay as visual hole into the physical world` into a reusable
+  product and architecture pattern.
+- Strong references:
+  `OpenMixerXR`.
+- Best fit for `VR-apps-lab`:
+  passthrough cutout tools and effect-first spatial overlays.
+
+## Method 157: Visibility-shaping comfort overlay anchored to head pose, field-of-view, or roll
+
+- What it is:
+  a narrow overlay uses HMD-relative placement or orientation to mask part of
+  the visible field, stabilize a comfort shape, or add a persistent visual
+  intervention.
+- Good for:
+  motion-sickness comfort tools, field-of-view masks, static image effects, and
+  other overlays that shape perception rather than display app content.
+- Why it matters:
+  it makes `visual intervention overlay` a reusable family instead of a set of
+  isolated novelty projects.
+- Strong references:
+  `SteamVRBlackBarOverlay`, `VR-Overlay-Half_Ring`,
+  `OpenVR-Windows-Activation`.
+- Best fit for `VR-apps-lab`:
+  comfort overlays, visibility-shaping tools, and specialized effect surfaces.
+
 ## Recommended usage inside `VR-apps-lab`
 
 When a new utility idea appears:

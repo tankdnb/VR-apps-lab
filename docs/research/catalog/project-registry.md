@@ -787,6 +787,56 @@ Primary docs:
 - `OpenShock/VROverlay` - `Partially studied`
 - `NewChromantics/PopExposeXr` - `Not studied deeply`
 
+## 39. Code-first overlay scaffolds, projection samples, and window-to-texture baselines
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-60-code-first-overlay-scaffolds-projection-samples-and-window-to-texture-baselines.md`
+- `../landscape/project-families.md`
+
+- `stevenjwheeler/OpenGL-VROverlay` - `Already studied`
+- `ChristophHaag/OpenVRWindowOverlay` - `Already studied`
+- `pfgithub/openvr-overlay-test` - `Already studied`
+- `hiinaspace/openvr-overlay-bunny` - `Already studied`
+
+## 40. Managed-language overlay starters, UIToolkit templates, and higher-level scaffolds
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-61-managed-language-overlay-starters-uitoolkit-templates-and-higher-level-scaffolds.md`
+- `../landscape/project-families.md`
+
+- `someka-vrc/uitoko-ovr` - `Already studied`
+- `AanthonyRusso/BasicOverlay` - `Already studied`
+- `Spacefish/OpenVR-Overlay` - `Already studied`
+- `Daniel-Webster/WT-OpenVR-Overlay` - `Partially studied`
+- `kurohuku7/zenn-overlay-tutorial` - `Not studied deeply`
+
+## 41. Desktop-adjacent companion overlays, phone bridges, and media or text control surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-62-desktop-adjacent-companion-overlays-phone-bridges-and-media-or-text-control-surfaces.md`
+- `../landscape/project-families.md`
+
+- `happysmash27/OVR_SLDO` - `Already studied`
+- `Desuuuu/OVRPhoneBridge` - `Already studied`
+- `adks3489/ViveOverlayPaster` - `Already studied`
+- `Wulkop/VolumeVR` - `Partially studied`
+
+## 42. Specialized effect overlays, visibility shaping, and passthrough cutout surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-63-specialized-effect-overlays-visibility-shaping-and-passthrough-cutout-surfaces.md`
+- `../landscape/project-families.md`
+
+- `Alex-J-Lopez/OpenMixerXR` - `Already studied`
+- `joaoseabra/SteamVRBlackBarOverlay` - `Already studied`
+- `tnsgud9/VR-Overlay-Half_Ring` - `Already studied`
+- `RedHawk989/OpenVR-Windows-Activation` - `Already studied`
+- `emymin/EmyOverlay` - `Not studied deeply`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

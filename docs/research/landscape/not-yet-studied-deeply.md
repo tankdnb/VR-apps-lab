@@ -223,6 +223,20 @@ immediately.
 | `OpenShock/VROverlay` | Partially studied | Older Unity lineage for a stronger current remote-device control overlay branch | Medium | Medium-High | Revisit only if a future lineage pass needs a tighter comparison against `OVR-Shock` |
 | `NewChromantics/PopExposeXr` | Not studied deeply | Thin XR-state exposure concept that hints at a possible outward-facing bridge family | Medium | Medium | Inspect the networking contract and state-exposure model only if the public repo grows beyond its current sparse snapshot |
 
+## Priority batch S: Waves 60-63 surfaced follow-up candidates
+
+These were surfaced while deepening low-level overlay scaffolds,
+managed-language starters, companion overlays, and specialized effect surfaces,
+but they were intentionally kept as honest follow-up nodes instead of being
+over-promoted immediately.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `Daniel-Webster/WT-OpenVR-Overlay` | Partially studied | Broad Unity overlay app whose local webservice and embedded overlay-framework lineage may still hide reusable pieces | Medium | Medium-High | Narrow the next pass to the reusable `OVRLay` boundary, local service consumption, and what is genuinely donor-worthy beyond the War Thunder-specific shell |
+| `kurohuku7/zenn-overlay-tutorial` | Not studied deeply | Tutorial-first SteamVR overlay teaching path that may matter more as onboarding material than as a code donor | Low-Medium | Medium | Inspect only if a future pass needs stronger overlay tutorial references or Unity onboarding material |
+| `Wulkop/VolumeVR` | Partially studied | Narrow `CEF`-based media or volume shell whose current public donor surface exposes bootstrapping more clearly than overlay behavior | Medium | Medium | Inspect whether deeper overlay logic lives in submodules or hidden paths, and compare the result against broader browser-runtime hosts |
+| `emymin/EmyOverlay` | Not studied deeply | Thin specialized overlay node with too little current framing to promote, but still plausible as an effect-overlay comparison point | Low-Medium | Low-Medium | Check whether meaningful overlay logic exists beyond the current solution shell and whether it teaches anything distinct from the clearer effect-overlay donors |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.
@@ -459,6 +473,41 @@ These are larger than a single repo and should guide the next research wave.
   over body motion, live tuning, or remote hardware rather than informational
   panels.
 
+### 25. `Code-first overlay scaffolds and projection-overlay baselines`
+
+- Main entries:
+  `OpenGL-VROverlay`, `OpenVRWindowOverlay`, `openvr-overlay-test`,
+  `openvr-overlay-bunny`
+- Why it matters:
+  the latest pass made it clear that `small honest overlay baselines` are a
+  reusable family of their own rather than just implementation trivia.
+
+### 26. `Managed-language overlay starters and Unity event-bridge scaffolds`
+
+- Main entries:
+  `uitoko-ovr`, `BasicOverlay`, `OpenVR-Overlay`, `WT-OpenVR-Overlay`
+- Why it matters:
+  this branch now spans reusable Unity templates, managed GPU-interoperable
+  hosts, and broader app-specific scaffolds with clearer service boundaries.
+
+### 27. `Desktop-adjacent companion overlays and phone or media control surfaces`
+
+- Main entries:
+  `OVR_SLDO`, `OVRPhoneBridge`, `ViveOverlayPaster`, `VolumeVR`
+- Why it matters:
+  the overlay corpus now clearly includes `companions for external workflows`,
+  not just dashboards or full runtime hosts.
+
+### 28. `Specialized effect overlays and visibility-shaping comfort surfaces`
+
+- Main entries:
+  `OpenMixerXR`, `SteamVRBlackBarOverlay`, `VR-Overlay-Half_Ring`,
+  `OpenVR-Windows-Activation`
+- Why it matters:
+  the latest pass made it clear that `effect-first overlays` are a meaningful
+  product family with reuse value for comfort, passthrough cutouts, and visual
+  masking.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -487,3 +536,7 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 22. `Linux overlay control shells and desktop-service panels`
 23. `Micro-overlays, timed status surfaces, and informational display helpers`
 24. `Embodied workflow overlays and external-device control panels`
+25. `Code-first overlay scaffolds and projection-overlay baselines`
+26. `Managed-language overlay starters and Unity event-bridge scaffolds`
+27. `Desktop-adjacent companion overlays and phone or media control surfaces`
+28. `Specialized effect overlays and visibility-shaping comfort surfaces`

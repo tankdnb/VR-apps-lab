@@ -399,3 +399,31 @@ repeatable way.
 
 - `github-research-wave-59-backlog.md`
   Executed backlog for the Wave 59 pass.
+
+- `github-research-wave-60-plan.md`
+  Wave 60 research plan focused on code-first overlay scaffolds,
+  projection samples, and window-to-texture baselines.
+
+- `github-research-wave-60-backlog.md`
+  Executed backlog for the Wave 60 pass.
+
+- `github-research-wave-61-plan.md`
+  Wave 61 research plan focused on managed-language overlay starters,
+  `UIToolkit` templates, and higher-level scaffolds.
+
+- `github-research-wave-61-backlog.md`
+  Executed backlog for the Wave 61 pass.
+
+- `github-research-wave-62-plan.md`
+  Wave 62 research plan focused on desktop-adjacent companion overlays,
+  phone bridges, and media or text control surfaces.
+
+- `github-research-wave-62-backlog.md`
+  Executed backlog for the Wave 62 pass.
+
+- `github-research-wave-63-plan.md`
+  Wave 63 research plan focused on specialized effect overlays,
+  visibility shaping, and passthrough cutout surfaces.
+
+- `github-research-wave-63-backlog.md`
+  Executed backlog for the Wave 63 pass.

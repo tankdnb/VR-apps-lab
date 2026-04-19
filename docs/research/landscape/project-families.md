@@ -1198,6 +1198,120 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - live tuning overlays for external rigs or movement systems
 - in-headset control panels for remote devices and networked accessories
 
+## Family 39: Code-first overlay scaffolds, projection samples, and window-to-texture baselines
+
+This family covers repositories where the main value is not the final product
+surface, but the explicit low-level path from pixels, transforms, or desktop
+capture into an `OpenVR` overlay.
+
+| Project | Status | Notes |
+|---|---|---|
+| `stevenjwheeler/OpenGL-VROverlay` | Already studied | Tiny `C` plus rawdraw baseline for controller-attached `OpenVR` texture submission |
+| `ChristophHaag/OpenVRWindowOverlay` | Already studied | Linux `X11` window-capture bridge that pushes real app content into an overlay texture |
+| `pfgithub/openvr-overlay-test` | Already studied | Zig-language restatement of the small `OpenVR` texture-submit baseline |
+| `hiinaspace/openvr-overlay-bunny` | Already studied | Projection-overlay donor with explicit per-eye frusta, transform math, and honest runtime caveats |
+
+### Consolidation note
+
+This family matters because `overlay implementation reference` should not mean
+only big frameworks. The strongest donor lines here are:
+
+- tiny `draw -> texture -> overlay` baselines
+- direct `desktop or app window -> overlay` capture bridges
+- honest projection-overlay worked examples
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- low-level overlay bring-up references
+- window-to-texture overlay utilities
+- projection-overlay math and transform notes
+
+## Family 40: Managed-language overlay starters, UIToolkit templates, and higher-level scaffolds
+
+This family covers repositories where the interesting lesson is how a
+managed-language or Unity overlay keeps lifecycle, texture transport, and UI
+events explicit without dropping back to a tiny native baseline.
+
+| Project | Status | Notes |
+|---|---|---|
+| `someka-vrc/uitoko-ovr` | Already studied | Reusable Unity `UIToolkit` overlay template with explicit `OpenVR` lifecycle and event bridge |
+| `AanthonyRusso/BasicOverlay` | Already studied | Focused `C++` overlay whose desktop helper refreshes cover art and text for a small HMD-relative surface |
+| `Spacefish/OpenVR-Overlay` | Already studied | Managed-language `OpenVR` host with Vulkan texture interop and controller attachment |
+| `Daniel-Webster/WT-OpenVR-Overlay` | Partially studied | Broader Unity overlay app over a local webservice, useful as a higher-level scaffold node |
+| `kurohuku7/zenn-overlay-tutorial` | Not studied deeply | Tutorial-first note for Unity or SteamVR overlay learning rather than a mainline code donor |
+
+### Consolidation note
+
+This family matters because `starter overlays` now split more cleanly into:
+
+- reusable Unity UI templates
+- desktop-side content feeders for narrow overlays
+- managed GPU-interoperable hosts
+- broader app-specific scaffolds with local-service dependencies
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Unity overlay templates with real UI frameworks
+- managed-language overlay hosts with explicit texture interop
+- higher-level overlay scaffolds that still expose reusable boundaries
+
+## Family 41: Desktop-adjacent companion overlays, phone bridges, and media or text control surfaces
+
+This family covers repositories where the overlay acts as a companion surface
+for an external device, desktop workflow, or operator-fed content stream.
+
+| Project | Status | Notes |
+|---|---|---|
+| `happysmash27/OVR_SLDO` | Already studied | Linux desktop-proxy overlay rooted in shared-memory `X11` capture |
+| `Desuuuu/OVRPhoneBridge` | Already studied | Secure phone-companion overlay with encrypted transport, notifications, SMS, and SteamVR keyboard integration |
+| `adks3489/ViveOverlayPaster` | Already studied | Tiny operator-driven text overlay that rasterizes desktop-authored content into VR |
+| `Wulkop/VolumeVR` | Partially studied | `CEF`-backed narrow media or volume shell whose public repo mainly exposes runtime bootstrap logic |
+
+### Consolidation note
+
+This family matters because `companion overlays` are not just small dashboard
+copies. They now include:
+
+- desktop-proxy surfaces
+- secure external-device companions
+- operator-authored text or notification tools
+- browser-based narrow control shells
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- overlays as companions for phone or desktop workflows
+- secure bridge-driven overlay shells
+- very small operator tools with one clear value
+
+## Family 42: Specialized effect overlays, visibility shaping, and passthrough cutout surfaces
+
+This family covers repositories where the overlay's main job is a visual
+effect, comfort intervention, or spatial cutout rather than ordinary UI.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Alex-J-Lopez/OpenMixerXR` | Already studied | Chroma-key passthrough cutout manager with dashboard editing and controller grab or resize |
+| `joaoseabra/SteamVRBlackBarOverlay` | Already studied | Focused HMD-relative top-of-view mask for visibility shaping |
+| `tnsgud9/VR-Overlay-Half_Ring` | Already studied | Unity comfort overlay that follows headset roll and exposes simple user controls |
+| `RedHawk989/OpenVR-Windows-Activation` | Already studied | Tiny static-image environmental effect overlay |
+| `emymin/EmyOverlay` | Not studied deeply | Thin effect-overlay node whose current public donor surface is still too sparse |
+
+### Consolidation note
+
+This family matters because `overlay utilities` should include comfort and
+perception tools, not only content panels. The strongest lines here are:
+
+- spatial passthrough cutout management
+- field-of-view masking
+- orientation-aware comfort overlays
+- tiny static-image effect surfaces
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- effect-first overlays
+- visibility-shaping comfort tools
+- passthrough cutout editors and spatial masking surfaces
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

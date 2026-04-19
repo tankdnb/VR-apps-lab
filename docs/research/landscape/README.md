@@ -236,6 +236,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on embodied locomotion overlays,
   live tuning surfaces, and external-device control panels.
 
+- `vr-projects-wave-60-code-first-overlay-scaffolds-projection-samples-and-window-to-texture-baselines.md`
+  Next GitHub discovery wave focused on code-first overlay scaffolds,
+  projection samples, and window-to-texture baselines.
+
+- `vr-projects-wave-61-managed-language-overlay-starters-uitoolkit-templates-and-higher-level-scaffolds.md`
+  Next GitHub discovery wave focused on managed-language overlay starters,
+  `UIToolkit` templates, and higher-level scaffolds.
+
+- `vr-projects-wave-62-desktop-adjacent-companion-overlays-phone-bridges-and-media-or-text-control-surfaces.md`
+  Next GitHub discovery wave focused on desktop-adjacent companion overlays,
+  phone bridges, and media or text control surfaces.
+
+- `vr-projects-wave-63-specialized-effect-overlays-visibility-shaping-and-passthrough-cutout-surfaces.md`
+  Next GitHub discovery wave focused on specialized effect overlays,
+  visibility shaping, and passthrough cutout surfaces.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
