@@ -316,6 +316,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on desktop-window overlay shells,
   Linux capture utilities, and launcher stubs.
 
+- `vr-projects-wave-80-microphone-control-voice-input-pipelines-and-audio-routing-helpers.md`
+  Next GitHub discovery wave focused on microphone control overlays,
+  voice-input pipelines, and audio routing helpers.
+
+- `vr-projects-wave-81-immersive-music-players-vr-media-playback-surfaces-and-browser-video-shells.md`
+  Next GitHub discovery wave focused on immersive music players,
+  VR media playback surfaces, and browser video shells.
+
+- `vr-projects-wave-82-spatial-audio-sdks-renderers-and-object-optimization-toolchains.md`
+  Next GitHub discovery wave focused on spatial audio SDKs,
+  renderers, and object-optimization toolchains.
+
+- `vr-projects-wave-83-creator-facing-audio-systems-synced-player-frameworks-and-world-side-voice-management.md`
+  Next GitHub discovery wave focused on creator-facing audio systems,
+  synced player frameworks, and world-side voice management.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

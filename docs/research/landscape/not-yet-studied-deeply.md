@@ -1,6 +1,6 @@
 # Not Yet Studied Deeply
 
-- Date: `2026-04-19`
+- Date: `2026-04-20`
 - Goal: keep a prioritized list of repositories that either:
   - are not yet represented in `VR-apps-lab`;
   - are only lightly covered;
@@ -238,6 +238,22 @@ over-promoted immediately.
 | `kurohuku7/zenn-overlay-tutorial` | Not studied deeply | Tutorial-first SteamVR overlay teaching path that may matter more as onboarding material than as a code donor | Low-Medium | Medium | Inspect only if a future pass needs stronger overlay tutorial references or Unity onboarding material |
 | `Wulkop/VolumeVR` | Partially studied | Narrow `CEF`-based media or volume shell whose current public donor surface exposes bootstrapping more clearly than overlay behavior | Medium | Medium | Inspect whether deeper overlay logic lives in submodules or hidden paths, and compare the result against broader browser-runtime hosts |
 | `emymin/EmyOverlay` | Not studied deeply | Thin specialized overlay node with too little current framing to promote, but still plausible as an effect-overlay comparison point | Low-Medium | Low-Medium | Check whether meaningful overlay logic exists beyond the current solution shell and whether it teaches anything distinct from the clearer effect-overlay donors |
+
+## Priority batch T: Waves 80-83 surfaced follow-up candidates
+
+These were surfaced while deepening VR audio helpers, immersive playback
+systems, spatial-audio substrate, and creator-facing audio frameworks, but
+they were intentionally kept as honest follow-up nodes instead of being
+over-promoted immediately.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `BIVROST/360PlayerWindows` | Partially studied | Mature multi-headset media shell whose reusable value may extend beyond the current shell and headset split coverage | High | High | Inspect decoder, service-result, and per-backend playback layers more deeply if a future media-shell pass needs stronger desktop-plus-headset references |
+| `videolan/vlc-unity` | Partially studied | Broad engine media framework where the strongest donor value may sit in packaging, backend abstraction, and immersive playback demos rather than one player prefab | High | High | Narrow the next pass to plugin packaging, demo scripts, and what parts of the LibVLC bridge are most reusable for VR utility work |
+| `videolabs/libspatialaudio` | Partially studied | Unified spatial audio renderer spanning HOA, objects, speaker, and binaural output | High | Medium-High | Narrow the next pass to the actual `Renderer` implementation, object flow, and how much of the doc surface corresponds to direct donor code |
+| `VoidXH/Cavern` | Partially studied | Broad immersive audio framework with Unity-like listener or source semantics plus filters and remapping | High | High | Revisit only if a future audio-substrate pass needs a fuller map of rendering, calibration, and Unity-side integration rather than current high-level architecture notes |
+| `llealloo/audiolink` | Partially studied | Audio-reactive ecosystem where `_AudioTexture`, controller surfaces, and creator-side integrations may justify a dedicated donor pass | High | High | Inspect player APIs, mini-player flow, sync semantics, and shader or script integration boundaries more deeply |
+| `JLChnToZ/VVMW` | Partially studied | Large modular creator-facing media frontend whose strongest reusable boundaries may sit between core, playlist, screen, and overlay subsystems | High | High | Narrow the next pass to core partials, frontend or queue boundaries, and which slices are genuinely donor-worthy beyond the full product shell |
 
 ## Family-level gaps that now deserve deeper passes
 
@@ -668,6 +684,44 @@ These are larger than a single repo and should guide the next research wave.
   landscape: native texture bridges, CLI-first capture hosts, and thin launcher
   product directions that should be tracked honestly.
 
+### 45. `Microphone control, voice-input fan-out, and audio routing helpers`
+
+- Main entries:
+  `OpenVR-MicrophoneControl`, `VRCTextboxSTT`, `OpenVR_Audio_Manager`,
+  `Virtual-Audio-Driver`
+- Why it matters:
+  this branch now makes `VR audio helpers` much more explicit, spanning
+  mic-state dashboards, STT fan-out sidecars, endpoint-routing panels, and
+  lower-layer virtual audio substrate.
+
+### 46. `Immersive media playback and browser video shells`
+
+- Main entries:
+  `around-sound`, `360PlayerWindows`, `WebXR-video-player`, `vlc-unity`
+- Why it matters:
+  immersive playback is now a clearer family of its own, spanning VR-native
+  music experiences, desktop-plus-headset shells, browser-native video players,
+  and engine-side media frameworks.
+
+### 47. `Spatial audio SDKs, renderers, and audio-object optimization`
+
+- Main entries:
+  `spatialaudio-unity`, `libspatialaudio`, `omnitone`, `Cavern`,
+  `spatial-audio-clustering`
+- Why it matters:
+  the repository now has a much stronger lower-layer audio branch covering
+  engine spatializers, unified renderers, browser ambisonics, broad immersive
+  audio frameworks, and object-budget optimization.
+
+### 48. `Creator-facing audio systems and world voice management`
+
+- Main entries:
+  `audiolink`, `USharpVideo`, `USharpVideoQueue`, `VVMW`, `AudioManager`
+- Why it matters:
+  creator-side audio is now clearly broader than one player or one reactive
+  prefab. It spans audio-reactive substrate, synced media cores, queue
+  companions, modular media frontends, and world voice-state control.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -687,6 +741,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 13. `XR glasses workspace shells and head-tracked screen tools`
 14. `Wearable haptics and avatar-driven feedback systems`
 15. `Simulation telemetry overlays and motion-cueing sidecars`
+16. `Microphone control, voice-input, and audio routing helpers`
+17. `Immersive media playback and browser video shells`
+18. `Spatial audio SDKs, renderers, and audio-object optimization`
+19. `Creator-facing audio systems and world voice management`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

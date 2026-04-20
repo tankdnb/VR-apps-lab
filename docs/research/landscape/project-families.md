@@ -1,6 +1,6 @@
 # Project Families
 
-- Date: `2026-04-19`
+- Date: `2026-04-20`
 - Goal: reorganize the `VR-apps-lab` research corpus around logical overlap
   families instead of a long flat list of repositories.
 
@@ -1795,6 +1795,129 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - CLI-first overlay hosts
 - launcher-shaped companion shells
   tracked honestly as follow-up nodes
+
+## Family 59: Microphone control overlays, voice-input pipelines, and audio routing helpers
+
+This family covers repositories where the main value is not ordinary media
+playback, but microphone state, voice-input fan-out, or audio-device routing
+substrate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `matzman666/OpenVR-MicrophoneControl` | Already studied | Focused dashboard mute and push-to-talk overlay over OS microphone state |
+| `I5UCC/VRCTextboxSTT` | Already studied | Local STT sidecar that fans one transcription pipeline into overlay, OSC, browser, and websocket outputs |
+| `Dragon092/OpenVR_Audio_Manager` | Already studied | HMD-aware audio routing dashboard with persisted endpoint preferences |
+| `VirtualDrivers/Virtual-Audio-Driver` | Already studied | Virtual speaker and microphone driver pair that works as routing substrate under higher-level voice tools |
+
+### Consolidation note
+
+This family matters because `VR audio helpers` now split more clearly into:
+
+- dashboard mic-state control
+- voice-input and transcription fan-out
+- endpoint-routing dashboards
+- lower-layer virtual audio substrate
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- mic-state overlays and push-to-talk surfaces
+- voice-input companion apps
+- virtual audio routing helpers
+
+## Family 60: Immersive music players, VR media playback surfaces, and browser video shells
+
+This family covers repositories where playback itself is the product, whether
+the host is a VR-native app, a desktop shell, a WebXR shell, or a broader
+engine media framework.
+
+| Project | Status | Notes |
+|---|---|---|
+| `JustinLin905/around-sound` | Already studied | VR-native music player built around editable speaker topology and local-file ingestion |
+| `BIVROST/360PlayerWindows` | Partially studied | Desktop immersive media shell with multiple headset backends and operator controls |
+| `VR-cam/WebXR-video-player` | Already studied | Browser-native immersive video shell with explicit projection-manager and device split |
+| `videolan/vlc-unity` | Partially studied | Engine media substrate with demos for 360 playback, subtitles, and broad codec support |
+| `Mon-Ouie/vr-video-player-overlay` | Already studied | Narrow overlay-native video display surface that complements the heavier playback shells |
+
+### Consolidation note
+
+This family matters because `immersive playback` is no longer one vague media
+category. It now clearly includes:
+
+- speaker-topology music players
+- desktop shells with headset backends
+- browser-native immersive players
+- engine-side media substrates
+- narrow overlay-native playback surfaces
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VR music and listening tools
+- immersive desktop media shells
+- browser-backed video surfaces
+- reusable media backends inside engines
+
+## Family 61: Spatial audio SDKs, renderers, and object-optimization toolchains
+
+This family covers repositories where the main value sits below the UI layer in
+rendering, spatialization, ambisonics, or audio object-budget management.
+
+| Project | Status | Notes |
+|---|---|---|
+| `microsoft/spatialaudio-unity` | Already studied | Native DSP spatializer plugin package for Unity with sample integration |
+| `videolabs/libspatialaudio` | Partially studied | Unified renderer architecture spanning HOA, object, speaker, and binaural models |
+| `GoogleChrome/omnitone` | Already studied | Web ambisonic decoder and binaural renderer with explicit audio-graph modules |
+| `VoidXH/Cavern` | Partially studied | Broad immersive audio framework with source-listener semantics, filters, and remapping |
+| `carbonengine/spatial-audio-clustering` | Already studied | Wwise object-clustering plugin that reduces spatial object consumption while keeping centroidized spatial output |
+
+### Consolidation note
+
+This family matters because `audio substrate for XR`
+now splits more cleanly into:
+
+- engine-native spatializer packages
+- unified renderer libraries
+- browser ambisonic renderers
+- broad immersive audio frameworks
+- object-budget optimization plugins
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- spatial-audio engine integration
+- reusable renderer abstractions
+- ambisonic and binaural web references
+- audio object-budget tooling
+
+## Family 62: Creator-facing audio systems, synced player frameworks, and world-side voice management
+
+This family covers repositories where creator ecosystems combine audio-reactive
+infrastructure, synced playback, queue ownership, and world-level voice-state
+control.
+
+| Project | Status | Notes |
+|---|---|---|
+| `llealloo/audiolink` | Partially studied | Audio-reactive substrate that broadcasts analyzed audio into a shared texture and broader helper ecosystem |
+| `MerlinVR/USharpVideo` | Already studied | Synced VRChat media-player core with backend abstraction and network time ownership |
+| `sam-ln/USharpVideoQueue` | Already studied | Queue and permissions companion around an existing synced media-player core |
+| `JLChnToZ/VVMW` | Partially studied | Modular creator-facing media frontend with AudioLink, overlay, playlist, and screen-control layers |
+| `SylanTroh/AudioManager` | Already studied | Priority-based world voice settings and fake-occlusion manager for social spaces |
+
+### Consolidation note
+
+This family matters because `creator-side audio systems` are not just one
+player prefab. They now clearly include:
+
+- audio-reactive world substrate
+- synced media-player cores
+- queue and permission companions
+- modular creator-facing frontends
+- world-side voice-state managers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- audio-reactive utility layers
+- synced creator-side playback systems
+- queue ownership and moderation surfaces
+- world voice-state and social-space audio control
 
 ## Recommended synthesis path for `VR-apps-lab`
 

@@ -40,6 +40,9 @@ These are the clearest current product and research lines:
 6. `Accessibility, communication, and companion surfaces`
    small user-value-first tools remain an important public direction, not just
    a side branch.
+7. `VR audio, immersive playback, and creator-facing audio systems`
+   the repository now has a clearer branch for mic-state tools, media-player
+   shells, spatial-audio substrate, and creator-side audio frameworks.
 
 ## Most useful current docs
 
@@ -71,6 +74,10 @@ instead of full history:
 - `landscape/vr-projects-wave-77-openxr-helper-stacks-layer-toolchains-and-runtime-adaptation-helpers.md`
 - `landscape/vr-projects-wave-78-openxr-passthrough-samples-and-engine-side-extension-integration-references.md`
 - `landscape/vr-projects-wave-79-desktop-window-overlay-shells-linux-capture-utilities-and-launcher-stubs.md`
+- `landscape/vr-projects-wave-80-microphone-control-voice-input-pipelines-and-audio-routing-helpers.md`
+- `landscape/vr-projects-wave-81-immersive-music-players-vr-media-playback-surfaces-and-browser-video-shells.md`
+- `landscape/vr-projects-wave-82-spatial-audio-sdks-renderers-and-object-optimization-toolchains.md`
+- `landscape/vr-projects-wave-83-creator-facing-audio-systems-synced-player-frameworks-and-world-side-voice-management.md`
 
 ## Strong donor clusters right now
 
@@ -103,6 +110,13 @@ the strongest current clusters:
   `ue-openxr-passthrough`
   for capability injection, layer authoring, runtime adaptation, and
   engine-side extension integration.
+- `spatialaudio-unity`, `omnitone`, `libspatialaudio`, `Cavern`,
+  `spatial-audio-clustering`
+  for spatial-audio substrate, renderer abstractions, and object-budget-aware
+  audio tooling.
+- `AudioLink`, `USharpVideo`, `USharpVideoQueue`, `VVMW`, `AudioManager`
+  for creator-facing audio infrastructure, synced media systems, and world
+  voice-state control.
 
 ## Highest-value next follow-up passes
 
@@ -115,6 +129,10 @@ directions:
 4. `Virtual display and repurposed output workflows`
 5. `OpenVR capture, replay, and orchestration toolchains`
 6. `Historical utility-suite recovery`
+7. `Microphone control, voice-input, and audio routing helpers`
+8. `Immersive media playback and browser video shells`
+9. `Spatial audio SDKs, renderers, and audio-object optimization`
+10. `Creator-facing audio systems and world voice management`
 
 ## Current repository-maintenance priorities
 

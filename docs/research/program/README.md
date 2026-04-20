@@ -551,3 +551,31 @@ repeatable way.
 
 - `github-research-wave-79-backlog.md`
   Executed backlog for the Wave 79 pass.
+
+- `github-research-wave-80-plan.md`
+  Wave 80 research plan focused on microphone control overlays,
+  voice-input pipelines, and audio routing helpers.
+
+- `github-research-wave-80-backlog.md`
+  Executed backlog for the Wave 80 pass.
+
+- `github-research-wave-81-plan.md`
+  Wave 81 research plan focused on immersive music players,
+  VR media playback surfaces, and browser video shells.
+
+- `github-research-wave-81-backlog.md`
+  Executed backlog for the Wave 81 pass.
+
+- `github-research-wave-82-plan.md`
+  Wave 82 research plan focused on spatial audio SDKs,
+  renderers, and object-optimization toolchains.
+
+- `github-research-wave-82-backlog.md`
+  Executed backlog for the Wave 82 pass.
+
+- `github-research-wave-83-plan.md`
+  Wave 83 research plan focused on creator-facing audio systems,
+  synced player frameworks, and world-side voice management.
+
+- `github-research-wave-83-backlog.md`
+  Executed backlog for the Wave 83 pass.

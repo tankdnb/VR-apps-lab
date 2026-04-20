@@ -3478,3 +3478,247 @@ When a new utility idea appears:
    - API layer
    - driver
    - creator tool
+
+## Method 202: Dashboard microphone-control overlay with OS endpoint state and controller-driven push-to-talk
+
+- What it is:
+  a focused dashboard surface exposes mute, recording level, or push-to-talk
+  state directly over OS microphone endpoints.
+- Good for:
+  SteamVR dashboards, voice-state utilities, accessibility helpers, and quick
+  audio control without alt-tabbing to desktop panels.
+- Why it matters:
+  it treats microphone state as a first-class VR utility concern rather than a
+  background desktop-only setting.
+- Strong references:
+  `OpenVR-MicrophoneControl`.
+- Best fit for `VR-apps-lab`:
+  mic-state overlays and push-to-talk utility surfaces.
+
+## Method 203: Local speech-to-text sidecar with overlay, OSC, browser, and websocket fan-out
+
+- What it is:
+  a local STT pipeline transcribes microphone input once and then fans the
+  output into several sinks such as overlays, OSC, browser sources, or
+  websocket consumers.
+- Good for:
+  chatbox helpers, avatar text tools, companion apps, assistive captions, and
+  speech-driven utility surfaces.
+- Why it matters:
+  it shows how one audio-input pipeline can feed many VR and non-VR consumers
+  cleanly.
+- Strong references:
+  `VRCTextboxSTT`.
+- Best fit for `VR-apps-lab`:
+  speech sidecars and multi-sink voice-input helpers.
+
+## Method 204: Virtual speaker-plus-microphone routing substrate for VR voice and streaming workflows
+
+- What it is:
+  a virtual audio-device pair creates synthetic speaker and microphone endpoints
+  that higher-level VR or streaming tools can route through.
+- Good for:
+  voice-routing utilities, streaming helpers, test harnesses, and headless or
+  remote audio workflows.
+- Why it matters:
+  it captures the lower layer that many audio-control tools depend on but do
+  not expose directly.
+- Strong references:
+  `Virtual-Audio-Driver`.
+- Best fit for `VR-apps-lab`:
+  audio routing helpers and routing-substrate studies.
+
+## Method 205: Speaker-topology-first VR music player with local library ingestion and synchronized speaker catch-up
+
+- What it is:
+  a VR music player treats speakers as editable world objects, loads local audio
+  files into a queue, and keeps newly added speakers synchronized with current
+  playback.
+- Good for:
+  listening-room experiments, spatial music tools, speaker playgrounds, and
+  local-library VR players.
+- Why it matters:
+  it makes the sound-stage layout itself part of the product rather than just
+  the invisible backend.
+- Strong references:
+  `around-sound`.
+- Best fit for `VR-apps-lab`:
+  immersive music-player concepts and spatial listening tools.
+
+## Method 206: Desktop immersive media shell with pluggable headset backends and mirrored operator UI
+
+- What it is:
+  a desktop media shell owns file or URL ingestion, buffering, and ordinary UI
+  controls while delegating actual VR playback to replaceable headset backends.
+- Good for:
+  360 players, immersive media shells, desktop-plus-headset workflows, and
+  multi-backend playback tools.
+- Why it matters:
+  it proves immersive media software can keep a strong desktop operator story
+  while still supporting multiple VR runtimes or devices.
+- Strong references:
+  `360PlayerWindows`.
+- Best fit for `VR-apps-lab`:
+  headset-aware media shells and playback-controller references.
+
+## Method 207: Browser-native immersive video shell with projection-manager and device-abstraction layers
+
+- What it is:
+  a WebXR or browser player separates public playback controls from projection
+  handling and device-specific rendering behavior.
+- Good for:
+  browser-based immersive video players, device-targeted playback tools, and
+  thin in-headset media shells.
+- Why it matters:
+  it keeps projection logic explicit instead of burying it inside a monolithic
+  player blob.
+- Strong references:
+  `WebXR-video-player`.
+- Best fit for `VR-apps-lab`:
+  browser-backed media surfaces and projection-aware playback tools.
+
+## Method 208: Engine-integrated media substrate for broad-codec, stream-aware, and immersive playback scenarios
+
+- What it is:
+  an engine media package wraps a powerful codec or streaming backend and then
+  exposes several player shapes such as minimal playback, 360 playback,
+  subtitles, and streamed content.
+- Good for:
+  engine-side media tools, creator plugins, immersive video surfaces, and
+  stream-capable playback foundations.
+- Why it matters:
+  it turns media playback into a reusable backend layer instead of one bespoke
+  player scene.
+- Strong references:
+  `vlc-unity`.
+- Best fit for `VR-apps-lab`:
+  engine-side playback substrates and media backend comparisons.
+
+## Method 209: Cross-platform engine spatializer package with native DSP boundary and sample integration
+
+- What it is:
+  an engine package ships native DSP code, build or packaging flow, and sample
+  integration together as one spatializer product.
+- Good for:
+  Unity spatializers, engine audio plugins, cross-platform DSP studies, and
+  mixed reality audio integration.
+- Why it matters:
+  it makes the plugin boundary and engine-facing contract explicit instead of
+  leaving them inside private tooling.
+- Strong references:
+  `spatialaudio-unity`.
+- Best fit for `VR-apps-lab`:
+  engine audio integration and native DSP packaging references.
+
+## Method 210: Unified spatial audio renderer abstraction spanning HOA, object, speaker, and binaural models
+
+- What it is:
+  one top-level renderer abstraction routes several spatial-audio models behind
+  a shared interface rather than fragmenting them into isolated pipelines.
+- Good for:
+  immersive audio frameworks, reusable rendering libraries, and architecture
+  studies that span many output models.
+- Why it matters:
+  it shows how to keep audio rendering extensible across standards and output
+  forms without losing coherence.
+- Strong references:
+  `libspatialaudio`.
+- Best fit for `VR-apps-lab`:
+  spatial-audio architecture references and deeper audio-substrate studies.
+
+## Method 211: Web ambisonic renderer with explicit rotation routing and rendering-mode control
+
+- What it is:
+  a browser ambisonic renderer exposes routing, rotation, and rendering mode as
+  explicit public controls over a clear audio graph.
+- Good for:
+  WebXR audio work, browser ambisonics, spatial-media tools, and lightweight
+  binaural renderers.
+- Why it matters:
+  it keeps soundfield control and decode mode visible instead of hiding them in
+  opaque helpers.
+- Strong references:
+  `omnitone`.
+- Best fit for `VR-apps-lab`:
+  browser-side spatial audio and web playback experiments.
+
+## Method 212: Spatial audio object-clustering processor for output-budget reduction without collapsing spatial intent
+
+- What it is:
+  an object processor clusters nearby sound objects, reuses output objects, and
+  mixes them into centroid-driven spatial outputs.
+- Good for:
+  dense combat scenes, particle-heavy sound design, and object-budget-aware
+  immersive audio systems.
+- Why it matters:
+  it shows how to productize `object budget management` as a reusable audio
+  utility pattern.
+- Strong references:
+  `spatial-audio-clustering`.
+- Best fit for `VR-apps-lab`:
+  audio-performance tooling and object-budget optimization studies.
+
+## Method 213: GPU-broadcast audio-reactive texture bus for creator ecosystems
+
+- What it is:
+  audio analysis is converted into a shared texture or similar GPU-facing
+  surface that shaders and scripts can both consume.
+- Good for:
+  creator tools, avatar or world reactivity, stage visuals, and reusable
+  sound-reactive systems.
+- Why it matters:
+  it turns audio-reactive behavior into shared infrastructure rather than
+  isolated prefab scripts.
+- Strong references:
+  `audiolink`.
+- Best fit for `VR-apps-lab`:
+  creator-side audio-reactive utilities and shader-driven systems.
+
+## Method 214: Network-synced media player core with backend proxy split between player logic and concrete video components
+
+- What it is:
+  one synced player behaviour owns state, permissions, playlists, and timing
+  while a proxy layer hides the concrete media backend or player implementation.
+- Good for:
+  networked creator tools, synced media surfaces, multi-backend player shells,
+  and VR social-space playback systems.
+- Why it matters:
+  it makes backend swapping possible without contaminating the whole player
+  logic.
+- Strong references:
+  `USharpVideo`, `VVMW`.
+- Best fit for `VR-apps-lab`:
+  synced media-player cores and backend abstraction studies.
+
+## Method 215: Owner-routed queue companion with per-user limits, URL policy, and playback handoff around an existing player
+
+- What it is:
+  a queue layer sits beside a media player and handles request ownership,
+  policy, moderation, and playback handoff without owning the whole playback
+  engine itself.
+- Good for:
+  creator moderation, shared media queues, multi-user playback systems, and
+  queue-aware control panels.
+- Why it matters:
+  it captures the often-missing `queue and permissions shell` around synced
+  playback.
+- Strong references:
+  `USharpVideoQueue`.
+- Best fit for `VR-apps-lab`:
+  queue companions and multi-user media workflow tools.
+
+## Method 216: Priority-based world voice-state manager with zone membership and fake occlusion
+
+- What it is:
+  player voice settings are modeled as composable state, with zones, priority,
+  and transition logic deciding which values apply.
+- Good for:
+  social spaces, staged events, fake occlusion, room-aware voice behavior, and
+  voice moderation utilities inside creator ecosystems.
+- Why it matters:
+  it turns voice behavior into a reusable world system instead of a one-off
+  trigger script.
+- Strong references:
+  `AudioManager`.
+- Best fit for `VR-apps-lab`:
+  world voice-state tools and social-space audio-control utilities.

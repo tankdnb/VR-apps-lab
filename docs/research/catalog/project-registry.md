@@ -1,6 +1,6 @@
 # Project Registry
 
-- Date: `2026-04-19`
+- Date: `2026-04-20`
 - Scope: canonical grouped registry of repositories currently tracked by
   `VR-apps-lab`
 - Purpose: make every tracked project discoverable through one file, with a
@@ -975,6 +975,56 @@ Primary docs:
 - `ShiraoShotaro/DesktopOverlayer` - `Already studied`
 - `nyxpirientity/ovr-penguin` - `Already studied`
 - `gamenew09/RobloxVRLauncher` - `Not studied deeply`
+
+## 51. Microphone control overlays, voice-input pipelines, and audio routing helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-80-microphone-control-voice-input-pipelines-and-audio-routing-helpers.md`
+- `../landscape/project-families.md`
+
+- `matzman666/OpenVR-MicrophoneControl` - `Already studied`
+- `I5UCC/VRCTextboxSTT` - `Already studied`
+- `Dragon092/OpenVR_Audio_Manager` - `Already studied`
+- `VirtualDrivers/Virtual-Audio-Driver` - `Already studied`
+
+## 52. Immersive music players, VR media playback surfaces, and browser video shells
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-81-immersive-music-players-vr-media-playback-surfaces-and-browser-video-shells.md`
+- `../landscape/project-families.md`
+
+- `JustinLin905/around-sound` - `Already studied`
+- `BIVROST/360PlayerWindows` - `Partially studied`
+- `VR-cam/WebXR-video-player` - `Already studied`
+- `videolan/vlc-unity` - `Partially studied`
+
+## 53. Spatial audio SDKs, renderers, and object-optimization toolchains
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-82-spatial-audio-sdks-renderers-and-object-optimization-toolchains.md`
+- `../landscape/project-families.md`
+
+- `microsoft/spatialaudio-unity` - `Already studied`
+- `videolabs/libspatialaudio` - `Partially studied`
+- `GoogleChrome/omnitone` - `Already studied`
+- `VoidXH/Cavern` - `Partially studied`
+- `carbonengine/spatial-audio-clustering` - `Already studied`
+
+## 54. Creator-facing audio systems, synced player frameworks, and world-side voice management
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-83-creator-facing-audio-systems-synced-player-frameworks-and-world-side-voice-management.md`
+- `../landscape/project-families.md`
+
+- `llealloo/audiolink` - `Partially studied`
+- `MerlinVR/USharpVideo` - `Already studied`
+- `sam-ln/USharpVideoQueue` - `Already studied`
+- `JLChnToZ/VVMW` - `Partially studied`
+- `SylanTroh/AudioManager` - `Already studied`
 
 ## Registry maintenance rule
 
