@@ -80,6 +80,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-85-engine-side-stereo-panoramic-viewers-vendor-player-samples-and-layout-specific-video-surfaces.md`
 - `landscape/vr-projects-wave-86-vrchat-synced-video-player-frameworks-queue-frontends-and-event-optimized-media-shells.md`
 - `landscape/vr-projects-wave-87-transformed-volumetric-and-nonstandard-3d-video-viewers.md`
+- `landscape/vr-projects-wave-88-vrchat-world-authoring-toolkits-optimization-helpers-and-prefab-ecosystems.md`
+- `landscape/vr-projects-wave-89-vrchat-world-runtime-infrastructure-voice-networking-and-player-state-helpers.md`
+- `landscape/vr-projects-wave-90-vrchat-camera-staging-and-admin-control-systems-for-world-events.md`
+- `landscape/vr-projects-wave-91-vrchat-interaction-ui-and-information-surface-prefabs.md`
 
 ## Archive Navigation
 

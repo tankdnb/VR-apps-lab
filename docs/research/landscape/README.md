@@ -348,6 +348,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on transformed video viewers,
   volumetric or VR180 playback, and nonstandard 3D media viewing environments.
 
+- `vr-projects-wave-88-vrchat-world-authoring-toolkits-optimization-helpers-and-prefab-ecosystems.md`
+  Next GitHub discovery wave focused on VRChat world-authoring toolkits,
+  optimization helpers, and prefab ecosystems.
+
+- `vr-projects-wave-89-vrchat-world-runtime-infrastructure-voice-networking-and-player-state-helpers.md`
+  Next GitHub discovery wave focused on VRChat world runtime infrastructure,
+  voice and networking helpers, and player-state systems.
+
+- `vr-projects-wave-90-vrchat-camera-staging-and-admin-control-systems-for-world-events.md`
+  Next GitHub discovery wave focused on VRChat camera systems,
+  staging and admin control, and creator-side event coverage.
+
+- `vr-projects-wave-91-vrchat-interaction-ui-and-information-surface-prefabs.md`
+  Next GitHub discovery wave focused on VRChat interaction prefabs,
+  utility UI, and dynamic information-surface tools.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

@@ -1,6 +1,6 @@
 # VR Utility Methods Catalog
 
-- Date: `2026-04-19`
+- Date: `2026-04-21`
 - Purpose: extract reusable implementation methods and product patterns from the
   tracked VR repositories, so `VR-apps-lab` can grow around proven approaches rather
   than only around named projects.
@@ -3950,3 +3950,245 @@ When a new utility idea appears:
   `DomeTools`.
 - Best fit for `VR-apps-lab`:
   immersive media environments and source-ingest playback references.
+
+## Method 231: VRChat world build-request gate with automated fix-or-block editor workflow
+
+- What it is:
+  a world-authoring toolkit intercepts the build pipeline, checks scene
+  assumptions, and either blocks or helps fix the build before creators publish
+  broken content.
+- Good for:
+  creator guardrails, publish-time validation, editor automation, and world
+  authoring hygiene.
+- Why it matters:
+  it moves quality enforcement into tooling instead of leaving it as a wiki or
+  checklist.
+- Strong references:
+  `VRWorldToolkit`.
+- Best fit for `VR-apps-lab`:
+  creator-world authoring tools and editor-time validation helpers.
+
+## Method 232: Compiler-pipeline injection that optimizes generated Udon after UdonSharp emission
+
+- What it is:
+  a Harmony-style patch hooks the creator compiler pipeline and runs
+  optimization passes over generated program output instead of over author code.
+- Good for:
+  generated-script optimization, post-emit cleanup, compiler extensions, and
+  creator toolchains.
+- Why it matters:
+  it captures a reusable way to improve generated code centrally rather than
+  expecting creators to optimize every script by hand.
+- Strong references:
+  `UdonSharpOptimizer`.
+- Best fit for `VR-apps-lab`:
+  compiler-adjacent tooling and generated-code optimization research.
+
+## Method 233: Creator-tool package constellation with shared common package and composable prefab modules
+
+- What it is:
+  a creator ecosystem is broken into many smaller packages plus a shared common
+  layer so projects can compose only the modules they need.
+- Good for:
+  creator ecosystems, VCC-friendly packaging, prefab suite decomposition, and
+  reusable package families.
+- Why it matters:
+  it provides a stronger long-term packaging shape than one monolithic prefab
+  dump.
+- Strong references:
+  `VUdon`.
+- Best fit for `VR-apps-lab`:
+  ecosystem design and creator-tool packaging strategy.
+
+## Method 234: World voice-state controller with composable override lists, privacy channels, and occlusion models
+
+- What it is:
+  player voice and avatar-audio behavior are modeled through override objects,
+  priority, privacy channels, and configuration models rather than through
+  isolated triggers.
+- Good for:
+  social spaces, staged events, voice zoning, privacy channels, and
+  creator-world audio behavior.
+- Why it matters:
+  it turns voice-state behavior into reusable runtime infrastructure.
+- Strong references:
+  `UdonVoiceUtils`.
+- Best fit for `VR-apps-lab`:
+  world voice-state systems and creator-world runtime infrastructure.
+
+## Method 235: Reliable byte-buffer message bus over manual-sync Udon connections
+
+- What it is:
+  a creator-world transport layer builds reliable targeted messaging, sequence
+  handling, and serialization helpers over manual-sync byte arrays.
+- Good for:
+  world runtime infrastructure, creator-side transport, binary messaging,
+  targeted sync, and reusable Udon networking.
+- Why it matters:
+  it exposes a cleaner transport contract than one-off synced variables.
+- Strong references:
+  `UNet`.
+- Best fit for `VR-apps-lab`:
+  creator-world transport patterns and reusable runtime substrate.
+
+## Method 236: Moving-platform hook that keeps local players aligned to moving colliders with menu-aware pause and velocity inheritance
+
+- What it is:
+  a narrow world helper detects valid moving colliders, offsets or teleports
+  the local player to follow them, pauses on menu interaction, and can preserve
+  velocity on unhook.
+- Good for:
+  moving platforms, vehicles, elevators, locomotion correction, and dynamic
+  world geometry.
+- Why it matters:
+  it captures a stubborn runtime problem as a reusable prefab-scale solution.
+- Strong references:
+  `UdonPlayerPlatformHook`.
+- Best fit for `VR-apps-lab`:
+  narrow creator-world locomotion helpers and moving-frame utilities.
+
+## Method 237: Per-player pooled object assignment with master verification and compiler-agnostic integration contract
+
+- What it is:
+  each player is assigned one pooled object through stable mapping logic,
+  verification, and a small event contract that works across several Udon
+  authoring styles.
+- Good for:
+  per-player anchors, scoreboards, player-owned world gadgets, deterministic
+  player ordering, and creator-world infrastructure.
+- Why it matters:
+  it separates `player state anchor` from player identity and makes the pattern
+  reusable across systems.
+- Strong references:
+  `CyanPlayerObjectPool`.
+- Best fit for `VR-apps-lab`:
+  per-player infrastructure and creator-world state helpers.
+
+## Method 238: Prefab-first multicam creator rig with desktop output switching, autopilot, and optional fisheye branches
+
+- What it is:
+  a creator camera system keeps most of the authoring surface in prefabs while
+  small controller scripts handle output toggling, camera order, and autopilot.
+- Good for:
+  world staging, event coverage, creator cinematography, and desktop capture
+  rigs.
+- Why it matters:
+  it shows how far a prefab-first camera workflow can go before it needs a
+  larger control console.
+- Strong references:
+  `VRChatCameraWorks`.
+- Best fit for `VR-apps-lab`:
+  creator camera rigs and staging-surface references.
+
+## Method 239: Permission-gated world camera console with synchronized live feed, handheld camera control, and low-cost standby mode
+
+- What it is:
+  a world-side console owns live output switching, operator authorization,
+  handheld camera control, and a reduced-cost inactive-camera mode.
+- Good for:
+  venue control, event moderation, streamed world coverage, and operator-facing
+  staging systems.
+- Why it matters:
+  it captures a richer `camera operations console` shape than simple camera
+  prefabs alone.
+- Strong references:
+  `CameraSystem`.
+- Best fit for `VR-apps-lab`:
+  creator control panels and event-camera systems.
+
+## Method 240: Avatar-side camera-path authoring through an OSC companion
+
+- What it is:
+  an avatar encodes path and setting data through contacts, constraints, or
+  other avatar mechanics while an external companion program reconstructs and
+  plays the camera path.
+- Good for:
+  avatar-driven control systems, camera-path authoring, OSC-based creator
+  workflows, and off-avatar companion tooling.
+- Why it matters:
+  it exposes a strong `in-avatar authoring plus external companion`
+  architecture.
+- Strong references:
+  `Camera-System`.
+- Best fit for `VR-apps-lab`:
+  companion-bound creator tools and avatar-driven external control patterns.
+
+## Method 241: Modular world admin menu with watch camera, permissions, teleports, HUD, and voice modules
+
+- What it is:
+  an admin surface is broken into cooperating modules so camera viewing,
+  moderation, movement, messaging, and permissions stay composable instead of
+  collapsing into one script.
+- Good for:
+  moderation tools, roleplay or event administration, world operator panels,
+  and creator control systems.
+- Why it matters:
+  it demonstrates a scalable shape for broad world-operation tooling.
+- Strong references:
+  `GMMenu`.
+- Best fit for `VR-apps-lab`:
+  admin-control packages and modular creator-world operations tooling.
+
+## Method 242: Configurable keypad prefab with remote allow-list loading and event relays
+
+- What it is:
+  a world keypad stays prefab-configurable while supporting allow and deny
+  lists, additional solutions, remote string updates, and custom event relays.
+- Good for:
+  access control, gates, doors, privileged interactions, and creator-world
+  utility prefabs.
+- Why it matters:
+  it shows how a small world utility can remain highly configurable without
+  becoming a one-off script.
+- Strong references:
+  `U-Key`.
+- Best fit for `VR-apps-lab`:
+  interaction-prefab donors and small creator-world utilities.
+
+## Method 243: Shared 3D marker tool that keeps local trail generation separate from compact manual-sync state updates
+
+- What it is:
+  a marker generates trails locally at one cadence while only syncing minimal
+  state and recent points needed for remote reconstruction.
+- Good for:
+  whiteboards, annotations, spatial notes, collaborative drawing, and creator
+  markers.
+- Why it matters:
+  it captures a strong lower-bound sync model for shared drawing tools.
+- Strong references:
+  `VRCMarker`.
+- Best fit for `VR-apps-lab`:
+  collaborative annotation and shared spatial-marking tools.
+
+## Method 244: Avatar-thumbnail text or data carrier with editor encoder and runtime pedestal-image decoder
+
+- What it is:
+  a creator workflow encodes text or data into avatar imagery in the editor and
+  decodes it at runtime through pedestal image inspection.
+- Good for:
+  dynamic world text, boards, membership data, constrained data transport, and
+  historical platform-workaround studies.
+- Why it matters:
+  it captures an unusual but instructive `data carrier under platform
+  constraints` pattern.
+- Strong references:
+  `AvatarImageReader`.
+- Best fit for `VR-apps-lab`:
+  dynamic information-surface research and constrained data-carrier patterns.
+
+## Method 245: Pool-backed recycling scroll rect for Udon with datasource contract and delayed view initialization
+
+- What it is:
+  a creator-world list UI keeps only enough cells to cover the viewport and
+  reuses them through a datasource contract, delayed initialization, and a UI
+  cell pool.
+- Good for:
+  scoreboards, large lists, repeated UI cells, creator dashboards, and
+  world-side menus.
+- Why it matters:
+  it turns scalable list UI into reusable world infrastructure instead of a
+  one-off menu implementation.
+- Strong references:
+  `UdonRecyclingScrollRect`.
+- Best fit for `VR-apps-lab`:
+  creator-world UI infrastructure and list or board systems.

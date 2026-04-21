@@ -1,6 +1,6 @@
 # Not Yet Studied Deeply
 
-- Date: `2026-04-20`
+- Date: `2026-04-21`
 - Goal: keep a prioritized list of repositories that either:
   - are not yet represented in `VR-apps-lab`;
   - are only lightly covered;
@@ -269,6 +269,22 @@ instead of being over-promoted immediately.
 | `fbriggs/lifecast_public` | Partially studied | Volumetric and VR180 playback substrate spanning WebXR player code and engine export targets | High | High | Narrow the next pass to media-format handling, volumetric playback core, and where the reusable web or engine boundaries actually sit |
 | `parkchamchi/DepthViewer` | Partially studied | Depth-expanded 3D viewer that turns image or video input plus several inference backends into a navigable mesh surface | Medium-High | High | Revisit if `VR-apps-lab` needs a deeper `depth-to-3D media viewer` donor pass or clearer backend comparison |
 | `prefrontalcortex/DomeTools` | Partially studied | Dome-style viewing environment where local media, `NDI`, and `Spout` ingest all feed one immersive shell | Medium | High | Revisit when a future pass needs deeper source-ingest flow, creator-viewer split, and dome-space interaction coverage |
+
+## Priority batch V: Waves 88-91 surfaced follow-up candidates
+
+These were surfaced while deepening VRChat creator-world authoring, runtime
+infrastructure, camera/admin control, and utility-prefab families, but they
+were intentionally kept as honest follow-up nodes instead of being
+over-promoted immediately.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `Varneon/UdonEssentials` | Partially studied | Historical prefab-suite baseline that still matters for lineage even though the repo is deprecated | Medium | High | Compare the old bundle more directly against `VUdon` package decomposition and identify which legacy prefabs still deserve standalone follow-up |
+| `Varneon/VUdon` | Partially studied | Ecosystem umbrella for packageized creator tools where the strongest donor value sits in the linked package repos | Medium | High | Inspect `QuickMenu`, `Menus`, `PlayerTracker`, and `Common` as individual package repos rather than treating the umbrella as the whole system |
+| `VRLabs/Camera-System` | Partially studied | Avatar-driven OSC camera path system whose main architecture crosses an avatar package and an external companion executable | Medium | High | Narrow the next pass to companion protocol, path encoding model, and how the avatar-side constraints or contacts actually serialize the data |
+| `SylanTroh/GMMenu` | Partially studied | Broad modular admin surface where watch camera, pings, permissions, teleports, and optional audio modes interact | High | High | Map the permission model, ping or alert flow, and optional `AudioManager` branch more directly instead of only the watch-camera slice |
+| `Miner28/AvatarImageReader` | Partially studied | Unusual dynamic data carrier that encodes text through avatar imagery and runtime pedestal decoding | Medium | High | Re-check the editor encoder, multi-avatar queueing, and what parts still matter after the original string-loading era shifted |
+| `Guribo/UdonLeaderBoard` | Not studied deeply | Possible scoreboard or ranking layer that may pair especially well with recycled-cell list infrastructure | Medium | Medium | Inspect whether it is mostly prefab sugar over `UdonRecyclingScrollRect` or whether it contributes a stronger data-model and sorting layer of its own |
 
 ## Family-level gaps that now deserve deeper passes
 
@@ -774,6 +790,44 @@ These are larger than a single repo and should guide the next research wave.
   transform-driven viewers, volumetric and VR180 substrate, depth-expanded
   media viewers, and immersive dome environments with multi-source ingest.
 
+### 53. `VRChat world-authoring toolkits, optimization helpers, and prefab ecosystems`
+
+- Main entries:
+  `VRWorldToolkit`, `UdonSharpOptimizer`, `UdonEssentials`, `VUdon`
+- Why it matters:
+  the latest pass made it clear that `creator-world tooling before runtime` is
+  a reusable donor branch of its own, spanning build-request guardrails,
+  compiler-pipeline intervention, legacy prefab suites, and ecosystem-shaped
+  package constellations.
+
+### 54. `VRChat world runtime infrastructure, voice, networking, and player-state helpers`
+
+- Main entries:
+  `UdonVoiceUtils`, `UNet`, `UdonPlayerPlatformHook`, `CyanPlayerObjectPool`
+- Why it matters:
+  this branch now shows that `creator-world runtime substrate` is broader than
+  one sync script, spanning voice-state control, byte-array transport,
+  moving-platform correction, and stable per-player object anchoring.
+
+### 55. `VRChat camera, staging, and admin-control systems for world events`
+
+- Main entries:
+  `VRChatCameraWorks`, `CameraSystem`, `Camera-System`, `GMMenu`
+- Why it matters:
+  the latest pass made it clear that `creator camera tooling` splits into
+  prefab staging rigs, world-side operator consoles, avatar-driven OSC camera
+  paths, and broader admin surfaces with watch-camera modules.
+
+### 56. `VRChat interaction, utility UI, and information-surface prefabs`
+
+- Main entries:
+  `U-Key`, `VRCMarker`, `AvatarImageReader`, `UdonRecyclingScrollRect`,
+  `UdonLeaderBoard`
+- Why it matters:
+  this branch now captures a broad but coherent family of creator-world
+  interaction surfaces: access-control prefabs, annotation tools, dynamic data
+  carriers, and lower-layer list or board infrastructure.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -792,15 +846,19 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 12. `Historical utility-suite recovery`
 13. `Validation and workflow micro-utilities`
 14. `Biometric, neurofeedback, and accessory-control bridges`
-15. `VRChat text workflow refinements and TTS follow-up`
-16. `Avatar-facing OSC companion frameworks and automation relays`
-17. `XR glasses workspace shells and head-tracked screen tools`
-18. `Wearable haptics and avatar-driven feedback systems`
-19. `Simulation telemetry overlays and motion-cueing sidecars`
-20. `Microphone control, voice-input, and audio routing helpers`
-21. `Immersive media playback and browser video shells`
-22. `Spatial audio SDKs, renderers, and audio-object optimization`
-23. `Creator-facing audio systems and world voice management`
+15. `VRChat world-authoring toolkits and optimization helpers`
+16. `VRChat world runtime infrastructure and per-player state helpers`
+17. `VRChat camera, staging, and admin-control systems`
+18. `VRChat interaction prefabs and utility UI`
+19. `VRChat text workflow refinements and TTS follow-up`
+20. `Avatar-facing OSC companion frameworks and automation relays`
+21. `XR glasses workspace shells and head-tracked screen tools`
+22. `Wearable haptics and avatar-driven feedback systems`
+23. `Simulation telemetry overlays and motion-cueing sidecars`
+24. `Microphone control, voice-input, and audio routing helpers`
+25. `Immersive media playback and browser video shells`
+26. `Spatial audio SDKs, renderers, and audio-object optimization`
+27. `Creator-facing audio systems and world voice management`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

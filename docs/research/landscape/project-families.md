@@ -1,6 +1,6 @@
 # Project Families
 
-- Date: `2026-04-20`
+- Date: `2026-04-21`
 - Goal: reorganize the `VR-apps-lab` research corpus around logical overlap
   families instead of a long flat list of repositories.
 
@@ -2030,6 +2030,126 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - volumetric media substrate
 - depth-to-3D viewer references
 - dome and spatial-media environments
+
+## Family 67: VRChat world-authoring toolkits, optimization helpers, and prefab ecosystems
+
+This family covers repositories where the main value sits before runtime:
+editor automation, build validation, compiler optimization, or package and
+prefab ecosystem design for VRChat world creation.
+
+| Project | Status | Notes |
+|---|---|---|
+| `oneVR/VRWorldToolkit` | Already studied | Editor-time build checks, sync-mode policy automation, and creator convenience tools under one authoring toolkit |
+| `BlueAmulet/UdonSharpOptimizer` | Already studied | Harmony-injected post-emit optimizer for generated Udon and UdonSharp compilation output |
+| `Varneon/UdonEssentials` | Partially studied | Deprecated but still useful historical prefab-suite baseline with event-dispatch lineage |
+| `Varneon/VUdon` | Partially studied | Umbrella repo for a package ecosystem of creator-facing Udon tools and shared common resources |
+
+### Consolidation note
+
+This family matters because `VRChat creator tooling` now splits more clearly
+into:
+
+- editor guardrails and build blocking
+- compiler-pipeline optimization
+- historical prefab suites
+- package ecosystems with shared common dependencies
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- world-authoring editor helpers
+- Udon optimization tooling
+- prefab-suite lineage and migration
+- creator-tool package decomposition
+
+## Family 68: VRChat world runtime infrastructure, voice, networking, and player-state helpers
+
+This family covers repositories where the main value is not media playback or
+UI chrome, but lower-layer creator-world runtime infrastructure such as voice
+state, transport, locomotion correction, or stable per-player object anchors.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Guribo/UdonVoiceUtils` | Already studied | Package-shaped voice controller with zones, occlusion, privacy channels, and runtime configuration models |
+| `Xytabich/UNet` | Already studied | Reliable byte-level transport over Udon sync with explicit connection, socket, manager, and public interface layers |
+| `Superbstingray/UdonPlayerPlatformHook` | Already studied | Narrow moving-platform helper that keeps local players aligned to moving colliders |
+| `CyanLaser/CyanPlayerObjectPool` | Already studied | Stable per-player pooled object assignment with master verification and compiler-agnostic examples |
+
+### Consolidation note
+
+This family matters because `creator-world runtime infrastructure` now splits
+more clearly into:
+
+- world voice-state controllers
+- byte-array transport layers
+- moving-reference-frame locomotion helpers
+- per-player object anchoring systems
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- creator-world runtime substrate
+- per-player state and anchor utilities
+- narrow locomotion correction helpers
+- reusable transport abstractions for Udon worlds
+
+## Family 69: VRChat camera, staging, and admin-control systems for world events
+
+This family covers repositories where creators need camera coverage,
+operator-facing control, or event moderation surfaces rather than generic media
+players or overlays.
+
+| Project | Status | Notes |
+|---|---|---|
+| `laserimouto/VRChatCameraWorks` | Already studied | Prefab-first multicam and fisheye staging rig with tiny controller scripts and autopilot support |
+| `rhaamo/CameraSystem` | Already studied | Permission-gated world camera console with synced live output, handheld cameras, and operator controls |
+| `VRLabs/Camera-System` | Partially studied | Avatar-side OSC camera-path system whose strongest value is companion-bound architecture and path-authoring workflow |
+| `SylanTroh/GMMenu` | Partially studied | Modular admin package where watch camera, teleports, permissions, and voice controls live inside one GM surface |
+
+### Consolidation note
+
+This family matters because `creator camera tools` now split more clearly into:
+
+- prefab staging rigs
+- world-side operator consoles
+- avatar-driven OSC camera paths
+- broader admin packages with watch-camera modules
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- event-camera staging
+- permission-gated creator control surfaces
+- avatar-side camera-path authoring
+- admin-plus-camera workflow tooling
+
+## Family 70: VRChat interaction, utility UI, and information-surface prefabs
+
+This family covers repositories where the main value is creator-world
+interaction or reusable UI substrate: keypads, markers, data carriers, lists,
+boards, and other utility-prefab surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Reava/U-Key` | Already studied | Rich keypad prefab with allow and deny lists, per-code routing, remote allow-list loading, and event relays |
+| `z3y/VRCMarker` | Already studied | Shared 3D marker and drawing surface with compact sync strategy and PC-plus-Quest scope |
+| `Miner28/AvatarImageReader` | Partially studied | Deprecated but still valuable dynamic text carrier built on avatar-thumbnail image decoding |
+| `Guribo/UdonRecyclingScrollRect` | Already studied | Pool-backed Udon list infrastructure with datasource contract and delayed initialization |
+| `Guribo/UdonLeaderBoard` | Not studied deeply | Thin follow-up node that likely matters most as a scoreboard layer over stronger list infrastructure |
+
+### Consolidation note
+
+This family matters because `creator-world utility UI` now splits more clearly
+into:
+
+- access-control and keypad surfaces
+- shared drawing and annotation tools
+- dynamic data carriers under platform constraints
+- lower-layer reusable list and board infrastructure
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- interaction-prefab baselines
+- utility UI and information surfaces
+- scoreboard and board infrastructure
+- creator-facing annotation and collaborative marker tools
 
 ## Recommended synthesis path for `VR-apps-lab`
 

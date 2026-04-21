@@ -1,6 +1,6 @@
 # Current Focus
 
-- Date: `2026-04-20`
+- Date: `2026-04-21`
 - Purpose: give a short `what matters now` view of `VR-apps-lab` without
   forcing a new session or visitor through the full wave archive.
 
@@ -44,6 +44,10 @@ These are the clearest current product and research lines:
    the repository now has a clearer branch for mic-state tools, media-player
    shells, panoramic video donors, nonstandard 3D viewers, spatial-audio
    substrate, and creator-side media frameworks.
+8. `VRChat creator-world tooling, runtime infrastructure, and utility prefabs`
+   the repository now has a much clearer branch for world-authoring helpers,
+   creator runtime substrate, event-camera systems, and reusable world utility
+   surfaces.
 
 ## Most useful current docs
 
@@ -83,6 +87,10 @@ instead of full history:
 - `landscape/vr-projects-wave-85-engine-side-stereo-panoramic-viewers-vendor-player-samples-and-layout-specific-video-surfaces.md`
 - `landscape/vr-projects-wave-86-vrchat-synced-video-player-frameworks-queue-frontends-and-event-optimized-media-shells.md`
 - `landscape/vr-projects-wave-87-transformed-volumetric-and-nonstandard-3d-video-viewers.md`
+- `landscape/vr-projects-wave-88-vrchat-world-authoring-toolkits-optimization-helpers-and-prefab-ecosystems.md`
+- `landscape/vr-projects-wave-89-vrchat-world-runtime-infrastructure-voice-networking-and-player-state-helpers.md`
+- `landscape/vr-projects-wave-90-vrchat-camera-staging-and-admin-control-systems-for-world-events.md`
+- `landscape/vr-projects-wave-91-vrchat-interaction-ui-and-information-surface-prefabs.md`
 
 ## Strong donor clusters right now
 
@@ -126,6 +134,13 @@ the strongest current clusters:
   `VideoTXL`, `VR-reversal`, `DomeTools`
   for projection-aware playback layers, creator-side video systems, and
   nonstandard 3D viewing environments.
+- `VRWorldToolkit`, `UdonSharpOptimizer`, `VUdon`, `UdonEssentials`
+  for creator-world authoring, package ecosystems, and pre-runtime workflow
+  tooling.
+- `UdonVoiceUtils`, `UNet`, `CyanPlayerObjectPool`, `VRChatCameraWorks`,
+  `CameraSystem`, `GMMenu`, `U-Key`, `VRCMarker`, `UdonRecyclingScrollRect`
+  for creator-world runtime substrate, staging systems, admin surfaces, and
+  utility-prefab infrastructure.
 
 ## Highest-value next follow-up passes
 
@@ -146,6 +161,10 @@ directions:
 12. `Immersive media playback and browser video shells`
 13. `Spatial audio SDKs, renderers, and audio-object optimization`
 14. `Creator-facing audio systems and world voice management`
+15. `VRChat world-authoring toolkits and optimization helpers`
+16. `VRChat world runtime infrastructure and per-player state helpers`
+17. `VRChat camera, staging, and admin-control systems`
+18. `VRChat interaction prefabs and utility UI`
 
 ## Current repository-maintenance priorities
 

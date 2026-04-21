@@ -1,6 +1,6 @@
 # VR Projects Master Index
 
-- Date: `2026-04-20`
+- Date: `2026-04-21`
 - Goal: maintain a single index of VR-related GitHub projects that are useful as
   references, code donors, or product inspiration for `VR-apps-lab`.
 
@@ -96,6 +96,10 @@ This file complements:
 - `vr-projects-wave-85-engine-side-stereo-panoramic-viewers-vendor-player-samples-and-layout-specific-video-surfaces.md`
 - `vr-projects-wave-86-vrchat-synced-video-player-frameworks-queue-frontends-and-event-optimized-media-shells.md`
 - `vr-projects-wave-87-transformed-volumetric-and-nonstandard-3d-video-viewers.md`
+- `vr-projects-wave-88-vrchat-world-authoring-toolkits-optimization-helpers-and-prefab-ecosystems.md`
+- `vr-projects-wave-89-vrchat-world-runtime-infrastructure-voice-networking-and-player-state-helpers.md`
+- `vr-projects-wave-90-vrchat-camera-staging-and-admin-control-systems-for-world-events.md`
+- `vr-projects-wave-91-vrchat-interaction-ui-and-information-surface-prefabs.md`
 
 ## How to use this index
 

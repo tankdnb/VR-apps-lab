@@ -1,6 +1,6 @@
 # Project Registry
 
-- Date: `2026-04-20`
+- Date: `2026-04-21`
 - Scope: canonical grouped registry of repositories currently tracked by
   `VR-apps-lab`
 - Purpose: make every tracked project discoverable through one file, with a
@@ -1071,6 +1071,55 @@ Primary docs:
 - `fbriggs/lifecast_public` - `Partially studied`
 - `parkchamchi/DepthViewer` - `Partially studied`
 - `prefrontalcortex/DomeTools` - `Partially studied`
+
+## 59. VRChat world-authoring toolkits, optimization helpers, and prefab ecosystems
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-88-vrchat-world-authoring-toolkits-optimization-helpers-and-prefab-ecosystems.md`
+- `../landscape/project-families.md`
+
+- `oneVR/VRWorldToolkit` - `Already studied`
+- `BlueAmulet/UdonSharpOptimizer` - `Already studied`
+- `Varneon/UdonEssentials` - `Partially studied`
+- `Varneon/VUdon` - `Partially studied`
+
+## 60. VRChat world runtime infrastructure, voice, networking, and player-state helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-89-vrchat-world-runtime-infrastructure-voice-networking-and-player-state-helpers.md`
+- `../landscape/project-families.md`
+
+- `Guribo/UdonVoiceUtils` - `Already studied`
+- `Xytabich/UNet` - `Already studied`
+- `Superbstingray/UdonPlayerPlatformHook` - `Already studied`
+- `CyanLaser/CyanPlayerObjectPool` - `Already studied`
+
+## 61. VRChat camera, staging, and admin-control systems for world events
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-90-vrchat-camera-staging-and-admin-control-systems-for-world-events.md`
+- `../landscape/project-families.md`
+
+- `laserimouto/VRChatCameraWorks` - `Already studied`
+- `rhaamo/CameraSystem` - `Already studied`
+- `VRLabs/Camera-System` - `Partially studied`
+- `SylanTroh/GMMenu` - `Partially studied`
+
+## 62. VRChat interaction, utility UI, and information-surface prefabs
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-91-vrchat-interaction-ui-and-information-surface-prefabs.md`
+- `../landscape/project-families.md`
+
+- `Reava/U-Key` - `Already studied`
+- `z3y/VRCMarker` - `Already studied`
+- `Miner28/AvatarImageReader` - `Partially studied`
+- `Guribo/UdonRecyclingScrollRect` - `Already studied`
+- `Guribo/UdonLeaderBoard` - `Not studied deeply`
 
 ## Registry maintenance rule
 

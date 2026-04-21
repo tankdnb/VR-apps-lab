@@ -607,3 +607,31 @@ repeatable way.
 
 - `github-research-wave-87-backlog.md`
   Executed backlog for the Wave 87 pass.
+
+- `github-research-wave-88-plan.md`
+  Wave 88 research plan focused on VRChat world-authoring toolkits,
+  optimization helpers, and prefab ecosystems.
+
+- `github-research-wave-88-backlog.md`
+  Executed backlog for the Wave 88 pass.
+
+- `github-research-wave-89-plan.md`
+  Wave 89 research plan focused on VRChat world runtime infrastructure,
+  voice or networking helpers, and per-player state systems.
+
+- `github-research-wave-89-backlog.md`
+  Executed backlog for the Wave 89 pass.
+
+- `github-research-wave-90-plan.md`
+  Wave 90 research plan focused on VRChat camera systems,
+  staging and admin control, and creator-side event coverage.
+
+- `github-research-wave-90-backlog.md`
+  Executed backlog for the Wave 90 pass.
+
+- `github-research-wave-91-plan.md`
+  Wave 91 research plan focused on VRChat interaction prefabs,
+  utility UI, and dynamic information-surface tools.
+
+- `github-research-wave-91-backlog.md`
+  Executed backlog for the Wave 91 pass.
