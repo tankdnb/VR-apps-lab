@@ -3192,6 +3192,155 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - MRC diagnostics and protocol probes
 - OBS/browser handoff references
 
+## Family 103: VR treadmill locomotion hardware, input adapters, and virtual controller bridges
+
+This family covers small locomotion-hardware projects where the reusable value
+is not a specific treadmill product, but the bridge shape from raw sensor or
+controller state into keyboard, virtual gamepad, OpenVR input components, BLE,
+serial, or TCP.
+
+| Project | Status | Notes |
+|---|---|---|
+| `fer-sler/VR-Treadmill` | Already studied as minimal bridge | Mouse Y delta polling, cursor recentering, smoothing, clamp, PyQt controls, and virtual Xbox gamepad stick output |
+| `TimStewartJ/vr-treadmill` | Already studied | Windows mouse-to-ViGEm bridge with config/status objects, decay/deadzone, driver readiness probe, atomic settings, and cleanup reset |
+| `Cycrus/slimstep_vr` | Already studied | Load-cell Arduino module plus OpenVR server driver exposing scalar trigger/trackpad/joystick inputs through serial COM capture |
+| `jurassicjordan/GoobleBoxVR` | Already studied | Wii Balance Board Linux joystick reader with standing/walking/flamingo/jump/absence states and keyboard or virtual joystick output |
+| `srepmub/tacovr` | Already studied as hardware firmware/control reference | Pixy sensor and stepper-based treadmill state machine with left/right calibration and serial diagnostics |
+| `ssohbn/kittywalk-server` | Already studied as micro-utility | Tiny Rust TCP receiver for fixed-size treadmill byte payloads |
+| `cybernetic-research/VR-treadmill-client-app` | Already studied | Unity/Quest controller joystick-state relay over TCP |
+| `cybernetic-research/VR-treadmill-server-app` | Already studied | ESP32 BLE treadmill service with control/status characteristics and output-pin state |
+
+### Consolidation note
+
+This family matters because `locomotion hardware` is a bridge problem before it
+is a product problem. It now clearly includes:
+
+- raw sensor and joystick device capture
+- calibration, thresholds, smoothing, and latency tradeoffs
+- keyboard and virtual-gamepad output
+- OpenVR controller scalar input exposure
+- BLE, serial, and TCP command/status surfaces
+- driver/device readiness and safe cleanup patterns
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- hardware-input bridge checklists
+- virtual-controller readiness panels
+- locomotion/accessibility input adapters
+- serial/BLE/TCP ingress diagnostics
+
+## Family 104: Unity VR experiment frameworks, data capture, and study orchestration helpers
+
+This family covers Unity research frameworks where the reusable value is
+repeatable session structure, trial generation, tracker logging, settings
+provenance, data-handler abstraction, remote configuration, and upload
+sidecars.
+
+| Project | Status | Notes |
+|---|---|---|
+| `immersivecognition/unity-experiment-framework` | Already studied | UXF session/block/trial lifecycle with settings, data handlers, trackers, events, and typed data output routing |
+| `BioMotionLab/TUX` | Already studied | Editor-authored experiment design files, variable system, runtime runner, GUI setup, output manager, and event-driven output |
+| `jinwook31/Unity-Experiment-Trial-Manager` | Already studied as minimal baseline | Compact CSV trial manager with row reading, result writing, timer/logger helpers, and environment reset |
+| `Nesbi/PsyWueVR` | Already studied | Psychology VR controller with subject representation, input defaults, blackout/instruction/status UI, and headtracking toggles |
+| `social-spatial-interaction-lab/VR_Motion_Tracker` | Already studied as composition reference | UXF plus Unity MR/OpenXR template composition for pose/motion tracking shells |
+| `SensoriMotorControlLab/vr_experiment_framework_v3` | Already studied | UXF/JSON task generator with settings prefixes, pseudo-randomization, linked variable lists, resume, and task/tracker components |
+| `jackbrookes/uxf-s3-uploader` | Already studied | UXF write-file sidecar that uploads outputs to S3 with credential/bucket ScriptableObjects and async upload tracking |
+| `jackbrookes/uxf-web-settings` | Already studied | Remote settings downloader with StreamingAssets fallback, participant metadata, session begin, and release-info logging |
+
+### Consolidation note
+
+This family matters because `repeatable VR utilities` often need the same
+infrastructure as experiments: lifecycle, settings, trackers, output, and
+deployment. It now clearly includes:
+
+- session/block/trial lifecycle models
+- CSV, JSON, remote, and editor-authored settings
+- tracker and measurement-row abstractions
+- local file, cloud upload, and fallback handlers
+- resume, participant metadata, and release provenance
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- calibration and diagnostics study harnesses
+- repeatable setup/test flows
+- tracker/data capture sidecars
+- remote-config and offline-fallback utility design
+
+## Family 105: Immersive browser shells, WebXR runtimes, home spaces, and spatial web frontends
+
+This family covers headset browsers and spatial web shells where the reusable
+value is large-scale shell architecture: activity/bootstrap, session store,
+windows, widgets, native render world, WebXR interstitials, environments,
+runtime shims, and spatial home/front-end surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Igalia/wolvic` | Partially studied as large architecture reference | Standalone headset browser with activity shell, session store, windows/tabs, widgets, keyboard/tray/navigation, WebXR interstitial, environments, and native render world |
+| `MozillaReality/FirefoxReality` | Partially studied as archived lineage reference | Historical Android VR browser with Gecko/VRB render world, WebXR rendering state, controllers, widgets, mover/resizer, and interstitial lineage |
+| `MozillaReality/FirefoxRealityPC` | Partially studied as PC shell reference | Unity/OpenVR shell around Firefox Desktop with install/config readiness checks, action bindings, environment loaders, and launcher flow |
+| `exokitxr/exokit` | Partially studied | JavaScript runtime with explicit WebXR session, input source, layer, hand/eye/gamepad, and extension-state modeling |
+| `exokitxr/exokit-browser` | Already studied as thin shell reference | HTTPS static Exokit browser shell with interface, app, service worker, site list, keyboard assets, and API bridge |
+| `exokitxr/exokit-frontend` | Already studied as frontend/menu reference | React frontend split into engine, DOM, console, launch, and menu surfaces |
+| `madjin/home-space` | Already studied as product/UX reference | Spatial home/startpage scene with screens, media props, Janus assets, VRChat/Unity material, and lightweight media scripts |
+
+### Consolidation note
+
+This family matters because `browser-in-VR` exposes shell patterns that are
+useful even for much smaller browser-backed utilities. It now clearly includes:
+
+- browser runtime and session-store boundaries
+- window, tab, panel, and widget management
+- keyboard, navigation, tray, and permission surfaces
+- WebXR interstitial and escape UX
+- native render world placement/resizing/controllers
+- JS WebXR runtime/session/input shims
+- spatial homes and startpage rooms
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- browser-backed utility shells
+- WebXR interstitial and permission UX references
+- window/widget/session architecture matrices
+- spatial home and launch-surface product references
+
+## Family 106: Browser-native WebXR utility surfaces, creative tools, diagnostics, and data visualization
+
+This family covers compact browser-native WebXR utilities where the main value
+is a focused surface: creative input, hand menus, stereo media viewing,
+diagnostics, visualizers, biometric streams, data dashboards, or streaming
+viewer framing.
+
+| Project | Status | Notes |
+|---|---|---|
+| `aframevr/a-painter` | Already studied | A-Frame VR painting tool with controller-specific mappings, brush-tip feedback, tooltip fade, save/load, URL import, and upload/share events |
+| `leapmotion/LeapShape` | Already studied | Three.js/WebXR modelling tool with controller/hand input, pinch state, palm/secondary-hand menu placement, contextual tool slots, and OpenCascade backend |
+| `zfox23/spatial-photo-webxr-viewer` | Already studied | Local-first Apple Spatial Photo HEIC conversion into side-by-side per-eye WebXR textures |
+| `ivanik7/vr-screen-tester` | Already studied as micro-utility | React Three Fiber/WebXR headset pattern tester with color/glare patterns, FPS display, and XR control state |
+| `kquizz/vr-visualizer-web` | Already studied | Audio-reactive Three.js/WebXR visualizer with inverted-sphere canvas texture, passthrough fallback, presets, and controller parameter modes |
+| `Kineviz/OpenBCI-WebXR-EEG` | Already studied | OpenBCI data server plus Three.js EEG point cloud with device profile positions, shader attributes, and frequency/intensity mapping |
+| `msitarzewski/prediction-space` | Already studied | WebXR data dashboard with volume/probability spheres, category zones, gaze hover, pinch selection, canvas-texture detail panels, and two-hand scene manipulation |
+| `taplivenetwork/taplive-webxr` | Not studied deeply; source not present in current clone | README-level WebXR/WebRTC 360 streaming viewer framing with LiveKit/SFU/API intent but no source in this pass |
+
+### Consolidation note
+
+This family matters because `browser-native WebXR` is a practical utility
+surface, not just a demo platform. It now clearly includes:
+
+- controller-aware creative tools
+- hand/palm contextual menu systems
+- local-first stereo media conversion
+- screen-pattern and FPS diagnostics
+- audio-reactive and biometric visualizers
+- gaze/pinch data dashboards
+- WebRTC/360 streaming viewer product framing
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- WebXR utility-surface prototypes
+- browser-native diagnostics and data dashboards
+- hand/palm menu comparisons
+- local-first media and visualization helpers
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

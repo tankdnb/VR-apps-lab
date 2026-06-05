@@ -496,6 +496,25 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on mixed-reality capture, calibration,
   foreground/background compositing, and presenter capture helpers.
 
+- `vr-projects-wave-124-vr-treadmill-locomotion-hardware-input-adapters-and-virtual-controller-bridges.md`
+  Next GitHub discovery wave focused on VR treadmill locomotion hardware,
+  input adapters, virtual controller bridges, and BLE/serial/TCP command
+  surfaces.
+
+- `vr-projects-wave-125-unity-vr-experiment-frameworks-data-capture-and-study-orchestration-helpers.md`
+  Next GitHub discovery wave focused on Unity VR experiment frameworks,
+  session/trial orchestration, trackers, data handlers, remote settings, and
+  upload sidecars.
+
+- `vr-projects-wave-126-immersive-browser-shells-webxr-runtimes-home-spaces-and-spatial-web-frontends.md`
+  Next GitHub discovery wave focused on immersive browser shells, WebXR
+  runtime shims, spatial home spaces, and browser-front-end architecture.
+
+- `vr-projects-wave-127-browser-native-webxr-utility-surfaces-creative-tools-diagnostics-and-data-visualization.md`
+  Next GitHub discovery wave focused on browser-native WebXR creative tools,
+  hand menus, stereo media viewers, diagnostics, visualizers, and data
+  dashboards.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

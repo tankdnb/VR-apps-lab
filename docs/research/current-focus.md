@@ -78,6 +78,11 @@ These are the clearest current product and research lines:
    XREAL/Nreal WebHID and head-tracked virtual display utilities,
    MediaPipe-to-tracker/avatar/controller bridges, and MRC calibration or
    presenter-compositing helpers.
+15. `Locomotion hardware bridges, VR study harnesses, immersive browser shells, and browser-native WebXR utility surfaces`
+   the repository now has fresh coverage of treadmill and balance-board input
+   bridges, Unity session/trial/data-capture frameworks, standalone browser
+   shell architecture, WebXR runtime shims, hand/palm menu tools, local-first
+   stereo media viewers, diagnostics, and VR data dashboards.
 
 ## Most useful current docs
 
@@ -153,6 +158,10 @@ instead of full history:
 - `landscape/vr-projects-wave-121-xr-glasses-webhid-virtual-displays-and-head-tracked-desktop-helpers.md`
 - `landscape/vr-projects-wave-122-mediapipe-camera-tracking-bridges-for-slimevr-vrchat-vrm-and-virtual-controllers.md`
 - `landscape/vr-projects-wave-123-mixed-reality-capture-calibration-and-presenter-compositing-helpers.md`
+- `landscape/vr-projects-wave-124-vr-treadmill-locomotion-hardware-input-adapters-and-virtual-controller-bridges.md`
+- `landscape/vr-projects-wave-125-unity-vr-experiment-frameworks-data-capture-and-study-orchestration-helpers.md`
+- `landscape/vr-projects-wave-126-immersive-browser-shells-webxr-runtimes-home-spaces-and-spatial-web-frontends.md`
+- `landscape/vr-projects-wave-127-browser-native-webxr-utility-surfaces-creative-tools-diagnostics-and-data-visualization.md`
 
 ## Strong donor clusters right now
 
@@ -317,6 +326,24 @@ the strongest current clusters:
   for mixed-reality capture calibration, foreground/background compositing,
   mobile camera payloads, Oculus/Unity MRC repair helpers, and segmentation
   fallback workflows.
+- `vr-treadmill`, `slimstep_vr`, `GoobleBoxVR`,
+  `VR-treadmill-server-app`
+  for locomotion hardware bridge readiness, serial/OpenVR scalar input
+  plumbing, balance-board state classification, and BLE command/status
+  firmware.
+- `unity-experiment-framework`, `TUX`, `vr_experiment_framework_v3`,
+  `uxf-web-settings`, `uxf-s3-uploader`
+  for session/block/trial lifecycle, tracker/data-handler abstraction,
+  editor-authored study design, settings-driven task generation, remote
+  settings, fallback, and upload sidecars.
+- `wolvic`, `FirefoxRealityPC`, `exokit`, `exokit-browser`
+  for immersive browser shell boundaries, windows/widgets/session stores,
+  WebXR interstitials, dependency-readiness launchers, and explicit WebXR
+  session/input modeling.
+- `a-painter`, `LeapShape`, `spatial-photo-webxr-viewer`,
+  `vr-screen-tester`, `prediction-space`
+  for controller-aware WebXR creative tools, palm/secondary-hand menus,
+  local-first stereo media, micro-diagnostics, and gaze/pinch data dashboards.
 
 ## Highest-value next follow-up passes
 
@@ -373,6 +400,10 @@ directions:
 48. `XR glasses WebHID, virtual displays, and head-tracked desktop helpers`
 49. `MediaPipe camera tracking bridges for SlimeVR, VRChat, VRM, and virtual controllers`
 50. `Mixed reality capture, calibration, and presenter compositing helpers`
+51. `VR treadmill locomotion hardware, input adapters, and virtual controller bridges`
+52. `Unity VR experiment frameworks, data capture, and study orchestration helpers`
+53. `Immersive browser shells, WebXR runtimes, home spaces, and spatial web frontends`
+54. `Browser-native WebXR utility surfaces, creative tools, diagnostics, and data visualization`
 
 ## Current repository-maintenance priorities
 

@@ -6369,3 +6369,248 @@ When a new utility idea appears:
   `ArtificialGreenScreen`.
 - Best fit for `VR-apps-lab`:
   capture helper and presenter-compositing fallback research.
+
+## Method 373: Mouse-delta locomotion bridge with virtual gamepad output and readiness checks
+
+- What it is:
+  a host-side bridge captures relative mouse movement, recenters or accumulates
+  deltas, applies sensitivity, decay, deadzone, and clamp rules, then emits a
+  virtual gamepad stick value while exposing driver readiness, settings, status,
+  and cleanup reset behavior.
+- Good for:
+  locomotion adapters, accessibility input experiments, simulator control,
+  treadmill prototypes, and thin controller-emulation utilities.
+- Why it matters:
+  small input bridges become usable products when device/driver readiness and
+  safe reset are treated as first-class UX.
+- Strong references:
+  `VR-Treadmill`, `vr-treadmill`.
+- Best fit for `VR-apps-lab`:
+  virtual-controller bridge and setup-doctor patterns.
+
+## Method 374: Sensor-to-serial-to-OpenVR scalar controller driver
+
+- What it is:
+  a hardware sensor module sends normalized serial values, a host capture layer
+  discovers and reconnects to the serial device, and an OpenVR server driver
+  exposes those values as controller scalar input components.
+- Good for:
+  DIY hardware adapters, treadmills, pedals, pressure plates, accessibility
+  controls, and runtime input experiments.
+- Why it matters:
+  many physical inputs do not need full pose; scalar components with stable
+  action paths can be enough.
+- Strong references:
+  `slimstep_vr`.
+- Best fit for `VR-apps-lab`:
+  custom-device and virtual-controller plumbing references.
+
+## Method 375: Hardware locomotion state classifier with keyboard or virtual joystick output
+
+- What it is:
+  a balance-board or treadmill adapter reads raw axes, normalizes values,
+  classifies standing, walking, one-foot stance, jump, or absence using
+  thresholds and hold timers, then outputs keyboard or virtual joystick events.
+- Good for:
+  walk-in-place utilities, accessibility controls, quick locomotion adapters,
+  low-cost hardware experiments, and state-debug panels.
+- Why it matters:
+  locomotion hardware needs a user-state model before it needs complicated
+  runtime integration.
+- Strong references:
+  `GoobleBoxVR`.
+- Best fit for `VR-apps-lab`:
+  hardware input and accessibility bridge research.
+
+## Method 376: BLE/TCP command-status relay for external VR hardware
+
+- What it is:
+  a headset, desktop, or firmware component exposes small control/status
+  messages over BLE or TCP, separates command writes from status notifications,
+  resets on disconnect, and keeps the payload small enough for reliable
+  hardware control.
+- Good for:
+  treadmill control, accessory bridges, device monitors, simulator sidecars,
+  and hardware diagnostics.
+- Why it matters:
+  external VR utilities often fail at transport boundaries; small explicit
+  command/status protocols are easier to debug.
+- Strong references:
+  `VR-treadmill-client-app`, `VR-treadmill-server-app`,
+  `kittywalk-server`.
+- Best fit for `VR-apps-lab`:
+  external-device bridge and transport-probe patterns.
+
+## Method 377: Session-block-trial harness with trackers and data handlers
+
+- What it is:
+  a VR utility or study defines a session, blocks, trials, settings,
+  participant/context metadata, trackers, lifecycle events, and data handlers
+  for tables, JSON, text, and bytes.
+- Good for:
+  calibration studies, diagnostics, training flows, repeatable user tests,
+  tracker logging, and guided setup utilities.
+- Why it matters:
+  repeatable VR tools need provenance and output structure, not only scene
+  scripts.
+- Strong references:
+  `unity-experiment-framework`.
+- Best fit for `VR-apps-lab`:
+  guided diagnostics and calibration data-capture harnesses.
+
+## Method 378: Editor-authored experiment design with runtime runner and output events
+
+- What it is:
+  design assets define repetitions, variables, randomization, control settings,
+  and GUI behavior, while a runtime runner loads the design, builds trial
+  tables, instantiates custom experiment logic, and emits output through an
+  event-driven manager.
+- Good for:
+  operator workflows, training graphs, non-programmer-authored test flows,
+  study builders, and reusable setup scenes.
+- Why it matters:
+  authoring-time and runtime responsibilities should be explicit when a VR tool
+  grows beyond a single scene.
+- Strong references:
+  `TUX`.
+- Best fit for `VR-apps-lab`:
+  workflow authoring and guided utility design.
+
+## Method 379: Settings-driven VR task generator with pseudo-randomization and resume
+
+- What it is:
+  a task generator reads JSON or framework settings, interprets naming
+  conventions for per-block values, pseudo-randomizes linked variables,
+  creates blocks/trials, serializes settings, and resumes progress from local
+  state.
+- Good for:
+  calibration sequences, training tasks, device validation, repeated
+  diagnostics, and structured user studies.
+- Why it matters:
+  robust setup tools often need the same repeatable sequence and resume logic
+  as experiments.
+- Strong references:
+  `vr_experiment_framework_v3`, `Unity-Experiment-Trial-Manager`.
+- Best fit for `VR-apps-lab`:
+  repeatable diagnostic and calibration workflows.
+
+## Method 380: Remote settings, local fallback, and upload sidecars for VR sessions
+
+- What it is:
+  session setup downloads settings from a remote source, caches or falls back
+  to local settings, records release/device metadata, and attaches upload
+  behavior as a sidecar to file-write events.
+- Good for:
+  field-deployed diagnostics, research apps, operator tools, offline-capable
+  utilities, and data-capture pipelines.
+- Why it matters:
+  VR utilities used outside development machines need reliable configuration
+  and output transport.
+- Strong references:
+  `uxf-web-settings`, `uxf-s3-uploader`.
+- Best fit for `VR-apps-lab`:
+  deployment-friendly tool harnesses.
+
+## Method 381: Standalone immersive browser shell with session, window, widget, and native-world split
+
+- What it is:
+  a headset browser separates host activity/bootstrap, browser runtime
+  sessions, windows/tabs, panels, widgets, keyboard/navigation/tray surfaces,
+  environment management, and native render-world placement/controllers.
+- Good for:
+  browser-backed utility shells, in-headset dashboards, spatial web tools,
+  multi-window references, and large-scale UI architecture studies.
+- Why it matters:
+  even small utilities can borrow the boundary discipline of mature immersive
+  browsers without copying their whole codebase.
+- Strong references:
+  `wolvic`, `FirefoxReality`.
+- Best fit for `VR-apps-lab`:
+  browser-backed shell and window/widget architecture references.
+
+## Method 382: WebXR interstitial and immersive-mode escape surface
+
+- What it is:
+  a browser shell creates a dedicated in-scene interstitial or widget layer for
+  WebXR permission, transition, and exit affordances, with placement rules for
+  controllers, hands, and scene state.
+- Good for:
+  browser VR utilities, WebXR hosts, immersive media players, and safety/escape
+  UX.
+- Why it matters:
+  immersive sessions need reliable exit and permission surfaces that do not
+  disappear into the content being displayed.
+- Strong references:
+  `wolvic`, `FirefoxReality`.
+- Best fit for `VR-apps-lab`:
+  browser utility UX and WebXR safety patterns.
+
+## Method 383: JavaScript WebXR runtime shim with explicit session, input, layer, and extension state
+
+- What it is:
+  a JS runtime models `navigator.xr`, `XRSession`, animation frames, session
+  end/select events, gamepad/hand/eye input sources, layers, and optional
+  extension-like features as inspectable objects.
+- Good for:
+  WebXR tooling, emulators, synthetic sessions, test harnesses, browser-native
+  utility shells, and educational runtimes.
+- Why it matters:
+  WebXR becomes easier to test and reason about when session and input state are
+  explicit boundaries.
+- Strong references:
+  `exokit`.
+- Best fit for `VR-apps-lab`:
+  browser XR runtime and synthetic-session research.
+
+## Method 384: Controller-aware WebXR creative tool with brush feedback, tooltips, and save/load/share
+
+- What it is:
+  a WebXR creative utility maps multiple controller families to tool actions,
+  visualizes brush/tool state at the controller tip, fades instructional
+  tooltips after use, and treats save/load/import/upload/share as core
+  workflow.
+- Good for:
+  browser-native creation tools, annotation surfaces, sketching utilities,
+  teaching demos, and shareable VR workspaces.
+- Why it matters:
+  input mapping and persistence are what turn a WebXR demo into a tool.
+- Strong references:
+  `a-painter`.
+- Best fit for `VR-apps-lab`:
+  browser-native utility UX and controller mapping references.
+
+## Method 385: Palm or secondary-hand contextual tool menu with hold/release activation
+
+- What it is:
+  a WebXR tool tracks controller and hand state, identifies main and secondary
+  hands, places a camera-facing or palm-facing tool menu, uses hover/pressed/
+  held/active colors, and activates tools on release after a deliberate hold.
+- Good for:
+  hand-first utilities, CAD/sketch tools, diagnostics panels, quick actions,
+  and VR menu experiments.
+- Why it matters:
+  hand menus need intentional activation timing and context visibility to avoid
+  accidental input.
+- Strong references:
+  `LeapShape`.
+- Best fit for `VR-apps-lab`:
+  hand, wrist, and palm UI pattern library.
+
+## Method 386: Browser-native XR diagnostic, media, and data visualization surface
+
+- What it is:
+  a WebXR utility uses Three.js or React Three Fiber to render focused
+  information surfaces such as per-eye stereo media, screen test patterns,
+  audio-reactive spheres, biometric point clouds, or data dashboards with gaze,
+  pinch, and canvas-texture detail panels.
+- Good for:
+  headset diagnostics, media viewers, telemetry dashboards, biometric
+  visualization, quick WebXR prototypes, and browser-native operator surfaces.
+- Why it matters:
+  many VR utility ideas do not need native overlays; a deployable WebXR page can
+  validate the value quickly.
+- Strong references:
+  `spatial-photo-webxr-viewer`, `vr-screen-tester`, `vr-visualizer-web`,
+  `OpenBCI-WebXR-EEG`, `prediction-space`.
+- Best fit for `VR-apps-lab`:
+  WebXR utility-surface prototypes and data/diagnostics visualization.

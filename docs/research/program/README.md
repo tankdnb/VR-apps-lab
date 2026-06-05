@@ -868,3 +868,32 @@ repeatable way.
 
 - `github-research-wave-123-backlog.md`
   Executed backlog for the Wave 123 pass.
+
+- `github-research-wave-124-plan.md`
+  Wave 124 research plan focused on VR treadmill locomotion hardware, input
+  adapters, virtual controller bridges, and BLE/serial/TCP command surfaces.
+
+- `github-research-wave-124-backlog.md`
+  Executed backlog for the Wave 124 pass.
+
+- `github-research-wave-125-plan.md`
+  Wave 125 research plan focused on Unity VR experiment frameworks,
+  session/trial orchestration, trackers, data handlers, remote settings, and
+  upload sidecars.
+
+- `github-research-wave-125-backlog.md`
+  Executed backlog for the Wave 125 pass.
+
+- `github-research-wave-126-plan.md`
+  Wave 126 research plan focused on immersive browser shells, WebXR runtime
+  shims, spatial home spaces, and browser-front-end architecture.
+
+- `github-research-wave-126-backlog.md`
+  Executed backlog for the Wave 126 pass.
+
+- `github-research-wave-127-plan.md`
+  Wave 127 research plan focused on browser-native WebXR creative tools, hand
+  menus, stereo media viewers, diagnostics, visualizers, and data dashboards.
+
+- `github-research-wave-127-backlog.md`
+  Executed backlog for the Wave 127 pass.

@@ -1537,6 +1537,69 @@ Primary docs:
 - `smaerdlatigid/ArtificialGreenScreen` - `Already studied as capture helper`
 - `LIV/CalibrationForQuest` - `Rejected; empty repository in current clone`
 
+## 95. VR treadmill locomotion hardware, input adapters, and virtual controller bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-124-vr-treadmill-locomotion-hardware-input-adapters-and-virtual-controller-bridges.md`
+- `../landscape/project-families.md`
+
+- `fer-sler/VR-Treadmill` - `Already studied as minimal bridge`
+- `TimStewartJ/vr-treadmill` - `Already studied`
+- `Cycrus/slimstep_vr` - `Already studied`
+- `jurassicjordan/GoobleBoxVR` - `Already studied`
+- `srepmub/tacovr` - `Already studied as hardware firmware/control reference`
+- `ssohbn/kittywalk-server` - `Already studied as micro-utility`
+- `cybernetic-research/VR-treadmill-client-app` - `Already studied`
+- `cybernetic-research/VR-treadmill-server-app` - `Already studied`
+
+## 96. Unity VR experiment frameworks, data capture, and study orchestration helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-125-unity-vr-experiment-frameworks-data-capture-and-study-orchestration-helpers.md`
+- `../landscape/project-families.md`
+
+- `immersivecognition/unity-experiment-framework` - `Already studied`
+- `BioMotionLab/TUX` - `Already studied`
+- `jinwook31/Unity-Experiment-Trial-Manager` - `Already studied as minimal baseline`
+- `Nesbi/PsyWueVR` - `Already studied`
+- `social-spatial-interaction-lab/VR_Motion_Tracker` - `Already studied as composition reference`
+- `SensoriMotorControlLab/vr_experiment_framework_v3` - `Already studied`
+- `jackbrookes/uxf-s3-uploader` - `Already studied`
+- `jackbrookes/uxf-web-settings` - `Already studied`
+
+## 97. Immersive browser shells, WebXR runtimes, home spaces, and spatial web frontends
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-126-immersive-browser-shells-webxr-runtimes-home-spaces-and-spatial-web-frontends.md`
+- `../landscape/project-families.md`
+
+- `Igalia/wolvic` - `Partially studied as large architecture reference`
+- `MozillaReality/FirefoxReality` - `Partially studied as archived lineage reference`
+- `MozillaReality/FirefoxRealityPC` - `Partially studied as PC shell reference`
+- `exokitxr/exokit` - `Partially studied`
+- `exokitxr/exokit-browser` - `Already studied as thin shell reference`
+- `exokitxr/exokit-frontend` - `Already studied as frontend/menu reference`
+- `madjin/home-space` - `Already studied as product/UX reference`
+
+## 98. Browser-native WebXR utility surfaces, creative tools, diagnostics, and data visualization
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-127-browser-native-webxr-utility-surfaces-creative-tools-diagnostics-and-data-visualization.md`
+- `../landscape/project-families.md`
+
+- `aframevr/a-painter` - `Already studied`
+- `leapmotion/LeapShape` - `Already studied`
+- `zfox23/spatial-photo-webxr-viewer` - `Already studied`
+- `ivanik7/vr-screen-tester` - `Already studied as micro-utility`
+- `kquizz/vr-visualizer-web` - `Already studied`
+- `Kineviz/OpenBCI-WebXR-EEG` - `Already studied`
+- `msitarzewski/prediction-space` - `Already studied`
+- `taplivenetwork/taplive-webxr` - `Not studied deeply; source not present in current clone`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

@@ -1230,6 +1230,55 @@ These are larger than a single repo and should guide the next research wave.
   repair helpers. A future deeper pass should build a capture/compositing
   method matrix before any presenter-tool prototype work.
 
+### 89. `VR treadmill locomotion hardware, input adapters, and virtual controller bridges`
+
+- Main entries:
+  `VR-Treadmill`, `vr-treadmill`, `slimstep_vr`, `GoobleBoxVR`, `tacovr`,
+  `kittywalk-server`, `VR-treadmill-client-app`,
+  `VR-treadmill-server-app`
+- Why it matters:
+  this family now captures locomotion hardware as bridge architecture: raw
+  sensor capture, state classification, keyboard or virtual gamepad output,
+  OpenVR scalar input components, BLE/serial/TCP command surfaces, and driver
+  readiness. A future deeper pass should extract a hardware-input bridge
+  checklist only if locomotion or accessibility hardware becomes active.
+
+### 90. `Unity VR experiment frameworks, data capture, and study orchestration helpers`
+
+- Main entries:
+  `unity-experiment-framework`, `TUX`, `Unity-Experiment-Trial-Manager`,
+  `PsyWueVR`, `VR_Motion_Tracker`, `vr_experiment_framework_v3`,
+  `uxf-s3-uploader`, `uxf-web-settings`
+- Why it matters:
+  this family now captures repeatable VR utility infrastructure: session,
+  block, trial, tracker, data handler, settings, remote configuration,
+  fallback, upload, and resume. A future deeper pass should extract a compact
+  session/trial/tracker blueprint for diagnostics and calibration utilities.
+
+### 91. `Immersive browser shells, WebXR runtimes, home spaces, and spatial web frontends`
+
+- Main entries:
+  `wolvic`, `FirefoxReality`, `FirefoxRealityPC`, `exokit`,
+  `exokit-browser`, `exokit-frontend`, `home-space`
+- Why it matters:
+  this family now captures browser-in-VR shell architecture: session stores,
+  windows, widgets, native render worlds, WebXR interstitials, environments,
+  runtime shims, and spatial homes. A future deeper pass should build a
+  boundary matrix instead of trying to restudy huge browser codebases.
+
+### 92. `Browser-native WebXR utility surfaces, creative tools, diagnostics, and data visualization`
+
+- Main entries:
+  `a-painter`, `LeapShape`, `spatial-photo-webxr-viewer`,
+  `vr-screen-tester`, `vr-visualizer-web`, `OpenBCI-WebXR-EEG`,
+  `prediction-space`, `taplive-webxr`
+- Why it matters:
+  this family now captures WebXR as a compact utility surface substrate:
+  controller-aware creative tools, palm menus, local-first stereo media,
+  screen diagnostics, audio/biometric visualizers, gaze/pinch dashboards, and
+  streaming viewer product framing. A future deeper pass should compare these
+  with native overlay menu and dashboard patterns.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1293,6 +1342,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 57. `XR glasses WebHID, virtual displays, and head-tracked desktop helpers`
 58. `MediaPipe camera tracking bridges for SlimeVR, VRChat, VRM, and virtual controllers`
 59. `Mixed reality capture, calibration, and presenter compositing helpers`
+60. `VR treadmill locomotion hardware, input adapters, and virtual controller bridges`
+61. `Unity VR experiment frameworks, data capture, and study orchestration helpers`
+62. `Immersive browser shells, WebXR runtimes, home spaces, and spatial web frontends`
+63. `Browser-native WebXR utility surfaces, creative tools, diagnostics, and data visualization`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.
