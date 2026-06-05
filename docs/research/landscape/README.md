@@ -668,6 +668,25 @@ Use these files when you want to understand:
   OSCQuery wearable feedback, Bluetooth microcontroller output, and rumble
   device hubs.
 
+- `vr-projects-wave-160-foveated-rendering-quad-view-settings-and-graphics-layer-adaptation-helpers.md`
+  Next GitHub discovery wave focused on foveated rendering, quad-view settings,
+  vendor SDK emulation, OpenVR/OpenXR rendering wrappers, and Unity native VRS
+  plugins.
+
+- `vr-projects-wave-161-oscquery-vrchat-discovery-libraries-and-client-primitives.md`
+  Next GitHub discovery wave focused on OSCQuery VRChat discovery libraries,
+  service advertisers, mDNS sidecars, direct-address fallbacks, and client
+  primitives.
+
+- `vr-projects-wave-162-resonite-creator-import-export-inspection-and-screenshot-utility-helpers.md`
+  Next GitHub discovery wave focused on Resonite creator import/export,
+  generated bindings, Unity package importers, component search, and screenshot
+  metadata utilities.
+
+- `vr-projects-wave-163-external-pose-object-and-sensor-data-to-vrchat-osc-bridges.md`
+  Next GitHub discovery wave focused on OpenVR objects, NatNet/OptiTrack,
+  webcam/MediaPipe, Quest/SteamVR trackers, and VRChat OSC tracker endpoints.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

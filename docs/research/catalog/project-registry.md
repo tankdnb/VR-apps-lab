@@ -615,7 +615,7 @@ Primary docs:
 - `jcorvinus/HandshakeVR` - `Already studied`
 - `moshimeow/mercury_steamvr_driver` - `Already studied`
 - `BattleAxeVR/PSVR2_OpenXR_Eye_Tracking` - `Already studied`
-- `takana-v/quest_steamvr_fbt_tool` - `Not studied deeply`
+- `takana-v/quest_steamvr_fbt_tool` - `Already studied as simple OpenVR-to-VRChat OSC FBT tracker bridge in Wave 163`
 
 ## 26. VRChat chatbox, STT, and text-surface sidecars
 
@@ -2022,6 +2022,58 @@ Primary docs:
 - `kikookraft/HapticPatPat` - `Already studied as DIY Bluetooth ESP32 head-pat feedback bridge`
 - `sync1211/owoskin-vrc` - `Already studied as OWO Skin VRChat integration and effect-engine donor`
 - `intiface/intiface-game-haptics-router` - `Already studied as generic game rumble to external-device haptics router reference`
+
+## 131. Foveated rendering, quad-view settings, and graphics-layer adaptation helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-160-foveated-rendering-quad-view-settings-and-graphics-layer-adaptation-helpers.md`
+- `../landscape/project-families.md`
+
+- `TallyMouse/QuadViewsCompanion` - `Source-light product/settings reference for safe QuadViews settings editing`
+- `mbucchia/PimaxMagic4All` - `Already studied as vendor foveation SDK emulation and eye-provider fallback donor`
+- `fholger/openvr_foveated` - `Already studied as OpenVR DLL replacement foveated-rendering wrapper`
+- `mbucchia/_ARCHIVE_Varjo-Foveated` - `Already studied as archived OpenXR quad-view/foveation API-layer reference`
+- `ViveSoftware/ViveFoveatedRendering` - `Already studied as Unity native D3D11/NVAPI VRS plugin and command-buffer reference`
+
+## 132. OSCQuery VRChat discovery libraries and client primitives
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-161-oscquery-vrchat-discovery-libraries-and-client-primitives.md`
+- `../landscape/project-families.md`
+
+- `galister/VrcAdvert` - `Already studied as minimal OSCQuery app advertiser`
+- `minetake01/vrchat_osc` - `Already studied as Rust VRChat OSC/OSCQuery client and service-registration crate`
+- `Natsumi-sama/OscQueryLibrary` - `Already studied as C# OSCQuery parameter-discovery and service-advertisement library`
+- `Raphiiko/oyasumivr_oscquery` - `Already studied as limited Rust OSCQuery library with dotnet mDNS sidecar`
+- `theepicsnail/vrchat_oscquery` - `Already studied as Python asyncio/threaded OSCQuery helper and multi-app proxy`
+
+## 133. Resonite creator import/export, inspection, and screenshot utility helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-162-resonite-creator-import-export-inspection-and-screenshot-utility-helpers.md`
+- `../landscape/project-families.md`
+
+- `Yellow-Dog-Man/Resonite.UnitySDK` - `Already studied as official Unity-to-Resonite SDK with generated bindings and converters`
+- `Phylliida/ResoniteUnityExporter` - `Already studied as Unity exporter, shared DTO, and IPC import processor reference`
+- `dfgHiatus/ResoniteUnityPackagesImporter` - `Already studied as Unity package extraction/cache/import mod donor`
+- `BlueCyro/CherryPick` - `Already studied as Resonite component selector search QoL reference`
+- `hantabaru1014/ResoniteScreenshotExtensions` - `Already studied as screenshot metadata, restore, and webhook utility donor`
+
+## 134. External pose, object, and sensor data to VRChat OSC bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-163-external-pose-object-and-sensor-data-to-vrchat-osc-bridges.md`
+- `../landscape/project-families.md`
+
+- `jangxx/VRC-Tracked-Objects` - `Already studied as avatar-relative tracked-object OSC bridge with calibration matrix`
+- `FizzyApple12/VRChatOSCOptitrack` - `Already studied as NatNet rigid-body to VRChat OSC tracker bridge`
+- `rogeraabbccdd/VRChat-MotionOSC` - `Already studied as webcam motion and face-expression OSC controller reference`
+- `takana-v/quest_steamvr_fbt_tool` - `Already studied as simple SteamVR/OpenVR tracker to VRChat OSC FBT sender`
+- `Alpyg/vrc_osc_tracker` - `Already studied as MediaPipe camera pose-estimation OSC tracker reference`
 
 ## Registry maintenance rule
 

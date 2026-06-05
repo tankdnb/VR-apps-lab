@@ -204,7 +204,7 @@ as honest follow-up nodes instead of being over-promoted immediately.
 | `Kartaverse/OpenDisplayXR` | Not studied deeply | Nonstandard-display project cluster that may expose additional runtime packaging and deployment patterns | Medium | Medium | Inspect the exact split between runtime code, resources, and surrounding platform assets |
 | `fughilli/ViveTrackedDevice` | Partially studied | Documentation-first reverse-engineering donor whose main code still sits behind submodules | Medium | Medium | Revisit only when a deeper submodule-aware pass on Lighthouse device internals becomes worthwhile |
 | `ebadier/ViveTrackers` | Not studied deeply | Unity-side consumer library for Vive tracker hardware that may clarify the `hardware consumer` side of tracker tooling | Medium | Medium | Inspect API surface, data model, and whether it teaches more than the existing tracker-helper nodes |
-| `takana-v/quest_steamvr_fbt_tool` | Not studied deeply | Quest-derived body-state export path aimed at avatar-facing consumers | Medium | Medium | Compare export model and consumer assumptions with `Baballonia`, `VRCThumbParamsOSC`, and other avatar-facing bridges |
+| `takana-v/quest_steamvr_fbt_tool` | Studied in Wave 163 | Quest/PC SteamVR tracker serial config and OpenVR-to-OSC FBT export path aimed at avatar-facing consumers | Medium | Low | Keep as a simple reference; compare later only if building a pose-ingress matrix |
 
 ## Priority batch M: Waves 36-39 surfaced follow-up candidates
 
@@ -1676,6 +1676,53 @@ These are larger than a single repo and should guide the next research wave.
   future deeper pass should produce a device-neutral event schema and compare
   non-invasive OSC/event ingress against process-hooked rumble sources.
 
+### 125. `Foveated rendering, quad-view settings, and graphics-layer adaptation helpers`
+
+- Main entries:
+  `QuadViewsCompanion`, `PimaxMagic4All`, `openvr_foveated`,
+  `Varjo-Foveated`, `ViveFoveatedRendering`
+- Why it matters:
+  this family captures the risk spectrum from safe settings companions to
+  invasive OpenVR/OpenXR/native rendering hooks. A future deeper pass should
+  build a rendering-adaptation matrix that separates settings UX, API-layer
+  view-chain edits, DLL replacement wrappers, vendor SDK emulation, and
+  engine-native VRS plugins.
+
+### 126. `OSCQuery VRChat discovery libraries and client primitives`
+
+- Main entries:
+  `VrcAdvert`, `vrchat_osc`, `OscQueryLibrary`, `oyasumivr_oscquery`,
+  `vrchat_oscquery`
+- Why it matters:
+  this family captures reusable OSCQuery plumbing across C#, Rust, Python, and
+  sidecar patterns. A future deeper pass should produce a discovery matrix that
+  compares mDNS behavior, direct-address fallbacks, avatar parameter fetch,
+  service lifecycle, and Quest/LAN/VPN caveats.
+
+### 127. `Resonite creator import/export, inspection, and screenshot utility helpers`
+
+- Main entries:
+  `Resonite.UnitySDK`, `ResoniteUnityExporter`,
+  `ResoniteUnityPackagesImporter`, `CherryPick`,
+  `ResoniteScreenshotExtensions`
+- Why it matters:
+  this family captures creator pipeline patterns beyond mod loading: generated
+  data-model bindings, converter registries, shared DTO and IPC import
+  processors, package extraction caches, component search palettes, and
+  screenshot metadata round-trips. A future deeper pass should compare these
+  with VRChat creator/import tooling.
+
+### 128. `External pose, object, and sensor data to VRChat OSC bridges`
+
+- Main entries:
+  `VRC-Tracked-Objects`, `VRChatOSCOptitrack`, `VRChat-MotionOSC`,
+  `quest_steamvr_fbt_tool`, `vrc_osc_tracker`
+- Why it matters:
+  this family captures pose ingress through avatar parameters and OSC tracker
+  endpoints. A future deeper pass should compare avatar-relative,
+  playspace-relative, camera-relative, and device-relative calibration models
+  across OpenVR, NatNet, MediaPipe, VMC, VMT, and SlimeVR-style bridges.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1775,6 +1822,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 93. `VRChat chatbox template, TTS, AI, and telemetry composition matrix`
 94. `Avatar-parameter telemetry, scaling, and companion protocol helpers`
 95. `Wearable haptics, physical-output routers, and device-neutral event schemas`
+96. `Rendering adaptation: foveation settings companions, API layers, DLL wrappers, and native VRS plugins`
+97. `OSCQuery implementation matrix across C#, Rust, Python, sidecars, and direct-address fallbacks`
+98. `Resonite creator import/export pipelines, component search UX, and metadata-rich capture artifacts`
+99. `External pose/object/sensor ingress to VRChat OSC tracker endpoints and avatar parameters`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

@@ -93,6 +93,11 @@ These are the clearest current product and research lines:
    calibration clients, avatar facetracking setup packages, AI/TTS/chatbox
    companions, OSC telemetry and avatar scaling helpers, avatar-authored camera
    paths, and physical-output or wearable haptic routers.
+18. `Rendering adaptation, OSCQuery plumbing, Resonite creator workflows, and external pose ingress`
+   the repository now has fresh coverage of foveated rendering settings and
+   layer/wrapper patterns, VRChat OSCQuery implementation primitives,
+   Resonite creator import/export and metadata utilities, and external
+   object/mocap/camera/SteamVR tracker data bridges into VRChat OSC.
 
 ## Most useful current docs
 
@@ -184,6 +189,10 @@ instead of full history:
 - `landscape/vr-projects-wave-157-vrchat-chatbox-speech-tts-ai-companions-and-text-composition-sidecars.md`
 - `landscape/vr-projects-wave-158-vrchat-osc-telemetry-avatar-scaling-device-status-and-parameter-control-helpers.md`
 - `landscape/vr-projects-wave-159-haptic-physical-output-routers-and-wearable-feedback-bridges.md`
+- `landscape/vr-projects-wave-160-foveated-rendering-quad-view-settings-and-graphics-layer-adaptation-helpers.md`
+- `landscape/vr-projects-wave-161-oscquery-vrchat-discovery-libraries-and-client-primitives.md`
+- `landscape/vr-projects-wave-162-resonite-creator-import-export-inspection-and-screenshot-utility-helpers.md`
+- `landscape/vr-projects-wave-163-external-pose-object-and-sensor-data-to-vrchat-osc-bridges.md`
 
 ## Strong donor clusters right now
 
@@ -508,6 +517,27 @@ the strongest current clusters:
   for OSC contact-to-hardware bridges, OSCQuery haptic effect engines, muscle
   maps, Bluetooth microcontroller output, rumble routers, IPC envelopes, and
   device-hub visualizers.
+- `QuadViewsCompanion`, `PimaxMagic4All`, `openvr_foveated`,
+  `Varjo-Foveated`, `ViveFoveatedRendering`
+  for safe quad-view settings companions, vendor foveation SDK emulation,
+  OpenVR DLL wrappers, OpenXR view-chain API-layer edits, and Unity native VRS
+  command-buffer plugins.
+- `VrcAdvert`, `vrchat_osc`, `OscQueryLibrary`, `oyasumivr_oscquery`,
+  `vrchat_oscquery`
+  for OSCQuery advertisement, Rust/C#/Python client primitives, direct-address
+  fallback, mDNS sidecars, avatar parameter fetching, and multi-app proxy
+  patterns.
+- `Resonite.UnitySDK`, `ResoniteUnityExporter`,
+  `ResoniteUnityPackagesImporter`, `CherryPick`,
+  `ResoniteScreenshotExtensions`
+  for generated data-model bindings, converter registries, shared DTO plus IPC
+  import processors, package extraction caches, component-search palettes, and
+  screenshot metadata round-tripping.
+- `VRC-Tracked-Objects`, `VRChatOSCOptitrack`, `VRChat-MotionOSC`,
+  `quest_steamvr_fbt_tool`, `vrc_osc_tracker`
+  for avatar-relative tracked objects, NatNet rigid-body OSC trackers, webcam
+  motion controls, simple OpenVR-to-OSC FBT scripts, and camera-calibrated
+  MediaPipe tracker senders.
 
 ## Highest-value next follow-up passes
 
@@ -600,6 +630,10 @@ directions:
 84. `VRChat chatbox template, TTS, AI, and telemetry sidecars`
 85. `Avatar-parameter telemetry, scaling, and companion protocol helpers`
 86. `Wearable haptics, physical-output routers, and device-neutral event schemas`
+87. `Rendering adaptation: foveation settings companions, API layers, DLL wrappers, and native VRS plugins`
+88. `OSCQuery implementation matrix across C#, Rust, Python, sidecars, and direct-address fallbacks`
+89. `Resonite creator import/export pipelines, component search UX, and metadata-rich capture artifacts`
+90. `External pose/object/sensor ingress to VRChat OSC tracker endpoints and avatar parameters`
 
 ## Current repository-maintenance priorities
 

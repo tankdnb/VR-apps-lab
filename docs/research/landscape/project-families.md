@@ -791,7 +791,7 @@ into SteamVR, OpenXR, or avatar-consumer surfaces.
 | `mbucchia/OpenXR-Eye-Trackers` | Already studied | OpenXR-side gaze and eye-tracking adaptation donor |
 | `pembem22/etvr-openxr-layer` | Already studied | OSC eye-tracking to OpenXR gaze adaptation path |
 | `ThatGuyThimo/leapmotion-osc` | Not studied deeply | Finger-only avatar-facing OSC output comparison node |
-| `takana-v/quest_steamvr_fbt_tool` | Not studied deeply | Quest-derived body state and avatar-facing export follow-up node |
+| `takana-v/quest_steamvr_fbt_tool` | Already studied as simple OpenVR-to-VRChat OSC FBT tracker bridge in Wave 163 | Quest/PC SteamVR tracker serial config, null-driver setup note, OpenVR pose polling, and `/tracking/trackers` OSC sender |
 
 ### Consolidation note
 
@@ -4443,6 +4443,133 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - haptics bridge comparison matrices
 - avatar-contact-to-output routing guides
 - safe boundaries for invasive versus non-invasive event sources
+
+## Family 139: Foveated rendering, quad-view settings, and graphics-layer adaptation helpers
+
+This family covers utilities that adapt rendering behavior around existing VR
+applications: safe settings companions, vendor SDK emulation, OpenVR DLL
+wrappers, OpenXR view-chain API layers, and Unity native VRS plugins.
+
+| Project | Status | Notes |
+|---|---|---|
+| `TallyMouse/QuadViewsCompanion` | Source-light product/settings reference | QuadViews settings creation/update, incompatible config backup, locale decimal cleanup, defaults discovery, and Pimax exclusions |
+| `mbucchia/PimaxMagic4All` | Already studied as vendor foveation SDK emulation and eye-provider fallback donor | Pimax/PVR API compatibility shim, LibMagic attach path, OpenVR/Varjo/VRChat OSC/Baballonia eye providers, and fixed-foveation fallback |
+| `fholger/openvr_foveated` | Already studied as OpenVR DLL replacement foveated-rendering wrapper | `openvr_api.dll` replacement, IVRCompositor `Submit` hooks, D3D11 context hooks, RDM/VRS modes, config hotkeys, sharpening, logs, and compatibility caveats |
+| `mbucchia/_ARCHIVE_Varjo-Foveated` | Already studied as archived OpenXR quad-view/foveation API-layer reference | `xrEnumerateViewConfigurationViews`, `xrLocateViews`, and `xrEndFrame` intervention, foveated `next` chain injection, FOV scaling, and settings/logging |
+| `ViveSoftware/ViveFoveatedRendering` | Already studied as Unity native VRS plugin and command-buffer reference | Unity component/editor surface, command buffers around render passes, native D3D11 plugin events, NVAPI VRS helper, gaze updater, and visualizer |
+
+### Consolidation note
+
+This family matters because rendering-adaptation helpers have very different
+risk surfaces:
+
+- safe settings editors
+- vendor compatibility shims
+- OpenVR DLL replacement and D3D11 hooks
+- OpenXR API layer view-chain edits
+- engine-native VRS plugins
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- rendering adaptation risk matrices
+- foveation fallback UX notes
+- settings backup/sanity-check companions
+- explicit separation between product-safe helpers and invasive hooks
+
+## Family 140: OSCQuery VRChat discovery libraries and client primitives
+
+This family covers the plumbing underneath VRChat OSC utilities: advertising,
+discovery, avatar parameter fetching, mDNS sidecars, and multi-app coexistence.
+
+| Project | Status | Notes |
+|---|---|---|
+| `galister/VrcAdvert` | Already studied as minimal OSCQuery app advertiser | CLI service name/HTTP/OSC ports, `/avatar/parameters`, optional tracking endpoints, official `VRC.OSCQuery` builder, and discovery logging |
+| `minetake01/vrchat_osc` | Already studied as Rust VRChat OSC/OSCQuery client and registration crate | Tokio mDNS, advertised-IP selection, service registration/unregister, direct-address fallback, parameter fetch, service handles, and localhost/LAN/VPN caveats |
+| `Natsumi-sama/OscQueryLibrary` | Already studied as C# OSCQuery parameter-discovery and service-advertisement library | available port selection, mDNS advertise/discover, `VRChat-Client-*` filtering, recursive parameter extraction, avatar ID capture, and update events |
+| `Raphiiko/oyasumivr_oscquery` | Already studied as limited Rust OSCQuery library with dotnet mDNS sidecar | Rust client/server facade, process-watched C# mDNS sidecar, OSC/OSCQuery advertise/discover, endpoint registration, and dynamic advertised port updates |
+| `theepicsnail/vrchat_oscquery` | Already studied as Python asyncio/threaded OSCQuery helper and multi-app proxy | minimal root/HOST_INFO responses, zeroconf service info, aiohttp/threaded variants, unused port selection, and config-driven multi-app advertisement |
+
+### Consolidation note
+
+This family matters because OSCQuery is reusable infrastructure, not just an app
+feature. It now clearly includes:
+
+- standalone advertisers for legacy OSC apps
+- Rust/C#/Python library surfaces
+- mDNS sidecars when native discovery is awkward
+- direct-address fallbacks
+- avatar parameter cache/update flows
+- proxy patterns for multiple OSC apps
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OSCQuery implementation matrices
+- discovery reliability checklists
+- Quest/LAN/VPN caveat notes
+- clear separation between OSC packet handling and OSCQuery advertisement
+
+## Family 141: Resonite creator import/export, inspection, and screenshot utility helpers
+
+This family covers creator-facing Resonite tooling that moves content in,
+inspects platform component models, or preserves capture context as metadata.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Yellow-Dog-Man/Resonite.UnitySDK` | Already studied as official Unity-to-Resonite SDK with generated bindings and converters | ResoniteLink, generated type/component wrappers, Unity primitive mapping, converter registry, realtime editor send, and beta/contribution workflow |
+| `Phylliida/ResoniteUnityExporter` | Already studied as Unity exporter, shared DTO, and IPC import processor reference | Unity package, shared DTOs, memory-mapped/bridge IPC, named import processors, Resonite mod path, standalone package server, and material/avatar/world import flows |
+| `dfgHiatus/ResoniteUnityPackagesImporter` | Already studied as Unity package extraction/cache/import mod donor | `.unitypackage` import extension patch, hash cache, unpacked asset paths, import type toggles, material/texture mapping, prefabs/scenes alpha, and hang/Unicode caveats |
+| `BlueCyro/CherryPick` | Already studied as Resonite component selector search QoL reference | Harmony UI patch, component search field, worker metadata cache, ranking, scope filtering, generic type support, result-count config, and ProtoFlux visibility toggle |
+| `hantabaru1014/ResoniteScreenshotExtensions` | Already studied as screenshot metadata, restore, and webhook utility donor | XMP metadata embedding, restore-on-import, photo/user/location/camera fields, format/folder controls, legacy graph loading, Discord webhook menu/auto-upload |
+
+### Consolidation note
+
+This family matters because creator tools are more than import scripts. It now
+clearly includes:
+
+- generated data-model bindings
+- converter registries
+- shared DTO and IPC import processors
+- package extraction caches
+- in-world component search/palette UX
+- screenshot metadata round-tripping and sharing
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- cross-engine creator bridge checklists
+- generated bindings versus direct import processors
+- asset package cache/retry UX
+- metadata-rich capture artifacts
+
+## Family 142: External pose, object, and sensor data to VRChat OSC bridges
+
+This family covers utilities that move external pose or sensor state into
+VRChat through avatar parameters or `/tracking/trackers` OSC endpoints.
+
+| Project | Status | Notes |
+|---|---|---|
+| `jangxx/VRC-Tracked-Objects` | Already studied as avatar-relative tracked-object OSC bridge with calibration matrix | avatar package contract, VRCFury/manual setup, WPF config UI, OpenVR controller/tracker selection, calibration overlays, matrix math, OSCQuery/manual OSC, and status states |
+| `FizzyApple12/VRChatOSCOptitrack` | Already studied as NatNet rigid-body to VRChat OSC tracker bridge | NatNet frame ingestion, rigid-body collections, coordinate conversion, ImGui/OpenGL visualizer, tracker ID assignment, tinyosc bundles, and no-playspace-calibration caveat |
+| `rogeraabbccdd/VRChat-MotionOSC` | Already studied as webcam motion and face-expression OSC controller reference | Electron/Vue shell, OSC UDP sender, IPC command handlers, webcam face/motion gestures, movement/jump/item control semantics, and experimental caveat |
+| `takana-v/quest_steamvr_fbt_tool` | Already studied as simple SteamVR/OpenVR tracker to VRChat OSC FBT sender | null-driver setup note, serial-based device config, OpenVR overlay init, `getLastPoses`, Y offset from standard device, wx tray exit, and simple OSC tracker messages |
+| `Alpyg/vrc_osc_tracker` | Already studied as MediaPipe camera pose-estimation OSC tracker reference | frame capture, intrinsic/extrinsic calibration commands, transform solving, pose landmarker, hip/head/foot tracker abstraction, offsets, and OSC tracker sender |
+
+### Consolidation note
+
+This family matters because pose ingress should name its coordinate contract.
+It now clearly includes:
+
+- avatar-relative tracked objects
+- playspace/mocap rigid-body streams
+- webcam gesture/motion controllers
+- simple SteamVR tracker to OSC FBT scripts
+- camera-calibrated MediaPipe tracker senders
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- pose-ingress matrices across OpenVR, NatNet, MediaPipe, VMC, VMT, and SlimeVR
+- calibration UX categories
+- OSC tracker endpoint contracts
+- smoothing/scale/activation safety notes
 
 ## Recommended synthesis path for `VR-apps-lab`
 

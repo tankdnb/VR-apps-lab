@@ -8354,3 +8354,338 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   haptic router architecture notes and safe/non-invasive event-source
   comparisons.
+
+## Method 488: Safe quad-view settings companion with backup and config sanitation
+
+- What it is:
+  a narrow companion creates or edits advanced runtime/layer settings, reads
+  existing defaults, backs up incompatible config files, normalizes locale
+  quirks, and exposes exclusions without forcing users into manual text edits.
+- Good for:
+  OpenXR layer settings, quad-view/foveation configs, runtime feature toggles,
+  and user-safe power-tool companions.
+- Why it matters:
+  advanced XR features often fail because setup UX is brittle, not because the
+  rendering feature is weak.
+- Strong references:
+  `QuadViewsCompanion`.
+- Best fit for `VR-apps-lab`:
+  settings companion design notes and runtime/layer UX checklists.
+
+## Method 489: Vendor foveated-rendering SDK emulation shim with eye-provider fallback
+
+- What it is:
+  a compatibility layer exposes vendor SDK functions expected by an external
+  feature library, then fills the required data from multiple providers such as
+  OpenVR, Varjo, VRChat OSC, or fixed-foveation fallback paths.
+- Good for:
+  vendor feature adaptation research, eye-tracking provider normalization, and
+  compatibility-layer comparisons.
+- Why it matters:
+  feature availability can be expanded by emulating narrow SDK contracts, but
+  the risk surface must be explicit.
+- Strong references:
+  `PimaxMagic4All`.
+- Best fit for `VR-apps-lab`:
+  vendor SDK compatibility notes and provider-fallback architecture patterns.
+
+## Method 490: OpenVR DLL replacement rendering wrapper with D3D11 submission hooks
+
+- What it is:
+  a replacement `openvr_api.dll` loads the real OpenVR client library, hooks
+  IVR interfaces and D3D11 context calls, intercepts compositor submission, and
+  applies post-processing or VRS before forwarding textures.
+- Good for:
+  low-level rendering intervention research, foveation wrappers, debugging
+  compatibility layers, and historical OpenVR tool comparisons.
+- Why it matters:
+  invasive hooks can teach reusable boundaries even when they are not safe
+  product defaults.
+- Strong references:
+  `openvr_foveated`.
+- Best fit for `VR-apps-lab`:
+  OpenVR wrapper risk matrices and rendering intervention architecture notes.
+
+## Method 491: OpenXR quad-view/foveation API-layer adapter
+
+- What it is:
+  an OpenXR API layer intercepts instance, view-configuration, locate-views, and
+  frame submission calls to inject foveation metadata, scale recommended image
+  sizes, and patch focus/peripheral FOV values.
+- Good for:
+  API-layer experiments, view-chain manipulation research, runtime adaptation,
+  and foveated-rendering diagnostics.
+- Why it matters:
+  many XR runtime interventions are really `next` chain and view-contract
+  problems.
+- Strong references:
+  `_ARCHIVE_Varjo-Foveated`.
+- Best fit for `VR-apps-lab`:
+  OpenXR API-layer design notes and frame/view intervention checklists.
+
+## Method 492: Unity component plus native VRS plugin command-buffer split
+
+- What it is:
+  Unity scripts expose presets and render-pass controls, attach command buffers
+  around forward/deferred rendering, send native plugin events, and a D3D11
+  plugin enables or disables vendor VRS resources.
+- Good for:
+  Unity rendering utilities, native plugin integration, engine-side foveation,
+  and visualization/debug controls.
+- Why it matters:
+  a native rendering feature becomes reusable only when the Unity-side lifecycle
+  and capability gates are clean.
+- Strong references:
+  `ViveFoveatedRendering`.
+- Best fit for `VR-apps-lab`:
+  Unity native plugin and command-buffer integration references.
+
+## Method 493: Standalone OSCQuery advertiser for legacy OSC apps
+
+- What it is:
+  a tiny utility advertises an existing OSC app's service name, OSC port, and
+  endpoint vocabulary through OSCQuery/mDNS without owning the app's OSC packet
+  handling.
+- Good for:
+  retrofitting OSCQuery to older tools, multi-app VRChat OSC setups, and
+  discovery micro-utilities.
+- Why it matters:
+  many useful OSC tools should not need a full rewrite just to coexist with
+  VRChat's discovery model.
+- Strong references:
+  `VrcAdvert`.
+- Best fit for `VR-apps-lab`:
+  VRChat OSC sidecar discovery helpers and compatibility micro-tools.
+
+## Method 494: Async VRChat OSC/OSCQuery client with direct-address fallback
+
+- What it is:
+  an async library follows OSC/OSCQuery mDNS services, registers local services,
+  fetches parameters, sends by service pattern or direct address, and keeps
+  lifecycle handles for unregister/shutdown.
+- Good for:
+  Rust OSC utilities, service-discovery bridges, multi-network OSC tools, and
+  parameter-introspection sidecars.
+- Why it matters:
+  direct-address escape hatches are necessary because mDNS does not behave
+  consistently across localhost, LAN, VPN, and Quest-like setups.
+- Strong references:
+  `vrchat_osc`.
+- Best fit for `VR-apps-lab`:
+  OSCQuery transport matrices and sidecar architecture notes.
+
+## Method 495: Evented OSCQuery parameter cache service
+
+- What it is:
+  a library advertises local OSC/OSCQuery services, discovers VRChat clients,
+  fetches the OSCQuery root tree, recursively extracts avatar parameters, and
+  emits update events when the avatar parameter list changes.
+- Good for:
+  C# companion apps, avatar parameter dashboards, diagnostics, and OSC tools
+  that need current parameter availability.
+- Why it matters:
+  reading local avatar JSON is less robust than discovering the live avatar
+  parameter tree.
+- Strong references:
+  `OscQueryLibrary`.
+- Best fit for `VR-apps-lab`:
+  avatar parameter discovery patterns and VRChat OSC diagnostics.
+
+## Method 496: Sidecar-backed OSCQuery discovery for protocol-light runtimes
+
+- What it is:
+  a main app keeps a small OSCQuery facade while a bundled sidecar process owns
+  mDNS discovery/advertisement, process watching, and address updates.
+- Good for:
+  Rust, Python, game-engine, or constrained runtime tools where native mDNS is
+  awkward or unreliable.
+- Why it matters:
+  sidecars can be a clean boundary if packaging, lifecycle, and failure modes
+  are first-class.
+- Strong references:
+  `oyasumivr_oscquery`.
+- Best fit for `VR-apps-lab`:
+  protocol sidecar design and OSCQuery packaging notes.
+
+## Method 497: Minimal Python OSCQuery root/HOST_INFO helper and multi-app proxy
+
+- What it is:
+  a Python helper serves the small OSCQuery responses VRChat needs, advertises
+  `_oscjson._tcp.local`, starts a matching OSC listener, and can proxy multiple
+  named app ports from a config file.
+- Good for:
+  quick VRChat OSC prototypes, Python accessibility tools, status utilities,
+  and multi-tool local setups.
+- Why it matters:
+  the simplest useful OSCQuery implementation is sometimes the best reference
+  for small utilities.
+- Strong references:
+  `vrchat_oscquery`.
+- Best fit for `VR-apps-lab`:
+  Python OSC utility scaffolds and discovery examples.
+
+## Method 498: Generated data-model bindings plus converter registry
+
+- What it is:
+  an editor-side tool queries a target platform's component/type model,
+  generates typed bindings and wrappers, maps primitive types into editor-native
+  equivalents, and registers converters that update target objects from source
+  engine components.
+- Good for:
+  engine-to-social-VR SDKs, data-model bridges, creator tooling, and realtime
+  preview/send workflows.
+- Why it matters:
+  generated bindings turn a remote platform data model into an editor-native
+  authoring surface.
+- Strong references:
+  `Resonite.UnitySDK`.
+- Best fit for `VR-apps-lab`:
+  cross-engine creator tooling and binding/converter architecture notes.
+
+## Method 499: Shared DTO and named IPC processor content-export pipeline
+
+- What it is:
+  source-engine data is serialized into shared DTOs, sent through IPC, and
+  handled by named target-side processors for meshes, textures, slots, avatars,
+  constraints, materials, packages, or other content units.
+- Good for:
+  Unity-to-social-VR exporters, live preview tools, package exporters, and
+  data-heavy creator bridges.
+- Why it matters:
+  named processors make a big import pipeline debuggable and extensible.
+- Strong references:
+  `ResoniteUnityExporter`.
+- Best fit for `VR-apps-lab`:
+  creator bridge architecture and external tool to runtime import patterns.
+
+## Method 500: Package extraction cache with configurable asset-type import
+
+- What it is:
+  an importer hashes package files, reuses extracted cache directories, preserves
+  asset paths, and exposes switches for importing files as raw assets, meshes,
+  textures, audio, video, fonts, documents, prefabs, or scenes.
+- Good for:
+  package importers, asset migration tools, creator workflow utilities, and
+  large-content handling.
+- Why it matters:
+  package import UX needs caching and scope controls because blindly importing
+  everything is slow and noisy.
+- Strong references:
+  `ResoniteUnityPackagesImporter`.
+- Best fit for `VR-apps-lab`:
+  asset import pipeline notes and creator package handling patterns.
+
+## Method 501: In-world component palette search overlay
+
+- What it is:
+  a mod patches a component selector UI, adds a search field, caches component
+  metadata, ranks matches, scopes results, and supports generic type selection.
+- Good for:
+  creator QoL tools, in-headset palettes, editor search surfaces, and large
+  component model browsers.
+- Why it matters:
+  search/palette UX can make an expert tool usable inside VR.
+- Strong references:
+  `CherryPick`.
+- Best fit for `VR-apps-lab`:
+  VR menu/search UX and component palette utility references.
+
+## Method 502: Screenshot metadata XMP round-trip with restore-on-import
+
+- What it is:
+  a capture utility serializes world, user, camera, pose, time, and app metadata
+  into image XMP, then restores that metadata when the image is imported later,
+  optionally adding sharing/webhook flows.
+- Good for:
+  social VR screenshots, diagnostics captures, provenance tracking, MRC tools,
+  and archive-friendly media utilities.
+- Why it matters:
+  screenshots can be reusable data artifacts, not only flat images.
+- Strong references:
+  `ResoniteScreenshotExtensions`.
+- Best fit for `VR-apps-lab`:
+  capture metadata patterns and social/diagnostic artifact design.
+
+## Method 503: Avatar-relative tracked-object bridge with calibration matrix
+
+- What it is:
+  a companion app pairs a tracked object with a controller/hand anchor, guides
+  calibration, computes the hand-to-object transform, and sends calibrated
+  position/rotation through avatar parameters.
+- Good for:
+  tracked props, performer tools, avatar interaction utilities, physical-object
+  alignment, and calibration UX research.
+- Why it matters:
+  object tracking quality depends on the avatar-side contract and calibration
+  matrix, not just raw tracker pose.
+- Strong references:
+  `VRC-Tracked-Objects`.
+- Best fit for `VR-apps-lab`:
+  external object tracking and avatar-side companion protocol notes.
+
+## Method 504: NatNet rigid-body to VRChat OSC tracker bridge with visual assignment
+
+- What it is:
+  a mocap bridge receives NatNet rigid bodies, converts coordinate systems,
+  lets users assign rigid bodies to tracker IDs, visualizes the environment,
+  and sends OSC tracker bundles to VRChat.
+- Good for:
+  OptiTrack integrations, mocap-to-social-VR experiments, tracker endpoint
+  testing, and calibration research.
+- Why it matters:
+  professional mocap systems still need explicit mapping and calibration before
+  they become usable avatar trackers.
+- Strong references:
+  `VRChatOSCOptitrack`.
+- Best fit for `VR-apps-lab`:
+  pose-ingress matrices and mocap bridge caveat notes.
+
+## Method 505: Webcam motion and face-recognition to OSC command bridge
+
+- What it is:
+  a desktop app maps webcam-derived body, hand, and face cues into OSC movement,
+  item-control, jump, look, or avatar expression commands.
+- Good for:
+  alternate-control accessibility, webcam-only interaction, social VR
+  experiments, and gesture-to-OSC prototypes.
+- Why it matters:
+  vision input should be separated from OSC command mapping so recognition
+  models and thresholds can evolve.
+- Strong references:
+  `VRChat-MotionOSC`.
+- Best fit for `VR-apps-lab`:
+  alternate input bridge notes and gesture-to-command architecture.
+
+## Method 506: Minimal SteamVR tracker serial config to OSC FBT sender
+
+- What it is:
+  a simple script reads configured SteamVR tracker serials, polls OpenVR poses,
+  applies a basic offset, and sends each device as `/tracking/trackers/{n}`
+  position and rotation messages.
+- Good for:
+  proof-of-concept FBT bridges, OpenVR pose export references, and minimal OSC
+  tracker endpoint examples.
+- Why it matters:
+  tiny scripts make protocol boundaries easy to inspect even when they are not
+  robust product baselines.
+- Strong references:
+  `quest_steamvr_fbt_tool`.
+- Best fit for `VR-apps-lab`:
+  simple pose bridge references and tracker endpoint examples.
+
+## Method 507: Camera-calibrated MediaPipe pose landmark to OSC tracker sender
+
+- What it is:
+  a camera pipeline captures frames, calibrates cameras, runs pose landmark
+  inference, maps landmarks into tracker abstractions, applies offsets, and
+  sends hip/feet/head OSC tracker messages.
+- Good for:
+  camera-based FBT experiments, accessibility tracking, calibration workflow
+  research, and vision-based pose bridges.
+- Why it matters:
+  camera pose tracking is only reusable if calibration and coordinate mapping
+  are explicit parts of the workflow.
+- Strong references:
+  `vrc_osc_tracker`.
+- Best fit for `VR-apps-lab`:
+  vision-based tracker bridge research and calibration UX comparison.

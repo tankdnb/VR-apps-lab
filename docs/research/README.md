@@ -155,6 +155,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-157-vrchat-chatbox-speech-tts-ai-companions-and-text-composition-sidecars.md`
 - `landscape/vr-projects-wave-158-vrchat-osc-telemetry-avatar-scaling-device-status-and-parameter-control-helpers.md`
 - `landscape/vr-projects-wave-159-haptic-physical-output-routers-and-wearable-feedback-bridges.md`
+- `landscape/vr-projects-wave-160-foveated-rendering-quad-view-settings-and-graphics-layer-adaptation-helpers.md`
+- `landscape/vr-projects-wave-161-oscquery-vrchat-discovery-libraries-and-client-primitives.md`
+- `landscape/vr-projects-wave-162-resonite-creator-import-export-inspection-and-screenshot-utility-helpers.md`
+- `landscape/vr-projects-wave-163-external-pose-object-and-sensor-data-to-vrchat-osc-bridges.md`
 
 ## Archive Navigation
 

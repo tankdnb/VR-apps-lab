@@ -1137,3 +1137,33 @@ repeatable way.
 
 - `github-research-wave-159-backlog.md`
   Executed backlog for the Wave 159 pass.
+
+- `github-research-wave-160-plan.md`
+  Wave 160 research plan focused on foveated rendering, quad-view settings,
+  vendor SDK emulation, OpenVR/OpenXR rendering wrappers, and Unity native VRS
+  plugins.
+
+- `github-research-wave-160-backlog.md`
+  Executed backlog for the Wave 160 pass.
+
+- `github-research-wave-161-plan.md`
+  Wave 161 research plan focused on OSCQuery VRChat discovery libraries,
+  service advertisers, mDNS sidecars, direct-address fallbacks, and client
+  primitives.
+
+- `github-research-wave-161-backlog.md`
+  Executed backlog for the Wave 161 pass.
+
+- `github-research-wave-162-plan.md`
+  Wave 162 research plan focused on Resonite creator import/export, Unity SDKs,
+  Unity package importers, component search, and screenshot metadata utilities.
+
+- `github-research-wave-162-backlog.md`
+  Executed backlog for the Wave 162 pass.
+
+- `github-research-wave-163-plan.md`
+  Wave 163 research plan focused on external pose, object, and sensor data to
+  VRChat OSC bridges.
+
+- `github-research-wave-163-backlog.md`
+  Executed backlog for the Wave 163 pass.
