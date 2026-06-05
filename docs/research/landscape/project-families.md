@@ -4986,6 +4986,147 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - chatbox/web-panel safety and pacing notes
 - OSCQuery versus passive listener comparison matrices
 
+## Family 155: DIY eye/mouth tracking, VRCFT modules, gaze calibration, and OpenXR eye consumers
+
+This family covers source-first expression tracking stacks: camera-based
+mouth/eye tracking, per-user calibration, model inference, VRChat native/VRCFT
+outputs, hardware SDK modules, in-headset calibration routines, and engine-side
+OpenXR eye consumers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Project-Babble/ProjectBabble` | Already studied as DIY mouth tracking pipeline donor | camera ROI/crop/rotate/flip, ONNX provider selection, calibration, `OneEuroFilter` smoothing, OSC expression output, recalibration receiver, and non-commercial/license caveats |
+| `EyeTrackVR/EyeTrackVR` | Already studied as DIY eye tracking and output bridge donor | multiple pupil algorithms, warmup/calibration gates, preview/latency metrics, VRChat native eye vectors, VRCFT v1/v2 parameters, and single-eye fallback |
+| `cspark-development/VRCFaceTracking-TobiiXR` | Already studied as hardware SDK to VRCFT module donor | embedded native DLL extraction, Tobii context/device setup, wearable consumer data thread, per-eye validity checks, and hardcoded calibration caveats |
+| `ryan9411vr/EyeTracking` | Already studied as user-trained eye tracking workflow donor | Electron/TensorFlow client, model reloads, openness calibration, VRChat native/VRCFT OSC output, Unity VR target theta WebSocket server, and LFS/dependency caveat |
+| `Project-Babble/BabbleCalibration` | Already studied as in-headset calibration routine runner | Godot OpenVR/OpenXR backends, TCP packet dispatcher, text/video/tutorial/gaze/reticle/dilation/convergence/graph/debug routines, and incomplete OpenXR overlay backend |
+| `headassbtw/ResoniteOpenXREyeTracking` | Already studied as OpenXR extension consumer to engine input driver | headless OpenXR session, `XR_MND_headless`, `XR_FB_face_tracking2`, theoretical `XR_EXT_eye_gaze_interaction` fallback, Resonite input driver mapping, and destroy-path caveat |
+| `edvardsoe/foveated-rendering-demo` | Source-light foveation product reference | useful as gaze/foveated-rendering communication reference, not current code donor |
+
+### Consolidation note
+
+This family matters because tracking utilities are pipelines, not isolated model
+calls:
+
+- camera source and ROI transforms
+- model or pupil algorithm selection
+- calibration routines and user feedback
+- smoothing and fallback behavior
+- VRChat/VRCFT/OpenXR/engine output schemas
+- hardware SDK packaging and teardown
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- eye/mouth tracking pipeline matrices
+- output-schema comparison across VRChat native, VRCFT, OSC, and engine inputs
+- in-headset calibration routine contracts
+- OpenXR eye/face consumer patterns
+
+## Family 156: Resonite headless deployment, operations, REST/IPC, and compatibility patches
+
+This family covers server-side and operator-facing Resonite utility work:
+containerized headless deployment, web/Discord control surfaces, in-engine REST
+resources, shared-memory state export, and compatibility patchers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `voxelbonecloud/resonite-headless-docker` | Already studied as containerized headless deployment donor | Debian/.NET image, Steam headless download, config/log/RML volumes, mod auto-install, launch/update split, git sync, and credential/cache caveats |
+| `Zetaphor/resonite-headless-manager` | Already studied as web headless operations console donor | FastAPI, WebSocket clients, Docker attach socket, rolling logs, parsed worlds/status/users/bans, restart fallback, metrics, and local-network security caveat |
+| `FlippedCodes/Resonite-Headless-Discord-Bot` | Already studied as Discord operations surface donor | slash commands, role/channel checks, Docker label discovery, command markers, config-file editing, world-list message parsing, and Docker socket/race caveats |
+| `JackTheFoxOtter/resonite-rest` | Already studied as in-engine REST resource tree donor | `HttpListener`, route registration, resource paths, contact/user/cloud-variable managers, host/port lifecycle, and early-development security caveats |
+| `Nytra/ResoniteHeadlessHeadServer` | Already studied as shared-memory state export experiment | execution hook, circular buffers, high/normal priority packet queues, world/material/texture connectors, and deprecated/version-fragile status |
+| `BlueCyro/Nimbus` | Already studied as runtime Harmony compatibility shim | targeted thread/type-name patches, legacy compatibility helpers, and brittle version-specific scope |
+| `BlueCyro/Cumulo` | Already studied as irreversible compatibility pre-patcher | Mono.Cecil resolver, method patch attributes, Nimbus/Harmony bundling, destructive warning, and rollback/version caveats |
+
+### Consolidation note
+
+This family matters because social XR utilities often have a headless operations
+side:
+
+- deployment images and update scripts
+- logs and command channels
+- web, Discord, REST, and CLI control surfaces
+- structured versus string-parsed operations
+- shared-state export from headless runtimes
+- compatibility shims and support boundaries
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- headless operations matrices
+- remote control surface security checklists
+- Discord/web/REST comparison notes
+- compatibility patch risk taxonomy
+
+## Family 157: Visual impairment simulation, gaze-contingent accessibility, and UI accessibility helpers
+
+This family covers accessibility and visual simulation methods: per-eye
+impairment rendering, gaze-contingent masks, mobile passthrough filters,
+patient-data-driven field maps, and screen-reader-like Unity UI support.
+
+| Project | Status | Notes |
+|---|---|---|
+| `petejonze/OpenVisSim` | Already studied as Unity visual impairment simulation donor | linkable per-eye effects, gaze-contingent field-loss masks, overlay textures, blur mip levels, Unity 2017/GPL/deprecation caveats |
+| `VARID-XR/VARID-plugin-ue5` | Already studied as Unreal visual impairment plugin donor | Blueprint condition setters, per-eye state, normalized gaze, debug modes, RDG compute blur pyramids, and UE5.5/medical caveats |
+| `rulyox/VisualImpairmentVR` | Already studied as mobile passthrough shader reference | `WebCamTexture`, render-texture staging, UV offsets, distortion shader, Cardboard/Unity 2018 thin-sample caveat |
+| `ojwalch/LowVisionVR` | Already studied as native Android low-vision filter reference | dual-eye camera preview, async processing, joystick controls, RenderScript kernels for edge/center/warp/periphery, and deprecated API caveat |
+| `lukasmaxim/Glaucoma-VR` | Already studied as patient-data mask and Varjo gaze simulation reference | CSV/grid mask generation, context/focus textures, Varjo gaze/HMD state, gaze logging, and no-doc/vendor-specific caveats |
+| `mikrima/UnityAccessibilityPlugin` | Already studied as Unity UI accessibility donor | labels/hints/prefixes, container ordering, touch exploration, gestures, virtual keyboard, audio/TTS queue, platform wrappers, and in-app accessibility caveat |
+
+### Consolidation note
+
+This family matters because accessibility is an engineering substrate:
+
+- simulation shaders and masks
+- gaze-contingent effects
+- per-eye state and debug modes
+- patient-data or profile-driven settings
+- mobile camera passthrough filters
+- navigable, spoken, hinted UI containers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- accessibility simulation matrices
+- VR menu accessibility contracts
+- gaze-contingent shader references
+- low-vision passthrough/filter prototypes
+
+## Family 158: Capture, screenshot, media projection, window capture, and photomode helpers
+
+This family covers capture and media-surface helpers: 360 screenshots,
+transparent editor screenshots, deterministic screenshot sequences, Windows
+window/desktop/browser capture, Quest screen projection, photomode UX, and
+360/stereo media record/playback pipelines.
+
+| Project | Status | Notes |
+|---|---|---|
+| `yasirkula/Unity360ScreenshotCapture` | Already studied as 360 screenshot capture donor | cubemap render, equirectangular converter shader, async GPU readback, `ReadPixels` fallback, JPEG/PNG encoding, GPano XMP metadata, and platform support caveats |
+| `rurre/Editor-Screenshot` | Already studied as editor transparent screenshot donor | UI Toolkit window, scene/game camera selection, preview render texture, transparent background, near clip override, resolution presets, `EditorPrefs`, and editor-only scope |
+| `Team-on/UnityScreenShooter` | Already studied as screenshot sequence helper | data-driven target camera/resolution/UI/language settings, timescale pause, one-frame wait, structured filenames, and output-path caveat |
+| `Phylliida/UnityWindowsCapture` | Already studied as external surface texture ingress donor | window registry, Win32 BitBlt, bitmap row alignment, Desktop Duplication plugin callbacks, cursor composition, Chromium shared-memory browser textures, and Windows/legacy caveats |
+| `t-34400/QuestMediaProjection` | Already studied as Quest MediaProjection wrapper reference | `ServiceContainer`, AndroidJavaObject media projection manager, texture polling, barcode services, image saving, WebRTC peer wrappers, WebSocket signaling, and archive/API caveat |
+| `UnityTechnologies/PhotoMode` | Already studied as photomode UX/control donor | EventSystem handoff, Cinemachine photo camera, pause/unscaled time, postprocess sliders, filters, frames, stickers, grid/UI toggles, URP blit feature, and non-VR-first caveat |
+| `vimeo/vimeo-unity-sdk` | Already studied as 360/stereo media pipeline reference | recorder state/events, MediaEncoder inputs, cubemap/equirectangular 360 capture, chunked Vimeo upload, metadata loading, Unity/AVPro playback, and account/editor caveats |
+
+### Consolidation note
+
+This family matters because many VR utilities need surface ingress or media
+output before they become overlays or tools:
+
+- camera/render-texture/desktop/window capture
+- cubemap and equirectangular conversion
+- metadata-rich screenshots
+- editor and runtime capture UX
+- Quest screen capture and WebRTC streaming
+- photomode mode management
+- 360/stereo recording and playback
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- surface-ingress matrices
+- capture privacy and permission checklists
+- authoring screenshot utility patterns
+- photomode and media-output UX references
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

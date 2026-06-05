@@ -1253,3 +1253,31 @@ repeatable way.
 
 - `github-research-wave-175-backlog.md`
   Executed backlog for the Wave 175 pass.
+
+- `github-research-wave-176-plan.md`
+  Wave 176 research plan focused on DIY eye/mouth tracking, VRCFT modules,
+  gaze calibration, and OpenXR eye consumers.
+
+- `github-research-wave-176-backlog.md`
+  Executed backlog for the Wave 176 pass.
+
+- `github-research-wave-177-plan.md`
+  Wave 177 research plan focused on Resonite headless deployment, operations,
+  REST/IPC, and compatibility patches.
+
+- `github-research-wave-177-backlog.md`
+  Executed backlog for the Wave 177 pass.
+
+- `github-research-wave-178-plan.md`
+  Wave 178 research plan focused on visual impairment simulation,
+  gaze-contingent accessibility, and UI accessibility helpers.
+
+- `github-research-wave-178-backlog.md`
+  Executed backlog for the Wave 178 pass.
+
+- `github-research-wave-179-plan.md`
+  Wave 179 research plan focused on capture, screenshot, media projection,
+  window capture, and photomode helpers.
+
+- `github-research-wave-179-backlog.md`
+  Executed backlog for the Wave 179 pass.

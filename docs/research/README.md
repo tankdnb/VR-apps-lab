@@ -171,6 +171,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-173-openxr-api-layer-adaptation-hand-transform-offsets-and-graphics-compatibility.md`
 - `landscape/vr-projects-wave-174-spatial-anchors-shared-scenes-magic-leap-persistence-and-colocation.md`
 - `landscape/vr-projects-wave-175-vrchat-osc-web-panels-debug-surfaces-and-sensor-bridges.md`
+- `landscape/vr-projects-wave-176-diy-eye-mouth-tracking-vrcft-modules-and-gaze-calibration.md`
+- `landscape/vr-projects-wave-177-resonite-headless-deployment-operations-rest-ipc-and-compatibility.md`
+- `landscape/vr-projects-wave-178-visual-impairment-simulation-gaze-contingent-accessibility-and-ui-a11y.md`
+- `landscape/vr-projects-wave-179-capture-screenshot-media-projection-window-capture-and-photomode-helpers.md`
 
 ## Archive Navigation
 

@@ -746,6 +746,26 @@ Use these files when you want to understand:
   OSCQuery-aware debuggers, typed OSC client libraries, controller micro-tools,
   finger tracking bridges, and biometric sensor-to-avatar pipelines.
 
+- `vr-projects-wave-176-diy-eye-mouth-tracking-vrcft-modules-and-gaze-calibration.md`
+  Next GitHub discovery wave focused on DIY eye/mouth tracking, VRCFT modules,
+  user-trained eye models, in-headset calibration routines, and OpenXR/Resonite
+  eye consumers.
+
+- `vr-projects-wave-177-resonite-headless-deployment-operations-rest-ipc-and-compatibility.md`
+  Next GitHub discovery wave focused on Resonite headless containers, web and
+  Discord operations, REST resources, shared-memory state export, and
+  compatibility patch layers.
+
+- `vr-projects-wave-178-visual-impairment-simulation-gaze-contingent-accessibility-and-ui-a11y.md`
+  Next GitHub discovery wave focused on visual impairment simulation,
+  gaze-contingent shaders, mobile passthrough filters, patient-data masks, and
+  Unity UI accessibility helpers.
+
+- `vr-projects-wave-179-capture-screenshot-media-projection-window-capture-and-photomode-helpers.md`
+  Next GitHub discovery wave focused on 360 screenshots, editor capture,
+  window/desktop/browser texture ingress, Quest MediaProjection, photomode
+  surfaces, and 360/stereo media pipelines.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

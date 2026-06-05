@@ -622,6 +622,26 @@ the strongest current clusters:
   for browser chatbox panels, passive and OSCQuery-aware OSC debuggers, typed
   OSC client primitives, avatar/controller micro-tools, finger bridges, and
   biometric sensor-to-avatar pipelines.
+- `ProjectBabble`, `EyeTrackVR`, `VRCFaceTracking-TobiiXR`,
+  `ryan9411vr/EyeTracking`, `BabbleCalibration`,
+  `ResoniteOpenXREyeTracking`, `foveated-rendering-demo`
+  for DIY mouth/eye tracking, per-user calibration, VRChat native/VRCFT
+  outputs, in-headset calibration routines, and OpenXR/engine eye consumers.
+- `resonite-headless-docker`, `resonite-headless-manager`,
+  `Resonite-Headless-Discord-Bot`, `resonite-rest`,
+  `ResoniteHeadlessHeadServer`, `Nimbus`, `Cumulo`
+  for Resonite headless deployment, Docker/web/Discord/REST operations,
+  shared-memory state export, and compatibility patch risk patterns.
+- `OpenVisSim`, `VARID-plugin-ue5`, `VisualImpairmentVR`, `LowVisionVR`,
+  `Glaucoma-VR`, `UnityAccessibilityPlugin`
+  for visual impairment simulation, gaze-contingent masks, mobile passthrough
+  filters, patient-data field maps, and screen-reader-like Unity UI.
+- `Unity360ScreenshotCapture`, `Editor-Screenshot`, `UnityScreenShooter`,
+  `UnityWindowsCapture`, `QuestMediaProjection`, `PhotoMode`,
+  `vimeo-unity-sdk`
+  for 360 screenshots, transparent editor capture, screenshot sequences,
+  window/desktop/browser capture, Quest screen projection, photomode UX, and
+  360/stereo media record/playback.
 
 ## Highest-value next follow-up passes
 
@@ -730,6 +750,10 @@ directions:
 100. `OpenXR micro-layer starter matrix across protocol adapters, hand transform correction, graphics compatibility, and generated dispatch templates`
 101. `Spatial-anchor persistence and colocation matrix across Meta Unreal, Magic Leap, ARFoundation storage, local/cloud states, and anchor-relative scenes`
 102. `VRChat OSC diagnostics and sensor bridge matrix across web panels, passive listeners, OSCQuery browsers, typed libraries, finger tracking, and heart-rate SDKs`
+103. `DIY eye/mouth tracking matrix across camera ROI, inference, calibration, smoothing, VRChat native output, VRCFT, OSC, and OpenXR/engine consumers`
+104. `Resonite headless operations matrix across containers, web/Discord/REST control surfaces, shared-memory export, and compatibility patch risks`
+105. `Accessibility simulation and VR menu accessibility matrix across gaze-contingent impairment shaders, mobile passthrough filters, patient masks, and spoken UI`
+106. `Surface-ingress and media-output matrix across 360 screenshots, editor capture, window/desktop capture, Quest MediaProjection, photomode, and 360/stereo playback`
 
 ## Current repository-maintenance priorities
 

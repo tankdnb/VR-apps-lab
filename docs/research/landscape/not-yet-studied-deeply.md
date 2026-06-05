@@ -1723,6 +1723,56 @@ These are larger than a single repo and should guide the next research wave.
   playspace-relative, camera-relative, and device-relative calibration models
   across OpenVR, NatNet, MediaPipe, VMC, VMT, and SlimeVR-style bridges.
 
+### 129. `DIY eye/mouth tracking pipeline and output-schema matrix`
+
+- Main entries:
+  `ProjectBabble`, `EyeTrackVR`, `VRCFaceTracking-TobiiXR`,
+  `ryan9411vr/EyeTracking`, `BabbleCalibration`,
+  `ResoniteOpenXREyeTracking`
+- Why it matters:
+  this family captures capture-source setup, ROI transforms, inference
+  backends, calibration routines, smoothing, VRChat native outputs, VRCFT v1/v2
+  parameters, OpenXR/engine consumers, and user-specific training. A future
+  deeper pass should produce a tracking-output matrix and calibration routine
+  contract.
+
+### 130. `Resonite headless operations, control surfaces, and compatibility risks`
+
+- Main entries:
+  `resonite-headless-docker`, `resonite-headless-manager`,
+  `Resonite-Headless-Discord-Bot`, `resonite-rest`,
+  `ResoniteHeadlessHeadServer`, `Nimbus`, `Cumulo`
+- Why it matters:
+  this family captures deployment/update/launch split, config/log/mod volumes,
+  Docker attach consoles, Discord operations, structured REST resources,
+  shared-memory state export, and compatibility patchers. A future deeper pass
+  should define a safe headless operations checklist and patch-risk taxonomy.
+
+### 131. `Accessibility simulation and VR menu accessibility contracts`
+
+- Main entries:
+  `OpenVisSim`, `VARID-plugin-ue5`, `VisualImpairmentVR`, `LowVisionVR`,
+  `Glaucoma-VR`, `UnityAccessibilityPlugin`
+- Why it matters:
+  this family captures gaze-contingent impairment shaders, per-eye state,
+  patient-data masks, mobile passthrough filters, and screen-reader-like Unity
+  UI. A future deeper pass should compare condition coverage and produce a VR
+  menu accessibility contract for focus order, hints, TTS, gestures, and
+  spatial interaction.
+
+### 132. `Surface-ingress, capture, photomode, and media-output matrix`
+
+- Main entries:
+  `Unity360ScreenshotCapture`, `Editor-Screenshot`, `UnityScreenShooter`,
+  `UnityWindowsCapture`, `QuestMediaProjection`, `PhotoMode`,
+  `vimeo-unity-sdk`
+- Why it matters:
+  this family captures cubemap/equirectangular screenshots, transparent editor
+  capture, deterministic screenshot sequences, Windows window/desktop/browser
+  capture, Quest screen capture, photomode UX, and 360/stereo media pipelines.
+  A future deeper pass should compare capture sources, platform permissions,
+  privacy risks, projection metadata, and overlay-readiness.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1839,6 +1889,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 110. `Spatial-anchor persistence and colocation matrix across Meta Unreal, Meta Unity, Magic Leap, ARFoundation storage, local/cloud anchors, and anchor-relative scene data`
 111. `VRChat OSC diagnostics matrix across passive listeners, OSCQuery browsers, web panels, typed libraries, and avatar JSON loaders`
 112. `Sensor-to-avatar bridge schema across finger tracking, heart rate, device status, normalized parameters, heartbeat booleans, and SDK/plugin ingress`
+113. `DIY eye/mouth tracking matrix across camera ROI, inference, calibration, smoothing, VRChat native output, VRCFT, OSC, and OpenXR/engine consumers`
+114. `Resonite headless operations matrix across containers, web/Discord/REST control surfaces, shared-memory export, and compatibility patch risks`
+115. `Accessibility simulation and VR menu accessibility matrix across gaze-contingent impairment shaders, mobile passthrough filters, patient masks, and spoken UI`
+116. `Surface-ingress and media-output matrix across 360 screenshots, editor capture, window/desktop capture, Quest MediaProjection, photomode, and 360/stereo playback`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

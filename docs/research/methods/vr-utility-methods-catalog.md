@@ -9970,3 +9970,357 @@ When a new utility idea appears:
   `200Tigersbloxed/HRtoVRChat_OSC`.
 - Best fit for `VR-apps-lab`:
   sensor-to-avatar bridge schema and small OSC bridge templates.
+
+## Method 562: Source-first camera-to-expression tracking pipeline
+
+- What it is:
+  a companion app turns headset-mounted camera frames into expression or gaze
+  values through ROI transforms, model/pupil inference, calibration, smoothing,
+  and outbound protocol writing.
+- Good for:
+  DIY eye tracking, mouth tracking, face tracking, avatar expression tools, and
+  accessibility input experiments.
+- Why it matters:
+  the reusable part is the observable pipeline boundary, not any single model.
+- Source evidence:
+  `ProjectBabble`, `EyeTrackVR`, and `ryan9411vr/EyeTracking`.
+- Reusable core:
+  separate capture, ROI/crop/rotate/flip, inference, calibration, smoothing,
+  preview/metrics, and output writers; make every stage visible enough for
+  setup and diagnostics.
+- Do not copy directly:
+  hardware-specific calibration constants, unsafely broad exception handling,
+  or model assets without license and safety review.
+- Strong references:
+  `Project-Babble/ProjectBabble`, `EyeTrackVR/EyeTrackVR`,
+  `ryan9411vr/EyeTracking`.
+- Best fit for `VR-apps-lab`:
+  tracking pipeline matrices and future expression-tracking helper notes.
+
+## Method 563: Multi-target eye/expression output bridge
+
+- What it is:
+  one tracking pipeline can publish to multiple consumer schemas such as VRChat
+  native eye vectors, VRCFT v1/v2 avatar parameters, OSC avatar parameters, or
+  engine input drivers.
+- Good for:
+  cross-app tracking helpers, VRChat/Resonite bridges, compatibility layers,
+  and creator tools.
+- Why it matters:
+  users should not need one tracker per target app when the output schema can be
+  selected or fanned out.
+- Source evidence:
+  `EyeTrackVR`, `ryan9411vr/EyeTracking`,
+  `VRCFaceTracking-TobiiXR`, and `ResoniteOpenXREyeTracking`.
+- Reusable core:
+  isolate normalized tracking state from protocol writers, cache output-mode
+  configuration, support single-eye and unavailable-device fallbacks, expose
+  status booleans, and keep schema prefixes/addresses explicit.
+- Do not copy directly:
+  app-specific parameter names without a compatibility table.
+- Strong references:
+  `EyeTrackVR/EyeTrackVR`, `ryan9411vr/EyeTracking`,
+  `cspark-development/VRCFaceTracking-TobiiXR`,
+  `headassbtw/ResoniteOpenXREyeTracking`.
+- Best fit for `VR-apps-lab`:
+  tracking-output schema comparison across social VR targets.
+
+## Method 564: In-headset calibration routine runner
+
+- What it is:
+  calibration is modeled as a set of in-headset routines driven by packets,
+  backend adapters, progress/completion events, and user-visible targets.
+- Good for:
+  eye tracking, mouth tracking, controller calibration, tracker alignment, and
+  gaze-driven UX tests.
+- Why it matters:
+  tracking quality often depends on routines that should run where the user is
+  actually looking or moving, not only in a desktop settings panel.
+- Source evidence:
+  `BabbleCalibration` and `ryan9411vr/EyeTracking`.
+- Reusable core:
+  separate runtime backend, companion protocol, routine state, target display,
+  and completion packet; support reticle/gaze/dilation/convergence/debug
+  routine types and clear routine transitions.
+- Do not copy directly:
+  incomplete backend implementations or app-specific packet names without a
+  protocol contract.
+- Strong references:
+  `Project-Babble/BabbleCalibration`, `ryan9411vr/EyeTracking`.
+- Best fit for `VR-apps-lab`:
+  calibration wizard and routine-runner design notes.
+
+## Method 565: Containerized headless social-XR server
+
+- What it is:
+  a headless XR/social runtime is deployed as a container with update, launch,
+  config, logs, mods, and optional sync split into explicit operator-facing
+  phases.
+- Good for:
+  Resonite headlesses, social XR room servers, test servers, and automated
+  world/session infrastructure.
+- Why it matters:
+  repeatable operations are a product feature for persistent social VR spaces.
+- Source evidence:
+  `resonite-headless-docker`.
+- Reusable core:
+  keep runtime dependencies in the image, mount config/log/mod folders, split
+  update from launch, preserve logs, make mod auto-install visible, and document
+  credential/cache cleanup behavior.
+- Do not copy directly:
+  destructive cache cleanup or credential handling without operator consent.
+- Strong references:
+  `voxelbonecloud/resonite-headless-docker`.
+- Best fit for `VR-apps-lab`:
+  headless deployment checklists.
+
+## Method 566: Remote headless operations surface
+
+- What it is:
+  a web, Discord, REST, or CLI-attached control surface sends commands to a
+  headless runtime, streams logs, parses state, and exposes restart/config
+  operations.
+- Good for:
+  server operators, community managers, diagnostics dashboards, and automation
+  bots.
+- Why it matters:
+  headless tools need safe control surfaces beyond raw terminal access.
+- Source evidence:
+  `resonite-headless-manager`,
+  `Resonite-Headless-Discord-Bot`, and `resonite-rest`.
+- Reusable core:
+  define auth/role checks, command timeouts, output markers or structured
+  routes, rolling logs, status parsing, restart fallback, and config mutation
+  boundaries.
+- Do not copy directly:
+  unauthenticated local-network assumptions or Docker socket exposure without
+  threat modeling.
+- Strong references:
+  `Zetaphor/resonite-headless-manager`,
+  `FlippedCodes/Resonite-Headless-Discord-Bot`,
+  `JackTheFoxOtter/resonite-rest`.
+- Best fit for `VR-apps-lab`:
+  headless operations UI and safety matrices.
+
+## Method 567: Compatibility pre-patcher plus runtime shim
+
+- What it is:
+  an irreversible assembly pre-patcher and a runtime Harmony shim are paired to
+  keep old runtime/plugin expectations working across platform or .NET changes.
+- Good for:
+  compatibility research, migration tools, and understanding invasive support
+  boundaries.
+- Why it matters:
+  some VR ecosystems rely on fragile runtime internals; tools need an honest
+  risk taxonomy for those interventions.
+- Source evidence:
+  `Cumulo` and `Nimbus`.
+- Reusable core:
+  warn before modifying files, resolve target assemblies explicitly, apply
+  named method patches, bundle runtime helpers, gate by version, and document
+  rollback or backup expectations.
+- Do not copy directly:
+  destructive patch flows into user-facing tools without backups and support
+  boundaries.
+- Strong references:
+  `BlueCyro/Cumulo`, `BlueCyro/Nimbus`.
+- Best fit for `VR-apps-lab`:
+  compatibility-layer risk documentation.
+
+## Method 568: Shared-memory headless state exporter
+
+- What it is:
+  a headless runtime exports scene, material, texture, or render-state packets
+  through shared-memory buffers for an external viewer or bridge process.
+- Good for:
+  headless previews, remote render experiments, diagnostics, and replay/export
+  infrastructure.
+- Why it matters:
+  headless runtimes can expose structured state without pretending they are a
+  normal interactive client.
+- Source evidence:
+  `ResoniteHeadlessHeadServer`.
+- Reusable core:
+  create sync/main/return buffers, wait for a client, queue high and normal
+  priority packets, serialize packet IDs and payloads, and keep connector
+  boundaries explicit.
+- Do not copy directly:
+  deprecated version-coupled connector internals.
+- Strong references:
+  `Nytra/ResoniteHeadlessHeadServer`.
+- Best fit for `VR-apps-lab`:
+  headless preview and state-export research notes.
+
+## Method 569: Gaze-contingent visual impairment shader pipeline
+
+- What it is:
+  per-eye post-processing simulates visual conditions using gaze coordinates,
+  masks, blur pyramids, condition parameters, and debug views.
+- Good for:
+  accessibility simulation, design review, user research, and low-vision
+  training tools.
+- Why it matters:
+  accessibility simulation becomes more useful when effects follow gaze and can
+  be configured per eye or per condition.
+- Source evidence:
+  `OpenVisSim`, `VARID-plugin-ue5`, and `Glaucoma-VR`.
+- Reusable core:
+  store per-eye condition state, update normalized gaze, generate masks from
+  data or parameters, build blur levels, expose debug views, and clearly reset
+  or clear conditions.
+- Do not copy directly:
+  medical claims, deprecated engine code, or vendor-specific gaze assumptions
+  without validation.
+- Strong references:
+  `petejonze/OpenVisSim`, `VARID-XR/VARID-plugin-ue5`,
+  `lukasmaxim/Glaucoma-VR`.
+- Best fit for `VR-apps-lab`:
+  accessibility simulation matrices and shader-pattern notes.
+
+## Method 570: Mobile passthrough low-vision filter
+
+- What it is:
+  a mobile or headset app captures camera frames, displays them in dual-eye
+  views, and applies mutable low-vision filters such as edge, center, warp, or
+  periphery effects.
+- Good for:
+  assistive passthrough experiments, phone/headset prototypes, and camera
+  accessibility tools.
+- Why it matters:
+  small mobile filters can validate accessibility value before a full XR
+  runtime integration exists.
+- Source evidence:
+  `VisualImpairmentVR` and `LowVisionVR`.
+- Reusable core:
+  stage camera frames into textures, keep left/right display surfaces aligned,
+  expose runtime mode/parameter controls, and isolate filter kernels or shaders
+  from camera capture.
+- Do not copy directly:
+  deprecated RenderScript or old camera APIs without modernization.
+- Strong references:
+  `rulyox/VisualImpairmentVR`, `ojwalch/LowVisionVR`.
+- Best fit for `VR-apps-lab`:
+  low-vision passthrough prototype notes.
+
+## Method 571: Screen-reader-like Unity UI accessibility layer
+
+- What it is:
+  an in-app accessibility manager adds labels, hints, navigation order, spoken
+  feedback, touch exploration, gestures, and virtual keyboard behavior to Unity
+  UI.
+- Good for:
+  VR menus, accessibility overlays, creator tools, settings panels, and
+  non-visual operation.
+- Why it matters:
+  VR utility menus need accessible focus and feedback models, not only visual
+  layout.
+- Source evidence:
+  `UnityAccessibilityPlugin`.
+- Reusable core:
+  register accessible elements, group them in containers, compute navigation
+  order, queue TTS/audio prompts with interrupts, support hints/prefixes, expose
+  touch exploration and gestures, and adapt virtual keyboard input.
+- Do not copy directly:
+  2D-only focus rules without spatial/VR interaction adaptation.
+- Strong references:
+  `mikrima/UnityAccessibilityPlugin`.
+- Best fit for `VR-apps-lab`:
+  VR menu accessibility contracts.
+
+## Method 572: Cubemap-to-equirectangular screenshot capture
+
+- What it is:
+  a Unity capture helper renders a camera to a cubemap, converts it to an
+  equirectangular image, reads pixels, encodes the result, and embeds panorama
+  metadata.
+- Good for:
+  360 screenshots, VR scene documentation, media utilities, and diagnostics
+  artifacts.
+- Why it matters:
+  research repositories benefit from reproducible visual artifacts, and VR
+  tools often need projection-aware exports.
+- Source evidence:
+  `Unity360ScreenshotCapture`.
+- Reusable core:
+  use cubemap render targets, equirectangular conversion shader, async GPU
+  readback when available, `ReadPixels` fallback, JPEG/PNG encoding, GPano XMP,
+  and temporary render texture cleanup.
+- Do not copy directly:
+  platform-specific capture assumptions without a target support check.
+- Strong references:
+  `yasirkula/Unity360ScreenshotCapture`.
+- Best fit for `VR-apps-lab`:
+  360 capture and documentation artifact helpers.
+
+## Method 573: Authoring-time screenshot and thumbnail utility
+
+- What it is:
+  an editor utility provides camera selection, preview rendering, transparent
+  backgrounds, resolution presets, repeatable filenames, and saved settings.
+- Good for:
+  creator screenshots, VRChat/world thumbnails, store images, documentation,
+  and localization QA.
+- Why it matters:
+  tiny authoring tools make reusable projects more publishable and easier to
+  document.
+- Source evidence:
+  `Editor-Screenshot` and `UnityScreenShooter`.
+- Reusable core:
+  save capture settings, support resolution presets, select/follow/create
+  cameras, toggle transparent background or UI overlay, pause when needed, wait
+  for the right frame, and name files with useful metadata.
+- Do not copy directly:
+  editor-only APIs into runtime utilities without separation.
+- Strong references:
+  `rurre/Editor-Screenshot`, `Team-on/UnityScreenShooter`.
+- Best fit for `VR-apps-lab`:
+  creator utility and documentation tooling notes.
+
+## Method 574: Window, desktop, and headset-screen texture ingress
+
+- What it is:
+  external surfaces such as desktop windows, browser pages, desktop frames, or
+  Quest screen output are captured and exposed as Unity textures or streams.
+- Good for:
+  overlays, desktop-in-VR panels, diagnostics, remote viewing, QR workflows,
+  and situational HUDs.
+- Why it matters:
+  many VR overlays are really surface-ingress tools first and XR tools second.
+- Source evidence:
+  `UnityWindowsCapture` and `QuestMediaProjection`.
+- Reusable core:
+  track capture source lifecycle, resize buffers, upload texture data, compose
+  cursor/highlight overlays, wrap platform services, expose update events, and
+  document permissions/privacy.
+- Do not copy directly:
+  Windows-only or archived Android workaround code without platform review.
+- Strong references:
+  `Phylliida/UnityWindowsCapture`, `t-34400/QuestMediaProjection`.
+- Best fit for `VR-apps-lab`:
+  surface-ingress matrices for overlay utilities.
+
+## Method 575: Photomode and immersive media record/playback pipeline
+
+- What it is:
+  a capture mode or media SDK organizes camera handoff, pause/state changes,
+  post-processing controls, overlays/stickers, recording, upload, and playback
+  events.
+- Good for:
+  VR scene capture, creator tools, immersive media players, 360/stereo video,
+  and share/export workflows.
+- Why it matters:
+  media utilities are strongest when capture UX, recording lifecycle, metadata,
+  and playback state are designed together.
+- Source evidence:
+  `PhotoMode` and `vimeo-unity-sdk`.
+- Reusable core:
+  switch input/event systems, raise activation events, isolate a capture camera
+  or render input, expose postprocess/UI controls, reset state, encode frames or
+  360/stereo projections, publish upload progress, and load media metadata for
+  playback.
+- Do not copy directly:
+  account-token or flat-screen UX assumptions without VR-specific adaptation.
+- Strong references:
+  `UnityTechnologies/PhotoMode`, `vimeo/vimeo-unity-sdk`.
+- Best fit for `VR-apps-lab`:
+  photomode, immersive media, and capture UX references.

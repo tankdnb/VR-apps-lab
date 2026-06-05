@@ -2243,6 +2243,65 @@ Primary docs:
 - `networkpenetrationtester/VRChat-OSC-WebPanel` - `Already studied as TypeScript OSC router/interface, avatar JSON loader, acknowledgement helper, and Svelte parameter panel donor`
 - `200Tigersbloxed/HRtoVRChat_OSC` - `Already studied as heart-rate sensor/service/SDK bridge to VRChat avatar parameters and app-bridge status donor`
 
+## 147. DIY eye/mouth tracking, VRCFT modules, gaze calibration, and OpenXR eye consumers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-176-diy-eye-mouth-tracking-vrcft-modules-and-gaze-calibration.md`
+- `../landscape/project-families.md`
+
+- `Project-Babble/ProjectBabble` - `Already studied as source-first mouth tracking app with camera ROI, ONNX inference, calibration, smoothing, and OSC expression output`
+- `EyeTrackVR/EyeTrackVR` - `Already studied as affordable eye tracking stack with multiple pupil algorithms, calibration, VRChat native eye output, and VRCFT v1/v2 bridges`
+- `cspark-development/VRCFaceTracking-TobiiXR` - `Already studied as Tobii Stream Engine to VRCFaceTracking module with native DLL extraction and per-eye mapping`
+- `ryan9411vr/EyeTracking` - `Already studied as user-trained TensorFlow eye tracking client with Unity VR target-acquisition helper and multi-format OSC output`
+- `Project-Babble/BabbleCalibration` - `Already studied as Godot OpenVR/OpenXR in-headset calibration routine runner connected to a desktop controller`
+- `headassbtw/ResoniteOpenXREyeTracking` - `Already studied as Resonite mod consuming OpenXR eye/face extensions through a headless session and engine input driver`
+- `edvardsoe/foveated-rendering-demo` - `Source-light gaze/foveated-rendering product reference`
+
+## 148. Resonite headless deployment, operations, REST/IPC, and compatibility patches
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-177-resonite-headless-deployment-operations-rest-ipc-and-compatibility.md`
+- `../landscape/project-families.md`
+
+- `voxelbonecloud/resonite-headless-docker` - `Already studied as containerized Resonite headless runtime with Steam update, config/log/mod volumes, and git sync`
+- `Zetaphor/resonite-headless-manager` - `Already studied as FastAPI/WebSocket Docker attach console with logs, parsed status, commands, restart, and metrics`
+- `FlippedCodes/Resonite-Headless-Discord-Bot` - `Already studied as Discord slash-command operations surface using Docker labels, command markers, world-list messages, and config edits`
+- `JackTheFoxOtter/resonite-rest` - `Already studied as in-engine REST server and resource tree for Resonite/headless data`
+- `Nytra/ResoniteHeadlessHeadServer` - `Already studied as deprecated but useful shared-memory packet/export model for headless scene/render state`
+- `BlueCyro/Nimbus` - `Already studied as Harmony runtime compatibility shim for Resonite/.NET transition issues`
+- `BlueCyro/Cumulo` - `Already studied as Mono.Cecil irreversible pre-patcher plus Nimbus/Harmony bundling compatibility helper`
+
+## 149. Visual impairment simulation, gaze-contingent accessibility, and UI accessibility helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-178-visual-impairment-simulation-gaze-contingent-accessibility-and-ui-a11y.md`
+- `../landscape/project-families.md`
+
+- `petejonze/OpenVisSim` - `Already studied as Unity per-eye visual impairment simulator with gaze-contingent masks, blur levels, and linkable effect fields`
+- `VARID-XR/VARID-plugin-ue5` - `Already studied as Unreal visual impairment post-process plugin with Blueprint condition setters, per-eye state, gaze input, and RDG blur pyramids`
+- `rulyox/VisualImpairmentVR` - `Already studied as mobile/Cardboard camera passthrough impairment shader reference`
+- `ojwalch/LowVisionVR` - `Already studied as Android dual-eye camera preview and RenderScript low-vision filter app`
+- `lukasmaxim/Glaucoma-VR` - `Already studied as patient-data-to-mask Varjo gaze/context/focus visual-field simulator`
+- `mikrima/UnityAccessibilityPlugin` - `Already studied as Unity screen-reader-like UI accessibility manager with labels, hints, containers, TTS/audio queue, touch exploration, and virtual keyboard`
+
+## 150. Capture, screenshot, media projection, window capture, and photomode helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-179-capture-screenshot-media-projection-window-capture-and-photomode-helpers.md`
+- `../landscape/project-families.md`
+
+- `yasirkula/Unity360ScreenshotCapture` - `Already studied as Unity cubemap-to-equirectangular 360 screenshot capture with async readback and GPano metadata`
+- `rurre/Editor-Screenshot` - `Already studied as Unity editor transparent screenshot and thumbnail authoring utility`
+- `Team-on/UnityScreenShooter` - `Already studied as screenshot sequence/helper with data settings, pause/unpause, filenames, language, and UI state`
+- `Phylliida/UnityWindowsCapture` - `Already studied as Windows window/desktop/Chromium capture into Unity textures through BitBlt, Desktop Duplication, and browser texture wrappers`
+- `t-34400/QuestMediaProjection` - `Already studied as Quest MediaProjection service wrapper exposing screen capture as Texture2D, barcode results, saved images, and WebRTC streams`
+- `UnityTechnologies/PhotoMode` - `Already studied as Unity in-game photomode surface with camera/postprocess/UI/sticker/frame controls`
+- `vimeo/vimeo-unity-sdk` - `Already studied as Unity 360/stereo recording, chunked upload, metadata playback, and Vimeo media pipeline reference`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:
