@@ -144,7 +144,7 @@ Primary docs:
 - `artumino/SteamVR_HUDCenter` - `Already studied`
 - `LapisGit/LapisOverlay` - `Already studied`
 - `elvissteinjr/SteamVR-PrimaryDesktopOverlay` - `Already studied`
-- `Nexz/turncountervr` - `Not studied deeply`
+- `Nexz/turncountervr` - `Already studied as cable-awareness rotation counter micro-overlay`
 - `Martin-Oehler/SteamVR-WebApps` - `Already studied`
 - `OpenKneeboard/OpenKneeboard` - `Already studied`
 - `dantman/elite-vr-cockpit` - `Already studied`
@@ -176,7 +176,7 @@ Primary docs:
 - `I5UCC/SteaMeeter` - `Already studied`
 - `I5UCC/ParameterSaveStates` - `Not studied deeply`
 - `hai-vr/h-view` - `Already studied`
-- `MeroFune/GOpy` - `Not studied deeply`
+- `MeroFune/GOpy` - `Already studied as OSC gesture-parameter to HMD-relative overlay icon bridge`
 
 ## 6. Lighthouse managers, room state, and device power control
 
@@ -214,7 +214,7 @@ Primary docs:
 - `copperpixel/steamvrbattery` - `Already studied`
 - `Black4Blade/SteamVR-Devices-Battery-Status` - `Already studied`
 - `KaftanOS/SteamVR-Battery-Checker` - `Already studied`
-- `Denwa/vive-wireless-info-overlay` - `Not studied deeply`
+- `Denwa/vive-wireless-info-overlay` - `Source-light product reference for Vive Wireless temperature micro-overlays`
 - `rhaamo/OpenVR-Display-Devices` - `Already studied`
 - `jangxx/openvr-battery-monitoring` - `Already studied`
 - `mutr/openvr_battery_monitor` - `Already studied`
@@ -374,7 +374,7 @@ Primary docs:
 - `ultraleap/driver_ultraleap` - `Already studied`
 - `Nordskog/HandOfLesser` - `Already studied`
 - `NovaAshwolfDev/HandCameraDriver` - `Already studied`
-- `OpenDisplayXR/OpenDisplayXR-VDD` - `Not studied deeply`
+- `OpenDisplayXR/OpenDisplayXR-VDD` - `Inaccessible during latest remote check; keep as signal-only backlog node`
 - `verncat/RayNeo-Air-3S-Pro-OpenVR` - `Already studied`
 - `verncat/RayNeo-Air-3S-Pro-OpenVR-Driver` - `Already studied`
 - `LucidVR/opengloves-driver` - `Already studied`
@@ -445,7 +445,7 @@ Primary docs:
 - `ondorela/OpenVROverlay_imgui` - `Already studied`
 - `thomasmo/SampleVRO` - `Already studied`
 - `ovrlay/LibOverlay` - `Already studied`
-- `Marlamin/VROverlayTest` - `Not studied deeply`
+- `Marlamin/VROverlayTest` - `Already studied as C# OpenTK/OpenVR texture submission scratchpad`
 - `ephemeral-laboratories/ComposeVR` - `Not studied deeply`
 
 ## 16. Creator, capture, metrics, and workflow tools
@@ -575,7 +575,7 @@ Primary docs:
 - `Larsundso/SteamVR-Discord-Overlay` - `Already studied`
 - `Artemol/DiscOverlay` - `Already studied`
 - `imagitama/steamvr-overlay-vrbuddy` - `Already studied`
-- `beareogaming/BD-XSOverlay-notify` - `Not studied deeply`
+- `beareogaming/BD-XSOverlay-notify` - `Already studied as BetterDiscord to XSOverlay WebSocket notification bridge`
 
 ## 23. Alternative OpenXR runtimes, special-display paths, and platform experiments
 
@@ -588,7 +588,7 @@ Primary docs:
 - `JoeyAnthony/XRGameBridge` - `Already studied`
 - `warrenm/OpenXRKit` - `Already studied`
 - `rinsuki/FruitXR` - `Already studied`
-- `maximum-game-22/openxr-3d-display` - `Not studied deeply`
+- `maximum-game-22/openxr-3d-display` - `Fork / variant only; canonical upstream studied as dfattal/openxr-3d-display`
 - `Kartaverse/OpenDisplayXR` - `Not studied deeply`
 
 ## 24. Tracked-device geometry, CAD, and auxiliary tracker tooling
@@ -844,7 +844,7 @@ Primary docs:
 - `Spacefish/OpenVR-Overlay` - `Already studied`
 - `albrt-vr/OpenVR.ALBRT.overlay` - `Already studied`
 - `Daniel-Webster/WT-OpenVR-Overlay` - `Partially studied`
-- `kurohuku7/zenn-overlay-tutorial` - `Not studied deeply`
+- `kurohuku7/zenn-overlay-tutorial` - `Already studied as tutorial-grade OpenVR overlay lifecycle reference`
 
 ## 41. Desktop-adjacent companion overlays, phone bridges, and media or text control surfaces
 
@@ -869,7 +869,7 @@ Primary docs:
 - `joaoseabra/SteamVRBlackBarOverlay` - `Already studied`
 - `tnsgud9/VR-Overlay-Half_Ring` - `Already studied`
 - `RedHawk989/OpenVR-Windows-Activation` - `Already studied`
-- `emymin/EmyOverlay` - `Not studied deeply`
+- `emymin/EmyOverlay` - `Already studied as C++ OpenGL/ImGui OpenVR overlay skeleton`
 
 ## 43. OpenXR sample apps, rendering baselines, and bring-up references
 
@@ -1394,7 +1394,7 @@ Primary docs:
 - `../landscape/project-families.md`
 
 - `MixedRealityToolkit/MixedRealityToolkit-Unity` - `Partially studied`
-- `eisclimber/ExPresS-XR` - `Partially studied`
+- `eisclimber/ExPresS-XR` - `Partially studied; Wave 155 deepened data-gathering, value-range, socket, menu, and toolkit primitives`
 - `MindPort-GmbH/VR-Builder` - `Partially studied`
 - `ExtendRealityLtd/VRTK` - `Partially studied`
 
@@ -1922,6 +1922,60 @@ Primary docs:
 - `arenaxr/arena-web-core` - `Already studied as MQTT-backed A-Frame scene client with hands, Jitsi media, screenshare, prompts, and spatial audio`
 - `BasisVR/Basis` - `Already studied as Unity/social VR networking, headless clients, compressed avatar sync, and avatar loading stack`
 - `webaverse-studios/webaverse` - `Already studied as browser app-runtime, dynamic import, world/app manager, and player manager substrate`
+
+## 123. Glanceable telemetry, simulator panels, and situational VR micro-overlays
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-152-glanceable-telemetry-simulator-panels-and-situational-vr-micro-overlays.md`
+- `../landscape/project-families.md`
+
+- `Nexz/turncountervr` - `Already studied as cable-awareness rotation counter micro-overlay`
+- `Denwa/vive-wireless-info-overlay` - `Source-light product reference for Vive Wireless temperature micro-overlays`
+- `yydsok520/gpu-vram-monitor` - `Already studied as Windows GPU/VRAM telemetry overlay with tray, fan, and power-limit controls`
+- `JMmayranpaa/RacingManager` - `Already studied as iRacing shared-memory telemetry panels and app launcher`
+- `ironsled/vr-twitch-chat-ui` - `Already studied as MSFS VR-aware Twitch chat panel with readability profiles`
+
+## 124. Protocol-driven overlay bridges, external overlay hosts, and minimal implementation baselines
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-153-protocol-driven-overlay-bridges-external-overlay-hosts-and-minimal-implementation-baselines.md`
+- `../landscape/project-families.md`
+
+- `MeroFune/GOpy` - `Already studied as OSC gesture-parameter to HMD-relative overlay icon bridge`
+- `beareogaming/BD-XSOverlay-notify` - `Already studied as BetterDiscord to XSOverlay WebSocket notification bridge`
+- `OrangeJuicy69/VRC-NexusChat` - `Source-light product reference for VRChat OSC companion chat/HUD concepts`
+- `kurohuku7/zenn-overlay-tutorial` - `Already studied as tutorial-grade OpenVR overlay lifecycle reference`
+- `emymin/EmyOverlay` - `Already studied as C++ OpenGL/ImGui OpenVR overlay skeleton`
+- `Marlamin/VROverlayTest` - `Already studied as C# OpenTK/OpenVR texture submission scratchpad`
+
+## 125. Virtual displays, spatial-display OpenXR runtimes, and desktop fallback surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-154-virtual-displays-spatial-display-openxr-runtimes-and-desktop-fallback-surfaces.md`
+- `../landscape/project-families.md`
+
+- `VirtualDrivers/Linux-Virtual-Display-Driver` - `Already studied as Linux xrandr/EDID virtual display manager with GTK workflow`
+- `dfattal/openxr-3d-display` - `Already studied as canonical DisplayXR spatial-display OpenXR runtime`
+- `maximum-game-22/openxr-3d-display` - `Fork / variant only; canonical upstream studied as dfattal/openxr-3d-display`
+- `newilia/SbsImageViewer` - `Already studied as OpenXR stereo image viewer with launcher and projection controls`
+- `r57zone/VR-Display` - `Source-light historical DIY HDMI/MIPI display concept reference`
+- `tejasXR/Virtual-Desktop-VR` - `Source-light historical Unity/SteamVR virtual desktop POC`
+- `Malcolmnixon/GodotXRDesktop` - `Already studied as Godot no-HMD synthetic XR tracker/action fallback addon`
+
+## 126. Hand tracking, simulated XR hands, and reusable hand/control primitives
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-155-hand-tracking-simulated-xr-hands-and-reusable-hand-control-primitives.md`
+- `../landscape/project-families.md`
+
+- `joemarshall/openxrhands` - `Already studied as Unity OpenXR hand joint and hand mesh extension bridge`
+- `MThogersen/AutoHandSimulator` - `Already studied as AutoHand no-HMD hand/body interaction simulator`
+- `InfernoDigital/RoboHands-UnityXR` - `Source-light product reference for Unity XR hand-pose package framing`
+- `eisclimber/ExPresS-XR` - `Partially studied; Wave 155 deepened data-gathering, value-range, socket, menu, and toolkit primitives`
 
 ## Registry maintenance rule
 

@@ -1079,3 +1079,33 @@ repeatable way.
 
 - `github-research-wave-151-backlog.md`
   Executed backlog for the Wave 151 pass.
+
+- `github-research-wave-152-plan.md`
+  Wave 152 research plan focused on glanceable telemetry, simulator panels,
+  hardware status, cable-awareness, and situational VR micro-overlays.
+
+- `github-research-wave-152-backlog.md`
+  Executed backlog for the Wave 152 pass.
+
+- `github-research-wave-153-plan.md`
+  Wave 153 research plan focused on protocol-driven overlay bridges, external
+  overlay hosts, OSC/WebSocket sidecars, and minimal OpenVR implementation
+  baselines.
+
+- `github-research-wave-153-backlog.md`
+  Executed backlog for the Wave 153 pass.
+
+- `github-research-wave-154-plan.md`
+  Wave 154 research plan focused on virtual displays, spatial-display OpenXR
+  runtimes, stereo image viewers, historical display concepts, and no-HMD
+  desktop fallback surfaces.
+
+- `github-research-wave-154-backlog.md`
+  Executed backlog for the Wave 154 pass.
+
+- `github-research-wave-155-plan.md`
+  Wave 155 research plan focused on hand tracking, simulated XR hands,
+  gesture-pose references, and reusable hand/control primitives.
+
+- `github-research-wave-155-backlog.md`
+  Executed backlog for the Wave 155 pass.

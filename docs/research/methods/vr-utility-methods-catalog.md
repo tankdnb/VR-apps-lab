@@ -7923,3 +7923,207 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   shared VR diagnostics architecture, headless-client research, and
   collaborative browser utility shells.
+
+## Method 463: Pose-derived comfort micro-overlay
+
+- What it is:
+  a tiny overlay derives a physical comfort signal from headset pose, converts
+  it into coarse user-facing state, and refreshes a compact visual surface only
+  when needed.
+- Good for:
+  cable rotation counters, comfort warnings, orientation reminders, standing
+  play-space helpers, and low-friction safety surfaces.
+- Why it matters:
+  useful VR utilities can be built from one pose-derived signal when the
+  presentation is glanceable and the state is physically meaningful.
+- Strong references:
+  `turncountervr`.
+- Best fit for `VR-apps-lab`:
+  situational comfort overlays and tiny status surfaces.
+
+## Method 464: Hardware sensor telemetry overlay with tray, control loop, and safe cleanup
+
+- What it is:
+  a desktop utility polls hardware sensors, presents a topmost status overlay,
+  exposes tray controls, applies optional fan or power-limit policies, and
+  restores safe state on exit.
+- Good for:
+  GPU/VRAM thermal monitors, battery/device dashboards, performance overlays,
+  simulator-side hardware panels, and VR-captured desktop telemetry.
+- Why it matters:
+  VR status tools often need robust telemetry and safety policy before they
+  need native overlay rendering.
+- Strong references:
+  `gpu-vram-monitor`.
+- Best fit for `VR-apps-lab`:
+  telemetry-source adapters feeding overlay, dashboard, or desktop-capture
+  surfaces.
+
+## Method 465: Simulator shared-memory telemetry poller plus topmost utility widgets
+
+- What it is:
+  a simulator companion maps a shared-memory telemetry region, resolves named
+  variables, polls current values, and feeds lightweight draggable overlay
+  windows or launcher actions.
+- Good for:
+  racing/flight simulator dashboards, session helpers, telemetry review panels,
+  lap/fuel/device overlays, and motion-cueing sidecars.
+- Why it matters:
+  simulator VR utilities often get value from a thin data reader plus readable
+  presentation rather than from deep runtime integration.
+- Strong references:
+  `RacingManager`.
+- Best fit for `VR-apps-lab`:
+  simulator telemetry panels and app-launching companion shells.
+
+## Method 466: VR/desktop readability profile switch for host-embedded web panels
+
+- What it is:
+  a host-embedded HTML panel changes typography, transparency, message density,
+  layout, and persistence behavior when the host is in VR mode.
+- Good for:
+  Twitch/chat panels, subtitles, kneeboards, simulator checklists, stream
+  controls, and in-host utility HUDs.
+- Why it matters:
+  VR readability is a product requirement, not a final CSS tweak.
+- Strong references:
+  `vr-twitch-chat-ui`.
+- Best fit for `VR-apps-lab`:
+  overlay typography guidelines and VR-aware browser-panel settings.
+
+## Method 467: OSC parameter to HMD-relative overlay icon bridge
+
+- What it is:
+  a companion listens to OSC avatar or app parameters, maps them into symbolic
+  state, and renders small HMD-relative overlay icons with configurable
+  placement and fade behavior.
+- Good for:
+  VRChat gesture state, avatar status indicators, control-mode feedback,
+  accessibility state, and small OSC-driven HUDs.
+- Why it matters:
+  OSC bridges can make hidden runtime or avatar state visible without requiring
+  a full companion dashboard.
+- Strong references:
+  `GOpy`.
+- Best fit for `VR-apps-lab`:
+  avatar-facing micro-overlays and OSC bridge reference designs.
+
+## Method 468: External overlay-host notification WebSocket envelope with queue/backoff/drop policy
+
+- What it is:
+  an external app or plugin filters events, sanitizes them, builds a host
+  notification payload, and sends it to a running overlay host over WebSocket
+  with reconnect, queueing, and drop rules.
+- Good for:
+  Discord/Twitch/system notifications, automation alerts, companion app
+  messages, and headset-visible event feeds.
+- Why it matters:
+  using an overlay host as the presentation layer can keep utility sidecars
+  small, but the protocol and failure policy need to be explicit.
+- Strong references:
+  `BD-XSOverlay-notify`.
+- Best fit for `VR-apps-lab`:
+  overlay-host protocol matrix and notification bridge patterns.
+
+## Method 469: Offscreen OpenGL/ImGui texture overlay plus controller-ray mouse emulation
+
+- What it is:
+  a native overlay renders UI into an offscreen framebuffer, submits the GL
+  texture to OpenVR, and maps controller rays/triggers into mouse coordinates
+  for the overlay UI.
+- Good for:
+  minimal native overlays, ImGui dashboards, diagnostics panels, and small
+  controller-driven settings surfaces.
+- Why it matters:
+  this is one of the clearest low-level implementation baselines for overlay UI
+  without a game engine.
+- Strong references:
+  `EmyOverlay`, `VROverlayTest`, `zenn-overlay-tutorial`.
+- Best fit for `VR-apps-lab`:
+  overlay implementation guides and native dashboard prototypes.
+
+## Method 470: Xrandr virtual display manager with modelines, virtual EDID, GPU setup, and persistence
+
+- What it is:
+  a desktop utility creates virtual monitor modes, attaches them to available
+  outputs, writes GPU-specific configuration when needed, persists display
+  state, and exposes a GUI for enable/edit/remove flows.
+- Good for:
+  Linux desktop-in-VR, OBS/Sunshine capture targets, remote desktops, virtual
+  workspaces, and headset-side desktop helpers.
+- Why it matters:
+  a stable virtual display is often a prerequisite for streaming, capture, or
+  VR desktop workflows.
+- Strong references:
+  `Linux-Virtual-Display-Driver`.
+- Best fit for `VR-apps-lab`:
+  virtual display workflow comparisons and Linux display-surface research.
+
+## Method 471: Spatial-display OpenXR runtime split with compositor and display-processor boundaries
+
+- What it is:
+  an OpenXR runtime for non-HMD displays separates state tracking, graphics API
+  compositors, device drivers, display processors, shell/controller policy, and
+  app classes such as handle, texture, hosted, or IPC/service modes.
+- Good for:
+  spatial displays, 3D monitors, headsetless OpenXR, special-display runtimes,
+  and runtime architecture comparisons.
+- Why it matters:
+  nonstandard displays need runtime boundaries that do not assume headset-only
+  composition.
+- Strong references:
+  `dfattal/openxr-3d-display`.
+- Best fit for `VR-apps-lab`:
+  special-display architecture notes and runtime boundary research.
+
+## Method 472: Desktop/no-HMD synthetic XR trackers and action injection
+
+- What it is:
+  an engine addon or editor tool injects synthetic head/controller trackers and
+  action values so XR interactions can be driven from keyboard and mouse when
+  no headset is active.
+- Good for:
+  no-HMD development, CI-adjacent interaction checks, editor iteration,
+  accessibility testing, and fake-device workflows.
+- Why it matters:
+  VR utility development should not require wearing a headset for every UI or
+  interaction iteration.
+- Strong references:
+  `GodotXRDesktop`, `AutoHandSimulator`.
+- Best fit for `VR-apps-lab`:
+  headsetless workflow guides and fake-XR input scaffolds.
+
+## Method 473: OpenXR hand extension bridge for joints and skinned hand meshes
+
+- What it is:
+  a custom engine feature binds OpenXR hand tracking extension functions,
+  captures predicted display time, locates hand joints, queries hand mesh data,
+  converts coordinates, and updates a skinned hand representation.
+- Good for:
+  hand tracking prototypes, extension research, engine package gap analysis,
+  and low-level input diagnostics.
+- Why it matters:
+  extension-level examples reveal runtime and memory boundaries hidden by
+  higher-level engine packages.
+- Strong references:
+  `openxrhands`.
+- Best fit for `VR-apps-lab`:
+  hand tracking architecture notes and package-vs-extension comparisons.
+
+## Method 474: Scientific XR toolkit primitive stack with data gathering, value ranges, sockets, and editor menu factories
+
+- What it is:
+  a research-oriented XR toolkit provides configurable rigs, data export,
+  value-range interactables, socket highlighting, menus, HUDs, setup dialogs,
+  and editor factories as reusable primitives.
+- Good for:
+  experiments, training apps, exhibitions, diagnostics workflows, guided setup,
+  and utility prototypes that need repeatable interaction/data patterns.
+- Why it matters:
+  serious VR tools often need data capture and setup workflows as much as they
+  need visual UI widgets.
+- Strong references:
+  `ExPresS-XR`.
+- Best fit for `VR-apps-lab`:
+  Unity toolkit comparison notes and future experiment/diagnostic utility
+  primitives.

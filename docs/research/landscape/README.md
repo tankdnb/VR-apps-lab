@@ -630,6 +630,25 @@ Use these files when you want to understand:
   Networked-AFrame ownership, MQTT/Jitsi media, headless clients, and spatial
   app runtimes.
 
+- `vr-projects-wave-152-glanceable-telemetry-simulator-panels-and-situational-vr-micro-overlays.md`
+  Next GitHub discovery wave focused on glanceable telemetry, cable-awareness,
+  hardware status, simulator panels, and VR-aware chat micro-surfaces.
+
+- `vr-projects-wave-153-protocol-driven-overlay-bridges-external-overlay-hosts-and-minimal-implementation-baselines.md`
+  Next GitHub discovery wave focused on OSC/WebSocket overlay bridges,
+  external overlay hosts, tutorial lifecycle references, and minimal OpenVR
+  implementation baselines.
+
+- `vr-projects-wave-154-virtual-displays-spatial-display-openxr-runtimes-and-desktop-fallback-surfaces.md`
+  Next GitHub discovery wave focused on virtual displays, spatial-display
+  OpenXR runtimes, stereo image viewers, historical display concepts, and
+  no-HMD desktop fallback surfaces.
+
+- `vr-projects-wave-155-hand-tracking-simulated-xr-hands-and-reusable-hand-control-primitives.md`
+  Next GitHub discovery wave focused on hand tracking extension bridges,
+  no-HMD hand simulation, gesture-pose references, and reusable hand/control
+  primitives.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

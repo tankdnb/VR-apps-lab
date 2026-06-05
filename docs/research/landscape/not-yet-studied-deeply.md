@@ -55,8 +55,8 @@ deeply`.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `Nexz/turncountervr` | Not studied deeply | Rotation/cable-awareness overlay variant | Low | Medium | Counter logic, world-space placement, comfort framing |
-| `Denwa/vive-wireless-info-overlay` | Not studied deeply | Device-specific thermal micro-overlay with very focused user value | Low | Medium | Revisit only if fuller source appears; the product framing is clearer than the current donor surface |
+| `Nexz/turncountervr` | Already studied in Wave 152 | Rotation/cable-awareness overlay variant | Low-Medium | Medium | No urgent follow-up; revisit only when extracting a generic pose-derived comfort micro-overlay |
+| `Denwa/vive-wireless-info-overlay` | Source-light product reference after Wave 152 | Device-specific thermal micro-overlay with very focused user value | Low | Medium | Revisit only if fuller source appears; the product framing is clearer than the current donor surface |
 | `mbucchia/_ARCHIVE_OverXR` | Fork / variant only | Archive shell pointing to a once-promising overlay compatibility idea | Low | Medium | Whether useful code exists in releases, tags, or external mirrors |
 
 ## Priority batch C2: Waves 116-119 follow-up candidates
@@ -99,6 +99,21 @@ follow-up nodes, while others are intentionally marked thin or source-limited.
 | `zengmmm00/MixedRealityCapture` | Not studied deeply; source not released yet | Quest 3 MRC phone/computer workflow signal without toolkit source yet | Low | Medium | Revisit after the planned toolkit source appears |
 | `LIV/CalibrationForQuest` | Rejected; empty repository in current clone | Historical LIV Quest calibration marker, but no current source to study | Low | Low | Do not promote unless source appears in tags/releases or another maintained mirror |
 
+## Priority batch C31: Waves 152-155 follow-up candidates
+
+These were clarified during the latest telemetry, overlay-bridge,
+display-surface, and hand-control source pass. Most are already represented in
+the registry; they remain here only where a future condition or comparison pass
+could make another inspection useful.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `OrangeJuicy69/VRC-NexusChat` | Source-light product reference | VRChat OSC companion framing for chatbox/HUD/time and planned media/status helpers | Low | Medium | Revisit only if public source appears or licensing changes |
+| `r57zone/VR-Display` | Source-light historical concept reference | DIY HDMI/MIPI display and USB gyro headset-display concept | Low | Medium | Revisit only for DIY display BOM or hardware bring-up comparisons |
+| `tejasXR/Virtual-Desktop-VR` | Source-light historical Unity/SteamVR POC | Old virtual-desktop-in-VR project with little visible current donor surface | Low | Low-Medium | Revisit only for historical Unity/SteamVR desktop-in-VR examples |
+| `InfernoDigital/RoboHands-UnityXR` | Source-light product reference | Unity XR hand-pose package framing and gesture inventory | Low | Medium | Revisit only if package source becomes public or local source is available |
+| `maximum-game-22/openxr-3d-display` | Fork / variant only | DisplayXR spatial-display runtime variant | Low | Medium | Compare only if it diverges materially from `dfattal/openxr-3d-display` |
+
 ## Priority batch D: Wave 9 follow-up candidates
 
 These were discovered during the Wave 9 source pass, added to the registry, and
@@ -107,7 +122,7 @@ kept for the next deeper inspection round.
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
 | `I5UCC/ParameterSaveStates` | Not studied deeply | VRChat or control-surface state management that may complement remote-control overlays | Medium | Medium | State model, persistence approach, OSC or app-integration flow, overlap with `SteaMeeter` |
-| `MeroFune/GOpy` | Not studied deeply | Experimental integration helper that may add a new desktop-to-VR bridge angle | Medium | Low | Actual problem scope, packaging model, and whether it contributes reusable bridge patterns |
+| `MeroFune/GOpy` | Already studied in Wave 153 | OSC gesture-parameter to HMD-relative overlay icon bridge | Medium | Medium | No urgent follow-up; compare only inside an OSC-to-overlay bridge matrix |
 
 ## Priority batch E: Wave 11 follow-up candidates
 
@@ -115,7 +130,7 @@ These were surfaced or only partially exhausted during the Wave 11 source pass.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `OpenDisplayXR/OpenDisplayXR-VDD` | Not studied deeply | Simulated OpenVR/OpenXR virtual hardware driver path | Medium | Medium | Wait for stronger source/docs, then compare with `virtual_display`, `Virtual-Display-Driver`, and `VRto3D` |
+| `OpenDisplayXR/OpenDisplayXR-VDD` | Inaccessible during latest remote check | Simulated OpenVR/OpenXR virtual hardware driver path | Low | Medium | Keep as signal-only until normal GitHub remote operations expose source/docs again |
 
 ## Priority batch F: Wave 13 follow-up candidates
 
@@ -185,7 +200,7 @@ as honest follow-up nodes instead of being over-promoted immediately.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `maximum-game-22/openxr-3d-display` | Not studied deeply | Monado-derived spatial-display runtime that may clarify what parts of the special-display branch are generic versus product-specific | Medium | Medium | Compare its runtime layering and display assumptions directly against `displayxr-runtime` |
+| `maximum-game-22/openxr-3d-display` | Fork / variant only after Wave 154 | Monado-derived spatial-display runtime variant | Low | Medium | Compare only if it diverges materially from canonical `dfattal/openxr-3d-display` |
 | `Kartaverse/OpenDisplayXR` | Not studied deeply | Nonstandard-display project cluster that may expose additional runtime packaging and deployment patterns | Medium | Medium | Inspect the exact split between runtime code, resources, and surrounding platform assets |
 | `fughilli/ViveTrackedDevice` | Partially studied | Documentation-first reverse-engineering donor whose main code still sits behind submodules | Medium | Medium | Revisit only when a deeper submodule-aware pass on Lighthouse device internals becomes worthwhile |
 | `ebadier/ViveTrackers` | Not studied deeply | Unity-side consumer library for Vive tracker hardware that may clarify the `hardware consumer` side of tracker tooling | Medium | Medium | Inspect API surface, data model, and whether it teaches more than the existing tracker-helper nodes |
@@ -247,8 +262,8 @@ over-promoted immediately.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `Marlamin/VROverlayTest` | Not studied deeply | Extra-thin D3D11/OpenVR overlay scratchpad that might matter if a future pass needs a smaller Windows baseline than `SampleVRO` | Medium | Low-Medium | Compare exact texture-upload path and event handling against `SampleVRO`, `OpenVROverlay_imgui`, and `csharp-openvr-overlay-imgui` |
-| `beareogaming/BD-XSOverlay-notify` | Not studied deeply | Desktop plugin that pushes notifications into an existing overlay host over the official XSOverlay WebSocket contract | Medium | Medium | Inspect the exact WebSocket payload model and whether the `plugin -> host` split generalizes beyond Discord notifications |
+| `Marlamin/VROverlayTest` | Already studied in Wave 153 | Extra-thin C#/OpenTK/OpenVR texture submission scratchpad | Medium-Low | Low-Medium | No urgent follow-up; compare only inside a minimal overlay implementation matrix |
+| `beareogaming/BD-XSOverlay-notify` | Already studied in Wave 153 | Desktop plugin that pushes notifications into an existing overlay host over the official XSOverlay WebSocket contract | Medium | Medium | No urgent follow-up; compare payload model inside a future overlay-host protocol matrix |
 | `iigomaru/MPVR` | Partially studied | Very rough `libmpv inside OpenVR overlay` proof of concept that may still matter as a lower-bound media embed comparison node | Medium | Medium | Revisit only if a future pass needs a cleaner comparison between full `vr-video-player-overlay` style shells and direct media-engine embedding |
 
 ## Priority batch R: Waves 56-59 surfaced follow-up candidates
@@ -275,9 +290,9 @@ over-promoted immediately.
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
 | `Daniel-Webster/WT-OpenVR-Overlay` | Partially studied | Broad Unity overlay app whose local webservice and embedded overlay-framework lineage may still hide reusable pieces | Medium | Medium-High | Narrow the next pass to the reusable `OVRLay` boundary, local service consumption, and what is genuinely donor-worthy beyond the War Thunder-specific shell |
-| `kurohuku7/zenn-overlay-tutorial` | Not studied deeply | Tutorial-first SteamVR overlay teaching path that may matter more as onboarding material than as a code donor | Low-Medium | Medium | Inspect only if a future pass needs stronger overlay tutorial references or Unity onboarding material |
+| `kurohuku7/zenn-overlay-tutorial` | Already studied in Wave 153 | Tutorial-first SteamVR overlay teaching path that may matter more as onboarding material than as a code donor | Low-Medium | Medium | No urgent follow-up; use when writing overlay lifecycle/onboarding docs |
 | `Wulkop/VolumeVR` | Partially studied | Narrow `CEF`-based media or volume shell whose current public donor surface exposes bootstrapping more clearly than overlay behavior | Medium | Medium | Inspect whether deeper overlay logic lives in submodules or hidden paths, and compare the result against broader browser-runtime hosts |
-| `emymin/EmyOverlay` | Not studied deeply | Thin specialized overlay node with too little current framing to promote, but still plausible as an effect-overlay comparison point | Low-Medium | Low-Medium | Check whether meaningful overlay logic exists beyond the current solution shell and whether it teaches anything distinct from the clearer effect-overlay donors |
+| `emymin/EmyOverlay` | Already studied in Wave 153 | Thin OpenGL/ImGui overlay skeleton with offscreen framebuffer and controller-ray mouse input | Medium | Low-Medium | No urgent follow-up; compare only inside a native overlay baseline matrix |
 
 ## Priority batch T: Waves 80-83 surfaced follow-up candidates
 
@@ -1572,6 +1587,48 @@ These are larger than a single repo and should guide the next research wave.
   and app-runtime modules. A future deeper pass should define a shared VR
   diagnostics room architecture.
 
+### 117. `Glanceable telemetry, simulator panels, and situational VR micro-overlays`
+
+- Main entries:
+  `turncountervr`, `vive-wireless-info-overlay`, `gpu-vram-monitor`,
+  `RacingManager`, `vr-twitch-chat-ui`
+- Why it matters:
+  this family captures tiny high-value utility surfaces: pose-derived comfort
+  counters, wireless temperature status, GPU/VRAM telemetry, simulator
+  shared-memory panels, and VR-aware chat readability. A future deeper pass
+  should turn these into a `glanceable status surface` checklist.
+
+### 118. `Protocol-driven overlay bridges, external overlay hosts, and minimal implementation baselines`
+
+- Main entries:
+  `GOpy`, `BD-XSOverlay-notify`, `VRC-NexusChat`,
+  `zenn-overlay-tutorial`, `EmyOverlay`, `VROverlayTest`
+- Why it matters:
+  this family captures the boundary between event producers, bridge protocols,
+  overlay hosts, and render baselines. A future deeper pass should produce an
+  overlay-host protocol matrix before new notification or OSC overlay work.
+
+### 119. `Virtual displays, spatial-display OpenXR runtimes, and desktop fallback surfaces`
+
+- Main entries:
+  `Linux-Virtual-Display-Driver`, `openxr-3d-display`, `SbsImageViewer`,
+  `VR-Display`, `Virtual-Desktop-VR`, `GodotXRDesktop`
+- Why it matters:
+  this family captures display targets as a reusable platform problem:
+  OS-level virtual monitors, spatial-display OpenXR runtimes, stereo media
+  surfaces, historical display hardware concepts, and no-HMD synthetic tracker
+  injection. A future deeper pass should build a display-surface taxonomy.
+
+### 120. `Hand tracking, simulated XR hands, and reusable hand/control primitives`
+
+- Main entries:
+  `openxrhands`, `AutoHandSimulator`, `RoboHands-UnityXR`, `ExPresS-XR`
+- Why it matters:
+  this family captures hand/control work across extension-level data, no-HMD
+  simulation, gesture-pose vocabulary, and toolkit primitives. A future deeper
+  pass should compare Unity, Godot, WebXR, and virtual-driver no-HMD hand
+  workflows.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1663,6 +1720,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 85. `Immersive analytics, spatial data visualization, and scientific viewer substrates`
 86. `WebRTC remote rendering, WebXR streaming, and bidirectional input/control channels`
 87. `Social/world framework shells, scene schemas, and multi-user spatial app substrates`
+88. `Glanceable telemetry, simulator panels, and situational VR micro-overlays`
+89. `Protocol-driven overlay bridges, external overlay hosts, and minimal implementation baselines`
+90. `Virtual displays, spatial-display OpenXR runtimes, and desktop fallback surfaces`
+91. `Hand tracking, simulated XR hands, and reusable hand/control primitives`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

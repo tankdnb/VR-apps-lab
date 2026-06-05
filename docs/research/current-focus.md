@@ -466,6 +466,24 @@ the strongest current clusters:
   for scene JSON, semantic graphs, Networked-AFrame ownership, MQTT/Jitsi
   media surfaces, headless avatar clients, compressed avatar packets, and
   spatial app runtimes.
+- `turncountervr`, `vive-wireless-info-overlay`, `gpu-vram-monitor`,
+  `RacingManager`, `vr-twitch-chat-ui`
+  for cable-awareness micro-overlays, wireless temperature product framing,
+  GPU/VRAM telemetry and control loops, simulator shared-memory panels, and
+  VR readability profiles for host-embedded chat.
+- `GOpy`, `BD-XSOverlay-notify`, `VRC-NexusChat`,
+  `zenn-overlay-tutorial`, `EmyOverlay`, `VROverlayTest`
+  for OSC-to-overlay icons, external overlay-host WebSocket envelopes,
+  source-light VRChat OSC companion framing, overlay lifecycle onboarding,
+  OpenGL/ImGui texture submission, and C# OpenVR scratchpads.
+- `Linux-Virtual-Display-Driver`, `openxr-3d-display`, `SbsImageViewer`,
+  `VR-Display`, `Virtual-Desktop-VR`, `GodotXRDesktop`
+  for Linux virtual monitors, spatial-display OpenXR runtime boundaries,
+  stereo image viewer controls, historical display hardware references,
+  virtual desktop POCs, and Godot no-HMD synthetic XR trackers/actions.
+- `openxrhands`, `AutoHandSimulator`, `RoboHands-UnityXR`, `ExPresS-XR`
+  for Unity OpenXR hand extension bridges, no-HMD hand/body simulation,
+  gesture-pose package framing, and scientific XR toolkit primitives.
 
 ## Highest-value next follow-up passes
 
@@ -550,6 +568,10 @@ directions:
 76. `Immersive analytics, spatial data visualization, and scientific viewer substrates`
 77. `WebRTC remote rendering, WebXR streaming, and bidirectional input/control channels`
 78. `Social/world framework shells, scene schemas, and multi-user spatial app substrates`
+79. `Glanceable telemetry/status micro-overlays and simulator panels`
+80. `Overlay host protocol bridges and minimal implementation baselines`
+81. `Spatial-display runtimes, virtual displays, and no-HMD desktop fallback surfaces`
+82. `Hand simulation, extension-level hand tracking, and reusable hand/control primitives`
 
 ## Current repository-maintenance priorities
 

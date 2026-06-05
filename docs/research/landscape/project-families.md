@@ -87,7 +87,7 @@ notification behavior.
 | `I5UCC/SteaMeeter` | Already studied | Dashboard bridge into an external audio/control system |
 | `I5UCC/ParameterSaveStates` | Not studied deeply | Related automation/control-surface family node |
 | `hai-vr/h-view` | Already studied | Desktop-plus-overlay utility host with OSCQuery tooling, hardware views, and strong overlay-management slices |
-| `MeroFune/GOpy` | Not studied deeply | Additional control/integration utility candidate |
+| `MeroFune/GOpy` | Already studied as OSC gesture-parameter to HMD-relative overlay icon bridge | Additional control/integration utility candidate now promoted through Wave 153 |
 
 ### Consolidation note
 
@@ -135,7 +135,7 @@ panel, and logging utility.
 | `Black4Blade/SteamVR-Devices-Battery-Status` | Already studied | Tiny battery micro-tool reference |
 | `rhaamo/OpenVR-Display-Devices` | Already studied | Broader device inventory view |
 | `copperpixel/steamvrbattery` | Already studied | Minimal CLI property-polling battery monitor |
-| `Denwa/vive-wireless-info-overlay` | Not studied deeply | Source-light wireless-temperature micro-overlay whose product framing is stronger than its visible code donor value |
+| `Denwa/vive-wireless-info-overlay` | Source-light product reference for Vive Wireless temperature micro-overlays | Wireless-temperature micro-overlay whose product framing is stronger than its visible code donor value |
 | `KaftanOS/SteamVR-Battery-Checker` | Already studied | Tiny one-shot Python battery inspector with almost no product baggage |
 | `jangxx/openvr-battery-monitoring` | Already studied | Tray watcher that reacts to charging-state changes and can notify through desktop or OVRT channels |
 | `mutr/openvr_battery_monitor` | Already studied | Background battery exporter that writes per-device telemetry to InfluxDB |
@@ -215,7 +215,7 @@ by runtime or operating system.
 | `artumino/SteamVR_HUDCenter` | Already studied | C# overlay helper and notification library with WinForms or WPF rasterization into VR |
 | `LapisGit/LapisOverlay` | Already studied | In-progress overlay-first host with dashboard, wrist surface, and media sidecar split |
 | `elvissteinjr/SteamVR-PrimaryDesktopOverlay` | Already studied | Micro-tool that patches SteamVR's existing desktop overlay instead of rendering a new one |
-| `Nexz/turncountervr` | Not studied deeply | Rotation counter / cable-awareness overlay node |
+| `Nexz/turncountervr` | Already studied as cable-awareness rotation counter micro-overlay | Rotation counter / cable-awareness overlay node |
 | `Martin-Oehler/SteamVR-WebApps` | Already studied | Thin browser-backed dashboard wrappers built on top of `SteamVR-Webkit` |
 | `Mon-Ouie/launcher-openvr-overlay` | Already studied | Linux launcher shell that hands app windows and videos off to external display tools such as `gamescope` and `vr-video-player` |
 | `Mon-Ouie/mpris-openvr-overlay` | Already studied | Very small egui-based media-state and transport-control surface over the desktop `MPRIS` bus |
@@ -300,7 +300,7 @@ knowledge needed for `device-side tooling`.
 | `mmorselli/Joy2OpenVR` | Already studied | DirectInput-to-InputEmulator sidecar for unusual physical controllers |
 | `mdovgialo/SteamVR-Glove` | Already studied | Arduino glove proof of concept piggybacking on existing Vive controller tracking |
 | `openvrmc/OpenVR-MotionCompensation` | Already studied | Pose-rewrite driver with shared library and in-VR dashboard configuration |
-| `OpenDisplayXR/OpenDisplayXR-VDD` | Not studied deeply | Sparse but relevant signal for a simulated OpenVR/OpenXR virtual hardware path |
+| `OpenDisplayXR/OpenDisplayXR-VDD` | Inaccessible during latest remote check; keep as signal-only backlog node | Sparse but relevant signal for a simulated OpenVR/OpenXR virtual hardware path |
 | `verncat/RayNeo-Air-3S-Pro-OpenVR` | Already studied | SDK-first RayNeo glasses bridge whose transport and API layer now sit cleanly beside a dedicated driver repo |
 | `verncat/RayNeo-Air-3S-Pro-OpenVR-Driver` | Already studied | Dedicated RayNeo OpenVR driver repo with bindings, prelauncher, and clearer device-provider split |
 | `LucidVR/opengloves-driver` | Already studied | Hand-specific custom device path with driver, service, and overlay split |
@@ -477,7 +477,7 @@ not only how finished utility products behave.
 | `ondorela/OpenVROverlay_imgui` | Already studied | Small D3D11 plus ImGui sample showing direct overlay-event forwarding into the UI stack |
 | `thomasmo/SampleVRO` | Already studied | Explicit Win32 plus D3D11 texture-to-overlay sample with forwarded keyboard or pointer interaction |
 | `ovrlay/LibOverlay` | Already studied | Minimal Unity helper over raw OpenVR overlay calls with tracked-device attachment and texture refresh |
-| `Marlamin/VROverlayTest` | Not studied deeply | Additional D3D11 overlay scratchpad that may matter only if a future pass needs an even thinner Windows baseline |
+| `Marlamin/VROverlayTest` | Already studied as C# OpenTK/OpenVR texture submission scratchpad | Additional ultra-thin Windows baseline for managed OpenVR texture submission |
 | `ephemeral-laboratories/ComposeVR` | Not studied deeply | Prototype of rendering Jetpack Compose into an OpenVR overlay, useful mainly if a future pass needs `Compose-style UI -> overlay texture` |
 
 ### Consolidation note
@@ -703,14 +703,14 @@ through overlays, `OSC`, `WebSocket`, or desktop companion surfaces.
 | `Wolf-G88/vrchat-proximity-app` | Already studied | Service-first proximity sidecar with OSC transport and optional SteamVR overlay controls |
 | `Sharrnah/whispering` | Partially studied | Broad local speech platform whose VR value comes from OSC and websocket fan-out rather than a single overlay |
 | `Hotrian/OpenVRTwitchChat` | Already studied | Twitch-chat overlay reference with a stronger in-headset presentation bias |
-| `MeroFune/GOpy` | Not studied deeply | Smaller integration-helper comparison node that may still add another desktop-to-VR communication angle |
+| `MeroFune/GOpy` | Already studied as OSC gesture-parameter to HMD-relative overlay icon bridge | Smaller integration-helper comparison node that adds an OSC-to-overlay communication angle |
 | `I5UCC/VRCTextboxSTT` | Already studied | Local speech-to-text helper where the SteamVR overlay is one output surface among others |
 | `gt0777/VRCLiveCaptionsMod` | Already studied | App-internal speech surface comparison node from the accessibility and social boundary |
 | `rrazgriz/VRCMicOverlay` | Already studied | Minimal status-overlay node for avatar-facing communication state |
 | `Larsundso/SteamVR-Discord-Overlay` | Already studied | Rich Discord-local-IPC overlay with message subscriptions, button overlays, and a localhost control dashboard |
 | `Artemol/DiscOverlay` | Already studied | Thin Unity shell around the Discord Streamkit voice widget with an in-VR positioning dashboard |
 | `imagitama/steamvr-overlay-vrbuddy` | Already studied | Remote companion visualization overlay that renders another person's head and hands in your local playspace |
-| `beareogaming/BD-XSOverlay-notify` | Not studied deeply | BetterDiscord plugin that treats an existing external overlay host as the render target for notifications |
+| `beareogaming/BD-XSOverlay-notify` | Already studied as BetterDiscord to XSOverlay WebSocket notification bridge | BetterDiscord plugin that treats an existing external overlay host as the render target for notifications |
 
 ### Consolidation note
 
@@ -736,7 +736,7 @@ than ordinary HMD-first desktop setups.
 | `JoeyAnthony/XRGameBridge` | Already studied | Focused runtime wrapper for UEVR-style game flows on special displays |
 | `warrenm/OpenXRKit` | Already studied | Embedded Apple-platform OpenXR runtime framework with platform-specific system implementations |
 | `rinsuki/FruitXR` | Already studied | Local IPC and runtime-server proof-of-concept for macOS |
-| `maximum-game-22/openxr-3d-display` | Not studied deeply | Monado-derived spatial-display comparison node |
+| `maximum-game-22/openxr-3d-display` | Fork / variant only; canonical upstream studied as dfattal/openxr-3d-display | Monado-derived spatial-display comparison node |
 | `Kartaverse/OpenDisplayXR` | Not studied deeply | Project cluster around OpenXR paths for nonstandard displays |
 | `chnoblouch/aethervr` | Already studied | Webcam-driven custom OpenXR runtime that reinforces the broader nonstandard-runtime branch |
 
@@ -1250,7 +1250,7 @@ events explicit without dropping back to a tiny native baseline.
 | `AanthonyRusso/BasicOverlay` | Already studied | Focused `C++` overlay whose desktop helper refreshes cover art and text for a small HMD-relative surface |
 | `Spacefish/OpenVR-Overlay` | Already studied | Managed-language `OpenVR` host with Vulkan texture interop and controller attachment |
 | `Daniel-Webster/WT-OpenVR-Overlay` | Partially studied | Broader Unity overlay app over a local webservice, useful as a higher-level scaffold node |
-| `kurohuku7/zenn-overlay-tutorial` | Not studied deeply | Tutorial-first note for Unity or SteamVR overlay learning rather than a mainline code donor |
+| `kurohuku7/zenn-overlay-tutorial` | Already studied as tutorial-grade OpenVR overlay lifecycle reference | Tutorial-first note for Unity or SteamVR overlay learning rather than a mainline code donor |
 
 ### Consolidation note
 
@@ -1306,7 +1306,7 @@ effect, comfort intervention, or spatial cutout rather than ordinary UI.
 | `joaoseabra/SteamVRBlackBarOverlay` | Already studied | Focused HMD-relative top-of-view mask for visibility shaping |
 | `tnsgud9/VR-Overlay-Half_Ring` | Already studied | Unity comfort overlay that follows headset roll and exposes simple user controls |
 | `RedHawk989/OpenVR-Windows-Activation` | Already studied | Tiny static-image environmental effect overlay |
-| `emymin/EmyOverlay` | Not studied deeply | Thin effect-overlay node whose current public donor surface is still too sparse |
+| `emymin/EmyOverlay` | Already studied as C++ OpenGL/ImGui OpenVR overlay skeleton | Thin effect-overlay node now useful as an offscreen OpenGL/ImGui texture-submission baseline |
 
 ### Consolidation note
 
@@ -2820,7 +2820,7 @@ prefab-composed interaction ecosystems.
 | Project | Status | Notes |
 |---|---|---|
 | `MixedRealityToolkit/MixedRealityToolkit-Unity` | Partially studied | Modern MRTK3 packages with stateful interactables, pressable buttons, object manipulation, solver handlers, menus, slates, dialogs, and OpenXR/XRI positioning |
-| `eisclimber/ExPresS-XR` | Partially studied | Scientific/exhibition toolkit with configurable rig, movement presets, data gathering, quizzes, value-range interactables, sockets, menus, HUDs, and tutorial helpers |
+| `eisclimber/ExPresS-XR` | Partially studied; Wave 155 deepened data-gathering, value-range, socket, menu, and toolkit primitives | Scientific/exhibition toolkit with configurable rig, movement presets, data gathering, quizzes, value-range interactables, sockets, menus, HUDs, and tutorial helpers |
 | `MindPort-GmbH/VR-Builder` | Partially studied | VR training workflow editor with steps, behaviors, transitions, scene-object references, process properties, conditions, validation, and fix buttons |
 | `ExtendRealityLtd/VRTK` | Partially studied | VRTK v4/Tilia composition ecosystem with action/rule/pointer/interactable/snap-zone packages and prefab-driven scene wiring |
 
@@ -4186,6 +4186,135 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - collaborative browser utility shells
 - synthetic/headless clients for load tests and replay
 - scene/schema comparisons across analytics, world, and app-runtime families
+
+## Family 131: Glanceable telemetry, simulator panels, and situational VR micro-overlays
+
+This family covers compact status surfaces where the reusable value is not a
+large overlay shell, but a narrow state loop: pose-derived comfort, device
+temperature, GPU health, simulator telemetry, or chat readability inside a VR
+host.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Nexz/turncountervr` | Already studied as cable-awareness rotation counter micro-overlay | HMD pose polling, facing-quadrant crossing counter, dashboard overlay texture refresh, and comfort framing |
+| `Denwa/vive-wireless-info-overlay` | Source-light product reference for Vive Wireless temperature micro-overlays | Strong product framing around adapter thermal state, but current public donor surface is README/screenshot level |
+| `yydsok520/gpu-vram-monitor` | Already studied as Windows GPU/VRAM telemetry overlay with tray, fan, and power-limit controls | LibreHardwareMonitor polling, `nvidia-smi` power-limit bridge, fan control, topmost layered window, tray shell, and cleanup safety |
+| `JMmayranpaa/RacingManager` | Already studied as iRacing shared-memory telemetry panels and app launcher | iRacing memory-mapped telemetry reader, Qt topmost draggable overlays, overlay manager, and detached app launcher config |
+| `ironsled/vr-twitch-chat-ui` | Already studied as MSFS VR-aware Twitch chat panel with readability profiles | Twitch IRC WebSocket, VR detection, persistent settings, transparent panel mode, emote cache, reconnect watchdog, and separate VR typography profiles |
+
+### Consolidation note
+
+This family matters because many useful VR utilities should be glanceable,
+small, and state-specific. It now clearly includes:
+
+- pose-derived comfort counters
+- device-specific thermal status
+- desktop hardware telemetry that can feed VR-visible surfaces
+- simulator shared-memory telemetry panels
+- in-host chat panels with VR readability profiles
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- a `glanceable status surface` checklist
+- telemetry-source adapters separated from overlay presentation
+- simulator panels and comfort micro-tools
+- VR typography/readability profiles for narrow utility windows
+
+## Family 132: Protocol-driven overlay bridges, external overlay hosts, and minimal implementation baselines
+
+This family covers projects where the reusable value is the boundary between a
+producer, a protocol, an overlay host, and a renderer. It complements the larger
+overlay-host families by keeping the minimum implementation shapes visible.
+
+| Project | Status | Notes |
+|---|---|---|
+| `MeroFune/GOpy` | Already studied as OSC gesture-parameter to HMD-relative overlay icon bridge | AsyncIO OSC server, VRChat gesture parameters, left/right icon overlays, HMD-relative placement, alpha fading, and config file |
+| `beareogaming/BD-XSOverlay-notify` | Already studied as BetterDiscord to XSOverlay WebSocket notification bridge | Message filters, markdown sanitization, avatar icon handling, XSOverlay `SendNotification` envelope, queueing, and reconnect backoff |
+| `OrangeJuicy69/VRC-NexusChat` | Source-light product reference for VRChat OSC companion chat/HUD concepts | Electron/React/TypeScript and OSC-to-VRChat framing, but visible public source is not enough for code reuse |
+| `kurohuku7/zenn-overlay-tutorial` | Already studied as tutorial-grade OpenVR overlay lifecycle reference | Overlay key/name, handle invalidation, `CreateOverlay`, error handling, cleanup, and SteamVR Overlay Viewer teaching path |
+| `emymin/EmyOverlay` | Already studied as C++ OpenGL/ImGui OpenVR overlay skeleton | Framebuffer-backed ImGui rendering, GL texture submission, overlay manager, and controller-ray mouse emulation |
+| `Marlamin/VROverlayTest` | Already studied as C# OpenTK/OpenVR texture submission scratchpad | Invisible GL context, OpenVR overlay bootstrap, image-to-texture upload, `Texture_t` submission, and minimal transform setup |
+
+### Consolidation note
+
+This family matters because future overlay utilities need clear roles:
+
+- event producer
+- protocol bridge
+- overlay host
+- renderer
+- tutorial baseline
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- an overlay-host protocol matrix
+- minimal overlay implementation guides by stack
+- OSC/WebSocket bridge envelopes with failure-policy notes
+- source-light companion apps kept separate from true code donors
+
+## Family 133: Virtual displays, spatial-display OpenXR runtimes, and desktop fallback surfaces
+
+This family covers projects that make display targets exist or make XR content
+usable outside a normal headset path: Linux virtual monitors, spatial-display
+OpenXR runtimes, stereo viewers, historical DIY display concepts, and no-HMD
+desktop fallbacks.
+
+| Project | Status | Notes |
+|---|---|---|
+| `VirtualDrivers/Linux-Virtual-Display-Driver` | Already studied as Linux xrandr/EDID virtual display manager with GTK workflow | CVT modeline generation, xrandr output state, virtual EDID, NVIDIA xorg config, GDM monitor handling, persistence, and GTK cards |
+| `dfattal/openxr-3d-display` | Already studied as canonical DisplayXR spatial-display OpenXR runtime | Monado-derived runtime, state tracker/compositor/driver/display-processor split, handle/texture/hosted/IPC app classes, and shell/controller policy separation |
+| `maximum-game-22/openxr-3d-display` | Fork / variant only; canonical upstream studied as dfattal/openxr-3d-display | Keep only as comparison node unless it materially diverges from the canonical DisplayXR runtime |
+| `newilia/SbsImageViewer` | Already studied as OpenXR stereo image viewer with launcher and projection controls | SBS/separate-file source handling, Tk launcher, drag/drop, remembered path, GL texture creation, labels, and in-XR angular controls |
+| `r57zone/VR-Display` | Source-light historical DIY HDMI/MIPI display concept reference | Hardware BOM/checklist signal around display controller, STM32 gyro, IMU, power, brightness, and axis tests |
+| `tejasXR/Virtual-Desktop-VR` | Source-light historical Unity/SteamVR virtual desktop POC | Old Unity/SteamVR project with little current donor surface; useful mainly as historical desktop-in-VR signal |
+| `Malcolmnixon/GodotXRDesktop` | Already studied as Godot no-HMD synthetic XR tracker/action fallback addon | Synthetic `XRPositionalTracker`/`XRControllerTracker`, `XRServer` registration, desktop movement/head-look, and Input Map to OpenXR action injection |
+
+### Consolidation note
+
+This family matters because `display surface` is a broader problem than classic
+VR overlay rendering. It now clearly includes:
+
+- OS-level virtual monitor creation
+- special-display OpenXR runtime architecture
+- stereo media viewer surfaces
+- historical DIY display bring-up concepts
+- no-HMD engine fallback through synthetic trackers and actions
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- virtual display workflow matrices
+- spatial-display runtime boundary notes
+- desktop/no-HMD development paths
+- projection/source-aware media utility surfaces
+
+## Family 134: Hand tracking, simulated XR hands, and reusable hand/control primitives
+
+This family covers hand/control work at three levels: runtime extension data,
+engine pose/action simulation, and toolkit-level interaction/data primitives.
+
+| Project | Status | Notes |
+|---|---|---|
+| `joemarshall/openxrhands` | Already studied as Unity OpenXR hand joint and hand mesh extension bridge | Custom `OpenXRFeature`, `xrWaitFrame` predicted time hook, `XR_EXT_hand_tracking`, `XR_FB_hand_tracking_mesh`, joint location, skinned mesh creation, and Unity conversion |
+| `MThogersen/AutoHandSimulator` | Already studied as AutoHand no-HMD hand/body interaction simulator | Mock HMD detection, pose-driver replacement, keyboard/mouse body/head/hand modes, grab/release triggers, and reset behavior |
+| `InfernoDigital/RoboHands-UnityXR` | Source-light product reference for Unity XR hand-pose package framing | Gesture-pose inventory and onboarding framing, but visible source is not enough for code reuse |
+| `eisclimber/ExPresS-XR` | Partially studied; Wave 155 deepened data-gathering, value-range, socket, menu, and toolkit primitives | Data gatherer, value-range interactables, socket highlighting, virtual hands, movement modes, HUDs, setup dialogs, and editor menu factories |
+
+### Consolidation note
+
+This family matters because hand support should be reusable even before a final
+input stack is chosen. It now clearly includes:
+
+- OpenXR extension-level hand joints and meshes
+- no-HMD/editor hand simulation
+- product-level gesture-pose vocabulary
+- data-gathering and interaction primitives from scientific XR toolkits
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- no-HMD hand/control testing matrices
+- hand extension vs engine package comparisons
+- reusable hand-pose vocabulary
+- Unity toolkit primitive extraction only when a prototype needs it
 
 ## Recommended synthesis path for `VR-apps-lab`
 
