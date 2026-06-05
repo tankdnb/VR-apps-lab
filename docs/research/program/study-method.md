@@ -35,6 +35,14 @@ Every meaningful project note should eventually capture:
 - `caveats / licensing / risks`
 - `what to inspect next`
 
+When a repository reveals a reusable pattern, also capture:
+
+- `reusable core`
+- `source evidence`
+- `abstraction boundary`
+- `what not to copy`
+- `method catalog action`
+
 ## Study depth levels
 
 ### Level 0: Mentioned
@@ -100,6 +108,13 @@ Look for:
 - device model abstractions;
 - capture/rendering/compositor model;
 - IPC, OSC, WebSocket, or BLE patterns.
+
+When a reusable pattern appears, separate:
+
+- what is portable;
+- what is project-specific;
+- what source files or modules prove it;
+- whether it updates an existing method or deserves a new method entry.
 
 ### Step 5: Product extraction
 

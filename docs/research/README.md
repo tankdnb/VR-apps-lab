@@ -40,6 +40,9 @@ bridges, device managers, and experimental XR workflows.
 - `program/repository-documentation-playbook.md`
   Use this when adding or deepening a repository and deciding exactly which
   canonical files should change.
+- `program/project-information-and-reuse-patterns-audit.md`
+  Use this to understand the current documentation-system assessment and the
+  future-facing reuse-pattern traceability convention.
 
 ## Fast Current Route
 

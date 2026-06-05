@@ -33,9 +33,15 @@ For a full `what goes where` guide when documenting a repository addition, use:
    - code donor value
    - product reference value
    - what to inspect next
-8. Identify reusable methods, UX patterns, and architecture lessons.
-9. Place every repo into a logical family.
-10. Update repository docs.
+8. For reusable patterns, also capture:
+   - reusable core
+   - source evidence
+   - abstraction boundary
+   - what not to copy
+   - method catalog action
+9. Identify reusable methods, UX patterns, and architecture lessons.
+10. Place every repo into a logical family.
+11. Update repository docs.
 
 ## Canonical roles
 
@@ -49,6 +55,8 @@ For a full `what goes where` guide when documenting a repository addition, use:
   extracted reusable implementation methods.
 - `current-focus.md`
   short current-state view, not full archive history.
+- `project-study-template.md`
+  future-facing shape for per-project notes and reusable pattern extraction.
 
 ## Must-Update Files
 

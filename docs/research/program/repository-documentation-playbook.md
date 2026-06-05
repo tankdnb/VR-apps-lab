@@ -284,6 +284,58 @@ Do not add a method for:
 - one-off implementation trivia;
 - naming differences without reusable architectural meaning.
 
+## Method traceability convention
+
+Future research should make the bridge from project note to method note more
+explicit, without rewriting the existing archive.
+
+When a project reveals a reusable pattern, capture a short project-level
+`Reusable pattern extraction` block before or near the reuse-value fields:
+
+- `Pattern candidate`
+- `Problem solved`
+- `Reusable core`
+- `Source evidence`
+- `Abstraction boundary`
+- `What not to copy`
+- `Method catalog action`
+
+Use this block to decide whether the finding should:
+
+- stay as a project-local observation;
+- update an existing method;
+- create a new method;
+- become a reuse-plan candidate.
+
+When a new method is added, the existing method shape is still valid:
+
+- `What it is`
+- `Good for`
+- `Why it matters`
+- `Strong references`
+- `Best fit for VR-apps-lab`
+
+For future methods, add these fields only when they improve clarity:
+
+- `Source evidence`
+- `Reusable core`
+- `Do not copy directly`
+- `Maturity`
+
+Suggested `Maturity` values:
+
+- `Observed`
+- `Validated by multiple repos`
+- `Historical`
+- `Prototype-ready`
+
+Do not mass-edit old method entries just to add these fields. Add them
+opportunistically when a method is created, updated, or becomes active
+prototype scope.
+
+In wave documents, prefer linking reusable method titles to method IDs after
+the methods catalog has been updated. During drafting, method titles are enough.
+
 ## How to decide whether to add a reuse plan
 
 Add a file under `docs/research/reuse/` only if the repository is strong enough
@@ -346,8 +398,10 @@ When adding or deepening a repo, ask:
 3. `What is the honest study status now?`
 4. `Does it belong in a real wave or only in canonical tracking docs?`
 5. `Did it reveal a reusable method?`
-6. `Does it deserve a reuse plan?`
-7. `Which canonical files must change before commit?`
+6. `What source evidence supports the method or pattern?`
+7. `What is portable, and what should not be copied?`
+8. `Does it deserve a reuse plan?`
+9. `Which canonical files must change before commit?`
 
 ## Related documents
 
@@ -356,5 +410,7 @@ Use this playbook together with:
 - `new-session-quickstart.md`
 - `research-operator-quick-reference.md`
 - `study-method.md`
+- `project-information-and-reuse-patterns-audit.md`
+- `project-information-and-reuse-patterns-improvement-backlog.md`
 - `../templates/project-study-template.md`
 - `../current-focus.md`

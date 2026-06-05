@@ -21,6 +21,15 @@ repeatable way.
   be documented, where each kind of information belongs, and what must be
   updated before commit.
 
+- `project-information-and-reuse-patterns-audit.md`
+  Internal audit of how convenient and informative the repository's
+  per-project documentation is, especially around reusable methods and
+  patterns.
+
+- `project-information-and-reuse-patterns-improvement-backlog.md`
+  Small, non-disruptive backlog for improving method and pattern traceability
+  without rewriting the accumulated wave archive.
+
 - `documentation-navigation-refactoring-plan.md`
   Dedicated refactor plan for reducing documentation sprawl, clarifying
   canonical roles, and improving navigation.

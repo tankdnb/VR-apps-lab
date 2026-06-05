@@ -7,4 +7,5 @@ This folder contains templates used when adding a new repository study to
 
 - `project-study-template.md`  
   Standard template for capturing interesting ideas, reusable patterns, code
-  donor value, product reference value, and follow-up actions.
+  donor value, product reference value, reusable pattern extraction, source
+  evidence, and follow-up actions.
