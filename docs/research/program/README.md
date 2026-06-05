@@ -747,3 +747,31 @@ repeatable way.
 
 - `github-research-wave-107-backlog.md`
   Executed backlog for the Wave 107 pass.
+
+- `github-research-wave-108-plan.md`
+  Wave 108 research plan focused on VRChat companion apps, OSC routers,
+  plugin senders, data hubs, and web debug surfaces.
+
+- `github-research-wave-108-backlog.md`
+  Executed backlog for the Wave 108 pass.
+
+- `github-research-wave-109-plan.md`
+  Wave 109 research plan focused on SlimeVR server, tracker firmware,
+  hardware adapters, and calibration ecosystem patterns.
+
+- `github-research-wave-109-backlog.md`
+  Executed backlog for the Wave 109 pass.
+
+- `github-research-wave-110-plan.md`
+  Wave 110 research plan focused on bHaptics SDKs, OSC bridges, relays, and
+  telemetry-to-haptic adapters.
+
+- `github-research-wave-110-backlog.md`
+  Executed backlog for the Wave 110 pass.
+
+- `github-research-wave-111-plan.md`
+  Wave 111 research plan focused on no-HMD and virtual-HMD OpenVR helpers,
+  phone bridges, and controllable driver stubs.
+
+- `github-research-wave-111-backlog.md`
+  Executed backlog for the Wave 111 pass.

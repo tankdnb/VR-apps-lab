@@ -59,6 +59,10 @@ These are the clearest current product and research lines:
    translators, visual-safety shaders, VRCFury automation, face-tracking module
    pipelines, blendshape preparation, PhysBone tuning, and contact-driven
    avatar interaction.
+11. `VRChat companion surfaces, tracker ecosystems, haptics, and headsetless development helpers`
+   the repository now has clearer coverage of external companion apps, OSC
+   routers, browser debug panels, SlimeVR-style tracker stacks, haptic relays,
+   and no-HMD or virtual-HMD driver references.
 
 ## Most useful current docs
 
@@ -118,6 +122,10 @@ instead of full history:
 - `landscape/vr-projects-wave-105-vrcfury-toggle-automation-avatar-animator-dsls-and-editor-qol-overlays.md`
 - `landscape/vr-projects-wave-106-vrcfacetracking-core-modules-templates-and-blendshape-preparation.md`
 - `landscape/vr-projects-wave-107-vrchat-avatar-dynamics-physbone-migration-contact-prefabs-and-in-game-tuning.md`
+- `landscape/vr-projects-wave-108-vrchat-companion-apps-osc-routers-plugin-senders-data-hubs-and-web-debug-surfaces.md`
+- `landscape/vr-projects-wave-109-slimevr-server-tracker-firmware-adapters-and-calibration-ecosystem.md`
+- `landscape/vr-projects-wave-110-bhaptics-sdks-osc-bridges-relays-and-telemetry-to-haptic-adapters.md`
+- `landscape/vr-projects-wave-111-no-hmd-and-virtual-hmd-openvr-helpers-phone-bridges-and-controllable-driver-stubs.md`
 
 ## Strong donor clusters right now
 
@@ -219,6 +227,20 @@ the strongest current clusters:
   `Avatar-Prop`, `Collision-Detection`
   for PhysBone migration, in-game dynamics tuning, detached component grouping,
   grabbable avatar props, and contact/collision state prefabs.
+- `VRCX`, `VOR`, `VRCOSCGUI`, `VRCOSCDataHub`, `VRCOSCWeb`
+  for external VRChat companion feeds, OSC fan-out routing, plugin sender
+  boundaries, local data hubs, and browser avatar-parameter controls.
+- `SlimeVR-Server`, `SlimeVR-Tracker-ESP`, `slimevr-wrangler`, `moslime`,
+  `SlimeTora`
+  for tracker hubs, firmware diagnostics protocols, consumer-device adapters,
+  BLE normalization, guided setup, and per-tracker health UX.
+- `haptic-library`, `tact-js`, `tact-python`, `bHapticsOSC`,
+  `bHapticsRelay`
+  for haptic SDK facades, browser/Python command layers, avatar OSC haptics,
+  and generic log/WebSocket event-to-haptics relays.
+- `PhoneVR`, `driver_hmd`, `faceless`, `OpenVRsim`, `Pepper`
+  for phone-HMD bridge anatomy, fake display components, no-HMD pose
+  inference, socket-controlled virtual devices, and keyboard/mouse fake rigs.
 
 ## Highest-value next follow-up passes
 
@@ -259,6 +281,10 @@ directions:
 32. `VRCFury toggle automation, avatar animator DSLs, and editor QoL overlays`
 33. `VRCFaceTracking core, modules, templates, and blendshape preparation`
 34. `VRChat avatar dynamics, PhysBone migration, contact prefabs, and in-game tuning`
+35. `VRChat companion apps, OSC routers, plugin senders, data hubs, and web debug surfaces`
+36. `SlimeVR server, tracker firmware, adapters, and calibration ecosystem`
+37. `bHaptics SDKs, OSC bridges, relays, and telemetry-to-haptic adapters`
+38. `No-HMD and virtual-HMD OpenVR helpers, phone bridges, and controllable driver stubs`
 
 ## Current repository-maintenance priorities
 

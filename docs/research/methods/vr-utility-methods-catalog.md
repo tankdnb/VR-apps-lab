@@ -5286,3 +5286,258 @@ When a new utility idea appears:
   `Collision-Detection`.
 - Best fit for `VR-apps-lab`:
   contact/collision prefab design and physical-state surfaces.
+
+## Method 310: Companion overlay live-feed shell with offscreen Electron rendering
+
+- What it is:
+  a desktop companion app gathers social, avatar, world, media, and device
+  state, renders a compact VR feed, and can use an offscreen browser window to
+  publish overlay frames through a runtime-facing buffer.
+- Good for:
+  companion apps, overlay feeds, in-headset status panels, social dashboards,
+  and device-state summaries.
+- Why it matters:
+  it turns background app state into a live operator surface without requiring
+  every feature to be native VR UI.
+- Strong references:
+  `VRCX`.
+- Best fit for `VR-apps-lab`:
+  companion overlay shells and state-feed product references.
+
+## Method 311: VRChat OSC fan-out router with packet filtering and route debug stream
+
+- What it is:
+  a local router receives VRChat OSC on one port, filters or repairs packets,
+  forwards accepted payloads to configured apps, and exposes debug events for
+  allowed, dropped, malformed, and route-error cases.
+- Good for:
+  OSC-heavy companion ecosystems, haptics bridges, speech sidecars, tracker
+  bridges, avatar automation, and local integration stacks.
+- Why it matters:
+  VRChat can create OSC port contention; a router makes coexistence observable
+  and manageable.
+- Strong references:
+  `VOR`.
+- Best fit for `VR-apps-lab`:
+  OSC routing, diagnostics, and sidecar coexistence patterns.
+
+## Method 312: Plugin-host OSC sender where extensions request sends and holder owns sockets
+
+- What it is:
+  a desktop holder app owns OSC socket lifecycle and exposes a plugin contract
+  where extensions request sends, receive OSC callbacks, access settings, and
+  observe holder status.
+- Good for:
+  modular OSC utilities, plugin ecosystems, creator companion apps, and
+  feature packs that should not each own networking.
+- Why it matters:
+  it gives small plugins a stable boundary while centralizing endpoint and UDP
+  state.
+- Strong references:
+  `VRCOSCGUI`.
+- Best fit for `VR-apps-lab`:
+  plugin-hosted OSC tool design and modular companion apps.
+
+## Method 313: OSC-to-TCP data hub with type-tag extraction and split-friendly payloads
+
+- What it is:
+  a small bridge receives OSC, extracts typed values, normalizes them into a
+  simple address/value text format, and forwards that stream over TCP to local
+  tools that do not speak OSC.
+- Good for:
+  local dashboards, debug panels, simple automation scripts, and protocol
+  adapters.
+- Why it matters:
+  it lowers the integration cost for downstream tools by converting OSC into a
+  trivial local stream.
+- Strong references:
+  `VRCOSCDataHub`.
+- Best fit for `VR-apps-lab`:
+  local data hubs and protocol-simplification micro-utilities.
+
+## Method 314: Browser avatar-parameter debug surface backed by OSC and avatar JSON
+
+- What it is:
+  a browser app loads VRChat avatar OSC JSON metadata, renders controls for
+  parameters, subscribes to live OSC updates through WebSockets, and sends OSC
+  commands back to VRChat.
+- Good for:
+  avatar debugging, creator tools, web operator panels, local control surfaces,
+  and rapid UI experiments.
+- Why it matters:
+  it proves a browser can be a serious VRChat utility surface without a heavy
+  desktop shell.
+- Strong references:
+  `VRCOSCWeb`.
+- Best fit for `VR-apps-lab`:
+  browser-based debug panels and avatar parameter tooling.
+
+## Method 315: Tracker server hub with skeleton calibration and multi-output runtime bridges
+
+- What it is:
+  a central server receives heterogeneous tracker inputs, owns skeleton and
+  calibration state, and forwards normalized tracking data to runtime bridges,
+  OSC/VMC outputs, recording/export paths, and a diagnostics GUI.
+- Good for:
+  full-body tracking helpers, virtual tracker hosts, calibration dashboards,
+  OSC/VMC bridges, and runtime integration hubs.
+- Why it matters:
+  it separates device-specific input from calibrated, runtime-ready tracking
+  output.
+- Strong references:
+  `SlimeVR-Server`.
+- Best fit for `VR-apps-lab`:
+  tracker hub architecture and calibration UX research.
+
+## Method 316: Firmware tracker protocol with diagnostics packets and calibration persistence
+
+- What it is:
+  tracker firmware sends pose and acceleration along with sensor identity,
+  error state, battery, signal, temperature, feature flags, calibration, and
+  config acknowledgements.
+- Good for:
+  IMU trackers, hardware diagnostics, battery dashboards, firmware protocols,
+  and robust device monitors.
+- Why it matters:
+  tracker health should be a first-class protocol concern instead of a hidden
+  firmware detail.
+- Strong references:
+  `SlimeVR-Tracker-ESP`.
+- Best fit for `VR-apps-lab`:
+  firmware telemetry and tracker diagnostics design.
+
+## Method 317: Consumer tracker adapters that normalize Joy-Con, Mocopi, or HaritoraX streams into SlimeVR
+
+- What it is:
+  an adapter connects to a consumer tracking or controller device, normalizes
+  rotation, acceleration, identity, battery, buttons, and errors, then emits a
+  SlimeVR-compatible tracker stream.
+- Good for:
+  hardware bridges, tracker adapters, BLE/COM device wrappers, consumer-device
+  experiments, and guided setup tools.
+- Why it matters:
+  it turns heterogeneous hardware into a common tracker protocol while keeping
+  device quirks at the edge.
+- Strong references:
+  `slimevr-wrangler`, `moslime`, `SlimeTora`.
+- Best fit for `VR-apps-lab`:
+  hardware adapter UX and tracker normalization patterns.
+
+## Method 318: Haptic player SDK facade with event, dot, path, status, and device-management calls
+
+- What it is:
+  an SDK facade registers authored feedback, submits event, dot, path, glove,
+  or generated patterns, checks connected devices and playing state, and talks
+  to a local haptic player runtime.
+- Good for:
+  haptics bridges, browser panels, Python automation, game integration, and
+  accessibility output tools.
+- Why it matters:
+  a reusable haptics layer needs both high-level authored events and low-level
+  generated feedback.
+- Strong references:
+  `haptic-library`, `tact-js`, `tact-python`.
+- Best fit for `VR-apps-lab`:
+  haptic utility APIs and non-visual feedback channels.
+
+## Method 319: Avatar OSC-to-haptics bridge with per-motor buffers and avatar-change reset
+
+- What it is:
+  a bridge maps VRChat avatar OSC parameters into device-specific haptic motor
+  buffers, reloads config, resets on avatar changes, and gates output by
+  avatar/player state.
+- Good for:
+  social VR haptics, avatar-driven feedback, OSC sidecars, wearable devices,
+  and tactile accessibility cues.
+- Why it matters:
+  it shows how avatar parameters can control wearable feedback while still
+  needing safety, reset, and device configuration layers.
+- Strong references:
+  `bHapticsOSC`.
+- Best fit for `VR-apps-lab`:
+  avatar OSC haptics and wearable feedback research.
+
+## Method 320: Generic haptics relay from log lines or WebSocket commands
+
+- What it is:
+  a local relay tails application logs or accepts WebSocket messages, parses a
+  command vocabulary, maps commands into haptic SDK calls, and reports request
+  status back to clients.
+- Good for:
+  modding tools, telemetry-to-haptics adapters, local automation, accessibility
+  alerts, and games without direct SDK integration.
+- Why it matters:
+  many apps can emit logs or local messages even when they cannot embed a
+  haptics SDK.
+- Strong references:
+  `bHapticsRelay`.
+- Best fit for `VR-apps-lab`:
+  event-to-output relays and lightweight integration sidecars.
+
+## Method 321: Phone-as-HMD bridge with pairing, projection exchange, pose ingress, and video streamout
+
+- What it is:
+  an OpenVR driver pairs with a phone, negotiates display and projection data,
+  receives pose, streams rendered frames, and exposes latency or FPS diagnostics
+  to help the user understand quality.
+- Good for:
+  phone-HMD experiments, streaming bridge research, mobile viewer prototypes,
+  and historical headsetless workflows.
+- Why it matters:
+  it breaks phone VR into explicit transport, projection, pose, and video
+  components.
+- Strong references:
+  `PhoneVR`.
+- Best fit for `VR-apps-lab`:
+  phone-HMD architecture history and streaming bridge anatomy.
+
+## Method 322: Desktop display or null display OpenVR HMD component
+
+- What it is:
+  a fake HMD driver implements the minimal tracked-device and display
+  component surfaces SteamVR expects, sets render target/projection/display
+  properties, and updates a valid pose each frame.
+- Good for:
+  no-HMD workflows, driver tutorials, desktop-display experiments, fake device
+  stubs, and development harnesses.
+- Why it matters:
+  it documents the minimum viable OpenVR display anatomy for headsetless
+  iteration.
+- Strong references:
+  `driver_hmd`, `faceless`.
+- Best fit for `VR-apps-lab`:
+  OpenVR fake-HMD reference design and driver learning.
+
+## Method 323: External/scripted virtual-device control harness over a socket
+
+- What it is:
+  a virtual OpenVR driver listens on a local socket for pose, button, eye, or
+  test commands so an external script can drive HMD/controller state and replay
+  scripted scenarios.
+- Good for:
+  automated VR testing, regression harnesses, pose replay, input simulation,
+  and CI-adjacent developer tools.
+- Why it matters:
+  controllable virtual devices are a path toward repeatable VR tests without
+  always needing physical hardware.
+- Strong references:
+  `OpenVRsim`.
+- Best fit for `VR-apps-lab`:
+  virtual-device automation and headsetless test harnesses.
+
+## Method 324: Keyboard-and-mouse fake HMD plus controller rig for SteamVR development
+
+- What it is:
+  a tutorial driver registers a fake HMD and fake controllers, updates pose and
+  controller component handles from keyboard/mouse state, and lets SteamVR see
+  a usable minimal rig.
+- Good for:
+  driver onboarding, local development, simple no-HMD demos, controller input
+  simulation, and education.
+- Why it matters:
+  it shows the smallest teachable unit of a provider, fake devices, input
+  thread, pose loop, and controller components.
+- Strong references:
+  `Pepper`.
+- Best fit for `VR-apps-lab`:
+  educational OpenVR driver stubs and fake-device anatomy.

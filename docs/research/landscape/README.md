@@ -428,6 +428,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on VRChat avatar dynamics,
   PhysBone migration, contact prefabs, and in-game tuning.
 
+- `vr-projects-wave-108-vrchat-companion-apps-osc-routers-plugin-senders-data-hubs-and-web-debug-surfaces.md`
+  Next GitHub discovery wave focused on VRChat companion apps, OSC routers,
+  plugin senders, data hubs, and web debug surfaces.
+
+- `vr-projects-wave-109-slimevr-server-tracker-firmware-adapters-and-calibration-ecosystem.md`
+  Next GitHub discovery wave focused on SlimeVR server, tracker firmware,
+  hardware adapters, and calibration ecosystem patterns.
+
+- `vr-projects-wave-110-bhaptics-sdks-osc-bridges-relays-and-telemetry-to-haptic-adapters.md`
+  Next GitHub discovery wave focused on bHaptics SDKs, OSC bridges, relays,
+  and telemetry-to-haptic adapters.
+
+- `vr-projects-wave-111-no-hmd-and-virtual-hmd-openvr-helpers-phone-bridges-and-controllable-driver-stubs.md`
+  Next GitHub discovery wave focused on no-HMD and virtual-HMD OpenVR helpers,
+  phone bridges, and controllable driver stubs.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

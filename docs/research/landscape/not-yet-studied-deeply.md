@@ -1002,6 +1002,50 @@ These are larger than a single repo and should guide the next research wave.
   migration tools, in-game tuning menus, component grouping, grabbable props,
   and compact contact/collision state prefabs.
 
+### 73. `VRChat companion apps, OSC routers, plugin senders, data hubs, and web debug surfaces`
+
+- Main entries:
+  `VRCX`, `VOR`, `VRCOSCGUI`, `VRCOSCDataHub`, `VRCOSCWeb`
+- Why it matters:
+  this family now captures the external VRChat utility layer: companion state,
+  overlay feeds, OSC routing, plugin-owned send requests, local data hubs, and
+  browser-based avatar parameter controls. A future deeper pass should compare
+  overlay feed ergonomics, route debug UX, and browser-vs-desktop companion
+  tradeoffs.
+
+### 74. `SlimeVR server, tracker firmware, adapters, and calibration ecosystem`
+
+- Main entries:
+  `SlimeVR-Server`, `SlimeVR-Tracker-ESP`, `slimevr-wrangler`, `moslime`,
+  `SlimeTora`
+- Why it matters:
+  this family now captures SlimeVR as a full tracker ecosystem: firmware
+  telemetry, server hubs, skeleton calibration, runtime bridges, consumer
+  controller adapters, BLE bridges, guided hardware onboarding, and per-tracker
+  diagnostics. A future deeper pass should isolate calibration UX and compare
+  adapter health-state models.
+
+### 75. `bHaptics SDKs, OSC bridges, relays, and telemetry-to-haptic adapters`
+
+- Main entries:
+  `haptic-library`, `tact-js`, `tact-python`, `bHapticsOSC`, `bHapticsRelay`
+- Why it matters:
+  this family now captures haptics as a reusable output channel across native,
+  browser, Python, avatar OSC, log-tail, and WebSocket command surfaces. A
+  future deeper pass should compare generic haptics relays with telemetry,
+  accessibility, and simulator sidecar patterns.
+
+### 76. `No-HMD and virtual-HMD OpenVR helpers, phone bridges, and controllable driver stubs`
+
+- Main entries:
+  `PhoneVR`, `driver_hmd`, `faceless`, `OpenVRsim`, `Pepper`
+- Why it matters:
+  this family now captures headsetless development and virtual-device
+  workflows: phone-HMD streaming, desktop/null display components, fake head
+  pose from controllers or trackers, socket-controlled virtual devices, and
+  keyboard/mouse fake rigs. A future deeper pass should consolidate these into
+  a minimum viable fake-device anatomy guide.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1049,6 +1093,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 41. `VRCFury toggle automation, avatar animator DSLs, and editor QoL overlays`
 42. `VRCFaceTracking core, modules, templates, and blendshape preparation`
 43. `VRChat avatar dynamics, PhysBone migration, contact prefabs, and in-game tuning`
+44. `VRChat companion apps, OSC routers, plugin senders, data hubs, and web debug surfaces`
+45. `SlimeVR server, tracker firmware, adapters, and calibration ecosystem`
+46. `bHaptics SDKs, OSC bridges, relays, and telemetry-to-haptic adapters`
+47. `No-HMD and virtual-HMD OpenVR helpers, phone bridges, and controllable driver stubs`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

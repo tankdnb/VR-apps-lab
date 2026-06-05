@@ -1,6 +1,6 @@
 # VR Projects Master Index
 
-- Date: `2026-04-27`
+- Date: `2026-06-05`
 - Goal: maintain a single index of VR-related GitHub projects that are useful as
   references, code donors, or product inspiration for `VR-apps-lab`.
 
@@ -108,6 +108,18 @@ This file complements:
 - `vr-projects-wave-97-udon-encoding-token-query-and-structured-data-micro-libraries.md`
 - `vr-projects-wave-98-udon-sync-events-runtime-logging-and-shared-helper-micro-frameworks.md`
 - `vr-projects-wave-99-vrchat-world-control-gadgets-environmental-systems-and-specialized-operator-surfaces.md`
+- `vr-projects-wave-100-vrchat-avatar-setup-optimization-and-quest-portability.md`
+- `vr-projects-wave-101-vrchat-avatar-composition-packaging-and-install-automation.md`
+- `vr-projects-wave-102-vrchat-avatar-emulation-gesture-preview-repair-and-osc-assisted-posing.md`
+- `vr-projects-wave-103-vrchat-avatar-text-speech-translation-and-viseme-sidecars.md`
+- `vr-projects-wave-104-vrchat-shader-ecosystems-material-translators-and-visual-safety-shaders.md`
+- `vr-projects-wave-105-vrcfury-toggle-automation-avatar-animator-dsls-and-editor-qol-overlays.md`
+- `vr-projects-wave-106-vrcfacetracking-core-modules-templates-and-blendshape-preparation.md`
+- `vr-projects-wave-107-vrchat-avatar-dynamics-physbone-migration-contact-prefabs-and-in-game-tuning.md`
+- `vr-projects-wave-108-vrchat-companion-apps-osc-routers-plugin-senders-data-hubs-and-web-debug-surfaces.md`
+- `vr-projects-wave-109-slimevr-server-tracker-firmware-adapters-and-calibration-ecosystem.md`
+- `vr-projects-wave-110-bhaptics-sdks-osc-bridges-relays-and-telemetry-to-haptic-adapters.md`
+- `vr-projects-wave-111-no-hmd-and-virtual-hmd-openvr-helpers-phone-bridges-and-controllable-driver-stubs.md`
 
 ## How to use this index
 

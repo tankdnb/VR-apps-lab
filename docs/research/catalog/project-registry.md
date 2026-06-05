@@ -1321,6 +1321,58 @@ Primary docs:
 - `ThatFatKidsMom/Avatar-Prop` - `Partially studied`
 - `VRLabs/Collision-Detection` - `Already studied`
 
+## 79. VRChat companion apps, OSC routers, plugin senders, data hubs, and web debug surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-108-vrchat-companion-apps-osc-routers-plugin-senders-data-hubs-and-web-debug-surfaces.md`
+- `../landscape/project-families.md`
+
+- `vrcx-team/VRCX` - `Partially studied`
+- `SutekhVRC/VOR` - `Already studied`
+- `YABam/VRCOSCGUI` - `Partially studied`
+- `PlagueVRC/VRCOSCDataHub` - `Already studied`
+- `EveryDayCompute/VRCOSCWeb` - `Already studied`
+
+## 80. SlimeVR server, tracker firmware, adapters, and calibration ecosystem
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-109-slimevr-server-tracker-firmware-adapters-and-calibration-ecosystem.md`
+- `../landscape/project-families.md`
+
+- `SlimeVR/SlimeVR-Server` - `Partially studied`
+- `SlimeVR/SlimeVR-Tracker-ESP` - `Partially studied`
+- `carl-anders/slimevr-wrangler` - `Already studied`
+- `moslime/moslime` - `Already studied`
+- `OCSYT/SlimeTora` - `Partially studied`
+
+## 81. bHaptics SDKs, OSC bridges, relays, and telemetry-to-haptic adapters
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-110-bhaptics-sdks-osc-bridges-relays-and-telemetry-to-haptic-adapters.md`
+- `../landscape/project-families.md`
+
+- `bhaptics/haptic-library` - `Partially studied`
+- `bhaptics/tact-js` - `Already studied`
+- `bhaptics/tact-python` - `Partially studied`
+- `HerpDerpinstine/bHapticsOSC` - `Already studied`
+- `Dteyn/bHapticsRelay` - `Already studied`
+
+## 82. No-HMD and virtual-HMD OpenVR helpers, phone bridges, and controllable driver stubs
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-111-no-hmd-and-virtual-hmd-openvr-helpers-phone-bridges-and-controllable-driver-stubs.md`
+- `../landscape/project-families.md`
+
+- `PhoneVR-Developers/PhoneVR` - `Partially studied`
+- `SDraw/driver_hmd` - `Already studied`
+- `pema99/faceless` - `Already studied`
+- `kajsaantonigelstrom/OpenVRsim` - `Already studied`
+- `blakebeckcoding/Pepper` - `Partially studied`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

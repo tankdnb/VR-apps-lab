@@ -2646,6 +2646,137 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - in-game calibration surfaces
 - contact/collision prefab design
 
+## Family 87: VRChat companion apps, OSC routers, plugin senders, data hubs, and web debug surfaces
+
+This family covers repositories where the main value is an external VRChat
+companion or local integration surface: desktop social state, overlay feeds,
+OSC routing, plugin-hosted senders, local data hubs, and browser controls.
+
+| Project | Status | Notes |
+|---|---|---|
+| `vrcx-team/VRCX` | Partially studied | Large Electron/Vue companion with social/world/avatar state, VR overlay feed, device-status cards, and Linux offscreen shared-memory overlay rendering |
+| `SutekhVRC/VOR` | Already studied | Rust OSC fan-out router with packet filtering, malformed-packet cleanup, route status, sync/async routing, and debug streams |
+| `YABam/VRCOSCGUI` | Partially studied | Plugin-hosted OSC sender where plugins request sends and receive holder status while the holder owns sockets |
+| `PlagueVRC/VRCOSCDataHub` | Already studied | Narrow OSC-to-TCP hub with type-tag extraction and split-friendly address/value payload formatting |
+| `EveryDayCompute/VRCOSCWeb` | Already studied | Quart/WebSocket/browser avatar-parameter debug surface backed by local VRChat OSC avatar JSON and D3 controls |
+
+### Consolidation note
+
+This family matters because `VRChat companion surfaces` are a major utility
+branch outside Unity. It now clearly includes:
+
+- desktop companion state and overlay feeds
+- OSC fan-out and packet sanitation
+- plugin-hosted sender boundaries
+- local OSC-to-TCP data normalization
+- browser-native avatar parameter debug panels
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- local companion shells
+- OSC routing and contention management
+- browser debug/control surfaces
+- overlay feeds that summarize social, device, and avatar state
+
+## Family 88: SlimeVR server, tracker firmware, adapters, and calibration ecosystem
+
+This family covers repositories where the main value is SlimeVR-style tracking
+infrastructure: firmware packets, server hubs, skeleton calibration, runtime
+bridges, consumer-device adapters, BLE normalization, battery/health
+diagnostics, and guided tracker setup.
+
+| Project | Status | Notes |
+|---|---|---|
+| `SlimeVR/SlimeVR-Server` | Partially studied | Central tracker hub with named-pipe/Unix-socket driver bridges, OSC/VMC/BVH outputs, FlatBuffer WebSocket API, GUI, and VR setup mode |
+| `SlimeVR/SlimeVR-Tracker-ESP` | Partially studied | ESP tracker firmware with IMU loop, UDP packet vocabulary, diagnostics packets, battery monitor, calibration persistence, and feature flags |
+| `carl-anders/slimevr-wrangler` | Already studied | Rust/Iced Joy-Con adapter with Deku packet serialization, handshake, rotation/acceleration mapping, reset action, and device status UI |
+| `moslime/moslime` | Already studied | Python Mocopi BLE bridge with SlimeVR autodiscovery, quaternion conversion, packet-drop checks, battery reporting, and reconnect loops |
+| `OCSYT/SlimeTora` | Partially studied | Electron HaritoraX adapter with model/dongle/COM detection, tracker emulation, button actions, battery smoothing, visualization, and debug events |
+
+### Consolidation note
+
+This family matters because `tracker helper` design is an ecosystem problem.
+It now clearly includes:
+
+- firmware health and diagnostics protocols
+- central server hubs with multiple output bridges
+- skeleton calibration and guided setup
+- consumer-controller and BLE tracker adapters
+- hardware onboarding and per-tracker debug surfaces
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- tracker hubs and bridge abstraction
+- battery and signal diagnostics
+- hardware adapter UX
+- calibration workflows that survive heterogeneous input devices
+
+## Family 89: bHaptics SDKs, OSC bridges, relays, and telemetry-to-haptic adapters
+
+This family covers repositories where the main value is translating events
+from games, avatars, browsers, scripts, logs, or WebSockets into wearable
+haptic feedback.
+
+| Project | Status | Notes |
+|---|---|---|
+| `bhaptics/haptic-library` | Partially studied | Native C++ library and Player WebSocket manager with feedback registration, event playback, dot/path submission, status, and turn-off calls |
+| `bhaptics/tact-js` | Already studied | TypeScript/browser SDK facade for event, dot, path, glove, device, mapping, connection, and playing-state calls |
+| `bhaptics/tact-python` | Partially studied | Thin Python command reference for async haptic event, dot, path, glove, ping, device info, and Player status workflows |
+| `HerpDerpinstine/bHapticsOSC` | Already studied | VRChat OSC-to-haptics bridge with config hot reload, reflection-bound OSC handlers, avatar-change reset, and per-device motor buffers |
+| `Dteyn/bHapticsRelay` | Already studied | WPF relay that tails log lines or accepts WebSocket commands and maps them into SDK2 haptic playback calls with offline fallback |
+
+### Consolidation note
+
+This family matters because `haptics integration` is a reusable VR output
+channel. It now clearly includes:
+
+- vendor SDK facades
+- browser and Python command surfaces
+- avatar OSC-to-haptics bridges
+- log-tail and WebSocket relays
+- event, dot, path, glove, and device-management APIs
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- haptic alert/feedback sidecars
+- event-to-output relay architecture
+- avatar parameter tactile feedback
+- browser panels that control non-visual feedback
+
+## Family 90: No-HMD and virtual-HMD OpenVR helpers, phone bridges, and controllable driver stubs
+
+This family covers repositories where the main value is headsetless or virtual
+device development: phone-HMD bridges, desktop-display HMD drivers,
+controller/tracker fake-HMD pose, socket-controlled virtual devices, and
+keyboard/mouse fake rigs.
+
+| Project | Status | Notes |
+|---|---|---|
+| `PhoneVR-Developers/PhoneVR` | Partially studied | Phone-as-HMD bridge with OpenVR driver, TCP pairing, projection exchange, pose stream, virtual display present path, and Android client paths |
+| `SDraw/driver_hmd` | Already studied | Minimal desktop-display-as-HMD OpenVR driver with display component, pose update loop, debug transform request, and keyboard controls |
+| `pema99/faceless` | Already studied | No-HMD driver that infers fake head pose from controllers or tracker and persists calibration through keybind-driven settings |
+| `kajsaantonigelstrom/OpenVRsim` | Already studied | Null OpenVR driver controlled by Python through ZeroMQ, with scripted pose/button commands and CSV test-case flows |
+| `blakebeckcoding/Pepper` | Partially studied | Tutorial-style fake HMD plus controllers rig with provider, fake devices, controller components, and keyboard/mouse input thread |
+
+### Consolidation note
+
+This family matters because `headsetless VR workflows` are useful for
+diagnostics, development, automated tests, and hardware-light iteration. It now
+clearly includes:
+
+- phone-as-HMD streaming bridges
+- desktop display or null display HMD components
+- controller/tracker-derived fake head pose
+- socket-controlled virtual-device harnesses
+- keyboard/mouse fake HMD and controller rigs
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- no-HMD development helpers
+- repeatable VR test harnesses
+- controllable virtual devices
+- documentation of minimum viable OpenVR fake-device anatomy
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.
