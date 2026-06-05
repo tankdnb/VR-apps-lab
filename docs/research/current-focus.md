@@ -68,6 +68,11 @@ These are the clearest current product and research lines:
    controller profiles, WebXR emulators, modern Unity MR toolkits, Quest
    camera/depth/anchor samples, MR motifs, Stardust clients, and Linux
    desktop-in-XR helpers.
+13. `Godot XR, A-Frame component systems, Unreal XR plugins, and VR teleoperation control surfaces`
+   the repository now has fresh coverage of Godot scene-pack toolkits and
+   vendor extension stacks, A-Frame inspectors and networked components,
+   Unreal replicated interaction/hand/tracker/comfort plugins, and VR
+   teleoperation architectures that use headsets as operator surfaces.
 
 ## Most useful current docs
 
@@ -135,6 +140,10 @@ instead of full history:
 - `landscape/vr-projects-wave-113-unity-xr-interaction-workflow-toolkits-scientific-rigs-training-graphs-and-tilia-composition.md`
 - `landscape/vr-projects-wave-114-meta-quest-mr-camera-depth-spatial-anchor-presence-and-motifs-samples.md`
 - `landscape/vr-projects-wave-115-linux-spatial-desktop-stardust-workspace-clients-and-desktop-to-xr-helpers.md`
+- `landscape/vr-projects-wave-116-godot-xr-engine-toolkits-templates-backends-and-vendor-extension-stacks.md`
+- `landscape/vr-projects-wave-117-aframe-webxr-components-inspectors-networked-scenes-and-hand-ui.md`
+- `landscape/vr-projects-wave-118-unreal-vr-interaction-toolkits-hand-tracking-comfort-and-tracker-plugins.md`
+- `landscape/vr-projects-wave-119-vr-teleoperation-headset-frontends-robot-bridges-and-data-capture.md`
 
 ## Strong donor clusters right now
 
@@ -266,6 +275,23 @@ the strongest current clusters:
   `picom-xrdesktop-companion`
   for Linux desktop-in-XR shells, 2D panel bridges, virtual monitors,
   launchers, workspace grouping, and compositor-assisted window mirroring.
+- `godot-xr-tools`, `godot-xr-template`, `godot_openxr_vendors`,
+  `godot_openvr`
+  for Godot scene-pack XR toolkits, action-map/export baselines, vendor
+  OpenXR extension gates, and SteamVR metadata helpers.
+- `aframe`, `aframe-inspector`, `networked-aframe`, `superframe`,
+  `aframe-hand-tracking-controls-extras`
+  for browser-native XR component systems, scene inspection, schema-driven
+  networked sync, in-VR diagnostics, and hand/pinch UI widgets.
+- `VRExpansionPlugin`, `MixedReality-UXTools-Unreal`,
+  `VrTunnellingPro-UE4`, `FSOpenXRHandTracking`,
+  `UE4OpenXRViveTrackerPlugin`
+  for Unreal replicated grips, MR near/far UX primitives, comfort tunnelling,
+  OpenXR hand tracking, and tracker role mapping.
+- `kbot_vr_teleop`, `xarm_vr_teleop`, `collab-sim`,
+  `franka-vr-teleop`, `VR_Teleop_Interface`, `cambot`, `UR_VR_Teleop`
+  for VR operator/control-surface architecture, pose transport, IK/MPC loops,
+  safety gates, diagnostics sidecars, and data-capture workflows.
 
 ## Highest-value next follow-up passes
 
@@ -314,6 +340,10 @@ directions:
 40. `Unity XR interaction/workflow toolkits, scientific rigs, training graphs, and Tilia composition`
 41. `Meta Quest MR camera, depth, spatial-anchor, presence, and motif samples`
 42. `Linux spatial desktop, Stardust workspace clients, and desktop-to-XR helpers`
+43. `Godot XR engine toolkits, templates, backends, and vendor extension stacks`
+44. `A-Frame WebXR components, inspectors, networked scenes, and hand UI`
+45. `Unreal VR interaction toolkits, hand tracking, comfort, and tracker plugins`
+46. `VR teleoperation headset frontends, robot bridges, and data capture`
 
 ## Current repository-maintenance priorities
 

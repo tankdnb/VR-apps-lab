@@ -812,3 +812,31 @@ repeatable way.
 
 - `github-research-wave-115-backlog.md`
   Executed backlog for the Wave 115 pass.
+
+- `github-research-wave-116-plan.md`
+  Wave 116 research plan focused on Godot XR toolkits, templates, backend
+  plugins, vendor extension stacks, and deprecated mobile VR bridges.
+
+- `github-research-wave-116-backlog.md`
+  Executed backlog for the Wave 116 pass.
+
+- `github-research-wave-117-plan.md`
+  Wave 117 research plan focused on A-Frame/WebXR components, inspectors,
+  networked scenes, locomotion, diagnostics, and hand UI helpers.
+
+- `github-research-wave-117-backlog.md`
+  Executed backlog for the Wave 117 pass.
+
+- `github-research-wave-118-plan.md`
+  Wave 118 research plan focused on Unreal VR interaction toolkits, hand
+  tracking, comfort tunnelling, tracker plugins, and XRCore-style utilities.
+
+- `github-research-wave-118-backlog.md`
+  Executed backlog for the Wave 118 pass.
+
+- `github-research-wave-119-plan.md`
+  Wave 119 research plan focused on VR teleoperation headset frontends, robot
+  bridges, safety gates, diagnostics, and data capture.
+
+- `github-research-wave-119-backlog.md`
+  Executed backlog for the Wave 119 pass.

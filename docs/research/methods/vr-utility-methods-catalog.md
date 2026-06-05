@@ -5834,3 +5834,312 @@ When a new utility idea appears:
   `picom-xrdesktop-companion`.
 - Best fit for `VR-apps-lab`:
   desktop-to-XR bridge caveats and X11 compositor helper architecture.
+
+## Method 342: Godot XR scene-pack utility toolkit with function nodes and reusable scenes
+
+- What it is:
+  a Godot addon packages XR interaction as reusable scenes and function nodes:
+  gaze pointer, pointer, pickup, pose detector, teleport, movement providers,
+  hands, interactables, events, desktop support, effects, rumble, staging, and
+  user settings.
+- Good for:
+  Godot XR prototypes, utility interaction baselines, hand/controller tools,
+  locomotion experiments, and scene-composed XR helper apps.
+- Why it matters:
+  it shows how an engine-side toolkit can make interaction modules explicit and
+  swappable without becoming one monolithic sample.
+- Strong references:
+  `godot-xr-tools`.
+- Best fit for `VR-apps-lab`:
+  Godot-side utility prototypes and cross-engine interaction module comparison.
+
+## Method 343: Godot XR starter template with action map, vendor dependency, and export feature toggles
+
+- What it is:
+  a starter project includes the OpenXR action map, XR toolkit dependency,
+  template scenes, project settings, and Android export presets with vendor
+  feature flags.
+- Good for:
+  small Godot XR baselines, repeatable project bring-up, action-map examples,
+  and device-feature onboarding.
+- Why it matters:
+  a useful starter is not just a scene; it also preserves device/export wiring
+  that future utilities can forget.
+- Strong references:
+  `godot-xr-template`.
+- Best fit for `VR-apps-lab`:
+  minimal Godot XR project baseline notes.
+
+## Method 344: Godot vendor OpenXR extension packaging and export-plugin capability gates
+
+- What it is:
+  a Godot GDExtension plugin isolates optional vendor OpenXR extension wrappers,
+  editor/project setup helpers, and export plugin toggles for Meta, Pico,
+  Lynx, Magic Leap, Android XR, Khronos, and validation targets.
+- Good for:
+  vendor feature diagnostics, passthrough/depth/anchor experiments, capability
+  explorers, and optional runtime feature gating.
+- Why it matters:
+  device-specific features become tractable when they are explicit optional
+  wrappers and export-time gates rather than hidden assumptions.
+- Strong references:
+  `godot_openxr_vendors`.
+- Best fit for `VR-apps-lab`:
+  vendor OpenXR capability matrix and setup-checker patterns.
+
+## Method 345: SteamVR/OpenVR backend metadata bridge for Godot utilities
+
+- What it is:
+  a Godot OpenVR backend exposes action manifests, action sets, tracking
+  universe, play area, skeletons, render model names/loading, device battery,
+  and charging state to Godot scripts.
+- Good for:
+  SteamVR diagnostics, controller/skeleton experiments, battery overlays,
+  play-area inspectors, and legacy OpenVR helper tools.
+- Why it matters:
+  even legacy runtime backends capture practical device metadata that utility
+  tools often need.
+- Strong references:
+  `godot_openvr`.
+- Best fit for `VR-apps-lab`:
+  SteamVR metadata and OpenVR diagnostic reference design.
+
+## Method 346: Declarative WebXR component registry and primitive system
+
+- What it is:
+  a browser XR framework registers components, systems, primitives, and scenes
+  so tracked controls, hands, lasers, raycasters, cursors, layers, sound, hit
+  tests, stats, screenshots, and XR mode UI can be assembled declaratively.
+- Good for:
+  browser XR utilities, quick diagnostics, operator panels, input visualizers,
+  and prototype spatial UIs.
+- Why it matters:
+  declarative component registration can make utility experiments faster and
+  easier to inspect than low-level WebXR loops alone.
+- Strong references:
+  `aframe`.
+- Best fit for `VR-apps-lab`:
+  browser-native XR utility shell patterns.
+
+## Method 347: Embeddable WebXR scene inspector and live component editor
+
+- What it is:
+  an inspector injects into a running WebXR scene, discovers entities and
+  components, manages cameras, selection, history, shortcuts, component add
+  flows, copy/export actions, and a visual scene graph.
+- Good for:
+  browser XR diagnostics, creator tools, scene debugging, component explorers,
+  and live utility editors.
+- Why it matters:
+  an inspector turns runtime scene state into a product surface, not just a
+  hidden developer concern.
+- Strong references:
+  `aframe-inspector`.
+- Best fit for `VR-apps-lab`:
+  in-browser and in-headset debug/edit surfaces.
+
+## Method 348: Schema-driven networked entity sync with pluggable WebRTC/WebSocket adapters
+
+- What it is:
+  a networked XR scene declares synchronized component schemas while adapter
+  classes handle WebRTC, WebSocket, Socket.IO, room membership, occupant state,
+  broadcasts, and hand/control event propagation.
+- Good for:
+  collaborative browser utilities, multi-user diagnostics, shared operator
+  panels, and lightweight networked WebXR scenes.
+- Why it matters:
+  separating schema from transport keeps scene sync reusable across different
+  server and peer models.
+- Strong references:
+  `networked-aframe`.
+- Best fit for `VR-apps-lab`:
+  browser multi-user utility architecture and WebSocket/WebRTC bridge patterns.
+
+## Method 349: WebXR hand-joint helper API with pinch locomotion and hand UI widgets
+
+- What it is:
+  hand tracking components wrap XRHand joints with helper accessors and convert
+  pinch events into teleport, drag-move, drag-rotate, finger cursor, and
+  fingertip interaction behaviors.
+- Good for:
+  hand-first UI, wrist/pinch controls, locomotion experiments, accessibility
+  input surfaces, and browser XR interaction prototypes.
+- Why it matters:
+  hand data becomes more reusable when joint math and gesture widgets are
+  packaged separately from app logic.
+- Strong references:
+  `aframe-hand-tracking-controls-extras`.
+- Best fit for `VR-apps-lab`:
+  hand/wrist UI and browser XR input experiments.
+
+## Method 350: Unreal replicated grip and VR movement authority layer
+
+- What it is:
+  an Unreal plugin extends motion-controller and movement components with grip
+  replication, per-object grip state, smoothing, late updates, teleport
+  handling, socket/drop events, tracking scale, and client authority conflict
+  handling.
+- Good for:
+  multiplayer VR tools, shared manipulation, replicated utility scenes, network
+  interaction experiments, and grip-heavy prototypes.
+- Why it matters:
+  networked VR interactions need explicit authority and replication rules; they
+  cannot be treated like ordinary object transforms.
+- Strong references:
+  `VRExpansionPlugin`.
+- Best fit for `VR-apps-lab`:
+  Unreal interaction donor comparison and replicated manipulation notes.
+
+## Method 351: Unreal MR UX primitives with hand tracking, near/far input, and simulation
+
+- What it is:
+  an Unreal MR toolkit separates hand tracker interfaces, default hand tracking,
+  XR simulation, near/far pointers, pressable controls, sliders, bounds,
+  manipulators, menus, finger cursors, surface magnetism, and touchable volumes.
+- Good for:
+  spatial UI, hand menus, utility panels, manipulation tools, guided setup,
+  and near/far input prototypes.
+- Why it matters:
+  robust MR UX depends on reusable input and control primitives, not only on
+  controller pose callbacks.
+- Strong references:
+  `MixedReality-UXTools-Unreal`.
+- Best fit for `VR-apps-lab`:
+  cross-engine spatial UI primitive synthesis.
+
+## Method 352: VR comfort tunnelling preset and mask component system
+
+- What it is:
+  a VR comfort plugin packages vignette/tunnelling modes, skybox/cubemap,
+  windows, blur, masks, world-space portals, mobile variants, materials, and
+  presets as configurable runtime comfort effects.
+- Good for:
+  locomotion comfort, accessibility options, simulator sickness mitigation,
+  user settings, and visual safety research.
+- Why it matters:
+  comfort is a user-facing product system and should be tunable, not hidden as
+  a single hardcoded shader.
+- Strong references:
+  `VrTunnellingPro-UE4`.
+- Best fit for `VR-apps-lab`:
+  comfort settings and accessibility reference patterns.
+
+## Method 353: OpenXR hand tracking adapter with pinch-as-input and smoothed hand ray
+
+- What it is:
+  a compact Unreal adapter reads OpenXR hand/skeleton data, renders hands with
+  instanced meshes, detects pinch, registers Enhanced Input actions, and
+  exposes a smoothed hand ray.
+- Good for:
+  hand diagnostics, pinch controls, hand-first UI, pointer/ray experiments,
+  and compact engine-side input adapters.
+- Why it matters:
+  a small adapter can turn raw hand tracking into reusable UI events without
+  requiring a large interaction framework.
+- Strong references:
+  `FSOpenXRHandTracking`.
+- Best fit for `VR-apps-lab`:
+  hand tracking input adapter patterns.
+
+## Method 354: OpenXR tracker-role-to-motion-source bridge
+
+- What it is:
+  an Unreal OpenXR extension plugin enables a tracker interaction extension,
+  enumerates runtime tracker role paths, and maps them into engine motion
+  source names such as chest, waist, feet, elbows, knees, shoulders, camera, or
+  handheld.
+- Good for:
+  tracker diagnostics, custom-device plumbing, body tracker tools, runtime role
+  inspectors, and motion-source bridge experiments.
+- Why it matters:
+  tracker roles become useful to engine code only when extension paths are
+  converted into stable application-facing input names.
+- Strong references:
+  `UE4OpenXRViveTrackerPlugin`.
+- Best fit for `VR-apps-lab`:
+  tracker inventory and OpenXR extension bridge research.
+
+## Method 355: VR teleop headset frontend plus desktop IK and UDP robot relay
+
+- What it is:
+  a headset web app streams hand/controller tracking and joystick state through
+  WebSocket, while a desktop sidecar performs IK and sends JSON/UDP command
+  packets to a robot or policy interface.
+- Good for:
+  operator panels, robot teleop references, pose stream utilities, WebXR
+  control surfaces, and low-latency diagnostics.
+- Why it matters:
+  it separates headset UX from control computation and from robot command
+  transport, making each layer inspectable and replaceable.
+- Strong references:
+  `kbot_vr_teleop`.
+- Best fit for `VR-apps-lab`:
+  generic VR control-surface architecture.
+
+## Method 356: Headset-free OpenVR controller-pose to robot-command bridge
+
+- What it is:
+  a SteamVR/OpenVR bridge uses a null-driver/no-HMD setup and a tracked
+  controller to generate 6DoF pose deltas, button/trigger gripper actions,
+  haptics, IK targets, and robot command modes.
+- Good for:
+  headsetless labs, hardware-light input testing, controller diagnostics,
+  custom control rigs, and no-HMD workflows.
+- Why it matters:
+  a tracked controller can be a useful VR input device even when no visual
+  headset surface is needed.
+- Strong references:
+  `xarm_vr_teleop`.
+- Best fit for `VR-apps-lab`:
+  no-HMD control surfaces and OpenVR device input bridges.
+
+## Method 357: Simulation VR teleop loop with MPC, reset callbacks, and demonstration replay
+
+- What it is:
+  an Isaac Sim/OpenXR stack links VR controller follower frames, button
+  managers, robot IK/MPC goals, gripper/reset callbacks, world-state logging,
+  environment randomization, and replay of recorded demonstration states.
+- Good for:
+  simulation telemetry, robot-learning demos, training data, replay tools,
+  synthetic task environments, and VR-controlled simulation utilities.
+- Why it matters:
+  simulation teleop shows how operator input, physics, planning, reset, and
+  replay can live in one inspectable loop.
+- Strong references:
+  `collab-sim`.
+- Best fit for `VR-apps-lab`:
+  simulation telemetry and demonstration replay references.
+
+## Method 358: Teleop pause, recenter, smoothing, watchdog, and workspace safety gates
+
+- What it is:
+  a teleop control loop captures neutral pose, applies smoothed relative deltas,
+  pauses on user gesture or connection loss, recenters on resume, clamps
+  workspace bounds or delta radius, and falls back to safe stop/home behavior.
+- Good for:
+  any VR control surface, robot teleop, simulator control, camera rigs,
+  physical-space utilities, and safety-critical operator workflows.
+- Why it matters:
+  pause/recenter/watchdog controls are core interaction design for any VR tool
+  that controls external state.
+- Strong references:
+  `franka-vr-teleop`, `cambot`, `UR_VR_Teleop`.
+- Best fit for `VR-apps-lab`:
+  operator safety UX and reusable control-loop guardrails.
+
+## Method 359: VR teleop diagnostics sidecar and synchronized data-capture loop
+
+- What it is:
+  a teleop system mirrors commands to a visualizer, logs command/pose/robot
+  state, captures RGB/depth/video streams, records episodes, supports save/reset
+  buttons, and can replay demonstrations for debugging or learning.
+- Good for:
+  diagnostics dashboards, robot-learning datasets, simulation replay,
+  synchronized capture, and operator training tools.
+- Why it matters:
+  external-state utilities need observability and capture from the start, not
+  only after the control loop works.
+- Strong references:
+  `kbot_vr_teleop`, `collab-sim`, `UR_VR_Teleop`.
+- Best fit for `VR-apps-lab`:
+  VR utility observability and data-capture pattern library.

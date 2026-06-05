@@ -2911,6 +2911,152 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - launcher and app-session utilities
 - Linux desktop mirroring tradeoff notes
 
+## Family 95: Godot XR engine toolkits, templates, backends, and vendor extension stacks
+
+This family covers repositories where the main value is Godot-side XR utility
+architecture: scene-pack interaction toolkits, starter templates, OpenXR/OpenVR
+backend plugins, vendor OpenXR extension wrappers, export feature toggles, and
+legacy mobile VR migration references.
+
+| Project | Status | Notes |
+|---|---|---|
+| `GodotVR/godot-xr-tools` | Partially studied | Modular XR scene pack with gaze/pointer/pickup/pose/teleport/movement functions, hands, interactables, desktop support, effects, staging, rumble, and settings |
+| `GodotVR/godot-xr-template` | Already studied | Starter project with OpenXR action map, XR Tools wiring, OpenXR Vendors dependency, and Android export feature toggles |
+| `GodotVR/godot_openxr_for_godot_3.x` | Partially studied | Legacy Godot 3 OpenXR backend with interface/config/action/pose/hand/skeleton/extension wrapper boundaries |
+| `GodotVR/godot_openxr_vendors` | Partially studied | Godot 4 GDExtension stack for Android XR, Meta, Pico, Lynx, Magic Leap, Khronos, passthrough, anchors, depth, body/face/hand, scene, render-model, and export-plugin features |
+| `GodotVR/godot_openvr` | Partially studied | Godot 4 OpenVR/SteamVR backend with action manifests, skeletons, play-area, render-model, battery, and charging helpers |
+| `GodotVR/godot_oculus_mobile` | Already studied as deprecated reference | Deprecated Oculus Mobile bridge useful only for migration/API-shaping lessons around vendor wrapper surfaces |
+
+### Consolidation note
+
+This family matters because `Godot XR` can be a compact prototyping substrate
+for utilities when interaction and device features are made explicit as addons,
+templates, action maps, and export gates. It now clearly includes:
+
+- scene-pack interaction functions and reusable scenes
+- starter templates with action maps and export presets
+- OpenXR/OpenVR backend anatomy
+- vendor feature wrappers and project setup helpers
+- deprecated mobile bridges as migration references
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Godot XR utility prototypes
+- vendor feature capability explorers
+- action-map and export-preset baselines
+- cross-engine comparison of interaction module boundaries
+
+## Family 96: A-Frame WebXR components, inspectors, networked scenes, and hand UI
+
+This family covers repositories where the main value is browser-native XR
+composition above raw WebXR APIs: declarative entity components, systems,
+primitives, visual scene inspectors, locomotion packs, schema-driven networked
+scenes, in-VR diagnostics, and hand-joint helper components.
+
+| Project | Status | Notes |
+|---|---|---|
+| `aframevr/aframe` | Partially studied | Declarative WebXR ECS runtime with tracked/hand/laser controls, raycaster, cursor, sound, layers, AR hit test, XR mode UI, stats, screenshot, and spectator camera paths |
+| `aframevr/aframe-inspector` | Already studied | Embeddable visual scene graph and live component editor with entity selection, cameras, history, component add/edit, copy, and GLB export paths |
+| `c-frame/aframe-extras` | Already studied | Locomotion/input helper pack with movement controls, gamepad/keyboard/touch/trackpad/nipple inputs, navmesh agents, checkpoint, grab, sphere collider, and loaders |
+| `networked-aframe/networked-aframe` | Partially studied | Schema-driven scene sync with networked-scene config, adapter factory for WebRTC/WebSocket transports, room server, and networked hand controls |
+| `supermedium/superframe` | Partially studied | Component library with in-VR logs, haptics, state, templates, layout, FPS/debug helpers, audio analysis, thumb controls, and micro-utility components |
+| `gftruj/aframe-hand-tracking-controls-extras` | Already studied | WebXR hand-joint helper API with pinch-driven hand teleport, drag move/rotate, finger cursor, and fingertip interaction components |
+
+### Consolidation note
+
+This family matters because `browser XR` can be a practical utility substrate
+when low-level WebXR details are lifted into components, schemas, inspectors,
+and diagnostics. It now clearly includes:
+
+- declarative entity-component XR scenes
+- embedded scene inspection and live component editing
+- composable locomotion/input controls
+- schema-driven networked scenes
+- in-VR logs and micro-diagnostics
+- hand-joint helpers and pinch UI widgets
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- browser-based XR utility shells
+- WebXR scene inspectors and debug panels
+- collaborative operator surfaces
+- hand-first WebXR UI experiments
+
+## Family 97: Unreal VR interaction toolkits, hand tracking, comfort, and tracker plugins
+
+This family covers repositories where the main value is Unreal-side XR utility
+architecture: replicated grip/movement systems, Blueprint/C++ component packs,
+MR UX primitives, comfort/tunnelling plugins, OpenXR hand tracking, Vive tracker
+role plugins, and compact multiplayer interaction frameworks.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mordentral/VRExpansionPlugin` | Partially studied | Large replicated VR interaction framework with grip motion controllers, object grip replication, smoothing, movement actions, teleport events, and OpenXR hand pose helpers |
+| `1runeberg/RunebergVRPlugin` | Already studied | Compact VR component pack for pawn, grabber, movement, teleporter, gaze, gesture database, climb, and custom gravity |
+| `microsoft/MixedReality-UXTools-Unreal` | Partially studied as archived reference | MR UX plugin with hand tracker abstraction, near/far input, simulation, pressable buttons, sliders, bounds, manipulators, menus, pointers, and touchables |
+| `sigtrapgames/VrTunnellingPro-UE4` | Already studied | Comfort plugin with vignette/tunnelling, masks, skybox/cubemap, windows, blur, mobile paths, and presets |
+| `demonixis/FSOpenXRHandTracking` | Already studied | Compact OpenXR hand tracking adapter with instanced hand rendering, pinch detection, Enhanced Input actions, and smoothed hand rays |
+| `Rectus/UE4OpenXRViveTrackerPlugin` | Already studied | Thin OpenXR extension plugin mapping Vive tracker role paths into Unreal motion source names |
+| `V4C38/ue5-xrcore` | Partially studied | Modern XRCore framework with replicated hands, lasers, interactors, grab/trigger interactions, connector sockets, holograms, highlights, and replicated physics helpers |
+
+### Consolidation note
+
+This family matters because `Unreal XR utilities` often need plugin-level
+boundaries for authority, input, UX primitives, comfort, and extension mapping.
+It now clearly includes:
+
+- replicated grip and VR movement authority
+- compact Blueprint-facing VR components
+- MR near/far UI and hand simulation
+- comfort vignette/tunnelling preset systems
+- OpenXR hand tracking and tracker role plugins
+- lightweight multiplayer interaction components
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Unreal interaction donor comparison
+- near/far spatial UI synthesis
+- tracker role diagnostics
+- comfort setting and accessibility references
+
+## Family 98: VR teleoperation headset frontends, robot bridges, and data capture
+
+This family covers repositories where VR headsets, controllers, and hand
+tracking become control surfaces for robots, simulation robots, or camera arms.
+The reusable value is usually in frontend/transport/control-loop/safety/logging
+architecture rather than in robot-specific code.
+
+| Project | Status | Notes |
+|---|---|---|
+| `kscalelabs/kbot_vr_teleop` | Partially studied | React/WebXR headset frontend with hand/controller tracking, robot/video surfaces, Python IK, UDP robot command schema, joystick commands, finger UDP helpers, and Rerun visualizer |
+| `dwaitbhatt/xarm_vr_teleop` | Already studied | Headset-free SteamVR/OpenVR controller-to-xArm bridge with null-driver setup, pose deltas, IK/control modes, trigger gripper, haptics, and menu exit |
+| `NVlabs/collab-sim` | Partially studied | Isaac Sim/OpenXR VR robot teleop with CuRobo IK/MPC, controller follower frames, button managers, reset callbacks, data logging, and replay |
+| `wengmister/franka-vr-teleop` | Partially studied | Quest hand-pose stream through ROS2/UDP/TCP/ADB reverse into weighted IK, Ruckig joint velocity, smoothing, pause/recenter, and pose visualization |
+| `nakama-lab/VR_Teleop_Interface` | Partially studied | Unity/Quest/ROS2/ZED/Franka bridge with stereo feed, controller publishers, force/torque-to-rumble feedback, ROS TCP topics, Docker ZED deployment, and SSH launch |
+| `open-thought/cambot` | Partially studied | WebXR stereo camera-arm telepresence with HTTPS/WebSocket, WebRTC fallback, VR HUD, head-pose IK, safety bounds, watchdog, pause, home, and transport controls |
+| `plund-dtu/UR_VR_Teleop` | Partially studied | OpenVR/Meta Quest controller bridge for UR robots with RTDE servoL, axis remap, Robotiq gripper, pause/recenter, RealSense workers, episode save/reset, and custom logging loop |
+
+### Consolidation note
+
+This family matters because `VR teleoperation` turns many recurring utility
+problems into one architecture: headset frontend, pose/control transport,
+command relay, IK/MPC/control loop, safety gates, visualization, and data
+capture. It now clearly includes:
+
+- WebXR headset frontends for robot/operator surfaces
+- SteamVR/OpenVR controller-pose bridges
+- Unity/ROS2/Quest/ZED multi-machine bridges
+- Isaac Sim/OpenXR simulation teleop and replay
+- UDP/TCP/WebSocket/WebRTC/ROS transport models
+- pause, recenter, smoothing, watchdog, workspace bounds, and data logging
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- generic VR operator/control-surface architecture
+- pose stream diagnostics and visualizers
+- safe recenter/pause UX patterns
+- synchronized demonstration capture and replay references
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

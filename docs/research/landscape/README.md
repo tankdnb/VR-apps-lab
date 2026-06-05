@@ -461,6 +461,24 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on Linux spatial desktop shells, Stardust
   workspace clients, virtual monitors, launchers, and desktop-to-XR helpers.
 
+- `vr-projects-wave-116-godot-xr-engine-toolkits-templates-backends-and-vendor-extension-stacks.md`
+  Next GitHub discovery wave focused on Godot XR scene toolkits, templates,
+  OpenXR/OpenVR backends, vendor extension packaging, and legacy mobile VR
+  bridges.
+
+- `vr-projects-wave-117-aframe-webxr-components-inspectors-networked-scenes-and-hand-ui.md`
+  Next GitHub discovery wave focused on A-Frame/WebXR components, visual
+  inspectors, networked scenes, locomotion helpers, diagnostics, and hand UI.
+
+- `vr-projects-wave-118-unreal-vr-interaction-toolkits-hand-tracking-comfort-and-tracker-plugins.md`
+  Next GitHub discovery wave focused on Unreal VR interaction frameworks,
+  MR UX primitives, comfort tunnelling, OpenXR hand tracking, and tracker
+  role plugins.
+
+- `vr-projects-wave-119-vr-teleoperation-headset-frontends-robot-bridges-and-data-capture.md`
+  Next GitHub discovery wave focused on VR teleoperation headset frontends,
+  robot bridges, pose transport, safety gates, diagnostics, and data capture.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

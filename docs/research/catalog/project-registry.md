@@ -1425,6 +1425,64 @@ Primary docs:
 - `StardustXR/magnetar` - `Already studied`
 - `yshui/picom-xrdesktop-companion` - `Partially studied`
 
+## 87. Godot XR engine toolkits, templates, backends, and vendor extension stacks
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-116-godot-xr-engine-toolkits-templates-backends-and-vendor-extension-stacks.md`
+- `../landscape/project-families.md`
+
+- `GodotVR/godot-xr-tools` - `Partially studied`
+- `GodotVR/godot-xr-template` - `Already studied`
+- `GodotVR/godot_openxr_for_godot_3.x` - `Partially studied`
+- `GodotVR/godot_openxr_vendors` - `Partially studied`
+- `GodotVR/godot_openvr` - `Partially studied`
+- `GodotVR/godot_oculus_mobile` - `Already studied as deprecated reference`
+
+## 88. A-Frame WebXR components, inspectors, networked scenes, and hand UI
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-117-aframe-webxr-components-inspectors-networked-scenes-and-hand-ui.md`
+- `../landscape/project-families.md`
+
+- `aframevr/aframe` - `Partially studied`
+- `aframevr/aframe-inspector` - `Already studied`
+- `c-frame/aframe-extras` - `Already studied`
+- `networked-aframe/networked-aframe` - `Partially studied`
+- `supermedium/superframe` - `Partially studied`
+- `gftruj/aframe-hand-tracking-controls-extras` - `Already studied`
+
+## 89. Unreal VR interaction toolkits, hand tracking, comfort, and tracker plugins
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-118-unreal-vr-interaction-toolkits-hand-tracking-comfort-and-tracker-plugins.md`
+- `../landscape/project-families.md`
+
+- `mordentral/VRExpansionPlugin` - `Partially studied`
+- `1runeberg/RunebergVRPlugin` - `Already studied`
+- `microsoft/MixedReality-UXTools-Unreal` - `Partially studied as archived reference`
+- `sigtrapgames/VrTunnellingPro-UE4` - `Already studied`
+- `demonixis/FSOpenXRHandTracking` - `Already studied`
+- `Rectus/UE4OpenXRViveTrackerPlugin` - `Already studied`
+- `V4C38/ue5-xrcore` - `Partially studied`
+
+## 90. VR teleoperation headset frontends, robot bridges, and data capture
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-119-vr-teleoperation-headset-frontends-robot-bridges-and-data-capture.md`
+- `../landscape/project-families.md`
+
+- `kscalelabs/kbot_vr_teleop` - `Partially studied`
+- `dwaitbhatt/xarm_vr_teleop` - `Already studied`
+- `NVlabs/collab-sim` - `Partially studied`
+- `wengmister/franka-vr-teleop` - `Partially studied`
+- `nakama-lab/VR_Teleop_Interface` - `Partially studied; deepened from earlier not-yet marker`
+- `open-thought/cambot` - `Partially studied`
+- `plund-dtu/UR_VR_Teleop` - `Partially studied`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

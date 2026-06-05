@@ -59,6 +59,25 @@ deeply`.
 | `Denwa/vive-wireless-info-overlay` | Not studied deeply | Device-specific thermal micro-overlay with very focused user value | Low | Medium | Revisit only if fuller source appears; the product framing is clearer than the current donor surface |
 | `mbucchia/_ARCHIVE_OverXR` | Fork / variant only | Archive shell pointing to a once-promising overlay compatibility idea | Low | Medium | Whether useful code exists in releases, tags, or external mirrors |
 
+## Priority batch C2: Waves 116-119 follow-up candidates
+
+These were clarified during the latest Godot, A-Frame/WebXR, Unreal, and VR
+teleoperation source pass. They are already represented in the registry, but
+they remain useful deeper-study candidates if one of these branches becomes an
+active prototype or reuse-plan target.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `GodotVR/godot-xr-tools` | Partially studied | Scene-pack XR toolkit whose strongest value is reusable function nodes for interaction, hands, movement, and settings | High | High | Split a future pass by function module: gaze/pointer, pickup, locomotion, hands, desktop support, and user settings |
+| `GodotVR/godot_openxr_vendors` | Partially studied | Vendor OpenXR extension packaging where export plugins and capability gates may become a strong diagnostics pattern | High | High | Build a feature matrix for passthrough, depth, anchors, hand/body/face, render models, colocation, and export toggles |
+| `aframevr/aframe-inspector` | Already studied | Browser scene inspector that can become a reference for in-headset or in-browser debug/edit surfaces | High | High | Compare entity/component history, selection, export, and component-add flows against native overlay diagnostics |
+| `networked-aframe/networked-aframe` | Partially studied | Schema-driven scene sync with pluggable WebRTC/WebSocket adapters | High | High | Compare adapter boundaries with OSC/WebSocket bridge families and decide what a generic browser utility sync layer should keep |
+| `mordentral/VRExpansionPlugin` | Partially studied | Replicated Unreal grip/movement framework whose donor value sits in authority, smoothing, and grip event boundaries | High | High | Deepen only if Unreal networked interaction becomes active scope; isolate grip replication and movement actions first |
+| `microsoft/MixedReality-UXTools-Unreal` | Partially studied as archived reference | Archived but rich MR UX primitive library with hand tracker, near/far input, menus, touchables, and simulation | High | High | Use as comparison material for a cross-engine near/far UI primitive matrix |
+| `NVlabs/collab-sim` | Partially studied | Isaac Sim/OpenXR robot teleop with MPC, reset callbacks, logging, and replay | High | High | Deepen data logger, replay, and controller callback design if simulation telemetry becomes active |
+| `kscalelabs/kbot_vr_teleop` | Partially studied | WebXR headset frontend plus Python IK and UDP relay architecture | High | High | Compare browser tracking transport, joystick commands, IK sidecar, and Rerun visualizer against `cambot` |
+| `open-thought/cambot` | Partially studied | Polished WebXR telepresence surface with WebSocket/WebRTC transport, HUD, watchdog, safety bounds, and head-pose IK | High | High | Extract a generic operator HUD/safety/transport blueprint if VR control surfaces become a reuse-plan branch |
+
 ## Priority batch D: Wave 9 follow-up candidates
 
 These were discovered during the Wave 9 source pass, added to the registry, and
@@ -134,7 +153,7 @@ nodes instead of being over-promoted immediately.
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
 | `MixedRealityToolkit/MixedRealityToolkit-Unity` | Partially studied | Current-generation continuation of the MRTK spatial-UI line; Wave 113 covered package split, stateful interactables, pressable buttons, manipulation, and solver handlers | High | High | Revisit accessibility helpers, data binding, keyboard, and menu-specific internals if Unity spatial UI becomes active prototype scope |
-| `nakama-lab/VR_Teleop_Interface` | Not studied deeply | Teleoperation stack whose architectural decomposition may matter more than any single widget | Medium | Medium-high | Inspect non-main branches, scene structure, and transport boundaries to see whether it is a better system-design donor than a UI donor |
+| `nakama-lab/VR_Teleop_Interface` | Partially studied | Teleoperation stack whose architectural decomposition matters more than any single widget; Wave 119 mapped the main Unity/ROS2/ZED/Franka architecture | Medium | Medium-high | Inspect non-main branches, Unity scene structure, ROS nodes, stereo feed, and haptic feedback internals if this becomes an active teleop branch |
 | `h2r/GHOST` | Not studied deeply | Visualization-rich teleoperation sidecar with point-cloud and gesture-control overlap | Medium | Medium-high | Inspect visualization pipeline, gesture boundary, and how tightly it couples to `ros_reality` |
 
 ## Priority batch L: Waves 32-35 surfaced follow-up candidates
@@ -1092,6 +1111,56 @@ These are larger than a single repo and should guide the next research wave.
   injection and workspace grouping against WayVR and earlier desktop-overlay
   families.
 
+### 81. `Godot XR engine toolkits, templates, backends, and vendor extension stacks`
+
+- Main entries:
+  `godot-xr-tools`, `godot-xr-template`, `godot_openxr_for_godot_3.x`,
+  `godot_openxr_vendors`, `godot_openvr`, `godot_oculus_mobile`
+- Why it matters:
+  this family now captures Godot as a compact XR utility substrate: reusable
+  scene/function modules, action-map templates, OpenXR/OpenVR backend anatomy,
+  vendor extension packaging, export feature gates, and deprecated mobile
+  bridge migration lessons. A future deeper pass should build a vendor-feature
+  matrix and compare Godot interaction modules against Unity, Unreal, and
+  WebXR toolkits.
+
+### 82. `A-Frame WebXR components, inspectors, networked scenes, and hand UI`
+
+- Main entries:
+  `aframe`, `aframe-inspector`, `aframe-extras`, `networked-aframe`,
+  `superframe`, `aframe-hand-tracking-controls-extras`
+- Why it matters:
+  this family now captures browser XR above raw WebXR APIs: declarative
+  components, visual scene inspection, locomotion packs, schema-driven
+  networking, in-VR diagnostics, and hand-joint widgets. A future deeper pass
+  should compare browser utility ergonomics with native overlay and engine-side
+  toolkit approaches.
+
+### 83. `Unreal VR interaction toolkits, hand tracking, comfort, and tracker plugins`
+
+- Main entries:
+  `VRExpansionPlugin`, `RunebergVRPlugin`, `MixedReality-UXTools-Unreal`,
+  `VrTunnellingPro-UE4`, `FSOpenXRHandTracking`,
+  `UE4OpenXRViveTrackerPlugin`, `ue5-xrcore`
+- Why it matters:
+  this family now captures Unreal plugin-side XR utility architecture:
+  replicated grips, compact Blueprint/C++ components, MR UX primitives,
+  comfort tunnelling, OpenXR hand tracking, tracker role mapping, and
+  multiplayer interaction helpers. A future deeper pass should isolate the
+  near/far UI primitive matrix and replicated grip authority model.
+
+### 84. `VR teleoperation headset frontends, robot bridges, and data capture`
+
+- Main entries:
+  `kbot_vr_teleop`, `xarm_vr_teleop`, `collab-sim`, `franka-vr-teleop`,
+  `VR_Teleop_Interface`, `cambot`, `UR_VR_Teleop`
+- Why it matters:
+  this family now captures VR as an operator/control surface: headset
+  frontends, pose/control transports, IK/MPC loops, robot/simulation command
+  relays, safety gates, visualizers, and synchronized data capture. A future
+  deeper pass should extract a generic teleop/control-surface blueprint without
+  turning `VR-apps-lab` into a robot-control repository.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1147,6 +1216,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 49. `Unity XR interaction/workflow toolkits, scientific rigs, training graphs, and Tilia composition`
 50. `Meta Quest MR camera, depth, spatial-anchor, presence, and motif samples`
 51. `Linux spatial desktop, Stardust workspace clients, and desktop-to-XR helpers`
+52. `Godot XR engine toolkits, templates, backends, and vendor extension stacks`
+53. `A-Frame WebXR components, inspectors, networked scenes, and hand UI`
+54. `Unreal VR interaction toolkits, hand tracking, comfort, and tracker plugins`
+55. `VR teleoperation headset frontends, robot bridges, and data capture`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.
