@@ -1428,6 +1428,53 @@ These are larger than a single repo and should guide the next research wave.
   future deeper pass should build an OpenGloves transport/version matrix before
   any reuse.
 
+### 105. `WebXR engine export bridges, device-display adapters, layers, and test/showcase scaffolds`
+
+- Main entries:
+  `unity-webxr-export`, `Simple-WebXR-Unity`, `looking-glass-webxr`,
+  `webxr-layers-polyfill`, `webxr-test-api`, `webxr-showcases`
+- Why it matters:
+  this family captures WebXR infrastructure rather than one content app:
+  engine export settings, tiny bridges, display adapters, layer shims,
+  fake-device testing, and complete feature-gated showcase flows. A future
+  deeper pass should build a WebXR feature/support matrix and compare it with
+  native OpenXR/OpenVR fake-device and overlay workflows.
+
+### 106. `Browser-based XR editors, live-coding sandboxes, visual workspaces, and scene tooling`
+
+- Main entries:
+  `playcanvas/editor`, `nunuStudio`, `triplex`, `RiftSketch`, `remixvr`,
+  `troika`
+- Why it matters:
+  this family captures editor-like foundations that many VR utilities need:
+  method buses, observable history, asset paths, project files, source-code
+  scene metadata, in-VR live code, template publishing, and readable 3D text/UI.
+  A future deeper pass should create an editor-boundary matrix and a 3D
+  readability checklist.
+
+### 107. `VRM/avatar web stacks, model specs, runtime loaders, and browser avatar/mocap surfaces`
+
+- Main entries:
+  `UniVRM`, `three-vrm`, `aframe-vrm`, `SystemAnimatorOnline`,
+  `vrm-specification`
+- Why it matters:
+  this family captures avatar runtime contracts across Unity, browser, A-Frame,
+  and specs: humanoid, expressions, first-person, look-at, spring bones,
+  constraints, metadata, and mocap surfaces. A future deeper pass should build
+  a VRM capability matrix against VMC, MediaPipe, VRChat OSC, and face-tracking
+  references.
+
+### 108. `WebAR marker/image tracking, model-viewer AR surfaces, and lightweight scene-understanding utilities`
+
+- Main entries:
+  `mind-ar-js`, `AR.js`, `Simple-AR`, `aframe-ar`, `model-viewer`, `enva-xr`
+- Why it matters:
+  this family captures browser AR placement and scene understanding:
+  target compilation, marker/image/face/location tracking, A-Frame wrappers,
+  production AR fallback UX, hotspots, hit-test, planes, anchors, light, depth,
+  and debug surfaces. A future deeper pass should build a browser AR placement
+  matrix before any MR utility prototype.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1507,6 +1554,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 73. `VR creative authoring, drawing/modeling tools, and in-headset tool/menu systems`
 74. `Networked/social XR frameworks, room clients, and multi-user state substrates`
 75. `OpenGloves sidecars, protocols, named-pipe input, OSC ingress, and force-feedback adapters`
+76. `WebXR engine export bridges, device-display adapters, layers, and test/showcase scaffolds`
+77. `Browser-based XR editors, live-coding sandboxes, visual workspaces, and scene tooling`
+78. `VRM/avatar web stacks, model specs, runtime loaders, and browser avatar/mocap surfaces`
+79. `WebAR marker/image tracking, model-viewer AR surfaces, and lightweight scene-understanding utilities`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

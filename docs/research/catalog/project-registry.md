@@ -1767,6 +1767,61 @@ Primary docs:
 - `LucidVR/opengloves-force-feedback-unity-demo` - `Already studied as Unity/SteamVR force-feedback adapter demo`
 - `LucidVR/opengloves-hl-alyx-integration` - `Already studied as game-log/file-watcher force-feedback sidecar`
 
+## 111. WebXR engine export bridges, device-display adapters, layers, and test/showcase scaffolds
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-140-webxr-engine-export-bridges-device-display-adapters-layers-and-test-showcase-scaffolds.md`
+- `../landscape/project-families.md`
+
+- `De-Panther/unity-webxr-export` - `Already studied as Unity WebXR loader/settings/export bridge`
+- `Rufus31415/Simple-WebXR-Unity` - `Already studied as minimal Unity WebXR bridge and editor simulator`
+- `Looking-Glass/looking-glass-webxr` - `Already studied as non-HMD WebXR display adapter`
+- `immersive-web/webxr-layers-polyfill` - `Already studied as composition-layer polyfill and renderer reference`
+- `immersive-web/webxr-test-api` - `Already studied as deterministic WebXR fake-device test API reference`
+- `meta-quest/webxr-showcases` - `Already studied as feature-gated Quest/WebXR showcase reference`
+
+## 112. Browser-based XR editors, live-coding sandboxes, visual workspaces, and scene tooling
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-141-browser-based-xr-editors-live-coding-sandboxes-visual-workspaces-and-scene-tooling.md`
+- `../landscape/project-families.md`
+
+- `playcanvas/editor` - `Already studied as browser editor architecture and realtime asset/document reference`
+- `tentone/nunuStudio` - `Already studied as self-contained scene editor and VR-toggle studio`
+- `pmndrs/triplex` - `Already studied as source-code-driven React Three Fiber visual workspace`
+- `brianpeiris/RiftSketch` - `Already studied as in-VR live-coding sandbox`
+- `teliportme/remixvr` - `Already studied as template-based VR creation and classroom publishing reference`
+- `protectwise/troika` - `Already studied as Three.js facade/UI/text infrastructure donor`
+
+## 113. VRM/avatar web stacks, model specs, runtime loaders, and browser avatar/mocap surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-142-vrm-avatar-web-stacks-model-specs-runtime-loaders-and-browser-avatar-mocap-surfaces.md`
+- `../landscape/project-families.md`
+
+- `vrm-c/UniVRM` - `Already studied as Unity VRM runtime/editor/import/export stack`
+- `pixiv/three-vrm` - `Already studied as modular Three.js VRM loader/runtime`
+- `binzume/aframe-vrm` - `Already studied as A-Frame VRM component layer`
+- `ButzYung/SystemAnimatorOnline` - `Already studied as browser avatar/mocap and XR Animator lineage reference`
+- `vrm-c/vrm-specification` - `Already studied as canonical VRM spec/schema contract source`
+
+## 114. WebAR marker/image tracking, model-viewer AR surfaces, and lightweight scene-understanding utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-143-webar-marker-image-tracking-model-viewer-ar-surfaces-and-lightweight-scene-understanding-utilities.md`
+- `../landscape/project-families.md`
+
+- `hiukim/mind-ar-js` - `Already studied as image/face tracking, compiler, and A-Frame integration reference`
+- `AR-js-org/AR.js` - `Already studied as marker, NFT, and location-based WebAR stack`
+- `akbartus/Simple-AR` - `Already studied as minimal WebAR starter and cross-framework reference`
+- `chenzlabs/aframe-ar` - `Already studied as A-Frame WebXR AR helper component layer`
+- `google/model-viewer` - `Already studied as production AR model-viewer component and fallback UX reference`
+- `tentone/enva-xr` - `Already studied as environment-aware WebXR AR renderer`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

@@ -570,6 +570,26 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on OpenGloves sidecars, protocols,
   named-pipe input, OSC ingress, serial encoding, and force-feedback adapters.
 
+- `vr-projects-wave-140-webxr-engine-export-bridges-device-display-adapters-layers-and-test-showcase-scaffolds.md`
+  Next GitHub discovery wave focused on WebXR engine export bridges, non-HMD
+  display adapters, composition layers, fake-device testing, and feature-gated
+  showcase scaffolds.
+
+- `vr-projects-wave-141-browser-based-xr-editors-live-coding-sandboxes-visual-workspaces-and-scene-tooling.md`
+  Next GitHub discovery wave focused on browser-based XR editors, live-coding
+  sandboxes, visual workspaces, template creation, and 3D UI/text
+  infrastructure.
+
+- `vr-projects-wave-142-vrm-avatar-web-stacks-model-specs-runtime-loaders-and-browser-avatar-mocap-surfaces.md`
+  Next GitHub discovery wave focused on VRM/avatar runtime stacks, model specs,
+  Unity/browser loaders, A-Frame avatar components, and browser avatar/mocap
+  surfaces.
+
+- `vr-projects-wave-143-webar-marker-image-tracking-model-viewer-ar-surfaces-and-lightweight-scene-understanding-utilities.md`
+  Next GitHub discovery wave focused on WebAR marker/image/face/location
+  tracking, model-viewer AR fallback UX, A-Frame AR wrappers, and WebXR
+  scene-understanding utilities.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

@@ -984,3 +984,34 @@ repeatable way.
 
 - `github-research-wave-139-backlog.md`
   Executed backlog for the Wave 139 pass.
+
+- `github-research-wave-140-plan.md`
+  Wave 140 research plan focused on WebXR engine export bridges,
+  device-display adapters, layers, deterministic test scaffolds, and showcase
+  apps.
+
+- `github-research-wave-140-backlog.md`
+  Executed backlog for the Wave 140 pass.
+
+- `github-research-wave-141-plan.md`
+  Wave 141 research plan focused on browser-based XR editors, live-coding
+  sandboxes, visual workspaces, scene tooling, templates, and 3D UI/text
+  infrastructure.
+
+- `github-research-wave-141-backlog.md`
+  Executed backlog for the Wave 141 pass.
+
+- `github-research-wave-142-plan.md`
+  Wave 142 research plan focused on VRM/avatar web stacks, model specs,
+  runtime loaders, and browser avatar/mocap surfaces.
+
+- `github-research-wave-142-backlog.md`
+  Executed backlog for the Wave 142 pass.
+
+- `github-research-wave-143-plan.md`
+  Wave 143 research plan focused on WebAR marker/image tracking,
+  model-viewer AR surfaces, A-Frame AR helpers, and scene-understanding
+  utilities.
+
+- `github-research-wave-143-backlog.md`
+  Executed backlog for the Wave 143 pass.

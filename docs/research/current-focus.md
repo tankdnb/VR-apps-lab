@@ -411,6 +411,25 @@ the strongest current clusters:
   for hand-device sidecars, protobuf contracts, named-pipe input, OSC ingress,
   alpha serial encoding, synthetic tests, Unity FFB, and game-log haptic
   adapters.
+- `unity-webxr-export`, `Simple-WebXR-Unity`, `looking-glass-webxr`,
+  `webxr-layers-polyfill`, `webxr-test-api`, `webxr-showcases`
+  for WebXR export loaders, minimal JS/C# bridges, non-HMD display adapters,
+  composition-layer shims, deterministic fake-device testing, and feature-gated
+  browser XR showcases.
+- `playcanvas/editor`, `nunuStudio`, `triplex`, `RiftSketch`, `remixvr`,
+  `troika`
+  for browser editor method buses, local project/action histories,
+  source-code-driven visual workspaces, in-VR live coding, template publishing,
+  and readable Three.js UI/text infrastructure.
+- `UniVRM`, `three-vrm`, `aframe-vrm`, `SystemAnimatorOnline`,
+  `vrm-specification`
+  for VRM runtime/editor stacks, modular browser avatar loaders, A-Frame avatar
+  components, browser avatar/mocap surfaces, and schema-backed avatar behavior
+  contracts.
+- `mind-ar-js`, `AR.js`, `Simple-AR`, `aframe-ar`, `model-viewer`, `enva-xr`
+  for browser AR target compilation, marker/location tracking, AR starter
+  surfaces, A-Frame AR wrappers, AR model-viewer fallback UX, and WebXR
+  hit-test/light/depth scene-understanding helpers.
 
 ## Highest-value next follow-up passes
 
@@ -483,6 +502,10 @@ directions:
 64. `VR creative authoring, drawing/modeling tools, and in-headset tool/menu systems`
 65. `Networked/social XR frameworks, room clients, and multi-user state substrates`
 66. `OpenGloves sidecars, protocols, named-pipe input, OSC ingress, and force-feedback adapters`
+67. `WebXR engine export bridges, device-display adapters, layers, and test/showcase scaffolds`
+68. `Browser-based XR editors, live-coding sandboxes, visual workspaces, and scene tooling`
+69. `VRM/avatar web stacks, model specs, runtime loaders, and browser avatar/mocap surfaces`
+70. `WebAR marker/image tracking, model-viewer AR surfaces, and lightweight scene-understanding utilities`
 
 ## Current repository-maintenance priorities
 

@@ -3766,6 +3766,148 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - OSC/named-pipe/serial adapter comparison
 - force-feedback adapter safety boundaries
 
+## Family 119: WebXR engine export bridges, device-display adapters, layers, and test/showcase scaffolds
+
+This family covers browser-XR infrastructure where the reusable value is
+engine export, feature gating, display adaptation, composition layers,
+deterministic testing, and product-scale WebXR examples.
+
+| Project | Status | Notes |
+|---|---|---|
+| `De-Panther/unity-webxr-export` | Already studied as Unity WebXR loader/settings/export bridge | Unity XR loader and WebGL bridge with JSON reference-space/feature settings, framebuffer scale, manager/input autoload, subsystem gating, camera/controller event handling, and haptics |
+| `Rufus31415/Simple-WebXR-Unity` | Already studied as minimal Unity WebXR bridge and editor simulator | One-component Unity WebXR bridge with enter AR/VR UI, shared JS/C# arrays, left/right input state, select/squeeze events, hit-test data, per-eye cameras, and editor simulator |
+| `Looking-Glass/looking-glass-webxr` | Already studied as non-HMD WebXR display adapter | Polyfill-backed XRDevice adapter for Looking Glass displays with supported reference spaces, canvas/window lifecycle, and multi-view/quilt projection synthesis |
+| `immersive-web/webxr-layers-polyfill` | Already studied as composition-layer polyfill and renderer reference | Session patching, XRWebGLBinding/XRMediaBinding injection, projection/quad/cube/cylinder/equirect layers, media textures, stereo layouts, and GL renderer separation |
+| `immersive-web/webxr-test-api` | Already studied as deterministic WebXR fake-device test API reference | Testing-only simulated XR device/input/control surface for views, poses, tracking loss, select events, hit-test worlds, and DOM overlay pointer coordinates |
+| `meta-quest/webxr-showcases` | Already studied as feature-gated Quest/WebXR showcase reference | WebXR product examples for anchors, hit-test, plane detection, measurement, controller motion, pointer modes, and configurator UI |
+
+### Consolidation note
+
+This family matters because browser-XR tools can become no-install utilities,
+diagnostic panels, public demos, and custom display experiments. It now clearly
+includes:
+
+- Unity-to-WebXR loader and minimal bridge patterns
+- explicit reference-space and feature manifests
+- editor fake-device simulation
+- custom non-HMD XR display adaptation
+- composition-layer session patching and media/layer rendering
+- deterministic fake XR devices for tests
+- feature-gated showcase UX for AR/VR scenes
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- browser-XR utility shells
+- WebXR feature/support matrices
+- no-HMD/fake-device browser test surfaces
+- WebXR media/layer placement references
+
+## Family 120: Browser-based XR editors, live-coding sandboxes, visual workspaces, and scene tooling
+
+This family covers editor-like browser and XR tools where the reusable value is
+scene/project structure, asset APIs, realtime documents, source-code visual
+workspaces, in-VR live coding, templates, and readable 3D UI/text.
+
+| Project | Status | Notes |
+|---|---|---|
+| `playcanvas/editor` | Already studied as browser editor architecture and realtime asset/document reference | Method bus, observer history, asset virtual paths, realtime document loading, scene presence rooms, plugin actions, texture LOD tooling, and OBJ export |
+| `tentone/nunuStudio` | Already studied as self-contained scene editor and VR-toggle studio | Local project files, action history, resource crawler, tabs, run/stop lifecycle, selection tree, shortcuts, and VR entry/exit toggle |
+| `pmndrs/triplex` | Already studied as source-code-driven React Three Fiber visual workspace | JSX metadata extraction, transform tracking, provider injection, scene virtual modules, editor panels, preview renderer, and screenshot rendering |
+| `brianpeiris/RiftSketch` | Already studied as in-VR live-coding sandbox | VR text panels, scene interception and cleanup, localStorage sketches, runtime function evaluation, error feedback surfaces, and monitor/editor toggles |
+| `teliportme/remixvr` | Already studied as template-based VR creation and classroom publishing reference | Flask/React backend/frontend with classrooms, activities, submissions, reactions, short codes, and A-Frame/WebVR template packages |
+| `protectwise/troika` | Already studied as Three.js facade/UI/text infrastructure donor | Facade/world classes, 3D UI blocks, flex layout, dat-gui facade, SDF glyph generation, worker utilities, instanced/batched text, and derived materials |
+
+### Consolidation note
+
+This family matters because many VR utilities are small editors: calibration
+workspaces, diagnostic scenes, menu builders, reference panels, authoring
+surfaces, and live-debug environments. It now clearly includes:
+
+- browser editor method buses and observable histories
+- asset virtual paths and plugin actions
+- local project files and action bundles
+- source-code-driven scene metadata extraction
+- in-VR live-code and error surfaces
+- template-based publishing and response loops
+- 3D text, flex, facade, worker, and SDF infrastructure
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- editor-like utility architecture
+- scene/project/action-history matrices
+- in-headset developer and scripting surfaces
+- readable 3D text/UI checklists
+
+## Family 121: VRM/avatar web stacks, model specs, runtime loaders, and browser avatar/mocap surfaces
+
+This family covers VRM/avatar infrastructure where the reusable value is model
+contracts, humanoid mapping, expressions, look-at, first-person visibility,
+spring bones, constraints, loaders, components, and browser mocap/avatar
+surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `vrm-c/UniVRM` | Already studied as Unity VRM runtime/editor/import/export stack | Unity import/export/migration, viewers, humanoid mapping, metadata callbacks, expression controls, look-at, first-person samples, spring-bone runtime toggles, and WebGL file helpers |
+| `pixiv/three-vrm` | Already studied as modular Three.js VRM loader/runtime | GLTFLoader plugin composition for meta, humanoid, expressions, first-person, look-at, spring bones, node constraints, MToon materials, VRM object assembly, and runtime update loop |
+| `binzume/aframe-vrm` | Already studied as A-Frame VRM component layer | `vrm`, `vrm-anim`, `vrm-skeleton`, `vrm-poser`, and `vrm-mimic` components for loading, first-person, blink/look-at, animation, pose get/set, skeleton debug, and simpleIK mimic |
+| `ButzYung/SystemAnimatorOnline` | Already studied as browser avatar/mocap and XR Animator lineage reference | XR Animator, VRM/MMD/BVH/FBX motion support, AI webcam/media motion capture, audio-reactive animation, MMD physics workers, transparent/desktop host modes, and child animations |
+| `vrm-c/vrm-specification` | Already studied as canonical VRM spec/schema contract source | VRM 0.0/1.0 specs and schemas for humanoid, first-person, expressions, look-at, spring bones, extended colliders, node constraints, MToon, animation, metadata, and license semantics |
+
+### Consolidation note
+
+This family matters because avatar utilities sit between runtimes, trackers,
+face inputs, OSC/VMC streams, and creator tools. It now clearly includes:
+
+- Unity runtime/editor/import/export avatar workflows
+- Three.js modular loader plugin composition
+- declarative A-Frame avatar components
+- browser avatar/mocap product surfaces
+- expression, look-at, spring-bone, first-person, and constraint contracts
+- schema-first validation and compatibility boundaries
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- avatar preview/checker utilities
+- VRM runtime capability matrices
+- VMC/MediaPipe/VRChat/VRM bridge comparisons
+- avatar metadata/license/support-boundary notes
+
+## Family 122: WebAR marker/image tracking, model-viewer AR surfaces, and lightweight scene-understanding utilities
+
+This family covers browser AR and mixed-reality placement references where the
+reusable value is target compilation, marker/image/face/location tracking,
+A-Frame component wrappers, AR model placement fallbacks, hit-test, planes,
+anchors, light, depth, and debug surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `hiukim/mind-ar-js` | Already studied as image/face tracking, compiler, and A-Frame integration reference | Image target compiler/offline compiler, runtime controller, target dimensions, target found/lost/update events, face landmark anchors, face mesh entities, camera mirroring, and occluders |
+| `AR-js-org/AR.js` | Already studied as marker, NFT, and location-based WebAR stack | Three.js marker controls/context/source, A-Frame marker events, barcode/NFT examples, GPS camera/entity placement, simulated locations, distance display, smoothing, and look-at labels |
+| `akbartus/Simple-AR` | Already studied as minimal WebAR starter and cross-framework reference | Small A-Frame starter with camera/target setup, on-video-started and target-distance framing, plus Three.js/Babylon-style example folders |
+| `chenzlabs/aframe-ar` | Already studied as A-Frame WebXR AR helper component layer | `ar` scene component, AR camera projection takeover, images, anchors, planes add/update/remove events, AR raycaster helpers, and feature absence handling |
+| `google/model-viewer` | Already studied as production AR model-viewer component and fallback UX reference | Web component with WebXR/Scene Viewer/Quick Look mode detection, AR/poster/exit slots, hotspot and annotation surfaces, platform fallback, and hit-derived surface data |
+| `tentone/enva-xr` | Already studied as environment-aware WebXR AR renderer | Feature-negotiated immersive-ar renderer with hit-test, anchors, plane detection, light estimation, reflection cube maps, depth sensing, depth textures, debug depth canvas, and GUI overlay container |
+
+### Consolidation note
+
+This family matters because MR utility tools need reliable placement and
+scene-understanding patterns before they need a full app. It now clearly
+includes:
+
+- image target compilation and runtime tracking controllers
+- marker, NFT, and location-based WebAR components
+- minimal AR onboarding starters
+- A-Frame AR source/camera/raycaster/plane wrappers
+- production AR model-viewer fallback and hotspot UX
+- WebXR AR hit-test, anchors, planes, light, and depth renderer anatomy
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- browser AR placement matrices
+- target/marker/location utility diagnostics
+- AR annotation and hotspot surfaces
+- WebXR scene-understanding debug panels
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

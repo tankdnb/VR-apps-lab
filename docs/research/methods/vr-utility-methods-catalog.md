@@ -7307,3 +7307,209 @@ When a new utility idea appears:
   `opengloves-force-feedback-unity-demo`, `opengloves-hl-alyx-integration`.
 - Best fit for `VR-apps-lab`:
   game-to-haptics adapter research and force-feedback sidecar patterns.
+
+## Method 427: Unity-to-WebXR export loader with JSON feature/refspace manifest and subsystem gating
+
+- What it is:
+  a Unity WebGL export package treats WebXR reference spaces, required/optional
+  features, framebuffer scale, manager/input autoload, and XR subsystem choices
+  as explicit serialized settings passed into the browser bridge.
+- Good for:
+  browser XR prototypes, no-install utility panels, Unity WebGL demos,
+  compatibility probes, and feature-gated AR/VR experiences.
+- Why it matters:
+  WebXR feature support is too variable to hide in glue code; it should be a
+  readable compatibility contract.
+- Strong references:
+  `unity-webxr-export`.
+- Best fit for `VR-apps-lab`:
+  browser-backed utility shells and WebXR capability documentation.
+
+## Method 428: Minimal Unity WebXR bridge with shared JS/C# arrays and editor fake-device simulation
+
+- What it is:
+  a compact Unity component owns session entry, input source state, hit-test
+  values, per-eye cameras, and events while a JavaScript plugin exchanges state
+  through shared arrays; editor simulation supplies head/hand/projection data.
+- Good for:
+  quick WebXR experiments, small browser utilities, educational examples, and
+  early no-HMD iteration.
+- Why it matters:
+  small bridge surfaces reduce prototype weight and make the runtime boundary
+  easier to understand.
+- Strong references:
+  `Simple-WebXR-Unity`.
+- Best fit for `VR-apps-lab`:
+  minimal browser-XR prototypes and fake-device iteration.
+
+## Method 429: Non-HMD WebXR display adapter with custom XRDevice lifecycle and multi-view projection
+
+- What it is:
+  a custom display surface is exposed through WebXR-like device abstractions,
+  with explicit reference-space support, canvas/window ownership, and generated
+  multi-view projection/inverse-view matrices.
+- Good for:
+  holographic displays, virtual display research, XR glasses helpers,
+  desktop-to-XR bridges, and non-headset visualization.
+- Why it matters:
+  XR utility displays can reuse session/view concepts even when the target is
+  not a headset.
+- Strong references:
+  `looking-glass-webxr`.
+- Best fit for `VR-apps-lab`:
+  virtual display and custom display-surface research.
+
+## Method 430: Composition-layer compatibility shim with session patching and per-layer GL/media renderers
+
+- What it is:
+  a layer polyfill patches WebXR sessions, injects binding objects, normalizes
+  layer creation, and renders projection, quad, cube, cylinder, equirect, media,
+  texture-array, and stereo-layout surfaces through dedicated renderers.
+- Good for:
+  browser media panels, projection-aware video surfaces, dashboards,
+  compatibility experiments, and layer API research.
+- Why it matters:
+  layer rendering should be separated from session interception and feature
+  negotiation.
+- Strong references:
+  `webxr-layers-polyfill`.
+- Best fit for `VR-apps-lab`:
+  browser media/layer placement references.
+
+## Method 431: Deterministic WebXR fake-device test surface
+
+- What it is:
+  a testing-only API connects simulated XR devices and input sources, controls
+  poses, tracking loss, views, hit-test worlds, visibility, select events, and
+  DOM overlay pointer positions, then asserts results through normal WebXR
+  frames.
+- Good for:
+  no-HMD tests, browser XR diagnostics, CI design, hardware-free prototyping,
+  and support-boundary validation.
+- Why it matters:
+  XR behavior must be made deterministic before it can be tested reliably.
+- Strong references:
+  `webxr-test-api`.
+- Best fit for `VR-apps-lab`:
+  fake-device, no-HMD, and XR validation research.
+
+## Method 432: Feature-gated browser XR showcase scaffold with anchors, hit-test, planes, controllers, and configurator UI
+
+- What it is:
+  a WebXR showcase declares required/optional session features up front, then
+  demonstrates focused flows such as room capture, furniture placement,
+  measurement, controller motion, pointer modes, and product configuration.
+- Good for:
+  public demos, AR placement utilities, measurement tools, configurators, and
+  quick browser XR product proofs.
+- Why it matters:
+  complete showcase flows reveal UX and fallback needs that isolated API
+  samples hide.
+- Strong references:
+  `webxr-showcases`.
+- Best fit for `VR-apps-lab`:
+  browser XR product references and MR utility mockups.
+
+## Method 433: Browser editor method bus with observer history, asset virtual paths, realtime rooms, and plugin actions
+
+- What it is:
+  a browser editor routes commands through a method bus, tracks mutable state
+  with observer history, exposes virtual asset paths, syncs realtime documents,
+  joins presence rooms, and adds tools as plugins/actions.
+- Good for:
+  calibration editors, diagnostic workspaces, scene setup tools, creator
+  utilities, collaborative panels, and asset-heavy VR tools.
+- Why it matters:
+  editor-like VR utilities become maintainable when commands, assets,
+  documents, presence, and plugins are separate layers.
+- Strong references:
+  `playcanvas/editor`.
+- Best fit for `VR-apps-lab`:
+  editor-style utility architecture.
+
+## Method 434: Local project-file scene studio with action history, resource crawler, and VR entry toggle
+
+- What it is:
+  a scene editor stores projects locally, manages resource crawling, tabs,
+  selection, action bundles/history, shortcuts, run/stop lifecycle, and an
+  explicit VR mode toggle.
+- Good for:
+  local-first utility workbenches, calibration layouts, scene inspectors,
+  creator tools, and prototypes that do not need cloud collaboration.
+- Why it matters:
+  local project documents and action histories are a simpler foundation than a
+  full service-backed editor.
+- Strong references:
+  `nunuStudio`.
+- Best fit for `VR-apps-lab`:
+  local scene/workspace tools and editor-like spikes.
+
+## Method 435: Source-code-driven 3D workspace with JSX metadata extraction and provider-injected previews
+
+- What it is:
+  a visual workspace extracts component metadata from source code, records
+  transform-capable props, injects providers through virtual modules, renders
+  isolated previews, and can produce screenshots.
+- Good for:
+  React/Three XR tools, code-first creator utilities, visual editors, preview
+  workspaces, and design/debug panels.
+- Why it matters:
+  some tools should annotate and preview existing code instead of forcing a
+  separate scene database.
+- Strong references:
+  `triplex`.
+- Best fit for `VR-apps-lab`:
+  browser-backed visual workspaces and source-aware utility editors.
+
+## Method 436: In-VR live-coding sandbox with text panels, scene interception, local persistence, and error overlays
+
+- What it is:
+  a VR scene exposes code text panels and monitor surfaces, evaluates user code
+  against scene/camera/renderer handles, tracks objects added by the sketch,
+  supports cleanup, persists sketches locally, and shows runtime errors in VR.
+- Good for:
+  developer utilities, quick prototyping, education, diagnostics scripting, and
+  headset-native debug tools.
+- Why it matters:
+  live scripting becomes usable in VR when feedback and errors stay inside the
+  headset.
+- Strong references:
+  `RiftSketch`.
+- Best fit for `VR-apps-lab`:
+  in-headset developer tools and live utility scripting references.
+
+## Method 437: VRM avatar runtime pipeline with spec-backed humanoid, expression, look-at, spring-bone, first-person, and constraint modules
+
+- What it is:
+  an avatar runtime loads a model through modular spec-backed components for
+  metadata, humanoid mapping, expressions, first-person visibility, look-at,
+  spring bones, node constraints, materials, and update loops.
+- Good for:
+  avatar previewers, model checkers, face/pose bridges, mocap viewers, browser
+  avatar surfaces, and creator diagnostics.
+- Why it matters:
+  avatar tools should reason about runtime behavior and spec contracts, not
+  just mesh display.
+- Strong references:
+  `UniVRM`, `three-vrm`, `aframe-vrm`, `vrm-specification`.
+- Best fit for `VR-apps-lab`:
+  avatar utility, VMC/MediaPipe/VRM bridge, and validation research.
+
+## Method 438: Browser AR placement layer with target compiler, marker/location events, model-viewer fallback, and environment-aware WebXR renderer
+
+- What it is:
+  browser AR placement combines target compilation, marker/image/face/location
+  tracking events, A-Frame AR feature wrappers, model-viewer WebXR/Scene
+  Viewer/Quick Look fallbacks, hotspots/annotations, hit-test, anchors, planes,
+  light estimation, depth sensing, and debug depth surfaces.
+- Good for:
+  MR placement helpers, object annotation, target-based diagnostics, AR
+  checklists, model previews, and browser MR utility prototypes.
+- Why it matters:
+  MR utilities need robust placement and fallback surfaces before they need
+  complex app logic.
+- Strong references:
+  `mind-ar-js`, `AR.js`, `Simple-AR`, `aframe-ar`, `model-viewer`,
+  `enva-xr`.
+- Best fit for `VR-apps-lab`:
+  browser MR utility surfaces and scene-understanding diagnostics.
