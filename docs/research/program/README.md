@@ -897,3 +897,33 @@ repeatable way.
 
 - `github-research-wave-127-backlog.md`
   Executed backlog for the Wave 127 pass.
+
+- `github-research-wave-128-plan.md`
+  Wave 128 research plan focused on Quest app sideloading, patching, mod
+  schemas, version management, launchers, and metadata tooling.
+
+- `github-research-wave-128-backlog.md`
+  Executed backlog for the Wave 128 pass.
+
+- `github-research-wave-129-plan.md`
+  Wave 129 research plan focused on VMC/VRM OSC motion streams, transform
+  senders/receivers, recording, replay, and BVH export.
+
+- `github-research-wave-129-backlog.md`
+  Executed backlog for the Wave 129 pass.
+
+- `github-research-wave-130-plan.md`
+  Wave 130 research plan focused on Resonite/Neos mod loaders, manifests,
+  mod managers, external SDKs, headless deployment, companion apps, and
+  metrics tooling.
+
+- `github-research-wave-130-backlog.md`
+  Executed backlog for the Wave 130 pass.
+
+- `github-research-wave-131-plan.md`
+  Wave 131 research plan focused on DIY headset hardware bring-up, OpenVR
+  drivers, firmware transports, PCBs, controller firmware, and settings GUI
+  tooling.
+
+- `github-research-wave-131-backlog.md`
+  Executed backlog for the Wave 131 pass.

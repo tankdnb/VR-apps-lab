@@ -6614,3 +6614,252 @@ When a new utility idea appears:
   `OpenBCI-WebXR-EEG`, `prediction-space`.
 - Best fit for `VR-apps-lab`:
   WebXR utility-surface prototypes and data/diagnostics visualization.
+
+## Method 387: Managed ADB and platform-tools bootstrap for headset companions
+
+- What it is:
+  a companion utility detects or downloads platform tools, validates ADB
+  version, avoids taking over another app's ADB server when possible, discovers
+  devices, grants needed permissions, hashes packages, and reports install
+  progress.
+- Good for:
+  Quest companion apps, sideloading tools, package inventory, app install
+  helpers, device diagnostics, and support tooling.
+- Why it matters:
+  ADB lifecycle bugs are support disasters; making ADB ownership explicit makes
+  headset utilities safer.
+- Strong references:
+  `SideQuest`, `QuestPatcher`, `QuestAppVersionSwitcher`.
+- Best fit for `VR-apps-lab`:
+  Quest ADB doctor and device companion utilities.
+
+## Method 388: Schema-first Quest mod package and staged APK patch workflow
+
+- What it is:
+  a tool validates mod packages with a formal schema, creates device-side mod
+  directories, patches APK binary manifests and native libraries in named
+  stages, signs/rebuilds artifacts, and persists installed mod status.
+- Good for:
+  mod managers, patchers, plugin/package validators, controlled app
+  modification tools, and migration checkers.
+- Why it matters:
+  patching should be inspectable and reversible enough for users to understand
+  risk.
+- Strong references:
+  `QuestPatcher`, `QuestPatcher.QMod`.
+- Best fit for `VR-apps-lab`:
+  package validation and safe patching research.
+
+## Method 389: Quest app backup, version metadata, and downgrade state manager
+
+- What it is:
+  a utility records backup metadata for APKs, app data, OBBs, package version,
+  patch state, corruption status, size, source, and store metadata, then uses
+  that state to drive restore/downgrade/version switching flows.
+- Good for:
+  headset app managers, backup/restore tools, version switchers, metadata
+  viewers, and migration utilities.
+- Why it matters:
+  device operations need durable state and provenance, not just one-off shell
+  commands.
+- Strong references:
+  `QuestAppVersionSwitcher`, `OculusDB`.
+- Best fit for `VR-apps-lab`:
+  package inventory and backup/version companion concepts.
+
+## Method 390: Role-based OSC pose stream protocol for avatars and tracking helpers
+
+- What it is:
+  an OSC/UDP protocol defines roles, default ports, and typed messages for
+  root, bone, tracker, HMD, controller, camera, blendshape, status, time, and
+  calibration data, while receivers tolerate partial implementation.
+- Good for:
+  avatar motion bridges, tracker helpers, diagnostics, teleoperation pose
+  streams, replay tools, and headset transform senders.
+- Why it matters:
+  pose interoperability improves when message ownership, roles, and tolerance
+  rules are documented.
+- Strong references:
+  `VirtualMotionCaptureProtocol`, `VirtualMotionCapture`,
+  `QuestOSCTransformSender`.
+- Best fit for `VR-apps-lab`:
+  pose-stream bridge and diagnostics references.
+
+## Method 391: Unity VMC receiver with filters, cutoffs, packet limiting, and daisy-chain
+
+- What it is:
+  a Unity component receives OSC pose messages, applies root/bone/blendshape
+  state to VRM models, exposes freeze/late-update/filter/cutoff/calibration
+  options, limits dropped packets, validates communication state, and forwards
+  messages through receiver chains.
+- Good for:
+  VRM apps, pose diagnostics, recording tools, avatar previewers, bridge
+  adapters, and motion stream visualizers.
+- Why it matters:
+  production pose receivers need user controls for failure modes, not only
+  transform assignment.
+- Strong references:
+  `EasyVirtualMotionCaptureForUnity`.
+- Best fit for `VR-apps-lab`:
+  Unity pose receiver and avatar diagnostic prototypes.
+
+## Method 392: Motion stream recorder/exporter with calibration gate and typed log
+
+- What it is:
+  a utility starts recording only after load/calibration state, maps humanoid
+  bones, samples at a target FPS, records root/bone/blendshape deltas, and
+  writes either offline animation formats such as BVH or typed binary logs for
+  replay/debugging.
+- Good for:
+  mocap capture, diagnostics, regression tests, pose replay, exporter tools,
+  and bridge troubleshooting.
+- Why it matters:
+  live motion streams become reusable engineering artifacts only after they can
+  be recorded, validated, and replayed.
+- Strong references:
+  `vmc2bvh`, `vmcrec`.
+- Best fit for `VR-apps-lab`:
+  pose-stream capture and replay helpers.
+
+## Method 393: Social VR mod loader with config, duplicate checks, lifecycle, and conflict diagnostics
+
+- What it is:
+  a loader discovers mod assemblies, enforces one mod entry point, logs hashes,
+  loads versioned per-mod config, detects duplicate names, exposes lifecycle
+  hooks, handles reflection load failures, detects headless mode, and reports
+  patch conflicts.
+- Good for:
+  plugin systems, mod loaders, extension frameworks, creator tooling, and
+  diagnostics-heavy utility ecosystems.
+- Why it matters:
+  mod ecosystems need governance and failure reporting before they need more
+  features.
+- Strong references:
+  `ResoniteModLoader`.
+- Best fit for `VR-apps-lab`:
+  plugin/mod architecture and support-boundary patterns.
+
+## Method 394: Manifest-backed mod manager with cache, hashes, dependencies, and installed-state reconciliation
+
+- What it is:
+  a community manifest stores categories, platforms, dependencies, conflicts,
+  artifact URLs, SHA256 hashes, and install locations, while a GUI/CLI manager
+  caches the manifest, falls back on stale cache, downloads artifacts, updates
+  installed state, and reconciles unrecognized files.
+- Good for:
+  plugin managers, package catalogs, updater tools, versioned extensions, and
+  public utility ecosystems.
+- Why it matters:
+  reusable VR utilities need trust metadata and state reconciliation, not just
+  download buttons.
+- Strong references:
+  `resonite-mod-manifest`, `Resolute`, `QuestPatcher.QMod`.
+- Best fit for `VR-apps-lab`:
+  schema-first package and plugin manager references.
+
+## Method 395: External social VR data-model SDK with WebSocket command/response and REPL
+
+- What it is:
+  an SDK connects to a social VR session over WebSocket, serializes typed
+  commands with message IDs, maps pending responses, supports binary payloads,
+  exposes slot/component/asset/reflection/method/batch operations, and provides
+  a REPL for exploration.
+- Good for:
+  external automation, diagnostics, world inspection, asset import tools,
+  operator panels, and integration bridges.
+- Why it matters:
+  external control surfaces are much easier to debug when command/response
+  IDs and reflection APIs are explicit.
+- Strong references:
+  `ResoniteLink`.
+- Best fit for `VR-apps-lab`:
+  external control and inspection bridge design.
+
+## Method 396: Social VR companion client with cached auth and reconnecting live-event hub
+
+- What it is:
+  a companion app stores credentials/tokens securely, supports cached login and
+  session extension, wraps HTTP APIs, handles status-specific errors, and keeps
+  a reconnecting WebSocket or SignalR-like hub for contacts, sessions,
+  messages, inventory, and notifications.
+- Good for:
+  social VR companion apps, operator dashboards, messaging sidecars, inventory
+  browsers, and session monitors.
+- Why it matters:
+  headset-adjacent tools often need reliable social state outside the headset.
+- Strong references:
+  `ReCon`.
+- Best fit for `VR-apps-lab`:
+  companion app architecture references.
+
+## Method 397: In-world creator metrics counter with focused filters and exportable traces
+
+- What it is:
+  a mod collects per-element and per-object-root timings by world stage,
+  filters unfocused/local/removed/blacklisted elements, supports ignored
+  hierarchies, updates frame counts, writes JSON traces, and exposes hierarchy
+  or detail UI panels in-world.
+- Good for:
+  creator diagnostics, performance profiling, world debugging, optimization
+  helpers, and in-world developer panels.
+- Why it matters:
+  diagnostics are more useful when creators can see and export them from the
+  environment where problems happen.
+- Strong references:
+  `ResoniteMetricsCounter`.
+- Best fit for `VR-apps-lab`:
+  creator diagnostics and in-world metrics utility patterns.
+
+## Method 398: DIY headset OpenVR HMD driver with HID pose ingestion and display component settings
+
+- What it is:
+  a driver exposes an OpenVR HMD provider/display component, reads firmware
+  packets through HID or other transports, updates pose in runtime callbacks,
+  and maps display geometry, render target, IPD, FOV, distortion, direct/desktop
+  mode, and device properties from settings.
+- Good for:
+  DIY HMDs, virtual display research, hardware diagnostics, driver learning
+  paths, and synthetic headset prototypes.
+- Why it matters:
+  the hardware-to-runtime path is easier to study when firmware, settings, and
+  display component responsibilities are separated.
+- Strong references:
+  `Relativty`, `HadesVR`.
+- Best fit for `VR-apps-lab`:
+  OpenVR driver bring-up references.
+
+## Method 399: Firmware packet demux for HMD, controller, tracker, battery, and finger data
+
+- What it is:
+  firmware and drivers agree on compact packet structures for HMD raw IMU or
+  quaternion data, controller quaternions, accelerometers, buttons, trigger,
+  joystick, trackpad emulation, battery, fingers, grip, and tracker payloads,
+  then demultiplex those packets by packet ID in the driver.
+- Good for:
+  DIY controllers, trackers, headset firmware, hardware bridge diagnostics,
+  and virtual-device adapters.
+- Why it matters:
+  packet structure is the contract that decides whether hardware support is
+  debuggable.
+- Strong references:
+  `HadesVR`, `Wand-Controller`, `DIY_VR_Controllers`.
+- Best fit for `VR-apps-lab`:
+  firmware transport and virtual device mapping research.
+
+## Method 400: VR driver settings editor with typed schema and ordered JSON output
+
+- What it is:
+  a GUI editor loads default driver settings, reads a target settings file,
+  maps typed category/key values, exposes panes for driver/display/HMD/
+  controller/tracker settings, and writes ordered JSON so users can still
+  inspect diffs by hand.
+- Good for:
+  driver support tools, hardware calibration, display tuning, user setup
+  panels, and diagnostics companions.
+- Why it matters:
+  complex VR driver settings are a UX surface; without an editor they become a
+  hidden support burden.
+- Strong references:
+  `HadesVR_GUI_Tool`.
+- Best fit for `VR-apps-lab`:
+  driver settings, calibration, and support tooling patterns.

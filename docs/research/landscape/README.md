@@ -515,6 +515,26 @@ Use these files when you want to understand:
   hand menus, stereo media viewers, diagnostics, visualizers, and data
   dashboards.
 
+- `vr-projects-wave-128-quest-app-sideloading-modding-version-management-and-store-metadata-tooling.md`
+  Next GitHub discovery wave focused on Quest app sideloading, patching,
+  mod package schemas, backup/version management, launchers, and metadata
+  services.
+
+- `vr-projects-wave-129-vmc-vrm-motion-capture-protocol-osc-transform-receivers-and-recording-export-tools.md`
+  Next GitHub discovery wave focused on VMC/VRM OSC motion streams,
+  transform senders/receivers, packet validation, recording, replay, and BVH
+  export.
+
+- `vr-projects-wave-130-resonite-neos-modding-headless-external-sdk-and-social-utility-tooling.md`
+  Next GitHub discovery wave focused on Resonite/Neos mod loaders, manifests,
+  mod managers, external SDKs, headless deployment, companion apps, and
+  metrics tooling.
+
+- `vr-projects-wave-131-diy-open-source-headset-hardware-bring-up-drivers-pcbs-and-controller-firmware.md`
+  Next GitHub discovery wave focused on DIY headset hardware bring-up, OpenVR
+  drivers, firmware transports, PCBs, controller firmware, and settings GUI
+  tooling.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

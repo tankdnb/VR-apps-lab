@@ -3341,6 +3341,148 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - hand/palm menu comparisons
 - local-first media and visualization helpers
 
+## Family 107: Quest app-management companions, patchers, mod packages, and metadata services
+
+This family covers Quest utility tools where the reusable value is headset app
+management rather than in-headset rendering: ADB bootstrap, sideloading,
+launcher surfaces, APK patching/signing, mod package schemas, backup/version
+metadata, and store metadata services.
+
+| Project | Status | Notes |
+|---|---|---|
+| `SideQuestVR/SideQuest` | Already studied | Electron/Angular companion with managed platform-tools bootstrap, ADB wrapper, install-token tasks, blacklist hash checks, and install progress |
+| `SideQuestVR/SideQuestAppLauncher` | Already studied | Android launcher/wrapper apps with app drawer, settings overlays, updater dialogs, adapters, and headset-local launcher UX |
+| `Lauriethefish/QuestPatcher` | Already studied | ADB ownership hygiene, app filtering, binary manifest patching, OpenXR/hand/passthrough permission edits, mod directories, and patch/sign workflow |
+| `Lauriethefish/QuestPatcher.QMod` | Already studied | QMOD ZIP/spec/schema with one `mod.json`, package metadata, mod/library files, cover images, and file-copy instructions |
+| `ComputerElite/QuestAppVersionSwitcher` | Already studied | Backup metadata, APK/OBB/data detection, patch-state inspection, loopback/on-device ADB, downgrade/version tooling, and mod/version UX |
+| `ComputerElite/OculusDB` | Already studied | Oculus GraphQL pagination, locale normalization, database/frontend/scraper split, and metadata backend for version tools |
+
+### Consolidation note
+
+This family matters because many headset utilities are `device companion
+systems`, not overlays. It now clearly includes:
+
+- managed ADB/platform-tools lifecycle
+- APK install, patch, manifest, and signing flows
+- mod package schema and file placement
+- backup, downgrade, and durable app-state metadata
+- headset-local launcher/updater surfaces
+- store metadata indexing and service boundaries
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Quest ADB doctor and app inventory helpers
+- mod/package validators
+- headset companion utility design
+- backup/version metadata checklists
+
+## Family 108: VMC/VRM OSC motion streams, receivers, senders, recorders, and exporters
+
+This family covers VMC Protocol and adjacent motion-stream utilities where the
+main value is a simple interoperable pose, tracker, controller, camera,
+blendshape, record, and export layer.
+
+| Project | Status | Notes |
+|---|---|---|
+| `sh-akira/VirtualMotionCapture` | Already studied | Unity runtime plus WPF control panel, memory-mapped IPC, external sender/receiver settings, tracker assignment, filters, and virtual tracker controls |
+| `sh-akira/VirtualMotionCaptureProtocol` | Already studied | Role-based OSC/UDP protocol docs with Marionette/Performer/Assistant roles, default ports, message tolerance, and sample sender/receiver scripts |
+| `gpsnmeajp/EasyVirtualMotionCaptureForUnity` | Already studied | Unity receiver package with packet limiter, freeze, root options, blendshape/bone filters, cutoffs, auto VRM load, validator, and daisy-chain |
+| `sh-akira/QuestOSCTransformSender` | Already studied | Quest Unity sender for world/local HMD and controller transforms over VMC-style OSC |
+| `infosia/vmc2bvh` | Already studied | C++ VMC listener that waits for calibration/VRM, maps VRM humanoid bones, samples motion, and exports BVH plus blendshape JSON |
+| `infosia/vmcrec` | Already studied | C++ VMC recorder/replay/dump utility with FlatBuffers command schema, length-prefixed records, timestamps, and blendshape name tables |
+
+### Consolidation note
+
+This family matters because pose-stream tooling is a bridge layer used by many
+VR utilities. It now clearly includes:
+
+- OSC/UDP role and port conventions
+- root, bone, tracker, HMD, controller, blendshape, and status messages
+- receiver validation, filters, cutoffs, packet limiting, and daisy-chain
+- Quest transform senders
+- stream recording, typed logs, replay, and BVH export
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VMC/OSC diagnostic receiver panels
+- pose-stream capture and replay helpers
+- protocol matrices across VMC, SlimeVR, VMT, VRChat OSC, and MediaPipe
+- calibration-aware motion export tooling
+
+## Family 109: Resonite/Neos social VR ecosystem tooling, manifests, SDKs, and diagnostics
+
+This family covers Resonite/Neos ecosystem utilities where the reusable value
+is not one mod, but the system around social VR: loaders, manifests, managers,
+external SDKs, headless deployments, companion clients, and in-world metrics.
+
+| Project | Status | Notes |
+|---|---|---|
+| `resonite-modding-group/ResoniteModLoader` | Already studied | Assembly discovery, single mod-class enforcement, config loading/versioning, Harmony conflict logs, duplicate checks, SHA256 logs, and headless detection |
+| `Gawdl3y/Resolute` | Already studied | Tauri/Rust/Vue manifest-backed mod manager with cache staleness, installed-state reconciliation, artifact download/update/delete, and unrecognized mod handling |
+| `resonite-modding-group/resonite-mod-manifest` | Already studied | Schema-first mod registry with categories, platforms, dependencies, conflicts, artifact SHA256, install locations, author folders, and generator scripts |
+| `Yellow-Dog-Man/ResoniteLink` | Already studied | WebSocket command/response SDK and REPL for slots, components, assets, reflection, method calls, and batched data-model operations |
+| `shadowpanther/resonite-headless` | Already studied | Docker/Kubernetes packaging with SteamCMD setup, persistent config/log volumes, env-driven beta/login, and start/setup scripts |
+| `Nutcake/ReCon` | Already studied | Flutter companion client with secure login, cached session, API wrappers, reconnecting hub events, contacts, sessions, inventory, and messages |
+| `esnya/ResoniteMetricsCounter` | Already studied | RML metrics/profiling mod with focused-world filters, blacklist/ignored hierarchy, per-stage/per-object storage, JSON traces, and UIX panels |
+
+### Consolidation note
+
+This family matters because social VR tooling is an ecosystem-management
+problem. It now clearly includes:
+
+- loader lifecycle and conflict diagnostics
+- schema-first mod manifests and artifact hashes
+- GUI mod manager cache/install/update/delete state
+- external data-model WebSocket SDKs and REPLs
+- headless deployment packaging
+- social companion auth/API/hub clients
+- in-world metrics and creator diagnostics
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- plugin/mod ecosystem governance
+- manifest-backed manager blueprints
+- external social-VR automation SDKs
+- creator diagnostics and in-world metrics surfaces
+
+## Family 110: DIY headset hardware bring-up, OpenVR drivers, firmware transports, and settings GUIs
+
+This family covers DIY/open-source headset and controller projects where the
+reusable value is the full physical-to-runtime chain: PCBs, firmware packets,
+HID/UART/RF transports, IMU filtering, OpenVR HMD display components,
+controller/tracker input components, calibration, and settings editors.
+
+| Project | Status | Notes |
+|---|---|---|
+| `relativty/Relativty` | Already studied | Full DIY headset with PCB/Gerbers/STLs, Arduino HID firmware, OpenVR driver factory, HID quaternion ingestion, optional TCP position, and pose update threads |
+| `HadesVR/HadesVR` | Already studied | Rich DIY ecosystem with HMD display settings, direct/desktop modes, distortion/IPD/FOV, RF/HID/UART firmware, controller/tracker packets, OpenVR input components, filters, and docs |
+| `HadesVR/Wand-Controller` | Already studied | Controller PCB and firmware with RF24 payloads, IMU/Madgwick filtering, role switches, joystick/trigger/battery/finger/grip fields, and calibration docs |
+| `HadesVR/Basic-HMD-PCB` | Already studied | Beginner HMD PCB with EasyEDA/Gerber/schematic assets, Pro Micro/FastIMU/NRF24 reference, serial calibration, VID/PID lookup, and LED error codes |
+| `JX5S/HadesVR_GUI_Tool` | Already studied | Qt settings editor for HadesVR `default.vrsettings`, typed category/key map, ordered JSON writer, and driver/display/HMD/controller/tracker defaults |
+| `dmcke5/DIY_VR_Controllers` | Already studied | HadesVR-compatible 3D printed controller variant with KiCad/STL/BOM assets and added joystick/trigger calibration routine |
+| `dietzus/DietzVR` | Rejected; current clone contains no reusable source | Local clone contained only license metadata, so no donor or product reference value was extracted |
+
+### Consolidation note
+
+This family matters because hardware utility work is mostly about bring-up
+discipline and diagnostics. It now clearly includes:
+
+- firmware packet schema and transport choices
+- OpenVR HMD display component anatomy
+- display geometry, distortion, IPD, direct/desktop mode settings
+- controller, skeleton, haptic, scalar, button, and tracker input components
+- IMU filtering, Kalman/Madgwick, and calibration UX
+- PCB/BOM/Gerber/STL repository structure
+- settings GUI and ordered JSON config editing
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenVR HMD bring-up anatomy
+- hardware transport diagnostics
+- driver settings editors
+- controller input component mapping
+- hardware documentation templates
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

@@ -136,6 +136,10 @@ This file complements:
 - `vr-projects-wave-125-unity-vr-experiment-frameworks-data-capture-and-study-orchestration-helpers.md`
 - `vr-projects-wave-126-immersive-browser-shells-webxr-runtimes-home-spaces-and-spatial-web-frontends.md`
 - `vr-projects-wave-127-browser-native-webxr-utility-surfaces-creative-tools-diagnostics-and-data-visualization.md`
+- `vr-projects-wave-128-quest-app-sideloading-modding-version-management-and-store-metadata-tooling.md`
+- `vr-projects-wave-129-vmc-vrm-motion-capture-protocol-osc-transform-receivers-and-recording-export-tools.md`
+- `vr-projects-wave-130-resonite-neos-modding-headless-external-sdk-and-social-utility-tooling.md`
+- `vr-projects-wave-131-diy-open-source-headset-hardware-bring-up-drivers-pcbs-and-controller-firmware.md`
 
 ## How to use this index
 

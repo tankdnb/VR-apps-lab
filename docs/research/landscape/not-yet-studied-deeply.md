@@ -1279,6 +1279,57 @@ These are larger than a single repo and should guide the next research wave.
   streaming viewer product framing. A future deeper pass should compare these
   with native overlay menu and dashboard patterns.
 
+### 93. `Quest app sideloading, modding, version management, and store metadata tooling`
+
+- Main entries:
+  `SideQuest`, `SideQuestAppLauncher`, `QuestPatcher`, `QuestPatcher.QMod`,
+  `QuestAppVersionSwitcher`, `OculusDB`
+- Why it matters:
+  this family now captures Quest companion utility architecture rather than
+  one specific app: managed ADB/platform-tools bootstrap, sideloading,
+  launcher/updater UI, APK manifest patching, mod package schemas,
+  backup/version metadata, and store metadata indexing. A future deeper pass
+  should build a safety checklist for ADB, patching, backup/restore, and
+  metadata support boundaries before any prototype work.
+
+### 94. `VMC/VRM motion-capture protocol, OSC transform receivers, and recording/export tools`
+
+- Main entries:
+  `VirtualMotionCapture`, `VirtualMotionCaptureProtocol`,
+  `EasyVirtualMotionCaptureForUnity`, `QuestOSCTransformSender`, `vmc2bvh`,
+  `vmcrec`
+- Why it matters:
+  this family now captures VMC as a reusable pose-stream layer: OSC role/port
+  conventions, root/bone/tracker/HMD/controller/blendshape messages, Unity
+  receiver controls, Quest transform sending, packet validation, recording,
+  replay, and BVH export. A future deeper pass should compare VMC, SlimeVR,
+  VMT, VRChat OSC, MediaPipe, and OpenVR tracker export schemas.
+
+### 95. `Resonite/Neos modding, headless, external SDK, and social utility tooling`
+
+- Main entries:
+  `ResoniteModLoader`, `Resolute`, `resonite-mod-manifest`,
+  `ResoniteLink`, `resonite-headless`, `ReCon`, `ResoniteMetricsCounter`
+- Why it matters:
+  this family now captures social VR ecosystem tooling: loader lifecycle,
+  schema-first manifests, GUI manager state, external WebSocket SDKs, headless
+  deployment, companion auth/hub clients, and in-world metrics. A future
+  deeper pass should compare mod/package schemas across Resonite, Quest QMOD,
+  VRChat creator tooling, and any future `VR-apps-lab` package format.
+
+### 96. `DIY open-source headset hardware bring-up, drivers, PCBs, and controller firmware`
+
+- Main entries:
+  `Relativty`, `HadesVR`, `Wand-Controller`, `Basic-HMD-PCB`,
+  `HadesVR_GUI_Tool`, `DIY_VR_Controllers`, `DietzVR`
+- Why it matters:
+  this family now captures hardware bring-up discipline: firmware packet
+  contracts, HID/UART/RF transport, OpenVR HMD display components, display
+  settings, controller/tracker input components, IMU filtering, calibration,
+  PCB/BOM/Gerber/STL assets, and settings GUI tooling. A future deeper pass
+  should extract a compact OpenVR HMD bring-up anatomy and transport
+  diagnostics checklist if hardware-support work becomes active.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1346,6 +1397,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 61. `Unity VR experiment frameworks, data capture, and study orchestration helpers`
 62. `Immersive browser shells, WebXR runtimes, home spaces, and spatial web frontends`
 63. `Browser-native WebXR utility surfaces, creative tools, diagnostics, and data visualization`
+64. `Quest app sideloading, modding, version management, and store metadata tooling`
+65. `VMC/VRM motion-capture protocol, OSC transform receivers, and recording/export tools`
+66. `Resonite/Neos modding, headless, external SDK, and social utility tooling`
+67. `DIY open-source headset hardware bring-up, drivers, PCBs, and controller firmware`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

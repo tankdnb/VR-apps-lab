@@ -1600,6 +1600,64 @@ Primary docs:
 - `msitarzewski/prediction-space` - `Already studied`
 - `taplivenetwork/taplive-webxr` - `Not studied deeply; source not present in current clone`
 
+## 99. Quest app sideloading, modding, version management, and store metadata tooling
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-128-quest-app-sideloading-modding-version-management-and-store-metadata-tooling.md`
+- `../landscape/project-families.md`
+
+- `SideQuestVR/SideQuest` - `Already studied`
+- `SideQuestVR/SideQuestAppLauncher` - `Already studied`
+- `Lauriethefish/QuestPatcher` - `Already studied`
+- `Lauriethefish/QuestPatcher.QMod` - `Already studied`
+- `ComputerElite/QuestAppVersionSwitcher` - `Already studied`
+- `ComputerElite/OculusDB` - `Already studied`
+
+## 100. VMC/VRM motion-capture protocol, OSC transform receivers, and recording/export tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-129-vmc-vrm-motion-capture-protocol-osc-transform-receivers-and-recording-export-tools.md`
+- `../landscape/project-families.md`
+
+- `sh-akira/VirtualMotionCapture` - `Already studied`
+- `sh-akira/VirtualMotionCaptureProtocol` - `Already studied`
+- `gpsnmeajp/EasyVirtualMotionCaptureForUnity` - `Already studied`
+- `sh-akira/QuestOSCTransformSender` - `Already studied`
+- `infosia/vmc2bvh` - `Already studied`
+- `infosia/vmcrec` - `Already studied`
+
+## 101. Resonite/Neos modding, headless, external SDK, and social utility tooling
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-130-resonite-neos-modding-headless-external-sdk-and-social-utility-tooling.md`
+- `../landscape/project-families.md`
+
+- `resonite-modding-group/ResoniteModLoader` - `Already studied`
+- `Gawdl3y/Resolute` - `Already studied`
+- `resonite-modding-group/resonite-mod-manifest` - `Already studied`
+- `Yellow-Dog-Man/ResoniteLink` - `Already studied`
+- `shadowpanther/resonite-headless` - `Already studied`
+- `Nutcake/ReCon` - `Already studied`
+- `esnya/ResoniteMetricsCounter` - `Already studied`
+
+## 102. DIY open-source headset hardware bring-up, drivers, PCBs, and controller firmware
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-131-diy-open-source-headset-hardware-bring-up-drivers-pcbs-and-controller-firmware.md`
+- `../landscape/project-families.md`
+
+- `relativty/Relativty` - `Already studied`
+- `HadesVR/HadesVR` - `Already studied`
+- `HadesVR/Wand-Controller` - `Already studied`
+- `HadesVR/Basic-HMD-PCB` - `Already studied`
+- `JX5S/HadesVR_GUI_Tool` - `Already studied`
+- `dmcke5/DIY_VR_Controllers` - `Already studied`
+- `dietzus/DietzVR` - `Rejected; current clone contains no reusable source beyond license metadata`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

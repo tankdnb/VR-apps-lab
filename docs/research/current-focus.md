@@ -344,6 +344,24 @@ the strongest current clusters:
   `vr-screen-tester`, `prediction-space`
   for controller-aware WebXR creative tools, palm/secondary-hand menus,
   local-first stereo media, micro-diagnostics, and gaze/pinch data dashboards.
+- `SideQuest`, `QuestPatcher`, `QuestPatcher.QMod`,
+  `QuestAppVersionSwitcher`, `OculusDB`
+  for managed ADB/platform-tools bootstrap, Quest APK patch/sign workflows,
+  mod package schemas, backup/version metadata, and app-store metadata
+  services.
+- `VirtualMotionCaptureProtocol`, `EasyVirtualMotionCaptureForUnity`,
+  `QuestOSCTransformSender`, `vmc2bvh`, `vmcrec`
+  for role-based OSC pose streams, Unity VRM receivers, Quest transform
+  senders, packet validation, typed motion logs, and BVH export.
+- `ResoniteModLoader`, `Resolute`, `resonite-mod-manifest`,
+  `ResoniteLink`, `ReCon`, `ResoniteMetricsCounter`
+  for social VR mod-loader lifecycle, schema-first manifests, external
+  data-model SDKs, companion auth/live-event clients, and in-world metrics.
+- `Relativty`, `HadesVR`, `Wand-Controller`, `Basic-HMD-PCB`,
+  `HadesVR_GUI_Tool`, `DIY_VR_Controllers`
+  for DIY headset firmware, OpenVR HMD driver bring-up, HID/UART/RF packet
+  transport, driver settings GUIs, PCB/BOM/STL assets, and controller
+  calibration variants.
 
 ## Highest-value next follow-up passes
 
@@ -404,6 +422,10 @@ directions:
 52. `Unity VR experiment frameworks, data capture, and study orchestration helpers`
 53. `Immersive browser shells, WebXR runtimes, home spaces, and spatial web frontends`
 54. `Browser-native WebXR utility surfaces, creative tools, diagnostics, and data visualization`
+55. `Quest app sideloading, modding, version management, and store metadata tooling`
+56. `VMC/VRM motion-capture protocol, OSC transform receivers, and recording/export tools`
+57. `Resonite/Neos modding, headless, external SDK, and social utility tooling`
+58. `DIY open-source headset hardware bring-up, drivers, PCBs, and controller firmware`
 
 ## Current repository-maintenance priorities
 
