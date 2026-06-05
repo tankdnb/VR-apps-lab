@@ -1524,6 +1524,54 @@ These are larger than a single repo and should guide the next research wave.
   should compare framework boundaries before choosing a browser utility shell
   baseline.
 
+### 113. `A-Frame GUI, locomotion, and reusable interaction component primitives`
+
+- Main entries:
+  `aframe-gui`, `aframe-teleport-controls`,
+  `aframe-super-hands-component`, `AUXL`,
+  `aframe-webxr-ui-toolkit`
+- Why it matters:
+  this family captures reusable browser VR controls below a full app:
+  declarative widgets, flex-like panels, teleport rays, semantic grab/drop
+  events, menu factories, lifecycle cleanup, and hand pressables. A future
+  deeper pass should build a small A-Frame utility menu kit comparison and
+  decide which interaction vocabulary is easiest to reuse.
+
+### 114. `Immersive analytics, spatial data visualization, and scientific viewer substrates`
+
+- Main entries:
+  `vria`, `3d-force-graph-vr`, `aframe-forcegraph-component`, `molstar`,
+  `ipyvolume`
+- Why it matters:
+  this family captures data-rich utility surfaces: visualization grammars,
+  spatial views, graph accessors, raycaster events, scientific viewer
+  snapshots, XR input mapping, notebook trait sync, and volume texture tiling.
+  A future deeper pass should turn these into a diagnostics visualization
+  grammar and snapshot/replay checklist.
+
+### 115. `WebRTC remote rendering, WebXR streaming, and bidirectional input/control channels`
+
+- Main entries:
+  `VRStreaming`, `UnityRenderStreaming`, `com.unity.webrtc`,
+  `PixelStreamingInfrastructure`, `Unreal-Pixel-Streaming`
+- Why it matters:
+  this family captures thin-client VR architectures: streamed video, signaling,
+  data channels, input remoting, WebXR pose/gamepad messages, selective
+  projection updates, and matchmaker/deployment shells. A future deeper pass
+  should produce a remote VR protocol matrix before any streamed utility
+  prototype.
+
+### 116. `Social/world framework shells, scene schemas, and multi-user spatial app substrates`
+
+- Main entries:
+  `ATON`, `circlesxr`, `arena-web-core`, `Basis`, `webaverse`
+- Why it matters:
+  this family captures collaborative utility foundations: scene JSON,
+  semantic graphs, Networked-AFrame ownership, MQTT/Jitsi media, text prompts,
+  WebRTC positional audio, headless avatar clients, compressed pose packets,
+  and app-runtime modules. A future deeper pass should define a shared VR
+  diagnostics room architecture.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1611,6 +1659,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 81. `Immersive 360 video players, stereo projection, and local media surfaces`
 82. `Audio-reactive WebXR surfaces, spatial sound visualizers, and shader pipelines`
 83. `WebXR runtime frameworks, session/input feature managers, and testable spatial UI substrates`
+84. `A-Frame GUI, locomotion, and reusable interaction component primitives`
+85. `Immersive analytics, spatial data visualization, and scientific viewer substrates`
+86. `WebRTC remote rendering, WebXR streaming, and bidirectional input/control channels`
+87. `Social/world framework shells, scene schemas, and multi-user spatial app substrates`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

@@ -7717,3 +7717,209 @@ When a new utility idea appears:
   `immersive-web-sdk`, `webxr-test-api`.
 - Best fit for `VR-apps-lab`:
   testable browser XR utility shells and no-HMD validation research.
+
+## Method 451: Declarative A-Frame widget inventory with flex-like layout and focus state
+
+- What it is:
+  an A-Frame UI library exposes buttons, toggles, sliders, inputs, labels,
+  loaders, progress bars, text, colors, borders, focus, hover, active, and
+  layout fields as component schemas.
+- Good for:
+  browser VR settings panels, quick control surfaces, simple dashboards,
+  prototype menus, and no-build WebXR utility UI.
+- Why it matters:
+  utility UI becomes easier to remix when widgets are declarative scene
+  components rather than ad-hoc imperative entity construction.
+- Strong references:
+  `aframe-gui`.
+- Best fit for `VR-apps-lab`:
+  A-Frame/browser utility menu examples and control-panel pattern notes.
+
+## Method 452: Event-start/end teleport ray with landing validation
+
+- What it is:
+  a locomotion component starts and ends teleport targeting through named
+  events, renders parabolic or straight rays, validates collision and landing
+  normals, and moves the camera rig only after a valid hit.
+- Good for:
+  small VR scenes, browser utility rooms, data viewers, shared diagnostics
+  spaces, and comfort-preserving navigation.
+- Why it matters:
+  teleportation should be a replaceable utility component, not tangled inside
+  the whole scene or input stack.
+- Strong references:
+  `aframe-teleport-controls`.
+- Best fit for `VR-apps-lab`:
+  browser utility shells that need safe navigation without a game framework.
+
+## Method 453: Semantic interaction grammar for hover, grab, stretch, drag, drop, and click
+
+- What it is:
+  raw controller, hand, mouse, and touch events are normalized into semantic
+  object events such as hover, grab, stretch, drag, dragover, drop, and click,
+  with reaction components deciding whether each event is accepted.
+- Good for:
+  direct manipulation, object pickup, drag/drop panels, controller/hand
+  fallback, and reusable WebXR interaction layers.
+- Why it matters:
+  scene objects should not care which device produced the interaction if the
+  intended action is the same.
+- Strong references:
+  `aframe-super-hands-component`.
+- Best fit for `VR-apps-lab`:
+  reusable interaction vocabularies for browser VR menus and utility objects.
+
+## Method 454: Lifecycle-managed WebXR menu registry with hand-tracking pressables
+
+- What it is:
+  menus are registered by id, only one active menu is shown at a time, created
+  elements and event handlers are tracked for cleanup, and optional pressable
+  surfaces translate hand-tracking finger proximity into press/hover events.
+- Good for:
+  small in-headset settings menus, help panels, hand-first utility UI, and
+  controllerless WebXR surfaces.
+- Why it matters:
+  VR menus leak state easily unless lifecycle and cleanup are explicit.
+- Strong references:
+  `aframe-webxr-ui-toolkit`, `AUXL`.
+- Best fit for `VR-apps-lab`:
+  browser utility menu baselines and hand/control comparison docs.
+
+## Method 455: Immersive analytics grammar compiler with spatial views and selection/filter callbacks
+
+- What it is:
+  a JSON visualization grammar is validated, normalized, compiled into spatial
+  views, axes, legends, marks, filters, scales, and tooltips, then synchronized
+  with selection and filter callbacks.
+- Good for:
+  VR dashboards, telemetry surfaces, diagnostics data viewers, scientific
+  analysis rooms, and configurable 3D charts.
+- Why it matters:
+  diagnostics become reusable when the view grammar is separate from the data
+  and scene rendering code.
+- Strong references:
+  `vria`.
+- Best fit for `VR-apps-lab`:
+  future diagnostics visualization grammar and data-rich utility panels.
+
+## Method 456: A-Frame graph visualization component with accessor schema and raycaster events
+
+- What it is:
+  graph data, node/link accessor functions, visual options, hover callbacks,
+  and click callbacks are exposed through an A-Frame component schema, with
+  A-Frame raycasters driving interaction.
+- Good for:
+  runtime topology maps, device graphs, dependency graphs, network/session
+  maps, and browser VR graph panels.
+- Why it matters:
+  graph surfaces are easier to reuse when the data accessor contract is clear.
+- Strong references:
+  `aframe-forcegraph-component`, `3d-force-graph-vr`.
+- Best fit for `VR-apps-lab`:
+  graph-based diagnostics and topology visualization surfaces.
+
+## Method 457: Scientific viewer plugin shell with managers, command bus, snapshots, and XR input mapping
+
+- What it is:
+  a complex viewer is organized around plugin context, managers, state,
+  commands, render parameters, snapshots, selection/focus helpers, and a
+  dedicated XR input mapper.
+- Good for:
+  scientific inspection, reproducible diagnostics, scene-state capture,
+  measurement tools, and data viewers with complex interaction state.
+- Why it matters:
+  serious viewers need restorable state and named managers before they need
+  more rendering features.
+- Strong references:
+  `molstar`.
+- Best fit for `VR-apps-lab`:
+  session snapshots, reproducible diagnostics, and large viewer architecture
+  notes.
+
+## Method 458: Notebook-to-WebGL volume/data widget bridge with trait sync and texture tiling
+
+- What it is:
+  Python-side widget traits synchronize scatter, mesh, volume, selection,
+  hover, click, material, and camera state to a browser/WebGL view, with volume
+  data serialized into tiled textures or embeddable bundles.
+- Good for:
+  research workflows, offline analysis, scientific data inspection, telemetry
+  review, and notebook-fed VR/browser visualization.
+- Why it matters:
+  some VR utility data will be produced by analysis pipelines, not by the
+  headset runtime itself.
+- Strong references:
+  `ipyvolume`.
+- Best fit for `VR-apps-lab`:
+  offline diagnostics, data import/export, and scientific visualization
+  substrate research.
+
+## Method 459: WebXR-to-engine remote VR streaming protocol over WebRTC data channels
+
+- What it is:
+  a browser/WebXR client receives rendered video while sending typed pose,
+  button, axis, display, enter/exit VR, and session-control messages over a
+  WebRTC data channel to an engine runtime.
+- Good for:
+  thin headset clients, remote engine utilities, guided support, streamed
+  dashboards, and desktop-rendered VR tools.
+- Why it matters:
+  pose/control data should be a documented protocol, not an incidental blob
+  hidden behind the video stream.
+- Strong references:
+  `VRStreaming`, `PixelStreamingInfrastructure`.
+- Best fit for `VR-apps-lab`:
+  remote VR utility protocol design and streamed browser/headset surfaces.
+
+## Method 460: Render streaming stack with signaling manager, peer wrapper, data channel, and input remoting
+
+- What it is:
+  a remote rendering stack separates signaling, peer negotiation, media tracks,
+  data channels, browser input-remoting messages, runtime settings, and
+  signaling handlers.
+- Good for:
+  remote control surfaces, thin-client streaming, engine-backed dashboards,
+  browser-to-engine utility shells, and support sessions.
+- Why it matters:
+  WebRTC utilities stay maintainable when signaling and app protocol are not
+  tangled together.
+- Strong references:
+  `UnityRenderStreaming`, `com.unity.webrtc`.
+- Best fit for `VR-apps-lab`:
+  WebRTC architecture notes and future remote utility scaffolds.
+
+## Method 461: Pixel-streaming WebXR client with video projection and selective pose messages
+
+- What it is:
+  a browser client enters WebXR, renders a streamed video texture into headset
+  views, sends HMD transforms per frame, and sends eye/projection/gamepad data
+  only when it changes or when startup requires it.
+- Good for:
+  Unreal streaming, remote VR review, engine-rendered worlds, thin immersive
+  clients, and network-aware XR protocols.
+- Why it matters:
+  structural XR data and high-frequency pose data have different bandwidth and
+  update needs.
+- Strong references:
+  `PixelStreamingInfrastructure`.
+- Best fit for `VR-apps-lab`:
+  streamed VR client design and protocol comparison matrices.
+
+## Method 462: Shared spatial world substrate with scene schema, networked objects, media, headless clients, and app modules
+
+- What it is:
+  a collaborative VR utility treats scenes/worlds as data, separates object
+  identity from network clones, publishes user/hand/media/text events through
+  protocols, supports synthetic/headless clients, and loads spatial tools as
+  app modules with lifecycle events.
+- Good for:
+  shared diagnostics rooms, collaborative support, social utility shells,
+  remote inspection, load testing, and plugin-like spatial dashboards.
+- Why it matters:
+  multi-user utilities need explicit scene, network, avatar, media, and module
+  boundaries before product features can remain stable.
+- Strong references:
+  `ATON`, `circlesxr`, `arena-web-core`, `Basis`, `webaverse`.
+- Best fit for `VR-apps-lab`:
+  shared VR diagnostics architecture, headless-client research, and
+  collaborative browser utility shells.

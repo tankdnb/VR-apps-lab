@@ -610,6 +610,26 @@ Use these files when you want to understand:
   managers, controller/hand abstractions, feature managers, evented services,
   and runtime/test control surfaces.
 
+- `vr-projects-wave-148-aframe-gui-locomotion-and-reusable-interaction-component-primitives.md`
+  Next GitHub discovery wave focused on A-Frame GUI widgets, teleport rays,
+  semantic interactions, menu factories, lifecycle cleanup, and hand
+  pressables.
+
+- `vr-projects-wave-149-immersive-analytics-spatial-data-visualization-and-scientific-viewer-substrates.md`
+  Next GitHub discovery wave focused on immersive analytics grammars, graph
+  visualization, scientific viewer snapshots, XR input mapping, and notebook
+  data bridges.
+
+- `vr-projects-wave-150-webrtc-remote-rendering-webxr-streaming-and-bidirectional-input-control-channels.md`
+  Next GitHub discovery wave focused on WebRTC remote rendering, WebXR
+  streaming, data-channel pose/control protocols, input remoting, and
+  signaling/matchmaker shells.
+
+- `vr-projects-wave-151-social-world-framework-shells-scene-schemas-and-multi-user-spatial-app-substrates.md`
+  Next GitHub discovery wave focused on scene schemas, social/world shells,
+  Networked-AFrame ownership, MQTT/Jitsi media, headless clients, and spatial
+  app runtimes.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

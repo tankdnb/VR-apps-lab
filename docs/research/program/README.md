@@ -1047,3 +1047,35 @@ repeatable way.
 
 - `github-research-wave-147-backlog.md`
   Executed backlog for the Wave 147 pass.
+
+- `github-research-wave-148-plan.md`
+  Wave 148 research plan focused on A-Frame GUI widgets, teleport rays,
+  semantic interactions, menu factories, lifecycle cleanup, and hand
+  pressables.
+
+- `github-research-wave-148-backlog.md`
+  Executed backlog for the Wave 148 pass.
+
+- `github-research-wave-149-plan.md`
+  Wave 149 research plan focused on immersive analytics grammars, graph
+  visualization, scientific viewer snapshots, XR input mapping, and notebook
+  data bridges.
+
+- `github-research-wave-149-backlog.md`
+  Executed backlog for the Wave 149 pass.
+
+- `github-research-wave-150-plan.md`
+  Wave 150 research plan focused on WebRTC remote rendering, WebXR streaming,
+  data-channel pose/control protocols, input remoting, and signaling/matchmaker
+  shells.
+
+- `github-research-wave-150-backlog.md`
+  Executed backlog for the Wave 150 pass.
+
+- `github-research-wave-151-plan.md`
+  Wave 151 research plan focused on scene schemas, social/world shells,
+  Networked-AFrame ownership, MQTT/Jitsi media, headless clients, and spatial
+  app runtimes.
+
+- `github-research-wave-151-backlog.md`
+  Executed backlog for the Wave 151 pass.

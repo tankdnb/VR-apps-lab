@@ -156,6 +156,10 @@ This file complements:
 - `vr-projects-wave-145-immersive-360-video-players-stereo-projection-and-local-media-surfaces.md`
 - `vr-projects-wave-146-audio-reactive-webxr-surfaces-spatial-sound-visualizers-and-shader-pipelines.md`
 - `vr-projects-wave-147-webxr-runtime-frameworks-session-input-feature-managers-and-testable-spatial-ui-substrates.md`
+- `vr-projects-wave-148-aframe-gui-locomotion-and-reusable-interaction-component-primitives.md`
+- `vr-projects-wave-149-immersive-analytics-spatial-data-visualization-and-scientific-viewer-substrates.md`
+- `vr-projects-wave-150-webrtc-remote-rendering-webxr-streaming-and-bidirectional-input-control-channels.md`
+- `vr-projects-wave-151-social-world-framework-shells-scene-schemas-and-multi-user-spatial-app-substrates.md`
 
 ## How to use this index
 

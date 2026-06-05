@@ -1871,6 +1871,58 @@ Primary docs:
 - `playcanvas/engine` - `Already studied as evented XR service taxonomy and hand/input subsystem model`
 - `facebook/immersive-web-sdk` - `Already studied as ECS/action/spatial-UI framework with runtime-first dev tooling`
 
+## 119. A-Frame GUI, locomotion, and reusable interaction component primitives
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-148-aframe-gui-locomotion-and-reusable-interaction-component-primitives.md`
+- `../landscape/project-families.md`
+
+- `rdub80/aframe-gui` - `Already studied as declarative A-Frame widget, layout, and interaction component library`
+- `fernandojsg/aframe-teleport-controls` - `Already studied as parabolic/line teleport ray and landing-validation helper`
+- `wmurphyrd/aframe-super-hands-component` - `Already studied as semantic hover/grab/stretch/drag/drop/click interaction layer`
+- `Minty-Crisp/AUXL` - `Already studied as broad A-Frame world/menu factory and utility-shell construction kit`
+- `SvetimFM/aframe-webxr-ui-toolkit` - `Already studied as lifecycle-managed menu registry and hand-tracking pressable toolkit`
+
+## 120. Immersive analytics, spatial data visualization, and scientific viewer substrates
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-149-immersive-analytics-spatial-data-visualization-and-scientific-viewer-substrates.md`
+- `../landscape/project-families.md`
+
+- `vriajs/vria` - `Already studied as immersive analytics grammar, spatial view compiler, and selection/filter callback surface`
+- `vasturiano/3d-force-graph-vr` - `Already studied as VR force-graph scene shell with controller/mouse raycasters and tooltips`
+- `vasturiano/aframe-forcegraph-component` - `Already studied as A-Frame force graph component with accessor schemas and raycaster events`
+- `molstar/molstar` - `Already studied as scientific viewer plugin shell with managers, snapshots, Canvas3D, and XR input mapping`
+- `widgetti/ipyvolume` - `Already studied as notebook-to-WebGL 3D data bridge with synced traits and volume texture tiling`
+
+## 121. WebRTC remote rendering, WebXR streaming, and bidirectional input/control channels
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-150-webrtc-remote-rendering-webxr-streaming-and-bidirectional-input-control-channels.md`
+- `../landscape/project-families.md`
+
+- `FusedVR/VRStreaming` - `Already studied as WebXR-to-Unity pose/control data-channel and VR camera streaming prototype`
+- `Unity-Technologies/UnityRenderStreaming` - `Already studied as Unity signaling, peer, data-channel, and browser input-remoting stack`
+- `Unity-Technologies/com.unity.webrtc` - `Already studied as low-level Unity WebRTC peer connection and data-channel primitive layer`
+- `EpicGamesExt/PixelStreamingInfrastructure` - `Already studied as Unreal Pixel Streaming WebXR video projection and HMD/eye/gamepad client`
+- `Azure/Unreal-Pixel-Streaming` - `Already studied as deployment-oriented Unreal signaling and matchmaker shell`
+
+## 122. Social/world framework shells, scene schemas, and multi-user spatial app substrates
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-151-social-world-framework-shells-scene-schemas-and-multi-user-spatial-app-substrates.md`
+- `../landscape/project-families.md`
+
+- `phoenixbf/aton` - `Already studied as scene JSON, semantic graph, spatial UI, media, Photon, and avatar platform`
+- `PlumCantaloupe/circlesxr` - `Already studied as Networked-AFrame world shell with avatar templates, ownership, and object-world identity`
+- `arenaxr/arena-web-core` - `Already studied as MQTT-backed A-Frame scene client with hands, Jitsi media, screenshare, prompts, and spatial audio`
+- `BasisVR/Basis` - `Already studied as Unity/social VR networking, headless clients, compressed avatar sync, and avatar loading stack`
+- `webaverse-studios/webaverse` - `Already studied as browser app-runtime, dynamic import, world/app manager, and player manager substrate`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

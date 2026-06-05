@@ -448,6 +448,24 @@ the strongest current clusters:
   for WebXR session managers, controller/grip/hand abstractions, modular
   feature managers, evented XR service taxonomies, synthetic input, and
   runtime-first spatial UI tooling.
+- `aframe-gui`, `aframe-teleport-controls`,
+  `aframe-super-hands-component`, `AUXL`, `aframe-webxr-ui-toolkit`
+  for declarative A-Frame widgets, teleport rays, semantic interaction events,
+  menu factories, lifecycle-managed menus, and hand-tracking pressables.
+- `vria`, `3d-force-graph-vr`, `aframe-forcegraph-component`, `molstar`,
+  `ipyvolume`
+  for immersive analytics grammars, graph accessor schemas, scientific viewer
+  managers/snapshots, XR input mapping, notebook trait sync, and volume data
+  tiling.
+- `VRStreaming`, `UnityRenderStreaming`, `com.unity.webrtc`,
+  `PixelStreamingInfrastructure`, `Unreal-Pixel-Streaming`
+  for remote VR streaming, WebRTC signaling, peer/data-channel layers, input
+  remoting, WebXR video projection, pose/control protocols, and matchmaker
+  deployment shells.
+- `ATON`, `circlesxr`, `arena-web-core`, `Basis`, `webaverse`
+  for scene JSON, semantic graphs, Networked-AFrame ownership, MQTT/Jitsi
+  media surfaces, headless avatar clients, compressed avatar packets, and
+  spatial app runtimes.
 
 ## Highest-value next follow-up passes
 
@@ -528,6 +546,10 @@ directions:
 72. `Immersive 360 video players, stereo projection, and local media surfaces`
 73. `Audio-reactive WebXR surfaces, spatial sound visualizers, and shader pipelines`
 74. `WebXR runtime frameworks, session/input feature managers, and testable spatial UI substrates`
+75. `A-Frame GUI, locomotion, and reusable interaction component primitives`
+76. `Immersive analytics, spatial data visualization, and scientific viewer substrates`
+77. `WebRTC remote rendering, WebXR streaming, and bidirectional input/control channels`
+78. `Social/world framework shells, scene schemas, and multi-user spatial app substrates`
 
 ## Current repository-maintenance priorities
 

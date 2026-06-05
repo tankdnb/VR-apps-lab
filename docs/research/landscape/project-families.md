@@ -4044,6 +4044,149 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - testable no-HMD browser XR workflows
 - controller/hand/action abstraction comparisons
 
+## Family 127: A-Frame GUI, locomotion, and reusable interaction component primitives
+
+This family covers A-Frame component-level building blocks where the reusable
+value is widget schemas, flex-like layouts, teleport rays, semantic
+interaction events, menu factories, lifecycle cleanup, and hand-tracking press
+surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `rdub80/aframe-gui` | Already studied as declarative A-Frame widget, layout, and interaction component library | GUI item, interactable, flex container, labels, buttons, icon buttons, toggles, radio controls, progress bars, sliders, input, Troika text, hover/focus/active state, and style schemas |
+| `fernandojsg/aframe-teleport-controls` | Already studied as parabolic/line teleport ray and landing-validation helper | Custom start/end events, parabolic and line ray modes, hit/miss visualization, collision entities, landing normal/max-angle validation, and camera-rig repositioning |
+| `wmurphyrd/aframe-super-hands-component` | Already studied as semantic hover/grab/stretch/drag/drop/click interaction layer | Controller/hand/mouse/touch event normalization, cancelable semantic events, hover ordering, reaction components, grab/drop promotion, and mouse-like dispatch |
+| `Minty-Crisp/AUXL` | Already studied as broad A-Frame world/menu factory and utility-shell construction kit | AUXL system, object cores, layers, scene/world tracking, menus, multi-menus, mega menus, hover menus, scroll menus, inventory, movement, physics, weather, and external loading |
+| `SvetimFM/aframe-webxr-ui-toolkit` | Already studied as lifecycle-managed menu registry and hand-tracking pressable toolkit | `BaseMenu`, `MenuRegistry`, cleanup-aware elements/listeners, active menu switching, button/text input helpers, bounding-box hand press detection, pinch/ray/gaze helpers |
+
+### Consolidation note
+
+This family matters because WebXR utilities need reliable controls before they
+need large app frameworks. It now clearly includes:
+
+- declarative A-Frame widget schemas
+- flex-like VR panel layout
+- ray-based teleport and landing validation
+- semantic hover/grab/stretch/drag/drop/click events
+- world/menu factory stacks
+- menu lifecycle cleanup and active-menu switching
+- hand-tracking press surfaces
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- browser VR settings/help panels
+- A-Frame utility menu shells
+- controller/hand/mouse fallback input comparison
+- reusable interaction vocabularies for small WebXR tools
+
+## Family 128: Immersive analytics, spatial data visualization, and scientific viewer substrates
+
+This family covers data-rich VR/WebXR visualization projects where the
+reusable value is visualization grammars, graph accessors, scientific viewer
+state managers, snapshots, XR input mapping, notebook data bridges, and volume
+or graph transfer formats.
+
+| Project | Status | Notes |
+|---|---|---|
+| `vriajs/vria` | Already studied as immersive analytics grammar, spatial view compiler, and selection/filter callback surface | React/A-Frame `VRIA` component, config compiler, datasets, marks, axes, legends, filters, scales, tooltips, custom marks, builder UI, and selection/filter callbacks |
+| `vasturiano/3d-force-graph-vr` | Already studied as VR force-graph scene shell with controller/mouse raycasters and tooltips | Kapsule wrapper, embedded A-Frame scene, camera group, movement controls, tooltips, mouse cursor, laser raycasters, node/link callbacks, particles, and d3 force pass-throughs |
+| `vasturiano/aframe-forcegraph-component` | Already studied as A-Frame force graph component with accessor schemas and raycaster events | Component schema for graph data/accessors, JSON/function parsers, loading/info text, `ThreeForceGraph` binding, raycaster intersection details, and click handlers |
+| `molstar/molstar` | Already studied as scientific viewer plugin shell with managers, snapshots, Canvas3D, and XR input mapping | Plugin context, command/state managers, Canvas3D params, XR manager, viewer pose, controller rays, passthrough toggle, input-source mapping, camera/selection/focus snapshots |
+| `widgetti/ipyvolume` | Already studied as notebook-to-WebGL 3D data bridge with synced traits and volume texture tiling | Python traitlets, scatter/volume sync, selection/hover/click state, image/volume serializers, texture tiling, Three renderer, stereo/panorama/cube settings, and embed exports |
+
+### Consolidation note
+
+This family matters because diagnostics and research utilities need data
+surfaces, not only control panels. It now clearly includes:
+
+- immersive analytics config compilers
+- spatial views, axes, legends, marks, filters, and selections
+- graph accessor schemas and raycaster hover/click
+- scientific viewer managers and command/state buses
+- restorable viewer snapshots
+- XR input mapping for scientific viewers
+- notebook-to-browser 3D data transport
+- volume tiling and embed/export paths
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VR diagnostics visualization grammars
+- data-rich overlay or browser utility panels
+- graph and topology viewers for runtime/device state
+- session snapshot and replay-friendly scientific/diagnostic viewers
+
+## Family 129: WebRTC remote rendering, WebXR streaming, and bidirectional input/control channels
+
+This family covers remote rendering and thin-client VR architectures where the
+reusable value is video streaming, signaling, peer negotiation, data channels,
+input remoting, pose/control protocols, WebXR video projection, and deployment
+or matchmaker shells.
+
+| Project | Status | Notes |
+|---|---|---|
+| `FusedVR/VRStreaming` | Already studied as WebXR-to-Unity pose/control data-channel and VR camera streaming prototype | Binary VR data types for pose, buttons, axes, display, enter/exit VR, remote input receiver, coordinate conversion, multi-camera render textures, video tracks, bitrate/framerate control |
+| `Unity-Technologies/UnityRenderStreaming` | Already studied as Unity signaling, peer, data-channel, and browser input-remoting stack | Browser input remoting messages, peer negotiation wrapper, glare handling, data channel base, render streaming settings, signaling manager, handler registration, and command-line overrides |
+| `Unity-Technologies/com.unity.webrtc` | Already studied as low-level Unity WebRTC peer connection and data-channel primitive layer | Peer connection events, tracks, transceivers, offer/answer flow, data channel options, ordered/retransmit settings, byte messages, and lifecycle delegates |
+| `EpicGamesExt/PixelStreamingInfrastructure` | Already studied as Unreal Pixel Streaming WebXR video projection and HMD/eye/gamepad client | JSON signaling protocol, data channel controller, keyboard/mouse input handlers, WebXR controller, XR-compatible WebGL canvas, video texture projection, and selective eye/HMD messages |
+| `Azure/Unreal-Pixel-Streaming` | Already studied as deployment-oriented Unreal signaling and matchmaker shell | Express signaling server, frontend proxy, auth/logging, Application Insights, STUN config, matchmaker ports/keepalive/retry, static routes, lifecycle scripts, and Azure deployment helpers |
+
+### Consolidation note
+
+This family matters because remote VR utilities can separate rendering from
+headset-side sensors and controls. It now clearly includes:
+
+- WebRTC video tracks and render textures
+- browser/Unity input remoting
+- typed pose, button, axis, display, and session-mode messages
+- peer wrappers and signaling managers
+- low-level Unity data-channel primitives
+- WebXR streamed-video projection for Unreal
+- selective structural vs per-frame XR messages
+- signaling and matchmaker deployment shells
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- remote diagnostics and support rooms
+- thin headset clients for desktop/engine utilities
+- pose/control data-channel schemas
+- streamed VR dashboard surfaces
+
+## Family 130: Social/world framework shells, scene schemas, and multi-user spatial app substrates
+
+This family covers shared spatial runtime foundations where the reusable value
+is scene schema, semantic graph parsing, world packaging, networked object
+identity, MQTT/WebSocket/Jitsi media flows, headless avatar clients, app
+modules, and world/player managers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `phoenixbf/aton` | Already studied as scene JSON, semantic graph, spatial UI, media, Photon, and avatar platform | `ATON` namespace, `SceneHub` JSON parsers, scene/semantic graphs, environment, soundscape, nav, measurements, viewpoints, XPF network, SUI roots, Photon users, avatars, chat, focus, and media panels |
+| `PlumCantaloupe/circlesxr` | Already studied as Networked-AFrame world shell with avatar templates, ownership, and object-world identity | Generated world parts, `networked-scene`, avatar manager, user-networked component, object-world metadata, networked-basic clone/ownership/visibility flow, websocket attach/detach events, and world settings |
+| `arenaxr/arena-web-core` | Already studied as MQTT-backed A-Frame scene client with hands, Jitsi media, screenshare, prompts, and spatial audio | ARENA systems/components, user head/name/mic/Jitsi, hand pose/button MQTT publishing, Jitsi video surfaces, screenshare registry, SweetAlert text input, WebRTC positional audio patch, and remote-render visibility |
+| `BasisVR/Basis` | Already studied as Unity/social VR networking, headless clients, compressed avatar sync, and avatar loading stack | Transport registry, connection abstractions, server probes, headless console clients, DID auth, fake pose generator, movement sender, avatar bit packing, bone compression, avatar buffers, loading/fallback gates |
+| `webaverse-studios/webaverse` | Already studied as browser app-runtime, dynamic import, world/app manager, and player manager substrate | `App` object components/events, dynamic import manager, component templates, postMessage comms proxies, world `AppManager`, realm loading, local/remote players, app managers, and React/DOM UI boundary |
+
+### Consolidation note
+
+This family matters because collaborative utilities need room, user, media,
+and object state boundaries. It now clearly includes:
+
+- JSON scene and semantic graph parsing
+- generated Networked-AFrame world shells
+- network clone vs object-world identity
+- MQTT scene-user messages
+- Jitsi/WebRTC spatial media surfaces
+- DOM prompt to scene-event bridges
+- headless avatar clients and compressed avatar packets
+- dynamic app modules and world/player app managers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- shared VR diagnostics rooms
+- collaborative browser utility shells
+- synthetic/headless clients for load tests and replay
+- scene/schema comparisons across analytics, world, and app-runtime families
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.
