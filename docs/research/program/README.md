@@ -1225,3 +1225,31 @@ repeatable way.
 
 - `github-research-wave-171-backlog.md`
   Executed backlog for the Wave 171 pass.
+
+- `github-research-wave-172-plan.md`
+  Wave 172 research plan focused on overlay window surfaces, game overlay
+  managers, and scriptable overlay shells.
+
+- `github-research-wave-172-backlog.md`
+  Executed backlog for the Wave 172 pass.
+
+- `github-research-wave-173-plan.md`
+  Wave 173 research plan focused on OpenXR API-layer adaptation, hand transform
+  offsets, and graphics compatibility.
+
+- `github-research-wave-173-backlog.md`
+  Executed backlog for the Wave 173 pass.
+
+- `github-research-wave-174-plan.md`
+  Wave 174 research plan focused on spatial anchors, shared scenes, Magic Leap
+  persistence, and colocation.
+
+- `github-research-wave-174-backlog.md`
+  Executed backlog for the Wave 174 pass.
+
+- `github-research-wave-175-plan.md`
+  Wave 175 research plan focused on VRChat OSC web panels, debug surfaces,
+  controller helpers, and sensor bridges.
+
+- `github-research-wave-175-backlog.md`
+  Executed backlog for the Wave 175 pass.

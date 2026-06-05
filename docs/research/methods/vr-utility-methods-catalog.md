@@ -9690,3 +9690,283 @@ When a new utility idea appears:
   `liris-xr/kineo`.
 - Best fit for `VR-apps-lab`:
   motion export/import utility branches and format comparison notes.
+
+## Method 551: Electron offscreen shared-texture OpenVR overlay lifecycle
+
+- What it is:
+  an Electron window renders offscreen, exposes a native shared texture handle,
+  and a small OpenVR native addon submits that texture as an interactive overlay.
+- Good for:
+  browser-backed dashboards, chat/media panels, developer overlays, and fast UI
+  iteration.
+- Why it matters:
+  web UI can become a VR overlay if the pixel-transfer and lifecycle boundary is
+  explicit.
+- Source evidence:
+  `react-electron-openvr`.
+- Reusable core:
+  create a transparent offscreen `BrowserWindow`, enable shared texture
+  painting, submit the native handle to OpenVR, configure mouse scale/input
+  mode, and drive create/update/remove through declarative UI props.
+- Do not copy directly:
+  Windows-only shared texture assumptions or arbitrary web content without a
+  secure preload boundary.
+- Strong references:
+  `imagitama/react-electron-openvr`.
+- Best fit for `VR-apps-lab`:
+  browser-backed overlay shell prototypes.
+
+## Method 552: Injected overlay surface IPC with explicit input controls
+
+- What it is:
+  a host injects a helper into a target process and controls window surfaces
+  through typed IPC commands for position, shared handles, input listening, and
+  cursor blocking.
+- Good for:
+  architecture comparison, overlay manager API design, and high-risk game
+  overlay research.
+- Why it matters:
+  even risky overlay paths expose reusable command boundaries.
+- Source evidence:
+  `steamvr-overlay`.
+- Reusable core:
+  model each surface with a window ID, separate texture updates from pose/margin
+  updates, expose input listen/block as explicit commands, and keep forwarding
+  errors visible.
+- Do not copy directly:
+  process injection or anti-cheat-sensitive hooks into safe companion tools.
+- Strong references:
+  `KotRikD/steamvr-overlay`.
+- Best fit for `VR-apps-lab`:
+  overlay engine contract and risk taxonomy.
+
+## Method 553: Flag-gated modular SteamVR driver/overlay utility host
+
+- What it is:
+  one driver/overlay umbrella hosts multiple utility modules, enabling them
+  through marker files, safety checks, per-module IPC, logs, and UI tabs.
+- Good for:
+  utility suites, driver-side helpers, experimental feature rollout, and
+  operator-facing diagnostics.
+- Why it matters:
+  many small VR utilities are safer when they share one controlled host instead
+  of multiplying fragile runtime components.
+- Source evidence:
+  `WKOpenVR`.
+- Reusable core:
+  define a feature plugin interface, gate modules through explicit flags,
+  isolate module pipes/channels, auto-disable suspicious/stale states, and show
+  module status/logs inside one overlay.
+- Do not copy directly:
+  driver-specific internals or hook-heavy modules without review.
+- Strong references:
+  `RealWhyKnot/WKOpenVR`.
+- Best fit for `VR-apps-lab`:
+  modular overlay/runtime helper shell designs.
+
+## Method 554: External editor plus OpenXR layer engine for captured overlay sources
+
+- What it is:
+  a desktop editor owns layouts and source configuration while an OpenXR API
+  layer captures hidden browser/windows, composes quad layers, and receives
+  commands through a bounded pipe protocol.
+- Good for:
+  serious overlay managers, simulator dashboards, race/flight utility panels,
+  and external-source VR placement.
+- Why it matters:
+  high-quality overlay tools often need an editor/runtime split rather than a
+  monolithic in-headset app.
+- Source evidence:
+  `Honey_Overlays`.
+- Reusable core:
+  keep the editor out of the XR process, send length-prefixed JSON commands,
+  spawn hidden browser hosts per source, capture windows into D3D textures,
+  compose OpenXR quad layers, and provide in-headset grab/scale/opacity/cycle
+  placement controls.
+- Do not copy directly:
+  game-specific gates, Windows-only capture assumptions, or D3D-specific code
+  without an abstraction boundary.
+- Strong references:
+  `Alphasumsi/Honey_Overlays`.
+- Best fit for `VR-apps-lab`:
+  overlay manager architecture notes and future editor-driven overlay
+  prototypes.
+
+## Method 555: OpenXR runtime-side adapter layer for external tracking data
+
+- What it is:
+  an API layer receives external protocol data and answers standard OpenXR
+  extension calls from cached normalized state.
+- Good for:
+  eye/face tracking adapters, hand/body data bridges, diagnostics, and runtime
+  compatibility experiments.
+- Why it matters:
+  a runtime-facing adapter can make app compatibility better than app-specific
+  OSC integrations.
+- Source evidence:
+  `openxr_oscclient`.
+- Reusable core:
+  negotiate as an API layer, filter self-provided extension names, receive
+  external data on a background thread, normalize/clamp values, guard state with
+  locks, and answer extension functions from the cached state.
+- Do not copy directly:
+  fixed ports, undocumented OSC schemas, or extension-provider conflicts.
+- Strong references:
+  `LordOfDragons/openxr_oscclient`.
+- Best fit for `VR-apps-lab`:
+  OpenXR face/eye adapter and layer-conflict documentation.
+
+## Method 556: Runtime-side hand-joint transform correction layer
+
+- What it is:
+  an OpenXR API layer intercepts hand-joint location calls and applies a
+  calibration transform to every returned joint pose.
+- Good for:
+  headsetless workflows, desk-mounted hand tracking, calibration helpers, and
+  input adaptation tools.
+- Why it matters:
+  coordinate corrections can be isolated at the runtime boundary instead of
+  patched into every application.
+- Source evidence:
+  `OpenXR-Hand-Transform-Offset-Layer`.
+- Reusable core:
+  load a small calibration profile, periodically reload changes, intercept
+  `xrLocateHandJointsEXT`, rotate/translate joint positions and orientations,
+  and keep the layer narrow.
+- Do not copy directly:
+  hardcoded desk-tracker assumptions or text-file-only UX.
+- Strong references:
+  `CraigMason/OpenXR-Hand-Transform-Offset-Layer`.
+- Best fit for `VR-apps-lab`:
+  hand tracking calibration micro-layer concepts.
+
+## Method 557: Graphics compatibility API layer with frontend/backend swapchain wrappers
+
+- What it is:
+  an OpenXR API layer substitutes unsupported graphics bindings with a supported
+  backend and wraps sessions/swapchains to bridge acquire/release behavior.
+- Good for:
+  graphics compatibility research, runtime diagnostics, and understanding
+  rendering boundary risks.
+- Why it matters:
+  graphics-binding gaps can sometimes be bridged, but only with careful wrapper
+  ownership and synchronization.
+- Source evidence:
+  `sorenon_openxr_layer`.
+- Reusable core:
+  detect runtime capabilities, replace requested graphics extensions, wrap
+  session graphics state, maintain swapchain wrapper registries, and translate
+  frontend release paths into backend resource operations.
+- Do not copy directly:
+  experimental synchronization paths, `glFinish`, `vkQueueWaitIdle`, or
+  TODO-heavy compatibility logic.
+- Strong references:
+  `Sorenon/sorenon_openxr_layer`.
+- Best fit for `VR-apps-lab`:
+  rendering adaptation matrices and diagnostic notes.
+
+## Method 558: Anchor-relative shared scene serialization
+
+- What it is:
+  a shared spatial anchor is created and shared first, then scene objects are
+  serialized relative to that anchor for colocated reconstruction.
+- Good for:
+  colocated MR utilities, shared scene previews, calibration snapshots, and
+  semantic-room tools.
+- Why it matters:
+  relative-to-anchor scene data is more portable than assuming stable global
+  coordinates.
+- Source evidence:
+  `Unreal-SharedSceneSample`.
+- Reusable core:
+  share the anchor before scene data, store object labels, mesh references, and
+  transforms relative to the shared anchor, multicast reconstruction data, and
+  expose visibility toggles by semantic label.
+- Do not copy directly:
+  sample-only networking or platform-specific scene APIs without abstraction.
+- Strong references:
+  `oculus-samples/Unreal-SharedSceneSample`.
+- Best fit for `VR-apps-lab`:
+  colocation and anchor persistence notes.
+
+## Method 559: Localization-gated spatial anchor persistence with binding storage
+
+- What it is:
+  content bindings are saved against spatial anchor IDs, and anchor queries are
+  performed only when localization/head-pose state is valid.
+- Good for:
+  spatial-anchor utilities, persistence tools, content restore flows, and
+  vendor anchor comparisons.
+- Why it matters:
+  persistent anchors fail as product UX unless localization, query cadence, and
+  binding state are explicit.
+- Source evidence:
+  `SpatialAnchorsExample` and `MagicLeapSpatialAnchors`.
+- Reusable core:
+  listen for localization and anchor events, clear/reload state on space
+  changes, run anchor queries off the main thread, save anchor-to-content
+  bindings in local JSON, handle publish/query/delete callbacks, and display
+  tracking confidence/status.
+- Do not copy directly:
+  vendor-specific storage APIs without a portability boundary.
+- Strong references:
+  `magicleap/SpatialAnchorsExample`,
+  `dilmerv/MagicLeapSpatialAnchors`.
+- Best fit for `VR-apps-lab`:
+  spatial-anchor lifecycle and persistence matrices.
+
+## Method 560: VRChat OSC diagnostic and parameter browser surfaces
+
+- What it is:
+  small companion tools listen to OSC or discover OSCQuery services, then show
+  live avatar parameters, values, types, and statuses in a table, tree, or web
+  panel.
+- Good for:
+  OSC doctors, avatar parameter debugging, creator support, and companion
+  utility dashboards.
+- Why it matters:
+  VRChat OSC work becomes much easier when parameter state is visible and
+  filterable.
+- Source evidence:
+  `VRChatOSCDebugger`, `VRChatOscDebugger`, and `VRChat-OSC-WebPanel`.
+- Reusable core:
+  support passive wildcard listening for live values, OSCQuery discovery for
+  schemas, avatar JSON loading for parameter metadata, ignore/filter controls,
+  copy/export actions, and web or desktop parameter panels.
+- Do not copy directly:
+  unauthenticated web panels, incomplete write controls, or hardcoded local
+  paths without warnings.
+- Strong references:
+  `firocore/VRChatOSCDebugger`,
+  `Misaka-L/VRChatOscDebugger`,
+  `networkpenetrationtester/VRChat-OSC-WebPanel`.
+- Best fit for `VR-apps-lab`:
+  VRChat OSC doctor and parameter browser prototype planning.
+
+## Method 561: Sensor and finger data to VRChat avatar-parameter bridge
+
+- What it is:
+  external sensor streams are converted into avatar parameters with raw values,
+  normalized values, status booleans, heartbeat signals, and optional SDK/plugin
+  ingress.
+- Good for:
+  biometric avatars, hand/finger tracking, accessibility status indicators,
+  stream avatars, and device diagnostics.
+- Why it matters:
+  a reusable sensor bridge schema makes many one-off OSC tools easier to design
+  consistently.
+- Source evidence:
+  `leapmotion-osc` and `HRtoVRChat_OSC`.
+- Reusable core:
+  separate sensor managers from OSC writers, publish connected/active/heartbeat
+  booleans, normalize raw values into avatar-safe ranges, reset parameters on
+  shutdown, expose source names/status to helper UIs, and allow plugins through
+  a constrained SDK or network protocol.
+- Do not copy directly:
+  broad plugin loading, service-specific endpoints, or unsmoothed raw sensor
+  values without calibration.
+- Strong references:
+  `ThatGuyThimo/leapmotion-osc`,
+  `200Tigersbloxed/HRtoVRChat_OSC`.
+- Best fit for `VR-apps-lab`:
+  sensor-to-avatar bridge schema and small OSC bridge templates.

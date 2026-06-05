@@ -104,6 +104,24 @@ These are the clearest current product and research lines:
    browser shader restoration and raw `.tilt` loaders, Gaussian splat editor
    and viewer stacks, Unity/native splat runtimes, and Godot XR function-node
    plus vendor-extension package patterns.
+20. `Overlay window substrates, game overlay managers, and modular overlay hosts`
+   the repository now has fresh coverage of Electron shared-texture OpenVR
+   overlays, injected window-surface IPC, flag-gated SteamVR driver/overlay
+   umbrellas, Unity overlay module baselines, and editor-driven OpenXR overlay
+   engines with hidden browser/window capture.
+21. `OpenXR adaptation micro-layers and compatibility shims`
+   the repository now has fresh coverage of OSC eye/face tracking adapters,
+   runtime-side hand-joint transform correction, Rust graphics compatibility
+   wrappers, and compact generated-dispatch C layer templates.
+22. `Spatial anchors, colocation, and shared scene persistence`
+   the repository now has fresh coverage of Meta Unreal shared anchors, shared
+   scene reconstruction relative to anchors, Magic Leap localization-gated
+   persistence, ARFoundation/OpenXR storage callbacks, and anchor status UI.
+23. `VRChat OSC diagnostics, web panels, and sensor-to-avatar bridges`
+   the repository now has fresh coverage of browser chatbox panels, passive and
+   OSCQuery-aware parameter debuggers, TypeScript web parameter panels, C# OSC
+   helper libraries, Leap Motion finger bridges, controller micro-tools, and
+   heart-rate SDK/device bridges.
 
 ## Most useful current docs
 
@@ -584,6 +602,26 @@ the strongest current clusters:
   for XR recorder/viewer workflows, Unity behavior replay, physiological and
   event timelines, olfactory device bridges, experiment logging, sparse-camera
   mocap, and BVH/USD motion exports.
+- `react-electron-openvr`, `steamvr-overlay`, `WKOpenVR`, `Sable-Overlay`,
+  `Honey_Overlays`, `VRMocapOverlay`, `Hoku`
+  for Electron shared-texture overlays, injected surface IPC, modular
+  driver/overlay feature hosts, Unity overlay modules, game-specific OpenXR
+  overlay engines, and scriptable overlay product framing.
+- `openxr_oscclient`, `OpenXR-Hand-Transform-Offset-Layer`,
+  `sorenon_openxr_layer`, `openxr-layer-template`
+  for OSC eye/face adapters, runtime-side hand transform correction, graphics
+  compatibility layers, and compact API-layer templates.
+- `Unreal-SpatialAnchorsSample`, `Unreal-SharedAnchorsSample`,
+  `Unreal-SharedSceneSample`, `SpatialAnchorsExample`,
+  `MagicLeapSpatialAnchors`
+  for shared anchors, local/cloud/storage persistence, anchor-relative scene
+  reconstruction, Magic Leap localization, and anchor status/control panels.
+- `leapmotion-osc`, `VRChat-OSC-WEB-Chat`, `Drone-OSC-Controller`,
+  `VRChatOSCLib`, `VRChatOSCDebugger`, `VRChatOscDebugger`,
+  `VRChat-OSC-WebPanel`, `HRtoVRChat_OSC`
+  for browser chatbox panels, passive and OSCQuery-aware OSC debuggers, typed
+  OSC client primitives, avatar/controller micro-tools, finger bridges, and
+  biometric sensor-to-avatar pipelines.
 
 ## Highest-value next follow-up passes
 
@@ -688,6 +726,10 @@ directions:
 96. `VR retrofit safety matrix across injectors, managers, safe modes, compatibility gates, and patch groups`
 97. `Marker tracking and remote hand-data matrix across Quest, PICO, HoloLens, Unity ArUco, and transport bridges`
 98. `XR instrumentation and mocap matrix across record/replay, event timelines, physical-output bridges, and motion exports`
+99. `Overlay substrate matrix across Electron shared textures, injected surfaces, modular overlay hosts, OpenXR layer engines, and Unity overlay baselines`
+100. `OpenXR micro-layer starter matrix across protocol adapters, hand transform correction, graphics compatibility, and generated dispatch templates`
+101. `Spatial-anchor persistence and colocation matrix across Meta Unreal, Magic Leap, ARFoundation storage, local/cloud states, and anchor-relative scenes`
+102. `VRChat OSC diagnostics and sensor bridge matrix across web panels, passive listeners, OSCQuery browsers, typed libraries, finger tracking, and heart-rate SDKs`
 
 ## Current repository-maintenance priorities
 

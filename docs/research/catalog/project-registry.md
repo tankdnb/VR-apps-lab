@@ -2187,6 +2187,62 @@ Primary docs:
 - `liris-xr/Nebula-Core` - `Already studied as multisensory olfactory display serial/Android bridge and experiment logging donor`
 - `liris-xr/kineo` - `Already studied as sparse-camera mocap pipeline, online calibration, and BVH/USD export helper reference`
 
+## 143. Overlay window surfaces, game overlay managers, and scriptable overlay shells
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-172-overlay-window-surfaces-game-overlay-managers-and-scriptable-overlay-shells.md`
+- `../landscape/project-families.md`
+
+- `imagitama/react-electron-openvr` - `Already studied as Electron/React offscreen shared-texture OpenVR overlay donor`
+- `KotRikD/steamvr-overlay` - `Already studied as injected overlay window manager and typed IPC donor with invasive caveats`
+- `RealWhyKnot/WKOpenVR` - `Already studied as modular SteamVR driver/overlay umbrella, flag-gated modules, pipes, safety gates, and ImGui host donor`
+- `SableVII/Sable-Overlay` - `Already studied as Unity modular boundary overlay, module UI, OSC hook, and JSON settings reference`
+- `Alphasumsi/Honey_Overlays` - `Already studied as iRacing OpenXR overlay engine with WPF editor, browser/window capture, named-pipe control, and in-headset placement donor`
+- `Ikeiwa/VRMocapOverlay` - `Already studied as Unity/OpenVR render-texture overlay prefab and event-loop baseline`
+- `4x8Matrix/Hoku` - `Source-light scriptable OpenVR/Luau overlay-engine product reference`
+
+## 144. OpenXR API-layer adaptation, hand transform offsets, and graphics compatibility
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-173-openxr-api-layer-adaptation-hand-transform-offsets-and-graphics-compatibility.md`
+- `../landscape/project-families.md`
+
+- `LordOfDragons/openxr_oscclient` - `Already studied as OSC eye/face tracking to OpenXR extension adapter donor`
+- `CraigMason/OpenXR-Hand-Transform-Offset-Layer` - `Already studied as runtime-side hand-joint transform correction micro-layer`
+- `Sorenon/sorenon_openxr_layer` - `Already studied as Rust OpenXR graphics compatibility layer and wrapper-registry donor with performance caveats`
+- `maluoi/openxr-layer-template` - `Already studied as compact C11/CMake generated-dispatch OpenXR API-layer template`
+
+## 145. Spatial anchors, shared scenes, Magic Leap persistence, and colocation
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-174-spatial-anchors-shared-scenes-magic-leap-persistence-and-colocation.md`
+- `../landscape/project-families.md`
+
+- `oculus-samples/Unreal-SpatialAnchorsSample` - `Source-light Meta Unreal spatial anchor baseline and setup reference`
+- `oculus-samples/Unreal-SharedAnchorsSample` - `Already studied as shared-anchor menu, local/cloud persistence state, LAN session, and anchor action UX reference`
+- `oculus-samples/Unreal-SharedSceneSample` - `Already studied as anchor-relative shared scene serialization and reconstruction donor`
+- `magicleap/SpatialAnchorsExample` - `Already studied as Magic Leap localization-gated anchor manager, persistent content binding, worker query, and Space selector donor`
+- `dilmerv/MagicLeapSpatialAnchors` - `Already studied as ARFoundation/OpenXR Storage API lifecycle, publish/query/delete callbacks, control panel, and anchor status UI donor`
+
+## 146. VRChat OSC web panels, debug surfaces, controller helpers, and sensor bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-175-vrchat-osc-web-panels-debug-surfaces-and-sensor-bridges.md`
+- `../landscape/project-families.md`
+
+- `ThatGuyThimo/leapmotion-osc` - `Already studied as Leap Motion finger distance/spread to VRChat OSC avatar-parameter bridge`
+- `a2942/VRChat-OSC-WEB-Chat` - `Already studied as Flask/browser VRChat chatbox panel with theme/assets config and OSC chat/typing routes`
+- `qbitzvr/Drone-OSC-Controller` - `Product workflow reference for VRCLens drone-control avatar/menu OSC micro-tool`
+- `ChrisFeline/VRChatOSCLib` - `Already studied as C# VRChat OSC client, parameter/input/chatbox wrapper, listener, and message classifier`
+- `firocore/VRChatOSCDebugger` - `Already studied as lightweight Python/Tk live OSC debugger with ignore list and VRChat settings log checks`
+- `Misaka-L/VRChatOscDebugger` - `Already studied as Avalonia OSCQuery service discovery and hierarchical parameter browser reference`
+- `networkpenetrationtester/VRChat-OSC-WebPanel` - `Already studied as TypeScript OSC router/interface, avatar JSON loader, acknowledgement helper, and Svelte parameter panel donor`
+- `200Tigersbloxed/HRtoVRChat_OSC` - `Already studied as heart-rate sensor/service/SDK bridge to VRChat avatar parameters and app-bridge status donor`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

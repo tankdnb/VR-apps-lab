@@ -4850,6 +4850,142 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - multisensory physical-output bridge patterns
 - motion-capture import/export helper directions
 
+## Family 151: Overlay window surfaces, game overlay managers, and scriptable overlay shells
+
+This family covers overlay implementation substrates: browser-backed OpenVR
+surfaces, process-injected window managers, modular driver/overlay umbrellas,
+game-specific OpenXR overlay engines, Unity overlay baselines, and scriptable
+overlay engine references.
+
+| Project | Status | Notes |
+|---|---|---|
+| `imagitama/react-electron-openvr` | Already studied as Electron/React offscreen shared-texture OpenVR overlay donor | transparent offscreen BrowserWindow, Windows NT shared texture handles, native OpenVR submit, mouse scale/input mode, body/world/head attach modes, and declarative React overlay lifecycle |
+| `KotRikD/steamvr-overlay` | Already studied as injected overlay window manager and typed IPC donor | process injection caveat, shared-handle updates, window IDs, position/anchor/margin commands, input listen/block controls, cursor blocking, and typed Rust/Node request model |
+| `RealWhyKnot/WKOpenVR` | Already studied as modular SteamVR driver/overlay umbrella donor | feature plugin interface, flag-file activation, module safety gates, named pipes, shared memory, ImGui tabs, dev tools, logs, and one-driver-module packaging rationale |
+| `SableVII/Sable-Overlay` | Already studied as Unity modular boundary overlay reference | module interfaces, setting UI interfaces, boundary module, overlay settings/log modules, OSC controller, persisted JSON boundary colors/widths/height/sensitivity |
+| `Alphasumsi/Honey_Overlays` | Already studied as game-specific OpenXR overlay manager donor | WPF editor, named-pipe length-prefixed JSON, hidden browser-host processes, WebView2/DWM cloaking, Windows Graphics Capture, D3D11 quad layers, per-car/session layouts, and place-in-VR controls |
+| `Ikeiwa/VRMocapOverlay` | Already studied as Unity/OpenVR overlay prefab baseline | render-texture camera overlays, dashboard thumbnail, OpenVR event polling, dashboard/standby/quit callbacks, and legacy OVRLay-derived caveat |
+| `4x8Matrix/Hoku` | Source-light scriptable overlay product reference | Luau-driven OpenVR overlay engine concept with 2D testing and OpenGL integration goals; not a current source donor |
+
+### Consolidation note
+
+This family matters because overlay products depend on substrate decisions:
+
+- who owns the surface
+- how pixels cross into VR
+- how input is routed or blocked
+- how placement is represented
+- how feature modules are enabled safely
+- how source capture and browser windows are managed
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- overlay-substrate matrices
+- safe companion versus injected overlay boundary docs
+- browser-backed overlay engine contracts
+- in-headset overlay placement UX patterns
+
+## Family 152: OpenXR API-layer adaptation, hand transform offsets, and graphics compatibility
+
+This family covers narrow OpenXR API layers that adapt data or runtime
+capabilities: OSC eye/face extension adapters, hand-joint transform correction,
+graphics-binding substitution, and minimal generated-dispatch layer templates.
+
+| Project | Status | Notes |
+|---|---|---|
+| `LordOfDragons/openxr_oscclient` | Already studied as OSC eye/face tracking to OpenXR extension adapter donor | loader negotiation, self-provided extension filtering, OSC UDP read thread, lowercased targets, clamped expression values, eye/facial tracking extension calls, and local-space/fixed-port caveats |
+| `CraigMason/OpenXR-Hand-Transform-Offset-Layer` | Already studied as runtime-side hand transform correction micro-layer | `xrLocateHandJointsEXT` shim, env-var config path, periodic config reload, yaw/pitch/translation offsets for each joint, and desktop-mounted hand-tracker workflow |
+| `Sorenon/sorenon_openxr_layer` | Already studied as Rust graphics compatibility API layer | loader/API version validation, runtime detection, OpenGL-to-Vulkan extension replacement, session graphics wrappers, swapchain wrapper registry, external memory path, and synchronization/performance TODO caveats |
+| `maluoi/openxr-layer-template` | Already studied as compact C11/CMake API-layer template | negotiation validation, chained instance creation, `xrGetInstanceProcAddr` interception, generated dispatch cases, requested/override function config, and manifest disable environment |
+
+### Consolidation note
+
+This family matters because runtime-side helpers should be small and explicit:
+
+- adapt protocol data into standard OpenXR extension surfaces
+- correct transform spaces at a narrow API boundary
+- diagnose or bridge graphics capability gaps
+- start from templates that make dispatch ownership obvious
+- document provider conflicts and disable paths
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenXR micro-layer starter packs
+- API-layer install/disable safety checklists
+- adaptation-layer matrices by target surface
+- runtime-side calibration and compatibility diagnostics
+
+## Family 153: Spatial anchors, shared scenes, Magic Leap persistence, and colocation
+
+This family covers spatial-anchor persistence and colocation patterns across
+Meta Unreal and Magic Leap samples: local/cloud/storage state, shared anchors,
+anchor-relative scene reconstruction, localization gating, anchor queries, and
+status/control panels.
+
+| Project | Status | Notes |
+|---|---|---|
+| `oculus-samples/Unreal-SpatialAnchorsSample` | Source-light Meta Unreal spatial anchor baseline | Blueprint/content sample and setup reference; low code donor value in static source pass |
+| `oculus-samples/Unreal-SharedAnchorsSample` | Already studied as shared-anchor UX and persistence reference | create/select/load flow, local/cloud save state, anchor action menu, orient-to-anchor, erase/share actions, LAN session context, and OculusXR module dependencies |
+| `oculus-samples/Unreal-SharedSceneSample` | Already studied as anchor-relative shared scene donor | UI/menu manager, async operation utilities, shared anchor before scene data, semantic labels, relative transforms, static mesh references, multicast reconstruction, and visibility toggles |
+| `magicleap/SpatialAnchorsExample` | Already studied as Magic Leap persistence donor | localization events, anchor event manager, head-pose-valid query gating, worker/main thread dispatcher, JSON content bindings, persistent content restore, and Space selector |
+| `dilmerv/MagicLeapSpatialAnchors` | Already studied as ARFoundation/OpenXR Storage API lifecycle donor | anchor subsystem readiness, controller placement preview, publish/query/delete callbacks, local/stored anchor records, restore/clear panel, confidence/tracking status UI, and duplication caveat |
+
+### Consolidation note
+
+This family matters because anchor systems are product workflows, not isolated
+API calls:
+
+- create/select/load/save/share/erase states
+- local versus cloud/storage persistence
+- localization readiness and query cadence
+- anchor-to-content bindings
+- shared scene data relative to an anchor
+- semantic label visibility and status surfaces
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- spatial-anchor persistence matrices
+- generic anchor action menu patterns
+- colocation scene snapshot schemas
+- vendor-specific anchor lifecycle comparison notes
+
+## Family 154: VRChat OSC web panels, debug surfaces, controller helpers, and sensor bridges
+
+This family covers small-to-medium VRChat OSC helper tools: chatbox web panels,
+passive packet debuggers, OSCQuery parameter browsers, avatar/controller
+micro-tools, finger tracking bridges, and biometric sensor-to-avatar pipelines.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ThatGuyThimo/leapmotion-osc` | Already studied as Leap Motion finger-to-OSC bridge | Leap frame subscription, finger tip-to-palm distance, metacarpal/proximal spread, finger-specific limits, `/avatar/parameters/...` sends, connection/FPS/hand-status UI, and calibration/smoothing caveat |
+| `a2942/VRChat-OSC-WEB-Chat` | Already studied as browser chatbox panel micro-utility | Flask routes for chatbox input/typing, OSC endpoint config, JSON persistence, uploaded avatar/background assets, responsive chat UI, and network exposure caveat |
+| `qbitzvr/Drone-OSC-Controller` | Product workflow reference for VRCLens drone-control OSC micro-tool | avatar submenu enable/mode/speed controls, opposite-hand or Xbox input through OSC parameters, Modular Avatar install flow, smoothing tweaks, and source-light/package caveat |
+| `ChrisFeline/VRChatOSCLib` | Already studied as C# VRChat OSC primitive library | typed parameter/input/chatbox helpers, async sends, listener socket, `VRCMessage` classification, input button/axis structs, and lightweight library scope |
+| `firocore/VRChatOSCDebugger` | Already studied as Python/Tk passive OSC debugger | wildcard UDP listener, latest-value table, ignore-list persistence, multi-select copy, clear button, VRChat log setting checks, and passive-only caveat |
+| `Misaka-L/VRChatOscDebugger` | Already studied as Avalonia OSCQuery parameter browser | OSCQuery service discovery, host info/node fetch, endpoint derivation, service refresh, local-address filtering, avatar-change refresh, and hierarchical tree data grid |
+| `networkpenetrationtester/VRChat-OSC-WebPanel` | Already studied as TypeScript OSC router and web parameter panel donor | avatar JSON loading, type maps, `/avatar/change` refresh, path-pattern listener cache, app forwarding, send acknowledgement by echo, live Svelte parameter panel, and rough frontend caveats |
+| `200Tigersbloxed/HRtoVRChat_OSC` | Already studied as heart-rate sensor/SDK to VRChat OSC bridge donor | many HR sources, parameter normalization, active/connected/heartbeat booleans, avatar file listener, app bridge messages, reflected/network SDK plugins, and plugin-security caveats |
+
+### Consolidation note
+
+This family matters because VRChat OSC utility value often appears in small
+surfaces:
+
+- web/mobile chatbox panels
+- live OSC packet tables
+- OSCQuery parameter browsers
+- typed OSC helper libraries
+- avatar-authored controller workflows
+- sensor/finger/biometric parameter bridges
+- status and heartbeat parameters
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VRChat OSC doctor and parameter browser prototypes
+- sensor-to-avatar bridge schemas
+- chatbox/web-panel safety and pacing notes
+- OSCQuery versus passive listener comparison matrices
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

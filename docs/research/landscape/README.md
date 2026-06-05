@@ -725,6 +725,27 @@ Use these files when you want to understand:
   physiological timelines, Unity analysis surfaces, olfactory hardware bridges,
   and sparse-camera mocap exports.
 
+- `vr-projects-wave-172-overlay-window-surfaces-game-overlay-managers-and-scriptable-overlay-shells.md`
+  Next GitHub discovery wave focused on Electron shared-texture OpenVR
+  overlays, injected overlay IPC, modular driver/overlay hosts, Unity overlay
+  modules, game-specific OpenXR overlay managers, and scriptable overlay
+  engines.
+
+- `vr-projects-wave-173-openxr-api-layer-adaptation-hand-transform-offsets-and-graphics-compatibility.md`
+  Next GitHub discovery wave focused on OSC-to-OpenXR extension adapters,
+  hand-joint transform correction layers, graphics compatibility wrappers, and
+  minimal generated-dispatch API-layer templates.
+
+- `vr-projects-wave-174-spatial-anchors-shared-scenes-magic-leap-persistence-and-colocation.md`
+  Next GitHub discovery wave focused on Meta Unreal shared anchors, anchor
+  action menus, shared scene reconstruction, Magic Leap localization-gated
+  persistence, and ARFoundation/OpenXR storage lifecycles.
+
+- `vr-projects-wave-175-vrchat-osc-web-panels-debug-surfaces-and-sensor-bridges.md`
+  Next GitHub discovery wave focused on VRChat OSC web panels, passive and
+  OSCQuery-aware debuggers, typed OSC client libraries, controller micro-tools,
+  finger tracking bridges, and biometric sensor-to-avatar pipelines.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

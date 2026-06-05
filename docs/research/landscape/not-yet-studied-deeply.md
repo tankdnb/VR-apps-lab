@@ -1834,6 +1834,11 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 105. `VR retrofit safety matrix across injectors, managers, safe modes, compatibility gates, and patch groups`
 106. `Marker tracking and remote hand-data matrix across Quest, PICO, HoloLens, Unity ArUco, and transport bridges`
 107. `XR instrumentation and mocap matrix across record/replay, event timelines, physical-output bridges, and motion exports`
+108. `Overlay substrate matrix across Electron shared textures, injected window managers, Unity overlays, OpenXR layers, and hidden browser/window capture`
+109. `OpenXR micro-layer starter matrix across C, C++, Rust, generated dispatch, transform correction, data adapters, and graphics compatibility`
+110. `Spatial-anchor persistence and colocation matrix across Meta Unreal, Meta Unity, Magic Leap, ARFoundation storage, local/cloud anchors, and anchor-relative scene data`
+111. `VRChat OSC diagnostics matrix across passive listeners, OSCQuery browsers, web panels, typed libraries, and avatar JSON loaders`
+112. `Sensor-to-avatar bridge schema across finger tracking, heart rate, device status, normalized parameters, heartbeat booleans, and SDK/plugin ingress`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.
