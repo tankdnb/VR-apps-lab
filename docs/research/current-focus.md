@@ -83,6 +83,11 @@ These are the clearest current product and research lines:
    bridges, Unity session/trial/data-capture frameworks, standalone browser
    shell architecture, WebXR runtime shims, hand/palm menu tools, local-first
    stereo media viewers, diagnostics, and VR data dashboards.
+16. `VR text entry, captions/OCR, SteamVR operational support, and focused overlay micro-surfaces`
+   the repository now has fresh coverage of modal and native keyboard
+   surfaces, subtitle/caption/STT/OCR accessibility flows, runtime lifecycle
+   and performance-support helpers, Unity dashboard overlays, QR/media/game
+   HUD micro-tools, and OCR-assisted workflow panels.
 
 ## Most useful current docs
 
@@ -162,6 +167,14 @@ instead of full history:
 - `landscape/vr-projects-wave-125-unity-vr-experiment-frameworks-data-capture-and-study-orchestration-helpers.md`
 - `landscape/vr-projects-wave-126-immersive-browser-shells-webxr-runtimes-home-spaces-and-spatial-web-frontends.md`
 - `landscape/vr-projects-wave-127-browser-native-webxr-utility-surfaces-creative-tools-diagnostics-and-data-visualization.md`
+- `landscape/vr-projects-wave-128-quest-app-sideloading-modding-version-management-and-store-metadata-tooling.md`
+- `landscape/vr-projects-wave-129-vmc-vrm-motion-capture-protocol-osc-transform-receivers-and-recording-export-tools.md`
+- `landscape/vr-projects-wave-130-resonite-neos-modding-headless-external-sdk-and-social-utility-tooling.md`
+- `landscape/vr-projects-wave-131-diy-open-source-headset-hardware-bring-up-drivers-pcbs-and-controller-firmware.md`
+- `landscape/vr-projects-wave-132-vr-keyboard-text-entry-and-osc-input-surfaces.md`
+- `landscape/vr-projects-wave-133-vr-subtitles-captions-stt-and-ocr-accessibility-surfaces.md`
+- `landscape/vr-projects-wave-134-steamvr-operational-support-startup-automation-dynamic-performance-and-linux-driver-helpers.md`
+- `landscape/vr-projects-wave-135-focused-overlay-micro-surfaces-qr-media-game-huds-and-ocr-assisted-workflow-panels.md`
 
 ## Strong donor clusters right now
 
@@ -362,6 +375,23 @@ the strongest current clusters:
   for DIY headset firmware, OpenVR HMD driver bring-up, HID/UART/RF packet
   transport, driver settings GUIs, PCB/BOM/STL assets, and controller
   calibration variants.
+- `react-360-keyboard`, `vr-keyboard`, `VRKeyboard`, `VR_Keyboard`,
+  `VRC-KeyboardController-in-VR_OSC`
+  for modal keyboard services, raycast/canvas keyboards, fingertip physical
+  keys, native OpenVR keyboard bridges, and VRChat OSC input emitters.
+- `vr-subtitles`, `VR_SUBTITLES_BURNERRR`, `WebVR-Captioning`, `STTS`
+  for subtitle queues, speaker/FOV placement, projection-aware subtitle
+  burn-in, screenshot captioning, STT/translation overlays, OCR controls, and
+  VRChat chatbox bridges.
+- `OpenVRStartup`, `OpenVR-Dynamic-Resolution`, `steam-devices`,
+  `VivePro2-Linux-Driver`
+  for SteamVR lifecycle automation, dynamic runtime settings controllers,
+  Linux device-permission inventories, proxy drivers, and typed
+  settings/property helpers.
+- `VRCOSCAvatarScaleOverlay`, `VR-QR-Overlay`, `VR-Music-Remote`,
+  `EchoVR-Overlay`, `ez-wishlist-overlay`
+  for Unity dashboard overlays, mirror-texture recognition, window-captured
+  media HUDs, browser telemetry surfaces, and OCR-assisted workflow panels.
 
 ## Highest-value next follow-up passes
 
@@ -426,6 +456,10 @@ directions:
 56. `VMC/VRM motion-capture protocol, OSC transform receivers, and recording/export tools`
 57. `Resonite/Neos modding, headless, external SDK, and social utility tooling`
 58. `DIY open-source headset hardware bring-up, drivers, PCBs, and controller firmware`
+59. `VR keyboard, text-entry, avatar keyboard, and OSC input surfaces`
+60. `VR subtitles, captions, STT/OCR accessibility, and projection-aware subtitle tooling`
+61. `SteamVR operational support, startup automation, dynamic performance, and Linux driver helpers`
+62. `Focused overlay micro-surfaces, situational HUDs, and OCR-assisted workflow panels`
 
 ## Current repository-maintenance priorities
 

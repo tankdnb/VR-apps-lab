@@ -535,6 +535,22 @@ Use these files when you want to understand:
   drivers, firmware transports, PCBs, controller firmware, and settings GUI
   tooling.
 
+- `vr-projects-wave-132-vr-keyboard-text-entry-and-osc-input-surfaces.md`
+  Next GitHub discovery wave focused on VR keyboard, text-entry,
+  avatar-keyboard, OpenVR keyboard bridge, and VRChat OSC input surfaces.
+
+- `vr-projects-wave-133-vr-subtitles-captions-stt-and-ocr-accessibility-surfaces.md`
+  Next GitHub discovery wave focused on VR subtitles, captions,
+  STT/translation overlays, OCR controls, and projection-aware subtitle tools.
+
+- `vr-projects-wave-134-steamvr-operational-support-startup-automation-dynamic-performance-and-linux-driver-helpers.md`
+  Next GitHub discovery wave focused on SteamVR lifecycle automation, dynamic
+  performance, Linux device permissions, and vendor driver helper patterns.
+
+- `vr-projects-wave-135-focused-overlay-micro-surfaces-qr-media-game-huds-and-ocr-assisted-workflow-panels.md`
+  Next GitHub discovery wave focused on focused overlay micro-surfaces, QR
+  scanners, media remotes, telemetry HUDs, and OCR-assisted workflow panels.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

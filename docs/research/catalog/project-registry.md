@@ -1658,6 +1658,61 @@ Primary docs:
 - `dmcke5/DIY_VR_Controllers` - `Already studied`
 - `dietzus/DietzVR` - `Rejected; current clone contains no reusable source beyond license metadata`
 
+## 103. VR keyboard, text-entry, avatar keyboard, and OSC input surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-132-vr-keyboard-text-entry-and-osc-input-surfaces.md`
+- `../landscape/project-families.md`
+
+- `danielbuechele/react-360-keyboard` - `Already studied`
+- `erosmarcon/vr-keyboard` - `Already studied`
+- `jcorvinus/VRKeyboard` - `Already studied`
+- `mrowrpurr/VR_Keyboard` - `Already studied`
+- `anosatsuk124/VRC-KeyboardController-in-VR_OSC` - `Already studied`
+- `killfrenzy96/KillFrenzyVRCAvatarKeyboard` - `Already studied as deprecated historical reference`
+
+## 104. VR subtitles, captions, STT/OCR accessibility, and projection-aware subtitle tooling
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-133-vr-subtitles-captions-stt-and-ocr-accessibility-surfaces.md`
+- `../landscape/project-families.md`
+
+- `bjennings76/vr-subtitles` - `Already studied`
+- `AhhhhHeyyy/VR-Subtitles-WIP` - `Already studied as WIP prototype`
+- `CarlUpright/VR_SUBTITLES_BURNERRR` - `Already studied as projection-aware micro-utility`
+- `zacharykeeler/VR-Subtitles-in-Unreal-5` - `Partially studied as report-only UX reference`
+- `akbartus/WebVR-Captioning` - `Already studied`
+- `DanielCirry/STTS` - `Partially studied as large STT/translation/OCR overlay stack`
+
+## 105. SteamVR operational support, startup automation, dynamic performance, Linux permissions, and driver helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-134-steamvr-operational-support-startup-automation-dynamic-performance-and-linux-driver-helpers.md`
+- `../landscape/project-families.md`
+
+- `BOLL7708/OpenVRStartup` - `Already studied as archived lifecycle micro-utility`
+- `Erimelowo/OpenVR-Dynamic-Resolution` - `Already studied`
+- `ValveSoftware/steam-devices` - `Already studied as Linux device-permission reference`
+- `CertainLach/VivePro2-Linux-Driver` - `Partially studied as vendor driver proxy/reference`
+
+## 106. Focused overlay micro-surfaces, situational HUDs, QR/media helpers, and OCR-assisted workflow panels
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-135-focused-overlay-micro-surfaces-qr-media-game-huds-and-ocr-assisted-workflow-panels.md`
+- `../landscape/project-families.md`
+
+- `MetroTS/AdressableOverlaySteamVR` - `Partially studied as early/incomplete status-dashboard sketch`
+- `haolink/VRCOSCAvatarScaleOverlay` - `Already studied`
+- `Psychpsyo/VR-QR-Overlay` - `Already studied`
+- `Rycia/OVR-Deck` - `Rejected; current clone contains no reusable source beyond README/license metadata`
+- `ToxicOrca/VR-Music-Remote` - `Already studied as window-captured micro-utility`
+- `DavidDriessen/EchoVR-Overlay` - `Already studied as browser/OBS telemetry HUD reference`
+- `etiennechabert/ez-wishlist-overlay` - `Partially studied as strong overlay/OCR/workflow donor`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

@@ -927,3 +927,31 @@ repeatable way.
 
 - `github-research-wave-131-backlog.md`
   Executed backlog for the Wave 131 pass.
+
+- `github-research-wave-132-plan.md`
+  Wave 132 research plan focused on VR keyboard, text-entry, avatar-keyboard,
+  OpenVR keyboard bridge, and VRChat OSC input surfaces.
+
+- `github-research-wave-132-backlog.md`
+  Executed backlog for the Wave 132 pass.
+
+- `github-research-wave-133-plan.md`
+  Wave 133 research plan focused on VR subtitles, captions, STT/translation
+  overlays, OCR controls, and projection-aware subtitle tools.
+
+- `github-research-wave-133-backlog.md`
+  Executed backlog for the Wave 133 pass.
+
+- `github-research-wave-134-plan.md`
+  Wave 134 research plan focused on SteamVR lifecycle automation, dynamic
+  performance, Linux device permissions, and vendor driver helper patterns.
+
+- `github-research-wave-134-backlog.md`
+  Executed backlog for the Wave 134 pass.
+
+- `github-research-wave-135-plan.md`
+  Wave 135 research plan focused on focused overlay micro-surfaces, QR
+  scanners, media remotes, telemetry HUDs, and OCR-assisted workflow panels.
+
+- `github-research-wave-135-backlog.md`
+  Executed backlog for the Wave 135 pass.

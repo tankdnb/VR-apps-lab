@@ -6863,3 +6863,240 @@ When a new utility idea appears:
   `HadesVR_GUI_Tool`.
 - Best fit for `VR-apps-lab`:
   driver settings, calibration, and support tooling patterns.
+
+## Method 401: Promise-returning modal VR keyboard service
+
+- What it is:
+  a VR scene calls a keyboard service with config, the keyboard fades in as a
+  modal surface, captures text/emoji/dictation, resolves a promise or callback,
+  and then restores the scene to normal flow.
+- Good for:
+  WebXR/WebVR utilities, search boxes, notes, chat surfaces, setup forms, and
+  headset-friendly command entry.
+- Why it matters:
+  text entry is easier to reuse when treated as a service boundary instead of
+  a component every scene reimplements.
+- Strong references:
+  `react-360-keyboard`.
+- Best fit for `VR-apps-lab`:
+  reusable VR text-entry service patterns.
+
+## Method 402: Canvas-texture raycast keyboard with target-field binding
+
+- What it is:
+  a keyboard renders its layout to a canvas texture, raycasts pointer hits into
+  key rectangles, dispatches key events, switches layouts, and writes values
+  into the currently focused target field.
+- Good for:
+  browser-native WebXR tools, lightweight diagnostics, in-scene forms, and
+  no-native-overlay text entry.
+- Why it matters:
+  browser XR utilities need a portable fallback when platform keyboards are
+  unavailable or inconsistent.
+- Strong references:
+  `vr-keyboard`.
+- Best fit for `VR-apps-lab`:
+  browser-native keyboard and menu/input prototypes.
+
+## Method 403: Fingertip push-depth keyboard and physical button activation
+
+- What it is:
+  a key tracks fingertip colliders, chirality/finger filters, approach
+  orientation, furthest push point, throw distance, hover/activate events, and
+  debounce state before accepting a press.
+- Good for:
+  hand-tracked keyboards, near-field menus, tactile control panels, cockpit
+  switches, and training interfaces.
+- Why it matters:
+  physical-feeling VR UI needs depth and orientation gates, not only collider
+  enter/exit events.
+- Strong references:
+  `VRKeyboard`.
+- Best fit for `VR-apps-lab`:
+  near-field interaction and hand UI comparison work.
+
+## Method 404: Native OpenVR keyboard bridge for host scripts or mod environments
+
+- What it is:
+  a native helper creates an OpenVR overlay, calls `ShowKeyboardForOverlay`,
+  polls keyboard events, reads text through `GetKeyboardText`, and exposes a
+  small polling API to the host script layer with desktop/non-VR fallback.
+- Good for:
+  SteamVR overlays, game mods, script hosts, configuration panels, and
+  environments that do not have reliable text input.
+- Why it matters:
+  many VR utility hosts are not full engines; a thin native keyboard bridge can
+  unlock text entry without rewriting the host.
+- Strong references:
+  `VR_Keyboard`.
+- Best fit for `VR-apps-lab`:
+  OpenVR text-entry bridge and mod-host utility research.
+
+## Method 405: OSC input emitter with explicit transient reset cadence
+
+- What it is:
+  a companion app maps keyboard/controller state into OSC addresses, sends
+  values to a target runtime, then resets transient axes/buttons each evaluation
+  tick so movement or look commands do not stick.
+- Good for:
+  VRChat input helpers, accessibility tools, control sidecars, keyboard-to-OSC
+  bridges, and remote control surfaces.
+- Why it matters:
+  OSC control bridges are safer when stateless/transient behavior is explicit.
+- Strong references:
+  `VRC-KeyboardController-in-VR_OSC`.
+- Best fit for `VR-apps-lab`:
+  VRChat OSC bridge and accessibility sidecar patterns.
+
+## Method 406: Queued VR subtitle director with WPM duration and speaker/FOV placement
+
+- What it is:
+  subtitles are queued, sorted by priority, assigned duration from text length,
+  optionally attached to a speaker or portrait, kept facing or near the user's
+  field of view, and faded through lifecycle events.
+- Good for:
+  accessibility captions, narrative VR, training apps, guided setup, and
+  information overlays.
+- Why it matters:
+  legible VR text is a scheduling and placement problem, not just a UI label.
+- Strong references:
+  `vr-subtitles`.
+- Best fit for `VR-apps-lab`:
+  caption/subtitle surfaces and guided diagnostics.
+
+## Method 407: Projection-aware subtitle burn-in for stereo 360 video
+
+- What it is:
+  a media helper splits a top-bottom stereo 360 video into eye halves, burns
+  identical ASS/SRT subtitles into both halves with geometry-aware size and
+  margins, then stacks the halves back together to avoid horizontal disparity.
+- Good for:
+  immersive video archives, accessibility preprocessing, creator media
+  pipelines, and projection-aware playback support.
+- Why it matters:
+  conventional subtitle burn-in can become uncomfortable in stereo VR if eye
+  geometry is ignored.
+- Strong references:
+  `VR_SUBTITLES_BURNERRR`.
+- Best fit for `VR-apps-lab`:
+  projection-aware media helper research.
+
+## Method 408: STT/translation overlay fan-out with typed message history and OCR controls
+
+- What it is:
+  a local companion coordinates speech recognition, translation, TTS, OCR,
+  VR overlays, font fallback, message history, fade/expiration, tracking
+  targets, and optional chatbox/OSC output.
+- Good for:
+  accessibility companions, live translation, speech logs, VRChat chat helpers,
+  and in-headset OCR/translation panels.
+- Why it matters:
+  communication tools need a pipeline and history model, not only a single
+  floating text label.
+- Strong references:
+  `STTS`.
+- Best fit for `VR-apps-lab`:
+  speech, caption, translation, and OCR companion surfaces.
+
+## Method 409: SteamVR lifecycle script runner with manifest autolaunch and quit handling
+
+- What it is:
+  an OpenVR overlay app registers itself with SteamVR, enables autolaunch,
+  runs startup scripts when SteamVR attaches, waits for quit events when
+  cleanup scripts exist, acknowledges quit, shuts down, and runs stop scripts.
+- Good for:
+  companion utility orchestration, setup/cleanup automation, lab workflows,
+  streaming stacks, and debug tool bundles.
+- Why it matters:
+  VR support tooling often needs reliable runtime lifecycle hooks more than a
+  complex UI.
+- Strong references:
+  `OpenVRStartup`.
+- Best fit for `VR-apps-lab`:
+  SteamVR lifecycle helpers and operational support tools.
+
+## Method 410: Frametime/VRAM feedback controller for SteamVR supersampling
+
+- What it is:
+  a runtime helper reads compositor frame timing, CPU thresholds, dashboard/app
+  state, manual override signals, whitelist/blacklist rules, and optional VRAM
+  pressure, then adjusts SteamVR supersampling through settings keys.
+- Good for:
+  performance helpers, diagnostics, tuning utilities, runtime support tools,
+  and adaptive quality experiments.
+- Why it matters:
+  automatic runtime intervention needs guardrails or it becomes another source
+  of user confusion.
+- Strong references:
+  `OpenVR-Dynamic-Resolution`.
+- Best fit for `VR-apps-lab`:
+  performance-support and runtime-settings controller research.
+
+## Method 411: Linux VR device-permission inventory as setup-doctor substrate
+
+- What it is:
+  a package keeps explicit udev/HID/raw device permission rules for headset,
+  controller, tracker, and vendor devices, then uses that inventory as setup
+  and troubleshooting ground truth.
+- Good for:
+  Linux VR setup doctors, runtime installers, hardware diagnostics, distro
+  packaging, and support documentation.
+- Why it matters:
+  many VR failures are device-access failures before they are app bugs.
+- Strong references:
+  `steam-devices`.
+- Best fit for `VR-apps-lab`:
+  Linux setup and troubleshooting references.
+
+## Method 412: Proxy-driver vtable wrapper with typed settings/properties and HID control
+
+- What it is:
+  a driver proxy wraps only the needed OpenVR interfaces, delegates everything
+  else to a real vendor driver, writes typed properties/settings, and controls
+  vendor hardware through HID feature reports/config blobs.
+- Good for:
+  driver research, vendor-support experiments, unsupported headset studies,
+  display-mode tooling, and hardware diagnostics.
+- Why it matters:
+  proxying is powerful but risky; a typed minimal wrapper helps keep the blast
+  radius understandable.
+- Strong references:
+  `VivePro2-Linux-Driver`.
+- Best fit for `VR-apps-lab`:
+  driver-support research references, not default app development.
+
+## Method 413: Unity SteamVR dashboard overlay with render texture, UI event forwarding, keyboard, and OSC bridge
+
+- What it is:
+  a Unity app renders normal UI to a `RenderTexture`, submits it as a SteamVR
+  dashboard overlay, maps overlay mouse coordinates into Unity UI raycasts,
+  forwards hover/click/keyboard events, handles autolaunch, and bridges actions
+  into an external protocol such as OSC.
+- Good for:
+  SteamVR dashboard utilities, VRChat OSC panels, settings tools, quick action
+  tabs, and Unity-authored overlay surfaces.
+- Why it matters:
+  Unity dashboard overlays are practical when the tool needs rich UI without
+  hand-writing native widget rendering.
+- Strong references:
+  `VRCOSCAvatarScaleOverlay`.
+- Best fit for `VR-apps-lab`:
+  dashboard overlay prototypes and VRChat utility panels.
+
+## Method 414: OCR-assisted workflow overlay with mirror-texture capture, feedback card, persistence, and action bindings
+
+- What it is:
+  a desktop companion owns durable domain state, renders a SteamVR overlay,
+  uses action bindings for clicks/haptics, captures compositor mirror textures
+  for OCR, shows a head-locked feedback card, and persists settings/state with
+  debug artifacts and safety boundaries.
+- Good for:
+  checklist overlays, inventory helpers, training/task assistants, in-headset
+  workflow tools, and anti-cheat-sensitive game companions.
+- Why it matters:
+  the strongest VR utility pattern is often "read visible pixels, update local
+  state, show a trustworthy compact overlay" without touching the game process.
+- Strong references:
+  `ez-wishlist-overlay`, `VR-QR-Overlay`.
+- Best fit for `VR-apps-lab`:
+  focused overlay micro-surfaces and OCR workflow-panel research.

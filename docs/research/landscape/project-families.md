@@ -3483,6 +3483,147 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - controller input component mapping
 - hardware documentation templates
 
+## Family 111: VR keyboard, text-entry, avatar keyboard, and OSC input surfaces
+
+This family covers VR text-entry and control-input projects where the reusable
+value is how a user enters text or emits control state while staying in VR:
+modal keyboards, raycast/canvas keyboards, physical fingertip keys, native
+OpenVR keyboard bridges, and VRChat OSC input emitters.
+
+| Project | Status | Notes |
+|---|---|---|
+| `danielbuechele/react-360-keyboard` | Already studied | React 360 modal keyboard with promise-returning NativeModule flow, configurable initial value/placeholder, emoji, dictation, and fade lifecycle |
+| `erosmarcon/vr-keyboard` | Already studied | Three.js canvas-texture keyboard with layouts, raycaster collision, target-field binding, and key events |
+| `jcorvinus/VRKeyboard` | Already studied | Unity physical keyboard with fingertip orientation gates, press throw, hover/activate events, and audio feedback |
+| `mrowrpurr/VR_Keyboard` | Already studied | OpenVR keyboard bridge for Skyrim VR mods with overlay polling, Papyrus API, and non-VR fallback routing |
+| `anosatsuk124/VRC-KeyboardController-in-VR_OSC` | Already studied | Rust/egui keyboard-to-VRChat OSC input emitter with movement/look addresses and reset cadence |
+| `killfrenzy96/KillFrenzyVRCAvatarKeyboard` | Already studied as deprecated historical reference | Avatar-contained keyboard lineage using parameter sync, finger colliders, FX/expression setup, and a clear platform-breakage caveat |
+
+### Consolidation note
+
+This family matters because text entry is still a frequent blocker for useful
+VR utilities. It now clearly includes:
+
+- modal keyboard service boundaries
+- browser-native raycast keyboard layouts
+- fingertip/physical keypress interaction
+- native OpenVR keyboard polling
+- host-script fallback routing
+- VRChat OSC control emitters and reset cadence
+- avatar-contained keyboard platform-risk lessons
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- reusable VR text-entry service patterns
+- overlay keyboard and host-mod bridges
+- VRChat OSC accessibility/control tools
+- input-surface comparison matrices
+
+## Family 112: VR subtitles, captions, STT/OCR accessibility, and projection-aware subtitle tooling
+
+This family covers accessibility and information surfaces where the reusable
+value is text/audio comprehension in VR: subtitle queues, speaker/FOV
+placement, dialogue progression, stereo media subtitles, screenshot captioning,
+speech/translation overlays, OCR capture regions, and VRChat chatbox bridges.
+
+| Project | Status | Notes |
+|---|---|---|
+| `bjennings76/vr-subtitles` | Already studied | Unity subtitle director with queue, priority sorting, WPM duration, speaker roosting, FOV behavior, portrait UI, and fade lifecycle |
+| `AhhhhHeyyy/VR-Subtitles-WIP` | Already studied as WIP prototype | Compact TMP subtitle/dialogue queue with wait-for-input progression, callbacks, and canvas display |
+| `CarlUpright/VR_SUBTITLES_BURNERRR` | Already studied as projection-aware micro-utility | FFmpeg/PowerShell stereo-360 top-bottom subtitle burn-in with per-eye split/burn/vstack and geometry-aware sizing |
+| `zacharykeeler/VR-Subtitles-in-Unreal-5` | Partially studied as report-only UX reference | Unreal subtitle UX comparison across fixed, character/comic, portrait/backing-plane, and HMD-fixed approaches |
+| `akbartus/WebVR-Captioning` | Already studied | A-Frame screenshot-to-caption prototype with remote model call, scene annotation, timeout, and captured-photo feedback |
+| `DanielCirry/STTS` | Partially studied as large overlay stack | SteamVR STT/translation/OCR overlays with typed message log, CJK fonts, OCR control overlays, Tauri/Python split, and VRChat OSC chatbox |
+
+### Consolidation note
+
+This family matters because accessibility surfaces are reusable overlay
+surfaces. It now clearly includes:
+
+- subtitle timing, priority, and lifecycle
+- speaker-roosted and FOV-stabilized placement
+- dialogue wait-for-input queues
+- projection-aware stereo media subtitle burn-in
+- WebXR screenshot-to-caption loops
+- speech/translation overlay histories
+- OCR capture controls and feedback surfaces
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- caption/subtitle placement matrices
+- STT and translation companion overlays
+- OCR-assisted information panels
+- projection-aware immersive media helpers
+
+## Family 113: SteamVR operational support, lifecycle automation, dynamic performance, and Linux driver helpers
+
+This family covers utilities that support VR runtime operation rather than
+displaying user content: startup/shutdown script runners, dynamic SteamVR
+settings controllers, Linux device-permission packages, and vendor driver
+proxy/helper stacks.
+
+| Project | Status | Notes |
+|---|---|---|
+| `BOLL7708/OpenVRStartup` | Already studied as archived lifecycle micro-utility | OpenVR overlay app that registers autolaunch, runs `start/*.cmd`, waits for `VREvent_Quit`, acknowledges quit, and runs `stop/*.cmd` |
+| `Erimelowo/OpenVR-Dynamic-Resolution` | Already studied | Frametime/CPU/VRAM feedback controller for SteamVR supersampling with app gates, dashboard gates, manual override checks, and ImGui/tray UI |
+| `ValveSoftware/steam-devices` | Already studied as Linux device-permission reference | Canonical udev HID/raw permission inventory for SteamVR/HTC/Valve/Bigscreen devices |
+| `CertainLach/VivePro2-Linux-Driver` | Partially studied as vendor driver proxy/reference | Linux Vive Pro 2 proxy driver with OpenVR vtable wrapping, typed settings/properties, HID config/control, and install packaging |
+
+### Consolidation note
+
+This family matters because runtime-support tools reduce user friction before a
+visible overlay can even work. It now clearly includes:
+
+- SteamVR application manifests and autolaunch
+- startup/shutdown automation and quit-event handling
+- frametime/VRAM feedback loops
+- SteamVR settings writes and safety gates
+- Linux udev/device-permission packaging
+- proxy-driver and vendor HID support patterns
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- SteamVR lifecycle helper design
+- runtime settings controllers
+- Linux VR setup doctors
+- driver proxy anatomy references
+- high-risk support-boundary documentation
+
+## Family 114: Focused overlay micro-surfaces, situational HUDs, and OCR-assisted workflow panels
+
+This family covers small utility surfaces where one focused value is enough:
+dashboard tabs, QR scanners, media-control windows, browser/OBS game HUDs,
+VRChat OSC control panels, and OCR-backed workflow overlays.
+
+| Project | Status | Notes |
+|---|---|---|
+| `MetroTS/AdressableOverlaySteamVR` | Partially studied as early/incomplete status-dashboard sketch | WinForms/OpenVR concept with HMD/controller battery, playtime, FPS, and search UI framing |
+| `haolink/VRCOSCAvatarScaleOverlay` | Already studied | Unity SteamVR dashboard overlay with render-texture submission, mouse/keyboard event forwarding, autolaunch, OSCQuery, and VRChat avatar-scale OSC |
+| `Psychpsyo/VR-QR-Overlay` | Already studied | C++ OpenVR mirror-texture QR scanner with SDL/GLEW, quirc, controller-relative result overlay, and haptic feedback |
+| `Rycia/OVR-Deck` | Rejected; current clone contains no reusable source | Local clone contained only README/license metadata |
+| `ToxicOrca/VR-Music-Remote` | Already studied as window-captured micro-utility | Tkinter media remote with Windows Global Media Session metadata, album art, media keys, hidden cursor, topmost window, and VR-readable marquee |
+| `DavidDriessen/EchoVR-Overlay` | Already studied as browser/OBS telemetry HUD reference | Vue/Express local API proxy and game-state HUD with scoreboard, players, stats, score event, and minimap |
+| `etiennechabert/ez-wishlist-overlay` | Partially studied as strong overlay/OCR/workflow donor | Rust desktop plus SteamVR overlay with OpenVR worker, action bindings, world anchoring, mirror-texture OCR, feedback card, settings, persistence, and domain data |
+
+### Consolidation note
+
+This family matters because small overlays are often the quickest path from
+idea to reusable utility. It now clearly includes:
+
+- Unity dashboard overlay skeletons
+- native OpenVR situational recognition overlays
+- Desktop+-captured standard-window HUDs
+- browser/OBS telemetry surfaces
+- OCR-assisted VR workflow panels
+- overlay-host decision points
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- overlay micro-surface blueprints
+- dashboard overlay vs captured-window comparisons
+- OCR/checklist workflow panels
+- focused telemetry and media-control HUDs
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

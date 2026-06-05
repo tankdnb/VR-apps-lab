@@ -1330,6 +1330,57 @@ These are larger than a single repo and should guide the next research wave.
   should extract a compact OpenVR HMD bring-up anatomy and transport
   diagnostics checklist if hardware-support work becomes active.
 
+### 97. `VR keyboard, text-entry, avatar keyboard, and OSC input surfaces`
+
+- Main entries:
+  `react-360-keyboard`, `vr-keyboard`, `VRKeyboard`, `VR_Keyboard`,
+  `VRC-KeyboardController-in-VR_OSC`, `KillFrenzyVRCAvatarKeyboard`
+- Why it matters:
+  this family now captures text entry as a reusable utility surface:
+  promise-returning modal keyboards, canvas/raycast keyboard layouts,
+  fingertip push-depth keys, native OpenVR keyboard bridges, script-host
+  fallback routing, VRChat OSC input emitters, and deprecated avatar-contained
+  keyboard caveats. A future deeper pass should compare keyboard service
+  boundaries against dashboard/menu input needs.
+
+### 98. `VR subtitles, captions, STT/OCR accessibility, and projection-aware subtitle tooling`
+
+- Main entries:
+  `vr-subtitles`, `VR-Subtitles-WIP`, `VR_SUBTITLES_BURNERRR`,
+  `VR-Subtitles-in-Unreal-5`, `WebVR-Captioning`, `STTS`
+- Why it matters:
+  this family now captures accessibility and communication surfaces:
+  subtitle queues, speaker/FOV placement, wait-for-input dialogue, stereo-360
+  subtitle burn-in, screenshot-to-caption WebXR loops, STT/translation overlay
+  histories, OCR controls, and VRChat OSC chatbox bridges. A future deeper pass
+  should build a subtitle/caption placement matrix and an OCR/STT overlay
+  pipeline comparison.
+
+### 99. `SteamVR operational support, startup automation, dynamic performance, and Linux driver helpers`
+
+- Main entries:
+  `OpenVRStartup`, `OpenVR-Dynamic-Resolution`, `steam-devices`,
+  `VivePro2-Linux-Driver`
+- Why it matters:
+  this family now captures the support layer around runtime use: manifests,
+  autolaunch, quit-event cleanup, performance feedback loops, SteamVR settings
+  writes, Linux device permissions, proxy drivers, typed properties/settings,
+  and HID config/control. A future deeper pass should extract a SteamVR
+  operational-support checklist before building any setup/doctor utility.
+
+### 100. `Focused overlay micro-surfaces, situational HUDs, and OCR-assisted workflow panels`
+
+- Main entries:
+  `AdressableOverlaySteamVR`, `VRCOSCAvatarScaleOverlay`, `VR-QR-Overlay`,
+  `OVR-Deck`, `VR-Music-Remote`, `EchoVR-Overlay`, `ez-wishlist-overlay`
+- Why it matters:
+  this family now captures small overlays as first-class product references:
+  Unity dashboard overlays, mirror-texture QR/OCR recognition, window-captured
+  media HUDs, browser telemetry overlays, VRChat OSC dashboard panels, and
+  persistent OCR-assisted checklist/workflow surfaces. A future deeper pass
+  should extract a reusable overlay micro-surface checklist and consider an
+  `ez-wishlist-overlay` reuse plan if OCR panels become active.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1401,6 +1452,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 65. `VMC/VRM motion-capture protocol, OSC transform receivers, and recording/export tools`
 66. `Resonite/Neos modding, headless, external SDK, and social utility tooling`
 67. `DIY open-source headset hardware bring-up, drivers, PCBs, and controller firmware`
+68. `VR keyboard, text-entry, avatar keyboard, and OSC input surfaces`
+69. `VR subtitles, captions, STT/OCR accessibility, and projection-aware subtitle tooling`
+70. `SteamVR operational support, startup automation, dynamic performance, and Linux driver helpers`
+71. `Focused overlay micro-surfaces, situational HUDs, and OCR-assisted workflow panels`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.
