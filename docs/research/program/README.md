@@ -1109,3 +1109,31 @@ repeatable way.
 
 - `github-research-wave-155-backlog.md`
   Executed backlog for the Wave 155 pass.
+
+- `github-research-wave-156-plan.md`
+  Wave 156 research plan focused on OpenXR/VRCFT eye-face modules,
+  calibration clients, and avatar facetracking preparation.
+
+- `github-research-wave-156-backlog.md`
+  Executed backlog for the Wave 156 pass.
+
+- `github-research-wave-157-plan.md`
+  Wave 157 research plan focused on VRChat chatbox, speech/TTS, AI
+  companions, and text-composition sidecars.
+
+- `github-research-wave-157-backlog.md`
+  Executed backlog for the Wave 157 pass.
+
+- `github-research-wave-158-plan.md`
+  Wave 158 research plan focused on VRChat OSC telemetry, avatar scaling,
+  device status, and parameter-control helpers.
+
+- `github-research-wave-158-backlog.md`
+  Executed backlog for the Wave 158 pass.
+
+- `github-research-wave-159-plan.md`
+  Wave 159 research plan focused on haptic/physical-output routers and
+  wearable feedback bridges.
+
+- `github-research-wave-159-backlog.md`
+  Executed backlog for the Wave 159 pass.

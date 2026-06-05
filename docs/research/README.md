@@ -151,6 +151,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-153-protocol-driven-overlay-bridges-external-overlay-hosts-and-minimal-implementation-baselines.md`
 - `landscape/vr-projects-wave-154-virtual-displays-spatial-display-openxr-runtimes-and-desktop-fallback-surfaces.md`
 - `landscape/vr-projects-wave-155-hand-tracking-simulated-xr-hands-and-reusable-hand-control-primitives.md`
+- `landscape/vr-projects-wave-156-openxr-vrcft-eye-face-modules-calibration-clients-and-avatar-facetracking-preparation.md`
+- `landscape/vr-projects-wave-157-vrchat-chatbox-speech-tts-ai-companions-and-text-composition-sidecars.md`
+- `landscape/vr-projects-wave-158-vrchat-osc-telemetry-avatar-scaling-device-status-and-parameter-control-helpers.md`
+- `landscape/vr-projects-wave-159-haptic-physical-output-routers-and-wearable-feedback-bridges.md`
 
 ## Archive Navigation
 

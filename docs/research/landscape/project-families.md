@@ -544,7 +544,7 @@ different tracking spaces, poses, or sensors aligned enough to remain usable.
 | `openvrmc/OpenVR-MotionCompensation` | Already studied | Driver-side pose rewrite plus dashboard configuration path |
 | `RedHawk989/EyeTrackVR-OpenVR-Calibration-Overlay` | Already studied | Minimal overlay-first 9-point eye-tracking calibration surface |
 | `alexander-clarke/openvr-room-mapping` | Already studied | Spatial capture and reconstruction path that overlaps with alignment and room-space research |
-| `tobexeon/PSVR2EyeTrackingCalibration` | Not studied deeply | Real-time PSVR2 eye-calibration client that currently depends on a custom toolkit fork |
+| `tobexeon/PSVR2EyeTrackingCalibration` | Already studied as real-time PSVR2 eye-gaze calibration client | Nine-point OpenXR gaze calibration scene, localhost IPC start/stop commands, averaged X/Y offset persistence, and custom PSVR2Toolkit fork dependency |
 
 ### Consolidation note
 
@@ -2101,7 +2101,7 @@ players or overlays.
 |---|---|---|
 | `laserimouto/VRChatCameraWorks` | Already studied | Prefab-first multicam and fisheye staging rig with tiny controller scripts and autopilot support |
 | `rhaamo/CameraSystem` | Already studied | Permission-gated world camera console with synced live output, handheld cameras, and operator controls |
-| `VRLabs/Camera-System` | Partially studied | Avatar-side OSC camera-path system whose strongest value is companion-bound architecture and path-authoring workflow |
+| `VRLabs/Camera-System` | Partially studied; Wave 158 deepened avatar-authored OSC camera-path companion architecture | Avatar-side OSC camera-path system with VPM package, expression menu/parameters, contacts/constraints/physbones path capture, companion executable, preview, B-spline, loop, circle, and closed-loop path settings |
 | `SylanTroh/GMMenu` | Partially studied | Modular admin package where watch camera, teleports, permissions, and voice controls live inside one GM surface |
 
 ### Consolidation note
@@ -4315,6 +4315,134 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - hand extension vs engine package comparisons
 - reusable hand-pose vocabulary
 - Unity toolkit primitive extraction only when a prototype needs it
+
+## Family 135: OpenXR/VRCFT eye-face modules, calibration clients, and avatar facetracking preparation
+
+This family covers the path from vendor/runtime tracking data to avatar-ready
+facetracking: OpenXR module boundaries, remote tracking packet ingress,
+expression normalization, avatar-side authoring packages, and calibration UX.
+
+| Project | Status | Notes |
+|---|---|---|
+| `regzo2/VRCFaceTracking-QuestProOpenXR` | Already studied as archived Quest Pro OpenXR/VRCFT expression-mapping reference | VRCFT `ExtTrackingModule`, Oculus runtime switch/restore, native bridge DLLs, Meta/FB face and eye expressions, gaze conversion, and archived/broken caveat |
+| `korejan/VRCFT-ALXR-Modules` | Already studied as local/remote ALXR VRCFT module donor | Local OpenXR/ALXR session config, headless/simulated-headless modes, extension selection, remote TCP packet ingress, One Euro filters, and hot-reloaded sensitivity profiles |
+| `PawlygonStudio/VRC-Facetracking` | Already studied as avatar-side facetracking package, threshold editor, and OSC cleanup donor | Unified Expression/ARKit prefabs, controller assets, Unity threshold editor, JSON import/export, warnings around low thresholds, and local OSC config cleanup after upload |
+| `tobexeon/PSVR2EyeTrackingCalibration` | Already studied as real-time PSVR2 eye-gaze calibration client | OpenXR red-dot calibration scene, trigger-based gaze sampling, Documents offset file, localhost IPC start/stop, and custom PSVR2Toolkit fork caveat |
+
+### Consolidation note
+
+This family matters because face/eye tracking is not one integration point. It
+now clearly includes:
+
+- vendor OpenXR face/eye data extraction
+- local and remote tracking ingress
+- extension and headless-session selection
+- expression normalization into avatar-ready shapes
+- avatar authoring packages and threshold tooling
+- calibration clients and persistent offsets
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- facetracking setup checklists
+- tracking-ingress module patterns
+- calibration UX comparison
+- avatar-side authoring and cleanup workflows
+
+## Family 136: VRChat chatbox, speech/TTS, AI companions, and text-composition sidecars
+
+This family covers VRChat text utilities where the reusable value is composing,
+pacing, previewing, voicing, or automating text before it reaches the chatbox or
+OSC parameters.
+
+| Project | Status | Notes |
+|---|---|---|
+| `S0L0GUY/NOVA-AI` | Already studied as AI assistant, memory, multimodal input, and VRChat OSC tool-calling sidecar | YAML config/prompt split, Gemini Live loop, audio queues, screenshot tools, SQLite memory, typed tool definitions, chatbox pagination, typing state, and avatar action OSC tools |
+| `MaurerKrisztian/vrc-tts-osc` | Already studied as TTS, virtual-audio, and chatbox micro-utility | Tkinter settings, OpenAI/ElevenLabs TTS, selected audio output device, `ttsoutput.mp3`, virtual-cable microphone routing, chatbox echo, and typing indicator |
+| `hollyntt/XOSC` | Already studied as Linux-native chatbox telemetry and status composer | Raylib/ImGui C# UI, Linux `/proc` and `/sys` telemetry, `playerctl` and `xdotool` media sources, weather/network/status/manual overrides, and raw `/chatbox/input` OSC packets |
+| `TheArmagan/advosc` | Already studied as visual chatbox editor, placeholder engine, avatar parameter control, and OSC forwarder | Electron/Svelte shell, OSC sockets, avatar schema watcher, simple block editor, advanced template editor, placeholder modules, recursion guard, and typed interval OSC forwarder |
+
+### Consolidation note
+
+This family matters because chatbox output is often the most reachable
+headset-visible surface for VRChat users. It now clearly includes:
+
+- AI assistant to chatbox/tool bridge
+- TTS plus virtual microphone routing
+- typing state and chatbox pagination
+- Linux status and media telemetry
+- placeholder and template engines
+- visual block editors for nontechnical users
+- arbitrary typed OSC forwarding from resolved templates
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- chatbox pacing and pagination rules
+- text template engine comparisons
+- TTS/audio routing setup patterns
+- chatbox versus overlay versus avatar-parameter presentation decisions
+
+## Family 137: VRChat OSC telemetry, avatar scaling, device/status, and parameter-control helpers
+
+This family covers narrow avatar-parameter utilities where external tools make
+avatar state visible or controllable through OSC rather than through a full
+overlay or world package.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Quesys-tech/vrcwatch.rs` | Already studied as minimal avatar-as-watch OSC telemetry sender | Rust CLI, normalized second/minute/hour floats, moonphase calculation, per-second timing, OSC address validation, and demo mode |
+| `KutayX7/vrc-avi-scaler` | Already studied as avatar eye-height scaling and compatibility shim donor | OSC receiver/sender, VRChat eye-height/world-limit intake, smooth geometric interpolation, quantization mitigation, FPS/frequency commands, and Jackal/Mag/KtySize compatibility handlers |
+| `VRLabs/Camera-System` | Partially studied; Wave 158 deepened avatar-authored OSC camera-path companion architecture | Avatar package plus companion model, constraints/contacts/physbones data capture, expression menus and parameters, point placement, gestures, preview, playback, and path-mode settings |
+
+### Consolidation note
+
+This family matters because some VRChat utilities should live at the avatar
+parameter boundary instead of in an overlay. It now clearly includes:
+
+- avatar-as-display telemetry
+- normalized parameter contracts
+- world-aware external avatar scale control
+- third-party scaling system adapters
+- avatar-authored camera/path data capture
+- companion protocols driven by avatar contacts and menus
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- avatar-parameter utility design
+- scale-control safety checklists
+- avatar-as-display telemetry guidelines
+- companion protocol notes for avatar-authored tools
+
+## Family 138: Haptic, physical-output routers, and wearable feedback bridges
+
+This family covers tools that turn virtual events into physical output:
+avatar-contact events, OSCQuery endpoints, microcontroller packets, wearable
+muscle maps, named sensations, game rumble capture, and generic device routers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `kikookraft/HapticPatPat` | Already studied as DIY Bluetooth ESP32 head-pat feedback bridge | VRChat OSCQuery discovery, `/avatar/parameters/pat_left` and `pat_right`, intensity delta/decay loop, PyQt status/test UI, Bluetooth RFCOMM packets, keepalive, and ESP32 PWM motors |
+| `sync1211/owoskin-vrc` | Already studied as OWO Skin VRChat integration and effect-engine donor | OSCQuery service advertisement, OSC receiver callbacks, collider effect module, muscle maps, decay and proximity/speed intensity, named sensation lifecycle, audio/velocity/world settings, UI/CLI, and Unity payloads |
+| `intiface/intiface-game-haptics-router` | Already studied as generic game rumble to external-device haptics router reference | Intiface Central WebSocket client, device selection, process list, EasyHook XInput/UWP payloads, IPC message envelope, visualizer, multiplier/baseline controls, and anti-cheat/process-injection caveats |
+
+### Consolidation note
+
+This family matters because haptics should not be designed as one device SDK
+too early. It now clearly includes:
+
+- avatar contact event vocabularies
+- OSCQuery discovery and fallback ports
+- physical-output status/test controls
+- Bluetooth and firmware packet contracts
+- wearable muscle maps and named sensations
+- audio/collider/velocity effect modules
+- generic game rumble event capture and device routing
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- device-neutral haptic event schemas
+- haptics bridge comparison matrices
+- avatar-contact-to-output routing guides
+- safe boundaries for invasive versus non-invasive event sources
 
 ## Recommended synthesis path for `VR-apps-lab`
 

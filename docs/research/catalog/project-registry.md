@@ -282,7 +282,7 @@ Primary docs:
 - `BuzzteeBear/OpenXR-MotionCompensation` - `Already studied`
 - `openvrmc/OpenVR-MotionCompensation` - `Already studied`
 - `RedHawk989/EyeTrackVR-OpenVR-Calibration-Overlay` - `Already studied`
-- `tobexeon/PSVR2EyeTrackingCalibration` - `Not studied deeply`
+- `tobexeon/PSVR2EyeTrackingCalibration` - `Already studied as real-time PSVR2 eye-gaze calibration client`
 
 ## 10. Marker-based, camera-based, and low-cost full-body paths
 
@@ -1105,7 +1105,7 @@ Primary docs:
 
 - `laserimouto/VRChatCameraWorks` - `Already studied`
 - `rhaamo/CameraSystem` - `Already studied`
-- `VRLabs/Camera-System` - `Partially studied`
+- `VRLabs/Camera-System` - `Partially studied; Wave 158 deepened avatar-authored OSC camera-path companion architecture`
 - `SylanTroh/GMMenu` - `Partially studied`
 
 ## 62. VRChat interaction, utility UI, and information-surface prefabs
@@ -1976,6 +1976,52 @@ Primary docs:
 - `MThogersen/AutoHandSimulator` - `Already studied as AutoHand no-HMD hand/body interaction simulator`
 - `InfernoDigital/RoboHands-UnityXR` - `Source-light product reference for Unity XR hand-pose package framing`
 - `eisclimber/ExPresS-XR` - `Partially studied; Wave 155 deepened data-gathering, value-range, socket, menu, and toolkit primitives`
+
+## 127. OpenXR/VRCFT eye-face modules, calibration clients, and avatar facetracking preparation
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-156-openxr-vrcft-eye-face-modules-calibration-clients-and-avatar-facetracking-preparation.md`
+- `../landscape/project-families.md`
+
+- `regzo2/VRCFaceTracking-QuestProOpenXR` - `Already studied as archived Quest Pro OpenXR/VRCFT expression-mapping reference`
+- `korejan/VRCFT-ALXR-Modules` - `Already studied as local/remote ALXR VRCFT module donor`
+- `PawlygonStudio/VRC-Facetracking` - `Already studied as avatar-side facetracking package, threshold editor, and OSC cleanup donor`
+- `tobexeon/PSVR2EyeTrackingCalibration` - `Already studied as real-time PSVR2 eye-gaze calibration client`
+
+## 128. VRChat chatbox, speech/TTS, AI companions, and text-composition sidecars
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-157-vrchat-chatbox-speech-tts-ai-companions-and-text-composition-sidecars.md`
+- `../landscape/project-families.md`
+
+- `S0L0GUY/NOVA-AI` - `Already studied as AI assistant, memory, multimodal input, and VRChat OSC tool-calling sidecar`
+- `MaurerKrisztian/vrc-tts-osc` - `Already studied as TTS, virtual-audio, and chatbox micro-utility`
+- `hollyntt/XOSC` - `Already studied as Linux-native chatbox telemetry and status composer`
+- `TheArmagan/advosc` - `Already studied as visual chatbox editor, placeholder engine, avatar parameter control, and OSC forwarder`
+
+## 129. VRChat OSC telemetry, avatar scaling, device/status, and parameter-control helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-158-vrchat-osc-telemetry-avatar-scaling-device-status-and-parameter-control-helpers.md`
+- `../landscape/project-families.md`
+
+- `Quesys-tech/vrcwatch.rs` - `Already studied as minimal avatar-as-watch OSC telemetry sender`
+- `KutayX7/vrc-avi-scaler` - `Already studied as avatar eye-height scaling and compatibility shim donor`
+- `VRLabs/Camera-System` - `Partially studied; Wave 158 deepened avatar-authored OSC camera-path companion architecture`
+
+## 130. Haptic, physical-output routers, and wearable feedback bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-159-haptic-physical-output-routers-and-wearable-feedback-bridges.md`
+- `../landscape/project-families.md`
+
+- `kikookraft/HapticPatPat` - `Already studied as DIY Bluetooth ESP32 head-pat feedback bridge`
+- `sync1211/owoskin-vrc` - `Already studied as OWO Skin VRChat integration and effect-engine donor`
+- `intiface/intiface-game-haptics-router` - `Already studied as generic game rumble to external-device haptics router reference`
 
 ## Registry maintenance rule
 

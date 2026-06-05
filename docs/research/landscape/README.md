@@ -649,6 +649,25 @@ Use these files when you want to understand:
   no-HMD hand simulation, gesture-pose references, and reusable hand/control
   primitives.
 
+- `vr-projects-wave-156-openxr-vrcft-eye-face-modules-calibration-clients-and-avatar-facetracking-preparation.md`
+  Next GitHub discovery wave focused on OpenXR/VRCFT eye-face modules,
+  calibration clients, avatar threshold/setup tooling, OSC hygiene, and
+  facetracking preparation.
+
+- `vr-projects-wave-157-vrchat-chatbox-speech-tts-ai-companions-and-text-composition-sidecars.md`
+  Next GitHub discovery wave focused on VRChat chatbox workflows, speech/TTS,
+  AI companions, telemetry strings, placeholder engines, and text-composition
+  sidecars.
+
+- `vr-projects-wave-158-vrchat-osc-telemetry-avatar-scaling-device-status-and-parameter-control-helpers.md`
+  Next GitHub discovery wave focused on VRChat OSC telemetry, avatar scaling,
+  camera/path companion protocols, and safe avatar-parameter control helpers.
+
+- `vr-projects-wave-159-haptic-physical-output-routers-and-wearable-feedback-bridges.md`
+  Next GitHub discovery wave focused on haptic and physical-output routers,
+  OSCQuery wearable feedback, Bluetooth microcontroller output, and rumble
+  device hubs.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

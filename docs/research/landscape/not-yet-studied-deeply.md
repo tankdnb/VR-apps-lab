@@ -178,7 +178,7 @@ follow-up nodes instead of being over-promoted immediately.
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
 | `davidrios/openxr-device-simulator` | Not studied deeply | Rust-based runtime simulator that hints at a leaner fake-device path | Medium | Medium | Inspect the rest of the runtime surface, input model, and whether it grows into a stronger simulator comparison node |
-| `tobexeon/PSVR2EyeTrackingCalibration` | Not studied deeply | Real-time PSVR2 eye-calibration client with no runtime restart requirement | Medium | Medium | Separate the reusable calibration UX from the custom-fork dependency and compare it with broader PSVR2 eye-tracking work |
+| `tobexeon/PSVR2EyeTrackingCalibration` | Already studied in Wave 156 | Real-time PSVR2 eye-calibration client with no runtime restart requirement | Medium | Medium | No urgent follow-up; keep it as a calibration UX and offset-persistence reference unless PSVR2 eye-tracking becomes active scope |
 
 ## Priority batch K: Waves 28-31 surfaced follow-up candidates
 
@@ -250,7 +250,7 @@ over-promoted immediately.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `MaurerKrisztian/vrc-tts-osc` | Not studied deeply | Narrow speech or TTS-to-chatbox path that could sharpen the `text workflow` comparison line without requiring a broader desktop shell | Medium | Medium | Inspect voice selection, message pacing, and whether it adds anything distinct beyond `VRCT`, `VRCTextboxSTT`, and other clearer text donors |
+| `MaurerKrisztian/vrc-tts-osc` | Already studied in Wave 157 | Narrow speech or TTS-to-chatbox path that sharpens the `text workflow` comparison line without requiring a broader desktop shell | Medium | Medium | No urgent follow-up; keep it as a virtual-audio plus chatbox micro-utility reference unless voice routing becomes active scope |
 | `samyk/myo-osc` | Not studied deeply | Historical armband-to-OSC bridge that could add a useful `wearable input to avatar-facing signal` comparison node | Medium | Medium | Inspect whether it teaches more about wearable acquisition and gesture routing than the newer biometric and accessory-control donors |
 
 ## Priority batch Q: Waves 52-55 surfaced follow-up candidates
@@ -336,7 +336,7 @@ over-promoted immediately.
 |---|---|---|---|---|---|
 | `Varneon/UdonEssentials` | Partially studied | Historical prefab-suite baseline that still matters for lineage even though the repo is deprecated | Medium | High | Compare the old bundle more directly against `VUdon` package decomposition and identify which legacy prefabs still deserve standalone follow-up |
 | `Varneon/VUdon` | Partially studied | Ecosystem umbrella for packageized creator tools where the strongest donor value sits in the linked package repos | Medium | High | Inspect `QuickMenu`, `Menus`, `PlayerTracker`, and `Common` as individual package repos rather than treating the umbrella as the whole system |
-| `VRLabs/Camera-System` | Partially studied | Avatar-driven OSC camera path system whose main architecture crosses an avatar package and an external companion executable | Medium | High | Narrow the next pass to companion protocol, path encoding model, and how the avatar-side constraints or contacts actually serialize the data |
+| `VRLabs/Camera-System` | Partially studied; Wave 158 deepened companion architecture | Avatar-driven OSC camera path system whose main architecture crosses an avatar package and an external companion executable | Medium | High | Next follow-up should target companion source/protocol details only if the missing executable/source path becomes available or camera-path tools become active scope |
 | `SylanTroh/GMMenu` | Partially studied | Broad modular admin surface where watch camera, pings, permissions, teleports, and optional audio modes interact | High | High | Map the permission model, ping or alert flow, and optional `AudioManager` branch more directly instead of only the watch-camera slice |
 | `Miner28/AvatarImageReader` | Partially studied | Unusual dynamic data carrier that encodes text through avatar imagery and runtime pedestal decoding | Medium | High | Re-check the editor encoder, multi-avatar queueing, and what parts still matter after the original string-loading era shifted |
 | `Guribo/UdonLeaderBoard` | Not studied deeply | Possible scoreboard or ranking layer that may pair especially well with recycled-cell list infrastructure | Medium | Medium | Inspect whether it is mostly prefab sugar over `UdonRecyclingScrollRect` or whether it contributes a stronger data-model and sorting layer of its own |
@@ -1629,6 +1629,53 @@ These are larger than a single repo and should guide the next research wave.
   pass should compare Unity, Godot, WebXR, and virtual-driver no-HMD hand
   workflows.
 
+### 121. `OpenXR/VRCFT eye-face modules, calibration clients, and avatar facetracking preparation`
+
+- Main entries:
+  `VRCFaceTracking-QuestProOpenXR`, `VRCFT-ALXR-Modules`,
+  `VRC-Facetracking`, `PSVR2EyeTrackingCalibration`
+- Why it matters:
+  this family captures the bridge from vendor face/eye tracking into avatar
+  expression systems: runtime switching and restore, local versus remote
+  tracking ingress, extension selection, expression filters, avatar threshold
+  editors, stale OSC config cleanup, and persistent eye-gaze calibration.
+  A future deeper pass should compare safe runtime switching, calibration UX,
+  and avatar-side setup hygiene across the broader VRCFT ecosystem.
+
+### 122. `VRChat chatbox, speech/TTS, AI companions, and text-composition sidecars`
+
+- Main entries:
+  `NOVA-AI`, `vrc-tts-osc`, `XOSC`, `advosc`
+- Why it matters:
+  this family captures text as a utility surface: AI tool-calling sidecars,
+  memory, screenshots, TTS and virtual-audio microphone routing, compact
+  telemetry strings, placeholder engines, block editors, and typed OSC
+  forwarding. A future deeper pass should build a chatbox composition matrix
+  that separates text source, formatting, pacing, audio output, and OSC
+  address routing.
+
+### 123. `VRChat OSC telemetry, avatar scaling, device status, and parameter-control helpers`
+
+- Main entries:
+  `vrcwatch.rs`, `vrc-avi-scaler`, `Camera-System`
+- Why it matters:
+  this family captures avatar-facing OSC as both display and control channel:
+  time or moon telemetry, validated OSC addresses, world-aware avatar scaling,
+  compatibility shims, smooth parameter interpolation, and avatar-authored
+  camera/path companion protocols. A future deeper pass should define safety
+  patterns for external avatar-parameter writers.
+
+### 124. `Haptic/physical-output routers and wearable feedback bridges`
+
+- Main entries:
+  `HapticPatPat`, `owoskin-vrc`, `intiface-game-haptics-router`
+- Why it matters:
+  this family captures physical-output routing from avatar contacts, wearable
+  effect engines, Bluetooth microcontrollers, OSCQuery endpoints, muscle maps,
+  controller rumble capture, IPC envelopes, visualizers, and device hubs. A
+  future deeper pass should produce a device-neutral event schema and compare
+  non-invasive OSC/event ingress against process-hooked rumble sources.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1724,6 +1771,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 89. `Protocol-driven overlay bridges, external overlay hosts, and minimal implementation baselines`
 90. `Virtual displays, spatial-display OpenXR runtimes, and desktop fallback surfaces`
 91. `Hand tracking, simulated XR hands, and reusable hand/control primitives`
+92. `VRCFT/OpenXR face tracking, avatar preparation, and calibration follow-up`
+93. `VRChat chatbox template, TTS, AI, and telemetry composition matrix`
+94. `Avatar-parameter telemetry, scaling, and companion protocol helpers`
+95. `Wearable haptics, physical-output routers, and device-neutral event schemas`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

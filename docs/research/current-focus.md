@@ -88,6 +88,11 @@ These are the clearest current product and research lines:
    surfaces, subtitle/caption/STT/OCR accessibility flows, runtime lifecycle
    and performance-support helpers, Unity dashboard overlays, QR/media/game
    HUD micro-tools, and OCR-assisted workflow panels.
+17. `Face/eye tracking modules, chatbox sidecars, avatar OSC controls, and wearable haptics`
+   the repository now has fresh coverage of OpenXR/VRCFT expression modules,
+   calibration clients, avatar facetracking setup packages, AI/TTS/chatbox
+   companions, OSC telemetry and avatar scaling helpers, avatar-authored camera
+   paths, and physical-output or wearable haptic routers.
 
 ## Most useful current docs
 
@@ -175,6 +180,10 @@ instead of full history:
 - `landscape/vr-projects-wave-133-vr-subtitles-captions-stt-and-ocr-accessibility-surfaces.md`
 - `landscape/vr-projects-wave-134-steamvr-operational-support-startup-automation-dynamic-performance-and-linux-driver-helpers.md`
 - `landscape/vr-projects-wave-135-focused-overlay-micro-surfaces-qr-media-game-huds-and-ocr-assisted-workflow-panels.md`
+- `landscape/vr-projects-wave-156-openxr-vrcft-eye-face-modules-calibration-clients-and-avatar-facetracking-preparation.md`
+- `landscape/vr-projects-wave-157-vrchat-chatbox-speech-tts-ai-companions-and-text-composition-sidecars.md`
+- `landscape/vr-projects-wave-158-vrchat-osc-telemetry-avatar-scaling-device-status-and-parameter-control-helpers.md`
+- `landscape/vr-projects-wave-159-haptic-physical-output-routers-and-wearable-feedback-bridges.md`
 
 ## Strong donor clusters right now
 
@@ -484,6 +493,21 @@ the strongest current clusters:
 - `openxrhands`, `AutoHandSimulator`, `RoboHands-UnityXR`, `ExPresS-XR`
   for Unity OpenXR hand extension bridges, no-HMD hand/body simulation,
   gesture-pose package framing, and scientific XR toolkit primitives.
+- `VRCFaceTracking-QuestProOpenXR`, `VRCFT-ALXR-Modules`,
+  `VRC-Facetracking`, `PSVR2EyeTrackingCalibration`
+  for vendor OpenXR face/eye expression mapping, local/remote tracking ingress,
+  avatar threshold/setup tooling, OSC hygiene, and persistent gaze calibration.
+- `NOVA-AI`, `vrc-tts-osc`, `XOSC`, `advosc`
+  for AI assistant sidecars, memory/tool-calling, TTS and virtual-audio
+  routing, chatbox telemetry, placeholder engines, block editors, and typed
+  OSC forwarding.
+- `vrcwatch.rs`, `vrc-avi-scaler`, `Camera-System`
+  for OSC telemetry clocks, world-aware avatar scaling, compatibility shims,
+  avatar-authored camera paths, and companion-control protocols.
+- `HapticPatPat`, `owoskin-vrc`, `intiface-game-haptics-router`
+  for OSC contact-to-hardware bridges, OSCQuery haptic effect engines, muscle
+  maps, Bluetooth microcontroller output, rumble routers, IPC envelopes, and
+  device-hub visualizers.
 
 ## Highest-value next follow-up passes
 
@@ -572,6 +596,10 @@ directions:
 80. `Overlay host protocol bridges and minimal implementation baselines`
 81. `Spatial-display runtimes, virtual displays, and no-HMD desktop fallback surfaces`
 82. `Hand simulation, extension-level hand tracking, and reusable hand/control primitives`
+83. `VRCFT/OpenXR face tracking, avatar preparation, and calibration`
+84. `VRChat chatbox template, TTS, AI, and telemetry sidecars`
+85. `Avatar-parameter telemetry, scaling, and companion protocol helpers`
+86. `Wearable haptics, physical-output routers, and device-neutral event schemas`
 
 ## Current repository-maintenance priorities
 

@@ -8127,3 +8127,230 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   Unity toolkit comparison notes and future experiment/diagnostic utility
   primitives.
+
+## Method 475: Vendor OpenXR face/eye expression normalizer with runtime restore
+
+- What it is:
+  a tracking module temporarily selects a vendor OpenXR runtime, loads native
+  face/eye bridge functions, polls expression and gaze data, maps vendor
+  expression names into a unified avatar shape vocabulary, and restores the
+  previous runtime during teardown.
+- Good for:
+  face/eye module research, vendor tracking adapters, runtime safety notes, and
+  expression-mapping comparisons.
+- Why it matters:
+  runtime switching is dangerous unless restore and failure handling are part
+  of the design, not cleanup afterthoughts.
+- Strong references:
+  `VRCFaceTracking-QuestProOpenXR`.
+- Best fit for `VR-apps-lab`:
+  facetracking module architecture notes and runtime-switch safety checklists.
+
+## Method 476: Dual local/remote VRCFT tracking ingress module
+
+- What it is:
+  one tracking family offers both a local OpenXR session module and a remote
+  packet-ingress module, sharing config, expression mapping, filters,
+  sensitivity profiles, and VRCFT output normalization.
+- Good for:
+  ALXR/streaming tracking modules, face/eye tracking sidecars, external sensor
+  bridges, and extension-selection experiments.
+- Why it matters:
+  tracking data should not care whether it came from the local runtime or a
+  remote transport once it reaches the normalizer boundary.
+- Strong references:
+  `VRCFT-ALXR-Modules`.
+- Best fit for `VR-apps-lab`:
+  tracking-ingress module patterns and local/remote sensor architecture notes.
+
+## Method 477: Avatar facetracking package with threshold editor and OSC cleanup
+
+- What it is:
+  an avatar package ships prefabs/controllers plus Unity editor tooling for
+  expression thresholds, JSON import/export, Unified Expression/ARKit modes,
+  warnings, and cleanup of stale local VRChat OSC avatar config after upload.
+- Good for:
+  creator-side avatar setup tools, facetracking onboarding, threshold tuning,
+  OSC hygiene, and reusable avatar-package checklists.
+- Why it matters:
+  runtime tracking quality is only useful if avatar-side setup and maintenance
+  are understandable.
+- Strong references:
+  `VRC-Facetracking`.
+- Best fit for `VR-apps-lab`:
+  avatar authoring workflow notes and facetracking setup guides.
+
+## Method 478: Real-time eye-gaze calibration client with persistent offsets
+
+- What it is:
+  a small OpenXR scene presents head-locked calibration points, records gaze
+  direction on trigger confirmation, computes an average offset, persists it
+  to a known file, and notifies a runtime/toolkit sidecar when calibration
+  starts or stops.
+- Good for:
+  eye-tracking calibration, gaze diagnostics, avatar look correction, and
+  device-specific calibration UX.
+- Why it matters:
+  calibration is a product workflow, not just a math correction.
+- Strong references:
+  `PSVR2EyeTrackingCalibration`.
+- Best fit for `VR-apps-lab`:
+  gaze calibration UX and offset persistence research.
+
+## Method 479: AI assistant sidecar with memory, tool-calling, and VRChat OSC output
+
+- What it is:
+  a companion separates prompt/config, live audio/video/text queues, memory,
+  tool definitions, tool-to-function mappings, chatbox pagination, typing
+  state, and avatar OSC actions around an AI session.
+- Good for:
+  VRChat AI companions, accessibility sidecars, guided helpers, avatar control
+  agents, and multimodal support tools.
+- Why it matters:
+  AI integration becomes reusable only when tools, memory, transport, and model
+  provider are separate seams.
+- Strong references:
+  `NOVA-AI`.
+- Best fit for `VR-apps-lab`:
+  OSC tool-calling sidecar patterns and provider-neutral assistant notes.
+
+## Method 480: TTS-to-chatbox bridge with virtual-audio microphone routing
+
+- What it is:
+  a text utility generates speech, echoes the text into VRChat chatbox, toggles
+  typing state, and plays the generated audio through a selected virtual audio
+  output so the game receives it as microphone input.
+- Good for:
+  accessibility speech tools, silent users, avatar performance, translation
+  sidecars, and TTS communication helpers.
+- Why it matters:
+  speech output needs an audio-device contract as much as a text or API
+  contract.
+- Strong references:
+  `vrc-tts-osc`.
+- Best fit for `VR-apps-lab`:
+  voice/TTS workflow comparisons and audio routing setup notes.
+
+## Method 481: Chatbox telemetry composer with platform-specific data adapters
+
+- What it is:
+  a status app gathers music, system hardware, network, weather, VRChat log
+  state, custom status, and manual override values, formats them into compact
+  chatbox-safe strings, and sends them through OSC on an interval.
+- Good for:
+  Linux/Steam Deck status tools, music/status chatbox helpers, hardware
+  telemetry surfaces, and compact social presence utilities.
+- Why it matters:
+  chatbox status is often more accessible than a full overlay for VRChat users.
+- Strong references:
+  `XOSC`.
+- Best fit for `VR-apps-lab`:
+  status-surface comparisons and platform data-adapter notes.
+
+## Method 482: Placeholder-driven chatbox and OSC forwarder engine
+
+- What it is:
+  one placeholder engine resolves dynamic modules for text, media, time, OSC
+  data, hotkeys, trackers, math, and conditions, powering both visual block
+  editors and advanced templates, then forwarding resolved values to chatbox or
+  arbitrary typed OSC addresses.
+- Good for:
+  chatbox editors, avatar parameter automation, stream/status templates,
+  nontechnical OSC tools, and bridge rule builders.
+- Why it matters:
+  a good template engine can turn a developer-only OSC bridge into a user
+  tool.
+- Strong references:
+  `advosc`.
+- Best fit for `VR-apps-lab`:
+  template-engine and OSC automation design notes.
+
+## Method 483: World-aware avatar scale controller with compatibility shims
+
+- What it is:
+  an OSC sidecar listens to VRChat eye-height, scale, tracking mode, world
+  limit, and avatar change messages, then sends target eye-height changes with
+  instant or smooth interpolation and optional adapters for third-party avatar
+  scaling prefab contracts.
+- Good for:
+  avatar scale utilities, OSC control helpers, avatar-state diagnostics, and
+  safe external parameter controllers.
+- Why it matters:
+  writing avatar parameters safely often requires listening to runtime/world
+  state first.
+- Strong references:
+  `vrc-avi-scaler`.
+- Best fit for `VR-apps-lab`:
+  avatar parameter control patterns and scale-safety checklists.
+
+## Method 484: Avatar-authored companion protocol for camera paths and control data
+
+- What it is:
+  an avatar package captures path/control data through in-world avatar
+  interactions such as contacts, constraints, physbones, gestures, menus, and
+  parameters, while a companion receives the data and sends playback/control
+  commands back through OSC.
+- Good for:
+  camera paths, staged world events, avatar-authored tools, performer utilities,
+  and creator-side control systems.
+- Why it matters:
+  avatars can be data capture instruments, but only if the companion protocol
+  is explicit and debuggable.
+- Strong references:
+  `VRLabs/Camera-System`.
+- Best fit for `VR-apps-lab`:
+  avatar-side companion protocol research and camera/path tool notes.
+
+## Method 485: Avatar contact OSC to Bluetooth microcontroller haptics bridge
+
+- What it is:
+  a sidecar discovers VRChat OSC, receives contact-derived avatar parameters,
+  estimates intensity, applies decay, exposes status/test UI, and sends compact
+  packets to a microcontroller that drives physical motors.
+- Good for:
+  DIY haptics, wearable feedback, accessibility signals, physical alert
+  devices, and low-latency avatar contact output.
+- Why it matters:
+  physical-output bridges need a tiny, testable protocol between software and
+  hardware.
+- Strong references:
+  `HapticPatPat`.
+- Best fit for `VR-apps-lab`:
+  DIY haptic bridge notes and contact-to-output patterns.
+
+## Method 486: OSCQuery-advertised wearable haptics effect engine
+
+- What it is:
+  a wearable haptics app advertises OSC endpoints, registers callbacks for
+  named muscles/events, maps incoming values into effect modules, computes
+  intensity with proximity/speed/decay settings, and manages named sensation
+  play/update/stop lifecycles.
+- Good for:
+  OWO/bHaptics/OpenShock comparisons, avatar-contact feedback, audio-reactive
+  haptics, world-integrator bridges, and settings-heavy wearable utilities.
+- Why it matters:
+  haptics scale better when event intake, effect calculation, and device output
+  are separate layers.
+- Strong references:
+  `owoskin-vrc`.
+- Best fit for `VR-apps-lab`:
+  device-neutral haptic event schema and wearable feedback comparison matrices.
+
+## Method 487: Generic game rumble to external-device haptics router
+
+- What it is:
+  a router captures game/controller rumble events, deduplicates them, forwards
+  them through an IPC envelope, visualizes left/right power, applies baseline
+  and multiplier controls, and sends normalized output to selected external
+  devices through a device hub.
+- Good for:
+  generic haptics routing, simulator feedback, device selection UIs, debugging
+  haptic streams, and non-VR game-to-device adapters.
+- Why it matters:
+  even when invasive hooks are not reusable, the router boundary and visualizer
+  UX are useful references.
+- Strong references:
+  `intiface-game-haptics-router`.
+- Best fit for `VR-apps-lab`:
+  haptic router architecture notes and safe/non-invasive event-source
+  comparisons.
