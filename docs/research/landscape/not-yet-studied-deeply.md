@@ -1475,6 +1475,55 @@ These are larger than a single repo and should guide the next research wave.
   and debug surfaces. A future deeper pass should build a browser AR placement
   matrix before any MR utility prototype.
 
+### 109. `WebXR hand tracking, hand input surfaces, and hand-data bridges`
+
+- Main entries:
+  `webxr-handtracking`, `webxr-hand-tracking-sample`,
+  `webxr-hand-tracking-websocket`, `webxr-quest2`
+- Why it matters:
+  this family captures hand input as a reusable utility-control layer: joint
+  caches, pinch hysteresis, fingertip raycasters, per-hand role assignment,
+  passthrough hand-grab demos, and WebSocket hand-pose export. A future deeper
+  pass should compare WebXR hand thresholds and event vocabularies across
+  A-Frame, Babylon, PlayCanvas, and lower-level browser samples.
+
+### 110. `Immersive 360 video players, stereo projection, and local media surfaces`
+
+- Main entries:
+  `webxr-video`, `VR180-video-player`, `html-360-viewer`,
+  `360-video-player`, `openimmersive`
+- Why it matters:
+  this family captures media surface mechanics that matter for utility shells:
+  projection/layout controls, stereo modes, local file ingress, drag/drop,
+  browser-to-XR UI textures, native gallery/source pickers, HLS sources, and
+  explicit field-of-view/baseline/disparity controls. A future deeper pass
+  should build a projection and media-source matrix before any reusable VR
+  viewer component.
+
+### 111. `Audio-reactive WebXR surfaces, spatial sound visualizers, and shader pipelines`
+
+- Main entries:
+  `webxr-audio-visualizer`, `vite-three-webxr-audio-visualizer`,
+  `boondoggle`, `seeSound`
+- Why it matters:
+  this family captures audio as live XR data: microphone analysers, stereo
+  channel splitting, FFT/amplitude/centroid feature vectors, shader uniforms,
+  native loopback capture, audio textures, and JSON-defined effect packages. A
+  future deeper pass should turn these into an audio-reactive diagnostics and
+  ambience checklist.
+
+### 112. `WebXR runtime frameworks, session/input feature managers, and testable spatial UI substrates`
+
+- Main entries:
+  `three.js`, `Babylon.js`, `playcanvas/engine`, `immersive-web-sdk`
+- Why it matters:
+  this family captures the architectural substrate below browser VR utilities:
+  renderer-owned session managers, controller/grip/hand scene groups, modular
+  feature managers, evented XR services, DOM overlay roots, synthetic input,
+  runtime session state, and scene-inspection tooling. A future deeper pass
+  should compare framework boundaries before choosing a browser utility shell
+  baseline.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1558,6 +1607,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 77. `Browser-based XR editors, live-coding sandboxes, visual workspaces, and scene tooling`
 78. `VRM/avatar web stacks, model specs, runtime loaders, and browser avatar/mocap surfaces`
 79. `WebAR marker/image tracking, model-viewer AR surfaces, and lightweight scene-understanding utilities`
+80. `WebXR hand tracking, hand input surfaces, and hand-data bridges`
+81. `Immersive 360 video players, stereo projection, and local media surfaces`
+82. `Audio-reactive WebXR surfaces, spatial sound visualizers, and shader pipelines`
+83. `WebXR runtime frameworks, session/input feature managers, and testable spatial UI substrates`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

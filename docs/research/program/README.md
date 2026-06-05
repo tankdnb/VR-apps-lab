@@ -1015,3 +1015,35 @@ repeatable way.
 
 - `github-research-wave-143-backlog.md`
   Executed backlog for the Wave 143 pass.
+
+- `github-research-wave-144-plan.md`
+  Wave 144 research plan focused on WebXR hand tracking, hand input surfaces,
+  joint caches, pinch/ray controls, passthrough grabbing, and hand-pose data
+  bridges.
+
+- `github-research-wave-144-backlog.md`
+  Executed backlog for the Wave 144 pass.
+
+- `github-research-wave-145-plan.md`
+  Wave 145 research plan focused on immersive 360/VR180 video players,
+  projection controls, stereo layouts, local media ingress, and in-XR playback
+  surfaces.
+
+- `github-research-wave-145-backlog.md`
+  Executed backlog for the Wave 145 pass.
+
+- `github-research-wave-146-plan.md`
+  Wave 146 research plan focused on audio-reactive WebXR surfaces,
+  microphone/loopback analysers, FFT feature vectors, shader uniforms, and
+  sound-texture pipelines.
+
+- `github-research-wave-146-backlog.md`
+  Executed backlog for the Wave 146 pass.
+
+- `github-research-wave-147-plan.md`
+  Wave 147 research plan focused on WebXR framework substrates, session
+  managers, controller/hand abstractions, feature managers, evented services,
+  and runtime/test control surfaces.
+
+- `github-research-wave-147-backlog.md`
+  Executed backlog for the Wave 147 pass.

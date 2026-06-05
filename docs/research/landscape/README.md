@@ -590,6 +590,26 @@ Use these files when you want to understand:
   tracking, model-viewer AR fallback UX, A-Frame AR wrappers, and WebXR
   scene-understanding utilities.
 
+- `vr-projects-wave-144-webxr-hand-tracking-hand-input-surfaces-and-hand-data-bridges.md`
+  Next GitHub discovery wave focused on WebXR hand tracking, hand input
+  surfaces, joint caches, pinch/ray controls, passthrough grabbing, and
+  hand-pose data bridges.
+
+- `vr-projects-wave-145-immersive-360-video-players-stereo-projection-and-local-media-surfaces.md`
+  Next GitHub discovery wave focused on immersive 360/VR180 video players,
+  projection controls, stereo layouts, local media ingress, and in-XR playback
+  surfaces.
+
+- `vr-projects-wave-146-audio-reactive-webxr-surfaces-spatial-sound-visualizers-and-shader-pipelines.md`
+  Next GitHub discovery wave focused on audio-reactive WebXR surfaces,
+  microphone/loopback analysers, FFT feature vectors, shader uniforms, and
+  sound-texture pipelines.
+
+- `vr-projects-wave-147-webxr-runtime-frameworks-session-input-feature-managers-and-testable-spatial-ui-substrates.md`
+  Next GitHub discovery wave focused on WebXR framework substrates, session
+  managers, controller/hand abstractions, feature managers, evented services,
+  and runtime/test control surfaces.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

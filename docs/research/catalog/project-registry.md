@@ -1822,6 +1822,55 @@ Primary docs:
 - `google/model-viewer` - `Already studied as production AR model-viewer component and fallback UX reference`
 - `tentone/enva-xr` - `Already studied as environment-aware WebXR AR renderer`
 
+## 115. WebXR hand tracking, hand input surfaces, and hand-data bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-144-webxr-hand-tracking-hand-input-surfaces-and-hand-data-bridges.md`
+- `../landscape/project-families.md`
+
+- `marlon360/webxr-handtracking` - `Already studied as WebXR hand joint, pinch gesture, fingertip ray, and A-Frame component donor`
+- `TakashiYoshinaga/webxr-hand-tracking-sample` - `Already studied as minimal pinch drawing and hand-role split sample`
+- `rick98033/webxr-hand-tracking-websocket` - `Already studied as Babylon WebXR hand-pose WebSocket bridge`
+- `danielklinkhammer/webxr-quest2` - `Already studied as Quest/A-Frame passthrough hand-grab micro-demo`
+
+## 116. Immersive 360 video players, stereo projection, and local media surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-145-immersive-360-video-players-stereo-projection-and-local-media-surfaces.md`
+- `../landscape/project-families.md`
+
+- `greggman/webxr-video` - `Already studied as modular WebXR video viewer with renderer/UI split`
+- `brandynbuchanan/VR180-video-player` - `Already studied as minimal A-Frame VR180 stereoscopic player`
+- `ProGamerGov/html-360-viewer` - `Already studied as one-file 360 image/video viewer and stereo-toggle utility`
+- `thehancode/360-video-player` - `Already studied as Tauri/Svelte local 360 video player shell`
+- `acuteimmersive/openimmersive` - `Already studied as Vision Pro projection/frame-packing immersive video player`
+
+## 117. Audio-reactive WebXR surfaces, spatial sound visualizers, and shader pipelines
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-146-audio-reactive-webxr-surfaces-spatial-sound-visualizers-and-shader-pipelines.md`
+- `../landscape/project-families.md`
+
+- `shift/webxr-audio-visualizer` - `Already studied as stereo microphone and directional AR waveform visualizer`
+- `Alex-DG/vite-three-webxr-audio-visualizer` - `Already studied as Three/WebXR audio-feature-to-shader-uniform visualizer`
+- `ConorStokes/boondoggle` - `Already studied as native Oculus/D3D audio texture and shader package visualizer`
+- `DranoelMit/seeSound` - `Already studied as A-Frame WebAudio frequency-bin geometry visualizer`
+
+## 118. WebXR runtime frameworks, session/input feature managers, and testable spatial UI substrates
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-147-webxr-runtime-frameworks-session-input-feature-managers-and-testable-spatial-ui-substrates.md`
+- `../landscape/project-families.md`
+
+- `mrdoob/three.js` - `Already studied as minimal renderer-level WebXR manager and controller/hand space reference`
+- `BabylonJS/Babylon.js` - `Already studied as WebXR session manager, experience helper, and feature manager stack`
+- `playcanvas/engine` - `Already studied as evented XR service taxonomy and hand/input subsystem model`
+- `facebook/immersive-web-sdk` - `Already studied as ECS/action/spatial-UI framework with runtime-first dev tooling`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

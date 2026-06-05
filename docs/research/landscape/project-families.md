@@ -3908,6 +3908,142 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - AR annotation and hotspot surfaces
 - WebXR scene-understanding debug panels
 
+## Family 123: WebXR hand tracking, hand input surfaces, and hand-data bridges
+
+This family covers browser-native hand tracking where the reusable value is
+raw joint streams, pinch and release events, fingertip rays, hand-role splits,
+direct manipulation, and exporting hand pose to external tools.
+
+| Project | Status | Notes |
+|---|---|---|
+| `marlon360/webxr-handtracking` | Already studied as WebXR hand joint, pinch gesture, fingertip ray, and A-Frame component donor | `XRHand` joint cache, `getJointPose`, visibility/radius/orientation state, A-Frame hand components, pinch hysteresis, fingertip raycaster, drawing, mesh, and physics hooks |
+| `TakashiYoshinaga/webxr-hand-tracking-sample` | Already studied as minimal pinch drawing and hand-role split sample | Right-hand pinch creates boxes and draws along movement; left-hand pinch clears scene; visible fingertip marker and simple color cycling |
+| `rick98033/webxr-hand-tracking-websocket` | Already studied as Babylon WebXR hand-pose WebSocket bridge | Babylon hand feature enablement, 13-joint subset, handedness selection, rate-limited JSON telemetry, auto-reconnect, callbacks, and receiver examples |
+| `danielklinkhammer/webxr-quest2` | Already studied as Quest/A-Frame passthrough hand-grab micro-demo | Transparent AR scene, hand-tracking required feature, pinch midpoint grab, nearest interactable selection, hover/active color feedback, and fallback laser rays |
+
+### Consolidation note
+
+This family matters because controllerless VR utilities need simple, reliable
+input patterns before they need full gesture-recognition systems. It now
+clearly includes:
+
+- raw WebXR hand joint streams
+- pinch start/release thresholds and hysteresis
+- fingertip raycasting
+- direct pinch-midpoint object grabbing
+- left/right hand role assignment
+- hand pose telemetry over WebSocket
+- passthrough-friendly hand UI defaults
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- hand-first overlay/menu controls
+- hand tracking diagnostics and latency surfaces
+- WebXR hand-to-OSC/WebSocket bridges
+- small controllerless calibration and annotation tools
+
+## Family 124: Immersive 360 video players, stereo projection, and local media surfaces
+
+This family covers immersive media viewers where the reusable value is
+projection awareness, stereo layout, in-headset playback controls, local file
+intake, browser/Tauri packaging, and Vision Pro-style format explanation.
+
+| Project | Status | Notes |
+|---|---|---|
+| `greggman/webxr-video` | Already studied as modular WebXR video viewer with renderer/UI split | WebGL/WebGPU/WebXR Layers variants, viewer/session orchestration, canvas UI texture, controller-to-pointer mapping, playlist directory scanning, projection and stereo settings |
+| `brandynbuchanan/VR180-video-player` | Already studied as minimal A-Frame VR180 stereoscopic player | `a-videosphere`, left/right stereoscopic flag, video asset, simple control panel, play/pause, timeline indicator, and seek sketch |
+| `ProGamerGov/html-360-viewer` | Already studied as one-file 360 image/video viewer and stereo-toggle utility | Single HTML file with drag/drop, query URL loading, mono/top-bottom/side-by-side toggles, zoom, fullscreen, screenshot, and video controls |
+| `thehancode/360-video-player` | Already studied as Tauri/Svelte local 360 video player shell | Tauri file picker/drop, `convertFileSrc`, Svelte selector/view switch, Video.js, `videojs-vr`, and local desktop packaging |
+| `acuteimmersive/openimmersive` | Already studied as Vision Pro projection/frame-packing immersive video player | Equirectangular/rectilinear/AIVU projection options, side-by-side/over-under packing, FOV, baseline, disparity, gallery/file/HLS sources, and immersive attachments |
+
+### Consolidation note
+
+This family matters because media utilities are format utilities. It now
+clearly includes:
+
+- 180/360 and equirectangular/rectilinear projection controls
+- stereo layout and frame-packing choices
+- in-headset canvas UI surfaces
+- local file and drag/drop intake
+- browser one-file inspection tools
+- desktop shells around browser media players
+- Vision Pro spatial/immersive format settings
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- projection-aware media diagnostics
+- stereo/packing/FOV vocabulary
+- local media QA viewers
+- video surfaces for browser-backed overlay panels
+
+## Family 125: Audio-reactive WebXR surfaces, spatial sound visualizers, and shader pipelines
+
+This family covers sound-aware VR/WebXR projects where the reusable value is
+audio source intake, analyser pipelines, normalized audio features, frequency
+buckets, shader uniforms, audio textures, and spatial sound feedback.
+
+| Project | Status | Notes |
+|---|---|---|
+| `shift/webxr-audio-visualizer` | Already studied as stereo microphone and directional AR waveform visualizer | Audio permission gate, stereo microphone constraints, channel splitter, left/right analysers, source objects, position smoothing, waveform rings, and glow intensity |
+| `Alex-DG/vite-three-webxr-audio-visualizer` | Already studied as Three/WebXR audio-feature-to-shader-uniform visualizer | p5 sound FFT/amplitude analysis, spectral centroid/volume mapping, optional waveform, AR button with DOM overlay, sphere and particle shader uniforms |
+| `ConorStokes/boondoggle` | Already studied as native Oculus/D3D audio texture and shader package visualizer | WASAPI loopback capture, KissFFT, smoothing, frequency bucketing, sound texture/SRV, D3D renderer, JSON effect package compiler, shader/sampler/effect validation |
+| `DranoelMit/seeSound` | Already studied as A-Frame WebAudio frequency-bin geometry visualizer | Media element source, analyser bins, upload object URL, bars/cubes spawned around user, per-frame geometry scale updates |
+
+### Consolidation note
+
+This family matters because audio can be a diagnostic and context signal, not
+only media playback. It now clearly includes:
+
+- microphone and media-element audio sources
+- WebAudio analyser and FFT paths
+- normalized audio feature vectors
+- stereo/directional visual feedback
+- frequency-bin geometry widgets
+- native loopback capture and audio textures
+- shader package separation for visual effects
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- audio diagnostics overlays
+- channel balance and microphone permission surfaces
+- ambient sound-aware HUD widgets
+- reusable audio-to-visual feature pipelines
+
+## Family 126: WebXR runtime frameworks, session/input feature managers, and testable spatial UI substrates
+
+This family covers framework-level WebXR foundations where the reusable value
+is session lifecycle, reference-space management, feature registration, input
+abstraction, hand tracking, DOM overlay, layers, locomotion, spatial UI, and
+runtime/test control surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mrdoob/three.js` | Already studied as minimal renderer-level WebXR manager and controller/hand space reference | `WebXRManager`, target-ray/grip/hand groups, session start/end, controller events, WebXR layers/depth hooks, `VRButton`, and reference-space-offset teleport example |
+| `BabylonJS/Babylon.js` | Already studied as WebXR session manager, experience helper, and feature manager stack | Session manager observables, experience helper, feature manager contracts, session-init extension, hand tracking, DOM overlay, layers, hit-test, anchors, movement, and teleportation |
+| `playcanvas/engine` | Already studied as evented XR service taxonomy and hand/input subsystem model | `XrManager` services for input, DOM overlay, hit-test, anchors, planes, meshes, light, views, graphics binding, evented input sources, hand rays, and squeeze emulation |
+| `facebook/immersive-web-sdk` | Already studied as ECS/action/spatial-UI framework with runtime-first dev tooling | XR input manager, primary source selection, multi-pointers, visual adapters, action-backed locomotion, spatial UI compiler, layers, runtime session file, CLI/MCP-like XR control tools |
+
+### Consolidation note
+
+This family matters because future browser-backed utilities need a substrate,
+not just standalone samples. It now clearly includes:
+
+- renderer-owned WebXR session managers
+- feature manager and session-init extension patterns
+- typed XR capability service objects
+- target-ray, grip, and hand coordinate spaces
+- hand squeeze/ray abstractions
+- DOM overlay and layer surface wrappers
+- action-backed locomotion and spatial UI compilation
+- runtime-first dev/test control surfaces
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- WebXR utility shell architecture
+- browser XR feature manager prototypes
+- testable no-HMD browser XR workflows
+- controller/hand/action abstraction comparisons
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

@@ -152,6 +152,10 @@ This file complements:
 - `vr-projects-wave-141-browser-based-xr-editors-live-coding-sandboxes-visual-workspaces-and-scene-tooling.md`
 - `vr-projects-wave-142-vrm-avatar-web-stacks-model-specs-runtime-loaders-and-browser-avatar-mocap-surfaces.md`
 - `vr-projects-wave-143-webar-marker-image-tracking-model-viewer-ar-surfaces-and-lightweight-scene-understanding-utilities.md`
+- `vr-projects-wave-144-webxr-hand-tracking-hand-input-surfaces-and-hand-data-bridges.md`
+- `vr-projects-wave-145-immersive-360-video-players-stereo-projection-and-local-media-surfaces.md`
+- `vr-projects-wave-146-audio-reactive-webxr-surfaces-spatial-sound-visualizers-and-shader-pipelines.md`
+- `vr-projects-wave-147-webxr-runtime-frameworks-session-input-feature-managers-and-testable-spatial-ui-substrates.md`
 
 ## How to use this index
 

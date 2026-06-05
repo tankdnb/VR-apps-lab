@@ -7513,3 +7513,207 @@ When a new utility idea appears:
   `enva-xr`.
 - Best fit for `VR-apps-lab`:
   browser MR utility surfaces and scene-understanding diagnostics.
+
+## Method 439: WebXR hand joint cache with composable gesture and ray components
+
+- What it is:
+  a WebXR hand system reads `XRHand` joint spaces each XR frame, stores
+  visibility, position, orientation, and radius, then exposes higher-level
+  components for pinch events, fingertip rays, meshes, drawing, and physics.
+- Good for:
+  controllerless UI, hand-first menus, calibration gestures, annotation tools,
+  and browser hand diagnostics.
+- Why it matters:
+  hand logic stays reusable when raw joints, gesture detection, and UI
+  behaviors are separated.
+- Strong references:
+  `webxr-handtracking`, `webxr-quest2`.
+- Best fit for `VR-apps-lab`:
+  WebXR hand input utilities and hand-tracking diagnostics.
+
+## Method 440: Hand-pose telemetry bridge over WebSocket
+
+- What it is:
+  a browser/WebXR scene enables hand tracking, extracts a stable subset of
+  joints, rate-limits transmission, and publishes handedness, joint poses,
+  timestamps, and status over WebSocket.
+- Good for:
+  gesture capture, teleoperation, browser-to-local-tool bridges, diagnostics,
+  and headset-as-sensor workflows.
+- Why it matters:
+  hand tracking becomes reusable outside the browser when it is treated as a
+  transportable data product.
+- Strong references:
+  `webxr-hand-tracking-websocket`.
+- Best fit for `VR-apps-lab`:
+  hand tracking bridges, external tool adapters, and no-install diagnostics.
+
+## Method 441: Projection-aware immersive media viewer with explicit format controls
+
+- What it is:
+  a media viewer exposes projection, FOV, stereo layout, frame packing,
+  baseline, disparity, and source intake as first-class controls instead of
+  hiding them inside decoder or shader assumptions.
+- Good for:
+  180/360 video players, spatial video QA, media diagnostics, local file
+  viewers, and format troubleshooting.
+- Why it matters:
+  immersive media failures are often format-assumption failures; explicit
+  controls make them inspectable.
+- Strong references:
+  `webxr-video`, `openimmersive`, `html-360-viewer`.
+- Best fit for `VR-apps-lab`:
+  media QA helpers and projection-aware overlay/browser surfaces.
+
+## Method 442: In-XR canvas UI texture with controller-to-pointer event translation
+
+- What it is:
+  a 2D canvas renders a playback/settings/list UI, is placed as an XR surface,
+  and controller rays or mouse state are transformed into pointer events on the
+  canvas.
+- Good for:
+  browser-backed VR panels, media controls, settings surfaces, dashboards, and
+  utility UIs that should not invent a full 3D widget system.
+- Why it matters:
+  many utilities can keep rich 2D UI logic while still being usable inside XR.
+- Strong references:
+  `webxr-video`.
+- Best fit for `VR-apps-lab`:
+  browser overlay panels and WebXR utility shells.
+
+## Method 443: Portable single-file 360 viewer with drag/drop, URL parameters, and stereo toggles
+
+- What it is:
+  a single HTML utility embeds its viewer, controls, media intake, query-string
+  loading, drag/drop, stereo mode toggles, zoom, screenshot, and video controls
+  in one copyable file.
+- Good for:
+  quick inspection tools, support attachments, local media triage, demos, and
+  low-friction browser diagnostics.
+- Why it matters:
+  not every utility needs a build system; sometimes portability is the product
+  value.
+- Strong references:
+  `html-360-viewer`.
+- Best fit for `VR-apps-lab`:
+  small browser utility references and diagnostic viewers.
+
+## Method 444: Desktop local-media shell around a browser VR player
+
+- What it is:
+  a desktop shell such as Tauri wraps a web media player, handles native file
+  picker and drop events, converts local paths to safe web URLs, and delegates
+  playback to browser media libraries.
+- Good for:
+  local 360 video players, QA tools, internal review utilities, and packaged
+  no-server media viewers.
+- Why it matters:
+  local file permissions and drag/drop can be the hardest part of a browser
+  media utility.
+- Strong references:
+  `360-video-player`.
+- Best fit for `VR-apps-lab`:
+  local media utility packaging and desktop/browser hybrid surfaces.
+
+## Method 445: Audio analyser to normalized XR shader feature vector
+
+- What it is:
+  a WebAudio or p5 audio analyser computes small normalized features such as
+  amplitude, centroid, waveform, or frequency bands, then feeds them into XR
+  shader uniforms or scene parameters.
+- Good for:
+  audio-reactive overlays, music visualizers, microphone diagnostics, ambient
+  HUDs, and sound-aware effects.
+- Why it matters:
+  render code should consume named audio features, not raw analyser details.
+- Strong references:
+  `vite-three-webxr-audio-visualizer`, `seeSound`,
+  `webxr-audio-visualizer`.
+- Best fit for `VR-apps-lab`:
+  audio diagnostics and sound-aware visualization surfaces.
+
+## Method 446: Native audio loopback to frequency buckets, audio texture, and shader package
+
+- What it is:
+  a native VR tool captures system audio, runs FFT and smoothing, writes
+  frequency buckets into constants or textures, and loads visual effects from a
+  separate shader/effect package.
+- Good for:
+  native audio visualizers, performance-sensitive diagnostics, shader-driven
+  overlays, and app-audio status tools.
+- Why it matters:
+  separating capture, signal processing, render resources, and effect authoring
+  keeps heavy native visualizers maintainable.
+- Strong references:
+  `boondoggle`.
+- Best fit for `VR-apps-lab`:
+  native audio diagnostics and audio-reactive overlay architecture references.
+
+## Method 447: Renderer-owned WebXR manager with target-ray, grip, and hand scene groups
+
+- What it is:
+  a renderer keeps WebXR session/reference-space/render-target state internal
+  while exposing each input source as stable scene groups for target ray, grip,
+  and hand spaces.
+- Good for:
+  minimal WebXR utilities, controller visualization, ray UI, teleportation,
+  and small browser prototypes.
+- Why it matters:
+  application code can treat XR input as ordinary scene objects while session
+  details stay encapsulated.
+- Strong references:
+  `three.js`.
+- Best fit for `VR-apps-lab`:
+  minimal browser utility shells and controller/hand abstraction comparisons.
+
+## Method 448: Modular WebXR feature manager with session-init extension hooks
+
+- What it is:
+  each XR capability is registered as a feature with compatibility checks,
+  dependencies, attach/detach lifecycle, observables, and optional
+  `XRSessionInit` extension before session creation.
+- Good for:
+  browser XR shells, capability-gated utilities, diagnostics, AR placement,
+  hand tracking, layers, anchors, planes, depth, and teleportation.
+- Why it matters:
+  WebXR feature availability is fragmented; utilities need explicit feature
+  negotiation and support reporting.
+- Strong references:
+  `Babylon.js`.
+- Best fit for `VR-apps-lab`:
+  WebXR feature managers and capability/support matrices.
+
+## Method 449: Evented XR service taxonomy for input, hands, DOM overlay, hit-test, anchors, planes, meshes, and views
+
+- What it is:
+  an engine exposes XR as a manager with typed subsystem services, support and
+  availability state, lifecycle events, input-source events, hand abstractions,
+  and optional graphics backend bridges.
+- Good for:
+  diagnostics, tool shells, AR utilities, input debuggers, and scene
+  understanding panels.
+- Why it matters:
+  utility code stays inspectable when XR capabilities are visible services
+  instead of hidden helper calls.
+- Strong references:
+  `playcanvas/engine`.
+- Best fit for `VR-apps-lab`:
+  browser XR diagnostics and service-oriented utility architecture.
+
+## Method 450: Runtime-first XR development control surface with session state, synthetic input, and scene introspection
+
+- What it is:
+  a WebXR framework writes runtime session state, exposes CLI/MCP-like control
+  over browser/headset state, supports synthetic controller/hand transforms,
+  and provides scene/ECS inspection such as hierarchy, snapshot, diff, pause,
+  and step.
+- Good for:
+  no-HMD workflows, automated QA, remote support, browser XR diagnostics,
+  agent-assisted development, and deterministic repros.
+- Why it matters:
+  XR tools become easier to debug when runtime control and observation are
+  designed into the development loop.
+- Strong references:
+  `immersive-web-sdk`, `webxr-test-api`.
+- Best fit for `VR-apps-lab`:
+  testable browser XR utility shells and no-HMD validation research.

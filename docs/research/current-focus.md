@@ -430,6 +430,24 @@ the strongest current clusters:
   for browser AR target compilation, marker/location tracking, AR starter
   surfaces, A-Frame AR wrappers, AR model-viewer fallback UX, and WebXR
   hit-test/light/depth scene-understanding helpers.
+- `webxr-handtracking`, `webxr-hand-tracking-sample`,
+  `webxr-hand-tracking-websocket`, `webxr-quest2`
+  for WebXR joint caches, pinch gestures, fingertip rays, per-hand verbs,
+  passthrough hand grabbing, and WebSocket hand-pose export.
+- `webxr-video`, `VR180-video-player`, `html-360-viewer`,
+  `360-video-player`, `openimmersive`
+  for projection-aware immersive media viewers, local file ingress,
+  drag/drop browser viewers, controller-to-canvas UI, and explicit
+  stereo/FOV/baseline controls.
+- `webxr-audio-visualizer`, `vite-three-webxr-audio-visualizer`,
+  `boondoggle`, `seeSound`
+  for audio analysers, stereo channel splitting, FFT feature vectors,
+  audio-to-shader uniforms, native loopback capture, and sound-texture
+  pipelines.
+- `three.js`, `Babylon.js`, `playcanvas/engine`, `immersive-web-sdk`
+  for WebXR session managers, controller/grip/hand abstractions, modular
+  feature managers, evented XR service taxonomies, synthetic input, and
+  runtime-first spatial UI tooling.
 
 ## Highest-value next follow-up passes
 
@@ -506,6 +524,10 @@ directions:
 68. `Browser-based XR editors, live-coding sandboxes, visual workspaces, and scene tooling`
 69. `VRM/avatar web stacks, model specs, runtime loaders, and browser avatar/mocap surfaces`
 70. `WebAR marker/image tracking, model-viewer AR surfaces, and lightweight scene-understanding utilities`
+71. `WebXR hand tracking, hand input surfaces, and hand-data bridges`
+72. `Immersive 360 video players, stereo projection, and local media surfaces`
+73. `Audio-reactive WebXR surfaces, spatial sound visualizers, and shader pipelines`
+74. `WebXR runtime frameworks, session/input feature managers, and testable spatial UI substrates`
 
 ## Current repository-maintenance priorities
 
