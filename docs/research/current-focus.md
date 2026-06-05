@@ -73,6 +73,11 @@ These are the clearest current product and research lines:
    vendor extension stacks, A-Frame inspectors and networked components,
    Unreal replicated interaction/hand/tracker/comfort plugins, and VR
    teleoperation architectures that use headsets as operator surfaces.
+14. `Streaming sidecars, XR-glasses desktop helpers, camera tracking bridges, and mixed-reality capture`
+   the repository now has fresh coverage of ALVR/WiVRn ecosystem companions,
+   XREAL/Nreal WebHID and head-tracked virtual display utilities,
+   MediaPipe-to-tracker/avatar/controller bridges, and MRC calibration or
+   presenter-compositing helpers.
 
 ## Most useful current docs
 
@@ -144,6 +149,10 @@ instead of full history:
 - `landscape/vr-projects-wave-117-aframe-webxr-components-inspectors-networked-scenes-and-hand-ui.md`
 - `landscape/vr-projects-wave-118-unreal-vr-interaction-toolkits-hand-tracking-comfort-and-tracker-plugins.md`
 - `landscape/vr-projects-wave-119-vr-teleoperation-headset-frontends-robot-bridges-and-data-capture.md`
+- `landscape/vr-projects-wave-120-alvr-wivrn-ecosystem-sidecars-platform-clients-and-streaming-helpers.md`
+- `landscape/vr-projects-wave-121-xr-glasses-webhid-virtual-displays-and-head-tracked-desktop-helpers.md`
+- `landscape/vr-projects-wave-122-mediapipe-camera-tracking-bridges-for-slimevr-vrchat-vrm-and-virtual-controllers.md`
+- `landscape/vr-projects-wave-123-mixed-reality-capture-calibration-and-presenter-compositing-helpers.md`
 
 ## Strong donor clusters right now
 
@@ -292,6 +301,22 @@ the strongest current clusters:
   `franka-vr-teleop`, `VR_Teleop_Interface`, `cambot`, `UR_VR_Teleop`
   for VR operator/control-surface architecture, pose transport, IK/MPC loops,
   safety gates, diagnostics sidecars, and data-capture workflows.
+- `alvr-visionos`, `VRCFT-ALVR`, `ADBForwarder`, `WiVRnTimings`
+  for streaming ecosystem companions, platform-client lifecycle, face/eye
+  payload adapters, setup repair, and timing viewers.
+- `xreal-webxr`, `nreal_linux_test`, `XReal-Ultrawide`
+  for browser WebHID XR-glasses diagnostics, screen-capture viewport POCs,
+  virtual display lifecycle, IMU recenter/smoothing, and head-tracked desktop
+  helpers.
+- `SlimeVR-Tracker-Mediapipe`, `MediapipeFaceTracking_VRC`,
+  `mediapipe-vrm-tracking`, `VRBodyTrack`, `mediapipe_VR_controller`
+  for camera landmark bridge patterns across SlimeVR UDP, avatar expressions,
+  Unity pipes, browser VRM, and OSC virtual-controller payloads.
+- `reality-mixer-js`, `RealityMixerVisionPro`, `mrc-client`, `MrcXrtHelpers`,
+  `ArtificialGreenScreen`
+  for mixed-reality capture calibration, foreground/background compositing,
+  mobile camera payloads, Oculus/Unity MRC repair helpers, and segmentation
+  fallback workflows.
 
 ## Highest-value next follow-up passes
 
@@ -344,6 +369,10 @@ directions:
 44. `A-Frame WebXR components, inspectors, networked scenes, and hand UI`
 45. `Unreal VR interaction toolkits, hand tracking, comfort, and tracker plugins`
 46. `VR teleoperation headset frontends, robot bridges, and data capture`
+47. `ALVR/WiVRn ecosystem sidecars, platform clients, and streaming helpers`
+48. `XR glasses WebHID, virtual displays, and head-tracked desktop helpers`
+49. `MediaPipe camera tracking bridges for SlimeVR, VRChat, VRM, and virtual controllers`
+50. `Mixed reality capture, calibration, and presenter compositing helpers`
 
 ## Current repository-maintenance priorities
 

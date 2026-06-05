@@ -840,3 +840,31 @@ repeatable way.
 
 - `github-research-wave-119-backlog.md`
   Executed backlog for the Wave 119 pass.
+
+- `github-research-wave-120-plan.md`
+  Wave 120 research plan focused on ALVR/WiVRn ecosystem sidecars, platform
+  clients, runtime bridge references, tracking adapters, and streaming helpers.
+
+- `github-research-wave-120-backlog.md`
+  Executed backlog for the Wave 120 pass.
+
+- `github-research-wave-121-plan.md`
+  Wave 121 research plan focused on XR glasses WebHID, virtual displays, and
+  head-tracked desktop helpers.
+
+- `github-research-wave-121-backlog.md`
+  Executed backlog for the Wave 121 pass.
+
+- `github-research-wave-122-plan.md`
+  Wave 122 research plan focused on MediaPipe camera tracking bridges for
+  SlimeVR, VRChat, VRM, Unity, and virtual controllers.
+
+- `github-research-wave-122-backlog.md`
+  Executed backlog for the Wave 122 pass.
+
+- `github-research-wave-123-plan.md`
+  Wave 123 research plan focused on mixed-reality capture, calibration, and
+  presenter compositing helpers.
+
+- `github-research-wave-123-backlog.md`
+  Executed backlog for the Wave 123 pass.

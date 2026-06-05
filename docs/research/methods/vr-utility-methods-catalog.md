@@ -6143,3 +6143,229 @@ When a new utility idea appears:
   `kbot_vr_teleop`, `collab-sim`, `UR_VR_Teleop`.
 - Best fit for `VR-apps-lab`:
   VR utility observability and data-capture pattern library.
+
+## Method 360: Platform-specific streaming client shell with event watchdog and render/decoder split
+
+- What it is:
+  a headset streaming client separates entry/settings UI, immersive-space
+  selection, renderer backend, video decoder setup, tracking/world state,
+  outgoing workers, event watchdogs, and performance overlay.
+- Good for:
+  standalone-headset clients, remote display tools, streaming sidecars,
+  platform bring-up, and immersive utility shells.
+- Why it matters:
+  platform client work stays maintainable when lifecycle, decoding, rendering,
+  tracking, and diagnostics are explicit boundaries.
+- Strong references:
+  `alvr-visionos`.
+- Best fit for `VR-apps-lab`:
+  standalone client architecture and streaming-side utility references.
+
+## Method 361: Prefix-dispatched eye and face payload adapter into a unified expression model
+
+- What it is:
+  a tracking adapter reads a float stream, dispatches fixed prefixes to
+  vendor-specific eye/face parsers, normalizes eye quaternions or blendshape
+  arrays, and writes one unified expression/eye data model.
+- Good for:
+  face-tracking modules, avatar adapters, vendor payload bridges, runtime
+  translation tools, and diagnostics for expression data.
+- Why it matters:
+  vendor-specific tracking data becomes reusable only when translated into
+  stable app-facing expression names and weights.
+- Strong references:
+  `VRCFT-ALVR`.
+- Best fit for `VR-apps-lab`:
+  face-tracking adapter and expression-schema research.
+
+## Method 362: Streaming setup helper with dependency discovery, device monitor, and port-forward repair
+
+- What it is:
+  a micro-utility locates or downloads a required setup tool, starts its
+  service, monitors connected HMD devices, applies required port forwards, and
+  prints skipped/success status per device.
+- Good for:
+  runtime setup doctors, wired streaming helpers, device-connection repair,
+  onboarding tools, and support utilities.
+- Why it matters:
+  many VR workflow failures are setup-state failures; a tiny repair utility can
+  remove more friction than a larger feature.
+- Strong references:
+  `ADBForwarder`.
+- Best fit for `VR-apps-lab`:
+  setup-doctor and runtime-connectivity helper patterns.
+
+## Method 363: Browser WebHID XR-glasses protocol workbench and packet logger
+
+- What it is:
+  a browser utility requests HID devices, filters XR-glasses product families,
+  wraps command/report calls, parses input reports, polls IMU data, records
+  packet lengths/status distributions, and exposes firmware/protocol actions.
+- Good for:
+  hardware diagnostics, protocol exploration, community device support,
+  browser-native tooling, and safe capability probes.
+- Why it matters:
+  browser WebHID can make hardware protocols inspectable without a native app,
+  as long as risky firmware paths are clearly separated.
+- Strong references:
+  `xreal-webxr`.
+- Best fit for `VR-apps-lab`:
+  device protocol workbenches and lightweight diagnostics.
+
+## Method 364: Head-tracked virtual display canvas with IMU recenter, smoothing, and viewport crop
+
+- What it is:
+  a desktop helper creates a large virtual display canvas, captures or mirrors
+  it, reads XR-glasses IMU orientation, recenters the quaternion, applies dead
+  zones and EMA smoothing, maps yaw/pitch into viewport offsets, and crops the
+  visible output.
+- Good for:
+  XR-glasses desktop utilities, virtual monitor tools, head-tracked reference
+  screens, menu-bar helpers, and spatial workstation experiments.
+- Why it matters:
+  a head-tracked screen can be built as a focused viewport utility without a
+  full spatial desktop runtime.
+- Strong references:
+  `XReal-Ultrawide`.
+- Best fit for `VR-apps-lab`:
+  virtual display and head-tracked desktop helper research.
+
+## Method 365: Screen-capture plus gaze-calibrated viewport slicing for XR glasses
+
+- What it is:
+  an early desktop POC captures a multi-monitor framebuffer, asks the user to
+  look at reference points, normalizes yaw, and slices/blends monitor regions
+  into a glasses output window.
+- Good for:
+  rapid spatial-desktop experiments, calibration prototypes, display-surface
+  tests, and throwaway AR workspace sketches.
+- Why it matters:
+  crude capture/crop prototypes can validate head-tracked display UX before
+  committing to a compositor or driver.
+- Strong references:
+  `nreal_linux_test`.
+- Best fit for `VR-apps-lab`:
+  fast display-surface experiments and calibration-flow references.
+
+## Method 366: MediaPipe landmark-to-virtual-tracker bridge with axis construction and SlimeVR UDP
+
+- What it is:
+  a camera bridge runs MediaPipe pose, derives body-segment axes from selected
+  landmarks, converts axes to quaternions, smooths pose and calibration
+  quaternions, and emits SlimeVR-style UDP handshake/heartbeat/rotation
+  packets for multiple virtual trackers.
+- Good for:
+  camera-based tracking experiments, tracker bridge diagnostics, calibration
+  research, and virtual-device proof-of-concepts.
+- Why it matters:
+  the reusable part of camera tracking is often the conversion pipeline from
+  landmarks to stable tracker payloads.
+- Strong references:
+  `SlimeVR-Tracker-Mediapipe`.
+- Best fit for `VR-apps-lab`:
+  tracker bridge and camera calibration pattern library.
+
+## Method 367: Webcam face/blendshape bridge into avatar expression parameters
+
+- What it is:
+  a small app runs a webcam face model, reads blendshape or face-landmarker
+  outputs, maps them into avatar-facing parameters, and sends or previews the
+  resulting expression data.
+- Good for:
+  avatar diagnostics, face-tracking sidecars, VRChat/VRM preview tools,
+  expression calibration, and low-cost accessibility experiments.
+- Why it matters:
+  avatar-facing tools benefit from a clear expression mapping layer between
+  model-specific coefficients and user-facing blendshape names.
+- Strong references:
+  `MediapipeFaceTracking_VRC`, `mediapipe-vrm-tracking`.
+- Best fit for `VR-apps-lab`:
+  face-tracking adapters and avatar preview utilities.
+
+## Method 368: Minimal landmark-to-controller OSC proof
+
+- What it is:
+  a tiny bridge tracks one MediaPipe hand landmark, maps it into a simple pose
+  payload, and sends it through OSC to a virtual motion tracker/controller
+  endpoint.
+- Good for:
+  transport proofs, teaching examples, quick experiments, and validating
+  target schemas before building full tracking.
+- Why it matters:
+  the smallest possible bridge can test integration assumptions before a
+  complicated tracking model exists.
+- Strong references:
+  `mediapipe_VR_controller`.
+- Best fit for `VR-apps-lab`:
+  micro-bridge prototypes and OSC schema experiments.
+
+## Method 369: WebXR mixed-reality capture compositor with calibration JSON and foreground/background render targets
+
+- What it is:
+  a browser MRC module defines camera calibration, chroma-key settings, and
+  frame delay as JSON, captures webcam video, renders virtual background and
+  foreground into delayed render targets, places the keyed webcam layer between
+  them, and outputs a composited scene for recording.
+- Good for:
+  WebXR capture, presenter tools, calibration wizards, OBS/browser handoff,
+  and scene-debug recording.
+- Why it matters:
+  MRC becomes reusable when camera calibration, chroma key, delay, and layer
+  split are first-class objects.
+- Strong references:
+  `reality-mixer-js`.
+- Best fit for `VR-apps-lab`:
+  capture/compositing utilities and calibration flow references.
+
+## Method 370: Mobile-camera headset capture stack with image tracking, payload protocol, renderer, and encoder
+
+- What it is:
+  a capture stack pairs a headset app with a mobile camera companion, uses
+  image tracking or ARKit data to locate the camera, sends typed payloads for
+  camera pose/buttons/video, renders foreground/background headset passes,
+  extracts alpha, packs textures, and encodes video frames.
+- Good for:
+  presenter capture, mobile-camera MR workflows, headset diagnostics,
+  streaming capture tools, and cross-device calibration experiments.
+- Why it matters:
+  real camera capture is a distributed system; pose, protocol, rendering, and
+  encoding need clean boundaries.
+- Strong references:
+  `RealityMixerVisionPro`.
+- Best fit for `VR-apps-lab`:
+  mixed-reality capture architecture and cross-device utility design.
+
+## Method 371: Unity/Oculus MRC external-camera repair helpers
+
+- What it is:
+  Unity helper scripts update Oculus MRC external camera intrinsics/extrinsics,
+  convert camera pose into tracking-space-relative pose, handle Quest tracking
+  origin differences, and repeatedly remove unwanted tracked-pose drivers from
+  generated MRC cameras.
+- Good for:
+  creator capture setup, Unity XR Interaction Toolkit projects, MRC diagnostics,
+  external-camera calibration, and capture reliability helpers.
+- Why it matters:
+  capture bugs are often caused by runtime-created cameras and incorrect
+  tracking assumptions; small repair scripts can make the workflow usable.
+- Strong references:
+  `MrcXrtHelpers`.
+- Best fit for `VR-apps-lab`:
+  creator-facing capture setup and diagnostics patterns.
+
+## Method 372: Browser person-segmentation fallback for artificial green-screen capture
+
+- What it is:
+  a browser capture helper uses a person-segmentation model to generate a mask
+  from webcam input, draws the masked output to canvas, and can feed
+  OBS/compositing workflows without a physical green screen.
+- Good for:
+  presenter capture, accessibility to MRC workflows, quick demos, browser
+  compositor experiments, and setup-light recording tools.
+- Why it matters:
+  capture utilities should include fallback paths for users who do not have a
+  calibrated studio or physical chroma screen.
+- Strong references:
+  `ArtificialGreenScreen`.
+- Best fit for `VR-apps-lab`:
+  capture helper and presenter-compositing fallback research.

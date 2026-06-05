@@ -3057,6 +3057,141 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - safe recenter/pause UX patterns
 - synchronized demonstration capture and replay references
 
+## Family 99: ALVR/WiVRn ecosystem sidecars, platform clients, and streaming helpers
+
+This family covers repositories around already studied streaming cores. The
+value is not in duplicating `ALVR` or `WiVRn`, but in understanding the
+companion tools that make platform bring-up, runtime integration, tracking
+payload translation, wired setup, and timing inspection more usable.
+
+| Project | Status | Notes |
+|---|---|---|
+| `alvr-org/alvr-visionos` | Partially studied | visionOS ALVR client with SwiftUI entry window, immersive spaces, RealityKit/Metal render paths, VideoToolbox decoding, AR/world tracking, eye broadcast, event watchdogs, and performance overlay |
+| `alvr-org/Monado-ALVR` | Partially studied as runtime-fork reference | ALVR-oriented Monado fork most useful here for remote-driver, manifest, IPC, tracing, metrics, and driver-writing documentation patterns |
+| `alvr-org/VRCFT-ALVR` | Already studied | VRCFaceTracking module that receives ALVR UDP float payloads, prefix-dispatches eye/face packet families, and maps vendor expressions into unified eye/expression data |
+| `AtlasTheProto/ADBForwarder` | Already studied | Wired ALVR setup helper that locates/downloads ADB, starts the server, monitors Quest/Go devices, applies port forwards, and prints device-level status |
+| `Kierek/WiVRnTimings` | Already studied as micro-utility | Kotlin/Compose timing preset parser/viewer that turns CSV timing frames and parts into a small inspection surface |
+
+### Consolidation note
+
+This family matters because mature streaming stacks often need thin companion
+tools more than they need another monolith. It now clearly includes:
+
+- platform-specific headset clients
+- runtime bridge and remote-driver references
+- eye/face tracking payload adapters
+- USB/ADB setup repair helpers
+- timing and latency inspection micro-tools
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- streaming setup doctors
+- tracking-payload adapter references
+- platform-client lifecycle patterns
+- runtime telemetry and timing sidecars
+
+## Family 100: XR glasses WebHID, virtual displays, and head-tracked desktop helpers
+
+This family covers small XR-glasses utilities that sit around stronger driver
+or spatial-desktop projects. The reusable value is in WebHID probing,
+protocol/IMU utilities, X11 capture POCs, virtual display lifecycle, menu-bar
+control surfaces, and head-orientation-to-viewport mapping.
+
+| Project | Status | Notes |
+|---|---|---|
+| `jakedowns/xreal-webxr` | Partially studied | Browser WebHID workbench with XREAL/Nreal device filtering, Air/Light managers, input-report parsing, IMU packet polling, firmware command scaffolding, and packet logging |
+| `alexwilson1/nreal_linux_test` | Partially studied as Linux/X11 POC | GStreamer/OpenCV screen capture POC with left/right gaze calibration, yaw normalization, and multi-monitor viewport slicing for Nreal Air |
+| `Mailbot/Nreal_Air_Desktop_tool` | Partially studied as product reference only | Thin desktop-control framing for Nreal Air; useful as product reference but not a current code donor |
+| `edwatt/real_utilities` | Partially studied | Native protocol utility around Nreal Air device commands and reports; useful as a low-level comparison node |
+| `DannyDesert/XReal-Ultrawide` | Already studied | macOS menu-bar app with private CGVirtualDisplay lifecycle, ScreenCaptureKit/Metal viewport path, XREAL IMU service, recenter, smoothing, dead zone, and lean-to-zoom |
+
+### Consolidation note
+
+This family matters because `XR glasses` utility work is often a stack of
+small surfaces rather than one runtime. It now clearly includes:
+
+- browser-side WebHID diagnostics
+- native protocol helpers
+- Linux capture/crop prototypes
+- macOS virtual display companions
+- IMU recenter/smoothing/viewport mapping
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- head-tracked desktop helper patterns
+- virtual display and viewport-crop utilities
+- hardware protocol workbenches
+- small menu-bar or tray control surfaces
+
+## Family 101: MediaPipe camera tracking bridges for SlimeVR, VRChat, VRM, and virtual controllers
+
+This family covers small camera/MediaPipe projects that convert webcam
+landmarks into tracker rotations, avatar expressions, browser VRM animation,
+Unity avatar landmarks, or virtual-controller messages. The reusable value is
+in conversion boundaries, not production tracking quality.
+
+| Project | Status | Notes |
+|---|---|---|
+| `TkskKurumi/SlimeVR-Tracker-Mediapipe` | Already studied | Python MediaPipe pose bridge that derives limb axes, smooths quaternions, uses pose-neighborhood calibration, and sends SlimeVR-style UDP tracker packets |
+| `hotaru86/MediapipeFaceTracking_VRC` | Partially studied | Python webcam face tracker with bundled MediaPipe face-landmarker model and avatar-facing blendshape/parameter mapping intent |
+| `how-people-lived/mediapipe-vrm-tracking` | Partially studied | Browser-only MediaPipe/VRM face, hand, and arm tracking demo with ARKit-compatible blendshape framing |
+| `Metastazius/VRBodyTrack` | Partially studied | Python MediaPipe world-landmark server plus Unity avatar scene connected through length-prefixed Windows named-pipe text payloads |
+| `vwitted/mediapipe_VR_controller` | Already studied as micro-utility | Minimal MediaPipe Hands wrist-landmark to `/VMT/Raw/Unity` OSC payload proof |
+
+### Consolidation note
+
+This family matters because camera tracking bridges reveal reusable conversion
+seams:
+
+- camera capture and model inference
+- landmark confidence and visibility gates
+- axes, quaternions, blendshapes, or simple positions
+- smoothing and calibration
+- target-specific UDP/OSC/pipe/browser output schemas
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- camera landmark bridge blueprints
+- tracker/OSC payload schema comparison
+- calibration and smoothing guardrails
+- lightweight avatar or controller preview tools
+
+## Family 102: Mixed reality capture, calibration, and presenter compositing helpers
+
+This family covers mixed-reality capture and presenter-compositing utilities.
+The reusable value is camera calibration, real/virtual layer splitting,
+chroma-key or segmentation, video payload transport, external-camera repair,
+and recording handoff.
+
+| Project | Status | Notes |
+|---|---|---|
+| `fabio914/reality-mixer-js` | Already studied | WebXR/Three.js MRC module with JSON calibration schema, webcam/chroma setup, frame delay, foreground/background render targets, and browser compositor |
+| `fabio914/RealityMixerVisionPro` | Partially studied | Vision Pro plus iPhone MRC stack with image tracking, camera pose updates, server/payload protocol, RealityKit foreground/background rendering, alpha extraction, and video encoding |
+| `jonathanperret/mrc-client` | Already studied | Minimal Oculus MRC TCP client that parses typed length-prefixed frames, handles video dimensions, and pipes video data to `ffplay` |
+| `zengmmm00/MixedRealityCapture` | Not studied deeply; source not released yet | Quest 3 MRC placeholder with open-source plan but no toolkit source in the current pass |
+| `TonyViT/MrcXrtHelpers` | Already studied | Unity XRT/Oculus MRC helpers for default external camera intrinsics/extrinsics, tracking-space conversion, and repeated removal of unwanted tracked-pose drivers |
+| `smaerdlatigid/ArtificialGreenScreen` | Already studied as capture helper | Browser BodyPix person segmentation tool that can provide artificial green-screen masks for OBS/capture workflows |
+| `LIV/CalibrationForQuest` | Rejected empty repository | Empty clone in the current pass; kept only as a dedupe marker, not as a donor |
+
+### Consolidation note
+
+This family matters because MRC is a utility architecture, not just a media
+feature. It now clearly includes:
+
+- calibration schemas and setup wizards
+- camera intrinsics/extrinsics and image tracking
+- foreground/background virtual render passes
+- chroma key and person segmentation
+- TCP/video payload clients and encoders
+- Unity/OVR external camera repair helpers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- capture calibration helpers
+- presenter/compositing utilities
+- MRC diagnostics and protocol probes
+- OBS/browser handoff references
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

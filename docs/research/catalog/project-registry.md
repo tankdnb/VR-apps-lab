@@ -1483,6 +1483,60 @@ Primary docs:
 - `open-thought/cambot` - `Partially studied`
 - `plund-dtu/UR_VR_Teleop` - `Partially studied`
 
+## 91. ALVR/WiVRn ecosystem sidecars, platform clients, and streaming helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-120-alvr-wivrn-ecosystem-sidecars-platform-clients-and-streaming-helpers.md`
+- `../landscape/project-families.md`
+
+- `alvr-org/alvr-visionos` - `Partially studied`
+- `alvr-org/Monado-ALVR` - `Partially studied as runtime-fork reference`
+- `alvr-org/VRCFT-ALVR` - `Already studied`
+- `AtlasTheProto/ADBForwarder` - `Already studied`
+- `Kierek/WiVRnTimings` - `Already studied as micro-utility`
+
+## 92. XR glasses WebHID, virtual displays, and head-tracked desktop helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-121-xr-glasses-webhid-virtual-displays-and-head-tracked-desktop-helpers.md`
+- `../landscape/project-families.md`
+
+- `jakedowns/xreal-webxr` - `Partially studied`
+- `alexwilson1/nreal_linux_test` - `Partially studied as Linux/X11 POC`
+- `Mailbot/Nreal_Air_Desktop_tool` - `Partially studied as product reference only`
+- `edwatt/real_utilities` - `Partially studied`
+- `DannyDesert/XReal-Ultrawide` - `Already studied`
+
+## 93. MediaPipe camera tracking bridges for SlimeVR, VRChat, VRM, and virtual controllers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-122-mediapipe-camera-tracking-bridges-for-slimevr-vrchat-vrm-and-virtual-controllers.md`
+- `../landscape/project-families.md`
+
+- `TkskKurumi/SlimeVR-Tracker-Mediapipe` - `Already studied`
+- `hotaru86/MediapipeFaceTracking_VRC` - `Partially studied`
+- `how-people-lived/mediapipe-vrm-tracking` - `Partially studied`
+- `Metastazius/VRBodyTrack` - `Partially studied`
+- `vwitted/mediapipe_VR_controller` - `Already studied as micro-utility`
+
+## 94. Mixed reality capture, calibration, and presenter compositing helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-123-mixed-reality-capture-calibration-and-presenter-compositing-helpers.md`
+- `../landscape/project-families.md`
+
+- `fabio914/reality-mixer-js` - `Already studied`
+- `fabio914/RealityMixerVisionPro` - `Partially studied`
+- `jonathanperret/mrc-client` - `Already studied`
+- `zengmmm00/MixedRealityCapture` - `Not studied deeply; source not released yet`
+- `TonyViT/MrcXrtHelpers` - `Already studied`
+- `smaerdlatigid/ArtificialGreenScreen` - `Already studied as capture helper`
+- `LIV/CalibrationForQuest` - `Rejected; empty repository in current clone`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

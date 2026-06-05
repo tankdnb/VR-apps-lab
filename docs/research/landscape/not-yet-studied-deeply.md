@@ -1,6 +1,6 @@
 # Not Yet Studied Deeply
 
-- Date: `2026-04-21`
+- Date: `2026-06-05`
 - Goal: keep a prioritized list of repositories that either:
   - are not yet represented in `VR-apps-lab`;
   - are only lightly covered;
@@ -77,6 +77,27 @@ active prototype or reuse-plan target.
 | `NVlabs/collab-sim` | Partially studied | Isaac Sim/OpenXR robot teleop with MPC, reset callbacks, logging, and replay | High | High | Deepen data logger, replay, and controller callback design if simulation telemetry becomes active |
 | `kscalelabs/kbot_vr_teleop` | Partially studied | WebXR headset frontend plus Python IK and UDP relay architecture | High | High | Compare browser tracking transport, joystick commands, IK sidecar, and Rerun visualizer against `cambot` |
 | `open-thought/cambot` | Partially studied | Polished WebXR telepresence surface with WebSocket/WebRTC transport, HUD, watchdog, safety bounds, and head-pose IK | High | High | Extract a generic operator HUD/safety/transport blueprint if VR control surfaces become a reuse-plan branch |
+
+## Priority batch C3: Waves 120-123 follow-up candidates
+
+These were clarified during the latest streaming-sidecar, XR-glasses,
+MediaPipe bridge, and mixed-reality capture source pass. Some are useful
+follow-up nodes, while others are intentionally marked thin or source-limited.
+
+| Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `alvr-org/alvr-visionos` | Partially studied | Platform-specific streaming client shell with entry UI, immersive renderer choices, decoder/tracking boundaries, and event watchdogs | High | High | Compare with Android/Quest ALVR client boundaries if standalone headset client UX becomes active |
+| `alvr-org/Monado-ALVR` | Partially studied as runtime-fork reference | Runtime bridge/fork whose strongest current value is remote-driver, manifest, IPC, tracing, and metrics documentation | Medium | Medium-High | Revisit only if a future runtime-fork wave needs exact ALVR integration diffs against upstream Monado |
+| `jakedowns/xreal-webxr` | Partially studied | Browser WebHID workbench for XREAL/Nreal protocol probing, packet logging, IMU polling, and firmware command scaffolding | High | High | Deepen only inside a dedicated XR-glasses protocol/diagnostics pass |
+| `alexwilson1/nreal_linux_test` | Partially studied as Linux/X11 POC | Screen-capture and gaze-calibrated viewport slicing before a full compositor exists | Medium | Medium | Compare against `XReal-Ultrawide`, `breezy-desktop`, and `Simula` if head-tracked desktop helpers become a prototype target |
+| `Mailbot/Nreal_Air_Desktop_tool` | Partially studied as product reference only | Thin Nreal Air desktop-control framing with little donor source in the current pass | Low | Medium | Revisit only if source depth appears or releases expose implementation details |
+| `edwatt/real_utilities` | Partially studied | Native protocol utility around Nreal Air command/report handling | Medium | Medium | Read protocol files more deeply only if an XREAL protocol matrix is started |
+| `hotaru86/MediapipeFaceTracking_VRC` | Partially studied | Webcam face landmarker to VRChat-facing expression bridge | Medium-High | High | Compare expression mapping with VRCFaceTracking modules and `VRCFT-ALVR` |
+| `how-people-lived/mediapipe-vrm-tracking` | Partially studied | Browser-only MediaPipe/VRM face, hand, and arm tracking with ARKit-compatible blendshape framing | Medium | Medium-High | Modularize lessons only if browser avatar diagnostics become active |
+| `Metastazius/VRBodyTrack` | Partially studied | Python MediaPipe world-landmark process feeding Unity avatar IK through a named pipe | Medium | Medium | Compare against cleaner Unity/OSC body-tracking bridges; avoid copying checked-in Unity cache/build artifacts |
+| `fabio914/RealityMixerVisionPro` | Partially studied | Vision Pro/iPhone MRC stack with image tracking, camera pose payloads, renderer, encoder, and server boundaries | High | High | Deepen protocol and iPhone companion side if capture/compositing becomes a prototype branch |
+| `zengmmm00/MixedRealityCapture` | Not studied deeply; source not released yet | Quest 3 MRC phone/computer workflow signal without toolkit source yet | Low | Medium | Revisit after the planned toolkit source appears |
+| `LIV/CalibrationForQuest` | Rejected; empty repository in current clone | Historical LIV Quest calibration marker, but no current source to study | Low | Low | Do not promote unless source appears in tags/releases or another maintained mirror |
 
 ## Priority batch D: Wave 9 follow-up candidates
 
@@ -1161,6 +1182,54 @@ These are larger than a single repo and should guide the next research wave.
   deeper pass should extract a generic teleop/control-surface blueprint without
   turning `VR-apps-lab` into a robot-control repository.
 
+### 85. `ALVR/WiVRn ecosystem sidecars, platform clients, and streaming helpers`
+
+- Main entries:
+  `alvr-visionos`, `Monado-ALVR`, `VRCFT-ALVR`, `ADBForwarder`,
+  `WiVRnTimings`
+- Why it matters:
+  this family now captures the companion-tool layer around streaming stacks:
+  platform client shells, runtime bridge references, face/eye payload adapters,
+  setup repair helpers, and timing viewers. A future deeper pass should compare
+  standalone headset client boundaries and setup-doctor ergonomics rather than
+  restudying mainline `ALVR` or `WiVRn`.
+
+### 86. `XR glasses WebHID, virtual displays, and head-tracked desktop helpers`
+
+- Main entries:
+  `xreal-webxr`, `nreal_linux_test`, `Nreal_Air_Desktop_tool`,
+  `real_utilities`, `XReal-Ultrawide`
+- Why it matters:
+  this family now captures XR-glasses utility slices around WebHID protocol
+  probing, native protocol utilities, screen capture/cropping POCs, and
+  virtual-display plus IMU viewport apps. A future deeper pass should compare
+  head-tracked display helpers across macOS, Linux, browser, and driver-backed
+  approaches.
+
+### 87. `MediaPipe camera tracking bridges for SlimeVR, VRChat, VRM, and virtual controllers`
+
+- Main entries:
+  `SlimeVR-Tracker-Mediapipe`, `MediapipeFaceTracking_VRC`,
+  `mediapipe-vrm-tracking`, `VRBodyTrack`, `mediapipe_VR_controller`
+- Why it matters:
+  this family now captures camera tracking as bridge architecture rather than
+  production tracking quality: landmarks, axes, quaternions, blendshapes,
+  smoothing, calibration, UDP/OSC/pipe/browser output, and target schema
+  caveats. A future deeper pass should synthesize calibration and payload
+  schemas across SlimeVR, VMT, VRChat OSC, Unity, and browser VRM.
+
+### 88. `Mixed reality capture, calibration, and presenter compositing helpers`
+
+- Main entries:
+  `reality-mixer-js`, `RealityMixerVisionPro`, `mrc-client`,
+  `MixedRealityCapture`, `MrcXrtHelpers`, `ArtificialGreenScreen`
+- Why it matters:
+  this family now captures MRC as reusable utility architecture: calibration
+  schema, camera pose, foreground/background rendering, chroma or segmentation,
+  video payload parsing, encoder/decoder boundaries, and external camera
+  repair helpers. A future deeper pass should build a capture/compositing
+  method matrix before any presenter-tool prototype work.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1220,6 +1289,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 53. `A-Frame WebXR components, inspectors, networked scenes, and hand UI`
 54. `Unreal VR interaction toolkits, hand tracking, comfort, and tracker plugins`
 55. `VR teleoperation headset frontends, robot bridges, and data capture`
+56. `ALVR/WiVRn ecosystem sidecars, platform clients, and streaming helpers`
+57. `XR glasses WebHID, virtual displays, and head-tracked desktop helpers`
+58. `MediaPipe camera tracking bridges for SlimeVR, VRChat, VRM, and virtual controllers`
+59. `Mixed reality capture, calibration, and presenter compositing helpers`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

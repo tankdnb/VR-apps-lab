@@ -479,6 +479,23 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on VR teleoperation headset frontends,
   robot bridges, pose transport, safety gates, diagnostics, and data capture.
 
+- `vr-projects-wave-120-alvr-wivrn-ecosystem-sidecars-platform-clients-and-streaming-helpers.md`
+  Next GitHub discovery wave focused on ALVR/WiVRn ecosystem sidecars,
+  platform clients, runtime bridge references, tracking adapters, and
+  streaming helpers.
+
+- `vr-projects-wave-121-xr-glasses-webhid-virtual-displays-and-head-tracked-desktop-helpers.md`
+  Next GitHub discovery wave focused on XR glasses WebHID protocol workbenches,
+  virtual displays, IMU utilities, and head-tracked desktop helpers.
+
+- `vr-projects-wave-122-mediapipe-camera-tracking-bridges-for-slimevr-vrchat-vrm-and-virtual-controllers.md`
+  Next GitHub discovery wave focused on MediaPipe camera tracking bridges for
+  SlimeVR, VRChat, VRM, Unity, and virtual-controller outputs.
+
+- `vr-projects-wave-123-mixed-reality-capture-calibration-and-presenter-compositing-helpers.md`
+  Next GitHub discovery wave focused on mixed-reality capture, calibration,
+  foreground/background compositing, and presenter capture helpers.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
