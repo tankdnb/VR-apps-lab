@@ -775,3 +775,31 @@ repeatable way.
 
 - `github-research-wave-111-backlog.md`
   Executed backlog for the Wave 111 pass.
+
+- `github-research-wave-112-plan.md`
+  Wave 112 research plan focused on WebXR browser API samples, input profiles,
+  emulator/devtools layers, polyfill lineage, and React/Three XR wrappers.
+
+- `github-research-wave-112-backlog.md`
+  Executed backlog for the Wave 112 pass.
+
+- `github-research-wave-113-plan.md`
+  Wave 113 research plan focused on Unity XR interaction/workflow toolkits,
+  scientific rigs, training graphs, and Tilia composition.
+
+- `github-research-wave-113-backlog.md`
+  Executed backlog for the Wave 113 pass.
+
+- `github-research-wave-114-plan.md`
+  Wave 114 research plan focused on Meta Quest MR camera, depth, spatial
+  anchors, full-app composition, and reusable motif samples.
+
+- `github-research-wave-114-backlog.md`
+  Executed backlog for the Wave 114 pass.
+
+- `github-research-wave-115-plan.md`
+  Wave 115 research plan focused on Linux spatial desktop shells, Stardust
+  workspace clients, virtual monitors, launchers, and desktop-to-XR helpers.
+
+- `github-research-wave-115-backlog.md`
+  Executed backlog for the Wave 115 pass.

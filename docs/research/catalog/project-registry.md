@@ -541,7 +541,7 @@ Primary docs:
 
 - `Unity-Technologies/XR-Interaction-Toolkit-Examples` - `Already studied`
 - `microsoft/MixedRealityToolkit-Unity` - `Already studied`
-- `MixedRealityToolkit/MixedRealityToolkit-Unity` - `Not studied deeply`
+- `MixedRealityToolkit/MixedRealityToolkit-Unity` - `Partially studied`
 - `ViveSoftware/ViveInputUtility-Unity` - `Already studied`
 - `Unity-Technologies/mr-example-meta-openxr` - `Already studied`
 
@@ -1372,6 +1372,58 @@ Primary docs:
 - `pema99/faceless` - `Already studied`
 - `kajsaantonigelstrom/OpenVRsim` - `Already studied`
 - `blakebeckcoding/Pepper` - `Partially studied`
+
+## 83. WebXR browser API samples, input profiles, emulators, polyfills, and React/Three XR wrappers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-112-webxr-browser-api-samples-input-profiles-emulators-polyfills-and-react-three-xr-wrappers.md`
+- `../landscape/project-families.md`
+
+- `immersive-web/webxr-samples` - `Already studied`
+- `immersive-web/webxr-input-profiles` - `Already studied`
+- `meta-quest/immersive-web-emulator` - `Already studied`
+- `mozilla/webxr-polyfill` - `Partially studied`
+- `pmndrs/xr` - `Partially studied`
+
+## 84. Unity XR interaction/workflow toolkits, scientific rigs, training graphs, and Tilia composition
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-113-unity-xr-interaction-workflow-toolkits-scientific-rigs-training-graphs-and-tilia-composition.md`
+- `../landscape/project-families.md`
+
+- `MixedRealityToolkit/MixedRealityToolkit-Unity` - `Partially studied`
+- `eisclimber/ExPresS-XR` - `Partially studied`
+- `MindPort-GmbH/VR-Builder` - `Partially studied`
+- `ExtendRealityLtd/VRTK` - `Partially studied`
+
+## 85. Meta Quest MR camera, depth, spatial-anchor, presence, and motif samples
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-114-meta-quest-mr-camera-depth-spatial-anchor-presence-and-motifs-samples.md`
+- `../landscape/project-families.md`
+
+- `oculus-samples/Unity-PassthroughCameraApiSamples` - `Already studied`
+- `oculus-samples/Unity-DepthAPI` - `Already studied`
+- `oculus-samples/Unity-SharedSpatialAnchors` - `Partially studied`
+- `oculus-samples/Unity-Discover` - `Partially studied`
+- `oculus-samples/Unity-MRMotifs` - `Partially studied`
+
+## 86. Linux spatial desktop, Stardust workspace clients, and desktop-to-XR helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-115-linux-spatial-desktop-stardust-workspace-clients-and-desktop-to-xr-helpers.md`
+- `../landscape/project-families.md`
+
+- `SimulaVR/Simula` - `Partially studied`
+- `StardustXR/flatland` - `Partially studied`
+- `StardustXR/kiara` - `Already studied`
+- `StardustXR/protostar` - `Already studied`
+- `StardustXR/magnetar` - `Already studied`
+- `yshui/picom-xrdesktop-companion` - `Partially studied`
 
 ## Registry maintenance rule
 

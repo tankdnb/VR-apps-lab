@@ -5541,3 +5541,296 @@ When a new utility idea appears:
   `Pepper`.
 - Best fit for `VR-apps-lab`:
   educational OpenVR driver stubs and fake-device anatomy.
+
+## Method 325: WebXR session shell with inline and immersive split
+
+- What it is:
+  a browser XR helper owns session support checks, inline fallback, immersive
+  session requests, WebGL compatibility, layer creation, reference-space setup,
+  input-source updates, hit tests, controller rendering, stats, and teleport by
+  reference-space offset.
+- Good for:
+  browser XR diagnostics, sample apps, local operator panels, controller
+  visualizers, and fast WebXR experiments.
+- Why it matters:
+  it makes browser XR bring-up explicit enough to reuse without starting from a
+  full engine or native runtime stack.
+- Strong references:
+  `webxr-samples`.
+- Best fit for `VR-apps-lab`:
+  lightweight WebXR utility shells and browser-first diagnostics.
+
+## Method 326: WebXR input profile registry and motion-controller asset validator
+
+- What it is:
+  a registry maps input-source profiles to component layouts, gamepad mappings,
+  and controller assets, while validators enforce profile inheritance,
+  component definitions, duplicate rules, axes ordering, and asset naming.
+- Good for:
+  controller visualizers, input diagnostics, hardware profile explorers, and
+  portable controller-rendering tools.
+- Why it matters:
+  input visualization should be data-driven and validated rather than hardcoded
+  per device.
+- Strong references:
+  `webxr-input-profiles`.
+- Best fit for `VR-apps-lab`:
+  controller profile catalogs and input capability inspectors.
+
+## Method 327: Domain-scoped browser WebXR emulator injection with DevUI and synthetic environment
+
+- What it is:
+  a browser extension injects an emulated WebXR runtime into selected domains,
+  installs device and environment simulation, exposes a DevUI, and can toggle
+  the injection without modifying the web app.
+- Good for:
+  WebXR debugging, browser devtools, device simulation, demo development, and
+  local XR test harnesses.
+- Why it matters:
+  emulator injection gives browser XR a hardware-light development path while
+  keeping scope bounded to chosen pages.
+- Strong references:
+  `immersive-web-emulator`.
+- Best fit for `VR-apps-lab`:
+  WebXR emulator/devtool architecture and browser-based test workflows.
+
+## Method 328: Polyfill display and reality abstraction as historical browser XR fallback
+
+- What it is:
+  a polyfill installs XR classes, display abstractions, reality providers,
+  anchors, camera/display paths, and fallback bridges over older browser XR
+  APIs or platform-specific AR providers.
+- Good for:
+  architecture history, fallback design notes, browser XR compatibility
+  analysis, and API evolution research.
+- Why it matters:
+  deprecated layers still document useful boundaries between display, reality,
+  anchors, camera frames, and browser surfaces.
+- Strong references:
+  `webxr-polyfill`.
+- Best fit for `VR-apps-lab`:
+  browser XR history and abstraction comparison notes.
+
+## Method 329: WebXR framework store with typed input states, teleport, layers, and emulator hooks
+
+- What it is:
+  a framework store owns WebXR session state, reference spaces, DOM overlay
+  roots, visibility, frame rate, input-source state, pointer events, detected
+  planes/meshes, layers, teleport targets, and emulator state.
+- Good for:
+  React/Three XR apps, browser utilities, spatial UI experiments, and web
+  operator panels.
+- Why it matters:
+  it translates low-level WebXR session/input details into stable app state and
+  reusable interaction events.
+- Strong references:
+  `pmndrs/xr`.
+- Best fit for `VR-apps-lab`:
+  browser utility state stores and WebXR UI prototypes.
+
+## Method 330: OpenXR/XRI modular MR toolkit package split with UX, input, and spatial manipulation layers
+
+- What it is:
+  a Unity MR toolkit separates core interactable state, pressable logic,
+  manipulation, solvers, UX components, diagnostics, input, and speech or
+  accessibility packages into reusable modules.
+- Good for:
+  spatial UI, utility menus, hand/near menus, slates, dialogs, manipulation,
+  and calibration surfaces.
+- Why it matters:
+  robust MR UI needs reusable interaction state machines and solver layers,
+  not only scene-specific scripts.
+- Strong references:
+  `MixedRealityToolkit-Unity`.
+- Best fit for `VR-apps-lab`:
+  Unity spatial-UI and utility-menu architecture.
+
+## Method 331: Scientific XR rig toolkit with configurable movement, data capture, quizzes, and exhibition helpers
+
+- What it is:
+  a Unity toolkit packages XR rig presets, locomotion options, interaction
+  primitives, data gathering, CSV/HTTP export, quizzes, tutorials, HUDs,
+  sockets, value-range controls, and exhibition scenes.
+- Good for:
+  research apps, museum demos, guided setup, training, experiment logging, and
+  structured onboarding flows.
+- Why it matters:
+  many VR utilities need user-flow instrumentation and training scaffolding,
+  not just interaction widgets.
+- Strong references:
+  `ExPresS-XR`.
+- Best fit for `VR-apps-lab`:
+  data-capturing VR workflows and guided utility experiences.
+
+## Method 332: No-code VR training workflow graph with steps, behaviors, conditions, and scene-object properties
+
+- What it is:
+  a workflow editor represents a VR process as steps with behaviors,
+  transitions, conditions, unlocked scene objects, scene-object properties,
+  validation warnings, and editor fix actions.
+- Good for:
+  training tools, calibration wizards, guided diagnostics, procedural
+  onboarding, and creator-facing workflow authoring.
+- Why it matters:
+  graph-based process tools can make complex VR setup flows maintainable by
+  non-programmers.
+- Strong references:
+  `VR-Builder`.
+- Best fit for `VR-apps-lab`:
+  guided workflow authoring and calibration process design.
+
+## Method 333: Prefab-composed Tilia/VRTK interaction scene with rules, actions, pointers, teleport, and grab swaps
+
+- What it is:
+  a Unity scene is assembled from reusable packages and prefabs for camera
+  rigs, pointers, actions, rule aggregators, interactables, snap zones,
+  haptics, locomotors, trackers, visuals, and sample interaction controllers.
+- Good for:
+  modular Unity prototypes, creator-facing scene kits, XR training examples,
+  and interaction-sandbox scenes.
+- Why it matters:
+  prefab composition can be a serious architecture when packages, rules, and
+  event wiring are kept explicit.
+- Strong references:
+  `VRTK`.
+- Best fit for `VR-apps-lab`:
+  Unity prefab-composition patterns and interaction sandbox structure.
+
+## Method 334: Passthrough camera-to-world stack with permission, ray, detection, and anchor marker managers
+
+- What it is:
+  a Quest MR sample stack requests camera permissions, reads camera textures
+  and metadata, maps camera viewport points into world rays, estimates
+  brightness, runs object detection, and attaches persistent markers through
+  spatial anchors.
+- Good for:
+  MR diagnostics, camera-aware overlays, object markers, visual inspectors, and
+  physical-room utility tools.
+- Why it matters:
+  camera-aware utilities need permission, pose reliability, camera geometry,
+  ML output, and marker persistence in one coherent flow.
+- Strong references:
+  `Unity-PassthroughCameraApiSamples`.
+- Best fit for `VR-apps-lab`:
+  Quest MR camera and physical-object helper patterns.
+
+## Method 335: Depth API occlusion stack with render-pipeline branches, cutout, hand removal, and depth bias
+
+- What it is:
+  an MR depth package exposes environment depth to shaders and sample scripts
+  for hard/soft occlusion, UI cutout, hand removal, scene mesh masking, wall
+  views, and runtime-adjustable depth bias across BiRP and URP paths.
+- Good for:
+  MR overlays, world-locked panels, spatial markers, comfort controls, and
+  depth-aware UI.
+- Why it matters:
+  real-world occlusion should be tunable and debuggable, not hidden behind a
+  single rendering checkbox.
+- Strong references:
+  `Unity-DepthAPI`.
+- Best fit for `VR-apps-lab`:
+  MR overlay occlusion and depth diagnostics.
+
+## Method 336: Shared spatial-anchor sequence with create, save, share, publish, load, bind, and align
+
+- What it is:
+  a colocated MR app creates and saves anchors, shares them to users or
+  groups, publishes anchor identifiers through networking, loads unbound
+  shared anchors, binds them, instantiates content, and aligns tracking space
+  to a shared anchor pose.
+- Good for:
+  colocated utilities, shared room setup, persistent markers, physical-space
+  collaboration, and MR multiplayer diagnostics.
+- Why it matters:
+  shared anchors are an end-to-end lifecycle and alignment problem, not just a
+  storage API.
+- Strong references:
+  `Unity-SharedSpatialAnchors`.
+- Best fit for `VR-apps-lab`:
+  colocated MR setup helpers and shared utility markers.
+
+## Method 337: MR feature motifs and full-app composition for transitions, shared activities, placement, and space sharing
+
+- What it is:
+  reusable MR blueprints isolate recurring mechanics such as passthrough
+  transitions, shared activities, instant content placement, depth effects,
+  room sharing, avatars, group presence, and colocated spawn management.
+- Good for:
+  MR product planning, feature checklists, sample scenes, onboarding, shared
+  spatial experiences, and Quest helper apps.
+- Why it matters:
+  motifs preserve product-level lessons that are easy to lose in large sample
+  apps.
+- Strong references:
+  `Unity-MRMotifs`, `Unity-Discover`.
+- Best fit for `VR-apps-lab`:
+  Quest MR product-pattern library and feature blueprints.
+
+## Method 338: Linux XR desktop shell with Godot/OpenXR workspace composition
+
+- What it is:
+  a Linux VR desktop shell runs desktop apps through isolated display routes,
+  maps windows into a VR workspace, uses gaze-active focus, exposes
+  keyboard/mouse grab, workspace shortcuts, surface transforms, and optional
+  runtime diagnostics.
+- Good for:
+  desktop-in-VR research, productivity shells, workspace UX, input-grab
+  studies, and Linux runtime diagnostics.
+- Why it matters:
+  full desktop shells show the product shape around windows, focus, input, and
+  workspace management.
+- Strong references:
+  `Simula`.
+- Best fit for `VR-apps-lab`:
+  Linux desktop-in-VR UX and full-shell reference design.
+
+## Method 339: Stardust 2D-app bridge and virtual monitor clients for Linux spatial desktops
+
+- What it is:
+  a Stardust client converts Wayland or compositor surfaces into XR panels or
+  virtual monitors, forwards pointer/touch/keyboard events, provides resize
+  and close affordances, and can map screens onto a ring around the user.
+- Good for:
+  desktop panels, virtual monitors, Linux XR workspaces, spatial browser/app
+  surfaces, and input-injection experiments.
+- Why it matters:
+  panel and virtual-monitor clients are smaller reusable pieces than a full VR
+  desktop shell.
+- Strong references:
+  `flatland`, `kiara`.
+- Best fit for `VR-apps-lab`:
+  2D surface overlay and virtual monitor helper patterns.
+
+## Method 340: Stardust spatial launcher and workspace grouping micro-clients
+
+- What it is:
+  small Stardust clients parse desktop entries, launch apps into the XR
+  connection environment, present spatial icon grids, group clients into
+  cells, and move captured windows through shared workspace roots.
+- Good for:
+  XR launchers, utility start panels, workspace organization, multi-window
+  grouping, and Linux spatial desktop micro-utilities.
+- Why it matters:
+  launch and workspace grouping are reusable utility layers separate from
+  rendering or compositor internals.
+- Strong references:
+  `protostar`, `magnetar`.
+- Best fit for `VR-apps-lab`:
+  spatial app launchers and workspace grouping helpers.
+
+## Method 341: Picom and xrdesktop companion bridge for desktop window surfaces
+
+- What it is:
+  a companion process asks picom for X11 window metadata over DBus, tracks
+  X11 composite/damage updates, imports textures, creates xrdesktop/gxr/gulkan
+  windows, synthesizes input, and accepts stacking/overlay-mode caveats.
+- Good for:
+  Linux desktop mirroring, compositor-metadata experiments, X11 window
+  diagnostics, and xrdesktop integration research.
+- Why it matters:
+  existing desktop windows can be mirrored when a helper reuses compositor
+  knowledge instead of reimplementing every window-manager rule.
+- Strong references:
+  `picom-xrdesktop-companion`.
+- Best fit for `VR-apps-lab`:
+  desktop-to-XR bridge caveats and X11 compositor helper architecture.

@@ -650,7 +650,7 @@ plumbing that makes ordinary UI surfaces usable in XR.
 |---|---|---|
 | `Unity-Technologies/XR-Interaction-Toolkit-Examples` | Already studied | Broad baseline for spatial keyboard, 2D UI, 3D UI, gaze, and toolkit-scale interaction samples |
 | `microsoft/MixedRealityToolkit-Unity` | Already studied | Legacy but still strong solver-driven hand-menu and prefab-UI donor |
-| `MixedRealityToolkit/MixedRealityToolkit-Unity` | Not studied deeply | Current-generation MRTK continuation that deserves its own later pass |
+| `MixedRealityToolkit/MixedRealityToolkit-Unity` | Partially studied | Current-generation MRTK continuation; Wave 113 covered package split, stateful interactables, pressable buttons, object manipulation, and solver handlers |
 | `ViveSoftware/ViveInputUtility-Unity` | Already studied | VR-aware 3D pointer and custom EventSystem input-module donor |
 | `Unity-Technologies/mr-example-meta-openxr` | Already studied | Modern Meta/OpenXR sample stack for hand-menu, gesture, and spatial-panel flows |
 
@@ -2776,6 +2776,140 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - repeatable VR test harnesses
 - controllable virtual devices
 - documentation of minimum viable OpenVR fake-device anatomy
+
+## Family 91: WebXR browser API samples, input profiles, emulators, polyfills, and React/Three XR wrappers
+
+This family covers repositories where the main value is browser-native XR:
+session shells, inline/immersive mode handling, controller-profile assets,
+browser emulator injection, historical polyfills, and framework-level WebXR
+state stores.
+
+| Project | Status | Notes |
+|---|---|---|
+| `immersive-web/webxr-samples` | Already studied | Canonical WebXR sample shell with session support checks, inline/immersive setup, reference spaces, layers, input-source rendering, hit tests, stats, and teleportation |
+| `immersive-web/webxr-input-profiles` | Already studied | Controller profile registry and motion-controller package with profile validation, component mappings, gamepad polling, and asset naming rules |
+| `meta-quest/immersive-web-emulator` | Already studied | Browser extension that installs an emulated WebXR runtime, DevUI, and synthetic environment through domain-scoped content-script injection |
+| `mozilla/webxr-polyfill` | Partially studied | Deprecated WebXR/WebVR polyfill lineage with display/reality abstractions, FlatDisplay AR path, and fallback architecture history |
+| `pmndrs/xr` | Partially studied | Modern React Three Fiber and vanilla WebXR wrapper with session store, typed input states, events, teleport, layers, anchors, and emulator hooks |
+
+### Consolidation note
+
+This family matters because `browser XR` is a fast utility substrate rather
+than only a demo target. It now clearly includes:
+
+- session and frame-loop wrappers
+- controller-profile and asset registries
+- browser emulator/runtime injection
+- historical display/reality polyfill abstractions
+- framework stores for typed input, teleport, anchors, and layers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- browser-based VR diagnostics
+- controller visualizers and input-profile explorers
+- WebSocket/browser operator panels
+- lightweight WebXR utility shells
+
+## Family 92: Unity XR interaction/workflow toolkits, scientific rigs, training graphs, and Tilia composition
+
+This family covers repositories where the main value is reusable Unity XR
+toolkit design: modular MR UX primitives, scientific or exhibition rigs,
+training/workflow graphs, scene-object properties, editor validation, and
+prefab-composed interaction ecosystems.
+
+| Project | Status | Notes |
+|---|---|---|
+| `MixedRealityToolkit/MixedRealityToolkit-Unity` | Partially studied | Modern MRTK3 packages with stateful interactables, pressable buttons, object manipulation, solver handlers, menus, slates, dialogs, and OpenXR/XRI positioning |
+| `eisclimber/ExPresS-XR` | Partially studied | Scientific/exhibition toolkit with configurable rig, movement presets, data gathering, quizzes, value-range interactables, sockets, menus, HUDs, and tutorial helpers |
+| `MindPort-GmbH/VR-Builder` | Partially studied | VR training workflow editor with steps, behaviors, transitions, scene-object references, process properties, conditions, validation, and fix buttons |
+| `ExtendRealityLtd/VRTK` | Partially studied | VRTK v4/Tilia composition ecosystem with action/rule/pointer/interactable/snap-zone packages and prefab-driven scene wiring |
+
+### Consolidation note
+
+This family matters because Unity XR utilities often need reusable interaction
+and workflow scaffolding, not only runtime API calls. It now clearly includes:
+
+- stateful MR UI and pressable controls
+- manipulation and solver orchestration
+- experiment/training data capture
+- no-code step/condition workflow graphs
+- prefab-composed rules, actions, pointers, haptics, and snap zones
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- in-headset utility menu primitives
+- guided setup and calibration workflows
+- training and experiment helper shells
+- Unity package composition patterns
+
+## Family 93: Meta Quest MR camera, depth, spatial-anchor, presence, and motif samples
+
+This family covers repositories where the main value is Quest mixed-reality
+implementation: passthrough camera access, camera-to-world mapping, depth and
+occlusion, shared spatial anchors, colocated rooms, full MR app composition,
+and reusable product motifs.
+
+| Project | Status | Notes |
+|---|---|---|
+| `oculus-samples/Unity-PassthroughCameraApiSamples` | Already studied | Passthrough camera samples with permission gating, camera-to-world rays, brightness estimation, Sentis object detection, pose reliability, and anchor-backed markers |
+| `oculus-samples/Unity-DepthAPI` | Already studied | Environment depth package and samples with BiRP/URP branches, occlusion toggles, hand removal, UI cutout, depth bias, and scene mesh masking |
+| `oculus-samples/Unity-SharedSpatialAnchors` | Partially studied | Shared anchor lifecycle with saved/cloud loading, group sharing, colocation advertisement/discovery, anchor binding, Photon publishing, and world-origin alignment |
+| `oculus-samples/Unity-Discover` | Partially studied | Full MR app composition reference using Meta XR SDK, Scene API, Interaction SDK, passthrough, spatial anchors, networking, and project-structure docs |
+| `oculus-samples/Unity-MRMotifs` | Partially studied | MR motif library covering passthrough transitions, shared activities, instant placement, depth effects, room sharing, and colocated experiences |
+
+### Consolidation note
+
+This family matters because `mixed-reality utility design` needs camera,
+depth, anchors, and shared-room semantics together. It now clearly includes:
+
+- camera texture, pose, and permission workflows
+- camera-to-world rays and detection markers
+- depth occlusion, bias, cutout, and hand-removal controls
+- shared spatial-anchor lifecycle and alignment
+- product motifs for transitions, placement, space sharing, and shared
+  activities
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- MR diagnostics and camera/depth inspectors
+- physical-room utility markers
+- shared spatial setup helpers
+- Quest-specific MR feature blueprints
+
+## Family 94: Linux spatial desktop, Stardust workspace clients, and desktop-to-XR helpers
+
+This family covers repositories where the main value is desktop and workspace
+surfaces in XR on Linux: full VR desktops, panel bridges, virtual monitors,
+launchers, workspace cells, input injection, and compositor-assisted window
+mirroring.
+
+| Project | Status | Notes |
+|---|---|---|
+| `SimulaVR/Simula` | Partially studied | Full Linux VR desktop shell with gaze-active windows, workspace shortcuts, keyboard/mouse grab, xpra/Wayland display routes, Godot backend glue, and Monado HUD references |
+| `StardustXR/flatland` | Partially studied | Stardust 2D panel bridge with toplevel state, pointer/touch injection, resize handles, close button, panel transfer, and HMD-relative placement |
+| `StardustXR/kiara` | Already studied | Stardust shell that launches Niri and maps a 360-degree virtual monitor/ring with pointer/hand/tip coordinate forwarding |
+| `StardustXR/protostar` | Already studied | Stardust launcher family with desktop-entry parsing, connection environment, startup token, systemd or double-fork launch, and spatial icon grids |
+| `StardustXR/magnetar` | Already studied | Workspace client with movable cylindrical fields, cells, zones, capture queues, parent-in-place capture, and ring/grab affordances |
+| `yshui/picom-xrdesktop-companion` | Partially studied | X11/picom DBus companion that mirrors windows through xrdesktop/gxr/gulkan, with composite/damage texture handling, input synthesis, and stacking caveats |
+
+### Consolidation note
+
+This family matters because `desktop-in-XR` is a set of product architectures,
+not one feature. It now clearly includes:
+
+- full Linux VR desktop shells
+- per-window or per-panel surface bridges
+- virtual monitor shells around the user
+- XR launchers for normal desktop apps
+- workspace grouping through spatial zones
+- compositor metadata helpers for existing desktop windows
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- panel/window overlay helpers
+- spatial workspace organization
+- launcher and app-session utilities
+- Linux desktop mirroring tradeoff notes
 
 ## Recommended synthesis path for `VR-apps-lab`
 

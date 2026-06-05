@@ -444,6 +444,23 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on no-HMD and virtual-HMD OpenVR helpers,
   phone bridges, and controllable driver stubs.
 
+- `vr-projects-wave-112-webxr-browser-api-samples-input-profiles-emulators-polyfills-and-react-three-xr-wrappers.md`
+  Next GitHub discovery wave focused on WebXR browser API samples, input
+  profiles, emulator/devtools layers, polyfill lineage, and React/Three XR
+  wrappers.
+
+- `vr-projects-wave-113-unity-xr-interaction-workflow-toolkits-scientific-rigs-training-graphs-and-tilia-composition.md`
+  Next GitHub discovery wave focused on Unity XR interaction/workflow
+  toolkits, scientific rigs, training graphs, and Tilia composition.
+
+- `vr-projects-wave-114-meta-quest-mr-camera-depth-spatial-anchor-presence-and-motifs-samples.md`
+  Next GitHub discovery wave focused on Meta Quest MR camera, depth, spatial
+  anchor, full-app composition, and reusable motif samples.
+
+- `vr-projects-wave-115-linux-spatial-desktop-stardust-workspace-clients-and-desktop-to-xr-helpers.md`
+  Next GitHub discovery wave focused on Linux spatial desktop shells, Stardust
+  workspace clients, virtual monitors, launchers, and desktop-to-XR helpers.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

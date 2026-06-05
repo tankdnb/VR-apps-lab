@@ -63,6 +63,11 @@ These are the clearest current product and research lines:
    the repository now has clearer coverage of external companion apps, OSC
    routers, browser debug panels, SlimeVR-style tracker stacks, haptic relays,
    and no-HMD or virtual-HMD driver references.
+12. `WebXR, Unity XR toolkits, Quest MR samples, and Linux spatial desktop clients`
+   the repository now has stronger coverage of browser-native XR sessions,
+   controller profiles, WebXR emulators, modern Unity MR toolkits, Quest
+   camera/depth/anchor samples, MR motifs, Stardust clients, and Linux
+   desktop-in-XR helpers.
 
 ## Most useful current docs
 
@@ -126,6 +131,10 @@ instead of full history:
 - `landscape/vr-projects-wave-109-slimevr-server-tracker-firmware-adapters-and-calibration-ecosystem.md`
 - `landscape/vr-projects-wave-110-bhaptics-sdks-osc-bridges-relays-and-telemetry-to-haptic-adapters.md`
 - `landscape/vr-projects-wave-111-no-hmd-and-virtual-hmd-openvr-helpers-phone-bridges-and-controllable-driver-stubs.md`
+- `landscape/vr-projects-wave-112-webxr-browser-api-samples-input-profiles-emulators-polyfills-and-react-three-xr-wrappers.md`
+- `landscape/vr-projects-wave-113-unity-xr-interaction-workflow-toolkits-scientific-rigs-training-graphs-and-tilia-composition.md`
+- `landscape/vr-projects-wave-114-meta-quest-mr-camera-depth-spatial-anchor-presence-and-motifs-samples.md`
+- `landscape/vr-projects-wave-115-linux-spatial-desktop-stardust-workspace-clients-and-desktop-to-xr-helpers.md`
 
 ## Strong donor clusters right now
 
@@ -241,6 +250,22 @@ the strongest current clusters:
 - `PhoneVR`, `driver_hmd`, `faceless`, `OpenVRsim`, `Pepper`
   for phone-HMD bridge anatomy, fake display components, no-HMD pose
   inference, socket-controlled virtual devices, and keyboard/mouse fake rigs.
+- `webxr-samples`, `webxr-input-profiles`, `immersive-web-emulator`,
+  `webxr-polyfill`, `xr`
+  for browser XR session shells, controller-profile registries, emulator
+  injection, deprecated polyfill history, and framework-level WebXR stores.
+- `MixedRealityToolkit-Unity`, `ExPresS-XR`, `VR-Builder`, `VRTK`
+  for modern Unity spatial UI, scientific/exhibition rigs, data capture,
+  training workflow graphs, editor validation, and prefab-composed interaction
+  ecosystems.
+- `Unity-PassthroughCameraApiSamples`, `Unity-DepthAPI`,
+  `Unity-SharedSpatialAnchors`, `Unity-Discover`, `Unity-MRMotifs`
+  for Quest MR camera access, camera-to-world rays, depth occlusion, shared
+  anchors, room alignment, full-app structure, and reusable MR motifs.
+- `Simula`, `flatland`, `kiara`, `protostar`, `magnetar`,
+  `picom-xrdesktop-companion`
+  for Linux desktop-in-XR shells, 2D panel bridges, virtual monitors,
+  launchers, workspace grouping, and compositor-assisted window mirroring.
 
 ## Highest-value next follow-up passes
 
@@ -285,6 +310,10 @@ directions:
 36. `SlimeVR server, tracker firmware, adapters, and calibration ecosystem`
 37. `bHaptics SDKs, OSC bridges, relays, and telemetry-to-haptic adapters`
 38. `No-HMD and virtual-HMD OpenVR helpers, phone bridges, and controllable driver stubs`
+39. `WebXR browser API samples, input profiles, emulators, polyfills, and React/Three XR wrappers`
+40. `Unity XR interaction/workflow toolkits, scientific rigs, training graphs, and Tilia composition`
+41. `Meta Quest MR camera, depth, spatial-anchor, presence, and motif samples`
+42. `Linux spatial desktop, Stardust workspace clients, and desktop-to-XR helpers`
 
 ## Current repository-maintenance priorities
 

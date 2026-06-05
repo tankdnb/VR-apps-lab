@@ -133,7 +133,7 @@ nodes instead of being over-promoted immediately.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `MixedRealityToolkit/MixedRealityToolkit-Unity` | Not studied deeply | Current-generation continuation of the MRTK spatial-UI line, which may clarify how palm-menu, keyboard, and solver ideas evolved after the legacy repo | High | High | Inspect package split, successor UI primitives, and whether the modern line still exposes the same reusable menu and keyboard donors |
+| `MixedRealityToolkit/MixedRealityToolkit-Unity` | Partially studied | Current-generation continuation of the MRTK spatial-UI line; Wave 113 covered package split, stateful interactables, pressable buttons, manipulation, and solver handlers | High | High | Revisit accessibility helpers, data binding, keyboard, and menu-specific internals if Unity spatial UI becomes active prototype scope |
 | `nakama-lab/VR_Teleop_Interface` | Not studied deeply | Teleoperation stack whose architectural decomposition may matter more than any single widget | Medium | Medium-high | Inspect non-main branches, scene structure, and transport boundaries to see whether it is a better system-design donor than a UI donor |
 | `h2r/GHOST` | Not studied deeply | Visualization-rich teleoperation sidecar with point-cloud and gesture-control overlap | Medium | Medium-high | Inspect visualization pipeline, gesture boundary, and how tightly it couples to `ros_reality` |
 
@@ -1046,6 +1046,52 @@ These are larger than a single repo and should guide the next research wave.
   keyboard/mouse fake rigs. A future deeper pass should consolidate these into
   a minimum viable fake-device anatomy guide.
 
+### 77. `WebXR browser API samples, input profiles, emulators, polyfills, and React/Three XR wrappers`
+
+- Main entries:
+  `webxr-samples`, `webxr-input-profiles`, `immersive-web-emulator`,
+  `webxr-polyfill`, `xr`
+- Why it matters:
+  this family now captures browser-native XR as a utility substrate: session
+  shells, controller-profile registries, devtool-style emulator injection,
+  deprecated polyfill history, and framework stores. A future deeper pass
+  should compare browser utility ergonomics against native overlay and OpenXR
+  helper approaches.
+
+### 78. `Unity XR interaction/workflow toolkits, scientific rigs, training graphs, and Tilia composition`
+
+- Main entries:
+  `MixedRealityToolkit-Unity`, `ExPresS-XR`, `VR-Builder`, `VRTK`
+- Why it matters:
+  this family now captures Unity toolkit design as reusable interaction and
+  workflow substrate: spatial UI state machines, scientific data capture,
+  training graphs, editor validation, and prefab-composed package ecosystems.
+  A future deeper pass should isolate menu/keyboard/accessibility and guided
+  setup flows if a Unity utility prototype starts.
+
+### 79. `Meta Quest MR camera, depth, spatial-anchor, presence, and motif samples`
+
+- Main entries:
+  `Unity-PassthroughCameraApiSamples`, `Unity-DepthAPI`,
+  `Unity-SharedSpatialAnchors`, `Unity-Discover`, `Unity-MRMotifs`
+- Why it matters:
+  this family now captures Quest MR feature implementation around camera
+  access, depth occlusion, shared anchors, room alignment, full-app structure,
+  and product motifs. A future deeper pass should synthesize a camera-depth-
+  anchor diagnostics plan before any MR prototype work.
+
+### 80. `Linux spatial desktop, Stardust workspace clients, and desktop-to-XR helpers`
+
+- Main entries:
+  `Simula`, `flatland`, `kiara`, `protostar`, `magnetar`,
+  `picom-xrdesktop-companion`
+- Why it matters:
+  this family now captures desktop-in-XR as multiple architectures: full
+  shells, panel bridges, virtual monitors, app launchers, workspace cells, and
+  compositor-assisted mirroring. A future deeper pass should compare input
+  injection and workspace grouping against WayVR and earlier desktop-overlay
+  families.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1097,6 +1143,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 45. `SlimeVR server, tracker firmware, adapters, and calibration ecosystem`
 46. `bHaptics SDKs, OSC bridges, relays, and telemetry-to-haptic adapters`
 47. `No-HMD and virtual-HMD OpenVR helpers, phone bridges, and controllable driver stubs`
+48. `WebXR browser API samples, input profiles, emulators, polyfills, and React/Three XR wrappers`
+49. `Unity XR interaction/workflow toolkits, scientific rigs, training graphs, and Tilia composition`
+50. `Meta Quest MR camera, depth, spatial-anchor, presence, and motif samples`
+51. `Linux spatial desktop, Stardust workspace clients, and desktop-to-XR helpers`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.
