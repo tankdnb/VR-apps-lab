@@ -412,6 +412,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on VRChat avatar text,
   speech, translation, and viseme sidecars.
 
+- `vr-projects-wave-104-vrchat-shader-ecosystems-material-translators-and-visual-safety-shaders.md`
+  Next GitHub discovery wave focused on VRChat shader ecosystems,
+  material translators, and visual-safety shaders.
+
+- `vr-projects-wave-105-vrcfury-toggle-automation-avatar-animator-dsls-and-editor-qol-overlays.md`
+  Next GitHub discovery wave focused on VRCFury toggle automation,
+  avatar animator DSLs, and editor QoL overlays.
+
+- `vr-projects-wave-106-vrcfacetracking-core-modules-templates-and-blendshape-preparation.md`
+  Next GitHub discovery wave focused on VRCFaceTracking core,
+  modules, templates, and blendshape preparation.
+
+- `vr-projects-wave-107-vrchat-avatar-dynamics-physbone-migration-contact-prefabs-and-in-game-tuning.md`
+  Next GitHub discovery wave focused on VRChat avatar dynamics,
+  PhysBone migration, contact prefabs, and in-game tuning.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

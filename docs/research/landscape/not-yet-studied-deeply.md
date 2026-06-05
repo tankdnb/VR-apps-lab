@@ -961,6 +961,47 @@ These are larger than a single repo and should guide the next research wave.
   operator speech hubs, overlay-backed translation shells, viseme-aware engines,
   and avatar-visible speech surfaces.
 
+### 69. `VRChat shader ecosystems, material translators, and visual-safety shaders`
+
+- Main entries:
+  `PoiyomiToonShader`, `lilToon`, `Mochies-Unity-Shaders`,
+  `lilToonToPoiyomiToon`, `EpilepsyProtection`
+- Why it matters:
+  this family now captures the avatar visual tooling branch: shader editor
+  ecosystems, material migration, shader-pack includes, and accessibility
+  filters. A future deeper pass should isolate shader inspector UX, generated
+  variants, material validation, and visual comfort safeguards.
+
+### 70. `VRCFury toggle automation, avatar animator DSLs, and editor QoL overlays`
+
+- Main entries:
+  `VRCFury`, `wk-vrcfury-qol`, `VRCToggleToolkit`,
+  `animator-as-code-vrchat`, `vrchat-quick-toggle-vrcfury`
+- Why it matters:
+  this family now captures avatar feature automation around build-time
+  builders, public APIs, reflection-backed editor overlays, clone preview,
+  toggle generators, and code-first animator behavior authoring.
+
+### 71. `VRCFaceTracking core, modules, templates, and blendshape preparation`
+
+- Main entries:
+  `VRCFaceTracking`, `VRCFaceTracking.Avalonia`, `VRCFT-Babble`,
+  `VRCFaceTracking-MeowFace`, `VRCFaceTracking-blender-plugin`
+- Why it matters:
+  this family now makes face tracking a pipeline rather than a hardware list:
+  module lifecycle, unified expression state, OSC/UDP/JSON input, cross-platform
+  registry shells, and DCC-side avatar shape preparation.
+
+### 72. `VRChat avatar dynamics, PhysBone migration, contact prefabs, and in-game tuning`
+
+- Main entries:
+  `PhysBone-to-DynamicBone`, `PhysBonesTK`, `VRChat_PhysboneDetach`,
+  `Avatar-Prop`, `Collision-Detection`
+- Why it matters:
+  this family now captures avatar physical interaction as a practical branch:
+  migration tools, in-game tuning menus, component grouping, grabbable props,
+  and compact contact/collision state prefabs.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1004,6 +1045,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 37. `VRChat avatar composition, packaging, and install automation`
 38. `VRChat avatar emulation, gesture preview, repair, and OSC-assisted posing`
 39. `VRChat avatar text, speech, translation, and viseme sidecars`
+40. `VRChat shader ecosystems, material translators, and visual-safety shaders`
+41. `VRCFury toggle automation, avatar animator DSLs, and editor QoL overlays`
+42. `VRCFaceTracking core, modules, templates, and blendshape preparation`
+43. `VRChat avatar dynamics, PhysBone migration, contact prefabs, and in-game tuning`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

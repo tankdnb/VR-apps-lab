@@ -4986,3 +4986,303 @@ When a new utility idea appears:
   `Billboard`.
 - Best fit for `VR-apps-lab`:
   avatar-visible communication UX and prefab-surface research.
+
+## Method 292: Shader material translator table that preserves render mode and render queue
+
+- What it is:
+  a material migration utility detects the source shader, chooses a target
+  shader variant, applies render presets, maps properties through an explicit
+  table, and restores compatibility-sensitive fields such as render queue.
+- Good for:
+  shader migration tools, avatar material repair, creator workflow helpers,
+  and upgrade assistants.
+- Why it matters:
+  it turns shader conversion from a manual checklist into a reusable editor
+  pass with visible caveats.
+- Strong references:
+  `PoiyomiToonShader`, `lilToonToPoiyomiToon`.
+- Best fit for `VR-apps-lab`:
+  avatar material migration and creator-side visual tooling.
+
+## Method 293: Multi-material shader inspector with constant-property shader optimization
+
+- What it is:
+  a shader ecosystem exposes rich inspector modes and scans materials plus
+  animation clips to determine which shader properties are constant enough to
+  compile into defines.
+- Good for:
+  shader inspectors, material optimizers, multi-material editing, and
+  performance-aware avatar authoring.
+- Why it matters:
+  it shows that shader UX and shader performance can be managed together at
+  editor time.
+- Strong references:
+  `lilToon`.
+- Best fit for `VR-apps-lab`:
+  shader inspector research and upload-time visual optimization.
+
+## Method 294: Modular shader pack built around shared include substrate
+
+- What it is:
+  a shader pack keeps specialized effect families separate while reusing
+  common include files for audio, light-volume, noise, sampling, and helper
+  logic.
+- Good for:
+  effect packs, world-reactive shaders, avatar shader libraries, and shared
+  visual substrate design.
+- Why it matters:
+  it prevents every shader effect from becoming an isolated implementation
+  island.
+- Strong references:
+  `Mochies-Unity-Shaders`.
+- Best fit for `VR-apps-lab`:
+  shader-pack architecture and reusable visual-effect substrate.
+
+## Method 295: Avatar visual-safety grabpass dimmer with threshold, blackout, and HDR clamp
+
+- What it is:
+  an avatar-installed shader samples the background, computes luminance, dims
+  bright areas, and exposes comfort controls such as threshold, softness,
+  blackout, night mode, HDR clamp, and distance hide.
+- Good for:
+  accessibility addons, visual comfort tools, avatar-level safety helpers, and
+  shader-side screen filters.
+- Why it matters:
+  it shows that accessibility can be shipped as a narrow avatar utility while
+  still documenting its limits honestly.
+- Strong references:
+  `EpilepsyProtection`.
+- Best fit for `VR-apps-lab`:
+  visual-safety and accessibility shader research.
+
+## Method 296: Feature-builder avatar installer with DI verification, public API wrappers, and menu auto-pagination
+
+- What it is:
+  an avatar feature system keeps a deep builder substrate internally while
+  exposing small public API wrappers and validating dependency-injection
+  contexts before build-time code runs.
+- Good for:
+  avatar install automation, feature builders, non-destructive composition, and
+  generated menu systems.
+- Why it matters:
+  it shows how broad avatar automation can remain scriptable without losing
+  internal guardrails.
+- Strong references:
+  `VRCFury`.
+- Best fit for `VR-apps-lab`:
+  avatar feature automation and install-safe helper systems.
+
+## Method 297: Reflection-backed editor extension shell with inspector overlay, clone preview, and cleanup
+
+- What it is:
+  an extension layer reflects over an upstream tool, registers typed helper
+  actions, injects inline inspector UI, and previews changes by cloning the
+  avatar while cleaning abandoned previews across reloads.
+- Good for:
+  editor QoL tools, upstream extension shells, non-destructive preview, and
+  hot-reload helper systems.
+- Why it matters:
+  it adds workflow value without requiring a fork, while making cleanup and
+  graceful degradation explicit.
+- Strong references:
+  `wk-vrcfury-qol`.
+- Best fit for `VR-apps-lab`:
+  creator-tool extension surfaces and preview-shell design.
+
+## Method 298: Toggle generator that emits clips, FX layers, parameters, expression menu entries, and exclusive state
+
+- What it is:
+  a generator window converts selected avatar objects and toggle settings into
+  animation clips, animator layers, expression parameters, menus, exclusive
+  groups, defaults, and fallback state.
+- Good for:
+  avatar toggles, menu generation, simple creator automation, and old-school
+  asset-emission workflows.
+- Why it matters:
+  it captures the whole toggle pipeline in a visible, narrow tool.
+- Strong references:
+  `VRCToggleToolkit`.
+- Best fit for `VR-apps-lab`:
+  avatar toggle generation and creator micro-tool research.
+
+## Method 299: VRChat animator DSL for parameter drivers and safe play-audio behavior
+
+- What it is:
+  fluent code extensions generate VRChat animator behaviors such as parameter
+  drivers, remaps, local or unsynced randomization, and play-audio actions
+  with conservative defaults.
+- Good for:
+  code-first avatar authoring, animator graph generation, repeatable setup, and
+  behavior libraries.
+- Why it matters:
+  it turns fragile inspector work into reusable source-level intent.
+- Strong references:
+  `animator-as-code-vrchat`.
+- Best fit for `VR-apps-lab`:
+  code-first avatar authoring and generated animator behavior research.
+
+## Method 300: Tiny public-API micro-tool over selected avatar objects
+
+- What it is:
+  a small editor script uses a stable public API to transform selected
+  GameObjects into configured avatar features with menu paths and default
+  actions.
+- Good for:
+  one-click creator helpers, API smoke references, and workflow shortcuts.
+- Why it matters:
+  it proves whether a large automation system has ergonomic APIs that small
+  tools can actually reuse.
+- Strong references:
+  `vrchat-quick-toggle-vrcfury`.
+- Best fit for `VR-apps-lab`:
+  micro-utility design and public-API evaluation.
+
+## Method 301: Sandboxed face-tracking module host with unified expression state and OSC bundle output
+
+- What it is:
+  a host app loads tracking modules through a lifecycle interface, normalizes
+  their output into unified eye and expression state, batches OSC parameter
+  messages, and isolates modules through a sandboxed IPC path.
+- Good for:
+  face tracking bridges, sensor adapter hosts, OSC tools, module registries,
+  and diagnostics-heavy companion apps.
+- Why it matters:
+  it separates device-specific providers from the avatar-facing parameter
+  output model.
+- Strong references:
+  `VRCFaceTracking`.
+- Best fit for `VR-apps-lab`:
+  tracking-helper architecture and face-tracking bridge research.
+
+## Method 302: Cross-platform module registry shell with compatibility matrix and legacy module migration
+
+- What it is:
+  a portable desktop shell fetches remote module metadata, caches ratings and
+  downloads, scans installed modules, migrates legacy DLLs into metadata
+  folders, and exposes compatibility differences across platforms.
+- Good for:
+  plugin managers, module registries, compatibility dashboards, and
+  cross-platform creator tools.
+- Why it matters:
+  it makes ecosystem state visible instead of hiding compatibility inside
+  release notes.
+- Strong references:
+  `VRCFaceTracking.Avalonia`.
+- Best fit for `VR-apps-lab`:
+  module registry UX and cross-platform companion shells.
+
+## Method 303: Provider module that maps local OSC, UDP, or JSON streams into unified expressions
+
+- What it is:
+  a thin provider module receives tracking data from a local app or phone,
+  maps addresses or JSON shape names into normalized expression slots, applies
+  scaling or simulated-shape rules, and lets the host own output.
+- Good for:
+  external sensor adapters, phone tracking modules, local OSC bridges, and
+  face-expression normalization.
+- Why it matters:
+  it shows the smallest useful unit of a tracking provider when the host
+  supplies lifecycle and output abstractions.
+- Strong references:
+  `VRCFT-Babble`, `VRCFaceTracking-MeowFace`.
+- Best fit for `VR-apps-lab`:
+  sensor-module templates and expression mapping research.
+
+## Method 304: DCC shape-key preparation panel for standard face-tracking labels
+
+- What it is:
+  a Blender-side panel presents a fixed target shape-key vocabulary, lets
+  creators map existing shapes to each target, handles duplicates, and creates
+  missing keys or keys from source shapes.
+- Good for:
+  avatar authoring, face-tracking preparation, DCC-to-runtime bridges, and
+  standardized expression setup.
+- Why it matters:
+  it closes the gap between runtime tracking data and assets that can respond
+  to it.
+- Strong references:
+  `VRCFaceTracking-blender-plugin`.
+- Best fit for `VR-apps-lab`:
+  avatar authoring helpers and face-tracking setup workflows.
+
+## Method 305: PhysBone-to-DynamicBone migration converter with explicit lossy and lossless mapping
+
+- What it is:
+  an editor converter scans PhysBone components and colliders, optionally
+  duplicates the avatar subtree, maps fields into Dynamic Bone equivalents,
+  and documents where restoration is approximate.
+- Good for:
+  component migration tools, avatar rollback workflows, editor conversion
+  utilities, and transparent approximation passes.
+- Why it matters:
+  it models honest migration design where perfect conversion is impossible.
+- Strong references:
+  `PhysBone-to-DynamicBone`.
+- Best fit for `VR-apps-lab`:
+  avatar component migration and converter-tool research.
+
+## Method 306: Expression-menu PhysBone tuner with reload commands and accessory world-constraint controls
+
+- What it is:
+  an avatar prefab maps expression menu controls into PhysBone and transform
+  parameters, uses command state to apply presets or resets, and reloads the
+  target object so changed properties take effect in-game.
+- Good for:
+  in-VR calibration, avatar dynamics tuning, parameter-budget-aware menus, and
+  accessory placement tools.
+- Why it matters:
+  it turns avatar dynamics authoring into an embodied calibration workflow.
+- Strong references:
+  `PhysBonesTK`.
+- Best fit for `VR-apps-lab`:
+  in-game tuning surfaces and avatar dynamics UX.
+
+## Method 307: Detached PhysBone component grouping for outfit toggles and component budget management
+
+- What it is:
+  a tiny editor tool copies PhysBone and collider components into a grouped
+  hierarchy, removes originals, and remaps collider references so dynamic
+  behavior can be toggled or managed separately.
+- Good for:
+  outfit toggles, component budget management, hierarchy surgery, and
+  VRCFury/Modular Avatar preparation.
+- Why it matters:
+  it shows that small hierarchy transforms can unlock practical avatar runtime
+  control.
+- Strong references:
+  `VRChat_PhysboneDetach`.
+- Best fit for `VR-apps-lab`:
+  avatar hierarchy surgery and component management tools.
+
+## Method 308: Contact-driven avatar prop using trackers, constraints, PhysBones, and FX parameters
+
+- What it is:
+  a prefab uses contact tracker values, PhysBones, constraints, IK assumptions,
+  and animator parameters so remote users can grab, orient, and drop a prop
+  attached to an avatar.
+- Good for:
+  avatar-side physical interaction, social VR props, contact-driven controls,
+  and prefab product references.
+- Why it matters:
+  it shows how avatar interaction can approximate world-like manipulation
+  without requiring a world system.
+- Strong references:
+  `Avatar-Prop`.
+- Best fit for `VR-apps-lab`:
+  avatar physical interaction and contact-driven UX research.
+
+## Method 309: Particle/contact collision prefab with small animator bool surface
+
+- What it is:
+  a prefab uses one particle system and contact state to expose a compact
+  collision boolean surface with reset and always-reset behavior.
+- Good for:
+  avatar collision utilities, contact-state prefabs, low-budget interaction
+  signals, and FX-controller integration.
+- Why it matters:
+  it packages collision detection as a small reusable state surface instead of
+  a large physics subsystem.
+- Strong references:
+  `Collision-Detection`.
+- Best fit for `VR-apps-lab`:
+  contact/collision prefab design and physical-state surfaces.

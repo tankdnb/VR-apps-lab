@@ -2517,6 +2517,135 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - overlay-backed language or subtitle surfaces
 - speech-bubble and avatar-text UX references
 
+## Family 83: VRChat shader ecosystems, material translators, and visual-safety shaders
+
+This family covers repositories where avatar visual tooling is the main value:
+shader ecosystems, material migration utilities, shader inspector or optimizer
+logic, modular effect packs, and avatar-installed visual comfort filters.
+
+| Project | Status | Notes |
+|---|---|---|
+| `poiyomi/PoiyomiToonShader` | Partially studied | Large shader ecosystem with built-in lilToon-to-Poiyomi translator, shader variant selection, render preset setup, and render queue restoration |
+| `lilxyzw/lilToon` | Partially studied | Large shader ecosystem with custom inspector modes, multi-material editing, material conversion utilities, and constant-property shader optimization |
+| `MochiesCode/Mochies-Unity-Shaders` | Already studied | Modular shader pack with water, glass, screen, particle, toon, and shared common include substrate |
+| `LinesGuy/lilToonToPoiyomiToon` | Already studied | Narrow one-shot material converter with backup flow, target shader selection, render mode mapping, and skipped-material reporting |
+| `LesseVR/EpilepsyProtection` | Already studied | Avatar-installed visual-safety shader using background grab, luminance thresholding, blackout, HDR clamp, night mode, and distance hide |
+
+### Consolidation note
+
+This family matters because `avatar visual tooling` is not just shader art. It
+now clearly includes:
+
+- heavy shader editor ecosystems
+- material migration tables
+- multi-material and optimizer workflows
+- modular effect-pack include layouts
+- accessibility and comfort shader addons
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- creator-facing material migration helpers
+- shader inspector UX and validation
+- shader-pack architecture
+- avatar visual-safety and comfort tools
+
+## Family 84: VRCFury toggle automation, avatar animator DSLs, and editor QoL overlays
+
+This family covers repositories where the main value is avatar feature
+automation around VRCFury, toggle generation, code-first animator authoring, and
+editor workflow improvements.
+
+| Project | Status | Notes |
+|---|---|---|
+| `VRCFury/VRCFury` | Partially studied | Major avatar feature-builder substrate with menu auto-pagination, avatar utility helpers, DI validation, and public toggle API wrappers |
+| `RealWhyKnot/wk-vrcfury-qol` | Already studied | Reflection-backed QoL extension with UIElements inspector overlay, context-menu registration, clone preview, hot reload, and cleanup |
+| `SuperFlue/VRCToggleToolkit` | Already studied | Generator window that emits animation clips, FX layers, VRChat parameters, expression menus, exclusive toggles, and fallback state |
+| `hai-vr/animator-as-code-vrchat` | Already studied | Code-first DSL extensions for VRChat animator parameter drivers, local or unsynced randomization, and play-audio behaviors |
+| `vr-voyage/vrchat-quick-toggle-vrcfury` | Already studied | Tiny VRCFury public-API micro-utility that creates menu-path toggles from selected GameObjects |
+
+### Consolidation note
+
+This family matters because `avatar feature automation` is broader than a
+single installer. It now clearly includes:
+
+- feature-builder substrate
+- public API wrappers
+- reflection-backed editor extensions
+- clone-based preview
+- generated toggle assets
+- code-first animator behavior authoring
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- avatar feature automation
+- editor QoL overlays
+- non-destructive preview helpers
+- tiny creator micro-utilities powered by stable public APIs
+
+## Family 85: VRCFaceTracking core, modules, templates, and blendshape preparation
+
+This family covers repositories where the main value is face or eye tracking
+for VRChat: host apps, module SDKs, provider modules, cross-platform shells,
+OSC or UDP data ingestion, and avatar authoring helpers for compatible shapes.
+
+| Project | Status | Notes |
+|---|---|---|
+| `benaclejames/VRCFaceTracking` | Partially studied | Core bridge with module lifecycle, unified expression state, OSC parameter sending, UI pages, module metadata, and sandboxed module IPC |
+| `dfgHiatus/VRCFaceTracking.Avalonia` | Partially studied | Cross-platform shell with module compatibility matrix, registry service, ratings/download metadata, legacy module migration, and drop overlay control |
+| `dfgHiatus/VRCFT-Babble` | Already studied | Compact Project Babble module that receives local OSC and maps addresses into unified VRCFT expressions |
+| `regzo2/VRCFaceTracking-MeowFace` | Already studied | UDP JSON phone-tracking module with local IP setup, enum-indexed blendshape conversion, eye mapping, and expression normalization |
+| `Adjerry91/VRCFaceTracking-blender-plugin` | Already studied | Blender shape-key preparation addon with fixed VRCFT labels, selected-shape mapping, duplicate handling, and create/overwrite operator |
+
+### Consolidation note
+
+This family matters because `face tracking` is a pipeline rather than a device
+list. It now clearly includes:
+
+- host app and module lifecycle substrate
+- normalized unified expression state
+- OSC, UDP, JSON, and registry integration
+- cross-platform compatibility and packaging concerns
+- DCC-side blendshape preparation
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- face-tracking module templates
+- sensor-to-expression normalization
+- tracking diagnostics and module registries
+- avatar authoring helpers for compatible expression targets
+
+## Family 86: VRChat avatar dynamics, PhysBone migration, contact prefabs, and in-game tuning
+
+This family covers repositories where the main value is avatar physical
+interaction: PhysBone migration, in-game tuning, component grouping, contact
+trackers, grabbable props, and collision-state prefabs.
+
+| Project | Status | Notes |
+|---|---|---|
+| `FACS01-01/PhysBone-to-DynamicBone` | Already studied | Editor converter with duplicate-safe flow, lossless/lossy parameter mapping, collider migration, gravity falloff handling, and helper GameObjects |
+| `naqtn/PhysBonesTK` | Already studied | In-game PhysBone tuning kit with expression menus, parameter-value mapping, reload commands, body-bone and accessory-item variants, and world-constraint controls |
+| `TizzureOne/VRChat_PhysboneDetach` | Already studied | Tiny editor hierarchy-surgery utility that groups copied PhysBone and collider components for outfit toggles and resource management |
+| `ThatFatKidsMom/Avatar-Prop` | Partially studied | Grabbable avatar prop reference using PhysBones, constraints, contact trackers, FinalIK assumptions, and Modular Avatar or VRCFury install variants |
+| `VRLabs/Collision-Detection` | Already studied | Contact/particle collision prefab with `IsColliding`, `AlwaysReset`, and `Reset` bool surface plus a conditional Instancer hook |
+
+### Consolidation note
+
+This family matters because `avatar dynamics` is a practical interaction
+branch, not only a physics label. It now clearly includes:
+
+- editor migration and approximation tools
+- in-VR tuning menus
+- component grouping for toggles
+- contact-driven prop manipulation
+- collision-state prefabs with small animator bool surfaces
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- avatar physical interaction patterns
+- PhysBone authoring and migration helpers
+- in-game calibration surfaces
+- contact/collision prefab design
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

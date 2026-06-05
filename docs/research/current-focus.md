@@ -1,6 +1,6 @@
 # Current Focus
 
-- Date: `2026-04-30`
+- Date: `2026-06-05`
 - Purpose: give a short `what matters now` view of `VR-apps-lab` without
   forcing a new session or visitor through the full wave archive.
 
@@ -54,6 +54,11 @@ These are the clearest current product and research lines:
    the repository now has stronger coverage of avatar setup workbenches, Quest
    portability, composition and packaging, preview or repair tools, pose
    companions, and avatar-facing speech or translation sidecars.
+10. `VRChat avatar visual tooling, face tracking, and dynamics`
+   the repository now has clearer coverage of shader ecosystems, material
+   translators, visual-safety shaders, VRCFury automation, face-tracking module
+   pipelines, blendshape preparation, PhysBone tuning, and contact-driven
+   avatar interaction.
 
 ## Most useful current docs
 
@@ -109,6 +114,10 @@ instead of full history:
 - `landscape/vr-projects-wave-101-vrchat-avatar-composition-packaging-and-install-automation.md`
 - `landscape/vr-projects-wave-102-vrchat-avatar-emulation-gesture-preview-repair-and-osc-assisted-posing.md`
 - `landscape/vr-projects-wave-103-vrchat-avatar-text-speech-translation-and-viseme-sidecars.md`
+- `landscape/vr-projects-wave-104-vrchat-shader-ecosystems-material-translators-and-visual-safety-shaders.md`
+- `landscape/vr-projects-wave-105-vrcfury-toggle-automation-avatar-animator-dsls-and-editor-qol-overlays.md`
+- `landscape/vr-projects-wave-106-vrcfacetracking-core-modules-templates-and-blendshape-preparation.md`
+- `landscape/vr-projects-wave-107-vrchat-avatar-dynamics-physbone-migration-contact-prefabs-and-in-game-tuning.md`
 
 ## Strong donor clusters right now
 
@@ -194,6 +203,22 @@ the strongest current clusters:
   `TTS-Voice-Wizard`, `kikitan-translator`, `HeadTTS`, `Billboard`
   for avatar rehearsal, repair, pose-session sidecars, speech-hub design,
   viseme-aware TTS substrate, and avatar-visible communication surfaces.
+- `PoiyomiToonShader`, `lilToon`, `Mochies-Unity-Shaders`,
+  `lilToonToPoiyomiToon`, `EpilepsyProtection`
+  for shader editor ecosystems, material migration, modular shader-pack
+  layouts, and visual-safety avatar addons.
+- `VRCFury`, `wk-vrcfury-qol`, `VRCToggleToolkit`,
+  `animator-as-code-vrchat`, `vrchat-quick-toggle-vrcfury`
+  for avatar feature builders, reflection-backed editor overlays, toggle
+  generation, code-first animator authoring, and public-API micro-tools.
+- `VRCFaceTracking`, `VRCFaceTracking.Avalonia`, `VRCFT-Babble`,
+  `VRCFaceTracking-MeowFace`, `VRCFaceTracking-blender-plugin`
+  for face-tracking hosts, cross-platform module registries, provider modules,
+  OSC/UDP/JSON expression normalization, and DCC-side blendshape preparation.
+- `PhysBone-to-DynamicBone`, `PhysBonesTK`, `VRChat_PhysboneDetach`,
+  `Avatar-Prop`, `Collision-Detection`
+  for PhysBone migration, in-game dynamics tuning, detached component grouping,
+  grabbable avatar props, and contact/collision state prefabs.
 
 ## Highest-value next follow-up passes
 
@@ -230,6 +255,10 @@ directions:
 28. `VRChat avatar composition, packaging, and install automation`
 29. `VRChat avatar emulation, gesture preview, repair, and OSC-assisted posing`
 30. `VRChat avatar text, speech, translation, and viseme sidecars`
+31. `VRChat shader ecosystems, material translators, and visual-safety shaders`
+32. `VRCFury toggle automation, avatar animator DSLs, and editor QoL overlays`
+33. `VRCFaceTracking core, modules, templates, and blendshape preparation`
+34. `VRChat avatar dynamics, PhysBone migration, contact prefabs, and in-game tuning`
 
 ## Current repository-maintenance priorities
 

@@ -1269,6 +1269,58 @@ Primary docs:
 - `met4citizen/HeadTTS` - `Already studied`
 - `Frosty704/Billboard` - `Partially studied`
 
+## 75. VRChat shader ecosystems, material translators, and visual-safety shaders
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-104-vrchat-shader-ecosystems-material-translators-and-visual-safety-shaders.md`
+- `../landscape/project-families.md`
+
+- `poiyomi/PoiyomiToonShader` - `Partially studied`
+- `lilxyzw/lilToon` - `Partially studied`
+- `MochiesCode/Mochies-Unity-Shaders` - `Already studied`
+- `LinesGuy/lilToonToPoiyomiToon` - `Already studied`
+- `LesseVR/EpilepsyProtection` - `Already studied`
+
+## 76. VRCFury toggle automation, avatar animator DSLs, and editor QoL overlays
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-105-vrcfury-toggle-automation-avatar-animator-dsls-and-editor-qol-overlays.md`
+- `../landscape/project-families.md`
+
+- `VRCFury/VRCFury` - `Partially studied`
+- `RealWhyKnot/wk-vrcfury-qol` - `Already studied`
+- `SuperFlue/VRCToggleToolkit` - `Already studied`
+- `hai-vr/animator-as-code-vrchat` - `Already studied`
+- `vr-voyage/vrchat-quick-toggle-vrcfury` - `Already studied`
+
+## 77. VRCFaceTracking core, modules, templates, and blendshape preparation
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-106-vrcfacetracking-core-modules-templates-and-blendshape-preparation.md`
+- `../landscape/project-families.md`
+
+- `benaclejames/VRCFaceTracking` - `Partially studied`
+- `dfgHiatus/VRCFaceTracking.Avalonia` - `Partially studied`
+- `dfgHiatus/VRCFT-Babble` - `Already studied`
+- `regzo2/VRCFaceTracking-MeowFace` - `Already studied`
+- `Adjerry91/VRCFaceTracking-blender-plugin` - `Already studied`
+
+## 78. VRChat avatar dynamics, PhysBone migration, contact prefabs, and in-game tuning
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-107-vrchat-avatar-dynamics-physbone-migration-contact-prefabs-and-in-game-tuning.md`
+- `../landscape/project-families.md`
+
+- `FACS01-01/PhysBone-to-DynamicBone` - `Already studied`
+- `naqtn/PhysBonesTK` - `Already studied`
+- `TizzureOne/VRChat_PhysboneDetach` - `Already studied`
+- `ThatFatKidsMom/Avatar-Prop` - `Partially studied`
+- `VRLabs/Collision-Detection` - `Already studied`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

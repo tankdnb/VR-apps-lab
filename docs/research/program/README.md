@@ -719,3 +719,31 @@ repeatable way.
 
 - `github-research-wave-103-backlog.md`
   Executed backlog for the Wave 103 pass.
+
+- `github-research-wave-104-plan.md`
+  Wave 104 research plan focused on VRChat shader ecosystems,
+  material translators, and visual-safety shaders.
+
+- `github-research-wave-104-backlog.md`
+  Executed backlog for the Wave 104 pass.
+
+- `github-research-wave-105-plan.md`
+  Wave 105 research plan focused on VRCFury toggle automation,
+  avatar animator DSLs, and editor QoL overlays.
+
+- `github-research-wave-105-backlog.md`
+  Executed backlog for the Wave 105 pass.
+
+- `github-research-wave-106-plan.md`
+  Wave 106 research plan focused on VRCFaceTracking core,
+  modules, templates, and blendshape preparation.
+
+- `github-research-wave-106-backlog.md`
+  Executed backlog for the Wave 106 pass.
+
+- `github-research-wave-107-plan.md`
+  Wave 107 research plan focused on VRChat avatar dynamics,
+  PhysBone migration, contact prefabs, and in-game tuning.
+
+- `github-research-wave-107-backlog.md`
+  Executed backlog for the Wave 107 pass.
