@@ -1830,6 +1830,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 101. `Open Brush/Tilt asset pipeline map across raw .tilt, shader restoration, web viewers, conversion, and collaborative strokes`
 102. `Gaussian splat utility matrix across browser editors, static WebXR viewers, Unity runtimes, native plugins, and VFX substrates`
 103. `Godot XR function-node and OpenXR vendor feature/export matrices`
+104. `Rust OpenXR app-shell matrix across Bevy, wgpu, custom-engine, and runtime-stub bring-up`
+105. `VR retrofit safety matrix across injectors, managers, safe modes, compatibility gates, and patch groups`
+106. `Marker tracking and remote hand-data matrix across Quest, PICO, HoloLens, Unity ArUco, and transport bridges`
+107. `XR instrumentation and mocap matrix across record/replay, event timelines, physical-output bridges, and motion exports`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

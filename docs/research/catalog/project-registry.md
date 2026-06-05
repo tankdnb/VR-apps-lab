@@ -2132,6 +2132,61 @@ Primary docs:
 - `beepobb/godot-htc-face-tracking-bridge` - `Already studied as source-driven HTC facial tracking GDExtension bridge caveat`
 - `boku-ilen/godot-vr-toolkit` - `Already studied as legacy Godot OpenVR viewport-to-mesh UI, teleport, and interactable primitive reference`
 
+## 139. Rust, Bevy, wgpu, and OpenXR app/rendering bring-up
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-168-rust-bevy-wgpu-and-openxr-app-rendering-bring-up.md`
+- `../landscape/project-families.md`
+
+- `awtterpip/bevy_oxr` - `Already studied as Bevy OpenXR plugin/render lifecycle donor with manual wgpu device/queue handoff`
+- `leetvr/hotham` - `Already studied as Rust XR engine context split and OpenXR runtime stub/harness donor`
+- `blaind/xrbevy` - `Already studied as legacy Bevy OpenXR architecture caution around renderer and swapchain ownership`
+- `matthewjberger/wgpu-example` - `Already studied as explicit wgpu/OpenXR/Vulkan graphics binding and Android/desktop bring-up sample`
+- `robotics-erlangen/xrvis` - `Already studied as live network data to XR panel visualization and ray-to-UI pointer reference`
+
+## 140. Universal VR game mod injectors, managers, and compatibility shells
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-169-universal-vr-game-mod-injectors-managers-and-compatibility-shells.md`
+- `../landscape/project-families.md`
+
+- `praydog/UEVR` - `Already studied as Unreal VR injector callback SDK and profile/script reference with strong invasive caveats`
+- `praydog/REFramework` - `Already studied as graphics-hook coexistence and mod API reference with invasive caveats`
+- `Raicuparta/rai-pal` - `Already studied as VR mod manager manifest, provider discovery, install action, and compatibility database donor`
+- `Raicuparta/uuvr` - `Already studied as Unity XR subsystem injection and screen-space UI redirection reference with invasive caveats`
+- `keton/chihuahua` - `Already studied as compact DLL injection utility boundary and safety caveat`
+- `NewUnityModder/UnityVRMod` - `Already studied as Unity VR safe-mode startup, backend abstraction, and scene-change reinitialization reference`
+- `DaXcess/LCVR` - `Already studied as game-specific VR mod startup gate, hash/version check, dependency preload, and patch-group reference`
+- `DaXcess/RepoXR` - `Already studied as game-specific OpenXR compatibility shell with runtime logging and RPC patch registration`
+
+## 141. Quest, PICO, HoloLens marker tracking and remote hand-data utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-170-quest-pico-hololens-marker-tracking-and-remote-hand-data-utilities.md`
+- `../landscape/project-families.md`
+
+- `TakashiYoshinaga/QuestArUcoMarkerTracking` - `Already studied as calibrated Quest passthrough camera ArUco/ChArUco marker-tracking donor`
+- `picoxr/ArUcoMarkerTracking` - `Already studied as PICO Enterprise marker callback and seethrough lifecycle donor`
+- `handzlikchris/Unity.QuestRemoteHandTracking` - `Already studied as remote Quest hand-data split transport donor with UDP poses and TCP skeleton/mesh`
+- `doughtmw/ArUcoDetectionHoloLens-Unity` - `Already studied as dependency-heavy HoloLens ArUco calibration and Research Mode reference`
+- `NormandErwan/ArucoUnity` - `Already studied as reusable Unity ArUco camera abstraction and calibration package donor`
+- `nooway077/HoloLens2CVExperiments` - `Already studied as HoloLens2 Research Mode marker pose and camera-to-world transform pipeline donor`
+
+## 142. XR behavior recording, physiological replay, olfactory display, and sparse-camera mocap
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-171-xr-behavior-recording-physiological-replay-olfactory-display-and-sparse-camera-mocap.md`
+- `../landscape/project-families.md`
+
+- `liris-xr/PLUME` - `Already studied as docs-first XR recorder/viewer/timeline/physiological-signal product reference`
+- `liris-xr/XREcho` - `Already studied as Unity XR recording, replay, event, trajectory, gaze, and heatmap source donor`
+- `liris-xr/Nebula-Core` - `Already studied as multisensory olfactory display serial/Android bridge and experiment logging donor`
+- `liris-xr/kineo` - `Already studied as sparse-camera mocap pipeline, online calibration, and BVH/USD export helper reference`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

@@ -9169,3 +9169,524 @@ When a new utility idea appears:
   `godot-vr-toolkit`.
 - Best fit for `VR-apps-lab`:
   VR menu/input primitives and legacy-to-modern Godot XR comparisons.
+
+## Method 528: Bevy OpenXR render-plugin lifecycle with manual wgpu handoff
+
+- What it is:
+  an OpenXR plugin initializes the runtime, session, graphics binding, and
+  wgpu device/queue, then injects those objects into Bevy's render world and
+  schedules frame wait, view location, swapchain, and end-frame work.
+- Good for:
+  Rust XR app shells, Bevy utility prototypes, and custom engine/plugin
+  boundary studies.
+- Why it matters:
+  engine integration is mostly ownership and scheduling; hiding it makes XR
+  bugs hard to diagnose.
+- Source evidence:
+  `bevy_oxr`.
+- Reusable core:
+  initialize OpenXR before rendering, create graphics-bound wgpu resources,
+  expose session/frame/view resources explicitly, and keep swapchain wait,
+  image release, and end-frame stages inspectable.
+- Do not copy directly:
+  version-sensitive Bevy/wgpu plugin internals.
+- Strong references:
+  `awtterpip/bevy_oxr`.
+- Best fit for `VR-apps-lab`:
+  Rust/Bevy OpenXR app-shell notes and diagnostics prototypes.
+
+## Method 529: Context-split Rust XR engine with focused-state tick loop
+
+- What it is:
+  a Rust VR engine constructs XR, Vulkan, render, input, GUI, audio, haptics,
+  physics, and ECS contexts separately, then updates views/input only when the
+  OpenXR session is focused.
+- Good for:
+  minimal XR engines, embedded app shells, and runtime bring-up testbeds.
+- Why it matters:
+  explicit context ownership makes complex XR loops easier to test and replace.
+- Source evidence:
+  `hotham/src/engine.rs`.
+- Reusable core:
+  construct contexts in dependency order, create durable stage/HMD entities,
+  process runtime events, gate input/view updates by session focus, and keep
+  world state separate from runtime handles.
+- Do not copy directly:
+  full engine assumptions when a small utility only needs a subset.
+- Strong references:
+  `leetvr/hotham`.
+- Best fit for `VR-apps-lab`:
+  OpenXR utility runtime shells and Rust engine architecture comparisons.
+
+## Method 530: OpenXR runtime stub through loader negotiation and function shims
+
+- What it is:
+  a test/runtime harness implements loader negotiation and returns function
+  pointers for OpenXR calls such as instance/session/frame/input functions.
+- Good for:
+  OpenXR loader experiments, tests, diagnostics, and headsetless bring-up
+  harnesses.
+- Why it matters:
+  runtime stubs let tools validate loader behavior without relying on a full
+  headset/runtime stack.
+- Source evidence:
+  `hotham-openxr-client/src/lib.rs`.
+- Reusable core:
+  implement `xrNegotiateLoaderRuntimeInterface`, dispatch requested functions
+  through a controlled table, and stub enough frame/session/input behavior to
+  exercise clients.
+- Do not copy directly:
+  incomplete runtime behavior as if it were a conformant runtime.
+- Strong references:
+  `leetvr/hotham`.
+- Best fit for `VR-apps-lab`:
+  headsetless workflow notes and OpenXR diagnostic harness ideas.
+
+## Method 531: Explicit wgpu/OpenXR/Vulkan graphics binding bridge
+
+- What it is:
+  an app lets OpenXR create or validate Vulkan graphics objects, then bridges
+  those objects into wgpu for rendering.
+- Good for:
+  minimal render samples, graphics diagnostics, and runtime capability tests.
+- Why it matters:
+  graphics binding order is a frequent source of OpenXR bring-up failures.
+- Source evidence:
+  `wgpu-example/src/xr.rs`.
+- Reusable core:
+  require `KHR_vulkan_enable2`, query graphics requirements, create compatible
+  Vulkan instance/device through runtime-aware paths, bridge the physical device
+  to wgpu HAL, and create XR swapchains deliberately.
+- Do not copy directly:
+  unsafe sample code without a targeted graphics validation plan.
+- Strong references:
+  `matthewjberger/wgpu-example`.
+- Best fit for `VR-apps-lab`:
+  OpenXR graphics doctor and wgpu bring-up checklist.
+
+## Method 532: Live network data to XR panels with ray-to-UI pointer forwarding
+
+- What it is:
+  a live data viewer discovers network sources, ingests packets, normalizes
+  state, renders XR panels, and forwards controller-ray hits into UI textures.
+- Good for:
+  telemetry dashboards, robot/control panels, simulator views, and diagnostics.
+- Why it matters:
+  many useful VR tools are spatial dashboards over live external state.
+- Source evidence:
+  `xrvis`.
+- Reusable core:
+  refresh network interfaces, ingest UDP/WebSocket/protobuf streams, spawn
+  anchored panels, sort pointer hits by distance, convert ray hits into UI
+  pointer events, and retain focus during drag interactions.
+- Do not copy directly:
+  domain-specific robot soccer protocol logic.
+- Strong references:
+  `robotics-erlangen/xrvis`.
+- Best fit for `VR-apps-lab`:
+  live telemetry and control-panel utility concepts.
+
+## Method 533: VR injector callback SDK with engine/render/input/script hooks
+
+- What it is:
+  an injector exposes a structured API of lifecycle callbacks, render/runtime
+  handles, engine events, input events, native hook points, and script bindings.
+- Good for:
+  understanding retrofit ecosystems and designing safe extension APIs.
+- Why it matters:
+  even if injection is avoided, the callback taxonomy is useful for plugin API
+  design.
+- Source evidence:
+  `UEVR/include/uevr/API.h`.
+- Reusable core:
+  version the API, group callbacks by lifecycle stage, expose handles through
+  controlled accessors, and keep scripting/custom event surfaces separate from
+  native hooks.
+- Do not copy directly:
+  process injection or game hook logic.
+- Strong references:
+  `praydog/UEVR`.
+- Best fit for `VR-apps-lab`:
+  safe extension-surface and compatibility-boundary documentation.
+
+## Method 534: Graphics hook coexistence with temporary unhook/restore
+
+- What it is:
+  a graphics hook temporarily removes its own hook while creating a device or
+  swapchain, then restores it to avoid recursive hook conflicts and coexist with
+  other overlays/mods.
+- Good for:
+  capture tools, overlays, diagnostics, and modding compatibility analysis.
+- Why it matters:
+  graphics hooks often fail by fighting each other rather than by rendering
+  incorrectly.
+- Source evidence:
+  `REFramework/src/D3D11Hook.cpp`.
+- Reusable core:
+  make hook install/remove idempotent, guard present/resize callbacks, use
+  mutexes where needed, and treat other overlays as expected neighbors.
+- Do not copy directly:
+  invasive hook internals into ordinary VR utilities.
+- Strong references:
+  `praydog/REFramework`.
+- Best fit for `VR-apps-lab`:
+  overlay compatibility and graphics-hook safety notes.
+
+## Method 535: VR mod manager manifest with provider discovery and compatibility database
+
+- What it is:
+  a manager discovers installed games through providers, models mods through
+  declarative manifests, and records compatibility/install state in a database.
+- Good for:
+  utility managers, compatibility launchers, mod/package catalogs, and helper
+  installers.
+- Why it matters:
+  compatibility knowledge should live in data rather than ad-hoc code paths.
+- Source evidence:
+  `rai-pal`.
+- Reusable core:
+  separate game discovery from mod metadata, use stable installed-game IDs,
+  declare install/extract/write actions, model dependencies and environment
+  overrides, and track installed/outdated/compatible state.
+- Do not copy directly:
+  mod data without license and safety review.
+- Strong references:
+  `Raicuparta/rai-pal`.
+- Best fit for `VR-apps-lab`:
+  non-invasive VR utility manager schemas.
+
+## Method 536: Unity XR subsystem injection bundle with UI redirection
+
+- What it is:
+  a Unity retrofit copies coherent XR subsystem/plugin bundles, removes stale
+  loaders, patches global VR settings, and redirects legacy screen-space UI into
+  VR-visible render targets.
+- Good for:
+  understanding Unity XR loader boundaries and owned-project UI migration.
+- Why it matters:
+  screen-space UI is a major obstacle when converting flat Unity apps to VR.
+- Source evidence:
+  `uuvr`.
+- Reusable core:
+  treat XR loaders as bundles, clean stale plugin files first, patch settings
+  deliberately, capture canvases through cameras/render textures, and redirect
+  mirror output where needed.
+- Do not copy directly:
+  patching third-party game files.
+- Strong references:
+  `Raicuparta/uuvr`.
+- Best fit for `VR-apps-lab`:
+  Unity UI-to-VR migration notes and injector caveats.
+
+## Method 537: Unity VR safe-mode gate with backend selection and scene reinit
+
+- What it is:
+  a Unity VR mod starts in a safe mode, delays VR initialization until allowed,
+  selects an OpenVR/OpenXR backend, and invalidates/reinitializes on scene
+  changes.
+- Good for:
+  compatibility-sensitive VR utilities and retrofit prototypes.
+- Why it matters:
+  safe startup can prevent a broken VR path from trapping the user.
+- Source evidence:
+  `UnityVRMod`.
+- Reusable core:
+  expose safe mode, make backend selection explicit, delay first VR init,
+  invalidate camera/backend state on scene changes, and provide teardown levels.
+- Do not copy directly:
+  BepInEx/game injection scaffolding.
+- Strong references:
+  `NewUnityModder/UnityVRMod`.
+- Best fit for `VR-apps-lab`:
+  VR startup safety checklists.
+
+## Method 538: Game-specific VR mod startup gates and patch groups
+
+- What it is:
+  a game VR mod uses disable flags, user prompts, game version/hash checks,
+  dependency preload, asset loading, and scoped patch groups before enabling VR.
+- Good for:
+  compatibility doctors, safe patchers, and risky runtime helpers.
+- Why it matters:
+  users need clear exit paths and compatibility failures before runtime patches
+  begin.
+- Source evidence:
+  `LCVR` and `RepoXR`.
+- Reusable core:
+  provide hard disable flags, ask before enabling, verify game/runtime support,
+  preload dependencies, separate universal and VR-only patches, and show visible
+  errors when critical patches fail.
+- Do not copy directly:
+  game-specific Harmony patches, bypasses, or offsets.
+- Strong references:
+  `DaXcess/LCVR`, `DaXcess/RepoXR`.
+- Best fit for `VR-apps-lab`:
+  compatibility gate templates and diagnostic UX.
+
+## Method 539: Attribute-driven VR network RPC patch registration
+
+- What it is:
+  VR-specific network/RPC patches are marked with attributes and registered as
+  a distinct compatibility surface.
+- Good for:
+  networked mod tooling, compatibility auditing, and patch organization.
+- Why it matters:
+  network-facing VR changes deserve extra visibility and failure handling.
+- Source evidence:
+  `RepoXR`.
+- Reusable core:
+  mark special patches declaratively, scan/register them separately, and warn
+  users when network compatibility patches fail.
+- Do not copy directly:
+  game-specific RPC patches.
+- Strong references:
+  `DaXcess/RepoXR`.
+- Best fit for `VR-apps-lab`:
+  patch metadata patterns and compatibility documentation.
+
+## Method 540: Calibrated passthrough-camera ArUco marker pose pipeline
+
+- What it is:
+  a headset passthrough camera supplies intrinsics and frames, OpenCV detects
+  markers, and marker poses update scene objects.
+- Good for:
+  calibration helpers, MR alignment, diagnostics, and marker-anchored tools.
+- Why it matters:
+  reliable marker tracking depends on intrinsics and coordinate handling, not
+  only detection.
+- Source evidence:
+  `QuestArUcoMarkerTracking`.
+- Reusable core:
+  scale camera intrinsics to active resolution, configure detector/refinement
+  parameters, estimate marker pose, and map marker IDs to GameObjects.
+- Do not copy directly:
+  vendor-specific camera access without capability checks.
+- Strong references:
+  `TakashiYoshinaga/QuestArUcoMarkerTracking`.
+- Best fit for `VR-apps-lab`:
+  passthrough marker calibration tools.
+
+## Method 541: Vendor marker-callback scene-object map
+
+- What it is:
+  a headset/vendor SDK emits marker ID and pose callbacks, and the app updates
+  scene objects directly from those callbacks.
+- Good for:
+  vendor-specific marker tools, device comparisons, and MR utilities.
+- Why it matters:
+  callbacks can simplify marker tracking but need a portability boundary.
+- Source evidence:
+  `picoxr/ArUcoMarkerTracking`.
+- Reusable core:
+  initialize the vendor service, register marker callbacks with explicit origin
+  mode, enable/restore seethrough, and maintain a marker ID to object map.
+- Do not copy directly:
+  bundled SDK state or vendor APIs into generic utilities.
+- Strong references:
+  `picoxr/ArUcoMarkerTracking`.
+- Best fit for `VR-apps-lab`:
+  marker-tracking device matrices.
+
+## Method 542: Remote hand-data split transport
+
+- What it is:
+  high-frequency hand poses are sent over UDP while large skeleton/mesh data is
+  sent over reliable length-prefixed TCP packets.
+- Good for:
+  hand tracking bridges, remote preview, capture tools, and diagnostics.
+- Why it matters:
+  one transport rarely fits both low-latency pose updates and heavy structural
+  hand data.
+- Source evidence:
+  `Unity.QuestRemoteHandTracking`.
+- Reusable core:
+  split pose and skeleton/mesh channels, frame TCP packets with lengths, queue
+  network data off-thread, and emit Unity events on the main thread.
+- Do not copy directly:
+  dated XML/OVRPlugin implementation without modernization.
+- Strong references:
+  `handzlikchris/Unity.QuestRemoteHandTracking`.
+- Best fit for `VR-apps-lab`:
+  hand-data bridge protocol comparisons.
+
+## Method 543: Unity ArUco calibration package architecture
+
+- What it is:
+  a Unity package abstracts camera sources, collects marker/ChArUco
+  observations, runs calibration, and stores camera parameters.
+- Good for:
+  calibration wizards, marker utilities, and multi-camera tools.
+- Why it matters:
+  calibration is a workflow and data model, not just a detector call.
+- Source evidence:
+  `ArucoUnity`.
+- Reusable core:
+  separate camera abstraction, board definitions, observation buffers,
+  asynchronous calibration, minimum-observation checks, and timestamped camera
+  parameter persistence.
+- Do not copy directly:
+  old Unity/OpenCV package assumptions.
+- Strong references:
+  `NormandErwan/ArucoUnity`.
+- Best fit for `VR-apps-lab`:
+  marker calibration helper designs.
+
+## Method 544: HoloLens research-mode marker pose with camera-to-world composition
+
+- What it is:
+  HoloLens spatial camera frames and intrinsics feed marker detection, and
+  marker-to-camera pose is composed with camera-to-world transforms.
+- Good for:
+  HoloLens diagnostics, AR calibration, and coordinate-frame references.
+- Why it matters:
+  most marker tracking bugs are coordinate-frame bugs.
+- Source evidence:
+  `HoloLens2CVExperiments`.
+- Reusable core:
+  initialize spatial cameras, load intrinsics per sensor, detect markers,
+  estimate pose, compose camera/world transforms, and expose HUD diagnostics.
+- Do not copy directly:
+  HoloLens-only setup into portable headset tools.
+- Strong references:
+  `nooway077/HoloLens2CVExperiments`.
+- Best fit for `VR-apps-lab`:
+  coordinate-frame and marker-tracking comparison notes.
+
+## Method 545: Docs-first XR instrumentation recorder/viewer workflow
+
+- What it is:
+  a research toolbox presents recording, portable session files, asset bundles,
+  replay viewer, event markers, and physiological timelines as one user
+  workflow.
+- Good for:
+  study tools, replayable diagnostics, and product documentation.
+- Why it matters:
+  users understand instrumentation through workflows, not raw data formats.
+- Source evidence:
+  `PLUME`.
+- Reusable core:
+  provide low-friction recorder install, portable record files, independent
+  viewer playback, camera switching, timeline controls, marker lists, and
+  physiological streams.
+- Do not copy directly:
+  implementation claims without source/source-license confirmation.
+- Strong references:
+  `liris-xr/PLUME`.
+- Best fit for `VR-apps-lab`:
+  XR instrumentation docs and replay UX concepts.
+
+## Method 546: Unity XR behavioral recording/replay with metadata and analysis surfaces
+
+- What it is:
+  a Unity package discovers tracked XR objects, records object/event metadata
+  into CSV files, and replays sessions with clones, gaze, trajectories, and
+  heatmaps.
+- Good for:
+  study prototypes, replayable debugging, and in-situ analysis.
+- Why it matters:
+  replayable VR state can turn invisible interaction problems into inspectable
+  artifacts.
+- Source evidence:
+  `XREcho`.
+- Reusable core:
+  track camera/controllers/interactables/layers, store format files separately
+  from data, log scene-load/events, clone tracked objects for replay, and expose
+  trajectory/gaze/heatmap UI.
+- Do not copy directly:
+  singleton-heavy old code without modernization.
+- Strong references:
+  `liris-xr/XREcho`.
+- Best fit for `VR-apps-lab`:
+  replayable diagnostics and Unity instrumentation samples.
+
+## Method 547: Olfactory display bridge from Unity scene logic to physical device commands
+
+- What it is:
+  Unity sends semantic odor/diffusion commands to a hardware diffuser through
+  serial communication or an Android plugin.
+- Good for:
+  multisensory XR, physical-output bridges, and experiment control.
+- Why it matters:
+  VR utilities can control physical devices, not only render overlays.
+- Source evidence:
+  `Nebula-Core`.
+- Reusable core:
+  discover the device by handshake, map semantic commands to low-level device
+  codes, support Windows/editor and Android paths, clean up output on quit, and
+  keep UI override separate from automatic behavior.
+- Do not copy directly:
+  blocking serial loops, thread aborts, or device-specific commands.
+- Strong references:
+  `liris-xr/Nebula-Core`.
+- Best fit for `VR-apps-lab`:
+  physical-output bridge patterns beyond haptics.
+
+## Method 548: Proximity-driven multisensory behavior with experiment CSV logging
+
+- What it is:
+  virtual objects trigger and modulate physical output based on head proximity,
+  while experiment trial state is pseudo-randomized and logged to CSV.
+- Good for:
+  multisensory studies, training, accessibility experiments, and physical
+  output UX.
+- Why it matters:
+  physical feedback should be tied to scene semantics and measurable events.
+- Source evidence:
+  `Nebula-Core`.
+- Reusable core:
+  attach trigger colliders to the head/player, modulate duty cycle by distance
+  or binary mode, allow GUI override, reset scene objects, and log trial IDs,
+  detected times, ratings, and notation times.
+- Do not copy directly:
+  device-specific PWM assumptions.
+- Strong references:
+  `liris-xr/Nebula-Core`.
+- Best fit for `VR-apps-lab`:
+  multisensory XR experiment patterns.
+
+## Method 549: Modular sparse-camera mocap reconstruction pipeline
+
+- What it is:
+  a configurable pipeline processes multiple RGB camera views through detection,
+  calibration, triangulation, bundle adjustment, timing annotations, and motion
+  reconstruction.
+- Good for:
+  mocap import helpers, avatar animation preparation, and external camera
+  capture utilities.
+- Why it matters:
+  mocap can feed VR tools even when the capture tool is not itself an HMD app.
+- Source evidence:
+  `kineo`.
+- Reusable core:
+  define typed pipeline stages, instantiate them from config, load live/offline
+  camera views, validate calibration annotations, triangulate weighted points,
+  run bundle adjustment, and record per-stage timings.
+- Do not copy directly:
+  heavy ML stack, datasets, checkpoints, or non-commercial research code.
+- Strong references:
+  `liris-xr/kineo`.
+- Best fit for `VR-apps-lab`:
+  motion-capture helper and export/import planning.
+
+## Method 550: Motion export helper stages for BVH, USD, and viewer artifacts
+
+- What it is:
+  reconstructed motion and camera data are exported to interchange/viewer
+  formats such as BVH, USD, and Rerun-style visualization outputs.
+- Good for:
+  Unity/Unreal import, Blender review, avatar animation, and diagnostics.
+- Why it matters:
+  capture is only reusable when outputs fit the rest of the toolchain.
+- Source evidence:
+  `kineo/pipeline/stages/bvh/export_bvh.py` and
+  `kineo/pipeline/stages/export_to_usd.py`.
+- Reusable core:
+  derive FPS from global timestamps, filter frame ranges, convert coordinates
+  intentionally, export skeleton hierarchy and root motion, and keep output path
+  templates configurable.
+- Do not copy directly:
+  SMPL/model-dependent export code without license and dependency review.
+- Strong references:
+  `liris-xr/kineo`.
+- Best fit for `VR-apps-lab`:
+  motion export/import utility branches and format comparison notes.

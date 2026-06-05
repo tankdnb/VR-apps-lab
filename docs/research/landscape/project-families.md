@@ -4715,6 +4715,141 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - Godot versus Unity toolkit composition comparisons
 - modern ports of legacy viewport-to-mesh UI concepts
 
+## Family 147: Rust, Bevy, wgpu, and OpenXR app/rendering bring-up
+
+This family covers application-side OpenXR bring-up in Rust: Bevy plugin
+integration, custom engine context splits, wgpu/Vulkan graphics binding,
+runtime stubs, and live-data XR visualization.
+
+| Project | Status | Notes |
+|---|---|---|
+| `awtterpip/bevy_oxr` | Already studied as Bevy OpenXR plugin/render lifecycle donor | OpenXR init plugin, enabled extensions, session state events, custom Bevy render plugin, manual wgpu device/queue handoff, frame wait/view/swapchain/end-frame stages, action examples, passthrough/hands/overlay feature surfaces |
+| `leetvr/hotham` | Already studied as Rust XR engine context split and OpenXR runtime stub donor | Android event pre-processing, XR/Vulkan/render/audio/gui/haptic/input/physics contexts, HMD/stage ECS entities, focused-state update loop, and `xrNegotiateLoaderRuntimeInterface` runtime shim with function pointer stubs |
+| `blaind/xrbevy` | Already studied as legacy Bevy OpenXR architecture caution | architecture notes for global OpenXR state, custom swapchains, Vulkan/wgpu handle ownership, hand trackers, and renderer boundary risks |
+| `matthewjberger/wgpu-example` | Already studied as explicit wgpu/OpenXR/Vulkan graphics binding sample | `KHR_vulkan_enable2`, graphics requirements, runtime-created Vulkan instance/device, wgpu HAL bridge, swapchain creation, and Android/desktop entry split |
+| `robotics-erlangen/xrvis` | Already studied as live network data to XR panel visualization reference | multicast interface discovery, UDP/WebSocket protobuf ingestion, XR UI panel spawning, controller ray picking, texture/UI pointer forwarding, and drag focus retention |
+
+### Consolidation note
+
+This family matters because Rust/OpenXR reuse has several layers:
+
+- raw graphics binding and swapchain bring-up
+- engine plugin scheduling and resource ownership
+- custom engine context construction
+- OpenXR runtime stubs and loader test harnesses
+- live network data to XR panel products
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Rust OpenXR app-shell matrices
+- minimal OpenXR/wgpu diagnostics samples
+- Bevy XR plugin boundary notes
+- live telemetry and control-panel prototypes
+
+## Family 148: Universal VR game mod injectors, managers, and compatibility shells
+
+This family covers the invasive edge of VR tooling: universal injectors, mod
+managers, Unity XR subsystem replacement, safe modes, game compatibility gates,
+graphics hook coexistence, and patch grouping.
+
+| Project | Status | Notes |
+|---|---|---|
+| `praydog/UEVR` | Already studied as Unreal VR injector callback SDK and profile/script reference | renderer IDs, OpenXR handles, present/reset/input/tick/Slate/stereo/viewport/native-hook callbacks, Lua customization, and strong process-injection caveats |
+| `praydog/REFramework` | Already studied as graphics-hook coexistence and mod API reference | D3D11 hook lifecycle, temporary unhook/restore around device creation, present/resize callbacks, Lua/C#/ImGui surfaces, method hooks, and invasive framework caveats |
+| `Raicuparta/rai-pal` | Already studied as VR mod manager manifest/provider/database donor | Steam provider discovery, executable-path identity, manifest schema, dependencies, install actions, Wine overrides, environment/args, compatibility/outdated database state |
+| `Raicuparta/uuvr` | Already studied as Unity XR subsystem injection and UI redirection donor | XR subsystem bundle copy, stale loader cleanup, globalgamemanagers enabledVRDevices patch, screen-space canvas capture, mirror texture redirection, and invasive caveats |
+| `keton/chihuahua` | Already studied as compact DLL injection utility boundary/caveat | `OpenProcess`, remote allocation/write, `CreateRemoteThread`, `LoadLibraryW`, remote export invocation, and operator error flow |
+| `NewUnityModder/UnityVRMod` | Already studied as Unity VR safe-mode and backend abstraction reference | BepInEx/UniverseLib startup, safe mode, delayed VR init, OpenVR/OpenXR backend selection, camera invalidation, scene-change reinitialization, and WIP caveats |
+| `DaXcess/LCVR` | Already studied as game-specific VR mod safety shell | config/command-line disable, ask-on-startup dialog, game assembly hash verification, dependency preload, asset bundle load, and universal vs VR-only Harmony patch groups |
+| `DaXcess/RepoXR` | Already studied as game-specific OpenXR compatibility shell | supported game version gate, runtime dependency preload, OpenXR runtime info logging, asset load, patch groups, attribute-driven RPC patch registration, and warning dialogs |
+
+### Consolidation note
+
+This family matters because VR retrofit tooling repeatedly exposes the same
+safety and compatibility lessons:
+
+- do not hide invasive boundaries
+- log runtime and game compatibility early
+- provide hard disable and safe-mode paths
+- separate universal and VR-only patch groups
+- keep mod compatibility in manifests/databases where possible
+- make graphics hook coexistence a first-class concern
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- safe companion versus injector boundary docs
+- VR compatibility doctor checklists
+- manifest-driven utility managers
+- startup gate and patch-group patterns
+
+## Family 149: Quest, PICO, HoloLens marker tracking and remote hand-data utilities
+
+This family covers camera/tracking helper utilities that turn passthrough
+frames, vendor marker callbacks, HoloLens CV data, or Quest hand state into
+poses, scene objects, and remote streams.
+
+| Project | Status | Notes |
+|---|---|---|
+| `TakashiYoshinaga/QuestArUcoMarkerTracking` | Already studied as calibrated Quest passthrough camera marker-tracking donor | camera intrinsics scaling, ArUco3 detection, subpixel refinement, ChArUco/marker pose estimation, marker ID to object mapping, debug texture/object toggles |
+| `picoxr/ArUcoMarkerTracking` | Already studied as PICO Enterprise marker callback and seethrough lifecycle donor | enterprise service init/bind, marker callback registration with floor origin, seethrough enable/resume, and marker ID pose map |
+| `handzlikchris/Unity.QuestRemoteHandTracking` | Already studied as remote Quest hand-data split transport donor | OVR hand polling, high-frequency UDP pose packets, reliable TCP skeleton/mesh packets, length-prefix framing, gzip/XML serialization, receive queues, UnityEvents |
+| `doughtmw/ArUcoDetectionHoloLens-Unity` | Already studied as HoloLens ArUco calibration/Research Mode reference | HoloLensCamCalib, HoloLensForCV, OpenCV package context, MRTK bundling caveat, and calibration-heavy sample packaging |
+| `NormandErwan/ArucoUnity` | Already studied as reusable Unity ArUco camera/calibration package donor | camera abstraction, board/ChArUco calibration, multi-camera image buffers, async calibration, marker observations, and camera-parameter persistence |
+| `nooway077/HoloLens2CVExperiments` | Already studied as HoloLens2 Research Mode marker pose pipeline donor | spatial camera intrinsics, left/right front camera loops, OpenCV bridge marker detection, rvec/tvec pose, camera-to-world composition, and HUD diagnostics |
+
+### Consolidation note
+
+This family matters because marker and remote-hand utilities are often small
+but highly reusable:
+
+- camera source and intrinsics handling
+- local OpenCV detection versus vendor callbacks
+- marker ID to scene-object maps
+- coordinate-frame composition
+- split transport for live hand state and heavy skeleton/mesh data
+- calibration package/wizard structure
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- marker-tracking device matrices
+- passthrough camera calibration helpers
+- remote hand-data transport comparisons
+- HoloLens/Quest/PICO coordinate-frame notes
+
+## Family 150: XR behavior recording, physiological replay, olfactory display, and sparse-camera mocap
+
+This family covers research-grade XR instrumentation and XR-adjacent capture
+helpers: record/replay workflows, event and physiological timelines, Unity
+recording/replay internals, multisensory hardware bridges, and sparse-camera
+mocap exports.
+
+| Project | Status | Notes |
+|---|---|---|
+| `liris-xr/PLUME` | Already studied as docs-first XR recorder/viewer/timeline product reference | recorder workflow, `.plm` files, asset bundle replay, standalone viewer, timeline, event markers, physiological signals, native-frequency LSL capture claims, and docs-site caveat |
+| `liris-xr/XREcho` | Already studied as Unity XR recording/replay source donor | singleton/config managers, tracked camera/controllers/interactables/layers, CSV metadata/events/object formats, scene-load events, replay clones, camera switching, gaze, trajectories, heatmaps, and TODO-heavy modernization caveats |
+| `liris-xr/Nebula-Core` | Already studied as multisensory olfactory display bridge donor | serial/Android plugin bridge, port handshake, command mapping, head-proximity diffusion, GUI override, application cleanup, pseudo-randomized trials, and CSV experiment logging |
+| `liris-xr/kineo` | Already studied as sparse-camera mocap pipeline and export helper reference | typed pipeline stages, Hydra configs, offline/online modes, live camera calibration, triangulation, bundle adjustment, stage timings, BVH/USD/Rerun-style exports, heavy ML stack, and non-commercial research-license caveat |
+
+### Consolidation note
+
+This family matters because instrumentation is a complete product chain, not
+just data capture:
+
+- recorders with low-friction integration
+- metadata and event files
+- physiological/time-series capture
+- replay viewers and timelines
+- in-situ analysis surfaces
+- physical-output devices and experiment logs
+- mocap reconstruction and export helpers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- XR instrumentation matrices
+- replayable diagnostics and event-marker UX
+- multisensory physical-output bridge patterns
+- motion-capture import/export helper directions
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

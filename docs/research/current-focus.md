@@ -565,6 +565,25 @@ the strongest current clusters:
   for Godot XR function nodes, vendor extension/export gates, product-template
   composition, face-tracking GDExtension bridges, and legacy viewport-to-mesh
   UI primitives.
+- `bevy_oxr`, `hotham`, `xrbevy`, `wgpu-example`, `xrvis`
+  for Rust OpenXR app-shell bring-up, Bevy render-world handoff, custom engine
+  context splits, OpenXR runtime stubs, wgpu/Vulkan graphics binding, and live
+  network data XR panels.
+- `UEVR`, `REFramework`, `rai-pal`, `uuvr`, `chihuahua`, `UnityVRMod`, `LCVR`,
+  `RepoXR`
+  for VR retrofit API surfaces, graphics-hook coexistence, mod manager
+  manifests, Unity XR subsystem injection, safe-mode gates, compatibility
+  checks, and patch-group organization.
+- `QuestArUcoMarkerTracking`, `ArUcoMarkerTracking`,
+  `Unity.QuestRemoteHandTracking`, `ArUcoDetectionHoloLens-Unity`,
+  `ArucoUnity`, `HoloLens2CVExperiments`
+  for passthrough marker tracking, vendor marker callbacks, remote hand-data
+  split transport, Unity ArUco calibration, and HoloLens camera-to-world marker
+  pose pipelines.
+- `PLUME`, `XREcho`, `Nebula-Core`, `kineo`
+  for XR recorder/viewer workflows, Unity behavior replay, physiological and
+  event timelines, olfactory device bridges, experiment logging, sparse-camera
+  mocap, and BVH/USD motion exports.
 
 ## Highest-value next follow-up passes
 
@@ -665,6 +684,10 @@ directions:
 92. `Open Brush/Tilt asset pipeline map across raw .tilt, shader restoration, web viewers, conversion, and collaborative strokes`
 93. `Gaussian splat utility matrix across browser editors, static WebXR viewers, Unity runtimes, native plugins, and VFX substrates`
 94. `Godot XR function-node and OpenXR vendor feature/export matrices`
+95. `Rust OpenXR app-shell matrix across Bevy, wgpu, custom-engine, and runtime-stub bring-up`
+96. `VR retrofit safety matrix across injectors, managers, safe modes, compatibility gates, and patch groups`
+97. `Marker tracking and remote hand-data matrix across Quest, PICO, HoloLens, Unity ArUco, and transport bridges`
+98. `XR instrumentation and mocap matrix across record/replay, event timelines, physical-output bridges, and motion exports`
 
 ## Current repository-maintenance priorities
 

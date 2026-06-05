@@ -705,6 +705,26 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on Godot XR toolkit composition, vendor
   OpenXR extension packages, templates, and face-tracking bridge patterns.
 
+- `vr-projects-wave-168-rust-bevy-wgpu-and-openxr-app-rendering-bring-up.md`
+  Next GitHub discovery wave focused on Rust OpenXR app shells, Bevy plugin
+  boundaries, wgpu/Vulkan graphics binding, runtime stubs, and live network
+  data XR panels.
+
+- `vr-projects-wave-169-universal-vr-game-mod-injectors-managers-and-compatibility-shells.md`
+  Next GitHub discovery wave focused on universal VR injectors, graphics hook
+  coexistence, mod manager manifests, Unity XR subsystem injection, safe modes,
+  compatibility gates, and patch groups.
+
+- `vr-projects-wave-170-quest-pico-hololens-marker-tracking-and-remote-hand-data-utilities.md`
+  Next GitHub discovery wave focused on Quest/PICO/HoloLens marker tracking,
+  passthrough camera intrinsics, vendor callbacks, Unity ArUco calibration, and
+  remote hand-data transports.
+
+- `vr-projects-wave-171-xr-behavior-recording-physiological-replay-olfactory-display-and-sparse-camera-mocap.md`
+  Next GitHub discovery wave focused on XR record/replay, event and
+  physiological timelines, Unity analysis surfaces, olfactory hardware bridges,
+  and sparse-camera mocap exports.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

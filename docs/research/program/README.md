@@ -1195,3 +1195,33 @@ repeatable way.
 
 - `github-research-wave-167-backlog.md`
   Executed backlog for the Wave 167 pass.
+
+- `github-research-wave-168-plan.md`
+  Wave 168 research plan focused on Rust OpenXR app shells, Bevy plugin
+  boundaries, wgpu/Vulkan graphics binding, runtime stubs, and live-data XR
+  visualization.
+
+- `github-research-wave-168-backlog.md`
+  Executed backlog for the Wave 168 pass.
+
+- `github-research-wave-169-plan.md`
+  Wave 169 research plan focused on universal VR game mod injectors, managers,
+  graphics-hook coexistence, Unity XR subsystem injection, safe modes, and
+  compatibility shells.
+
+- `github-research-wave-169-backlog.md`
+  Executed backlog for the Wave 169 pass.
+
+- `github-research-wave-170-plan.md`
+  Wave 170 research plan focused on Quest, PICO, HoloLens marker tracking,
+  Unity ArUco calibration, and remote hand-data utilities.
+
+- `github-research-wave-170-backlog.md`
+  Executed backlog for the Wave 170 pass.
+
+- `github-research-wave-171-plan.md`
+  Wave 171 research plan focused on XR behavior recording, physiological
+  replay, olfactory display bridges, and sparse-camera mocap.
+
+- `github-research-wave-171-backlog.md`
+  Executed backlog for the Wave 171 pass.

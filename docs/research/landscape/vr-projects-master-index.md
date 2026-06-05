@@ -176,6 +176,10 @@ This file complements:
 - `vr-projects-wave-165-open-brush-tilt-asset-pipeline-browser-viewers-shader-loaders-and-collaborative-drawing.md`
 - `vr-projects-wave-166-gaussian-splat-immersive-3d-asset-viewers-editors-and-xr-display-surfaces.md`
 - `vr-projects-wave-167-godot-xr-toolkits-vendor-extensions-templates-and-face-tracking-bridges.md`
+- `vr-projects-wave-168-rust-bevy-wgpu-and-openxr-app-rendering-bring-up.md`
+- `vr-projects-wave-169-universal-vr-game-mod-injectors-managers-and-compatibility-shells.md`
+- `vr-projects-wave-170-quest-pico-hololens-marker-tracking-and-remote-hand-data-utilities.md`
+- `vr-projects-wave-171-xr-behavior-recording-physiological-replay-olfactory-display-and-sparse-camera-mocap.md`
 
 ## How to use this index
 
