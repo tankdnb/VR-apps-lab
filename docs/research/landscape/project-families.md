@@ -3624,6 +3624,148 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - OCR/checklist workflow panels
 - focused telemetry and media-control HUDs
 
+## Family 115: Audience chat overlays, stream-facing browser surfaces, and captured-window HUD patterns
+
+This family covers stream/audience overlays that are not VR-native by default
+but are strong references for captured windows, browser-source panels,
+transparent sidecars, chat/event fan-in, and configuration UX.
+
+| Project | Status | Notes |
+|---|---|---|
+| `baffler/Transparent-Twitch-Chat-Overlay` | Already studied as transparent desktop chat overlay donor | WPF/WebView2 overlay with setup vs overlay mode, border and interaction toggles, top-most state, hotkeys, persistent JSON settings, jChat/native chat integration, sounds, OAuth, and BTTV/FFZ/7TV options |
+| `Enubia/ghost-chat` | Already studied as multi-provider transparent chat sidecar | Go/Wails/React companion with transparent always-on-top window, tray actions, Twitch/YouTube/Kick clients, config/window-state persistence, and vanish/click-through mode |
+| `giambaJ/jChat` | Already studied as static browser-source chat renderer | URL-parameter configured chat renderer with message queue/pruning/fade, Twitch badges, BTTV/FFZ/7TV emote loading, blocked users, and style controls |
+| `BenDMyers/showmy.chat` | Already studied as overlay URL builder and preview reference | Validated query-parameter contract, live preview iframe, three-step form, demo URL generation, and copyable overlay URL onboarding |
+| `teklynk/twitch_chat_emotes` | Already studied as animated emote/event overlay | Browser overlay with provider fan-in, API fallback, TMI reconnect handling, bounded emote display, and movement/effect options |
+
+### Consolidation note
+
+This family matters because many useful VR utility surfaces can begin as
+transparent desktop windows or browser-source panels before they become native
+OpenVR/OpenXR overlays. It now clearly includes:
+
+- setup mode vs live overlay/click-through mode
+- captured-window chat HUDs
+- browser-source query-string configuration
+- chat, badge, and emote provider normalization
+- stream/audience event-to-visual overlays
+- onboarding with live preview and copyable URLs
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- browser-backed overlay configuration contracts
+- audience/chat companion surfaces for VR
+- provider-normalized notification and chat panels
+- Desktop+/captured-window bridge references
+
+## Family 116: VR creative authoring, drawing/modeling tools, and in-headset tool/menu systems
+
+This family covers VR creative tools where the reusable value is not the art
+output itself but the tool architecture: catalogs, panels, shelves, commands,
+save/load, export, scripting, multiplayer, and in-headset menu systems.
+
+| Project | Status | Notes |
+|---|---|---|
+| `googlevr/tilt-brush` | Partially studied as large archived Unity creative-tool architecture reference | App-state lifecycle, brush/environment catalogs, pointer/controller systems, panels, sketch load/export, tutorial hints, HTTP load callback, and global command surfaces |
+| `icosa-foundation/open-brush` | Partially studied as active Tilt Brush evolution with API/multiplayer donor value | Modern XR/OpenXR direction, Lua/API wrappers across app/brush/camera/color/environment/group/guide/headset/image/layer, Photon multiplayer, RPC batching, and voice paths |
+| `googlevr/blocks` | Partially studied as archived VR modeling command/export reference | Proto-backed command messages, add/copy/delete/move/replace/group mesh operations, face property changes, OBJ/FBX/glTF/export and asset-service flows |
+| `SideQuestVR/SideSketch` | Fork / variant only | Tilt Brush fork with SideQuest rebrand/distribution lessons and limited unique architecture beyond upstream |
+| `zach-capalbo/vartiste` | Partially studied as browser-native WebXR authoring and shelf/tool reference | A-Frame brush system, brush packs/user brushes, movable shelf component with pin/close/hide behavior, upload/interceptor flows, and avatar/spectator/Hubs references |
+
+### Consolidation note
+
+This family matters because complex VR utilities need the same foundations as
+creative tools: tool switching, mode clarity, undo/history, persistent assets,
+and in-headset configuration. It now clearly includes:
+
+- app-state and loading lifecycles
+- brush/tool/environment catalogs
+- Unity panel managers and WebXR shelves
+- command-object/proto edit histories
+- save/load/export and asset upload paths
+- scripting/API and multiplayer extension points
+- fork lineage and distribution caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VR menu, shelf, and tool-surface comparison matrices
+- command/history patterns for editor-like utilities
+- creative-tool API boundaries
+- Unity vs WebXR authoring-surface architecture
+
+## Family 117: Networked/social XR frameworks, room clients, and multi-user state substrates
+
+This family covers social/networked XR infrastructure where the reusable value
+is room membership, presence, permissions, state sync, avatars, media, voice,
+and collaborative diagnostics rather than one specific social world.
+
+| Project | Status | Notes |
+|---|---|---|
+| `UCL-VR/ubiq` | Already studied as research-friendly network scene and room substrate | Node room server, TCP/WSS wrappers, ICE provider, Unity/browser room clients, network scene, peer events, WebRTC connections, avatars, voice, arbitrary network IDs, and component statistics |
+| `mozilla/hubs` | Partially studied as large WebXR social room client reference | Phoenix room channel, permission tokens, presence, mute/kick, spawn camera/drawing/media actions, pinning, voice/chat, streaming/recording/raise-hand/typing events, and bitECS networked components |
+| `janusvr/janusweb` | Already studied as historical spatial-web room/client reference | Declarative viewer/frame custom elements, image/video/model/avatar room snippets, chat, VoIP/networking options, binary WebSocket connection, URL-hash room subscribe/unsubscribe, and reconnect lifecycle |
+| `vrsys/vrsys-core` | Partially studied as Unity Netcode/XRI/Meta Avatar composition reference | Unity prefab/package composition with Netcode manager, user spawner, connection manager, desktop/HMD/Meta Avatar user prefabs, network prefab lists, and collocation settings |
+
+### Consolidation note
+
+This family matters because collaborative VR utilities need a small,
+inspectable room substrate before they need a full social platform. It now
+clearly includes:
+
+- room servers and room clients
+- peer connection and signaling paths
+- presence and identity events
+- permission-gated room actions
+- networked ECS/component state
+- declarative spatial-web embeds
+- Unity prefab/package composition
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- collaborative diagnostics and remote support rooms
+- permission/presence checklists for VR utilities
+- networked component state references
+- spatial web and media-room embedding patterns
+
+## Family 118: OpenGloves sidecars, protocols, named-pipe input, OSC ingress, and force-feedback adapters
+
+This family covers OpenGloves/LucidGloves ecosystem helpers where the reusable
+value is custom hand-device integration: calibration UI, protocol contracts,
+named-pipe input, OSC ingress, serial encodings, synthetic tests, and
+force-feedback adapters.
+
+| Project | Status | Notes |
+|---|---|---|
+| `LucidVR/opengloves-ui` | Already studied as Tauri/Svelte calibration and control sidecar | Local driver HTTP boundary on port `52060`, configuration/functions/settings routes, reset, pose calibration, servo calibration, and minimal Tauri shell |
+| `LucidVR/opengloves-protocol` | Already studied as protobuf communication contract reference | Driver input tracking-reference service, server output device info and stream shells, and force-feedback curl input service |
+| `PerlinWarp/pygloves` | Already studied as Python named-pipe tester and hand visualization harness | Packed finger/joystick/button writes, left/right pipe helper, Matplotlib sliders/buttons, and SteamVR-hand pose visualization |
+| `senseshift/opengloves-lib` | Already studied as C++ data model and alpha serial encoding helper | Hand/device types, finger curl/splay, joystick/buttons, analog buttons, output force feedback/haptics, and alpha serial encode/decode |
+| `Rin-Wilson/CS-OpenGloves-Named-Pipe-Input-Library` | Already studied as C# named-pipe input helper | v2 pipe path, 20-value flexion struct, splay, joystick, booleans, trigger value, managed marshaling, and pipe write |
+| `Python1320/opengloves-osc` | Already studied as OSC-to-named-pipe ingress micro-bridge | OSC receiver on port `9007` mapping joystick/button addresses into a C# named-pipe input struct |
+| `LucidVR/opengloves-force-feedback-unity-demo` | Already studied as Unity/SteamVR force-feedback adapter demo | Interactable injection, skeleton-pose curl estimation, left/right FFB providers, and curl pipe writes |
+| `LucidVR/opengloves-hl-alyx-integration` | Already studied as game-log/file-watcher force-feedback sidecar | Tauri/Svelte UI and C# sidecar that tails tagged game output, parses five curl values per hand, supports hand inversion, and writes to FFB curl pipes |
+
+### Consolidation note
+
+This family matters because custom hand hardware is an integration stack, not
+one app. It now clearly includes:
+
+- driver sidecar calibration UI
+- schema-first driver/server protocol contracts
+- named-pipe binary input structs
+- OSC ingress for external tools
+- serial/alpha firmware encoding helpers
+- synthetic hand input and visualization tests
+- Unity and game-log force-feedback adapters
+- version-sensitive pipe and struct compatibility caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- hand-device transport matrices
+- custom controller/glove bridge patterns
+- OSC/named-pipe/serial adapter comparison
+- force-feedback adapter safety boundaries
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

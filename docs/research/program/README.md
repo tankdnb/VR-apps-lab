@@ -955,3 +955,32 @@ repeatable way.
 
 - `github-research-wave-135-backlog.md`
   Executed backlog for the Wave 135 pass.
+
+- `github-research-wave-136-plan.md`
+  Wave 136 research plan focused on audience chat overlays, transparent
+  desktop windows, browser-source configuration, and captured-window HUD
+  patterns.
+
+- `github-research-wave-136-backlog.md`
+  Executed backlog for the Wave 136 pass.
+
+- `github-research-wave-137-plan.md`
+  Wave 137 research plan focused on VR creative authoring tools, brush/menu
+  systems, command histories, exports, and in-headset panels/shelves.
+
+- `github-research-wave-137-backlog.md`
+  Executed backlog for the Wave 137 pass.
+
+- `github-research-wave-138-plan.md`
+  Wave 138 research plan focused on networked/social XR room clients,
+  presence, permissions, networked state, and collaborative utility substrates.
+
+- `github-research-wave-138-backlog.md`
+  Executed backlog for the Wave 138 pass.
+
+- `github-research-wave-139-plan.md`
+  Wave 139 research plan focused on OpenGloves sidecars, protocols,
+  named-pipe input, OSC ingress, and force-feedback adapters.
+
+- `github-research-wave-139-backlog.md`
+  Executed backlog for the Wave 139 pass.

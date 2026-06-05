@@ -7100,3 +7100,210 @@ When a new utility idea appears:
   `ez-wishlist-overlay`, `VR-QR-Overlay`.
 - Best fit for `VR-apps-lab`:
   focused overlay micro-surfaces and OCR workflow-panel research.
+
+## Method 415: Transparent/captured chat window with setup-overlay toggle and persistent click-through controls
+
+- What it is:
+  a desktop companion separates setup/configuration mode from live overlay
+  mode, persists window/settings state, exposes hotkeys or tray actions, and
+  can become click-through or non-interactive while staying visible above other
+  content.
+- Good for:
+  chat panels, reference panels, streamer utilities, Desktop+-captured helper
+  windows, and overlay prototypes that are not native OpenVR/OpenXR yet.
+- Why it matters:
+  many useful VR panels start life as desktop windows; setup/live mode keeps
+  them usable without making the always-on overlay annoying.
+- Strong references:
+  `Transparent-Twitch-Chat-Overlay`, `ghost-chat`.
+- Best fit for `VR-apps-lab`:
+  captured-window HUDs, audience/chat panels, and companion surfaces.
+
+## Method 416: Query-string configured browser overlay builder with live preview and validated params
+
+- What it is:
+  a browser overlay exposes its runtime configuration through URL parameters,
+  validates or cleans the parameter set, and provides a form plus live preview
+  so users can generate a shareable overlay URL without editing code.
+- Good for:
+  OBS/browser sources, WebXR panels, stream overlays, diagnostics dashboards,
+  and quick prototype surfaces.
+- Why it matters:
+  a URL is a low-friction configuration contract for public overlays and
+  captured browser panels.
+- Strong references:
+  `showmy.chat`, `jChat`.
+- Best fit for `VR-apps-lab`:
+  browser-backed overlay configuration and public demo surfaces.
+
+## Method 417: Chat/emote fan-in renderer with provider normalization and animated effects
+
+- What it is:
+  an overlay normalizes chat, badges, emotes, and events from multiple
+  providers, bounds message/visual lifetime, and renders text or animated
+  effects as a controlled visual layer.
+- Good for:
+  audience overlays, notification surfaces, moderation panels, streamer tools,
+  and playful feedback displays.
+- Why it matters:
+  chat and emote systems become reusable only when provider-specific quirks
+  are isolated from rendering.
+- Strong references:
+  `jChat`, `twitch_chat_emotes`, `ghost-chat`.
+- Best fit for `VR-apps-lab`:
+  audience-facing VR companion panels and notification overlays.
+
+## Method 418: VR creative tool app-state with catalogs, panel manager, global command surface, and load/export lifecycle
+
+- What it is:
+  a complex VR tool organizes itself around explicit app states, catalogs for
+  brushes/assets/environments, panel managers, global commands, input hints,
+  save/load, export, and external load or automation hooks.
+- Good for:
+  VR editors, calibration tools, creative utilities, in-headset setup panels,
+  and tool-heavy dashboard apps.
+- Why it matters:
+  complex VR utilities fail when tools, panels, persistence, and commands are
+  designed separately.
+- Strong references:
+  `tilt-brush`, `open-brush`.
+- Best fit for `VR-apps-lab`:
+  menu/tool systems and editor-like VR utility prototypes.
+
+## Method 419: Componentized browser-native authoring shelves and brush systems
+
+- What it is:
+  a WebXR/A-Frame app defines tools as systems/components, loads brush/tool
+  packs, and exposes movable shelves with close, pin, hide, popup, grab-root,
+  and dynamic sizing behavior.
+- Good for:
+  browser-native creative tools, WebXR utilities, hand-menu experiments,
+  diagnostics surfaces, and lightweight authoring panels.
+- Why it matters:
+  browser-native VR can build rich tool UIs without copying Unity-style manager
+  architecture.
+- Strong references:
+  `vartiste`.
+- Best fit for `VR-apps-lab`:
+  WebXR utility surfaces and browser-backed tool shelves.
+
+## Method 420: Command/proto-based VR modeling edit history and multi-format export pipeline
+
+- What it is:
+  modeling operations are represented as serializable commands, optionally
+  grouped into composites, then connected to export paths such as OBJ, FBX,
+  glTF, thumbnails, and asset-service upload.
+- Good for:
+  VR editors, scene-setup tools, calibration/layout editors, creator utilities,
+  and any VR app that needs undo/history and export.
+- Why it matters:
+  undoable VR editing is easier to reason about when mutations are typed
+  commands instead of direct scene changes.
+- Strong references:
+  `blocks`.
+- Best fit for `VR-apps-lab`:
+  editor-like utility architecture and exportable configuration workflows.
+
+## Method 421: Research-friendly network scene with room/peer properties and arbitrary component listener
+
+- What it is:
+  a small networking substrate provides room server/client lifecycle, peer
+  events, WebRTC signaling, avatars or media as optional layers, arbitrary
+  network IDs, and statistics for message flow.
+- Good for:
+  collaborative diagnostics, lab studies, guided setup, remote support,
+  multiplayer prototypes, and shared calibration tools.
+- Why it matters:
+  VR utility collaboration benefits from inspectable network primitives before
+  it needs a full social platform.
+- Strong references:
+  `ubiq`.
+- Best fit for `VR-apps-lab`:
+  collaborative tool and research-session substrates.
+
+## Method 422: Permissioned WebXR room channel with presence/action events and ECS networked components
+
+- What it is:
+  a social WebXR client wraps room communication in a channel with explicit
+  permission tokens, presence updates, moderation/actions, media/object events,
+  and networked ECS components for ownership and transforms.
+- Good for:
+  social utility rooms, operator panels, remote support, shared media spaces,
+  moderated events, and collaborative dashboards.
+- Why it matters:
+  multi-user VR utilities need permission and presence design even when they
+  are not social products.
+- Strong references:
+  `hubs`.
+- Best fit for `VR-apps-lab`:
+  WebXR collaboration, room permission models, and media/object action
+  surfaces.
+
+## Method 423: Declarative room snippet and generated viewer for spatial web/media embeds
+
+- What it is:
+  a spatial web client generates room snippets or viewer frames for media,
+  models, avatars, video, and 360 content, then connects them to room/network
+  lifecycle through URL or custom-element parameters.
+- Good for:
+  media/reference panels, spatial web shells, browser-native room viewers,
+  embedded documentation, and lightweight social spaces.
+- Why it matters:
+  utility panels can embed spatial content without adopting a full world editor
+  if the room/viewer contract is declarative.
+- Strong references:
+  `janusweb`.
+- Best fit for `VR-apps-lab`:
+  spatial web references and embeddable media/viewer surfaces.
+
+## Method 424: Driver-side hand-input protocol split with UI calibration, protobuf, named-pipe, and OSC ingress
+
+- What it is:
+  custom hand-device integration is split into a calibration/control sidecar,
+  typed protocol contracts, driver input/output services, named-pipe binary
+  ingress, and optional OSC adapters for external tools.
+- Good for:
+  DIY gloves, custom controllers, accessibility hand inputs, virtual hand
+  drivers, and hardware bridge research.
+- Why it matters:
+  separating UI, protocol, and transport keeps hardware integration debuggable
+  and replaceable.
+- Strong references:
+  `opengloves-ui`, `opengloves-protocol`, `CS-OpenGloves-Named-Pipe-Input-Library`,
+  `opengloves-osc`.
+- Best fit for `VR-apps-lab`:
+  custom-device bridge and hand-input integration patterns.
+
+## Method 425: Alpha/serial/finger encoding helper library for DIY glove firmware and host tests
+
+- What it is:
+  a helper library defines typed hand/device input data, finger curl/splay,
+  joystick/buttons, haptics/force feedback outputs, and encodes or decodes
+  compact serial messages for firmware and host tools.
+- Good for:
+  DIY glove firmware, serial bridges, hardware diagnostics, synthetic tests,
+  and compatibility probes.
+- Why it matters:
+  firmware/host integration becomes more maintainable when the packet model is
+  explicit and shared across examples.
+- Strong references:
+  `opengloves-lib`, `pygloves`.
+- Best fit for `VR-apps-lab`:
+  hardware bridge diagnostics and custom controller protocol references.
+
+## Method 426: Game event to force-feedback adapter with sidecar/mod bridge
+
+- What it is:
+  a game or Unity scene emits interaction/curl events through hover callbacks,
+  logs, files, or mod scripts; a sidecar parses those events and forwards
+  five-finger force-feedback values to the hand-device driver.
+- Good for:
+  haptic adapters, game companions, interaction demos, force-feedback
+  experiments, and hardware integration proofs.
+- Why it matters:
+  haptic hardware can be integrated through narrow event bridges instead of
+  deep game/runtime hooks, but the support boundary must be explicit.
+- Strong references:
+  `opengloves-force-feedback-unity-demo`, `opengloves-hl-alyx-integration`.
+- Best fit for `VR-apps-lab`:
+  game-to-haptics adapter research and force-feedback sidecar patterns.

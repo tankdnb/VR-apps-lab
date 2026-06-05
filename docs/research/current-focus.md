@@ -392,6 +392,25 @@ the strongest current clusters:
   `EchoVR-Overlay`, `ez-wishlist-overlay`
   for Unity dashboard overlays, mirror-texture recognition, window-captured
   media HUDs, browser telemetry surfaces, and OCR-assisted workflow panels.
+- `Transparent-Twitch-Chat-Overlay`, `ghost-chat`, `jChat`,
+  `showmy.chat`, `twitch_chat_emotes`
+  for transparent/captured chat windows, setup/live overlay toggles,
+  browser-source URL contracts, provider-normalized chat/emote fan-in, and
+  stream-facing event surfaces.
+- `tilt-brush`, `open-brush`, `blocks`, `SideSketch`, `vartiste`
+  for VR creative-tool app states, brush/tool catalogs, Unity panels, WebXR
+  shelves, command/proto histories, export pipelines, scripting APIs, and
+  fork-lineage lessons.
+- `ubiq`, `hubs`, `janusweb`, `vrsys-core`
+  for room servers/clients, presence, permissions, networked ECS/component
+  state, WebRTC/peer events, declarative spatial-web embeds, and Unity
+  Netcode/XRI/Meta Avatar composition.
+- `opengloves-ui`, `opengloves-protocol`, `pygloves`, `opengloves-lib`,
+  `CS-OpenGloves-Named-Pipe-Input-Library`, `opengloves-osc`,
+  `opengloves-force-feedback-unity-demo`, `opengloves-hl-alyx-integration`
+  for hand-device sidecars, protobuf contracts, named-pipe input, OSC ingress,
+  alpha serial encoding, synthetic tests, Unity FFB, and game-log haptic
+  adapters.
 
 ## Highest-value next follow-up passes
 
@@ -460,6 +479,10 @@ directions:
 60. `VR subtitles, captions, STT/OCR accessibility, and projection-aware subtitle tooling`
 61. `SteamVR operational support, startup automation, dynamic performance, and Linux driver helpers`
 62. `Focused overlay micro-surfaces, situational HUDs, and OCR-assisted workflow panels`
+63. `Audience chat overlays, stream-facing browser surfaces, and captured-window HUD patterns`
+64. `VR creative authoring, drawing/modeling tools, and in-headset tool/menu systems`
+65. `Networked/social XR frameworks, room clients, and multi-user state substrates`
+66. `OpenGloves sidecars, protocols, named-pipe input, OSC ingress, and force-feedback adapters`
 
 ## Current repository-maintenance priorities
 

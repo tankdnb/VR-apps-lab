@@ -1713,6 +1713,60 @@ Primary docs:
 - `DavidDriessen/EchoVR-Overlay` - `Already studied as browser/OBS telemetry HUD reference`
 - `etiennechabert/ez-wishlist-overlay` - `Partially studied as strong overlay/OCR/workflow donor`
 
+## 107. Audience chat overlays, stream-facing browser surfaces, and captured-window HUD patterns
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-136-audience-chat-overlays-stream-facing-browser-surfaces-and-captured-window-hud-patterns.md`
+- `../landscape/project-families.md`
+
+- `baffler/Transparent-Twitch-Chat-Overlay` - `Already studied as transparent desktop chat overlay donor`
+- `Enubia/ghost-chat` - `Already studied as multi-provider transparent chat sidecar`
+- `giambaJ/jChat` - `Already studied as static browser-source chat renderer`
+- `BenDMyers/showmy.chat` - `Already studied as overlay URL builder and preview reference`
+- `teklynk/twitch_chat_emotes` - `Already studied as animated emote/event overlay`
+
+## 108. VR creative authoring, drawing/modeling tools, and in-headset tool/menu systems
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-137-vr-creative-authoring-drawing-modeling-tools-and-in-headset-tool-menu-systems.md`
+- `../landscape/project-families.md`
+
+- `googlevr/tilt-brush` - `Partially studied as large archived Unity creative-tool architecture reference`
+- `icosa-foundation/open-brush` - `Partially studied as active Tilt Brush evolution with API/multiplayer donor value`
+- `googlevr/blocks` - `Partially studied as archived VR modeling command/export reference`
+- `SideQuestVR/SideSketch` - `Fork / variant only; useful for rebrand and distribution lessons`
+- `zach-capalbo/vartiste` - `Partially studied as browser-native WebXR authoring and shelf/tool reference`
+
+## 109. Networked/social XR frameworks, room clients, and multi-user state substrates
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-138-networked-social-xr-frameworks-room-clients-and-multi-user-state-substrates.md`
+- `../landscape/project-families.md`
+
+- `UCL-VR/ubiq` - `Already studied as research-friendly network scene and room substrate`
+- `mozilla/hubs` - `Partially studied as large WebXR social room client reference`
+- `janusvr/janusweb` - `Already studied as historical spatial-web room/client reference`
+- `vrsys/vrsys-core` - `Partially studied as Unity Netcode/XRI/Meta Avatar composition reference`
+
+## 110. OpenGloves sidecars, protocols, named-pipe input, OSC ingress, and force-feedback adapters
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-139-opengloves-sidecars-protocols-named-pipe-input-osc-ingress-and-force-feedback-adapters.md`
+- `../landscape/project-families.md`
+
+- `LucidVR/opengloves-ui` - `Already studied as Tauri/Svelte calibration and control sidecar`
+- `LucidVR/opengloves-protocol` - `Already studied as protobuf communication contract reference`
+- `PerlinWarp/pygloves` - `Already studied as Python named-pipe tester and hand visualization harness`
+- `senseshift/opengloves-lib` - `Already studied as C++ data model and alpha serial encoding helper`
+- `Rin-Wilson/CS-OpenGloves-Named-Pipe-Input-Library` - `Already studied as C# named-pipe input helper`
+- `Python1320/opengloves-osc` - `Already studied as OSC-to-named-pipe ingress micro-bridge`
+- `LucidVR/opengloves-force-feedback-unity-demo` - `Already studied as Unity/SteamVR force-feedback adapter demo`
+- `LucidVR/opengloves-hl-alyx-integration` - `Already studied as game-log/file-watcher force-feedback sidecar`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

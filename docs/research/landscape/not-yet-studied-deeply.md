@@ -1381,6 +1381,53 @@ These are larger than a single repo and should guide the next research wave.
   should extract a reusable overlay micro-surface checklist and consider an
   `ez-wishlist-overlay` reuse plan if OCR panels become active.
 
+### 101. `Audience chat overlays, stream-facing browser surfaces, and captured-window HUD patterns`
+
+- Main entries:
+  `Transparent-Twitch-Chat-Overlay`, `ghost-chat`, `jChat`, `showmy.chat`,
+  `twitch_chat_emotes`
+- Why it matters:
+  this family captures chat and audience overlays as reusable captured-window
+  and browser-source patterns: setup/live overlay mode, click-through/vanish
+  behavior, provider fan-in, URL configuration, live preview, emote rendering,
+  and animation bounds. A future deeper pass should compare these with native
+  VR dashboard chat and notification surfaces.
+
+### 102. `VR creative authoring, drawing/modeling tools, and in-headset tool/menu systems`
+
+- Main entries:
+  `tilt-brush`, `open-brush`, `blocks`, `SideSketch`, `vartiste`
+- Why it matters:
+  this family captures complex VR tool UX: app-state lifecycles, brush and
+  asset catalogs, panels, WebXR shelves, command/proto histories, exports,
+  scripting APIs, multiplayer, and fork-lineage caveats. A future deeper pass
+  should build a menu/tool/shelf comparison matrix across Unity and WebXR
+  creative tools.
+
+### 103. `Networked/social XR frameworks, room clients, and multi-user state substrates`
+
+- Main entries:
+  `ubiq`, `hubs`, `janusweb`, `vrsys-core`
+- Why it matters:
+  this family captures collaboration substrates: room servers, room clients,
+  peer events, presence, permissions, networked ECS/component state,
+  declarative spatial-web embeds, and Unity prefab/package composition. A
+  future deeper pass should extract a small room/presence/permission checklist
+  for collaborative diagnostics and remote support utilities.
+
+### 104. `OpenGloves sidecars, protocols, named-pipe input, OSC ingress, and force-feedback adapters`
+
+- Main entries:
+  `opengloves-ui`, `opengloves-protocol`, `pygloves`, `opengloves-lib`,
+  `CS-OpenGloves-Named-Pipe-Input-Library`, `opengloves-osc`,
+  `opengloves-force-feedback-unity-demo`, `opengloves-hl-alyx-integration`
+- Why it matters:
+  this family captures custom hand-device integration as a stack: calibration
+  sidecars, protobuf contracts, named-pipe structs, OSC ingress, alpha serial
+  encoding, synthetic test harnesses, Unity FFB, and game-log sidecars. A
+  future deeper pass should build an OpenGloves transport/version matrix before
+  any reuse.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1456,6 +1503,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 69. `VR subtitles, captions, STT/OCR accessibility, and projection-aware subtitle tooling`
 70. `SteamVR operational support, startup automation, dynamic performance, and Linux driver helpers`
 71. `Focused overlay micro-surfaces, situational HUDs, and OCR-assisted workflow panels`
+72. `Audience chat overlays, stream-facing browser surfaces, and captured-window HUD patterns`
+73. `VR creative authoring, drawing/modeling tools, and in-headset tool/menu systems`
+74. `Networked/social XR frameworks, room clients, and multi-user state substrates`
+75. `OpenGloves sidecars, protocols, named-pipe input, OSC ingress, and force-feedback adapters`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

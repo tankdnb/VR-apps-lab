@@ -551,6 +551,25 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on focused overlay micro-surfaces, QR
   scanners, media remotes, telemetry HUDs, and OCR-assisted workflow panels.
 
+- `vr-projects-wave-136-audience-chat-overlays-stream-facing-browser-surfaces-and-captured-window-hud-patterns.md`
+  Next GitHub discovery wave focused on audience chat overlays, transparent
+  desktop windows, browser-source configuration, provider-normalized chat and
+  emote fan-in, and captured-window HUD patterns.
+
+- `vr-projects-wave-137-vr-creative-authoring-drawing-modeling-tools-and-in-headset-tool-menu-systems.md`
+  Next GitHub discovery wave focused on VR creative authoring tools, brush and
+  asset catalogs, in-headset panels/shelves, command histories, exports, and
+  tool/menu systems.
+
+- `vr-projects-wave-138-networked-social-xr-frameworks-room-clients-and-multi-user-state-substrates.md`
+  Next GitHub discovery wave focused on networked/social XR room clients,
+  presence, permissions, networked component state, spatial web embeds, and
+  collaborative utility substrates.
+
+- `vr-projects-wave-139-opengloves-sidecars-protocols-named-pipe-input-osc-ingress-and-force-feedback-adapters.md`
+  Next GitHub discovery wave focused on OpenGloves sidecars, protocols,
+  named-pipe input, OSC ingress, serial encoding, and force-feedback adapters.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
