@@ -687,6 +687,24 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on OpenVR objects, NatNet/OptiTrack,
   webcam/MediaPipe, Quest/SteamVR trackers, and VRChat OSC tracker endpoints.
 
+- `vr-projects-wave-164-vrchat-obs-audience-captions-translation-and-chat-ingress-surfaces.md`
+  Next GitHub discovery wave focused on VRChat, OBS, audience captions,
+  translation, chat ingress, and stream-facing text surfaces.
+
+- `vr-projects-wave-165-open-brush-tilt-asset-pipeline-browser-viewers-shader-loaders-and-collaborative-drawing.md`
+  Next GitHub discovery wave focused on Open Brush, Tilt asset pipelines,
+  browser viewers, shader/material loaders, and collaborative drawing
+  protocols.
+
+- `vr-projects-wave-166-gaussian-splat-immersive-3d-asset-viewers-editors-and-xr-display-surfaces.md`
+  Next GitHub discovery wave focused on Gaussian splat editors, static WebXR
+  viewers, Unity renderers, native XR plugins, and immersive 3D asset display
+  surfaces.
+
+- `vr-projects-wave-167-godot-xr-toolkits-vendor-extensions-templates-and-face-tracking-bridges.md`
+  Next GitHub discovery wave focused on Godot XR toolkit composition, vendor
+  OpenXR extension packages, templates, and face-tracking bridge patterns.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

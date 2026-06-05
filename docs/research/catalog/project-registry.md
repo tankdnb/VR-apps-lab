@@ -571,7 +571,7 @@ Primary docs:
 - `designeerlabs/discord-vr` - `Already studied`
 - `kittynXR/VRCattoChatto` - `Already studied`
 - `Wolf-G88/vrchat-proximity-app` - `Already studied`
-- `Sharrnah/whispering` - `Partially studied`
+- `Sharrnah/whispering` - `Already studied as local multimodal speech/OCR/TTS platform with websocket overlay and VRChat OSC fan-out`
 - `Larsundso/SteamVR-Discord-Overlay` - `Already studied`
 - `Artemol/DiscOverlay` - `Already studied`
 - `imagitama/steamvr-overlay-vrbuddy` - `Already studied`
@@ -1432,10 +1432,10 @@ Primary docs:
 - `../landscape/vr-projects-wave-116-godot-xr-engine-toolkits-templates-backends-and-vendor-extension-stacks.md`
 - `../landscape/project-families.md`
 
-- `GodotVR/godot-xr-tools` - `Partially studied`
+- `GodotVR/godot-xr-tools` - `Already studied as Godot XR function-node toolkit for pointer, pickup, teleport, movement, hands, settings, and scene composition`
 - `GodotVR/godot-xr-template` - `Already studied`
 - `GodotVR/godot_openxr_for_godot_3.x` - `Partially studied`
-- `GodotVR/godot_openxr_vendors` - `Partially studied`
+- `GodotVR/godot_openxr_vendors` - `Already studied as Godot OpenXR vendor extension stack with export feature gates and runtime capability surfaces`
 - `GodotVR/godot_openvr` - `Partially studied`
 - `GodotVR/godot_oculus_mobile` - `Already studied as deprecated reference`
 
@@ -1734,7 +1734,7 @@ Primary docs:
 - `../landscape/project-families.md`
 
 - `googlevr/tilt-brush` - `Partially studied as large archived Unity creative-tool architecture reference`
-- `icosa-foundation/open-brush` - `Partially studied as active Tilt Brush evolution with API/multiplayer donor value`
+- `icosa-foundation/open-brush` - `Already studied as Open Brush creative app/API/sketch-load/export and brush/toolchain donor`
 - `googlevr/blocks` - `Partially studied as archived VR modeling command/export reference`
 - `SideQuestVR/SideSketch` - `Fork / variant only; useful for rebrand and distribution lessons`
 - `zach-capalbo/vartiste` - `Partially studied as browser-native WebXR authoring and shelf/tool reference`
@@ -2074,6 +2074,63 @@ Primary docs:
 - `rogeraabbccdd/VRChat-MotionOSC` - `Already studied as webcam motion and face-expression OSC controller reference`
 - `takana-v/quest_steamvr_fbt_tool` - `Already studied as simple SteamVR/OpenVR tracker to VRChat OSC FBT sender`
 - `Alpyg/vrc_osc_tracker` - `Already studied as MediaPipe camera pose-estimation OSC tracker reference`
+
+## 135. VRChat, OBS, audience captions, translation, and chat-ingress surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-164-vrchat-obs-audience-captions-translation-and-chat-ingress-surfaces.md`
+- `../landscape/project-families.md`
+
+- `Sharrnah/whispering` - `Already studied as local multimodal speech/OCR/TTS platform with websocket overlay and VRChat OSC fan-out`
+- `mmpneo/curses` - `Already studied as text-event bus and multi-target caption fan-out donor`
+- `Harry-Jing/vrc-live-caption` - `Source-light VRChat live-caption and translation product reference`
+- `FionnaPrefabs/Fionnas-Audio-Captions-Prefab` - `Package/distribution caveat only; current repo state is not a caption code donor`
+- `Vinventive/VRChat-to-BLIP` - `Already studied as window-capture AI scene-caption accessibility experiment`
+- `lexonegit/Unity-Twitch-Chat` - `Already studied as Unity Twitch IRC ingress and metadata-aware main-thread queue donor`
+
+## 136. Open Brush, Tilt asset pipelines, browser viewers, shader loaders, and collaborative drawing
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-165-open-brush-tilt-asset-pipeline-browser-viewers-shader-loaders-and-collaborative-drawing.md`
+- `../landscape/project-families.md`
+
+- `icosa-foundation/open-brush` - `Already studied as Open Brush creative app/API/sketch-load/export and brush/toolchain donor`
+- `icosa-foundation/gallery-viewer` - `Already studied as browser Open Brush/Tilt asset viewer with metadata restoration and XR mode`
+- `icosa-foundation/three-icosa` - `Already studied as Three.js Open Brush/Tilt material and shader restoration donor`
+- `icosa-foundation/three-tiltloader` - `Already studied as raw .tilt zip/binary stroke loader`
+- `Prystopia/c-sharp-tiltbrush-toolkit` - `Already studied as C# .tilt parse/edit/write toolkit`
+- `DrHibbitts/TiltBrushConverter` - `Already studied as Python OBJ/FBX conversion option and mesh semantics reference`
+- `Phylliida/P2PDraw` - `Already studied as collaborative stroke segment protocol idea with legacy Unity caveats`
+
+## 137. Gaussian splat immersive 3D asset viewers, editors, and XR display surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-166-gaussian-splat-immersive-3d-asset-viewers-editors-and-xr-display-surfaces.md`
+- `../landscape/project-families.md`
+
+- `playcanvas/supersplat` - `Already studied as browser Gaussian splat editor with command history and GPU data passes`
+- `playcanvas/supersplat-viewer` - `Already studied as static WebXR splat viewer with settings schema, camera modes, collision, and annotations`
+- `playcanvas/model-viewer` - `Already studied as general PlayCanvas model viewer shell with XR/AR placement controller`
+- `mkkellogg/GaussianSplats3D` - `Already studied as Three.js drop-in splat renderer with multi-format loaders, workers, and WebXR caveats`
+- `aras-p/UnityGaussianSplatting` - `Already studied as Unity Gaussian splat asset/runtime renderer with editing, cutouts, compression, and VR caveats`
+- `clarte53/GaussianSplattingVRViewerUnity` - `Already studied as native CUDA/OpenXR Unity plugin and VR splat viewer reference`
+- `keijiro/SplatVFX` - `Already studied as experimental Unity VFX Graph splat binder and substrate caveat`
+
+## 138. Godot XR toolkits, vendor extensions, templates, and face-tracking bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-167-godot-xr-toolkits-vendor-extensions-templates-and-face-tracking-bridges.md`
+- `../landscape/project-families.md`
+
+- `GodotVR/godot-xr-tools` - `Already studied as Godot XR function-node toolkit for pointer, pickup, teleport, movement, hands, settings, and scene composition`
+- `GodotVR/godot_openxr_vendors` - `Already studied as Godot OpenXR vendor extension stack with export feature gates and runtime capability surfaces`
+- `Malcolmnixon/godot-xr-dungeon-template` - `Already studied as Godot XR product-template shell with persistence, staging, HUD, and pause menu references`
+- `beepobb/godot-htc-face-tracking-bridge` - `Already studied as source-driven HTC facial tracking GDExtension bridge caveat`
+- `boku-ilen/godot-vr-toolkit` - `Already studied as legacy Godot OpenVR viewport-to-mesh UI, teleport, and interactable primitive reference`
 
 ## Registry maintenance rule
 

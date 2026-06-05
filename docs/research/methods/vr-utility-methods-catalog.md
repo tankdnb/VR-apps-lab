@@ -8689,3 +8689,483 @@ When a new utility idea appears:
   `vrc_osc_tracker`.
 - Best fit for `VR-apps-lab`:
   vision-based tracker bridge research and calibration UX comparison.
+
+## Method 508: Local multimodal caption platform with websocket overlay and OSC chatbox fan-out
+
+- What it is:
+  a local sidecar accepts speech, OCR, translation, TTS, or AI features and
+  exposes results through browser websocket overlays, browser remotes, and
+  VRChat OSC chatbox messages.
+- Good for:
+  accessibility captions, translation overlays, VRChat chatbox helpers, OBS
+  browser sources, and multimodal assistant sidecars.
+- Why it matters:
+  presentation targets should be replaceable even when recognition/model logic
+  is heavyweight.
+- Source evidence:
+  websocket clients, browser remote handlers, `audioWhisper.py`, and
+  `VRC_OSCLib.py` in `whispering`.
+- Reusable core:
+  separate model processing from output transports, pace chatbox writes, expose
+  overlay URL flags, and keep browser control messages typed.
+- Do not copy directly:
+  the full AI/model dependency stack unless the product requires it.
+- Strong references:
+  `whispering`.
+- Best fit for `VR-apps-lab`:
+  caption overlay sidecars and VRChat accessibility helper design.
+
+## Method 509: Text-event bus for captions across OBS, browser, VRChat, Twitch, Discord, and TTS targets
+
+- What it is:
+  text sources publish normalized events into a central bus, then target
+  adapters send final/interim captions to OBS, browser overlays, VRChat, TTS,
+  Discord, or stream chat surfaces.
+- Good for:
+  stream-facing caption tools, multi-target accessibility apps, chat overlays,
+  and event-driven UI utilities.
+- Why it matters:
+  captions need source/target decoupling more than they need one perfect UI.
+- Source evidence:
+  pubsub, server services, OBS, VRC, and client text elements in `curses`.
+- Reusable core:
+  define a text event schema, store short history, fan out to target adapters,
+  and let each target own timers, emotes, typing state, and visual effects.
+- Do not copy directly:
+  the whole application shell if only the event model is needed.
+- Strong references:
+  `curses`.
+- Best fit for `VR-apps-lab`:
+  caption pipeline architecture and target capability matrices.
+
+## Method 510: Window-capture vision caption loop for VR scene accessibility
+
+- What it is:
+  a sidecar captures a VR app's desktop window, runs a vision-caption model on
+  frames, and produces natural-language scene descriptions.
+- Good for:
+  accessibility experiments, AI scene understanding, remote helper overlays,
+  and diagnostics summaries.
+- Why it matters:
+  scene understanding can begin outside the headset if capture, inference, and
+  output transport are cleanly separated.
+- Source evidence:
+  `vision_encoder.py` in `VRChat-to-BLIP`.
+- Reusable core:
+  locate the target window, capture client-area pixels, run a paced caption
+  loop, and route text to a separate presentation/transport layer.
+- Do not copy directly:
+  GPU assumptions or missing UX/output flow.
+- Strong references:
+  `VRChat-to-BLIP`.
+- Best fit for `VR-apps-lab`:
+  accessibility caption experiments and AI scene-awareness sidecars.
+
+## Method 511: Unity Twitch IRC ingress with metadata-aware main-thread queues
+
+- What it is:
+  a Unity component owns Twitch IRC connection threads, parses tags/emotes/badges,
+  queues messages, and drains them through Unity events on the main thread.
+- Good for:
+  audience chat panels, stream-facing VR worlds, in-headset chat surfaces, and
+  social event widgets.
+- Why it matters:
+  chat ingress is only useful in Unity when threading and metadata are handled
+  before UI code sees messages.
+- Source evidence:
+  `IRC.cs`, `Chatter.cs`, and `TwitchConnection.*` in `Unity-Twitch-Chat`.
+- Reusable core:
+  isolate read/write threads, normalize chat metadata, cap per-frame event
+  processing, and expose clear connection/chat events.
+- Do not copy directly:
+  Twitch-only assumptions if the tool needs multi-provider chat.
+- Strong references:
+  `Unity-Twitch-Chat`.
+- Best fit for `VR-apps-lab`:
+  audience chat ingress and Unity-side overlay/world text utilities.
+
+## Method 512: External sketch load queue with safe user-sketch copy and command dispatch
+
+- What it is:
+  a creative app accepts external sketch-load requests, copies files into a safe
+  user-controlled sketch location, and lets normal app commands load the asset.
+- Good for:
+  creative VR tools, sketch viewers, file-open handlers, and asset import
+  companions.
+- Why it matters:
+  external asset ingestion should not bypass normal app state or save/load
+  ownership.
+- Source evidence:
+  `App.cs` and related editor/API tooling in `open-brush`.
+- Reusable core:
+  accept outside paths, copy with collision-safe naming, enqueue the request,
+  and route through the app's existing load command.
+- Do not copy directly:
+  the full Open Brush app architecture for a small viewer.
+- Strong references:
+  `open-brush`.
+- Best fit for `VR-apps-lab`:
+  creative asset import patterns and Open Brush/Tilt pipeline notes.
+
+## Method 513: Browser viewer metadata restoration for creative VR exports
+
+- What it is:
+  a browser viewer loads exported creative assets, restores environment/camera
+  metadata, converts coordinate conventions, and supports desktop plus XR
+  navigation.
+- Good for:
+  sketch galleries, web previews, creator portfolios, and lightweight XR asset
+  viewers.
+- Why it matters:
+  exported VR art loses meaning if cameras, lights, sky, and authoring metadata
+  are discarded.
+- Source evidence:
+  `viewer.ts` in `gallery-viewer`.
+- Reusable core:
+  parse export metadata, recreate scene environment, normalize formats, and
+  expose both fly/orbit and XR navigation modes.
+- Do not copy directly:
+  format support beyond what a product needs.
+- Strong references:
+  `gallery-viewer`.
+- Best fit for `VR-apps-lab`:
+  creative asset viewer design and metadata-preserving import paths.
+
+## Method 514: Open Brush/Tilt glTF material extension and shader replacement layer
+
+- What it is:
+  a renderer plugin detects Open Brush/Tilt material metadata, maps brush IDs
+  and names, loads shaders/textures, and replaces generic glTF materials with
+  brush-accurate materials.
+- Good for:
+  web sketch viewers, glTF export compatibility, shader restoration, and
+  creative asset pipelines.
+- Why it matters:
+  brush-heavy artwork depends on material behavior, not just geometry.
+- Source evidence:
+  `GOOGLE_tilt_brush_material.js` and `TiltShaderLoader.js` in `three-icosa`.
+- Reusable core:
+  detect the custom material extension, map brush identifiers, patch texture
+  paths, load shader assets asynchronously, and cache material instances.
+- Do not copy directly:
+  brush asset packaging assumptions without planning distribution.
+- Strong references:
+  `three-icosa`.
+- Best fit for `VR-apps-lab`:
+  shader/material compatibility layers for creative VR exports.
+
+## Method 515: Raw `.tilt` zip/binary stroke loader into renderable geometry
+
+- What it is:
+  a loader opens `.tilt` archives, parses metadata and binary stroke data, maps
+  brush/materials, and emits renderer-native stroke geometry.
+- Good for:
+  direct sketch previews, converters, import diagnostics, and browser creative
+  tools.
+- Why it matters:
+  direct file loading can avoid heavyweight conversion steps if binary semantics
+  are explicit.
+- Source evidence:
+  `TiltLoader.js` in `three-tiltloader`.
+- Reusable core:
+  read the archive, parse stroke count/control points, flip coordinates where
+  needed, build geometry, and bind brush materials.
+- Do not copy directly:
+  uncertain mask/offset assumptions without verification.
+- Strong references:
+  `three-tiltloader`.
+- Best fit for `VR-apps-lab`:
+  raw creative asset ingestion and loader caveat notes.
+
+## Method 516: Collaborative stroke segment add/remove protocol
+
+- What it is:
+  a drawing app treats collaboration as segment-level add/remove messages with
+  unique IDs and serialized point arrays.
+- Good for:
+  collaborative sketch prototypes, networked annotation tools, whiteboards, and
+  simple multi-user drawing utilities.
+- Why it matters:
+  a tiny protocol can validate collaboration concepts before adopting a large
+  networking framework.
+- Source evidence:
+  `Marker.cs`, `World.cs`, and `Peer.cs` in `P2PDraw`.
+- Reusable core:
+  generate segment IDs, serialize strokes, send add/remove messages, and replay
+  existing segments to new peers.
+- Do not copy directly:
+  old Unity VR API, hardcoded signaling, or checked-in artifact structure.
+- Strong references:
+  `P2PDraw`.
+- Best fit for `VR-apps-lab`:
+  collaborative drawing and shared annotation protocol sketches.
+
+## Method 517: Gaussian splat editor with serialized command history and GPU data passes
+
+- What it is:
+  a browser editor serializes edit operations through a shared queue while GPU
+  passes calculate selection masks, bounds, histograms, and intersections.
+- Good for:
+  heavy asset editors, splat optimization tools, selection UIs, and browser
+  data-processing surfaces.
+- Why it matters:
+  undo/redo and async GPU work need one ordering boundary or editor state will
+  drift.
+- Source evidence:
+  `edit-history.ts`, `data-processor/index.ts`, and `asset-loader.ts` in
+  `supersplat`.
+- Reusable core:
+  route all edit mutations through a command queue, keep history cursor
+  integrity, validate/load splat data, and return owned GPU readback buffers.
+- Do not copy directly:
+  full editor UI when only data processing is needed.
+- Strong references:
+  `supersplat`.
+- Best fit for `VR-apps-lab`:
+  asset editor architecture and Gaussian splat utility matrices.
+
+## Method 518: Static WebXR splat viewer with schema, camera modes, collision, and annotations
+
+- What it is:
+  a splat viewer packages scene content and settings as a static site with a
+  typed settings schema, URL overrides, WebXR entry, camera modes, collision,
+  annotations, and animation tracks.
+- Good for:
+  shareable spatial captures, splat galleries, immersive scene documentation,
+  and lightweight XR asset previews.
+- Why it matters:
+  portable 3D captures need settings and navigation contracts, not only a file
+  loader.
+- Source evidence:
+  `README.md`, `xr.ts`, `app.ts`, and `camera-manager.ts` in
+  `supersplat-viewer`.
+- Reusable core:
+  define a JSON settings schema, support URL content overrides, gate XR on
+  renderer capability, and choose orbit/fly/walk/anim cameras from scene state.
+- Do not copy directly:
+  WebGPU/WebGL assumptions without checking the target runtime.
+- Strong references:
+  `supersplat-viewer`.
+- Best fit for `VR-apps-lab`:
+  static XR viewer patterns and publishable asset surfaces.
+
+## Method 519: Drop-in Gaussian splat renderer library with multi-format loaders and worker sorting
+
+- What it is:
+  a Three.js library loads splat formats, can run its own render loop or be
+  embedded in another scene, and uses workers/WASM or GPU-assisted paths for
+  sorting.
+- Good for:
+  browser splat apps, mixed Three.js scenes, interactive capture viewers, and
+  rendering experiments.
+- Why it matters:
+  utility apps often need an embeddable renderer rather than a full editor.
+- Source evidence:
+  `Viewer.js`, loader directories, `WebXRMode.js`, and WebXR button helpers in
+  `GaussianSplats3D`.
+- Reusable core:
+  support self-driven/drop-in modes, format detection, progressive loading,
+  external renderer/camera integration, worker sorting, and WebXR mode gates.
+- Do not copy directly:
+  inactive-maintenance assumptions and known large-scene/mobile caveats.
+- Strong references:
+  `GaussianSplats3D`.
+- Best fit for `VR-apps-lab`:
+  browser splat renderer comparisons and viewer prototype options.
+
+## Method 520: Unity Gaussian splat asset/runtime render pipeline with edit/export support
+
+- What it is:
+  a Unity package imports splat files into compressed assets, renders them with
+  command-buffer/GPU sorting paths, and exposes cutouts, debug modes, editing,
+  merging, and export.
+- Good for:
+  Unity spatial capture viewers, native VR scenes, editor inspection tools, and
+  high-performance asset experiments.
+- Why it matters:
+  splat rendering in Unity is a full asset pipeline, not just a shader.
+- Source evidence:
+  `GaussianSplatAsset.cs`, `GaussianSplatRenderer.cs`, and `splat-editing.md`
+  in `UnityGaussianSplatting`.
+- Reusable core:
+  choose asset compression formats, gather active renderers per camera, sort
+  splats, draw procedurally, support cutouts/selection, and export modified PLY.
+- Do not copy directly:
+  graphics API assumptions or data-license blind spots.
+- Strong references:
+  `UnityGaussianSplatting`.
+- Best fit for `VR-apps-lab`:
+  Unity splat runtime comparisons and editor utility references.
+
+## Method 521: Native CUDA/OpenXR Unity plugin boundary for VR Gaussian splat rendering
+
+- What it is:
+  Unity owns scene/menu/controller UX while a native plugin owns CUDA model
+  loading, render contexts, texture/depth interop, preprocessing, and drawing.
+- Good for:
+  high-performance native render experiments, VR capture viewers, and native
+  plugin boundary studies.
+- Why it matters:
+  native renderers need a clean API surface or the Unity side becomes fragile.
+- Source evidence:
+  `GaussianSplatting.cpp` and `PluginAPI.cpp` in
+  `GaussianSplattingVRViewerUnity`.
+- Reusable core:
+  expose load/copy/remove model APIs, create per-POV render contexts, map native
+  textures/depth, set draw parameters, preprocess, draw, and keep errors
+  inspectable.
+- Do not copy directly:
+  CUDA-only implementation without target-hardware justification.
+- Strong references:
+  `GaussianSplattingVRViewerUnity`.
+- Best fit for `VR-apps-lab`:
+  native plugin architecture notes and VR splat viewer caveats.
+
+## Method 522: Unity VFX Graph splat data binder substrate
+
+- What it is:
+  a ScriptableObject stores splat arrays, lazily creates graphics buffers, and a
+  VFX binder injects splat count, positions, axes, and colors into VFX Graph.
+- Good for:
+  visual experiments, shader/VFX prototypes, point effects, and quick Unity
+  splat demonstrations.
+- Why it matters:
+  VFX Graph can be a substrate for exploration even when it is not a production
+  renderer.
+- Source evidence:
+  `SplatData.cs`, `SplatDataBinder.cs`, importer, and VFX assets in
+  `SplatVFX`.
+- Reusable core:
+  keep CPU arrays in a data asset, allocate buffers on demand, bind them to VFX
+  properties, and release GPU resources cleanly.
+- Do not copy directly:
+  projection algorithm or artifact-prone renderer as product baseline.
+- Strong references:
+  `SplatVFX`.
+- Best fit for `VR-apps-lab`:
+  visual-effect experiments and Unity buffer binding examples.
+
+## Method 523: Godot XR function-node toolkit with exported configuration and warnings
+
+- What it is:
+  Godot XR capabilities are packaged as scene nodes with exported properties,
+  action names, collision masks, configuration warnings, and helper scene
+  creation.
+- Good for:
+  Godot VR utilities, interaction prototypes, locomotion modules, hand tools,
+  and reusable scene packs.
+- Why it matters:
+  Godot reuse often works best as composable nodes rather than one central
+  manager.
+- Source evidence:
+  `movement_provider.gd`, `function_pointer.gd`, `function_pickup.gd`, and
+  `function_teleport.gd` in `godot-xr-tools`.
+- Reusable core:
+  define one function per node, expose settings, validate scene placement, wire
+  controller signals, and separate movement providers from player-body motion.
+- Do not copy directly:
+  every toolkit node into small utilities.
+- Strong references:
+  `godot-xr-tools`.
+- Best fit for `VR-apps-lab`:
+  Godot XR utility samples and toolkit composition matrices.
+
+## Method 524: Godot OpenXR vendor extension package with export feature gates
+
+- What it is:
+  a GDExtension package exposes vendor OpenXR extensions through wrapper
+  classes, project settings, export options, Android package features, docs,
+  and small samples.
+- Good for:
+  vendor capability diagnostics, Meta/Pico/Android XR/HTC feature helpers,
+  Godot XR prototypes, and export-check tools.
+- Why it matters:
+  vendor features need build/export gates as much as runtime API wrappers.
+- Source evidence:
+  export plugins, extension wrappers, doc classes, Android XR headers, and
+  performance metrics sample in `godot_openxr_vendors`.
+- Reusable core:
+  request extensions, bind engine-facing classes, generate export options,
+  prevent incompatible vendor toggles, expose feature manifests, and provide
+  small diagnostics samples.
+- Do not copy directly:
+  vendor code without licensing and runtime capability checks.
+- Strong references:
+  `godot_openxr_vendors`.
+- Best fit for `VR-apps-lab`:
+  Godot vendor extension matrices and capability diagnostic helpers.
+
+## Method 525: Godot XR product-template shell with persistence, staging, HUD, and pause menu
+
+- What it is:
+  a sample game composes XR toolkit modules with persistent world state,
+  staging/scene transitions, HUD signal bindings, pause menu actions, and
+  save/load flows.
+- Good for:
+  Godot XR starter apps, utility shells, game-like tools, and interaction demos.
+- Why it matters:
+  reusable toolkit nodes become product-ready only when the surrounding state,
+  UI, and scene lifecycle are demonstrated.
+- Source evidence:
+  `game_state.gd`, `persistent_world.gd`, `pause_menu_3d.gd`, and
+  `status_hud.gd` in `godot-xr-dungeon-template`.
+- Reusable core:
+  keep global state in an autoload, emit UI signals, save zone/player transform,
+  stage scene transitions, and make pause/save/quit actions headset-friendly.
+- Do not copy directly:
+  bundled assets and dependency copies.
+- Strong references:
+  `godot-xr-dungeon-template`.
+- Best fit for `VR-apps-lab`:
+  Godot XR sample shell and stateful utility app patterns.
+
+## Method 526: GDExtension OpenXR face-tracking bridge to engine-native face tracker
+
+- What it is:
+  a focused GDExtension requests a vendor face-tracking extension, manages
+  session tracker handles, reads expression weights, maps them to engine blend
+  shape slots, and registers an engine face tracker.
+- Good for:
+  face tracking bridges, vendor extension learning, avatar expression tools,
+  and Godot XR diagnostics.
+- Why it matters:
+  small bridges show the lifecycle boundary between OpenXR extension data and
+  engine-native tracker abstractions.
+- Source evidence:
+  `openxr_htc_facial_tracking_extension.cpp` and `.h` in
+  `godot-htc-face-tracking-bridge`.
+- Reusable core:
+  request extension flags, create/destroy tracker handles with the session,
+  query predicted display time, read expression weights, map unsupported values
+  explicitly, and register an `XRFaceTracker`.
+- Do not copy directly:
+  generic template README scaffolding or duplicate upstream vendor support.
+- Strong references:
+  `godot-htc-face-tracking-bridge`.
+- Best fit for `VR-apps-lab`:
+  Godot face-tracking bridge notes and extension lifecycle references.
+
+## Method 527: Viewport-to-mesh VR UI interaction with synthetic mouse events
+
+- What it is:
+  a VR controller ray hits a 3D mesh hosting a viewport, converts the world hit
+  point into viewport coordinates, synthesizes mouse motion/button events, and
+  sends them into the embedded UI.
+- Good for:
+  VR menus, in-world panels, legacy toolkit comparisons, and engine-agnostic UI
+  interaction notes.
+- Why it matters:
+  2D UI in 3D remains one of the simplest useful VR utility surfaces.
+- Source evidence:
+  `GuiInteraction.gd`, `ViewportToMesh.gd`, `RayTeleport.gd`, and
+  `VRInteractable.gd` in `godot-vr-toolkit`.
+- Reusable core:
+  raycast from controller, orient hit markers, convert 3D hit points via mesh
+  transform to normalized UI coordinates, synthesize mouse events, and feed the
+  viewport.
+- Do not copy directly:
+  old Godot 3/OpenVR dependencies and bundled binaries.
+- Strong references:
+  `godot-vr-toolkit`.
+- Best fit for `VR-apps-lab`:
+  VR menu/input primitives and legacy-to-modern Godot XR comparisons.

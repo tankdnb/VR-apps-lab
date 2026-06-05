@@ -33,7 +33,7 @@ overlay-host waves.
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
 | `krazysh01/VirtualDesktop-OpenVR-Trackers` | Partially studied | Product direction suggests body-state-to-tracker bridging, but the current public snapshot looks much thinner than expected | Medium | Medium | Re-check only if the public repo grows a real data-ingress surface or visible tracker-role mapping logic |
-| `Sharrnah/whispering` | Partially studied | Broad local speech platform where VR is one consumer among OSC, websocket, TTS, and plugin outputs | High | High | Narrow the next pass to plugin boundaries, overlay-facing surfaces, and which slices matter most for future VR utility work |
+| `Sharrnah/whispering` | Already studied in Wave 164 | Broad local speech platform where VR is one consumer among OSC, websocket, TTS, and plugin outputs | High | High | No urgent follow-up; revisit only when building a caption pipeline matrix or extracting a small overlay/OSC transport slice |
 
 ## Priority batch B: comparison variants and forks
 
@@ -68,8 +68,8 @@ active prototype or reuse-plan target.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `GodotVR/godot-xr-tools` | Partially studied | Scene-pack XR toolkit whose strongest value is reusable function nodes for interaction, hands, movement, and settings | High | High | Split a future pass by function module: gaze/pointer, pickup, locomotion, hands, desktop support, and user settings |
-| `GodotVR/godot_openxr_vendors` | Partially studied | Vendor OpenXR extension packaging where export plugins and capability gates may become a strong diagnostics pattern | High | High | Build a feature matrix for passthrough, depth, anchors, hand/body/face, render models, colocation, and export toggles |
+| `GodotVR/godot-xr-tools` | Already studied in Wave 167 | Scene-pack XR toolkit whose strongest value is reusable function nodes for interaction, hands, movement, and settings | High | High | No urgent follow-up; next useful work is a function-node matrix, not another repo-level reread |
+| `GodotVR/godot_openxr_vendors` | Already studied in Wave 167 | Vendor OpenXR extension packaging where export plugins and capability gates may become a strong diagnostics pattern | High | High | No urgent follow-up; next useful work is a vendor feature/export matrix across runtime capabilities |
 | `aframevr/aframe-inspector` | Already studied | Browser scene inspector that can become a reference for in-headset or in-browser debug/edit surfaces | High | High | Compare entity/component history, selection, export, and component-add flows against native overlay diagnostics |
 | `networked-aframe/networked-aframe` | Partially studied | Schema-driven scene sync with pluggable WebRTC/WebSocket adapters | High | High | Compare adapter boundaries with OSC/WebSocket bridge families and decide what a generic browser utility sync layer should keep |
 | `mordentral/VRExpansionPlugin` | Partially studied | Replicated Unreal grip/movement framework whose donor value sits in authority, smoothing, and grip event boundaries | High | High | Deepen only if Unreal networked interaction becomes active scope; isolate grip replication and movement actions first |
@@ -1826,6 +1826,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 97. `OSCQuery implementation matrix across C#, Rust, Python, sidecars, and direct-address fallbacks`
 98. `Resonite creator import/export pipelines, component search UX, and metadata-rich capture artifacts`
 99. `External pose/object/sensor ingress to VRChat OSC tracker endpoints and avatar parameters`
+100. `Caption pipeline matrix across speech/OCR/translation, OBS, browser overlays, VRChat chatbox, and Unity/audience chat surfaces`
+101. `Open Brush/Tilt asset pipeline map across raw .tilt, shader restoration, web viewers, conversion, and collaborative strokes`
+102. `Gaussian splat utility matrix across browser editors, static WebXR viewers, Unity runtimes, native plugins, and VFX substrates`
+103. `Godot XR function-node and OpenXR vendor feature/export matrices`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

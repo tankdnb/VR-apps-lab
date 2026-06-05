@@ -701,7 +701,7 @@ through overlays, `OSC`, `WebSocket`, or desktop companion surfaces.
 | `designeerlabs/discord-vr` | Already studied | Browser-automation sidecar that turns Discord voice presence into a prefab-driven OpenVR overlay |
 | `kittynXR/VRCattoChatto` | Already studied | Desktop-native chat companion with Twitch plus OSC outputs and persisted broadcaster/auth state |
 | `Wolf-G88/vrchat-proximity-app` | Already studied | Service-first proximity sidecar with OSC transport and optional SteamVR overlay controls |
-| `Sharrnah/whispering` | Partially studied | Broad local speech platform whose VR value comes from OSC and websocket fan-out rather than a single overlay |
+| `Sharrnah/whispering` | Already studied as local multimodal speech/OCR/TTS platform with websocket overlay and VRChat OSC fan-out | Broad local speech platform whose VR value comes from OSC, websocket overlays, browser remote commands, and chatbox pacing rather than a single overlay |
 | `Hotrian/OpenVRTwitchChat` | Already studied | Twitch-chat overlay reference with a stronger in-headset presentation bias |
 | `MeroFune/GOpy` | Already studied as OSC gesture-parameter to HMD-relative overlay icon bridge | Smaller integration-helper comparison node that adds an OSC-to-overlay communication angle |
 | `I5UCC/VRCTextboxSTT` | Already studied | Local speech-to-text helper where the SteamVR overlay is one output surface among others |
@@ -2920,10 +2920,10 @@ legacy mobile VR migration references.
 
 | Project | Status | Notes |
 |---|---|---|
-| `GodotVR/godot-xr-tools` | Partially studied | Modular XR scene pack with gaze/pointer/pickup/pose/teleport/movement functions, hands, interactables, desktop support, effects, staging, rumble, and settings |
+| `GodotVR/godot-xr-tools` | Already studied as Godot XR function-node toolkit | Modular XR scene pack with gaze/pointer/pickup/pose/teleport/movement functions, hands, interactables, desktop support, effects, staging, rumble, settings, exported properties, and configuration warnings |
 | `GodotVR/godot-xr-template` | Already studied | Starter project with OpenXR action map, XR Tools wiring, OpenXR Vendors dependency, and Android export feature toggles |
 | `GodotVR/godot_openxr_for_godot_3.x` | Partially studied | Legacy Godot 3 OpenXR backend with interface/config/action/pose/hand/skeleton/extension wrapper boundaries |
-| `GodotVR/godot_openxr_vendors` | Partially studied | Godot 4 GDExtension stack for Android XR, Meta, Pico, Lynx, Magic Leap, Khronos, passthrough, anchors, depth, body/face/hand, scene, render-model, and export-plugin features |
+| `GodotVR/godot_openxr_vendors` | Already studied as Godot OpenXR vendor extension stack with export feature gates | Godot 4 GDExtension stack for Android XR, Meta, Pico, Lynx, Magic Leap, Khronos, passthrough, anchors, depth, body/face/hand, scene, render-model, performance metrics, composition layers, docs, and export-plugin features |
 | `GodotVR/godot_openvr` | Partially studied | Godot 4 OpenVR/SteamVR backend with action manifests, skeletons, play-area, render-model, battery, and charging helpers |
 | `GodotVR/godot_oculus_mobile` | Already studied as deprecated reference | Deprecated Oculus Mobile bridge useful only for migration/API-shaping lessons around vendor wrapper surfaces |
 
@@ -3667,7 +3667,7 @@ save/load, export, scripting, multiplayer, and in-headset menu systems.
 | Project | Status | Notes |
 |---|---|---|
 | `googlevr/tilt-brush` | Partially studied as large archived Unity creative-tool architecture reference | App-state lifecycle, brush/environment catalogs, pointer/controller systems, panels, sketch load/export, tutorial hints, HTTP load callback, and global command surfaces |
-| `icosa-foundation/open-brush` | Partially studied as active Tilt Brush evolution with API/multiplayer donor value | Modern XR/OpenXR direction, Lua/API wrappers across app/brush/camera/color/environment/group/guide/headset/image/layer, Photon multiplayer, RPC batching, and voice paths |
+| `icosa-foundation/open-brush` | Already studied as Open Brush creative app/API/sketch-load/export and brush/toolchain donor | Modern XR/OpenXR direction, external `.tilt` load handling, user sketch path management, Lua/API/editor/doc generators, brush tooling, export pipelines, Photon multiplayer, RPC batching, and voice paths |
 | `googlevr/blocks` | Partially studied as archived VR modeling command/export reference | Proto-backed command messages, add/copy/delete/move/replace/group mesh operations, face property changes, OBJ/FBX/glTF/export and asset-service flows |
 | `SideQuestVR/SideSketch` | Fork / variant only | Tilt Brush fork with SideQuest rebrand/distribution lessons and limited unique architecture beyond upstream |
 | `zach-capalbo/vartiste` | Partially studied as browser-native WebXR authoring and shelf/tool reference | A-Frame brush system, brush packs/user brushes, movable shelf component with pin/close/hide behavior, upload/interceptor flows, and avatar/spectator/Hubs references |
@@ -4570,6 +4570,150 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - calibration UX categories
 - OSC tracker endpoint contracts
 - smoothing/scale/activation safety notes
+
+## Family 143: VRChat, OBS, audience captions, translation, and chat-ingress surfaces
+
+This family covers text/caption utilities that move speech, OCR, translation,
+vision captions, or stream chat into browser overlays, OBS, VRChat OSC chatbox,
+avatar text, Discord, TTS, or Unity-side VR surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Sharrnah/whispering` | Already studied as local multimodal speech/OCR/TTS platform with websocket overlay and VRChat OSC fan-out | websocket overlay clients, browser remote settings/plugin commands, OCR window capture knobs, plugin timers, chatbox chunking, typing state, and heavy model dependency caveat |
+| `mmpneo/curses` | Already studied as text-event bus and multi-target caption fan-out donor | STT/translation/Twitch/Discord/input sources, pubsub text history, OBS native captions, browser overlays, VRChat chatbox/avatar text targets, emotes, particles, timers, and TTS |
+| `Harry-Jing/vrc-live-caption` | Source-light VRChat live-caption and translation product reference | README-only pass; useful as Chinese/mixed-language live-caption framing, not code donor |
+| `FionnaPrefabs/Fionnas-Audio-Captions-Prefab` | Package/distribution caveat only | VPM package/listing workflow template residue; do not treat as caption implementation donor until real prefab/runtime assets appear |
+| `Vinventive/VRChat-to-BLIP` | Already studied as window-capture AI scene-caption accessibility experiment | VRChat desktop-window capture with `mss`/Win32/PIL, BLIP caption loop, 10-second cadence, high-end GPU caveat, and missing output transport |
+| `lexonegit/Unity-Twitch-Chat` | Already studied as Unity Twitch IRC ingress and metadata-aware main-thread queue donor | Twitch IRC connect/join, tag/emote/badge parsing, anonymous/auth modes, rate-limit checks, reconnects, read/write threads, and capped Unity main-thread event processing |
+
+### Consolidation note
+
+This family matters because captions are an event-routing problem before they
+are an overlay problem. It now clearly includes:
+
+- local speech/OCR/TTS/translation sidecars
+- browser websocket overlays and remote control pages
+- OBS native stream captions
+- VRChat chatbox pacing and typing state
+- stream chat metadata ingress
+- AI scene-caption experiments
+- source-light product signals and package caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- caption pipeline matrices
+- target capability comparisons
+- chatbox pacing rules
+- browser overlay URL contracts
+- accessibility caption product concepts
+
+## Family 144: Open Brush, Tilt asset pipelines, browser viewers, shader loaders, and collaborative drawing
+
+This family covers the creative asset path around Open Brush/Tilt Brush:
+sketch loading, app state, exported viewer metadata, brush shader restoration,
+raw `.tilt` parsing, conversion, and collaborative stroke protocols.
+
+| Project | Status | Notes |
+|---|---|---|
+| `icosa-foundation/open-brush` | Already studied as Open Brush creative app/API/sketch-load/export and brush/toolchain donor | external `.tilt` load queue, user sketch path copying, app command flow, Lua/API/editor/doc generators, brush/export tooling, panels, multiplayer, and large Unity caveat |
+| `icosa-foundation/gallery-viewer` | Already studied as browser Open Brush/Tilt asset viewer with metadata restoration and XR mode | Three.js loaders for glTF/OBJ/FBX/PLY/STL/USDZ/VOX/splats, Tilt metadata parsing, lighting/environment restoration, fly/orbit navigation, and XR controller models |
+| `icosa-foundation/three-icosa` | Already studied as Three.js Open Brush/Tilt material and shader restoration donor | `GOOGLE_tilt_brush_material` handling, brush GUID/name mapping, texture URI patching, attribute conversion, shader include/texture loading, and material cache |
+| `icosa-foundation/three-tiltloader` | Already studied as raw .tilt zip/binary stroke loader | `.tilt` header skip, fflate unzip, metadata and binary stroke parsing, control points, handedness flip, stroke geometry, and uncertain mask-offset caveat |
+| `Prystopia/c-sharp-tiltbrush-toolkit` | Already studied as C# .tilt parse/edit/write toolkit | typed control-point/header/metadata helpers, export parsing, mesh merge helpers, and programmatic `.tilt` manipulation examples |
+| `DrHibbitts/TiltBrushConverter` | Already studied as Python OBJ/FBX conversion option and mesh semantics reference | FBX/OBJ exporters, cooked/raw geometry options, merge by stroke/brush, backface handling, PyQt GUI, progress, and old Python/FBX SDK caveat |
+| `Phylliida/P2PDraw` | Already studied as collaborative stroke segment protocol idea with legacy Unity caveats | segment add/remove messages, float-array stroke payloads, base64 peer messages, existing-segment replay, hardcoded signaling, old Unity VR API, and checked-in artifact caveat |
+
+### Consolidation note
+
+This family matters because creative VR reuse lives in the asset pipeline:
+
+- app-side sketch loading and command state
+- browser viewer metadata restoration
+- brush shader/material compatibility
+- raw `.tilt` stroke parsing
+- programmatic edit/write utilities
+- conversion options and mesh semantics
+- collaborative stroke protocols
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Open Brush/Tilt pipeline maps
+- creative asset viewer prototypes
+- brush shader restoration notes
+- collaborative stroke protocol comparisons
+
+## Family 145: Gaussian splat immersive 3D asset viewers, editors, and XR display surfaces
+
+This family covers Gaussian splat utilities across browser editors, static WebXR
+viewers, model viewer shells, Three.js libraries, Unity renderers, native
+plugins, and visual-effect experiments.
+
+| Project | Status | Notes |
+|---|---|---|
+| `playcanvas/supersplat` | Already studied as browser Gaussian splat editor with command history and GPU data passes | editor event bus, dirty/export cursor, shared command queue, undo/redo, `splat-transform` loading, GPU bounds/histogram/intersection/range selection, gzip/progress writers |
+| `playcanvas/supersplat-viewer` | Already studied as static WebXR splat viewer with settings schema, camera modes, collision, and annotations | URL content/settings/collision parameters, typed settings schema/migration, WebGL-gated WebXR, AR/VR session restore, orbit/fly/walk/anim cameras, annotations, skybox, sound, and post effects |
+| `playcanvas/model-viewer` | Already studied as general PlayCanvas model viewer shell with XR/AR placement controller | glTF/GLB drag-drop viewer, resource/component stack, GSplat handler, AR hit-test placement, DOM overlay rotate input, and general viewer substrate value |
+| `mkkellogg/GaussianSplats3D` | Already studied as Three.js drop-in splat renderer with multi-format loaders, workers, and WebXR caveats | PLY/SPLAT/KSPLAT/SPZ loaders, self-driven/drop-in modes, external renderer/camera support, workers/WASM sorting, WebXR mode, raycaster, and inactive-maintenance/performance caveats |
+| `aras-p/UnityGaussianSplatting` | Already studied as Unity Gaussian splat asset/runtime renderer with editing, cutouts, compression, and VR caveats | asset compression/data layout, renderer command buffers, camera gathering, GPU sorting, procedural draw, debug modes, cutouts, merge/export, VR/platform caveats, and data-license note |
+| `clarte53/GaussianSplattingVRViewerUnity` | Already studied as native CUDA/OpenXR Unity plugin and VR splat viewer reference | CUDA/differential rasterization plugin, multi-model load/remove/crop, per-POV render contexts, native texture/depth pointers, controller move/scale/menu UX, and Windows/CUDA performance caveat |
+| `keijiro/SplatVFX` | Already studied as experimental Unity VFX Graph splat binder and substrate caveat | ScriptableObject splat arrays, lazy graphics buffers, VFX property binder, importer/VFX/shader graph, 8M point capacity note, and explicit not-ready/artifact caveat |
+
+### Consolidation note
+
+This family matters because Gaussian splat tools should not be lumped into one
+category. It now clearly includes:
+
+- browser editors
+- static WebXR viewers
+- general model viewer shells
+- drop-in web renderer libraries
+- Unity asset/runtime renderers
+- native CUDA/OpenXR plugins
+- VFX Graph experiments
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Gaussian splat utility matrices
+- viewer settings/schema patterns
+- WebXR versus native VR navigation comparisons
+- splat data provenance and performance caveats
+
+## Family 146: Godot XR toolkits, vendor extensions, templates, and face-tracking bridges
+
+This family covers Godot XR reusable building blocks: function-node toolkits,
+vendor OpenXR extension stacks, product templates, GDExtension face tracking,
+and legacy OpenVR UI/teleport primitives.
+
+| Project | Status | Notes |
+|---|---|---|
+| `GodotVR/godot-xr-tools` | Already studied as Godot XR function-node toolkit | exported properties, configuration warnings, movement-provider base, pointer events, pickup/ranged grab, teleport arc and validation, hands, desktop support, audio/effects/staging/settings, and scene-node composition |
+| `GodotVR/godot_openxr_vendors` | Already studied as Godot OpenXR vendor extension stack with export feature gates | GDExtension wrappers, Android XR/Meta/Pico/HTC/Magic Leap/Lynx/Khronos feature surfaces, export options, mutually exclusive vendor toggles, composition layers, performance metrics, docs, samples, and validation layers |
+| `Malcolmnixon/godot-xr-dungeon-template` | Already studied as Godot XR product-template shell with persistence, staging, HUD, and pause menu references | XR Tools and Vendors composition, persistent world autoload, zone save/restore, HUD state signals, pause menu save/quit, NPC state, item modifiers, and asset/dependency caveats |
+| `beepobb/godot-htc-face-tracking-bridge` | Already studied as source-driven HTC facial tracking GDExtension bridge caveat | requested HTC facial tracking extension, session tracker handles, expression weight reads, Godot `XRFaceTracker` mapping/registration, and generic template README caveat |
+| `boku-ilen/godot-vr-toolkit` | Already studied as legacy Godot OpenVR viewport-to-mesh UI, teleport, and interactable primitive reference | viewport-to-mesh coordinate mapping, synthetic mouse events, controller ray/indicator UX, Bezier teleport ray, interactable base class, object menus, and old Godot/OpenVR caveats |
+
+### Consolidation note
+
+This family matters because Godot XR reuse has two strong shapes:
+
+- scene-node composition for interactions and locomotion
+- vendor extension/export-gate matrices for runtime capabilities
+
+It now clearly includes:
+
+- pointer/pickup/teleport/movement function nodes
+- editor-facing exported settings and configuration warnings
+- vendor extension wrappers and project/export toggles
+- product-template persistence/staging/HUD composition
+- focused GDExtension bridge examples
+- legacy viewport-to-mesh UI lessons
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Godot XR function-node matrices
+- Godot OpenXR vendor feature matrices
+- Godot versus Unity toolkit composition comparisons
+- modern ports of legacy viewport-to-mesh UI concepts
 
 ## Recommended synthesis path for `VR-apps-lab`
 

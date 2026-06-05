@@ -1167,3 +1167,31 @@ repeatable way.
 
 - `github-research-wave-163-backlog.md`
   Executed backlog for the Wave 163 pass.
+
+- `github-research-wave-164-plan.md`
+  Wave 164 research plan focused on VRChat, OBS, audience captions,
+  translation, and chat-ingress surfaces.
+
+- `github-research-wave-164-backlog.md`
+  Executed backlog for the Wave 164 pass.
+
+- `github-research-wave-165-plan.md`
+  Wave 165 research plan focused on Open Brush, Tilt asset pipelines, browser
+  viewers, shader loaders, and collaborative drawing references.
+
+- `github-research-wave-165-backlog.md`
+  Executed backlog for the Wave 165 pass.
+
+- `github-research-wave-166-plan.md`
+  Wave 166 research plan focused on Gaussian splat viewers, editors, Unity
+  runtime renderers, and XR display surfaces.
+
+- `github-research-wave-166-backlog.md`
+  Executed backlog for the Wave 166 pass.
+
+- `github-research-wave-167-plan.md`
+  Wave 167 research plan focused on Godot XR toolkits, vendor OpenXR
+  extensions, templates, and face-tracking bridges.
+
+- `github-research-wave-167-backlog.md`
+  Executed backlog for the Wave 167 pass.

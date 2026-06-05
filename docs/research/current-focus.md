@@ -98,6 +98,12 @@ These are the clearest current product and research lines:
    layer/wrapper patterns, VRChat OSCQuery implementation primitives,
    Resonite creator import/export and metadata utilities, and external
    object/mocap/camera/SteamVR tracker data bridges into VRChat OSC.
+19. `Caption fan-out, creative asset pipelines, Gaussian splat viewers, and Godot XR reusable nodes`
+   the repository now has fresh coverage of multimodal caption sidecars,
+   OBS/browser/VRChat text-event routing, Open Brush/Tilt asset pipelines,
+   browser shader restoration and raw `.tilt` loaders, Gaussian splat editor
+   and viewer stacks, Unity/native splat runtimes, and Godot XR function-node
+   plus vendor-extension package patterns.
 
 ## Most useful current docs
 
@@ -193,6 +199,10 @@ instead of full history:
 - `landscape/vr-projects-wave-161-oscquery-vrchat-discovery-libraries-and-client-primitives.md`
 - `landscape/vr-projects-wave-162-resonite-creator-import-export-inspection-and-screenshot-utility-helpers.md`
 - `landscape/vr-projects-wave-163-external-pose-object-and-sensor-data-to-vrchat-osc-bridges.md`
+- `landscape/vr-projects-wave-164-vrchat-obs-audience-captions-translation-and-chat-ingress-surfaces.md`
+- `landscape/vr-projects-wave-165-open-brush-tilt-asset-pipeline-browser-viewers-shader-loaders-and-collaborative-drawing.md`
+- `landscape/vr-projects-wave-166-gaussian-splat-immersive-3d-asset-viewers-editors-and-xr-display-surfaces.md`
+- `landscape/vr-projects-wave-167-godot-xr-toolkits-vendor-extensions-templates-and-face-tracking-bridges.md`
 
 ## Strong donor clusters right now
 
@@ -538,6 +548,23 @@ the strongest current clusters:
   for avatar-relative tracked objects, NatNet rigid-body OSC trackers, webcam
   motion controls, simple OpenVR-to-OSC FBT scripts, and camera-calibrated
   MediaPipe tracker senders.
+- `whispering`, `curses`, `VRChat-to-BLIP`, `Unity-Twitch-Chat`
+  for multimodal caption fan-out, central text-event buses, window-capture
+  scene captioning, and Unity audience-chat ingress.
+- `open-brush`, `gallery-viewer`, `three-icosa`, `three-tiltloader`,
+  `c-sharp-tiltbrush-toolkit`, `TiltBrushConverter`, `P2PDraw`
+  for Open Brush/Tilt sketch loading, metadata restoration, shader replacement,
+  raw `.tilt` parsing, conversion options, and collaborative stroke protocols.
+- `supersplat`, `supersplat-viewer`, `model-viewer`, `GaussianSplats3D`,
+  `UnityGaussianSplatting`, `GaussianSplattingVRViewerUnity`, `SplatVFX`
+  for Gaussian splat editors, static WebXR viewers, model-viewer shells,
+  Three.js libraries, Unity asset/runtime rendering, native plugin boundaries,
+  and VFX substrates.
+- `godot-xr-tools`, `godot_openxr_vendors`, `godot-xr-dungeon-template`,
+  `godot-htc-face-tracking-bridge`, `godot-vr-toolkit`
+  for Godot XR function nodes, vendor extension/export gates, product-template
+  composition, face-tracking GDExtension bridges, and legacy viewport-to-mesh
+  UI primitives.
 
 ## Highest-value next follow-up passes
 
@@ -634,6 +661,10 @@ directions:
 88. `OSCQuery implementation matrix across C#, Rust, Python, sidecars, and direct-address fallbacks`
 89. `Resonite creator import/export pipelines, component search UX, and metadata-rich capture artifacts`
 90. `External pose/object/sensor ingress to VRChat OSC tracker endpoints and avatar parameters`
+91. `Caption pipeline matrix across speech/OCR/translation, OBS, browser overlays, VRChat chatbox, and Unity/audience chat surfaces`
+92. `Open Brush/Tilt asset pipeline map across raw .tilt, shader restoration, web viewers, conversion, and collaborative strokes`
+93. `Gaussian splat utility matrix across browser editors, static WebXR viewers, Unity runtimes, native plugins, and VFX substrates`
+94. `Godot XR function-node and OpenXR vendor feature/export matrices`
 
 ## Current repository-maintenance priorities
 
