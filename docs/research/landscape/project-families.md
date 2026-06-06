@@ -6656,6 +6656,144 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - creative authoring interaction primitives
 - legacy-to-modern Unity XRI comparison
 
+## Family 203: XR research data lifecycle templates, validation, and analysis pipelines
+
+This family covers projects that make XR session data explicit through capture
+templates, event tables, continuous streams, metadata, validation, replay,
+quality flags, and downstream analysis or reporting.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ResXR/resxr-unity-research-template` | Studied in Wave 224 | Quest/Unity clear-box research template with base scene, session/task/trial flow, event/custom CSV tables, continuous tracking, face streams, live callbacks, room calibration, and metadata |
+| `ResXR/resxr-python-pipeline` | Studied in Wave 224 | downstream pipeline with YAML config, session discovery, continuous-data splitting, BIDS output, validation registry, quality masking, derivatives, and reports |
+| `ixperience-lab/VRSTK` | Studied in Wave 224 | legacy scientific VR toolkit with phase control, tracking, biosignals, questionnaires, replay, JSON/CSV export, and analysis scripts |
+| `eisclimber/ExPresS-XR` | Deepened in Wave 224 | editor-guided experiment setup and data-gathering bindings with local/HTTP CSV export, component-member binding, and periodic/input-triggered collection |
+
+### Consolidation note
+
+This family matters because research-grade and diagnostics-grade XR tools need:
+
+- session, task, trial, and event models
+- continuous tracking streams
+- custom data table schema
+- metadata and clock policy
+- validation and quality flags
+- raw versus derivative output
+- replay or report surfaces
+- authoring/setup helpers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- XR research data lifecycle matrices
+- session/event/log schema design
+- tracker-quality and calibration reports
+- privacy-aware data capture notes
+- downstream validation and export helpers
+
+## Family 204: WebRTC/WebXR remote surfaces, camera streams, and spatial panels
+
+This family covers browser and WebRTC projects that bring external screens,
+cameras, stereo feeds, or local monitor streams into XR as controllable spatial
+panels.
+
+| Project | Status | Notes |
+|---|---|---|
+| `binzume/webrtc-rdp` | Studied in Wave 225 | WebRTC remote desktop with Ayame signaling, PIN pairing, persisted devices, media tracks, service requests, control/data channels, and A-Frame WebXR input |
+| `DiscreteTom/WebCaster` | Studied in Wave 225 | minimal peerjs/Three screen caster with WebXR video-texture panels, controller ray selection, grab/drop, push/pull, and scale interactions |
+| `hideki5123/stereo-webrtc-viewer` | Studied in Wave 225 | dual-stream Sora WebRTC stereo camera viewer with WebGL2 WebXR session setup and per-eye texture routing |
+| `rclarke87/WebXR-IPCam` | Studied in Wave 225 | WHEP/IP camera microtool with A-Frame video panels, receive-only PeerConnections, labels, and mute controls |
+| `JYJang476/VRMonitor` | Studied in Wave 225 | local QR/WebSocket/WebRTC monitor prototype with browser screen capture, role relay, and Babylon video texture output |
+
+### Consolidation note
+
+This family matters because remote surface tools should separate:
+
+- source capture or endpoint
+- signaling and pairing
+- media transport
+- data/control transport
+- auth and trust policy
+- spatial panel renderer
+- controller or gaze interaction
+- reconnect and status feedback
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- WebRTC surface-ingress matrices
+- desktop and camera panel shells
+- QR/PIN/local pairing UX
+- media versus control channel boundaries
+- security review for demo transport flows
+
+## Family 205: Browser media, depth-video projection, and gaze-viewer surfaces
+
+This family covers browser media viewers that make projection, stereo/depth,
+player controls, accessibility input, and spatial placement explicit.
+
+| Project | Status | Notes |
+|---|---|---|
+| `amariichi/VideoDepthViewer3D` | Studied in Wave 226 | FastAPI/PyAV/PyTorch plus Three/WebXR depth-video viewer with inference workers, binary depth streams, buffer tuning, relief/pinhole projection, and RawXR rendering |
+| `mysterion/aframe-vr-player` | Studied in Wave 226 | A-Frame/WebXR video player with local files, projection presets, stereo layers, persistent settings, subtitles, timeline, and recenter controls |
+| `mrgeralds/WebXR-TV-Demo` | Studied in Wave 226 | WebXR TV shell with dash.js playback, channel metadata, info bar, paged channel menu, secondary screen, and VR reposition plane |
+| `orgixmh/GazeDesk` | Product reference in Wave 226 | README-level Cardboard/MJPEG desktop viewer with head cursor, gaze dwell, SBS tuning, pan/zoom/IPD, wake lock, and local persistence |
+| `ZhiqiaoGong/3D-Streaming-Demo` | Studied in Wave 226 | WebRTC SBS streaming demo with local publisher capture, receiver texture split, left/right layers, debug/XR layouts, and reconnect behavior |
+
+### Consolidation note
+
+This family matters because projection-aware media surfaces need:
+
+- source and transport boundary
+- flat, 180, 360, SBS, per-eye, or depth projection
+- player controls and metadata
+- debug and immersive layouts
+- spatial placement behavior
+- persistence and preset storage
+- latency, buffering, and recovery policy
+- controller-free or accessibility controls
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- browser media projection matrices
+- depth-video and SBS viewer patterns
+- gaze/dwell accessibility media controls
+- spatial TV/player shells
+- debug layouts for stereo and projection issues
+
+## Family 206: OpenGloves DIY haptics adapters, named pipes, and firmware variants
+
+This family covers OpenGloves-compatible projects that expose the boundary
+between DIY hardware, firmware packets, transports, converter sidecars, driver
+input, and force-feedback or haptic output.
+
+| Project | Status | Notes |
+|---|---|---|
+| `SparkleTech-VR/OpenPulseConverter` | Studied in Wave 227 | WIP BiFrost Pulse HID to OpenGloves converter with bit extraction, calibration, normalized flexion/splay, v2 named-pipe writes, force-feedback reads, and haptic conversion |
+| `danwillm/opengloves-named-pipe-example` | Studied in Wave 227 | minimal Windows named-pipe writer for OpenGloves v2 input fields, useful as contract/test-fixture reference |
+| `DasKatzchen/GloveBridge` | Studied in Wave 227 | Python BLE bridge concept with left/right device discovery, GATT read/write tasks, OpenGloves v1 input/force-feedback pipe paths, and unfinished format caveats |
+| `Stargazer6481/Compact-Gloves` | Studied in Wave 227 | compact DIY glove product/reference with BOM, hardware docs, ESP32 Bluetooth Serial firmware, OpenGloves setup, and calibration guide |
+| `xRayz3n/ExoTouch-2.0` | Studied in Wave 227 | LucidGloves-derived exoskeleton variant with AS5600 encoder input, I2C multiplexer, calibration loops, serial/Bluetooth abstraction, alphabetic encoding, and servo haptics |
+
+### Consolidation note
+
+This family matters because DIY haptic glove integrations should name:
+
+- sensor and actuator hardware
+- firmware encoding and calibration
+- USB Serial, Bluetooth Serial, BLE, HID, or pipe transport
+- converter sidecar boundary
+- normalized hand input schema
+- driver input contract
+- force-feedback output contract
+- safety, scaling, and variant caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenGloves adapter matrices
+- DIY haptics safety notes
+- named-pipe protocol examples
+- firmware-variant comparison
+- hardware documentation/onboarding patterns
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

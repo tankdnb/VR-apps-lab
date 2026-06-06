@@ -2922,6 +2922,57 @@ Primary docs:
 - `createthis/mesh_maker_vr` - `Studied in Wave 223 as VR mesh authoring tool with explicit edit modes, vertex/triangle controllers, sticky selection, drag broadcasting, snap increments, fill/normal/delete operations, HUD/pointer color feedback, and legacy dependency caveats`
 - `createthis/unity_vr_ik_mecanim` - `Studied in Wave 223 as small embodied feedback demo with Mecanim hand IK from controllers, hip-tracker avatar placement, headset rotation, mirror render texture, translucent controller model materials, and demo/Final-IK caveats`
 
+## 195. XR research data lifecycle templates, validation, and analysis pipelines
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-224-xr-research-data-lifecycle-templates-validation-and-analysis-pipelines.md`
+- `../landscape/project-families.md`
+
+- `ResXR/resxr-unity-research-template` - `Studied in Wave 224 as a Quest/Unity research template with persistent base scene, session/task/trial flow, room calibration, event tables, custom CSV data classes, continuous tracking streams, face-expression capture, live callbacks, and metadata output`
+- `ResXR/resxr-python-pipeline` - `Studied in Wave 224 as a downstream XR data pipeline with YAML config, session discovery, stream splitting, BIDS motion/events/channels output, validation registry, quality masking, derivatives, and reports`
+- `ixperience-lab/VRSTK` - `Studied in Wave 224 as a legacy scientific VR toolkit with phase/condition control, tracking, biosignal OSC/serial ingress, questionnaires, replay, JSON/CSV export, and R/Python analysis templates`
+- `eisclimber/ExPresS-XR` - `Deepened in Wave 224 from existing coverage as an experiment authoring/data-binding reference with editor setup dialogs, arbitrary component-member export bindings, local/HTTP CSV export, and periodic or input-triggered collection`
+
+## 196. WebRTC/WebXR remote surfaces, camera streams, and spatial panels
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-225-webrtc-webxr-remote-surfaces-camera-streams-and-spatial-panels.md`
+- `../landscape/project-families.md`
+
+- `binzume/webrtc-rdp` - `Studied in Wave 225 as WebRTC remote desktop for WebXR with Ayame signaling, PIN pairing, persisted devices, media tracks, service requests, control/data channels, file/control services, and A-Frame controller input`
+- `DiscreteTom/WebCaster` - `Studied in Wave 225 as a minimal peerjs/Three WebXR screen caster with video-texture panels, stream audio, controller ray selection, grab/drop, push/pull, and scale interactions`
+- `hideki5123/stereo-webrtc-viewer` - `Studied in Wave 225 as a Sora WebRTC stereo viewer with separate left/right camera streams, WebGL2 WebXR layer setup, and per-eye video texture routing`
+- `rclarke87/WebXR-IPCam` - `Studied in Wave 225 as a tiny WHEP/IP camera viewer with A-Frame video panels, receive-only PeerConnections, SDP POST flow, camera labels, and mute controls`
+- `JYJang476/VRMonitor` - `Studied in Wave 225 as a local QR/WebSocket/WebRTC monitor prototype with browser screen capture, role-based signaling relay, and Babylon video texture output`
+
+## 197. Browser media, depth-video projection, and gaze-viewer surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-226-browser-media-depth-video-projection-and-gaze-viewer-surfaces.md`
+- `../landscape/project-families.md`
+
+- `amariichi/VideoDepthViewer3D` - `Studied in Wave 226 as a FastAPI/PyAV/PyTorch plus Three/WebXR depth-video viewer with inference workers, priority queues, binary depth streams, frontend depth lead tuning, relief/pinhole projection, RawXR rendering, and cache/runtime caveats`
+- `mysterion/aframe-vr-player` - `Studied in Wave 226 as an A-Frame/WebXR video player with local file support, projection presets, stereo eye layers, persistent settings, subtitles, timeline, camera adjustment, and recenter controls`
+- `mrgeralds/WebXR-TV-Demo` - `Studied in Wave 226 as a WebXR TV shell with dash.js playback, service-list channel metadata, info bar, paged channel menu, volume controls, secondary screen, and controller-only repositioning`
+- `orgixmh/GazeDesk` - `Studied in Wave 226 as a README-level Cardboard/MJPEG desktop viewer product reference with head cursor, gaze dwell menu, SBS/Flat tuning, pan/zoom/IPD controls, wake lock, and local persistence`
+- `ZhiqiaoGong/3D-Streaming-Demo` - `Studied in Wave 226 as a minimal WebRTC SBS video streaming demo with publisher captureStream, receiver texture split, left/right layers, debug/XR layouts, safe scaling, and reconnect behavior`
+
+## 198. OpenGloves DIY haptics adapters, named pipes, and firmware variants
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-227-opengloves-diy-haptics-adapters-named-pipe-and-firmware-variants.md`
+- `../landscape/project-families.md`
+
+- `SparkleTech-VR/OpenPulseConverter` - `Studied in Wave 227 as a WIP BiFrost Pulse HID to OpenGloves converter with VID/PID discovery, pull/splay bit extraction, calibration prompts, normalized flexion/splay output, named-pipe writes, OpenGloves force-feedback reads, and haptic conversion caveats`
+- `danwillm/opengloves-named-pipe-example` - `Studied in Wave 227 as a minimal OpenGloves v2 Windows named-pipe contract example with flexion, splay, joystick, button, menu, calibrate, and trigger-value fields`
+- `DasKatzchen/GloveBridge` - `Studied in Wave 227 as a Python BLE-to-OpenGloves pipe bridge concept with target left/right devices, GATT read/write loops, v1 input/force-feedback pipe paths, rediscovery, and unfinished format/error caveats`
+- `Stargazer6481/Compact-Gloves` - `Studied in Wave 227 as a compact DIY SteamVR/OpenGloves glove reference with BOM, hardware docs, ESP32 Bluetooth Serial firmware, OpenGloves setup, standard-format notes, and calibration guidance`
+- `xRayz3n/ExoTouch-2.0` - `Studied in Wave 227 as a LucidGloves-derived exoskeleton glove hardware/firmware variant with AS5600 encoder input, I2C multiplexer selection, calibration loops, serial/Bluetooth communication abstraction, alphabetic encoding, and servo force-feedback output`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

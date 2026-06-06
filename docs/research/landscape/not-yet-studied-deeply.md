@@ -2315,6 +2315,54 @@ These are larger than a single repo and should guide the next research wave.
   selection state, snapping/working planes, mirror/avatar feedback, and
   legacy-to-modern toolkit migration needs.
 
+### 177. `XR research data lifecycle matrix across capture, validation, replay, and reports`
+
+- Main entries:
+  `resxr-unity-research-template`, `resxr-python-pipeline`, `VRSTK`,
+  `ExPresS-XR`
+- Why it matters:
+  Wave 224 deepened research data lifecycle patterns. A future matrix should
+  compare session/task/trial flow, event markers, custom CSV tables,
+  continuous tracking streams, metadata, biosignals, questionnaires, replay,
+  BIDS export, validation registries, quality flags, reports, and privacy
+  boundaries.
+
+### 178. `WebRTC surface-ingress matrix across desktop, camera, stereo, and local monitor panels`
+
+- Main entries:
+  `webrtc-rdp`, `WebCaster`, `stereo-webrtc-viewer`, `WebXR-IPCam`,
+  `VRMonitor`
+- Why it matters:
+  Wave 225 deepened WebRTC/WebXR remote surface patterns. A future matrix
+  should compare PIN, QR, room, WHEP, and WebSocket signaling; media tracks
+  versus data/control channels; remote input, file services, camera mute,
+  per-eye textures, panel manipulation, auth, reconnect, and local-network
+  caveats.
+
+### 179. `Browser media projection matrix across depth, SBS, TV, local player, and gaze viewer modes`
+
+- Main entries:
+  `VideoDepthViewer3D`, `aframe-vr-player`, `WebXR-TV-Demo`, `GazeDesk`,
+  `3D-Streaming-Demo`
+- Why it matters:
+  Wave 226 deepened browser media projection surfaces. A future matrix should
+  compare source/transport choices, flat/180/360/SBS/per-eye/depth projection,
+  player controls, channel metadata, gaze dwell input, recenter/placement,
+  debug versus immersive layouts, buffering, reconnect, and heavy-model
+  caveats.
+
+### 180. `OpenGloves adapter boundary matrix across named pipes, BLE, firmware, and haptics`
+
+- Main entries:
+  `OpenPulseConverter`, `opengloves-named-pipe-example`, `GloveBridge`,
+  `Compact-Gloves`, `ExoTouch-2.0`
+- Why it matters:
+  Wave 227 deepened DIY haptics adapter boundaries. A future matrix should
+  compare OpenGloves v1/v2 pipe contracts, LucidGloves string formats, HID,
+  BLE, Bluetooth Serial, USB Serial, calibration, finger/splay/button schemas,
+  haptic feedback scaling, firmware variants, hardware docs, and safety
+  caveats.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2479,6 +2527,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 158. `Vendor OpenXR extension-wrapper matrix across lifecycle, feature gates, and build metadata`
 159. `VR microhelper safety matrix across input translation, calibration, observer, and passthrough tools`
 160. `XR creator workbench interaction matrix across CAD, menus, panels, files, snapping, and feedback`
+161. `XR research data lifecycle matrix across capture, validation, replay, and reports`
+162. `WebRTC surface-ingress matrix across desktop, camera, stereo, and local monitor panels`
+163. `Browser media projection matrix across depth, SBS, TV, local player, and gaze viewer modes`
+164. `OpenGloves adapter boundary matrix across named pipes, BLE, firmware, and haptics`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

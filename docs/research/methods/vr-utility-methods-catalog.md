@@ -13031,3 +13031,157 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   VR menu matrices, CAD helper patterns, in-headset authoring prototypes,
   creator UI playbooks, and legacy-to-modern toolkit comparisons.
+
+## Method 669: XR research data lifecycle with capture, validation, and export stages
+
+- What it is:
+  an XR research or diagnostics tool treats data as a lifecycle: session
+  metadata, task/trial state, event markers, continuous streams, custom rows,
+  validation checks, quality flags, raw/derivative output, and reports.
+- Good for:
+  experiment templates, calibration logs, tracker-quality reports, training
+  analytics, accessibility studies, telemetry capture, and post-session
+  diagnostics tools.
+- Why it matters:
+  XR data becomes hard to reuse when continuous tracking, events, clocks,
+  participant/session metadata, validation, and analysis output are hidden in
+  one scene or one ad hoc CSV.
+- Source evidence:
+  `ResXR/resxr-unity-research-template`, `ResXR/resxr-python-pipeline`,
+  `ixperience-lab/VRSTK`, and `eisclimber/ExPresS-XR`.
+- Reusable core:
+  define a session/task/trial model, emit explicit event rows, keep continuous
+  streams separate, allow custom data tables, store metadata and clock policy,
+  split streams offline, run validation checks through a registry, preserve raw
+  output, create derivative/masked output, and generate reports.
+- Do not copy directly:
+  Quest/OVR tracking assumptions, BIDS as a mandatory default, legacy Unity
+  toolkit structure, broad asset folders, reflection-style export bindings
+  without validation, or research schemas without privacy review.
+- Strong references:
+  ResXR Unity for clear-box capture and event/custom CSV tables, ResXR Python
+  for validation/export/report pipeline, VRSTK for biosignals/replay/study
+  flow, and ExPresS-XR for editor-guided data-gathering bindings.
+- Maturity:
+  strong architecture method; product use needs schema, privacy, and runtime
+  scope decisions.
+- Best fit for `VR-apps-lab`:
+  XR data lifecycle matrices, diagnostics log schema, research template notes,
+  calibration report concepts, and future data-aware utility prototypes.
+
+## Method 670: WebRTC surface ingress into XR panels with media/data/control split
+
+- What it is:
+  an external screen, camera, stereo feed, or monitor enters XR through explicit
+  source capture, signaling, media transport, control transport, trust policy,
+  spatial panel rendering, and interaction feedback.
+- Good for:
+  desktop-in-VR panels, local camera monitors, stereo camera viewers, remote
+  support tools, QR-paired monitor utilities, and browser-based overlay
+  surfaces.
+- Why it matters:
+  remote panels become unsafe and hard to maintain when pairing, media,
+  control input, file transfer, auth, and spatial manipulation are all hidden
+  in one WebRTC demo.
+- Source evidence:
+  `binzume/webrtc-rdp`, `DiscreteTom/WebCaster`,
+  `hideki5123/stereo-webrtc-viewer`, `rclarke87/WebXR-IPCam`, and
+  `JYJang476/VRMonitor`.
+- Reusable core:
+  select a bounded signaling/pairing flow, carry media as WebRTC/WHEP tracks,
+  use data channels or WebSockets for auth/control/files/input, describe
+  capabilities, turn streams into video textures, expose controller or gaze
+  manipulation, show connection state, and document local/demo/security
+  boundaries.
+- Do not copy directly:
+  public demo signaling rooms, hardcoded ngrok or LAN endpoints, bundled
+  dependency folders, no-auth prototypes, PHP/browser glue as production
+  structure, or camera URLs without configuration.
+- Strong references:
+  `webrtc-rdp` for service/capability split, WebCaster for compact spatial
+  panel manipulation, stereo-webrtc-viewer for per-eye camera routing,
+  WebXR-IPCam for WHEP panel minimalism, and VRMonitor for QR/local pairing.
+- Maturity:
+  strong product method; implementation needs security, reconnect, and
+  platform review.
+- Best fit for `VR-apps-lab`:
+  desktop/camera overlay concepts, WebRTC surface-ingress matrices, local
+  pairing UX, remote-control boundaries, and browser-to-XR panel prototypes.
+
+## Method 671: Projection-aware browser media viewer with synchronized source, projection, and control layers
+
+- What it is:
+  an immersive browser media tool separates media source, transport, projection
+  transform, renderer, player controls, persistence, debug/XR layout, and
+  latency or recovery policy.
+- Good for:
+  360/180 video players, SBS stereo streamers, depth-video viewers, WebXR TV
+  shells, local file players, gaze-controlled desktop viewers, and media
+  diagnostics tools.
+- Why it matters:
+  media utilities fail when file/stream transport, projection math, stereo
+  routing, controls, placement, settings, and recovery are all mixed into one
+  viewer script.
+- Source evidence:
+  `amariichi/VideoDepthViewer3D`, `mysterion/aframe-vr-player`,
+  `mrgeralds/WebXR-TV-Demo`, `orgixmh/GazeDesk`, and
+  `ZhiqiaoGong/3D-Streaming-Demo`.
+- Reusable core:
+  declare the source and transport, choose a projection mode, keep stereo or
+  depth routing explicit, expose timeline/subtitles/channel/volume/recenter or
+  gaze controls, persist presets/settings, provide debug and immersive layouts,
+  tune buffering/reconnect/missing-frame behavior, and document browser or
+  model/runtime caveats.
+- Do not copy directly:
+  heavy ML inference stacks unless needed, hardcoded media/proxy URLs, demo
+  signaling servers, vendored old player stacks, or README-only features as
+  implementation proof.
+- Strong references:
+  VideoDepthViewer3D for latency-aware depth media, aframe-vr-player for
+  projection presets/settings/stereo layers, WebXR-TV-Demo for TV/menu/reposition
+  shell, GazeDesk for gaze/dwell accessibility framing, and 3D-Streaming-Demo
+  for SBS split plus debug/XR layouts.
+- Maturity:
+  strong product/UX method; implementation should be scoped by media type and
+  target browser/runtime.
+- Best fit for `VR-apps-lab`:
+  immersive media matrices, projection-aware player notes, SBS/depth viewer
+  concepts, gaze media controls, and browser media surface prototypes.
+
+## Method 672: OpenGloves-compatible adapter boundary for DIY haptic glove variants
+
+- What it is:
+  DIY glove integrations are modeled as a chain from sensor hardware and
+  firmware encoding through transport and converter sidecar into normalized
+  OpenGloves input plus force-feedback output scaling.
+- Good for:
+  DIY haptic gloves, OpenGloves bridge sidecars, named-pipe test fixtures,
+  firmware variants, BLE/HID/serial adapters, and physical-output safety
+  research.
+- Why it matters:
+  glove projects vary wildly by sensors, pins, packet formats, transport, and
+  haptic actuators; a stable adapter boundary prevents every hardware variant
+  from becoming a separate driver architecture.
+- Source evidence:
+  `SparkleTech-VR/OpenPulseConverter`,
+  `danwillm/opengloves-named-pipe-example`, `DasKatzchen/GloveBridge`,
+  `Stargazer6481/Compact-Gloves`, and `xRayz3n/ExoTouch-2.0`.
+- Reusable core:
+  isolate sensor acquisition, firmware calibration, packet encoding, transport
+  adapter, packet decoder, normalized flexion/splay/buttons/trigger schema,
+  OpenGloves input sink, force-feedback source, haptic scaling, reconnect
+  behavior, and hardware-specific caveats.
+- Do not copy directly:
+  forked firmware wholesale, hardcoded pipe paths, board pins, BLE UUIDs,
+  WIP converter globals, actuator scaling values, no-validation examples, or
+  physical-output code without safety review.
+- Strong references:
+  OpenPulseConverter for full HID-to-pipe plus haptics loop, named-pipe example
+  for minimal v2 input contract, GloveBridge for BLE bridge shape, Compact
+  Gloves for hardware onboarding docs, and ExoTouch for firmware module
+  separation.
+- Maturity:
+  strong adapter-boundary method; code donors are uneven and hardware-specific.
+- Best fit for `VR-apps-lab`:
+  OpenGloves protocol matrices, DIY haptics safety notes, hardware onboarding
+  references, adapter sidecar design, and firmware-variant comparison docs.

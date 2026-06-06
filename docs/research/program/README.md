@@ -1589,3 +1589,31 @@ repeatable way.
 
 - `github-research-wave-223-backlog.md`
   Executed backlog for the Wave 223 pass.
+
+- `github-research-wave-224-plan.md`
+  Wave 224 research plan focused on XR research data lifecycle templates,
+  validation, and analysis pipelines.
+
+- `github-research-wave-224-backlog.md`
+  Executed backlog for the Wave 224 pass.
+
+- `github-research-wave-225-plan.md`
+  Wave 225 research plan focused on WebRTC/WebXR remote surfaces, camera
+  streams, and spatial panels.
+
+- `github-research-wave-225-backlog.md`
+  Executed backlog for the Wave 225 pass.
+
+- `github-research-wave-226-plan.md`
+  Wave 226 research plan focused on browser media, depth-video projection, and
+  gaze-viewer surfaces.
+
+- `github-research-wave-226-backlog.md`
+  Executed backlog for the Wave 226 pass.
+
+- `github-research-wave-227-plan.md`
+  Wave 227 research plan focused on OpenGloves DIY haptics adapters, named
+  pipes, and firmware variants.
+
+- `github-research-wave-227-backlog.md`
+  Executed backlog for the Wave 227 pass.

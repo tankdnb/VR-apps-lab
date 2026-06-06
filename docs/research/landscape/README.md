@@ -977,6 +977,26 @@ Use these files when you want to understand:
   VR panels, file/keyboard/scroller widgets, mesh-editing modes, and
   avatar/mirror feedback donors.
 
+- `vr-projects-wave-224-xr-research-data-lifecycle-templates-validation-and-analysis-pipelines.md`
+  Next GitHub discovery wave focused on XR research capture templates,
+  session/event/stream schemas, downstream validation, BIDS-style exports,
+  replay, biosignals, and editor-guided data gathering.
+
+- `vr-projects-wave-225-webrtc-webxr-remote-surfaces-camera-streams-and-spatial-panels.md`
+  Next GitHub discovery wave focused on WebRTC/WebXR desktop and camera
+  surfaces, signaling/pairing, media versus control channels, stereo camera
+  routing, QR/local monitor flows, and spatial panel manipulation.
+
+- `vr-projects-wave-226-browser-media-depth-video-projection-and-gaze-viewer-surfaces.md`
+  Next GitHub discovery wave focused on browser media viewers, depth video,
+  projection presets, SBS/per-eye layers, TV channel shells, gaze-controlled
+  desktop viewers, and debug versus immersive layouts.
+
+- `vr-projects-wave-227-opengloves-diy-haptics-adapters-named-pipe-and-firmware-variants.md`
+  Next GitHub discovery wave focused on OpenGloves-compatible converter
+  sidecars, named-pipe contracts, BLE/serial/HID transport boundaries,
+  DIY glove firmware variants, calibration, and haptic output scaling.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

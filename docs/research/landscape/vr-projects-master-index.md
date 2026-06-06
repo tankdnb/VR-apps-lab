@@ -232,6 +232,10 @@ This file complements:
 - `vr-projects-wave-221-vendor-openxr-extension-stacks-feature-wrappers-and-sample-matrices.md`
 - `vr-projects-wave-222-cockpit-hand-clicking-calibration-observer-and-passthrough-microhelpers.md`
 - `vr-projects-wave-223-xr-creator-cad-ui-workbenches-and-legacy-unity-interaction-donors.md`
+- `vr-projects-wave-224-xr-research-data-lifecycle-templates-validation-and-analysis-pipelines.md`
+- `vr-projects-wave-225-webrtc-webxr-remote-surfaces-camera-streams-and-spatial-panels.md`
+- `vr-projects-wave-226-browser-media-depth-video-projection-and-gaze-viewer-surfaces.md`
+- `vr-projects-wave-227-opengloves-diy-haptics-adapters-named-pipe-and-firmware-variants.md`
 
 ## How to use this index
 

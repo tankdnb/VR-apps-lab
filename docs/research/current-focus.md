@@ -166,6 +166,11 @@ These are the clearest current product and research lines:
    vendor OpenXR feature wrappers, cockpit hand-clicking, tracking-origin
    calibration, camera-to-overlay passthrough, CAD workbenches, VR panels,
    mesh editing modes, and embodied feedback surfaces.
+33. `XR research data lifecycles, WebRTC media surfaces, browser projection viewers, and DIY haptics adapters`
+   the repository now has fresh coverage of structured XR data capture and
+   validation, WebRTC desktop/camera/stereo panels, projection-aware browser
+   media viewers, gaze-controlled media/desktop surfaces, and OpenGloves
+   adapter boundaries for DIY haptic glove variants.
 
 ## Most useful current docs
 
@@ -301,6 +306,10 @@ instead of full history:
 - `landscape/vr-projects-wave-221-vendor-openxr-extension-stacks-feature-wrappers-and-sample-matrices.md`
 - `landscape/vr-projects-wave-222-cockpit-hand-clicking-calibration-observer-and-passthrough-microhelpers.md`
 - `landscape/vr-projects-wave-223-xr-creator-cad-ui-workbenches-and-legacy-unity-interaction-donors.md`
+- `landscape/vr-projects-wave-224-xr-research-data-lifecycle-templates-validation-and-analysis-pipelines.md`
+- `landscape/vr-projects-wave-225-webrtc-webxr-remote-surfaces-camera-streams-and-spatial-panels.md`
+- `landscape/vr-projects-wave-226-browser-media-depth-video-projection-and-gaze-viewer-surfaces.md`
+- `landscape/vr-projects-wave-227-opengloves-diy-haptics-adapters-named-pipe-and-firmware-variants.md`
 
 ## Strong donor clusters right now
 
