@@ -861,6 +861,26 @@ Use these files when you want to understand:
   sequencers, generic OSC harnesses, physical-output bridge safety, web toys,
   and external state micro-bridges.
 
+- `vr-projects-wave-200-vrcosc-module-packs-add-on-modules-and-plugin-distribution-boundaries.md`
+  Next GitHub discovery wave focused on VRCOSC module-pack distribution,
+  third-party modules, sensors, event queues, avatar compatibility, and
+  module trust boundaries.
+
+- `vr-projects-wave-201-networked-aframe-adapters-persistence-media-and-unity-client-variants.md`
+  Next GitHub discovery wave focused on Networked-AFrame adapters, room UX,
+  shared media, persistence, ownership handoff, spatial audio, and Unity-client
+  variants.
+
+- `vr-projects-wave-202-lightweight-xr-editor-tour-builder-live-coding-and-creator-microtools.md`
+  Next GitHub discovery wave focused on lightweight XR authoring, 360 tour
+  manifests, in-headset editing, visual node graphs, VR text workspaces, Unity
+  animation editing, and creator microtools.
+
+- `vr-projects-wave-203-contactglove-haritora-and-vendor-tracker-bridge-sidecars.md`
+  Next GitHub discovery wave focused on ContactGlove, Haritora, vendor tracker
+  protocol interpreters, SlimeVR/VMC/SteamVR output boundaries, and diagnosable
+  tracking fusion sidecars.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

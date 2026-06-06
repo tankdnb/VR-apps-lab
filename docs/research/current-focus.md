@@ -141,6 +141,10 @@ These are the clearest current product and research lines:
    composers, audio loopback and OSCQuery soundboards, XSOverlay notification
    bridges, secure remote avatar boards, OSC automation sequencers, and tiny
    time/smart-home state bridges.
+28. `VRCOSC module ecosystems, shared WebXR rooms, lightweight XR authoring, and vendor tracker/glove bridges`
+   the repository now has fresh coverage of VRCOSC module-pack distribution,
+   event queues and sensor modules, Networked-AFrame adapters and persistence,
+   in-headset authoring surfaces, and ContactGlove/Haritora bridge sidecars.
 
 ## Most useful current docs
 
@@ -252,6 +256,10 @@ instead of full history:
 - `landscape/vr-projects-wave-197-vrchat-audio-reactive-osc-audiolink-soundboard-and-system-audio-control-sidecars.md`
 - `landscape/vr-projects-wave-198-xsoverlay-discord-and-remote-notification-protocol-bridges.md`
 - `landscape/vr-projects-wave-199-vrchat-avatar-remote-control-toy-automation-time-and-smart-light-sidecars.md`
+- `landscape/vr-projects-wave-200-vrcosc-module-packs-add-on-modules-and-plugin-distribution-boundaries.md`
+- `landscape/vr-projects-wave-201-networked-aframe-adapters-persistence-media-and-unity-client-variants.md`
+- `landscape/vr-projects-wave-202-lightweight-xr-editor-tour-builder-live-coding-and-creator-microtools.md`
+- `landscape/vr-projects-wave-203-contactglove-haritora-and-vendor-tracker-bridge-sidecars.md`
 
 ## Strong donor clusters right now
 
@@ -736,6 +744,15 @@ the strongest current clusters:
   parameter normalization, OSCQuery soundpacks, overlay notification proxies,
   Discord notification hooks, secure avatar remote boards, automation
   sequencing, and generic VRChat OSC harnesses.
+- `VRCOSC-Modules`, `CrookedToe-s-Modules`, `FuviiOSC`,
+  `VRCOSC-BluetoothHeartrate`, `VRCOSC-Bilibili`, `naf-janus-adapter`,
+  `naf-persist`, `networked-resonance-audio`, `VRTourEditor`,
+  `UnityVRAnimationEditor`, `freescuba`, `haritorax-slimevr-bridge`,
+  `haritorax-interpreter`, `osc_haritorax2_camera_tracking`
+  for VRCOSC module host boundaries, event-source queues, shared-room adapter
+  contracts, WebXR/entity persistence, authoring/export primitives,
+  driver-versus-sidecar tracker bridges, and diagnosable tracking fusion
+  runtimes.
 
 ## Highest-value next follow-up passes
 
@@ -868,6 +885,10 @@ directions:
 124. `External audio reactivity and sound-trigger matrix across loopback, OSCQuery soundpacks, media keys, and DSP engines`
 125. `XSOverlay notification bridge payload, transport, and security matrix`
 126. `Avatar remote-control and external state bridge safety matrix`
+127. `VRCOSC module-pack trust, distribution, and compatibility matrix`
+128. `Networked-AFrame adapter, persistence, media-stream, and ownership matrix`
+129. `Lightweight XR authoring surface matrix across manipulation, serialization, undo, and export`
+130. `ContactGlove and Haritora bridge protocol, calibration, and diagnostics matrix`
 
 ## Current repository-maintenance priorities
 

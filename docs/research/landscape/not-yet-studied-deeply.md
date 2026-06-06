@@ -2024,6 +2024,59 @@ These are larger than a single repo and should guide the next research wave.
   reset behavior, held-input cleanup, physical-output caps, credential storage,
   and safe remote exposure.
 
+### 153. `VRCOSC module-pack trust, distribution, and compatibility matrix`
+
+- Main entries:
+  `VRCOSC-Modules`, `CrookedToe-s-Modules`, `Yeusepes-Modules`, `FuviiOSC`,
+  `VRCOSC-BluetoothHeartrate`, `VrcOscLeash`, `File-Reading-Module`,
+  `VRCOSC-Bilibili`
+- Why it matters:
+  this family captures VRCOSC as a host/module ecosystem rather than one app.
+  A future deeper pass should compare module lifecycle, settings, persistence,
+  runtime views, avatar-prefab parameter contracts, third-party distribution,
+  credentials, local file access, physical output, OpenVR movement, BLE sensors,
+  and event queue/decay behavior.
+
+### 154. `Networked-AFrame adapter, persistence, media-stream, and ownership matrix`
+
+- Main entries:
+  `naf-firebase-adapter`, `naf-janus-adapter`, `naf-valid-avatars`,
+  `networked-aframe-unity-client`, `networked-aframe-synced-video-example`,
+  `naf-persist`, `naf-entity-saver`, `networked-resonance-audio`
+- Why it matters:
+  this family captures shared WebXR room substrate boundaries around signaling,
+  reliable/unreliable transport, media streams, reconnect, moderation,
+  presence, entity persistence, ownership handoff, synced media, and
+  cross-runtime clients. A future deeper pass should extract an adapter contract
+  independent of one WebXR framework.
+
+### 155. `Lightweight XR authoring surface matrix across manipulation, serialization, undo, and export`
+
+- Main entries:
+  `VRTourEditor`, `aframe-vreditor-component`, `GNode`,
+  `WebXR_VRController_Editor_template`, `vrcode`,
+  `UnityVRAnimationEditor`, `webgl-vr-editor`, `VRC-Editor-Toolbox`
+- Why it matters:
+  this family captures small authoring tools that let users place, edit,
+  serialize, export, or automate VR content. A future deeper pass should compare
+  ray selection, grip/reparent/clone/scale behavior, undo, manifest/graph/entity
+  formats, VR keyboard/text surfaces, Unity editor bridge points, and production
+  microtool UX.
+
+### 156. `ContactGlove and Haritora bridge protocol, calibration, and diagnostics matrix`
+
+- Main entries:
+  `freescuba`, `ContactGloveOSC`, `Glove2Kb`,
+  `haritorax-slimevr-bridge`, `haritorax-interpreter`,
+  `haritora-gx-poc`, `HaritoraToSlime`,
+  `osc_haritorax2_camera_tracking`
+- Why it matters:
+  this family captures vendor tracker/glove protocol translation into SteamVR,
+  VRChat avatar packages, keyboard input, SlimeVR, VMC/OSC, and camera/IMU
+  fusion sidecars. A future deeper pass should compare transport layers,
+  runtime output contracts, calibration, role mapping, stale-data behavior,
+  battery/status diagnostics, setup UX, and driver-versus-sidecar risk.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2164,6 +2217,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 134. `External audio reactivity and sound-trigger matrix across loopback, OSCQuery soundpacks, media keys, and DSP engines`
 135. `XSOverlay notification bridge payload, transport, and security matrix`
 136. `Avatar remote-control and external state bridge safety matrix`
+137. `VRCOSC module-pack trust, distribution, and compatibility matrix`
+138. `Networked-AFrame adapter, persistence, media-stream, and ownership matrix`
+139. `Lightweight XR authoring surface matrix across manipulation, serialization, undo, and export`
+140. `ContactGlove and Haritora bridge protocol, calibration, and diagnostics matrix`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

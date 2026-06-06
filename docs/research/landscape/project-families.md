@@ -5818,6 +5818,156 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - generic VRChat OSC harnesses
 - external state/device micro-bridge patterns
 
+## Family 179: VRCOSC module packs, add-on modules, and plugin-distribution boundaries
+
+This family covers official and third-party VRCOSC modules that extend the host
+with live services, sensors, media state, voice commands, avatar-parameter
+compatibility, SteamVR/OpenVR body-device data, local files, and non-Twitch
+audience events.
+
+| Project | Status | Notes |
+|---|---|---|
+| `VolcanicArts/VRCOSC-Modules` | Already studied as official module suite | typed SDK usage, EventSub nodes, media/status controls, voice commands, parameter sync, PiShock, OpenVR gestures, persistent state, runtime views, and service/physical-output caveats |
+| `CrookedToe/CrookedToe-s-Modules` | Already studied as third-party module pack | OSCLeash wildcard/legacy path compatibility, movement reset, OpenVR chaperone manipulation, audio bands, AGC, spike detection, and movement/audio caveats |
+| `Yeusepe/Yeusepes-Modules` | Already studied as service-heavy module pack | Spotify, Discord, Shazam, QR/code surfaces, VRChat API helpers, broad avatar parameters, and credential/native dependency caveats |
+| `FuviiPeshu/FuviiOSC` | Already studied as SteamVR/VRChat body-device modules | tracker haptics, paw/controller parameter mapping, trigger modes, token cancellation, avatar changer, and physical-output/tracker-role caveats |
+| `WentTheFox/VRCOSC-BluetoothHeartrate` | Already studied as BLE sensor module | device selection persistence, scan/reconnect state, runtime view, avatar parameter output, and optional WebSocket rebroadcast |
+| `RichiCoder1/VrcOscLeash` | Already studied as avatar-prefab compatibility shim | avatar-config-driven discovery, wildcard route handling, legacy paths, movement/look/run outputs, and safe reset |
+| `03milo/File-Reading-Module` | Already studied as file-to-chatbox micro-module | local file polling, chatbox variable/event output, path privacy, and length/cadence caveats |
+| `TZFC/VRCOSC-Bilibili` | Already studied as non-Twitch live-event bridge | async queues, chatbox and animation consumers, parameter accumulation, decay behavior, and credential/i18n caveats |
+
+### Consolidation note
+
+This family matters because a VR utility host grows through its module boundary:
+
+- typed module lifecycle and settings
+- persistent module state and runtime views
+- avatar parameter contracts and compatibility shims
+- service credentials and local trust surfaces
+- physical-output and OpenVR movement safety
+- queueing, accumulation, decay, and backpressure for live events
+- third-party module distribution and versioning
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VRCOSC-style module host contracts
+- third-party module trust matrices
+- event-source-to-avatar queue patterns
+- avatar prefab compatibility layers
+- sensor and local-file micro-module baselines
+
+## Family 180: Networked-AFrame adapters, persistence, media, and Unity-client variants
+
+This family covers Networked-AFrame periphery: signaling adapters, SFU media
+adapters, room UX shells, entity persistence, ownership handoff, synced media,
+spatial audio streams, and cross-runtime Unity clients.
+
+| Project | Status | Notes |
+|---|---|---|
+| `networked-aframe/naf-firebase-adapter` | Already studied as Firebase adapter | Realtime Database presence cleanup, WebRTC peer data channels, timestamp offer tie-breaker, and guaranteed backend messages |
+| `mozilla/naf-janus-adapter` | Already studied as Janus SFU adapter | media streams, reliable/unreliable transports, reconnect jitter, frozen updates, join tokens, and block/kick primitives |
+| `networked-aframe/naf-valid-avatars` | Already studied as NAF social room shell | avatar picker, username entry, presence store, users/chat panels, mic/screen/camera controls, and CDN/media caveats |
+| `ttravaglini/networked-aframe-unity-client` | Already studied as Unity NAF/EasyRTC client | Socket.IO auth/join, networked entity ownership, schema parsing, interpolation, and incomplete ownership caveats |
+| `chenzlabs/networked-aframe-synced-video-example` | Already studied as synced media micro-component | owner-gated paused/currentTime state, time slop, singleton network id, and buffering/owner-transfer caveats |
+| `martintribo/naf-persist` | Already studied as entity persistence layer | PouchDB serialization, DOM/NAF id options, local-vs-remote preference, and conflict caveats |
+| `martintribo/naf-entity-saver` | Already studied as ownership handoff caveat | strips `networked-remote`, reattaches local `networked`, preserves entities, and exposes NAF ownership fragility |
+| `AudioGroupCologne/networked-resonance-audio` | Already studied as media-stream spatial audio bridge | adapter media stream lookup, Three/Resonance positional audio binding, and browser media caveats |
+
+### Consolidation note
+
+This family matters because shared WebXR rooms need more than synchronized
+transforms:
+
+- signaling and presence
+- reliable control data versus high-rate state updates
+- audio/video/screen media streams
+- reconnect and moderation primitives
+- avatar selection and room entry UX
+- entity ownership and persistence
+- cross-runtime client schema mapping
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- adapter contracts independent of one WebXR framework
+- shared-room persistence and ownership checklists
+- media-stream to spatial-audio bridges
+- social room entry and presence shells
+
+## Family 181: Lightweight XR editor, tour-builder, live-coding, and creator microtools
+
+This family covers narrow authoring tools that let users place, edit, serialize,
+export, or automate VR content without becoming a full engine/editor.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Humangle/VRTourEditor` | Already studied as browser 360 tour editor | `.hvrj` manifest, link placement, desktop/VR ray picking, localStorage autosave, save/export zip, and generated WebXR runtime |
+| `caseyyee/aframe-vreditor-component` | Already studied as in-headset A-Frame edit primitive | grip/collision selection, reparent-on-grab, clone-on-two-hand grab, axis scaling, and old API/no-undo caveats |
+| `wakufactory/GNode` | Already studied as visual scene graph | node/socket/joint model, graph serialization, node edit bridge, A-Frame output, and validation caveats |
+| `flushpot1125/WebXR_VRController_Editor_template` | Already studied as Babylon.js WebXR controller template | generated script lifecycle, `fromScene` links, motion-controller component handling, and hardcoded input-index caveats |
+| `dkaraush/vrcode` | Already studied as WebXR text/code workspace | movable VR displays, ray-drag state, VR keyboard mesh, textarea object, and incomplete IDE/persistence caveats |
+| `umiyuki/UnityVRAnimationEditor` | Already studied as in-VR Unity animation editor | grabbable animation nodes, VRTK interaction, Undo-backed curve recording, Animation Window reflection, and modernization caveats |
+| `evanw/webgl-vr-editor` | Already studied as historical Cardboard/WebGL voxel editor | edit/play modes, orientation-relative cursor, undo tracker, file save/load, and obsolete headset/toolchain caveats |
+| `Reava/VRC-Editor-Toolbox` | Already studied as Unity/VRChat creator microtools | circle placement, teleport-to-transform, sequential naming, light-volume toggles, Bakery mass editing, and Undo/scope caveats |
+
+### Consolidation note
+
+This family matters because lightweight authoring tools are often the fastest
+path from research idea to reusable utility:
+
+- ray selection and object manipulation
+- manifest, graph, entity, or animation serialization
+- undo and reset semantics
+- generated runtime export
+- in-headset authoring plus desktop editor bridge
+- one-operation production microtools
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- serializable XR authoring surfaces
+- in-headset edit primitives
+- VR text/keyboard workspaces
+- Unity/VRChat creator microtools
+- authoring UX matrices across selection, manipulation, undo, and export
+
+## Family 182: ContactGlove, Haritora, and vendor tracker bridge sidecars
+
+This family covers vendor-specific glove and tracker bridges that translate
+ContactGlove or Haritora data into generic SteamVR/OpenVR inputs, VRChat avatar
+packages, keyboard input, SlimeVR packets, VMC/OSC streams, and camera/IMU
+fusion sidecars.
+
+| Project | Status | Notes |
+|---|---|---|
+| `hyblocker/freescuba` | Already studied as ContactGlove OpenVR driver and overlay | driver/overlay split, serial protocol, named-pipe IPC, skeleton/input components, pose/input threads, input profiles, and high-risk driver caveats |
+| `Diver-X/ContactGloveOSC` | Already studied as official VRChat avatar setup package | automatic setup, full/lite parameters, expression menus, hand-sign copy tools, VPM package shape, and controller conflict caveats |
+| `1000100Den/Glove2Kb` | Already studied as hand-pose to keyboard/pointer bridge | VMC/OSC bone reception, origin/deadzone correction, grip gating, pointer movement, and OS-input safety caveats |
+| `sim1222/haritorax-slimevr-bridge` | Already studied as Rust Haritora BLE to SlimeVR bridge | BLE characteristic UUIDs, IMU decode, battery/button notifications, handshake, rotation/gravity packets, and reconnect/role caveats |
+| `JovannMC/haritorax-interpreter` | Already studied as Haritora interpreter library | COM/Bluetooth/Linux-Bluetooth modes, EventEmitter API, tracker maps, IMU/battery/button/mag/info events, and maturity caveats |
+| `JovannMC/haritora-gx-poc` | Already studied as thin Haritora GX protocol probe | serial echo parsing, line classification, IMU decode, battery/button logging, and prototype caveats |
+| `cytsai1008/HaritoraToSlime` | Already studied as Python OSC to SlimeVR bridge | config bootstrap, broadcast handshake, add-IMU packets, rotation/accel encoding, and parser/acceleration caveats |
+| `Fuwaaaaaa/osc_haritorax2_camera_tracking` | Already studied as mature camera/IMU tracking sidecar | receiver abstraction, camera subprocess/shared memory, fusion engine, event bus, preflight checks, REST/dashboard/OBS/VMC outputs, persistence, and tests |
+
+### Consolidation note
+
+This family matters because vendor tracker/glove utilities need a clean generic
+output boundary:
+
+- SteamVR/OpenVR driver input and skeleton components
+- VRChat avatar setup and parameter packages
+- VMC/OSC hand/body pose streams
+- SlimeVR UDP handshake and packet encoding
+- keyboard/input bridges with explicit gating
+- camera/IMU fusion and diagnostics
+- calibration, role mapping, stale-data checks, and battery/status output
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- vendor protocol interpreter libraries
+- tracking bridge diagnostic checklists
+- SlimeVR/VMC/SteamVR output comparison matrices
+- driver-versus-sidecar risk boundaries
+- generic receiver protocols before device-specific prototypes
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

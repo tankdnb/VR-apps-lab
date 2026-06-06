@@ -11942,3 +11942,231 @@ When a new utility idea appears:
   useful micro-utility method.
 - Best fit for `VR-apps-lab`:
   device/status bridge schema and small utility prototypes.
+
+## Method 637: Module-pack distribution boundary for VR utility hosts
+
+- What it is:
+  a VR utility host exposes a stable module lifecycle, settings model,
+  persistence layer, runtime views, and send/reset helpers so independently
+  shipped modules can each own one source or action boundary.
+- Good for:
+  VRCOSC-like plugin hosts, overlay module packs, sensor modules, service
+  bridges, avatar parameter helpers, and third-party utility ecosystems.
+- Why it matters:
+  a host becomes reusable when modules can be added without changing host
+  internals, but every module still needs a clear trust surface.
+- Source evidence:
+  `VRCOSC-Modules`, `CrookedToe-s-Modules`, `Yeusepes-Modules`, `FuviiOSC`,
+  `VRCOSC-BluetoothHeartrate`, `VrcOscLeash`, and `File-Reading-Module`.
+- Reusable core:
+  define module lifecycle hooks, typed settings, grouped parameters, persistent
+  module state, runtime status views, host-owned OSC send helpers, neutral reset
+  behavior, per-module docs/prefab contracts, and explicit module trust labels.
+- Do not copy directly:
+  physical-output modules, service credentials, OpenVR movement manipulation,
+  local file reads, or BLE/network side channels without permission and safety
+  review.
+- Strong references:
+  `VolcanicArts/VRCOSC-Modules`, `CrookedToe/CrookedToe-s-Modules`,
+  `FuviiPeshu/FuviiOSC`.
+- Maturity:
+  strong method family.
+- Best fit for `VR-apps-lab`:
+  future utility host/plugin architecture and third-party module trust policy.
+
+## Method 638: Event-source to avatar parameter queue with accumulator and decay
+
+- What it is:
+  an external live-event source is normalized into typed queues, then fanned out
+  to chatbox messages, avatar parameters, animation triggers, counters, and
+  time-decaying values.
+- Good for:
+  Twitch/Bilibili/Discord audience bridges, livestream event overlays, reward
+  counters, avatar reactions, moderation-aware automation, and chatbox
+  notifications.
+- Why it matters:
+  live events are bursty and remote-controlled; queueing, accumulation,
+  backpressure, moderation, and decay are the safe architecture boundary.
+- Source evidence:
+  `VRCOSC-Bilibili`, `VRCOSC-Modules` Twitch module, and earlier audience-event
+  waves.
+- Reusable core:
+  normalize provider events, split provider API code from output consumers,
+  enqueue chatbox and OSC work separately, accumulate counters when useful,
+  decay parameters over time, bound queue size/rate, and expose event/source
+  enablement in configuration.
+- Do not copy directly:
+  provider credentials, browser-cookie assumptions, hardcoded event names, or
+  unbounded remote action queues.
+- Strong references:
+  `TZFC/VRCOSC-Bilibili`, `VolcanicArts/VRCOSC-Modules`.
+- Maturity:
+  strong method candidate.
+- Best fit for `VR-apps-lab`:
+  audience-event sidecars and live-service-to-avatar bridges.
+
+## Method 639: Shared-room adapter contract with reliable/unreliable transport and media streams
+
+- What it is:
+  a WebXR room adapter owns signaling, presence, reliable control messages,
+  high-rate unreliable state, reconnect behavior, and optional audio/video
+  stream access behind one framework-facing interface.
+- Good for:
+  shared WebXR rooms, A-Frame/social XR apps, spatial collaboration tools,
+  media rooms, cross-runtime room clients, and multiplayer diagnostics.
+- Why it matters:
+  networking utility code should not hardwire WebRTC, Firebase, Janus, Socket.IO,
+  media streams, and moderation into scene components.
+- Source evidence:
+  `naf-firebase-adapter`, `naf-janus-adapter`, `naf-valid-avatars`,
+  `networked-aframe-unity-client`, and `networked-resonance-audio`.
+- Reusable core:
+  separate adapter lifecycle from scene entities, model presence and peers,
+  provide reliable and unreliable send paths, expose media stream getters and
+  setters, freeze or buffer during reconnect, surface block/kick/moderation
+  primitives, and gate UI features by adapter capability.
+- Do not copy directly:
+  stale backend APIs, public credentials, unauthenticated media sharing, or
+  server deployment assumptions hidden inside components.
+- Strong references:
+  `mozilla/naf-janus-adapter`, `networked-aframe/naf-firebase-adapter`,
+  `networked-aframe/naf-valid-avatars`.
+- Maturity:
+  strong reusable method.
+- Best fit for `VR-apps-lab`:
+  shared-room substrates and future browser-native utility collaboration.
+
+## Method 640: Shared-room entity persistence and ownership handoff
+
+- What it is:
+  a shared XR scene persists entities by stable ids and defines what happens to
+  ownership, local edits, remote edits, and media state when participants join,
+  leave, or reconnect.
+- Good for:
+  collaborative WebXR editors, shared media rooms, multiplayer whiteboards,
+  persistent object layouts, and room-state recovery.
+- Why it matters:
+  persistence without ownership rules creates duplicate entities, stale remote
+  objects, or lost edits.
+- Source evidence:
+  `naf-persist`, `naf-entity-saver`, and
+  `networked-aframe-synced-video-example`.
+- Reusable core:
+  serialize only allowed entity attributes/components, store by stable DOM or
+  network id, decide local-versus-remote conflict policy, persist owner-gated
+  state separately from media assets, provide explicit leave-time handoff, and
+  treat owner transfer as a first-class event.
+- Do not copy directly:
+  broad component serialization, monkeypatching networking internals, blind
+  preservation of every remote entity, or synced media without drift/buffer
+  policy.
+- Strong references:
+  `martintribo/naf-persist`,
+  `chenzlabs/networked-aframe-synced-video-example`.
+- Maturity:
+  promising but needs conflict policy.
+- Best fit for `VR-apps-lab`:
+  shared WebXR room persistence and collaborative authoring prototypes.
+
+## Method 641: Serializable XR authoring surface with in-headset edit primitives
+
+- What it is:
+  a lightweight XR authoring tool lets users select, place, grab, scale, edit,
+  serialize, undo, and export VR content through a small manifest, graph, scene
+  metadata, animation curve, or level file.
+- Good for:
+  360 tour builders, A-Frame/WebXR scene editors, visual node graphs, VR text
+  workspaces, in-VR Unity animation tools, and creator microtools.
+- Why it matters:
+  authoring tools become reusable when the editing interaction and persistence
+  format are explicit, small, and recoverable.
+- Source evidence:
+  `VRTourEditor`, `aframe-vreditor-component`, `GNode`,
+  `WebXR_VRController_Editor_template`, `vrcode`, `UnityVRAnimationEditor`,
+  `webgl-vr-editor`, and `VRC-Editor-Toolbox`.
+- Reusable core:
+  support clear selection feedback, controller ray or grip manipulation,
+  transform preservation on grab/reparent, clone/scale operations when needed,
+  undo or reset, a documented serialized format, autosave or export, and a
+  desktop/editor bridge when the target workflow is Unity or VRChat.
+- Do not copy directly:
+  old controller APIs, missing undo, generated scene names as universal input
+  bindings, UnityEditor reflection without migration plan, or arbitrary import
+  data without validation.
+- Strong references:
+  `Humangle/VRTourEditor`, `umiyuki/UnityVRAnimationEditor`,
+  `caseyyee/aframe-vreditor-component`, `wakufactory/GNode`.
+- Maturity:
+  strong UX/method family, implementation maturity varies by project.
+- Best fit for `VR-apps-lab`:
+  authoring spikes, creator utilities, and documentation of editor interaction
+  patterns.
+
+## Method 642: Vendor tracker/glove protocol interpreter to generic VR bridge
+
+- What it is:
+  a vendor-specific tracker or glove protocol is decoded at the edge and
+  republished through a generic VR-facing contract such as SteamVR/OpenVR
+  input, SlimeVR UDP, VMC/OSC, VRChat avatar parameters, or local input events.
+- Good for:
+  ContactGlove, Haritora, DIY trackers, wearable sensors, custom controllers,
+  avatar setup packages, and tracking helper sidecars.
+- Why it matters:
+  the reusable part is not the vendor packet itself; it is the interpreter,
+  calibration, role mapping, diagnostics, and output boundary.
+- Source evidence:
+  `freescuba`, `ContactGloveOSC`, `Glove2Kb`,
+  `haritorax-slimevr-bridge`, `haritorax-interpreter`,
+  `haritora-gx-poc`, `HaritoraToSlime`, and
+  `osc_haritorax2_camera_tracking`.
+- Reusable core:
+  isolate transport adapters, decode raw packets into normalized domain values,
+  preserve device identity and roles, expose battery/status/button/quality
+  signals, choose one generic output contract, provide calibration and stale
+  data handling, and keep diagnostics visible.
+- Do not copy directly:
+  driver installation, hardware VID/PID assumptions, Index controller
+  impersonation, OS input injection, unwrap-heavy loops, or vendor parameters
+  without compatibility review.
+- Strong references:
+  `hyblocker/freescuba`, `sim1222/haritorax-slimevr-bridge`,
+  `JovannMC/haritorax-interpreter`.
+- Maturity:
+  strong method family with high platform/hardware risk.
+- Best fit for `VR-apps-lab`:
+  tracker bridge architecture, receiver protocols, and hardware-integration
+  diagnostics.
+
+## Method 643: Tracking fusion sidecar with preflight, diagnostics, and event fan-out
+
+- What it is:
+  a tracking helper combines multiple input sources, runs fusion/state logic,
+  gates startup with preflight checks, and fans processed frames into optional
+  outputs such as OSC/VMC, dashboards, REST APIs, OBS overlays, recordings, and
+  notifications.
+- Good for:
+  camera-plus-IMU tracking, body tracker helpers, calibration utilities,
+  streamer diagnostics, motion capture recorders, and headset/tracker support
+  tools.
+- Why it matters:
+  tracking utilities fail in messy real environments; diagnostics, mode state,
+  and actionable preflight are what make the tool operable.
+- Source evidence:
+  `Fuwaaaaaa/osc_haritorax2_camera_tracking`, with comparison value from
+  Haritora and SlimeVR bridge variants.
+- Reusable core:
+  select receivers through config, run heavy camera/inference work in a separate
+  process or boundary, fuse camera positions and IMU rotations through a state
+  machine, publish frame events to optional subscribers, validate models,
+  calibration files, and ports before startup, expose dashboard/API status, and
+  test protocol/calibration/persistence boundaries.
+- Do not copy directly:
+  camera/model defaults, app-specific UI assets, hardware assumptions, or
+  calibration shortcuts without user-facing setup.
+- Strong references:
+  `Fuwaaaaaa/osc_haritorax2_camera_tracking`.
+- Maturity:
+  strong sidecar architecture donor.
+- Best fit for `VR-apps-lab`:
+  future tracking diagnostics, calibration helpers, and body-tracking runtime
+  sidecars.

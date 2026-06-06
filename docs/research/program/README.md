@@ -1421,3 +1421,31 @@ repeatable way.
 
 - `github-research-wave-199-backlog.md`
   Executed backlog for the Wave 199 pass.
+
+- `github-research-wave-200-plan.md`
+  Wave 200 research plan focused on VRCOSC module packs, add-on modules, and
+  plugin-distribution boundaries.
+
+- `github-research-wave-200-backlog.md`
+  Executed backlog for the Wave 200 pass.
+
+- `github-research-wave-201-plan.md`
+  Wave 201 research plan focused on Networked-AFrame adapters, persistence,
+  media, and Unity-client variants.
+
+- `github-research-wave-201-backlog.md`
+  Executed backlog for the Wave 201 pass.
+
+- `github-research-wave-202-plan.md`
+  Wave 202 research plan focused on lightweight XR editors, tour builders,
+  live-coding surfaces, and creator microtools.
+
+- `github-research-wave-202-backlog.md`
+  Executed backlog for the Wave 202 pass.
+
+- `github-research-wave-203-plan.md`
+  Wave 203 research plan focused on ContactGlove, Haritora, and vendor tracker
+  bridge sidecars.
+
+- `github-research-wave-203-backlog.md`
+  Executed backlog for the Wave 203 pass.

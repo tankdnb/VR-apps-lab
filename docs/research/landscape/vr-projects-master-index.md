@@ -208,6 +208,10 @@ This file complements:
 - `vr-projects-wave-197-vrchat-audio-reactive-osc-audiolink-soundboard-and-system-audio-control-sidecars.md`
 - `vr-projects-wave-198-xsoverlay-discord-and-remote-notification-protocol-bridges.md`
 - `vr-projects-wave-199-vrchat-avatar-remote-control-toy-automation-time-and-smart-light-sidecars.md`
+- `vr-projects-wave-200-vrcosc-module-packs-add-on-modules-and-plugin-distribution-boundaries.md`
+- `vr-projects-wave-201-networked-aframe-adapters-persistence-media-and-unity-client-variants.md`
+- `vr-projects-wave-202-lightweight-xr-editor-tour-builder-live-coding-and-creator-microtools.md`
+- `vr-projects-wave-203-contactglove-haritora-and-vendor-tracker-bridge-sidecars.md`
 
 ## How to use this index
 

@@ -2598,6 +2598,70 @@ Primary docs:
 - `TheUnifox/OSCTimeSender` - `Already studied as tiny C# local time to normalized Hour/Minute avatar parameter sender with fixed cadence and fixed-path caveats`
 - `hrolfurgylfa/vrchat-light-sync` - `Already studied as Rust Home Assistant light-state to VRChat avatar parameter bridge with hue/brightness normalization, change-only sends, polling config, and bearer-token caveats`
 
+## 171. VRCOSC module packs, add-on modules, and plugin-distribution boundaries
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-200-vrcosc-module-packs-add-on-modules-and-plugin-distribution-boundaries.md`
+- `../landscape/project-families.md`
+
+- `VolcanicArts/VRCOSC-Modules` - `Already studied as official VRCOSC module suite with typed SDK usage, EventSub nodes, media/status controls, voice commands, parameter sync, PiShock, OpenVR gestures, persistent state, runtime views, and service/physical-output caveats`
+- `CrookedToe/CrookedToe-s-Modules` - `Already studied as third-party VRCOSC module pack with OSCLeash wildcard/legacy path compatibility, movement reset, OpenVR chaperone manipulation, audio bands, AGC, spike detection, and movement/audio caveats`
+- `Yeusepe/Yeusepes-Modules` - `Already studied as service-heavy VRCOSC module pack for Spotify, Discord, Shazam, QR/code surfaces, VRChat API helpers, broad avatar parameters, and credential/native dependency caveats`
+- `FuviiPeshu/FuviiOSC` - `Already studied as SteamVR/VRChat body-device module pack with tracker haptics, paw/controller parameter mapping, trigger modes, token cancellation, avatar changer, and physical-output/tracker-role caveats`
+- `WentTheFox/VRCOSC-BluetoothHeartrate` - `Already studied as Windows BLE heart-rate VRCOSC module with device selection persistence, scan/reconnect state, runtime view, avatar parameter output, and optional local WebSocket rebroadcast`
+- `RichiCoder1/VrcOscLeash` - `Already studied as avatar-config-driven OSCLeash compatibility module with wildcard route handling, legacy paths, movement/look/run outputs, and safe neutral reset behavior`
+- `03milo/File-Reading-Module` - `Already studied as tiny VRCOSC local-file-to-chatbox variable/event module with file polling, path privacy, and length/cadence caveats`
+- `TZFC/VRCOSC-Bilibili` - `Already studied as Bilibili live-event bridge with async queues, chatbox and animation consumers, OSC parameter accumulation, decay behavior, and credential/i18n caveats`
+
+## 172. Networked-AFrame adapters, persistence, media, and Unity-client variants
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-201-networked-aframe-adapters-persistence-media-and-unity-client-variants.md`
+- `../landscape/project-families.md`
+
+- `networked-aframe/naf-firebase-adapter` - `Already studied as Firebase Realtime Database adapter for Networked-AFrame with presence cleanup, WebRTC peer data channels, timestamp offer tie-breaker, and guaranteed backend messages`
+- `mozilla/naf-janus-adapter` - `Already studied as Janus SFU adapter for Networked-AFrame with media streams, reliable/unreliable transports, reconnect jitter, frozen updates, join tokens, and block/kick primitives`
+- `networked-aframe/naf-valid-avatars` - `Already studied as Networked-AFrame room shell with avatar picker, username entry, presence store, users/chat panels, mic/screen/camera controls, and CDN/media caveats`
+- `ttravaglini/networked-aframe-unity-client` - `Already studied as Unity client mirroring Networked-AFrame/EasyRTC concepts with Socket.IO auth/join, networked entity ownership, schema parsing, and interpolation caveats`
+- `chenzlabs/networked-aframe-synced-video-example` - `Already studied as owner-gated synced video micro-component with paused/currentTime state, time slop, singleton network id, and buffering/owner-transfer caveats`
+- `martintribo/naf-persist` - `Already studied as PouchDB-backed A-Frame/NAF entity persistence system with DOM/NAF id options, local-vs-remote preference, serialization, and conflict caveats`
+- `martintribo/naf-entity-saver` - `Already studied as leave-time entity preservation hack that strips networked-remote, reattaches local networked state, and exposes NAF ownership fragility`
+- `AudioGroupCologne/networked-resonance-audio` - `Already studied as NAF adapter media-stream to Three/Resonance positional audio bridge with owner stream lookup, panner binding, and browser media caveats`
+
+## 173. Lightweight XR editor, tour-builder, live-coding, and creator microtools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-202-lightweight-xr-editor-tour-builder-live-coding-and-creator-microtools.md`
+- `../landscape/project-families.md`
+
+- `Humangle/VRTourEditor` - `Already studied as browser 360 tour editor with .hvrj manifest, link/button placement, desktop and VR ray picking, localStorage autosave, save/export zip, and generated WebXR runtime player`
+- `caseyyee/aframe-vreditor-component` - `Already studied as A-Frame in-headset edit component with grip/collision selection, reparent-on-grab, clone-on-two-hand grab, axis scaling, and old API/no-undo caveats`
+- `wakufactory/GNode` - `Already studied as visual node graph for geometry/A-Frame entities with sockets, joints, serialized graph positions, node edit bridge, A-Frame output, and validation caveats`
+- `flushpot1125/WebXR_VRController_Editor_template` - `Already studied as Babylon.js Editor WebXR controller template with generated script lifecycle, fromScene links, motion-controller component handling, and hardcoded input-index caveats`
+- `dkaraush/vrcode` - `Already studied as Three/WebXR text/code workspace with movable VR displays, ray-drag state, VR keyboard mesh, textarea object, and incomplete IDE/persistence caveats`
+- `umiyuki/UnityVRAnimationEditor` - `Already studied as Unity in-VR animation editor with generated grabbable nodes, VRTK interaction, Undo-backed curve recording, Animation Window reflection, and modernization caveats`
+- `evanw/webgl-vr-editor` - `Already studied as historical Cardboard/WebGL voxel editor with edit/play modes, orientation-relative cursor, undo tracker, file save/load, and obsolete headset/toolchain caveats`
+- `Reava/VRC-Editor-Toolbox` - `Already studied as Unity/VRChat creator microtool package with circle placement, teleport-to-transform, sequential naming, light-volume toggles, Bakery mass editing, and Undo/scope caveats`
+
+## 174. ContactGlove, Haritora, and vendor tracker bridge sidecars
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-203-contactglove-haritora-and-vendor-tracker-bridge-sidecars.md`
+- `../landscape/project-families.md`
+
+- `hyblocker/freescuba` - `Already studied as ContactGlove OpenVR driver plus overlay with driver/overlay split, serial protocol, named-pipe IPC, skeleton/input components, pose/input threads, input profiles, and high-risk driver caveats`
+- `Diver-X/ContactGloveOSC` - `Already studied as official Unity/VRChat ContactGlove OSC package with automatic avatar setup, full/lite parameters, expression menus, hand-sign copy tools, VPM package shape, and controller conflict caveats`
+- `1000100Den/Glove2Kb` - `Already studied as VMC/OSC hand-pose to keyboard/pointer utility with bone rotation reception, origin/deadzone correction, grip gating, pointer movement, and OS-input safety caveats`
+- `sim1222/haritorax-slimevr-bridge` - `Already studied as Rust Haritora BLE to SlimeVR UDP bridge with characteristic UUIDs, IMU decode, battery/button notifications, handshake, rotation/gravity packets, and reconnect/role caveats`
+- `JovannMC/haritorax-interpreter` - `Already studied as TypeScript Haritora COM/Bluetooth/Linux-Bluetooth interpreter library with EventEmitter API, tracker maps, IMU/battery/button/mag/info events, and maturity caveats`
+- `JovannMC/haritora-gx-poc` - `Already studied as thin Python Haritora GX serial-data probe with line classification, IMU decode, battery/button logging, and manual echo/prototype caveats`
+- `cytsai1008/HaritoraToSlime` - `Already studied as Python OSC Haritora to SlimeVR bridge with config bootstrap, broadcast handshake, add-IMU packets, rotation/accel encoding, and parser/acceleration caveats`
+- `Fuwaaaaaa/osc_haritorax2_camera_tracking` - `Already studied as mature camera/IMU tracking middleware with receiver abstraction, camera subprocess/shared memory, fusion engine, event bus, preflight checks, REST/dashboard/OBS/VMC outputs, persistence, and tests`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:
