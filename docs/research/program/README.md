@@ -1477,3 +1477,31 @@ repeatable way.
 
 - `github-research-wave-207-backlog.md`
   Executed backlog for the Wave 207 pass.
+
+- `github-research-wave-208-plan.md`
+  Wave 208 research plan focused on overlay media micro-surfaces, notes,
+  browser shells, telemetry panels, and direct video overlays.
+
+- `github-research-wave-208-backlog.md`
+  Executed backlog for the Wave 208 pass.
+
+- `github-research-wave-209-plan.md`
+  Wave 209 research plan focused on XR glasses WebHID protocol workbenches and
+  head-tracked desktop helpers.
+
+- `github-research-wave-209-backlog.md`
+  Executed backlog for the Wave 209 pass.
+
+- `github-research-wave-210-plan.md`
+  Wave 210 research plan focused on MediaPipe/avatar tracking sidecars, VRM
+  diagnostics, named-pipe body bridges, and AI full-body tracker pipelines.
+
+- `github-research-wave-210-backlog.md`
+  Executed backlog for the Wave 210 pass.
+
+- `github-research-wave-211-plan.md`
+  Wave 211 research plan focused on VR teleoperation control frontends, robot
+  bridges, safety gates, and feedback HUDs.
+
+- `github-research-wave-211-backlog.md`
+  Executed backlog for the Wave 211 pass.

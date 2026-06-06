@@ -12445,3 +12445,142 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   future browser-native utility shells, spatial UI prototypes, and interaction
   lab scaffolds.
+
+## Method 653: Direct media/browser surface to OpenVR overlay texture loop
+
+- What it is:
+  a small surface producer, such as a media engine, Unity render texture,
+  static/generated image, or browser/CEF surface, is rendered into a texture or
+  image and submitted to an OpenVR overlay.
+- Good for:
+  video overlays, note/checklist panels, telemetry dashboards, browser-backed
+  control panels, lightweight media surfaces, and proof-of-value overlay
+  prototypes.
+- Why it matters:
+  many useful VR utilities start as one small surface; they do not need a full
+  app framework before proving placement, input, and update-loop value.
+- Source evidence:
+  `iigomaru/MPVR`, `Yukiiro-Nite/notebook-vr-overlay`,
+  `Daniel-Webster/WT-OpenVR-Overlay`, and `Wulkop/VolumeVR`.
+- Reusable core:
+  choose a surface producer, create an overlay app/session, create the overlay
+  handle, set placement and texture bounds, route mouse/controller input when
+  needed, update the surface texture/image, submit it to the overlay, and make
+  lifecycle, persistence, and cleanup explicit.
+- Do not copy directly:
+  bundled binaries, hardcoded paths, hardcoded tracked-device indexes, old
+  dependency versions, no-sandbox browser defaults, sleep-driven render loops,
+  or missing cleanup as production behavior.
+- Strong references:
+  `iigomaru/MPVR` for direct media texture submission and
+  `Daniel-Webster/WT-OpenVR-Overlay` for Unity telemetry overlay shell shape.
+- Maturity:
+  medium method; strong as a lower-bound architecture pattern, weaker as
+  product-ready code.
+- Best fit for `VR-apps-lab`:
+  overlay media surfaces, note/checklist panels, telemetry overlays, and
+  surface-producer comparison matrices.
+
+## Method 654: XR glasses protocol workbench and head-tracked desktop viewport
+
+- What it is:
+  XR glasses are treated as a diagnosable device plus optional display surface:
+  protocol code discovers HID interfaces, parses packets, reads IMU/status or
+  calibration data, then a separate desktop or viewport layer uses that data.
+- Good for:
+  Xreal/Nreal diagnostics, WebHID workbenches, native protocol readers,
+  head-tracked desktop helpers, virtual display experiments, drift correction,
+  and lightweight spatial-display tools.
+- Why it matters:
+  vendor glasses work can become risky and tangled unless read-only diagnostics,
+  command writing, calibration, and display UX are separated early.
+- Source evidence:
+  `jakedowns/xreal-webxr`, `edwatt/real_utilities`,
+  `alexwilson1/nreal_linux_test`, and `Mailbot/Nreal_Air_Desktop_tool`.
+- Reusable core:
+  filter devices by vendor/product IDs, separate interface roles, define packet
+  and command metadata, isolate parser/build helpers, expose read-only status
+  and IMU flows, store calibration/drift state, and keep viewport/window layout
+  logic outside the protocol layer.
+- Do not copy directly:
+  firmware update flows as default behavior, root/X11 deployment assumptions,
+  yaw-only desktop slicing as a final compositor model, or README-only UX
+  claims as implementation evidence.
+- Strong references:
+  `jakedowns/xreal-webxr` for browser WebHID workbench structure and
+  `edwatt/real_utilities` for native protocol parser boundaries.
+- Maturity:
+  medium-strong diagnostic method; product UX still needs modern comparison.
+- Best fit for `VR-apps-lab`:
+  XR glasses diagnostics, display-surface helpers, protocol readers, and
+  drift/layout control studies.
+
+## Method 655: Camera inference to avatar/tracker signal normalizer
+
+- What it is:
+  a camera-inference sidecar captures model output, normalizes it into a clear
+  signal schema, exposes tuning/calibration controls, and emits target-specific
+  avatar, tracker, or engine messages.
+- Good for:
+  VRChat/VRCFT expression bridges, VRM avatar diagnostics, Unity body tracking,
+  virtual tracker output, webcam FBT, pose visualization, and calibration tools.
+- Why it matters:
+  model output is noisy and target runtimes all expect different schemas; the
+  reusable value is the normalization/mapping layer, not just the inference
+  model.
+- Source evidence:
+  `hotaru86/MediapipeFaceTracking_VRC`,
+  `how-people-lived/mediapipe-vrm-tracking`, `Metastazius/VRBodyTrack`, and
+  `MasonSakai/VR-AI-Full-Body-Tracking`.
+- Reusable core:
+  keep capture/inference, source signal names, target schema names, per-signal
+  sensitivity/min/max, confidence gates, calibration transforms, persistence,
+  diagnostics, and transport output as separable parts.
+- Do not copy directly:
+  hardcoded camera IDs, hardcoded local Python paths, checked-in Unity
+  `Library` artifacts, legacy OpenVR Input Emulator output, or single-file
+  mapping logic if the target needs multiple runtimes.
+- Strong references:
+  `MediapipeFaceTracking_VRC` for VRCFT expression mapping and
+  `VR-AI-Full-Body-Tracking` for multi-camera triangulation concepts.
+- Maturity:
+  strong sidecar method; individual donors vary in hygiene and runtime age.
+- Best fit for `VR-apps-lab`:
+  avatar/tracker bridge schemas, mapping tools, tracking diagnostics, and
+  calibration sidecars.
+
+## Method 656: WebXR/VR teleoperation control surface with safety gates and feedback loop
+
+- What it is:
+  a VR or WebXR frontend collects headset/controller/hand input and shows live
+  feedback, while a sidecar validates commands, applies IK or other control
+  logic, enforces safety gates, and sends output to a robot, runtime, device, or
+  remote service.
+- Good for:
+  robot teleoperation, remote camera heads, overlay automation panels, remote
+  desktop/device controls, diagnostics actions, runtime helpers, and any VR
+  utility where commands can affect an external system.
+- Why it matters:
+  control surfaces are only trustworthy when users can see mode, command,
+  transport, feedback, and safety state at the same time.
+- Source evidence:
+  `h2r/GHOST`, `nakama-lab/VR_Teleop_Interface`,
+  `kscalelabs/kbot_vr_teleop`, and `open-thought/cambot`.
+- Reusable core:
+  model explicit operator modes, collect tracked input into typed payloads,
+  throttle and pause command streams, validate in a sidecar, expose convergence
+  or stale-data state, publish bidirectional telemetry, show transport/media
+  health in a HUD, and enforce pause/home/calibration/watchdog/jump-limit
+  behavior before output.
+- Do not copy directly:
+  robot-specific kinematics, hardware safety thresholds, actuator command
+  schemas, or ROS/UDP/WebRTC choices without a target-specific risk review.
+- Strong references:
+  `open-thought/cambot` for safety/HUD/transport design and
+  `kscalelabs/kbot_vr_teleop` for WebXR frontend plus Python sidecar
+  boundaries.
+- Maturity:
+  strong architecture method; requires target-specific safety adaptation.
+- Best fit for `VR-apps-lab`:
+  VR control surfaces, remote-device helpers, operator HUDs, safety-gated
+  command sidecars, and command/status/error documentation templates.

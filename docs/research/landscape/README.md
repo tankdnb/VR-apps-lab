@@ -901,6 +901,25 @@ Use these files when you want to understand:
   spatial UI layout/input substrates, interaction lab shells, AR measurement,
   GLB AR viewers, and hand/product UI references.
 
+- `vr-projects-wave-208-overlay-media-micro-surfaces-notes-browser-and-direct-video-overlays.md`
+  Next GitHub discovery wave focused on overlay media micro-surfaces, note
+  overlays, Unity telemetry shells, CEF/browser bootstraps, and direct
+  libmpv/OpenVR texture loops.
+
+- `vr-projects-wave-209-xr-glasses-webhid-protocol-and-head-tracked-desktop-helpers.md`
+  Next GitHub discovery wave focused on XR glasses WebHID/native protocol
+  workbenches, calibration readers, head-tracked desktop slicing, and drift
+  or layout UX references.
+
+- `vr-projects-wave-210-mediapipe-avatar-tracking-sidecars-vrm-and-full-body-bridges.md`
+  Next GitHub discovery wave focused on MediaPipe/VRCFT expression sidecars,
+  browser VRM diagnostics, Unity named-pipe body bridges, and AI full-body
+  tracker fusion.
+
+- `vr-projects-wave-211-vr-teleoperation-control-frontends-robot-bridges-and-safety-huds.md`
+  Next GitHub discovery wave focused on VR/WebXR teleoperation control
+  frontends, robot bridges, operator HUDs, command sidecars, and safety gates.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

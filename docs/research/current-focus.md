@@ -150,6 +150,12 @@ These are the clearest current product and research lines:
    shells, input-profile loaders, A-Frame micro-components, Godot XR tracker
    bridges and recorders, React/Three XR store substrates, spatial UI layout,
    interaction lab shells, and AR measurement/model-viewer microtools.
+30. `Overlay media micro-surfaces, XR glasses protocols, camera tracking sidecars, and VR/WebXR control safety`
+   the repository now has fresh deepening coverage of direct media-to-overlay
+   texture loops, note and telemetry overlay shells, Xreal/Nreal WebHID and
+   native protocol readers, head-tracked desktop helpers, MediaPipe/VRCFT/VRM
+   mapping sidecars, AI full-body tracking fusion, and teleoperation-inspired
+   operator HUDs, command sidecars, and safety gates.
 
 ## Most useful current docs
 
@@ -269,6 +275,10 @@ instead of full history:
 - `landscape/vr-projects-wave-205-aframe-ui-locomotion-environment-and-physics-micro-components.md`
 - `landscape/vr-projects-wave-206-godot-xr-addons-hand-tracker-recording-and-reference-plugin-periphery.md`
 - `landscape/vr-projects-wave-207-react-three-xr-runtime-spatial-ui-and-interaction-lab-surfaces.md`
+- `landscape/vr-projects-wave-208-overlay-media-micro-surfaces-notes-browser-and-direct-video-overlays.md`
+- `landscape/vr-projects-wave-209-xr-glasses-webhid-protocol-and-head-tracked-desktop-helpers.md`
+- `landscape/vr-projects-wave-210-mediapipe-avatar-tracking-sidecars-vrm-and-full-body-bridges.md`
+- `landscape/vr-projects-wave-211-vr-teleoperation-control-frontends-robot-bridges-and-safety-huds.md`
 
 ## Strong donor clusters right now
 
@@ -911,6 +921,10 @@ directions:
 132. `A-Frame component primitive matrix across schema, input, events, assets, and lifecycle`
 133. `Godot XR addon matrix across hand pose, pickup, tracker source, recorder, toolkit node, and native interface`
 134. `React/Three XR substrate matrix across runtime store, spatial UI, labs, and microtools`
+135. `Overlay media micro-surface matrix across image notes, telemetry, browser shells, and direct video textures`
+136. `XR glasses protocol and head-tracked desktop matrix across WebHID, native HID, calibration, and drift UX`
+137. `Camera inference to avatar/tracker matrix across VRCFT, VRM, Unity named pipes, and virtual trackers`
+138. `VR/WebXR control surface safety matrix across modes, HUDs, sidecars, telemetry, and watchdogs`
 
 ## Current repository-maintenance priorities
 

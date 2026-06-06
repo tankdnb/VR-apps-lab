@@ -220,7 +220,7 @@ by runtime or operating system.
 | `Mon-Ouie/launcher-openvr-overlay` | Already studied | Linux launcher shell that hands app windows and videos off to external display tools such as `gamescope` and `vr-video-player` |
 | `Mon-Ouie/mpris-openvr-overlay` | Already studied | Very small egui-based media-state and transport-control surface over the desktop `MPRIS` bus |
 | `Mon-Ouie/vr-video-player-overlay` | Already studied | Focused `window or video -> VR display surface` path with flat, plane, sphere, and overlay modes |
-| `iigomaru/MPVR` | Partially studied | Rough libmpv-in-overlay proof of concept that is weaker as a product but still useful as a lower-bound media-embed comparison node |
+| `iigomaru/MPVR` | Deepened in Wave 208 | Rough libmpv-in-overlay proof of concept that is weaker as a product but useful as a lower-bound direct media-engine texture donor |
 | `hiinaspace/vr-notes-anywhere` | Already studied | Projection-overlay note surface that proves annotation can be treated as a tiny scene-state problem instead of a desktop mirror |
 | `jacklul/SteamVR-PhasmoMatrix` | Already studied | Ultra-thin website-wrapper overlay whose main value is focused domain packaging, not a broad host shell |
 | `SteveMarkhamGIT/SmudgeTimerOpenVR` | Already studied | Wrist-mounted game-status overlay with controller-tip gesture triggering and generated-texture updates |
@@ -575,7 +575,7 @@ controller stacks.
 | `ju1ce/Mediapipe-VR-Fullbody-Tracking` | Already studied | Single-camera body tracking with switchable SteamVR-driver and VRChat OSC backends plus Quest-friendly WebUI |
 | `Wunder-Wulfe/NVIDIA-BodyTracking` | Already studied | GPU-assisted camera body-tracking driver with overlay-assisted alignment and dense tracker-role configuration |
 | `chnoblouch/aethervr` | Already studied | Webcam-driven custom OpenXR runtime with a Python tracker connected over local TCP |
-| `MasonSakai/VR-AI-Full-Body-Tracking` | Not studied deeply | Camera FBT comparison node still partly anchored in an InputEmulator-era transition |
+| `MasonSakai/VR-AI-Full-Body-Tracking` | Deepened in Wave 210 | Camera FBT comparison node with browser camera inference, MoveNet, multi-camera triangulation, dampened tracker output, and InputEmulator-era caveats |
 
 ### Consolidation note
 
@@ -677,8 +677,8 @@ stations, or embodied dashboards for external systems.
 | `h2r/ros_reality` | Already studied | Semantic action-menu reference over a websocket bridge |
 | `elpis-lab/UR10_Teleop` | Already studied | Thin controller-pose exporter to an external robot-control process |
 | `pollen-robotics/ReachyTeleoperation` | Already studied | Strong staged teleoperation product with connection, mirror, and live-control rooms |
-| `nakama-lab/VR_Teleop_Interface` | Not studied deeply | Architectural comparison node for broader teleoperation interface decomposition |
-| `h2r/GHOST` | Not studied deeply | Adjacent visualization and gesture-control node worth later comparison |
+| `nakama-lab/VR_Teleop_Interface` | Deepened in Wave 211 | Architectural comparison node for broader teleoperation interface decomposition, topic contracts, and command/status/error sequence docs |
+| `h2r/GHOST` | Deepened in Wave 211 | Unity/Quest ROS teleoperation frontend with mode manager, controller commands, robot joint publishing, and point-cloud/depth hooks |
 
 ### Consolidation note
 
@@ -1163,7 +1163,7 @@ or a note surface rather than a broad dashboard host.
 | `R-VUt/OVRBrightnessAPI` | Already studied | Tiny comfort overlay exposed through local `HTTP` and `OSC` control planes |
 | `CorvinRyder/VR-Slideshow-Overlay` | Already studied | Provider-fed informational surface with multiple outputs including overlay, chatbox, and file |
 | `Podshot/VRSessionTimer` | Already studied | Timer overlay that escalates from passive HUD into notifications and restart loops |
-| `Yukiiro-Nite/notebook-vr-overlay` | Partially studied | Rough note-surface prototype with explicit overlay event plumbing but incomplete writing workflow |
+| `Yukiiro-Nite/notebook-vr-overlay` | Deepened in Wave 208 | Rough note-surface prototype with image surface, mouse/event plumbing, tracked-device placement, and incomplete writing workflow |
 
 ### Consolidation note
 
@@ -1249,7 +1249,7 @@ events explicit without dropping back to a tiny native baseline.
 | `someka-vrc/uitoko-ovr` | Already studied | Reusable Unity `UIToolkit` overlay template with explicit `OpenVR` lifecycle and event bridge |
 | `AanthonyRusso/BasicOverlay` | Already studied | Focused `C++` overlay whose desktop helper refreshes cover art and text for a small HMD-relative surface |
 | `Spacefish/OpenVR-Overlay` | Already studied | Managed-language `OpenVR` host with Vulkan texture interop and controller attachment |
-| `Daniel-Webster/WT-OpenVR-Overlay` | Partially studied | Broader Unity overlay app over a local webservice, useful as a higher-level scaffold node |
+| `Daniel-Webster/WT-OpenVR-Overlay` | Deepened in Wave 208 | Broader Unity overlay app over a local webservice, useful as a Unity telemetry overlay and OVRLay scaffold node |
 | `kurohuku7/zenn-overlay-tutorial` | Already studied as tutorial-grade OpenVR overlay lifecycle reference | Tutorial-first note for Unity or SteamVR overlay learning rather than a mainline code donor |
 
 ### Consolidation note
@@ -1277,7 +1277,7 @@ for an external device, desktop workflow, or operator-fed content stream.
 | `happysmash27/OVR_SLDO` | Already studied | Linux desktop-proxy overlay rooted in shared-memory `X11` capture |
 | `Desuuuu/OVRPhoneBridge` | Already studied | Secure phone-companion overlay with encrypted transport, notifications, SMS, and SteamVR keyboard integration |
 | `adks3489/ViveOverlayPaster` | Already studied | Tiny operator-driven text overlay that rasterizes desktop-authored content into VR |
-| `Wulkop/VolumeVR` | Partially studied | `CEF`-backed narrow media or volume shell whose public repo mainly exposes runtime bootstrap logic |
+| `Wulkop/VolumeVR` | Deepened in Wave 208 as weak donor | `CEF`-backed narrow media or volume shell whose public repo mainly exposes runtime bootstrap logic |
 
 ### Consolidation note
 
@@ -3028,12 +3028,12 @@ architecture rather than in robot-specific code.
 
 | Project | Status | Notes |
 |---|---|---|
-| `kscalelabs/kbot_vr_teleop` | Partially studied | React/WebXR headset frontend with hand/controller tracking, robot/video surfaces, Python IK, UDP robot command schema, joystick commands, finger UDP helpers, and Rerun visualizer |
+| `kscalelabs/kbot_vr_teleop` | Deepened in Wave 211 | React/WebXR headset frontend with hand/controller tracking, robot/video surfaces, Python IK, UDP robot command schema, pause gates, convergence checks, and feedback |
 | `dwaitbhatt/xarm_vr_teleop` | Already studied | Headset-free SteamVR/OpenVR controller-to-xArm bridge with null-driver setup, pose deltas, IK/control modes, trigger gripper, haptics, and menu exit |
 | `NVlabs/collab-sim` | Partially studied | Isaac Sim/OpenXR VR robot teleop with CuRobo IK/MPC, controller follower frames, button managers, reset callbacks, data logging, and replay |
 | `wengmister/franka-vr-teleop` | Partially studied | Quest hand-pose stream through ROS2/UDP/TCP/ADB reverse into weighted IK, Ruckig joint velocity, smoothing, pause/recenter, and pose visualization |
-| `nakama-lab/VR_Teleop_Interface` | Partially studied | Unity/Quest/ROS2/ZED/Franka bridge with stereo feed, controller publishers, force/torque-to-rumble feedback, ROS TCP topics, Docker ZED deployment, and SSH launch |
-| `open-thought/cambot` | Partially studied | WebXR stereo camera-arm telepresence with HTTPS/WebSocket, WebRTC fallback, VR HUD, head-pose IK, safety bounds, watchdog, pause, home, and transport controls |
+| `nakama-lab/VR_Teleop_Interface` | Deepened in Wave 211 | Unity/Quest/ROS2/ZED/Franka bridge documentation with stereo feed, controller publishers, force/torque-to-rumble feedback, ROS TCP topics, and command/status/error sequences |
+| `open-thought/cambot` | Deepened in Wave 211 | WebXR stereo camera-arm telepresence with HTTPS/WebSocket, WebRTC fallback, VR HUD, head-pose IK, safety bounds, watchdog, pause, home, and transport controls |
 | `plund-dtu/UR_VR_Teleop` | Partially studied | OpenVR/Meta Quest controller bridge for UR robots with RTDE servoL, axis remap, Robotiq gripper, pause/recenter, RealSense workers, episode save/reset, and custom logging loop |
 
 ### Consolidation note
@@ -3099,10 +3099,10 @@ control surfaces, and head-orientation-to-viewport mapping.
 
 | Project | Status | Notes |
 |---|---|---|
-| `jakedowns/xreal-webxr` | Partially studied | Browser WebHID workbench with XREAL/Nreal device filtering, Air/Light managers, input-report parsing, IMU packet polling, firmware command scaffolding, and packet logging |
-| `alexwilson1/nreal_linux_test` | Partially studied as Linux/X11 POC | GStreamer/OpenCV screen capture POC with left/right gaze calibration, yaw normalization, and multi-monitor viewport slicing for Nreal Air |
-| `Mailbot/Nreal_Air_Desktop_tool` | Partially studied as product reference only | Thin desktop-control framing for Nreal Air; useful as product reference but not a current code donor |
-| `edwatt/real_utilities` | Partially studied | Native protocol utility around Nreal Air device commands and reports; useful as a low-level comparison node |
+| `jakedowns/xreal-webxr` | Deepened in Wave 209 | Browser WebHID workbench with XREAL/Nreal device filtering, Air/Light managers, input-report parsing, IMU packet polling, firmware command scaffolding, and packet logging |
+| `alexwilson1/nreal_linux_test` | Deepened in Wave 209 as Linux/X11 POC | GStreamer/OpenCV screen capture POC with left/right gaze calibration, yaw normalization, and multi-monitor viewport slicing for Nreal Air |
+| `Mailbot/Nreal_Air_Desktop_tool` | Deepened in Wave 209 as product reference only | Thin desktop-control framing for Nreal Air; useful as product reference but not a current code donor |
+| `edwatt/real_utilities` | Deepened in Wave 209 | Native protocol utility around Nreal Air device commands, reports, packet build/parse, CRC, and calibration reads |
 | `DannyDesert/XReal-Ultrawide` | Already studied | macOS menu-bar app with private CGVirtualDisplay lifecycle, ScreenCaptureKit/Metal viewport path, XREAL IMU service, recenter, smoothing, dead zone, and lean-to-zoom |
 
 ### Consolidation note
@@ -3133,9 +3133,9 @@ in conversion boundaries, not production tracking quality.
 | Project | Status | Notes |
 |---|---|---|
 | `TkskKurumi/SlimeVR-Tracker-Mediapipe` | Already studied | Python MediaPipe pose bridge that derives limb axes, smooths quaternions, uses pose-neighborhood calibration, and sends SlimeVR-style UDP tracker packets |
-| `hotaru86/MediapipeFaceTracking_VRC` | Partially studied | Python webcam face tracker with bundled MediaPipe face-landmarker model and avatar-facing blendshape/parameter mapping intent |
-| `how-people-lived/mediapipe-vrm-tracking` | Partially studied | Browser-only MediaPipe/VRM face, hand, and arm tracking demo with ARKit-compatible blendshape framing |
-| `Metastazius/VRBodyTrack` | Partially studied | Python MediaPipe world-landmark server plus Unity avatar scene connected through length-prefixed Windows named-pipe text payloads |
+| `hotaru86/MediapipeFaceTracking_VRC` | Deepened in Wave 210 | Python webcam face tracker with MediaPipe face-landmarker model, ARKit/VRCFT mapping, parameter tuning, JSON persistence, and OSC output |
+| `how-people-lived/mediapipe-vrm-tracking` | Deepened in Wave 210 | Browser-only MediaPipe/VRM face, hand, and arm tracking demo with avatar preview, mapping editor, JSON export, and ARKit-compatible blendshape framing |
+| `Metastazius/VRBodyTrack` | Deepened in Wave 210 | Python MediaPipe world-landmark server plus Unity avatar/body analysis scene connected through length-prefixed Windows named-pipe text payloads |
 | `vwitted/mediapipe_VR_controller` | Already studied as micro-utility | Minimal MediaPipe Hands wrist-landmark to `/VMT/Raw/Unity` OSC payload proof |
 
 ### Consolidation note
@@ -6116,6 +6116,138 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - interaction lab scaffolds for comparing techniques
 - browser-native diagnostic HUDs and session loggers
 - AR asset viewer and measurement micro-utilities
+
+## Family 187: Overlay media micro-surfaces: notes, telemetry shells, browser bootstraps, and direct video overlays
+
+This family covers small overlay projects that prove a surface can be brought
+into VR without a large application shell: image/note overlays, Unity telemetry
+panels, browser-backed runtime bootstraps, and direct media-player texture
+submission.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Yukiiro-Nite/notebook-vr-overlay` | Deepened in Wave 208 | minimal OpenVR note/image surface with mouse input scale, tracked-device placement, event loop, hardcoded paths, and incomplete persistence |
+| `Daniel-Webster/WT-OpenVR-Overlay` | Deepened in Wave 208 | Unity/OVRLay telemetry shell with render textures, dashboard thumbnails, tracked-device transforms, OpenVR mouse routing, and local War Thunder JSON/image polling |
+| `Wulkop/VolumeVR` | Deepened in Wave 208 as weak donor | CEF/windowless browser bootstrap with remote-debug/no-sandbox caveats; inspected source did not confirm overlay submission |
+| `iigomaru/MPVR` | Deepened in Wave 208 | direct libmpv/OpenGL/OpenVR overlay texture loop with controller-relative placement and rough proof-of-concept caveats |
+
+### Consolidation note
+
+This family matters because future VR utility surfaces can choose the smallest
+surface producer that proves the value:
+
+- static or generated image surface for notes and checklists
+- Unity render texture for telemetry dashboards
+- browser/CEF surface for HTML-based control panels
+- native media-engine texture for video playback
+- explicit input, placement, lifecycle, and persistence boundaries
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- surface-producer comparison matrices
+- direct media-to-overlay prototypes
+- overlay note/checklist microtools
+- browser-backed overlay caution notes
+- telemetry panel shell reuse
+
+## Family 188: XR glasses WebHID protocol workbenches and head-tracked desktop helpers
+
+This family covers Nreal/Xreal-style device protocol tools and lightweight
+desktop helpers that turn XR glasses into diagnosable sensors, displays, or
+head-tracked viewport surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `jakedowns/xreal-webxr` | Deepened in Wave 209 | browser WebHID workbench with device filtering, packet/message tables, IMU/status parsing, Air/Light routing, and firmware-command caveats |
+| `alexwilson1/nreal_linux_test` | Deepened in Wave 209 as Linux/X11 POC | external-driver pose parsing, GStreamer/X11 capture, yaw calibration, and multi-monitor viewport slicing |
+| `edwatt/real_utilities` | Deepened in Wave 209 | native hidapi utility with separate IMU/control interfaces, command metadata, packet build/parse helpers, CRC, and calibration reads |
+| `Mailbot/Nreal_Air_Desktop_tool` | Deepened in Wave 209 as product reference only | desktop windows, saved layouts, curvature, drift correction, focus recovery, and menu-control ideas without source-depth evidence |
+
+### Consolidation note
+
+This family matters because XR glasses utilities need clear separation between:
+
+- device discovery and permission flow
+- HID interface roles
+- read-only parser/status diagnostics
+- risky firmware/control commands
+- calibration/drift correction
+- display-surface or desktop viewport UX
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- safe XR glasses protocol readers
+- head-tracked desktop viewport helpers
+- drift-correction and layout persistence UX
+- browser WebHID versus native HID comparison
+- display-surface diagnostics for lightweight XR hardware
+
+## Family 189: MediaPipe/avatar tracking sidecars, VRM diagnostics, named-pipe body bridges, and AI FBT pipelines
+
+This family covers camera-inference projects that normalize face, hand, body,
+or pose signals and bridge them into avatar systems, Unity, VRChat/VRCFT,
+VRM previews, or virtual tracker outputs.
+
+| Project | Status | Notes |
+|---|---|---|
+| `hotaru86/MediapipeFaceTracking_VRC` | Deepened in Wave 210 | MediaPipe Face Landmarker to VRCFT OSC sidecar with ARKit/VRCFT mapping, per-parameter tuning, JSON persistence, and boolean decomposition |
+| `how-people-lived/mediapipe-vrm-tracking` | Deepened in Wave 210 | browser MediaPipe/VRM diagnostics workbench with VRM drag/drop, blendshape mapping UI, Face/Hand/Pose landmarkers, and JSON export |
+| `Metastazius/VRBodyTrack` | Deepened in Wave 210 | Python MediaPipe to Unity named-pipe body bridge with length-prefixed landmarks, joint-angle calculation, and repo hygiene caveats |
+| `MasonSakai/VR-AI-Full-Body-Tracking` | Deepened in Wave 210 | multi-camera AI FBT pipeline with MoveNet, keypoint confidence, triangulation, dampened virtual tracker output, and legacy InputEmulator caveats |
+
+### Consolidation note
+
+This family matters because camera tracking utilities should share a normalized
+sidecar shape:
+
+- capture/inference input
+- source signal schema
+- target avatar/tracker schema
+- sensitivity, min/max, confidence, and calibration controls
+- transport boundary such as OSC, named pipe, WebSocket, or runtime driver
+- diagnostics and persistence
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- reusable avatar/tracker signal schemas
+- browser avatar diagnostics surfaces
+- VRCFT/VRM/OSC mapping tools
+- body landmark and joint-angle sidecars
+- multi-camera tracker fusion references
+
+## Family 190: VR teleoperation control frontends, robot bridges, safety gates, and feedback HUDs
+
+This family covers VR and WebXR teleoperation projects whose reusable value is
+the control loop: headset input, command sidecars, robot/runtime transports,
+live feedback, explicit modes, safety gates, and operator HUDs.
+
+| Project | Status | Notes |
+|---|---|---|
+| `h2r/GHOST` | Deepened in Wave 211 | Unity/Quest ROS teleop frontend with mode manager, controller commands, robot joint publisher, and point-cloud/depth visualization hooks |
+| `nakama-lab/VR_Teleop_Interface` | Deepened in Wave 211 | branch-separated Unity/ROS2/ZED architecture with topic contracts and command/status/error sequence documentation |
+| `kscalelabs/kbot_vr_teleop` | Deepened in Wave 211 | WebXR frontend plus Python IK/UDP sidecar with hand/controller tracking payloads, pause gates, throttling, feedback, and convergence checks |
+| `open-thought/cambot` | Deepened in Wave 211 | WebXR stereo camera teleop stack with HUD telemetry, WebSocket/WebRTC transport, RTT/backpressure, calibration, smoothing, workspace bounds, watchdog, pause, and home |
+
+### Consolidation note
+
+This family matters because teleoperation projects force VR utilities to be
+honest about command risk and feedback:
+
+- visible operator modes
+- bidirectional telemetry and status
+- pause/home/calibrate flows
+- stale-data and jump-prevention gates
+- sidecar-level command validation
+- transport health and media feedback
+- safety envelopes before actuator/runtime output
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VR/WebXR control surface patterns
+- safety-gated command sidecars
+- operator HUD templates
+- command/status/error sequence documentation
+- adapting teleop safety lessons to non-robot VR utilities
 
 ## Recommended synthesis path for `VR-apps-lab`
 

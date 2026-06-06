@@ -152,7 +152,7 @@ Primary docs:
 - `Mon-Ouie/launcher-openvr-overlay` - `Already studied`
 - `Mon-Ouie/mpris-openvr-overlay` - `Already studied`
 - `Mon-Ouie/vr-video-player-overlay` - `Already studied`
-- `iigomaru/MPVR` - `Partially studied`
+- `iigomaru/MPVR` - `Deepened in Wave 208; see overlay media micro-surface section 179`
 - `hiinaspace/vr-notes-anywhere` - `Already studied`
 - `jacklul/SteamVR-PhasmoMatrix` - `Already studied`
 - `SteveMarkhamGIT/SmudgeTimerOpenVR` - `Already studied`
@@ -299,7 +299,7 @@ Primary docs:
 - `KinectToVR/Amethyst` - `Already studied`
 - `ju1ce/Mediapipe-VR-Fullbody-Tracking` - `Already studied`
 - `Wunder-Wulfe/NVIDIA-BodyTracking` - `Already studied`
-- `MasonSakai/VR-AI-Full-Body-Tracking` - `Not studied deeply`
+- `MasonSakai/VR-AI-Full-Body-Tracking` - `Deepened in Wave 210; see MediaPipe/avatar tracking sidecar section 181`
 
 ## 11. Passthrough, camera, and reality tools
 
@@ -556,8 +556,8 @@ Primary docs:
 - `h2r/ros_reality` - `Already studied`
 - `elpis-lab/UR10_Teleop` - `Already studied`
 - `pollen-robotics/ReachyTeleoperation` - `Already studied`
-- `nakama-lab/VR_Teleop_Interface` - `Not studied deeply`
-- `h2r/GHOST` - `Not studied deeply`
+- `nakama-lab/VR_Teleop_Interface` - `Deepened in Wave 211; see VR teleoperation control section 182`
+- `h2r/GHOST` - `Deepened in Wave 211; see VR teleoperation control section 182`
 
 ## 22. Social overlays, communication sidecars, and companion surfaces
 
@@ -801,7 +801,7 @@ Primary docs:
 - `R-VUt/OVRBrightnessAPI` - `Already studied`
 - `CorvinRyder/VR-Slideshow-Overlay` - `Already studied`
 - `Podshot/VRSessionTimer` - `Already studied`
-- `Yukiiro-Nite/notebook-vr-overlay` - `Partially studied`
+- `Yukiiro-Nite/notebook-vr-overlay` - `Deepened in Wave 208; see overlay media micro-surface section 179`
 
 ## 38. Embodied locomotion overlays, live tuning surfaces, and external-device control panels
 
@@ -843,7 +843,7 @@ Primary docs:
 - `AanthonyRusso/BasicOverlay` - `Already studied`
 - `Spacefish/OpenVR-Overlay` - `Already studied`
 - `albrt-vr/OpenVR.ALBRT.overlay` - `Already studied`
-- `Daniel-Webster/WT-OpenVR-Overlay` - `Partially studied`
+- `Daniel-Webster/WT-OpenVR-Overlay` - `Deepened in Wave 208; see overlay media micro-surface section 179`
 - `kurohuku7/zenn-overlay-tutorial` - `Already studied as tutorial-grade OpenVR overlay lifecycle reference`
 
 ## 41. Desktop-adjacent companion overlays, phone bridges, and media or text control surfaces
@@ -856,7 +856,7 @@ Primary docs:
 - `happysmash27/OVR_SLDO` - `Already studied`
 - `Desuuuu/OVRPhoneBridge` - `Already studied`
 - `adks3489/ViveOverlayPaster` - `Already studied`
-- `Wulkop/VolumeVR` - `Partially studied`
+- `Wulkop/VolumeVR` - `Deepened in Wave 208; see overlay media micro-surface section 179`
 
 ## 42. Specialized effect overlays, visibility shaping, and passthrough cutout surfaces
 
@@ -1475,12 +1475,12 @@ Primary docs:
 - `../landscape/vr-projects-wave-119-vr-teleoperation-headset-frontends-robot-bridges-and-data-capture.md`
 - `../landscape/project-families.md`
 
-- `kscalelabs/kbot_vr_teleop` - `Partially studied`
+- `kscalelabs/kbot_vr_teleop` - `Deepened in Wave 211; see VR teleoperation control section 182`
 - `dwaitbhatt/xarm_vr_teleop` - `Already studied`
 - `NVlabs/collab-sim` - `Partially studied`
 - `wengmister/franka-vr-teleop` - `Partially studied`
-- `nakama-lab/VR_Teleop_Interface` - `Partially studied; deepened from earlier not-yet marker`
-- `open-thought/cambot` - `Partially studied`
+- `nakama-lab/VR_Teleop_Interface` - `Deepened in Wave 211 as architecture documentation and command/status/error flow donor`
+- `open-thought/cambot` - `Deepened in Wave 211; see VR teleoperation control section 182`
 - `plund-dtu/UR_VR_Teleop` - `Partially studied`
 
 ## 91. ALVR/WiVRn ecosystem sidecars, platform clients, and streaming helpers
@@ -1503,10 +1503,10 @@ Primary docs:
 - `../landscape/vr-projects-wave-121-xr-glasses-webhid-virtual-displays-and-head-tracked-desktop-helpers.md`
 - `../landscape/project-families.md`
 
-- `jakedowns/xreal-webxr` - `Partially studied`
-- `alexwilson1/nreal_linux_test` - `Partially studied as Linux/X11 POC`
-- `Mailbot/Nreal_Air_Desktop_tool` - `Partially studied as product reference only`
-- `edwatt/real_utilities` - `Partially studied`
+- `jakedowns/xreal-webxr` - `Deepened in Wave 209; see XR glasses protocol section 180`
+- `alexwilson1/nreal_linux_test` - `Deepened in Wave 209 as Linux/X11 head-tracked desktop POC`
+- `Mailbot/Nreal_Air_Desktop_tool` - `Deepened in Wave 209 as product reference only`
+- `edwatt/real_utilities` - `Deepened in Wave 209; see XR glasses protocol section 180`
 - `DannyDesert/XReal-Ultrawide` - `Already studied`
 
 ## 93. MediaPipe camera tracking bridges for SlimeVR, VRChat, VRM, and virtual controllers
@@ -1517,9 +1517,9 @@ Primary docs:
 - `../landscape/project-families.md`
 
 - `TkskKurumi/SlimeVR-Tracker-Mediapipe` - `Already studied`
-- `hotaru86/MediapipeFaceTracking_VRC` - `Partially studied`
-- `how-people-lived/mediapipe-vrm-tracking` - `Partially studied`
-- `Metastazius/VRBodyTrack` - `Partially studied`
+- `hotaru86/MediapipeFaceTracking_VRC` - `Deepened in Wave 210; see MediaPipe/avatar tracking sidecar section 181`
+- `how-people-lived/mediapipe-vrm-tracking` - `Deepened in Wave 210; see MediaPipe/avatar tracking sidecar section 181`
+- `Metastazius/VRBodyTrack` - `Deepened in Wave 210; see MediaPipe/avatar tracking sidecar section 181`
 - `vwitted/mediapipe_VR_controller` - `Already studied as micro-utility`
 
 ## 94. Mixed reality capture, calibration, and presenter compositing helpers
@@ -2725,6 +2725,54 @@ Primary docs:
 - `alxxtexxr/react-three-xr-measurement` - `Already studied as AR hit-test measurement microtool with reticle, select point capture, line drawing, midpoint distance label, and no-persistence caveat`
 - `BOLTEVM/BoltXR` - `Already studied as product-specific spatial UI/hand-interaction reference with WebXR scene panels, IWER emulation flag, MediaPipe pinch/tap/drag/scale overlay pipeline, and crypto/product caveats`
 - `aazutaku/glb-ar-viewer` - `Already studied as Next.js GLB AR viewer with upload/key routing, WebXR/dom-overlay store, iOS launcher fallback, animation toggle, transform controls, model streaming, and validation caveats`
+
+## 179. Overlay media micro-surfaces: notes, telemetry shells, browser bootstraps, and direct video overlays
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-208-overlay-media-micro-surfaces-notes-browser-and-direct-video-overlays.md`
+- `../landscape/project-families.md`
+
+- `Yukiiro-Nite/notebook-vr-overlay` - `Deepened in Wave 208 as minimal OpenVR note/image overlay bootstrap with overlay creation, mouse input scale, tracked-device transform, event loop, hardcoded-path caveats, and incomplete drawing/persistence`
+- `Daniel-Webster/WT-OpenVR-Overlay` - `Deepened in Wave 208 as Unity/OVRLay telemetry overlay shell with render textures, dashboard thumbnails, tracked-device placement, OpenVR mouse input, local JSON/texture polling, and War Thunder-specific coupling`
+- `Wulkop/VolumeVR` - `Deepened in Wave 208 as CEF/windowless browser bootstrap reference with remote-debug/no-sandbox caveats and no confirmed overlay texture submission in inspected source`
+- `iigomaru/MPVR` - `Deepened in Wave 208 as direct libmpv/OpenGL/OpenVR texture-loop prototype with hidden GL window, mpv render context, OpenVR overlay texture submission, controller-relative placement, bundled-binary and rough-loop caveats`
+
+## 180. XR glasses WebHID protocol workbenches and head-tracked desktop helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-209-xr-glasses-webhid-protocol-and-head-tracked-desktop-helpers.md`
+- `../landscape/project-families.md`
+
+- `jakedowns/xreal-webxr` - `Deepened in Wave 209 as browser WebHID protocol workbench with device filtering, connect/disconnect state, Air/Light routing, packet/message tables, IMU/status parsing, firmware-command scaffolding, and read/write safety caveats`
+- `alexwilson1/nreal_linux_test` - `Deepened in Wave 209 as Linux/X11 head-tracked desktop slicing POC with external driver stdout pose parsing, GStreamer capture, yaw calibration, viewport slicing, root/X11/yaw-only caveats`
+- `edwatt/real_utilities` - `Deepened in Wave 209 as native hidapi/zlib Nreal protocol utility with separate control/IMU HID interfaces, command metadata, packet build/parse helpers, CRC, calibration segment reads, and low-level command caveats`
+- `Mailbot/Nreal_Air_Desktop_tool` - `Deepened in Wave 209 as README-level product reference for AR desktop windows, saved layout, curvature, drift correction, focus recovery, and no-current-source donor limitation`
+
+## 181. MediaPipe/avatar tracking sidecars, VRM diagnostics, named-pipe body bridges, and AI FBT pipelines
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-210-mediapipe-avatar-tracking-sidecars-vrm-and-full-body-bridges.md`
+- `../landscape/project-families.md`
+
+- `hotaru86/MediapipeFaceTracking_VRC` - `Deepened in Wave 210 as MediaPipe Face Landmarker to VRCFT OSC expression sidecar with ARKit/VRCFT mapping, per-parameter sensitivity/min/max, JSON persistence, boolean decomposition, and single-process caveats`
+- `how-people-lived/mediapipe-vrm-tracking` - `Deepened in Wave 210 as browser MediaPipe/VRM avatar diagnostics workbench with VRM drag/drop, Face/Hand/Pose landmarkers, blendshape mapping UI, JSON export, and CDN/single-file caveats`
+- `Metastazius/VRBodyTrack` - `Deepened in Wave 210 as Python MediaPipe to Unity named-pipe body landmark bridge with length-prefixed payloads, joint angle calculation, hardcoded camera/path caveats, and checked-in Unity artifact hygiene warnings`
+- `MasonSakai/VR-AI-Full-Body-Tracking` - `Deepened in Wave 210 as AI full-body tracking pipeline with browser camera pages, MoveNet inference, confidence filtering, multi-camera ray triangulation, dampened virtual tracker output, and legacy InputEmulator caveats`
+
+## 182. VR teleoperation control frontends, robot bridges, safety gates, and feedback HUDs
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-211-vr-teleoperation-control-frontends-robot-bridges-and-safety-huds.md`
+- `../landscape/project-families.md`
+
+- `h2r/GHOST` - `Deepened in Wave 211 as Unity/Quest ROS teleoperation frontend with explicit mode manager, controller command mapping, robot joint publisher, point-cloud/depth visualization hooks, and ros_reality/robot-specific caveats`
+- `nakama-lab/VR_Teleop_Interface` - `Deepened in Wave 211 as multi-branch Unity/ROS2/ZED/Franka teleop architecture and documentation reference with topic contracts, command/status/error sequences, haptic feedback notes, and branch-split caveats`
+- `kscalelabs/kbot_vr_teleop` - `Deepened in Wave 211 as WebXR headset frontend plus Python IK/UDP command sidecar with hand/controller tracking payloads, pause gates, throttling, kinematics feedback, convergence checks, and robot-schema caveats`
+- `open-thought/cambot` - `Deepened in Wave 211 as WebXR stereo camera teleop stack with HUD telemetry, WebSocket/WebRTC transport, RTT/backpressure, calibration, smoothing, workspace bounds, watchdog, pause/home safety, and hardware-specific thresholds`
 
 ## Registry maintenance rule
 

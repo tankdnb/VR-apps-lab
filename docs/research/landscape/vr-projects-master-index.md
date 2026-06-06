@@ -216,6 +216,10 @@ This file complements:
 - `vr-projects-wave-205-aframe-ui-locomotion-environment-and-physics-micro-components.md`
 - `vr-projects-wave-206-godot-xr-addons-hand-tracker-recording-and-reference-plugin-periphery.md`
 - `vr-projects-wave-207-react-three-xr-runtime-spatial-ui-and-interaction-lab-surfaces.md`
+- `vr-projects-wave-208-overlay-media-micro-surfaces-notes-browser-and-direct-video-overlays.md`
+- `vr-projects-wave-209-xr-glasses-webhid-protocol-and-head-tracked-desktop-helpers.md`
+- `vr-projects-wave-210-mediapipe-avatar-tracking-sidecars-vrm-and-full-body-bridges.md`
+- `vr-projects-wave-211-vr-teleoperation-control-frontends-robot-bridges-and-safety-huds.md`
 
 ## How to use this index
 
