@@ -938,6 +938,25 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on LibVLC Unity bridges, spatial audio
   renderers, listener/source wrappers, and audio-reactive shader buses.
 
+- `vr-projects-wave-216-openxr-conformance-spec-validation-and-runner-toolchain.md`
+  Next GitHub discovery wave focused on OpenXR CTS architecture, spec/registry
+  tooling, API dump/core validation, runtime inventory, and thin runner UX.
+
+- `vr-projects-wave-217-stardustxr-client-infrastructure-panel-protocols-and-spatial-desktop-microclients.md`
+  Next GitHub discovery wave focused on StardustXR wire/protocol/client
+  crates, interaction primitives, declarative UI, panel items, Wayland surface
+  ingestion, and placement launchers.
+
+- `vr-projects-wave-218-udon-runtime-diagnostics-data-structures-and-predictive-sync-utilities.md`
+  Next GitHub discovery wave focused on Udon runtime substrate, profiling
+  overlays, DataList data structures, predictive rigidbody sync, and package
+  donor triage.
+
+- `vr-projects-wave-219-vrchat-external-content-ingress-image-glb-texture-and-avatar-data-surfaces.md`
+  Next GitHub discovery wave focused on VRChat URL image/caption loading, GLB
+  reconstruction, productized picture-loader UX, synced textures, and
+  avatar-image data carriers.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

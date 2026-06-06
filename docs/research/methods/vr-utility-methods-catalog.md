@@ -12729,3 +12729,156 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   immersive media players, audio-reactive tools, spatial audio diagnostics,
   overlay media surfaces, and media/audio substrate comparison matrices.
+
+## Method 661: OpenXR conformance and diagnostics harness boundary
+
+- What it is:
+  OpenXR diagnostics are split into runtime inventory, registry/spec
+  explanation, API-layer validation, API dump/tracing, CTS-style test
+  invocation, graphics binding selection, and report/runner UI.
+- Good for:
+  OpenXR doctor tools, runtime bring-up, layer diagnostics, extension matrices,
+  developer reports, conformance-runner wrappers, and validation output
+  explainers.
+- Why it matters:
+  users need to know what their OpenXR runtime exposes and what failed without
+  confusing ordinary diagnostics with official conformance certification.
+- Source evidence:
+  `KhronosGroup/OpenXR-CTS`, `rpavlik/openxr-cts-runner`,
+  `KhronosGroup/OpenXR-Docs`, and `KhronosGroup/OpenXR-SDK-Source`.
+- Reusable core:
+  collect runtime/layer/extension inventory, map capabilities to registry/spec
+  names, select graphics binding, wrap CLI or layer tools through explicit
+  launch settings, capture stdout/stderr or structured output, present skipped
+  and noninteractive checks, and emit a report with caveats.
+- Do not copy directly:
+  conformance claims, official CTS test scope, generated layer internals,
+  spec text, or hardware/runtime assumptions without process and license
+  review.
+- Strong references:
+  `OpenXR-CTS` for harness/report/test boundaries,
+  `OpenXR-SDK-Source` for API dump/core validation/list-json inventory, and
+  `openxr-cts-runner` for a thin GUI wrapper around an authoritative CLI.
+- Maturity:
+  strong diagnostic method; product work must separate everyday checks from
+  official conformance.
+- Best fit for `VR-apps-lab`:
+  OpenXR doctor/report prototypes, runtime capability matrices, validation
+  layer explainers, and graphics-binding diagnostics.
+
+## Method 662: Spatial desktop client stack with protocol, UI, panel, and placement layers
+
+- What it is:
+  XR desktop clients are modeled as cooperating layers: wire protocol,
+  scenegraph/spatial objects, input fields, interaction primitives,
+  declarative UI, panel/window protocol, surface ingestion service, and
+  spatial launch placement.
+- Good for:
+  spatial desktop helpers, desktop-in-VR systems, protocol-backed overlay
+  windows, Linux XR workspace tools, placement-aware launchers, and
+  scenegraph-first utility architecture.
+- Why it matters:
+  overlay/window tools become brittle when surface capture, input, placement,
+  UI, launch, and transport are all owned by one process.
+- Source evidence:
+  `StardustXR/core`, `StardustXR/molecules`, `StardustXR/asteroids`,
+  `StardustXR/panel-item`, `StardustXR/wayland-service`, and
+  `StardustXR/gravity`.
+- Reusable core:
+  define a protocol schema, expose typed client wrappers, represent every
+  object spatially, package high-level interactions, render UI from diffable
+  state, model panel state as toplevel/child/cursor/surface events, ingest OS
+  surfaces through a service, and pass launch placement through a startup
+  token or environment contract.
+- Do not copy directly:
+  Linux-only transport assumptions, unstable StardustXR APIs, Wayland/binder
+  service internals, or generated protocol code as a cross-platform default.
+- Strong references:
+  `StardustXR/core` for protocol/client substrate, `molecules` for interaction
+  primitives, `asteroids` for declarative UI, `panel-item`/`wayland-service`
+  for window/surface protocol, and `gravity` for placement launch.
+- Maturity:
+  strong architecture method; portability requires adapter layers.
+- Best fit for `VR-apps-lab`:
+  desktop-in-VR design studies, overlay/window protocol boundaries, spatial
+  launcher references, and scenegraph-oriented utility prototypes.
+
+## Method 663: Udon runtime utility substrate with profiling, data structures, and predictive sync
+
+- What it is:
+  VRChat/Udon utility packages share a substrate for lifecycle validation,
+  logging, dirty serialization, sync pause, network time, snapshots,
+  diagnostics UI, encoded data structures, prediction, and tuning surfaces.
+- Good for:
+  VRChat world utility packages, admin tools, data-heavy world systems,
+  diagnostics overlays, networked physics, leaderboards, synchronized
+  interactables, and Udon framework baselines.
+- Why it matters:
+  Udon constraints make copy-pasted prefab logic expensive; reusable runtime
+  foundations reduce setup errors, timing bugs, serialization mistakes, and
+  debugging friction.
+- Source evidence:
+  `Guribo/UdonUtils`, `Guribo/UdonProfiling`, `Guribo/UdonAVLTree`,
+  `Guribo/UdonVehicleSync`, and `Guribo/UdonLeaderBoard` as a product-only
+  caveat.
+- Reusable core:
+  base behavior with setup validation, logging severity, compile-symbol debug
+  mode, pending serialization/retry, local sync pause, network/game time
+  sources, snapshot and prediction hooks, model/controller diagnostics,
+  DataList-encoded structures, dynamic send-rate thresholds, and owner-gated
+  tuning UI.
+- Do not copy directly:
+  package-specific defines, prefab references, VRChat world thresholds,
+  predictive physics constants, or placeholder/package-only repos as code
+  donors.
+- Strong references:
+  `UdonUtils` for base runtime substrate, `UdonProfiling` for in-world
+  diagnostics, `UdonAVLTree` for DataList structure encoding, and
+  `UdonVehicleSync` for prediction-aware sync.
+- Maturity:
+  strong Udon-specific method; needs world-specific validation before product
+  use.
+- Best fit for `VR-apps-lab`:
+  Udon method documentation, diagnostics surface patterns, constrained runtime
+  data structures, and VRChat sync/prediction research.
+
+## Method 664: VRChat external content ingress pipeline for image/model/texture/avatar-data surfaces
+
+- What it is:
+  external content enters a VRChat world through an explicit pipeline: source,
+  authority/persistence policy, downloader/parser/sync/carrier mechanism,
+  cached runtime data, output surface or hierarchy, loading/error/progress UI,
+  and platform/runtime caveats.
+- Good for:
+  image galleries, tablet displays, remote signage, user URL surfaces, runtime
+  model viewers, synced whiteboards, data textures, avatar-driven text/data
+  carriers, and creator-facing content update tools.
+- Why it matters:
+  worlds need late-bound content, but Udon restrictions make it easy to hide
+  risk in one script unless source, carrier, output, authority, and caveats are
+  documented separately.
+- Source evidence:
+  `vrchat-community/examples-image-loading`, `vr-voyage/vrchat-glb-loader`,
+  `DrBlackRat/VRC-Picture-Loader`, `Narazaka/SyncTexture`, and
+  `Miner28/AvatarImageReader`.
+- Reusable core:
+  keep downloader or parser lifetime explicit, cache downloaded data, expose
+  callback/progress state, apply output through material/UI/model hierarchy,
+  isolate URL input and persistence authority, sync chunked texture data when
+  needed, encode/decode data carriers with capacity metadata, and publish
+  unsupported feature lists.
+- Do not copy directly:
+  deprecated avatar-image workflows as first choice, unbounded user URL entry,
+  GLB feature parity claims, texture chunk sizes, persistence authority rules,
+  or platform capacity assumptions without review.
+- Strong references:
+  official image-loading sample for minimal downloader/cache flow,
+  `VRC-Picture-Loader` for product UX, `vrchat-glb-loader` for staged parser
+  and limitation reporting, `SyncTexture` for chunked texture sync, and
+  `AvatarImageReader` for historical data-carrier/deprecation context.
+- Maturity:
+  strong content-ingress method; each carrier has different platform and trust
+  limits.
+- Best fit for `VR-apps-lab`:
+  VRChat external-content matrices, image/model/texture surface studies,
+  texture-as-data comparisons, and deprecated workaround documentation.

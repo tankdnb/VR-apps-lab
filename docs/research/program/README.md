@@ -1533,3 +1533,31 @@ repeatable way.
 
 - `github-research-wave-215-backlog.md`
   Executed backlog for the Wave 215 pass.
+
+- `github-research-wave-216-plan.md`
+  Wave 216 research plan focused on OpenXR conformance, specification,
+  validation layers, and runner toolchain.
+
+- `github-research-wave-216-backlog.md`
+  Executed backlog for the Wave 216 pass.
+
+- `github-research-wave-217-plan.md`
+  Wave 217 research plan focused on StardustXR client infrastructure, panel
+  protocols, and spatial desktop microclients.
+
+- `github-research-wave-217-backlog.md`
+  Executed backlog for the Wave 217 pass.
+
+- `github-research-wave-218-plan.md`
+  Wave 218 research plan focused on VRChat/Udon runtime diagnostics, data
+  structures, and predictive sync utilities.
+
+- `github-research-wave-218-backlog.md`
+  Executed backlog for the Wave 218 pass.
+
+- `github-research-wave-219-plan.md`
+  Wave 219 research plan focused on VRChat external content ingress through
+  image, GLB, synced texture, and avatar-data surfaces.
+
+- `github-research-wave-219-backlog.md`
+  Executed backlog for the Wave 219 pass.

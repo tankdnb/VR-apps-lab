@@ -796,6 +796,16 @@ the strongest current clusters:
   for shared-room presence/media adapters, layered spatial UI packages,
   permissioned in-world command menus, native media bridges, spatial audio
   renderer APIs, and global audio-reactive shader buses.
+- `OpenXR-CTS`, `openxr-cts-runner`, `OpenXR-Docs`,
+  `OpenXR-SDK-Source`, `StardustXR/core`, `StardustXR/molecules`,
+  `StardustXR/asteroids`, `StardustXR/panel-item`,
+  `StardustXR/wayland-service`, `StardustXR/gravity`,
+  `UdonUtils`, `UdonProfiling`, `UdonAVLTree`, `UdonVehicleSync`,
+  `examples-image-loading`, `vrchat-glb-loader`, `VRC-Picture-Loader`,
+  `SyncTexture`, `AvatarImageReader`
+  for OpenXR conformance/diagnostic harnesses, StardustXR protocol-backed
+  spatial desktop clients, Udon runtime substrate and prediction utilities,
+  and VRChat external content-ingress surfaces.
 
 ## Highest-value next follow-up passes
 
@@ -944,6 +954,10 @@ directions:
 140. `MRTK spatial UI package boundary and alternate-input matrix`
 141. `VRChat/Udon world menu package and operator-surface matrix`
 142. `Immersive media/audio substrate boundary matrix`
+143. `OpenXR conformance and diagnostics report matrix`
+144. `StardustXR client stack and spatial desktop panel matrix`
+145. `Udon runtime substrate, diagnostics, data-structure, and predictive sync matrix`
+146. `VRChat external content ingress matrix across image, model, texture, and avatar-data carriers`
 
 ## Current repository-maintenance priorities
 

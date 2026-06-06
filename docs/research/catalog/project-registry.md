@@ -2822,6 +2822,58 @@ Primary docs:
 - `VoidXH/Cavern` - `Deepened in Wave 215 as C# immersive audio renderer with Listener/Source model, Unity AudioListener3D/AudioSource3D wrappers, filters/remapping/virtualization, and nonstandard license/performance caveats`
 - `llealloo/audiolink` - `Deepened in Wave 215 as VRChat/Unity audio-reactive data bus with GetOutputData sampling, CustomRenderTexture processing, global _AudioTexture shader API, controller sync, and shader/readback caveats`
 
+## 187. OpenXR conformance, specification, validation layers, and runner toolchain
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-216-openxr-conformance-spec-validation-and-runner-toolchain.md`
+- `../landscape/project-families.md`
+
+- `KhronosGroup/OpenXR-CTS` - `Studied in Wave 216 as official OpenXR conformance harness with CLI launcher, Catch2 test library, graphics plugins, conformance API layer, generated dispatch, runtime/layer/extension reporting, and process/conformance caveats`
+- `rpavlik/openxr-cts-runner` - `Studied in Wave 216 as experimental Rust/egui GUI runner around conformance_cli with graphics API arguments, noninteractive filtering, output polling, cancel/done state, and text-output caveats`
+- `KhronosGroup/OpenXR-Docs` - `Studied in Wave 216 as specification/registry/tooling source with Asciidoctor spec sources, registry XML, generated headers, extension helper scripts, validation checks, and extension-process governance`
+- `KhronosGroup/OpenXR-SDK-Source` - `Deepened in Wave 216 for API dump, core validation, loader tests, list-json runtime inventory, generated dispatch, debug-utils output, and API-layer activation caveats`
+
+## 188. StardustXR client infrastructure, panel protocols, and spatial desktop microclients
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-217-stardustxr-client-infrastructure-panel-protocols-and-spatial-desktop-microclients.md`
+- `../landscape/project-families.md`
+
+- `StardustXR/core` - `Studied in Wave 217 as StardustXR wire/protocol/fusion/gluon workspace with FlatBuffer messaging, KDL protocols, typed client wrappers, scenegraph nodes, spatial transforms, resources, and async event loops`
+- `StardustXR/molecules` - `Studied in Wave 217 as high-level Fusion interaction library with grabbables, buttons, hover/touch planes, zones, keyboard/mouse bridges, input queues, drop handlers, reparenting, and visual debug`
+- `StardustXR/asteroids` - `Studied in Wave 217 as declarative StardustXR UI library with state reification, element diffing, resource registry, task callbacks, and spatial panel/button elements`
+- `StardustXR/panel-item` - `Studied in Wave 217 as panel item protocol and Asteroids integration with toplevel/child/cursor/geometry state, surface update channels, panel shell events, and generated-protocol caveats`
+- `StardustXR/wayland-service` - `Studied in Wave 217 as Wayland-to-Stardust surface bridge with socket service, Vulkan context, binder device, xdg/core/dmabuf protocols, panel item provider, and Linux-specific caveats`
+- `StardustXR/gravity` - `Studied in Wave 217 as spatial launcher micro-utility that creates a transform, reads connection environment, generates startup token, and execs target commands`
+
+## 189. VRChat/Udon runtime diagnostics, data structures, and predictive sync utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-218-udon-runtime-diagnostics-data-structures-and-predictive-sync-utilities.md`
+- `../landscape/project-families.md`
+
+- `Guribo/UdonUtils` - `Deepened in Wave 218 as TLP Udon runtime substrate with TlpBaseBehaviour lifecycle validation, logging, dirty serialization/retry, SyncPaused, network time, accurate sync hooks, events, physics helpers, and tests`
+- `Guribo/UdonProfiling` - `Studied in Wave 218 as ScreenSpace Udon performance overlay with MVC-style stat model/controller, Stopwatch frame calculations, global profiler handler, threshold warnings, and debug-frame log hooks`
+- `Guribo/UdonLeaderBoard` - `Recorded in Wave 218 as package/product reference only because current checkout exposes README/package placeholder rather than source-rich leaderboard implementation`
+- `Guribo/UdonAVLTree` - `Studied in Wave 218 as U# AVL tree using DataList node encoding, node pool, parent/payload/child/wire fields, comparer boundary, balance/rotation helpers, and testability caveats`
+- `Guribo/UdonVehicleSync` - `Studied in Wave 218 as predictive non-kinematic rigidbody sync package with network-time send stamps, dynamic send-rate thresholds, position/rotation/velocity prediction, teleport/respawn flags, debug trails, and sync tweaker UI`
+
+## 190. VRChat external content ingress, image/GLB/texture, and avatar data surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-219-vrchat-external-content-ingress-image-glb-texture-and-avatar-data-surfaces.md`
+- `../landscape/project-families.md`
+
+- `vrchat-community/examples-image-loading` - `Studied in Wave 219 as official remote image/caption slideshow sample with persistent VRCImageDownloader, VRCStringDownloader captions, cached Texture2D array, server-time slide selection, and GitHub Pages hosting`
+- `vr-voyage/vrchat-glb-loader` - `Studied in Wave 219 as runtime GLB/VRM loader with VRCStringDownloader, staged DataDictionary parser, meshes/materials/textures/scenes, DDS/preconverted texture handling, material extension plugins, and unsupported-feature caveats`
+- `DrBlackRat/VRC-Picture-Loader` - `Studied in Wave 219 as productized VPM image ingress package with manager/lite downloader, URL input, persistence, tablet mode, texture settings, loading/error textures, and authority/persistence caveats`
+- `Narazaka/SyncTexture` - `Studied in Wave 219 as chunked Texture2D synchronization package with color encoders, GPU readback/GetPixels source capture, BulkCount progress, partial apply, callback events, manager sequencing, resend, and late-join support`
+- `Miner28/AvatarImageReader` - `Deepened in Wave 219 as deprecated avatar-thumbnail text/data carrier with editor encoder, runtime pedestal texture readback, UTF-8/UTF-16 frame-sliced decoding, avatar chaining, and platform capacity caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

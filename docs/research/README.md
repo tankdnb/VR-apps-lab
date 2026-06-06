@@ -211,6 +211,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-213-mrtk-spatial-ui-graphics-robotics-and-gaze-extension-nodes.md`
 - `landscape/vr-projects-wave-214-vrchat-udon-menu-package-surfaces-world-admin-and-creator-prefabs.md`
 - `landscape/vr-projects-wave-215-immersive-media-audio-substrates-libvlc-spatial-renderers-and-audiolink.md`
+- `landscape/vr-projects-wave-216-openxr-conformance-spec-validation-and-runner-toolchain.md`
+- `landscape/vr-projects-wave-217-stardustxr-client-infrastructure-panel-protocols-and-spatial-desktop-microclients.md`
+- `landscape/vr-projects-wave-218-udon-runtime-diagnostics-data-structures-and-predictive-sync-utilities.md`
+- `landscape/vr-projects-wave-219-vrchat-external-content-ingress-image-glb-texture-and-avatar-data-surfaces.md`
 
 ## Archive Navigation
 

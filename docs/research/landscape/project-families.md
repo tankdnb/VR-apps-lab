@@ -6382,6 +6382,144 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - audio-reactive global data bus patterns
 - license/platform risk notes for media tools
 
+## Family 195: OpenXR conformance, specification, validation layers, and runner toolchain
+
+This family covers OpenXR projects that help diagnose, validate, inventory, or
+explain runtime behavior through CTS-style harnesses, specification/registry
+tooling, API layers, loader tests, and thin runner UIs.
+
+| Project | Status | Notes |
+|---|---|---|
+| `KhronosGroup/OpenXR-CTS` | Studied in Wave 216 | official conformance harness with CLI, Catch2 test library, graphics plugins, conformance API layer, generated dispatch, and report output |
+| `rpavlik/openxr-cts-runner` | Studied in Wave 216 | Rust/egui GUI wrapper around `conformance_cli` with graphics API options, noninteractive filtering, process output capture, and cancellation |
+| `KhronosGroup/OpenXR-Docs` | Studied in Wave 216 | specification/registry source with generated headers, extension inclusion helpers, validation checks, and extension-process governance |
+| `KhronosGroup/OpenXR-SDK-Source` | Deepened in Wave 216 | API dump, core validation, loader tests, list-json runtime inventory, debug-utils output, and generated dispatch boundaries |
+
+### Consolidation note
+
+This family matters because an OpenXR doctor should be assembled from separate
+parts rather than one opaque test button:
+
+- runtime and loader inventory
+- API layer and extension discovery
+- registry/spec-backed explanation
+- validation and API-dump output
+- CTS-style test invocation and filtering
+- graphics binding selection
+- report and runner UI
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenXR doctor/report schemas
+- validation-layer output viewers
+- conformance-runner UX without conformance claims
+- registry-backed extension matrices
+- runtime inventory and graphics-binding diagnostics
+
+## Family 196: StardustXR client infrastructure, panel protocols, and spatial desktop microclients
+
+This family covers StardustXR client-side projects that model XR desktop work
+as protocol, scenegraph, spatial interaction, declarative UI, panel surface,
+Wayland ingestion, and placement-launcher layers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `StardustXR/core` | Studied in Wave 217 | wire/protocol/fusion/gluon workspace with FlatBuffer messaging, KDL protocol parsing, typed client wrappers, scenegraph nodes, and spatial resources |
+| `StardustXR/molecules` | Studied in Wave 217 | high-level interaction library with grabbables, buttons, hover/touch planes, zones, input queues, reparenting, and visual debug |
+| `StardustXR/asteroids` | Studied in Wave 217 | declarative UI layer with state reification, element diffing, resource registry, task callbacks, and spatial element wrappers |
+| `StardustXR/panel-item` | Studied in Wave 217 | panel protocol and Asteroids shell with toplevel/child/cursor state, surface update channels, and acceptor events |
+| `StardustXR/wayland-service` | Studied in Wave 217 | Wayland socket/service bridge with Vulkan context, binder device, xdg/core/dmabuf protocols, and panel item provider |
+| `StardustXR/gravity` | Studied in Wave 217 | placement-aware launcher that creates a spatial transform, exports connection environment, emits startup token, and execs a command |
+
+### Consolidation note
+
+This family matters because spatial desktop systems can be decomposed into:
+
+- wire protocol and schema
+- scenegraph/spatial object model
+- input fields and interaction primitives
+- declarative UI/diff layer
+- panel/window protocol
+- desktop surface ingestion service
+- spatial launch and placement contract
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- protocol-backed overlay/window concepts
+- placement-aware launcher UX
+- scenegraph-first utility architecture
+- StardustXR versus SteamVR overlay comparison
+- spatial interaction primitive reuse
+
+## Family 197: VRChat/Udon runtime diagnostics, data structures, and predictive sync utilities
+
+This family covers Udon packages whose reusable value is runtime substrate:
+base lifecycle, logging, serialization, network time, profiling, encoded data
+structures, predictive sync, and in-world tuning.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Guribo/UdonUtils` | Deepened in Wave 218 | TLP base substrate with lifecycle validation, logging, dirty serialization/retry, sync pause, network time, accurate sync hooks, events, physics helpers, and tests |
+| `Guribo/UdonProfiling` | Studied in Wave 218 | ScreenSpace performance overlay with MVC stat controller, global profiler handler, frame-time accumulation, threshold warnings, and debug-frame log hooks |
+| `Guribo/UdonLeaderBoard` | Product reference only in Wave 218 | current checkout has package placeholder only; useful as leaderboard lineage/follow-up but not a code donor yet |
+| `Guribo/UdonAVLTree` | Studied in Wave 218 | DataList-backed U# AVL tree with node pool, parent/payload/child/wire layout, comparer boundary, balance and rotation helpers |
+| `Guribo/UdonVehicleSync` | Studied in Wave 218 | predictive rigidbody sync with network-time send stamps, dynamic send-rate thresholds, teleport/respawn, debug trails, and sync-tweaker UI |
+
+### Consolidation note
+
+This family matters because VRChat world utilities need shared foundations:
+
+- setup and dependency validation
+- bounded logging and debug compile symbols
+- dirty serialization and retry behavior
+- network/game time sources
+- snapshot and prediction hooks
+- data-structure workarounds
+- profiling and in-world diagnostics
+- tuning UI for live parameters
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Udon runtime substrate matrices
+- diagnostic HUD/panel patterns
+- constrained-runtime data structures
+- prediction-aware sync and dynamic send cadence
+- package-source triage rules
+
+## Family 198: VRChat external content ingress, image/model/texture/avatar-data surfaces
+
+This family covers VRChat projects that route external or late-bound content
+into worlds through URL image downloads, strings, runtime model parsers,
+synced textures, persisted URL inputs, and avatar-thumbnail data carriers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `vrchat-community/examples-image-loading` | Studied in Wave 219 | official image/caption slideshow sample with persistent downloader, cached textures, caption string loading, server-time slide selection, and GitHub Pages hosting |
+| `vr-voyage/vrchat-glb-loader` | Studied in Wave 219 | runtime GLB/VRM loader with staged parser, meshes/materials/textures/scenes, DDS/preconverted textures, extension handlers, and unsupported-feature caveats |
+| `DrBlackRat/VRC-Picture-Loader` | Studied in Wave 219 | productized image loader with manager/lite/url-input/persistence/tablet modes, texture settings, loading/error textures, and UI progress |
+| `Narazaka/SyncTexture` | Studied in Wave 219 | chunked Texture2D sync with color encoders, GPU readback/GetPixels, progress, callbacks, manager sequencing, resend, and late-join support |
+| `Miner28/AvatarImageReader` | Deepened in Wave 219 | deprecated avatar-thumbnail text/data carrier with editor encoder, runtime pedestal readback, UTF-8/UTF-16 decode, avatar chaining, and platform capacity limits |
+
+### Consolidation note
+
+This family matters because external content ingress should name:
+
+- content source and authority
+- downloader, parser, sync, or carrier mechanism
+- cached runtime data shape
+- output surface or model hierarchy
+- loading/error/progress UI
+- persistence and ownership policy
+- platform/runtime limitations
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VRChat content-ingress matrices
+- image gallery and tablet-display UX
+- runtime asset parser caveat tracking
+- texture-as-data and shader-bus comparisons
+- deprecated workaround documentation
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

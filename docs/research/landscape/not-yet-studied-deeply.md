@@ -2223,6 +2223,52 @@ These are larger than a single repo and should guide the next research wave.
   object/HOA/binaural renderer APIs, listener/source wrappers, shader-readable
   audio buses, platform constraints, and licensing risk.
 
+### 169. `OpenXR conformance and diagnostics report matrix`
+
+- Main entries:
+  `OpenXR-CTS`, `openxr-cts-runner`, `OpenXR-Docs`,
+  `OpenXR-SDK-Source`
+- Why it matters:
+  Wave 216 deepened conformance/spec/validation tooling. A future matrix should
+  compare runtime inventory, API layer discovery, extension registry mapping,
+  graphics binding selection, CTS-style filters, API dump/core validation
+  output, report formats, and the line between diagnostics and official
+  conformance.
+
+### 170. `StardustXR client stack and spatial desktop panel matrix`
+
+- Main entries:
+  `StardustXR/core`, `StardustXR/molecules`, `StardustXR/asteroids`,
+  `StardustXR/panel-item`, `StardustXR/wayland-service`, `StardustXR/gravity`
+- Why it matters:
+  Wave 217 deepened the client-side StardustXR stack. A future matrix should
+  connect protocol schema, scenegraph/spatial nodes, input fields, grabbable
+  primitives, declarative UI, panel item events, Wayland surface ingestion, and
+  placement-launcher tokens.
+
+### 171. `Udon runtime substrate, diagnostics, data-structure, and predictive sync matrix`
+
+- Main entries:
+  `UdonUtils`, `UdonProfiling`, `UdonAVLTree`, `UdonVehicleSync`,
+  `UdonLeaderBoard`
+- Why it matters:
+  Wave 218 deepened a TLP/Guribo runtime utility cluster. A future matrix
+  should compare base lifecycle validation, logging, sync pause, dirty
+  serialization, network time, snapshot hooks, profiling overlays, DataList
+  data structures, dynamic send cadence, and source-rich versus package-only
+  donor status.
+
+### 172. `VRChat external content ingress matrix across image, model, texture, and avatar-data carriers`
+
+- Main entries:
+  `examples-image-loading`, `vrchat-glb-loader`, `VRC-Picture-Loader`,
+  `SyncTexture`, `AvatarImageReader`
+- Why it matters:
+  Wave 219 deepened VRChat external content ingress. A future matrix should
+  compare URL image download, caption/string loading, user URL input,
+  persistence authority, GLB/VRM parser staging, texture chunk synchronization,
+  avatar-thumbnail data carriers, platform limits, and deprecation paths.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2379,6 +2425,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 150. `MRTK spatial UI package boundary and alternate-input matrix`
 151. `VRChat/Udon world menu package and operator-surface matrix`
 152. `Immersive media/audio substrate boundary matrix`
+153. `OpenXR conformance and diagnostics report matrix`
+154. `StardustXR client stack and spatial desktop panel matrix`
+155. `Udon runtime substrate, diagnostics, data-structure, and predictive sync matrix`
+156. `VRChat external content ingress matrix across image, model, texture, and avatar-data carriers`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.
