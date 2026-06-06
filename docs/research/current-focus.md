@@ -207,6 +207,13 @@ These are the clearest current product and research lines:
     virtual-production and camera-routing workflows, RTMP/HLS world video
     player pipelines, legacy Leap/Kinect OpenVR drivers, identity shims,
     no-HMD mappings, and DIY HMD runtime-to-driver boundaries.
+40. `Hands-free input, SteamVR dashboard shims, VRChat chatbox composers, and XR desktop/WebXR utility surfaces`
+    the repository now has fresh coverage of head-to-cursor microhelpers,
+    hand-curl chording, pinch-ray and wrist-menu samples, SteamVR dashboard
+    keyboard/system-button/gamepad shims, VRChat media/status/biometric
+    chatbox microtools, OSC helper libraries, smart-glasses desktop setup,
+    IMU-to-shell display transforms, WebXR remote-display/dev-console tools,
+    Blender export helpers, and annotation surfaces.
 
 ## Most useful current docs
 
@@ -1072,6 +1079,10 @@ directions:
 168. `VRChat-to-OBS control bridge matrix across OSC, OBS WebSocket, scripts, hotkeys, queues, and feedback`
 169. `VR event production media pipeline matrix across in-world cameras, VJ routing, RTMP/HLS, camera OSC, and browser-source outputs`
 170. `OpenVR compatibility driver boundary matrix across Leap, Kinect, identity shims, no-HMD, vendor bridges, and DIY HMD runtime splits`
+171. `Hands-free XR input safety matrix across head pose, hand curls, pinch rays, wrist menus, and text entry`
+172. `SteamVR dashboard navigation shim matrix across driver hooks, synthetic controllers, URI commands, layout patches, and audio routes`
+173. `VRChat chatbox composer privacy matrix across media, lyrics, biometric, clock, library, and plugin senders`
+174. `XR desktop and WebXR utility surface matrix across smart-glasses setup, IMU IPC, shell indicators, remote display, authoring export, and annotation schemas`
 
 ## Current repository-maintenance priorities
 

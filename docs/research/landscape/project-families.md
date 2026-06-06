@@ -7617,6 +7617,145 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - DIY HMD runtime-to-driver transport templates
 - no-HMD/virtual-HMD caveat checklists
 
+## Family 231: Hands-free and hand-derived XR input microtools
+
+This family covers small utilities and samples that turn HMD pose, hand
+tracking, finger curls, pinch rays, or wrist-mounted UI into practical input
+for VR tools.
+
+| Project | Status | Notes |
+|---|---|---|
+| `SimForgeEngineering/DCS-HandsFree` | Studied in Wave 252 | StereoKit/OpenXR head-pose to Windows foreground-window cursor mapper with yaw/pitch normalization and Win32 cursor output |
+| `JonahSagers/VRChord` | Studied in Wave 252 | Unity XR Hands chording keyboard with curl classifiers, chord dictionaries, fist-distance enable latch, thumb actions, and TextMeshPro feedback |
+| `Haidere1/VarjoXR-CustomHandTracking-Test` | Studied in Wave 252 | Unreal/Varjo OpenXR hand-keypoint, pinch-ray, poseable-mesh, widget, and scene-manipulation sample |
+| `zodiepupper/godothandtrackingtests` | Studied in Wave 252 | Godot OpenXR raw joint tracker and wrist-menu experiment with passthrough branch, fingertip collision layers, smoothing, and Panel3D addon |
+
+### Consolidation note
+
+This family matters because controllerless utility input should name:
+
+- sensor source: head pose, hand joints, finger curls, pinch rays, or wrist UI
+- calibration, recenter, and normalization
+- gesture/chord thresholds and fatigue risk
+- output adapter: cursor, text, scene ray, panel, or command
+- visible feedback and escape/disable path
+- platform, vendor, and runtime assumptions
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- hands-free cursor and accessibility microhelpers
+- hand-derived text and command input
+- wrist menu safety checklists
+- controllerless calibration/recenter UX
+- engine-specific hand input boundary comparisons
+
+## Family 232: SteamVR dashboard navigation and system-input shims
+
+This family covers helpers that route keyboard, Quest system-button, gamepad,
+dashboard keyboard layout, or volume-slider signals into SteamVR dashboard and
+runtime control paths.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mbucchia/SteamVR-Dashboard-KeyboardNav` | Studied in Wave 253 | OpenVR driver shim wrapping an HMD driver, overriding input profile paths, using shared-memory click IPC, and launching a keyboard-hook companion |
+| `lmore377/quest-steamvr-system-button` | Studied in Wave 253 | ADB/logcat Quest home-button watcher dispatching SteamVR dashboard toggle URIs for OculusKiller/Link workflows |
+| `AJBats/pad-vr` | Studied in Wave 253 | XInput gamepad to synthetic SteamVR controller driver with chest pose, Index-style input paths, companion IPC, dashboard and recenter actions |
+| `MagnaLunas/SteamVRKeyboardLayoutChanger` | Obsolete runtime patch reference in Wave 253 | SteamVR dashboard keyboard layout patch via copied JSON/JavaScript resources and cache-clearing instructions |
+| `bpbwaite/ahk-svrvmr` | Studied in Wave 253 | AutoHotkey bridge mapping SteamVR or Windows volume state to Voicemeeter gain through Vista Audio and VoicemeeterRemote |
+
+### Consolidation note
+
+This family matters because dashboard helpers should name:
+
+- input signal source and capture risk
+- runtime adapter: driver shim, synthetic controller, URI command, resource
+  patch, or external DLL route
+- activation gate and stale-state behavior
+- dashboard visibility and feedback
+- compatibility with SteamVR versions, device drivers, and real controllers
+- uninstall/cleanup and user consent
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- safe SteamVR dashboard navigation shims
+- synthetic controller and guide-button bridge comparisons
+- runtime patch caveat docs
+- dashboard command feedback patterns
+- small accessibility helpers for SteamVR menus
+
+## Family 233: VRChat OSC chatbox media, status, and library microtools
+
+This family covers chatbox and OSC microtools that publish media, clock,
+biometric, system, template, or module-driven status into VRChat.
+
+| Project | Status | Notes |
+|---|---|---|
+| `lillithrosepup/Lilypad` | Studied in Wave 254 | Kotlin Multiplatform/Compose Android OSC client with modules, OSCQuery, Spotify/LastFM, synced lyrics, avatar presets, banners, and clocks |
+| `ohkaelynn/iron-heart-chatbox` | Studied in Wave 254 | Iron-Heart BPM text-file to chatbox tray bridge with trend/history formatting, process checks, cadence, and privacy caveats |
+| `MeltyMooncakes/VRChat-OSC-Script` | Studied in Wave 254 | TypeScript chatbox composer with YAML templates, OSC property cache, media adapters, plugin loader, and send-interval gates |
+| `o0F-0oF/VRChat-Spotify-Chatbox` | Studied in Wave 254 | Tiny Python Spotify window-title to chatbox sender |
+| `o0F-0oF/VRChat-Spotify-Chatbox-CS` | Studied in Wave 254 | C# SharpOSC Spotify window-title chatbox sender with compact polling and port caveat |
+| `Mezque/VRC-SpotifyOSC-Py` | Studied in Wave 254 | Spotipy OAuth now-playing chatbox sender with settings.ini and timer-based resend behavior |
+| `Mezque/VRC-ClockOSC-Py` | Studied in Wave 254 | Minimal clock-to-chatbox sender with format string configuration |
+| `eepyfemboi/ezmusic-desktop-client` | Product reference in Wave 254 | Desktop music/status client with webview login, cookie persistence, GPU/system stats, Discord RPC, and VRChat OSC output |
+| `ActuallyAbby/VRC-JavaOSC` | Studied in Wave 254 | Java OSC helper library with default VRChat ports, parameter cache, avatar-parameter listeners, and typed set/get helpers |
+| `Disconnect3301/DisconnectOSC` | Caveated reference in Wave 254 | C# console OSC toy modules with chatbox commands and recording timer, retained with artifact and prank-feature caveats |
+
+### Consolidation note
+
+This family matters because chatbox utilities should name:
+
+- data source adapter: media API, window title, file sensor, clock, stats, or
+  avatar parameter
+- template engine and privacy policy
+- cadence, dedupe, keep-open, and blanking behavior
+- OSCQuery or fixed-address routing
+- plugin/module trust boundary
+- credential storage and consent for public status
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- chatbox composer templates
+- source-adapter safety matrices
+- OSC library comparison notes
+- privacy-aware media and biometric status UX
+- Android/Quest companion chatbox architecture
+
+## Family 234: XR desktop, smart-glasses, and WebXR authoring utility surfaces
+
+This family covers utilities around smart-glasses desktop routing, IMU-driven
+display transforms, desktop indicators, WebXR developer surfaces, and
+authoring/export helpers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ProjectBlueSkies/xr-desktop` | Studied in Wave 255 | Viture XR Pro Linux desktop helper with C IMU daemon, shared-memory quaternion IPC, and GNOME Shell world-lock transform |
+| `mhalder/xreal-desktop-mode` | Studied in Wave 255 | ADB desktop-mode configuration microtool for Xreal One Pro with Android desktop/freeform settings and external-display density tuning |
+| `marbetschar/wingpanel-indicator-xrdesktop` | Studied in Wave 255 | Elementary/Pantheon panel indicator exposing xrdesktop enabled state through DBus, dynamic icon, and popover UI |
+| `cong-lab/LabOS-Runtime` | Studied in Wave 255 | VITURE smart-glasses lab runtime with connector abstraction, USB config deployment, voice/web/dashboard services, MediaMTX, and gRPC |
+| `sawa-zen/three-fiber-webxr-toolbox` | Studied in Wave 255 | React/Three WebXR dev toolbox with in-HMD console, curved remote display, Vite/socket.io WebRTC signaling, portals, and passthrough helpers |
+| `laffan/blender-webxr-tools` | Studied in Wave 255 | Blender addon for WebXR/R3F export preparation with bake/transform helpers, gltfjsx subprocess integration, and JSX rewrite caveats |
+| `pravinpoudel/building-annotation` | Studied in Wave 255 | WebXR building annotation reference with manual annotation schema, camera/lookAt metadata, and dev-mode raycast capture |
+
+### Consolidation note
+
+This family matters because XR utility surfaces should name:
+
+- hardware or display configuration adapter
+- pose/IMU, shell, or browser display boundary
+- IPC, DBus, WebRTC, or file/export transport
+- setup and calibration UX
+- authoring/export lifecycle
+- device, browser, CORS, ADB, or shell-extension caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- smart-glasses desktop setup microtools
+- IMU-to-shell world-lock templates
+- WebXR development utility overlays
+- Blender/WebXR export pipeline checklists
+- annotation schema and scene-inspection surfaces
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

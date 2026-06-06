@@ -260,6 +260,10 @@ This file complements:
 - `vr-projects-wave-249-vrchat-obs-control-osc-scene-switching-and-movie-night-queues.md`
 - `vr-projects-wave-250-vrchat-virtual-production-camera-routing-and-live-stream-pipelines.md`
 - `vr-projects-wave-251-openvr-legacy-sensor-compatibility-and-synthetic-driver-shims.md`
+- `vr-projects-wave-252-hands-free-openxr-hand-tracking-input-and-wrist-ui-microtools.md`
+- `vr-projects-wave-253-steamvr-dashboard-menu-keyboard-and-gamepad-navigation-shims.md`
+- `vr-projects-wave-254-vrchat-osc-chatbox-media-status-and-library-microtools.md`
+- `vr-projects-wave-255-xr-desktop-smart-glasses-and-webxr-authoring-utility-surfaces.md`
 
 ## How to use this index
 

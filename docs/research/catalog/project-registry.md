@@ -3293,6 +3293,64 @@ Primary docs:
 - `lixiangwuxian/Viulux-V9-Driver-for-SteamVR` - `Studied in Wave 251 as a README-only vendor headset bridge reference tying Viulux, Relativty, OpenHMD, and Nolo requirements together with explicit bug warnings`
 - `Blockmann2K/MurlokVR` - `Studied in Wave 251 as a DIY HMD experiment with firmware, Rust serial runtime, shared-memory pose contract, OpenVR factory/provider, HMD settings, input profile, and pose snapshot polling`
 
+## 223. Hands-free OpenXR hand tracking input and wrist UI microtools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-252-hands-free-openxr-hand-tracking-input-and-wrist-ui-microtools.md`
+- `../landscape/project-families.md`
+
+- `SimForgeEngineering/DCS-HandsFree` - `Studied in Wave 252 as a tiny StereoKit/OpenXR HMD orientation to Windows cursor mapper with foreground-window bounds, yaw/pitch normalization, and Win32 cursor output`
+- `JonahSagers/VRChord` - `Studied in Wave 252 as a Unity XR Hands chording keyboard with finger-curl classifiers, ASETNIOP-style chord dictionaries, fist-distance enable latch, thumb actions, and TextMeshPro feedback`
+- `Haidere1/VarjoXR-CustomHandTracking-Test` - `Studied in Wave 252 as an Unreal/Varjo OpenXR hand-keypoint sample with poseable hand meshes, pinch rays, widget components, enhanced input contexts, and Cesium scene-manipulation caveats`
+- `zodiepupper/godothandtrackingtests` - `Studied in Wave 252 as a Godot OpenXR hand-joint and wrist-menu experiment with procedural joint trackers, fingertip collision layers, passthrough enablement, smoothing, and Panel3D addon boundaries`
+
+## 224. SteamVR dashboard menu keyboard and gamepad navigation shims
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-253-steamvr-dashboard-menu-keyboard-and-gamepad-navigation-shims.md`
+- `../landscape/project-families.md`
+
+- `mbucchia/SteamVR-Dashboard-KeyboardNav` - `Studied in Wave 253 as an OpenVR driver shim plus companion utility with HMD driver wrapping, custom input profile, shared-memory click flag, low-level keyboard hook, and dashboard toggle behavior`
+- `lmore377/quest-steamvr-system-button` - `Studied in Wave 253 as a Quest logcat to SteamVR dashboard toggle micro-utility using ADB home-button events, vrdashboard process checks, and vrmonitor debug URI dispatch`
+- `AJBats/pad-vr` - `Studied in Wave 253 as a SteamVR synthetic controller driver and XInput companion with chest-mounted pose, Index-style input paths, shared-memory guide-button IPC, and recenter/dashboard URI actions`
+- `MagnaLunas/SteamVRKeyboardLayoutChanger` - `Studied in Wave 253 as an obsolete but useful SteamVR dashboard keyboard layout patch reference with JSON layout files, bundled dashboard JavaScript, cache-clearing docs, and SteamVR 2.0 caveats`
+- `bpbwaite/ahk-svrvmr` - `Studied in Wave 253 as an AutoHotkey bridge mapping SteamVR/Windows volume state to Voicemeeter bus gain through Vista Audio polling and VoicemeeterRemote DLL calls`
+
+## 225. VRChat OSC chatbox media status and library microtools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-254-vrchat-osc-chatbox-media-status-and-library-microtools.md`
+- `../landscape/project-families.md`
+
+- `lillithrosepup/Lilypad` - `Studied in Wave 254 as a Kotlin Multiplatform/Compose VRChat OSC chatbox client with modules, OSCQuery address discovery, Spotify/LastFM, synced lyrics, avatar presets, banners, clocks, and Android/Quest companion framing`
+- `ohkaelynn/iron-heart-chatbox` - `Studied in Wave 254 as a tray-based Iron-Heart BPM text-file to VRChat chatbox bridge with process checks, trend/history formatting, keep-open cadence, and biometric privacy caveats`
+- `MeltyMooncakes/VRChat-OSC-Script` - `Studied in Wave 254 as a TypeScript OSC chatbox composer with YAML line templates, incoming avatar property cache, MPRIS/Windows media adapters, plugin loading, and send-interval gates`
+- `o0F-0oF/VRChat-Spotify-Chatbox` - `Studied in Wave 254 as a tiny Python Windows Spotify window-title to VRChat chatbox sender with polling, title filtering, and platform/title-parsing caveats`
+- `o0F-0oF/VRChat-Spotify-Chatbox-CS` - `Studied in Wave 254 as a C# SharpOSC Spotify window-title chatbox sender with compact process polling and nonstandard port caveats`
+- `Mezque/VRC-SpotifyOSC-Py` - `Studied in Wave 254 as a Spotipy-backed now-playing chatbox sender with OAuth callback, formatted track state, volume/duration fields, settings.ini, and timer-based resend behavior`
+- `Mezque/VRC-ClockOSC-Py` - `Studied in Wave 254 as a minimal clock-to-chatbox microtool with format string configuration, recursive timer loop, and narrow product-reference value`
+- `eepyfemboi/ezmusic-desktop-client` - `Studied in Wave 254 as a rich desktop music/status client with webview login, cookie persistence, GPU/system stats, Discord RPC, VRChat OSC output, and dependency/security caveats`
+- `ActuallyAbby/VRC-JavaOSC` - `Studied in Wave 254 as a Java VRChat OSC helper library with default port builder, optional parameter cache, avatar-parameter listeners, typed set/get helpers, and lifecycle caveats`
+- `Disconnect3301/DisconnectOSC` - `Studied in Wave 254 as a C# console OSC module toy with chatbox commands, recording timer output, BuildSoft OSC usage, and strong caveats around tracked build artifacts and prank-style modules`
+
+## 226. XR desktop smart-glasses and WebXR authoring utility surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-255-xr-desktop-smart-glasses-and-webxr-authoring-utility-surfaces.md`
+- `../landscape/project-families.md`
+
+- `ProjectBlueSkies/xr-desktop` - `Studied in Wave 255 as a Viture XR Pro Linux desktop helper with C IMU daemon, udev/device SDK boundary, shared-memory quaternion IPC, GNOME Shell extension polling, and world-lock transform caveats`
+- `mhalder/xreal-desktop-mode` - `Studied in Wave 255 as an ADB desktop-mode configuration microtool for Xreal One Pro with persistent Android desktop/freeform settings, external-display density tuning, wireless address persistence, and hidden-setting caveats`
+- `marbetschar/wingpanel-indicator-xrdesktop` - `Studied in Wave 255 as an Elementary/Pantheon panel indicator exposing xrdesktop enabled state through a small DBus service, dynamic icon, and popover UI`
+- `cong-lab/LabOS-Runtime` - `Studied in Wave 255 as a smart-glasses lab assistant runtime with connector abstraction, VITURE USB config deployment, voice/web/dashboard services, MediaMTX, gRPC, and large-stack caveats`
+- `sawa-zen/three-fiber-webxr-toolbox` - `Studied in Wave 255 as a React/Three WebXR development toolbox with in-HMD console, curved remote display mesh, Vite/socket.io WebRTC signaling, portal/passthrough helpers, and dev-security caveats`
+- `laffan/blender-webxr-tools` - `Studied in Wave 255 as a Blender addon for WebXR/R3F export preparation with bake/transform helpers, GLB/GLTF export, gltfjsx subprocess integration, JSX rewriting, and authoring-pipeline caveats`
+- `pravinpoudel/building-annotation` - `Studied in Wave 255 as a WebXR/three.js building annotation reference with manual annotation schema, camera/lookAt metadata, dev-mode raycast capture, and educational demo caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

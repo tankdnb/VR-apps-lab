@@ -1785,3 +1785,31 @@ repeatable way.
 
 - `github-research-wave-251-backlog.md`
   Executed backlog for the Wave 251 pass.
+
+- `github-research-wave-252-plan.md`
+  Wave 252 research plan focused on hands-free OpenXR hand tracking input and
+  wrist UI microtools.
+
+- `github-research-wave-252-backlog.md`
+  Executed backlog for the Wave 252 pass.
+
+- `github-research-wave-253-plan.md`
+  Wave 253 research plan focused on SteamVR dashboard menu keyboard and
+  gamepad navigation shims.
+
+- `github-research-wave-253-backlog.md`
+  Executed backlog for the Wave 253 pass.
+
+- `github-research-wave-254-plan.md`
+  Wave 254 research plan focused on VRChat OSC chatbox media status and
+  library microtools.
+
+- `github-research-wave-254-backlog.md`
+  Executed backlog for the Wave 254 pass.
+
+- `github-research-wave-255-plan.md`
+  Wave 255 research plan focused on XR desktop smart-glasses and WebXR
+  authoring utility surfaces.
+
+- `github-research-wave-255-backlog.md`
+  Executed backlog for the Wave 255 pass.

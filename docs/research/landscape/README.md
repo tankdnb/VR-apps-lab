@@ -1113,6 +1113,26 @@ Use these files when you want to understand:
   Kinect adapters, identity shims, no-HMD drivers, vendor headset bridges, and
   DIY HMD runtime-to-driver boundaries.
 
+- `vr-projects-wave-252-hands-free-openxr-hand-tracking-input-and-wrist-ui-microtools.md`
+  Next GitHub discovery wave focused on head-to-cursor helpers, Unity XR Hands
+  chording, Unreal/Varjo pinch rays, Godot raw hand joints, wrist menus, and
+  controllerless input safety boundaries.
+
+- `vr-projects-wave-253-steamvr-dashboard-menu-keyboard-and-gamepad-navigation-shims.md`
+  Next GitHub discovery wave focused on SteamVR dashboard keyboard navigation,
+  Quest system-button forwarding, XInput synthetic controllers, keyboard
+  layout patching, and dashboard-volume audio routing.
+
+- `vr-projects-wave-254-vrchat-osc-chatbox-media-status-and-library-microtools.md`
+  Next GitHub discovery wave focused on VRChat OSC chatbox modules, media and
+  lyrics senders, biometric/clock/status microtools, OSC helper libraries, and
+  privacy/cadence caveats.
+
+- `vr-projects-wave-255-xr-desktop-smart-glasses-and-webxr-authoring-utility-surfaces.md`
+  Next GitHub discovery wave focused on smart-glasses desktop helpers, IMU to
+  shell-extension IPC, Android desktop-mode setup, WebXR remote display/dev
+  tools, Blender export helpers, and annotation schemas.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

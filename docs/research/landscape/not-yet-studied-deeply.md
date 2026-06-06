@@ -358,6 +358,19 @@ over-promoted immediately.
 | `kurotori4423/KurotoriUdonKart` | Partially studied | Broad creator vehicle rig whose most reusable value may be in seat-state, handle logic, and time-attack or race-side companions rather than the base kart loop alone | Medium-High | High | Map the seat, ranking, and state-side modules and compare the VR steering surface more directly against other embodied-control donors |
 | `Guribo/UdonUtils` | Partially studied | Broad creator utility foundation where lifecycle, singleton identity, and execution-order validation are only the first layer of a larger subsystem tree | High | High | Peel off network-time, task, event, or helper subsystems and decide whether `UdonUtils` should become a multi-pass foundation donor rather than one registry node |
 
+## Priority batch X: Waves 252-255 surfaced follow-up candidates
+
+These were surfaced while studying hands-free input, SteamVR dashboard shims,
+VRChat OSC microtools, and XR desktop/WebXR authoring surfaces. They are
+follow-up themes rather than requests to rerun the same repositories.
+
+| Project or cluster | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `hands-free input safety matrix` | Newly surfaced by Wave 252 | Compare head-to-cursor, hand-chord, wrist-menu, pinch-ray, and controller input through one calibration and escape-hatch checklist | High | High | Extract recenter, smoothing, mode latch, visible feedback, fatigue, and emergency disable rules from Waves 180, 222, 228, 252, and related accessibility waves |
+| `SteamVR dashboard shim risk matrix` | Newly surfaced by Wave 253 | Driver hooks, synthetic controllers, debug URIs, dashboard resource patches, and hotkey/audio shims all solve menu access through different risk surfaces | High | High | Compare compatibility, uninstall, conflict detection, global hook, runtime patch, and dashboard feedback behavior before turning this into a prototype branch |
+| `VRChat chatbox composer privacy matrix` | Newly surfaced by Wave 254 | Tiny media/status/biometric senders need the same reusable source-adapter, cadence, templating, and privacy gates as larger companion apps | High | High | Normalize the best parts of OSCQuery discovery, line templates, plugin trust, keep-open cadence, credential storage, blanking, and pause controls across Waves 157, 189, 196, and 254 |
+| `XR desktop and authoring surface adapter matrix` | Newly surfaced by Wave 255 | Smart-glasses desktop helpers, WebXR dev utilities, and export/annotation tools share an adapter-first shape across hardware, shell, browser, and authoring tools | High | High | Compare IMU-to-shell IPC, Android display setup, DBus indicators, WebRTC remote display, in-HMD console, Blender export automation, and annotation schemas |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.
@@ -2667,6 +2680,56 @@ These are larger than a single repo and should guide the next research wave.
   headset bridge caveats, shared-memory pose transport, cleanup, and obsolete
   SDK or hardcoded transport risks.
 
+### 205. `Hands-free XR input safety matrix across head pose, hand curls, pinch rays, wrist menus, and text entry`
+
+- Main entries:
+  `DCS-HandsFree`, `VRChord`, `VarjoXR-CustomHandTracking-Test`,
+  `godothandtrackingtests`
+- Why it matters:
+  Wave 252 added controllerless input donors. A future matrix should compare
+  calibration/recenter UX, smoothing, threshold tuning, mode latches,
+  visible feedback, fatigue, text-target focus, cursor bounds, pinch-ray
+  safety, wrist-menu placement, and emergency disable paths.
+
+### 206. `SteamVR dashboard navigation shim matrix across driver hooks, synthetic controllers, URI commands, layout patches, and audio routes`
+
+- Main entries:
+  `SteamVR-Dashboard-KeyboardNav`, `quest-steamvr-system-button`, `pad-vr`,
+  `SteamVRKeyboardLayoutChanger`, `ahk-svrvmr`
+- Why it matters:
+  Wave 253 added narrow dashboard/menu helpers. A future matrix should compare
+  driver registration, HMD wrapping, input-profile overrides, shared-memory
+  IPC, low-level keyboard hooks, ADB/logcat event capture, XInput polling,
+  dashboard debug URIs, runtime resource patching, volume-slider reuse,
+  cleanup, and SteamVR compatibility risk.
+
+### 207. `VRChat chatbox composer privacy matrix across media, lyrics, biometric, clock, library, and plugin senders`
+
+- Main entries:
+  `Lilypad`, `iron-heart-chatbox`, `VRChat-OSC-Script`,
+  `VRChat-Spotify-Chatbox`, `VRChat-Spotify-Chatbox-CS`,
+  `VRC-SpotifyOSC-Py`, `VRC-ClockOSC-Py`, `ezmusic-desktop-client`,
+  `VRC-JavaOSC`, `DisconnectOSC`
+- Why it matters:
+  Wave 254 added many tiny chatbox variants. A future matrix should compare
+  source adapters, templates, send cadence, keep-open/blanking behavior,
+  OSCQuery discovery, fixed-port fallbacks, plugin trust, OAuth or cookie
+  storage, biometric consent, tray/pause UX, and artifacts or prank-feature
+  caveats.
+
+### 208. `XR desktop and WebXR utility surface matrix across smart-glasses setup, IMU IPC, shell indicators, remote display, authoring export, and annotation schemas`
+
+- Main entries:
+  `xr-desktop`, `xreal-desktop-mode`, `wingpanel-indicator-xrdesktop`,
+  `LabOS-Runtime`, `three-fiber-webxr-toolbox`, `blender-webxr-tools`,
+  `building-annotation`
+- Why it matters:
+  Wave 255 showed that reusable XR tools often sit outside a headset runtime.
+  A future matrix should compare hardware/config adapters, IMU or display-state
+  transports, shared memory, DBus, WebRTC signaling, shell-extension UI,
+  ADB/device setup, WebXR dev consoles, Blender export automation,
+  annotation data schemas, CORS/secrets, and device-specific caveats.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2855,6 +2918,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 182. `VRChat-to-OBS control bridge matrix across OSC, OBS WebSocket, scripts, hotkeys, queues, and feedback`
 183. `VR event production media pipeline matrix across in-world cameras, VJ routing, RTMP/HLS, camera OSC, and browser-source outputs`
 184. `OpenVR compatibility driver boundary matrix across Leap, Kinect, identity shims, no-HMD, vendor bridges, and DIY HMD runtime splits`
+185. `Hands-free XR input safety matrix across head pose, hand curls, pinch rays, wrist menus, and text entry`
+186. `SteamVR dashboard navigation shim matrix across driver hooks, synthetic controllers, URI commands, layout patches, and audio routes`
+187. `VRChat chatbox composer privacy matrix across media, lyrics, biometric, clock, library, and plugin senders`
+188. `XR desktop and WebXR utility surface matrix across smart-glasses setup, IMU IPC, shell indicators, remote display, authoring export, and annotation schemas`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.
