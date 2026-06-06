@@ -2269,6 +2269,52 @@ These are larger than a single repo and should guide the next research wave.
   persistence authority, GLB/VRM parser staging, texture chunk synchronization,
   avatar-thumbnail data carriers, platform limits, and deprecation paths.
 
+### 173. `World-locking and spatial-stability matrix across tracking frames, anchors, and bindings`
+
+- Main entries:
+  `MixedReality-WorldLockingTools-Unity`,
+  `MixedReality-WorldLockingTools-Samples`,
+  `WorldLockingTools-Unreal`, `StereoKit.Samples.AzureSpatialAnchors`
+- Why it matters:
+  Wave 220 deepened world-locking and anchor-sharing patterns. A future matrix
+  should compare raw/spongy tracking frames, locked/frozen world frames, anchor
+  graph ownership, SpacePins, QR marker binding, ASA/cloud binding, local
+  oracle files, search/delete/reset/refreeze UX, and service/runtime caveats.
+
+### 174. `Vendor OpenXR extension-wrapper matrix across lifecycle, feature gates, and build metadata`
+
+- Main entries:
+  `OpenXR-MixedReality`, `Microsoft-OpenXR-Unreal`,
+  `Meta-OpenXR-SDK`, `unity-openxr-extensions`
+- Why it matters:
+  Wave 221 deepened OpenXR extension-wrapper patterns. A future matrix should
+  compare required extension strings, runtime support queries, function pointer
+  loading, instance/session/frame lifecycle hooks, handle ownership, engine
+  wrapper APIs, Android/manifest/build gates, license restrictions, and
+  experimental feature caveats.
+
+### 175. `VR microhelper safety matrix across input translation, calibration, observer, and passthrough tools`
+
+- Main entries:
+  `HTCC`, `motoc`, `HoloViveObserver`, `index_camera_passthrough`
+- Why it matters:
+  Wave 222 deepened narrow helper utilities. A future matrix should compare
+  source adapters, target sinks, wake/sleep or calibrator states, per-app
+  profiles, saved transforms, safety gates, diagnostic/monitor modes, legacy
+  dependencies, and hardware/runtime coupling.
+
+### 176. `XR creator workbench interaction matrix across CAD, menus, panels, files, snapping, and feedback`
+
+- Main entries:
+  `freecad-xr-workbench`, `createthis_vr_ui`, `mesh_maker_vr`,
+  `unity_vr_ik_mecanim`
+- Why it matters:
+  Wave 223 deepened creator workbench interaction donors. A future matrix
+  should compare controller rays, release-to-select menus, touchpad radial
+  menus, grabbable panels, file dialogs, keyboards, CAD/model command adapters,
+  selection state, snapping/working planes, mirror/avatar feedback, and
+  legacy-to-modern toolkit migration needs.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2429,6 +2475,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 154. `StardustXR client stack and spatial desktop panel matrix`
 155. `Udon runtime substrate, diagnostics, data-structure, and predictive sync matrix`
 156. `VRChat external content ingress matrix across image, model, texture, and avatar-data carriers`
+157. `World-locking and spatial-stability matrix across tracking frames, anchors, and bindings`
+158. `Vendor OpenXR extension-wrapper matrix across lifecycle, feature gates, and build metadata`
+159. `VR microhelper safety matrix across input translation, calibration, observer, and passthrough tools`
+160. `XR creator workbench interaction matrix across CAD, menus, panels, files, snapping, and feedback`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

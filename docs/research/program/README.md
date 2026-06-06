@@ -1561,3 +1561,31 @@ repeatable way.
 
 - `github-research-wave-219-backlog.md`
   Executed backlog for the Wave 219 pass.
+
+- `github-research-wave-220-plan.md`
+  Wave 220 research plan focused on world-locking, spatial coordinate
+  stabilization, and anchor-sharing bindings.
+
+- `github-research-wave-220-backlog.md`
+  Executed backlog for the Wave 220 pass.
+
+- `github-research-wave-221-plan.md`
+  Wave 221 research plan focused on vendor OpenXR extension stacks, feature
+  wrappers, and sample matrices.
+
+- `github-research-wave-221-backlog.md`
+  Executed backlog for the Wave 221 pass.
+
+- `github-research-wave-222-plan.md`
+  Wave 222 research plan focused on cockpit hand-clicking, calibration,
+  observer, and passthrough microhelpers.
+
+- `github-research-wave-222-backlog.md`
+  Executed backlog for the Wave 222 pass.
+
+- `github-research-wave-223-plan.md`
+  Wave 223 research plan focused on XR creator/CAD/UI workbenches and legacy
+  Unity interaction donors.
+
+- `github-research-wave-223-backlog.md`
+  Executed backlog for the Wave 223 pass.

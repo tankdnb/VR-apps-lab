@@ -2874,6 +2874,54 @@ Primary docs:
 - `Narazaka/SyncTexture` - `Studied in Wave 219 as chunked Texture2D synchronization package with color encoders, GPU readback/GetPixels source capture, BulkCount progress, partial apply, callback events, manager sequencing, resend, and late-join support`
 - `Miner28/AvatarImageReader` - `Deepened in Wave 219 as deprecated avatar-thumbnail text/data carrier with editor encoder, runtime pedestal texture readback, UTF-8/UTF-16 frame-sliced decoding, avatar chaining, and platform capacity caveats`
 
+## 191. World-locking, spatial coordinate stabilization, and anchor sharing
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-220-world-locking-spatial-coordinate-stabilization-and-anchor-sharing.md`
+- `../landscape/project-families.md`
+
+- `microsoft/MixedReality-WorldLockingTools-Unity` - `Studied in Wave 220 as canonical Unity world-locking architecture with spongy/locked/frozen frames, WorldLockingManager service boundary, anchor graph, alignment manager, SpacePins, diagnostics, auto refreeze/load/save, and persistence caveats`
+- `microsoft/MixedReality-WorldLockingTools-Samples` - `Studied in Wave 220 as QR SpacePins and Azure Spatial Anchors product UX with physical marker/proxy matching, binding oracle, publish/load/search/purge/reset controls, and ASA credential/location caveats`
+- `microsoft/WorldLockingTools-Unreal` - `Studied in Wave 220 as Unreal port of world-locking concepts through ARPins, tracking-to-world transforms, pawn hierarchy adjustment, FrozenWorld plugin calls, and HoloLens/OpenXR caveats`
+- `brunoshine/StereoKit.Samples.AzureSpatialAnchors` - `Studied in Wave 220 as minimal StereoKit ASA session UI with CloudSpatialAnchorSession, nearby search, save/delete controls, PlatformLocationProvider, feedback state, and service/permission caveats`
+
+## 192. Vendor OpenXR extension stacks, feature wrappers, and sample matrices
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-221-vendor-openxr-extension-stacks-feature-wrappers-and-sample-matrices.md`
+- `../landscape/project-families.md`
+
+- `microsoft/OpenXR-MixedReality` - `Studied in Wave 221 as Microsoft C++ OpenXR sample matrix with instance context, feature-to-extension mapping, QR scene-marker filtering, hand/eye/anchor/secondary-view samples, and WMR/HoloLens caveats`
+- `microsoft/Microsoft-OpenXR-Unreal` - `Studied in Wave 221 as Unreal Microsoft OpenXR plugin with modular feature registration, Blueprint availability wrappers, QR tracking watcher, spatial graph bridge, PV camera, speech, remoting, and engine-version caveats`
+- `meta-quest/Meta-OpenXR-SDK` - `Studied in Wave 221 as Quest native OpenXR SDK/sample matrix with shared XrApp lifecycle, extension helper classes, virtual keyboard wrapper, scene/anchor/depth/passthrough sample coverage, and license/experimental caveats`
+- `mikeskydev/unity-openxr-extensions` - `Studied in Wave 221 as Unity OpenXRFeature wrapper set with generic FeatureBase, function pointer hooks, FB passthrough, META boundary visibility, body tracking, Android manifest build hooks, and unofficial-wrapper caveats`
+
+## 193. Cockpit hand-clicking, calibration, observer, and passthrough microhelpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-222-cockpit-hand-clicking-calibration-observer-and-passthrough-microhelpers.md`
+- `../landscape/project-families.md`
+
+- `fredemmott/HTCC` - `Studied in Wave 222 as OpenXR API-layer cockpit helper that privately consumes hand tracking/PointCTRL, hides raw hand support from apps, maps pinch/scroll/aim to virtual controller actions, and uses per-exe configuration`
+- `galister/motoc` - `Studied in Wave 222 as Monado/WiVRn tracking-origin calibration CLI with device/origin monitor, sampled SVD calibration, continuous offset smoothing, recentering, saved JSON profiles, and anomaly handling`
+- `dag10/HoloViveObserver` - `Studied in Wave 222 as historical HoloLens/Vive observer alignment prototype with networked alignment manager, floating controller target, Vive trigger click calibration, role-specific players, and legacy Unity/cloud caveats`
+- `yshui/index_camera_passthrough` - `Studied in Wave 222 as Linux Valve Index camera passthrough overlay with V4L capture, Vulkan YUYV/correction/projection pipeline, OpenVR/OpenXR backend trait, HMD/sticky/absolute placement, and projection caveats`
+
+## 194. XR creator/CAD/UI workbenches and legacy Unity interaction donors
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-223-xr-creator-cad-ui-workbenches-and-legacy-unity-interaction-donors.md`
+- `../landscape/project-families.md`
+
+- `kwahoo2/freecad-xr-workbench` - `Studied in Wave 223 as Python OpenXR FreeCAD addon with addon-over-fork architecture, pyopenxr/OpenGL render loop, controller rays, Coin3D menu widgets, Free/Arch movement, CAD selection/editing, Qt widget projection, and third-person camera support`
+- `createthis/createthis_vr_ui` - `Studied in Wave 223 as legacy Unity VR UI toolkit with grabbable panels, global panel manager, keyboard, file open/save dialogs, kinetic scroller, touchpad radial menu, selectable/highlight materials, and factory-generated UI`
+- `createthis/mesh_maker_vr` - `Studied in Wave 223 as VR mesh authoring tool with explicit edit modes, vertex/triangle controllers, sticky selection, drag broadcasting, snap increments, fill/normal/delete operations, HUD/pointer color feedback, and legacy dependency caveats`
+- `createthis/unity_vr_ik_mecanim` - `Studied in Wave 223 as small embodied feedback demo with Mecanim hand IK from controllers, hip-tracker avatar placement, headset rotation, mirror render texture, translucent controller model materials, and demo/Final-IK caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

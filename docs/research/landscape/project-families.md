@@ -6520,6 +6520,142 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - texture-as-data and shader-bus comparisons
 - deprecated workaround documentation
 
+## Family 199: World-locking, spatial coordinate stabilization, and anchor sharing
+
+This family covers projects that make spatial stability explicit through raw
+tracking space, stabilized world space, anchor graphs, marker bindings, cloud
+anchor persistence, and user-facing reset/search/publish controls.
+
+| Project | Status | Notes |
+|---|---|---|
+| `microsoft/MixedReality-WorldLockingTools-Unity` | Studied in Wave 220 | canonical Unity world-locking stack with spongy/locked/frozen frames, anchor graph, alignment manager, SpacePins, diagnostics, and persistence |
+| `microsoft/MixedReality-WorldLockingTools-Samples` | Studied in Wave 220 | QR SpacePins and Azure Spatial Anchors samples with binding oracle, publish/load/search/purge/reset controls, and physical marker matching |
+| `microsoft/WorldLockingTools-Unreal` | Studied in Wave 220 | Unreal translation using ARPins, tracking-to-world transforms, pawn hierarchy adjustment, and FrozenWorld plugin calls |
+| `brunoshine/StereoKit.Samples.AzureSpatialAnchors` | Studied in Wave 220 | minimal StereoKit ASA demo with cloud session state, nearby anchor search, save/delete controls, and feedback UI |
+
+### Consolidation note
+
+This family matters because stable spatial tools should name:
+
+- raw tracking frame
+- stabilized world frame
+- anchor graph or anchor set
+- alignment pins or marker bindings
+- persistence and cloud binding
+- reset/refreeze/search/delete UI
+- diagnostics and failure feedback
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- spatial-stability matrices
+- anchor UX checklists
+- calibration helpers that separate tracking and world frames
+- shared-room alignment references
+- CAD/workspace tools with stable physical references
+
+## Family 200: Vendor OpenXR extension stacks, feature wrappers, and sample matrices
+
+This family covers projects that wrap optional OpenXR features behind explicit
+extension strings, support checks, lifecycle hooks, function loading, build
+metadata, and engine-facing APIs.
+
+| Project | Status | Notes |
+|---|---|---|
+| `microsoft/OpenXR-MixedReality` | Studied in Wave 221 | Microsoft C++ OpenXR samples with feature-to-extension mapping, instance context, QR scene-marker filtering, and MR sample coverage |
+| `microsoft/Microsoft-OpenXR-Unreal` | Studied in Wave 221 | Unreal plugin with modular Microsoft feature registration, Blueprint wrappers, QR tracking, PV camera, speech, remoting, and spatial mapping |
+| `meta-quest/Meta-OpenXR-SDK` | Studied in Wave 221 | Quest native OpenXR SDK with shared app lifecycle, broad sample matrix, extension helper classes, and preview/license caveats |
+| `mikeskydev/unity-openxr-extensions` | Studied in Wave 221 | small Unity OpenXRFeature wrapper set with required extension checks, function pointer hooks, passthrough/body/boundary wrappers, and Android build hooks |
+
+### Consolidation note
+
+This family matters because optional OpenXR features need:
+
+- required extension declarations
+- runtime support queries
+- function pointer loading
+- instance/session/frame lifecycle ownership
+- handle create/destroy boundaries
+- engine/plugin wrapper surfaces
+- build/package manifest gates
+- preview/license/platform caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenXR feature wrapper skeletons
+- extension availability matrices
+- vendor feature comparison docs
+- OpenXR doctor feature explanations
+- build-gate and manifest-check utilities
+
+## Family 201: Cockpit hand-clicking, calibration, observer, and passthrough microhelpers
+
+This family covers narrow VR helper tools that translate one source signal into
+one useful target: hand tracking to simulator actions, tracking origins to a
+calibrated frame, mixed-device poses to a shared observer space, or camera
+frames to a VR overlay.
+
+| Project | Status | Notes |
+|---|---|---|
+| `fredemmott/HTCC` | Studied in Wave 222 | OpenXR API-layer cockpit helper with private hand tracking, PointCTRL source, virtual controller action sink, pinch/scroll/aim states, and per-exe config |
+| `galister/motoc` | Studied in Wave 222 | Monado/WiVRn calibration CLI with sampled SVD calibration, continuous offset smoothing, monitor/recenter modes, saved JSON profiles, and anomaly handling |
+| `dag10/HoloViveObserver` | Studied in Wave 222 | historical Unity HoloLens/Vive observer alignment prototype with networked alignment manager, controller target/click ritual, and legacy caveats |
+| `yshui/index_camera_passthrough` | Studied in Wave 222 | Linux Index camera passthrough overlay with V4L capture, Vulkan YUYV/correction/projection, OpenVR/OpenXR backend trait, and overlay placement modes |
+
+### Consolidation note
+
+This family matters because useful microhelpers should expose:
+
+- source adapter
+- target action/display/calibration sink
+- compact state machine
+- safety or validity gates
+- profile/config persistence
+- monitor or feedback mode
+- platform and target-app caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- microhelper safety matrices
+- input translation design
+- tracking-origin operator tools
+- camera-to-overlay display surfaces
+- mixed-device observer calibration rituals
+
+## Family 202: XR creator/CAD/UI workbenches and legacy Unity interaction donors
+
+This family covers projects that support real work inside XR: CAD viewing and
+editing, controller menus, panels, file dialogs, keyboards, snapping, mesh
+selection, mirrors, and embodied feedback.
+
+| Project | Status | Notes |
+|---|---|---|
+| `kwahoo2/freecad-xr-workbench` | Studied in Wave 223 | Python OpenXR FreeCAD addon with pyopenxr/OpenGL render loop, controller rays, Coin3D menus, movement modes, CAD selection/editing, Qt widget projection, and tracked camera |
+| `createthis/createthis_vr_ui` | Studied in Wave 223 | legacy Unity VR UI toolkit with grabbable panels, panel manager, keyboard, file dialogs, kinetic scroller, touchpad radial menu, selection materials, and factories |
+| `createthis/mesh_maker_vr` | Studied in Wave 223 | VR mesh authoring tool with explicit edit modes, vertex/triangle controllers, sticky selection, snapping, fill/normal/delete operations, settings, and HUD feedback |
+| `createthis/unity_vr_ik_mecanim` | Studied in Wave 223 | small embodied feedback demo with controller hand IK, hip-tracker body placement, mirror render texture, translucent controllers, and Mecanim limitations |
+
+### Consolidation note
+
+This family matters because creator workbenches need:
+
+- runtime/session integration
+- controller ray and picking layer
+- menu and panel system
+- command-mode state
+- document or model adapter
+- selection and snapping
+- file/text/color input
+- visual and embodied feedback
+- persistence, undo, and export boundaries
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VR menu and panel matrices
+- CAD helper patterns
+- in-headset file/keyboard/color input
+- creative authoring interaction primitives
+- legacy-to-modern Unity XRI comparison
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

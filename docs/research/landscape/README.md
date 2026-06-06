@@ -957,6 +957,26 @@ Use these files when you want to understand:
   reconstruction, productized picture-loader UX, synced textures, and
   avatar-image data carriers.
 
+- `vr-projects-wave-220-world-locking-spatial-coordinate-stabilization-and-anchor-sharing.md`
+  Next GitHub discovery wave focused on world-locked coordinate systems,
+  anchor graphs, SpacePins, QR marker bindings, cloud anchors, and stable
+  spatial-reference UX.
+
+- `vr-projects-wave-221-vendor-openxr-extension-stacks-feature-wrappers-and-sample-matrices.md`
+  Next GitHub discovery wave focused on Microsoft/Meta OpenXR extension sample
+  matrices, engine feature registries, lifecycle wrappers, function hooks, and
+  build/package gates.
+
+- `vr-projects-wave-222-cockpit-hand-clicking-calibration-observer-and-passthrough-microhelpers.md`
+  Next GitHub discovery wave focused on narrow helper utilities: cockpit hand
+  clicking, Monado tracking-origin calibration, mixed-device observer
+  alignment, and Index camera passthrough overlays.
+
+- `vr-projects-wave-223-xr-creator-cad-ui-workbenches-and-legacy-unity-interaction-donors.md`
+  Next GitHub discovery wave focused on XR CAD workbenches, controller menus,
+  VR panels, file/keyboard/scroller widgets, mesh-editing modes, and
+  avatar/mirror feedback donors.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

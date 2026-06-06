@@ -161,6 +161,11 @@ These are the clearest current product and research lines:
    adapters, MRTK interaction/data/visual/accessibility boundaries, VRChat/Udon
    menu and package surfaces, and immersive media/audio substrate patterns for
    LibVLC, spatial renderers, listener/source wrappers, and shader audio buses.
+32. `Spatial stability, OpenXR extension wrappers, VR microhelpers, and creator workbench interactions`
+   the repository now has fresh coverage of world-locking/anchor binding,
+   vendor OpenXR feature wrappers, cockpit hand-clicking, tracking-origin
+   calibration, camera-to-overlay passthrough, CAD workbenches, VR panels,
+   mesh editing modes, and embodied feedback surfaces.
 
 ## Most useful current docs
 
@@ -288,6 +293,14 @@ instead of full history:
 - `landscape/vr-projects-wave-213-mrtk-spatial-ui-graphics-robotics-and-gaze-extension-nodes.md`
 - `landscape/vr-projects-wave-214-vrchat-udon-menu-package-surfaces-world-admin-and-creator-prefabs.md`
 - `landscape/vr-projects-wave-215-immersive-media-audio-substrates-libvlc-spatial-renderers-and-audiolink.md`
+- `landscape/vr-projects-wave-216-openxr-conformance-spec-validation-and-runner-toolchain.md`
+- `landscape/vr-projects-wave-217-stardustxr-client-infrastructure-panel-protocols-and-spatial-desktop-microclients.md`
+- `landscape/vr-projects-wave-218-udon-runtime-diagnostics-data-structures-and-predictive-sync-utilities.md`
+- `landscape/vr-projects-wave-219-vrchat-external-content-ingress-image-glb-texture-and-avatar-data-surfaces.md`
+- `landscape/vr-projects-wave-220-world-locking-spatial-coordinate-stabilization-and-anchor-sharing.md`
+- `landscape/vr-projects-wave-221-vendor-openxr-extension-stacks-feature-wrappers-and-sample-matrices.md`
+- `landscape/vr-projects-wave-222-cockpit-hand-clicking-calibration-observer-and-passthrough-microhelpers.md`
+- `landscape/vr-projects-wave-223-xr-creator-cad-ui-workbenches-and-legacy-unity-interaction-donors.md`
 
 ## Strong donor clusters right now
 
@@ -802,10 +815,18 @@ the strongest current clusters:
   `StardustXR/wayland-service`, `StardustXR/gravity`,
   `UdonUtils`, `UdonProfiling`, `UdonAVLTree`, `UdonVehicleSync`,
   `examples-image-loading`, `vrchat-glb-loader`, `VRC-Picture-Loader`,
-  `SyncTexture`, `AvatarImageReader`
+  `SyncTexture`, `AvatarImageReader`, `MixedReality-WorldLockingTools-Unity`,
+  `MixedReality-WorldLockingTools-Samples`, `WorldLockingTools-Unreal`,
+  `StereoKit.Samples.AzureSpatialAnchors`, `OpenXR-MixedReality`,
+  `Microsoft-OpenXR-Unreal`, `Meta-OpenXR-SDK`,
+  `unity-openxr-extensions`, `HTCC`, `motoc`, `HoloViveObserver`,
+  `index_camera_passthrough`, `freecad-xr-workbench`,
+  `createthis_vr_ui`, `mesh_maker_vr`, `unity_vr_ik_mecanim`
   for OpenXR conformance/diagnostic harnesses, StardustXR protocol-backed
   spatial desktop clients, Udon runtime substrate and prediction utilities,
-  and VRChat external content-ingress surfaces.
+  VRChat external content-ingress surfaces, spatial-stability stacks, vendor
+  extension wrappers, purpose-bounded microhelpers, and XR creator workbench
+  interactions.
 
 ## Highest-value next follow-up passes
 
@@ -958,6 +979,10 @@ directions:
 144. `StardustXR client stack and spatial desktop panel matrix`
 145. `Udon runtime substrate, diagnostics, data-structure, and predictive sync matrix`
 146. `VRChat external content ingress matrix across image, model, texture, and avatar-data carriers`
+147. `World-locking and spatial-stability matrix across tracking frames, anchors, and bindings`
+148. `Vendor OpenXR extension-wrapper matrix across lifecycle, feature gates, and build metadata`
+149. `VR microhelper safety matrix across input translation, calibration, observer, and passthrough tools`
+150. `XR creator workbench interaction matrix across CAD, menus, panels, files, snapping, and feedback`
 
 ## Current repository-maintenance priorities
 

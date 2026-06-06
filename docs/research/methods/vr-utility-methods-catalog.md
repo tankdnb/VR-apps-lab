@@ -12882,3 +12882,152 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   VRChat external-content matrices, image/model/texture surface studies,
   texture-as-data comparisons, and deprecated workaround documentation.
+
+## Method 665: World-locked coordinate stabilization with marker/cloud-anchor binding
+
+- What it is:
+  spatial stability is treated as a layered coordinate system: raw tracking
+  frame, stabilized world frame, anchor graph, alignment pins, persistence
+  bindings, and explicit reset/search/refreeze UX.
+- Good for:
+  calibration helpers, CAD/workspace tools, shared-room alignment, MR utility
+  apps, anchor diagnostics, multi-session scene persistence, and physical
+  reference workflows.
+- Why it matters:
+  users experience drift, tracking-origin resets, stale anchors, and
+  multi-device disagreement; hiding this inside camera offsets makes tools hard
+  to debug or recover.
+- Source evidence:
+  `microsoft/MixedReality-WorldLockingTools-Unity`,
+  `microsoft/MixedReality-WorldLockingTools-Samples`,
+  `microsoft/WorldLockingTools-Unreal`, and
+  `brunoshine/StereoKit.Samples.AzureSpatialAnchors`.
+- Reusable core:
+  expose a raw/spongy tracking frame, compute or maintain a locked/frozen world
+  frame, manage local anchors and edges, add named alignment pins or marker
+  bindings, persist or publish bindings, surface search/delete/reset/refreeze
+  controls, and report diagnostics/failure state.
+- Do not copy directly:
+  FrozenWorld internals, Azure Spatial Anchors credential flows, HoloLens-only
+  assumptions, Unity/Unreal camera hierarchy names, or cloud availability as a
+  default requirement.
+- Strong references:
+  WLT Unity for vocabulary and anchor/alignment services, WLT Samples for QR
+  and ASA product UX, WLT Unreal for cross-engine translation, and the
+  StereoKit ASA demo for minimal cloud-anchor UI.
+- Maturity:
+  strong architecture method; product use needs runtime/engine and persistence
+  boundary review.
+- Best fit for `VR-apps-lab`:
+  spatial-stability matrices, calibration helpers, shared-anchor diagnostics,
+  CAD workspace alignment, and anchor UX checklists.
+
+## Method 666: Vendor OpenXR extension wrapper with lifecycle, capability, and build gates
+
+- What it is:
+  optional OpenXR features are wrapped as explicit feature units with required
+  extension strings, support checks, function pointer loading, lifecycle hooks,
+  handle ownership, engine-facing APIs, build metadata, and caveats.
+- Good for:
+  OpenXR doctors, vendor feature explorers, Unity/Unreal/native extension
+  prototypes, passthrough helpers, body/hand tracking wrappers, QR/scene tools,
+  virtual keyboard surfaces, and capability matrices.
+- Why it matters:
+  extension-dependent tools become fragile when runtime support, session
+  handles, function loading, Android manifests, preview status, or vendor
+  licenses are hidden in feature code.
+- Source evidence:
+  `microsoft/OpenXR-MixedReality`, `microsoft/Microsoft-OpenXR-Unreal`,
+  `meta-quest/Meta-OpenXR-SDK`, and `mikeskydev/unity-openxr-extensions`.
+- Reusable core:
+  declare required extensions, query runtime support, enable extensions during
+  instance creation, load function pointers, create/destroy feature handles on
+  session lifecycle, update per frame when needed, expose feature wrappers to
+  engine/product code, and publish build/package gates plus caveats.
+- Do not copy directly:
+  vendor SDK license assumptions, preview/experimental feature claims,
+  platform flags, engine plugin internals, or sample-specific object ownership
+  without target-specific review.
+- Strong references:
+  Microsoft OpenXR samples for feature mapping, Microsoft Unreal plugin for
+  modular feature registry, Meta SDK for broad native sample/helper coverage,
+  and `unity-openxr-extensions` for a small Unity `OpenXRFeature` wrapper
+  pattern.
+- Maturity:
+  strong extension-wrapper method; implementation must stay runtime-gated.
+- Best fit for `VR-apps-lab`:
+  OpenXR feature wrapper skeletons, capability matrices, manifest/build checks,
+  extension diagnostics, and vendor-feature comparison docs.
+
+## Method 667: Purpose-bounded VR input/calibration/display microhelper
+
+- What it is:
+  a narrow helper translates one XR source into one useful target through a
+  small adapter, state machine, safety gate, config profile, and target sink.
+- Good for:
+  simulator cockpit hand clicking, tracking-origin calibration, mixed-device
+  observer alignment, camera-to-overlay passthrough, controller/hand
+  translation, and small operator utilities.
+- Why it matters:
+  many valuable VR tools are not platforms; they are precise bridges that need
+  to be safe, diagnosable, configurable, and honest about their target runtime
+  or application.
+- Source evidence:
+  `fredemmott/HTCC`, `galister/motoc`, `dag10/HoloViveObserver`, and
+  `yshui/index_camera_passthrough`.
+- Reusable core:
+  isolate source signal acquisition, translate into target-specific actions or
+  display/calibration output, keep state transitions explicit, store per-app or
+  per-profile config, expose monitor/feedback modes, reject invalid data or
+  unsafe motion, and document target-app/hardware/runtime caveats.
+- Do not copy directly:
+  simulator-specific bindings, Monado-only APIs, old Unity cloud networking,
+  Linux/Index camera assumptions, or experimental projection defaults.
+- Strong references:
+  HTCC for API-layer hand-to-action translation, motoc for calibration
+  strategies and saved transforms, HoloViveObserver for two-party alignment
+  ritual, and Index camera passthrough for capture-to-overlay pipeline.
+- Maturity:
+  strong microhelper method; each use case remains narrow by design.
+- Best fit for `VR-apps-lab`:
+  micro-utility design guidelines, tracking/calibration helpers, display
+  surface experiments, and safety matrices for input translators.
+
+## Method 668: Creator workbench interaction shell with CAD/model/UI edit affordances
+
+- What it is:
+  in-headset creation is structured as a shell of runtime/session integration,
+  controller picking, menu/panel widgets, command modes, domain-object adapters,
+  selection, snapping, file/text/color input, and feedback surfaces.
+- Good for:
+  CAD viewers, in-VR modeling tools, creator utility panels, file/keyboard
+  dialogs, color/material tools, mesh authoring, workspace editors, and
+  calibration/avatar feedback views.
+- Why it matters:
+  creator tools fail when input, menu state, document commands, selection,
+  snapping, and feedback are mixed into one script or treated like ordinary
+  gameplay interactions.
+- Source evidence:
+  `kwahoo2/freecad-xr-workbench`, `createthis/createthis_vr_ui`,
+  `createthis/mesh_maker_vr`, and `createthis/unity_vr_ik_mecanim`.
+- Reusable core:
+  wrap the XR runtime separately, represent controllers as ray/pick objects,
+  expose menus and panels as composable widgets, keep command modes explicit,
+  adapt host-app or model operations behind domain functions, track selection
+  state, support snapping/working planes, provide input widgets, and render
+  visual or embodied feedback.
+- Do not copy directly:
+  Unity 5.x dependencies, SteamVR/VRTK assumptions, asset-store packages,
+  FreeCAD-specific APIs, old Mecanim IK limitations, or legacy project
+  structure as a modern baseline.
+- Strong references:
+  FreeCAD XR for modern addon-over-fork CAD workflow, Createthis VR UI for
+  panel/file/keyboard/menu widgets, Mesh Maker VR for edit modes and
+  geometry-controller interactions, and Unity VR IK Mecanim for mirror/avatar
+  feedback.
+- Maturity:
+  strong product/interaction method; implementation should be rebuilt on a
+  modern target stack.
+- Best fit for `VR-apps-lab`:
+  VR menu matrices, CAD helper patterns, in-headset authoring prototypes,
+  creator UI playbooks, and legacy-to-modern toolkit comparisons.
