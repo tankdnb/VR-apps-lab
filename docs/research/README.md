@@ -227,6 +227,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-229-immersive-data-robotics-and-scientific-visualization-workbenches.md`
 - `landscape/vr-projects-wave-230-scriptable-webxr-modeling-viewer-and-creative-surfaces.md`
 - `landscape/vr-projects-wave-231-webxr-prototyping-runtime-micro-frameworks-and-experimental-primitives.md`
+- `landscape/vr-projects-wave-232-webxr-robot-teleoperation-frontends-safety-gates-and-data-collection.md`
+- `landscape/vr-projects-wave-233-vr-terminal-shell-and-operational-dashboard-surfaces.md`
+- `landscape/vr-projects-wave-234-xr-smart-glasses-low-level-sdks-virtual-displays-and-ble-hud-templates.md`
+- `landscape/vr-projects-wave-235-browser-native-webxr-drawing-whiteboard-and-creative-surfaces.md`
 
 ## Archive Navigation
 

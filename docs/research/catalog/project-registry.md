@@ -3027,6 +3027,61 @@ Primary docs:
 - `ARDings/EverythingController` - `Studied in Wave 231 as a single-file XR Blocks depth-sensing body-as-controller demo with point-cloud reconstruction, collision/hit detection, debug/occlusion instancing, and spatial settings panel`
 - `dmvrg/webxr-ar-demos` - `Studied in Wave 231 as a WebXR AR demo set with hand pinch, UI planes, product color/size controls, burger exploded view, switch cooldowns, direct manipulation, and Spectacles/product-demo caveats`
 
+## 203. WebXR robot teleoperation frontends, safety gates, and data collection
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-232-webxr-robot-teleoperation-frontends-safety-gates-and-data-collection.md`
+- `../landscape/project-families.md`
+
+- `SpesRobotics/teleop` - `Studied in Wave 232 as a compact WebXR pose-to-Python callback bridge with FastAPI/WebSocket entry point, shadow-DOM motion UI, hold-to-move gate, scale presets, RUB-to-FLU transform conversion, relative pose reset, and transform jump limiting`
+- `ajhai/teleop-xr` - `Studied in Wave 232 as a protobuf-backed robot adapter surface with binary WebSocket transport, heartbeat, robot manager, joint/status/camera payloads, reconnect handling, camera texture planes, and AR help overlays`
+- `fracapuano/maniskill-quest-teleop` - `Studied in Wave 232 as a Quest WebRTC telemetry bridge with unordered telemetry channel, ordered control channel, hand/controller/view/head state, backpressure limits, stale-hand policy, telemetry-only mode, and debug capture`
+- `almond-bot/axol-vr` - `Studied in Wave 232 as an R3F headset operator HUD and data-collection surface with explicit teleop/recording/saving/error state, button-edge handling, body-tracked elbows, controller poses, grip values, lock flags, and countdown UX`
+- `vivek-kanjarla/Quest3-Fairino` - `Studied in Wave 232 as a safety-first Quest3-to-Fairino pipeline with multiple transport modes, stale-data invalidation, deadman switch, delta Cartesian mapping, IK seed reuse, joint/rate limits, sim/validate/live modes, diagnostics, and episode recording`
+
+## 204. VR terminal, shell, and operational dashboard surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-233-vr-terminal-shell-and-operational-dashboard-surfaces.md`
+- `../landscape/project-families.md`
+
+- `max-gaspers-scott/VR-Terminal` - `Studied in Wave 233 as a Rust PTY/VTE terminal surface with Socket.IO snapshots, cell attributes, row revisions, frontend command buffer, home-row keymap, canvas texture rendering, and A-Frame terminal plane`
+- `coderofsalvation/xrsh` - `Studied in Wave 233 as a shell-as-XR-world concept with A-Frame scene, ISO-backed terminal, self-container flow, hand/ray/gaze controls, teleport/navigation buttons, and windowing substrate caveats`
+- `soren42/visual-traceroute` - `Studied in Wave 233 as an operational network graph pipeline with discovery/scanning, MST/BFS/force layout, built-in progress server, polling status page, done/error sentinels, and self-contained WebXR/Three output`
+- `CanaanMuayad/earthshift-vr` - `Studied in Wave 233 as a modular VR cockpit with widget registry, draggable glass panels, border-drag versus center-click separation, shared locomotion store, and localStorage-backed state`
+- `MKTHINGS/webxr-dashboard-meta-quest` - `Studied in Wave 233 as a Quest/A-Frame local-first dashboard with programmatic UI manager, notes/bookmarks/photos models, haptic feedback, unsupported-device overlay, VR enter/exit handling, and autosave`
+
+## 205. XR/smart glasses low-level SDKs, virtual displays, and BLE HUD templates
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-234-xr-smart-glasses-low-level-sdks-virtual-displays-and-ble-hud-templates.md`
+- `../landscape/project-families.md`
+
+- `boomskats/woahland` - `Studied in Wave 234 as a Linux Viture head-mouse with uinput mouse output, IMU yaw/pitch/roll decoding, sensitivity/deadzone/smoothing, roll-scroll, config fallback, Unix socket runtime commands, recenter, pause/resume, reload, and CLI control`
+- `Wojtekb30/EasyVXR` - `Studied in Wave 234 as a minimal thread-safe C wrapper around the Viture SDK with Euler/quaternion decoding, latest IMU copies, start/connect, safe disconnect, IMU/3D/frequency helpers, and Linux/vendor-SDK caveats`
+- `darkclad/uxspace` - `Studied in Wave 234 as an Android/Windows XR glasses spatial desktop with VirtualDisplay/SurfaceTexture screens, Shizuku-launched app screens, cursor dispatch, IddCx virtual monitors, DDA capture, D3D11 stereo composition, named-pipe driver control, and vendor-neutral tracker boundaries`
+- `emingenc/even_glasses` - `Studied in Wave 234 as a Python BLE command micro-library for Even Realities glasses with left/right scanning, write lock, reconnect attempts, heartbeat, command enums, text pagination, RSVP, dashboard, brightness, silent mode, notes, and notification chunking`
+- `fabioglimb/even-toolkit` - `Studied in Wave 234 as a G2 app framework and design system with per-screen display/action routing, 576x288 layout constants, split/column pages, raw EvenHub bridge access, gesture debouncing, text-update scroll suppression, keep-alive, STT modules, and web components`
+- `even-realities/evenhub-templates` - `Studied in Wave 234 as official G2 starter templates for minimal text, ASR/mic streaming, image rendering, long-text pagination, event routing, double-tap shutdown, render debounce, and grayscale/image preprocessing caveats`
+- `Commute773/g2-kit-unofficial` - `Studied in Wave 234 as a reverse-engineered G2 BLE/protocol stack with L/R arm session prelude, aa21 envelope framing, CRC-16, protobuf builders, magic ack matching, pipelined writes, async events, LC3 audio, image tiling, render coalescer, explicit pager, and firmware gotcha docs`
+
+## 206. Browser-native WebXR drawing, whiteboard, and creative surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-235-browser-native-webxr-drawing-whiteboard-and-creative-surfaces.md`
+- `../landscape/project-families.md`
+
+- `localtoast42/webxr-whiteboard` - `Studied in Wave 235 as a thin Three/WebXR interaction probe with engine/player/controller boundaries, XRButton, controller grip/ray spaces, gamepad wrapper, squeeze-driven object hit checks, and bounding-box material feedback`
+- `felixtrz/canvrs` - `Studied in Wave 235 as an Elixr/Three AR painting micro-tool with GLTF multitool attachment, mode toggle, pressure threshold, color cycling, line buffer draw ranges, min-distance sampling, line bounding boxes, and eraser-size variants`
+- `n1ckfg/LightningLoops` - `Studied in Wave 235 as a networked/generative LATK stroke surface with Express/socket.io frame server, client stroke upload, frame requests, local/remote layers, frame motor, turtle-generated stroke morphs, Magenta input, JSON save, and stroke lifetime cleanup`
+- `nuonical/webxr-babylon` - `Studied in Wave 235 as a Babylon creative workbench with XR lifecycle, controller locomotion, trigger drawing, palette toggles, pointer blocking, desktop fallback drawing, tube/ribbon/metaball strokes, chunk splitting, stroke/point limits, haptics, portal tests, and in-world FPS diagnostics`
+- `sierrajanson/Harold-in-VR` - `Studied in Wave 235 as an A-Frame drawing/prototyping tool with global tool state, left-trigger menu, shape submenu, tool isolation, gradient color picker via raycast UV canvas sampling, ruler measurements, shape drag/resize workflows, grid/background UX, and clear/erase surfaces`
+- `cpufreestyle/vr-paint` - `Studied in Wave 235 as an A-Painter fork with controller input mappings, brush registration API, pressure-aware strokes, shared buffer geometry, undo/clear/remove, JSON and binary apa save/load, URL-based load, upload/share flow, tooltip fade, and controller model feedback`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

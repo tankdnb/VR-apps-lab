@@ -177,6 +177,11 @@ These are the clearest current product and research lines:
    scientific visualization workbenches, CAD/code/editor work surfaces,
    audio-reactive depth/passthrough menus, and WebXR SDK/runtime maturity
    comparisons.
+35. `WebXR teleoperation, operational panels, smart-glasses HUDs, and browser-native creative tools`
+   the repository now has fresh coverage of Quest/WebXR robot command
+   frontends, safety gates, recording and validation flows, VR terminals and
+   dashboards, Viture/Even Realities glasses protocols, BLE/HUD cadence
+   constraints, and browser-native drawing/annotation workbench patterns.
 
 ## Most useful current docs
 
@@ -320,6 +325,10 @@ instead of full history:
 - `landscape/vr-projects-wave-229-immersive-data-robotics-and-scientific-visualization-workbenches.md`
 - `landscape/vr-projects-wave-230-scriptable-webxr-modeling-viewer-and-creative-surfaces.md`
 - `landscape/vr-projects-wave-231-webxr-prototyping-runtime-micro-frameworks-and-experimental-primitives.md`
+- `landscape/vr-projects-wave-232-webxr-robot-teleoperation-frontends-safety-gates-and-data-collection.md`
+- `landscape/vr-projects-wave-233-vr-terminal-shell-and-operational-dashboard-surfaces.md`
+- `landscape/vr-projects-wave-234-xr-smart-glasses-low-level-sdks-virtual-displays-and-ble-hud-templates.md`
+- `landscape/vr-projects-wave-235-browser-native-webxr-drawing-whiteboard-and-creative-surfaces.md`
 
 ## Strong donor clusters right now
 
@@ -1002,6 +1011,10 @@ directions:
 148. `Vendor OpenXR extension-wrapper matrix across lifecycle, feature gates, and build metadata`
 149. `VR microhelper safety matrix across input translation, calibration, observer, and passthrough tools`
 150. `XR creator workbench interaction matrix across CAD, menus, panels, files, snapping, and feedback`
+151. `WebXR teleoperation safety matrix across transports, HUDs, validation, stale gates, and recording`
+152. `Operational XR panel matrix across terminal grids, shell worlds, diagnostic reports, and dashboards`
+153. `Smart-glasses HUD/runtime matrix across IMU, virtual displays, BLE, render cadence, and constrained layouts`
+154. `Browser-native creative surface matrix across stroke geometry, tool menus, palettes, persistence, and collaboration`
 
 ## Current repository-maintenance priorities
 

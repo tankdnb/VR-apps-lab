@@ -13343,3 +13343,149 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   WebXR runtime matrices, simulator-backed prototype notes, interaction
   primitive catalogs, and framework maturity labels.
+
+## Method 677: XR teleoperation command bridge with safety-gated input
+
+- What it is:
+  a headset or browser XR frontend emits pose, controller, hand, body, grip,
+  mode, and reset state into an adapter layer that validates stale data,
+  enforces motion gates, and only then commands an external robot or device.
+- Good for:
+  robot teleoperation, external-device control, operator HUDs, risky overlay
+  actions, data collection, and diagnostics that need explicit safety state.
+- Why it matters:
+  raw XR pose streams are too risky to wire directly into physical or external
+  actions; reusable tools need deadman gates, stale-data policy, transform
+  checks, feedback, and validation.
+- Source evidence:
+  `SpesRobotics/teleop`, `ajhai/teleop-xr`,
+  `fracapuano/maniskill-quest-teleop`, `almond-bot/axol-vr`, and
+  `vivek-kanjarla/Quest3-Fairino`.
+- Reusable core:
+  isolate XR input source, normalized payload schema, transport,
+  robot/device adapter, safety gates, stale timeout, pose jump protection,
+  transform/IK mapping, operator HUD, validation or simulation mode, recording,
+  and debug capture.
+- Do not copy directly:
+  hardware IPs, robot SDK calls, certificates, hardcoded LAN endpoints, ADB
+  transport assumptions, no-auth control servers, or physical actuation without
+  deadman, stale-data, and validation layers.
+- Strong references:
+  `Quest3-Fairino` for staged safety and diagnostics, `maniskill-quest-teleop`
+  for WebRTC telemetry/backpressure, `teleop-xr` for typed robot payloads,
+  `axol-vr` for operator HUD state, and `SpesRobotics/teleop` for compact
+  transform-gated callback shape.
+- Maturity:
+  strong method; implementations remain hardware- and safety-policy-specific.
+- Best fit for `VR-apps-lab`:
+  teleoperation safety matrices, external-device command schemas, operator HUD
+  design, and future high-risk utility control surfaces.
+
+## Method 678: Operational XR surface from command, grid, or data state
+
+- What it is:
+  a utility exposes bounded command, terminal, diagnostic, network, log, or
+  dashboard state as a spatial panel instead of streaming a full desktop or
+  unbounded application window.
+- Good for:
+  VR terminals, log panels, OpenXR/SteamVR doctor reports, network maps,
+  local-first dashboards, notes/bookmarks/photos, and cockpit widgets.
+- Why it matters:
+  operational surfaces need clarity and safety: users should see the command
+  or data model, not inherit the entire risk and bandwidth profile of a remote
+  desktop.
+- Source evidence:
+  `max-gaspers-scott/VR-Terminal`, `coderofsalvation/xrsh`,
+  `soren42/visual-traceroute`, `CanaanMuayad/earthshift-vr`, and
+  `MKTHINGS/webxr-dashboard-meta-quest`.
+- Reusable core:
+  isolate data/command source, state snapshot model, renderer/panel, input or
+  keymap model, progress/status channel, local persistence/export, and
+  privilege/auth scope.
+- Do not copy directly:
+  shell exposure without auth, root network probing without scope, giant
+  bundled shell artifacts, public command servers, or personal dashboard
+  content as general product logic.
+- Strong references:
+  `VR-Terminal` for character-grid snapshots, `visual-traceroute` for
+  diagnostic graph/report flow, `earthshift-vr` for panel manipulation, and
+  `webxr-dashboard-meta-quest` for local-first dashboard models.
+- Maturity:
+  strong product pattern; security boundaries must be designed first.
+- Best fit for `VR-apps-lab`:
+  runtime doctor panels, VR logs/terminal prototypes, local dashboard
+  microtools, and operational overlay design.
+
+## Method 679: Constrained smart-glasses HUD runtime and BLE/protocol boundary
+
+- What it is:
+  a smart-glasses utility separates vendor/device transport from HUD screen
+  routing, render cadence, text/image/audio constraints, gestures, paging,
+  keep-alive, and shutdown behavior.
+- Good for:
+  optical smart-glasses HUDs, BLE text dashboards, head-mouse utilities,
+  virtual display helpers, low-bandwidth notification panes, and G2/G1 style
+  app templates.
+- Why it matters:
+  smart-glasses displays are small, slow, and device-specific; render queues,
+  lens sync, BLE ack behavior, and text/image constraints become first-class
+  architecture, not implementation details.
+- Source evidence:
+  `boomskats/woahland`, `Wojtekb30/EasyVXR`, `darkclad/uxspace`,
+  `emingenc/even_glasses`, `fabioglimb/even-toolkit`,
+  `even-realities/evenhub-templates`, and `Commute773/g2-kit-unofficial`.
+- Reusable core:
+  isolate device adapter, session/prelude, envelope/ack/backpressure, display
+  constants, screen router, render coalescer, pager, gesture debounce,
+  keep-alive, exit/shutdown path, and protocol/device caveats.
+- Do not copy directly:
+  proprietary SDK binaries, reverse-engineered constants without review,
+  hardcoded BLE UUIDs as universal truth, concurrent render writes, animated
+  scrolling that can desync lenses, or platform-specific driver assumptions.
+- Strong references:
+  `g2-kit-unofficial` for BLE/protocol separation and render coalescing,
+  `even-toolkit` for per-screen app routing, `evenhub-templates` for official
+  template constraints, `UxSpace` for spatial desktop layering, and `woahland`
+  for IMU-to-input runtime control.
+- Maturity:
+  strong method; direct reuse depends on device, license, and support status.
+- Best fit for `VR-apps-lab`:
+  XR-glasses protocol matrices, constrained HUD design rules, virtual display
+  comparisons, and low-bandwidth notification surfaces.
+
+## Method 680: Browser-native WebXR creative stroke workbench
+
+- What it is:
+  a WebXR creative or annotation tool separates controller input, tool state,
+  active stroke data, geometry building, palette/menu selection, erasing,
+  persistence, and collaboration transport.
+- Good for:
+  VR whiteboards, annotation overlays, sketch tools, calibration markups,
+  ruler/measurement panels, 3D drawing utilities, and browser-native creator
+  workbenches.
+- Why it matters:
+  creative tools reveal reusable VR interaction mechanics: pressure, sampling,
+  smoothing, mode gating, palette blocking, undo, save/load, and geometry
+  limits are broadly useful beyond art apps.
+- Source evidence:
+  `localtoast42/webxr-whiteboard`, `felixtrz/canvrs`,
+  `n1ckfg/LightningLoops`, `nuonical/webxr-babylon`,
+  `sierrajanson/Harold-in-VR`, and `cpufreestyle/vr-paint`.
+- Reusable core:
+  isolate controller adapter, pressure/trigger mapping, tool/mode state,
+  active stroke buffer, geometry strategy, eraser/selection, palette/menu
+  blocking, persistence/export adapter, and optional collaboration transport.
+- Do not copy directly:
+  classroom/demo globals, old WebVR bundles, large binary assets or dist
+  builds, public socket servers, forked brush code without upstream review, or
+  unbounded point buffers.
+- Strong references:
+  `vr-paint` for mature brush/storage shape, `webxr-babylon` for chunking and
+  palette blocking, `canvrs` for compact multitool design, `LightningLoops` for
+  collaborative/generative strokes, and `Harold-in-VR` for menu/mode/ruler
+  UX.
+- Maturity:
+  strong interaction method; donors vary from micro-probes to mature forks.
+- Best fit for `VR-apps-lab`:
+  annotation/whiteboard prototypes, browser-native tool menu patterns, stroke
+  storage matrices, and future diagnostic markup surfaces.

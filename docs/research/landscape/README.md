@@ -1017,6 +1017,25 @@ Use these files when you want to understand:
   declarative React/Babylon scenes, rough starters, depth interaction demos,
   and AR product UI primitives.
 
+- `vr-projects-wave-232-webxr-robot-teleoperation-frontends-safety-gates-and-data-collection.md`
+  Next GitHub discovery wave focused on WebXR/Quest robot teleoperation
+  frontends, safety gates, transport schemas, operator HUDs, validation modes,
+  and data collection flows.
+
+- `vr-projects-wave-233-vr-terminal-shell-and-operational-dashboard-surfaces.md`
+  Next GitHub discovery wave focused on VR terminals, shell worlds,
+  diagnostic graph outputs, cockpit widgets, and local-first dashboard panels.
+
+- `vr-projects-wave-234-xr-smart-glasses-low-level-sdks-virtual-displays-and-ble-hud-templates.md`
+  Next GitHub discovery wave focused on XR glasses IMU helpers, Viture spatial
+  desktop stacks, Even Realities BLE protocols, G2 templates, constrained HUDs,
+  render cadence, and smart-glasses comfort caveats.
+
+- `vr-projects-wave-235-browser-native-webxr-drawing-whiteboard-and-creative-surfaces.md`
+  Next GitHub discovery wave focused on browser-native drawing, whiteboard,
+  multitool, stroke geometry, palette/menu, ruler, shape, persistence, and
+  collaborative creative-surface patterns.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

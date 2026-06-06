@@ -6932,6 +6932,148 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - framework maturity labels
 - depth/gesture/UI reusable module boundaries
 
+## Family 211: WebXR robot teleoperation frontends, safety gates, and data collection
+
+This family covers WebXR/Quest headset frontends that transform controller,
+hand, body, or headset state into bounded robot/device command streams with
+operator feedback, recording, and validation.
+
+| Project | Status | Notes |
+|---|---|---|
+| `SpesRobotics/teleop` | Studied in Wave 232 | compact WebXR pose-to-callback bridge with hold-to-move, scale presets, transform conversion, relative pose reset, and jump limiting |
+| `ajhai/teleop-xr` | Studied in Wave 232 | protobuf robot adapter with binary WebSocket, heartbeat, robot manager, status/joint/camera payloads, and camera planes |
+| `fracapuano/maniskill-quest-teleop` | Studied in Wave 232 | Quest WebRTC telemetry/control bridge with rate partitioning, stale-hand policy, backpressure, and debug capture |
+| `almond-bot/axol-vr` | Studied in Wave 232 | R3F operator HUD and data collection surface with teleop/recording state, body-tracked elbows, lock flags, and countdown UX |
+| `vivek-kanjarla/Quest3-Fairino` | Studied in Wave 232 | safety-first physical robot pipeline with stale gates, deadman switch, delta mapping, sim/validate/live modes, diagnostics, and episode recording |
+
+### Consolidation note
+
+This family matters because risky external-control surfaces should name:
+
+- XR input source and payload schema
+- transport and backpressure model
+- safety gate and stale-data policy
+- transform/IK/adapter boundary
+- operator HUD state
+- validation or simulation stage
+- recording/debug capture
+- hardware and network caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- teleoperation safety matrices
+- headset operator HUD patterns
+- external-device command schemas
+- WebXR-to-device adapter boundaries
+- recording and debug-capture checklists
+
+## Family 212: VR terminal, shell, and operational dashboard surfaces
+
+This family covers XR surfaces that render command, text-grid, data, network,
+or local dashboard state as spatial panels rather than arbitrary desktop
+pixels.
+
+| Project | Status | Notes |
+|---|---|---|
+| `max-gaspers-scott/VR-Terminal` | Studied in Wave 233 | Rust PTY/VTE terminal with Socket.IO snapshots, cell attributes, row revisions, command overlay, canvas texture, and A-Frame plane |
+| `coderofsalvation/xrsh` | Studied in Wave 233 | shell-as-XR-world concept with A-Frame terminal, self-container, hand/ray/gaze controls, and windowing substrate |
+| `soren42/visual-traceroute` | Studied in Wave 233 | CLI network scan to WebXR graph artifact with progress server, status polling, MST/BFS/force layout, and self-contained output |
+| `CanaanMuayad/earthshift-vr` | Studied in Wave 233 | modular cockpit with draggable glass panels, border-drag versus center-click separation, locomotion store, and persisted widget state |
+| `MKTHINGS/webxr-dashboard-meta-quest` | Studied in Wave 233 | Quest/A-Frame local-first notes/bookmarks/photos dashboard with haptics, autosave, JSON import/export, and unsupported-device overlay |
+
+### Consolidation note
+
+This family matters because operational XR tools should name:
+
+- state source and privilege boundary
+- low-bandwidth state model
+- panel rendering strategy
+- input/keymap/focus model
+- progress and diagnostics reporting
+- local persistence/export
+- auth, TLS, scan scope, and command-exposure caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- terminal/log panel patterns
+- diagnostic report surfaces
+- local-first utility dashboards
+- VR cockpit widget placement
+- secure command surface guidance
+
+## Family 213: XR/smart glasses SDK, virtual display, protocol, and constrained HUD stacks
+
+This family covers optical XR/smart glasses implementation patterns across
+IMU/head-mouse helpers, vendor SDK wrappers, spatial desktops, BLE transports,
+and constrained HUD templates.
+
+| Project | Status | Notes |
+|---|---|---|
+| `boomskats/woahland` | Studied in Wave 234 | Linux Viture head-mouse with uinput output, IMU mapping, smoothing/deadzone, roll-scroll, config reload, Unix socket control, and recenter |
+| `Wojtekb30/EasyVXR` | Studied in Wave 234 | thread-safe minimal C Viture SDK facade for IMU data, quaternion/euler decoding, 3D mode, frequency, and safe disconnect |
+| `darkclad/uxspace` | Studied in Wave 234 | Android/Windows XR glasses spatial desktop with VirtualDisplay/SurfaceTexture, Shizuku app screens, IddCx virtual monitors, DDA capture, and vendor-neutral tracker boundary |
+| `emingenc/even_glasses` | Studied in Wave 234 | Python BLE G1 command library with scanning, write lock, heartbeat, reconnect, text pages, RSVP, dashboard, brightness, notes, and notifications |
+| `fabioglimb/even-toolkit` | Studied in Wave 234 | G2 app framework/design system with per-screen router, layout constants, split/column pages, gesture debounce, keep-alive, STT, and web components |
+| `even-realities/evenhub-templates` | Studied in Wave 234 | official G2 templates for minimal text, ASR, image, long-text pagination, event routing, render debounce, and double-tap shutdown |
+| `Commute773/g2-kit-unofficial` | Studied in Wave 234 | reverse-engineered G2 BLE/protocol stack with L/R session, aa21 framing, CRC, magic acks, pipelined writes, events, audio, images, coalescer, pager, and gotcha docs |
+
+### Consolidation note
+
+This family matters because smart-glasses utilities should name:
+
+- device/vendor adapter
+- IMU/head-pose or BLE transport layer
+- session/prelude/ack/backpressure behavior
+- display and layout constraints
+- render cadence and coalescing
+- paging versus scrolling choice
+- keep-alive and shutdown/exit path
+- proprietary/reverse-engineered protocol caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- XR glasses protocol matrices
+- constrained HUD design rules
+- virtual display and spatial desktop comparisons
+- BLE render backpressure guidance
+- optical-display comfort caveats
+
+## Family 214: Browser-native WebXR drawing, whiteboard, and creative workbench surfaces
+
+This family covers WebXR/A-Frame/Three/Babylon creative surfaces whose reusable
+value sits in controller input, tool menus, stroke geometry, palettes,
+measurement, persistence, and collaboration.
+
+| Project | Status | Notes |
+|---|---|---|
+| `localtoast42/webxr-whiteboard` | Studied in Wave 235 | thin controller/entity hit-test probe with grip/ray spaces, gamepad wrapper, squeeze checks, and bounding-box feedback |
+| `felixtrz/canvrs` | Studied in Wave 235 | controller-attached AR paint multitool with pressure strokes, line buffer ranges, min-distance sampling, colors, eraser, and bounding boxes |
+| `n1ckfg/LightningLoops` | Studied in Wave 235 | networked/generative LATK stroke surface with socket.io frame server, local/remote layers, turtle stroke morphs, Magenta input, and JSON save |
+| `nuonical/webxr-babylon` | Studied in Wave 235 | Babylon creative workbench with XR lifecycle, trigger drawing, palette pointer blocking, tube/ribbon/metaball modes, chunking, limits, haptics, and tests |
+| `sierrajanson/Harold-in-VR` | Studied in Wave 235 | A-Frame drawing/prototyping tool with shared tool state, menu/submenu isolation, raycast color picker, ruler, shapes, grid, and clear/erase surfaces |
+| `cpufreestyle/vr-paint` | Studied in Wave 235 | A-Painter fork with brush registration, pressure-aware points, shared buffer geometry, undo/clear, apa/json persistence, URL load, upload/share, and controller mappings |
+
+### Consolidation note
+
+This family matters because browser-native creative utilities should name:
+
+- controller pressure and trigger mapping
+- tool and mode state
+- palette/menu blocking
+- stroke sampling and smoothing
+- geometry builder and point limits
+- eraser/selection/ruler/shape tools
+- persistence, import/export, and sharing
+- collaboration or remote stroke transport
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VR annotation and whiteboard patterns
+- browser-native brush engine comparisons
+- in-headset tool menu state machines
+- stroke persistence formats
+- creative-surface performance limits
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

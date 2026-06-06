@@ -2409,6 +2409,58 @@ These are larger than a single repo and should guide the next research wave.
   sound/video, cleanup, AI/API-key boundaries, and maturity labels for SDKs
   versus thin or rough demos.
 
+### 185. `WebXR teleoperation safety matrix across transports, HUDs, validation, stale gates, and recording`
+
+- Main entries:
+  `teleop`, `teleop-xr`, `maniskill-quest-teleop`, `axol-vr`,
+  `Quest3-Fairino`
+- Why it matters:
+  Wave 232 deepened WebXR/Quest robot frontends. A future matrix should compare
+  WebSocket, protobuf, WebRTC, UDP, and local Python callback boundaries,
+  stale-data gates, deadman/hold-to-move semantics, transform conversion,
+  delta mapping, validation modes, recording state, debug capture, operator
+  HUD state, and what belongs in a reusable teleoperation safety adapter.
+
+### 186. `Operational XR panel matrix across terminal grids, shell worlds, diagnostic reports, and dashboards`
+
+- Main entries:
+  `VR-Terminal`, `xrsh`, `visual-traceroute`, `earthshift-vr`,
+  `webxr-dashboard-meta-quest`
+- Why it matters:
+  Wave 233 deepened command and operational surfaces. A future matrix should
+  compare PTY/VTE terminal grids, shell-as-world metaphors, diagnostic report
+  generation, progress/status servers, cockpit widgets, localStorage applets,
+  pointer capture, command buffers, unsupported-device overlays, and where a
+  reusable VR operator console should separate host process, transport, panel
+  renderer, and interaction policy.
+
+### 187. `Smart-glasses HUD/runtime matrix across IMU, virtual displays, BLE, render cadence, and constrained layouts`
+
+- Main entries:
+  `woahland`, `EasyVXR`, `uxspace`, `even_glasses`, `even-toolkit`,
+  `evenhub-templates`, `g2-kit-unofficial`
+- Why it matters:
+  Wave 234 deepened XR glasses and constrained HUD stacks. A future matrix
+  should compare IMU polling, recenter/smoothing, uinput emission,
+  VirtualDisplay and IddCx virtual-monitor lifecycles, BLE reconnect and
+  write-lock semantics, packet framing, ack matching, image/audio channels,
+  render coalescing, pagination versus scrolling, and layout rules for
+  small-FOV glasses.
+
+### 188. `Browser-native creative surface matrix across stroke geometry, tool menus, palettes, persistence, and collaboration`
+
+- Main entries:
+  `webxr-whiteboard`, `canvrs`, `LightningLoops`, `webxr-babylon`,
+  `Harold-in-VR`, `vr-paint`
+- Why it matters:
+  Wave 235 deepened WebXR drawing, whiteboard, and creative workbench surfaces.
+  A future matrix should compare controller/grip/ray boundaries, squeeze and
+  trigger handling, brush registration, pressure-aware point capture,
+  line-buffer and mesh-rebuild strategies, eraser/bounding-box models, palette
+  pointer blocking, menu isolation, ruler/grid helpers, undo and clear flows,
+  URL/file persistence, networked/generative strokes, and desktop fallback
+  drawing.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2577,6 +2629,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 162. `WebRTC surface-ingress matrix across desktop, camera, stereo, and local monitor panels`
 163. `Browser media projection matrix across depth, SBS, TV, local player, and gaze viewer modes`
 164. `OpenGloves adapter boundary matrix across named pipes, BLE, firmware, and haptics`
+165. `WebXR teleoperation safety matrix across transports, HUDs, validation, stale gates, and recording`
+166. `Operational XR panel matrix across terminal grids, shell worlds, diagnostic reports, and dashboards`
+167. `Smart-glasses HUD/runtime matrix across IMU, virtual displays, BLE, render cadence, and constrained layouts`
+168. `Browser-native creative surface matrix across stroke geometry, tool menus, palettes, persistence, and collaboration`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

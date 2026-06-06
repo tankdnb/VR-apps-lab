@@ -1645,3 +1645,31 @@ repeatable way.
 
 - `github-research-wave-231-backlog.md`
   Executed backlog for the Wave 231 pass.
+
+- `github-research-wave-232-plan.md`
+  Wave 232 research plan focused on WebXR robot teleoperation frontends,
+  safety gates, and data collection.
+
+- `github-research-wave-232-backlog.md`
+  Executed backlog for the Wave 232 pass.
+
+- `github-research-wave-233-plan.md`
+  Wave 233 research plan focused on VR terminal, shell, and operational
+  dashboard surfaces.
+
+- `github-research-wave-233-backlog.md`
+  Executed backlog for the Wave 233 pass.
+
+- `github-research-wave-234-plan.md`
+  Wave 234 research plan focused on XR/smart glasses low-level SDKs, virtual
+  displays, and BLE HUD templates.
+
+- `github-research-wave-234-backlog.md`
+  Executed backlog for the Wave 234 pass.
+
+- `github-research-wave-235-plan.md`
+  Wave 235 research plan focused on browser-native WebXR drawing, whiteboard,
+  and creative surfaces.
+
+- `github-research-wave-235-backlog.md`
+  Executed backlog for the Wave 235 pass.

@@ -240,6 +240,10 @@ This file complements:
 - `vr-projects-wave-229-immersive-data-robotics-and-scientific-visualization-workbenches.md`
 - `vr-projects-wave-230-scriptable-webxr-modeling-viewer-and-creative-surfaces.md`
 - `vr-projects-wave-231-webxr-prototyping-runtime-micro-frameworks-and-experimental-primitives.md`
+- `vr-projects-wave-232-webxr-robot-teleoperation-frontends-safety-gates-and-data-collection.md`
+- `vr-projects-wave-233-vr-terminal-shell-and-operational-dashboard-surfaces.md`
+- `vr-projects-wave-234-xr-smart-glasses-low-level-sdks-virtual-displays-and-ble-hud-templates.md`
+- `vr-projects-wave-235-browser-native-webxr-drawing-whiteboard-and-creative-surfaces.md`
 
 ## How to use this index
 
