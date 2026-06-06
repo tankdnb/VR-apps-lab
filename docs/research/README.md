@@ -243,6 +243,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-245-openxr-micro-layer-render-shaping-foveation-and-tracking-diagnostics.md`
 - `landscape/vr-projects-wave-246-slimevr-diy-tracker-hardware-pcb-case-and-firmware-boundaries.md`
 - `landscape/vr-projects-wave-247-webcam-avatar-body-tracking-bridges-and-vrm-motion-surfaces.md`
+- `landscape/vr-projects-wave-248-vrchat-obs-world-metadata-and-browser-source-overlays.md`
+- `landscape/vr-projects-wave-249-vrchat-obs-control-osc-scene-switching-and-movie-night-queues.md`
+- `landscape/vr-projects-wave-250-vrchat-virtual-production-camera-routing-and-live-stream-pipelines.md`
+- `landscape/vr-projects-wave-251-openvr-legacy-sensor-compatibility-and-synthetic-driver-shims.md`
 
 ## Archive Navigation
 

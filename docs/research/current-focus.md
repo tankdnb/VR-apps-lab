@@ -200,6 +200,13 @@ These are the clearest current product and research lines:
     intervention layers, diagnostic pose recorders, SlimeVR-style hardware
     PCB/case/firmware boundaries, and MediaPipe/WebRTC/OSC/driver/avatar
     retargeting pipelines.
+39. `VRChat OBS metadata, stream controls, event production, and OpenVR compatibility shims`
+    the repository now has fresh coverage of VRChat world-metadata overlays,
+    VRCX/log/API/browser-source adapters, OSC-to-OBS stream and scene control,
+    OBS-native scripts, movie-night queue/HLS operator stacks, VRChat
+    virtual-production and camera-routing workflows, RTMP/HLS world video
+    player pipelines, legacy Leap/Kinect OpenVR drivers, identity shims,
+    no-HMD mappings, and DIY HMD runtime-to-driver boundaries.
 
 ## Most useful current docs
 
@@ -359,6 +366,10 @@ instead of full history:
 - `landscape/vr-projects-wave-245-openxr-micro-layer-render-shaping-foveation-and-tracking-diagnostics.md`
 - `landscape/vr-projects-wave-246-slimevr-diy-tracker-hardware-pcb-case-and-firmware-boundaries.md`
 - `landscape/vr-projects-wave-247-webcam-avatar-body-tracking-bridges-and-vrm-motion-surfaces.md`
+- `landscape/vr-projects-wave-248-vrchat-obs-world-metadata-and-browser-source-overlays.md`
+- `landscape/vr-projects-wave-249-vrchat-obs-control-osc-scene-switching-and-movie-night-queues.md`
+- `landscape/vr-projects-wave-250-vrchat-virtual-production-camera-routing-and-live-stream-pipelines.md`
+- `landscape/vr-projects-wave-251-openvr-legacy-sensor-compatibility-and-synthetic-driver-shims.md`
 
 ## Strong donor clusters right now
 
@@ -1057,6 +1068,10 @@ directions:
 164. `OpenXR micro-layer safety matrix across negotiation, hooks, gates, bypass, diagnostics, and resource lifecycle`
 165. `SlimeVR DIY tracker hardware matrix across MCU, IMU, PCB, case, battery, firmware, packet schema, and license`
 166. `Camera/avatar body-tracking bridge matrix across calibration, MediaPipe, transport, OSC/driver output, and retargeting`
+167. `VRChat world metadata overlay matrix across registry, VRCX, logs, API, SSE, text files, and OBS scripts`
+168. `VRChat-to-OBS control bridge matrix across OSC, OBS WebSocket, scripts, hotkeys, queues, and feedback`
+169. `VR event production media pipeline matrix across in-world cameras, VJ routing, RTMP/HLS, camera OSC, and browser-source outputs`
+170. `OpenVR compatibility driver boundary matrix across Leap, Kinect, identity shims, no-HMD, vendor bridges, and DIY HMD runtime splits`
 
 ## Current repository-maintenance priorities
 

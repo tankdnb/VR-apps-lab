@@ -2615,6 +2615,58 @@ These are larger than a single repo and should guide the next research wave.
   triangulation, synthetic SteamVR trackers, VRM/ReadyPlayerMe retargeting,
   blendshape mapping, and hardcoded-network or bundled-source caveats.
 
+### 201. `VRChat world metadata overlay matrix across registry, VRCX, logs, API, SSE, text files, and OBS scripts`
+
+- Main entries:
+  `VRC-OBS-Overlay`, `vrc-obs-world-overlay`,
+  `vrc-world-credit-streaming-overlay`, `vrc-world-teller`,
+  `VRC_World_Location`, `obs-vrchat-log-reader`
+- Why it matters:
+  Wave 248 added several ways to turn VRChat location state into stream-facing
+  overlays. A future matrix should compare registry polling, VRCX SQLite and
+  cookie access, direct API polling, log-tail offsets, Server-Sent Events,
+  plain text files, OBS browser-source styling, OBS-native scene switching,
+  stale/rate-limit display, and privacy/credential boundaries.
+
+### 202. `VRChat-to-OBS control bridge matrix across OSC, OBS WebSocket, scripts, hotkeys, queues, and feedback`
+
+- Main entries:
+  `vrchat-obs-controller`, `VRChat-OBSOSC`, `obscontrol`,
+  `VRC-OBS-MicControl`, `VRChatObsMicMuteLink`, `VRChat-Movie-Night`,
+  `OBS-Scripts-for-VRChat`
+- Why it matters:
+  Wave 249 deepened control bridges rather than display-only overlays. A
+  future matrix should compare avatar parameter schemas, OBS v4/v5 adapters,
+  Streamlabs support, OBS-native scripts, hotkey shims, loading-screen scene
+  switching, mic mute debounce/correction, queue/player auto-advance,
+  MediaMTX/HLS health checks, auth, localhost trust, and status feedback.
+
+### 203. `VR event production media pipeline matrix across in-world cameras, VJ routing, RTMP/HLS, camera OSC, and browser-source outputs`
+
+- Main entries:
+  `virtualproduction-vrchat`, `TD2VRC`, `StreamToVRC`,
+  `VRC-Camera-control-webpage`, `vrc-stream-plugins`, `VRcoverOBS`
+- Why it matters:
+  Wave 250 added production-pipeline references around VRChat events and
+  stream routing. A future matrix should compare camera/crane/lighting
+  controls, overlay slides, TouchDesigner/Spout/RTSP workflow notes,
+  NGINX versus MediaMTX HLS, ffmpeg variant settings, public playback URLs,
+  camera OSC auth, preview routing, plugin output pages, avatar/browser-source
+  output, public port exposure, and latency caveats.
+
+### 204. `OpenVR compatibility driver boundary matrix across Leap, Kinect, identity shims, no-HMD, vendor bridges, and DIY HMD runtime splits`
+
+- Main entries:
+  `driver_leap`, `driver_kinectV1`, `driver_kinectV2`, `PseudoVive`,
+  `Half-Life-Alyx-novr`, `Viulux-V9-Driver-for-SteamVR`, `MurlokVR`
+- Why it matters:
+  Wave 251 added legacy and synthetic driver boundaries. A future matrix should
+  compare driver manifests, factory/provider layout, sensor polling,
+  skeleton-to-controller or tracker mapping, device identity properties,
+  calibration dashboards, property spoofing, no-HMD input mappings, vendor
+  headset bridge caveats, shared-memory pose transport, cleanup, and obsolete
+  SDK or hardcoded transport risks.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2799,6 +2851,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 178. `OpenXR micro-layer safety matrix across negotiation, hooks, gates, bypass, diagnostics, and resource lifecycle`
 179. `SlimeVR DIY tracker hardware matrix across MCU, IMU, PCB, case, battery, firmware, packet schema, and license`
 180. `Camera/avatar body-tracking bridge matrix across calibration, MediaPipe, transport, OSC/driver output, and retargeting`
+181. `VRChat world metadata overlay matrix across registry, VRCX, logs, API, SSE, text files, and OBS scripts`
+182. `VRChat-to-OBS control bridge matrix across OSC, OBS WebSocket, scripts, hotkeys, queues, and feedback`
+183. `VR event production media pipeline matrix across in-world cameras, VJ routing, RTMP/HLS, camera OSC, and browser-source outputs`
+184. `OpenVR compatibility driver boundary matrix across Leap, Kinect, identity shims, no-HMD, vendor bridges, and DIY HMD runtime splits`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

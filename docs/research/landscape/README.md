@@ -1093,6 +1093,26 @@ Use these files when you want to understand:
   calibration, OSC and SteamVR driver output, browser VRM surfaces, and Unity
   avatar retargeting.
 
+- `vr-projects-wave-248-vrchat-obs-world-metadata-and-browser-source-overlays.md`
+  Next GitHub discovery wave focused on VRChat world metadata overlays,
+  registry/VRCX/log/API source adapters, SSE/browser-source output, text-file
+  OBS paths, and OBS-native log readers.
+
+- `vr-projects-wave-249-vrchat-obs-control-osc-scene-switching-and-movie-night-queues.md`
+  Next GitHub discovery wave focused on VRChat-to-OBS control bridges, OSC
+  avatar parameters, OBS WebSocket adapters, OBS-native scripts, mic mute sync,
+  loading-screen scene switching, and movie-night queue/HLS operators.
+
+- `vr-projects-wave-250-vrchat-virtual-production-camera-routing-and-live-stream-pipelines.md`
+  Next GitHub discovery wave focused on VRChat event production, camera/crane
+  rigs, TouchDesigner/OBS routing, RTMP-to-HLS world video player pipelines,
+  camera OSC control pages, and browser-source stream outputs.
+
+- `vr-projects-wave-251-openvr-legacy-sensor-compatibility-and-synthetic-driver-shims.md`
+  Next GitHub discovery wave focused on OpenVR legacy sensor drivers, Leap and
+  Kinect adapters, identity shims, no-HMD drivers, vendor headset bridges, and
+  DIY HMD runtime-to-driver boundaries.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

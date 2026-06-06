@@ -1757,3 +1757,31 @@ repeatable way.
 
 - `github-research-wave-247-backlog.md`
   Executed backlog for the Wave 247 pass.
+
+- `github-research-wave-248-plan.md`
+  Wave 248 research plan focused on VRChat OBS world metadata and browser
+  source overlays.
+
+- `github-research-wave-248-backlog.md`
+  Executed backlog for the Wave 248 pass.
+
+- `github-research-wave-249-plan.md`
+  Wave 249 research plan focused on VRChat OBS control, OSC scene switching,
+  and movie night queues.
+
+- `github-research-wave-249-backlog.md`
+  Executed backlog for the Wave 249 pass.
+
+- `github-research-wave-250-plan.md`
+  Wave 250 research plan focused on VRChat virtual production, camera routing,
+  and live stream pipelines.
+
+- `github-research-wave-250-backlog.md`
+  Executed backlog for the Wave 250 pass.
+
+- `github-research-wave-251-plan.md`
+  Wave 251 research plan focused on OpenVR legacy sensor compatibility and
+  synthetic driver shims.
+
+- `github-research-wave-251-backlog.md`
+  Executed backlog for the Wave 251 pass.

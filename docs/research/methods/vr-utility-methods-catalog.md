@@ -13973,3 +13973,177 @@ When a new utility idea appears:
   body-tracking transport matrices, calibration UX checklists, avatar
   retargeting comparisons, synthetic tracker schemas, and webcam-to-avatar
   product references.
+
+## Method 693: VRChat world metadata overlay pipeline for OBS browser sources
+
+- What it is:
+  a stream-facing utility reads current VRChat world state from a local or
+  account-backed source, enriches it with world metadata, and exposes it as an
+  OBS browser source, text source, or OBS-native scene action.
+- Good for:
+  VRChat stream overlays, world-credit cards, current-world lower thirds,
+  transition scenes, event metadata panels, and lightweight streamer widgets.
+- Why it matters:
+  these tools stay maintainable when world-state ingress, metadata lookup,
+  overlay rendering, and stream-output integration are separate.
+- Source evidence:
+  `Natsumi-sama/VRC-OBS-Overlay`,
+  `philippgitpush/vrc-obs-world-overlay`,
+  `ktmage/vrc-world-credit-streaming-overlay`,
+  `Mahcks/vrc-world-teller`, `Elocin-Anagram/VRC_World_Location`, and
+  `nosjo/obs-vrchat-log-reader`.
+- Reusable core:
+  state source adapter, current-world dedupe, metadata fetch/cache, stale or
+  rate-limit state, browser-source or text-file renderer, OBS script action,
+  local port/path config, and privacy notes.
+- Source evidence details:
+  Wave 248 includes registry polling, VRCX SQLite reads, log tailing with file
+  offsets, VRChat API response validation, SSE, plain text files, and
+  OBS-native Lua scene switching.
+- Do not copy directly:
+  credential polling without a security model, auth-cookie extraction without
+  user consent, brittle log strings as the only parser, broad execution-policy
+  changes, or page scraping as the default metadata path.
+- Strong references:
+  `vrc-world-credit-streaming-overlay` for typed log-to-SSE design,
+  `vrc-obs-world-overlay` for polished config/overlay UX,
+  `VRC-OBS-Overlay` for registry micro-overlay shape, and
+  `obs-vrchat-log-reader` for OBS-native no-companion automation.
+- Maturity:
+  strong micro-utility method; source adapters vary in safety and stability.
+- Best fit for `VR-apps-lab`:
+  streamer overlay templates, VRChat state-source matrices, OBS browser-source
+  examples, and privacy/rate-limit caveat docs.
+
+## Method 694: Bidirectional VRChat-to-OBS control bridge with status feedback
+
+- What it is:
+  a control bridge maps VRChat avatar parameters, OSC messages, log events, or
+  local web-app actions to OBS commands and returns stream, record, replay,
+  scene, microphone, or player state to the operator.
+- Good for:
+  in-VR stream control, action-menu scene switching, replay buffer capture,
+  microphone mute sync, loading-screen scene changes, event-night queue
+  control, and OBS automation panels.
+- Why it matters:
+  controlling OBS from VR is risky if commands are fire-and-forget. A reusable
+  bridge needs schema, idempotency, status feedback, debounce, and permission
+  boundaries.
+- Source evidence:
+  `nerdywoffy/vrchat-obs-controller`,
+  `rogeraabbccdd/VRChat-OBSOSC`, `ioarchive/obscontrol`,
+  `TuTu475/VRC-OBS-MicControl`, `dimebag29/VRChatObsMicMuteLink`,
+  `0x29a-blink/VRChat-Movie-Night`, and
+  `MissingNO123/OBS-Scripts-for-VRChat`.
+- Reusable core:
+  command source, parameter schema, OBS adapter, action mapper, feedback
+  sender, reconnect/backoff, debounce/correction, scene bounds, credentials,
+  and visible failure state.
+- Source evidence details:
+  Wave 249 includes Go OSC sidecar adapters for OBS/Streamlabs, Node OBS v4/v5
+  compatibility, OBS-native Python scripts, a historical quick-menu mod,
+  hotkey shims, and an authenticated movie-night web stack with queue/player
+  state.
+- Do not copy directly:
+  VRChat mod hooks as current architecture, global hotkeys without conflict
+  review, empty OBS passwords, media-download scope creep, command handlers
+  without feedback, or broad localhost access without operator consent.
+- Strong references:
+  `vrchat-obs-controller` for parameter contracts and backend interfaces,
+  `VRChat-OBSOSC` for compact OBS v4/v5 bridging,
+  `OBS-Scripts-for-VRChat` for OBS-native packaging, and
+  `VRChat-Movie-Night` for robust queue/OBS/HLS operator state.
+- Maturity:
+  strong control-pattern method; security and permission model must be designed
+  before implementation reuse.
+- Best fit for `VR-apps-lab`:
+  OSC-to-OBS bridge templates, OBS script patterns, safe stream-control schema,
+  and event-operator backlog items.
+
+## Method 695: VR event production media pipeline across world controls, OBS, and HLS playback
+
+- What it is:
+  an event-production utility separates in-world production controls, desktop
+  visual/media sources, OBS capture or ingest, transcode/segment services,
+  public playback URLs, preview paths, and browser-source outputs.
+- Good for:
+  VRChat events, virtual production stages, VJing, live world video players,
+  remote camera direction, avatar/browser-source outputs, and stream plugin
+  dashboards.
+- Why it matters:
+  live VR events fail at boundaries: camera control, preview, ingest,
+  transcoding, network exposure, and viewer playback need to be documented as
+  one pipeline but implemented as separable parts.
+- Source evidence:
+  `designio360/virtualproduction-vrchat`, `valkyriedimension/TD2VRC`,
+  `RemilRLs/StreamToVRC`, `dragokenlancer/VRC-Camera-control-webpage`,
+  `reece-berens/vrc-stream-plugins`, and `furukawa1020/VRcoverOBS`.
+- Reusable core:
+  production source, operator controls, media ingest, transcode or segment
+  service, playback URL, preview source, browser-source route, stream health,
+  latency choice, public port policy, and setup checklist.
+- Source evidence details:
+  Wave 250 includes VRChat camera/crane/slide production packages,
+  TouchDesigner/OBS routing, NGINX RTMP-to-HLS configs, browser camera OSC
+  control with sessions, stream plugin output routes, and browser-avatar OBS
+  output.
+- Do not copy directly:
+  source-light Unity packages as code donors, public RTMP/HLS ports as safe
+  defaults, beta camera OSC addresses as stable APIs, or broad avatar/AI stacks
+  as core production architecture.
+- Strong references:
+  `StreamToVRC` for minimal RTMP-to-HLS infrastructure,
+  `VRC-Camera-control-webpage` for authenticated camera-control separation,
+  `virtualproduction-vrchat` for in-world production UX, and `TD2VRC` for VJ
+  routing workflow.
+- Maturity:
+  useful production-pipeline method; individual projects range from source
+  code donors to workflow/product references.
+- Best fit for `VR-apps-lab`:
+  VR event production checklists, HLS transport comparisons, camera-control
+  safety notes, and operator-surface backlog items.
+
+## Method 696: OpenVR compatibility driver boundary for legacy sensors and synthetic devices
+
+- What it is:
+  an OpenVR compatibility driver makes hardware or synthetic devices visible to
+  SteamVR through an explicit boundary between driver registration, hardware
+  polling or shim source, pose/input transport, identity, settings,
+  calibration, and cleanup.
+- Good for:
+  legacy hand sensors, Kinect body trackers, DIY headset experiments,
+  no-HMD drivers, virtual-HMD helpers, compatibility shims, and custom-device
+  learning paths.
+- Why it matters:
+  driver projects become risky when they hide identity spoofing, sensor IO,
+  calibration, and runtime registration inside one opaque DLL. Reuse starts by
+  naming each boundary and caveat.
+- Source evidence:
+  `SDraw/driver_leap`, `SDraw/driver_kinectV1`,
+  `SDraw/driver_kinectV2`, `schellingb/PseudoVive`,
+  `r57zone/Half-Life-Alyx-novr`,
+  `lixiangwuxian/Viulux-V9-Driver-for-SteamVR`, and
+  `Blockmann2K/MurlokVR`.
+- Reusable core:
+  driver manifest, `HmdDriverFactory`, provider, device class, property
+  schema, pose/input contract, sensor runtime or shim source, calibration UI,
+  companion app, settings, transport, cleanup, and compatibility warnings.
+- Source evidence details:
+  Wave 251 includes Leap polling to Index-like controllers, Kinect skeletons
+  to generic trackers, MinHook property spoofing, no-HMD key/controller maps,
+  vendor headset lineage notes, and a Rust runtime to OpenVR shared-memory HMD
+  split.
+- Do not copy directly:
+  model-name spoofing as a recommended pattern, obsolete Kinect/Leap SDK
+  setup, global key injection, README-only hardware claims, hardcoded COM
+  ports, or game-specific mappings as general-purpose drivers.
+- Strong references:
+  `driver_leap` for sensor polling plus controller/skeleton mapping,
+  `driver_kinectV1` and `driver_kinectV2` for skeleton-to-tracker calibration,
+  `PseudoVive` for compatibility-shim caveats, and `MurlokVR` for
+  runtime-to-driver shared-memory separation.
+- Maturity:
+  high-value driver-boundary method with high compatibility risk.
+- Best fit for `VR-apps-lab`:
+  OpenVR driver matrices, custom-device note templates, identity spoofing risk
+  docs, DIY HMD transport comparisons, and headsetless workflow caveats.

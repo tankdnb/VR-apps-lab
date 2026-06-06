@@ -3235,6 +3235,64 @@ Primary docs:
 - `yeemachine/kalidoface-3d` - `Studied in Wave 247 as a browser VRM/Vtubing product reference with MediaPipe/Kalidokit, Three/VRM, localforage persistence, custom backgrounds/stickers, chroma/OBS mode, six-digit P2P voice framing, and bundled-source caveat`
 - `Neleac/MesekaiUnity` - `Studied in Wave 247 as a Unity MediaPipe avatar retargeting donor with pose/hand/face solvers, mirror mode, smoothing, blendshape mapping, template-avatar motion transfer, ReadyPlayerMe avatar loading, and Photon serialization`
 
+## 219. VRChat OBS world metadata and browser source overlays
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-248-vrchat-obs-world-metadata-and-browser-source-overlays.md`
+- `../landscape/project-families.md`
+
+- `Natsumi-sama/VRC-OBS-Overlay` - `Studied in Wave 248 as a Blazor localhost OBS browser-source overlay with VRChat Windows registry location polling, OpenGraph world metadata extraction, no-cache server responses, Razor UI updates, and CSS customization`
+- `philippgitpush/vrc-obs-world-overlay` - `Studied in Wave 248 as an Electron/Vue overlay reading VRCX SQLite world state and auth-cookie data, serving local Express routes, exposing settings JSON, enforcing local CORS, and rendering configurable overlay placement/platform UI`
+- `ktmage/vrc-world-credit-streaming-overlay` - `Studied in Wave 248 as a TypeScript VRChat log watcher and browser-source overlay with incremental file offsets, Zod schemas, official API contact handling, cache/rate-limit state, SSE updates, and card/topbar styles`
+- `Mahcks/vrc-world-teller` - `Studied in Wave 248 as a tiny Node VRChat API poller that writes current world or world-plus-author text to a file for OBS text sources, with credential/rate-limit caveats`
+- `Elocin-Anagram/VRC_World_Location` - `Studied in Wave 248 as a PowerShell VRChat log tailer with adaptive tail size, generated text/performance files, and a browser-source HTML page polling local files`
+- `nosjo/obs-vrchat-log-reader` - `Studied in Wave 248 as an OBS Lua script that reads VRChat logs directly and switches scenes on room transition events`
+
+## 220. VRChat OBS control, OSC scene switching, and movie night queues
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-249-vrchat-obs-control-osc-scene-switching-and-movie-night-queues.md`
+- `../landscape/project-families.md`
+
+- `nerdywoffy/vrchat-obs-controller` - `Studied in Wave 249 as a Go OSC sidecar with VRChat avatar parameter contracts, OBS v5 and Streamlabs adapters, replay/record/stream/scene controls, 500 ms status polling, and avatar feedback`
+- `rogeraabbccdd/VRChat-OBSOSC` - `Studied in Wave 249 as a compact Node OBS v4/v5 WebSocket bridge controlled by VRChat expression-menu parameters with startup state sync and scene/stream event feedback`
+- `ioarchive/obscontrol` - `Studied in Wave 249 as a historical MelonLoader/ReMod quick-menu OBS controller with obs-websocket buttons and world leave/join scene switching, retained mainly as UX reference with EAC/TOS caveats`
+- `TuTu475/VRC-OBS-MicControl` - `Studied in Wave 249 as an OBS Python script that listens to VRChat muteself OSC, debounces input, periodically corrects OBS microphone mute state, and exposes script-panel settings`
+- `dimebag29/VRChatObsMicMuteLink` - `Studied in Wave 249 as a Windows tray app mapping VRChat MuteSelf OSC to global OBS hotkey chords through pythonosc, pywin32, and pystray`
+- `0x29a-blink/VRChat-Movie-Night` - `Studied in Wave 249 as a local event operator stack with authenticated web UI, media library/queue, OBS media-source control, auto-advance, OBS busy/offline handling, MediaMTX HLS presets, and VRChat video-player HLS output`
+- `MissingNO123/OBS-Scripts-for-VRChat` - `Studied in Wave 249 as OBS-native Python scripts for VRChat loading-screen scene switching and OSC action-menu OBS controls with status feedback`
+
+## 221. VRChat virtual production, camera routing, and live stream pipelines
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-250-vrchat-virtual-production-camera-routing-and-live-stream-pipelines.md`
+- `../landscape/project-families.md`
+
+- `designio360/virtualproduction-vrchat` - `Studied in Wave 250 as a source-light Unity package reference for VRChat production stages with multiple cameras, camera crane, overlay slides, lighting controls, in-world buttons, keyboard controls, and OBS capture`
+- `valkyriedimension/TD2VRC` - `Studied in Wave 250 as a TouchDesigner-to-VRChat VJ routing workflow using OBS, Spout/window capture, RTSP, stream links, screenshots, and a .toe example`
+- `RemilRLs/StreamToVRC` - `Studied in Wave 250 as a Docker/NGINX RTMP-to-HLS donor with OBS ingest, ffmpeg multi-bitrate variants, HLS fragment settings, CORS/no-cache headers, and VRChat video-player URL framing`
+- `dragokenlancer/VRC-Camera-control-webpage` - `Studied in Wave 250 as a POC browser control surface for VRChat camera OSC pose/zoom with local password sessions, public-viewing separation, hand-rolled OSC parsing, and preview-routing intent`
+- `reece-berens/vrc-stream-plugins` - `Studied in Wave 250 as an adjacent browser-source stream plugin shell with API helper service, Next route/output pages, and typed event-score helpers`
+- `furukawa1020/VRcoverOBS` - `Studied in Wave 250 as an adjacent avatar/OBS output system with OpenSeeFace/MediaPipe to WebSocket gateway, browser avatar runtime, tracking reconnects, canvas-to-WebSocket streaming, and OBS browser-source/virtual-camera docs`
+
+## 222. OpenVR legacy sensor compatibility and synthetic driver shims
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-251-openvr-legacy-sensor-compatibility-and-synthetic-driver-shims.md`
+- `../landscape/project-families.md`
+
+- `SDraw/driver_leap` - `Studied in Wave 251 as a Leap Motion to SteamVR controller driver with Leap poller thread, tracking reference registration, left/right controller devices, skeleton/input mapping, hand/cursor overlays, and companion settings app`
+- `SDraw/driver_kinectV1` - `Studied in Wave 251 as a Kinect V1 skeleton to SteamVR generic tracker driver with joint filters, Vive Tracker-style identity properties, dashboard settings, tracker toggles, and controller-driven calibration`
+- `SDraw/driver_kinectV2` - `Studied in Wave 251 as a Kinect V2 sensor variant with similar driver/dashboard/calibration boundaries and runtime-specific caveats`
+- `schellingb/PseudoVive` - `Studied in Wave 251 as an early-load OpenVR driver shim using MinHook around property writes to force Vive manufacturer/model identity, with optional systray toggling`
+- `r57zone/Half-Life-Alyx-novr` - `Studied in Wave 251 as a game-specific no-HMD SteamVR driver and keyboard/mouse control-mapping reference with sample-driver lineage, INI key maps, and heavy caveats`
+- `lixiangwuxian/Viulux-V9-Driver-for-SteamVR` - `Studied in Wave 251 as a README-only vendor headset bridge reference tying Viulux, Relativty, OpenHMD, and Nolo requirements together with explicit bug warnings`
+- `Blockmann2K/MurlokVR` - `Studied in Wave 251 as a DIY HMD experiment with firmware, Rust serial runtime, shared-memory pose contract, OpenVR factory/provider, HMD settings, input profile, and pose snapshot polling`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

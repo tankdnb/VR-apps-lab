@@ -7478,6 +7478,145 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - synthetic tracker output schemas
 - webcam-to-avatar product reference notes
 
+## Family 227: VRChat OBS world metadata and browser source overlays
+
+This family covers streamer-facing overlays that convert VRChat world/location
+state into OBS browser sources, text files, or scene events.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Natsumi-sama/VRC-OBS-Overlay` | Studied in Wave 248 | Blazor localhost OBS browser source using VRChat registry location context, world metadata extraction, Razor UI updates, no-cache responses, and CSS customization |
+| `philippgitpush/vrc-obs-world-overlay` | Studied in Wave 248 | Electron/Vue overlay reading VRCX SQLite world state and auth-cookie data, serving local Express routes, storing settings, and rendering polished placement/platform overlays |
+| `ktmage/vrc-world-credit-streaming-overlay` | Studied in Wave 248 | TypeScript log watcher and SSE browser source with incremental file offsets, Zod schemas, VRChat API contact handling, cache/rate-limit state, and card/topbar styles |
+| `Mahcks/vrc-world-teller` | Studied in Wave 248 | Tiny Node VRChat API poller that writes current world text for OBS text sources |
+| `Elocin-Anagram/VRC_World_Location` | Studied in Wave 248 | PowerShell log tailer with adaptive tail sizing, generated world/performance text files, and HTML browser-source polling |
+| `nosjo/obs-vrchat-log-reader` | Studied in Wave 248 | OBS Lua script reading VRChat logs directly and switching OBS scenes on room transition events |
+
+### Consolidation note
+
+This family matters because stream overlays should name:
+
+- state source: registry, VRCX, log file, API, or OBS script
+- dedupe and current-world detection
+- metadata fetch/cache and rate-limit state
+- browser-source, text-file, or scene-switch output
+- privacy and credential boundaries
+- stale/error UI for stream viewers
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- safe VRChat state-source adapters
+- OBS browser-source templates
+- log-to-SSE overlay examples
+- streamer metadata overlays with explicit privacy notes
+- OBS-native script versus companion-app comparisons
+
+## Family 228: VRChat OBS control, OSC scene switching, and movie night queues
+
+This family covers control bridges where VRChat, avatar parameters, OBS
+scripts, local apps, or world-transition state control OBS stream, record,
+replay, microphone, scene, or media playback state.
+
+| Project | Status | Notes |
+|---|---|---|
+| `nerdywoffy/vrchat-obs-controller` | Studied in Wave 249 | Go OSC sidecar with avatar parameter contracts, OBS v5/Streamlabs adapters, replay/record/stream/scene controls, status polling, and avatar feedback |
+| `rogeraabbccdd/VRChat-OBSOSC` | Studied in Wave 249 | Compact Node OBS v4/v5 bridge controlled by expression-menu parameters with startup state sync and OBS event feedback |
+| `ioarchive/obscontrol` | Historical UX reference in Wave 249 | VRChat MelonLoader/ReMod quick-menu OBS controller with world-transition scene switching; retained with EAC/TOS caveats |
+| `TuTu475/VRC-OBS-MicControl` | Studied in Wave 249 | OBS Python script listening to VRChat mute OSC with debounce, correction interval, source selection, and script settings |
+| `dimebag29/VRChatObsMicMuteLink` | Studied in Wave 249 | Windows tray app mapping VRChat mute OSC to global OBS hotkey chords |
+| `0x29a-blink/VRChat-Movie-Night` | Studied in Wave 249 | Local event operator stack with auth, media queue, OBS media-source control, auto-advance, MediaMTX HLS presets, and stream health checks |
+| `MissingNO123/OBS-Scripts-for-VRChat` | Studied in Wave 249 | OBS-native scripts for VRChat loading-screen scene switching and action-menu OSC control with status feedback |
+
+### Consolidation note
+
+This family matters because in-VR stream control should name:
+
+- command source and avatar parameter schema
+- OBS backend/API version
+- action idempotency and scene index bounds
+- status feedback into VRChat or OBS UI
+- debounce, correction, reconnect, and backoff
+- auth, localhost, hotkey, and mod-policy caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- bidirectional OSC-to-OBS control adapters
+- OBS-native script templates
+- safe stream-control schemas
+- movie-night/world-video-player operator surfaces
+- mic sync and loading-screen scene switching microtools
+
+## Family 229: VRChat virtual production, camera routing, and live stream pipelines
+
+This family covers VR event-production pipelines where world cameras, VJ tools,
+OBS, RTMP/HLS, camera-control pages, and browser-source outputs form one
+operator workflow.
+
+| Project | Status | Notes |
+|---|---|---|
+| `designio360/virtualproduction-vrchat` | Source-light in Wave 250 | Unity package reference for VRChat production stages with cameras, crane, overlay slides, lighting controls, in-world buttons, keyboard controls, and OBS capture |
+| `valkyriedimension/TD2VRC` | Source-light in Wave 250 | TouchDesigner-to-VRChat VJ routing guide using OBS, Spout/window capture, RTSP, stream links, screenshots, and a `.toe` example |
+| `RemilRLs/StreamToVRC` | Studied in Wave 250 | Docker/NGINX RTMP-to-HLS donor with OBS ingest, ffmpeg bitrate variants, HLS fragments, CORS/no-cache headers, and VRChat video-player URL framing |
+| `dragokenlancer/VRC-Camera-control-webpage` | Studied in Wave 250 | POC browser camera-control page with password sessions, public-viewing split, OSC pose/zoom address mapping, and preview-routing intent |
+| `reece-berens/vrc-stream-plugins` | Adjacent reference in Wave 250 | Browser-source plugin shell with API helper service, Next output pages, and typed event-score helpers |
+| `furukawa1020/VRcoverOBS` | Adjacent reference in Wave 250 | Avatar/OBS output system with tracking-to-WebSocket gateway, browser avatar runtime, canvas streaming, and OBS setup docs |
+
+### Consolidation note
+
+This family matters because VR event production should name:
+
+- in-world production controls
+- external visual/media source
+- media ingest and transcode layer
+- public playback URL and latency
+- preview and camera-control path
+- OBS browser-source or virtual-camera output
+- public port, auth, and beta API caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VR event production checklists
+- RTMP/HLS and MediaMTX/NGINX comparisons
+- VRChat camera-control safety notes
+- VJ and visual-production workflow references
+- browser-source plugin packaging
+
+## Family 230: OpenVR legacy sensor compatibility and synthetic driver shims
+
+This family covers driver-side adaptation projects for legacy sensors,
+identity compatibility, no-HMD control, DIY headsets, and vendor headset
+bridge lineage.
+
+| Project | Status | Notes |
+|---|---|---|
+| `SDraw/driver_leap` | Studied in Wave 251 | Leap Motion to SteamVR controller driver with Leap poller, tracking reference, left/right controller devices, skeleton/input mapping, overlays, and settings app |
+| `SDraw/driver_kinectV1` | Studied in Wave 251 | Kinect V1 skeleton to SteamVR generic tracker driver with joint filters, Vive Tracker-style identity, dashboard settings, tracker toggles, and calibration |
+| `SDraw/driver_kinectV2` | Studied in Wave 251 | Kinect V2 sensor variant with similar driver/dashboard/calibration boundaries and runtime-specific caveats |
+| `schellingb/PseudoVive` | Studied in Wave 251 | Early-load OpenVR property hook forcing Vive manufacturer/model identity, with optional systray toggle |
+| `r57zone/Half-Life-Alyx-novr` | Studied in Wave 251 | Game-specific no-HMD SteamVR driver and key/mouse to VR controller mapping reference |
+| `lixiangwuxian/Viulux-V9-Driver-for-SteamVR` | Source-light in Wave 251 | README-only vendor headset bridge lineage tying Viulux, Relativty, OpenHMD, and Nolo requirements together |
+| `Blockmann2K/MurlokVR` | Studied in Wave 251 | DIY HMD experiment with firmware, Rust serial runtime, shared-memory pose contract, OpenVR factory/provider, settings, and pose polling |
+
+### Consolidation note
+
+This family matters because custom OpenVR drivers should name:
+
+- driver manifest, factory, provider, and device class
+- hardware polling or shim source
+- device identity and compatibility assumptions
+- pose/input transport and timing
+- calibration or companion control surface
+- cleanup, unload, and runtime registration
+- obsolete SDK, spoofing, and hardcoded transport caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenVR driver-boundary matrices
+- legacy sensor to tracker/controller comparisons
+- identity spoofing risk notes
+- DIY HMD runtime-to-driver transport templates
+- no-HMD/virtual-HMD caveat checklists
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.
