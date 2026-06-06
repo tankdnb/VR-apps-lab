@@ -824,6 +824,24 @@ Use these files when you want to understand:
   hardware lineage, bHaptics preset triggers, tracker haptics, and DIY output
   safety.
 
+- `vr-projects-wave-192-psvr2-openxr-passthrough-eye-tracking-and-steamvr-integration-shims.md`
+  Next GitHub discovery wave focused on PSVR2 OpenXR passthrough layers,
+  SteamVR eye-tracking shims, Monado driver integration, and archived
+  multi-source OpenXR gaze layers.
+
+- `vr-projects-wave-193-vrchat-osc-physical-output-safety-and-device-control-bridge-variants.md`
+  Next GitHub discovery wave focused on VRChat OSC physical-output bridges,
+  DG-LAB/PiShock/OpenShock variants, cooldowns, panic stops, queueing, and
+  consent-first safety patterns.
+
+- `vr-projects-wave-194-vrchat-midi-dmx-piano-and-live-performance-control-bridges.md`
+  Next GitHub discovery wave focused on MIDI/DMX as VRChat control planes,
+  piano clients, Udon sync, performer tools, and physical controller mirrors.
+
+- `vr-projects-wave-195-twitch-audience-events-to-vrchat-osc-control-surfaces.md`
+  Next GitHub discovery wave focused on Twitch chat, channel points, audience
+  events, moderation gates, action queues, and VRChat OSC command surfaces.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

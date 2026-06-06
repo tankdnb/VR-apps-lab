@@ -1923,6 +1923,57 @@ These are larger than a single repo and should guide the next research wave.
   pass should extract a device-neutral haptic event schema and a safety
   checklist for physical output.
 
+### 145. `PSVR2 calibration, passthrough, gaze validity, and runtime-shim risk matrix`
+
+- Main entries:
+  `psvr2passthrough`, `PSVR2_STEAMVR_EYE_TRACKING_SHIM`,
+  `monado-psvr2`, `_ARCHIVE_OpenXR-Eye-Trackers`, `Volby`
+- Why it matters:
+  this family captures OpenXR passthrough layers, SteamVR gaze shims, runtime
+  driver forks, shared-memory camera feeds, named-pipe gaze, tracker priority,
+  and stale-data checks. A future deeper pass should compare calibration,
+  latency, driver-hook risk, API-layer risk, and runtime-driver support before
+  any PSVR2-specific path is promoted as a reusable prototype direction.
+
+### 146. `Physical-output bridge safety matrix across consent, cooldown, panic stop, and device actuation`
+
+- Main entries:
+  `DG-LAB-VRCOSC`, `VRChat_X_DGLAB`, `VRCHAT-OSC-to-DGLAB`,
+  `VRC-DGLAB`, `DG-LAB-VRChat-Sensora`, `ShockVRC`, `PiShockTouch`,
+  `VRChat-Shocker-Link-CPP`
+- Why it matters:
+  this family captures risky avatar-OSC-to-device bridges where architecture
+  quality is mostly safety quality. A future deeper pass should normalize
+  consent, local trust, max duration/intensity, source gates, queue clearing,
+  panic stops, per-user cooldowns, chatbox/status feedback, and emergency
+  reset requirements.
+
+### 147. `MIDI backpressure, VRChat path schemas, and Udon live-performance sync matrix`
+
+- Main entries:
+  `VRC-MIDIDMX`, `vrc_midi_transposer`, `UDJ-1000`,
+  `USharp-midi-tuna`, `OSCMidi`, `OSCPianoPlayer`,
+  `midi-osc-client`, `vrcMidiOverNetworkExample`
+- Why it matters:
+  this family captures MIDI as a control/data plane for DMX, piano worlds,
+  physical controller mirrors, and performer utilities. A future deeper pass
+  should compare path schemas, stuck-note resets, particle/voice budgets,
+  sender backpressure, Udon serialization telemetry, and noisy hardware input
+  filtering.
+
+### 148. `Audience-event rule engines, reward lifecycle, moderation gates, and OSC action queues`
+
+- Main entries:
+  `crystal-relay-public`, `EZTwitchOSCBot`,
+  `VRChatTwitchOSCTrigger`, `TwitchIntegration`,
+  `TwitchVrcAvatarOSC`, `LucentOSC`, `RizumuBot`
+- Why it matters:
+  this family captures Twitch chat, channel points, bits, subs, follows,
+  command decks, reward identity, access gates, cooldowns, world guards, timed
+  reset pulses, and OSC action queues. A future deeper pass should extract a
+  provider-neutral audience trigger schema that can support Twitch, Discord,
+  Stream Deck, local web panels, and OSCQuery inputs safely.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2055,6 +2106,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 126. `Chatbox composition matrix across media, lyrics, templates, status, keepalive, and tiny senders`
 127. `Browser and phone OSC control matrix across local web APIs, WebSocket relays, avatar parameter discovery, and safety gates`
 128. `VRC haptics event matrix across OSC contacts, server maps, firmware packets, hardware docs, presets, and tracker nodes`
+129. `PSVR2 calibration, passthrough, gaze validity, and runtime-shim risk matrix`
+130. `Physical-output bridge safety matrix across consent, cooldown, panic stop, and device actuation`
+131. `MIDI backpressure, VRChat path schemas, and Udon live-performance sync matrix`
+132. `Audience-event rule engines, reward lifecycle, moderation gates, and OSC action queues`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

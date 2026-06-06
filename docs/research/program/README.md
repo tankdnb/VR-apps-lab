@@ -1365,3 +1365,31 @@ repeatable way.
 
 - `github-research-wave-191-backlog.md`
   Executed backlog for the Wave 191 pass.
+
+- `github-research-wave-192-plan.md`
+  Wave 192 research plan focused on PSVR2 OpenXR passthrough, eye-tracking,
+  and SteamVR integration shims.
+
+- `github-research-wave-192-backlog.md`
+  Executed backlog for the Wave 192 pass.
+
+- `github-research-wave-193-plan.md`
+  Wave 193 research plan focused on VRChat OSC physical-output safety and
+  device-control bridge variants.
+
+- `github-research-wave-193-backlog.md`
+  Executed backlog for the Wave 193 pass.
+
+- `github-research-wave-194-plan.md`
+  Wave 194 research plan focused on VRChat MIDI, DMX, piano, and
+  live-performance control bridges.
+
+- `github-research-wave-194-backlog.md`
+  Executed backlog for the Wave 194 pass.
+
+- `github-research-wave-195-plan.md`
+  Wave 195 research plan focused on Twitch and audience-event to VRChat OSC
+  control surfaces.
+
+- `github-research-wave-195-backlog.md`
+  Executed backlog for the Wave 195 pass.

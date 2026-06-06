@@ -2477,6 +2477,66 @@ Primary docs:
 - `TahvoDev/AXHaptics` - `Already studied as deprecated VRCOSC AXIS tracker haptics module mapping VRC/bHaptics-compatible parameters to UDP node vibration commands`
 - `Pillazo/VRCHaptics` - `Already studied as legacy DIY VRC haptics stack with VB.NET OSC host, serial provisioning, multicast intensity packets, BOM/hardware docs, and ESP firmware`
 
+## 163. PSVR2 OpenXR passthrough, eye-tracking, and SteamVR integration shims
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-192-psvr2-openxr-passthrough-eye-tracking-and-steamvr-integration-shims.md`
+- `../landscape/project-families.md`
+
+- `Obsidiate/psvr2passthrough` - `Already studied as PSVR2 OpenXR implicit API layer with loader negotiation, dispatch interception, D3D11 session adoption, shared-memory camera feed, per-eye passthrough composition, config toggles, and latency/calibration caveats`
+- `BattleAxeVR/PSVR2_STEAMVR_EYE_TRACKING_SHIM` - `Already studied as SteamVR server-driver shim wrapping the PSVR2 HMD driver and exposing named-pipe gaze data through a standard gaze interaction path; high-risk driver-hook caveat`
+- `DMJC/monado-psvr2` - `Already studied as Monado PSVR2 runtime-driver fork with build option, prober, USB endpoint constants, distortion, pose/view handling, status/SLAM/camera flows, and runtime-driver caveats`
+- `etwodev/Volby` - `Source-light PSVR2 SteamVR integration product reference; retained as thin framing node until source boundaries are visible`
+- `mbucchia/_ARCHIVE_OpenXR-Eye-Trackers` - `Already studied as archived multi-source OpenXR eye-tracker API layer with gaze extension gating, tracker priority, PSVR2 Toolkit TCP polling, validity checks, and stale-data behavior`
+
+## 164. VRChat OSC physical-output safety and device-control bridge variants
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-193-vrchat-osc-physical-output-safety-and-device-control-bridge-variants.md`
+- `../landscape/project-families.md`
+
+- `ccvrc/DG-LAB-VRCOSC` - `Already studied as PySide6 DG-LAB/VRCOSC bridge with GUI tabs, YAML config, command queue, source enable/cooldown flags, chatbox telemetry, SoundPad/ToN integration, OSCQuery service, and generated-code/safety caveats`
+- `amoeet/VRChat_X_DGLAB` - `Thin C# DG-LAB GUI bridge variant; retained as source-light parameter-to-waveform reference`
+- `boyqiu-001/VRCHAT-OSC-to-DGLAB` - `Already studied as Tkinter avatar-parameter rule editor mapping judge modes, values, waveform patterns, channel, intensity, and ticks to DG-LAB output`
+- `ion-aluminium/VRC-DGLAB` - `Already studied as FastAPI/React DG-LAB bridge with OSC service, exact/regex listeners, config and waveform services, job debounce, waveform fill, and service-boundary donor value`
+- `Null-K/DG-LAB-VRChat-Sensora` - `Already studied as Python DG-LAB bridge with WebSocket/HTTP/OSC orchestration, distance/shock/touch modes, chatbox templates, per-channel limits, rate limits, safety window, and waveform monitor`
+- `noideaman/ShockVRC` - `Already studied as thin PiShock/OpenShock avatar expression-menu bridge with type/intensity/duration/target/touchpoint parameter schema and credential/safety caveats`
+- `DesMakesStuff/PiShockTouch` - `Already studied as PiShock contact receiver bridge with installer-backed VRChat avatar OSC JSON patching, backup flow, menu/contact parameters, and rollback/safety caveats`
+- `poprox24/VRChat-Shocker-Link-CPP` - `Already studied as C++ ImGui OSCQuery physical-output hub with PiShock/OpenShock/serial backends, queue, panic hotkey, global disable, dynamic cooldown, curve presets, chatbox/notification telemetry, and strong safety architecture`
+
+## 165. VRChat MIDI, DMX, piano, and live-performance control bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-194-vrchat-midi-dmx-piano-and-live-performance-control-bridges.md`
+- `../landscape/project-families.md`
+
+- `micksam7/VRC-MIDIDMX` - `Already studied as VRChat MIDI-as-DMX data plane with packed note messages, bank/control channel, MIDIREADY watchdog/backpressure, shader texture output, and crash-risk caveats`
+- `marcus-universe/vrc_midi_transposer` - `Already studied as Rust MIDI transposer with OSC/MQTT/Home Assistant control, MIDI forwarding, note-name avatar OSC emission, and performer setup docs`
+- `laserimouto/UDJ-1000` - `Already studied as Unity/Udon physical DJ controller mirror with UdonSynced controller arrays, transform/material updates, Python MIDI CC filter, and DDJ-1000 mapping caveats`
+- `fltuna/USharp-midi-tuna` - `Already studied as UdonSharp MIDI piano/player with note/control callbacks, sustain, voice budget, event sync emulation, pitch conversion, and editor sample-source tool`
+- `Mathieu52/OSCMidi` - `Already studied as PySide MIDI piano to VRChat OSC GUI with device selection, MIDI forwarding, note range mapping, particle buffer, reset behavior, and repo-hygiene caveats`
+- `ShadowForests/OSCPianoPlayer` - `Already studied as MIDI-file to OSC piano scheduler with tempo/tick parsing, key path sends, reset flow, and old-library/world-path caveats`
+- `MaverickLong/midi-osc-client` - `Already studied as minimal CLI MIDI-to-OSC piano compatibility layer with key-index, named-note, and pedal path schemas plus setup bug caveat`
+- `labthe3rd/vrcMidiOverNetworkExample` - `Already studied as Udon manual MIDI sync example with ownership, serialization status, lost-send counters, byte counts, and deserialization latency telemetry`
+
+## 166. Twitch and audience-event to VRChat OSC control surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-195-twitch-audience-events-to-vrchat-osc-control-surfaces.md`
+- `../landscape/project-families.md`
+
+- `seluvia/crystal-relay-public` - `Already studied as mature Twitch/VRChat OSC rule engine with chat commands, channel points, bits, subs, follows, cash payments, avatar/input/chatbox actions, managed rewards, OSCQuery/cache behavior, world guard, moderation UX, and strongest product donor value`
+- `AcChosen/EZTwitchOSCBot` - `Already studied as Electron/tmi.js/osc-js command deck with 12 command slots, custom OSC address/value/type, optional timed reset message, whitelist, delay, and save/load profiles`
+- `Motscoud/VRChatTwitchOSCTrigger` - `Already studied as tiny Twitch IRC to VRChat OSC pulse script with hardcoded command mapping, short reset, and no-config/no-moderation caveats`
+- `Killers0992/TwitchIntegration` - `Already studied as C# TwitchLib/PubSub integration with command access gates, reward/bits/sub/follow/ban/timeout event models, global/user cooldowns, random actions, and OSC action queues`
+- `Killers0992/TwitchVrcAvatarOSC` - `Source-light successor/product migration pointer; retained as lineage only`
+- `Maikatura/LucentOSC` - `Already studied as native C++/ImGui Twitch/Discord/VRChat command app with Twitch IRC client, VRChat command classes, movement/look/parameter/avatar/speak commands, and broad command-tree reference value`
+- `exmello/RizumuBot` - `Already studied as C# Twitch IRC bot with bot/self filtering, camera command aliases, chat replies, timed OSC float pulses, and narrow camera-control donor value`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

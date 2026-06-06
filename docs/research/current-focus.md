@@ -132,6 +132,10 @@ These are the clearest current product and research lines:
    local/cloud STT mode routers, avatar-controlled STT/translation extensions,
    media/status chatbox composers, browser/phone OSC control panels, and
    avatar-driven haptics server/firmware/hardware boundaries.
+26. `PSVR2 integration, physical-output safety, live-performance bridges, and audience-event control`
+   the repository now has fresh coverage of PSVR2 OpenXR passthrough and gaze
+   shims, safety-first avatar OSC physical-output routers, MIDI/DMX/piano
+   performance bridges, and Twitch/audience-event rule engines for VRChat OSC.
 
 ## Most useful current docs
 
@@ -707,6 +711,14 @@ the strongest current clusters:
   avatar-controlled translation extensions, bounded chatbox composition,
   browser/phone OSC command surfaces, and avatar-driven haptics
   server/firmware/preset boundaries.
+- `psvr2passthrough`, `PSVR2_STEAMVR_EYE_TRACKING_SHIM`,
+  `monado-psvr2`, `_ARCHIVE_OpenXR-Eye-Trackers`,
+  `VRChat-Shocker-Link-CPP`, `DG-LAB-VRChat-Sensora`,
+  `VRC-MIDIDMX`, `OSCMidi`, `crystal-relay-public`,
+  `TwitchIntegration`
+  for PSVR2 passthrough/gaze/runtime shims, safety-first physical-output
+  routers, MIDI/DMX/piano live-performance bridges, and audience-event
+  OSC action engines.
 
 ## Highest-value next follow-up passes
 
@@ -831,6 +843,10 @@ directions:
 116. `Chatbox composition matrix across media, lyrics, templates, status, keepalive, and tiny senders`
 117. `Browser and phone OSC control matrix across local web APIs, WebSocket relays, avatar parameter discovery, and safety gates`
 118. `VRC haptics event matrix across OSC contacts, server maps, firmware packets, hardware docs, presets, and tracker nodes`
+119. `PSVR2 calibration, passthrough, gaze validity, and runtime-shim risk matrix`
+120. `Physical-output bridge safety matrix across consent, cooldown, panic stop, and device actuation`
+121. `MIDI backpressure, VRChat path schemas, and Udon live-performance sync matrix`
+122. `Audience-event rule engines, reward lifecycle, moderation gates, and OSC action queues`
 
 ## Current repository-maintenance priorities
 

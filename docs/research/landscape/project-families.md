@@ -5535,6 +5535,147 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - firmware/hardware documentation checklists
 - device-neutral haptic routers and preset bridges
 
+## Family 171: PSVR2 OpenXR passthrough, eye-tracking, and runtime-driver shims
+
+This family covers PSVR2-specific runtime integration projects: OpenXR
+passthrough layers, SteamVR eye-tracking shims, Monado driver forks, and
+archived multi-source gaze layers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Obsidiate/psvr2passthrough` | Already studied as PSVR2 OpenXR passthrough API layer | loader negotiation, dispatch interception, D3D11 session adoption, shared-memory camera feed, per-eye composition, button/config gates, and latency/calibration caveats |
+| `BattleAxeVR/PSVR2_STEAMVR_EYE_TRACKING_SHIM` | Already studied as SteamVR gaze shim | HMD driver wrapping, named-pipe gaze ingress, validity checks, and high-risk Detours/driver-hook caveats |
+| `DMJC/monado-psvr2` | Already studied as runtime-driver integration reference | Monado driver option, prober, USB endpoints, status/SLAM/camera paths, distortion, pose/view handling, and fork/runtime caveats |
+| `etwodev/Volby` | Source-light product reference | retained only as PSVR2 SteamVR integration framing until source boundaries are visible |
+| `mbucchia/_ARCHIVE_OpenXR-Eye-Trackers` | Already studied as archived multi-source OpenXR gaze layer | extension gating, tracker priority, PSVR2 Toolkit TCP polling, stale-data checks, and archival caveats |
+
+### Consolidation note
+
+This family matters because PSVR2 utility work repeatedly crosses risky
+runtime boundaries:
+
+- OpenXR API-layer interception
+- SteamVR driver wrapping
+- runtime driver integration
+- camera/gaze calibration and stale-data gates
+- user-controlled passthrough/gaze enablement
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- PSVR2 calibration and validity matrices
+- API-layer versus driver-shim risk comparison
+- vendor hardware data provider boundaries
+- runtime-side passthrough/gaze safety checklists
+
+## Family 172: VRChat OSC physical-output safety and device-control bridges
+
+This family covers VRChat OSC bridges that can trigger physical device output.
+The reusable focus is safety architecture: queues, cooldowns, panic stops,
+source gates, rate limits, consent, and visible status.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ccvrc/DG-LAB-VRCOSC` | Already studied as DG-LAB/VRCOSC router | PySide6 tabs, YAML config, command queue, source flags/cooldowns, chatbox telemetry, SoundPad/ToN integrations, OSCQuery, and generated-code safety caveat |
+| `amoeet/VRChat_X_DGLAB` | Source-light DG-LAB GUI variant | retained as thin Windows parameter-to-waveform bridge reference |
+| `boyqiu-001/VRCHAT-OSC-to-DGLAB` | Already studied as parameter-rule mapper | Tkinter rule editor, judge modes, waveform patterns, channel/intensity/ticks, and minimal safety caveats |
+| `ion-aluminium/VRC-DGLAB` | Already studied as service-oriented DG-LAB bridge | FastAPI/React split, OSC service, exact/regex listeners, job debounce, waveform fill, config/device services, and auth/safety gaps |
+| `Null-K/DG-LAB-VRChat-Sensora` | Already studied as safety-window DG-LAB bridge | WebSocket/HTTP/OSC, distance/shock/touch modes, chatbox templates, channel limits, rate limits, safety window, and waveform monitor |
+| `noideaman/ShockVRC` | Already studied as avatar-menu PiShock/OpenShock bridge | type/intensity/duration/target/touchpoint parameter schema and thin credential/safety caveats |
+| `DesMakesStuff/PiShockTouch` | Already studied as contact receiver bridge and installer | avatar OSC JSON backup/patch, contact/menu parameters, PiShock API path, and rollback/safety caveats |
+| `poprox24/VRChat-Shocker-Link-CPP` | Already studied as strongest safety hub donor | C++ ImGui, OSCQuery, PiShock/OpenShock/serial backends, queue, panic hotkey, global disable, cooldown curves, chatbox/notification telemetry |
+
+### Consolidation note
+
+This family matters because physical-output bridges should be judged primarily
+by safety behavior:
+
+- consent and local trust boundary
+- max duration/intensity limits
+- queue clearing and global disable
+- panic hotkey behavior
+- per-source and per-user cooldown
+- chatbox/status visibility
+- configuration validation
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- physical-output safety matrices
+- avatar-parameter intent schemas
+- device-agnostic output router contracts
+- minimum requirements before any physical-output prototype is considered
+
+## Family 173: VRChat MIDI, DMX, piano, and live-performance control bridges
+
+This family covers MIDI and DMX as VRChat control/data planes: world lighting,
+performer tools, piano clients, Udon sync, and physical controller mirrors.
+
+| Project | Status | Notes |
+|---|---|---|
+| `micksam7/VRC-MIDIDMX` | Already studied as MIDI-to-DMX world data plane | packed note transport, control channel, `MIDIREADY` watchdog/backpressure, shader texture output, and crash-risk caveats |
+| `marcus-universe/vrc_midi_transposer` | Already studied as Rust MIDI transposer and control bridge | OSC/MQTT/Home Assistant controls, MIDI forwarding, note-name OSC emission, and avatar setup docs |
+| `laserimouto/UDJ-1000` | Already studied as physical DJ controller mirror | UdonSynced controller arrays, transform/material/text updates, Python CC filter, and DDJ-specific caveats |
+| `fltuna/USharp-midi-tuna` | Already studied as Udon MIDI piano/player | note/control callbacks, sustain, voice budget, event sync emulation, pitch conversion, and editor source-generation tool |
+| `Mathieu52/OSCMidi` | Already studied as PySide performer MIDI-to-OSC GUI | device selectors, MIDI output forwarding, note/path mapping, particle buffer, reset behavior, and repo-hygiene caveats |
+| `ShadowForests/OSCPianoPlayer` | Already studied as MIDI-file to OSC scheduler | tempo/tick parsing, key sends, reset flow, old-library caveats, and world-specific paths |
+| `MaverickLong/midi-osc-client` | Already studied as tiny MIDI-to-OSC compatibility CLI | key-index/name/pedal schemas, persisted config, and setup bug caveat |
+| `labthe3rd/vrcMidiOverNetworkExample` | Already studied as Udon sync telemetry example | ownership, `RequestSerialization`, success/loss counters, byte counts, and latency display |
+
+### Consolidation note
+
+This family matters because MIDI performance bridges need the same recurring
+boundaries:
+
+- input device selection and reconnection
+- note/path schema compatibility
+- backpressure and rate limits
+- Udon manual sync and diagnostics
+- stuck-note reset behavior
+- world-specific path profiles
+- physical control surface filtering
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- MIDI path-schema matrices
+- backpressure patterns for high-volume world control
+- performer-facing configuration UX
+- sync telemetry and voice/particle budget checklists
+
+## Family 174: Twitch and audience-event to VRChat OSC control surfaces
+
+This family covers Twitch/audience triggers that execute VRChat OSC actions:
+chat commands, channel points, bits, subs, follows, moderation events, command
+decks, and timed OSC pulses.
+
+| Project | Status | Notes |
+|---|---|---|
+| `seluvia/crystal-relay-public` | Already studied as mature audience-event rule engine | trigger/action models, reward identity, chat-command fusion, managed rewards, manual OSC packets, world guard, moderation UX, and strongest product donor value |
+| `AcChosen/EZTwitchOSCBot` | Already studied as Electron command deck | 12 command slots, OSC value types, timed reset message, whitelist, delay, save/load profiles, and hardcoded-slot caveat |
+| `Motscoud/VRChatTwitchOSCTrigger` | Already studied as minimal Twitch IRC to OSC pulse script | command parse, OSC send/reset, hardcoded channel/commands, and no moderation/cooldown caveat |
+| `Killers0992/TwitchIntegration` | Already studied as TwitchLib event model donor | chat/PubSub handlers, reward/bits/sub/follow/ban/timeout configs, access gates, global/user delays, random actions, and OSC action queues |
+| `Killers0992/TwitchVrcAvatarOSC` | Source-light migration reference | retained as successor pointer only |
+| `Maikatura/LucentOSC` | Already studied as native command-tree app | Twitch IRC client, Discord/VRChat command classes, movement/look/parameter/avatar/speak commands, and broad native app caveats |
+| `exmello/RizumuBot` | Already studied as Twitch camera-command bot | bot/self filters, camera aliases, chat replies, timed OSC float pulse, and narrow command-surface caveats |
+
+### Consolidation note
+
+This family matters because audience control surfaces can easily become
+unbounded remote-control channels:
+
+- permission gates and streamer control
+- per-user/global cooldown
+- reward lifecycle and identity
+- world or context guards
+- queued versus parallel action execution
+- timed reset pulses
+- chatbox and chat feedback
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- provider-neutral audience trigger schemas
+- safe OSC action queues
+- moderation-aware command decks
+- streamer control-panel and overlay integration patterns
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

@@ -11419,3 +11419,271 @@ When a new utility idea appears:
   `sync1211/HapticPatternTriggerOSC`, `TahvoDev/AXHaptics`.
 - Best fit for `VR-apps-lab`:
   haptic preset bridges and compatibility modules.
+
+## Method 619: PSVR2 shared-memory passthrough OpenXR composition layer
+
+- What it is:
+  an OpenXR implicit API layer injects calibrated external camera imagery into
+  application frames as a runtime-side passthrough surface.
+- Good for:
+  experimental passthrough tools, runtime-side view augmentation, camera-feed
+  research, and vendor enhancement layers.
+- Why it matters:
+  passthrough utilities need a clean boundary between API-layer interception,
+  camera data providers, calibration, user toggles, and comfort constraints.
+- Source evidence:
+  `Obsidiate/psvr2passthrough`.
+- Reusable core:
+  negotiate the OpenXR API-layer interface, wrap dispatch, adopt only supported
+  graphics sessions, read camera frames and calibration from a side provider,
+  create per-eye swapchains, inject composition only when enabled/visible, and
+  keep alpha, geometry, reprojection, and toggle config user-controlled.
+- Do not copy directly:
+  PSVR2-specific shared-memory format, D3D11-only assumptions,
+  reverse-engineered calibration, registry install code, or latency-sensitive
+  passthrough defaults.
+- Strong references:
+  `Obsidiate/psvr2passthrough`.
+- Maturity:
+  experimental and device-specific.
+- Best fit for `VR-apps-lab`:
+  passthrough layer architecture notes and OpenXR layer safety checklists.
+
+## Method 620: SteamVR driver shim to expose vendor gaze data
+
+- What it is:
+  a SteamVR driver shim wraps a target HMD driver and exposes a vendor gaze
+  stream through a standard gaze interaction surface.
+- Good for:
+  eye-tracking compatibility research, driver-shim comparisons, and runtime
+  feature-gap analysis.
+- Why it matters:
+  vendor data often exists before clean runtime exposure; shim patterns show
+  both the opportunity and the risk.
+- Source evidence:
+  `BattleAxeVR/PSVR2_STEAMVR_EYE_TRACKING_SHIM`.
+- Reusable core:
+  hook the server-driver registration boundary, detect the target driver and
+  tracked-device class, wrap only the intended HMD, connect to a local gaze
+  data transport, request combined/per-eye gaze samples, validate samples, and
+  expose them through a standardized interface.
+- Do not copy directly:
+  Detours-based driver hooks, exact driver names, bundled binaries, unfinished
+  calibration, or named-pipe protocol assumptions without current review.
+- Strong references:
+  `BattleAxeVR/PSVR2_STEAMVR_EYE_TRACKING_SHIM`.
+- Maturity:
+  high-risk compatibility shim.
+- Best fit for `VR-apps-lab`:
+  runtime feature-gap and driver-shim risk taxonomy.
+
+## Method 621: Multi-source eye tracker to OpenXR gaze interaction layer
+
+- What it is:
+  an OpenXR API layer maps many tracker backends into
+  `XR_EXT_eye_gaze_interaction` with extension gating, tracker priority, and
+  stale-data validation.
+- Good for:
+  gaze sidecars, provider-neutral eye tracking, calibration clients, and
+  compatibility layers.
+- Why it matters:
+  gaze tools need a provider abstraction before they can support runtime,
+  device SDK, OSC, TCP, and simulated sources consistently.
+- Source evidence:
+  `mbucchia/_ARCHIVE_OpenXR-Eye-Trackers`.
+- Reusable core:
+  detect whether the app requested gaze support, choose a tracker backend by
+  runtime support and configured priority, poll backend-specific transports,
+  normalize combined/per-eye gaze, reject stale or invalid samples, and expose
+  action/pose data through OpenXR gaze interaction.
+- Do not copy directly:
+  archived code, tracker-specific SDK assumptions, Windows-only install paths,
+  or stale compatibility lists.
+- Strong references:
+  `mbucchia/_ARCHIVE_OpenXR-Eye-Trackers`.
+- Maturity:
+  archived but conceptually strong.
+- Best fit for `VR-apps-lab`:
+  provider-neutral gaze abstraction and calibration matrix.
+
+## Method 622: Avatar OSC physical-output router with safety caps, cooldown, and panic stop
+
+- What it is:
+  a local bridge normalizes avatar OSC/device commands into a controlled queue,
+  applies safety limits, exposes status, and routes output to physical-device
+  backends only through explicit gates.
+- Good for:
+  haptics, accessory-control bridges, device-control sidecars, consent-first
+  physical feedback, and safety-focused bridge design.
+- Why it matters:
+  physical output must fail safe. Queue clearing, cooldown, hard caps, panic
+  stop, consent, and visible status are architecture, not polish.
+- Source evidence:
+  `VRChat-Shocker-Link-CPP`, `DG-LAB-VRChat-Sensora`,
+  `DG-LAB-VRCOSC`, and `VRC-DGLAB`.
+- Reusable core:
+  discover or configure OSC parameters, normalize incoming commands, enqueue
+  actions with source labels, enforce max duration/intensity and rate limits,
+  allow global disable and panic queue clearing, expose chatbox/UI status, and
+  isolate device backends behind explicit service boundaries.
+- Do not copy directly:
+  shocker/DG-LAB-specific semantics, external API assumptions, credential
+  handling, or any action path that bypasses consent and local safety controls.
+- Strong references:
+  `poprox24/VRChat-Shocker-Link-CPP`,
+  `Null-K/DG-LAB-VRChat-Sensora`,
+  `ccvrc/DG-LAB-VRCOSC`, `ion-aluminium/VRC-DGLAB`.
+- Maturity:
+  strong method candidate with mandatory safety review.
+- Best fit for `VR-apps-lab`:
+  physical-output safety requirements and device-neutral router design.
+
+## Method 623: Parameter-threshold physical output mapper with distance, touch, and trigger modes
+
+- What it is:
+  avatar parameters are mapped to physical-output actions through explicit
+  rules, modes, thresholds, waveforms, channels, and bounded durations.
+- Good for:
+  contact receiver bridges, avatar menu controls, proximity feedback, and
+  compact rule editors.
+- Why it matters:
+  simple bridges can stay understandable when intent mapping is separated from
+  device actuation and bounded by visible rules.
+- Source evidence:
+  `VRCHAT-OSC-to-DGLAB`, `DG-LAB-VRChat-Sensora`, `ShockVRC`,
+  and `PiShockTouch`.
+- Reusable core:
+  let users select avatar parameters, choose match modes or value ranges,
+  select a mode such as distance/touch/trigger, clamp channel/intensity/duration
+  fields, map normalized values to device-safe commands, and expose reset or
+  cooldown behavior.
+- Do not copy directly:
+  default shock/device parameters, raw float-to-intensity conversions, silent
+  avatar config patching, or missing emergency stop behavior.
+- Strong references:
+  `boyqiu-001/VRCHAT-OSC-to-DGLAB`,
+  `Null-K/DG-LAB-VRChat-Sensora`, `noideaman/ShockVRC`,
+  `DesMakesStuff/PiShockTouch`.
+- Maturity:
+  useful mapper pattern, incomplete without Method 622 safety gates.
+- Best fit for `VR-apps-lab`:
+  avatar intent schema and contact receiver rule editor notes.
+
+## Method 624: MIDI/DMX live-performance bridge with backpressure and sync telemetry
+
+- What it is:
+  MIDI is used as a VRChat control/data plane for DMX, physical controller
+  mirrors, and live performance state, with sender backpressure and world-side
+  telemetry.
+- Good for:
+  VRChat events, music worlds, lighting control, DJ/controller props, and world
+  control channels.
+- Why it matters:
+  high-rate MIDI can crash or desync worlds unless the transport makes
+  readiness, loss, latency, and rate limits visible.
+- Source evidence:
+  `VRC-MIDIDMX`, `UDJ-1000`, and `vrcMidiOverNetworkExample`.
+- Reusable core:
+  pack control data into MIDI messages, reserve control/handshake messages,
+  filter noisy hardware input, update Udon state arrays, serialize only through
+  ownership-aware paths, expose send success/loss/latency counters, and pause
+  senders until the world reports readiness.
+- Do not copy directly:
+  crash-prone MIDI flooding, device-specific CC maps, demo sync loops, or
+  shader/world layouts without target testing.
+- Strong references:
+  `micksam7/VRC-MIDIDMX`, `laserimouto/UDJ-1000`,
+  `labthe3rd/vrcMidiOverNetworkExample`.
+- Maturity:
+  strong but world-specific.
+- Best fit for `VR-apps-lab`:
+  live-performance control and backpressure matrix.
+
+## Method 625: Piano/MIDI note-to-OSC sender with GUI/CLI profile mapping
+
+- What it is:
+  MIDI notes, pedals, and files are mapped to VRChat OSC key/path schemas with
+  device selection, profile persistence, reset behavior, and performer UX.
+- Good for:
+  VRChat piano worlds, performer companion apps, music automation, and input
+  bridge baselines.
+- Why it matters:
+  different worlds use different path schemas; reusable tools need profile
+  mapping, stuck-note reset, and device UX.
+- Source evidence:
+  `OSCMidi`, `OSCPianoPlayer`, `midi-osc-client`,
+  `USharp-midi-tuna`, and `vrc_midi_transposer`.
+- Reusable core:
+  list and open MIDI devices, persist selected ports and path schemas, map note
+  on/off to indexed or named OSC paths, handle sustain/pedal controls, reset
+  stuck keys, optionally schedule MIDI files, and expose note/particle/voice
+  limits to the user.
+- Do not copy directly:
+  hardcoded world paths, old MIDI libraries, setup bugs, bundled build
+  artifacts, or note naming as a universal standard.
+- Strong references:
+  `Mathieu52/OSCMidi`, `ShadowForests/OSCPianoPlayer`,
+  `MaverickLong/midi-osc-client`, `fltuna/USharp-midi-tuna`,
+  `marcus-universe/vrc_midi_transposer`.
+- Maturity:
+  mature as a family pattern, fragmented by world schemas.
+- Best fit for `VR-apps-lab`:
+  performer utility and OSC path compatibility notes.
+
+## Method 626: Twitch/audience event to OSC action-rule engine
+
+- What it is:
+  audience events become typed trigger rules that execute bounded VRChat OSC
+  actions through permission gates, cooldowns, reward identity, queues, and
+  world/context guards.
+- Good for:
+  streamer tools, audience interaction, channel-point controls, moderation-aware
+  command panels, and remote event bridges.
+- Why it matters:
+  audience control can become remote control of a user's avatar or world; rule
+  identity and moderation gates are the safety boundary.
+- Source evidence:
+  `crystal-relay-public` and `TwitchIntegration`.
+- Reusable core:
+  model trigger type, command/reward identity, access roles, costs/ranges,
+  global and per-user cooldowns, actions with target/default/duration fields,
+  queued or parallel execution, reward lifecycle sync, world/context guards,
+  and user-visible feedback.
+- Do not copy directly:
+  credentials, hosted guard dependencies, product-specific reward management,
+  or broad action sets without streamer-owned controls.
+- Strong references:
+  `seluvia/crystal-relay-public`, `Killers0992/TwitchIntegration`.
+- Maturity:
+  strong product/reuse pattern.
+- Best fit for `VR-apps-lab`:
+  audience event bridge and safe remote-control rule schemas.
+
+## Method 627: Twitch chat command bot with timed OSC pulse actions
+
+- What it is:
+  a lightweight bot maps Twitch chat commands to OSC parameter pulses and
+  resets them after a short duration.
+- Good for:
+  small streamer utilities, stage/camera controls, proof-of-value bots, and
+  simple audience command surfaces.
+- Why it matters:
+  many audience tools start as command-to-pulse scripts; documenting the safe
+  minimal boundary prevents hardcoded, unbounded remote control.
+- Source evidence:
+  `EZTwitchOSCBot`, `VRChatTwitchOSCTrigger`, `RizumuBot`, and `LucentOSC`.
+- Reusable core:
+  connect to chat, parse prefixed commands, filter senders or roles, map
+  aliases to OSC paths and values, send an on value, wait a bounded duration,
+  send a reset value, apply cooldown/whitelist/profile settings, and report
+  status to the streamer.
+- Do not copy directly:
+  hardcoded channels, no-auth public control, missing moderation, raw OAuth
+  handling, or unbounded command execution.
+- Strong references:
+  `AcChosen/EZTwitchOSCBot`, `Motscoud/VRChatTwitchOSCTrigger`,
+  `exmello/RizumuBot`, `Maikatura/LucentOSC`.
+- Maturity:
+  useful micro-pattern when wrapped in safety gates.
+- Best fit for `VR-apps-lab`:
+  streamer command deck and timed OSC action baselines.

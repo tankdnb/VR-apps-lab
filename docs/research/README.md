@@ -187,6 +187,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-189-vrchat-chatbox-media-status-and-bounded-text-composition-microtools.md`
 - `landscape/vr-projects-wave-190-web-phone-and-browser-remote-osc-control-surfaces.md`
 - `landscape/vr-projects-wave-191-vrc-haptics-server-firmware-hardware-and-trigger-bridge-lineage.md`
+- `landscape/vr-projects-wave-192-psvr2-openxr-passthrough-eye-tracking-and-steamvr-integration-shims.md`
+- `landscape/vr-projects-wave-193-vrchat-osc-physical-output-safety-and-device-control-bridge-variants.md`
+- `landscape/vr-projects-wave-194-vrchat-midi-dmx-piano-and-live-performance-control-bridges.md`
+- `landscape/vr-projects-wave-195-twitch-audience-events-to-vrchat-osc-control-surfaces.md`
 
 ## Archive Navigation
 
