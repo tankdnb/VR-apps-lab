@@ -1036,6 +1036,24 @@ Use these files when you want to understand:
   multitool, stroke geometry, palette/menu, ruler, shape, persistence, and
   collaborative creative-surface patterns.
 
+- `vr-projects-wave-236-vr-locomotion-embodiment-and-comfort-microcontrols.md`
+  Next GitHub discovery wave focused on VR locomotion, embodiment, comfort
+  blinders, teleport, dynamic collider height, and head/hand-only arm IK.
+
+- `vr-projects-wave-237-webxr-depth-point-cloud-room-scan-and-spatial-dataset-viewers.md`
+  Next GitHub discovery wave focused on WebXR depth/camera capture, point
+  clouds, AR measurement, lidar ray grids, Gaussian splats, and dataset viewers.
+
+- `vr-projects-wave-238-vr-training-rehabilitation-and-simulated-user-evaluation-harnesses.md`
+  Next GitHub discovery wave focused on simulated-user evaluation, training
+  scenarios, rehab sensor feedback, live graphs, AI coaching, and security
+  caveats.
+
+- `vr-projects-wave-239-game-specific-vr-retrofit-ux-mod-interaction-shells-and-in-game-control-surfaces.md`
+  Next GitHub discovery wave focused on game-specific VR retrofit mods,
+  world-space UI, wrist/radial menus, virtual keyboards, haptics, calibration,
+  and interaction shells.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

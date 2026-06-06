@@ -7074,6 +7074,141 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - stroke persistence formats
 - creative-surface performance limits
 
+## Family 215: VR locomotion, embodiment, and comfort microcontrols
+
+This family covers small movement and embodiment systems whose reusable value
+sits in input mapping, comfort response, teleport state, collider/body
+adaptation, and head/hand-only avatar estimation.
+
+| Project | Status | Notes |
+|---|---|---|
+| `RoWoCha/LocomotionVR` | Studied in Wave 236 | SteamVR locomotion with HMD-relative direction, dynamic speed, CharacterController sizing, snap-turn around head, speed-linked blinders, and intensity gates |
+| `pascalmariany/Unity-WebXR-Teleportation-and-SmoothLocomotion` | Studied in Wave 236 | WebXR smooth movement plus delayed teleport preview, release commit, ballistic arc linecasts, and head/body offset compensation |
+| `dabeschte/VRArmIK` | Studied in Wave 236 | head/hand-only arm IK with persisted calibration, shoulder estimation, behind-head handling, arm-length clamp, and XR node input |
+| `ralph-immrsv/UnityVR-ArmSwingMovement` | Source-light in Wave 236 | checkout had only git/ignore metadata; retained as exclusion note |
+
+### Consolidation note
+
+This family matters because small VR utilities should name:
+
+- input source and movement mode
+- comfort vignette or fade policy
+- teleport preview and commit state
+- dynamic HMD/collider handling
+- calibration and body-dimension persistence
+- avatar/arm solver assumptions
+- source-light or demo-maturity caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- comfort locomotion comparison matrices
+- teleport UX micro-patterns
+- head/hand embodiment constraints
+- utility-safe movement wrappers
+- wrist/tool offset calibration notes
+
+## Family 216: WebXR depth, point-cloud, room-scan, and spatial dataset viewers
+
+This family covers spatial sensing and viewer flows across browser depth
+capture, AR measurement, simulated lidar, splat assets, and large scientific
+dataset viewers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Ramith-D-Rodrigo/webxr-point-cloud` | Studied in Wave 237 | WebXR camera/depth capture with feature gates, framebuffer readback, randomized sampling, worker reconstruction, Three point meshes, and GLTF export |
+| `Dhruvi509/Webxr-room-scanner` | Studied in Wave 237 | Babylon AR measurement micro-tool with hit-test, anchor fallback, live line preview, and distance label |
+| `BSoDium/Lidar` | Studied in Wave 237 | React/Three XR lidar ray-grid with Raycaster/ArrowHelper arrays, visible hit feedback, BVH intent, terrain shader, and point-budget caveats |
+| `sterngefeuert/webxr-gaussian-splat` | Studied in Wave 237 | Three/WebXR splat viewer with progressive loading, AR/VR entry, drag/drop, query-param loading, and desktop fallback controls |
+| `MikeWise2718/messelpit_viewer` | Studied in Wave 237 | Omniverse Kit dataset viewer with separate desktop/streaming/XR apps, OpenXR startup diagnostics, in-VR panels, and viewpoint controls |
+
+### Consolidation note
+
+This family matters because spatial sensing tools should name:
+
+- permission and feature gates
+- capture source and sampling policy
+- worker or reconstruction stage
+- render representation
+- export/import and local-file handling
+- progress/fallback UI
+- XR startup/runtime diagnostics
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- WebXR sensing pipeline matrices
+- point-cloud lifecycle rules
+- measurement micro-tool patterns
+- splat/dataset viewer loading UX
+- OpenXR startup diagnostic playbooks
+
+## Family 217: VR training, rehabilitation, and simulated-user evaluation harnesses
+
+This family covers training/evaluation systems that join scenario state,
+reward/scoring, sensor ingress, feedback, coach logic, and logs.
+
+| Project | Status | Notes |
+|---|---|---|
+| `fl0fischer/sim2vr` | Studied in Wave 238 | Unity/UitB bridge with RLEnv hooks, ZMQ state exchange, simulated anchors, RGB-D observations, time-scale negotiation, and recorder output |
+| `kaayran/ShootingRangeVR` | Studied in Wave 238 | SteamVR weapon/equipment training scenario with target scoring, accuracy panel, remote target movement, and object-state modules |
+| `GxRay/Trunk-Rehabilitation-VR-Training-Simulator-` | Studied in Wave 238 | rehab biofeedback loop with TCP EMG/accelerometer ingress, filters, live graphs, Spaceball commands, gaze menu, and HUD stats |
+| `Nelliel2/VR-training-simulator` | Checked in Wave 238 | asset-heavy Unity training tree retained as construction/worksite scenario reference |
+| `NagashreeSP/VR-Fire-Safety-Training-Simulator` | Source-light in Wave 238 | README-only fire-safety training concept |
+| `superjaviko/RESILIENCE` | Studied in Wave 238 | AI-assisted training reference with UPBGE scripts, voice coach, operator-data lookup, navigation helpers, and hardcoded-secret caveats |
+
+### Consolidation note
+
+This family matters because training VR tools should name:
+
+- scenario state and reset hooks
+- scoring/reward and termination
+- observation or camera capture
+- sensor ingress and filtering
+- live feedback and graphing
+- coach/advisor and external-data adapter
+- logging/export and security policy
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- training/evaluation harness patterns
+- simulated-user test hooks
+- rehab sensor-feedback loops
+- AI coach safety boundaries
+- scenario scoring and reporting matrices
+
+## Family 218: Game-specific VR retrofit interaction shells and in-game control surfaces
+
+This family covers VR retrofit mods and companion layers that convert existing
+games into more complete VR interaction systems through patches, input
+adapters, world-space UI, wrist/radial surfaces, keyboards, haptics, and
+calibration.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Okabintaro/SubmersedVR` | Studied in Wave 239 | Subnautica retrofit with SteamVR input patches, settings tabs, laser pointers, virtual keyboard, camera rig, wrist HUD, quick-slot radial wheel, calibration, and debug panel |
+| `dortamur/satisfactory-uevr-enhancements` | Studied in Wave 239 | UEVR companion product reference with controller mappings, wrist/radial UI, haptics, help tips, onboarding, input actions, and binary Blueprint assets |
+| `DSprtn/GTFO_VR_Plugin` | Studied in Wave 239 | IL2CPP/BepInEx retrofit with SteamVR gate, class injection, VRSystems, input mapping, world-space UI, watch/radial surfaces, terminal keyboard, comfort, and haptics |
+| `KyleTheScientist/Bark` | Studied in Wave 239 | Gorilla Tag mod shell with gesture summon, grabbable menu, physical buttons, module lifecycle, hand/pointer interactors, networked state, and manual tests |
+
+### Consolidation note
+
+This family matters because game-retrofit UX should name:
+
+- patch/plugin entry and readiness gate
+- VR system owner and focus states
+- game-action-to-VR-input adapter
+- world-space UI and pointer strategy
+- wrist/radial/menu/keyboard surfaces
+- comfort, haptics, calibration, and debug layers
+- game-specific, binary-asset, ToS, and multiplayer caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- retrofit interaction-shell matrices
+- radial/wrist/keyboard pattern extraction
+- game-mod-derived UX safety review
+- patch layer versus utility layer boundaries
+- haptics and comfort policy comparisons
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

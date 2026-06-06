@@ -1673,3 +1673,31 @@ repeatable way.
 
 - `github-research-wave-235-backlog.md`
   Executed backlog for the Wave 235 pass.
+
+- `github-research-wave-236-plan.md`
+  Wave 236 research plan focused on VR locomotion, embodiment, and comfort
+  microcontrols.
+
+- `github-research-wave-236-backlog.md`
+  Executed backlog for the Wave 236 pass.
+
+- `github-research-wave-237-plan.md`
+  Wave 237 research plan focused on WebXR depth, point-cloud, room-scan, and
+  spatial dataset viewers.
+
+- `github-research-wave-237-backlog.md`
+  Executed backlog for the Wave 237 pass.
+
+- `github-research-wave-238-plan.md`
+  Wave 238 research plan focused on VR training, rehabilitation, and
+  simulated-user evaluation harnesses.
+
+- `github-research-wave-238-backlog.md`
+  Executed backlog for the Wave 238 pass.
+
+- `github-research-wave-239-plan.md`
+  Wave 239 research plan focused on game-specific VR retrofit UX, mod
+  interaction shells, and in-game control surfaces.
+
+- `github-research-wave-239-backlog.md`
+  Executed backlog for the Wave 239 pass.

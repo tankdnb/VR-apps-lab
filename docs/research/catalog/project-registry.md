@@ -3082,6 +3082,57 @@ Primary docs:
 - `sierrajanson/Harold-in-VR` - `Studied in Wave 235 as an A-Frame drawing/prototyping tool with global tool state, left-trigger menu, shape submenu, tool isolation, gradient color picker via raycast UV canvas sampling, ruler measurements, shape drag/resize workflows, grid/background UX, and clear/erase surfaces`
 - `cpufreestyle/vr-paint` - `Studied in Wave 235 as an A-Painter fork with controller input mappings, brush registration API, pressure-aware strokes, shared buffer geometry, undo/clear/remove, JSON and binary apa save/load, URL-based load, upload/share flow, tooltip fade, and controller model feedback`
 
+## 207. VR locomotion, embodiment, and comfort microcontrols
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-236-vr-locomotion-embodiment-and-comfort-microcontrols.md`
+- `../landscape/project-families.md`
+
+- `RoWoCha/LocomotionVR` - `Studied in Wave 236 as a SteamVR locomotion demo with HMD-relative joystick direction, speed ramping, dynamic CharacterController height/center, snap-turn around head position, speed-linked comfort blinders, full snap-turn vignette pulse, and trigger-volume intensity gates`
+- `pascalmariany/Unity-WebXR-Teleportation-and-SmoothLocomotion` - `Studied in Wave 236 as a WebXR movement/teleport hybrid with thumbstick deadzone, camera-yaw movement, controller-axis teleport preview delay, release-to-commit teleport, ballistic arc linecasts, marker placement, and head/body offset compensation`
+- `dabeschte/VRArmIK` - `Studied in Wave 236 as head/hand-only avatar embodiment donor with persisted HMD/wrist calibration, shoulder pose estimation, behind-head handling, arm-length clamping, elbow rotation, and local XR node input`
+- `ralph-immrsv/UnityVR-ArmSwingMovement` - `Checked in Wave 236 as source-light search result; checkout contained only git/ignore metadata and no usable implementation files`
+
+## 208. WebXR depth, point-cloud, room-scan, and spatial dataset viewers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-237-webxr-depth-point-cloud-room-scan-and-spatial-dataset-viewers.md`
+- `../landscape/project-families.md`
+
+- `Ramith-D-Rodrigo/webxr-point-cloud` - `Studied in Wave 237 as a WebXR camera/depth point-cloud pipeline with depth-sensing, camera-access, DOM overlay controls, camera framebuffer readback, randomized depth sampling, worker reconstruction, Three point meshes, and GLTF export`
+- `Dhruvi509/Webxr-room-scanner` - `Studied in Wave 237 as a Babylon WebXR AR measurement micro-tool with hit-test, background removal, anchor fallback, first/second point flow, live preview line, and distance label`
+- `BSoDium/Lidar` - `Studied in Wave 237 as a React/Three XR lidar-style ray-grid and point-cloud reveal reference with Raycaster/ArrowHelper arrays, hit/miss color feedback, BVH raycast intent, terrain shader feedback, and point-budget caveats`
+- `sterngefeuert/webxr-gaussian-splat` - `Studied in Wave 237 as a Three/WebXR Gaussian splat viewer with shared renderer/camera/scene, progressive loading, AR DOM overlay, VR button, drag/drop local file ingestion, query-param loading, reload UI, and desktop fallback controls`
+- `MikeWise2718/messelpit_viewer` - `Studied in Wave 237 as an Omniverse Kit spatial dataset viewer with separate desktop/streaming/XR apps, OpenXR startup diagnostics, in-VR floating panels, shared viewpoint controls, and RTX/Quest/driver caveats`
+
+## 209. VR training, rehabilitation, and simulated-user evaluation harnesses
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-238-vr-training-rehabilitation-and-simulated-user-evaluation-harnesses.md`
+- `../landscape/project-families.md`
+
+- `fl0fischer/sim2vr` - `Studied in Wave 238 as a Unity/User-in-the-Box evaluation harness with RLEnv reward/reset/time/log hooks, ZMQ state exchange, simulated HMD/controller anchors, RGB-D camera observations, time-scale negotiation, and recorder output`
+- `kaayran/ShootingRangeVR` - `Studied in Wave 238 as a SteamVR training scenario with modular weapon/ammunition/grenade/equipment mechanics, target accuracy scoring, average accuracy panel, remote target movement, audio one-shots, and controller-binding caveats`
+- `GxRay/Trunk-Rehabilitation-VR-Training-Simulator-` - `Studied in Wave 238 as a rehab biofeedback system with TCP EMG/accelerometer ingress, IIR/notch filtering, Spaceball command sender, gaze-menu framing, live graph widgets, score/life HUD, and hardware-specific caveats`
+- `Nelliel2/VR-training-simulator` - `Checked in Wave 238 as an asset-heavy Unity construction/worksite training tree; retained as scenario reference requiring deeper script extraction before donor promotion`
+- `NagashreeSP/VR-Fire-Safety-Training-Simulator` - `Checked in Wave 238 as README-only fire-safety training concept; no code donor value in current tree`
+- `superjaviko/RESILIENCE` - `Studied in Wave 238 as AI-assisted VR training reference with UPBGE logic scripts, socket training-session lookup, Google Sheets access, voice coach flow, navigation-arrow setup, audio triggers, and strong hardcoded-secret/local-path caveats`
+
+## 210. Game-specific VR retrofit UX, mod interaction shells, and in-game control surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-239-game-specific-vr-retrofit-ux-mod-interaction-shells-and-in-game-control-surfaces.md`
+- `../landscape/project-families.md`
+
+- `Okabintaro/SubmersedVR` - `Studied in Wave 239 as a Subnautica VR retrofit with SteamVR input patches, settings tabs, snap-turn gating, controller/UI laser pointers, virtual keyboard patches, camera-rig ownership, wrist HUD, quick-slot radial wheel, offset calibration logging, main-menu camera stealing, and debug panel`
+- `dortamur/satisfactory-uevr-enhancements` - `Studied in Wave 239 as a UEVR companion product reference with SML plugin metadata, controller mappings, input actions, wrist UI, radial menus, haptics, help tips, onboarding patches, keyboard actions, UEVR profile coupling, and mostly binary Blueprint assets`
+- `DSprtn/GTFO_VR_Plugin` - `Studied in Wave 239 as an IL2CPP/BepInEx VR retrofit donor with SteamVR process gate, class injection, Harmony patches, VRSystems focus handling, SteamVR input mapping, movement vignette, snap-turn fade, world-space UI conversion, watch/radial surfaces, terminal keyboard, and haptics`
+- `KyleTheScientist/Bark` - `Studied in Wave 239 as a Gorilla Tag mod interaction shell with BepInEx/Utilla lifecycle, modded-lobby gating, gesture menu summon, grabbable/thrown menu, physical collision buttons, module lifecycle, hand/pointer interactors, networked module status, and manual testing procedures`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

@@ -2461,6 +2461,58 @@ These are larger than a single repo and should guide the next research wave.
   URL/file persistence, networked/generative strokes, and desktop fallback
   drawing.
 
+### 189. `Comfort locomotion and embodiment matrix across blinders, teleport arcs, smooth movement, and arm IK`
+
+- Main entries:
+  `LocomotionVR`, `Unity-WebXR-Teleportation-and-SmoothLocomotion`, `VRArmIK`,
+  and source-light arm-swing search results
+- Why it matters:
+  Wave 236 deepened compact locomotion and embodiment donors. A future matrix
+  should compare HMD-relative movement, dynamic collider height, speed-linked
+  blinders, snap-turn fades, environment comfort gates, delayed teleport
+  preview, arc/marker validity, head/body offset compensation, calibration
+  persistence, shoulder estimation, arm-length clamp behavior, and which parts
+  are safe to reuse in utility tools.
+
+### 190. `Spatial sensing viewer matrix across WebXR depth, room hit-test, lidar ray grids, splats, and dataset-scale XR apps`
+
+- Main entries:
+  `webxr-point-cloud`, `Webxr-room-scanner`, `Lidar`,
+  `webxr-gaussian-splat`, `messelpit_viewer`
+- Why it matters:
+  Wave 237 deepened spatial sensing and viewer flows. A future matrix should
+  compare browser feature gates, depth/camera readback, sample stride,
+  workerized reconstruction, point disposal, GLTF export, hit-test anchor
+  fallback, simulated ray-grid feedback, progressive splat loading, desktop/XR
+  fallback, Omniverse XR/streaming split, and startup diagnostics.
+
+### 191. `VR training/evaluation matrix across simulated users, scenario state, sensor logging, coaching, and assessment`
+
+- Main entries:
+  `sim2vr`, `ShootingRangeVR`,
+  `Trunk-Rehabilitation-VR-Training-Simulator-`, `VR-training-simulator`,
+  `VR-Fire-Safety-Training-Simulator`, `RESILIENCE`
+- Why it matters:
+  Wave 238 deepened training harnesses and rehab feedback loops. A future
+  matrix should compare reward/reset hooks, RGB-D observation capture, ZMQ
+  state exchange, target scoring, equipment state, EMG/accelerometer ingress,
+  IIR filtering, live graphing, actuator commands, AI/voice coach adapters,
+  external data lookup, logging/export, and security anti-patterns such as
+  embedded keys and local credential paths.
+
+### 192. `Game-retrofit interaction shell matrix across patch layers, input handlers, world-space UI, haptics, and safety gates`
+
+- Main entries:
+  `SubmersedVR`, `satisfactory-uevr-enhancements`, `GTFO_VR_Plugin`, `Bark`
+- Why it matters:
+  Wave 239 deepened game-specific retrofit UX. A future matrix should compare
+  BepInEx/Harmony/IL2CPP entry points, UEVR companion boundaries, runtime
+  readiness gates, SteamVR input mapping, controller/UI laser pointers,
+  world-space UI conversion, wrist dashboards, radial menus, virtual keyboards,
+  haptics, movement vignette, calibration tools, gesture-summoned physical
+  menus, networked module state, binary asset caveats, ToS/multiplayer risk,
+  and what is reusable outside game mods.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2633,6 +2685,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 166. `Operational XR panel matrix across terminal grids, shell worlds, diagnostic reports, and dashboards`
 167. `Smart-glasses HUD/runtime matrix across IMU, virtual displays, BLE, render cadence, and constrained layouts`
 168. `Browser-native creative surface matrix across stroke geometry, tool menus, palettes, persistence, and collaboration`
+169. `Comfort locomotion and embodiment matrix across blinders, teleport arcs, smooth movement, and arm IK`
+170. `Spatial sensing viewer matrix across WebXR depth, room hit-test, lidar ray grids, splats, and dataset-scale XR apps`
+171. `VR training/evaluation matrix across simulated users, scenario state, sensor logging, coaching, and assessment`
+172. `Game-retrofit interaction shell matrix across patch layers, input handlers, world-space UI, haptics, and safety gates`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

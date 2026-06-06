@@ -244,6 +244,10 @@ This file complements:
 - `vr-projects-wave-233-vr-terminal-shell-and-operational-dashboard-surfaces.md`
 - `vr-projects-wave-234-xr-smart-glasses-low-level-sdks-virtual-displays-and-ble-hud-templates.md`
 - `vr-projects-wave-235-browser-native-webxr-drawing-whiteboard-and-creative-surfaces.md`
+- `vr-projects-wave-236-vr-locomotion-embodiment-and-comfort-microcontrols.md`
+- `vr-projects-wave-237-webxr-depth-point-cloud-room-scan-and-spatial-dataset-viewers.md`
+- `vr-projects-wave-238-vr-training-rehabilitation-and-simulated-user-evaluation-harnesses.md`
+- `vr-projects-wave-239-game-specific-vr-retrofit-ux-mod-interaction-shells-and-in-game-control-surfaces.md`
 
 ## How to use this index
 

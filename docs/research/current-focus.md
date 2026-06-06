@@ -182,6 +182,11 @@ These are the clearest current product and research lines:
    frontends, safety gates, recording and validation flows, VR terminals and
    dashboards, Viture/Even Realities glasses protocols, BLE/HUD cadence
    constraints, and browser-native drawing/annotation workbench patterns.
+36. `Comfort locomotion, spatial sensing viewers, training harnesses, and retrofit interaction shells`
+   the repository now has fresh coverage of comfort blinders, delayed teleport,
+   head/hand-only arm IK, WebXR depth and point-cloud capture, AR measurement,
+   lidar and splat viewers, VR training/evaluation loops, rehab biofeedback,
+   AI coach caveats, and game-specific VR retrofit UI/input/haptics layers.
 
 ## Most useful current docs
 
@@ -329,6 +334,10 @@ instead of full history:
 - `landscape/vr-projects-wave-233-vr-terminal-shell-and-operational-dashboard-surfaces.md`
 - `landscape/vr-projects-wave-234-xr-smart-glasses-low-level-sdks-virtual-displays-and-ble-hud-templates.md`
 - `landscape/vr-projects-wave-235-browser-native-webxr-drawing-whiteboard-and-creative-surfaces.md`
+- `landscape/vr-projects-wave-236-vr-locomotion-embodiment-and-comfort-microcontrols.md`
+- `landscape/vr-projects-wave-237-webxr-depth-point-cloud-room-scan-and-spatial-dataset-viewers.md`
+- `landscape/vr-projects-wave-238-vr-training-rehabilitation-and-simulated-user-evaluation-harnesses.md`
+- `landscape/vr-projects-wave-239-game-specific-vr-retrofit-ux-mod-interaction-shells-and-in-game-control-surfaces.md`
 
 ## Strong donor clusters right now
 
@@ -1015,6 +1024,10 @@ directions:
 152. `Operational XR panel matrix across terminal grids, shell worlds, diagnostic reports, and dashboards`
 153. `Smart-glasses HUD/runtime matrix across IMU, virtual displays, BLE, render cadence, and constrained layouts`
 154. `Browser-native creative surface matrix across stroke geometry, tool menus, palettes, persistence, and collaboration`
+155. `Comfort locomotion and embodiment matrix across blinders, teleport arcs, smooth movement, and arm IK`
+156. `Spatial sensing viewer matrix across WebXR depth, room hit-test, lidar ray grids, splats, and dataset-scale XR apps`
+157. `VR training/evaluation matrix across simulated users, scenario state, sensor logging, coaching, and assessment`
+158. `Game-retrofit interaction shell matrix across patch layers, input handlers, world-space UI, haptics, and safety gates`
 
 ## Current repository-maintenance priorities
 

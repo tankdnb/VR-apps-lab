@@ -13489,3 +13489,155 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   annotation/whiteboard prototypes, browser-native tool menu patterns, stroke
   storage matrices, and future diagnostic markup surfaces.
+
+## Method 681: Comfort-aware locomotion and embodiment microcontrol stack
+
+- What it is:
+  a small VR movement/embodiment layer separates input mapping, movement mode,
+  teleport preview, comfort response, body/collider adaptation, and avatar arm
+  estimation.
+- Good for:
+  utility scenes, in-headset menus, calibration workspaces, accessibility
+  helpers, prototype viewers, and small tools that need movement without a full
+  game locomotion stack.
+- Why it matters:
+  locomotion code becomes hard to reuse when comfort, controller bindings,
+  body height, teleport arc, and avatar estimation are tangled into one scene
+  controller.
+- Source evidence:
+  `RoWoCha/LocomotionVR`,
+  `pascalmariany/Unity-WebXR-Teleportation-and-SmoothLocomotion`,
+  `dabeschte/VRArmIK`, and the source-light
+  `ralph-immrsv/UnityVR-ArmSwingMovement` exclusion.
+- Reusable core:
+  isolate input adapter, movement vector calculation, teleport preview/commit,
+  vignette/fade comfort policy, environment comfort gates, HMD/collider
+  sizing, calibration persistence, and arm/shoulder solver.
+- Do not copy directly:
+  demo scene assumptions, old SteamVR/Oculus bindings, fixed comfort values,
+  hardcoded scale constants, or IK heuristics as ergonomic truth.
+- Strong references:
+  `LocomotionVR` for comfort blinders and intensity gates,
+  `Unity-WebXR-Teleportation-and-SmoothLocomotion` for delayed teleport
+  preview, and `VRArmIK` for head/hand-only embodiment boundaries.
+- Maturity:
+  useful micro-pattern; product use needs comfort testing and device-specific
+  input review.
+- Best fit for `VR-apps-lab`:
+  movement wrappers for utility prototypes, comfort matrices, teleport UX
+  notes, and embodied pointer/wrist tool experiments.
+
+## Method 682: Spatial sensing and point-cloud XR viewer pipeline
+
+- What it is:
+  a spatial utility separates permission gates, capture source, sampling,
+  reconstruction, render representation, export/import, loading UI, fallback
+  mode, and startup diagnostics.
+- Good for:
+  WebXR depth capture tools, point-cloud viewers, AR measurement utilities,
+  lidar-style diagnostics, splat viewers, and large spatial dataset panels.
+- Why it matters:
+  sensing/viewer code is fragile when browser permissions, depth buffers,
+  worker queues, asset loading, and XR startup state are hidden in the same
+  render loop.
+- Source evidence:
+  `Ramith-D-Rodrigo/webxr-point-cloud`, `Dhruvi509/Webxr-room-scanner`,
+  `BSoDium/Lidar`, `sterngefeuert/webxr-gaussian-splat`, and
+  `MikeWise2718/messelpit_viewer`.
+- Reusable core:
+  feature/permission gate, raw capture adapter, sample policy, worker or
+  reconstruction stage, point/splat/dataset renderer, progress state,
+  import/export adapter, desktop fallback, and runtime startup checklist.
+- Do not copy directly:
+  overclaimed scanner labels, undisposed point buffers, heavy datasets,
+  hardcoded drivers, experimental browser feature assumptions, or vendor
+  runtime setup as universal onboarding.
+- Strong references:
+  `webxr-point-cloud` for depth/camera-to-points, `Webxr-room-scanner` for
+  hit-test measurement, `Lidar` for visible ray-grid feedback,
+  `webxr-gaussian-splat` for progressive viewer ingestion, and
+  `messelpit_viewer` for XR startup diagnostics.
+- Maturity:
+  strong method family; direct implementation depends on browser/runtime
+  support and dataset scale.
+- Best fit for `VR-apps-lab`:
+  point-cloud capture notes, measurement microtools, spatial asset viewers,
+  and OpenXR startup diagnostic playbooks.
+
+## Method 683: Scenario training harness with sensor, coach, and evaluation loop
+
+- What it is:
+  a training/evaluation VR system separates scenario state, episode reset,
+  scoring/reward, observation capture, sensor ingress, live feedback, coach
+  logic, logging/export, and security policy.
+- Good for:
+  training simulators, rehab feedback loops, simulated-user tests, operator
+  coaching, research scenarios, and evaluation harnesses for VR utility UX.
+- Why it matters:
+  training projects become difficult to reuse when reward, sensors, scenario
+  objects, AI coaching, credentials, and logs are mixed into one scene or script
+  folder.
+- Source evidence:
+  `fl0fischer/sim2vr`, `kaayran/ShootingRangeVR`,
+  `GxRay/Trunk-Rehabilitation-VR-Training-Simulator-`,
+  `Nelliel2/VR-training-simulator`,
+  `NagashreeSP/VR-Fire-Safety-Training-Simulator`, and
+  `superjaviko/RESILIENCE`.
+- Reusable core:
+  explicit scenario lifecycle, reset hook, reward/scoring hook, observation or
+  camera capture, sensor transport, filter pipeline, feedback surface,
+  coach/advisor adapter, external data adapter, logger/exporter, and security
+  review.
+- Do not copy directly:
+  hardcoded API keys, service-account paths, local absolute paths, hardware
+  IPs, patient/research artifacts, weapon assets, or README-only concepts as
+  implementation donors.
+- Strong references:
+  `sim2vr` for reward/reset/observation harnessing, `Trunk-Rehabilitation` for
+  sensor/filter/feedback loops, `ShootingRangeVR` for scenario scoring, and
+  `RESILIENCE` for AI coach boundaries plus security anti-patterns.
+- Maturity:
+  strong architecture method; each donor needs domain, safety, and privacy
+  review before product reuse.
+- Best fit for `VR-apps-lab`:
+  VR utility evaluation harnesses, training-loop matrices, rehab sensor notes,
+  AI coach safety guidance, and scenario logging patterns.
+
+## Method 684: Game-retrofit VR interaction shell with patch, UI, and input layers
+
+- What it is:
+  a retrofit shell separates plugin/patch entry, runtime readiness, VR systems
+  ownership, input remap, world-space UI, wrist/radial/keyboard surfaces,
+  haptics, comfort, calibration, focus-state handling, and debug tooling.
+- Good for:
+  game VR mods, legacy app VR conversions, overlay-like in-game utilities,
+  controller-to-action bridges, wrist dashboards, radial menus, and virtual
+  keyboard experiments.
+- Why it matters:
+  retrofit projects reveal strong interaction patterns, but they become risky
+  when game hooks, UI conversion, input mappings, multiplayer behavior, and
+  comfort/haptics are not separated.
+- Source evidence:
+  `Okabintaro/SubmersedVR`, `dortamur/satisfactory-uevr-enhancements`,
+  `DSprtn/GTFO_VR_Plugin`, and `KyleTheScientist/Bark`.
+- Reusable core:
+  plugin entry, runtime gate, VR systems singleton, game-action adapter,
+  controller and pointer rig, world-space UI conversion, radial/wrist/menu
+  widgets, text input layer, haptics adapter, comfort policy, calibration
+  logger, focus router, and debug panel.
+- Do not copy directly:
+  game assets, binary Blueprint logic, hardcoded game internals, controller
+  bindings as universal defaults, cheat-like modules, unsupported multiplayer
+  assumptions, or injection strategy as normal app architecture.
+- Strong references:
+  `SubmersedVR` for UI lasers, wrist HUD, keyboard, and quick slots;
+  `GTFO_VR_Plugin` for IL2CPP systems, world-space UI, watch, keyboard, and
+  haptics; `satisfactory-uevr-enhancements` for UEVR companion UX; and `Bark`
+  for gesture-summoned physical menus and module gating.
+- Maturity:
+  strong interaction-shell method; reuse requires licensing, ToS, multiplayer,
+  and safety review.
+- Best fit for `VR-apps-lab`:
+  overlay/control-surface design, radial and wrist menu matrices, virtual
+  keyboard patterns, retrofit safety notes, and patch-layer architecture
+  comparisons.
