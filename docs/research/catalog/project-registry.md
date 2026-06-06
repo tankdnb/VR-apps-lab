@@ -3133,6 +3133,54 @@ Primary docs:
 - `DSprtn/GTFO_VR_Plugin` - `Studied in Wave 239 as an IL2CPP/BepInEx VR retrofit donor with SteamVR process gate, class injection, Harmony patches, VRSystems focus handling, SteamVR input mapping, movement vignette, snap-turn fade, world-space UI conversion, watch/radial surfaces, terminal keyboard, and haptics`
 - `KyleTheScientist/Bark` - `Studied in Wave 239 as a Gorilla Tag mod interaction shell with BepInEx/Utilla lifecycle, modded-lobby gating, gesture menu summon, grabbable/thrown menu, physical collision buttons, module lifecycle, hand/pointer interactors, networked module status, and manual testing procedures`
 
+## 211. VR WebView browser surfaces, spatial keyboards, and Quest-native web content
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-240-vr-webview-browser-surfaces-spatial-keyboards-and-quest-native-web-content.md`
+- `../landscape/project-families.md`
+
+- `TLabAltoh/TLabWebViewVR` - `Studied in Wave 240 as a Quest-native Unity WebView surface family with Meta XR and XRI package folders, WebView prefabs, spatial keyboard scene, XRBrowserInputField focus-gated key-event forwarding, search/load callbacks, Android-only rendering, OpenXR Internet permission, HardwareBuffer/ByteBuffer, Vulkan/OpenGLES, and Unity 6000 caveats`
+- `TLabAltoh/TLabWebViewVR-XRInteractionToolkit-2022` - `Studied in Wave 240 as a minimal Unity 2022 XRI WebView sample with TLabWebView_XRInteractionToolkit prefab, searchbar example, package manifests, and XRI 2.5.4 compatibility boundary`
+- `TLabAltoh/TLabWebViewVR-OculusIntegration-2022` - `Studied in Wave 240 as a Meta XR WebView variant with TLabWebView_MetaXR prefab, searchbar callbacks, dialog/error events, input-field components, and JavaScript focus/focusout keyboard visibility reference`
+
+## 212. Unity XR UI adapters, grab affordances, and physical control microcomponents
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-241-unity-xr-ui-adapters-grab-affordances-and-physical-control-microcomponents.md`
+- `../landscape/project-families.md`
+
+- `BernwardWeigand/UnityUIToolkitXRAdapter` - `Studied in Wave 241 as a Unity UI Toolkit to XRI adapter with collider-backed UIDocuments, synthetic Input System controller state, ray-to-panel local position mapping, RenderTextureResizer, text-field focus bridge, and angular-size UI elements`
+- `podobaas/XRGrabInteractableRing` - `Checked in Wave 241 as a source-light XRI grab affordance reference documenting ring prefab, attach transforms, show-on-selected, layer mask, distance threshold, min/max scale, animation timing, and show/hide events`
+- `Priyanshu-CODERX/Unity-XR-Interaction-Toolkit-VR-Mechanisms` - `Studied in Wave 241 as an XRI mechanism set with UI proximity events, hand animation action mapping, hand visibility on grab, XRPushButton, and scenes for grab, teleport, UI, snap, hands, and physical buttons`
+- `Youkaku-1/VRPuzzelGame` - `Studied in Wave 241 as a Unity VR puzzle/control reference with keypad input, accepted/denied feedback, emissive screen state, button press animation, door events, decal reveal triggers, and XRI grab/socket/teleport scene surfaces`
+
+## 213. CV, mocap, and industrial VR training control loops
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-242-cv-mocap-and-industrial-vr-training-control-loops.md`
+- `../landscape/project-families.md`
+
+- `WestCoastGod/XR-CV-Forceps-Tracking-Unity` - `Studied in Wave 242 as a Quest 3 ArUco physical-tool tracking donor with multi-marker rigid pose estimation, reprojection error, One Euro position/rotation/scale smoothing, visibility-marker clamp state, clamp freeze, geometric object-size mapping, and XRI grab/release`
+- `jghanania/MotionCapture-AgilityLadder-XR-Study` - `Studied in Wave 242 as a Quest/OptiTrack research harness with balanced Latin-square conditions, AR/VR/real-world switching, occlusion control, avatar scaling, camera-rig mocap alignment, ladder path sequencing, foot-contact measurement, and participant CSV logging`
+- `jesusfernandorl/Industrial_Twin_XR-Safe-Robotics-and-6-Axis-VR-Control` - `Checked in Wave 242 as a source-light industrial robot VR training reference for deadman switch, soft limits, interlock logic, physical HMI feedback, spatial audio, Unity Robotics Hub/ROS direction, and safety-standard framing`
+- `purva-rana/MindscapeVR` - `Checked in Wave 242 as a source-light neuro-rehabilitation VR concept with clinical-room to mindscape transition, neural blockage metaphor, XR Interaction Toolkit framing, and trigger-driven difficulty escalation`
+
+## 214. Spatial measuring, modeling, collaboration, and MR workbench surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-243-spatial-measuring-modeling-collaboration-and-mr-workbench-surfaces.md`
+- `../landscape/project-families.md`
+
+- `rtkCode/Sizer` - `Studied in Wave 243 as a browser AR measure/model/project donor with WebXR hit-test reticle, point-pair distance and angle capture, DOM overlay measurement cards, local history, A-Frame box editing, toolbar controls, drag/rotation gestures, AR.js marker projection, and marker-found/lost feedback`
+- `byte-banditt/Meshelanjelo` - `Studied in Wave 243 as a Meta Quest MR mesh manipulation donor with OVRHand pinch detection, pointer-pose deformation center, left-pull/right-push semantics, smoothed intensity/rebound, and Burst/job PushPullDeformer vertex/normal radius falloff`
+- `B22DigitalTwins2022/ar-resilience-planner-v2` - `Studied in Wave 243 as an MR planning workbench with additive scene loading, persistent menu state, panel selector, solution grouping, simulation updates, and timestamped user-study CSV logs`
+- `adityanooka/Unity-Dive-VR` - `Studied in Wave 243 as a collaborative VR reference with Unity Netcode, XRI selection-count lift gates, server-owned random spawning, server-only proximity reactions, ownership-guarded movement, and VR/desktop locomotion fallback`
+- `Hempp/street-art-gallery` - `Checked in Wave 243 as a source-light social VR gallery product reference for hotspots, guided tours, avatars, emotes, voice, nametags, gathering areas, and comfort settings`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

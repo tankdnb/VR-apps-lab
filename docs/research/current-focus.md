@@ -183,10 +183,17 @@ These are the clearest current product and research lines:
    dashboards, Viture/Even Realities glasses protocols, BLE/HUD cadence
    constraints, and browser-native drawing/annotation workbench patterns.
 36. `Comfort locomotion, spatial sensing viewers, training harnesses, and retrofit interaction shells`
-   the repository now has fresh coverage of comfort blinders, delayed teleport,
-   head/hand-only arm IK, WebXR depth and point-cloud capture, AR measurement,
-   lidar and splat viewers, VR training/evaluation loops, rehab biofeedback,
-   AI coach caveats, and game-specific VR retrofit UI/input/haptics layers.
+    the repository now has fresh coverage of comfort blinders, delayed teleport,
+    head/hand-only arm IK, WebXR depth and point-cloud capture, AR measurement,
+    lidar and splat viewers, VR training/evaluation loops, rehab biofeedback,
+    AI coach caveats, and game-specific VR retrofit UI/input/haptics layers.
+37. `VR WebView surfaces, Unity XR microcontrols, sensor-tracked training loops, and spatial workbench utilities`
+    the repository now has fresh coverage of Quest-native WebView/browser
+    panels, focus-gated spatial keyboard routing, UI Toolkit to XRI adapters,
+    grab affordances, physical push/keypad controls, ArUco tool tracking,
+    OptiTrack study alignment, industrial safety concepts, WebXR measurement,
+    MR mesh deformation, planning panels, collaborative Netcode object gates,
+    and source-light social gallery framing.
 
 ## Most useful current docs
 
@@ -338,6 +345,10 @@ instead of full history:
 - `landscape/vr-projects-wave-237-webxr-depth-point-cloud-room-scan-and-spatial-dataset-viewers.md`
 - `landscape/vr-projects-wave-238-vr-training-rehabilitation-and-simulated-user-evaluation-harnesses.md`
 - `landscape/vr-projects-wave-239-game-specific-vr-retrofit-ux-mod-interaction-shells-and-in-game-control-surfaces.md`
+- `landscape/vr-projects-wave-240-vr-webview-browser-surfaces-spatial-keyboards-and-quest-native-web-content.md`
+- `landscape/vr-projects-wave-241-unity-xr-ui-adapters-grab-affordances-and-physical-control-microcomponents.md`
+- `landscape/vr-projects-wave-242-cv-mocap-and-industrial-vr-training-control-loops.md`
+- `landscape/vr-projects-wave-243-spatial-measuring-modeling-collaboration-and-mr-workbench-surfaces.md`
 
 ## Strong donor clusters right now
 
@@ -1028,6 +1039,10 @@ directions:
 156. `Spatial sensing viewer matrix across WebXR depth, room hit-test, lidar ray grids, splats, and dataset-scale XR apps`
 157. `VR training/evaluation matrix across simulated users, scenario state, sensor logging, coaching, and assessment`
 158. `Game-retrofit interaction shell matrix across patch layers, input handlers, world-space UI, haptics, and safety gates`
+159. `VR WebView surface matrix across native WebView, browser panels, focus, keyboards, permissions, capture modes, and editor fallbacks`
+160. `Unity XR microcontrol matrix across UI Toolkit panels, grab rings, push buttons, keypads, hand animation, and reveal feedback`
+161. `Sensor-tracked training loop matrix across ArUco, OptiTrack, EMG, ROS, WebSocket, OSC, calibration, smoothing, and logs`
+162. `Spatial workbench matrix across measure/model/project, hand deformation, planning panels, collaboration, undo, and action logs`
 
 ## Current repository-maintenance priorities
 

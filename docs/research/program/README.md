@@ -1701,3 +1701,31 @@ repeatable way.
 
 - `github-research-wave-239-backlog.md`
   Executed backlog for the Wave 239 pass.
+
+- `github-research-wave-240-plan.md`
+  Wave 240 research plan focused on VR WebView browser surfaces, spatial
+  keyboards, and Quest-native web content.
+
+- `github-research-wave-240-backlog.md`
+  Executed backlog for the Wave 240 pass.
+
+- `github-research-wave-241-plan.md`
+  Wave 241 research plan focused on Unity XR UI adapters, grab affordances,
+  and physical control microcomponents.
+
+- `github-research-wave-241-backlog.md`
+  Executed backlog for the Wave 241 pass.
+
+- `github-research-wave-242-plan.md`
+  Wave 242 research plan focused on CV, mocap, and industrial VR training
+  control loops.
+
+- `github-research-wave-242-backlog.md`
+  Executed backlog for the Wave 242 pass.
+
+- `github-research-wave-243-plan.md`
+  Wave 243 research plan focused on spatial measuring, modeling,
+  collaboration, and MR workbench surfaces.
+
+- `github-research-wave-243-backlog.md`
+  Executed backlog for the Wave 243 pass.

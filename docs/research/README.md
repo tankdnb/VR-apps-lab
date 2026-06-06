@@ -235,6 +235,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-237-webxr-depth-point-cloud-room-scan-and-spatial-dataset-viewers.md`
 - `landscape/vr-projects-wave-238-vr-training-rehabilitation-and-simulated-user-evaluation-harnesses.md`
 - `landscape/vr-projects-wave-239-game-specific-vr-retrofit-ux-mod-interaction-shells-and-in-game-control-surfaces.md`
+- `landscape/vr-projects-wave-240-vr-webview-browser-surfaces-spatial-keyboards-and-quest-native-web-content.md`
+- `landscape/vr-projects-wave-241-unity-xr-ui-adapters-grab-affordances-and-physical-control-microcomponents.md`
+- `landscape/vr-projects-wave-242-cv-mocap-and-industrial-vr-training-control-loops.md`
+- `landscape/vr-projects-wave-243-spatial-measuring-modeling-collaboration-and-mr-workbench-surfaces.md`
 
 ## Archive Navigation
 

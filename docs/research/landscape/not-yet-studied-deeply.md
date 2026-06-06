@@ -2513,6 +2513,58 @@ These are larger than a single repo and should guide the next research wave.
   menus, networked module state, binary asset caveats, ToS/multiplayer risk,
   and what is reusable outside game mods.
 
+### 193. `VR WebView surface matrix across native WebView, browser panels, focus, keyboards, permissions, capture modes, and editor fallbacks`
+
+- Main entries:
+  `TLabWebViewVR`, `TLabWebViewVR-XRInteractionToolkit-2022`,
+  `TLabWebViewVR-OculusIntegration-2022`
+- Why it matters:
+  Wave 240 deepened Quest-native WebView surfaces. A future matrix should
+  compare native WebView versus captured browser/window surfaces, Meta XR
+  versus XRI prefab boundaries, search/load callback design, focus-gated
+  keyboard event routing, JavaScript focus hooks, OpenXR Internet permission,
+  HardwareBuffer versus ByteBuffer rendering, Vulkan/OpenGLES caveats, editor
+  fallbacks, and whether WebView panels should become a first-class reusable
+  branch for VR documentation and dashboard tools.
+
+### 194. `Unity XR microcontrol matrix across UI Toolkit panels, grab rings, push buttons, keypads, hand animation, and reveal feedback`
+
+- Main entries:
+  `UnityUIToolkitXRAdapter`, `XRGrabInteractableRing`,
+  `Unity-XR-Interaction-Toolkit-VR-Mechanisms`, `VRPuzzelGame`
+- Why it matters:
+  Wave 241 deepened small Unity XR control donors. A future matrix should
+  compare UI Toolkit ray-to-panel mapping, render texture/collider sync,
+  synthetic Input System device state, grab affordance thresholds, hand
+  animation and visibility coupling, physical button events, keypad feedback,
+  door/reveal event dispatch, distance-readable UI, and which components should
+  become local reusable samples.
+
+### 195. `Sensor-tracked training loop matrix across ArUco, OptiTrack, EMG, ROS, WebSocket, OSC, calibration, smoothing, and logs`
+
+- Main entries:
+  `XR-CV-Forceps-Tracking-Unity`, `MotionCapture-AgilityLadder-XR-Study`,
+  `Industrial_Twin_XR-Safe-Robotics-and-6-Axis-VR-Control`, `MindscapeVR`
+- Why it matters:
+  Wave 242 deepened sensor-driven training and rehabilitation loops. A future
+  matrix should compare physical marker ingress, mocap alignment, participant
+  setup, smoothing filters, reprojection/validity metrics, freeze/safety gates,
+  balanced condition ordering, clinical/industrial feedback metaphors,
+  deadman/interlock framing, CSV logging, and privacy/safety caveats.
+
+### 196. `Spatial workbench matrix across measure/model/project, hand deformation, planning panels, collaboration, undo, and action logs`
+
+- Main entries:
+  `Sizer`, `Meshelanjelo`, `ar-resilience-planner-v2`, `Unity-Dive-VR`,
+  `street-art-gallery`
+- Why it matters:
+  Wave 243 deepened spatial workbench utilities. A future matrix should compare
+  hit-test measurement, angle/distance cards, local history, A-Frame model
+  editing, marker projection, hand-pinch deformation, deformation falloff,
+  additive planning scenes, persistent menu state, user-study logs, Netcode
+  ownership gates, shared-object selection counts, social hotspots, and guided
+  tour surfaces.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2689,6 +2741,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 170. `Spatial sensing viewer matrix across WebXR depth, room hit-test, lidar ray grids, splats, and dataset-scale XR apps`
 171. `VR training/evaluation matrix across simulated users, scenario state, sensor logging, coaching, and assessment`
 172. `Game-retrofit interaction shell matrix across patch layers, input handlers, world-space UI, haptics, and safety gates`
+173. `VR WebView surface matrix across native WebView, browser panels, focus, keyboards, permissions, capture modes, and editor fallbacks`
+174. `Unity XR microcontrol matrix across UI Toolkit panels, grab rings, push buttons, keypads, hand animation, and reveal feedback`
+175. `Sensor-tracked training loop matrix across ArUco, OptiTrack, EMG, ROS, WebSocket, OSC, calibration, smoothing, and logs`
+176. `Spatial workbench matrix across measure/model/project, hand deformation, planning panels, collaboration, undo, and action logs`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

@@ -7209,6 +7209,137 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - patch layer versus utility layer boundaries
 - haptics and comfort policy comparisons
 
+## Family 219: VR WebView browser surfaces and spatial keyboard routing
+
+This family covers Unity/Quest browser surfaces where native WebView content is
+treated as an XR panel with explicit search/load controls, focus handling,
+spatial keyboard input, and platform/rendering caveats.
+
+| Project | Status | Notes |
+|---|---|---|
+| `TLabAltoh/TLabWebViewVR` | Studied in Wave 240 | Quest-native WebView package family with Meta XR and XRI adapters, prefabs, spatial keyboard scene, XRBrowserInputField key forwarding, callbacks, Android-only rendering, permission, and rendering-mode caveats |
+| `TLabAltoh/TLabWebViewVR-XRInteractionToolkit-2022` | Studied in Wave 240 | Minimal Unity 2022 XRI WebView sample with TLabWebView_XRInteractionToolkit prefab, searchbar example, manifest boundary, and XRI compatibility notes |
+| `TLabAltoh/TLabWebViewVR-OculusIntegration-2022` | Studied in Wave 240 | Meta XR WebView variant with TLabWebView_MetaXR prefab, searchbar callbacks, dialog/error events, input-field components, and JavaScript focus/focusout keyboard reference |
+
+### Consolidation note
+
+This family matters because VR browser panels should name:
+
+- native WebView surface versus captured/browser overlay boundary
+- XR stack adapter and prefab contract
+- URL/search/load callback flow
+- focus-gated spatial keyboard routing
+- Android permission and render texture mode
+- HardwareBuffer/ByteBuffer, Vulkan/OpenGLES, and editor fallback caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Quest-native WebView surface checklists
+- VR text-entry matrix updates
+- browser panel permission and rendering-mode notes
+- focus/keyboard UX probes
+- WebView versus WebRTC versus captured-window comparison tables
+
+## Family 220: Unity XR UI adapter and physical-control microcomponents
+
+This family covers small Unity XR control donors: UI Toolkit panel adapters,
+visible grab affordances, physical buttons, keypads, hand-state helpers, and
+puzzle/control feedback components.
+
+| Project | Status | Notes |
+|---|---|---|
+| `BernwardWeigand/UnityUIToolkitXRAdapter` | Studied in Wave 241 | UI Toolkit to XRI bridge with collider-backed UIDocuments, synthetic Input System controller state, ray-to-panel local position mapping, render texture resizing, text-field focus, and angular-size UI |
+| `podobaas/XRGrabInteractableRing` | Source-light in Wave 241 | XRI grab-ring affordance reference documenting ring prefab, attach transform, show-on-selected, layer mask, threshold, scale, timing, and events |
+| `Priyanshu-CODERX/Unity-XR-Interaction-Toolkit-VR-Mechanisms` | Studied in Wave 241 | XRI mechanism set with UI proximity events, hand animation, hand visibility toggles, XRPushButton, and focused scenes for grab, teleport, UI, snap, hands, and buttons |
+| `Youkaku-1/VRPuzzelGame` | Studied in Wave 241 | VR puzzle/control reference with keypad input, accepted/denied feedback, emissive screen state, press animation, door events, decal reveal, and XRI scene surfaces |
+
+### Consolidation note
+
+This family matters because reusable XR controls should name:
+
+- ray-to-panel coordinate mapping
+- render texture/collider synchronization
+- distance-readable UI scale
+- grab affordance visibility and threshold policy
+- physical button/keypad event boundary
+- hand animation and hand visibility coupling
+- feedback surfaces for accepted, denied, locked, revealed, and opened states
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Unity XR control-pattern matrices
+- local sample plans for physical buttons and keypads
+- grab-affordance UX comparison
+- UI Toolkit versus Canvas/XRI adapter notes
+- puzzle/control microcomponent reuse checklists
+
+## Family 221: CV, mocap, and industrial training control loops
+
+This family covers VR systems where the central reusable pattern is not a menu
+or overlay, but a sensor-driven loop: ingress, calibration, smoothing, validity
+state, safety state, scenario feedback, and structured logs.
+
+| Project | Status | Notes |
+|---|---|---|
+| `WestCoastGod/XR-CV-Forceps-Tracking-Unity` | Studied in Wave 242 | Quest 3 ArUco forceps tracking with multi-marker rigid pose, reprojection error, One Euro smoothing, visibility-marker clamp state, clamp freeze, geometric grab mapping, and XRI release |
+| `jghanania/MotionCapture-AgilityLadder-XR-Study` | Studied in Wave 242 | Quest/OptiTrack study harness with balanced Latin-square conditions, AR/VR/real switching, occlusion control, avatar scaling, mocap alignment, foot-contact measurement, and CSV logging |
+| `jesusfernandorl/Industrial_Twin_XR-Safe-Robotics-and-6-Axis-VR-Control` | Source-light in Wave 242 | Industrial robot VR training reference for deadman switch, soft limits, interlocks, physical HMI feedback, spatial audio, Unity Robotics Hub/ROS direction, and safety-standard framing |
+| `purva-rana/MindscapeVR` | Source-light in Wave 242 | Neuro-rehabilitation concept with clinical-room to mindscape transition, neural blockage metaphor, XRI framing, and trigger-driven difficulty escalation |
+
+### Consolidation note
+
+This family matters because sensor-tracked VR training tools should name:
+
+- sensor ingress and coordinate frame
+- calibration/alignment and participant setup
+- smoothing/filtering and validity state
+- safety or freeze gates
+- scenario condition assignment
+- physical/clinical/industrial feedback loop
+- logs, CSVs, and privacy/security caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- sensor-ingress training matrices
+- ArUco/OptiTrack/EMG/ROS bridge comparisons
+- CSV/logging schema review
+- industrial safety-state UX references
+- rehabilitation metaphor versus measurement boundaries
+
+## Family 222: Spatial measuring, modeling, collaboration, and MR workbench surfaces
+
+This family covers spatial workbench utilities where users capture a point or
+surface, edit/model/manipulate it, project it into context, share it, or log the
+planning session.
+
+| Project | Status | Notes |
+|---|---|---|
+| `rtkCode/Sizer` | Studied in Wave 243 | Browser AR measure/model/project donor with WebXR hit-test reticle, distance/angle capture, DOM overlay cards, local history, A-Frame box editing, toolbar gestures, and AR.js marker projection |
+| `byte-banditt/Meshelanjelo` | Studied in Wave 243 | Meta Quest MR mesh manipulation donor with OVRHand pinch detection, pointer-pose deformation center, left-pull/right-push semantics, smoothed intensity, and Burst/job vertex-normal radius falloff |
+| `B22DigitalTwins2022/ar-resilience-planner-v2` | Studied in Wave 243 | MR planning workbench with additive scene loading, persistent menu state, panel selector, solution grouping, simulation updates, and timestamped user-study CSV logs |
+| `adityanooka/Unity-Dive-VR` | Studied in Wave 243 | Collaborative VR reference with Unity Netcode, XRI selection-count lift gates, server-owned spawning, server-only proximity reactions, ownership-guarded movement, and VR/desktop fallback |
+| `Hempp/street-art-gallery` | Source-light in Wave 243 | Social VR gallery product reference for hotspots, guided tours, avatars, emotes, voice, nametags, gathering areas, and comfort settings |
+
+### Consolidation note
+
+This family matters because spatial workbench utilities should name:
+
+- capture/measurement source and result object
+- model/edit/project stage
+- hand or controller manipulation semantics
+- local history, undo, and persistence
+- collaboration authority and ownership boundaries
+- panel/menu state and user-study logs
+- social or guided-tour affordances when the tool becomes a shared space
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- spatial-authoring workbench matrices
+- undo/history requirements
+- collaborative ownership and selection gates
+- MR planning panel patterns
+- hand-deformation and model-editing safety notes
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

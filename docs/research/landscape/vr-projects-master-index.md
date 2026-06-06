@@ -248,6 +248,10 @@ This file complements:
 - `vr-projects-wave-237-webxr-depth-point-cloud-room-scan-and-spatial-dataset-viewers.md`
 - `vr-projects-wave-238-vr-training-rehabilitation-and-simulated-user-evaluation-harnesses.md`
 - `vr-projects-wave-239-game-specific-vr-retrofit-ux-mod-interaction-shells-and-in-game-control-surfaces.md`
+- `vr-projects-wave-240-vr-webview-browser-surfaces-spatial-keyboards-and-quest-native-web-content.md`
+- `vr-projects-wave-241-unity-xr-ui-adapters-grab-affordances-and-physical-control-microcomponents.md`
+- `vr-projects-wave-242-cv-mocap-and-industrial-vr-training-control-loops.md`
+- `vr-projects-wave-243-spatial-measuring-modeling-collaboration-and-mr-workbench-surfaces.md`
 
 ## How to use this index
 

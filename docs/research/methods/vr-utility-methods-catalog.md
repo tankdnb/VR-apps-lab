@@ -13641,3 +13641,161 @@ When a new utility idea appears:
   overlay/control-surface design, radial and wrist menu matrices, virtual
   keyboard patterns, retrofit safety notes, and patch-layer architecture
   comparisons.
+
+## Method 685: VR WebView surface with focus-gated keyboard routing
+
+- What it is:
+  a Quest/Unity WebView tool treats web content as a native XR panel with a
+  clear prefab adapter, URL/search control flow, load/error callbacks,
+  focus-gated text input, and platform-specific rendering/permission gates.
+- Good for:
+  in-headset browser panels, documentation/reference surfaces, login or search
+  panels, web dashboards, help panes, and VR tools that need HTML content
+  without capturing a desktop window.
+- Why it matters:
+  WebView surfaces are deceptively easy to describe and easy to make brittle if
+  keyboard focus, Android permissions, graphics backend, editor fallback, and
+  XR-stack-specific prefabs are not separated.
+- Source evidence:
+  `TLabAltoh/TLabWebViewVR`,
+  `TLabAltoh/TLabWebViewVR-XRInteractionToolkit-2022`, and
+  `TLabAltoh/TLabWebViewVR-OculusIntegration-2022`.
+- Reusable core:
+  WebView prefab boundary, XR interaction adapter, URL/search field, page-load
+  callbacks, dialog/error callbacks, focused input field, keyboard visibility
+  trigger, key-event forwarding bridge, Android Internet permission, render
+  mode selection, and graphics-backend compatibility notes.
+- Do not copy directly:
+  Unity-version-specific package manifests, Android-only assumptions,
+  HardwareBuffer/ByteBuffer mode as a universal default, JavaScript focus hooks
+  without security review, or editor behavior as evidence of headset behavior.
+- Strong references:
+  `TLabWebViewVR` for the package family and keyboard bridge,
+  `TLabWebViewVR-XRInteractionToolkit-2022` for the XRI sample boundary, and
+  `TLabWebViewVR-OculusIntegration-2022` for the Meta XR variant.
+- Maturity:
+  useful implementation method; platform constraints need explicit validation
+  before product reuse.
+- Best fit for `VR-apps-lab`:
+  WebView/browser panel checklists, VR text-entry matrices, Quest-native
+  documentation panes, and native-web-surface versus captured-window
+  comparisons.
+
+## Method 686: Unity XR UI adapter and physical-control microcomponent boundary
+
+- What it is:
+  a Unity XR control surface can be decomposed into small adapters: ray-to-panel
+  mapping, visible grab affordance, hand state, physical button, keypad,
+  reveal/door event, and feedback-state components.
+- Good for:
+  VR utility menus, in-world settings panels, puzzle/control surfaces,
+  training controls, radial/wrist UI experiments, and reusable XRI interaction
+  samples.
+- Why it matters:
+  many Unity XR samples mix scene setup, input, visual feedback, and business
+  logic. Reuse gets easier when each control answers one question and exposes a
+  small event boundary.
+- Source evidence:
+  `BernwardWeigand/UnityUIToolkitXRAdapter`,
+  `podobaas/XRGrabInteractableRing`,
+  `Priyanshu-CODERX/Unity-XR-Interaction-Toolkit-VR-Mechanisms`, and
+  `Youkaku-1/VRPuzzelGame`.
+- Reusable core:
+  collider-backed UI document, local pointer coordinate mapping, synthetic
+  input-device state, render texture resize sync, text focus bridge, grab-ring
+  distance threshold, hand animation action mapping, hand visibility toggle,
+  physical button event, keypad state machine, accepted/denied feedback, and
+  unlock/reveal event dispatch.
+- Do not copy directly:
+  demo scene wiring, one-off puzzle values, asset-heavy scene dependencies,
+  source-light package claims as implementation evidence, or hardwired
+  controller assumptions.
+- Strong references:
+  `UnityUIToolkitXRAdapter` for UI Toolkit/XRI bridging,
+  `XRGrabInteractableRing` for affordance parameters,
+  `Unity-XR-Interaction-Toolkit-VR-Mechanisms` for micro-sample boundaries, and
+  `VRPuzzelGame` for physical keypad/door/reveal feedback.
+- Maturity:
+  strong control-pattern method; best reused as a checklist and local sample
+  plan rather than copied wholesale.
+- Best fit for `VR-apps-lab`:
+  Unity XR control-pattern matrices, physical button/keypad examples, grab
+  affordance UX notes, and panel adapter design.
+
+## Method 687: Sensor-tracked training control loop with calibration and logging
+
+- What it is:
+  a VR training or rehabilitation tool separates sensor ingress, calibration,
+  smoothing/filtering, validity state, scenario condition, safety gates,
+  feedback, and structured logging.
+- Good for:
+  physical-tool tracking, OptiTrack or motion-capture studies, rehab feedback,
+  industrial robot training, safety tutorials, and research/evaluation
+  harnesses.
+- Why it matters:
+  sensor-driven VR becomes hard to reason about when raw pose data, participant
+  setup, scenario scoring, safety state, and logs are hidden inside scene
+  scripts.
+- Source evidence:
+  `WestCoastGod/XR-CV-Forceps-Tracking-Unity`,
+  `jghanania/MotionCapture-AgilityLadder-XR-Study`,
+  `jesusfernandorl/Industrial_Twin_XR-Safe-Robotics-and-6-Axis-VR-Control`,
+  and `purva-rana/MindscapeVR`.
+- Reusable core:
+  marker or mocap ingress, coordinate-frame alignment, participant/environment
+  condition setup, smoothing filter, reprojection/validity metric, freeze or
+  safety gate, physical-state mapping, feedback surface, trial/session manager,
+  and CSV/event export.
+- Do not copy directly:
+  device-specific marker layouts, clinical or industrial safety claims,
+  README-only concepts as code donors, participant-data schemas without privacy
+  review, or robot-control logic without real interlock validation.
+- Strong references:
+  `XR-CV-Forceps-Tracking-Unity` for pose smoothing and tool-state mapping,
+  `MotionCapture-AgilityLadder-XR-Study` for study orchestration and logging,
+  `Industrial_Twin_XR-Safe-Robotics-and-6-Axis-VR-Control` for safety-state
+  framing, and `MindscapeVR` for rehabilitation product metaphor.
+- Maturity:
+  strong architecture method; implementation reuse requires domain, privacy,
+  hardware, and safety review.
+- Best fit for `VR-apps-lab`:
+  sensor-ingress matrices, training loop templates, calibration/logging
+  checklists, and industrial/clinical safety caveat docs.
+
+## Method 688: Spatial workbench state loop for measure, model, manipulate, project, and collaborate
+
+- What it is:
+  a spatial workbench utility exposes a state loop where users capture spatial
+  points or surfaces, edit/model/manipulate them, project the result, share or
+  collaborate on it, and preserve history or study logs.
+- Good for:
+  AR measurement tools, MR planning panels, mesh editing, collaborative object
+  manipulation, spatial galleries, guided tours, and design-review utilities.
+- Why it matters:
+  spatial workbench projects often look unrelated, but their reusable boundary
+  is the same: capture state, editable object, manipulation semantics,
+  persistence/history, collaboration authority, and feedback/logging.
+- Source evidence:
+  `rtkCode/Sizer`, `byte-banditt/Meshelanjelo`,
+  `B22DigitalTwins2022/ar-resilience-planner-v2`,
+  `adityanooka/Unity-Dive-VR`, and `Hempp/street-art-gallery`.
+- Reusable core:
+  hit-test or pointer capture, measurement/model object, edit toolbar,
+  gesture/pinch manipulation, deformation radius and falloff, panel/menu state,
+  local history, projection target, collaboration ownership, selection-count
+  gate, server-authoritative state changes, social hotspots, and action logs.
+- Do not copy directly:
+  student-project scaffolding, source-light feature lists as implementation
+  evidence, marker-only AR as the only projection model, or collaboration
+  ownership rules without conflict/latency review.
+- Strong references:
+  `Sizer` for measure/model/project history, `Meshelanjelo` for hand-driven
+  mesh deformation, `ar-resilience-planner-v2` for planning panels and logs,
+  `Unity-Dive-VR` for shared-object authority, and `street-art-gallery` for
+  social gallery product framing.
+- Maturity:
+  useful synthesis method; individual donors vary from code-level strong to
+  source-light product references.
+- Best fit for `VR-apps-lab`:
+  spatial-authoring matrices, MR workbench UX notes, undo/history requirements,
+  collaborative ownership patterns, and hand-manipulation caveats.

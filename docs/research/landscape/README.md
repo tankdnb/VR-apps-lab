@@ -1054,6 +1054,25 @@ Use these files when you want to understand:
   world-space UI, wrist/radial menus, virtual keyboards, haptics, calibration,
   and interaction shells.
 
+- `vr-projects-wave-240-vr-webview-browser-surfaces-spatial-keyboards-and-quest-native-web-content.md`
+  Next GitHub discovery wave focused on Quest-native WebView browser panels,
+  spatial keyboard routing, Meta XR/XRI prefab variants, and rendering caveats.
+
+- `vr-projects-wave-241-unity-xr-ui-adapters-grab-affordances-and-physical-control-microcomponents.md`
+  Next GitHub discovery wave focused on Unity UI Toolkit XR adapters, grab
+  affordances, physical buttons, keypads, hand state, and puzzle-control
+  feedback components.
+
+- `vr-projects-wave-242-cv-mocap-and-industrial-vr-training-control-loops.md`
+  Next GitHub discovery wave focused on ArUco tool tracking, OptiTrack study
+  harnesses, industrial robot safety concepts, and rehabilitation feedback
+  loops.
+
+- `vr-projects-wave-243-spatial-measuring-modeling-collaboration-and-mr-workbench-surfaces.md`
+  Next GitHub discovery wave focused on spatial measurement, model editing,
+  mesh deformation, planning panels, collaborative object gates, and social
+  gallery references.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
