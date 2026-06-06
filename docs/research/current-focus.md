@@ -127,6 +127,11 @@ These are the clearest current product and research lines:
    surfaces, shared WebXR room transports, Unity WebXR multiplayer shells,
    ROS/OpenVR/WebSocket teleoperation safety gates, and DIY headset/controller
    firmware-driver-spec boundaries.
+25. `Voice/chatbox composition, browser OSC controls, and VRC haptics lineage`
+   the repository now has fresh coverage of VAD-gated voice translation,
+   local/cloud STT mode routers, avatar-controlled STT/translation extensions,
+   media/status chatbox composers, browser/phone OSC control panels, and
+   avatar-driven haptics server/firmware/hardware boundaries.
 
 ## Most useful current docs
 
@@ -230,6 +235,10 @@ instead of full history:
 - `landscape/vr-projects-wave-185-accessibility-embodied-locomotion-redirected-walking-and-zero-g-control.md`
 - `landscape/vr-projects-wave-186-vr-menu-radial-control-avatar-menu-editing-and-osc-command-surfaces.md`
 - `landscape/vr-projects-wave-187-heart-rate-wearable-ant-ble-and-sensor-to-osc-bridge-variants.md`
+- `landscape/vr-projects-wave-188-vrchat-osc-voice-stt-translation-and-extensionable-chatbox-pipelines.md`
+- `landscape/vr-projects-wave-189-vrchat-chatbox-media-status-and-bounded-text-composition-microtools.md`
+- `landscape/vr-projects-wave-190-web-phone-and-browser-remote-osc-control-surfaces.md`
+- `landscape/vr-projects-wave-191-vrc-haptics-server-firmware-hardware-and-trigger-bridge-lineage.md`
 
 ## Strong donor clusters right now
 
@@ -691,6 +700,13 @@ the strongest current clusters:
   `HeartRateOnStream-OSC`, `OSC-VRChat-Feeder`, `vrc_hyperate_chatbox`
   for BLE/ANT/HTTP/WebSocket heart-rate ingress, avatar parameter schemas,
   connection-state booleans, chatbox presentation, and phone sensor profiles.
+- `FoxTrans`, `OSC_Voice`, `OSC-SRTC`, `RustyChatBox`,
+  `vrc-osc-spotify`, `VRChat-OSC-ChatBox`, `WebVRChatOSC`,
+  `VRCH-Server`, `VRCH-Firmware`, `HapticPatternTriggerOSC`
+  for VAD-gated speech translation, local/cloud STT routing,
+  avatar-controlled translation extensions, bounded chatbox composition,
+  browser/phone OSC command surfaces, and avatar-driven haptics
+  server/firmware/preset boundaries.
 
 ## Highest-value next follow-up passes
 
@@ -811,6 +827,10 @@ directions:
 112. `Locomotion/accessibility matrix across embodied wheel input, zero-G control, redirection gains, mode options, and input hubs`
 113. `VR command surface matrix across radial menus, physical launchers, editor expression-menu tools, and desktop OSC macro companions`
 114. `Biometric bridge compatibility matrix across BLE, ANT+, HTTP, OBS WebSocket, Hyperate, phone sensors, avatar parameters, and chatbox output`
+115. `Voice-to-chatbox pipeline matrix across VAD, STT, translation, avatar control, and extensions`
+116. `Chatbox composition matrix across media, lyrics, templates, status, keepalive, and tiny senders`
+117. `Browser and phone OSC control matrix across local web APIs, WebSocket relays, avatar parameter discovery, and safety gates`
+118. `VRC haptics event matrix across OSC contacts, server maps, firmware packets, hardware docs, presets, and tracker nodes`
 
 ## Current repository-maintenance priorities
 

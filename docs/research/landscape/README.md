@@ -805,6 +805,25 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on heart-rate, wearable, ANT/BLE, HTTP,
   OBS/WebSocket, Hyperate, phone sensor, chatbox, and OSC bridge variants.
 
+- `vr-projects-wave-188-vrchat-osc-voice-stt-translation-and-extensionable-chatbox-pipelines.md`
+  Next GitHub discovery wave focused on VRChat OSC voice, STT, translation,
+  avatar-controlled language/PTT state, typing indicators, and extensionable
+  chatbox pipelines.
+
+- `vr-projects-wave-189-vrchat-chatbox-media-status-and-bounded-text-composition-microtools.md`
+  Next GitHub discovery wave focused on media/status chatbox composers,
+  Spotify playback/lyrics, templates, telemetry, keepalive, and tiny senders.
+
+- `vr-projects-wave-190-web-phone-and-browser-remote-osc-control-surfaces.md`
+  Next GitHub discovery wave focused on local web panels, phone/browser
+  controls, WebSocket-to-OSC relays, avatar parameter discovery, and remote
+  command safety.
+
+- `vr-projects-wave-191-vrc-haptics-server-firmware-hardware-and-trigger-bridge-lineage.md`
+  Next GitHub discovery wave focused on VRC haptics servers, firmware,
+  hardware lineage, bHaptics preset triggers, tracker haptics, and DIY output
+  safety.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

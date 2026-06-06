@@ -1875,6 +1875,54 @@ These are larger than a single repo and should guide the next research wave.
   deeper pass should normalize parameter naming and map which transports are
   best for robust avatar telemetry.
 
+### 141. `Voice-to-chatbox pipeline matrix across VAD, STT, translation, avatar control, and extensions`
+
+- Main entries:
+  `FoxTrans`, `OSC_Voice`, `OSC-SRTC`
+- Why it matters:
+  this family captures microphone gating, direct audio translation, local/cloud
+  STT, typing indicators, avatar-controlled language/PTT state, and extension
+  processing. A future deeper pass should compare privacy, cost, provider
+  adapters, failure UX, and message-length handling before any voice sidecar is
+  promoted into a prototype.
+
+### 142. `Chatbox composition matrix across media, lyrics, templates, status, keepalive, and tiny senders`
+
+- Main entries:
+  `RustyChatBox`, `vrc-osc-spotify`, `vrchat-osc-spotify`,
+  `VRChatSpotifyControler`, `VRChat-OSC-ChatBox`,
+  `VRChat_OSC_Display_Mate`, `VRChat_OSC_Chatbox_for_GO`
+- Why it matters:
+  this family captures source modules, OAuth/playback polling, lyric timing,
+  template variables, system/window/media status, text limits, anti-spam, and
+  keepalive behavior. A future deeper pass should define a reusable chatbox
+  composer contract with privacy flags and length policies.
+
+### 143. `Browser and phone OSC control matrix across local web APIs, WebSocket relays, avatar parameter discovery, and safety gates`
+
+- Main entries:
+  `WebVRChatOSC`, `VRChat-OSC-Controller-Client`,
+  `VRChat-OSC-Controller-Server`
+- Why it matters:
+  this family captures local web panels, browser/phone controls, custom button
+  persistence, avatar OSC JSON parameter discovery, joystick/keyboard command
+  schemas, and WebSocket-to-OSC relays. A future deeper pass should define a
+  security checklist for binding, auth, origins, allowlists, rate limits, and
+  emergency key-up behavior.
+
+### 144. `VRC haptics event matrix across OSC contacts, server maps, firmware packets, hardware docs, presets, and tracker nodes`
+
+- Main entries:
+  `VRCH-Server`, `VRCH-Firmware`, `VRC-Haptics-Host`,
+  `VRC-Haptics-Firmware`, `VRC-Haptics-Hardware`,
+  `HapticPatternTriggerOSC`, `AXHaptics`, `VRCHaptics`
+- Why it matters:
+  this family captures avatar contact ingress, haptic maps, interpolation,
+  device managers, WiFi/BLE firmware, stale-output reset, PCB/BOM artifacts,
+  bHaptics preset triggers, and tracker-node compatibility. A future deeper
+  pass should extract a device-neutral haptic event schema and a safety
+  checklist for physical output.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2003,6 +2051,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 122. `Locomotion/accessibility matrix across embodied wheel input, zero-G control, redirection gains, mode options, and input hubs`
 123. `VR command surface matrix across radial menus, physical launchers, editor expression-menu tools, and desktop OSC macro companions`
 124. `Biometric bridge compatibility matrix across BLE, ANT+, HTTP, OBS WebSocket, Hyperate, phone sensors, avatar parameters, and chatbox output`
+125. `Voice-to-chatbox pipeline matrix across VAD, STT, translation, avatar control, and extensions`
+126. `Chatbox composition matrix across media, lyrics, templates, status, keepalive, and tiny senders`
+127. `Browser and phone OSC control matrix across local web APIs, WebSocket relays, avatar parameter discovery, and safety gates`
+128. `VRC haptics event matrix across OSC contacts, server maps, firmware packets, hardware docs, presets, and tracker nodes`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

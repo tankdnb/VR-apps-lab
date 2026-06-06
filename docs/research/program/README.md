@@ -1337,3 +1337,31 @@ repeatable way.
 
 - `github-research-wave-187-backlog.md`
   Executed backlog for the Wave 187 pass.
+
+- `github-research-wave-188-plan.md`
+  Wave 188 research plan focused on VRChat OSC voice, STT, translation, and
+  extensionable chatbox pipelines.
+
+- `github-research-wave-188-backlog.md`
+  Executed backlog for the Wave 188 pass.
+
+- `github-research-wave-189-plan.md`
+  Wave 189 research plan focused on VRChat chatbox media/status and bounded
+  text composition microtools.
+
+- `github-research-wave-189-backlog.md`
+  Executed backlog for the Wave 189 pass.
+
+- `github-research-wave-190-plan.md`
+  Wave 190 research plan focused on web, phone, and browser remote OSC control
+  surfaces.
+
+- `github-research-wave-190-backlog.md`
+  Executed backlog for the Wave 190 pass.
+
+- `github-research-wave-191-plan.md`
+  Wave 191 research plan focused on VRC haptics server, firmware, hardware,
+  and trigger bridge lineage.
+
+- `github-research-wave-191-backlog.md`
+  Executed backlog for the Wave 191 pass.

@@ -5405,6 +5405,136 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - transport-specific failure-mode notes
 - avatar telemetry and chatbox presentation helpers
 
+## Family 167: VRChat OSC voice, STT, translation, and extensionable chatbox pipelines
+
+This family covers voice-driven VRChat chatbox companions: microphone capture,
+VAD, STT, translation, typing indicators, avatar-side control, and extension
+hooks.
+
+| Project | Status | Notes |
+|---|---|---|
+| `MrShitFox/FoxTrans` | Already studied as VAD-gated voice translation donor | WebRTC VAD, pre-roll, WAV packing, OpenRouter direct audio translation, `/chatbox/typing`, `/chatbox/input`, and cloud/privacy caveats |
+| `ewrt101/OSC_Voice` | Already studied as chatbox input mode-router reference | time/file display, local STT, AssemblyAI realtime/chunk STT, manual OSC packing, typing state, and hardcoded/config caveats |
+| `R-VUt/OSC-SRTC` | Already studied as avatar-controlled STT/translation pipeline | GUI, recognizer/translator routing, avatar language/PTT/on-off parameters, dual-language output, Romaji, Flask extension chain, and security caveats |
+
+### Consolidation note
+
+This family matters because voice-to-chatbox tools need reusable boundaries
+beyond a single provider:
+
+- microphone gating and speech segmentation
+- local versus cloud recognizer routing
+- translation provider abstraction
+- typing and stale/error feedback
+- avatar-controlled language/PTT state
+- extension hooks with safe input/output contracts
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- provider-neutral voice sidecar contracts
+- microphone privacy and cloud-audio checklists
+- chatbox typing/status UX
+- avatar-controllable speech translation utilities
+
+## Family 168: VRChat chatbox media/status and bounded text composition microtools
+
+This family covers chatbox tools that compose short bounded messages from
+media playback, templates, system stats, active windows, lyrics, and tiny CLI
+senders.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Voiasis/RustyChatBox` | Already studied as Linux Rust/egui chatbox composer | dependency-gated modules, playerctl/MPRIS media, system stats, persisted config, rosc output, and Linux/POC caveats |
+| `bddvlpr/vrc-osc-spotify` | Already studied as Spotify OAuth and lyric scheduler donor | OAuth callback, token persistence, playback polling, chatbox sends, avatar bool state, lyric timeouts, and internal API caveats |
+| `Massivendurchfall/vrchat-osc-spotify` | Already studied as polished Spotify status composer | PKCE auth, templates, progress bars, 144-char clamping, anti-spam, AFK tags, keepalive, and Windows/automation caveats |
+| `Jakhaxz/VRChatSpotifyControler` | Already studied as avatar-menu media controller | OSC parameter input for play/pause, next/previous, volume, now-playing output, and Windows media-session caveats |
+| `Null-K/VRChat-OSC-ChatBox` | Already studied as template-variable chatbox GUI | placeholder catalog, extension registry, preview, timed send, length warning, and cross-platform metric caveats |
+| `WillW129/VRChat_OSC_Display_Mate` | Already studied as status aggregator microtool | active window, system stats, now playing, idle, Pulsoid HR, changed/keepalive sends, and privacy/Selenium caveats |
+| `nekochanfood/VRChat_OSC_Chatbox_for_GO` | Already studied as tiny Go sender baseline | message/host/port flags, continuous mode, and minimal sender caveats |
+
+### Consolidation note
+
+This family matters because chatbox utilities repeatedly need the same
+composition shape:
+
+- source modules
+- formatter/template layer
+- message limit policy
+- change detection and keepalive
+- privacy-sensitive fields
+- output send cadence
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- reusable chatbox composer contracts
+- media/status privacy controls
+- text-length strategies and rotating pages
+- tiny OSC sender baselines for scripts and diagnostics
+
+## Family 169: Web, phone, and browser remote OSC control surfaces
+
+This family covers browser and phone-facing control panels that send VRChat OSC
+commands through local HTTP APIs or WebSocket relays.
+
+| Project | Status | Notes |
+|---|---|---|
+| `sselecirPyM/WebVRChatOSC` | Already studied as local web OSC control panel | ASP.NET/Quasar UI, CoreOSC service, LiteDB custom buttons, avatar JSON parameter browser, chatbox/input controls, and public-binding/script risks |
+| `MiaBub/VRChat-OSC-Controller-Client` | Already studied as browser/phone remote-control client | keyboard, joystick, jump, chatbox payloads, WebSocket reconnect/ping, and hardcoded/no-auth caveats |
+| `MiaBub/VRChat-OSC-Controller-Server` | Already studied as WebSocket-to-OSC relay | command map, input-path sends, chatbox relay, key-up-all reset, profanity filter, and remote-control security caveats |
+
+### Consolidation note
+
+This family matters because remote OSC control is useful but risky:
+
+- phone-first command surfaces
+- custom button/action storage
+- avatar parameter discovery
+- WebSocket relay schemas
+- key-up/emergency reset behavior
+- authentication, origin, binding, and allowlist requirements
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- secure browser-to-OSC command schemas
+- avatar parameter browser helpers
+- remote-control safety checklists
+- phone-accessible accessibility/control panels
+
+## Family 170: VRC haptics server, firmware, hardware, and trigger bridge lineage
+
+This family covers avatar-driven haptic output systems: VRChat OSC contact
+ingress, haptic maps, interpolation, device managers, WiFi/BLE firmware,
+hardware artifacts, preset triggers, and tracker haptics modules.
+
+| Project | Status | Notes |
+|---|---|---|
+| `VRC-Haptics/VRCH-Server` | Already studied as mature VRC haptics manager | OSC batching, `/avatar/change`, haptic maps, interpolation, device manager, WiFi/BLE transports, and sidecar/config caveats |
+| `VRC-Haptics/VRCH-Firmware` | Already studied as ESP haptics firmware donor | LittleFS config, serial/OSC commands, multicast discovery, haptic packet parsing, LEDC/PCA output, stale reset, and power/thermal caveats |
+| `virtuallyaverage/VRC-Haptics-Host` | Already studied as readable Python lineage donor | mDNS discovery, VRC contact callbacks, board handler, modulation, compact output packets, and superseded protocol caveats |
+| `virtuallyaverage/VRC-Haptics-Firmware` | Superseded firmware lineage reference | retained for protocol/history comparison only |
+| `virtuallyaverage/VRC-Haptics-Hardware` | Hardware documentation lineage reference | PCB, Gerber, KiCad, BOM, CPL, and ordered JLC exports; development moved to newer hardware repo |
+| `sync1211/HapticPatternTriggerOSC` | Already studied as bHaptics preset trigger bridge | tact imports, OSC boolean parameter mapping, pattern playback, false reset, and boolean-only caveat |
+| `TahvoDev/AXHaptics` | Already studied as AXIS tracker haptics VRCOSC module | VRC/bHaptics-compatible parameter mapping, UDP node commands, proximity intensity, and deprecation caveat |
+| `Pillazo/VRCHaptics` | Already studied as legacy DIY haptics baseline | VB.NET OSC host, serial provisioning, multicast intensity packets, BOM/hardware docs, ESP firmware, and old-stack caveats |
+
+### Consolidation note
+
+This family matters because haptic utilities need a device-neutral event layer:
+
+- avatar/contact parameter ingress
+- haptic event normalization
+- maps, nodes, groups, and interpolation
+- vendor preset trigger paths
+- firmware packet protocols
+- hardware safety and stale-output reset
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- haptic event schema matrices
+- OSC-to-physical-output safety rules
+- firmware/hardware documentation checklists
+- device-neutral haptic routers and preset bridges
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

@@ -196,6 +196,10 @@ This file complements:
 - `vr-projects-wave-185-accessibility-embodied-locomotion-redirected-walking-and-zero-g-control.md`
 - `vr-projects-wave-186-vr-menu-radial-control-avatar-menu-editing-and-osc-command-surfaces.md`
 - `vr-projects-wave-187-heart-rate-wearable-ant-ble-and-sensor-to-osc-bridge-variants.md`
+- `vr-projects-wave-188-vrchat-osc-voice-stt-translation-and-extensionable-chatbox-pipelines.md`
+- `vr-projects-wave-189-vrchat-chatbox-media-status-and-bounded-text-composition-microtools.md`
+- `vr-projects-wave-190-web-phone-and-browser-remote-osc-control-surfaces.md`
+- `vr-projects-wave-191-vrc-haptics-server-firmware-hardware-and-trigger-bridge-lineage.md`
 
 ## How to use this index
 

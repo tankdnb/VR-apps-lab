@@ -11154,3 +11154,268 @@ When a new utility idea appears:
   `Solexid/OSC-VRChat-Feeder`.
 - Best fit for `VR-apps-lab`:
   mobile sensor feeder and avatar telemetry experiments.
+
+## Method 609: VAD-gated direct audio-to-chatbox translation pipeline
+
+- What it is:
+  a microphone sidecar segments speech with VAD, sends only speech phrases to a
+  recognizer/translator, and publishes translated text to VRChat chatbox.
+- Good for:
+  speech translation companions, accessibility sidecars, travel/social VR
+  tools, and microphone-to-text experiments.
+- Why it matters:
+  speech tools need a capture gate so cloud STT does not process continuous
+  silence, private background audio, or avoidable paid traffic.
+- Source evidence:
+  `FoxTrans`.
+- Reusable core:
+  record fixed-size mono frames, keep a short pre-roll, use speech/silence
+  counters around WebRTC VAD, pack the resulting phrase, set chatbox typing
+  while processing, and send the final translated message to `/chatbox/input`.
+- Do not copy directly:
+  provider-specific prompts/models, cloud audio defaults, custom OSC packing
+  without validation, or missing retry/backoff.
+- Strong references:
+  `MrShitFox/FoxTrans`.
+- Best fit for `VR-apps-lab`:
+  voice translation sidecar architecture and privacy checklist.
+
+## Method 610: Avatar-controlled STT/translation pipeline with extension chain
+
+- What it is:
+  a speech pipeline exposes language, PTT, on/off, and output behavior through
+  avatar OSC parameters while routing recognized text through translation and
+  optional extension processors.
+- Good for:
+  in-world controllable translation tools, accessibility utilities, bilingual
+  chatbox apps, and creator-facing voice companions.
+- Why it matters:
+  avatar parameters let the user control speech tools without leaving VR.
+- Source evidence:
+  `OSC-SRTC`.
+- Reusable core:
+  run a local OSC server, map avatar parameter callbacks to pipeline state,
+  capture/recognize speech, translate one or more targets, pass text through
+  ordered extensions, and send a composed chatbox message.
+- Do not copy directly:
+  query-string extension forwarding, process-kill shutdown, unofficial provider
+  assumptions, or weak API-key handling.
+- Strong references:
+  `R-VUt/OSC-SRTC`.
+- Best fit for `VR-apps-lab`:
+  avatar-controllable voice utility and extension-boundary notes.
+
+## Method 611: Chatbox input mode router
+
+- What it is:
+  one utility routes several input sources, such as time, file lines, local
+  STT, and cloud STT, into a common VRChat chatbox output path.
+- Good for:
+  rapid chatbox experiments, diagnostics, accessibility prototypes, and
+  provider comparison tools.
+- Why it matters:
+  a shared output path makes it easier to compare recognition providers and
+  non-voice inputs without rewriting OSC sending code.
+- Source evidence:
+  `OSC_Voice`.
+- Reusable core:
+  present mode selection, keep source-specific capture/recognition in separate
+  modules, normalize text output, toggle typing when relevant, and route all
+  sources through one chatbox sender.
+- Do not copy directly:
+  hardcoded paths/IPs, ASCII-only OSC packing, crude thresholds, or streaming
+  defaults that create surprise cost.
+- Strong references:
+  `ewrt101/OSC_Voice`.
+- Best fit for `VR-apps-lab`:
+  chatbox source-router prototypes and STT provider comparison.
+
+## Method 612: Dependency-gated Linux chatbox composer
+
+- What it is:
+  a Linux chatbox utility exposes optional modules only when their external
+  dependencies and data sources are available.
+- Good for:
+  Linux VRChat companions, media/status overlays, MPRIS/playerctl tools, and
+  system telemetry chatbox apps.
+- Why it matters:
+  Linux utility UX improves when missing dependencies are visible constraints,
+  not mysterious broken fields.
+- Source evidence:
+  `RustyChatBox`.
+- Reusable core:
+  load persisted module settings, check external dependencies up front, format
+  media/status/system strings through modules, disable or warn on unavailable
+  modules, and send final text through one OSC sender.
+- Do not copy directly:
+  early POC UI coupling, Linux-only assumptions as universal behavior, or
+  emoji/string handling without validation.
+- Strong references:
+  `Voiasis/RustyChatBox`.
+- Best fit for `VR-apps-lab`:
+  Linux-first chatbox/status companion notes.
+
+## Method 613: Playback-to-chatbox bridge with OAuth and lyric scheduling
+
+- What it is:
+  a media companion authenticates to a playback service, polls current track
+  state, sends now-playing chatbox text, and optionally schedules lyric lines
+  against playback progress.
+- Good for:
+  music status companions, social VR presentation, streamer tools, and
+  lyric/subtitle experiments.
+- Why it matters:
+  playback bridges need token persistence, send cadence, and timed text
+  scheduling as explicit boundaries.
+- Source evidence:
+  `vrc-osc-spotify`, `vrchat-osc-spotify`.
+- Reusable core:
+  run OAuth/PKCE login, persist and refresh tokens, poll playback state, format
+  a bounded message, clear old timers on track change, schedule lyric lines by
+  playback offset, and avoid repeated sends.
+- Do not copy directly:
+  internal lyric APIs, anti-AFK behavior, secret handling shortcuts, or
+  Windows-only status helpers as generic code.
+- Strong references:
+  `bddvlpr/vrc-osc-spotify`,
+  `Massivendurchfall/vrchat-osc-spotify`.
+- Best fit for `VR-apps-lab`:
+  media/status chatbox utility design.
+
+## Method 614: Template-variable chatbox composer with bounded send cadence
+
+- What it is:
+  a chatbox utility expands placeholders from registered data sources, previews
+  the result, enforces message limits, and sends manually, periodically, or on
+  change.
+- Good for:
+  status panels, telemetry text, media summaries, active-window indicators,
+  tiny automation senders, and chatbox diagnostics.
+- Why it matters:
+  chatbox surfaces are small; useful tools need formatter, limiter, privacy,
+  and cadence policies rather than raw string sends.
+- Source evidence:
+  `VRChat-OSC-ChatBox`, `VRChat_OSC_Display_Mate`,
+  `VRChat_OSC_Chatbox_for_GO`.
+- Reusable core:
+  register placeholders by category, expand templates, preview the final
+  message, warn or truncate near the limit, detect changes, keep a keepalive
+  interval, and expose a tiny CLI sender for scripts.
+- Do not copy directly:
+  unfiltered active-window titles, Selenium scraping defaults, no length checks,
+  or platform-specific metric probes without capability flags.
+- Strong references:
+  `Null-K/VRChat-OSC-ChatBox`,
+  `WillW129/VRChat_OSC_Display_Mate`,
+  `nekochanfood/VRChat_OSC_Chatbox_for_GO`.
+- Best fit for `VR-apps-lab`:
+  reusable chatbox composer and tiny OSC sender baseline.
+
+## Method 615: Browser/phone OSC controller bridge
+
+- What it is:
+  a local web or phone UI sends allowlisted commands through HTTP/WebSocket to
+  an OSC service that controls VRChat chatbox, input paths, or avatar
+  parameters.
+- Good for:
+  phone companion panels, accessibility controls, avatar command surfaces,
+  remote debugging, and browser-based OSC utilities.
+- Why it matters:
+  browser controls are convenient but dangerous unless binding, auth, command
+  schemas, and emergency reset behavior are explicit.
+- Source evidence:
+  `WebVRChatOSC`, `VRChat-OSC-Controller-Client`,
+  `VRChat-OSC-Controller-Server`.
+- Reusable core:
+  keep OSC send/listen in a local service, expose a typed command API, store
+  custom buttons, discover avatar parameters from VRChat OSC JSON or OSCQuery,
+  map browser controls to named commands, and provide key-up-all/emergency
+  reset behavior.
+- Do not copy directly:
+  arbitrary script execution, unauthenticated public WebSockets, raw path sends
+  without allowlists, or hardcoded public endpoints.
+- Strong references:
+  `sselecirPyM/WebVRChatOSC`,
+  `MiaBub/VRChat-OSC-Controller-Client`,
+  `MiaBub/VRChat-OSC-Controller-Server`.
+- Best fit for `VR-apps-lab`:
+  secure web/phone OSC control surface patterns.
+
+## Method 616: Avatar OSC to haptic event and device-manager pipeline
+
+- What it is:
+  a haptics server normalizes VRChat OSC contact/avatar parameters into haptic
+  events, maps those events to device nodes, interpolates intensity, and routes
+  output through device-specific managers.
+- Good for:
+  wearable haptics, DIY motor devices, vendor-agnostic haptic routers, and
+  avatar-driven physical-output systems.
+- Why it matters:
+  reusable haptics tools should separate avatar ingress from event maps and
+  hardware transport.
+- Source evidence:
+  `VRCH-Server`, `VRC-Haptics-Host`.
+- Reusable core:
+  listen to VRChat OSC, batch/cache parameter changes, map addresses to haptic
+  nodes/groups, compute intensity/interpolation, hold per-device settings, and
+  route timed output through WiFi/BLE/device handles.
+- Do not copy directly:
+  project-specific node maps, experimental sidecars, old protocol assumptions,
+  or hardware control without safety gates.
+- Strong references:
+  `VRC-Haptics/VRCH-Server`,
+  `virtuallyaverage/VRC-Haptics-Host`.
+- Best fit for `VR-apps-lab`:
+  physical-output router and haptic event schema design.
+
+## Method 617: Firmware-side haptic protocol with config and stale reset
+
+- What it is:
+  firmware receives compact haptic packets and control commands, persists
+  device config, advertises/discovers over the network, and resets outputs when
+  data goes stale.
+- Good for:
+  DIY haptics, wearable devices, accessory-control bridges, and custom physical
+  output experiments.
+- Why it matters:
+  physical output must fail safe; stale packets, power limits, config, and
+  discovery are part of the method, not implementation details.
+- Source evidence:
+  `VRCH-Firmware`, `VRCHaptics`, `VRC-Haptics-Hardware`.
+- Reusable core:
+  load flash config, expose serial/OSC commands, announce device identity,
+  parse compact motor payloads, drive PWM/PCA outputs, stop motors on timeout,
+  and document BOM/PCB/pin-map assumptions beside firmware.
+- Do not copy directly:
+  DIY pin maps, magic multicast constants, old firmware, or motor control code
+  without electrical, thermal, and safety review.
+- Strong references:
+  `VRC-Haptics/VRCH-Firmware`, `Pillazo/VRCHaptics`,
+  `virtuallyaverage/VRC-Haptics-Hardware`.
+- Best fit for `VR-apps-lab`:
+  firmware/hardware boundary checklist for physical-output tools.
+
+## Method 618: OSC-triggered haptic preset and tracker-node bridge
+
+- What it is:
+  OSC avatar parameters trigger haptic patterns or tracker-node vibration
+  commands through a vendor or hardware-specific backend.
+- Good for:
+  bHaptics pattern playback, tracker haptics, compatibility modules, avatar
+  contact effects, and lightweight physical feedback experiments.
+- Why it matters:
+  not every haptic tool needs a full custom firmware stack; many can translate
+  avatar parameters into existing vendor/device actions.
+- Source evidence:
+  `HapticPatternTriggerOSC`, `AXHaptics`.
+- Reusable core:
+  persist parameter-to-pattern or parameter-to-node mappings, listen for OSC
+  booleans/floats, play the mapped pattern or command node vibration, scale
+  proximity/intensity values, and reset one-shot booleans when needed.
+- Do not copy directly:
+  boolean-only limitations, deprecated tracker protocols, no-auth receivers,
+  or vendor SDK coupling as the only backend.
+- Strong references:
+  `sync1211/HapticPatternTriggerOSC`, `TahvoDev/AXHaptics`.
+- Best fit for `VR-apps-lab`:
+  haptic preset bridges and compatibility modules.

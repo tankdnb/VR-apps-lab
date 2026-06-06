@@ -2424,6 +2424,59 @@ Primary docs:
 - `RedlineTriad/vrchat_ant_hr` - `Already studied as Rust ANT+ HR dongle bridge with computed/intra-beat BPM modes, anomaly filtering, and VRChat OSC output`
 - `Naraenda/osc-hr-ble` - `Already studied as compact Rust BLE GATT heart-rate parser sending raw/digit/normalized OSC bundle parameters`
 
+## 159. VRChat OSC voice, STT, translation, and extensionable chatbox pipelines
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-188-vrchat-osc-voice-stt-translation-and-extensionable-chatbox-pipelines.md`
+- `../landscape/project-families.md`
+
+- `MrShitFox/FoxTrans` - `Already studied as C# WebRTC VAD voice-translation sidecar with pre-roll buffering, WAV packing, OpenRouter direct audio translation, typing indicator, and VRChat chatbox output`
+- `ewrt101/OSC_Voice` - `Already studied as C# multi-mode chatbox sender for time/file display, local STT, AssemblyAI realtime/chunk STT, manual OSC packing, and typing state`
+- `R-VUt/OSC-SRTC` - `Already studied as Python GUI STT/translation pipeline with avatar OSC language/PTT/on-off controls, dual-language output, Romaji, and Flask extension chain`
+
+## 160. VRChat chatbox media/status and bounded text composition microtools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-189-vrchat-chatbox-media-status-and-bounded-text-composition-microtools.md`
+- `../landscape/project-families.md`
+
+- `Voiasis/RustyChatBox` - `Already studied as Linux Rust/egui chatbox composer with dependency-gated media/system modules, persisted config, MPRIS/playerctl integration, and rosc output`
+- `bddvlpr/vrc-osc-spotify` - `Already studied as Node/TypeScript Spotify OAuth bridge with token persistence, playback polling, chatbox output, avatar bool state, and lyric scheduling`
+- `Massivendurchfall/vrchat-osc-spotify` - `Already studied as Python Spotify status GUI with PKCE auth, templates, progress bars, truncation, anti-spam, AFK tags, and keepalive sends`
+- `Jakhaxz/VRChatSpotifyControler` - `Already studied as Windows avatar-OSC-to-Spotify media controller with play/pause, next/previous, volume, and now-playing chatbox output`
+- `Null-K/VRChat-OSC-ChatBox` - `Already studied as template-variable chatbox GUI with placeholder catalog, extension registry, live preview, timer sends, and length warning`
+- `WillW129/VRChat_OSC_Display_Mate` - `Already studied as Windows status aggregator for active window, system stats, media, idle, Pulsoid HR, and change/keepalive send gating`
+- `nekochanfood/VRChat_OSC_Chatbox_for_GO` - `Already studied as minimal Go CLI chatbox sender baseline with message, host, port, and continuous flags`
+
+## 161. Web, phone, and browser remote OSC control surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-190-web-phone-and-browser-remote-osc-control-surfaces.md`
+- `../landscape/project-families.md`
+
+- `sselecirPyM/WebVRChatOSC` - `Already studied as ASP.NET/Quasar local web OSC panel with CoreOSC service, LiteDB custom buttons, avatar JSON parameter discovery, and chatbox/input controls`
+- `MiaBub/VRChat-OSC-Controller-Client` - `Already studied as static browser/phone control client with keyboard, joystick, jump, chatbox, WebSocket reconnect, and ping loop`
+- `MiaBub/VRChat-OSC-Controller-Server` - `Already studied as Node WebSocket-to-OSC relay with command map, input-path sends, chatbox relay, key-up-all reset, and remote-control security caveats`
+
+## 162. VRC haptics server, firmware, hardware, and trigger bridge lineage
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-191-vrc-haptics-server-firmware-hardware-and-trigger-bridge-lineage.md`
+- `../landscape/project-families.md`
+
+- `VRC-Haptics/VRCH-Server` - `Already studied as Rust/Tauri VRC haptics manager with OSC batching, haptic maps, interpolation, device manager, WiFi/BLE transports, and config save loop`
+- `VRC-Haptics/VRCH-Firmware` - `Already studied as ESP32/ESP8266 haptics firmware with LittleFS config, serial/OSC commands, multicast discovery, LEDC/PCA motor outputs, and stale reset behavior`
+- `virtuallyaverage/VRC-Haptics-Host` - `Already studied as older Python VRC haptics host with mDNS discovery, contact parameter callbacks, modulation, board handlers, and `/h` packet output`
+- `virtuallyaverage/VRC-Haptics-Firmware` - `Superseded firmware lineage reference for comparison with modern VRC-Haptics/VRCH-Firmware`
+- `virtuallyaverage/VRC-Haptics-Hardware` - `Hardware lineage reference with PCB, Gerber, KiCad, BOM, CPL, and ordered JLC export artifacts; development moved to newer hardware repo`
+- `sync1211/HapticPatternTriggerOSC` - `Already studied as WinForms OSC boolean-to-bHaptics tact preset trigger bridge with pattern import, mapping, playback, and reset`
+- `TahvoDev/AXHaptics` - `Already studied as deprecated VRCOSC AXIS tracker haptics module mapping VRC/bHaptics-compatible parameters to UDP node vibration commands`
+- `Pillazo/VRCHaptics` - `Already studied as legacy DIY VRC haptics stack with VB.NET OSC host, serial provisioning, multicast intensity packets, BOM/hardware docs, and ESP firmware`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:
