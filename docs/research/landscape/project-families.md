@@ -7756,6 +7756,154 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - Blender/WebXR export pipeline checklists
 - annotation schema and scene-inspection surfaces
 
+## Family 235: VMC transport and identity-preserving motion bridges
+
+This family covers projects that move VMC, OpenXR pose, or avatar motion data
+across local protocol, network transport, and operator-monitor boundaries.
+
+| Project | Status | Notes |
+|---|---|---|
+| `LukasLichten/simple-xr2vmc` | Studied in Wave 256 | Minimal Rust OpenXR headless pose sampler with extension gates, action-set pose polling, session events, predicted-time reads, and incomplete VMC output |
+| `sotanmochi/VMCTransportBridge` | Studied in Wave 256 | Unity/.NET VMC transport bridge with typed messages, MessagePack envelopes, network client identity, transport adapters, subscriber filters, and re-emission |
+| `sotanmochi/VMCTransportHub` | Studied in Wave 256 | WPF/Blazor operator hub for VMC transport choice, destination routing, client-id filters, connection state, and message monitoring |
+| `vivi90/python-vmc` | Source-light in Wave 256 | Moved Python VMC wrapper pointer, retained as a scripting-language follow-up node |
+
+### Consolidation note
+
+This family matters because pose bridges should name:
+
+- pose source and runtime/session assumptions
+- local protocol parser or sender
+- typed message model and transform/calibration boundary
+- client identity and routing model
+- network transport and reconnect behavior
+- monitor or operator surface
+- security and trust assumptions
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VMC/VRM/OSC tracker bridge matrices
+- identity-preserving motion relay patterns
+- headless OpenXR pose-source helpers
+- bridge monitor and operator UI templates
+- transport auth, latency, and transform-calibration caveats
+
+## Family 236: XSOverlay notification relay and compatibility surfaces
+
+This family covers projects that send desktop, app, vendor-log, audio, status,
+or VRChat events into XSOverlay-compatible notification APIs.
+
+| Project | Status | Notes |
+|---|---|---|
+| `nnaaa-vr/XSOverlay-VRChat-Parser` | Studied in Wave 257 | VRChat log-event parser with per-event XSOverlay notification config |
+| `bluskript/xsoverlay-notifier` | Studied in Wave 257 | Rust Windows toast listener/poller to XSOverlay UDP bridge |
+| `nnaaa-vr/XSNotifications` | Studied in Wave 257 | Queue-backed .NET XSOverlay UDP notification helper library |
+| `Minty-Labs/WindowsXSO` | Studied in Wave 257 | Windows toast companion with app filters, permission guidance, SteamVR lifecycle, and notification heuristics |
+| `Duinrahaic/XSSocket` | Studied in Wave 257 | C# XSOverlay WebSocket command/status wrapper for notifications, overlay commands, device info, media, and settings |
+| `Zyphrono/XSOverlay-VRChat-Status` | Studied in Wave 257 | VRChat service-status change detector with XSOverlay warnings |
+| `project-vrcat/XSNotifier-Go` | Studied in Wave 257 | Minimal Go XSOverlay UDP payload normalizer and client |
+| `gizmogoat/XSNotifyDaemon` | Studied in Wave 257 | Linux compatibility daemon that accepts XSOverlay-like WebSocket notifications and forwards to `notify-send` |
+| `JacobA2000/VRCazam` | Studied in Wave 257 | VRChat OSC trigger to loopback audio recognition and XSOverlay/desktop notification |
+| `pikepikeid/PICOBatteryWatcher` | Studied in Wave 257 | PICO Connect log-tail battery monitor with XSOverlay WebSocket notifications |
+
+### Consolidation note
+
+This family matters because notification relays should name:
+
+- event source and permission gate
+- event normalization and privacy filter
+- dedupe, cadence, and threshold policy
+- payload schema and transport adapter
+- delivery/fallback behavior
+- platform compatibility or daemon emulation boundary
+- user-facing filter and pause state
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- XSOverlay UDP/WebSocket payload matrices
+- privacy-safe desktop-to-VR notification relays
+- vendor-log telemetry microtools
+- compatibility-daemon patterns for Linux and alternate overlay hosts
+- avatar-triggered desktop action and notification loops
+
+## Family 237: VRChat OSC micro-control and external-signal utilities
+
+This family covers small VRChat OSC tools that convert hotkeys, controller
+state, BLE/MIDI/device signals, shell commands, or UI actions into avatar,
+input, and chatbox endpoints.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Sayamame-beans/VRC_AFK_AutoMuter` | Studied in Wave 258 | AFK/MuteSelf state mirror with delayed `/input/Voice` pulse |
+| `03milo/InputFixer` | Studied in Wave 258 | OpenVR controller axis poller and threshold remapper for VRChat OSC input |
+| `Airbee/VRChat-OSC-Scaling` | Studied in Wave 258 | Tiny eye-height parameter sender UI |
+| `koturn/OscRapidUseRight` | Studied in Wave 258 | Global-hotkey rapid `/input/UseRight` sender with safe release on stop |
+| `Hino-VRChat/vrchat-mute-toggle` | Studied in Wave 258 | Robust tray mute toggle with hotkey queue, state listener, process polling, and cooldown |
+| `SourLemonJuice/VRChat-OSC-Shell` | Studied in Wave 258 | CLI chatbox and typing wrapper for shell scripts |
+| `YimuQrrr/OSC_Tool` | Studied in Wave 258 | Chatbox, OSC scanner, address tester, MIDI mapper, key-file mode, and log monitor toolkit |
+| `xiaoBingge114514/VRChat-OSC-Chat-Tool` | Studied in Wave 258 | Desktop chatbox/status composer with music, lyrics, heart rate, system stats, and templates |
+| `Ero-Cat/hr_push` | Studied in Wave 258 | Flutter BLE heart-rate bridge with HTTP/WS/MQTT/OSC outputs and chatbox templates |
+| `kb10uy/phorcys` | Studied in Wave 258 | Rust OSC parser/serializer, VRChat config helpers, and MIDI-to-parameter mapper |
+
+### Consolidation note
+
+This family matters because OSC micro-control utilities should name:
+
+- input/source adapter
+- typed OSC address contract
+- state mirror, listener, or parameter cache
+- queue, cooldown, debounce, and safe release behavior
+- process/lifecycle gate
+- visible tray, UI, CLI, or log feedback
+- privacy and consent for public or biometric output
+- port conflicts and OSCQuery fallback strategy
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VRChat OSC microtool safety checklists
+- external-signal to avatar-parameter routing
+- typed OSC library comparisons
+- queue/cadence patterns for command surfaces
+- biometric and MIDI bridge caveats
+
+## Family 238: Meta Quest companion capture, telemetry, and setup helpers
+
+This family covers Quest companion utilities that handle capture, media
+ingestion, sensor streams, ADB setup, registry/config patching, screen
+casting, and research data export.
+
+| Project | Status | Notes |
+|---|---|---|
+| `t-34400/metaquest-3d-reconstruction` | Studied in Wave 259 | Quest Reality Capture images/depth to Open3D/COLMAP reconstruction pipeline with dataset contracts and coordinate transforms |
+| `kodaekwan/MetaQuest_HandTracking` | Studied in Wave 259 | Quest/Unity hand and headset UDP telemetry receiver, coordinate transformer, visualizer, and adjacent UDP JPEG streamer |
+| `lukasmoro/cameraaccess-metaquest` | Studied in Wave 259 | Quest cast plus OBS virtual camera to Python YOLO and Unity TCP client workaround |
+| `CHUNx3/MetaQuestBitrateRegistryEditor` | Studied in Wave 259 | WinForms Meta Link registry patcher with restore-by-delete behavior |
+| `t-34400/MetaQuestScreenshotLoader` | Studied in Wave 259 | Unity Android plugin loading latest Quest screenshot bytes into a texture |
+| `hiroyamochi/quest-screen-caster` | Studied in Wave 259 | Quest GUI over scrcpy and ADB screenrecord with model detection, wireless ADB, wake/proximity guards, display-id fallback, and ffplay/OBS modes |
+| `XargonWan/metaquest-username-changer` | Studied in Wave 259 | Bash/ADB username JSON and global-setting patch microtool with progress-reset warning |
+| `SinanAkkoyun/OculusQuest2ADBAutoWifi` | Studied in Wave 259 | Node CLI for Quest ADB Wi-Fi setup using USB wait, `tcpip 5555`, and route-based IP discovery |
+| `Clept0/Unity_QuestPro_EyeTrackingRecorder` | Studied in Wave 259 | Unity OVR eye-tracking recorder with calibration scenes, CSV schema, heatmap particles, and Python gaze-error analysis |
+
+### Consolidation note
+
+This family matters because Quest helper utilities should name:
+
+- device discovery and version/model assumptions
+- permission, ADB, registry, storage, or identity gate
+- capture/sensor adapter
+- transport and data schema
+- desktop processing or Unity plugin boundary
+- operator UI and rollback path
+- privacy, power-state, and device safety caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Quest capture path matrices
+- ADB setup and safety checklists
+- screenshot/media ingestion helpers
+- screenrecord/scrcpy/OBS virtual-camera comparisons
+- Quest hand/eye/depth/camera telemetry schemas
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

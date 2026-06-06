@@ -14323,3 +14323,188 @@ When a new utility idea appears:
   smart-glasses desktop setup notes, WebXR utility surface prototypes,
   authoring/export checklists, annotation schemas, and OS/display boundary
   comparison docs.
+
+## Method 701: Identity-preserving motion protocol bridge with pose source, envelope, and monitor surface
+
+- What it is:
+  a motion bridge separates pose acquisition, local protocol parsing, network
+  transport, client identity, destination routing, and operator monitoring.
+- Good for:
+  VMC relays, OpenXR-to-VMC experiments, OSC tracker transport, VRM motion
+  bridges, avatar mocap sharing, and multi-machine motion debugging.
+- Why it matters:
+  pose streams become brittle when identity, calibration, and routing are
+  hidden in one UDP sender. A bridge should make the source, envelope,
+  transform, and destination visible.
+- Source evidence:
+  `LukasLichten/simple-xr2vmc`, `sotanmochi/VMCTransportBridge`,
+  `sotanmochi/VMCTransportHub`, and the source-light `vivi90/python-vmc`
+  follow-up node.
+- Reusable core:
+  pose source, local protocol codec, typed message model, transform/calibration
+  layer, client identity, transport envelope, destination router, reconnect
+  policy, monitor UI, and trust/auth gates.
+- Source evidence details:
+  Wave 256 includes a headless OpenXR action-space pose poller, a VMC
+  MessagePack transport envelope with network client id, subscriber filters,
+  `/Transported` message re-emission, and a WPF/Blazor hub with destination
+  and message-monitor controls.
+- Do not copy directly:
+  incomplete or commented-out sender code, fixed controller bindings, network
+  transport without explicit auth, hidden transform assumptions, or
+  operator-less relays that cannot show what client/source is active.
+- Strong references:
+  `VMCTransportBridge` for the protocol-envelope split,
+  `VMCTransportHub` for operator and monitor surface shape, and
+  `simple-xr2vmc` for a minimal OpenXR pose-source boundary.
+- Maturity:
+  strong bridge-boundary method; individual donors need security, calibration,
+  and robustness review before reuse.
+- Best fit for `VR-apps-lab`:
+  VMC/VRM/OSC bridge matrices, headless OpenXR pose-source helpers,
+  identity-preserving tracker relays, and transport-monitor UI prototypes.
+
+## Method 702: VR notification relay with source adapters, privacy gates, and overlay transport targets
+
+- What it is:
+  a notification relay normalizes events from desktop, app, log, audio, status,
+  or device sources and sends them to a VR overlay or compatibility target.
+- Good for:
+  XSOverlay notification bridges, Windows toast relays, VRChat log/status
+  alerts, vendor battery monitors, audio-recognition helpers, Linux
+  compatibility daemons, and future overlay-agnostic notification cores.
+- Why it matters:
+  VR notification tools are valuable only when they avoid leaking private data,
+  provide filtering/fallback behavior, and keep the event source independent
+  from the overlay transport.
+- Source evidence:
+  `nnaaa-vr/XSOverlay-VRChat-Parser`, `bluskript/xsoverlay-notifier`,
+  `nnaaa-vr/XSNotifications`, `Minty-Labs/WindowsXSO`,
+  `Duinrahaic/XSSocket`, `Zyphrono/XSOverlay-VRChat-Status`,
+  `project-vrcat/XSNotifier-Go`, `gizmogoat/XSNotifyDaemon`,
+  `JacobA2000/VRCazam`, and `pikepikeid/PICOBatteryWatcher`.
+- Reusable core:
+  event source adapter, permission gate, source-app/device metadata, privacy
+  filter, dedupe/cadence or threshold policy, normalized notification event,
+  payload builder, transport adapter, delivery fallback, and visible pause or
+  error state.
+- Source evidence details:
+  Wave 257 includes Windows toast listener/polling strategies, VRChat log and
+  status polling adapters, PICO Connect log parsing, XSOverlay UDP and
+  WebSocket client libraries, a Linux WebSocket compatibility daemon, and an
+  avatar-OSC-triggered audio-recognition notification loop.
+- Do not copy directly:
+  unfiltered desktop notification mirroring, unauthenticated WebSocket command
+  surfaces, audio capture without consent, stale service component ids,
+  manual JSON without schema validation, or checked-in build artifacts.
+- Strong references:
+  `WindowsXSO` for permission/filter/lifecycle UX,
+  `xsoverlay-notifier` for Windows notification extraction,
+  `XSSocket` for WebSocket API shape, `XSNotifications` and `XSNotifier-Go`
+  for compact UDP clients, and `XSNotifyDaemon` for compatibility shims.
+- Maturity:
+  mature as a notification relay method; privacy and transport safety are the
+  main reuse gates.
+- Best fit for `VR-apps-lab`:
+  overlay notification cores, privacy-safe event relays, vendor-log telemetry
+  helpers, and XSOverlay-compatible payload/API matrices.
+
+## Method 703: VRChat OSC micro-control utility with state mirror, queue, and safety gates
+
+- What it is:
+  a VRChat OSC micro-control utility converts one small source signal into
+  avatar/input/chatbox OSC output through typed addresses, visible state, and
+  bounded send behavior.
+- Good for:
+  mute toggles, AFK automation, controller axis repair, rapid-use helpers,
+  eye-height senders, shell chatbox commands, MIDI-to-parameter tools, heart
+  rate bridges, and typed OSC libraries.
+- Why it matters:
+  most useful VRChat helpers are small. The reusable part is not feature
+  breadth; it is making the source, state, cadence, release, and privacy rules
+  explicit.
+- Source evidence:
+  `Sayamame-beans/VRC_AFK_AutoMuter`, `03milo/InputFixer`,
+  `Airbee/VRChat-OSC-Scaling`, `koturn/OscRapidUseRight`,
+  `Hino-VRChat/vrchat-mute-toggle`, `SourLemonJuice/VRChat-OSC-Shell`,
+  `YimuQrrr/OSC_Tool`, `xiaoBingge114514/VRChat-OSC-Chat-Tool`,
+  `Ero-Cat/hr_push`, and `kb10uy/phorcys`.
+- Reusable core:
+  source adapter, typed OSC address contract, sender/listener split, state
+  mirror or parameter cache, queue/cooldown/debounce, safe release or blanking,
+  process/lifecycle gate, config, visible tray/UI/CLI state, privacy mode, and
+  port conflict recovery.
+- Source evidence details:
+  Wave 258 includes AFK/mute state mirrors, OpenVR axis remapping, one-field
+  avatar parameter UI, raw OSC rapid input loops, robust tray hotkey queues,
+  shell chatbox wrappers, OSC scanners and address testers, multi-source
+  chatbox composers, BLE heart-rate bridges, and Rust typed OSC/avatar config
+  libraries.
+- Do not copy directly:
+  unbounded input spam, public biometric output without consent, unsafe
+  process-kill/open commands, hardcoded ports with no recovery, monolithic
+  script growth, unvalidated ranges, or raw packet builders without tests.
+- Strong references:
+  `vrchat-mute-toggle` for robust microtool lifecycle,
+  `phorcys` for typed OSC/config foundations, `hr_push` for sensor throttling
+  and privacy-sensitive output, and `VRChat-OSC-Shell` for shell-friendly
+  command surfaces.
+- Maturity:
+  strong microtool method; individual projects range from polished utility to
+  rough proof of concept.
+- Best fit for `VR-apps-lab`:
+  OSC microhelper templates, safety checklists, typed-address matrices,
+  external-signal bridges, and avatar-parameter control prototypes.
+
+## Method 704: Meta Quest companion helper boundary for capture, setup, sensors, and device-risk operations
+
+- What it is:
+  a Quest companion helper separates device discovery/setup, permissions,
+  capture or sensor acquisition, desktop processing, operator UI, rollback, and
+  safety warnings.
+- Good for:
+  Quest screenshot/media loaders, screen casting helpers, ADB Wi-Fi setup,
+  registry/config patchers, Reality Capture dataset pipelines, hand/eye
+  tracking recorders, and camera/ML companion workarounds.
+- Why it matters:
+  Quest tooling often crosses sensitive seams: ADB, storage permissions, power
+  state, registry edits, identity settings, casting, camera workarounds, and
+  biometric data. Reuse needs explicit boundaries before code reuse.
+- Source evidence:
+  `t-34400/metaquest-3d-reconstruction`,
+  `kodaekwan/MetaQuest_HandTracking`,
+  `lukasmoro/cameraaccess-metaquest`,
+  `CHUNx3/MetaQuestBitrateRegistryEditor`,
+  `t-34400/MetaQuestScreenshotLoader`,
+  `hiroyamochi/quest-screen-caster`,
+  `XargonWan/metaquest-username-changer`,
+  `SinanAkkoyun/OculusQuest2ADBAutoWifi`, and
+  `Clept0/Unity_QuestPro_EyeTrackingRecorder`.
+- Reusable core:
+  device discovery, model/version detection, permission or ADB gate, risky
+  operation confirmation, capture/sensor adapter, transport/schema, desktop or
+  Unity plugin boundary, operator UI, rollback/restore path, privacy warning,
+  and cleanup.
+- Source evidence details:
+  Wave 259 includes Quest Reality Capture dataset reconstruction, hand UDP
+  packets and coordinate transforms, cast/OBS to YOLO to Unity TCP workarounds,
+  Link registry patching, Android screenshot byte loading, scrcpy/screenrecord
+  GUI casting with wake/proximity guards, username/config ADB patches, ADB
+  Wi-Fi onboarding, and OVR eye-gaze CSV/heatmap/analysis flows.
+- Do not copy directly:
+  hidden setting edits without backup, identity patches without warnings,
+  power/proximity commands without user consent, hardcoded ADB paths,
+  unversioned UDP schemas, direct camera workarounds without privacy language,
+  or bundled Unity sample assets as reusable architecture.
+- Strong references:
+  `quest-screen-caster` for Quest capture operator guards,
+  `MetaQuestScreenshotLoader` for Unity/Android media ingestion,
+  `metaquest-3d-reconstruction` for structured capture datasets,
+  `MetaQuest_HandTracking` for sensor telemetry transforms, and
+  `Unity_QuestPro_EyeTrackingRecorder` for research data capture.
+- Maturity:
+  high-value device-helper method with high safety, privacy, and platform
+  compatibility caveats.
+- Best fit for `VR-apps-lab`:
+  Quest capture matrices, setup-helper checklists, sensor stream schemas,
+  desktop companion prototypes, and risky device-operation documentation.

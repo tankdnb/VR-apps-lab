@@ -1813,3 +1813,31 @@ repeatable way.
 
 - `github-research-wave-255-backlog.md`
   Executed backlog for the Wave 255 pass.
+
+- `github-research-wave-256-plan.md`
+  Wave 256 research plan focused on VMC protocol transport, OpenXR motion, and
+  bridge adapters.
+
+- `github-research-wave-256-backlog.md`
+  Executed backlog for the Wave 256 pass.
+
+- `github-research-wave-257-plan.md`
+  Wave 257 research plan focused on XSOverlay notification wrappers, relays,
+  and compatibility daemons.
+
+- `github-research-wave-257-backlog.md`
+  Executed backlog for the Wave 257 pass.
+
+- `github-research-wave-258-plan.md`
+  Wave 258 research plan focused on VRChat OSC micro-control, input, and
+  avatar-parameter utilities.
+
+- `github-research-wave-258-backlog.md`
+  Executed backlog for the Wave 258 pass.
+
+- `github-research-wave-259-plan.md`
+  Wave 259 research plan focused on Meta Quest device, camera, screenshot,
+  streaming, and setup helpers.
+
+- `github-research-wave-259-backlog.md`
+  Executed backlog for the Wave 259 pass.

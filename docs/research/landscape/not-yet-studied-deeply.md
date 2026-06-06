@@ -371,6 +371,19 @@ follow-up themes rather than requests to rerun the same repositories.
 | `VRChat chatbox composer privacy matrix` | Newly surfaced by Wave 254 | Tiny media/status/biometric senders need the same reusable source-adapter, cadence, templating, and privacy gates as larger companion apps | High | High | Normalize the best parts of OSCQuery discovery, line templates, plugin trust, keep-open cadence, credential storage, blanking, and pause controls across Waves 157, 189, 196, and 254 |
 | `XR desktop and authoring surface adapter matrix` | Newly surfaced by Wave 255 | Smart-glasses desktop helpers, WebXR dev utilities, and export/annotation tools share an adapter-first shape across hardware, shell, browser, and authoring tools | High | High | Compare IMU-to-shell IPC, Android display setup, DBus indicators, WebRTC remote display, in-HMD console, Blender export automation, and annotation schemas |
 
+## Priority batch Y: Waves 256-259 surfaced follow-up candidates
+
+These were surfaced while studying VMC motion bridges, XSOverlay notification
+relays, VRChat OSC micro-control utilities, and Quest companion helpers. They
+are follow-up themes rather than requests to rerun the same repositories.
+
+| Project or cluster | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `VMC transport and identity bridge matrix` | Newly surfaced by Wave 256 | Local VMC, OpenXR pose sources, transported VMC envelopes, and operator hubs can become one reusable motion bridge model | High | High | Compare VMC, VRM, OSC tracker, WebSocket, gRPC, and Photon transport around client identity, auth, calibration, latency, and monitor UI |
+| `XSOverlay notification privacy and compatibility matrix` | Newly surfaced by Wave 257 | UDP libraries, WebSocket control, Windows toasts, VRChat logs, vendor battery logs, audio recognition, and Linux compatibility daemons all share one notification relay boundary | High | High | Normalize payload schemas, privacy gates, event source adapters, fallback behavior, and compatibility-daemon coverage before building overlay notification helpers |
+| `VRChat OSC micro-control safety matrix` | Newly surfaced by Wave 258 | Hotkeys, AFK state, controller axes, shell commands, MIDI, BLE heart rate, and typed OSC libraries need the same queue, cooldown, state, and release rules | High | High | Extract address contracts, port conflict behavior, queue/debounce/release semantics, privacy gates, and OSCQuery discovery fallbacks across microtools |
+| `Quest companion helper safety and capture matrix` | Newly surfaced by Wave 259 | Quest setup, capture, screenshot, screenrecord, hand/eye telemetry, registry edits, and camera workarounds should be documented as device-helper boundaries | High | High | Compare ADB/device discovery, storage permission, power/proximity changes, registry rollback, identity patch warnings, capture latency, and sensor stream schemas |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.
@@ -2922,6 +2935,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 186. `SteamVR dashboard navigation shim matrix across driver hooks, synthetic controllers, URI commands, layout patches, and audio routes`
 187. `VRChat chatbox composer privacy matrix across media, lyrics, biometric, clock, library, and plugin senders`
 188. `XR desktop and WebXR utility surface matrix across smart-glasses setup, IMU IPC, shell indicators, remote display, authoring export, and annotation schemas`
+189. `VMC motion bridge matrix across OpenXR pose sources, VMC envelopes, client identity, transport auth, calibration, and monitor UI`
+190. `XSOverlay notification relay matrix across UDP/WebSocket payloads, source adapters, privacy gates, and compatibility daemons`
+191. `VRChat OSC micro-control safety matrix across hotkeys, state mirrors, input pulses, MIDI/BLE sources, typed libraries, and port conflicts`
+192. `Quest companion helper matrix across ADB setup, capture paths, screenshots, screenrecord, sensor streams, registry/config patches, and rollback`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

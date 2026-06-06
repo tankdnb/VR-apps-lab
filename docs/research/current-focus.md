@@ -214,6 +214,13 @@ These are the clearest current product and research lines:
     chatbox microtools, OSC helper libraries, smart-glasses desktop setup,
     IMU-to-shell display transforms, WebXR remote-display/dev-console tools,
     Blender export helpers, and annotation surfaces.
+41. `Motion bridges, notification relays, VRChat OSC micro-control, and Quest companion helpers`
+    the repository now has fresh coverage of VMC/OpenXR pose transport,
+    identity-preserving motion envelopes, XSOverlay UDP/WebSocket notification
+    relays, Windows/VRChat/vendor-log event adapters, avatar-parameter
+    micro-control tools, BLE/MIDI/hotkey OSC sources, Quest capture helpers,
+    ADB setup microtools, screenshot/media ingestion, and eye/hand telemetry
+    recorder patterns.
 
 ## Most useful current docs
 
@@ -377,6 +384,14 @@ instead of full history:
 - `landscape/vr-projects-wave-249-vrchat-obs-control-osc-scene-switching-and-movie-night-queues.md`
 - `landscape/vr-projects-wave-250-vrchat-virtual-production-camera-routing-and-live-stream-pipelines.md`
 - `landscape/vr-projects-wave-251-openvr-legacy-sensor-compatibility-and-synthetic-driver-shims.md`
+- `landscape/vr-projects-wave-252-hands-free-openxr-hand-tracking-input-and-wrist-ui-microtools.md`
+- `landscape/vr-projects-wave-253-steamvr-dashboard-menu-keyboard-and-gamepad-navigation-shims.md`
+- `landscape/vr-projects-wave-254-vrchat-osc-chatbox-media-status-and-library-microtools.md`
+- `landscape/vr-projects-wave-255-xr-desktop-smart-glasses-and-webxr-authoring-utility-surfaces.md`
+- `landscape/vr-projects-wave-256-vmc-protocol-transport-openxr-motion-and-bridge-adapters.md`
+- `landscape/vr-projects-wave-257-xsoverlay-notification-wrappers-relays-and-compatibility-daemons.md`
+- `landscape/vr-projects-wave-258-vrchat-osc-micro-control-input-and-avatar-parameter-utilities.md`
+- `landscape/vr-projects-wave-259-meta-quest-device-camera-screenshot-streaming-and-setup-helpers.md`
 
 ## Strong donor clusters right now
 
@@ -903,6 +918,14 @@ the strongest current clusters:
   VRChat external content-ingress surfaces, spatial-stability stacks, vendor
   extension wrappers, purpose-bounded microhelpers, and XR creator workbench
   interactions.
+- `VMCTransportBridge`, `VMCTransportHub`, `xsoverlay-notifier`,
+  `WindowsXSO`, `XSSocket`, `XSNotifyDaemon`, `vrchat-mute-toggle`,
+  `phorcys`, `hr_push`, `quest-screen-caster`,
+  `MetaQuestScreenshotLoader`, and `Unity_QuestPro_EyeTrackingRecorder`
+  for identity-preserving motion relays, privacy-aware VR notification
+  bridges, robust VRChat OSC micro-control utilities, typed OSC/address
+  foundations, Quest capture helpers, Android media ingestion, and research
+  sensor-recording loops.
 
 ## Highest-value next follow-up passes
 
@@ -1083,6 +1106,10 @@ directions:
 172. `SteamVR dashboard navigation shim matrix across driver hooks, synthetic controllers, URI commands, layout patches, and audio routes`
 173. `VRChat chatbox composer privacy matrix across media, lyrics, biometric, clock, library, and plugin senders`
 174. `XR desktop and WebXR utility surface matrix across smart-glasses setup, IMU IPC, shell indicators, remote display, authoring export, and annotation schemas`
+175. `VMC motion bridge matrix across OpenXR pose sources, VMC envelopes, client identity, transport auth, calibration, and monitor UI`
+176. `XSOverlay notification relay matrix across UDP/WebSocket payloads, source adapters, privacy gates, and compatibility daemons`
+177. `VRChat OSC micro-control safety matrix across hotkeys, state mirrors, input pulses, MIDI/BLE sources, typed libraries, and port conflicts`
+178. `Quest companion helper matrix across ADB setup, capture paths, screenshots, screenrecord, sensor streams, registry/config patches, and rollback`
 
 ## Current repository-maintenance priorities
 

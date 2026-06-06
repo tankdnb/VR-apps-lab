@@ -251,6 +251,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-253-steamvr-dashboard-menu-keyboard-and-gamepad-navigation-shims.md`
 - `landscape/vr-projects-wave-254-vrchat-osc-chatbox-media-status-and-library-microtools.md`
 - `landscape/vr-projects-wave-255-xr-desktop-smart-glasses-and-webxr-authoring-utility-surfaces.md`
+- `landscape/vr-projects-wave-256-vmc-protocol-transport-openxr-motion-and-bridge-adapters.md`
+- `landscape/vr-projects-wave-257-xsoverlay-notification-wrappers-relays-and-compatibility-daemons.md`
+- `landscape/vr-projects-wave-258-vrchat-osc-micro-control-input-and-avatar-parameter-utilities.md`
+- `landscape/vr-projects-wave-259-meta-quest-device-camera-screenshot-streaming-and-setup-helpers.md`
 
 ## Archive Navigation
 

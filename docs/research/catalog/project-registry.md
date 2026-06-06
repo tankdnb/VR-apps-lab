@@ -3351,6 +3351,71 @@ Primary docs:
 - `laffan/blender-webxr-tools` - `Studied in Wave 255 as a Blender addon for WebXR/R3F export preparation with bake/transform helpers, GLB/GLTF export, gltfjsx subprocess integration, JSX rewriting, and authoring-pipeline caveats`
 - `pravinpoudel/building-annotation` - `Studied in Wave 255 as a WebXR/three.js building annotation reference with manual annotation schema, camera/lookAt metadata, dev-mode raycast capture, and educational demo caveats`
 
+## 227. VMC protocol transport, OpenXR motion, and bridge adapters
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-256-vmc-protocol-transport-openxr-motion-and-bridge-adapters.md`
+- `../landscape/project-families.md`
+
+- `LukasLichten/simple-xr2vmc` - `Studied in Wave 256 as a minimal Rust OpenXR headless pose sampler intended for OpenXR-to-VMC output, with extension gates, action-set pose polling, session events, predicted-time location reads, and incomplete/commented VMC send caveats`
+- `sotanmochi/VMCTransportBridge` - `Studied in Wave 256 as a Unity/.NET VMC transport library with typed local VMC messages, MessagePack envelopes, network client identity, transport adapters, subscriber filters, and transported-message re-emission`
+- `sotanmochi/VMCTransportHub` - `Studied in Wave 256 as a WPF/Blazor operator surface for VMC transport selection, gRPC/Photon connection state, destination routing, client-id filters, message counts, monitor UI, and appsettings-based configuration`
+- `vivi90/python-vmc` - `Checked in Wave 256 as a source-light GitHub pointer to moved Python VMC work, useful as a follow-up scripting-wrapper candidate rather than current donor evidence`
+
+## 228. XSOverlay notification wrappers, relays, and compatibility daemons
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-257-xsoverlay-notification-wrappers-relays-and-compatibility-daemons.md`
+- `../landscape/project-families.md`
+
+- `nnaaa-vr/XSOverlay-VRChat-Parser` - `Studied in Wave 257 as a C#/.NET/Avalonia VRChat log parser that emits configurable XSOverlay notifications for join/leave, portals, world changes, and shader keyword events`
+- `bluskript/xsoverlay-notifier` - `Studied in Wave 257 as a Rust Windows toast to XSOverlay UDP bridge with permission request flow, listener/polling strategies, icon/source extraction, sender restart loop, and privacy/filter caveats`
+- `nnaaa-vr/XSNotifications` - `Studied in Wave 257 as a compact .NET XSOverlay UDP library with payload defaults, camelCase JSON, endpoint defaults, concurrent queue, AutoResetEvent worker, and best-effort delivery caveats`
+- `Minty-Labs/WindowsXSO` - `Studied in Wave 257 as a Windows notification to XSOverlay companion with allow/deny app filters, notification permission guidance, SteamVR process lifecycle, height/timeout heuristics, and image masking`
+- `Duinrahaic/XSSocket` - `Studied in Wave 257 as a C# XSOverlay WebSocket API wrapper with typed notifications, overlay commands, media/layout/device/performance/settings status requests, and command-name/artifact caveats`
+- `Zyphrono/XSOverlay-VRChat-Status` - `Studied in Wave 257 as a VRChat service-status monitor that polls component state, tracks degraded/recovered transitions, gates work on VRChat process presence, and emits XSOverlay warnings`
+- `project-vrcat/XSNotifier-Go` - `Studied in Wave 257 as a minimal Go XSOverlay UDP notification client with payload normalization, default values, mutex-protected UDP connection reuse, and narrow library-only scope`
+- `gizmogoat/XSNotifyDaemon` - `Studied in Wave 257 as a Linux compatibility daemon exposing an XSOverlay-like WebSocket SendNotification subset and forwarding to notify-send, with temp-icon and no-auth caveats`
+- `JacobA2000/VRCazam` - `Studied in Wave 257 as a VRChat OSC-triggered audio recognition utility that records speaker loopback, calls Shazam, logs track history, and returns desktop or XSOverlay notifications`
+- `pikepikeid/PICOBatteryWatcher` - `Studied in Wave 257 as a PICO Connect log-tail battery monitor with threshold reset logic, HMD/controller parsing, XSOverlay WebSocket notification payloads, and vendor-log drift caveats`
+
+## 229. VRChat OSC micro-control, input, and avatar-parameter utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-258-vrchat-osc-micro-control-input-and-avatar-parameter-utilities.md`
+- `../landscape/project-families.md`
+
+- `Sayamame-beans/VRC_AFK_AutoMuter` - `Studied in Wave 258 as a Python VRChat OSC state mirror that watches AFK and MuteSelf parameters and emits delayed `/input/Voice` pulses only when mute state requires it`
+- `03milo/InputFixer` - `Studied in Wave 258 as a C# OpenVR background input remapper that reads left-controller axes, thresholds/clamps values, zeroes on menu-like read failures, and sends VRChat OSC input axes`
+- `Airbee/VRChat-OSC-Scaling` - `Studied in Wave 258 as a tiny customtkinter eye-height OSC sender that demonstrates one-parameter utility UI value with range-validation caveats`
+- `koturn/OscRapidUseRight` - `Studied in Wave 258 as a WinForms global-hotkey utility that repeatedly sends raw `/input/UseRight` press/release OSC packets and ensures release on stop`
+- `Hino-VRChat/vrchat-mute-toggle` - `Studied in Wave 258 as a robust tray-based mute toggle with global keyboard hook, queued OSC sender, OSC state listener, cooldown, VRChat process polling, and hook-reinstall lifecycle`
+- `SourLemonJuice/VRChat-OSC-Shell` - `Studied in Wave 258 as a C CLI wrapper for VRChat chatbox and typing endpoints with shell-script examples, chatbox length guard, and rough string/portability caveats`
+- `YimuQrrr/OSC_Tool` - `Studied in Wave 258 as a Python customtkinter VRChat OSC toolkit with chatbox UI, OSC scanner, address tester, MIDI-to-parameter mapping, key-file mode, log monitor, and unsafe command caveats`
+- `xiaoBingge114514/VRChat-OSC-Chat-Tool` - `Studied in Wave 258 as a large Tk chatbox/status compositor with music, lyrics, BLE heart rate, Windows media, templates, history, system stats, custom endpoint settings, and monolithic/privacy caveats`
+- `Ero-Cat/hr_push` - `Studied in Wave 258 as a Flutter BLE heart-rate bridge with standard Heart Rate Service parsing, stale gates, throttled HTTP/WS/MQTT/OSC outputs, chatbox templates, and biometric privacy caveats`
+- `kb10uy/phorcys` - `Studied in Wave 258 as a Rust OSC and VRChat OSC workspace with OSC parser/serializer, address-pattern matching, avatar config discovery, MIDI-to-parameter tables, typed validation, and library extraction value`
+
+## 230. Meta Quest device, camera, screenshot, streaming, and setup helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-259-meta-quest-device-camera-screenshot-streaming-and-setup-helpers.md`
+- `../landscape/project-families.md`
+
+- `t-34400/metaquest-3d-reconstruction` - `Studied in Wave 259 as a Quest Reality Capture image/depth to Open3D/COLMAP reconstruction pipeline with strict dataset layout, confidence maps, coordinate-system transforms, caches, and offline-heavy caveats`
+- `kodaekwan/MetaQuest_HandTracking` - `Studied in Wave 259 as a Quest/Unity hand telemetry receiver and visualizer with fixed UDP packet parsing, Unity-to-world coordinate transforms, bone link groups, delay measurement, and adjacent UDP JPEG streaming utilities`
+- `lukasmoro/cameraaccess-metaquest` - `Studied in Wave 259 as a pragmatic Quest camera workaround using Quest cast plus OBS virtual camera, Python YOLO detection, JSON-like TCP output, and Unity client consumption`
+- `CHUNx3/MetaQuestBitrateRegistryEditor` - `Studied in Wave 259 as a WinForms Meta/Oculus Link registry patcher for bitrate/HEVC/DBR/sharpening values with input validation, toggle UI, restore-by-delete behavior, and registry-risk caveats`
+- `t-34400/MetaQuestScreenshotLoader` - `Studied in Wave 259 as a Unity Android plugin that requests storage permission, locates latest Quest screenshots, returns bytes to C#, and loads them as textures`
+- `hiroyamochi/quest-screen-caster` - `Studied in Wave 259 as a Quest-specific Flet GUI over scrcpy and ADB screenrecord with model detection, wireless ADB, crop/rotation presets, wake/proximity guards, display-id fallback, ffplay and OBS UDP output modes`
+- `XargonWan/metaquest-username-changer` - `Studied in Wave 259 as a Bash/ADB username patch microtool generating JSON files, pushing them to /sdcard/, setting a global username value, and warning about save/progress reset risk`
+- `SinanAkkoyun/OculusQuest2ADBAutoWifi` - `Studied in Wave 259 as a Node CLI for Quest ADB Wi-Fi onboarding with device-list parsing, USB wait loop, adb tcpip 5555, route-based IP extraction, and hardcoded Unity ADB path caveats`
+- `Clept0/Unity_QuestPro_EyeTrackingRecorder` - `Studied in Wave 259 as a Unity/OVR Quest Pro eye-tracking recorder with left/right OVREyeGaze sampling, CSV schema, calibration/stabilization scenes, heatmap particles, persistent-data export, and Python gaze-error analysis`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

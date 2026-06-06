@@ -1133,6 +1133,26 @@ Use these files when you want to understand:
   shell-extension IPC, Android desktop-mode setup, WebXR remote display/dev
   tools, Blender export helpers, and annotation schemas.
 
+- `vr-projects-wave-256-vmc-protocol-transport-openxr-motion-and-bridge-adapters.md`
+  Next GitHub discovery wave focused on VMC/OpenXR pose bridges, transported
+  VMC envelopes, client identity, bridge monitor UI, and scripting-wrapper
+  follow-up gaps.
+
+- `vr-projects-wave-257-xsoverlay-notification-wrappers-relays-and-compatibility-daemons.md`
+  Next GitHub discovery wave focused on XSOverlay UDP/WebSocket notification
+  wrappers, Windows toast relays, VRChat status/log adapters, vendor battery
+  log monitors, Linux compatibility daemons, and privacy gates.
+
+- `vr-projects-wave-258-vrchat-osc-micro-control-input-and-avatar-parameter-utilities.md`
+  Next GitHub discovery wave focused on VRChat OSC micro-control, hotkeys,
+  input pulses, state mirrors, CLI wrappers, MIDI/BLE sources, typed OSC
+  libraries, and safety/cadence patterns.
+
+- `vr-projects-wave-259-meta-quest-device-camera-screenshot-streaming-and-setup-helpers.md`
+  Next GitHub discovery wave focused on Meta Quest capture, screenshot/media
+  ingestion, ADB setup, screen casting, hand/eye telemetry, registry/config
+  patching, and device-helper safety caveats.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
