@@ -7904,6 +7904,144 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - screenrecord/scrcpy/OBS virtual-camera comparisons
 - Quest hand/eye/depth/camera telemetry schemas
 
+## Family 239: VRChat API client, mobile companion, and pipeline surfaces
+
+This family covers projects that expose VRChat service data through API
+clients, companion apps, generated bindings, pipeline WebSocket access, local
+log sync, and typed friend/world/notification helpers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `LinaTsukusu/vrchat-client` | Studied in Wave 260 | Compact TypeScript API wrapper with module-per-domain clients, axios base URL switching, cookie-based login, and shared request helpers |
+| `ccamgr/vrcp` | Studied in Wave 260 | Expo/Tauri companion with generated API bindings, SecureStore auth/TFA, desktop log sync, session analytics, and notification background task |
+| `binn/VRChat.API.Client` | Studied in Wave 260 | .NET fluent/generated-client wrapper with IVRChat domain interface, builder options, auth cookie injection, and named client factory |
+| `calmery/vrchat` | Studied in Wave 260 | Compact TypeScript auth/TFA/cookie wrapper with explicit errors and authenticated CRUD helpers |
+| `Ox0017/vrc` | Studied in Wave 260 | Java API client with request context, DTO/serializer surface, auth verification, and session token refresh/clear behavior |
+| `VRCMG/vrcapi-client` | Studied in Wave 260 | TypeScript REST and pipeline client with endpoint modules, login/config fetch, and WebSocket token initialization |
+
+### Consolidation note
+
+This family matters because VRChat service-data utilities should name:
+
+- credential source and consent state;
+- TFA and cookie/token lifecycle;
+- REST, pipeline WebSocket, local log, or VRCX data adapter;
+- typed domain modules and generated-client boundary;
+- cache/local database and background task behavior;
+- privacy filter, rate/backoff policy, and account/session visibility.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VRChat API companion checklists;
+- typed friend/world/notification data adapters;
+- pipeline-event vs polling comparisons;
+- privacy-aware social/session companion surfaces;
+- local log and desktop/mobile sync boundaries.
+
+## Family 240: VRChat expression menu authoring and runtime menu helpers
+
+This family covers creator-side expression-menu tools, generated avatar-toggle
+assets, icon pipelines, menu/parameter/animator mergers, and caveated runtime
+menu patches.
+
+| Project | Status | Notes |
+|---|---|---|
+| `nekochanfood/VRCStyledIconMaker` | Studied in Wave 261 | Expression-menu icon processor with SVG-to-PNG resize/padding, gradient recolor, shadow, and transparent canvas output |
+| `nekoare/vrchat-expression-menu-visualizer` | Studied in Wave 261 | Unity expression-menu visualizer/editor with tree/grid view, search/stats, edit mode, ModularAvatar reflection, and generated marker metadata |
+| `imagitama/vrc-menu-merger` | Studied in Wave 261 | Menu/parameter/animator merger with 8-control cap checks and parameter type conflict detection |
+| `zutozuto/VRChat-Menu-Creation-Tool` | Studied in Wave 261 | Outfit/prop menu generator with ScriptableObject config, cloth/ornament/extra groups, show/hide paths, and sub toggles |
+| `Knucklesfan/VRChatTextToMenu` | Studied in Wave 261 | Text-to-submenu generator with Unity YAML pages, 8-item pagination, and GUID post-pass caveats |
+| `Lucario4LyfeYT/EasyToggle` | Studied in Wave 261 | Unity editor toggle generator that creates animation clips, animator layers, parameters, and menu controls |
+| `AtiLion/VRCMenuUtils` | Caveated reference in Wave 261 | Runtime VRChat quick-menu mod library with reflection-based UI manager access and quick-menu page/button helpers |
+| `CaelBun/DontOverrenderMyMenuV2` | Caveated reference in Wave 261 | Runtime menu overrender patch with cloned UI camera, culling masks, Harmony patches, and quick-menu toggle |
+
+### Consolidation note
+
+This family matters because expression-menu authoring should name:
+
+- input objects, icons, materials, and source menus;
+- generated parameter contract and parameter budget;
+- menu page limit and submenu generation;
+- animator/controller changes;
+- preview, Undo, metadata markers, and cleanup;
+- native menu, ModularAvatar, VRCFury, or runtime-patch boundary.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- expression-menu authoring checklists;
+- generated avatar-control assets;
+- menu visualizer/editor prototypes;
+- ModularAvatar/native menu comparison notes;
+- historical runtime menu patch caveats.
+
+## Family 241: VPM package index and creator package publication tooling
+
+This family covers tools and repository shapes that publish VRChat creator
+packages through VPM-compatible indexes, public listing pages, and platform
+wrappers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Limitex/voyager-vpm` | Studied in Wave 262 | Rust VPM package index generator with manifest/lock workflow, crash-recoverable transactions, GitHub release fetch, validation, URL checks, and index output |
+| `NathMorgan/vrchat-vpm` | Studied in Wave 262 | Flatpak-style Linux wrapper for VRChat VPM CLI with dotnet SDK extension, pinned NuGet source, and license notices |
+| `tamakiii/vrchat-vpm` | Studied in Wave 262 | Minimal static VPM listing with hand-authored index JSON and browser-generated VCC add-repo links |
+| `cuebitt/vpm` | Studied in Wave 262 | Public VPM repository with source manifest, generated listing website, search, metadata modal, dependencies, licenses, and Add-to-VCC links |
+
+### Consolidation note
+
+This family matters because reusable creator packages should name:
+
+- package source manifest and release asset contract;
+- manifest/lock/hash validation;
+- URL, SemVer, dependency, and license checks;
+- generated `index.json` and public listing page;
+- VCC/ALCOM add-repo link;
+- Linux/CLI packaging and permission constraints.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VPM publication checklists for reusable packages;
+- package-index validation reports;
+- public listing UX references;
+- Linux creator tooling wrappers;
+- package release hygiene for future prototype reuse.
+
+## Family 242: Source-light VRChat overlay, editor, world, and Udon microtools
+
+This family covers small VRChat utility repositories where the main research
+value is classification across surfaces: desktop overlay, SteamVR overlay,
+Unity editor package, world editor helper, Udon runtime component, or package
+template.
+
+| Project | Status | Notes |
+|---|---|---|
+| `o0F-0oF/vrchatoverlay` | Studied in Wave 263 | Avalonia transparent click-through desktop overlay that tails VRChat logs and renders player join/leave state |
+| `kizuki1749/VRChatOverlay` | Partially studied in Wave 263 | Historical Unity/SteamVR overlay experiment with scene-level render texture, overlay placement, bundled API client, and heavy artifact caveats |
+| `kxn4t/kanameliser-editor-plus` | Studied in Wave 263 | VPM-installable editor QoL suite with mesh info, NDMF preview, material matching, ModularAvatar material helper, AO bounds, and blendshape insertion |
+| `Zaknin/VRCTools` | Studied in Wave 263 | Unity avatar asset inspector with renderer/material/texture/shader scans, memory estimates, missing-reference detection, performance icons, and packager states |
+| `Himakuma/VRChatWorldTools` | Studied in Wave 263 | SDK2-era world editor helper that wires reset-position callbacks to a selected button |
+| `yassann325/VRC-NetworkQueue` | Source-light in Wave 263 | Mostly VRChat template-package/VPM listing reference; real NetworkQueue implementation needs confirmation |
+| `PeaceKunihiro/vrchat-udon-tools` | Studied in Wave 263 | Tiny Udon scripts for synced cycle switching, audio selection, owner transfer, serialization, and delayed auto-hide |
+
+### Consolidation note
+
+This family matters because source-light VRChat repos should name:
+
+- surface type: overlay, editor, world, Udon, or template;
+- data source and entry point;
+- artifact hygiene and bundled dependencies;
+- editor/runtime boundary;
+- generated assets, package state, and install route;
+- donor/reference/follow-up classification.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- source-light utility triage checklists;
+- avatar editor diagnostics;
+- Udon microtool sync review;
+- transparent desktop overlay/log privacy notes;
+- artifact hygiene rules for future source intake.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

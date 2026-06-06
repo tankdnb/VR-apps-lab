@@ -2743,6 +2743,54 @@ These are larger than a single repo and should guide the next research wave.
   ADB/device setup, WebXR dev consoles, Blender export automation,
   annotation data schemas, CORS/secrets, and device-specific caveats.
 
+### 209. `VRChat API companion boundary matrix across REST, pipeline, logs, auth, mobile, and privacy`
+
+- Main entries:
+  `vrchat-client`, `vrcp`, `VRChat.API.Client`, `vrchat`, `vrc`, and
+  `vrcapi-client`
+- Why it matters:
+  Wave 260 added VRChat service-data clients and companion surfaces. A future
+  matrix should compare auth/TFA flows, cookie/token storage, generated-client
+  boundaries, REST domain modules, pipeline WebSocket lifecycle, local log sync,
+  mobile/desktop storage differences, background notification tasks, rate
+  limits, stale API assumptions, and privacy UX.
+
+### 210. `VRChat expression-menu authoring matrix across icon pipelines, generated assets, preview, ModularAvatar, and runtime menu patches`
+
+- Main entries:
+  `VRCStyledIconMaker`, `vrchat-expression-menu-visualizer`,
+  `vrc-menu-merger`, `VRChat-Menu-Creation-Tool`, `VRChatTextToMenu`,
+  `EasyToggle`, `VRCMenuUtils`, and `DontOverrenderMyMenuV2`
+- Why it matters:
+  Wave 261 added creator-side expression-menu donors and caveated runtime-menu
+  references. A future matrix should compare icon normalization, menu page
+  caps, parameter budgets, animator generation, conflict detection, preview UX,
+  generated metadata, Undo/rollback, native menu versus ModularAvatar routes,
+  and which historical runtime patches should stay caveated.
+
+### 211. `VPM package publication matrix across manifests, releases, lockfiles, indexes, Flatpak wrappers, and listing UX`
+
+- Main entries:
+  `voyager-vpm`, `vrchat-vpm`, `vrchat-vpm` static listing, and `vpm`
+- Why it matters:
+  Wave 262 added package-index publication and Linux wrapper references. A
+  future matrix should compare source manifests, release asset fetchers,
+  SemVer/dependency validation, URL/hash checks, transaction recovery, lockfile
+  drift, generated `index.json`, public listing pages, VCC/ALCOM add links,
+  license notices, and Linux filesystem or network permission constraints.
+
+### 212. `Source-light VRChat utility triage matrix across overlays, editor packages, world helpers, Udon scripts, and artifact hygiene`
+
+- Main entries:
+  `vrchatoverlay`, `VRChatOverlay`, `kanameliser-editor-plus`, `VRCTools`,
+  `VRChatWorldTools`, `VRC-NetworkQueue`, and `vrchat-udon-tools`
+- Why it matters:
+  Wave 263 showed that tiny VRChat repositories need careful classification
+  before reuse. A future matrix should compare surface type, data source,
+  entry points, privacy exposure, tracked artifacts, generated assets, editor
+  versus runtime boundaries, Udon ownership/serialization semantics, package
+  template completeness, and donor/reference/follow-up status.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:

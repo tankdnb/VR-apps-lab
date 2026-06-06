@@ -1841,3 +1841,31 @@ repeatable way.
 
 - `github-research-wave-259-backlog.md`
   Executed backlog for the Wave 259 pass.
+
+- `github-research-wave-260-plan.md`
+  Wave 260 research plan focused on VRChat API clients, mobile companions,
+  local logs, pipeline surfaces, and service-data utility boundaries.
+
+- `github-research-wave-260-backlog.md`
+  Executed backlog for the Wave 260 pass.
+
+- `github-research-wave-261-plan.md`
+  Wave 261 research plan focused on VRChat expression-menu authoring,
+  visualization, generated assets, and runtime menu helper caveats.
+
+- `github-research-wave-261-backlog.md`
+  Executed backlog for the Wave 261 pass.
+
+- `github-research-wave-262-plan.md`
+  Wave 262 research plan focused on VPM package indexes, Flatpak packaging,
+  manifest validation, release fetching, and public listing UX.
+
+- `github-research-wave-262-backlog.md`
+  Executed backlog for the Wave 262 pass.
+
+- `github-research-wave-263-plan.md`
+  Wave 263 research plan focused on source-light VRChat overlays, editor
+  packages, world helpers, and Udon microtools.
+
+- `github-research-wave-263-backlog.md`
+  Executed backlog for the Wave 263 pass.

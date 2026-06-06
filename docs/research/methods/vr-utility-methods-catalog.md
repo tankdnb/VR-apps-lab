@@ -14508,3 +14508,179 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   Quest capture matrices, setup-helper checklists, sensor stream schemas,
   desktop companion prototypes, and risky device-operation documentation.
+
+## Method 705: VRChat API companion boundary with auth, typed domains, pipeline events, and local logs
+
+- What it is:
+  a VRChat companion utility separates account consent, auth/TFA, cookie or
+  token storage, typed REST domains, pipeline WebSocket events, local log
+  ingestion, cache state, and visible privacy controls.
+- Good for:
+  social/session companions, friend/world notification tools, avatar or world
+  dashboards, mobile/desktop sidecars, pipeline-event viewers, and local log
+  sync utilities.
+- Why it matters:
+  VRChat service-data tools often mix login, cookies, API polling, pipeline
+  sockets, local logs, and notification tasks in one surface. Reuse needs an
+  explicit boundary so credentials, privacy, rate limits, and stale API
+  behavior do not leak into every feature.
+- Source evidence:
+  `LinaTsukusu/vrchat-client`, `ccamgr/vrcp`,
+  `binn/VRChat.API.Client`, `calmery/vrchat`, `Ox0017/vrc`, and
+  `VRCMG/vrcapi-client`.
+- Reusable core:
+  credential source, consent/account state, TFA flow, cookie/token store,
+  user-agent and rate/backoff policy, generated or typed domain modules,
+  REST adapter, pipeline WebSocket adapter, local-log adapter, cache or local
+  database, background task scheduler, privacy filter, and session visibility.
+- Source evidence details:
+  Wave 260 includes TypeScript module-per-domain clients, Expo/Tauri
+  SecureStore-backed auth and desktop log sync, .NET fluent generated-client
+  factories, compact auth/TFA wrappers, Java request-context DTO clients, and
+  pipeline WebSocket token initialization.
+- Do not copy directly:
+  stale hardcoded API keys, raw credential logging, unbounded polling,
+  invisible auto-login, global cookie state, direct pipeline URLs without
+  lifecycle handling, or companion notifications without privacy gates.
+- Strong references:
+  `ccamgr/vrcp` for full companion boundaries, `binn/VRChat.API.Client` for
+  host/factory integration, and `VRCMG/vrcapi-client` for REST plus pipeline
+  split.
+- Maturity:
+  strong service-companion method with API-volatility and privacy caveats.
+- Best fit for `VR-apps-lab`:
+  VRChat API companion checklists, typed service adapters, event-vs-polling
+  comparisons, privacy-aware notification surfaces, and log sync prototypes.
+
+## Method 706: VRChat expression-menu authoring pipeline with generated assets, preview, and conflict checks
+
+- What it is:
+  an expression-menu authoring tool turns avatar objects, icons, menus,
+  parameters, and animator/controller state into generated VRChat assets with
+  preview, validation, budget checks, and cleanup metadata.
+- Good for:
+  toggle generators, outfit/prop menu builders, menu visualizers, icon
+  pipelines, ModularAvatar/native-menu adapters, and creator-side repair
+  tools.
+- Why it matters:
+  Expression menus are small, but authoring them crosses many brittle seams:
+  eight-control menu limits, parameter budgets, animator layers, icon format,
+  Unity asset GUIDs, ModularAvatar metadata, Undo, and generated file cleanup.
+- Source evidence:
+  `nekochanfood/VRCStyledIconMaker`,
+  `nekoare/vrchat-expression-menu-visualizer`,
+  `imagitama/vrc-menu-merger`,
+  `zutozuto/VRChat-Menu-Creation-Tool`,
+  `Knucklesfan/VRChatTextToMenu`, `Lucario4LyfeYT/EasyToggle`,
+  `AtiLion/VRCMenuUtils`, and `CaelBun/DontOverrenderMyMenuV2`.
+- Reusable core:
+  source-object intake, icon normalization, parameter contract, menu page and
+  pagination planner, animator/controller writer, conflict detector, preview
+  tree/grid, generated asset markers, Undo/rollback path, and native,
+  ModularAvatar, VRCFury, or runtime-patch adapter boundary.
+- Source evidence details:
+  Wave 261 includes SVG/PNG icon processing, Unity menu tree/grid editing,
+  ModularAvatar reflection, menu/parameter/animator merge checks, grouped
+  clothing/ornament toggle generation, raw YAML menu generation caveats,
+  animation/layer/toggle generation, and historical runtime menu patching.
+- Do not copy directly:
+  destructive asset writes without Undo, raw YAML post-processing as a primary
+  architecture, runtime quick-menu reflection patches, unbounded animator
+  layer growth, or menu generation without cap and parameter conflict checks.
+- Strong references:
+  `vrchat-expression-menu-visualizer` for preview/edit UX,
+  `vrc-menu-merger` for conflict checks, `EasyToggle` for generated toggle
+  assets, and `VRCStyledIconMaker` for tiny icon-pipeline value.
+- Maturity:
+  strong creator-tooling method; runtime menu patch projects are historical or
+  caveated references only.
+- Best fit for `VR-apps-lab`:
+  expression-menu authoring checklists, avatar control asset generators,
+  menu preview prototypes, and native-vs-ModularAvatar comparison notes.
+
+## Method 707: VPM package repository pipeline with manifest, lock, release fetch, validation, and listing UX
+
+- What it is:
+  a creator package publication pipeline turns package sources and release
+  assets into validated VPM indexes, lockfiles, public listing pages, and
+  VCC/ALCOM add-repository links.
+- Good for:
+  reusable VRChat creator packages, package-index generators, static listing
+  sites, Linux packaging wrappers, release hygiene checks, and public package
+  discovery pages.
+- Why it matters:
+  future `VR-apps-lab` prototype packages will need repeatable publication
+  hygiene: package metadata, SemVer, dependencies, release URLs, hashes,
+  licenses, generated indexes, and friendly add-to-client entry points.
+- Source evidence:
+  `Limitex/voyager-vpm`, `NathMorgan/vrchat-vpm`,
+  `tamakiii/vrchat-vpm`, and `cuebitt/vpm`.
+- Reusable core:
+  source manifest, package manifest reader, SemVer and dependency validator,
+  release asset fetcher, URL and hash verifier, lockfile writer,
+  crash-recoverable transaction log, generated `index.json`, static listing
+  page, VCC/ALCOM link builder, license notice, and platform permission
+  boundary.
+- Source evidence details:
+  Wave 262 includes a Rust manifest/lock/index generator with GitHub release
+  fetching and transaction recovery, a Flatpak wrapper with pinned dotnet
+  dependencies and permissions, minimal static VPM links, and generated
+  package listing sites with search, metadata modals, and copy/add actions.
+- Do not copy directly:
+  unvalidated package URLs, manually drifting indexes, hidden broad filesystem
+  permissions, unpinned release assets, missing license notices, or website UX
+  that hides repository trust boundaries.
+- Strong references:
+  `voyager-vpm` for validation and transaction design, `cuebitt/vpm` for
+  listing UX, and `NathMorgan/vrchat-vpm` for Linux wrapper constraints.
+- Maturity:
+  strong package-publication method, especially for future reusable
+  VRChat/Unity creator packages.
+- Best fit for `VR-apps-lab`:
+  VPM publication checklists, generated package indexes, package validation
+  reports, and public listing UX for reusable prototypes.
+
+## Method 708: Source-light VRChat utility triage across overlay, editor, world, and Udon surfaces
+
+- What it is:
+  a source-light triage pass classifies small VRChat utilities by surface,
+  entry point, data source, artifact hygiene, generated assets, sync/network
+  behavior, and donor-vs-reference value before promoting them into methods.
+- Good for:
+  tiny desktop overlays, historical SteamVR overlay experiments, editor
+  packages, avatar inspectors, world helper scripts, Udon microcomponents, and
+  package-template repositories.
+- Why it matters:
+  small VRChat repositories are often useful, but their reuse value varies
+  sharply. A thin repo may be a strong product reference, a partial historical
+  artifact, a package template, or a donor-worthy editor/runtime pattern.
+- Source evidence:
+  `o0F-0oF/vrchatoverlay`, `kizuki1749/VRChatOverlay`,
+  `kxn4t/kanameliser-editor-plus`, `Zaknin/VRCTools`,
+  `Himakuma/VRChatWorldTools`, `yassann325/VRC-NetworkQueue`, and
+  `PeaceKunihiro/vrchat-udon-tools`.
+- Reusable core:
+  surface classification, entry-point map, data-source map, privacy/artifact
+  audit, editor-vs-runtime boundary, generated asset/package state, sync or
+  serialization behavior, install route, donor/reference/follow-up decision,
+  and explicit caveat note.
+- Source evidence details:
+  Wave 263 includes Avalonia click-through log overlays, a partial
+  Unity/SteamVR overlay with heavy artifacts, VPM editor QoL tools, avatar
+  asset inspectors, SDK2 world helper callbacks, a mostly template VPM package,
+  and tiny synced Udon audio/switch/auto-hide scripts.
+- Do not copy directly:
+  tracked `Library`, `bin`, `obj`, `.vs`, stale auth artifacts, SDK2-only
+  assumptions, package templates with no implementation, or Udon scripts
+  without reviewing ownership, serialization, and deserialization semantics.
+- Strong references:
+  `kanameliser-editor-plus` for editor QoL surfaces, `VRCTools` for avatar
+  asset inspection, `vrchatoverlay` for log-driven overlay UX, and
+  `vrchat-udon-tools` for tiny synced world-component behavior.
+- Maturity:
+  pragmatic intake method; useful for keeping the registry honest when repos
+  are small, partial, or artifact-heavy.
+- Best fit for `VR-apps-lab`:
+  source-light intake checklists, artifact hygiene rules, VRChat editor
+  diagnostics, Udon sync review notes, and transparent desktop overlay
+  privacy patterns.

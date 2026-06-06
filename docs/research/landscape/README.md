@@ -1153,6 +1153,26 @@ Use these files when you want to understand:
   ingestion, ADB setup, screen casting, hand/eye telemetry, registry/config
   patching, and device-helper safety caveats.
 
+- `vr-projects-wave-260-vrchat-api-client-mobile-companion-and-pipeline-surfaces.md`
+  Next GitHub discovery wave focused on VRChat API clients, mobile/desktop
+  companions, auth/TFA, local log sync, pipeline WebSocket access, and
+  privacy-aware service-data utility boundaries.
+
+- `vr-projects-wave-261-vrchat-expression-menu-authoring-visualization-and-runtime-menu-helpers.md`
+  Next GitHub discovery wave focused on VRChat expression-menu icon
+  processing, menu visualization, toggle generation, menu/parameter/animator
+  merging, and caveated runtime menu helper patterns.
+
+- `vr-projects-wave-262-vpm-package-index-generation-flatpak-and-repository-publication-tooling.md`
+  Next GitHub discovery wave focused on VPM package index generation,
+  manifests, lockfiles, GitHub release fetch, validation, Flatpak packaging,
+  public listing pages, and add-to-VCC UX.
+
+- `vr-projects-wave-263-vrchat-overlay-world-editor-and-udon-microtools.md`
+  Next GitHub discovery wave focused on source-light VRChat utilities:
+  desktop overlays, historical SteamVR overlay experiments, editor QoL tools,
+  avatar inspectors, world helpers, and tiny Udon components.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

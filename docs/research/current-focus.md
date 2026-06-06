@@ -221,6 +221,12 @@ These are the clearest current product and research lines:
     micro-control tools, BLE/MIDI/hotkey OSC sources, Quest capture helpers,
     ADB setup microtools, screenshot/media ingestion, and eye/hand telemetry
     recorder patterns.
+42. `VRChat API companions, expression-menu authoring, VPM publication, and source-light utility triage`
+    the repository now has fresh coverage of VRChat REST/pipeline/log client
+    boundaries, mobile companion auth and notification flows, expression-menu
+    icon/preview/generation tools, VPM index and listing publication
+    pipelines, desktop or SteamVR overlay experiments, editor QoL packages,
+    avatar asset inspectors, world helpers, and tiny Udon sync components.
 
 ## Most useful current docs
 
@@ -392,6 +398,10 @@ instead of full history:
 - `landscape/vr-projects-wave-257-xsoverlay-notification-wrappers-relays-and-compatibility-daemons.md`
 - `landscape/vr-projects-wave-258-vrchat-osc-micro-control-input-and-avatar-parameter-utilities.md`
 - `landscape/vr-projects-wave-259-meta-quest-device-camera-screenshot-streaming-and-setup-helpers.md`
+- `landscape/vr-projects-wave-260-vrchat-api-client-mobile-companion-and-pipeline-surfaces.md`
+- `landscape/vr-projects-wave-261-vrchat-expression-menu-authoring-visualization-and-runtime-menu-helpers.md`
+- `landscape/vr-projects-wave-262-vpm-package-index-generation-flatpak-and-repository-publication-tooling.md`
+- `landscape/vr-projects-wave-263-vrchat-overlay-world-editor-and-udon-microtools.md`
 
 ## Strong donor clusters right now
 
@@ -926,6 +936,12 @@ the strongest current clusters:
   bridges, robust VRChat OSC micro-control utilities, typed OSC/address
   foundations, Quest capture helpers, Android media ingestion, and research
   sensor-recording loops.
+- `vrcp`, `VRChat.API.Client`, `vrchat-expression-menu-visualizer`,
+  `vrc-menu-merger`, `voyager-vpm`, `cuebitt/vpm`,
+  `kanameliser-editor-plus`, `VRCTools`, and `vrchat-udon-tools`
+  for VRChat API companion boundaries, generated-client surfaces,
+  expression-menu preview and conflict checks, VPM publication hygiene,
+  editor diagnostics, and tiny Udon sync utilities.
 
 ## Highest-value next follow-up passes
 
@@ -1110,6 +1126,10 @@ directions:
 176. `XSOverlay notification relay matrix across UDP/WebSocket payloads, source adapters, privacy gates, and compatibility daemons`
 177. `VRChat OSC micro-control safety matrix across hotkeys, state mirrors, input pulses, MIDI/BLE sources, typed libraries, and port conflicts`
 178. `Quest companion helper matrix across ADB setup, capture paths, screenshots, screenrecord, sensor streams, registry/config patches, and rollback`
+179. `VRChat API companion boundary matrix across REST, pipeline, logs, auth, mobile, and privacy`
+180. `VRChat expression-menu authoring matrix across icon pipelines, generated assets, preview, ModularAvatar, and runtime menu patches`
+181. `VPM package publication matrix across manifests, releases, lockfiles, indexes, Flatpak wrappers, and listing UX`
+182. `Source-light VRChat utility triage matrix across overlays, editor packages, world helpers, Udon scripts, and artifact hygiene`
 
 ## Current repository-maintenance priorities
 

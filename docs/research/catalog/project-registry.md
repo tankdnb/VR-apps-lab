@@ -3416,6 +3416,63 @@ Primary docs:
 - `SinanAkkoyun/OculusQuest2ADBAutoWifi` - `Studied in Wave 259 as a Node CLI for Quest ADB Wi-Fi onboarding with device-list parsing, USB wait loop, adb tcpip 5555, route-based IP extraction, and hardcoded Unity ADB path caveats`
 - `Clept0/Unity_QuestPro_EyeTrackingRecorder` - `Studied in Wave 259 as a Unity/OVR Quest Pro eye-tracking recorder with left/right OVREyeGaze sampling, CSV schema, calibration/stabilization scenes, heatmap particles, persistent-data export, and Python gaze-error analysis`
 
+## 231. VRChat API client, mobile companion, and pipeline surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-260-vrchat-api-client-mobile-companion-and-pipeline-surfaces.md`
+- `../landscape/project-families.md`
+
+- `LinaTsukusu/vrchat-client` - `Studied in Wave 260 as a compact TypeScript VRChat API wrapper with module-per-domain clients, axios base URL switching, cookie-based login, shared request helpers, and old-auth/2FA caveats`
+- `ccamgr/vrcp` - `Studied in Wave 260 as a mobile/desktop VRChat companion with generated API bindings, SecureStore auth/TFA state, desktop log sync, session analytics, background notification polling, and privacy/credential caveats`
+- `binn/VRChat.API.Client` - `Studied in Wave 260 as a .NET fluent/generated-client wrapper with IVRChat domain APIs, builder configuration, auth cookie injection, timeout/proxy/user-agent options, named client factory, and lifetime caveats`
+- `calmery/vrchat` - `Studied in Wave 260 as a compact TypeScript auth/TFA/cookie wrapper with explicit error classes, authenticated CRUD helpers, cookie parsing, and stale API-key/rate-limit caveats`
+- `Ox0017/vrc` - `Studied in Wave 260 as a Java VRChat API client with request context, DTO/serializer surface, auth verification and token refresh/clear behavior, custom HttpClient boundary, and old Cloudflare/auth caveats`
+- `VRCMG/vrcapi-client` - `Studied in Wave 260 as a TypeScript REST and pipeline client with endpoint modules, axios defaults, login/config fetch, WebSocket token initialization, tests, and global-cookie/security caveats`
+
+## 232. VRChat expression menu authoring, visualization, and runtime menu helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-261-vrchat-expression-menu-authoring-visualization-and-runtime-menu-helpers.md`
+- `../landscape/project-families.md`
+
+- `nekochanfood/VRCStyledIconMaker` - `Studied in Wave 261 as an expression-menu icon pipeline with SVG-to-PNG resize/padding, PIL/OpenCV gradient recolor, shadow generation, transparent 256 canvas output, and licensing/tooling caveats`
+- `nekoare/vrchat-expression-menu-visualizer` - `Studied in Wave 261 as a Unity editor expression-menu visualizer/editor with avatar descriptor selection, tree/grid view, search/stats, edit mode, ModularAvatar reflection, drag/drop hierarchy, generated marker metadata, and save/Undo caveats`
+- `imagitama/vrc-menu-merger` - `Studied in Wave 261 as a menu/parameter/animator merger with 8-control limit checks, duplicate control handling, parameter type conflict errors, animator layer/parameter merging, and shallow-reference caveats`
+- `zutozuto/VRChat-Menu-Creation-Tool` - `Studied in Wave 261 as an outfit/prop menu generator with avatar-specific ScriptableObject config, cloth/ornament/extra-group models, hierarchy path capture, show/hide lists, sub toggles, preview toggling, and path-drift caveats`
+- `Knucklesfan/VRChatTextToMenu` - `Studied in Wave 261 as a text-to-submenu generator that writes Unity menu YAML pages, handles 8-item pages, performs GUID post-pass replacement, and carries raw-YAML/compiled-artifact caveats`
+- `Lucario4LyfeYT/EasyToggle` - `Studied in Wave 261 as a one-file Unity editor toggle generator with selected object intake, animation clip creation, animator layer/transition generation, VRC parameter appending, 8-control menu pagination, and parameter/layer budget caveats`
+- `AtiLion/VRCMenuUtils` - `Caveated reference in Wave 261 as a runtime VRChat quick-menu mod library with reflection-based UI manager access, pre-flow UI setup, popup/input helpers, quick-menu page/button duplication, and EAC/TOS reuse caveats`
+- `CaelBun/DontOverrenderMyMenuV2` - `Caveated reference in Wave 261 as a runtime menu visibility patch with cloned UI camera, culling-mask/layer separation, Harmony patches, preference-backed quick-menu toggle, and direct-runtime-patch caveats`
+
+## 233. VPM package index generation, Flatpak, and repository publication tooling
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-262-vpm-package-index-generation-flatpak-and-repository-publication-tooling.md`
+- `../landscape/project-families.md`
+
+- `Limitex/voyager-vpm` - `Studied in Wave 262 as a Rust VPM package index generator with voyager.toml/lock workflow, crash-recoverable manifest+lock transactions, GitHub release asset fetch, retry/backoff, package manifest validation, SemVer/URL/hash checks, and index generation`
+- `NathMorgan/vrchat-vpm` - `Studied in Wave 262 as a Flatpak-style Linux package for VRChat VPM CLI with dotnet SDK extension, pinned NuGet package source, network/host filesystem permissions, and explicit third-party/VRChat license notices`
+- `tamakiii/vrchat-vpm` - `Studied in Wave 262 as a minimal static VPM listing with hand-authored index JSON and browser-generated vcc://vpm/addRepo links`
+- `cuebitt/vpm` - `Studied in Wave 262 as a public VPM package repository with source manifest, GitHub package list, generated landing page, search/filter UI, package metadata modal, dependency/license display, copyable URLs, and Add-to-VCC links`
+
+## 234. VRChat overlay, world editor, and Udon microtools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-263-vrchat-overlay-world-editor-and-udon-microtools.md`
+- `../landscape/project-families.md`
+
+- `o0F-0oF/vrchatoverlay` - `Studied in Wave 263 as an Avalonia transparent click-through desktop overlay that tails VRChat logs, parses OnPlayerJoined/OnPlayerLeft events, updates a player list on the UI thread, and carries busy-wait/artifact/privacy caveats`
+- `kizuki1749/VRChatOverlay` - `Partially studied in Wave 263 as a historical Unity/SteamVR VRChat data overlay experiment with scene-level overlay render texture, SteamVR overlay component, overlay placement fields, bundled VRChat API client, and heavy Library/bin/obj/stale-auth caveats`
+- `kxn4t/kanameliser-editor-plus` - `Studied in Wave 263 as a VPM-installable VRChat editor QoL suite with mesh info and NDMF preview support, component manager, material copier/matching, ModularAvatar material setter/swap generation, AO bounds batch UI, and missing blendshape insertion`
+- `Zaknin/VRCTools` - `Studied in Wave 263 as a Unity avatar asset inspector with scanner/result model, renderer/material/texture/shader collection, texture/mesh memory estimates, missing reference detection, performance icons, report/packager states, and editor-only caveats`
+- `Himakuma/VRChatWorldTools` - `Studied in Wave 263 as an SDK2-era Unity world editor microtool that wires VRC_SceneResetPosition callbacks to a selected reset button through persistent UnityEvent listeners`
+- `yassann325/VRC-NetworkQueue` - `Source-light in Wave 263 as a mostly VRChat template-package/VPM listing reference with package skeleton, vpm-manifest, generated website, and follow-up need to confirm real NetworkQueue implementation`
+- `PeaceKunihiro/vrchat-udon-tools` - `Studied in Wave 263 as tiny Udon world utilities with synced cycle switch, synced audio selector with optional stop slot, owner transfer, RequestSerialization, OnDeserialization state application, and delayed auto-hide behavior`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

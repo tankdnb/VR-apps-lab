@@ -268,6 +268,10 @@ This file complements:
 - `vr-projects-wave-257-xsoverlay-notification-wrappers-relays-and-compatibility-daemons.md`
 - `vr-projects-wave-258-vrchat-osc-micro-control-input-and-avatar-parameter-utilities.md`
 - `vr-projects-wave-259-meta-quest-device-camera-screenshot-streaming-and-setup-helpers.md`
+- `vr-projects-wave-260-vrchat-api-client-mobile-companion-and-pipeline-surfaces.md`
+- `vr-projects-wave-261-vrchat-expression-menu-authoring-visualization-and-runtime-menu-helpers.md`
+- `vr-projects-wave-262-vpm-package-index-generation-flatpak-and-repository-publication-tooling.md`
+- `vr-projects-wave-263-vrchat-overlay-world-editor-and-udon-microtools.md`
 
 ## How to use this index
 

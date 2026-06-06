@@ -255,6 +255,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-257-xsoverlay-notification-wrappers-relays-and-compatibility-daemons.md`
 - `landscape/vr-projects-wave-258-vrchat-osc-micro-control-input-and-avatar-parameter-utilities.md`
 - `landscape/vr-projects-wave-259-meta-quest-device-camera-screenshot-streaming-and-setup-helpers.md`
+- `landscape/vr-projects-wave-260-vrchat-api-client-mobile-companion-and-pipeline-surfaces.md`
+- `landscape/vr-projects-wave-261-vrchat-expression-menu-authoring-visualization-and-runtime-menu-helpers.md`
+- `landscape/vr-projects-wave-262-vpm-package-index-generation-flatpak-and-repository-publication-tooling.md`
+- `landscape/vr-projects-wave-263-vrchat-overlay-world-editor-and-udon-microtools.md`
 
 ## Archive Navigation
 
