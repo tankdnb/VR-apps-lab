@@ -2662,6 +2662,70 @@ Primary docs:
 - `cytsai1008/HaritoraToSlime` - `Already studied as Python OSC Haritora to SlimeVR bridge with config bootstrap, broadcast handshake, add-IMU packets, rotation/accel encoding, and parser/acceleration caveats`
 - `Fuwaaaaaa/osc_haritorax2_camera_tracking` - `Already studied as mature camera/IMU tracking middleware with receiver abstraction, camera subprocess/shared memory, fusion engine, event bus, preflight checks, REST/dashboard/OBS/VMC outputs, persistence, and tests`
 
+## 175. WebXR runtime/dev scaffolding, polyfills, emulators, and input profile loaders
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-204-webxr-runtime-dev-scaffolding-polyfills-emulators-and-input-profile-loaders.md`
+- `../landscape/project-families.md`
+
+- `immersive-web/webxr-polyfill` - `Already studied as guarded navigator.xr fallback with API-class injection, WebGL compatibility patching, abstract XRDevice boundary, and stale WebVR/Cardboard caveats`
+- `MozillaReality/WebXR-emulator-extension` - `Already studied as browser extension emulator with content-script/page custom-event bridge, devtools device panel, pose/button/device messages, and old-spec/input-limit caveats`
+- `De-Panther/webxr-input-profiles-loader` - `Already studied as Unity WebXR input-profile loader with profile-list/profile JSON cache, handedness layout routing, glTF visual-response nodes, and CDN/package caveats`
+- `michelesandroni/xrview` - `Already studied as standalone Tauri WebXR emulator shell with trust-separated toolbar/browser webviews, all-frame IWER injection, URL gating, and capability-isolation caveats`
+- `holokit/holokit-webxr` - `Already studied as viewer-specific WebXR device adapter/polyfill with HoloKit immersive AR sessions, multiview projection/viewport logic, and device-specific caveats`
+- `realitydeslab/holoweb-webxr-polyfills` - `Fork / variant only as HoloKit-style WebXR polyfill family member with broad module type surface and overlapping donor value`
+- `mvilledieu/magicleap-helio-webxr-polyfill` - `Already studied as Magic Leap Helio WebXR API-drift micro-shim wrapping support/session/frame/input/reference-space methods with hardcoded stale-browser caveats`
+
+## 176. A-Frame UI, locomotion, environment, and physics micro-components
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-205-aframe-ui-locomotion-environment-and-physics-micro-components.md`
+- `../landscape/project-families.md`
+
+- `c-frame/aframe-cursor-teleport` - `Already studied as cursor-camera teleport fallback with collision/ignore selectors, ground-plane fallback, landing angle checks, transition easing, and desktop/mobile value`
+- `supermedium/aframe-super-keyboard` - `Already studied as texture-atlas keyboard with raycaster UV key selection, filters, max length, value events, hand/raycaster integration, and old dependency caveats`
+- `supermedium/aframe-environment-component` - `Already studied as declarative environment/preset generator for sky, fog, lights, ground, terrain, dressing, grids, and fast scene-context setup`
+- `n5ro/aframe-physics-system` - `Already studied as A-Frame physics system with local/worker/network/ammo drivers, CANNON body sync, fixed timestep, worker snapshots, and maintenance/performance caveats`
+- `supermedium/aframe-react` - `Already studied as React-to-A-Frame entity bridge with attribute diff/remove, event attach/detach, primitive mapping, and old React API caveats`
+- `topstar-ai/aframe-blink` - `Already studied as teleport component with parabolic target, rotation output, thumbstick support, hit/miss colors, teleported event payload, and WIP caveats`
+- `EX3D/aframe-daylight-system` - `Already studied as tiny time/latitude/declination-driven sky, fog, and sun-position component`
+- `msfeldstein/aframe-environment-map-component` - `Already studied as environment-only CubeCamera/PMREM capture helper with target envMap assignment and visibility/API caveats`
+
+## 177. Godot XR addon periphery: hands, tracker bridges, recording, and reference plugin baselines
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-206-godot-xr-addons-hand-tracker-recording-and-reference-plugin-periphery.md`
+- `../landscape/project-families.md`
+
+- `patrykkalinowski/godot-xr-kit` - `Already studied as Godot XR addon kit with template hand-pose recognition, quaternion scoring, pose-change signals, physics movement, smoothing, and cinematic-view references`
+- `RevolNoom/godot_xr_handtracking` - `Already studied as Godot hand-pose catalogue and pose-gated pickup toolkit with hand snap, pick-area modes, stabilization, and configuration warnings`
+- `Malcolmnixon/GodotXRVmcTracker` - `Already studied as OSC/VMC body and face tracker bridge into Godot XRServer with OSC parser, position modes, joint/blend mapping, root transform, and confidence flags`
+- `Malcolmnixon/GodotXRAxisStudioTracker` - `Already studied as Axis Studio vendor body tracker bridge variant using the Godot XRServer source-to-tracker boundary`
+- `Malcolmnixon/GodotXRRokokoTracker` - `Already studied as Rokoko body/face/finger tracker bridge variant with optional modality handling and vendor packet caveats`
+- `Malcolmnixon/GodotXROpenXRTracker` - `Thin tracker demo/reference for Godot OpenXR body/hand tracker setup, world-scale controls, and demo-level caveats`
+- `Malcolmnixon/GodotXRAnimationRecorder` - `Already studied as Godot XR tracker and animation recorder with body/face/hand tracker sampling, skeleton/blendshape tracks, root motion, timestamps, and optimization`
+- `GodotVR/godot_xr_reference` - `Already studied as native Godot XRInterface reference plugin with property binding, head tracker registration, per-eye transforms/projections, and native build caveats`
+- `BastiaanOlij/godot-xr-tools2` - `Already studied as WIP modular Godot XR toolkit v2 with hand attachment functions, teleport gating, movement-provider disable, fade, slope/collision checks, and API-stability caveats`
+
+## 178. React/Three XR runtime, spatial UI, and interaction lab surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-207-react-three-xr-runtime-spatial-ui-and-interaction-lab-surfaces.md`
+- `../landscape/project-families.md`
+
+- `pmndrs/xr` - `Already deepened as React/Three XR store runtime substrate with session/input/layer/frame state, WebXRManager binding, emulator injection, teleport utilities, pointer integration, and version-pin caveats`
+- `pmndrs/uikit` - `Already studied as spatial UI substrate with Yoga/flex layout, pointer ordering/clipping, scroll handling, 3D text/selection, hidden DOM input bridge, and kit/component exports`
+- `kewanglab/webxr-playground` - `Already studied as WebXR interaction lab shell with lab registry, tuning presets, XR root/origin, TagAlong HUD, selection/manipulation labs, session logger, and agent-friendly architecture`
+- `WawasCode/DefaultReactXR` - `Already studied as thin React Three XR + Vite + UIKit starter with store options, pointer config, support-aware enter button, and starter-only caveats`
+- `randykeller11/xrTeleport` - `Already studied as basic React Three XR teleport and snap-rotation micro-reference with raycast target, normal-aligned indicator, player pose update, and old API caveats`
+- `alxxtexxr/react-three-xr-measurement` - `Already studied as AR hit-test measurement microtool with reticle, select point capture, line drawing, midpoint distance label, and no-persistence caveat`
+- `BOLTEVM/BoltXR` - `Already studied as product-specific spatial UI/hand-interaction reference with WebXR scene panels, IWER emulation flag, MediaPipe pinch/tap/drag/scale overlay pipeline, and crypto/product caveats`
+- `aazutaku/glb-ar-viewer` - `Already studied as Next.js GLB AR viewer with upload/key routing, WebXR/dom-overlay store, iOS launcher fallback, animation toggle, transform controls, model streaming, and validation caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

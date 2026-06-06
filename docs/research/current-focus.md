@@ -145,6 +145,11 @@ These are the clearest current product and research lines:
    the repository now has fresh coverage of VRCOSC module-pack distribution,
    event queues and sensor modules, Networked-AFrame adapters and persistence,
    in-headset authoring surfaces, and ContactGlove/Haritora bridge sidecars.
+29. `WebXR runtime scaffolding, A-Frame/Godot component layers, and React/Three spatial UI labs`
+   the repository now has fresh coverage of WebXR polyfills and emulator
+   shells, input-profile loaders, A-Frame micro-components, Godot XR tracker
+   bridges and recorders, React/Three XR store substrates, spatial UI layout,
+   interaction lab shells, and AR measurement/model-viewer microtools.
 
 ## Most useful current docs
 
@@ -260,6 +265,10 @@ instead of full history:
 - `landscape/vr-projects-wave-201-networked-aframe-adapters-persistence-media-and-unity-client-variants.md`
 - `landscape/vr-projects-wave-202-lightweight-xr-editor-tour-builder-live-coding-and-creator-microtools.md`
 - `landscape/vr-projects-wave-203-contactglove-haritora-and-vendor-tracker-bridge-sidecars.md`
+- `landscape/vr-projects-wave-204-webxr-runtime-dev-scaffolding-polyfills-emulators-and-input-profile-loaders.md`
+- `landscape/vr-projects-wave-205-aframe-ui-locomotion-environment-and-physics-micro-components.md`
+- `landscape/vr-projects-wave-206-godot-xr-addons-hand-tracker-recording-and-reference-plugin-periphery.md`
+- `landscape/vr-projects-wave-207-react-three-xr-runtime-spatial-ui-and-interaction-lab-surfaces.md`
 
 ## Strong donor clusters right now
 
@@ -753,6 +762,15 @@ the strongest current clusters:
   contracts, WebXR/entity persistence, authoring/export primitives,
   driver-versus-sidecar tracker bridges, and diagnosable tracking fusion
   runtimes.
+- `webxr-polyfill`, `WebXR-emulator-extension`, `xrview`,
+  `webxr-input-profiles-loader`, `aframe-super-keyboard`,
+  `aframe-physics-system`, `GodotXRVmcTracker`,
+  `GodotXRAnimationRecorder`, `godot-xr-tools2`, `pmndrs/xr`,
+  `pmndrs/uikit`, `webxr-playground`
+  for WebXR runtime abstraction, emulator shells, controller-profile visual
+  loaders, declarative component primitives, scene physics driver boundaries,
+  Godot tracker/recorder bridges, modular toolkit nodes, React/Three XR store
+  architecture, spatial UI layout/input, and interaction-lab shells.
 
 ## Highest-value next follow-up passes
 
@@ -889,6 +907,10 @@ directions:
 128. `Networked-AFrame adapter, persistence, media-stream, and ownership matrix`
 129. `Lightweight XR authoring surface matrix across manipulation, serialization, undo, and export`
 130. `ContactGlove and Haritora bridge protocol, calibration, and diagnostics matrix`
+131. `WebXR runtime emulator, polyfill, and input-profile compatibility matrix`
+132. `A-Frame component primitive matrix across schema, input, events, assets, and lifecycle`
+133. `Godot XR addon matrix across hand pose, pickup, tracker source, recorder, toolkit node, and native interface`
+134. `React/Three XR substrate matrix across runtime store, spatial UI, labs, and microtools`
 
 ## Current repository-maintenance priorities
 

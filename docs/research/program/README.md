@@ -1449,3 +1449,31 @@ repeatable way.
 
 - `github-research-wave-203-backlog.md`
   Executed backlog for the Wave 203 pass.
+
+- `github-research-wave-204-plan.md`
+  Wave 204 research plan focused on WebXR runtime/dev scaffolding, polyfills,
+  emulators, and input profile loaders.
+
+- `github-research-wave-204-backlog.md`
+  Executed backlog for the Wave 204 pass.
+
+- `github-research-wave-205-plan.md`
+  Wave 205 research plan focused on A-Frame UI, locomotion, environment, and
+  physics micro-components.
+
+- `github-research-wave-205-backlog.md`
+  Executed backlog for the Wave 205 pass.
+
+- `github-research-wave-206-plan.md`
+  Wave 206 research plan focused on Godot XR addon periphery, hands, tracker
+  bridges, recording, and reference plugin baselines.
+
+- `github-research-wave-206-backlog.md`
+  Executed backlog for the Wave 206 pass.
+
+- `github-research-wave-207-plan.md`
+  Wave 207 research plan focused on React/Three XR runtime, spatial UI, and
+  interaction lab surfaces.
+
+- `github-research-wave-207-backlog.md`
+  Executed backlog for the Wave 207 pass.

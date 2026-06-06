@@ -881,6 +881,26 @@ Use these files when you want to understand:
   protocol interpreters, SlimeVR/VMC/SteamVR output boundaries, and diagnosable
   tracking fusion sidecars.
 
+- `vr-projects-wave-204-webxr-runtime-dev-scaffolding-polyfills-emulators-and-input-profile-loaders.md`
+  Next GitHub discovery wave focused on WebXR runtime fallback boundaries,
+  emulator extensions/shells, input-profile model loaders, viewer-specific
+  device adapters, and vendor-browser API shims.
+
+- `vr-projects-wave-205-aframe-ui-locomotion-environment-and-physics-micro-components.md`
+  Next GitHub discovery wave focused on A-Frame component primitives for
+  teleport, keyboards, scene environments, physics drivers, React bridging,
+  daylight, and environment-map helpers.
+
+- `vr-projects-wave-206-godot-xr-addons-hand-tracker-recording-and-reference-plugin-periphery.md`
+  Next GitHub discovery wave focused on Godot XR hand-pose addons, pose-gated
+  pickup, VMC/Rokoko/Axis/OpenXR tracker bridges, animation recorders,
+  reference plugin baselines, and toolkit v2 nodes.
+
+- `vr-projects-wave-207-react-three-xr-runtime-spatial-ui-and-interaction-lab-surfaces.md`
+  Next GitHub discovery wave focused on React/Three XR store architecture,
+  spatial UI layout/input substrates, interaction lab shells, AR measurement,
+  GLB AR viewers, and hand/product UI references.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

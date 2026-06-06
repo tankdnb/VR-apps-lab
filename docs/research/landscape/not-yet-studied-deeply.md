@@ -2077,6 +2077,62 @@ These are larger than a single repo and should guide the next research wave.
   runtime output contracts, calibration, role mapping, stale-data behavior,
   battery/status diagnostics, setup UX, and driver-versus-sidecar risk.
 
+### 157. `WebXR runtime emulator, polyfill, and input-profile compatibility matrix`
+
+- Main entries:
+  `webxr-polyfill`, `WebXR-emulator-extension`,
+  `webxr-input-profiles-loader`, `xrview`, `holokit-webxr`,
+  `holoweb-webxr-polyfills`, `magicleap-helio-webxr-polyfill`
+- Why it matters:
+  this family captures WebXR runtime fallbacks, devtools emulation,
+  standalone emulator shells, viewer-specific device adapters,
+  input-profile model loaders, and vendor-browser API shims. A future deeper
+  pass should compare injection timing, device abstraction surface,
+  pose/input message protocol, browser-shell trust boundary, input-profile
+  asset loading, and stale-spec risk.
+
+### 158. `A-Frame component primitive matrix across schema, input, events, assets, and lifecycle`
+
+- Main entries:
+  `aframe-cursor-teleport`, `aframe-super-keyboard`,
+  `aframe-environment-component`, `aframe-physics-system`,
+  `aframe-react`, `aframe-blink`, `aframe-daylight-system`,
+  `aframe-environment-map-component`
+- Why it matters:
+  this family captures reusable A-Frame component contracts for locomotion,
+  text entry, scene context, physics, rendering helpers, and framework
+  bridging. A future deeper pass should compare schema quality, event payloads,
+  input adapters, generated assets, cleanup behavior, worker/driver boundaries,
+  and migration risk from old A-Frame/Three APIs.
+
+### 159. `Godot XR addon matrix across hand pose, pickup, tracker source, recorder, toolkit node, and native interface`
+
+- Main entries:
+  `godot-xr-kit`, `godot_xr_handtracking`, `GodotXRVmcTracker`,
+  `GodotXRAxisStudioTracker`, `GodotXRRokokoTracker`,
+  `GodotXROpenXRTracker`, `GodotXRAnimationRecorder`,
+  `godot_xr_reference`, `godot-xr-tools2`
+- Why it matters:
+  this family captures how Godot XR addons turn hand poses, pick areas,
+  vendor tracking protocols, recorder streams, toolkit functions, and native
+  interfaces into reusable engine boundaries. A future deeper pass should
+  compare skeleton/pose formats, pickup affordance rules, tracker confidence,
+  calibration, world-scale, recorder export paths, and toolkit API stability.
+
+### 160. `React/Three XR substrate matrix across runtime store, spatial UI, labs, and microtools`
+
+- Main entries:
+  `pmndrs/xr`, `pmndrs/uikit`, `webxr-playground`,
+  `DefaultReactXR`, `xrTeleport`, `react-three-xr-measurement`,
+  `BoltXR`, `glb-ar-viewer`
+- Why it matters:
+  this family captures browser-native XR runtime stores, spatial UI layout,
+  text/input bridges, interaction lab shells, HUDs, AR measurement, model
+  viewers, and hand-landmark overlay gestures. A future deeper pass should
+  compare store/session architecture, input source typing, pointer event
+  routing, UI clipping/scroll/text focus, lab logging, live tuning, asset
+  validation, and microtool maturity.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2221,6 +2277,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 138. `Networked-AFrame adapter, persistence, media-stream, and ownership matrix`
 139. `Lightweight XR authoring surface matrix across manipulation, serialization, undo, and export`
 140. `ContactGlove and Haritora bridge protocol, calibration, and diagnostics matrix`
+141. `WebXR runtime emulator, polyfill, and input-profile compatibility matrix`
+142. `A-Frame component primitive matrix across schema, input, events, assets, and lifecycle`
+143. `Godot XR addon matrix across hand pose, pickup, tracker source, recorder, toolkit node, and native interface`
+144. `React/Three XR substrate matrix across runtime store, spatial UI, labs, and microtools`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

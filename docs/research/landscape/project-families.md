@@ -5968,6 +5968,155 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - driver-versus-sidecar risk boundaries
 - generic receiver protocols before device-specific prototypes
 
+## Family 183: WebXR runtime/dev scaffolding, polyfills, emulators, and input profile loaders
+
+This family covers projects that make browser-native XR development possible
+when the real runtime is missing, incomplete, browser-specific, or inconvenient
+for iteration.
+
+| Project | Status | Notes |
+|---|---|---|
+| `immersive-web/webxr-polyfill` | Already studied as runtime fallback donor | guarded API-class injection, `navigator.xr` fallback, WebGL compatibility patching, abstract `XRDevice`, and stale WebVR/Cardboard caveats |
+| `MozillaReality/WebXR-emulator-extension` | Already studied as extension emulator donor | content-script/page custom events, devtools panel, pose/button/device messages, and old 2019 draft caveat |
+| `De-Panther/webxr-input-profiles-loader` | Already studied as input-profile model loader | profile-list/profile JSON cache, handedness layout routing, glTF visual-response nodes, and Unity/CDN caveats |
+| `michelesandroni/xrview` | Already studied as standalone emulator shell | Tauri toolbar/browser webviews, all-frame IWER injection, URL gating, and capability isolation |
+| `holokit/holokit-webxr` | Already studied as viewer-specific device adapter | HoloKit immersive AR sessions, multiview projection/viewport logic, and device-specific caveats |
+| `realitydeslab/holoweb-webxr-polyfills` | Fork / variant only | HoloKit-style module-surface comparison node with overlapping donor value |
+| `mvilledieu/magicleap-helio-webxr-polyfill` | Already studied as vendor-browser API shim | Helio support/session/frame/input/reference-space wrappers and hardcoded stale-browser assumptions |
+
+### Consolidation note
+
+This family matters because WebXR utilities need a testable runtime boundary:
+
+- app-facing `navigator.xr` versus device backend
+- extension or shell UI versus injected page runtime
+- dev-only emulation versus production headset behavior
+- controller input-profile metadata versus rendered engine model
+- standalone browser shell trust isolation
+- tiny compatibility shims for browser API drift
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- WebXR runtime compatibility matrices
+- emulator/test harness shells
+- controller/profile visualization utilities
+- browser-native XR prototype scaffolds
+- security checklists for embedded browser shells
+
+## Family 184: A-Frame UI, locomotion, environment, and physics micro-components
+
+This family covers small A-Frame components that package one reusable scene,
+input, environment, physics, or rendering behavior behind a declarative schema
+and event/lifecycle contract.
+
+| Project | Status | Notes |
+|---|---|---|
+| `c-frame/aframe-cursor-teleport` | Already studied as cursor teleport fallback | camera raycast, collision/ignore selectors, default ground plane, landing angle, marker, and transition easing |
+| `supermedium/aframe-super-keyboard` | Already studied as text-entry component donor | keyboard atlas, raycaster UV mapping, filters, max length, hand/raycaster integration, and value events |
+| `supermedium/aframe-environment-component` | Already studied as environment generator | presets, sky/fog/lights/ground/grid, terrain/dressing generation, and quick scene context |
+| `n5ro/aframe-physics-system` | Already studied as physics substrate donor | local/worker/network/ammo drivers, CANNON body sync, fixed timestep, worker snapshots, and debug hooks |
+| `supermedium/aframe-react` | Already studied as framework bridge reference | React prop diffing to A-Frame attributes/events, primitive mapping, and old React API caveat |
+| `topstar-ai/aframe-blink` | Already studied as teleport UX donor | parabolic target, rotation output, hit/miss colors, thumbstick support, and `teleported` event payload |
+| `EX3D/aframe-daylight-system` | Already studied as daylight micro-reference | time/location sun position, sky shader, and fog controls |
+| `msfeldstein/aframe-environment-map-component` | Already studied as environment-map helper | CubeCamera/PMREM capture, environment-only visibility, envMap assignment, and old Three API caveat |
+
+### Consolidation note
+
+This family matters because component-sized XR utilities can be reused across
+many prototypes:
+
+- schema-driven configuration
+- raycaster, cursor, UV, or controller input adapters
+- visible event payloads for teleport, text, and physics
+- system/driver boundaries for runtime substrates
+- environment presets for fast spatial context
+- lifecycle cleanup and asset ownership
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- component contract templates for future browser XR utilities
+- VR text-entry and keyboard comparison matrices
+- locomotion event/comfort baselines
+- physics-driver and worker-boundary studies
+- quick environment/staging helpers for interaction labs
+
+## Family 185: Godot XR addon periphery: hands, tracker bridges, recording, and reference plugin baselines
+
+This family covers Godot XR addon projects that turn external protocols, hand
+poses, live trackers, and toolkit functions into engine-native XRServer,
+animation, or scene-node boundaries.
+
+| Project | Status | Notes |
+|---|---|---|
+| `patrykkalinowski/godot-xr-kit` | Already studied as XR addon kit reference | template hand-pose recognition, quaternion scoring, pose-change signals, movement/smoothing/cinematic primitives |
+| `RevolNoom/godot_xr_handtracking` | Already studied as hand interaction donor | pose catalogue, stabilized matching, pose-gated pick areas, hand snap, ranged/touch modes, and setup warnings |
+| `Malcolmnixon/GodotXRVmcTracker` | Already studied as strong tracker bridge donor | OSC/VMC parser, body/face tracker registration, position modes, joint/blend mapping, root transform, and confidence flags |
+| `Malcolmnixon/GodotXRAxisStudioTracker` | Already studied as vendor tracker variant | Axis Studio source to `XRBodyTracker`, position modes, joint mapping, and vendor caveats |
+| `Malcolmnixon/GodotXRRokokoTracker` | Already studied as vendor tracker variant | body/face/finger optional modalities, tracker flags, and packet assumptions |
+| `Malcolmnixon/GodotXROpenXRTracker` | Thin tracker demo/reference | OpenXR body/hand tracker setup, `XRServer.world_scale`, and demo-level controls |
+| `Malcolmnixon/GodotXRAnimationRecorder` | Already studied as recorder donor | tracker stream sampling, body/face/hand resources, skeleton/blendshape tracks, root motion, timestamps, and optimization |
+| `GodotVR/godot_xr_reference` | Already studied as native interface baseline | minimal `XRInterface` lifecycle, head tracker, view transforms, projection, distortion/display properties |
+| `BastiaanOlij/godot-xr-tools2` | Already studied as toolkit architecture donor | hand attachment functions, teleport gating, movement-provider disable, fade, ray/arc target, slope/collision checks |
+
+### Consolidation note
+
+This family matters because Godot can host compact XR utilities if the addon
+boundaries stay clean:
+
+- pose templates versus raw skeleton reads
+- pick areas and hand snaps as object-local affordance contracts
+- protocol source nodes versus XRServer tracker consumers
+- body, face, and finger capabilities as optional outputs
+- recorder sampling separated from animation/resource writing
+- toolkit functions separated from player composition
+- native interface baselines before custom runtime logic
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Godot tracker-source bridge templates
+- hand-pose and pose-gated affordance studies
+- tracker recording and replay diagnostics
+- modular Godot XR toolkit primitives
+- Godot native XRInterface learning notes
+
+## Family 186: React/Three XR runtime, spatial UI, and interaction lab surfaces
+
+This family covers browser-native React/Three XR substrates: runtime stores,
+spatial UI layout/input, lab shells, AR measurement/model-viewer microtools,
+and hand/product UI references.
+
+| Project | Status | Notes |
+|---|---|---|
+| `pmndrs/xr` | Already deepened as strong runtime donor | XR store, session/input/layer/frame state, `WebXRManager` binding, emulator injection, typed input-source states, teleport, and React boundary |
+| `pmndrs/uikit` | Already studied as strong spatial UI donor | Yoga/flex layout, pointer ordering/clipping, scroll, text selection, hidden DOM input bridge, and component kits |
+| `kewanglab/webxr-playground` | Already studied as interaction lab shell | lab registry, tuning presets, XR root/origin, TagAlong HUD, selection/manipulation labs, session logger, and shell framing |
+| `WawasCode/DefaultReactXR` | Already studied as thin starter reference | Vite/TypeScript starter, pointer config, UIKit enter button, support checks, and starter-only caveats |
+| `randykeller11/xrTeleport` | Already studied as locomotion micro-reference | raycast teleport target, normal-aligned indicator, player pose update, snap rotation, and old API caveats |
+| `alxxtexxr/react-three-xr-measurement` | Already studied as AR measurement microtool | hit-test reticle, select point capture, line/label distance, and no-persistence caveat |
+| `BOLTEVM/BoltXR` | Already studied as cautious product/hand UI reference | WebXR panels, IWER emulation flag, MediaPipe pinch/tap/drag/scale overlay pipeline, and crypto/product caveats |
+| `aazutaku/glb-ar-viewer` | Already studied as AR model viewer reference | upload/key routing, WebXR/dom-overlay store, iOS fallback, animation toggle, transform controls, and model streaming |
+
+### Consolidation note
+
+This family matters because browser-native XR utilities need both runtime and
+UI foundations:
+
+- store-owned WebXR session and input state
+- typed hand/controller/gaze/screen/transient input states
+- pointer event routing and teleport target filtering
+- spatial UI layout, clipping, scroll, text, and focus
+- interaction labs with HUD, live tuning, and session notes
+- small AR measurement/model-viewer utilities
+- cautious hand-landmark overlay gesture references
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- React/Three XR app-shell baselines
+- spatial UI and form/input prototypes
+- interaction lab scaffolds for comparing techniques
+- browser-native diagnostic HUDs and session loggers
+- AR asset viewer and measurement micro-utilities
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

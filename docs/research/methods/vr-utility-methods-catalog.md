@@ -12170,3 +12170,278 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   future tracking diagnostics, calibration helpers, and body-tracking runtime
   sidecars.
+
+## Method 644: WebXR runtime device abstraction behind guarded API injection
+
+- What it is:
+  a WebXR fallback or emulator exposes an app-facing `navigator.xr` surface
+  while routing session, frame, pose, view, input, and feature behavior through
+  a replaceable device backend.
+- Good for:
+  browser-native XR prototypes, emulator shells, headsetless development,
+  compatibility shims, runtime diagnostics, and WebXR feature test harnesses.
+- Why it matters:
+  WebXR utility code should not hardwire browser quirks or headset state into
+  scene components; the reusable boundary is the device/runtime adapter.
+- Source evidence:
+  `immersive-web/webxr-polyfill`, `holokit/holokit-webxr`,
+  `mvilledieu/magicleap-helio-webxr-polyfill`.
+- Reusable core:
+  guard global API injection, patch only missing or incompatible browser
+  surfaces, define a device backend for sessions, animation frames, viewports,
+  projection/base poses, input sources, input poses, reference spaces, and
+  feature support, and keep vendor/browser drift isolated in small shims.
+- Do not copy directly:
+  stale WebVR/Cardboard assumptions, old draft method names, hardcoded user
+  agents, viewer-specific projection quirks, or broad monkeypatches without a
+  capability gate.
+- Strong references:
+  `immersive-web/webxr-polyfill`, `michelesandroni/xrview`.
+- Maturity:
+  conceptually strong, implementation must track current WebXR behavior.
+- Best fit for `VR-apps-lab`:
+  WebXR runtime compatibility matrix, browser-native prototype shell, and
+  headsetless test harness.
+
+## Method 645: WebXR emulator shell with separated operator UI and injected page runtime
+
+- What it is:
+  an extension or standalone shell injects a synthetic WebXR runtime into a
+  page while a separate operator UI controls device pose, input, device type,
+  and session state.
+- Good for:
+  developer tooling, WebXR UX iteration, demo testing without a headset,
+  emulator panels, and browser-shell diagnostics.
+- Why it matters:
+  emulator state should be controlled from a trusted tool boundary and passed
+  to page code through explicit bounded messages.
+- Source evidence:
+  `MozillaReality/WebXR-emulator-extension`, `michelesandroni/xrview`.
+- Reusable core:
+  inject runtime code early, keep panel/toolbar code separate from page code,
+  pass pose/input/device messages through a content-script or shell bridge,
+  mirror immersive/session state back to the operator UI, validate navigation,
+  and isolate native/shell capabilities from untrusted content.
+- Do not copy directly:
+  stale spec names, extension-only assumptions, all-powerful webviews,
+  unvalidated URL schemes, or native capability exposure to arbitrary pages.
+- Strong references:
+  `michelesandroni/xrview`, `MozillaReality/WebXR-emulator-extension`.
+- Maturity:
+  strong product-method candidate with security review required.
+- Best fit for `VR-apps-lab`:
+  future WebXR emulator/playground shell and runtime doctor tooling.
+
+## Method 646: WebXR input-profile metadata to engine visual-response model loader
+
+- What it is:
+  a utility resolves WebXR input-source profiles into profile JSON, layout
+  routing, model assets, and visual-response transforms for rendering
+  controller models inside an engine or UI shell.
+- Good for:
+  controller visualizers, emulator UIs, input diagnostics, onboarding demos,
+  runtime compatibility tools, and cross-engine WebXR helpers.
+- Why it matters:
+  controller visuals and affordances should follow runtime-reported profile
+  metadata instead of hardcoded per-device assumptions.
+- Source evidence:
+  `De-Panther/webxr-input-profiles-loader`, with comparison value from
+  `pmndrs/xr` controller layout/model helpers.
+- Reusable core:
+  resolve profile-name lists, load the profile registry and profile JSON, cache
+  handedness layout routing, load glTF assets, map component visual responses
+  to named nodes, and drive transforms from button/axis state.
+- Do not copy directly:
+  CDN-only asset assumptions, engine-specific asset packaging, missing offline
+  cache, or shader/model defaults without fallback.
+- Strong references:
+  `De-Panther/webxr-input-profiles-loader`, `pmndrs/xr`.
+- Maturity:
+  practical reusable method.
+- Best fit for `VR-apps-lab`:
+  controller diagnostics, emulator UI, and input-profile compatibility notes.
+
+## Method 647: Declarative XR component primitive with schema, lifecycle, and event payloads
+
+- What it is:
+  a reusable XR scene behavior is packaged as a component with explicit schema,
+  setup/update/remove lifecycle, asset ownership, input adapters, and typed
+  events.
+- Good for:
+  A-Frame utilities, browser-native prototypes, locomotion helpers, keyboards,
+  environment presets, rendering helpers, and small scene tools.
+- Why it matters:
+  small utilities remain reusable when configuration, input, output events, and
+  cleanup are visible instead of buried in scene code.
+- Source evidence:
+  `aframe-cursor-teleport`, `aframe-super-keyboard`,
+  `aframe-environment-component`, `aframe-blink`,
+  `aframe-daylight-system`, `aframe-environment-map-component`,
+  and `aframe-react`.
+- Reusable core:
+  declare a narrow schema, attach only needed runtime objects, support one
+  behavior, handle ray/cursor/UV/controller input through a small adapter, emit
+  useful events with target/value/pose payloads, and clean up generated objects
+  and listeners.
+- Do not copy directly:
+  global listeners without cleanup, old A-Frame APIs as current best practice,
+  giant hardcoded presets without schema, or hidden render visibility side
+  effects.
+- Strong references:
+  `supermedium/aframe-super-keyboard`, `topstar-ai/aframe-blink`,
+  `c-frame/aframe-cursor-teleport`.
+- Maturity:
+  strong method family, implementation age varies.
+- Best fit for `VR-apps-lab`:
+  component template guidance for browser XR micro-utilities.
+
+## Method 648: Scene physics driver boundary with worker/network interpolation
+
+- What it is:
+  scene entities declare physics bodies while a system/driver boundary owns the
+  physics engine, stepping, worker or network transport, snapshots, and
+  collision/contact events.
+- Good for:
+  interaction labs, hand-object tests, small editors, shared scenes, physics
+  diagnostics, and engine-agnostic scene utilities.
+- Why it matters:
+  physics becomes reusable only when object declarations are separated from the
+  runtime stepping/threading model.
+- Source evidence:
+  `n5ro/aframe-physics-system`.
+- Reusable core:
+  expose local/worker/network/engine drivers, cap timestep, map scene geometry
+  to body shapes, sync static bodies to physics and dynamic bodies back to
+  scene objects, serialize worker snapshots, interpolate remote state, and emit
+  collision/contact events.
+- Do not copy directly:
+  stale physics engines, unchecked auto-shape generation, network physics
+  without ownership policy, or worker transports without debug visibility.
+- Strong references:
+  `n5ro/aframe-physics-system`.
+- Maturity:
+  useful architecture method with dependency-age caveats.
+- Best fit for `VR-apps-lab`:
+  interaction/physics lab spikes and reusable object-affordance testing.
+
+## Method 649: Godot protocol source to XRServer tracker bridge
+
+- What it is:
+  a Godot addon decodes an external tracking protocol and publishes normalized
+  body, face, hand, or device data through Godot `XRServer` trackers.
+- Good for:
+  VMC/OSC bridges, Rokoko/Axis/Haritora style mocap sources, custom body
+  trackers, avatar drivers, calibration utilities, and recording tools.
+- Why it matters:
+  engine tools should consume engine-native trackers, while protocol parsing,
+  role mapping, calibration, and packet caveats stay in a source plugin.
+- Source evidence:
+  `GodotXRVmcTracker`, `GodotXRAxisStudioTracker`,
+  `GodotXRRokokoTracker`, and `GodotXROpenXRTracker`.
+- Reusable core:
+  isolate transport/protocol parsing, register the right tracker types,
+  normalize joints/blendshapes/buttons/status, support position modes and root
+  transform policy, publish confidence/tracking flags, and expose diagnostics
+  for stale data, ports, and source health.
+- Do not copy directly:
+  fixed ports, unauthenticated OSC, vendor joint names in scene code, missing
+  stale-data behavior, or calibration assumptions hidden from users.
+- Strong references:
+  `Malcolmnixon/GodotXRVmcTracker`.
+- Maturity:
+  strong bridge method.
+- Best fit for `VR-apps-lab`:
+  Godot tracking bridge templates, tracker diagnostics, and source-to-engine
+  comparison matrices.
+
+## Method 650: XR tracker stream to engine animation/resource recorder
+
+- What it is:
+  a recorder samples live XR trackers and writes timed body, hand, face,
+  blendshape, and root-motion data into replayable engine resources or
+  animation tracks.
+- Good for:
+  tracking diagnostics, mocap capture, calibration comparison, regression
+  repros, avatar animation authoring, and replay tools.
+- Why it matters:
+  live tracking problems need inspectable artifacts; recording turns ephemeral
+  pose streams into reviewable data.
+- Source evidence:
+  `Malcolmnixon/GodotXRAnimationRecorder`, with comparison value from earlier
+  mocap/recording waves.
+- Reusable core:
+  select trackers by name or role, sample at a stable cadence, preserve
+  monotonic timestamps, write skeleton position/rotation tracks, record face
+  blendshapes and optional root motion, separate capture from output writing,
+  and optimize/export after stop.
+- Do not copy directly:
+  engine-only output as the only archival format, hidden tracker-name
+  assumptions, missing unit/world-scale metadata, or no replay/export path.
+- Strong references:
+  `Malcolmnixon/GodotXRAnimationRecorder`.
+- Maturity:
+  strong diagnostic method.
+- Best fit for `VR-apps-lab`:
+  tracker recorder/replay utilities and calibration debug artifacts.
+
+## Method 651: Modular XR toolkit function node with explicit composition contracts
+
+- What it is:
+  XR player behavior is decomposed into attachable functions or nodes such as
+  teleport, pickup, hand pose, UI, snapping, movement providers, debug, and
+  spectator views.
+- Good for:
+  Godot XR kits, Unity/Godot interaction labs, custom player rigs, in-headset
+  authoring tools, and reusable comfort/locomotion helpers.
+- Why it matters:
+  XR toolkits become hard to reuse when all hands, locomotion, UI, and comfort
+  logic are fused into one player controller.
+- Source evidence:
+  `BastiaanOlij/godot-xr-tools2`, `RevolNoom/godot_xr_handtracking`,
+  `patrykkalinowski/godot-xr-kit`.
+- Reusable core:
+  model each behavior as one node/function, expose exported options, emit
+  start/cancel/done or pose/pick events, coordinate with movement providers,
+  support overridable validation checks, and keep fade/comfort effects visible.
+- Do not copy directly:
+  WIP APIs without version tracking, hand-only assumptions, hidden player-rig
+  dependencies, or behavior nodes that silently override other movement.
+- Strong references:
+  `BastiaanOlij/godot-xr-tools2`.
+- Maturity:
+  strong method, concrete APIs still moving.
+- Best fit for `VR-apps-lab`:
+  reusable Godot/engine interaction primitives and toolkit comparison notes.
+
+## Method 652: React/Three XR store plus spatial UI/lab substrate
+
+- What it is:
+  a browser-native XR utility stack centralizes WebXR session/input state in a
+  store, renders spatial UI through a layout/input substrate, and hosts focused
+  interaction labs with HUD, live tuning, and logs.
+- Good for:
+  browser-native VR utilities, diagnostic HUDs, AR measurement tools, spatial
+  settings panels, interaction experiments, and prototype shells.
+- Why it matters:
+  WebXR tools need more than scene meshes: they need runtime state, input
+  abstraction, panels/forms, telemetry, and repeatable lab structure.
+- Source evidence:
+  `pmndrs/xr`, `pmndrs/uikit`, `webxr-playground`,
+  `DefaultReactXR`, `xrTeleport`, `react-three-xr-measurement`,
+  `BoltXR`, and `glb-ar-viewer`.
+- Reusable core:
+  bind a store to `WebXRManager`, synchronize input sources into typed states,
+  expose pointer/teleport utilities, build UI with layout, clipping, scroll,
+  text input and focus handling, register labs by mode/question, surface HUD
+  metrics, allow live tuning, and store session notes.
+- Do not copy directly:
+  version-volatile internals without pinning, hidden DOM input assumptions
+  without accessibility testing, old `@react-three/xr` APIs from microtools,
+  product-specific crypto/security logic, or asset loading without validation.
+- Strong references:
+  `pmndrs/xr`, `pmndrs/uikit`, `kewanglab/webxr-playground`.
+- Maturity:
+  strongest browser-native substrate method in the current WebXR line.
+- Best fit for `VR-apps-lab`:
+  future browser-native utility shells, spatial UI prototypes, and interaction
+  lab scaffolds.
