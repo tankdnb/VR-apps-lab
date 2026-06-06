@@ -1773,6 +1773,58 @@ These are larger than a single repo and should guide the next research wave.
   A future deeper pass should compare capture sources, platform permissions,
   privacy risks, projection metadata, and overlay-readiness.
 
+### 133. `VR text-entry surfaces and keyboard interaction matrix`
+
+- Main entries:
+  `unity-keyboard`, `xrkeys`, `VirtualKeyboard-VR-Ready`,
+  `vr-virtual-keyboard`, `XR-Keyboard-for-Unity`, `XRSimpleKeyboard`,
+  `bevy_xr_keyboard`, `stardust-xr-keyboard-plugin`
+- Why it matters:
+  this family captures WebView keyboards, raycast-to-UV key masks, canvas
+  texture keyboards, physical collider keys, hand-attached pinch selection,
+  A-Frame controller-ray input, and shell key-event injection. A future deeper
+  pass should compare focus, destination, privacy, localization, accessibility,
+  and editing behavior across keyboard approaches.
+
+### 134. `Shared WebXR room transport and presence matrix`
+
+- Main entries:
+  `blocks`, `webxr-multiplayer-template`, `vrgoclub`,
+  `webxr-webrtc-dc-scene`, `webroom-vr`, `xrai-spatial-web`,
+  `webxr-multiplayer-room`
+- Why it matters:
+  this family captures WebSocket signaling, WebRTC P2P pose/audio,
+  Unity Lobby/Relay/Vivox/NGO rooms, shared-object events, A-Frame chat rooms,
+  and spatial HUD/view registries. A future deeper pass should compare
+  payload shape, identity, moderation, media permission, and transport
+  ownership.
+
+### 135. `VR teleoperation bridge, safety gate, and operator camera matrix`
+
+- Main entries:
+  `vr_teleop`, `vr_ros2_bridge`, `ros_reality_bridge`,
+  `vr-teleoperation`, `zz0320/vr_teleoperation_ros`,
+  `VR-Teleoperation-Robotics-Platform`
+- Why it matters:
+  this family captures Unity/OpenXR-to-ROS publishers, MoveIt/RelaxedIK
+  command paths, enabled services, mode switches, stale/jump gates, OpenVR
+  operator dashboards, WebSocket command buffers, and camera feedback panels.
+  A future deeper pass should extract a generic operator safety checklist that
+  can also apply outside robotics.
+
+### 136. `DIY XR hardware firmware-driver-spec boundary matrix`
+
+- Main entries:
+  `NxtVR`, `FloV3R`, `Persephone-VR-Headset`, `OpenVision`,
+  `vr-headset-specs`, `VRController`, `DIY-VR-Controller-OpenCV`,
+  `DIY_VR_Controller`
+- Why it matters:
+  this family captures firmware HID reports, BLE/serial packets, OpenVR driver
+  mapping, haptics, camera marker tracking, headset spec schemas, CAD/BOM/PCB
+  documentation, and hardware maturity warnings. A future deeper pass should
+  compare transport/report/driver boundaries and decide what belongs in a
+  future device inventory or custom-device tutorial.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1893,6 +1945,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 114. `Resonite headless operations matrix across containers, web/Discord/REST control surfaces, shared-memory export, and compatibility patch risks`
 115. `Accessibility simulation and VR menu accessibility matrix across gaze-contingent impairment shaders, mobile passthrough filters, patient masks, and spoken UI`
 116. `Surface-ingress and media-output matrix across 360 screenshots, editor capture, window/desktop capture, Quest MediaProjection, photomode, and 360/stereo playback`
+117. `VR text-entry matrix across WebView, mesh/UV, canvas texture, physical collider, hand-attached, A-Frame, and shell keyboard approaches`
+118. `Shared WebXR room matrix across WebSocket signaling, WebRTC P2P, Unity Relay/NGO, socket.io/simple-peer, A-Frame chat, and spatial HUD presence`
+119. `VR teleoperation safety and camera-feedback matrix across ROS, OpenVR operator shells, WebSocket command buffers, IK, modes, and stale/jump gates`
+120. `DIY XR hardware boundary matrix across firmware packets, HID/BLE/serial transport, runtime drivers, haptics, CAD/BOM/PCB docs, and headset spec schemas`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

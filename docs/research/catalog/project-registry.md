@@ -2302,6 +2302,69 @@ Primary docs:
 - `UnityTechnologies/PhotoMode` - `Already studied as Unity in-game photomode surface with camera/postprocess/UI/sticker/frame controls`
 - `vimeo/vimeo-unity-sdk` - `Already studied as Unity 360/stereo recording, chunked upload, metadata playback, and Vimeo media pipeline reference`
 
+## 151. XR text-entry keyboards, input surfaces, and pointer bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-180-xr-text-entry-keyboards-input-surfaces-and-pointer-bridges.md`
+- `../landscape/project-families.md`
+
+- `vuplex/unity-keyboard` - `Already studied as browser-rendered Unity/WebView keyboard bridge with generated C# HTML bundle and JS/native messages`
+- `felixtrz/xrkeys` - `Already studied as Three.js WebXR low-draw-call keyboard with raycast-to-UV key-mask picking`
+- `ErikSom/VirtualKeyboard-VR-Ready` - `Already studied as canvas texture keyboard with UV pointer input, texture dirty state, multilingual layouts, swipe, and suggestions`
+- `robertlalum/vr-virtual-keyboard` - `Already studied as A-Frame controller-ray keyboard with optional WebSocket key/text/pointer bridge`
+- `JuliusWon/XR-Keyboard-for-Unity` - `Already studied as minimal Unity procedural key-grid baseline with TMP input caveats`
+- `pinglis/XRSimpleKeyboard` - `Already studied as Unity physical collider keyboard with localized layouts, key-width prefabs, two-hand press tracking, and UnityEvents`
+- `MalekiRe/bevy_xr_keyboard` - `Already studied as experimental Bevy/OpenXR hand-attached pinch-select text-entry surface`
+- `technobaboo/stardust-xr-keyboard-plugin` - `Already studied as thin Stardust XR Qt virtual-keyboard plugin sample emitting synthetic key events`
+
+## 152. WebXR multiplayer, shared rooms, and WebRTC scene shells
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-181-webxr-multiplayer-shared-rooms-and-webrtc-scene-shells.md`
+- `../landscape/project-families.md`
+
+- `danielesteban/blocks` - `Already studied as WebXR room with WebSocket/protobuf signaling, SimplePeer audio/data, binary pose payloads, and canvas menu UI`
+- `De-Panther/webxr-multiplayer-template` - `Already studied as Unity WebXR multiplayer template with Lobby, Relay, Vivox, NGO, XR player state, and hand-pose fidelity tiers`
+- `kylebakerio/vrgoclub` - `Product reference for social WebXR Go club with cross-device presence, voice/video, hand tracking, board sync, and AI heatmap framing`
+- `Immersive-Collective/webxr-webrtc-dc-scene` - `Already studied as WebXR media/capability scene with webcam texture, rayline/pointer visuals, teleport helpers, and DataChannel caveat`
+- `Radet5/webroom-vr` - `Already studied as socket.io/simple-peer WebXR room with VR/desktop users, shared physics objects, grab/release events, and throw velocity`
+- `JT5D/xrai-spatial-web` - `Already studied as spatial-web presence room, view registry, HUD orchestrator, hand/voice input, and agent-overlay architecture reference`
+- `RNMUDS/webxr-multiplayer-room` - `Already studied as minimal A-Frame classroom with Socket.IO rooms, chat, colored avatars, pose thresholds, and PeerJS setup caveat`
+
+## 153. ROS/robot teleoperation bridges and VR operator shells
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-182-ros-robot-teleoperation-bridges-and-vr-operator-shells.md`
+- `../landscape/project-families.md`
+
+- `UM-ARM-Lab/vr_teleop` - `Already studied as ROS1 VR pose-to-MoveIt IK bridge with enabled service, measured-state seed, joint-distance safety gate, gripper commands, and validity publishing`
+- `UM-ARM-Lab/vr_ros2_bridge` - `Already studied as Unity OpenXR controller/tracker publisher to ROS2 with HTC Vive tracker roles, pose/twist/button axes, coordinate conversion, and RViz debug topics`
+- `h2r/ros_reality_bridge` - `Already studied as legacy ROS TF/camera/rosbridge to Unity scene bridge with compact string pose stream and camera compression launch plumbing`
+- `Intelligent-Robotics-Lab/vr-teleoperation` - `Already studied as OpenVR/ROS robot operator station with modes, ImGui dashboard, camera texture, action abstraction, and calibrated transform-to-joint mapping`
+- `zz0320/vr_teleoperation_ros` - `Already studied as WebSocket VR pose receiver to fixed-rate ROS commands with arm/torso/base modes, smoothing, RelaxedIK, camera UDP chunks, and audio feedback`
+- `Mcen25/VR-Teleoperation-Robotics-Platform` - `Already studied as thin Unity XRI/ROS# camera wall and network diagnostics shell for robot operator views`
+- `lingxiaomeng/VR_teleoperation_ros` - `Source sync candidate was empty; not registered as studied beyond this exclusion note`
+
+## 154. DIY VR headset/controller hardware, firmware, and spec references
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-183-diy-vr-headset-controller-hardware-firmware-and-spec-references.md`
+- `../landscape/project-families.md`
+
+- `vis3r/NxtVR` - `Already studied as DIY headset firmware/HID reference with Pico/STM32 IMU readout, TinyUSB/USBComposite HMD reports, and MPU6050 calibration`
+- `Kwiatens/FloV3R` - `Already studied as DIY 6DoF headset/controller BOM, PCB, CAD, PSMoveServiceEx/HadesVR dependency, and incomplete firmware/driver documentation reference`
+- `Jade-Vincent/Persephone-VR-Headset` - `Already studied as source-light DIY headset CAD/BOM reference with 2K LCD, lenses, Pro Micro/Pico, and MPU6050`
+- `CSParnell78/OpenVision` - `Already studied as source-light DIY headset concept with display, microcontroller, gyro, phone shell, and wireless transmitter checklist`
+- `vrrare/vr-headset-specs` - `Already studied as JSON/CSV headset specification dataset with schema for display, optics, tracking, audio, connectivity, battery, physical, and feature fields`
+- `dhfmzk/VRController` - `Already studied as Arduino/MPU9250 Bluetooth controller firmware with documented 34-byte quaternion/position/joystick/trigger packet`
+- `BlaiseSaunders/DIY-VR-Controller-OpenCV` - `Already studied as Python/OpenCV IR bright-marker tracker sending normalized coordinates over UDP`
+- `Windastella/open-vr-controller` - `Source-light no-progress OpenXR DIY controller concept; retained only as thin/excluded reference`
+- `shehraan/DIY_VR_Controller` - `Already studied as ESP32/MPU6050 BLE HID controller plus OpenVR driver shell with Madgwick filter, EEPROM calibration, haptics, HID transport, input profile, and freshness gates`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

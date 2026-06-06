@@ -10324,3 +10324,405 @@ When a new utility idea appears:
   `UnityTechnologies/PhotoMode`, `vimeo/vimeo-unity-sdk`.
 - Best fit for `VR-apps-lab`:
   photomode, immersive media, and capture UX references.
+
+## Method 576: WebView/browser-rendered XR keyboard bridge
+
+- What it is:
+  a keyboard UI is rendered in a browser/WebView surface and communicates text
+  events, language changes, visibility, and voice state to the native XR host.
+- Good for:
+  overlays, command palettes, search fields, web-backed tools, and Unity apps
+  already using browser surfaces.
+- Why it matters:
+  text entry is expensive to build natively; a browser keyboard can centralize
+  layout, styling, localization, and input messages.
+- Source evidence:
+  `vuplex/unity-keyboard`.
+- Reusable core:
+  define a small typed message protocol, initialize the keyboard surface,
+  send input values through the WebView bridge, receive host commands such as
+  language or visibility changes, and bundle the browser UI for native loading.
+- Do not copy directly:
+  a WebView dependency unless the target product already accepts browser
+  surface cost and focus/privacy responsibilities.
+- Strong references:
+  `vuplex/unity-keyboard`.
+- Best fit for `VR-apps-lab`:
+  text-entry and overlay input-surface notes.
+
+## Method 577: Raycast/UV or collider-driven XR keyboard interaction
+
+- What it is:
+  a spatial keyboard maps controller rays or physical collider presses into key
+  events using UV masks, key meshes, press-depth state, or layout rows.
+- Good for:
+  headset-native keyboards, controller/direct-touch menus, VR settings panels,
+  and command surfaces.
+- Why it matters:
+  XR keyboards need stable interaction state, not just rendered key labels.
+- Source evidence:
+  `xrkeys`, `XRSimpleKeyboard`, `vr-virtual-keyboard`, and
+  `XR-Keyboard-for-Unity`.
+- Reusable core:
+  define a host update contract, map ray hits or collider overlaps to a key,
+  detect press/release edges, keep key visual feedback separate from text
+  editing, support layout metadata, and emit key events through a narrow API.
+- Do not copy directly:
+  fixed layouts, hardcoded delete keys, or one-demo pointer mapping.
+- Strong references:
+  `felixtrz/xrkeys`, `pinglis/XRSimpleKeyboard`.
+- Best fit for `VR-apps-lab`:
+  VR keyboard comparison matrix and input-surface prototypes.
+
+## Method 578: Canvas texture keyboard with dirty-state updates
+
+- What it is:
+  a keyboard is drawn into a canvas, receives pointer UVs from the XR host, and
+  exposes a dirty flag so the host updates the texture only when needed.
+- Good for:
+  engine-neutral keyboard surfaces, WebXR planes, Unity/Three texture panels,
+  and localized text-entry widgets.
+- Why it matters:
+  canvas textures let complex keyboard rendering remain decoupled from runtime
+  input and texture-upload policy.
+- Source evidence:
+  `VirtualKeyboard-VR-Ready`.
+- Reusable core:
+  map UV input into canvas pixels, update layout/language/suggestion/swipe
+  state, redraw the canvas, mark texture dirty, and let the host poll or react
+  to that dirty flag.
+- Do not copy directly:
+  word lists or language assumptions without localization and accessibility
+  review.
+- Strong references:
+  `ErikSom/VirtualKeyboard-VR-Ready`.
+- Best fit for `VR-apps-lab`:
+  reusable text-entry surfaces and texture-panel notes.
+
+## Method 579: Shell keyboard plugin key-event injection
+
+- What it is:
+  a compositor, shell, or XR desktop environment exposes a virtual keyboard
+  plugin that emits OS/toolkit key events rather than app-local text messages.
+- Good for:
+  Linux/XR workspaces, spatial desktops, system keyboards, and cross-app text
+  input.
+- Why it matters:
+  some XR utilities need text entry at the shell/runtime boundary, not inside a
+  single app.
+- Source evidence:
+  `stardust-xr-keyboard-plugin`.
+- Reusable core:
+  implement a keyboard plugin interface, map virtual keys to host key events,
+  emit press and delayed release, and keep app focus/destination explicit.
+- Do not copy directly:
+  hardcoded sample key events or toolkit-specific code without a real input
+  routing design.
+- Strong references:
+  `technobaboo/stardust-xr-keyboard-plugin`.
+- Best fit for `VR-apps-lab`:
+  shell/desktop-in-VR input boundary notes.
+
+## Method 580: WebXR room server plus P2P pose/audio channel
+
+- What it is:
+  a room server handles membership and signaling while WebRTC peer channels
+  carry voice and low-latency pose/avatar state.
+- Good for:
+  collaborative WebXR tools, social rooms, shared dashboards, and browser XR
+  micro-worlds.
+- Why it matters:
+  separating room control from media/data streams keeps shared XR tools small
+  and hostable.
+- Source evidence:
+  `blocks` and `webroom-vr`.
+- Reusable core:
+  assign identities, broadcast join/leave, forward peer signals, open
+  audio/data channels, choose binary or JSON pose payloads, update peers at a
+  fixed cadence, and handle disconnect/reconnect explicitly.
+- Do not copy directly:
+  public-room assumptions without identity, moderation, and media-permission
+  handling.
+- Strong references:
+  `danielesteban/blocks`, `Radet5/webroom-vr`.
+- Best fit for `VR-apps-lab`:
+  shared-room substrate and social utility notes.
+
+## Method 581: Unity WebXR multiplayer room shell
+
+- What it is:
+  a Unity WebXR scene uses hosted services and Unity networking to manage
+  lobbies, relay, voice, player state, hand/controller replication, and shared
+  UI.
+- Good for:
+  Unity WebXR collaboration prototypes, training rooms, and service-backed
+  multi-user utilities.
+- Why it matters:
+  Unity WebXR multiplayer has different constraints than native PCVR or pure
+  browser WebXR; service boundaries should be explicit.
+- Source evidence:
+  `webxr-multiplayer-template`.
+- Reusable core:
+  orchestrate auth, lobby create/join, relay allocation, voice login/state,
+  player transforms, hand pose fidelity levels, network variables, and
+  server/client RPC UI widgets.
+- Do not copy directly:
+  hosted service dependencies unless their operational cost and lock-in are
+  acceptable.
+- Strong references:
+  `De-Panther/webxr-multiplayer-template`.
+- Best fit for `VR-apps-lab`:
+  Unity WebXR room design notes.
+
+## Method 582: Spatial HUD view registry with presence and agent overlays
+
+- What it is:
+  a spatial application composes rooms, shared view/filter state, pluggable
+  view lifecycles, hand/voice input, HUD panels, minimaps, and agent overlays.
+- Good for:
+  data visualization, diagnostic workspaces, knowledge graphs, and
+  collaboration dashboards.
+- Why it matters:
+  complex XR tools need view/plugin lifecycle management before they need more
+  scene objects.
+- Source evidence:
+  `xrai-spatial-web`.
+- Reusable core:
+  keep room state transport-agnostic, expose presence/cursor/view/filter
+  messages, define view plugin methods, route events through a bus, and compose
+  HUD, voice, hand tracking, filters, minimap, and agent panels around that
+  lifecycle.
+- Do not copy directly:
+  roadmap/spec claims or AI-specific assumptions as finished product logic.
+- Strong references:
+  `JT5D/xrai-spatial-web`.
+- Best fit for `VR-apps-lab`:
+  spatial dashboard and diagnostics shell architecture.
+
+## Method 583: Safety-gated VR pose to robot command bridge
+
+- What it is:
+  tracked VR poses become robot targets only after coordinate conversion, IK,
+  measured-state checks, enabled/mode gates, and visible validity feedback.
+- Good for:
+  robotics, remote operation, simulation control, and high-risk VR command
+  surfaces.
+- Why it matters:
+  remote-control VR tools need explicit safety and stale/jump handling, not
+  direct pose passthrough.
+- Source evidence:
+  `vr_teleop`, `vr-teleoperation`, and `vr_teleoperation_ros`.
+- Reusable core:
+  normalize pose frames, seed IK or target transforms from measured state,
+  gate command publishing by enable/mode, reject large jumps, debounce gripper
+  or command toggles, publish validity/status, and keep camera/operator
+  feedback visible.
+- Do not copy directly:
+  robot-specific kinematics, hardcoded paths, or actuation topics.
+- Strong references:
+  `UM-ARM-Lab/vr_teleop`,
+  `Intelligent-Robotics-Lab/vr-teleoperation`,
+  `zz0320/vr_teleoperation_ros`.
+- Best fit for `VR-apps-lab`:
+  remote-control safety and operator-mode checklists.
+
+## Method 584: Normalized XR controller/tracker publisher for ROS
+
+- What it is:
+  a Unity/OpenXR bridge publishes controller and tracker poses, twists,
+  buttons, axes, and device roles into ROS or ROS2 topics.
+- Good for:
+  robotics, diagnostics, tracker inventory, external device bridges, and
+  headset-to-simulation utilities.
+- Why it matters:
+  many integrations need standardized tracked-device snapshots before they can
+  reason about control.
+- Source evidence:
+  `vr_ros2_bridge`.
+- Reusable core:
+  enumerate XR devices, filter controllers and trackers, map vendor roles,
+  convert coordinate systems, publish pose/twist/button/axis snapshots at a
+  fixed cadence, and expose debug visualization topics.
+- Do not copy directly:
+  one vendor tracker profile without feature/capability checks.
+- Strong references:
+  `UM-ARM-Lab/vr_ros2_bridge`.
+- Best fit for `VR-apps-lab`:
+  external tracking and ROS bridge notes.
+
+## Method 585: Fixed-rate WebSocket-to-ROS operator command buffer
+
+- What it is:
+  a WebSocket receiver accepts VR operator packets asynchronously, stores the
+  latest state, and publishes ROS commands on a fixed timer by current mode.
+- Good for:
+  remote-control panels, robotics labs, data collection, and UI-to-backend
+  command bridges.
+- Why it matters:
+  fixed-rate buffering gives a clear place for smoothing, stale-data behavior,
+  mode switching, and feedback.
+- Source evidence:
+  `zz0320/vr_teleoperation_ros`.
+- Reusable core:
+  receive JSON VR state, acknowledge packet IDs, buffer latest pose/buttons,
+  publish on a ROS timer, split arm/torso/base modes, smooth position and
+  quaternion deltas, debounce toggles, call services for special states, and
+  play status feedback.
+- Do not copy directly:
+  compiled IK binaries, hardcoded robot topics, or generated cache.
+- Strong references:
+  `zz0320/vr_teleoperation_ros`.
+- Best fit for `VR-apps-lab`:
+  remote-control bridge and command-buffer design notes.
+
+## Method 586: ROS camera wall and operator diagnostics surface
+
+- What it is:
+  a VR operator scene displays robot camera feeds and connection status through
+  world-space panels, ROS image subscriptions, HTTP feeds, and network tests.
+- Good for:
+  teleoperation, remote diagnostics, monitoring overlays, and training labs.
+- Why it matters:
+  operator tools need feedback surfaces as much as input mapping.
+- Source evidence:
+  `VR-Teleoperation-Robotics-Platform`,
+  `vr-teleoperation`, and `ros_reality_bridge`.
+- Reusable core:
+  subscribe to compressed images before raw fallback, decode into textures,
+  create world-space camera grids, show FPS/status labels, test robot/HTTP/ROS
+  endpoints, and keep camera transport separate from command transport.
+- Do not copy directly:
+  hardcoded IP addresses, plaintext SSH shortcuts, or old camera pipelines.
+- Strong references:
+  `Mcen25/VR-Teleoperation-Robotics-Platform`,
+  `Intelligent-Robotics-Lab/vr-teleoperation`,
+  `h2r/ros_reality_bridge`.
+- Best fit for `VR-apps-lab`:
+  diagnostic camera panels and remote-status overlays.
+
+## Method 587: Microcontroller HMD HID report pipeline
+
+- What it is:
+  a DIY headset firmware reads IMU sensors and exposes motion as a VR/HMD HID
+  report to a host-side runtime or driver.
+- Good for:
+  hardware bring-up, device diagnostics, driver experiments, and low-level
+  XR input research.
+- Why it matters:
+  understanding firmware report boundaries helps future tools reason about
+  custom devices without importing whole hardware projects.
+- Source evidence:
+  `NxtVR`.
+- Reusable core:
+  initialize I2C, read accel/gyro, define HID report descriptors, pack motion
+  axes into reports, send over USB/HID at a fixed interval, expose mount/suspend
+  state, and keep calibration separate.
+- Do not copy directly:
+  raw IMU-only tracking expectations as full headset tracking.
+- Strong references:
+  `vis3r/NxtVR`.
+- Best fit for `VR-apps-lab`:
+  custom-device and headset firmware boundary notes.
+
+## Method 588: DIY controller firmware to runtime driver boundary
+
+- What it is:
+  firmware sends orientation/input packets over HID or serial/Bluetooth, while
+  a runtime driver parses packets, maps them to controller input components,
+  handles freshness, and sends haptic output back.
+- Good for:
+  DIY controllers, driver tutorials, custom input devices, haptics, and device
+  protocol experiments.
+- Why it matters:
+  the useful reusable knowledge is the protocol and driver boundary, not the
+  exact enclosure or board.
+- Source evidence:
+  `DIY_VR_Controller` and `VRController`.
+- Reusable core:
+  document packet layout, include packet IDs/timing, send quaternion/buttons/
+  joystick data, parse report IDs and endian details, update runtime pose/input
+  components, track dropped packets/staleness, and map runtime haptics back to
+  firmware output reports.
+- Do not copy directly:
+  built DLLs, bundled third-party artifacts, device IDs, or naive
+  accelerometer-position tracking.
+- Strong references:
+  `shehraan/DIY_VR_Controller`, `dhfmzk/VRController`.
+- Best fit for `VR-apps-lab`:
+  custom controller protocol and driver-boundary documentation.
+
+## Method 589: Bright-marker camera tracker to UDP
+
+- What it is:
+  a camera-based tracker thresholds bright IR/LED markers, chooses marker
+  candidates, normalizes screen coordinates, and sends them to another process.
+- Good for:
+  DIY controllers, calibration experiments, quick pose/proxy input tests, and
+  camera-tracking prototypes.
+- Why it matters:
+  small vision bridges are useful fast experiments even when not robust enough
+  for final 6DoF tracking.
+- Source evidence:
+  `DIY-VR-Controller-OpenCV`.
+- Reusable core:
+  capture frames, threshold/blur, find contours, choose candidate markers,
+  normalize coordinates, preserve last known value on dropout, send UDP, and
+  show debug overlays.
+- Do not copy directly:
+  Python2 code, fixed thresholds, or single-camera depth shortcuts.
+- Strong references:
+  `BlaiseSaunders/DIY-VR-Controller-OpenCV`.
+- Best fit for `VR-apps-lab`:
+  quick camera-tracking and calibration bridge notes.
+
+## Method 590: Headset specification dataset with validation schema
+
+- What it is:
+  headset capabilities and physical traits are stored as JSON/CSV data with a
+  schema covering display, optics, tracking, audio, connectivity, battery,
+  physical attributes, features, and best-use tags.
+- Good for:
+  compatibility matrices, device inventory, recommendation helpers,
+  diagnostics, and documentation.
+- Why it matters:
+  VR tools often need headset capability knowledge, and ad-hoc prose is hard
+  to validate or compare.
+- Source evidence:
+  `vr-headset-specs`.
+- Reusable core:
+  assign stable device IDs, keep structured fields for common capabilities,
+  provide both machine-readable JSON and spreadsheet-friendly CSV, validate
+  contributions with schema, and document provenance requirements.
+- Do not copy directly:
+  prices or specs as current truth without verification and source links.
+- Strong references:
+  `vrrare/vr-headset-specs`.
+- Best fit for `VR-apps-lab`:
+  device capability and compatibility research.
+
+## Method 591: DIY XR hardware documentation pack
+
+- What it is:
+  a hardware project documents BOM, CAD, PCB, optics/display choices, firmware
+  status, driver dependencies, assembly/printing notes, and maturity warnings
+  as one coherent package.
+- Good for:
+  open headset/controller projects, maker-facing docs, and hardware-inspired
+  software research.
+- Why it matters:
+  clear hardware documentation prevents false confidence and exposes practical
+  constraints software-only projects miss.
+- Source evidence:
+  `FloV3R`, `Persephone-VR-Headset`, and `OpenVision`.
+- Reusable core:
+  keep parts lists, cost estimates, PCB/assembly/printing docs, CAD links,
+  optics/display constraints, firmware/driver status, external dependencies,
+  and do-not-build-yet warnings close together.
+- Do not copy directly:
+  incomplete hardware plans as validated designs.
+- Strong references:
+  `Kwiatens/FloV3R`,
+  `Jade-Vincent/Persephone-VR-Headset`,
+  `CSParnell78/OpenVision`.
+- Best fit for `VR-apps-lab`:
+  hardware boundary documentation and device-constraint matrices.

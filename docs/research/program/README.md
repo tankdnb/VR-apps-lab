@@ -1281,3 +1281,31 @@ repeatable way.
 
 - `github-research-wave-179-backlog.md`
   Executed backlog for the Wave 179 pass.
+
+- `github-research-wave-180-plan.md`
+  Wave 180 research plan focused on XR text-entry keyboards, input surfaces,
+  and pointer/text bridges.
+
+- `github-research-wave-180-backlog.md`
+  Executed backlog for the Wave 180 pass.
+
+- `github-research-wave-181-plan.md`
+  Wave 181 research plan focused on WebXR multiplayer, shared rooms, and
+  WebRTC scene shells.
+
+- `github-research-wave-181-backlog.md`
+  Executed backlog for the Wave 181 pass.
+
+- `github-research-wave-182-plan.md`
+  Wave 182 research plan focused on ROS/robot teleoperation bridges and VR
+  operator shells.
+
+- `github-research-wave-182-backlog.md`
+  Executed backlog for the Wave 182 pass.
+
+- `github-research-wave-183-plan.md`
+  Wave 183 research plan focused on DIY VR headset/controller hardware,
+  firmware, and spec references.
+
+- `github-research-wave-183-backlog.md`
+  Executed backlog for the Wave 183 pass.

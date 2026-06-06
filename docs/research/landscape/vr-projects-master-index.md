@@ -188,6 +188,10 @@ This file complements:
 - `vr-projects-wave-177-resonite-headless-deployment-operations-rest-ipc-and-compatibility.md`
 - `vr-projects-wave-178-visual-impairment-simulation-gaze-contingent-accessibility-and-ui-a11y.md`
 - `vr-projects-wave-179-capture-screenshot-media-projection-window-capture-and-photomode-helpers.md`
+- `vr-projects-wave-180-xr-text-entry-keyboards-input-surfaces-and-pointer-bridges.md`
+- `vr-projects-wave-181-webxr-multiplayer-shared-rooms-and-webrtc-scene-shells.md`
+- `vr-projects-wave-182-ros-robot-teleoperation-bridges-and-vr-operator-shells.md`
+- `vr-projects-wave-183-diy-vr-headset-controller-hardware-firmware-and-spec-references.md`
 
 ## How to use this index
 

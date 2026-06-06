@@ -1,6 +1,6 @@
 # Current Focus
 
-- Date: `2026-06-05`
+- Date: `2026-06-06`
 - Purpose: give a short `what matters now` view of `VR-apps-lab` without
   forcing a new session or visitor through the full wave archive.
 
@@ -122,6 +122,11 @@ These are the clearest current product and research lines:
    OSCQuery-aware parameter debuggers, TypeScript web parameter panels, C# OSC
    helper libraries, Leap Motion finger bridges, controller micro-tools, and
    heart-rate SDK/device bridges.
+24. `XR text entry, shared WebXR rooms, teleoperation operators, and DIY hardware boundaries`
+   the repository now has fresh coverage of WebView/UV/canvas/collider keyboard
+   surfaces, shared WebXR room transports, Unity WebXR multiplayer shells,
+   ROS/OpenVR/WebSocket teleoperation safety gates, and DIY headset/controller
+   firmware-driver-spec boundaries.
 
 ## Most useful current docs
 
@@ -642,6 +647,30 @@ the strongest current clusters:
   for 360 screenshots, transparent editor capture, screenshot sequences,
   window/desktop/browser capture, Quest screen projection, photomode UX, and
   360/stereo media record/playback.
+- `unity-keyboard`, `xrkeys`, `VirtualKeyboard-VR-Ready`,
+  `vr-virtual-keyboard`, `XR-Keyboard-for-Unity`, `XRSimpleKeyboard`,
+  `bevy_xr_keyboard`, `stardust-xr-keyboard-plugin`
+  for WebView keyboards, raycast-to-UV key masks, canvas texture keyboards,
+  physical collider keys, hand-attached pinch text entry, A-Frame keyboard
+  micro-utilities, and shell key-event injection.
+- `blocks`, `webxr-multiplayer-template`, `vrgoclub`,
+  `webxr-webrtc-dc-scene`, `webroom-vr`, `xrai-spatial-web`,
+  `webxr-multiplayer-room`
+  for WebXR room signaling, P2P pose/audio channels, Unity Relay/NGO/Vivox
+  rooms, shared-object events, chat/classroom baselines, and spatial HUD view
+  registries.
+- `vr_teleop`, `vr_ros2_bridge`, `ros_reality_bridge`,
+  `vr-teleoperation`, `zz0320/vr_teleoperation_ros`,
+  `VR-Teleoperation-Robotics-Platform`
+  for ROS/OpenVR/WebSocket teleoperation bridges, tracked-pose publishers,
+  safety gates, operator modes, camera panels, command buffers, and audio or
+  diagnostic feedback.
+- `NxtVR`, `FloV3R`, `Persephone-VR-Headset`, `OpenVision`,
+  `vr-headset-specs`, `VRController`, `DIY-VR-Controller-OpenCV`,
+  `DIY_VR_Controller`
+  for DIY headset/controller HID reports, BLE/serial packets, OpenVR driver
+  boundaries, haptics, marker tracking, CAD/BOM/PCB documentation, and headset
+  specification schemas.
 
 ## Highest-value next follow-up passes
 
@@ -754,6 +783,10 @@ directions:
 104. `Resonite headless operations matrix across containers, web/Discord/REST control surfaces, shared-memory export, and compatibility patch risks`
 105. `Accessibility simulation and VR menu accessibility matrix across gaze-contingent impairment shaders, mobile passthrough filters, patient masks, and spoken UI`
 106. `Surface-ingress and media-output matrix across 360 screenshots, editor capture, window/desktop capture, Quest MediaProjection, photomode, and 360/stereo playback`
+107. `VR text-entry matrix across WebView, mesh/UV, canvas texture, physical collider, hand-attached, A-Frame, and shell keyboard approaches`
+108. `Shared WebXR room matrix across WebSocket signaling, WebRTC P2P, Unity Relay/NGO, socket.io/simple-peer, A-Frame chat, and spatial HUD presence`
+109. `VR teleoperation safety and camera-feedback matrix across ROS, OpenVR operator shells, WebSocket command buffers, IK, modes, and stale/jump gates`
+110. `DIY XR hardware boundary matrix across firmware packets, HID/BLE/serial transport, runtime drivers, haptics, CAD/BOM/PCB docs, and headset spec schemas`
 
 ## Current repository-maintenance priorities
 

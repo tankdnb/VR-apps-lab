@@ -5127,6 +5127,147 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - authoring screenshot utility patterns
 - photomode and media-output UX references
 
+## Family 159: XR text-entry keyboards, input surfaces, and pointer bridges
+
+This family covers keyboard/input surfaces across WebView, WebXR mesh, Unity
+collider, canvas texture, A-Frame, hand-attached, and shell-plugin boundaries.
+
+| Project | Status | Notes |
+|---|---|---|
+| `vuplex/unity-keyboard` | Already studied as WebView keyboard bridge | React/TypeScript keyboard, generated C# HTML bundle, `window.vuplex` messages, multilingual layout state, and Vuplex dependency caveat |
+| `felixtrz/xrkeys` | Already studied as WebXR mesh keyboard donor | GLB keyboard, low draw calls, controller raycast, UV key-mask picking, press-edge tracking, and Three.js/fixed-layout caveat |
+| `ErikSom/VirtualKeyboard-VR-Ready` | Already studied as canvas texture keyboard donor | UV pointer input, texture dirty flag, multilingual layouts, collision zones, swipe suggestions, and host texture integration caveat |
+| `robertlalum/vr-virtual-keyboard` | Already studied as A-Frame keyboard micro-utility | controller ray keys, text buffer, pointer mapping, optional WebSocket key/text/pointer bridge, and one-file demo caveat |
+| `JuliusWon/XR-Keyboard-for-Unity` | Thin procedural Unity keyboard baseline | generated key grid, TMP input append/delete behavior, and hardcoded delete/generated-cache caveats |
+| `pinglis/XRSimpleKeyboard` | Already studied as physical Unity XR keyboard donor | layout width rows, key-width prefabs, localized labels, collider press set, key depth/material changes, and UnityEvents |
+| `MalekiRe/bevy_xr_keyboard` | Experimental hand-attached text-entry reference | Bevy/OpenXR hand tracking, palm-mounted text surfaces, pinch selection, and incomplete/no-README caveat |
+| `technobaboo/stardust-xr-keyboard-plugin` | Thin shell keyboard plugin sample | Qt virtual-keyboard plugin boundary, synthetic `QKeyEvent` press/release, and hardcoded sample output caveat |
+
+### Consolidation note
+
+This family matters because text input is a foundation for command palettes,
+chat, settings, search, diagnostics, and remote-control overlays:
+
+- WebView keyboards centralize UI complexity in browser code
+- UV/mesh keyboards minimize draw calls and DOM dependency
+- canvas keyboards make texture-update ownership explicit
+- physical collider keyboards provide direct-touch affordance
+- hand-attached keyboards explore wrist/palm text entry
+- shell plugins show OS/runtime key-event injection boundaries
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VR text-entry comparison matrices
+- keyboard focus/destination/privacy contracts
+- reusable text-input abstraction notes
+- accessibility-aware keyboard UX patterns
+
+## Family 160: WebXR multiplayer, shared rooms, and WebRTC scene shells
+
+This family covers shared WebXR and Unity WebXR room infrastructure: signaling,
+presence, P2P audio/data, pose payloads, shared-object events, chat/classrooms,
+and spatial HUD orchestration.
+
+| Project | Status | Notes |
+|---|---|---|
+| `danielesteban/blocks` | Already studied as WebXR room and P2P donor | WebSocket/protobuf signaling, SimplePeer audio/data, binary head/hand pose payloads, self-host config, and voxel app caveat |
+| `De-Panther/webxr-multiplayer-template` | Already studied as Unity WebXR multiplayer shell | Lobby/Relay/Vivox/NGO, player state, voice status, XR hand pose fidelity tiers, networked sliders, and service-heavy caveat |
+| `kylebakerio/vrgoclub` | Product reference only | social WebXR Go club framing with mixed VR/desktop users, voice/video, hand tracking, board sync, and AI heatmap ideas |
+| `Immersive-Collective/webxr-webrtc-dc-scene` | Capability/media reference | webcam-to-texture, rayline pointers, teleport helpers, WebRTC capability docs, and actual DataChannel sync caveat |
+| `Radet5/webroom-vr` | Already studied as lightweight shared-object room donor | socket.io/simple-peer signaling, VR and screen users, Cannon objects, grab/release events, throw velocity, and hardcoded API caveat |
+| `JT5D/xrai-spatial-web` | Already studied as spatial HUD/presence architecture reference | room state, presence WebSocket, view registry lifecycle, HUD orchestrator, hand/voice/agent overlay, and roadmap/spec caveat |
+| `RNMUDS/webxr-multiplayer-room` | Already studied as A-Frame room baseline | HTTPS server, Socket.IO rooms, chat, colored avatars, pose thresholds, PeerJS setup, and no real media/data caveat |
+
+### Consolidation note
+
+This family matters because shared XR utilities need explicit room layers:
+
+- room identity and membership
+- signaling versus data/media channels
+- pose update cadence and payload shape
+- shared object authority and release events
+- chat and fallback desktop users
+- voice/video/media permissions
+- pluggable spatial views and HUD composition
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- shared-room transport matrices
+- WebXR/Unity WebXR multiplayer shells
+- pose payload schema comparisons
+- privacy and moderation checklists for public XR rooms
+
+## Family 161: ROS/robot teleoperation bridges and VR operator shells
+
+This family covers VR operator systems that translate tracked poses, buttons,
+camera streams, and modes into ROS/robot command and diagnostics pipelines.
+
+| Project | Status | Notes |
+|---|---|---|
+| `UM-ARM-Lab/vr_teleop` | Already studied as safety-gated ROS1 pose-to-IK donor | Vive messages, MoveIt IK, measured joint seed, enabled service, joint-distance safety gate, gripper commands, and robot-specific caveats |
+| `UM-ARM-Lab/vr_ros2_bridge` | Already studied as ROS2 XR device publisher donor | Unity OpenXR controller/tracker enumeration, HTC Vive tracker role profile, pose/twist/button axes, coordinate conversion, and RViz debug topics |
+| `h2r/ros_reality_bridge` | Legacy ROS-to-Unity scene bridge reference | TF frame sweep, compact string pose stream, rosbridge/camera launch plumbing, Python2/ROS Indigo caveat |
+| `Intelligent-Robotics-Lab/vr-teleoperation` | Already studied as OpenVR robot operator station | OpenVR actions, ROS publishers, Standby/RobotControl/Calibration modes, ImGui dashboard, camera texture, and hardcoded robot paths |
+| `zz0320/vr_teleoperation_ros` | Already studied as WebSocket-to-ROS command-buffer donor | fixed-rate ROS timer, arm/torso/base modes, smoothing, gripper clamp, long-press data collection, audio feedback, RelaxedIK, and binary/cache caveats |
+| `Mcen25/VR-Teleoperation-Robotics-Platform` | Thin Unity ROS camera/diagnostics reference | ROS# camera grid, compressed/raw image fallback, HTTP video feed, SSH/network tests, and hardcoded IP/template caveats |
+
+### Consolidation note
+
+This family matters because VR teleoperation exposes high-value utility
+patterns beyond robotics:
+
+- tracked pose normalization and coordinate conversion
+- asynchronous input to fixed-rate command buffers
+- mode switches and operator-ready gates
+- camera/status panels inside VR
+- stale-data and jump-distance safety
+- audio/visual feedback for control state
+- separation between operator UI and actuation backend
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VR teleoperation bridge matrices
+- operator mode and safety-gate checklists
+- ROS camera/status panel references
+- remote-control architecture notes for non-robot VR utilities
+
+## Family 162: DIY VR headset/controller hardware, firmware, and spec references
+
+This family covers DIY VR hardware projects and datasets: headset BOM/CAD/PCB
+references, microcontroller firmware, HID packet boundaries, OpenVR driver
+shells, marker tracking, haptics, and headset spec schemas.
+
+| Project | Status | Notes |
+|---|---|---|
+| `vis3r/NxtVR` | Already studied as DIY headset firmware/HID reference | Pico/STM32 IMU readout, TinyUSB/USBComposite HMD reports, VR HID descriptor, MPU6050 calibration, and OpenHMD/runtime caveats |
+| `Kwiatens/FloV3R` | Already studied as hardware documentation reference | BOM, optics/display choices, PCBs, controller transceivers, PSMoveServiceEx/HadesVR dependency, and firmware/driver TODO caveat |
+| `Jade-Vincent/Persephone-VR-Headset` | Thin DIY headset CAD/BOM reference | 2K LCD, lenses, Pro Micro/Pico plan, MPU6050, STEP files, and maturity warning |
+| `CSParnell78/OpenVision` | Source-light headset concept reference | display, ATmega32U4/Pro Micro, gyro, phone shell, wireless transmitter choices, and no source caveat |
+| `vrrare/vr-headset-specs` | Already studied as headset specs schema/dataset donor | JSON/CSV data, JSON Schema, display/optics/tracking/audio/connectivity/physical fields, and freshness/provenance caveat |
+| `dhfmzk/VRController` | Already studied as compact firmware packet donor | Arduino/MPU9250 DMP, Bluetooth serial, 34-byte marker-delimited packet, quaternion/position/joystick/trigger data, and dead-reckoning caveat |
+| `BlaiseSaunders/DIY-VR-Controller-OpenCV` | Already studied as bright-marker UDP tracker donor | Python/OpenCV thresholding, contour selection, normalized coordinate UDP output, and Python2/single-camera caveat |
+| `shehraan/DIY_VR_Controller` | Already studied as end-to-end DIY controller stack donor | ESP32 firmware, Madgwick filter, EEPROM calibration, BLE HID input/output, haptics, OpenVR driver, input profiles, freshness gates, and built-binary caveats |
+| `Windastella/open-vr-controller` | Source-light no-progress concept | retained only as thin direction signal for OpenXR-capable DIY controllers |
+
+### Consolidation note
+
+This family matters because DIY hardware teaches boundary design:
+
+- firmware sensor readout and calibration
+- packet schemas and report descriptors
+- USB/BLE HID transport
+- haptic output paths
+- runtime driver profiles and resource manifests
+- CAD/BOM/PCB documentation
+- headset spec schemas and device comparison data
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- DIY XR hardware boundary matrices
+- firmware-to-driver packet notes
+- headset capability/spec datasets
+- hardware-inspired diagnostics and inventory tools
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

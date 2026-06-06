@@ -766,6 +766,26 @@ Use these files when you want to understand:
   window/desktop/browser texture ingress, Quest MediaProjection, photomode
   surfaces, and 360/stereo media pipelines.
 
+- `vr-projects-wave-180-xr-text-entry-keyboards-input-surfaces-and-pointer-bridges.md`
+  Next GitHub discovery wave focused on WebView keyboards, WebXR mesh/UV
+  keyboards, canvas texture input surfaces, Unity collider keys, hand-attached
+  text entry, A-Frame keyboard bridges, and shell key-event injection.
+
+- `vr-projects-wave-181-webxr-multiplayer-shared-rooms-and-webrtc-scene-shells.md`
+  Next GitHub discovery wave focused on WebXR room signaling, P2P pose/audio
+  channels, Unity WebXR multiplayer shells, shared-object events, chat rooms,
+  and spatial HUD presence/view registries.
+
+- `vr-projects-wave-182-ros-robot-teleoperation-bridges-and-vr-operator-shells.md`
+  Next GitHub discovery wave focused on ROS/OpenVR/WebSocket teleoperation
+  bridges, tracked device publishers, operator modes, safety gates, command
+  buffers, and robot camera/diagnostic panels.
+
+- `vr-projects-wave-183-diy-vr-headset-controller-hardware-firmware-and-spec-references.md`
+  Next GitHub discovery wave focused on DIY headset/controller firmware,
+  HID/BLE/serial packets, OpenVR driver boundaries, haptics, marker tracking,
+  CAD/BOM/PCB docs, and headset spec schemas.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
