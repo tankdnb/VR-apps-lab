@@ -1,6 +1,6 @@
 # Not Yet Studied Deeply
 
-- Date: `2026-06-05`
+- Date: `2026-06-06`
 - Goal: keep a prioritized list of repositories that either:
   - are not yet represented in `VR-apps-lab`;
   - are only lightly covered;
@@ -1825,6 +1825,56 @@ These are larger than a single repo and should guide the next research wave.
   compare transport/report/driver boundaries and decide what belongs in a
   future device inventory or custom-device tutorial.
 
+### 137. `External surface ingress matrix across WebRTC, LiveKit, UDP point clouds, MediaProjection, and WebView`
+
+- Main entries:
+  `XR-Low-Latency-Stereo-Streaming`, `spatial-video`, `PointCast3D`,
+  `relavr`, `SpatialVideoBrowser`
+- Why it matters:
+  this family captures the boundary between media/data transport and XR display
+  surfaces: signaling, stereo contracts, decoded texture handoff, point-cloud
+  fragment reassembly, Quest capture permissions, codec downgrade policy, and
+  native WebView surfaces. A future deeper pass should compare latency,
+  failure UX, privacy/security, and surface lifecycle across these ingress
+  modes.
+
+### 138. `Locomotion and accessibility option matrix across embodiment, zero-G, redirection, and input hubs`
+
+- Main entries:
+  `vr-wheelchair`, `Locomotion-Accessibility-Toolkit`, `echo-unity`,
+  `ddw-locomotion-system`, `space-extender`
+- Why it matters:
+  this family captures ability assumptions, embodied wheel input, option
+  packaging, zero-G physics/comfort toggles, input/modifier/movement splits,
+  redirected-walking gains, and locomotion telemetry. A future deeper pass
+  should compare input burden, comfort, telemetry, and user-facing explanation
+  rather than only movement type.
+
+### 139. `VR command surface matrix across radial menus, launchers, editor menu utilities, and OSC companions`
+
+- Main entries:
+  `RadialMenuVR`, `Quest-VR-Menu`, `VRC-Menu-Translator`,
+  `VrCScalingTool`, plus source-light radial menu variants
+- Why it matters:
+  this family captures in-HMD radial menus, spring animation, physical command
+  confirmation, Android launch intents, recursive VRChat expression-menu
+  traversal, desktop slots/hotkeys, OSCQuery, and avatar feedback. A future
+  deeper pass should define when a command belongs in a radial menu, a physical
+  object, an editor tool, or a desktop OSC companion.
+
+### 140. `Biometric and wearable bridge matrix across BLE, ANT+, HTTP, OBS WebSocket, Hyperate, and phone sensors`
+
+- Main entries:
+  `hr-osc`, `HeartRateOnStream-OSC`, `OSC-VRChat-Feeder`,
+  `ble-osc-heartrate`, `vrc_hyperate_chatbox`, `HeartRateMonitorVRC`,
+  `vrchat_ant_hr`, `osc-hr-ble`
+- Why it matters:
+  this family captures transport-specific sensor readers, avatar parameter
+  schemas, active/connected/stale state, chatbox presentation, profile-driven
+  phone sensors, compatibility shims, and hardware permission caveats. A future
+  deeper pass should normalize parameter naming and map which transports are
+  best for robust avatar telemetry.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -1949,6 +1999,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 118. `Shared WebXR room matrix across WebSocket signaling, WebRTC P2P, Unity Relay/NGO, socket.io/simple-peer, A-Frame chat, and spatial HUD presence`
 119. `VR teleoperation safety and camera-feedback matrix across ROS, OpenVR operator shells, WebSocket command buffers, IK, modes, and stale/jump gates`
 120. `DIY XR hardware boundary matrix across firmware packets, HID/BLE/serial transport, runtime drivers, haptics, CAD/BOM/PCB docs, and headset spec schemas`
+121. `External surface ingress matrix across WebRTC, LiveKit, UDP point clouds, Quest MediaProjection, and native WebView surfaces`
+122. `Locomotion/accessibility matrix across embodied wheel input, zero-G control, redirection gains, mode options, and input hubs`
+123. `VR command surface matrix across radial menus, physical launchers, editor expression-menu tools, and desktop OSC macro companions`
+124. `Biometric bridge compatibility matrix across BLE, ANT+, HTTP, OBS WebSocket, Hyperate, phone sensors, avatar parameters, and chatbox output`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

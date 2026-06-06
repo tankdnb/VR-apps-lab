@@ -786,6 +786,25 @@ Use these files when you want to understand:
   HID/BLE/serial packets, OpenVR driver boundaries, haptics, marker tracking,
   CAD/BOM/PCB docs, and headset spec schemas.
 
+- `vr-projects-wave-184-low-latency-xr-video-point-cloud-and-browser-stream-surfaces.md`
+  Next GitHub discovery wave focused on WebRTC/LiveKit stream surfaces, UDP
+  point-cloud receivers, Quest MediaProjection senders, and native WebView
+  browser-video panels.
+
+- `vr-projects-wave-185-accessibility-embodied-locomotion-redirected-walking-and-zero-g-control.md`
+  Next GitHub discovery wave focused on wheelchair locomotion, accessibility
+  option packs, zero-G grab/thruster control, natural locomotion hubs, and
+  redirected-walking telemetry.
+
+- `vr-projects-wave-186-vr-menu-radial-control-avatar-menu-editing-and-osc-command-surfaces.md`
+  Next GitHub discovery wave focused on radial menus, physical launcher
+  commands, VRChat expression-menu editor utilities, and desktop OSC command
+  companions.
+
+- `vr-projects-wave-187-heart-rate-wearable-ant-ble-and-sensor-to-osc-bridge-variants.md`
+  Next GitHub discovery wave focused on heart-rate, wearable, ANT/BLE, HTTP,
+  OBS/WebSocket, Hyperate, phone sensor, chatbox, and OSC bridge variants.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

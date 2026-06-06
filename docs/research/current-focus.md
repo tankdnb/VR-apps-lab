@@ -226,6 +226,10 @@ instead of full history:
 - `landscape/vr-projects-wave-165-open-brush-tilt-asset-pipeline-browser-viewers-shader-loaders-and-collaborative-drawing.md`
 - `landscape/vr-projects-wave-166-gaussian-splat-immersive-3d-asset-viewers-editors-and-xr-display-surfaces.md`
 - `landscape/vr-projects-wave-167-godot-xr-toolkits-vendor-extensions-templates-and-face-tracking-bridges.md`
+- `landscape/vr-projects-wave-184-low-latency-xr-video-point-cloud-and-browser-stream-surfaces.md`
+- `landscape/vr-projects-wave-185-accessibility-embodied-locomotion-redirected-walking-and-zero-g-control.md`
+- `landscape/vr-projects-wave-186-vr-menu-radial-control-avatar-menu-editing-and-osc-command-surfaces.md`
+- `landscape/vr-projects-wave-187-heart-rate-wearable-ant-ble-and-sensor-to-osc-bridge-variants.md`
 
 ## Strong donor clusters right now
 
@@ -671,6 +675,22 @@ the strongest current clusters:
   for DIY headset/controller HID reports, BLE/serial packets, OpenVR driver
   boundaries, haptics, marker tracking, CAD/BOM/PCB documentation, and headset
   specification schemas.
+- `XR-Low-Latency-Stereo-Streaming`, `spatial-video`, `PointCast3D`,
+  `relavr`, `SpatialVideoBrowser`
+  for WebRTC/LiveKit video ingress, Quest capture sender state, UDP point-cloud
+  meshes, browser-video world surfaces, and stereo/media format contracts.
+- `vr-wheelchair`, `echo-unity`, `ddw-locomotion-system`, `space-extender`,
+  `Locomotion-Accessibility-Toolkit`
+  for embodied accessibility locomotion, zero-G grab/thruster control,
+  hub/modifier/movement splits, redirected-walking telemetry, and option-set
+  framing.
+- `RadialMenuVR`, `Quest-VR-Menu`, `VRC-Menu-Translator`, `VrCScalingTool`
+  for radial command menus, physical launcher commands, editor-side VRChat
+  expression-menu traversal, desktop OSC slots, hotkeys, and avatar feedback.
+- `HeartRateMonitorVRC`, `osc-hr-ble`, `vrchat_ant_hr`,
+  `HeartRateOnStream-OSC`, `OSC-VRChat-Feeder`, `vrc_hyperate_chatbox`
+  for BLE/ANT/HTTP/WebSocket heart-rate ingress, avatar parameter schemas,
+  connection-state booleans, chatbox presentation, and phone sensor profiles.
 
 ## Highest-value next follow-up passes
 
@@ -787,6 +807,10 @@ directions:
 108. `Shared WebXR room matrix across WebSocket signaling, WebRTC P2P, Unity Relay/NGO, socket.io/simple-peer, A-Frame chat, and spatial HUD presence`
 109. `VR teleoperation safety and camera-feedback matrix across ROS, OpenVR operator shells, WebSocket command buffers, IK, modes, and stale/jump gates`
 110. `DIY XR hardware boundary matrix across firmware packets, HID/BLE/serial transport, runtime drivers, haptics, CAD/BOM/PCB docs, and headset spec schemas`
+111. `External surface ingress matrix across WebRTC, LiveKit, UDP point clouds, Quest MediaProjection, and native WebView surfaces`
+112. `Locomotion/accessibility matrix across embodied wheel input, zero-G control, redirection gains, mode options, and input hubs`
+113. `VR command surface matrix across radial menus, physical launchers, editor expression-menu tools, and desktop OSC macro companions`
+114. `Biometric bridge compatibility matrix across BLE, ANT+, HTTP, OBS WebSocket, Hyperate, phone sensors, avatar parameters, and chatbox output`
 
 ## Current repository-maintenance priorities
 

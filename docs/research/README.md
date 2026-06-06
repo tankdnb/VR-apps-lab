@@ -179,6 +179,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-181-webxr-multiplayer-shared-rooms-and-webrtc-scene-shells.md`
 - `landscape/vr-projects-wave-182-ros-robot-teleoperation-bridges-and-vr-operator-shells.md`
 - `landscape/vr-projects-wave-183-diy-vr-headset-controller-hardware-firmware-and-spec-references.md`
+- `landscape/vr-projects-wave-184-low-latency-xr-video-point-cloud-and-browser-stream-surfaces.md`
+- `landscape/vr-projects-wave-185-accessibility-embodied-locomotion-redirected-walking-and-zero-g-control.md`
+- `landscape/vr-projects-wave-186-vr-menu-radial-control-avatar-menu-editing-and-osc-command-surfaces.md`
+- `landscape/vr-projects-wave-187-heart-rate-wearable-ant-ble-and-sensor-to-osc-bridge-variants.md`
 
 ## Archive Navigation
 

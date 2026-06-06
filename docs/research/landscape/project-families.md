@@ -5268,6 +5268,143 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - headset capability/spec datasets
 - hardware-inspired diagnostics and inventory tools
 
+## Family 163: Low-latency stream ingress, stereo panels, point clouds, and browser surfaces
+
+This family covers small projects that bring external surfaces into XR:
+WebRTC/LiveKit video, Quest MediaProjection, UDP point clouds, and native
+WebView/browser video panels.
+
+| Project | Status | Notes |
+|---|---|---|
+| `bugman-007/XR-Low-Latency-Stereo-Streaming` | Already studied as minimal WebRTC-to-texture receiver | browser sender, WebSocket signaling, SDP/ICE buffering, Unity `VideoStreamTrack` to material texture, and POC caveats |
+| `livekit-examples/spatial-video` | Already studied as stereo panel reference | Meta Spatial SDK panel, left-right stereo mode, LiveKit room track binding, and hardcoded sample config caveats |
+| `Cont-ai-ner/PointCast3D` | Already studied as point-cloud payload donor | RealSense point payload, UDP chunk headers, frame reassembly, Unity `MeshTopology.Points`, and packet-loss caveats |
+| `studio4evr/FFMPEG-VRQ` | Empty/source-light exclusion | search result promised Quest VR180 SBS decode, but clone contained no source |
+| `N78Wy/relavr` | Already studied as Quest sender-state donor | MediaProjection permission, foreground service, codec probing, signaling codec, adaptive downgrade, and receiver/security follow-up |
+| `ranvuemor/SpatialVideoBrowser` | Already studied as browser-video surface reference | native Android WebView texture on Unity/Quest world surface, XRI composition, and package/lifecycle follow-up |
+
+### Consolidation note
+
+This family matters because many VR utilities need external surfaces before
+they need full overlay products:
+
+- live camera and remote support panels
+- stereo video room viewers
+- headset mirror/capture senders
+- point-cloud diagnostics and calibration previews
+- browser-video surfaces that bypass WebXR media limits
+- transport health and downgrade UX
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- external surface ingress matrices
+- Quest capture sender permission/state machines
+- stereo panel format contracts
+- low-latency media diagnostics and fallback UX
+
+## Family 164: Accessibility, embodied locomotion, redirected walking, and zero-G control
+
+This family covers locomotion as reusable utility knowledge: physical ability
+assumptions, embodied input, configurable locomotion modules, redirected
+walking, and zero-G comfort controls.
+
+| Project | Status | Notes |
+|---|---|---|
+| `justinmajetich/vr-wheelchair` | Already studied as embodied locomotion donor | wheel XR interactables, disposable grab proxies, brake assist, haptic deceleration, and prototype thresholds |
+| `XR-Access-Initiative/Locomotion-Accessibility-Toolkit` | Already studied as accessibility framing reference | gaze teleport, smooth locomotion, snap turn, instruction surfaces, and imported XRI sample caveat |
+| `simeonradivoev/echo-unity` | Already studied as zero-G mechanics donor | hand grab joints, dynamic/static interactions, thruster heat, release dampening, IK, and comfort/realism toggle |
+| `DigitalDiceworks/ddw-locomotion-system` | Already studied as locomotion abstraction donor | hub/input/modifier/movement split, event boundaries, sprint modifier, and legacy SteamVR caveat |
+| `curvaturegames/space-extender` | Already studied as redirected-walking tooling donor | translation and rotation gains, overlapping rooms, editor scripts, CSV logging, and old Unity assumptions |
+| `LariWa/VR-Locomotion` | Empty/source-light exclusion | search result described locomotion comparisons, but clone contained no source |
+
+### Consolidation note
+
+This family matters because locomotion tools should expose more than movement
+vectors:
+
+- physical ability and comfort assumptions
+- input burden and embodiment model
+- controller, hand, wheel, body, and environment constraints
+- redirection gain and telemetry behavior
+- realism versus comfort toggles
+- user-facing explanation of movement modes
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- locomotion/accessibility option matrices
+- configurable locomotion hub samples
+- redirected-walking telemetry notes
+- alternative embodiment input references
+
+## Family 165: VR command surfaces, radial menus, launchers, and avatar-menu utilities
+
+This family covers command surfaces used to control VR utilities: in-headset
+radial menus, physical launcher metaphors, editor-side expression-menu tools,
+and desktop OSC companions that replace slow in-game menus.
+
+| Project | Status | Notes |
+|---|---|---|
+| `VRwithAndrew/VR-RadialMenu` | Source-light radial menu baseline | prefab/art shell with empty scripts; retained as tutorial contrast only |
+| `Gustorvo/RadialMenuVR` | Already studied as radial-menu donor | numeric springs, item manager, hover/select events, attachments, menu movement/scaling, and roadmap caveats |
+| `ryangadz/RadialMenu` | Source-light Unreal asset reference | `.uasset` plugin package with limited static extraction value |
+| `GabrielDiDomenico/RadialMenu` | Already studied as wrist-menu concept | wrist-rotation idea, alpha-hit-test UI notes, and imported XRI sample caveat |
+| `kblood/Quest-VR-Menu` | Already studied as physical launcher/menu reference | app cubes, collision confirmation, Android package/intent launching, and old Quest/Unity caveats |
+| `CascadianVR/VRC-Menu-Translator` | Already studied as editor-side menu utility donor | recursive VRChat expression-menu traversal, bulk rename/translate, asset dirty/save, and undo/API caveats |
+| `Tazaur/VrCScalingTool` | Already studied as desktop OSC command surface donor | scale slots, hotkeys, OSC receive triggers, OSCQuery, tray UI, SteamVR manifest, and Windows-specific caveats |
+
+### Consolidation note
+
+This family matters because VR command UX is broader than one radial menu:
+
+- radial item placement and animation
+- wrist or hand orientation selection
+- physical command confirmation
+- editor-side menu mutation and validation
+- desktop companion slots, hotkeys, and OSC triggers
+- safety bounds and state feedback for commands
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VR command-surface comparison matrices
+- reusable radial-menu architecture notes
+- VRChat expression-menu editor tooling
+- OSC macro companion design
+
+## Family 166: Heart-rate, wearable, ANT/BLE, and sensor-to-avatar bridges
+
+This family covers smaller biometric/sensor bridge variants that publish
+wearable data to VRChat OSC parameters or chatbox surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `kamyu1537/hr-osc` | Already studied as Tauri HTTP/OSC HR bridge | local HTTP BPM ingress, Rust OSC commands, UI/service split, and sparse setup caveat |
+| `Curtis-VL/HeartRateOnStream-OSC` | Already studied as OBS/WebSocket compatibility shim | OBS-style WebSocket messages, text-source parsing, multiple HR parameter encodings, and hardcoded JSON caveats |
+| `Solexid/OSC-VRChat-Feeder` | Already studied as Android sensor feeder reference | BLE/Mi Band HR and steps, phone sensors, profiles, normalization, and device-specific caveats |
+| `TangNPC/ble-osc-heartrate` | Already studied as BLE advertisement micro-bridge | manufacturer data filter, fixed byte offset, raw/digit/float parameters, and stale-data caveat |
+| `KotRikD/vrc_hyperate_chatbox` | Already studied as Hyperate chatbox bridge donor | Phoenix WebSocket, service heartbeat, debounce, trend formatting, Electron IPC, and API/config caveats |
+| `DangerKiddy/HeartRateMonitorVRC` | Already studied as Windows BLE HR donor | GATT HR parsing, reconnect loop, derived parameters, beat emulation, session ranges, and Windows dependency caveat |
+| `RedlineTriad/vrchat_ant_hr` | Already studied as ANT+ HR donor | ANT reader thread, computed/intra-beat BPM modes, anomaly filter, log mode, and hardware setup caveat |
+| `Naraenda/osc-hr-ble` | Already studied as tiny BLE GATT HR donor | Heart Rate Measurement parser, optional energy/RR data, OSC bundle, digit/normalized parameters, and no UI caveat |
+
+### Consolidation note
+
+This family matters because sensor bridges repeatedly solve the same interface
+problems across different transports:
+
+- raw, digit, normalized, connected, active, and beat parameters
+- BLE GATT versus BLE advertisement versus ANT+ transport
+- service WebSocket, HTTP, OBS-WebSocket, and local phone ingress
+- stale/reconnect/status behavior
+- chatbox formatting and social presentation
+- avatar prefab compatibility
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- biometric bridge compatibility tables
+- sensor parameter schema conventions
+- transport-specific failure-mode notes
+- avatar telemetry and chatbox presentation helpers
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

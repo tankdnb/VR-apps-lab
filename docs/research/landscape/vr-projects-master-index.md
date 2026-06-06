@@ -1,6 +1,6 @@
 # VR Projects Master Index
 
-- Date: `2026-06-05`
+- Date: `2026-06-06`
 - Goal: maintain a single index of VR-related GitHub projects that are useful as
   references, code donors, or product inspiration for `VR-apps-lab`.
 
@@ -192,6 +192,10 @@ This file complements:
 - `vr-projects-wave-181-webxr-multiplayer-shared-rooms-and-webrtc-scene-shells.md`
 - `vr-projects-wave-182-ros-robot-teleoperation-bridges-and-vr-operator-shells.md`
 - `vr-projects-wave-183-diy-vr-headset-controller-hardware-firmware-and-spec-references.md`
+- `vr-projects-wave-184-low-latency-xr-video-point-cloud-and-browser-stream-surfaces.md`
+- `vr-projects-wave-185-accessibility-embodied-locomotion-redirected-walking-and-zero-g-control.md`
+- `vr-projects-wave-186-vr-menu-radial-control-avatar-menu-editing-and-osc-command-surfaces.md`
+- `vr-projects-wave-187-heart-rate-wearable-ant-ble-and-sensor-to-osc-bridge-variants.md`
 
 ## How to use this index
 

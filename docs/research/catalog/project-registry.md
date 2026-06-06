@@ -2365,6 +2365,65 @@ Primary docs:
 - `Windastella/open-vr-controller` - `Source-light no-progress OpenXR DIY controller concept; retained only as thin/excluded reference`
 - `shehraan/DIY_VR_Controller` - `Already studied as ESP32/MPU6050 BLE HID controller plus OpenVR driver shell with Madgwick filter, EEPROM calibration, haptics, HID transport, input profile, and freshness gates`
 
+## 155. Low-latency XR video, point-cloud, and browser stream surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-184-low-latency-xr-video-point-cloud-and-browser-stream-surfaces.md`
+- `../landscape/project-families.md`
+
+- `bugman-007/XR-Low-Latency-Stereo-Streaming` - `Already studied as minimal browser sender, WebSocket signaling server, and Unity WebRTC video-track-to-texture receiver`
+- `livekit-examples/spatial-video` - `Already studied as Meta Spatial SDK stereo panel connected to LiveKit room video tracks with left-right stereo contract`
+- `Cont-ai-ner/PointCast3D` - `Already studied as RealSense UDP point-cloud sender with chunk headers and Unity mesh-point receiver`
+- `studio4evr/FFMPEG-VRQ` - `Empty/source-light candidate; cloned with no source files and retained only as exclusion note`
+- `N78Wy/relavr` - `Already studied as Quest MediaProjection/WebRTC sender with permission/session coordinator, codec probing, QR/manual connection, and adaptive profile downgrade`
+- `ranvuemor/SpatialVideoBrowser` - `Already studied as native Unity/Quest WebView video browser surface using XRI and Android WebView texture composition`
+
+## 156. Accessibility, embodied locomotion, redirected walking, and zero-G control
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-185-accessibility-embodied-locomotion-redirected-walking-and-zero-g-control.md`
+- `../landscape/project-families.md`
+
+- `justinmajetich/vr-wheelchair` - `Already studied as embodied wheelchair locomotion rig with wheel interactables, disposable grab points, brake assist, and haptic feedback`
+- `XR-Access-Initiative/Locomotion-Accessibility-Toolkit` - `Already studied as accessibility locomotion option pack around gaze teleport, smooth motion, snap turn, and in-world instruction framing`
+- `simeonradivoev/echo-unity` - `Already studied as zero-G grab/thruster movement donor with static/dynamic joints, release behavior, thruster heat, and comfort/realism toggle`
+- `DigitalDiceworks/ddw-locomotion-system` - `Already studied as natural locomotion hub with input providers, modifiers, movement consumers, and event boundaries`
+- `curvaturegames/space-extender` - `Already studied as redirected-walking Unity package with translation/rotation gains, overlapping-room redirectors, editor UX, and CSV telemetry`
+- `LariWa/VR-Locomotion` - `Empty/source-light candidate; cloned with no source files and retained only as exclusion note`
+
+## 157. VR menu, radial control, avatar-menu editing, and OSC command surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-186-vr-menu-radial-control-avatar-menu-editing-and-osc-command-surfaces.md`
+- `../landscape/project-families.md`
+
+- `VRwithAndrew/VR-RadialMenu` - `Source-light Unity radial menu template with prefab/assets and effectively empty core scripts`
+- `Gustorvo/RadialMenuVR` - `Already studied as numeric-spring radial command menu with dynamic items, hover/select events, attachments, and menu animation`
+- `ryangadz/RadialMenu` - `Source-light Unreal XR radial-menu plugin reference dominated by binary Blueprint/assets`
+- `GabrielDiDomenico/RadialMenu` - `Already studied as wrist-rotation radial-menu concept and thin Unity/XRI sample with alpha-hit-test UI selection notes`
+- `kblood/Quest-VR-Menu` - `Already studied as Quest launcher/home menu prototype using grabbable app cubes, collision confirmation, and Android launch intents`
+- `CascadianVR/VRC-Menu-Translator` - `Already studied as Unity Editor utility recursively traversing and translating VRChat expression menus and controls`
+- `Tazaur/VrCScalingTool` - `Already studied as desktop VRChat OSC scaling command companion with slots, hotkeys, OSCQuery, avatar feedback, tray UI, and SteamVR manifest`
+
+## 158. Heart-rate, wearable, ANT/BLE, and sensor-to-OSC bridge variants
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-187-heart-rate-wearable-ant-ble-and-sensor-to-osc-bridge-variants.md`
+- `../landscape/project-families.md`
+
+- `kamyu1537/hr-osc` - `Already studied as Tauri/Rust heart-rate bridge with HTTP BPM ingress and native OSC sender commands`
+- `Curtis-VL/HeartRateOnStream-OSC` - `Already studied as OBS-WebSocket compatibility shim that receives HeartRateOnStream updates and forwards multiple VRChat OSC HR encodings`
+- `Solexid/OSC-VRChat-Feeder` - `Already studied as Android/MAUI BLE and phone-sensor feeder with profiles, normalization, Mi Band HR/steps, rotation, and OSC output`
+- `TangNPC/ble-osc-heartrate` - `Already studied as minimal Python BLE advertisement HR micro-bridge to VRChat OSC parameters`
+- `KotRikD/vrc_hyperate_chatbox` - `Already studied as Electron Hyperate WebSocket bridge with chatbox formatting, debounce, connection state, and prefab-compatible OSC parameters`
+- `DangerKiddy/HeartRateMonitorVRC` - `Already studied as Windows BLE pulse-oximeter bridge with reconnect, GATT HR parsing, derived avatar parameters, session min/max, and beat emulation`
+- `RedlineTriad/vrchat_ant_hr` - `Already studied as Rust ANT+ HR dongle bridge with computed/intra-beat BPM modes, anomaly filtering, and VRChat OSC output`
+- `Naraenda/osc-hr-ble` - `Already studied as compact Rust BLE GATT heart-rate parser sending raw/digit/normalized OSC bundle parameters`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

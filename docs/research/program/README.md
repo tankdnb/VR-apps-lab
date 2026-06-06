@@ -1309,3 +1309,31 @@ repeatable way.
 
 - `github-research-wave-183-backlog.md`
   Executed backlog for the Wave 183 pass.
+
+- `github-research-wave-184-plan.md`
+  Wave 184 research plan focused on low-latency XR video, point-cloud, and
+  browser stream surfaces.
+
+- `github-research-wave-184-backlog.md`
+  Executed backlog for the Wave 184 pass.
+
+- `github-research-wave-185-plan.md`
+  Wave 185 research plan focused on accessibility, embodied locomotion,
+  redirected walking, and zero-G control.
+
+- `github-research-wave-185-backlog.md`
+  Executed backlog for the Wave 185 pass.
+
+- `github-research-wave-186-plan.md`
+  Wave 186 research plan focused on VR menus, radial control, avatar-menu
+  editing, and OSC command surfaces.
+
+- `github-research-wave-186-backlog.md`
+  Executed backlog for the Wave 186 pass.
+
+- `github-research-wave-187-plan.md`
+  Wave 187 research plan focused on heart-rate, wearable, ANT/BLE, and
+  sensor-to-OSC bridge variants.
+
+- `github-research-wave-187-backlog.md`
+  Executed backlog for the Wave 187 pass.

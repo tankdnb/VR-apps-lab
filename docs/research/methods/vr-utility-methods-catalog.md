@@ -10726,3 +10726,431 @@ When a new utility idea appears:
   `CSParnell78/OpenVision`.
 - Best fit for `VR-apps-lab`:
   hardware boundary documentation and device-constraint matrices.
+
+## Method 592: WebRTC media track to XR texture receiver
+
+- What it is:
+  a small XR receiver accepts WebRTC signaling separately from media and binds
+  a decoded remote video track to a world-space material or panel texture.
+- Good for:
+  remote camera panels, support tools, operator views, and low-latency
+  diagnostic displays.
+- Why it matters:
+  the reusable boundary is signaling/media separation and texture handoff, not
+  a complete streaming platform.
+- Source evidence:
+  `XR-Low-Latency-Stereo-Streaming`.
+- Reusable core:
+  exchange SDP/ICE over a lightweight signaling channel, buffer ICE until the
+  remote description is ready, subscribe to the remote video track, and hand
+  decoded frames to an XR renderer.
+- Do not copy directly:
+  LAN-only assumptions, no-auth signaling, no TURN fallback, or mono webcam
+  scope as production design.
+- Strong references:
+  `bugman-007/XR-Low-Latency-Stereo-Streaming`.
+- Best fit for `VR-apps-lab`:
+  external surface ingress and remote diagnostics notes.
+
+## Method 593: Fixed-contract stereo stream panel
+
+- What it is:
+  a spatial panel subscribes to a room video track and renders it using an
+  explicit stereo layout contract such as left-right side-by-side.
+- Good for:
+  telepresence, stereo video viewers, immersive media surfaces, and robot or
+  camera wall prototypes.
+- Why it matters:
+  stereo display bugs usually come from implicit texture assumptions; the
+  format contract should be visible in code and docs.
+- Source evidence:
+  `spatial-video`.
+- Reusable core:
+  create a panel or surface with known pixel/world dimensions, mark stereo mode,
+  bind the selected room track to a renderer, and detach/hide cleanly when the
+  track unsubscribes.
+- Do not copy directly:
+  hardcoded room credentials, one fixed resolution, or service-specific sample
+  config.
+- Strong references:
+  `livekit-examples/spatial-video`.
+- Best fit for `VR-apps-lab`:
+  stereo media and external video panel patterns.
+
+## Method 594: UDP point-cloud fragments to Unity mesh
+
+- What it is:
+  a sender packs point data into numbered UDP chunks and a receiver reassembles
+  complete frames into a point mesh on the Unity main thread.
+- Good for:
+  spatial diagnostics, sensor previews, robot perception panels, calibration,
+  and quick point-cloud experiments.
+- Why it matters:
+  point-cloud tools need an explicit payload/header boundary before they can be
+  optimized or made reliable.
+- Source evidence:
+  `PointCast3D`.
+- Reusable core:
+  pack `x/y/z/r/g/b` point records, prefix chunks with frame ID and chunk
+  counts, collect fragments off the main thread, discard incomplete frames, and
+  update `MeshTopology.Points` only from the main thread.
+- Do not copy directly:
+  no-loss-policy UDP handling, thread abort patterns, or CPU full-mesh rebuilds
+  as the final renderer.
+- Strong references:
+  `Cont-ai-ner/PointCast3D`.
+- Best fit for `VR-apps-lab`:
+  point-cloud ingress and spatial diagnostic surfaces.
+
+## Method 595: Quest MediaProjection WebRTC sender state machine
+
+- What it is:
+  a headset-side sender owns capture permission, foreground-service lifetime,
+  codec selection, signaling, publishing, and adaptive downgrade policy as one
+  observable session.
+- Good for:
+  headset mirroring, remote assistance, diagnostics, capture tools, and
+  support utilities.
+- Why it matters:
+  production value comes from permission/state/error handling, not just from
+  calling a screen-capture API.
+- Source evidence:
+  `relavr`.
+- Reusable core:
+  validate config, request or restore projection permission, probe codec
+  support, open signaling, publish media, expose session snapshots, downgrade
+  bitrate/FPS/resolution after repeated overload, and release all resources on
+  stop or failure.
+- Do not copy directly:
+  app-specific QR payloads, UI strings, or assumptions about audio-capture
+  availability.
+- Strong references:
+  `N78Wy/relavr`.
+- Best fit for `VR-apps-lab`:
+  Quest capture sender, media diagnostics, and remote-support patterns.
+
+## Method 596: Native WebView to world-surface browser shell
+
+- What it is:
+  a native XR app renders web media through a platform WebView texture placed
+  on a world-space surface instead of depending on WebXR page capabilities.
+- Good for:
+  browser video panels, reference windows, learning tools, and DRM/CORS-limited
+  media experiments.
+- Why it matters:
+  native WebView composition can bypass browser/WebXR limitations while still
+  preserving an XR interaction shell.
+- Source evidence:
+  `SpatialVideoBrowser`.
+- Reusable core:
+  embed a native WebView texture, place it on a world-space canvas or panel,
+  combine it with XR input/locomotion, and document lifecycle, keyboard, and
+  permission handling separately.
+- Do not copy directly:
+  template URLs, unresolved package assumptions, or platform WebView behavior
+  as portable truth.
+- Strong references:
+  `ranvuemor/SpatialVideoBrowser`.
+- Best fit for `VR-apps-lab`:
+  browser-video and reference-surface product notes.
+
+## Method 597: Embodied wheel-grab locomotion rig
+
+- What it is:
+  wheelchair movement is modeled through wheel interactables, hand grab
+  proxies, velocity-based braking, and haptic feedback instead of abstract
+  stick movement.
+- Good for:
+  accessibility studies, alternative locomotion, training, embodiment, and
+  physical-input experiments.
+- Why it matters:
+  accessibility locomotion should preserve user embodiment and physical
+  assumptions rather than only remapping thumbsticks.
+- Source evidence:
+  `vr-wheelchair`.
+- Reusable core:
+  create wheel XR interactables, spawn disposable jointed grab points at the
+  hands, force-select proxies, detach when hands drift, brake near zero hand
+  velocity, and map deceleration to haptics.
+- Do not copy directly:
+  hardcoded thresholds, prototype prefab assumptions, or one locomotion mode as
+  a complete accessibility answer.
+- Strong references:
+  `justinmajetich/vr-wheelchair`.
+- Best fit for `VR-apps-lab`:
+  accessibility locomotion and embodied input matrices.
+
+## Method 598: Locomotion hub with input, modifier, and movement split
+
+- What it is:
+  locomotion input providers register with a hub, modifiers transform movement
+  vectors, and movement consumers apply final translation or physics behavior.
+- Good for:
+  configurable locomotion labs, comfort testing, accessibility options, and
+  reusable movement plugins.
+- Why it matters:
+  the split makes locomotion modes comparable and swappable without rewriting
+  the whole rig.
+- Source evidence:
+  `ddw-locomotion-system`.
+- Reusable core:
+  register primary/secondary inputs, emit begin/end/input events, transform
+  vectors through active modifiers, and let translation or Rigidbody consumers
+  subscribe independently.
+- Do not copy directly:
+  old SteamVR package contents or legacy project setup.
+- Strong references:
+  `DigitalDiceworks/ddw-locomotion-system`.
+- Best fit for `VR-apps-lab`:
+  locomotion abstraction and input-composition notes.
+
+## Method 599: Redirected-walking gains with telemetry
+
+- What it is:
+  a redirector applies translation or rotation gains to the play-area parent
+  and logs redirection events for later analysis.
+- Good for:
+  locomotion research tools, spatial design diagnostics, room-scale comfort
+  experiments, and level-design helpers.
+- Why it matters:
+  redirected walking is only reusable if the gain model and measurements are
+  visible.
+- Source evidence:
+  `space-extender`.
+- Reusable core:
+  define start/end play areas, compute HMD translation or rotation deltas,
+  apply gains around the play-area object, expose start/end events, and log
+  duration plus accumulated rotation/translation.
+- Do not copy directly:
+  old Unity assumptions, singleton auto-creation, or fragile float equality
+  checks.
+- Strong references:
+  `curvaturegames/space-extender`.
+- Best fit for `VR-apps-lab`:
+  locomotion telemetry and redirected-walking notes.
+
+## Method 600: Zero-G grab and thruster control with comfort toggle
+
+- What it is:
+  zero-G movement combines physical grab joints, release behavior, hand
+  thrusters, and a switch between physically accurate and comfort-oriented
+  movement.
+- Good for:
+  space/zero-G tools, training, embodied manipulation, and non-walking
+  locomotion experiments.
+- Why it matters:
+  realism and comfort should be an explicit user-facing tradeoff, not an
+  accidental physics setting.
+- Source evidence:
+  `echo-unity`.
+- Reusable core:
+  use grab grace windows, penetration checks, configurable joints, hand/body
+  mass scaling, release velocity dampening, heat-based thrusters, and a toggle
+  that changes body rotation constraints and release accuracy.
+- Do not copy directly:
+  game-specific objectives, demo assets, or expensive mesh tests without
+  profiling.
+- Strong references:
+  `simeonradivoev/echo-unity`.
+- Best fit for `VR-apps-lab`:
+  alternative locomotion and embodied control references.
+
+## Method 601: Numeric-spring radial command menu
+
+- What it is:
+  radial menu items are placed dynamically, selected through hover/step state,
+  and animated through reusable numeric spring components.
+- Good for:
+  in-headset command palettes, tool menus, quick actions, settings, and
+  controller/hand UI experiments.
+- Why it matters:
+  menu reuse improves when placement, item state, attachments, events, and
+  animation are independent.
+- Source evidence:
+  `RadialMenuVR`.
+- Reusable core:
+  compute item positions from radius/count/circle mode, track hovered and
+  selected indices, emit hover/select/toggle/rebuild events, animate
+  transforms with spring values, and attach indicators/text to selected items.
+- Do not copy directly:
+  demo assets, optional editor dependencies, or unfinished roadmap assumptions.
+- Strong references:
+  `Gustorvo/RadialMenuVR`.
+- Best fit for `VR-apps-lab`:
+  VR command-surface and radial menu patterns.
+
+## Method 602: Physical VR launcher command objects
+
+- What it is:
+  apps or commands are represented as grabbable 3D objects, and a physical
+  interaction such as collision confirms the command.
+- Good for:
+  VR home menus, launcher surfaces, kiosk tools, and tangible command UX.
+- Why it matters:
+  physical confirmation can make menu actions legible in VR, but it needs
+  explicit error and safety feedback.
+- Source evidence:
+  `Quest-VR-Menu`.
+- Reusable core:
+  represent commands as labeled objects, detect a deliberate physical
+  confirmation action, map objects to package/intent metadata, and invoke the
+  platform launcher from the XR app.
+- Do not copy directly:
+  random assignment, brittle Android helper code, old SDK assumptions, or weak
+  fallback handling.
+- Strong references:
+  `kblood/Quest-VR-Menu`.
+- Best fit for `VR-apps-lab`:
+  launcher/menu product references and tangible command UX notes.
+
+## Method 603: Recursive VRChat expression-menu editor utility
+
+- What it is:
+  a Unity Editor tool traverses nested VRChat expression menus and mutates
+  menu/control names or related metadata in bulk.
+- Good for:
+  localization, accessibility labels, menu QA, migration tools, and avatar
+  creator workflows.
+- Why it matters:
+  creator utilities often need safe recursive traversal of menu graphs rather
+  than one-off asset edits.
+- Source evidence:
+  `VRC-Menu-Translator`.
+- Reusable core:
+  open an editor window, accept an avatar root, find the avatar descriptor,
+  recursively collect expression menus and submenus, present rows for review,
+  mutate control/menu names, mark assets dirty, and save.
+- Do not copy directly:
+  blocking HTTP calls, unescaped provider URLs, no Undo, or no dry-run mode.
+- Strong references:
+  `CascadianVR/VRC-Menu-Translator`.
+- Best fit for `VR-apps-lab`:
+  creator-facing menu tooling and validation helpers.
+
+## Method 604: Desktop OSC macro surface with slots and avatar feedback
+
+- What it is:
+  a desktop companion provides named command slots, hotkeys, OSC send/receive,
+  OSCQuery discovery, and feedback from avatar parameters.
+- Good for:
+  VRChat companions, quick settings, accessibility shortcuts, avatar state
+  tools, and menu-limit workarounds.
+- Why it matters:
+  not every VR command surface has to be in-HMD; desktop companions can make
+  slow radial-menu actions fast and reliable.
+- Source evidence:
+  `VrCScalingTool`.
+- Reusable core:
+  clamp command values, persist slots, send OSC parameters, listen for avatar
+  trigger booleans, expose OSCQuery parameter trees, provide global hotkeys,
+  keep undo state, and optionally register as a SteamVR dashboard app.
+- Do not copy directly:
+  avatar-scale-specific values, Windows-only UI assumptions, or unsigned
+  distribution flows.
+- Strong references:
+  `Tazaur/VrCScalingTool`.
+- Best fit for `VR-apps-lab`:
+  command companion and avatar-control surface designs.
+
+## Method 605: Wearable heart-rate parameter schema for avatars
+
+- What it is:
+  heart-rate bridges publish a small compatible set of avatar parameters such
+  as raw BPM, digits, normalized float, connected, active, beat, and session
+  min/max values.
+- Good for:
+  biometric avatar effects, stream/social presentation, compatibility with
+  prefabs, and diagnostics.
+- Why it matters:
+  the avatar interface should stay stable while BLE, ANT+, HTTP, OBS, or web
+  services change underneath it.
+- Source evidence:
+  `HeartRateMonitorVRC`, `osc-hr-ble`, `HeartRateOnStream-OSC`,
+  `ble-osc-heartrate`, and `vrc_hyperate_chatbox`.
+- Reusable core:
+  split BPM into digits, compute normalized ranges, expose active/connected or
+  stale booleans, optionally emulate beat pulses, and send related parameters
+  together when possible.
+- Do not copy directly:
+  one project's parameter names as universal truth without compatibility notes.
+- Strong references:
+  `DangerKiddy/HeartRateMonitorVRC`, `Naraenda/osc-hr-ble`,
+  `Curtis-VL/HeartRateOnStream-OSC`.
+- Best fit for `VR-apps-lab`:
+  avatar telemetry schema and sensor bridge conventions.
+
+## Method 606: OBS/WebSocket compatibility shim for sensor ingress
+
+- What it is:
+  a local service mimics enough of an existing app protocol, such as OBS
+  WebSocket, to receive wearable data and forward it to VR/avatar protocols.
+- Good for:
+  reusing existing phone/watch apps, migration bridges, quick compatibility
+  adapters, and no-new-mobile-app workflows.
+- Why it matters:
+  protocol shims can unlock useful input sources without owning the whole
+  sensor capture stack.
+- Source evidence:
+  `HeartRateOnStream-OSC`.
+- Reusable core:
+  host a local WebSocket server, answer the source app's handshake/request
+  messages, parse the known update event, normalize latest data, and forward
+  multiple compatible avatar parameters.
+- Do not copy directly:
+  string-built JSON, hardcoded ports/request IDs, or no cancellation/reconnect
+  policy.
+- Strong references:
+  `Curtis-VL/HeartRateOnStream-OSC`.
+- Best fit for `VR-apps-lab`:
+  companion protocol bridges and compatibility adapters.
+
+## Method 607: Transport-isolated BLE/ANT wearable reader
+
+- What it is:
+  wearable transport code is isolated behind a reader loop while avatar
+  parameters are produced by a separate schema/output layer.
+- Good for:
+  BLE GATT monitors, BLE advertisement devices, ANT+ dongles, phone helpers,
+  and multi-source biometric tools.
+- Why it matters:
+  transport-specific failure modes should not leak into avatar parameter
+  schema or product UI.
+- Source evidence:
+  `HeartRateMonitorVRC`, `osc-hr-ble`, `vrchat_ant_hr`,
+  `ble-osc-heartrate`, and `OSC-VRChat-Feeder`.
+- Reusable core:
+  keep BLE/ANT scanning, connection, parsing, reconnect, and permission setup
+  separate from BPM normalization, digit splitting, connection booleans, and
+  OSC output.
+- Do not copy directly:
+  device-specific magic bytes, fixed manufacturer offsets, first-device-only
+  selection, or hidden USB/BLE permission prerequisites.
+- Strong references:
+  `DangerKiddy/HeartRateMonitorVRC`, `RedlineTriad/vrchat_ant_hr`,
+  `Naraenda/osc-hr-ble`, `Solexid/OSC-VRChat-Feeder`.
+- Best fit for `VR-apps-lab`:
+  biometric bridge transport matrices and failure-mode notes.
+
+## Method 608: Profile-driven phone sensor feeder to OSC
+
+- What it is:
+  a mobile companion maps multiple phone or wearable sensor inputs to OSC
+  parameters through user-editable profiles and normalization rules.
+- Good for:
+  phone-as-controller experiments, wearable bridges, avatar telemetry, and
+  quick sensor-to-parameter prototypes.
+- Why it matters:
+  profile schemas make one-off sensor bridges reusable across devices and
+  avatar parameters.
+- Source evidence:
+  `OSC-VRChat-Feeder`.
+- Reusable core:
+  model input type, root path, parameter name, value type, min/max, clamp and
+  normalization policy, persist profiles, and route BLE/phone sensor updates
+  through the same OSC sender.
+- Do not copy directly:
+  Mi Band magic bytes, bundled binaries, or old mobile permission assumptions.
+- Strong references:
+  `Solexid/OSC-VRChat-Feeder`.
+- Best fit for `VR-apps-lab`:
+  mobile sensor feeder and avatar telemetry experiments.
