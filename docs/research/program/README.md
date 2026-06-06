@@ -1505,3 +1505,31 @@ repeatable way.
 
 - `github-research-wave-211-backlog.md`
   Executed backlog for the Wave 211 pass.
+
+- `github-research-wave-212-plan.md`
+  Wave 212 research plan focused on shared-room WebXR/A-Frame presence, media,
+  and peer-adapter microprototypes.
+
+- `github-research-wave-212-backlog.md`
+  Executed backlog for the Wave 212 pass.
+
+- `github-research-wave-213-plan.md`
+  Wave 213 research plan focused on MRTK spatial UI, graphics, robotics, and
+  gaze extension nodes.
+
+- `github-research-wave-213-backlog.md`
+  Executed backlog for the Wave 213 pass.
+
+- `github-research-wave-214-plan.md`
+  Wave 214 research plan focused on VRChat/Udon menu package surfaces, world
+  admin, and creator prefabs.
+
+- `github-research-wave-214-backlog.md`
+  Executed backlog for the Wave 214 pass.
+
+- `github-research-wave-215-plan.md`
+  Wave 215 research plan focused on immersive media/audio substrates, spatial
+  renderers, and audio-reactive shader buses.
+
+- `github-research-wave-215-backlog.md`
+  Executed backlog for the Wave 215 pass.

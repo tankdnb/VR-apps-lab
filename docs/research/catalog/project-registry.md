@@ -2774,6 +2774,54 @@ Primary docs:
 - `kscalelabs/kbot_vr_teleop` - `Deepened in Wave 211 as WebXR headset frontend plus Python IK/UDP command sidecar with hand/controller tracking payloads, pause gates, throttling, kinematics feedback, convergence checks, and robot-schema caveats`
 - `open-thought/cambot` - `Deepened in Wave 211 as WebXR stereo camera teleop stack with HUD telemetry, WebSocket/WebRTC transport, RTT/backpressure, calibration, smoothing, workspace bounds, watchdog, pause/home safety, and hardware-specific thresholds`
 
+## 183. Shared-room WebXR/A-Frame presence, media, and peer-adapter microprototypes
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-212-shared-room-webxr-aframe-presence-webrtc-and-peer-adapter-microprototypes.md`
+- `../landscape/project-families.md`
+
+- `jure/wooglies` - `Studied in Wave 212 as browser WebXR shared-room prototype with Socket.IO room state, SnapshotInterpolation pose snapshots, simple-peer media streams, positional audio/analyser avatar reactivity, Twilio ICE, and experimental/old API caveats`
+- `danbuckland/aframe-socket-io` - `Studied in Wave 212 as A-Frame Socket.IO/WebRTC room prototype with server signaling, game/pose system, WebRTC media system, video-texture avatars, and old full-mesh/VR-limited caveats`
+- `Srushtika/realtime-multiplayer-webvr-aframe` - `Studied in Wave 212 as tiny Deepstream/A-Frame presence-record avatar sync sample with 100ms camera updates, presence subscribe, generated avatars, and obsolete hub/CDN caveats`
+- `RangerMauve/aframe-dat-peers-networking` - `Studied in Wave 212 as Beaker/datPeers A-Frame networking adapter with room/user messages, remote entity templates, changed-position sends, chat events, and obsolete datPeers caveats`
+
+## 184. MRTK spatial UI, graphics, robotics, and gaze extension nodes
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-213-mrtk-spatial-ui-graphics-robotics-and-gaze-extension-nodes.md`
+- `../landscape/project-families.md`
+
+- `MixedRealityToolkit/MixedRealityToolkit-Unity` - `Deepened in Wave 213 as MRTK3 package/contract baseline with XRI/OpenXR architecture, data binding/theming/list virtualization, StatefulInteractable/PressableButton state contracts, solver handlers, and accessibility subsystem caveats`
+- `microsoft/MixedReality-GraphicsTools-Unity` - `Studied in Wave 213 as MR visual-fidelity package with proximity lights, material animators, mesh instancing, text inversion utility, magnifier render features, and shader/package caveats`
+- `ms-iot/ros_msft_mrtk` - `Studied in Wave 213 as archived ROS2/MRTK HoloLens extension with ROS node singleton, lidar provider/renderer, QR spatial pinning service, hand-menu calibration, and old platform caveats`
+- `The-COGAIN-Association/EyeMRTK` - `Studied in Wave 213 as legacy gaze interaction toolkit with normalized ray sources, smoothing/saccade detection, InteractionRay events, dwell/confirmation states, Tobii/SMI/Pupil support, and Unity 2017/SDK caveats`
+
+## 185. VRChat/Udon menu package surfaces, world admin, and creator prefabs
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-214-vrchat-udon-menu-package-surfaces-world-admin-and-creator-prefabs.md`
+- `../landscape/project-families.md`
+
+- `Varneon/UdonEssentials` - `Deepened in Wave 214 as deprecated Udon prefab collection with event dispatcher, in-world console, playerlist/groups/music/settings utilities, runtime logging, and VUdon migration caveat`
+- `Varneon/VUdon` - `Deepened in Wave 214 as VUdon package-ecosystem index with Quick Menu, Menus, Logger, Playerlist, Event Dispatcher, Udonity, Common, and modular package-status framing`
+- `SylanTroh/GMMenu` - `Deepened in Wave 214 as VPM VRChat role/admin menu with VR/desktop activation, permissions, synced pings, teleport/undo/summon, watch camera, HUD modules, and optional audio-manager boundary`
+- `kurotori4423/KurotoriUdonMenu` - `Studied in Wave 214 as local extensible Udon menu with trigger/M-key activation, progress animation, tab generation, player teleporter, voice-range options, and language/older Udon caveats`
+
+## 186. Immersive media/audio substrates, spatial renderers, and audio-reactive shader buses
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-215-immersive-media-audio-substrates-libvlc-spatial-renderers-and-audiolink.md`
+- `../landscape/project-families.md`
+
+- `videolan/vlc-unity` - `Deepened in Wave 215 as LibVLCSharp/LibVLC Unity media substrate with central VLCMediaPlayer, mesh/UGUI texture helpers, Unity AudioSource callback bridge, 360/HDR/stream support, and native/licensing/platform caveats`
+- `videolan/libspatialaudio` - `Deepened in Wave 215 as spatial audio renderer substrate with unified Renderer for object/HOA/direct/binaural streams, HRTF/head orientation, gain interpolation, decorrelation, and DSP/licensing caveats`
+- `VoidXH/Cavern` - `Deepened in Wave 215 as C# immersive audio renderer with Listener/Source model, Unity AudioListener3D/AudioSource3D wrappers, filters/remapping/virtualization, and nonstandard license/performance caveats`
+- `llealloo/audiolink` - `Deepened in Wave 215 as VRChat/Unity audio-reactive data bus with GetOutputData sampling, CustomRenderTexture processing, global _AudioTexture shader API, controller sync, and shader/readback caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

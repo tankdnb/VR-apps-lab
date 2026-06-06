@@ -2180,6 +2180,49 @@ These are larger than a single repo and should guide the next research wave.
   VR utilities such as overlay automation, remote desktops, diagnostics, and
   device-control panels.
 
+### 165. `Shared-room WebXR/A-Frame presence and media adapter matrix`
+
+- Main entries:
+  `wooglies`, `aframe-socket-io`, `realtime-multiplayer-webvr-aframe`,
+  `aframe-dat-peers-networking`
+- Why it matters:
+  Wave 212 closed a useful source-level pass on small room adapters. A future
+  matrix should compare identity, join/leave, pose schemas, interpolation,
+  remote entity factories, media streams, transport adapters, cleanup, and old
+  API risks against Networked-AFrame and modern React/Three XR room stacks.
+
+### 166. `MRTK spatial UI package boundary and alternate-input matrix`
+
+- Main entries:
+  `MixedRealityToolkit-Unity`, `MixedReality-GraphicsTools-Unity`,
+  `ros_msft_mrtk`, `EyeMRTK`
+- Why it matters:
+  Wave 213 deepened interaction/data/visual/accessibility/service boundaries.
+  A future matrix should compare interactable state machines, data-bound lists,
+  visual shader feedback, solver placement, accessibility providers,
+  calibration hand menus, and gaze/dwell confirmation with non-MRTK VR menu
+  systems.
+
+### 167. `VRChat/Udon world menu package and operator-surface matrix`
+
+- Main entries:
+  `UdonEssentials`, `VUdon`, `GMMenu`, `KurotoriUdonMenu`
+- Why it matters:
+  Wave 214 deepened Udon menu and package surfaces. A future matrix should
+  compare activation gestures, hand/head placement, tab/page generation,
+  permission providers, player selectors, reversible actions, diagnostics
+  consoles, and prefab/package install boundaries.
+
+### 168. `Immersive media/audio substrate boundary matrix`
+
+- Main entries:
+  `vlc-unity`, `libspatialaudio`, `Cavern`, `AudioLink`
+- Why it matters:
+  Wave 215 deepened media/audio substrates. A future matrix should compare
+  decoder ownership, render-texture output, audio callback bridges,
+  object/HOA/binaural renderer APIs, listener/source wrappers, shader-readable
+  audio buses, platform constraints, and licensing risk.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2332,6 +2375,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 146. `XR glasses protocol and head-tracked desktop matrix across WebHID, native HID, calibration, and drift UX`
 147. `Camera inference to avatar/tracker matrix across VRCFT, VRM, Unity named pipes, and virtual trackers`
 148. `VR/WebXR control surface safety matrix across modes, HUDs, sidecars, telemetry, and watchdogs`
+149. `Shared-room WebXR/A-Frame presence and media adapter matrix`
+150. `MRTK spatial UI package boundary and alternate-input matrix`
+151. `VRChat/Udon world menu package and operator-surface matrix`
+152. `Immersive media/audio substrate boundary matrix`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

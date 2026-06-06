@@ -207,6 +207,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-209-xr-glasses-webhid-protocol-and-head-tracked-desktop-helpers.md`
 - `landscape/vr-projects-wave-210-mediapipe-avatar-tracking-sidecars-vrm-and-full-body-bridges.md`
 - `landscape/vr-projects-wave-211-vr-teleoperation-control-frontends-robot-bridges-and-safety-huds.md`
+- `landscape/vr-projects-wave-212-shared-room-webxr-aframe-presence-webrtc-and-peer-adapter-microprototypes.md`
+- `landscape/vr-projects-wave-213-mrtk-spatial-ui-graphics-robotics-and-gaze-extension-nodes.md`
+- `landscape/vr-projects-wave-214-vrchat-udon-menu-package-surfaces-world-admin-and-creator-prefabs.md`
+- `landscape/vr-projects-wave-215-immersive-media-audio-substrates-libvlc-spatial-renderers-and-audiolink.md`
 
 ## Archive Navigation
 

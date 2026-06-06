@@ -12584,3 +12584,148 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   VR control surfaces, remote-device helpers, operator HUDs, safety-gated
   command sidecars, and command/status/error documentation templates.
+
+## Method 657: Browser XR shared-room presence, pose, and media adapter
+
+- What it is:
+  a browser or A-Frame XR room keeps membership and pose state explicit, creates
+  remote entities from presence events, and binds optional WebRTC/media streams
+  to spatial audio, video surfaces, or avatar feedback.
+- Good for:
+  shared WebXR rooms, remote assistance utilities, multiplayer diagnostics,
+  shared creator tools, browser-native control rooms, and lightweight social
+  prototypes.
+- Why it matters:
+  many useful VR utilities need "another person/device is here" before they
+  need a full social platform. The reusable value is the room/presence/media
+  adapter boundary.
+- Source evidence:
+  `jure/wooglies`, `danbuckland/aframe-socket-io`,
+  `Srushtika/realtime-multiplayer-webvr-aframe`, and
+  `RangerMauve/aframe-dat-peers-networking`.
+- Reusable core:
+  define room id and user id, emit join/leave, publish head and hand/controller
+  pose fields, interpolate or send only changed pose, create/remove remote
+  entities, relay or negotiate media streams, attach streams to spatial audio
+  or video surfaces, and clean up stale peers.
+- Do not copy directly:
+  obsolete Deepstream hubs, Beaker/datPeers APIs, old A-Frame/WebRTC versions,
+  Twilio-specific ICE setup, full-mesh media assumptions, or prototype trust
+  models.
+- Strong references:
+  `jure/wooglies` for P2P positional audio plus interpolated pose and
+  `danbuckland/aframe-socket-io` for separated game/media/signaling systems.
+- Maturity:
+  medium method; strong architecture donor, old implementation details need
+  modernization.
+- Best fit for `VR-apps-lab`:
+  browser-native shared utility rooms, remote-presence overlays, peer-assisted
+  diagnostics, and multi-user creator surfaces.
+
+## Method 658: Spatial UI package boundary with interaction, data, visual, and accessibility layers
+
+- What it is:
+  spatial UI is built as cooperating layers: input/interactable state,
+  data-binding/list consumers, placement solvers, shader/material feedback,
+  accessibility providers, and optional extension services.
+- Good for:
+  VR settings panels, menus, slates, dashboards, calibration surfaces,
+  accessible controls, gaze/dwell input, robotics or device panels, and
+  engine-neutral UI architecture studies.
+- Why it matters:
+  VR utility panels become fragile when button logic, visuals, placement, data,
+  and accessibility are all encoded in one component.
+- Source evidence:
+  `MixedRealityToolkit/MixedRealityToolkit-Unity`,
+  `microsoft/MixedReality-GraphicsTools-Unity`, `ms-iot/ros_msft_mrtk`, and
+  `The-COGAIN-Association/EyeMRTK`.
+- Reusable core:
+  model select/toggle/dwell/press state separately from visuals, bind panel
+  lists through data sources and pooled item consumers, place panels through
+  solver targets and offsets, expose visual feedback through material/shader
+  services, keep accessibility in a provider subsystem, and normalize alternate
+  input such as gaze before dispatching UI events.
+- Do not copy directly:
+  Unity/MRTK package names, old HoloLens/SteamVR SDK assumptions, generated
+  shader animator code without platform review, or experimental data-binding
+  APIs without version pinning.
+- Strong references:
+  MRTK3 for interaction/data/solver/accessibility boundaries and Graphics Tools
+  for visual-material feedback separation.
+- Maturity:
+  strong method; implementation must be adapted per engine.
+- Best fit for `VR-apps-lab`:
+  future spatial UI prototypes, accessible menus, engine-neutral interaction
+  contracts, and calibration/service panels.
+
+## Method 659: VRChat/Udon world menu package surface with prefab-state contracts
+
+- What it is:
+  a world utility menu exposes actions through a prefab or package surface with
+  explicit activation, placement, tabs/pages, player selection, permission
+  checks, module dispatch, feedback, and optional diagnostics.
+- Good for:
+  VRChat world tools, creator utility prefabs, admin/GM panels, local settings
+  menus, player utilities, runtime consoles, and engine-neutral command-menu
+  references.
+- Why it matters:
+  VR command surfaces need safe lifecycle and state contracts. Otherwise strong
+  actions such as teleport, summon, voice changes, or diagnostics become hidden
+  and brittle.
+- Source evidence:
+  `Varneon/UdonEssentials`, `Varneon/VUdon`, `SylanTroh/GMMenu`, and
+  `kurotori4423/KurotoriUdonMenu`.
+- Reusable core:
+  define desktop and VR activation gestures, place and scale the menu relative
+  to player/head/hand state, generate pages or tabs from configured menu items,
+  route actions through module references, gate actions through permissions or
+  roles, expose selected-player state, provide HUD/log feedback, and keep
+  package or prefab install boundaries clear.
+- Do not copy directly:
+  roleplay-specific teleport/summon semantics, deprecated UdonEssentials APIs,
+  world-admin permissions without consent/safety review, or VRChat-only voice
+  controls as generic behavior.
+- Strong references:
+  `SylanTroh/GMMenu` for permissioned operator actions and
+  `kurotori4423/KurotoriUdonMenu` for small local tabbed menu lifecycle.
+- Maturity:
+  strong product-pattern method; implementation is platform-specific.
+- Best fit for `VR-apps-lab`:
+  command menus, admin/control surfaces, local utility panels, and package
+  decomposition decisions.
+
+## Method 660: Immersive media/audio substrate boundary for VR surfaces
+
+- What it is:
+  media and audio functionality is split into substrate layers: decode or DSP
+  backend, texture/render-surface output, engine audio bridge, spatial renderer,
+  listener/source wrapper, shader-readable analysis bus, and user controls.
+- Good for:
+  VR video players, 360/HDR/media surfaces, spatial audio tools, audio-reactive
+  worlds, shader visualizers, diagnostics, and media-backed overlays.
+- Why it matters:
+  VR media tools fail when playback, projection, audio routing, shader data,
+  UI controls, and platform risk are undocumented inside one component.
+- Source evidence:
+  `videolan/vlc-unity`, `videolan/libspatialaudio`, `VoidXH/Cavern`, and
+  `llealloo/audiolink`.
+- Reusable core:
+  own backend lifecycle separately, publish textures or render targets through
+  display helpers, route audio through engine callbacks when needed, expose
+  object/HOA/binaural renderer configuration and head orientation, wrap spatial
+  audio in listener/source components, publish audio analysis once through a
+  global texture or bus, and document platform/license/performance constraints.
+- Do not copy directly:
+  native plugin packaging, codec or DSP license assumptions, fixed shader
+  texture layouts, channel layouts, buffer sizes, or async readback behavior
+  without target-specific testing.
+- Strong references:
+  `videolan/vlc-unity` for media backend to Unity surface/audio bridge,
+  `libspatialaudio` for renderer API shape, `Cavern` for listener/source
+  wrappers, and `AudioLink` for global audio-reactive shader bus design.
+- Maturity:
+  strong substrate method; product implementation needs platform and license
+  review.
+- Best fit for `VR-apps-lab`:
+  immersive media players, audio-reactive tools, spatial audio diagnostics,
+  overlay media surfaces, and media/audio substrate comparison matrices.

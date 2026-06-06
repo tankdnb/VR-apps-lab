@@ -6249,6 +6249,139 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - command/status/error sequence documentation
 - adapting teleop safety lessons to non-robot VR utilities
 
+## Family 191: Shared-room WebXR/A-Frame presence, media, and peer adapters
+
+This family covers small browser and A-Frame projects that prove shared-room
+state, remote avatars, media streams, and transport adapters without becoming a
+full social platform.
+
+| Project | Status | Notes |
+|---|---|---|
+| `jure/wooglies` | Studied in Wave 212 | React/Three/WebXR room with Socket.IO snapshots, SnapshotInterpolation, simple-peer signaling, positional audio, and analyser-driven avatar behavior |
+| `danbuckland/aframe-socket-io` | Studied in Wave 212 | A-Frame room prototype split into server signaling, game/pose system, WebRTC media system, and video-stream component |
+| `Srushtika/realtime-multiplayer-webvr-aframe` | Studied in Wave 212 | minimal Deepstream presence-record avatar sync with 100ms camera pose updates and generated avatars |
+| `RangerMauve/aframe-dat-peers-networking` | Studied in Wave 212 | Beaker/datPeers adapter that maps room/user messages into A-Frame events and remote template entities |
+
+### Consolidation note
+
+This family matters because browser XR utilities can reuse the same small
+presence/media boundary across social rooms, remote assistance tools, shared
+diagnostics, and multi-user creator surfaces:
+
+- room identity and join/leave events
+- explicit head/hand/controller pose schema
+- interpolation or changed-state sends
+- remote entity factories and cleanup
+- WebRTC or media-stream attachment
+- transport adapter APIs that survive platform changes
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- shared-room payload matrices
+- WebXR remote-presence utility shells
+- P2P audio/video plus pose prototypes
+- transport-neutral peer adapter contracts
+
+## Family 192: MRTK spatial UI, graphics, robotics, and gaze extension nodes
+
+This family covers MRTK and adjacent extension projects whose reusable value is
+the split between interaction state, data binding, visual feedback, placement,
+accessibility, services, and alternate input.
+
+| Project | Status | Notes |
+|---|---|---|
+| `MixedRealityToolkit/MixedRealityToolkit-Unity` | Deepened in Wave 213 | MRTK3 package/contract baseline with stateful interactables, pressable buttons, data binding, pooled lists, solvers, and accessibility subsystem |
+| `microsoft/MixedReality-GraphicsTools-Unity` | Studied in Wave 213 | visual-feedback substrate with proximity lights, material animators, mesh instancing, text inversion, and magnifier utilities |
+| `ms-iot/ros_msft_mrtk` | Studied in Wave 213 | archived ROS2/MRTK extension with node singleton, lidar provider/renderer split, QR spatial pinning, and hand-menu calibration |
+| `The-COGAIN-Association/EyeMRTK` | Studied in Wave 213 | legacy gaze toolkit with normalized rays, smoothing/saccade detection, interaction events, dwell, and confirmation paths |
+
+### Consolidation note
+
+This family matters because spatial UI gets brittle when every panel owns every
+concern. The reusable boundary is:
+
+- input/interactable state machine
+- visual shader/material feedback
+- data source and list virtualization
+- solver/placement tracking
+- accessibility provider
+- extension service and calibration action
+- gaze or alternate-input normalization
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- engine-neutral spatial UI contracts
+- accessible menu and panel patterns
+- data-bound VR settings/list panels
+- calibration hand-menu references
+- gaze/dwell confirmation flows
+
+## Family 193: VRChat/Udon menu package surfaces, world admin, and creator prefabs
+
+This family covers VRChat/Udon projects that expose local menus, admin/GM
+surfaces, runtime diagnostics, player utilities, permission gates, and modular
+package ecosystems.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Varneon/UdonEssentials` | Deepened in Wave 214 | deprecated but source-rich prefab collection with event dispatcher, in-world console, playerlist, groups, music, and settings utilities |
+| `Varneon/VUdon` | Deepened in Wave 214 | modular VPM ecosystem index for Quick Menu, Menus, Logger, Playerlist, Event Dispatcher, Common, Roles, and other utility packages |
+| `SylanTroh/GMMenu` | Deepened in Wave 214 | role/admin menu with VR/desktop activation, permissions, synced pings, teleport/undo/summon, watch camera, HUD modules, and settings |
+| `kurotori4423/KurotoriUdonMenu` | Studied in Wave 214 | local extensible tabbed menu with trigger/M-key activation, progress animation, player teleporter, and voice-range options |
+
+### Consolidation note
+
+This family matters because useful VR command menus need more than buttons:
+
+- activation gesture and placement
+- tabs/pages/options
+- player target selection
+- permission and role gates
+- runtime diagnostics/logging
+- action dispatch and reversible operations
+- package/prefab install boundaries
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- generic VR command-menu checklists
+- permissioned operator HUDs
+- in-world diagnostics prefabs
+- small package versus standalone-app decision rules
+
+## Family 194: Immersive media/audio substrates, spatial renderers, and audio-reactive buses
+
+This family covers lower-level media and audio projects that expose reusable
+substrate boundaries for decode, texture output, audio callbacks, spatial
+rendering, listener/source models, and shader-readable analysis buses.
+
+| Project | Status | Notes |
+|---|---|---|
+| `videolan/vlc-unity` | Deepened in Wave 215 | LibVLC/LibVLCSharp Unity bridge with central player lifecycle, render texture updates, mesh/UGUI display helpers, and Unity audio callback routing |
+| `videolan/libspatialaudio` | Deepened in Wave 215 | spatial renderer API for object, HOA, direct-speaker, binaural, HRTF, head orientation, and output layout flows |
+| `VoidXH/Cavern` | Deepened in Wave 215 | C# immersive audio framework with Listener/Source model, Unity wrappers, filters, remapping, virtualization, and room-correction concepts |
+| `llealloo/audiolink` | Deepened in Wave 215 | VRChat/Unity audio-reactive data bus with sampled audio chunks, CustomRenderTexture processing, global shader texture, and shader include API |
+
+### Consolidation note
+
+This family matters because media and audio tools should make substrate
+ownership explicit:
+
+- native decoder or renderer backend
+- texture/render-surface output
+- audio callback or engine-audio bridge
+- object/HOA/binaural renderer configuration
+- listener/source component wrappers
+- shader-readable analysis bus
+- platform, license, and performance caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- media/audio substrate comparison matrices
+- Unity and browser media-surface boundaries
+- spatial audio renderer API studies
+- audio-reactive global data bus patterns
+- license/platform risk notes for media tools
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

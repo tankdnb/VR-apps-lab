@@ -920,6 +920,24 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on VR/WebXR teleoperation control
   frontends, robot bridges, operator HUDs, command sidecars, and safety gates.
 
+- `vr-projects-wave-212-shared-room-webxr-aframe-presence-webrtc-and-peer-adapter-microprototypes.md`
+  Next GitHub discovery wave focused on shared-room WebXR/A-Frame presence,
+  pose schemas, WebRTC media, positional audio, and peer-adapter boundaries.
+
+- `vr-projects-wave-213-mrtk-spatial-ui-graphics-robotics-and-gaze-extension-nodes.md`
+  Next GitHub discovery wave focused on MRTK spatial UI contracts, graphics
+  feedback, robotics extension services, calibration, accessibility, and gaze
+  input.
+
+- `vr-projects-wave-214-vrchat-udon-menu-package-surfaces-world-admin-and-creator-prefabs.md`
+  Next GitHub discovery wave focused on VRChat/Udon local menus, admin
+  surfaces, creator prefabs, permission gates, player actions, diagnostics, and
+  package boundaries.
+
+- `vr-projects-wave-215-immersive-media-audio-substrates-libvlc-spatial-renderers-and-audiolink.md`
+  Next GitHub discovery wave focused on LibVLC Unity bridges, spatial audio
+  renderers, listener/source wrappers, and audio-reactive shader buses.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

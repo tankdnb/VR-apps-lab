@@ -156,6 +156,11 @@ These are the clearest current product and research lines:
    native protocol readers, head-tracked desktop helpers, MediaPipe/VRCFT/VRM
    mapping sidecars, AI full-body tracking fusion, and teleoperation-inspired
    operator HUDs, command sidecars, and safety gates.
+31. `Shared WebXR rooms, MRTK spatial UI contracts, Udon menus, and media/audio substrates`
+   the repository now has fresh coverage of browser XR presence and P2P media
+   adapters, MRTK interaction/data/visual/accessibility boundaries, VRChat/Udon
+   menu and package surfaces, and immersive media/audio substrate patterns for
+   LibVLC, spatial renderers, listener/source wrappers, and shader audio buses.
 
 ## Most useful current docs
 
@@ -279,6 +284,10 @@ instead of full history:
 - `landscape/vr-projects-wave-209-xr-glasses-webhid-protocol-and-head-tracked-desktop-helpers.md`
 - `landscape/vr-projects-wave-210-mediapipe-avatar-tracking-sidecars-vrm-and-full-body-bridges.md`
 - `landscape/vr-projects-wave-211-vr-teleoperation-control-frontends-robot-bridges-and-safety-huds.md`
+- `landscape/vr-projects-wave-212-shared-room-webxr-aframe-presence-webrtc-and-peer-adapter-microprototypes.md`
+- `landscape/vr-projects-wave-213-mrtk-spatial-ui-graphics-robotics-and-gaze-extension-nodes.md`
+- `landscape/vr-projects-wave-214-vrchat-udon-menu-package-surfaces-world-admin-and-creator-prefabs.md`
+- `landscape/vr-projects-wave-215-immersive-media-audio-substrates-libvlc-spatial-renderers-and-audiolink.md`
 
 ## Strong donor clusters right now
 
@@ -781,6 +790,12 @@ the strongest current clusters:
   loaders, declarative component primitives, scene physics driver boundaries,
   Godot tracker/recorder bridges, modular toolkit nodes, React/Three XR store
   architecture, spatial UI layout/input, and interaction-lab shells.
+- `wooglies`, `aframe-socket-io`, `MixedRealityToolkit-Unity`,
+  `MixedReality-GraphicsTools-Unity`, `GMMenu`, `KurotoriUdonMenu`,
+  `vlc-unity`, `libspatialaudio`, `Cavern`, `AudioLink`
+  for shared-room presence/media adapters, layered spatial UI packages,
+  permissioned in-world command menus, native media bridges, spatial audio
+  renderer APIs, and global audio-reactive shader buses.
 
 ## Highest-value next follow-up passes
 
@@ -925,6 +940,10 @@ directions:
 136. `XR glasses protocol and head-tracked desktop matrix across WebHID, native HID, calibration, and drift UX`
 137. `Camera inference to avatar/tracker matrix across VRCFT, VRM, Unity named pipes, and virtual trackers`
 138. `VR/WebXR control surface safety matrix across modes, HUDs, sidecars, telemetry, and watchdogs`
+139. `Shared-room WebXR/A-Frame presence and media adapter matrix`
+140. `MRTK spatial UI package boundary and alternate-input matrix`
+141. `VRChat/Udon world menu package and operator-surface matrix`
+142. `Immersive media/audio substrate boundary matrix`
 
 ## Current repository-maintenance priorities
 
