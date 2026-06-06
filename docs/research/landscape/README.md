@@ -842,6 +842,25 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on Twitch chat, channel points, audience
   events, moderation gates, action queues, and VRChat OSC command surfaces.
 
+- `vr-projects-wave-196-vrchat-chatbox-status-media-lyrics-and-ide-presence-micro-composers.md`
+  Next GitHub discovery wave focused on IDE/media/lyrics/speech/MOTD chatbox
+  composers, provider boundaries, templates, cadence, and privacy controls.
+
+- `vr-projects-wave-197-vrchat-audio-reactive-osc-audiolink-soundboard-and-system-audio-control-sidecars.md`
+  Next GitHub discovery wave focused on audio loopback, avatar audio
+  reactivity, OSCQuery soundboards, media controls, tactile audio bridges, and
+  DSP/instrument sidecars.
+
+- `vr-projects-wave-198-xsoverlay-discord-and-remote-notification-protocol-bridges.md`
+  Next GitHub discovery wave focused on XSOverlay notification payloads,
+  Discord client hooks, WebSocket/UDP transports, and authenticated remote
+  proxies.
+
+- `vr-projects-wave-199-vrchat-avatar-remote-control-toy-automation-time-and-smart-light-sidecars.md`
+  Next GitHub discovery wave focused on remote avatar boards, automation
+  sequencers, generic OSC harnesses, physical-output bridge safety, web toys,
+  and external state micro-bridges.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

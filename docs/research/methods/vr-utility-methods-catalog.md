@@ -11687,3 +11687,258 @@ When a new utility idea appears:
   useful micro-pattern when wrapped in safety gates.
 - Best fit for `VR-apps-lab`:
   streamer command deck and timed OSC action baselines.
+
+## Method 628: Provider-backed chatbox status composer with templates, cropping, and cadence
+
+- What it is:
+  a VRChat chatbox sidecar collects status from one or more providers, renders
+  it through a bounded template, applies privacy/cropping rules, and sends at a
+  controlled cadence.
+- Good for:
+  media status, IDE presence, lyrics, system telemetry, active-window status,
+  heart rate, speech translation, and compact availability indicators.
+- Why it matters:
+  the hard part is not sending OSC; it is preventing stale, spammy, too-long,
+  or privacy-leaking messages.
+- Source evidence:
+  `VRChatStatusTask`, `vrc-osc-mpris`, `vrchat-osc-windows-media`,
+  `sillyosc`, `mpd-vrchat-osc`, `VRC-Lyrics`, and `VRCTalk`.
+- Reusable core:
+  isolate each source as a provider, normalize source fields, render through a
+  user-visible template, crop or omit sensitive fields, debounce unchanged
+  output, send at a bounded cadence, and clear or stop the chatbox output when
+  disabled.
+- Do not copy directly:
+  raw editor lines, active window names, speech transcripts, cloud credentials,
+  or fixed message formats without user control.
+- Strong references:
+  `AtomikkuLabs/VRC-Lyrics`, `Null-K/VRChatStatusTask`,
+  `KannaCS/VRCTalk`, `lexiuwu71/sillyosc`.
+- Maturity:
+  strong reusable method.
+- Best fit for `VR-apps-lab`:
+  chatbox composer contract, privacy matrix, and status sidecar prototypes.
+
+## Method 629: Plugin or module fan-in chatbox composer
+
+- What it is:
+  a chatbox host loads small modules that each return optional text, then joins
+  their outputs into one bounded message.
+- Good for:
+  MOTD/status tools, extensible chatbox dashboards, AFK/status modules, media
+  status, PC stats, and local custom scripts.
+- Why it matters:
+  plugin fan-in lets tiny utility ideas compose without turning the repository
+  into one monolithic status app.
+- Source evidence:
+  `kotleni/vrchat-osc-motd`, with comparison value from `RustyChatBox` and
+  `VRChat-OSC-ChatBox`.
+- Reusable core:
+  define a plugin lifecycle, load enabled modules, collect non-empty outputs,
+  apply per-module and global length policy, join messages deterministically,
+  and route through one OSC sender with clear logging.
+- Do not copy directly:
+  unsandboxed dynamic plugin loading, fixed ports, or plugins that expose
+  sensitive data without a permission model.
+- Strong references:
+  `kotleni/vrchat-osc-motd`.
+- Maturity:
+  promising local-extension method.
+- Best fit for `VR-apps-lab`:
+  modular status/composer sidecars and plugin trust policy.
+
+## Method 630: Audio loopback to normalized avatar parameters
+
+- What it is:
+  a sidecar captures system audio, computes normalized audio features, smooths
+  them, and sends avatar parameters only when values materially change.
+- Good for:
+  external AudioLink-style tools, music-reactive avatars, volume/direction
+  parameters, performer utilities, and visualizers.
+- Why it matters:
+  VRChat avatar parameters need bounded, smoothed, low-spam values instead of
+  raw audio-rate data.
+- Source evidence:
+  `VRC-OSC-Audio-Reaction` and `VRC-Visualizer`.
+- Reusable core:
+  capture loopback or input audio, compute volume/band/direction features,
+  smooth and clamp values, apply a minimum precision floor if needed, threshold
+  unchanged sends, and document avatar-side parameter contracts.
+- Do not copy directly:
+  hardcoded devices, high-frequency audio-callback sends, telemetry defaults,
+  or Windows-only assumptions as the only backend.
+- Strong references:
+  `Codel1417/VRC-OSC-Audio-Reaction`, `FreneticFurry/VRC-Visualizer`.
+- Maturity:
+  strong method candidate.
+- Best fit for `VR-apps-lab`:
+  external audio-reactivity and AudioLink-style sidecar design.
+
+## Method 631: Avatar-parameter triggered local soundpack with OSCQuery discovery
+
+- What it is:
+  a local sidecar advertises sound trigger parameters, plays local one-shot or
+  looping audio when VRChat toggles them, and supports soundpack import/export.
+- Good for:
+  local soundboards, avatar-triggered SFX, stream companion tools, accessibility
+  audio cues, and debug packs.
+- Why it matters:
+  OSCQuery reduces manual setup friction and soundpacks make local audio
+  utilities portable.
+- Source evidence:
+  `octalmage/oscsound`.
+- Reusable core:
+  model sounds as name, parameter, path, type, and volume; advertise
+  parameters via OSCQuery; trigger one-shots on rising edges; start/stop loops
+  on boolean state; preview locally; and import/export packs with a manifest.
+- Do not copy directly:
+  assumptions that other users hear local playback, untrusted soundpack paths,
+  or missing rate limits.
+- Strong references:
+  `octalmage/oscsound`.
+- Maturity:
+  strong product/method donor.
+- Best fit for `VR-apps-lab`:
+  OSCQuery-aware soundboard and local asset pack patterns.
+
+## Method 632: Avatar menu to OS/media-control command bridge
+
+- What it is:
+  avatar boolean parameters are mapped to local operating-system commands such
+  as media keys, keyboard actions, or small automation commands.
+- Good for:
+  in-VR media controls, accessibility shortcuts, desktop automation, recording
+  controls, and utility toggles.
+- Why it matters:
+  many useful VR utilities are just safe bridges from avatar/menu state to
+  local OS actions.
+- Source evidence:
+  `vrc-osc-audio-controls` and `vrchat-osc-automator`.
+- Reusable core:
+  listen for explicit command parameters, act on rising or bounded values,
+  map only to visible allowlisted commands, debounce repeated sends, expose a
+  reset/stop path, and make dangerous OS automation opt-in.
+- Do not copy directly:
+  fragile OSC string parsing, broad shell execution, or hidden command maps.
+- Strong references:
+  `shadorki/vrc-osc-audio-controls`, `njm2360/vrchat-osc-automator`.
+- Maturity:
+  useful micro-utility method.
+- Best fit for `VR-apps-lab`:
+  safe in-VR local control surfaces.
+
+## Method 633: XSOverlay notification bridge with Discord client hooks
+
+- What it is:
+  a Discord client hook normalizes notification events and forwards them to an
+  existing VR overlay host as structured notification payloads.
+- Good for:
+  VR notifications, Discord-in-headset utilities, overlay communication
+  surfaces, and notification routing sidecars.
+- Why it matters:
+  user-facing notification quality depends on filtering, context, payload
+  fields, and transport compatibility.
+- Source evidence:
+  `xsOverlayVencord`, `XSOverlay-BetterDiscord`,
+  `XSOverlay-Discord-Notifications`, and
+  `XSOverlay-BetterDiscord-Notifications`.
+- Reusable core:
+  filter self/bot/muted messages, preserve DM/guild/channel/call context,
+  normalize embeds/stickers/attachments/mentions, fetch or omit icons based on
+  privacy settings, build the overlay notification payload, and send through
+  WebSocket or UDP transport.
+- Do not copy directly:
+  Discord client internals, stale mod APIs, broad message exposure, or image
+  fetches without privacy controls.
+- Strong references:
+  `nyakowint/xsOverlayVencord`, `Eidenz/XSOverlay-BetterDiscord`.
+- Maturity:
+  useful but compatibility-sensitive.
+- Best fit for `VR-apps-lab`:
+  overlay notification bridge and message-normalization matrices.
+
+## Method 634: Authenticated remote notification proxy into an existing VR overlay host
+
+- What it is:
+  a local proxy accepts remote notification requests with authentication and
+  forwards validated payloads to an overlay host's local protocol.
+- Good for:
+  server alerts, bots, CI notifications, stream events, home automation, and
+  phone-to-VR notifications.
+- Why it matters:
+  remote notification ingress crosses a network trust boundary and needs
+  explicit auth, rate limiting, health checks, and payload validation.
+- Source evidence:
+  `GreyFoxx74/xsoverlay-proxy`.
+- Reusable core:
+  require a non-default secret, expose a health endpoint, accept a bounded
+  notification schema, apply rate limits, forward to local overlay UDP or
+  WebSocket, provide a CLI sender, and document firewall/TLS assumptions.
+- Do not copy directly:
+  self-signed cert shortcuts, verify-disabled clients, public bind defaults,
+  or plaintext secrets without rotation.
+- Strong references:
+  `GreyFoxx74/xsoverlay-proxy`.
+- Maturity:
+  strong method with security review required.
+- Best fit for `VR-apps-lab`:
+  secure event-to-overlay proxy design.
+
+## Method 635: Avatar remote board and automation sender with named actions
+
+- What it is:
+  a sidecar exposes named controls or sequences that send typed VRChat OSC
+  actions through an authenticated board or macro interface.
+- Good for:
+  remote avatar control, accessibility panels, streamer/admin controls,
+  avatar testing, macro decks, and collaborative control surfaces.
+- Why it matters:
+  remote control is useful only when it is scoped, typed, authenticated,
+  resettable, and visible to the user.
+- Source evidence:
+  `VRC-Avatar-Remote-Server`, `vrchat-osc-automator`,
+  `SimpleVRChatOSCSender`, and `VRChat-OSC-Toys`.
+- Reusable core:
+  model controls as typed actions, validate target avatar and parameter type,
+  require auth or local trust, send button/toggle/range or sequence actions,
+  mirror state back to clients, reset values or held inputs on completion and
+  interruption, and support import/export only through validation.
+- Do not copy directly:
+  unauthenticated internet-exposed boards, unsafe OS input automation, or
+  profiles that can execute hidden commands.
+- Strong references:
+  `jangxx/VRC-Avatar-Remote-Server`,
+  `njm2360/vrchat-osc-automator`,
+  `t-34400/SimpleVRChatOSCSender`.
+- Maturity:
+  strong method family.
+- Best fit for `VR-apps-lab`:
+  secure remote-control boards and OSC automation sequence schemas.
+
+## Method 636: External device/status to avatar parameter micro-bridge
+
+- What it is:
+  a small sidecar polls or reads external state and publishes normalized avatar
+  parameters only when needed.
+- Good for:
+  time, smart-home state, light color, device battery/status, weather, heart
+  rate, sensor values, and compact avatar-driven environmental effects.
+- Why it matters:
+  micro-bridges are valuable when their parameter contract is explicit and
+  their credential/polling behavior is safe.
+- Source evidence:
+  `OSCTimeSender`, `vrchat-light-sync`, with comparison to earlier sensor and
+  device-status waves.
+- Reusable core:
+  define a tiny parameter schema, read external state, normalize values to
+  VRChat-friendly bool/int/float/string fields, poll at a bounded cadence,
+  send only on change when possible, and store credentials safely.
+- Do not copy directly:
+  fixed paths/ports, plaintext bearer tokens, panic-on-network-failure loops,
+  or high-frequency polling of remote services.
+- Strong references:
+  `hrolfurgylfa/vrchat-light-sync`, `TheUnifox/OSCTimeSender`.
+- Maturity:
+  useful micro-utility method.
+- Best fit for `VR-apps-lab`:
+  device/status bridge schema and small utility prototypes.

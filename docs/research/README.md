@@ -191,6 +191,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-193-vrchat-osc-physical-output-safety-and-device-control-bridge-variants.md`
 - `landscape/vr-projects-wave-194-vrchat-midi-dmx-piano-and-live-performance-control-bridges.md`
 - `landscape/vr-projects-wave-195-twitch-audience-events-to-vrchat-osc-control-surfaces.md`
+- `landscape/vr-projects-wave-196-vrchat-chatbox-status-media-lyrics-and-ide-presence-micro-composers.md`
+- `landscape/vr-projects-wave-197-vrchat-audio-reactive-osc-audiolink-soundboard-and-system-audio-control-sidecars.md`
+- `landscape/vr-projects-wave-198-xsoverlay-discord-and-remote-notification-protocol-bridges.md`
+- `landscape/vr-projects-wave-199-vrchat-avatar-remote-control-toy-automation-time-and-smart-light-sidecars.md`
 
 ## Archive Navigation
 

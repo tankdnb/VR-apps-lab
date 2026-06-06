@@ -2537,6 +2537,67 @@ Primary docs:
 - `Maikatura/LucentOSC` - `Already studied as native C++/ImGui Twitch/Discord/VRChat command app with Twitch IRC client, VRChat command classes, movement/look/parameter/avatar/speak commands, and broad command-tree reference value`
 - `exmello/RizumuBot` - `Already studied as C# Twitch IRC bot with bot/self filtering, camera command aliases, chat replies, timed OSC float pulses, and narrow camera-control donor value`
 
+## 167. VRChat chatbox status, media, lyrics, IDE presence, and MOTD micro-composers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-196-vrchat-chatbox-status-media-lyrics-and-ide-presence-micro-composers.md`
+- `../landscape/project-families.md`
+
+- `Null-K/VRChatStatusTask` - `Already studied as IntelliJ IDE presence to VRChat chatbox with project/file/error/warning/uptime/line placeholders, scheduled sends, cropping, settings persistence, and privacy caveats`
+- `bunboop/vrc-osc-mpris` - `Already studied as Rust/Linux MPRIS now-playing chatbox sender with TOML config, small-bubble formatting, playback progress fields, and no-player loop caveat`
+- `Auzlex/vrchat-osc-windows-media` - `Already studied as Python Windows Media Controls chatbox bridge with playback-type filtering, duplicate-send gate, paused/no-media messages, and bundled-artifact caveat`
+- `lexiuwu71/sillyosc` - `Already studied as WPF status composer for media, time, system stats, chatbox output, and Discord RPC with process-title/privacy caveats`
+- `lexiuwu71/mpd-vrchat-osc` - `Already studied as tiny Python MPD now-playing and remaining-time chatbox sender baseline`
+- `AtomikkuLabs/VRC-Lyrics` - `Already studied as Flet playback/lyrics provider pipeline with worker queues, Spotify/Windows playback, LRCLib/Spotify lyrics, chatbox/parameter OSC managers, and credential/privacy caveats`
+- `kotleni/vrchat-osc-motd` - `Already studied as TypeScript plugin fan-in chatbox composer with dynamic plugins for MOTD/AFK/PC stats/Spotify, output joining, fixed port, and plugin-trust caveat`
+- `KannaCS/VRCTalk` - `Already studied as Tauri/Rust/TypeScript speech recognition and translation chatbox sidecar with WebSpeech/Whisper providers, mute listener, typing indicator, translation retry, and cloud/privacy caveats`
+
+## 168. VRChat audio-reactive OSC, AudioLink-style, soundboard, and audio-control sidecars
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-197-vrchat-audio-reactive-osc-audiolink-soundboard-and-system-audio-control-sidecars.md`
+- `../landscape/project-families.md`
+
+- `shadorki/vrc-osc-audio-controls` - `Already studied as Go avatar-parameter to Windows media-key bridge with play/pause, next, previous, mute handlers, SendKeys backend, and debounce/parsing caveats`
+- `Codel1417/VRC-OSC-Audio-Reaction` - `Already studied as C#/WPF NAudio WASAPI loopback to avatar audio direction/volume parameters with smoothing, change thresholds, VRChat precision floor, and telemetry/privacy caveats`
+- `octalmage/oscsound` - `Already studied as Wails/Go OSCQuery local soundboard with soundpack import/export, one-shot/loop playback, preview, avatar parameter advertising, and local-audio routing caveat`
+- `FreneticFurry/VRC-Visualizer` - `Already studied as Python sounddevice/numpy FFT visualizer mapping smoothed audio magnitude and delayed samples to avatar parameters`
+- `bWoojer/WoojerOSC` - `Already studied as C# bHaptics OSC/log to Woojer/tactile audio bridge with sine providers, pan/frequency mapping, preset timers, and physical-output caveats`
+- `Zeno-Fluff/OALSVRC` - `Source-light external AudioLink-style product reference for system audio capture, FFT bands, waveform/amplitude OSC, GUI routing, and restrictive/source-boundary caveats`
+- `Azumarite/Dynamic-Vocoder-and-Instrument-with-Supercollider-VRChat` - `Already studied as SuperCollider VRChat OSC-controlled vocoder/synth/instrument script with effect toggles, normalized pitch mapping, and manual audio-routing caveats`
+
+## 169. XSOverlay Discord and remote notification protocol bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-198-xsoverlay-discord-and-remote-notification-protocol-bridges.md`
+- `../landscape/project-families.md`
+
+- `GreyFoxx74/xsoverlay-proxy` - `Already studied as HTTPS authenticated remote notification proxy to XSOverlay UDP with auth key validation, rate limits, health endpoint, CLI sender, watchdog, and LAN/TLS caveats`
+- `nitrog0d/XSOverlay-Discord-Notifications` - `Already studied as Powercord Discord notification hook to XSOverlay UDP payload with timeout/opacity settings, avatar icon fetch, and stale client-mod caveats`
+- `Eidenz/XSOverlay-BetterDiscord` - `Already studied as BetterDiscord XSOverlay notification bridge with DM/server filters, mute/mention policy, message/attachment/role/mention formatting, base64 avatar icons, and client-internals caveats`
+- `nyakowint/xsOverlayVencord` - `Already studied as Vencord XSOverlay bridge with rich message/call filters, image/attachment handling, WebSocket transport, legacy UDP fallback, and strongest Discord hook donor value`
+- `Arsenic110/XSOverlay-BetterDiscord-Notifications` - `Already studied as BetterDiscord notification variant with duration/opacity settings, cooldown, DND/ignore checks, formatting helpers, and copied-client-code caveats`
+- `jpdown/Discord-XSOverlay-Notifications` - `Already studied as standalone Node Discord RPC notification reader that downloads icons and dispatches XSOverlay UDP payloads`
+
+## 170. VRChat avatar remote control, toy automation, time, and smart-light sidecars
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-199-vrchat-avatar-remote-control-toy-automation-time-and-smart-light-sidecars.md`
+- `../landscape/project-families.md`
+
+- `Sakura0721/osc-toys` - `Already studied as FastAPI/WebUI VRChat OSC to DG-LAB Coyote bridge with moving-average smoothing, pattern selection, max-power sliders, BLE interface, safe-mode caps, and physical-output safety caveats`
+- `UnusualNorm/VRChat-OSC-Toys` - `Already studied as Next.js/Socket.IO VRChat web toy menu with shared cursors, MIDI-to-avatar note channel allocation, and incomplete/auth caveats`
+- `Blise518B/OscGoesPurrr` - `Source-light multi-backend VRChat OSC haptic router product reference with smoothing, OSCQuery/product claims, profile binding, diagnostics, and safety framing`
+- `jangxx/VRC-Avatar-Remote-Server` - `Already studied as web remote avatar control board with Express/Socket.IO, board/avatar/group/control schema, session/API-key auth, avatar id hashing, active-avatar checks, and OSC output boundaries`
+- `njm2360/vrchat-osc-automator` - `Already studied as WPF/MVVM OSC/keyboard/mouse automation sequencer with polymorphic slots, loops, breakpoints, transitions, reset-on-complete, import/export, hotkeys, and test coverage`
+- `t-34400/SimpleVRChatOSCSender` - `Already studied as Tkinter generic VRChat OSC sender/receiver harness covering avatar params, input controller, chatbox, trackers, receiver rebuild, and config tabs`
+- `TheUnifox/OSCTimeSender` - `Already studied as tiny C# local time to normalized Hour/Minute avatar parameter sender with fixed cadence and fixed-path caveats`
+- `hrolfurgylfa/vrchat-light-sync` - `Already studied as Rust Home Assistant light-state to VRChat avatar parameter bridge with hue/brightness normalization, change-only sends, polling config, and bearer-token caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

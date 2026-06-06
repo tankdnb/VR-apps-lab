@@ -5676,6 +5676,148 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - moderation-aware command decks
 - streamer control-panel and overlay integration patterns
 
+## Family 175: VRChat chatbox status, media, lyrics, IDE presence, and MOTD micro-composers
+
+This family covers small and medium VRChat chatbox utilities that compose short
+bounded text from IDE state, media playback, lyrics, system status, plugin
+outputs, speech recognition, and translation.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Null-K/VRChatStatusTask` | Already studied as IDE presence micro-composer | IntelliJ scheduled service, placeholders, editor highlighter counts, line/file fields, cropping, and privacy caveats |
+| `bunboop/vrc-osc-mpris` | Already studied as Linux MPRIS media sender | TOML config, active/named player lookup, small-bubble formatting, progress fields, and no-player loop caveat |
+| `Auzlex/vrchat-osc-windows-media` | Already studied as Windows media sender | Windows Media Controls polling, playback-type filter, duplicate-send gate, and bundled-artifact caveat |
+| `lexiuwu71/sillyosc` | Already studied as multi-source status composer | time/media/system stats, scrolling title, Discord RPC side channel, simple config, and process-title privacy caveat |
+| `lexiuwu71/mpd-vrchat-osc` | Already studied as MPD micro-bridge | tiny now-playing/remaining-time sender baseline |
+| `AtomikkuLabs/VRC-Lyrics` | Already studied as lyrics/provider pipeline | Flet UI, Spotify/Windows playback providers, LRCLib/Spotify lyrics, worker queue, chatbox/parameter OSC managers, and credential caveats |
+| `kotleni/vrchat-osc-motd` | Already studied as plugin fan-in composer | plugin loader, MOTD/AFK/PC stats/Spotify modules, output join, fixed port, and plugin trust caveat |
+| `KannaCS/VRCTalk` | Already studied as STT/translation chatbox sidecar | Tauri/Rust OSC commands, WebSpeech/Whisper providers, mute listener, typing indicator, translation retry, and cloud/privacy caveats |
+
+### Consolidation note
+
+This family matters because chatbox tools repeatedly need the same reusable
+shape:
+
+- source/provider modules
+- template and formatter layer
+- cropping or message-length policy
+- change detection and send cadence
+- typing and clear-on-stop behavior
+- privacy controls for sensitive source fields
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- provider-neutral chatbox composer contracts
+- status privacy and cadence matrices
+- plugin trust policy for local chatbox modules
+- voice/media/IDE status sidecar boundaries
+
+## Family 176: VRChat audio-reactive OSC, AudioLink-style, soundboard, and audio-control sidecars
+
+This family covers audio bridges that either send audio-derived data into
+avatar parameters or use avatar parameters to control local audio, soundboards,
+media keys, haptics, and DSP engines.
+
+| Project | Status | Notes |
+|---|---|---|
+| `shadorki/vrc-osc-audio-controls` | Already studied as avatar menu to media-key bridge | Go OSC listener, play/pause/next/previous/mute parameters, Windows SendKeys backend, and parsing/debounce caveats |
+| `Codel1417/VRC-OSC-Audio-Reaction` | Already studied as loopback audio-reactive donor | NAudio WASAPI loopback, stereo RMS/direction, smoothing, thresholded sends, precision floor, and telemetry caveat |
+| `octalmage/oscsound` | Already studied as OSCQuery local soundboard | Wails/Go app, avatar parameter advertising, one-shot/loop sounds, soundpack import/export, preview, and local-routing caveat |
+| `FreneticFurry/VRC-Visualizer` | Already studied as FFT visualizer baseline | sounddevice/numpy FFT, smoothing, delayed parameter history, and hardcoded setup caveats |
+| `bWoojer/WoojerOSC` | Already studied as haptic event to tactile audio bridge | bHaptics OSC/log parsing, sine provider pool, pan/frequency mapping, preset timers, and physical-output safety caveats |
+| `Zeno-Fluff/OALSVRC` | Source-light external AudioLink product reference | system audio capture, FFT bands/waveform/amplitude OSC, GUI routing claims, and source/license caveats |
+| `Azumarite/Dynamic-Vocoder-and-Instrument-with-Supercollider-VRChat` | Already studied as avatar-controlled DSP script | SuperCollider vocoder/effect toggles, synth pitch mapping, and manual audio routing caveats |
+
+### Consolidation note
+
+This family matters because audio sidecars share recurring engineering
+boundaries:
+
+- capture source and device selection
+- normalization, smoothing, thresholding, and value floors
+- avatar parameter schemas for volume/bands/direction
+- one-shot versus looping local output
+- reset/debounce for avatar-to-audio controls
+- physical/tactile output safety
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- external AudioLink-style sidecar contracts
+- OSCQuery soundpack utilities
+- avatar menu to OS command bridges
+- audio-reactive safety and privacy checklists
+
+## Family 177: XSOverlay Discord and remote notification protocol bridges
+
+This family covers projects that send external events into XSOverlay through
+direct UDP, WebSocket companion transports, Discord client hooks, Discord RPC,
+or authenticated remote proxies.
+
+| Project | Status | Notes |
+|---|---|---|
+| `GreyFoxx74/xsoverlay-proxy` | Already studied as remote notification proxy | HTTPS POST to local XSOverlay UDP, auth key, rate limits, health check, CLI sender, watchdog, and LAN/TLS caveats |
+| `nitrog0d/XSOverlay-Discord-Notifications` | Already studied as Powercord notification bridge | Discord notification hook, payload construction, timeout/opacity settings, icon fetch, and stale client-mod caveat |
+| `Eidenz/XSOverlay-BetterDiscord` | Already studied as BetterDiscord formatting donor | DM/server toggles, mute/mention policy, mention/role/emote/channel formatting, attachment labels, and avatar base64 icons |
+| `nyakowint/xsOverlayVencord` | Already studied as strongest Discord hook donor | Vencord settings, bot/server/DM/group/call filters, image/attachment handling, WebSocket transport, and UDP fallback |
+| `Arsenic110/XSOverlay-BetterDiscord-Notifications` | Already studied as BetterDiscord variant | duration/opacity settings, cooldown, DND/ignore checks, formatting helpers, and copied-client-code caveats |
+| `jpdown/Discord-XSOverlay-Notifications` | Already studied as Discord RPC baseline | notification subscription, icon download, XSOverlay UDP payload, and OAuth/RPC caveats |
+
+### Consolidation note
+
+This family matters because overlay notification bridges sit on a trust
+boundary:
+
+- local overlay-host protocol compatibility
+- direct UDP versus WebSocket companion transport
+- remote proxy auth, TLS, and rate limits
+- Discord message normalization and privacy
+- icon/image fetch handling
+- client-mod compatibility risk
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- overlay notification payload matrices
+- secure remote event-to-overlay proxy design
+- communication notification UX
+- transport fallback and compatibility checklists
+
+## Family 178: VRChat avatar remote control, toy automation, time, and smart-light sidecars
+
+This family covers VRChat OSC utilities that expose remote control surfaces,
+sequence automation, generic sender/receiver harnesses, physical-output
+bridges, web toys, and tiny external-state-to-avatar bridges.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Sakura0721/osc-toys` | Already studied as safety-sensitive OSC-to-device WebUI | FastAPI/WebUI, Coyote BLE interface, moving-average smoothing, max-power sliders, patterns, safe-mode caps, and auth/panic-stop caveats |
+| `UnusualNorm/VRChat-OSC-Toys` | Already studied as web toy/menu reference | Next.js/Socket.IO namespaces, shared cursors, MIDI-to-avatar note channels, avatar toy menu, and incomplete/auth caveats |
+| `Blise518B/OscGoesPurrr` | Source-light multi-backend haptic router product reference | smoothing, OSCQuery/product claims, backend list, profile/debugger framing, and source-boundary caveats |
+| `jangxx/VRC-Avatar-Remote-Server` | Already studied as strongest remote-board donor | Express/Socket.IO boards, avatar/group/control schema, sessions/API keys, avatar hashing, active-avatar checks, and OSC send boundaries |
+| `njm2360/vrchat-osc-automator` | Already studied as strongest automation donor | WPF/MVVM sequencer, polymorphic slots, loops, breakpoints, transitions, reset-on-complete, keyboard/mouse cleanup, import/export, and tests |
+| `t-34400/SimpleVRChatOSCSender` | Already studied as generic OSC harness | Tkinter tabs for avatar params, input, chatbox, trackers, receiver rebuild, and config controls |
+| `TheUnifox/OSCTimeSender` | Already studied as tiny local time bridge | normalized hour/minute parameters, 10-second cadence, and fixed-path/port caveats |
+| `hrolfurgylfa/vrchat-light-sync` | Already studied as smart-home state bridge | Home Assistant polling, hue/brightness normalization, change-only sends, config, and bearer-token caveats |
+
+### Consolidation note
+
+This family matters because remote and automated avatar control needs explicit
+safety boundaries:
+
+- authentication and local trust scope
+- active-avatar validation
+- board/control schemas and parameter types
+- reset-on-complete and held-input cleanup
+- remote exposure and rate limits
+- physical-output caps and panic stops
+- credential handling for external services
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- secure avatar remote-control boards
+- reusable OSC automation sequence schemas
+- generic VRChat OSC harnesses
+- external state/device micro-bridge patterns
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

@@ -1974,6 +1974,56 @@ These are larger than a single repo and should guide the next research wave.
   provider-neutral audience trigger schema that can support Twitch, Discord,
   Stream Deck, local web panels, and OSCQuery inputs safely.
 
+### 149. `Chatbox status composer privacy, template, and cadence matrix`
+
+- Main entries:
+  `VRChatStatusTask`, `vrc-osc-mpris`,
+  `vrchat-osc-windows-media`, `sillyosc`, `mpd-vrchat-osc`,
+  `VRC-Lyrics`, `vrchat-osc-motd`, `VRCTalk`
+- Why it matters:
+  this family captures chatbox source modules for IDE state, media, lyrics,
+  system status, speech, and plugin outputs. A future deeper pass should
+  compare template variables, sensitive fields, cropping, anti-spam cadence,
+  clear-on-stop behavior, and plugin trust boundaries.
+
+### 150. `External audio reactivity and sound-trigger matrix across loopback, OSCQuery soundpacks, media keys, and DSP engines`
+
+- Main entries:
+  `vrc-osc-audio-controls`, `VRC-OSC-Audio-Reaction`,
+  `oscsound`, `VRC-Visualizer`, `WoojerOSC`, `OALSVRC`,
+  `Dynamic-Vocoder-and-Instrument-with-Supercollider-VRChat`
+- Why it matters:
+  this family captures both directions of audio sidecars: audio-to-avatar and
+  avatar-to-audio. A future deeper pass should compare capture sources,
+  smoothing, OSCQuery discovery, one-shot/loop semantics, OS media commands,
+  DSP control, and physical/tactile output safety.
+
+### 151. `XSOverlay notification bridge payload, transport, and security matrix`
+
+- Main entries:
+  `xsoverlay-proxy`, `XSOverlay-Discord-Notifications`,
+  `XSOverlay-BetterDiscord`, `xsOverlayVencord`,
+  `XSOverlay-BetterDiscord-Notifications`,
+  `Discord-XSOverlay-Notifications`
+- Why it matters:
+  this family captures direct UDP, WebSocket, Discord client-hook, Discord RPC,
+  and remote HTTPS notification ingress. A future deeper pass should compare
+  payload fields, icon handling, transport fallback, client-mod compatibility,
+  auth, TLS, rate limits, and LAN exposure.
+
+### 152. `Avatar remote-control and external state bridge safety matrix`
+
+- Main entries:
+  `osc-toys`, `VRChat-OSC-Toys`, `OscGoesPurrr`,
+  `VRC-Avatar-Remote-Server`, `vrchat-osc-automator`,
+  `SimpleVRChatOSCSender`, `OSCTimeSender`, `vrchat-light-sync`
+- Why it matters:
+  this family captures remote boards, sequence automation, generic OSC probes,
+  web toy surfaces, physical-output bridges, and micro state-to-avatar
+  utilities. A future deeper pass should compare auth, active-avatar checks,
+  reset behavior, held-input cleanup, physical-output caps, credential storage,
+  and safe remote exposure.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2110,6 +2160,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 130. `Physical-output bridge safety matrix across consent, cooldown, panic stop, and device actuation`
 131. `MIDI backpressure, VRChat path schemas, and Udon live-performance sync matrix`
 132. `Audience-event rule engines, reward lifecycle, moderation gates, and OSC action queues`
+133. `Chatbox status composer privacy, template, and cadence matrix`
+134. `External audio reactivity and sound-trigger matrix across loopback, OSCQuery soundpacks, media keys, and DSP engines`
+135. `XSOverlay notification bridge payload, transport, and security matrix`
+136. `Avatar remote-control and external state bridge safety matrix`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

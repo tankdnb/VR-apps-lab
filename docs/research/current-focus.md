@@ -136,6 +136,11 @@ These are the clearest current product and research lines:
    the repository now has fresh coverage of PSVR2 OpenXR passthrough and gaze
    shims, safety-first avatar OSC physical-output routers, MIDI/DMX/piano
    performance bridges, and Twitch/audience-event rule engines for VRChat OSC.
+27. `VRChat chatbox composers, audio-reactive sidecars, overlay notifications, and remote-control boards`
+   the repository now has fresh coverage of IDE/media/lyrics/speech chatbox
+   composers, audio loopback and OSCQuery soundboards, XSOverlay notification
+   bridges, secure remote avatar boards, OSC automation sequencers, and tiny
+   time/smart-home state bridges.
 
 ## Most useful current docs
 
@@ -243,6 +248,10 @@ instead of full history:
 - `landscape/vr-projects-wave-189-vrchat-chatbox-media-status-and-bounded-text-composition-microtools.md`
 - `landscape/vr-projects-wave-190-web-phone-and-browser-remote-osc-control-surfaces.md`
 - `landscape/vr-projects-wave-191-vrc-haptics-server-firmware-hardware-and-trigger-bridge-lineage.md`
+- `landscape/vr-projects-wave-196-vrchat-chatbox-status-media-lyrics-and-ide-presence-micro-composers.md`
+- `landscape/vr-projects-wave-197-vrchat-audio-reactive-osc-audiolink-soundboard-and-system-audio-control-sidecars.md`
+- `landscape/vr-projects-wave-198-xsoverlay-discord-and-remote-notification-protocol-bridges.md`
+- `landscape/vr-projects-wave-199-vrchat-avatar-remote-control-toy-automation-time-and-smart-light-sidecars.md`
 
 ## Strong donor clusters right now
 
@@ -719,6 +728,14 @@ the strongest current clusters:
   for PSVR2 passthrough/gaze/runtime shims, safety-first physical-output
   routers, MIDI/DMX/piano live-performance bridges, and audience-event
   OSC action engines.
+- `VRC-Lyrics`, `vrchat-osc-motd`, `VRC-OSC-Audio-Reaction`,
+  `oscsound`, `xsoverlay-proxy`, `xsOverlayVencord`,
+  `VRC-Avatar-Remote-Server`, `vrchat-osc-automator`,
+  `SimpleVRChatOSCSender`
+  for provider-backed chatbox composers, plugin fan-in, audio-reactive
+  parameter normalization, OSCQuery soundpacks, overlay notification proxies,
+  Discord notification hooks, secure avatar remote boards, automation
+  sequencing, and generic VRChat OSC harnesses.
 
 ## Highest-value next follow-up passes
 
@@ -847,6 +864,10 @@ directions:
 120. `Physical-output bridge safety matrix across consent, cooldown, panic stop, and device actuation`
 121. `MIDI backpressure, VRChat path schemas, and Udon live-performance sync matrix`
 122. `Audience-event rule engines, reward lifecycle, moderation gates, and OSC action queues`
+123. `Chatbox status composer privacy, template, and cadence matrix`
+124. `External audio reactivity and sound-trigger matrix across loopback, OSCQuery soundpacks, media keys, and DSP engines`
+125. `XSOverlay notification bridge payload, transport, and security matrix`
+126. `Avatar remote-control and external state bridge safety matrix`
 
 ## Current repository-maintenance priorities
 

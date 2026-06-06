@@ -1393,3 +1393,31 @@ repeatable way.
 
 - `github-research-wave-195-backlog.md`
   Executed backlog for the Wave 195 pass.
+
+- `github-research-wave-196-plan.md`
+  Wave 196 research plan focused on VRChat chatbox status, media, lyrics, IDE
+  presence, and MOTD micro-composers.
+
+- `github-research-wave-196-backlog.md`
+  Executed backlog for the Wave 196 pass.
+
+- `github-research-wave-197-plan.md`
+  Wave 197 research plan focused on VRChat audio-reactive OSC, AudioLink-style
+  sidecars, local soundboards, and system-audio controls.
+
+- `github-research-wave-197-backlog.md`
+  Executed backlog for the Wave 197 pass.
+
+- `github-research-wave-198-plan.md`
+  Wave 198 research plan focused on XSOverlay Discord and remote notification
+  protocol bridges.
+
+- `github-research-wave-198-backlog.md`
+  Executed backlog for the Wave 198 pass.
+
+- `github-research-wave-199-plan.md`
+  Wave 199 research plan focused on VRChat avatar remote control, toy
+  automation, time, and smart-light sidecars.
+
+- `github-research-wave-199-backlog.md`
+  Executed backlog for the Wave 199 pass.
