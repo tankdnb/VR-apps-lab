@@ -13185,3 +13185,161 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   OpenGloves protocol matrices, DIY haptics safety notes, hardware onboarding
   references, adapter sidecar design, and firmware-variant comparison docs.
+
+## Method 673: WebXR hand-pose template and gesture-event bridge
+
+- What it is:
+  a hand input layer converts native WebXR hands, fallback hand sources, or
+  controller-like hand data into named gesture events with explicit confidence,
+  threshold, frame-budget, and privacy boundaries.
+- Good for:
+  hand menus, wrist/palm shortcuts, accessibility gestures, overlay window
+  commands, hand/controller fallback pointers, and user-defined gesture
+  profiles.
+- Why it matters:
+  raw hand joints are too low-level for utility applications; reusable tools
+  need a stable command event layer that can survive runtime differences,
+  browser support gaps, and privacy constraints.
+- Source evidence:
+  `stewdio/handy.js`, `stewdio/vr-hands`,
+  `physicslibrary/Threejs-VR-Hand-Input`,
+  `vrmeup/threejs-webxr-hands-example`,
+  `martatesar/webxr-hands-gestures-recognition`,
+  `beemsoft/webxr-handtracking-playground`, and
+  `immersive-web/webxr-hand-input`.
+- Reusable core:
+  isolate hand-source adapters, capture wrist-local or palm-relative joint
+  features, compare against templates or simple thresholds, emit
+  started/updated/ended events, expose score or confidence, support controller
+  fallback, bound recognition work per frame, and document sampling precision
+  plus privacy policy.
+- Do not copy directly:
+  old WebXR helper APIs, vendored Three.js copies, static thresholds as
+  universal truth, console-only gesture persistence, MediaPipe demo coupling,
+  or recorded hand data without consent and retention rules.
+- Strong references:
+  `handy.js` for compact eventized pose matching, `webxr-hands-gestures-recognition`
+  for wrist-local learner flow, `vrmeup` for hand/controller pointer
+  abstraction, `beemsoft` for fallback hand sources, and the hand-input
+  explainer for performance/privacy constraints.
+- Maturity:
+  strong method; implementation must stay feature-detected and privacy-aware.
+- Best fit for `VR-apps-lab`:
+  hand menu prototypes, overlay shortcut schemas, accessibility gesture
+  configuration, and WebXR hand-input matrices.
+
+## Method 674: Data-to-spatial-encoding workbench pipeline
+
+- What it is:
+  an immersive data tool separates source data, semantic schema, transform,
+  layout, scene/update transport, interaction, annotation, export, and trust
+  policy.
+- Good for:
+  Python-driven XR dashboards, scientific visualization, robot model viewers,
+  teleoperation workbenches, QR-paired immersive artifacts, and collaborative
+  data review rooms.
+- Why it matters:
+  data-first VR tools become hard to reuse when data loading, spatial mapping,
+  live updates, collaboration, and export are hidden in one scene script.
+- Source evidence:
+  `vuer-ai/vuer`, `thomann/plotAR`, `TsatsuAmable/nemosyne`,
+  `smrghsh/brahma`, and `jurmy24/mechaverse`.
+- Reusable core:
+  keep data/session ownership outside the renderer, model semantic fields
+  explicitly, transform fields through a mapping layer, choose spatial layouts,
+  deliver updates as scene operations or generated artifacts, support
+  annotations or callouts when collaborative, route file groups to specialized
+  viewers, and document local/remote access trust.
+- Do not copy directly:
+  hardcoded public WebSocket endpoints, old WebVR pages, open local data
+  servers without access policy, desktop-only robotics viewers as completed VR
+  surfaces, or broad research-preview code as a stable SDK.
+- Strong references:
+  `vuer` for Python async scene operations, `plotAR` for QR-paired plot
+  artifacts, `nemosyne` for semantic mapping/layout/DSL, `brahma` for
+  callout/presence shell, and `mechaverse` for format dispatch.
+- Maturity:
+  strong architecture method; product use needs data privacy and transport
+  scope decisions.
+- Best fit for `VR-apps-lab`:
+  immersive diagnostics dashboards, robotics viewer notes, teleoperation data
+  panels, and data visualization method matrices.
+
+## Method 675: Scriptable XR workbench and display-surface shell
+
+- What it is:
+  a productive XR surface separates editor or host-app state, live evaluation
+  or export/reload, runtime scene, input adapters, in-headset menu state,
+  display effects, and desktop mirror/debug surfaces.
+- Good for:
+  CAD/model viewers, headset-side code tools, host-app export bridges,
+  in-headset configuration panels, audio-reactive visualizers, passthrough
+  display shells, and creator utilities.
+- Why it matters:
+  serious VR tools need work surfaces, not just scenes; text input, model
+  state, host app export, menu controls, and special rendering should not be
+  tangled into one runtime loop.
+- Source evidence:
+  `vipenzo/ridley`, `id3vi5er/fusion360_webxr_viewer`,
+  `felipereigosa/kairon`, and `phobi82/webxr_butterchurn`.
+- Reusable core:
+  isolate domain state from rendering, expose live-eval or import/export
+  boundaries, support desktop companion input when typing is heavy, keep
+  controller commands explicit, build menu state separately from menu drawing,
+  support reload/version feedback, and provide a desktop mirror or TestLab
+  surface for debugging.
+- Do not copy directly:
+  self-signed local server defaults as production UX, ADB-heavy setup as
+  normal onboarding, broad CAD internals wholesale, intense visualizer defaults
+  without comfort review, or project-specific path/build assumptions.
+- Strong references:
+  `Ridley` for code-preserving manipulation and headset sync concepts,
+  `fusion360_webxr_viewer` for host export plus WebXR reload, `Kairon` for
+  desktop keyboard companion input, and `webxr_butterchurn` for modular menu,
+  runtime, depth, audio, and desktop mirror boundaries.
+- Maturity:
+  strong product/architecture method; each donor has platform and maturity
+  caveats.
+- Best fit for `VR-apps-lab`:
+  VR workbench playbooks, host-app export bridge concepts, menu texture
+  modules, in-headset editor notes, and creative display-surface prototypes.
+
+## Method 676: WebXR prototyping runtime primitive stack
+
+- What it is:
+  a runtime layer packages common WebXR boilerplate into explicit lifecycle,
+  options, session, input, gesture, depth, UI, sound/video, simulator, and
+  cleanup modules, while labeling whether the source is a mature SDK, thin
+  wrapper, or rough demo.
+- Good for:
+  browser-native VR utilities, AR product viewers, hand/depth interaction
+  prototypes, spatial UI experiments, AI-assisted XR sketches, and small
+  cross-device demos.
+- Why it matters:
+  WebXR experiments often repeat the same setup and accidentally promote rough
+  starter code into platform code. A tiered runtime model lets
+  `VR-apps-lab` reuse primitives without over-trusting demos.
+- Source evidence:
+  `google/xrblocks`, `w3reality/threelet`, `simonedevit/reactylon`,
+  `vishnu7560834213/threexr`, `ARDings/EverythingController`, and
+  `dmvrg/webxr-ar-demos`.
+- Reusable core:
+  choose runtime tier, centralize options and feature gates, own session and
+  renderer lifecycle, expose script/component hooks, separate input/gesture,
+  depth, UI, model, sound, and world modules, provide simulator or desktop
+  fallback when possible, make disposal explicit, and keep product-specific
+  demos outside the runtime core.
+- Do not copy directly:
+  one-file depth demos without permission review, rough starter scaffolds as
+  frameworks, console-heavy hot paths, hardcoded assets, device-specific demo
+  assumptions, or AI/API-key flows without trust boundaries.
+- Strong references:
+  `XR Blocks` for broad SDK boundaries, `threelet` for thin wrapper shape,
+  `Reactylon` for declarative React/Babylon ownership, `EverythingController`
+  for depth UI diagnostics, and `webxr-ar-demos` for product-like hand UI.
+- Maturity:
+  strong comparison method; implementation choice depends heavily on product
+  scope and team stack.
+- Best fit for `VR-apps-lab`:
+  WebXR runtime matrices, simulator-backed prototype notes, interaction
+  primitive catalogs, and framework maturity labels.

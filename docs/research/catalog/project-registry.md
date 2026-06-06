@@ -2973,6 +2973,60 @@ Primary docs:
 - `Stargazer6481/Compact-Gloves` - `Studied in Wave 227 as a compact DIY SteamVR/OpenGloves glove reference with BOM, hardware docs, ESP32 Bluetooth Serial firmware, OpenGloves setup, standard-format notes, and calibration guidance`
 - `xRayz3n/ExoTouch-2.0` - `Studied in Wave 227 as a LucidGloves-derived exoskeleton glove hardware/firmware variant with AS5600 encoder input, I2C multiplexer selection, calibration loops, serial/Bluetooth communication abstraction, alphabetic encoding, and servo force-feedback output`
 
+## 199. WebXR hand input, gesture templates, and fallback hand-tracking primitives
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-228-webxr-hand-input-gesture-template-and-fallback-hand-tracking-primitives.md`
+- `../landscape/project-families.md`
+
+- `stewdio/handy.js` - `Studied in Wave 228 as a compact WebXR hand-pose template matcher with wrist/head-relative pose snapshots, sorted pose search, bounded per-hand recognition budget, isPose helper, and pose began/ended events`
+- `stewdio/vr-hands` - `Studied in Wave 228 as deprecated Handy.js lineage showing direct fist, horns, and finger-gun gesture bindings into scene behavior`
+- `physicslibrary/Threejs-VR-Hand-Input` - `Studied in Wave 228 as old but useful Quest/Three hand-input micro-recipes with joint reads, pinch distances, palm-up visibility toggles, and Oculus hand pointer model caveats`
+- `vrmeup/threejs-webxr-hands-example` - `Studied in Wave 228 as a hand/controller input abstraction with required hand tracking, mechanical controller fallback, wrist/palm/finger feature extraction, damped pointer rays, and pinch-plus-palm gates`
+- `martatesar/webxr-hands-gestures-recognition` - `Studied in Wave 228 as a TypeScript wrist-local gesture template recognizer and learner with JSON templates, opposite-hand pinch confirmation, and gesture_changed events`
+- `beemsoft/webxr-handtracking-playground` - `Studied in Wave 228 as a native WebXR plus MediaPipe hand-tracking playground with landmark meshes, open/stop-hand heuristics, Ammo/Cannon proxy joints, and desktop fallback caveats`
+- `immersive-web/webxr-hand-input` - `Studied in Wave 228 as the canonical WebXR hand-input explainer for 25 joint spaces, getJointPose, fillPoses/fillJointRadii performance, and privacy/security caveats`
+
+## 200. Immersive data, robotics, and scientific visualization workbenches
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-229-immersive-data-robotics-and-scientific-visualization-workbenches.md`
+- `../landscape/project-families.md`
+
+- `vuer-ai/vuer` - `Studied in Wave 229 as a Python async WebSocket scene bridge with msgpack events, declarative scene operations, workspace asset serving, robotics schemas, hand/body tracking docs, and teleoperation examples`
+- `thomann/plotAR` - `Studied in Wave 229 as a generated immersive plot workflow with QR pairing, VR/keyboard pages, glTF/USDZ export, simple WebSocket control commands, and older WebVR/security caveats`
+- `TsatsuAmable/nemosyne` - `Studied in Wave 229 as a data-native WebXR visualization engine with artifact registration, semantic property mapping, VR-aware layout algorithms, transform DSL, and stream extensions`
+- `smrghsh/brahma` - `Studied in Wave 229 as a collaborative scientific WebXR room shell with environment/controller modules, selectable/grasp/locomotion primitives, remote embodiment, callouts, and hardcoded endpoint caveats`
+- `jurmy24/mechaverse` - `Studied in Wave 229 as an adjacent browser robotics viewer dispatch shell for URDF, MJCF, and USD file groups with drag/drop payload events and non-XR caveats`
+
+## 201. Scriptable WebXR modeling, viewer, editor, and creative display surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-230-scriptable-webxr-modeling-viewer-and-creative-surfaces.md`
+- `../landscape/project-families.md`
+
+- `vipenzo/ridley` - `Studied in Wave 230 as a CAD-as-code workbench with ClojureScript/SCI runtime evaluation, turtle geometry, editor/REPL, pilot-mode code generation, WebXR VR/AR hooks, PeerJS desktop-headset sync, voice input, and Windows-invalid-path checkout caveat`
+- `id3vi5er/fusion360_webxr_viewer` - `Studied in Wave 230 as a Fusion 360 add-in bridge with toolbar commands, OBJ/MTL export, threaded local HTTPS server, LAN URL listing, WebXR AR viewer reload, centering, scaling, and controller grab/rotate controls`
+- `felipereigosa/kairon` - `Studied in Wave 230 as a VR code editor with desktop keyboard/input companion, tab and terminal model, code execution, controller polling, haptics, locomotion, physics, and editor visibility toggles`
+- `phobi82/webxr_butterchurn` - `Studied in Wave 230 as a modular no-build WebXR audio visualizer shell with app config, audio analyser, in-headset menu sections/sliders/cyclers, depth/passthrough, lighting, runtime, movement, TestLab, and desktop menu preview`
+
+## 202. WebXR prototyping runtime micro-frameworks and experimental interaction primitives
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-231-webxr-prototyping-runtime-micro-frameworks-and-experimental-primitives.md`
+- `../landscape/project-families.md`
+
+- `google/xrblocks` - `Studied in Wave 231 as a broad AI plus WebXR SDK with Script/Core/Options/User boundaries, gestures, WebXR and MediaPipe hand estimators, depth, simulator, spatial UI blocks, sound/video/world modules, and AI/agent integrations`
+- `w3reality/threelet` - `Studied in Wave 231 as a compact Three/WebXR wrapper with auto scene/camera/renderer defaults, optional VR/AR/XR buttons, render-loop switching, mouse/pointer/touch/XR events, controller ray helpers, and disposal utilities`
+- `simonedevit/reactylon` - `Studied in Wave 231 as a declarative React/Babylon XR framework with custom reconciler, scene injection, generated components, default XR experience hook, WebGPU/WebGL engine wrapper, model hook, and automatic disposal`
+- `vishnu7560834213/threexr` - `Studied in Wave 231 as a rough Three/Vite WebXR starter with VRButton setup, controller grips, gamepad axes/buttons, player capsule, BVH collision helper, camera follow, and immature packaging caveats`
+- `ARDings/EverythingController` - `Studied in Wave 231 as a single-file XR Blocks depth-sensing body-as-controller demo with point-cloud reconstruction, collision/hit detection, debug/occlusion instancing, and spatial settings panel`
+- `dmvrg/webxr-ar-demos` - `Studied in Wave 231 as a WebXR AR demo set with hand pinch, UI planes, product color/size controls, burger exploded view, switch cooldowns, direct manipulation, and Spectacles/product-demo caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

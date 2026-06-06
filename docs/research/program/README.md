@@ -1617,3 +1617,31 @@ repeatable way.
 
 - `github-research-wave-227-backlog.md`
   Executed backlog for the Wave 227 pass.
+
+- `github-research-wave-228-plan.md`
+  Wave 228 research plan focused on WebXR hand input, gesture templates, and
+  fallback hand-tracking primitives.
+
+- `github-research-wave-228-backlog.md`
+  Executed backlog for the Wave 228 pass.
+
+- `github-research-wave-229-plan.md`
+  Wave 229 research plan focused on immersive data, robotics, and scientific
+  visualization workbenches.
+
+- `github-research-wave-229-backlog.md`
+  Executed backlog for the Wave 229 pass.
+
+- `github-research-wave-230-plan.md`
+  Wave 230 research plan focused on scriptable WebXR modeling, viewer, editor,
+  and creative display surfaces.
+
+- `github-research-wave-230-backlog.md`
+  Executed backlog for the Wave 230 pass.
+
+- `github-research-wave-231-plan.md`
+  Wave 231 research plan focused on WebXR prototyping runtime
+  micro-frameworks and experimental interaction primitives.
+
+- `github-research-wave-231-backlog.md`
+  Executed backlog for the Wave 231 pass.

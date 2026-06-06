@@ -2363,6 +2363,52 @@ These are larger than a single repo and should guide the next research wave.
   haptic feedback scaling, firmware variants, hardware docs, and safety
   caveats.
 
+### 181. `WebXR hand command matrix across templates, thresholds, fallback sources, and privacy`
+
+- Main entries:
+  `handy.js`, `vr-hands`, `Threejs-VR-Hand-Input`,
+  `threejs-webxr-hands-example`, `webxr-hands-gestures-recognition`,
+  `webxr-handtracking-playground`, `webxr-hand-input`
+- Why it matters:
+  Wave 228 deepened hand input primitives. A future matrix should compare
+  wrist-local templates, palm orientation, pinch distance, gesture events,
+  confidence, temporal gestures, mechanical controller fallback, MediaPipe
+  fallback, batch pose reads, frame budget, and privacy/sampling policy.
+
+### 182. `Immersive data workbench matrix across scene bridges, layout DSLs, robot viewers, and collaboration`
+
+- Main entries:
+  `vuer`, `plotAR`, `nemosyne`, `brahma`, `mechaverse`
+- Why it matters:
+  Wave 229 deepened data-first immersive workbenches. A future matrix should
+  compare Python/WebSocket scene operations, generated QR-paired artifacts,
+  semantic field mappings, transform DSLs, VR-aware layouts, annotations,
+  collaboration state, URDF/MJCF/USD dispatch, export paths, and local/remote
+  trust policies.
+
+### 183. `Scriptable XR work-surface matrix across live code, host export, in-headset menus, and mirrored previews`
+
+- Main entries:
+  `Ridley`, `fusion360_webxr_viewer`, `Kairon`, `webxr_butterchurn`
+- Why it matters:
+  Wave 230 deepened scriptable work surfaces. A future matrix should compare
+  editor/REPL input, generated code, desktop companion typing, host-app export,
+  local HTTPS serving, asset reload/versioning, controller manipulation,
+  in-headset menu texture systems, desktop mirrored previews, depth/passthrough
+  controls, and comfort warnings.
+
+### 184. `WebXR runtime primitive matrix across SDKs, wrappers, declarative engines, starters, and demos`
+
+- Main entries:
+  `XR Blocks`, `threelet`, `Reactylon`, `threexr`, `EverythingController`,
+  `webxr-ar-demos`
+- Why it matters:
+  Wave 231 deepened WebXR runtime scaffolds. A future matrix should compare
+  script/component lifecycle, feature options, session ownership, renderer
+  setup, hand gestures, depth, simulator, spatial UI, model loading,
+  sound/video, cleanup, AI/API-key boundaries, and maturity labels for SDKs
+  versus thin or rough demos.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:

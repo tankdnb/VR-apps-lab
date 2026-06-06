@@ -171,6 +171,12 @@ These are the clearest current product and research lines:
    validation, WebRTC desktop/camera/stereo panels, projection-aware browser
    media viewers, gaze-controlled media/desktop surfaces, and OpenGloves
    adapter boundaries for DIY haptic glove variants.
+34. `WebXR hand input, immersive data workbenches, scriptable work surfaces, and runtime primitive stacks`
+   the repository now has fresh coverage of hand-pose templates and
+   fallback hand tracking, Python/data-to-WebXR scene bridges, robotics and
+   scientific visualization workbenches, CAD/code/editor work surfaces,
+   audio-reactive depth/passthrough menus, and WebXR SDK/runtime maturity
+   comparisons.
 
 ## Most useful current docs
 
@@ -310,6 +316,10 @@ instead of full history:
 - `landscape/vr-projects-wave-225-webrtc-webxr-remote-surfaces-camera-streams-and-spatial-panels.md`
 - `landscape/vr-projects-wave-226-browser-media-depth-video-projection-and-gaze-viewer-surfaces.md`
 - `landscape/vr-projects-wave-227-opengloves-diy-haptics-adapters-named-pipe-and-firmware-variants.md`
+- `landscape/vr-projects-wave-228-webxr-hand-input-gesture-template-and-fallback-hand-tracking-primitives.md`
+- `landscape/vr-projects-wave-229-immersive-data-robotics-and-scientific-visualization-workbenches.md`
+- `landscape/vr-projects-wave-230-scriptable-webxr-modeling-viewer-and-creative-surfaces.md`
+- `landscape/vr-projects-wave-231-webxr-prototyping-runtime-micro-frameworks-and-experimental-primitives.md`
 
 ## Strong donor clusters right now
 

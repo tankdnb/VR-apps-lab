@@ -997,6 +997,26 @@ Use these files when you want to understand:
   sidecars, named-pipe contracts, BLE/serial/HID transport boundaries,
   DIY glove firmware variants, calibration, and haptic output scaling.
 
+- `vr-projects-wave-228-webxr-hand-input-gesture-template-and-fallback-hand-tracking-primitives.md`
+  Next GitHub discovery wave focused on WebXR hand input, pose templates,
+  pinch/palm gates, controller fallback, MediaPipe fallback, and hand-data
+  performance/privacy caveats.
+
+- `vr-projects-wave-229-immersive-data-robotics-and-scientific-visualization-workbenches.md`
+  Next GitHub discovery wave focused on Python-to-WebXR scene bridges,
+  generated immersive plot artifacts, spatial data layouts, collaborative
+  scientific rooms, and robotics viewer dispatchers.
+
+- `vr-projects-wave-230-scriptable-webxr-modeling-viewer-and-creative-surfaces.md`
+  Next GitHub discovery wave focused on CAD-as-code, host-app export bridges,
+  VR code editors, desktop keyboard companions, audio-reactive WebXR shells,
+  and in-headset menu/depth/passthrough surfaces.
+
+- `vr-projects-wave-231-webxr-prototyping-runtime-micro-frameworks-and-experimental-primitives.md`
+  Next GitHub discovery wave focused on WebXR SDKs, thin runtime wrappers,
+  declarative React/Babylon scenes, rough starters, depth interaction demos,
+  and AR product UI primitives.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

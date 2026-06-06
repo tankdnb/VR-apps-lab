@@ -6794,6 +6794,144 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - firmware-variant comparison
 - hardware documentation/onboarding patterns
 
+## Family 207: WebXR hand input, gesture templates, and fallback hand-tracking primitives
+
+This family covers small WebXR hand-input projects that make pose templates,
+pinch/palm gates, hand/controller fallback, and hand-source caveats explicit.
+
+| Project | Status | Notes |
+|---|---|---|
+| `stewdio/handy.js` | Studied in Wave 228 | compact pose-template matcher with wrist/head-relative snapshots, sorted search, small per-hand recognition budget, and pose began/ended events |
+| `stewdio/vr-hands` | Studied in Wave 228 | deprecated gesture lineage with direct fist/horns/finger-gun bindings into scene behavior |
+| `physicslibrary/Threejs-VR-Hand-Input` | Studied in Wave 228 | Quest/Three micro-recipes for joint reads, pinch distance, palm-up toggles, and old Oculus hand model caveats |
+| `vrmeup/threejs-webxr-hands-example` | Studied in Wave 228 | unified hand/controller pointer abstraction with wrist/palm/finger tracking, damped rays, and pinch-plus-palm gates |
+| `martatesar/webxr-hands-gestures-recognition` | Studied in Wave 228 | wrist-local JSON gesture recognizer/learner with opposite-hand pinch confirmation and gesture_changed events |
+| `beemsoft/webxr-handtracking-playground` | Studied in Wave 228 | native WebXR plus MediaPipe fallback with landmark meshes, open/stop heuristics, and physics proxy joints |
+| `immersive-web/webxr-hand-input` | Studied in Wave 228 | API/spec reference for joint spaces, batch pose reads, performance, and privacy/security caveats |
+
+### Consolidation note
+
+This family matters because hand input for utility apps should name:
+
+- hand source and fallback path
+- joint feature extraction
+- wrist/palm-relative coordinate space
+- template or threshold recognizer
+- gesture state and confidence
+- action sink separation
+- frame budget and privacy policy
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- hand-command event schemas
+- hand menu and overlay triggers
+- accessibility gesture configuration
+- MediaPipe versus native WebXR fallback matrices
+- hand-data privacy and sampling guidance
+
+## Family 208: Immersive data, robotics, and scientific visualization workbenches
+
+This family covers data-first XR tools that transform Python sessions, plots,
+robot files, scientific state, or collaboration annotations into spatial
+workbenches.
+
+| Project | Status | Notes |
+|---|---|---|
+| `vuer-ai/vuer` | Studied in Wave 229 | Python async WebSocket scene bridge with msgpack events, scene operations, workspace assets, robotics schemas, and teleoperation examples |
+| `thomann/plotAR` | Studied in Wave 229 | generated immersive plot workflow with QR pairing, VR/keyboard pages, glTF/USDZ export, WebSocket commands, and WebVR/security caveats |
+| `TsatsuAmable/nemosyne` | Studied in Wave 229 | data-native WebXR visualization engine with semantic mapping, VR-aware layouts, transform DSL, and stream extensions |
+| `smrghsh/brahma` | Studied in Wave 229 | collaborative scientific room shell with selectable/grasp/controller modules, remote embodiment, callouts, and hardcoded endpoint caveats |
+| `jurmy24/mechaverse` | Studied in Wave 229 | adjacent robotics viewer dispatch shell for URDF, MJCF, and USD file groups; not yet an XR viewer |
+
+### Consolidation note
+
+This family matters because immersive data tools should separate:
+
+- data or file source
+- schema and semantic fields
+- transform/mapping layer
+- layout and spatial encoding
+- scene artifact or scene operation transport
+- interaction, annotation, and collaboration
+- export and local/remote trust policy
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- data-to-spatial-encoding matrices
+- Python/WebSocket to WebXR bridges
+- robot model viewer dispatch shells
+- scientific callout and annotation rooms
+- local data server safety guidance
+
+## Family 209: Scriptable WebXR modeling, viewer, editor, and creative display surfaces
+
+This family covers XR work surfaces where a user edits, exports, reloads,
+inspects, configures, or visualizes content rather than only consuming a scene.
+
+| Project | Status | Notes |
+|---|---|---|
+| `vipenzo/ridley` | Studied in Wave 230 | CAD-as-code workbench with SCI runtime evaluation, turtle geometry, editor/REPL, pilot-mode generated code, WebXR hooks, PeerJS sync, voice input, and Windows checkout caveat |
+| `id3vi5er/fusion360_webxr_viewer` | Studied in Wave 230 | Fusion 360 OBJ/MTL export plus threaded local HTTPS WebXR viewer with LAN URLs, reload, centering, scaling, and controller manipulation |
+| `felipereigosa/kairon` | Studied in Wave 230 | VR code editor with desktop keyboard/input companion, tab/terminal model, code execution, controller polling, haptics, locomotion, and visibility toggles |
+| `phobi82/webxr_butterchurn` | Studied in Wave 230 | modular WebXR audio visualizer shell with app config, audio, menu, depth, passthrough, lighting, runtime, movement, TestLab, and desktop menu preview |
+
+### Consolidation note
+
+This family matters because productive XR work surfaces should name:
+
+- source/editor/host-app boundary
+- live evaluation or export/reload path
+- asset and model import pipeline
+- desktop companion input strategy
+- in-headset menu state
+- runtime display and effect modules
+- desktop mirror/debug surface
+- comfort, permission, and local-network caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- in-headset editor and keyboard strategy matrices
+- CAD and host-app export bridges
+- menu texture and desktop mirror playbooks
+- depth/passthrough creative display shells
+- audio-reactive XR utility surfaces
+
+## Family 210: WebXR prototyping runtime micro-frameworks and experimental interaction primitives
+
+This family covers SDKs, wrappers, starters, and demo sets that package common
+WebXR boilerplate: scene setup, session lifecycle, input, hand gestures, depth,
+simulator, UI, model loading, and cleanup.
+
+| Project | Status | Notes |
+|---|---|---|
+| `google/xrblocks` | Studied in Wave 231 | broad AI plus WebXR SDK with script/core/options boundaries, gestures, hand estimators, depth, simulator, spatial UI, sound/video/world modules, and agents |
+| `w3reality/threelet` | Studied in Wave 231 | compact Three/WebXR wrapper with auto defaults, optional VR/AR/XR buttons, loop switching, event abstraction, controller rays, and disposal |
+| `simonedevit/reactylon` | Studied in Wave 231 | declarative React/Babylon XR framework with reconciler, scene injection, generated components, default XR experience hook, and disposal policy |
+| `vishnu7560834213/threexr` | Studied in Wave 231 | rough Three/Vite starter with VRButton, controller grips, joystick extraction, player capsule, BVH collision, and immature packaging |
+| `ARDings/EverythingController` | Studied in Wave 231 | single-file XR Blocks depth-body controller demo with point-cloud collision, debug/occlusion mesh, and spatial settings panel |
+| `dmvrg/webxr-ar-demos` | Studied in Wave 231 | product-style WebXR AR demos with hand pinch, UI planes, product controls, exploded views, and direct manipulation |
+
+### Consolidation note
+
+This family matters because WebXR prototypes should declare:
+
+- runtime tier and maturity
+- session and renderer ownership
+- script/component lifecycle
+- options and feature gates
+- input, gestures, depth, UI, sound, and model modules
+- simulator or desktop fallback
+- disposal and cleanup policy
+- device, permission, and demo-specific caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- WebXR SDK/runtime comparison matrices
+- interaction primitive catalogs
+- simulator-backed prototyping guidance
+- framework maturity labels
+- depth/gesture/UI reusable module boundaries
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.
