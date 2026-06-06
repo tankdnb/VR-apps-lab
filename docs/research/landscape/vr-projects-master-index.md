@@ -252,6 +252,10 @@ This file complements:
 - `vr-projects-wave-241-unity-xr-ui-adapters-grab-affordances-and-physical-control-microcomponents.md`
 - `vr-projects-wave-242-cv-mocap-and-industrial-vr-training-control-loops.md`
 - `vr-projects-wave-243-spatial-measuring-modeling-collaboration-and-mr-workbench-surfaces.md`
+- `vr-projects-wave-244-openvr-overlay-micro-surfaces-telemetry-panels-and-game-hud-prototypes.md`
+- `vr-projects-wave-245-openxr-micro-layer-render-shaping-foveation-and-tracking-diagnostics.md`
+- `vr-projects-wave-246-slimevr-diy-tracker-hardware-pcb-case-and-firmware-boundaries.md`
+- `vr-projects-wave-247-webcam-avatar-body-tracking-bridges-and-vrm-motion-surfaces.md`
 
 ## How to use this index
 

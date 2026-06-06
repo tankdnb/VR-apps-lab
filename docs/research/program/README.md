@@ -1729,3 +1729,31 @@ repeatable way.
 
 - `github-research-wave-243-backlog.md`
   Executed backlog for the Wave 243 pass.
+
+- `github-research-wave-244-plan.md`
+  Wave 244 research plan focused on OpenVR overlay micro-surfaces, telemetry
+  panels, and game HUD prototypes.
+
+- `github-research-wave-244-backlog.md`
+  Executed backlog for the Wave 244 pass.
+
+- `github-research-wave-245-plan.md`
+  Wave 245 research plan focused on OpenXR micro-layer render shaping,
+  foveation, and tracking diagnostics.
+
+- `github-research-wave-245-backlog.md`
+  Executed backlog for the Wave 245 pass.
+
+- `github-research-wave-246-plan.md`
+  Wave 246 research plan focused on SlimeVR DIY tracker hardware, PCB, case,
+  and firmware boundaries.
+
+- `github-research-wave-246-backlog.md`
+  Executed backlog for the Wave 246 pass.
+
+- `github-research-wave-247-plan.md`
+  Wave 247 research plan focused on webcam avatar body tracking bridges and
+  VRM motion surfaces.
+
+- `github-research-wave-247-backlog.md`
+  Executed backlog for the Wave 247 pass.

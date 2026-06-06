@@ -2565,6 +2565,56 @@ These are larger than a single repo and should guide the next research wave.
   ownership gates, shared-object selection counts, social hotspots, and guided
   tour surfaces.
 
+### 197. `OpenVR overlay micro-surface matrix across lifecycle, texture bridge, telemetry, placement, and log-driven HUDs`
+
+- Main entries:
+  `VRChatOverlay`, `vram-overlay`, `OpenVR-Overlay`, `VRPoleOverlay`,
+  `Remlok-HUD`
+- Why it matters:
+  Wave 244 added compact overlay references. A future matrix should compare
+  OpenVR initialization, overlay keys, dashboard versus scene overlays,
+  controller-relative placement, texture submission, WPF/desktop telemetry
+  panel UX, hotkeys, edit-mode snap/drag, chaperone awareness, autostart
+  manifests, journal/file-watch feeds, and hardcoded game/runtime caveats.
+
+### 198. `OpenXR micro-layer safety matrix across negotiation, hooks, gates, bypass, diagnostics, and resource lifecycle`
+
+- Main entries:
+  `MonoEye`, `Beyond-EVO`, `xr-tracking-diagnostics`,
+  `_ARCHIVE_XR_APILAYER_NOVENDOR_nis_scaler`
+- Why it matters:
+  Wave 245 added narrow OpenXR layer variants. A future matrix should compare
+  loader negotiation, dispatch tables, manifest/config boundaries,
+  runtime/device/extension capability gates, view/frame/swapchain/pose hook
+  scope, enable/bypass flags, CSV/log output, D3D11/D3D12 resource lifetimes,
+  foveation/gaze validity, and archived-code caveats.
+
+### 199. `SlimeVR DIY tracker hardware matrix across MCU, IMU, PCB, case, battery, firmware, packet schema, and license`
+
+- Main entries:
+  `SlimeVR_DeftTracker`, `frozen-slimes-v2`, `slimevr_pcb`,
+  `GummySlime`, `Caribou-Slime`, `SMORES`, `TinyOfficial-Case`,
+  `vr_trackers`
+- Why it matters:
+  Wave 246 added hardware-boundary references. A future matrix should compare
+  board-family role, MCU/radio choice, IMU compatibility, bridge pads,
+  charger/battery design, PCB outputs, BOM and assembly docs, case/strap
+  ergonomics, firmware defines, calibration routines, tracker packet schema,
+  open-hardware license obligations, and maturity before donor promotion.
+
+### 200. `Camera/avatar body-tracking bridge matrix across calibration, MediaPipe, transport, OSC/driver output, and retargeting`
+
+- Main entries:
+  `VR-Full-Body-Tracking-System`, `Cameras-Full-Body-Tracking`,
+  `Mediapipe-SteamVR-Full-Body-Tracking-for-Linux`, `kalidoface-3d`,
+  `MesekaiUnity`
+- Why it matters:
+  Wave 247 added several camera/avatar bridge shapes. A future matrix should
+  compare HTTP polling, WebRTC/WebSocket signaling, OSC, Unix sockets, Photon,
+  square calibration, reprojection preview, landmark confidence/smoothing,
+  triangulation, synthetic SteamVR trackers, VRM/ReadyPlayerMe retargeting,
+  blendshape mapping, and hardcoded-network or bundled-source caveats.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:
@@ -2745,6 +2795,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 174. `Unity XR microcontrol matrix across UI Toolkit panels, grab rings, push buttons, keypads, hand animation, and reveal feedback`
 175. `Sensor-tracked training loop matrix across ArUco, OptiTrack, EMG, ROS, WebSocket, OSC, calibration, smoothing, and logs`
 176. `Spatial workbench matrix across measure/model/project, hand deformation, planning panels, collaboration, undo, and action logs`
+177. `OpenVR overlay micro-surface matrix across lifecycle, texture bridge, telemetry, placement, and log-driven HUDs`
+178. `OpenXR micro-layer safety matrix across negotiation, hooks, gates, bypass, diagnostics, and resource lifecycle`
+179. `SlimeVR DIY tracker hardware matrix across MCU, IMU, PCB, case, battery, firmware, packet schema, and license`
+180. `Camera/avatar body-tracking bridge matrix across calibration, MediaPipe, transport, OSC/driver output, and retargeting`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

@@ -13799,3 +13799,177 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   spatial-authoring matrices, MR workbench UX notes, undo/history requirements,
   collaborative ownership patterns, and hand-manipulation caveats.
+
+## Method 689: Overlay micro-surface lifecycle with telemetry, placement, and external-feed boundaries
+
+- What it is:
+  a small overlay utility is decomposed into runtime identity, surface creation,
+  transform placement, texture or panel update, event/input loop, settings,
+  edit mode, optional autostart, and external telemetry/log ingestion.
+- Good for:
+  SteamVR/OpenVR overlays, dashboard widgets, controller-attached panels,
+  physical playspace markers, telemetry instruments, game-log HUDs, and
+  situational micro-panels.
+- Why it matters:
+  micro-overlays are easy to overbuild. They stay reusable when overlay
+  plumbing, rendering, placement, settings, and data sources are separate.
+- Source evidence:
+  `Sch1nken/VRChatOverlay`, `ObnubiladO/vram-overlay`,
+  `Spacefish/OpenVR-Overlay`, `lukis101/VRPoleOverlay`, and
+  `AArchAngel/Remlok-HUD`.
+- Reusable core:
+  runtime initialization, overlay app key, create/show/hide lifecycle,
+  transform placement, texture source, event polling, hotkey or edit-mode
+  controls, chaperone/runtime awareness, local settings, autostart manifest,
+  telemetry/log parser, user feedback, and cleanup.
+- Source evidence details:
+  Wave 244 includes C++ OpenVR/SFML texture upload, WPF telemetry panel
+  settings, C# Vulkan texture submission, controller snap/drag landmark
+  placement, SteamVR manifest writing, and Elite journal file watching.
+- Do not copy directly:
+  legacy OpenGL assumptions as a default, example overlay keys, hardcoded game
+  paths, old game data endpoints, desktop topmost windows as VR overlays, or
+  product-specific mission logic.
+- Strong references:
+  `VRPoleOverlay` for placement/edit mode, `OpenVR-Overlay` for C#/Vulkan
+  submission, `VRChatOverlay` for minimal lifecycle, `vram-overlay` for
+  micro-panel UX, and `Remlok-HUD` for log-driven HUDs.
+- Maturity:
+  strong utility-shell method; individual donors vary from minimal examples to
+  niche game-specific surfaces.
+- Best fit for `VR-apps-lab`:
+  overlay settings schemas, micro-panel prototypes, OpenVR lifecycle
+  checklists, log-driven HUD research, and small overlay UX references.
+
+## Method 690: OpenXR API-layer intervention loop for render, frame, and diagnostics changes
+
+- What it is:
+  an OpenXR API layer wraps loader negotiation, dispatch, configuration,
+  capability gates, narrowly scoped hooks, resource lifetime tracking, output
+  or diagnostics, and safe bypass/cleanup behavior.
+- Good for:
+  OpenXR doctors, runtime inspectors, tracking recorders, foveation helpers,
+  render-scaling layers, view/frame/swapchain experiments, and compatibility
+  shims.
+- Why it matters:
+  runtime-adjacent utilities can affect every application. A reusable layer
+  pattern must make hook scope, safety gates, bypass, logging, and resource
+  ownership explicit.
+- Source evidence:
+  `danny1marshall1587-maker/MonoEye`, `TripleJ160/Beyond-EVO`,
+  `marcsabat/xr-tracking-diagnostics`, and
+  `mbucchia/_ARCHIVE_XR_APILAYER_NOVENDOR_nis_scaler`.
+- Reusable core:
+  layer manifest, loader negotiation, dispatch table, env/INI config,
+  enable/bypass switch, logging path, session/graphics binding capture,
+  extension/device capability checks, frame/view/swapchain/pose hook,
+  resource lifecycle tracking, diagnostic output, user control, and cleanup.
+- Source evidence details:
+  Wave 245 includes mono-view enumeration intervention, D3D12/VRS/gaze
+  capability gates, `xrWaitFrame` pose CSV recording, and archived D3D11
+  swapchain scaler resource wrapping.
+- Do not copy directly:
+  archived scaler implementation as current best practice, game/hardware-only
+  assumptions, broad hook surfaces for simple diagnostics, render-changing
+  logic without bypass, registry-only settings, or unmanaged resource lifetimes.
+- Strong references:
+  `xr-tracking-diagnostics` for minimal doctor-style hook scope,
+  `Beyond-EVO` for capability gates and live control, `MonoEye` for view-hook
+  experimentation, and archived NIS scaler for swapchain resource lessons.
+- Maturity:
+  high-value architecture method with high compatibility risk; each concrete
+  implementation needs runtime/device validation before reuse.
+- Best fit for `VR-apps-lab`:
+  OpenXR doctor plans, layer safety checklists, render intervention risk
+  matrices, foveation/gaze notes, and diagnostic recorder prototypes.
+
+## Method 691: DIY tracker hardware boundary matrix
+
+- What it is:
+  a tracker hardware note captures MCU, IMU, radio, PCB, battery, charger,
+  enclosure, strap, firmware config, calibration, packet schema, manufacturing
+  outputs, license, and maturity as separate reusable boundaries.
+- Good for:
+  SlimeVR derivatives, DIY body trackers, custom tracker boards, Zephyr/ESP
+  firmware references, case ergonomics, battery/charger reviews, and
+  hardware-to-driver bridge planning.
+- Why it matters:
+  tracker projects are rarely reusable as one blob. The reusable knowledge is
+  usually in a boundary decision: IMU compatibility, solderability, packet
+  schema, case comfort, calibration, or manufacturing documentation.
+- Source evidence:
+  `zhangwenchao1992/SlimeVR_DeftTracker`, `frosty6742/frozen-slimes-v2`,
+  `TheButlah/slimevr_pcb`, `gumorr/GummySlime`,
+  `Tropingenie/Caribou-Slime`, `infopcgood/SMORES`,
+  `ZRock35/TinyOfficial-Case`, and `1vers1on/vr_trackers`.
+- Reusable core:
+  hardware family role, MCU/radio, IMU options, auxiliary tracker support,
+  charger and battery, PCB outputs, BOM, assembly instructions, case/strap
+  ergonomics, firmware defines, packet schema, calibration routine, transport
+  status, license, and caveats.
+- Source evidence details:
+  Wave 246 includes full tracker kits, multi-IMU bridge pads, ESP32-C3
+  board-family choices, hand-solderable board design, reciprocal hardware
+  license notes, source-light nRF tiny-board direction, case ergonomics, and a
+  Zephyr packet/calibration skeleton.
+- Do not copy directly:
+  board files without electronics review, license-restricted hardware sources,
+  fixed IMU orientation, source-light designs as proven donors, or incomplete
+  firmware loops as production protocol.
+- Strong references:
+  `slimevr_pcb` for board family documentation, `frozen-slimes-v2` for maker
+  assembly UX, `GummySlime` for firmware macro pairing, `vr_trackers` for
+  packet/calibration skeleton, and `TinyOfficial-Case` for mechanical caveats.
+- Maturity:
+  strong research/template method; not an endorsement of manufacturing any
+  hardware without separate review.
+- Best fit for `VR-apps-lab`:
+  tracker hardware matrices, future hardware-note templates, packet schema
+  comparisons, calibration checklists, and hardware-license caveat docs.
+
+## Method 692: Camera/avatar tracking bridge pipeline with calibration, transport, solving, and retargeting boundaries
+
+- What it is:
+  a camera/avatar tracking bridge separates capture, calibration, inference,
+  smoothing, pose solving, transport, output adapter, and retargeting so the
+  same body data can feed OSC trackers, SteamVR devices, Unity bones, VRM
+  avatars, or networked avatars.
+- Good for:
+  webcam body tracking, MediaPipe to OSC, MediaPipe to SteamVR drivers,
+  VRM/Vtubing surfaces, Unity avatar retargeting, multi-camera calibration,
+  SlimeVR/VRChat bridge planning, and external tracker prototypes.
+- Why it matters:
+  body tracking quality is hard to reason about when sensor capture, ML model,
+  coordinate conversion, smoothing, transport, and avatar output are coupled.
+  Reuse starts by naming each boundary and its caveats.
+- Source evidence:
+  `zekailin00/VR-Full-Body-Tracking-System`,
+  `Raraph84/Cameras-Full-Body-Tracking`,
+  `DubbsPi/Mediapipe-SteamVR-Full-Body-Tracking-for-Linux`,
+  `yeemachine/kalidoface-3d`, and `Neleac/MesekaiUnity`.
+- Reusable core:
+  camera or IMU capture, calibration UI, landmark or sensor buffer, confidence
+  gate, smoothing policy, coordinate-frame conversion, pose solver, transport
+  protocol, OSC/driver/avatar output adapter, template-avatar retargeting,
+  blendshape mapping, tuning controls, persistence, and user-facing caveats.
+- Source evidence details:
+  Wave 247 includes ESP8266/Flask/Unity HTTP loops, browser WebRTC MediaPipe
+  triangulation to OSC, Python MediaPipe to Linux OpenVR driver through Unix
+  socket, browser VRM/Vtubing UX, and Unity pose/hand/face solvers with Photon
+  replication.
+- Do not copy directly:
+  hardcoded WiFi credentials or IPs, fixed camera dimensions, identity
+  rotations as complete FBT, bundled/minified browser code as clean donor
+  evidence, or student polling loops as final architecture.
+- Strong references:
+  `Cameras-Full-Body-Tracking` for browser calibration/WebRTC/OSC,
+  `Mediapipe-SteamVR-Full-Body-Tracking-for-Linux` for CV-to-driver separation,
+  `MesekaiUnity` for template-avatar retargeting, and `kalidoface-3d` for
+  webcam-avatar product UX.
+- Maturity:
+  strong architecture method; individual donors need validation before any
+  tracking-quality or headset-compatibility claims.
+- Best fit for `VR-apps-lab`:
+  body-tracking transport matrices, calibration UX checklists, avatar
+  retargeting comparisons, synthetic tracker schemas, and webcam-to-avatar
+  product references.

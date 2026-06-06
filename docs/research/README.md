@@ -239,6 +239,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-241-unity-xr-ui-adapters-grab-affordances-and-physical-control-microcomponents.md`
 - `landscape/vr-projects-wave-242-cv-mocap-and-industrial-vr-training-control-loops.md`
 - `landscape/vr-projects-wave-243-spatial-measuring-modeling-collaboration-and-mr-workbench-surfaces.md`
+- `landscape/vr-projects-wave-244-openvr-overlay-micro-surfaces-telemetry-panels-and-game-hud-prototypes.md`
+- `landscape/vr-projects-wave-245-openxr-micro-layer-render-shaping-foveation-and-tracking-diagnostics.md`
+- `landscape/vr-projects-wave-246-slimevr-diy-tracker-hardware-pcb-case-and-firmware-boundaries.md`
+- `landscape/vr-projects-wave-247-webcam-avatar-body-tracking-bridges-and-vrm-motion-surfaces.md`
 
 ## Archive Navigation
 

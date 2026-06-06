@@ -194,6 +194,12 @@ These are the clearest current product and research lines:
     OptiTrack study alignment, industrial safety concepts, WebXR measurement,
     MR mesh deformation, planning panels, collaborative Netcode object gates,
     and source-light social gallery framing.
+38. `Overlay micro-surfaces, OpenXR micro-layers, DIY tracker hardware, and camera/avatar body-tracking bridges`
+    the repository now has fresh coverage of compact OpenVR overlay lifecycle
+    donors, telemetry and log-driven HUD surfaces, OpenXR view/frame/swapchain
+    intervention layers, diagnostic pose recorders, SlimeVR-style hardware
+    PCB/case/firmware boundaries, and MediaPipe/WebRTC/OSC/driver/avatar
+    retargeting pipelines.
 
 ## Most useful current docs
 
@@ -349,6 +355,10 @@ instead of full history:
 - `landscape/vr-projects-wave-241-unity-xr-ui-adapters-grab-affordances-and-physical-control-microcomponents.md`
 - `landscape/vr-projects-wave-242-cv-mocap-and-industrial-vr-training-control-loops.md`
 - `landscape/vr-projects-wave-243-spatial-measuring-modeling-collaboration-and-mr-workbench-surfaces.md`
+- `landscape/vr-projects-wave-244-openvr-overlay-micro-surfaces-telemetry-panels-and-game-hud-prototypes.md`
+- `landscape/vr-projects-wave-245-openxr-micro-layer-render-shaping-foveation-and-tracking-diagnostics.md`
+- `landscape/vr-projects-wave-246-slimevr-diy-tracker-hardware-pcb-case-and-firmware-boundaries.md`
+- `landscape/vr-projects-wave-247-webcam-avatar-body-tracking-bridges-and-vrm-motion-surfaces.md`
 
 ## Strong donor clusters right now
 
@@ -1043,6 +1053,10 @@ directions:
 160. `Unity XR microcontrol matrix across UI Toolkit panels, grab rings, push buttons, keypads, hand animation, and reveal feedback`
 161. `Sensor-tracked training loop matrix across ArUco, OptiTrack, EMG, ROS, WebSocket, OSC, calibration, smoothing, and logs`
 162. `Spatial workbench matrix across measure/model/project, hand deformation, planning panels, collaboration, undo, and action logs`
+163. `OpenVR overlay micro-surface matrix across lifecycle, texture bridge, telemetry, placement, and log-driven HUDs`
+164. `OpenXR micro-layer safety matrix across negotiation, hooks, gates, bypass, diagnostics, and resource lifecycle`
+165. `SlimeVR DIY tracker hardware matrix across MCU, IMU, PCB, case, battery, firmware, packet schema, and license`
+166. `Camera/avatar body-tracking bridge matrix across calibration, MediaPipe, transport, OSC/driver output, and retargeting`
 
 ## Current repository-maintenance priorities
 

@@ -3181,6 +3181,60 @@ Primary docs:
 - `adityanooka/Unity-Dive-VR` - `Studied in Wave 243 as a collaborative VR reference with Unity Netcode, XRI selection-count lift gates, server-owned random spawning, server-only proximity reactions, ownership-guarded movement, and VR/desktop locomotion fallback`
 - `Hempp/street-art-gallery` - `Checked in Wave 243 as a source-light social VR gallery product reference for hotspots, guided tours, avatars, emotes, voice, nametags, gathering areas, and comfort settings`
 
+## 215. OpenVR overlay micro-surfaces, telemetry panels, and game HUD prototypes
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-244-openvr-overlay-micro-surfaces-telemetry-panels-and-game-hud-prototypes.md`
+- `../landscape/project-families.md`
+
+- `Sch1nken/VRChatOverlay` - `Studied in Wave 244 as a legacy OpenVR/SFML/OpenGL overlay skeleton with VRApplication_Overlay init, CreateOverlay and dashboard/keyboard notes, tracked-device-relative placement, width/alpha settings, overlay event polling, SFML render texture upload, and early chat-plugin framing`
+- `ObnubiladO/vram-overlay` - `Studied in Wave 244 as a desktop telemetry micro-panel reference with transparent topmost WPF window, F8 hotkey, context menu, draggable surface, PerformanceCounter GPU memory polling, WMI fallback, and local JSON settings persistence`
+- `Spacefish/OpenVR-Overlay` - `Studied in Wave 244 as a C#/.NET OpenVR overlay donor with Vulkan VRVulkanTextureData_t submission, controller-relative placement, mouse input, dashboard control-bar flags, event polling, cleanup, and haptic feedback`
+- `lukis101/VRPoleOverlay` - `Studied in Wave 244 as an OpenVR playspace landmark overlay with settings.json, edit mode, trigger snap/drag adjustment, chaperone height/color awareness, fade controls, SteamVR autostart manifest, and space-offset caveats`
+- `AArchAngel/Remlok-HUD` - `Studied in Wave 244 as a Unity/OVRLay game HUD reference driven by process checks, FileSystemWatcher journal reads, JSON mission parsing, mission filtering/sorting, EDDB-style data loading, UI updates, and voice prompts`
+
+## 216. OpenXR micro-layer render shaping, foveation, and tracking diagnostics
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-245-openxr-micro-layer-render-shaping-foveation-and-tracking-diagnostics.md`
+- `../landscape/project-families.md`
+
+- `danny1marshall1587-maker/MonoEye` - `Studied in Wave 245 as an experimental OpenXR mono-eye layer with loader negotiation, generated dispatch, env-configured enable/bypass, view-count intervention, internal stereo/IPD state, Vulkan utility boundaries, and depth-warp reconstruction intent`
+- `TripleJ160/Beyond-EVO` - `Studied in Wave 245 as a game/hardware-specific D3D12/VRS foveation layer with OpenXR graphics-binding capture, extension/device capability gates, eye-gaze actions, smoothing/fallback, shading-rate image resources, heatmaps, INI config, and named-pipe live controls`
+- `marcsabat/xr-tracking-diagnostics` - `Studied in Wave 245 as a minimal OpenXR tracking doctor layer with dispatch table setup, session/reference-space management, xrWaitFrame pose reads, F9 recording toggle, beeps, logs, duration config, and CSV pose traces`
+- `mbucchia/_ARCHIVE_XR_APILAYER_NOVENDOR_nis_scaler` - `Studied in Wave 245 as an archived OpenXR NIS scaler ancestor with swapchain hooks, D3D11 device/resource wrapping, scaler modes, config, stats, screenshots, hotkeys, and resource-lifecycle lessons`
+
+## 217. SlimeVR DIY tracker hardware, PCB, case, and firmware boundaries
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-246-slimevr-diy-tracker-hardware-pcb-case-and-firmware-boundaries.md`
+- `../landscape/project-families.md`
+
+- `zhangwenchao1992/SlimeVR_DeftTracker` - `Studied in Wave 246 as a full SlimeVR-style hardware kit with main tracker, auxiliary tracker, charge hub, STL/case files, PCB BOM/Gerber/schematic outputs, photos, and a broad SlimeVR firmware subtree`
+- `frosty6742/frozen-slimes-v2` - `Studied in Wave 246 as a maker-friendly tracker PCB reference with Wemos D1 mini, MPU/BMI/BNO IMU options, TP4056 charging, hotswappable 18650, strap slots, bridge pads, assembly checklist, firmware orientation notes, and calibration caveats`
+- `TheButlah/slimevr_pcb` - `Studied in Wave 246 as a SlimeVR PCB family donor with simple breakout board, ESP32-C3/RISC-V/BLE ferrous_slime design, IMU compatibility jumpers, ICM20948 breakout, hardware changelog, and open-hardware license posture`
+- `gumorr/GummySlime` - `Studied in Wave 246 as a hand-solderable SlimeVR-compatible board with 0603 passives, module IMU boundary, ESP32-C3-WROOM-02, auxiliary pads, USB-C/charging notes, BOM, KiCad files, and PlatformIO defines`
+- `Tropingenie/Caribou-Slime` - `Studied in Wave 246 as a compact ESP32-C3 SuperMini plus BMI270 tracker PCB with BOM/cost notes, charger/battery choices, hand-assembly or PCBA framing, and reciprocal open-hardware license requirements`
+- `infopcgood/SMORES` - `Checked in Wave 246 as a source-light tiny tracker PCB direction around EBYTE E73/nRF52840 and ICM-45686, useful only as a schematic follow-up candidate until deeper evidence is gathered`
+- `ZRock35/TinyOfficial-Case` - `Checked in Wave 246 as a mechanical SlimeVR case reference with official-board enclosure remix, clip/backplate options, angled strap loops, battery orientation, foam pad notes, and connector-fragility warnings`
+- `1vers1on/vr_trackers` - `Studied in Wave 246 as a Zephyr tracker firmware/hardware skeleton with IMU/magnetometer/fuel-gauge/charger/button/USB init, packed tracker packet schema, gyroscope calibration, board DTS, and incomplete transport-loop caveat`
+
+## 218. Webcam avatar body tracking bridges and VRM motion surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-247-webcam-avatar-body-tracking-bridges-and-vrm-motion-surfaces.md`
+- `../landscape/project-families.md`
+
+- `zekailin00/VR-Full-Body-Tracking-System` - `Studied in Wave 247 as an IMU plus headset/controller tracking bridge with ESP8266 HTTP firmware upload, Flask tracker and Unity endpoints, shared input/output structs, IMU smoothing and body mapping, Unity HMD/controller upload, pose polling, and hardcoded-network caveats`
+- `Raraph84/Cameras-Full-Body-Tracking` - `Studied in Wave 247 as a browser multi-camera MediaPipe bridge with HTTPS static host, WebSocket/WebRTC signaling, four-corner square calibration, homography/focal estimation, DLT triangulation, smoothing, and OSC tracker output`
+- `DubbsPi/Mediapipe-SteamVR-Full-Body-Tracking-for-Linux` - `Studied in Wave 247 as a Linux CV-to-SteamVR bridge with Python webcam/MediaPipe inference, GUI offsets/smoothing/brightness, Unix-domain socket packets, and an OpenVR server driver exposing synthetic generic trackers`
+- `yeemachine/kalidoface-3d` - `Studied in Wave 247 as a browser VRM/Vtubing product reference with MediaPipe/Kalidokit, Three/VRM, localforage persistence, custom backgrounds/stickers, chroma/OBS mode, six-digit P2P voice framing, and bundled-source caveat`
+- `Neleac/MesekaiUnity` - `Studied in Wave 247 as a Unity MediaPipe avatar retargeting donor with pose/hand/face solvers, mirror mode, smoothing, blendshape mapping, template-avatar motion transfer, ReadyPlayerMe avatar loading, and Photon serialization`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

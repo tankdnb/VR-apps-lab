@@ -7340,6 +7340,144 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - MR planning panel patterns
 - hand-deformation and model-editing safety notes
 
+## Family 223: OpenVR overlay micro-surfaces, telemetry panels, and game HUD prototypes
+
+This family covers small overlay or overlay-like surfaces where the reusable
+lesson is lifecycle, placement, texture/data update, settings, edit mode, and
+external telemetry or log ingestion.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Sch1nken/VRChatOverlay` | Studied in Wave 244 | Legacy OpenVR/SFML/OpenGL overlay skeleton with overlay init, tracked-device placement, width/alpha, event polling, texture upload, and dashboard/keyboard notes |
+| `ObnubiladO/vram-overlay` | Studied in Wave 244 | Desktop telemetry micro-panel with transparent topmost WPF window, F8 hotkey, GPU memory polling, WMI fallback, context menu, dragging, and JSON settings |
+| `Spacefish/OpenVR-Overlay` | Studied in Wave 244 | C# OpenVR overlay with Vulkan texture submission, controller-relative placement, mouse input, dashboard control flags, haptics, and cleanup |
+| `lukis101/VRPoleOverlay` | Studied in Wave 244 | OpenVR playspace landmark overlay with edit mode, controller snap/drag, chaperone height/color, fade settings, and SteamVR autostart manifest |
+| `AArchAngel/Remlok-HUD` | Studied in Wave 244 | Unity/OVRLay Elite HUD driven by process checks, journal file watching, JSON mission parsing, mission sorting, data loading, and voice prompts |
+
+### Consolidation note
+
+This family matters because tiny overlay utilities should name:
+
+- overlay runtime identity and lifecycle
+- transform placement and edit mode
+- texture submission or panel rendering source
+- telemetry/log/event ingestion
+- hotkeys, input, haptics, and user feedback
+- settings persistence and autostart boundaries
+- hardcoded path, runtime, and game-specific caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenVR overlay lifecycle matrices
+- overlay settings schema extraction
+- log-driven HUD and notification-feed comparisons
+- telemetry micro-panel UX references
+- placement/edit-mode overlay prototypes
+
+## Family 224: OpenXR micro-layer render shaping, foveation, and tracking diagnostics
+
+This family covers narrow OpenXR API layers that change view/frame/swapchain
+behavior, gate graphics capabilities, record tracking data, or wrap graphics
+resources for post-processing.
+
+| Project | Status | Notes |
+|---|---|---|
+| `danny1marshall1587-maker/MonoEye` | Studied in Wave 245 | Experimental OpenXR mono-eye layer with negotiation, generated dispatch, env enable/bypass, view-count intervention, internal stereo state, and Vulkan/depth-warp intent |
+| `TripleJ160/Beyond-EVO` | Studied in Wave 245 | D3D12/VRS foveation layer with graphics-binding capture, extension/device gates, gaze actions, smoothing/fallback, SRI resources, heatmaps, INI, and named-pipe controls |
+| `marcsabat/xr-tracking-diagnostics` | Studied in Wave 245 | Minimal OpenXR diagnostic recorder with session/reference-space setup, xrWaitFrame pose reads, F9 toggle, beeps, logs, duration config, and CSV traces |
+| `mbucchia/_ARCHIVE_XR_APILAYER_NOVENDOR_nis_scaler` | Studied in Wave 245 | Archived NIS scaler ancestor with swapchain hooks, D3D11 resource wrapping, scaler modes, stats, screenshots, hotkeys, and resource-lifecycle lessons |
+
+### Consolidation note
+
+This family matters because OpenXR layers should name:
+
+- loader negotiation and manifest/config boundary
+- dispatch table and hook scope
+- runtime/device/extension gates
+- bypass, logging, and output paths
+- graphics/session resource lifecycle
+- frame, view, swapchain, or pose-record intervention
+- uninstall, compatibility, and archived-code caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenXR layer safety checklists
+- diagnostic recorder templates
+- render-changing layer risk matrices
+- foveation/gaze capability gates
+- swapchain resource lifecycle notes
+
+## Family 225: SlimeVR DIY tracker hardware, PCB, case, and firmware boundaries
+
+This family covers tracker hardware references where the reusable knowledge is
+the boundary between MCU, IMU, battery/charging, PCB, case, firmware config,
+calibration, packet schema, and licensing.
+
+| Project | Status | Notes |
+|---|---|---|
+| `zhangwenchao1992/SlimeVR_DeftTracker` | Studied in Wave 246 | Full tracker kit with main/aux tracker, charge hub, cases, PCB outputs, photos, and broad SlimeVR firmware subtree |
+| `frosty6742/frozen-slimes-v2` | Studied in Wave 246 | Maker PCB with Wemos, multi-IMU bridge pads, TP4056, 18650, strap slots, assembly checklist, firmware orientation, and calibration notes |
+| `TheButlah/slimevr_pcb` | Studied in Wave 246 | Board family split across simple breakout and ESP32-C3 ferrous_slime, with IMU compatibility jumpers, breakout adapters, changelogged fixes, and open-hardware posture |
+| `gumorr/GummySlime` | Studied in Wave 246 | Hand-solderable SlimeVR-compatible board with 0603 passives, module IMUs, ESP32-C3, auxiliary pads, USB-C/charging, BOM, KiCad, and PlatformIO defines |
+| `Tropingenie/Caribou-Slime` | Studied in Wave 246 | ESP32-C3/BMI270 tracker PCB with BOM/cost notes, charger/battery design, hand-assembly or PCBA framing, and reciprocal hardware license |
+| `infopcgood/SMORES` | Source-light in Wave 246 | Tiny-board direction around EBYTE E73/nRF52840 and ICM-45686 requiring deeper schematic/firmware evidence |
+| `ZRock35/TinyOfficial-Case` | Source-light in Wave 246 | Mechanical case reference for official SlimeVR PCB with strap loops, open/closed tops, battery orientation, foam, and connector warnings |
+| `1vers1on/vr_trackers` | Studied in Wave 246 | Zephyr tracker skeleton with IMU/magnetometer/fuel/charger/button/USB init, packet schema, gyro calibration, board DTS, and incomplete runtime loop |
+
+### Consolidation note
+
+This family matters because DIY tracker research should name:
+
+- MCU, radio, and IMU compatibility
+- battery, charger, and power-management choices
+- PCB, BOM, Gerber, KiCad, and assembly state
+- case, strap, battery, and connector ergonomics
+- firmware defines, packet schema, and calibration
+- license obligations and manufacturing caveats
+- maturity level before donor promotion
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- SlimeVR derivative matrices
+- tracker hardware note templates
+- firmware packet and calibration comparisons
+- case/strap UX checklists
+- open-hardware license caveat notes
+
+## Family 226: Webcam avatar body tracking bridges and VRM motion surfaces
+
+This family covers body-tracking bridges that turn camera, IMU, or
+headset/controller data into OSC tracker poses, SteamVR synthetic trackers,
+Unity avatar bones, VRM avatars, or networked avatar expressions.
+
+| Project | Status | Notes |
+|---|---|---|
+| `zekailin00/VR-Full-Body-Tracking-System` | Studied in Wave 247 | ESP8266 IMU plus Unity HMD/controller HTTP bridge with Flask pose solver, shared structs, smoothing, body mapping, Unity pose polling, and hardcoded-network caveats |
+| `Raraph84/Cameras-Full-Body-Tracking` | Studied in Wave 247 | Browser/WebRTC multi-camera MediaPipe bridge with square calibration, homography/focal estimation, DLT triangulation, smoothing, and OSC tracker output |
+| `DubbsPi/Mediapipe-SteamVR-Full-Body-Tracking-for-Linux` | Studied in Wave 247 | Linux Python MediaPipe process feeding an OpenVR server driver through Unix socket packets to expose generic trackers |
+| `yeemachine/kalidoface-3d` | Studied in Wave 247 | Browser VRM/Vtubing product reference with MediaPipe/Kalidokit, Three/VRM, local persistence, backgrounds/stickers, OBS mode, and P2P voice framing |
+| `Neleac/MesekaiUnity` | Studied in Wave 247 | Unity MediaPipe avatar retargeting with pose/hand/face solvers, blendshape mapping, template-avatar transfer, ReadyPlayerMe loading, and Photon serialization |
+
+### Consolidation note
+
+This family matters because body-tracking bridges should name:
+
+- capture source and calibration flow
+- landmark/IMU validity and smoothing
+- transport protocol and timing
+- pose solving and coordinate-frame conversion
+- output adapter: OSC, driver, Unity bones, VRM, or network avatar
+- retargeting and template-avatar boundaries
+- hardcoded network, source-bundle, and fixed-dimension caveats
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- camera/body-tracking transport matrices
+- calibration UX checklists
+- avatar retargeting comparisons
+- synthetic tracker output schemas
+- webcam-to-avatar product reference notes
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

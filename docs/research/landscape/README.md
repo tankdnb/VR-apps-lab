@@ -1073,6 +1073,26 @@ Use these files when you want to understand:
   mesh deformation, planning panels, collaborative object gates, and social
   gallery references.
 
+- `vr-projects-wave-244-openvr-overlay-micro-surfaces-telemetry-panels-and-game-hud-prototypes.md`
+  Next GitHub discovery wave focused on compact OpenVR overlay lifecycle
+  donors, telemetry micro-panels, Vulkan texture submission, physical
+  playspace landmark placement, and log-driven game HUDs.
+
+- `vr-projects-wave-245-openxr-micro-layer-render-shaping-foveation-and-tracking-diagnostics.md`
+  Next GitHub discovery wave focused on OpenXR API-layer variants for view
+  shaping, D3D12/VRS foveation, tracking CSV diagnostics, and archived
+  swapchain scaler resource lessons.
+
+- `vr-projects-wave-246-slimevr-diy-tracker-hardware-pcb-case-and-firmware-boundaries.md`
+  Next GitHub discovery wave focused on SlimeVR-style tracker PCBs, IMU/MCU
+  choices, battery and case ergonomics, firmware packet boundaries, and
+  open-hardware caveats.
+
+- `vr-projects-wave-247-webcam-avatar-body-tracking-bridges-and-vrm-motion-surfaces.md`
+  Next GitHub discovery wave focused on MediaPipe camera tracking, multi-camera
+  calibration, OSC and SteamVR driver output, browser VRM surfaces, and Unity
+  avatar retargeting.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
