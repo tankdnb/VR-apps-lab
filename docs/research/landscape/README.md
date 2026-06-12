@@ -1173,6 +1173,27 @@ Use these files when you want to understand:
   desktop overlays, historical SteamVR overlay experiments, editor QoL tools,
   avatar inspectors, world helpers, and tiny Udon components.
 
+- `vr-projects-wave-264-vr180-spatial-video-conversion-playback-camera-control-and-metadata-utilities.md`
+  Next GitHub discovery wave focused on VR180 conversion, spatial-video
+  metadata, camera companions, browser playback shells, declarative stereo
+  image components, and host-player projection shaders.
+
+- `vr-projects-wave-265-vrchat-creator-user-utility-microtools-and-service-dev-helpers.md`
+  Next GitHub discovery wave focused on VRChat creator editor helpers,
+  service CLIs, Udon byte-packet helpers, Quest/ADB developer companions,
+  friend/log monitors, and local OSC avatar controllers.
+
+- `vr-projects-wave-266-engine-browser-xr-utility-packages-input-and-locomotion-primitives.md`
+  Next GitHub discovery wave focused on engine/browser XR utility primitives:
+  tracked-device wrappers, Unity input selectors, legacy XR input helpers,
+  A-Frame locomotion/debug components, projection materials, and WebVR
+  release references.
+
+- `vr-projects-wave-267-source-light-openvr-steamvr-overlay-tweak-and-hud-variants.md`
+  Next GitHub discovery wave focused on source-light OpenVR/SteamVR overlay
+  variants, minimal native texture submission, vendor-heavy Unity shells,
+  README-only HUD ideas, and Quest MR image-panel references.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

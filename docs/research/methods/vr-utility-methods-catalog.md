@@ -14684,3 +14684,174 @@ When a new utility idea appears:
   source-light intake checklists, artifact hygiene rules, VRChat editor
   diagnostics, Udon sync review notes, and transparent desktop overlay
   privacy patterns.
+
+## Method 709: Spatial-video utility pipeline across conversion, metadata, camera control, playback, and export
+
+- What it is:
+  a spatial-video utility separates capture source, camera/lens profile,
+  remap/projection transforms, metadata parsing or writing, optional
+  stabilization, export format, and playback fallback.
+- Good for:
+  VR180 converters, stereo photo tools, projection metadata validators, camera
+  companions, browser VR180 players, and local player projection shaders.
+- Why it matters:
+  VR180 projects often hide several brittle seams behind one UI. Reuse becomes
+  safer when calibration, metadata, playback, and export are explicit modules.
+- Source evidence:
+  `34j/vr180-convert`, `silverqsy/VR180-Silver-Bullet`,
+  `nallic/convert_VR180`, `aosoft/VR180MeshProjection`,
+  `Vargol/VR180PhotoTools`, `ganeshv/egarim`,
+  `Verdi/VR180-Web-Player`, `steren/stereo-img`, and
+  `kasper93/mpv360`.
+- Reusable core:
+  source media adapter, lens/profile selection, remap map, feature-based or
+  manual calibration, metadata parser/writer, device-control adapter,
+  stabilization/timing stage, export preset, player capability gate, fallback
+  mode, and diagnostics.
+- Source evidence details:
+  Wave 264 includes OpenCV remap CLIs, GoPro-style gyro processing, Canon
+  ST-map conversion, Mesh Projection Box parsing, EXIF/XMP/right-eye photo
+  tools, encrypted VR180 camera APIs, WebXR/fallback players, custom stereo
+  image elements, and mpv shader controls.
+- Do not copy directly:
+  unsafe transform evaluation, hardware-specific scripts as generic logic,
+  camera secrets or key files, incomplete parsers without guards, or viewers
+  that silently ignore unsupported spatial-video formats.
+- Strong references:
+  `stereo-img` for declarative web-component playback, `vr180-convert` for
+  small conversion CLI boundaries, `VR180-Silver-Bullet` for pipeline staging,
+  and `VR180MeshProjection` for metadata parser evidence.
+- Maturity:
+  strong pattern family with uneven project maturity and many format/hardware
+  caveats.
+- Best fit for `VR-apps-lab`:
+  VR180/spatial-video pipeline matrices, projection validators, browser media
+  components, camera profile boundaries, and future spatial-media utility
+  prototypes.
+
+## Method 710: VRChat helper surface triage across editor, service, Udon, device, monitor, and OSC utilities
+
+- What it is:
+  a VRChat helper utility is first classified by surface and risk boundary:
+  editor action, service CLI, Udon runtime library, device developer helper,
+  social monitor, or avatar OSC controller.
+- Good for:
+  avatar editor workbenches, API CLIs, Udon byte serializers, Quest/ADB dev
+  companions, friend/session monitors, and local avatar parameter tools.
+- Why it matters:
+  small VRChat utilities can touch credentials, public social data, destructive
+  device actions, generated avatar assets, and Udon runtime state. Reuse needs
+  safety gates before code ideas are promoted.
+- Source evidence:
+  `crestudio/VRSuya-Utility`, `te260ku/VRMenuUtility`,
+  `AkitaIkeda/VRCFileUtility`, `thymespace/VRCPacketUtility`,
+  `korinVR/VRDeveloperUtility`,
+  `namoshika/VRChatUtility_FriendListMonitor`,
+  `kikookraft/vrc-utility`, and `falnen/Python-VRC-utility`.
+- Reusable core:
+  surface type, entry point, credential or device gate, privacy exposure,
+  action target, Undo/rollback/cooldown, visible operator state, package
+  status, artifact hygiene, and donor/reference/source-light decision.
+- Source evidence details:
+  Wave 265 includes creator editor batch tools, Spectre.Console login/TFA
+  CLIs, Udon byte buffers, Quest ADB/device action companions, cloud-backed
+  friend-list monitors, artifact-only repos, and Python OSC avatar controllers.
+- Do not copy directly:
+  XML token storage, unreviewed Udon byte serializers, ADB/service commands
+  without confirmation, public social monitoring without privacy gates,
+  artifact-only repos as donor evidence, or syntax-broken prototypes.
+- Strong references:
+  `VRDeveloperUtility` for developer companion ergonomics,
+  `VRSuya-Utility` for creator editor batch surfaces, and
+  `VRCFileUtility` for service CLI routing after credential redesign.
+- Maturity:
+  pragmatic triage method; strong for safety and classification, with mixed
+  source quality across projects.
+- Best fit for `VR-apps-lab`:
+  VRChat helper risk matrices, Quest developer companion prototypes, avatar
+  editor batch tools, Udon serialization checklists, and privacy-first social
+  monitor guidance.
+
+## Method 711: Engine/browser XR primitive intake across devices, input selectors, locomotion, and projection components
+
+- What it is:
+  an XR primitive package is studied by the contracts it exposes: runtime
+  device adapter, feature map, input event model, selector, target module,
+  locomotion/body model, debug surface, and projection or texture helper.
+- Good for:
+  engine OpenVR addons, Unity XR input wrappers, selector frameworks,
+  A-Frame/WebXR component libraries, and source-light runtime support packages.
+- Why it matters:
+  primitive packages are rarely polished products, but they can reveal reusable
+  boundaries for future VR utilities if framework assumptions and deprecated
+  APIs are named clearly.
+- Source evidence:
+  `Silverlan/PragmaVR`, `TheUtDuong/unity-vr-utilities`,
+  `loganator956/unity-vr-utilities`, `nukadelic/UXRU`,
+  `Ponsukeee/VRInputModule`,
+  `Sunflower-Reality-Labs/aframe-srl-utils`, and
+  `acerwebvr/Acer-VR-Utility-for-Browser-WebVR-Release`.
+- Reusable core:
+  runtime adapter, device identity, feature discovery/cache, input event enum,
+  selector mode, current target/module handoff, fallback target, locomotion
+  and collider model, debug HUD, projection material, lifecycle cleanup, and
+  framework migration caveat.
+- Source evidence details:
+  Wave 266 includes Pragma OpenVR tracked-device entities, Unity loader
+  switches, legacy XR trackers/player locomotion, laser and collision selector
+  modules, A-Frame controller event panels and projection components, plus
+  WebVR release-only packaging references.
+- Do not copy directly:
+  deprecated Unity XR APIs without migration notes, hardcoded rig names,
+  vendor/sample payloads as original code, release-only browser packages, or
+  selector logic without lifecycle tests.
+- Strong references:
+  `PragmaVR` for tracked-device entity abstraction,
+  `VRInputModule` for selector/module boundaries,
+  `aframe-srl-utils` for declarative browser components, and `UXRU` for
+  legacy input primitive mapping.
+- Maturity:
+  useful primitive intake method with framework-specific caveats.
+- Best fit for `VR-apps-lab`:
+  selector pipeline comparisons, framework-neutral input contracts, browser XR
+  component diagnostics, locomotion/body-model notes, and legacy-to-modern XR
+  migration matrices.
+
+## Method 712: Source-light overlay intake across README intent, vendor shells, minimal native loops, and MR panels
+
+- What it is:
+  a source-light overlay pass classifies each candidate by implementation
+  evidence before reuse: README-only intent, placeholder, vendor-heavy shell,
+  minimal native overlay loop, or narrow MR panel reference.
+- Good for:
+  OpenVR/SteamVR overlay searches, game HUD ideas, Unity overlay shells,
+  minimal C/OpenVR baselines, and Quest MR annotation panels.
+- Why it matters:
+  overlay searches produce many noisy repositories. Promoting them without
+  source evidence pollutes the registry; dismissing them entirely loses useful
+  product-demand and minimal-baseline signals.
+- Source evidence:
+  `bwmcadams/vorpal`, `UpsilonScorpi/VRP-Overlay`,
+  `LapisGit/OVRTweaks`, `JasonPKnoll/vr_overlay`, and
+  `pouya-codes/VR_overlay`.
+- Reusable core:
+  source evidence level, overlay API or MR framework, texture submission path,
+  placement model, input/toggle model, artifact hygiene, binary/vendor payload
+  check, product intent, donor/reference classification, and follow-up route.
+- Source evidence details:
+  Wave 267 includes two README-only overlay names, a SteamVR-heavy Unity
+  project shell, a tiny C/rawdraw/OpenVR texture submission loop, and a Quest
+  mixed-reality heatmap image panel with opacity and hand/controller toggles.
+- Do not copy directly:
+  checked-in executables, uninitialized overlay state, vendor SteamVR payloads
+  as original logic, placeholder repos, mixed clinical/demo docs, or Meta-only
+  passthrough scripts as generic overlay APIs.
+- Strong references:
+  `JasonPKnoll/vr_overlay` for minimal native OpenVR texture submission and
+  `pouya-codes/VR_overlay` for narrow MR annotation-panel UX, both with
+  explicit caveats.
+- Maturity:
+  intake and triage method, not a full implementation pattern.
+- Best fit for `VR-apps-lab`:
+  minimal overlay baselines, source-light overlay checklists, game-HUD demand
+  references, MR image/annotation panel ideas, and vendor-heavy caveat rules.

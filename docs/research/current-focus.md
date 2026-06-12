@@ -1,6 +1,6 @@
 # Current Focus
 
-- Date: `2026-06-06`
+- Date: `2026-06-12`
 - Purpose: give a short `what matters now` view of `VR-apps-lab` without
   forcing a new session or visitor through the full wave archive.
 
@@ -227,6 +227,11 @@ These are the clearest current product and research lines:
     icon/preview/generation tools, VPM index and listing publication
     pipelines, desktop or SteamVR overlay experiments, editor QoL packages,
     avatar asset inspectors, world helpers, and tiny Udon sync components.
+43. `Spatial video, VRChat helper surfaces, XR primitives, and source-light overlay intake`
+    the repository now has fresh coverage of VR180 conversion and metadata
+    pipelines, VRChat editor/service/Udon/device helper surfaces, engine and
+    browser XR primitive packages, and source-light overlay triage across
+    README-only, vendor-heavy, minimal native, and Quest MR panel variants.
 
 ## Most useful current docs
 
@@ -402,6 +407,10 @@ instead of full history:
 - `landscape/vr-projects-wave-261-vrchat-expression-menu-authoring-visualization-and-runtime-menu-helpers.md`
 - `landscape/vr-projects-wave-262-vpm-package-index-generation-flatpak-and-repository-publication-tooling.md`
 - `landscape/vr-projects-wave-263-vrchat-overlay-world-editor-and-udon-microtools.md`
+- `landscape/vr-projects-wave-264-vr180-spatial-video-conversion-playback-camera-control-and-metadata-utilities.md`
+- `landscape/vr-projects-wave-265-vrchat-creator-user-utility-microtools-and-service-dev-helpers.md`
+- `landscape/vr-projects-wave-266-engine-browser-xr-utility-packages-input-and-locomotion-primitives.md`
+- `landscape/vr-projects-wave-267-source-light-openvr-steamvr-overlay-tweak-and-hud-variants.md`
 
 ## Strong donor clusters right now
 
@@ -942,6 +951,12 @@ the strongest current clusters:
   for VRChat API companion boundaries, generated-client surfaces,
   expression-menu preview and conflict checks, VPM publication hygiene,
   editor diagnostics, and tiny Udon sync utilities.
+- `stereo-img`, `vr180-convert`, `VR180-Silver-Bullet`,
+  `VRDeveloperUtility`, `VRSuya-Utility`, `PragmaVR`,
+  `VRInputModule`, `aframe-srl-utils`, and `vr_overlay`
+  for spatial-video pipeline decomposition, VRChat helper safety boundaries,
+  engine/browser XR primitives, selector/component patterns, and minimal
+  native OpenVR overlay texture submission.
 
 ## Highest-value next follow-up passes
 
@@ -1130,6 +1145,10 @@ directions:
 180. `VRChat expression-menu authoring matrix across icon pipelines, generated assets, preview, ModularAvatar, and runtime menu patches`
 181. `VPM package publication matrix across manifests, releases, lockfiles, indexes, Flatpak wrappers, and listing UX`
 182. `Source-light VRChat utility triage matrix across overlays, editor packages, world helpers, Udon scripts, and artifact hygiene`
+183. `VR180 spatial-video pipeline matrix across conversion, metadata, camera control, playback, and export`
+184. `VRChat helper risk matrix across editor, service, Udon, Quest dev, social monitor, and OSC controller surfaces`
+185. `Engine/browser XR primitive matrix across tracked devices, selectors, locomotion, projection components, and legacy APIs`
+186. `Source-light overlay evidence matrix across README-only, vendor-heavy, minimal native, and MR image-panel projects`
 
 ## Current repository-maintenance priorities
 

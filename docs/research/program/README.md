@@ -1869,3 +1869,31 @@ repeatable way.
 
 - `github-research-wave-263-backlog.md`
   Executed backlog for the Wave 263 pass.
+
+- `github-research-wave-264-plan.md`
+  Wave 264 research plan focused on VR180 spatial-video conversion, playback,
+  camera control, and metadata utilities.
+
+- `github-research-wave-264-backlog.md`
+  Executed backlog for the Wave 264 pass.
+
+- `github-research-wave-265-plan.md`
+  Wave 265 research plan focused on VRChat creator/user utility microtools and
+  service developer helpers.
+
+- `github-research-wave-265-backlog.md`
+  Executed backlog for the Wave 265 pass.
+
+- `github-research-wave-266-plan.md`
+  Wave 266 research plan focused on engine/browser XR utility packages,
+  input, and locomotion primitives.
+
+- `github-research-wave-266-backlog.md`
+  Executed backlog for the Wave 266 pass.
+
+- `github-research-wave-267-plan.md`
+  Wave 267 research plan focused on source-light OpenVR/SteamVR overlay,
+  tweak, and HUD variants.
+
+- `github-research-wave-267-backlog.md`
+  Executed backlog for the Wave 267 pass.

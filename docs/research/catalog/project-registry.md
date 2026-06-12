@@ -3473,6 +3473,67 @@ Primary docs:
 - `yassann325/VRC-NetworkQueue` - `Source-light in Wave 263 as a mostly VRChat template-package/VPM listing reference with package skeleton, vpm-manifest, generated website, and follow-up need to confirm real NetworkQueue implementation`
 - `PeaceKunihiro/vrchat-udon-tools` - `Studied in Wave 263 as tiny Udon world utilities with synced cycle switch, synced audio selector with optional stop slot, owner transfer, RequestSerialization, OnDeserialization state application, and delayed auto-hide behavior`
 
+## 235. VR180 spatial video conversion, playback, camera control, and metadata utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-264-vr180-spatial-video-conversion-playback-camera-control-and-metadata-utilities.md`
+- `../landscape/project-families.md`
+
+- `34j/vr180-convert` - `Studied in Wave 264 as an OpenCV/Typer VR180 image conversion CLI with stereo pair timestamp auto-matching, split-image handling, remap map generation, AKAZE feature matching, and robust rotation calibration caveats`
+- `silverqsy/VR180-Silver-Bullet` - `Studied in Wave 264 as a professional GoPro Max 2 VR180 processing pipeline with FFmpeg/PyAV/Numba/CUDA gates, GPMF gyro parsing, stabilization/export helpers, platform logging, and hardware-specific caveats`
+- `nallic/convert_VR180` - `Studied in Wave 264 as a Canon dual-fisheye image converter using precomputed EXR ST maps, batch conversion, camera/lens-specific profiles, and single-resample output caveats`
+- `aosoft/VR180MeshProjection` - `Studied in Wave 264 as a Unity MP4 Mesh Projection Box parser with deflate handling, big-endian binary readers, signed delta decoding, vertex/index reconstruction, and incomplete-parser caveats`
+- `Vargol/VR180PhotoTools` - `Studied in Wave 264 as .NET VR180 photo conversion tools with EXIF/XMP write-back, right-eye payload extraction/embedding, layout flags, FOV options, and older-runtime caveats`
+- `ganeshv/egarim` - `Studied in Wave 264 as a Lenovo Mirage VR180 camera companion with Bluetooth pairing, encrypted API transport, signed HTTP requests, capture/media/viewfinder controls, and Linux/crypto-helper caveats`
+- `Verdi/VR180-Web-Player` - `Studied in Wave 264 as a browser VR180 player with WebXR capability gate, draggable 2D fallback, world-space controls, auto-hide UI, canvas button textures, and limited-format caveats`
+- `steren/stereo-img` - `Studied in Wave 264 as a declarative stereo image web component with parser registry, VR180/XMP/GPano handling, embedded right-eye extraction, Three.js display modes, and browser metadata/CORS caveats`
+- `kasper93/mpv360` - `Studied in Wave 264 as an mpv Lua plus GLSL projection controller with configurable 360/stereo modes, shader option updates, key bindings, OSD state, and host-player-specific caveats`
+
+## 236. VRChat creator/user utility microtools and service dev helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-265-vrchat-creator-user-utility-microtools-and-service-dev-helpers.md`
+- `../landscape/project-families.md`
+
+- `crestudio/VRSuya-Utility` - `Studied in Wave 265 as a VRChat creator editor workbench with texture/material replacement UI, localized inspectors, PhysBone batch actions, humanoid bone/collider helpers, Undo usage, and VRC SDK caveats`
+- `te260ku/VRMenuUtility` - `Source-light in Wave 265 as a Unity project skeleton with sample scene/settings but no meaningful menu utility source found in the inspected branch`
+- `AkitaIkeda/VRCFileUtility` - `Studied in Wave 265 as a Spectre.Console VRChat service CLI with BasicAuth/TFA login, token XML persistence, feature selection, and credential-storage/API-age caveats`
+- `thymespace/VRCPacketUtility` - `Studied in Wave 265 as a UdonSharp sequential byte-buffer helper with fixed packet storage, read/write cursor state, numeric overloads, and byte-size/bounds/endian caveats`
+- `korinVR/VRDeveloperUtility` - `Studied in Wave 265 as a Windows Quest/VRChat developer companion with ADB discovery, device status, app launch/stop, screenshot/media pull, Meta service actions, and destructive-action caution`
+- `namoshika/VRChatUtility_FriendListMonitor` - `Studied in Wave 265 as an AWS/Notion VRChat friend-list and desktop-log monitor with API polling, log regex event extraction, queues, and privacy/credential caveats`
+- `kikookraft/vrc-utility` - `Source-light in Wave 265 as a diagram/logo-only repository with no source donor value found in the inspected branch`
+- `falnen/Python-VRC-utility` - `Studied with caveats in Wave 265 as a Python OSC avatar controller with dispatcher queues, avatar JSON/log matching, per-avatar controller lifecycle, and syntax/packaging caveats`
+
+## 237. Engine and browser XR utility packages, input, and locomotion primitives
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-266-engine-browser-xr-utility-packages-input-and-locomotion-primitives.md`
+- `../landscape/project-families.md`
+
+- `Silverlan/PragmaVR` - `Studied in Wave 266 as a Pragma engine OpenVR utility addon with tracked-device entities, render model fallback, activity state, pose updates, haptic pulses, laser primitives, and mpv-backed texture wrapper`
+- `TheUtDuong/unity-vr-utilities` - `Source-light in Wave 266 as a Unity project settings skeleton with little implementation evidence in the inspected branch`
+- `loganator956/unity-vr-utilities` - `Studied in Wave 266 as a tiny Unity XR loader-specific controller prefab switch that enables Oculus-package controller objects when the Oculus loader is active`
+- `nukadelic/UXRU` - `Studied in Wave 266 as a legacy Unity XR utility package with InputDevice tracker wrappers, feature caching, axis/button fallbacks, locomotion/body collider helpers, teleport reset, and transform smoothing`
+- `Ponsukeee/VRInputModule` - `Studied in Wave 266 as a Unity VR input module framework with device/module/selector interfaces, click/double-click input routing, laser raycast selector, collision selector, and module handoff`
+- `Sunflower-Reality-Labs/aframe-srl-utils` - `Studied in Wave 266 as an A-Frame component micro-library with Oculus Touch locomotion, two-hand grab/rotation, controller event HUDs, and equirectangular projection material components`
+- `acerwebvr/Acer-VR-Utility-for-Browser-WebVR-Release` - `Source-light in Wave 266 as a historical Acer/WMR browser WebVR installer/extension release reference with no source donor found`
+
+## 238. Source-light OpenVR/SteamVR overlay, tweak, and HUD variants
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-267-source-light-openvr-steamvr-overlay-tweak-and-hud-variants.md`
+- `../landscape/project-families.md`
+
+- `bwmcadams/vorpal` - `Source-light in Wave 267 as a README-only Elite Dangerous VR overlay proof-of-concept intent with no implementation evidence in the inspected branch`
+- `UpsilonScorpi/VRP-Overlay` - `Source-light in Wave 267 as a README-only overlay placeholder with no donor code found`
+- `LapisGit/OVRTweaks` - `Partially studied in Wave 267 as a Unity/SteamVR overlay/tweak project shell whose inspected tree is mostly SteamVR vendor/sample payload and project settings rather than isolated custom overlay code`
+- `JasonPKnoll/vr_overlay` - `Studied in Wave 267 as a minimal C/OpenVR/rawdraw overlay loop with overlay app initialization, function-table lookup, OpenGL texture creation, SetOverlayTexture submission, and controller-relative placement caveats`
+- `pouya-codes/VR_overlay` - `Studied with caveats in Wave 267 as a Quest MR H&E plus heatmap image overlay demo with layered images, CanvasGroup opacity, controller/hand toggles, passthrough layer setup, and mixed-doc/placeholder caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

@@ -1,6 +1,6 @@
 # VR Projects Master Index
 
-- Date: `2026-06-06`
+- Date: `2026-06-12`
 - Goal: maintain a single index of VR-related GitHub projects that are useful as
   references, code donors, or product inspiration for `VR-apps-lab`.
 
@@ -272,6 +272,10 @@ This file complements:
 - `vr-projects-wave-261-vrchat-expression-menu-authoring-visualization-and-runtime-menu-helpers.md`
 - `vr-projects-wave-262-vpm-package-index-generation-flatpak-and-repository-publication-tooling.md`
 - `vr-projects-wave-263-vrchat-overlay-world-editor-and-udon-microtools.md`
+- `vr-projects-wave-264-vr180-spatial-video-conversion-playback-camera-control-and-metadata-utilities.md`
+- `vr-projects-wave-265-vrchat-creator-user-utility-microtools-and-service-dev-helpers.md`
+- `vr-projects-wave-266-engine-browser-xr-utility-packages-input-and-locomotion-primitives.md`
+- `vr-projects-wave-267-source-light-openvr-steamvr-overlay-tweak-and-hud-variants.md`
 
 ## How to use this index
 

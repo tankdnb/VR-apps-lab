@@ -8042,6 +8042,151 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - transparent desktop overlay/log privacy notes;
 - artifact hygiene rules for future source intake.
 
+## Family 243: VR180 spatial-video conversion, metadata, camera, and playback utilities
+
+This family covers VR180 and stereo-media projects where the reusable value is
+not one player, but a pipeline across capture, conversion, metadata, export,
+and playback fallback.
+
+| Project | Status | Notes |
+|---|---|---|
+| `34j/vr180-convert` | Studied in Wave 264 | OpenCV/Typer remap CLI with stereo pair auto-matching and feature-based rotation calibration |
+| `silverqsy/VR180-Silver-Bullet` | Studied in Wave 264 | Professional GoPro Max 2 processing pipeline with gyro/stabilization/GPU/export stages |
+| `nallic/convert_VR180` | Studied in Wave 264 | Canon dual-fisheye conversion using precomputed ST maps and batch processing |
+| `aosoft/VR180MeshProjection` | Studied in Wave 264 | Unity MP4 Mesh Projection Box parser and mesh reconstruction reference |
+| `Vargol/VR180PhotoTools` | Studied in Wave 264 | VR180 photo EXIF/XMP/right-eye payload conversion utilities |
+| `ganeshv/egarim` | Studied in Wave 264 | Lenovo Mirage VR180 camera companion with pairing, encrypted transport, capture, and viewfinder controls |
+| `Verdi/VR180-Web-Player` | Studied in Wave 264 | Browser VR180 player with WebXR mode and non-XR draggable fallback |
+| `steren/stereo-img` | Studied in Wave 264 | Declarative stereo-image custom element with parser registry and embedded right-eye/XMP handling |
+| `kasper93/mpv360` | Studied in Wave 264 | mpv Lua and GLSL projection control with OSD, key bindings, and SBS eye output |
+
+### Consolidation note
+
+This family matters because spatial-video utilities should name:
+
+- source media and capture device;
+- camera/lens profile or calibration source;
+- remap/projection transform;
+- metadata parser or writer;
+- stabilization, timing, and export stage;
+- playback shell and fallback mode;
+- format limits and operator-visible diagnostics.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VR180/spatial-video pipeline matrices;
+- projection metadata validators;
+- browser/web-component spatial media viewers;
+- local player shader-control references;
+- camera companion and calibration profile boundaries.
+
+## Family 244: VRChat creator/user helper utilities and developer companions
+
+This family covers small VRChat helpers that cross editor workflows, service
+auth, Udon byte utilities, Quest/ADB developer actions, social monitoring, and
+local OSC avatar control.
+
+| Project | Status | Notes |
+|---|---|---|
+| `crestudio/VRSuya-Utility` | Studied in Wave 265 | Creator editor workbench with texture/material replacement, PhysBone batch actions, avatar helpers, and Undo usage |
+| `te260ku/VRMenuUtility` | Source-light in Wave 265 | Unity skeleton with no meaningful implementation found in the inspected branch |
+| `AkitaIkeda/VRCFileUtility` | Studied in Wave 265 | Spectre.Console VRChat service CLI with login/TFA/token persistence and file feature routing |
+| `thymespace/VRCPacketUtility` | Studied in Wave 265 | UdonSharp sequential byte-packet helper with cursor and bounds/type caveats |
+| `korinVR/VRDeveloperUtility` | Studied in Wave 265 | Windows Quest developer companion with ADB discovery, device status, screenshots, and runtime/service actions |
+| `namoshika/VRChatUtility_FriendListMonitor` | Studied in Wave 265 | AWS/Notion friend-list and desktop-log monitor with API polling and privacy caveats |
+| `kikookraft/vrc-utility` | Source-light in Wave 265 | Diagram/logo-only repository with no source donor value found |
+| `falnen/Python-VRC-utility` | Studied with caveats in Wave 265 | Python OSC avatar controller with avatar-log matching and per-avatar controller lifecycle |
+
+### Consolidation note
+
+This family matters because VRChat helper utilities should name:
+
+- surface type: editor, service CLI, Udon runtime, device helper, monitor, or OSC controller;
+- credential, device, or privacy gate;
+- input data source and action target;
+- Undo, rollback, cooldown, or safe-release behavior;
+- packaging state and artifact hygiene;
+- donor/reference/source-light classification.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VRChat helper risk matrices;
+- Quest/VRChat developer companion surfaces;
+- avatar editor batch-repair workbenches;
+- Udon byte-packet review checklists;
+- social/session monitor privacy patterns.
+
+## Family 245: Engine and browser XR utility primitives
+
+This family covers low-level primitives that are not full products: tracked
+device wrappers, input selectors, locomotion/body models, projection materials,
+and browser component diagnostics.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Silverlan/PragmaVR` | Studied in Wave 266 | Pragma OpenVR addon with tracked-device entities, render model fallback, haptics, laser primitives, and video texture wrapper |
+| `TheUtDuong/unity-vr-utilities` | Source-light in Wave 266 | Unity settings skeleton with little implementation evidence |
+| `loganator956/unity-vr-utilities` | Studied in Wave 266 | Tiny Unity XR loader-specific controller prefab switch |
+| `nukadelic/UXRU` | Studied in Wave 266 | Legacy Unity XR tracker/input, locomotion, body collider, and transform smoothing helpers |
+| `Ponsukeee/VRInputModule` | Studied in Wave 266 | Unity input module framework with device/module/selector interfaces, laser selector, and collision selector |
+| `Sunflower-Reality-Labs/aframe-srl-utils` | Studied in Wave 266 | A-Frame locomotion, two-hand grab, controller event HUD, and projection material components |
+| `acerwebvr/Acer-VR-Utility-for-Browser-WebVR-Release` | Source-light in Wave 266 | Historical browser WebVR release/install reference for Acer/WMR |
+
+### Consolidation note
+
+This family matters because XR primitive packages should name:
+
+- runtime or framework adapter;
+- device and feature map;
+- input event and selector contract;
+- target module or component lifecycle;
+- visible debug state;
+- locomotion/body/collider assumptions;
+- projection or texture helper boundary;
+- deprecated API or framework caveats.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- selector pipeline references;
+- framework-neutral XR input abstractions;
+- browser component diagnostics;
+- locomotion/body model comparison;
+- legacy-to-modern XR API migration notes.
+
+## Family 246: Source-light OpenVR/SteamVR overlay and HUD variants
+
+This family covers overlay-related projects whose main value is intake
+classification: README-only intent, vendor-heavy Unity shells, minimal native
+OpenVR loops, or narrow Quest MR image-panel references.
+
+| Project | Status | Notes |
+|---|---|---|
+| `bwmcadams/vorpal` | Source-light in Wave 267 | README-only Elite Dangerous overlay proof-of-concept intent |
+| `UpsilonScorpi/VRP-Overlay` | Source-light in Wave 267 | README-only overlay placeholder |
+| `LapisGit/OVRTweaks` | Partially studied in Wave 267 | Unity/SteamVR overlay/tweak shell dominated by vendor/sample payload in the inspected branch |
+| `JasonPKnoll/vr_overlay` | Studied in Wave 267 | Minimal native C/OpenVR overlay texture loop with controller-relative placement |
+| `pouya-codes/VR_overlay` | Studied with caveats in Wave 267 | Quest MR image plus heatmap overlay demo with opacity, gesture/controller toggles, and passthrough setup |
+
+### Consolidation note
+
+This family matters because overlay search results should be triaged by:
+
+- source evidence level;
+- native overlay API versus Unity/Quest MR panel;
+- texture submission path;
+- placement/input model;
+- vendor payload and checked-in binary hygiene;
+- product intent versus implementation donor value;
+- source-light caveats.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- minimal OpenVR overlay baselines;
+- source-light overlay intake checklists;
+- game-HUD demand references;
+- MR annotation panel UX;
+- vendor-heavy Unity overlay caveat rules.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

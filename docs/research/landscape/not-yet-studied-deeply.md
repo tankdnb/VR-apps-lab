@@ -2791,6 +2791,57 @@ These are larger than a single repo and should guide the next research wave.
   versus runtime boundaries, Udon ownership/serialization semantics, package
   template completeness, and donor/reference/follow-up status.
 
+### 213. `VR180 spatial-video pipeline matrix across conversion, metadata, camera control, playback, and export`
+
+- Main entries:
+  `vr180-convert`, `VR180-Silver-Bullet`, `convert_VR180`,
+  `VR180MeshProjection`, `VR180PhotoTools`, `egarim`,
+  `VR180-Web-Player`, `stereo-img`, and `mpv360`
+- Why it matters:
+  Wave 264 showed that VR180 utilities need a pipeline comparison rather than
+  another player list. A future matrix should compare source media, camera or
+  lens profile, calibration/remap stage, metadata parser/writer, stabilization,
+  export format, browser or host-player fallback, diagnostics, and unsafe or
+  hardware-specific assumptions.
+
+### 214. `VRChat helper risk matrix across editor, service, Udon, Quest dev, social monitor, and OSC controller surfaces`
+
+- Main entries:
+  `VRSuya-Utility`, `VRMenuUtility`, `VRCFileUtility`,
+  `VRCPacketUtility`, `VRDeveloperUtility`,
+  `VRChatUtility_FriendListMonitor`, `vrc-utility`, and
+  `Python-VRC-utility`
+- Why it matters:
+  Wave 265 added several small VRChat helpers with very different risk
+  profiles. A future matrix should compare editor Undo, credential storage,
+  TFA/session lifecycle, Udon packet correctness, ADB/device action
+  confirmation, social-log privacy, OSC address validation, source-light
+  status, and package hygiene.
+
+### 215. `Engine/browser XR primitive matrix across tracked devices, selectors, locomotion, projection components, and legacy APIs`
+
+- Main entries:
+  `PragmaVR`, both `unity-vr-utilities` entries, `UXRU`,
+  `VRInputModule`, `aframe-srl-utils`, and
+  `Acer-VR-Utility-for-Browser-WebVR-Release`
+- Why it matters:
+  Wave 266 added primitive-level donors that should be compared by contract.
+  A future matrix should compare runtime/device adapters, feature discovery,
+  input event models, selector handoff, locomotion/body-collider assumptions,
+  debug panels, projection material uniforms, cleanup behavior, and
+  deprecated API migration paths.
+
+### 216. `Source-light overlay evidence matrix across README-only, vendor-heavy, minimal native, and MR image-panel projects`
+
+- Main entries:
+  `vorpal`, `VRP-Overlay`, `OVRTweaks`, `vr_overlay`, and `VR_overlay`
+- Why it matters:
+  Wave 267 showed how noisy overlay searches can be. A future matrix should
+  compare source evidence level, overlay API, texture submission path,
+  controller or world placement, input/toggle model, checked-in binaries,
+  bundled vendor payloads, MR versus native overlay semantics, and whether a
+  repo is donor, product reference, placeholder, or follow-up only.
+
 ## Recommended next move
 
 If `VR-apps-lab` continues this research, the next most valuable deep-pass order is:

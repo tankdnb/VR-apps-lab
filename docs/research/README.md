@@ -259,6 +259,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-261-vrchat-expression-menu-authoring-visualization-and-runtime-menu-helpers.md`
 - `landscape/vr-projects-wave-262-vpm-package-index-generation-flatpak-and-repository-publication-tooling.md`
 - `landscape/vr-projects-wave-263-vrchat-overlay-world-editor-and-udon-microtools.md`
+- `landscape/vr-projects-wave-264-vr180-spatial-video-conversion-playback-camera-control-and-metadata-utilities.md`
+- `landscape/vr-projects-wave-265-vrchat-creator-user-utility-microtools-and-service-dev-helpers.md`
+- `landscape/vr-projects-wave-266-engine-browser-xr-utility-packages-input-and-locomotion-primitives.md`
+- `landscape/vr-projects-wave-267-source-light-openvr-steamvr-overlay-tweak-and-hud-variants.md`
 
 ## Archive Navigation
 
