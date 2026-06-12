@@ -15391,3 +15391,169 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   remote viewing helpers, Unity WebRTC panels, Quest video receivers, live
   support tools, streaming SDK references, and privacy-first capture checklists.
+
+## Method 725: Training scenario assessment loop across case state, task gates, scoring, feedback, notes, and study metrics
+
+- What it is:
+  a VR training tool should separate scenario content, learner actions, grading
+  policy, feedback, persistence, and validation claims.
+- Good for:
+  medical-adjacent training, emergency checklists, industrial skills,
+  motor-skill practice, case libraries, study prototypes, and procedure
+  feedback panels.
+- Why it matters:
+  training projects often contain useful engineering loops mixed with
+  unsupported clinical or educational claims. Reuse should extract the
+  scenario-assessment architecture while preserving validation and privacy
+  caveats.
+- Source evidence:
+  `cepdnaclk/e16-4yp-Virtual-Patient-Simulator-for-Skill-Training-in-Dentistry`,
+  `SLVNE/VRNurseTrainingProgram`, `E5H4/m.e.-simulator`,
+  `hasanhaswary/CSVRSystem`, `MPL-projects/vr-aim-study`,
+  `pspacewoman/Emergency-Quest-VR-Game-MasterThesis`,
+  `KosmidisMixalis/ViRtus-A-Virtual-Reality-Application-for-Training-and-Performance-Analysis`,
+  and `byebyenin10dog/KHXR`.
+- Reusable core:
+  scenario/case schema, task gate, action evidence, scoring dimensions, timer,
+  difficulty, immediate verdict, final feedback screen, per-user notes,
+  metric export, auth/privacy boundary, and source-light triage.
+- Source evidence details:
+  Wave 280 includes a multi-domain dental score reducer, nursing auto-graders,
+  emergency-score panels, authenticated crime-scene notes, throwing study
+  metrics, VR training study statistics, WebXR/Unity delivery shell, and
+  source-light CPR/medical scenario references.
+- Do not copy directly:
+  clinical efficacy claims, hardcoded medical strings, object-name dependent
+  scoring, unreviewed Firebase/auth models, built Unity/WebXR artifacts as
+  source architecture, or no-source repositories as donors.
+- Strong references:
+  the dentistry simulator for score dimensions, `E5H4/m.e.-simulator` for
+  timer/grade feedback, and `hasanhaswary/CSVRSystem` for case-notebook
+  persistence.
+- Maturity:
+  strong reusable method with varied donor maturity; medical-adjacent reuse
+  needs explicit non-clinical framing and validation outside this repo.
+- Best fit for `VR-apps-lab`:
+  training assessment prototypes, checklist panels, case feedback tools,
+  scenario score engines, and study metric export templates.
+
+## Method 726: Hand input and pose transport boundary across XR Hands, OpenXR skeletons, gestures, filters, avatars, and packet replay
+
+- What it is:
+  a hand-input utility should separate raw runtime tracking, derived gestures,
+  manipulation behavior, avatar output, and transport/replay formats.
+- Good for:
+  bare-hand object manipulation, passthrough galleries, hand-tracking
+  diagnostics, replicated avatars, gesture primitives, hand-pose record/replay,
+  and networked training tools.
+- Why it matters:
+  hand-input prototypes become brittle when thresholds, filters, runtime
+  features, avatar bones, and network packets are fused together. A reusable
+  boundary makes confidence and failure behavior visible.
+- Source evidence:
+  `Mystfit/NectoXRTemplate`, `Clyfr/BURG-v2`,
+  `reubenlavin08/spindle-whorl-ar`, and `Zer0pa/ZPE-XR`.
+- Reusable core:
+  subsystem acquisition, joint confidence, tracking-loss reset, pinch/poke
+  detection, hysteresis, smoothing/filtering, hand visualization, floor-origin
+  control, object-grab offset, avatar/LiveLink adapter, packet codec, replay
+  recovery, and evidence/caveat metadata.
+- Source evidence details:
+  Wave 281 includes Unreal OpenXR-to-LiveLink skeleton output, Unity XR Hands
+  One Euro filtering, pinch midpoint and poke detectors, Quest passthrough
+  pinch-grab manipulation, procedural object inspection, and keyframe/delta
+  hand-pose transport with CRC/recovery simulation.
+- Do not copy directly:
+  universalized gesture thresholds, vendor payloads as original architecture,
+  editor/build side effects, cultural-data assets without provenance, or codec
+  benchmarks without independent runtime validation.
+- Strong references:
+  `reubenlavin08/spindle-whorl-ar` for passthrough bare-hand manipulation and
+  `Zer0pa/ZPE-XR` for pose transport/replay boundaries.
+- Maturity:
+  strong pattern method; runtime reuse should verify device support,
+  confidence, tracking loss, and packet timing.
+- Best fit for `VR-apps-lab`:
+  XR hand gesture libraries, passthrough object inspectors, hand-pose replay
+  experiments, LiveLink/OpenXR/Leap comparison matrices, and hand diagnostics.
+
+## Method 727: Spatial audio and acoustic accessibility surface across positional sources, BRIR preprocess, onboarding, echo descriptions, VAD, and interruption recovery
+
+- What it is:
+  an XR audio utility should treat sound as a structured interface for space,
+  navigation, description, collaboration, and feedback.
+- Good for:
+  accessibility-first museums, spatial audio demos, WebXR audio starters,
+  acoustic guides, object-description surfaces, voice-presence panels, and
+  shared-room companions.
+- Why it matters:
+  audio is often treated as ambience, but accessibility and collaboration tools
+  need explicit state: what is playing, what is interrupting it, what should be
+  restored, and what private microphone data is leaving the device.
+- Source evidence:
+  `nikita-s-nair/Spatial-Audio-VR`, `rvedantv/Spatial-Audio-VR`,
+  `xavieraustralia/aioptimisationlabvirtual`, and `lanzhang76/artEcho`.
+- Reusable core:
+  listener attachment, positional audio sources, falloff/directional cone
+  policy, browser audio-context resume, BRIR preprocessing, onboarding
+  narration, hint cadence, echo playback, object descriptions, audio fade and
+  restoration, WebRTC voice transport, VAD/speaking state, and privacy gates.
+- Source evidence details:
+  Wave 282 includes a Three.js/WebXR positional audio starter, a BRIR
+  preprocessing script, WebRTC voice chat with AnalyserNode VAD and speaking
+  indicators, and `artEcho`'s accessibility-first audio museum state machine.
+- Do not copy directly:
+  autoplay assumptions, microphone capture without clear permission UX,
+  hardcoded audio stages, bundled dist assets as source architecture, or
+  off-theme media converters as audio donors.
+- Strong references:
+  `lanzhang76/artEcho` for acoustic accessibility UX and
+  `nikita-s-nair/Spatial-Audio-VR` for a compact WebXR positional-audio starter.
+- Maturity:
+  strong product-pattern method; production reuse needs accessibility testing,
+  privacy review, and device/browser audio policy checks.
+- Best fit for `VR-apps-lab`:
+  audio accessibility checklists, spatial sound diagnostics, guided museum
+  prototypes, voice-presence overlays, and interruption/recovery state machines.
+
+## Method 728: XR study recording and replay analysis pipeline across transforms, scene graph, sound, generic channels, recorder IDs, queries, and multimodal logs
+
+- What it is:
+  an XR study tool should separate sensor capture, storage format, replay
+  state, analysis queries, visualization UI, and privacy/export policy.
+- Good for:
+  research instrumentation, training studies, replayable debugging, gaze/head
+  tracking logs, multimodal LSL capture, annotation tools, and in-VR analysis
+  dashboards.
+- Why it matters:
+  VR study data is valuable only if timestamps, object identity, channels,
+  replay behavior, and consent boundaries are explicit. Otherwise recordings
+  become hard to analyze and unsafe to share.
+- Source evidence:
+  `vrsys/Recording-And-Analysis-Plugin`,
+  `vrsys/Immersive-Study-Analyzer`, `mvidaldp/wd_ride`, and
+  `leonkoech/SignWhisper`.
+- Reusable core:
+  recorder IDs, transform channel, sound channel, generic channel, metadata,
+  scene graph registry, object-ID remapping, ring buffers, record/replay
+  states, file-versioning boundary, interval/quantitative analysis requests,
+  position retrieval, annotation UI, radial time controls, multimodal LSL
+  streams, biometric privacy gates, and export/replay visualization.
+- Source evidence details:
+  Wave 283 includes native recorder endpoints, C++ buffered writes and replay
+  ring buffers, composable distance/gaze/velocity/sound analysis queries,
+  Unity-side transform recorders and radial menus, Tobii eye/head/object-hit
+  LSL streams, protobuf async IO, replay dots, and Leap hand-pose networking.
+- Do not copy directly:
+  biometric capture without consent language, fixed participant IDs or array
+  dimensions as universal defaults, unversioned binary formats, vendor-heavy
+  Unity project payloads, or multiplayer training claims without scoring
+  evidence.
+- Strong references:
+  `vrsys/Recording-And-Analysis-Plugin` for engine-agnostic capture/replay and
+  `vrsys/Immersive-Study-Analyzer` for in-VR analysis UX.
+- Maturity:
+  strong architecture method with privacy-sensitive reuse requirements.
+- Best fit for `VR-apps-lab`:
+  XR recording adapters, replay/debug tools, study-analysis dashboards,
+  multimodal data schemas, and privacy-first instrumentation references.

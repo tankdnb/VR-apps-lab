@@ -275,6 +275,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-277-vr-rehabilitation-therapy-and-treatment-loop-prototypes.md`
 - `landscape/vr-projects-wave-278-camera-to-vrm-avatar-retargeting-and-virtual-camera-output.md`
 - `landscape/vr-projects-wave-279-remote-cloud-webrtc-vr-streaming-and-live-sdk-surfaces.md`
+- `landscape/vr-projects-wave-280-vr-training-assessment-scenario-grading-and-skill-practice-prototypes.md`
+- `landscape/vr-projects-wave-281-xr-hand-input-bare-hand-manipulation-and-hand-pose-transport-experiments.md`
+- `landscape/vr-projects-wave-282-spatial-audio-acoustic-accessibility-and-voice-presence-surfaces.md`
+- `landscape/vr-projects-wave-283-xr-study-recording-replay-analysis-and-multimodal-training-data.md`
 
 ## Archive Navigation
 

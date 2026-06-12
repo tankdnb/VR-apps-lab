@@ -8627,6 +8627,146 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - cloud stage/session lifecycle references;
 - privacy-first remote VR viewing checklists.
 
+## Family 259: VR training, assessment, scenario grading, and skill-practice prototypes
+
+This family covers training projects that convert immersive actions into task
+state, scores, feedback, notes, and study metrics. The reusable lesson is to
+separate scenario content from grading, persistence, and validation claims.
+
+| Project | Status | Notes |
+|---|---|---|
+| `cepdnaclk/e16-4yp-Virtual-Patient-Simulator-for-Skill-Training-in-Dentistry` | Studied in Wave 280 | Multi-domain dental score reducer, feedback/evaluation flow, Firebase-backed case data, and medical/privacy caveats |
+| `sharnajh/VR_CPR_Training` | Source-light in Wave 280 | Basic Unity movement/crouch shell with weak visible CPR assessment logic |
+| `Carolina-Riddick/Parkinson-App-Virtual-Reality` | Studied with medical caveats in Wave 280 | Socket-count task gates, next-level unlocks, and force-launch interaction |
+| `SLVNE/VRNurseTrainingProgram` | Studied with caveats in Wave 280 | Blood-pressure and lung-answer auto-graders with immediate verdict UI |
+| `DarkSmiling/OpenVRTraining` | Asset-heavy reference in Wave 280 | Unreal/SteamVR training scene with VRExpansion/SteamVR bindings and limited readable custom code |
+| `pspacewoman/Emergency-Quest-VR-Game-MasterThesis` | README/thesis reference with license caveat in Wave 280 | Checklist-guided first-aid scenario with hazards, NPC/audio, score, and feedback framing |
+| `KosmidisMixalis/ViRtus-A-Virtual-Reality-Application-for-Training-and-Performance-Analysis` | Source-light methodology reference in Wave 280 | VR task metric export and Python statistical analysis scripts |
+| `E5H4/m.e.-simulator` | Studied in Wave 280 | Score/timer/grade panels, difficulty branch, AED pad prerequisites, and hardcoded-scene caveats |
+| `Hannah-Ashna/VRWalkin-UE-Plugin` | Blueprint-heavy reference in Wave 280 | UE locomotion-training plugin packaging multiple travel paradigms |
+| `hasanhaswary/CSVRSystem` | Studied in Wave 280 | Firebase auth, case selection, and per-user Firestore notes for crime-scene training |
+| `37743/VR-Welding-101` | Studied with caveats in Wave 280 | Configurable joint push-button toggle and welding skill-practice framing |
+| `MPL-projects/vr-aim-study` | Studied in Wave 280 | Throwing accuracy scoring, target feedback, and ball reset loop |
+| `glenbo111/webxr-medical-training-simulation` | Source-light in Wave 280 | One-file A-Frame medical scenario skeleton |
+| `byebyenin10dog/KHXR` | Studied with artifact caveat in Wave 280 | WebXR-to-Unity browser bridge, session lifecycle, controller/gamepad packets, and telemetry caveats |
+| `fxnode2000/webxr.github.io` | Skipped/no-source in Wave 280 | Empty inspected branch retained only as dedupe evidence |
+
+### Consolidation note
+
+This family matters because training utilities should name:
+
+- scenario/case schema;
+- task gates and prerequisites;
+- action evidence and scoring dimensions;
+- difficulty, timer, grade, and feedback policy;
+- learner notes, auth, and privacy;
+- metric export and study-analysis handoff;
+- medical, license, and validation caveats.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- training scenario score engines;
+- checklist and procedure-feedback panels;
+- authenticated case notebooks;
+- study metric export templates;
+- source-light training triage rules.
+
+## Family 260: XR hand input, bare-hand manipulation, and hand-pose transport experiments
+
+This family covers hand input projects that bridge runtime hand tracking into
+gestures, object manipulation, avatar skeletons, network packets, and replay.
+The reusable lesson is to keep raw tracking, derived gestures, manipulation,
+avatar output, and transport as separate boundaries.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Mystfit/NectoXRTemplate` | Studied with dependency caveats in Wave 281 | Unreal OpenXR hand template with hand-tracked VR character setup, LiveLink skeleton output, and replicated-avatar boundaries |
+| `Clyfr/BURG-v2` | Studied with sample caveats in Wave 281 | Unity XR Hands One Euro filter, pinch midpoint proxy, and poke gesture detector |
+| `reubenlavin08/spindle-whorl-ar` | Studied in Wave 281 | Quest passthrough gallery with XR Hands pinch-grab hysteresis, tracking-loss release, hand visualization, floor-origin retry, procedural disc mesh, and cultural-data caveats |
+| `Zer0pa/ZPE-XR` | Studied with runtime caveats in Wave 281 | Hand-pose codec with keyframe/delta packets, CRC validation, replay/recovery simulation, and benchmark caveats |
+
+### Consolidation note
+
+This family matters because hand-input utilities should name:
+
+- runtime subsystem and tracking confidence;
+- joint smoothing and tracking-loss behavior;
+- pinch, poke, and gesture thresholds;
+- object manipulation offset and release policy;
+- avatar/LiveLink/retargeting adapter;
+- packet/replay codec and evidence caveats.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- XR Hands gesture primitive comparisons;
+- passthrough bare-hand object manipulation;
+- hand-pose transport/replay schemas;
+- LiveLink/OpenXR/Leap boundary matrices.
+
+## Family 261: Spatial audio, acoustic accessibility, and voice presence surfaces
+
+This family covers audio-centered XR projects where sound acts as spatial
+feedback, navigation, description, accessibility, or collaboration presence.
+The reusable lesson is to separate audio asset preparation, runtime
+spatialization, accessibility state, voice transport, and privacy gates.
+
+| Project | Status | Notes |
+|---|---|---|
+| `nikita-s-nair/Spatial-Audio-VR` | Studied in Wave 282 | WebXR/Three.js positional audio starter with listener setup, speaker GLTF, distance model, XR audio resume, and iwer fallback |
+| `rvedantv/Spatial-Audio-VR` | Source-light audio reference in Wave 282 | BRIR convolution preprocessing workflow for binaural spatial audio assets |
+| `xavieraustralia/aioptimisationlabvirtual` | Studied with scope caveats in Wave 282 | WebRTC peer audio, WebSocket signaling, AnalyserNode VAD, speaking-state broadcasts, and microphone/privacy caveats |
+| `lanzhang76/artEcho` | Studied in Wave 282 | Acoustic accessibility museum with onboarding, positional sounds, echo samples, object descriptions, hints, interruption recovery, and canvas accessibility attributes |
+| `Devanik21/Hackathon-VR-180-Immersive-Experience` | Non-fit/source-light side node in Wave 282 | Streamlit 2D-to-VR180 depth-conversion sketch, not promoted as an audio donor |
+
+### Consolidation note
+
+This family matters because audio utilities should name:
+
+- listener and positional source lifecycle;
+- falloff, directionality, and room assumptions;
+- offline BRIR or spatial asset preprocessing;
+- onboarding, hints, object descriptions, and echo feedback;
+- voice transport, VAD, and speaking indicators;
+- microphone, accessibility, and privacy caveats.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- acoustic accessibility checklists;
+- WebXR positional audio starters;
+- voice-presence companion surfaces;
+- audio interruption/restoration state machines.
+
+## Family 262: XR study recording, replay, analysis, and multimodal training data
+
+This family covers projects that record, replay, analyze, or stream XR session
+data. The reusable lesson is to keep capture channels, storage, replay state,
+analysis queries, visualization, and privacy policy separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `vrsys/Recording-And-Analysis-Plugin` | Studied in Wave 283 | Native recorder-ID plugin with transform/sound/generic channels, scene metadata, ring buffers, object-ID remapping, and analysis queries |
+| `vrsys/Immersive-Study-Analyzer` | Studied in Wave 283 | Unity record/replay and analysis UI with recorder controller, transform recorder, annotations, radial menu/time controls, and Photon sync |
+| `mvidaldp/wd_ride` | Studied with artifact/privacy caveats in Wave 283 | Tobii eye/head tracking, gaze/nose raycast hits, fixed LSL streams, protobuf IO, and replay visualization |
+| `leonkoech/SignWhisper` | Studied with prototype caveats in Wave 283 | Leap VectorHand byte transport over Unity Netcode, avatar head/body sync, and partial ASL training minigame evidence |
+
+### Consolidation note
+
+This family matters because study/replay utilities should name:
+
+- transform, sound, generic, biometric, and annotation channels;
+- recorder IDs and file-version boundaries;
+- scene graph metadata and object-ID remapping;
+- replay buffers and time navigation;
+- interval/quantitative analysis queries;
+- export, replay visualization, privacy, and consent gates.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- engine-agnostic XR recording adapters;
+- in-VR study-analysis dashboards;
+- LSL/Tobii/multimodal schema references;
+- replay and annotation UI prototypes.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

@@ -3708,6 +3708,66 @@ Primary docs:
 - `kasimmj/vrcollab` - `Source-light architecture reference in Wave 279 as a VR collaboration server sketch with pose-frame protocol, docker services, SFU/spatial-audio claims, and code-depth caveats`
 - `jakubtom/UnityRenderStreaming_StereoWebcam` - `README-only reference in Wave 279 as a stereo webcam streaming concept using Unity Render Streaming for phone-in-headset viewing`
 
+## 251. VR training, assessment, scenario grading, and skill-practice prototypes
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-280-vr-training-assessment-scenario-grading-and-skill-practice-prototypes.md`
+- `../landscape/project-families.md`
+
+- `cepdnaclk/e16-4yp-Virtual-Patient-Simulator-for-Skill-Training-in-Dentistry` - `Studied in Wave 280 as a dental virtual-patient simulator with multi-domain score reducer, score actions, Firebase-backed feedback/evaluation flow, and medical/privacy caveats`
+- `sharnajh/VR_CPR_Training` - `Source-light in Wave 280 as a Unity CPR training shell with only basic movement/crouch logic visible in inspected source`
+- `Carolina-Riddick/Parkinson-App-Virtual-Reality` - `Studied with medical caveats in Wave 280 as a Unity XR motor-task prototype with socket-count task gates, next-level unlocks, and force-launch interaction`
+- `SLVNE/VRNurseTrainingProgram` - `Studied with caveats in Wave 280 as a nursing procedure auto-grader with blood-pressure and lung-answer verdict UI`
+- `DarkSmiling/OpenVRTraining` - `Asset-heavy reference in Wave 280 as an Unreal/SteamVR training scene with VRExpansion/SteamVR bindings and limited readable custom code`
+- `pspacewoman/Emergency-Quest-VR-Game-MasterThesis` - `README/thesis reference with license caveat in Wave 280 as a Quest first-aid scenario around checklists, hazards, NPC/audio, score, and feedback`
+- `KosmidisMixalis/ViRtus-A-Virtual-Reality-Application-for-Training-and-Performance-Analysis` - `Source-light methodology reference in Wave 280 as a VR training study with metric export and Python statistical analysis scripts`
+- `E5H4/m.e.-simulator` - `Studied in Wave 280 as a Unity medical emergency simulator with score/timer/grade panels, difficulty branch, AED pad prerequisites, and hardcoded scene caveats`
+- `Hannah-Ashna/VRWalkin-UE-Plugin` - `Blueprint-heavy reference in Wave 280 as a UE 4.27 locomotion-training plugin packaging multiple travel paradigms for independent-travel training`
+- `hasanhaswary/CSVRSystem` - `Studied in Wave 280 as a crime-scene VR training system with Firebase auth, case selection, and per-user Firestore notes`
+- `37743/VR-Welding-101` - `Studied with caveats in Wave 280 as a welding skill-practice prototype with configurable joint push-button toggles and AI-feedback claims not visible in inspected source`
+- `MPL-projects/vr-aim-study` - `Studied in Wave 280 as a Quest throwing-accuracy study with distance-based scoring, target feedback, and ball reset loop`
+- `glenbo111/webxr-medical-training-simulation` - `Source-light in Wave 280 as a one-file A-Frame medical scenario skeleton with minimal interaction`
+- `byebyenin10dog/KHXR` - `Studied with artifact caveat in Wave 280 as a Unity WebXR browser shell with session lifecycle, capability callbacks, controller/gamepad packets, and telemetry caveats`
+- `fxnode2000/webxr.github.io` - `Skipped/no-source in Wave 280 because the inspected branch had no readable repository content`
+
+## 252. XR hand input, bare-hand manipulation, and hand-pose transport experiments
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-281-xr-hand-input-bare-hand-manipulation-and-hand-pose-transport-experiments.md`
+- `../landscape/project-families.md`
+
+- `Mystfit/NectoXRTemplate` - `Studied with dependency caveats in Wave 281 as an Unreal OpenXR hand template with hand-tracked VR character setup, OpenXR hand keypoints, LiveLink skeleton output, and replicated-avatar boundaries`
+- `Clyfr/BURG-v2` - `Studied with sample caveats in Wave 281 as a Unity XR Hands sample aggregation with One Euro filtering, pinch midpoint proxy, and poke gesture detection`
+- `reubenlavin08/spindle-whorl-ar` - `Studied in Wave 281 as a Quest passthrough AR object-gallery prototype with XR Hands pinch-grab hysteresis, tracking-loss release, hand visualization, floor-origin retry, procedural biconvex disc mesh, and cultural-data caveats`
+- `Zer0pa/ZPE-XR` - `Studied with runtime caveats in Wave 281 as a Python/Rust hand-pose transport codec with keyframe/delta packets, CRC validation, replay/recovery simulation, and explicit benchmark caveats`
+
+## 253. Spatial audio, acoustic accessibility, and voice presence surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-282-spatial-audio-acoustic-accessibility-and-voice-presence-surfaces.md`
+- `../landscape/project-families.md`
+
+- `nikita-s-nair/Spatial-Audio-VR` - `Studied in Wave 282 as a WebXR/Three.js positional audio starter with listener setup, speaker GLTF, distance-model config, XR session audio-context resume, and iwer fallback`
+- `rvedantv/Spatial-Audio-VR` - `Source-light audio reference in Wave 282 as a BRIR convolution preprocessing workflow for binaural spatial audio assets`
+- `xavieraustralia/aioptimisationlabvirtual` - `Studied with scope caveats in Wave 282 as a web voice-presence surface with WebRTC peer audio, WebSocket signaling, AnalyserNode VAD, speaking-state broadcasts, and microphone/privacy caveats`
+- `lanzhang76/artEcho` - `Studied in Wave 282 as an acoustic accessibility museum with onboarding narration, positional chamber/object sounds, echo samples, object descriptions, hint cadence, audio interruption/restoration, and canvas accessibility attributes`
+- `Devanik21/Hackathon-VR-180-Immersive-Experience` - `Non-fit/source-light side node in Wave 282 as a Streamlit 2D-to-VR180 depth-conversion sketch discovered during audio search, not promoted as an audio donor`
+
+## 254. XR study recording, replay, analysis, and multimodal training data
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-283-xr-study-recording-replay-analysis-and-multimodal-training-data.md`
+- `../landscape/project-families.md`
+
+- `vrsys/Recording-And-Analysis-Plugin` - `Studied in Wave 283 as a native cross-platform XR recording/replay plugin with recorder-ID endpoints, transform/sound/generic channels, scene metadata, ring buffers, object-ID remapping, and composable analysis queries`
+- `vrsys/Immersive-Study-Analyzer` - `Studied in Wave 283 as a Unity immersive replay/analysis layer with recorder controller, transform recorder, analysis UI, annotation hooks, radial menu/time controls, Photon sync, and plugin coupling caveats`
+- `mvidaldp/wd_ride` - `Studied with artifact and privacy caveats in Wave 283 as a multimodal VR city-ride study with Tobii eye/head tracking, gaze and nose-vector raycast hits, fixed LSL streams, protobuf IO, and replay visualization`
+- `leonkoech/SignWhisper` - `Studied with prototype caveats in Wave 283 as an ASL/hand-pose training surface with Leap VectorHand byte transport over Unity Netcode, avatar head/body sync, and incomplete scoring/persistence evidence`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

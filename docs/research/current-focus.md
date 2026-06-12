@@ -1181,6 +1181,10 @@ directions:
 196. `VR rehabilitation treatment-loop matrix across calibration, hand/EEG/audio sensors, personalized difficulty, haptics, logging, therapist views, and clinical/privacy caveats`
 197. `Camera-to-VRM/avatar retargeting matrix across camera sources, landmarks, score thresholds, low-pass filters, bone maps, blendshapes, gaze, reset, and virtual camera output`
 198. `Remote/cloud VR streaming matrix across sensor uplink, WebRTC video tracks, signaling, SDK setup wizards, stage pools, frame queues, recording, and privacy gates`
+199. `VR training assessment matrix across case state, task gates, scenario difficulty, scoring dimensions, feedback screens, notes/auth, and study metric export`
+200. `XR hand input and transport matrix across XRHandSubsystem, OpenXR LiveLink, pinch/poke detectors, One Euro filters, passthrough manipulation, and packet replay`
+201. `Spatial audio/accessibility matrix across positional sources, BRIR preprocess, onboarding/hints, echo/object descriptions, voice VAD, and audio interruption/restoration`
+202. `XR study recording/replay matrix across transforms, scene graph, sound, generic channels, recorder IDs, analysis queries, multimodal EEG/eye/head logs, and replay UI`
 
 ## Current repository-maintenance priorities
 

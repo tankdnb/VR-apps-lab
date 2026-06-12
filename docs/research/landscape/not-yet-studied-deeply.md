@@ -3063,6 +3063,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 202. `VR rehabilitation treatment-loop matrix across calibration, hand/EEG/audio sensors, personalized difficulty, haptics, logging, therapist views, and clinical/privacy caveats`
 203. `Camera-to-VRM/avatar retargeting matrix across camera sources, landmarks, score thresholds, low-pass filters, bone maps, blendshapes, gaze, reset, and virtual camera output`
 204. `Remote/cloud VR streaming matrix across sensor uplink, WebRTC video tracks, signaling, SDK setup wizards, stage pools, frame queues, recording, and privacy gates`
+205. `VR training assessment matrix across case state, task gates, scenario difficulty, scoring dimensions, feedback screens, notes/auth, and study metric export`
+206. `XR hand input and transport matrix across XRHandSubsystem, OpenXR LiveLink, pinch/poke detectors, One Euro filters, passthrough manipulation, and packet replay`
+207. `Spatial audio/accessibility matrix across positional sources, BRIR preprocess, onboarding/hints, echo/object descriptions, voice VAD, and audio interruption/restoration`
+208. `XR study recording/replay matrix across transforms, scene graph, sound, generic channels, recorder IDs, analysis queries, multimodal EEG/eye/head logs, and replay UI`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

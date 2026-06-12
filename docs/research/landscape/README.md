@@ -1254,6 +1254,26 @@ Use these files when you want to understand:
   Quest video receivers, live SDK setup, cloud stage allocation, frame queues,
   and privacy gates.
 
+- `vr-projects-wave-280-vr-training-assessment-scenario-grading-and-skill-practice-prototypes.md`
+  Next GitHub discovery wave focused on VR training assessment, scenario
+  scoring, task gates, procedure feedback, authenticated case notes, study
+  metrics, and source-light training caveats.
+
+- `vr-projects-wave-281-xr-hand-input-bare-hand-manipulation-and-hand-pose-transport-experiments.md`
+  Next GitHub discovery wave focused on XR hand tracking, OpenXR hand
+  skeletons, pinch/poke gestures, passthrough bare-hand manipulation, filtering,
+  and hand-pose packet/replay codecs.
+
+- `vr-projects-wave-282-spatial-audio-acoustic-accessibility-and-voice-presence-surfaces.md`
+  Next GitHub discovery wave focused on WebXR positional audio, BRIR
+  preprocessing, acoustic accessibility, echo/object descriptions, WebRTC voice
+  presence, VAD, and audio privacy caveats.
+
+- `vr-projects-wave-283-xr-study-recording-replay-analysis-and-multimodal-training-data.md`
+  Next GitHub discovery wave focused on XR recording/replay plugins, transform
+  and sound channels, analysis queries, radial replay UI, LSL/Tobii capture,
+  and hand-pose training data.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

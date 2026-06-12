@@ -288,6 +288,10 @@ This file complements:
 - `vr-projects-wave-277-vr-rehabilitation-therapy-and-treatment-loop-prototypes.md`
 - `vr-projects-wave-278-camera-to-vrm-avatar-retargeting-and-virtual-camera-output.md`
 - `vr-projects-wave-279-remote-cloud-webrtc-vr-streaming-and-live-sdk-surfaces.md`
+- `vr-projects-wave-280-vr-training-assessment-scenario-grading-and-skill-practice-prototypes.md`
+- `vr-projects-wave-281-xr-hand-input-bare-hand-manipulation-and-hand-pose-transport-experiments.md`
+- `vr-projects-wave-282-spatial-audio-acoustic-accessibility-and-voice-presence-surfaces.md`
+- `vr-projects-wave-283-xr-study-recording-replay-analysis-and-multimodal-training-data.md`
 
 ## How to use this index
 

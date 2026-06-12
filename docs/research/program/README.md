@@ -1981,3 +1981,31 @@ repeatable way.
 
 - `github-research-wave-279-backlog.md`
   Executed backlog for the Wave 279 pass.
+
+- `github-research-wave-280-plan.md`
+  Wave 280 research plan focused on VR training, assessment, scenario grading,
+  and skill-practice prototypes.
+
+- `github-research-wave-280-backlog.md`
+  Executed backlog for the Wave 280 pass.
+
+- `github-research-wave-281-plan.md`
+  Wave 281 research plan focused on XR hand input, bare-hand manipulation, and
+  hand-pose transport experiments.
+
+- `github-research-wave-281-backlog.md`
+  Executed backlog for the Wave 281 pass.
+
+- `github-research-wave-282-plan.md`
+  Wave 282 research plan focused on spatial audio, acoustic accessibility, and
+  voice presence surfaces.
+
+- `github-research-wave-282-backlog.md`
+  Executed backlog for the Wave 282 pass.
+
+- `github-research-wave-283-plan.md`
+  Wave 283 research plan focused on XR study recording, replay, analysis, and
+  multimodal training data.
+
+- `github-research-wave-283-backlog.md`
+  Executed backlog for the Wave 283 pass.
