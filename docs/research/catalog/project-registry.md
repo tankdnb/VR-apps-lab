@@ -3768,6 +3768,71 @@ Primary docs:
 - `mvidaldp/wd_ride` - `Studied with artifact and privacy caveats in Wave 283 as a multimodal VR city-ride study with Tobii eye/head tracking, gaze and nose-vector raycast hits, fixed LSL streams, protobuf IO, and replay visualization`
 - `leonkoech/SignWhisper` - `Studied with prototype caveats in Wave 283 as an ASL/hand-pose training surface with Leap VectorHand byte transport over Unity Netcode, avatar head/body sync, and incomplete scoring/persistence evidence`
 
+## 255. VRCFaceTracking face/eye tracking modules, templates, and receiver bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-284-vrcfacetracking-face-eye-tracking-modules-templates-and-receiver-bridges.md`
+- `../landscape/project-families.md`
+
+- `VRCFaceTracking/docs` - `Studied in Wave 284 as VRCFT compatibility/setup taxonomy covering hardware, addons, desktop/VR pages, and interface documentation boundaries`
+- `guygodin/VirtualDesktop.VRCFaceTracking` - `Studied in Wave 284 as a Virtual Desktop VRCFT module using memory-mapped face state, event wait handles, tracking-state detection, and unified expression mapping`
+- `Adjerry91/VRCFaceTracking-Templates` - `Studied with asset-heavy caveats in Wave 284 as a VPM/avatar preparation template set for ARKit and Unified Expressions animation/parameter layout`
+- `hazre/VRCFTReceiver` - `Studied in Wave 284 as a VRCFT OSC receiver with FT/v2 path parsing, avatar parameter request, UDP listen loop, and lazy ValueStream creation`
+- `regzo2/BinaryParameterTool` - `Studied in Wave 284 as a Unity editor parameter-generation helper with VRChat expression-cost guards, duplicate checks, animator controller parameters, and add/remove flows`
+- `200Tigersbloxed/VRCFTOmniceptModule` - `Studied in Wave 284 as an HP Omnicept eye-only VRCFT module with Glia subscription, eye data conversion, smoothing worker lifecycle, and vendor SDK caveats`
+- `lonelyicer/VRCFTPicoModule` - `Studied in Wave 284 as a PICO VRCFT module with dual UDP ports, legacy packet support, disable flags, localization, updater helper, and partial eye/expression support`
+- `ghostiam/VRCFTTobiiAdvanced` - `Studied in Wave 284 as a Tobii/BrokenEye VRCFT eye module with API fallback, channel handoff, low-pass filtering, pupil/openness handling, and config defaults`
+- `kusomaigo/VRCFaceTracking-LiveLink` - `Studied in Wave 284 as an Apple ARKit/LiveLink UDP VRCFT module with configurable port, first-packet wait, and ARKit-to-Unified expression mapping`
+- `xverse-engine/XVRFaceTracking` - `Studied with prototype caveats in Wave 284 as DIY ESP32/camera plus Python ONNX mouth tracking with PyQt tuning UI, One Euro smoothing, and OSC blendshape output`
+
+## 256. bHaptics wearable haptics routers, simulator bridges, and Android service boundaries
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-285-bhaptics-wearable-haptics-routers-simulator-bridges-and-android-service-boundaries.md`
+- `../landscape/project-families.md`
+
+- `cercata/pysim2bhap` - `Studied in Wave 285 as a simulator telemetry to bHaptics router with tact registration, intensity/duration scaling, flight/car thresholds, and Tk/config presets`
+- `HerpDerpinstine/bHapticsLib` - `Studied in Wave 285 as a C# bHaptics WebSocket client with register/submit queues, pattern cache, reconnect policy, device status reads, frame/dot/key APIs, and stop controls`
+- `NovaVoidHowl/VRCBhapticsIntegration` - `Studied with modding caveats in Wave 285 as a VRChat avatar-to-bHaptics integration using avatar cameras/render textures, motor pixel parsing, MelonMod/Harmony hooks, and Unity setup helpers`
+- `Team-Beef-Studios/HapticsService` - `Studied in Wave 285 as an Android/Quest bound haptic service boundary with AIDL hapticEvent, update, stop, frame tick, enable/disable calls, and client binding helpers`
+- `SeekND/YAWVR-and-BHaptics-addons` - `Studied with script caveats in Wave 285 as keyboard/mouse/joystick/simulator haptics scripts using direct bHaptics dot submissions and user-tuned intensity`
+- `bhaptics/TactUnrealEngine4` - `Studied with blueprint-heavy caveats in Wave 285 as an Unreal bHaptics package reference for pairing UI, device visualization, feedback effect assets, and Android UI panels`
+
+## 257. Tilt Brush/Open Brush creative asset pipelines, AR/Web display, and tilt parsers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-286-tilt-brush-open-brush-creative-asset-pipelines-ar-web-display-and-tilt-parsers.md`
+- `../landscape/project-families.md`
+
+- `weeeBox/TiltBrushFile` - `Studied in Wave 286 as a Unity/C# tilt parser/writer with binary header, zipped sketch payload, thumbnail, metadata, brush strokes, control points, clone, and write paths`
+- `MrMMu/tiltbrushfbxexport` - `Studied with legacy caveats in Wave 286 as a Tilt Brush JSON-to-FBX exporter preserving brush grouping, vertex colors, normals, UVs, tangents, materials, and sidecar metadata`
+- `FusedVR/ARKitTiltBrush` - `Studied in Wave 286 as an ARKit drawing baseline with ARFrame camera-position sampling, particle-system strokes, color/reset modes, and point-distance thresholds`
+- `dogtownmedia/ARKit-SceneKit-Paint-Tiltbrush-Demo` - `Studied in Wave 286 as a SceneKit AR drawing baseline with ARSCNView line nodes, color picker, world-tracking session, and interruption hooks`
+- `thijsvb/TiltBrushDisplay` - `Studied in Wave 286 as a tiny Processing OBJ/shader viewer for exported Tilt Brush geometry with rotation and axis display`
+- `arodic/polygone.art` - `Studied as archive/provenance reference in Wave 286 for salvaged Google Poly assets, CC-BY framing, torrent/split downloads, and public preservation language`
+- `keijiro/Forestica` - `Studied with asset-heavy caveats in Wave 286 as a Unity Tilt Brush scene render/material/postprocess reference for preserving brush-art look`
+- `PushyPixels/WebVR-Poly-Framework` - `Studied with package/dead-service caveats in Wave 286 as a Unity WebVR/Poly asset browser and presentation framework reference`
+
+## 258. Gaussian splat XR Unity viewers, VR forks, and external render bus surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-287-gaussian-splat-xr-unity-viewers-vr-forks-and-external-render-bus-surfaces.md`
+- `../landscape/project-families.md`
+
+- `wuyize25/gsplat-unity` - `Studied in Wave 287 as a Unity Gaussian splat package with ply/spz ScriptedImporter, source-coordinate conversion, cache keys, renderer registration, GPU resources, sorting, cutouts, and global draw support`
+- `dylanebert/UnityGaussianSplatting` - `Studied in Wave 287 as a compact Unity splat importer/data-binder baseline with ScriptedImporter-created SplatData and minimal starter shape`
+- `HiFi-Human/DynGsplat-unity` - `Studied in Wave 287 as a dynamic Gaussian splat runtime with Addressables block streaming, frame assets, sliding-window loads, compute updates, codebooks, and resource cleanup`
+- `Enndee/Splatviewer_VR` - `Studied in Wave 287 as a VR Gaussian splat viewer with runtime ply/spz/spx/sog loading, OpenXR controls, file browser/favorites, movie mode, desktop fallback, and file associations`
+- `ninjamode/Unity-VR-Gaussian-Splatting` - `Studied with fork/sample caveats in Wave 287 as a VR/URP Gaussian splat project combining package runtime/editor code, XR Interaction Toolkit samples, and scene scripts`
+- `ptc-lexvandersluijs/Unity3DGS_VR` - `Studied with fork/sample caveats in Wave 287 as a BIRP/VR Gaussian splat project with package runtime/editor layout, XR Interaction Toolkit samples, and input side nodes`
+- `nigelhartman/worldlabs_unity` - `Studied in Wave 287 as a generated-world editor/import tool with WorldLabs API UI, prompt/image/video inputs, spz/ply import, compression quality, scene placement, and env loader`
+- `RockyXu66/splatbus` - `Studied in Wave 287 as an external render bus with Python OpenGL client, Unity native plugin, CUDA IPC, socket/JSON handshake, color/depth buffer sharing, camera-pose messages, and cleanup caveats`
+- `roth-hex-lab/Multi-Layer-Anatomy-GS-Unity-Rendering` - `Studied with specialization caveats in Wave 287 as a domain-specific multi-layer anatomy Gaussian splat rendering reference`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

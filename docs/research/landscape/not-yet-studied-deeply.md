@@ -3067,6 +3067,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 206. `XR hand input and transport matrix across XRHandSubsystem, OpenXR LiveLink, pinch/poke detectors, One Euro filters, passthrough manipulation, and packet replay`
 207. `Spatial audio/accessibility matrix across positional sources, BRIR preprocess, onboarding/hints, echo/object descriptions, voice VAD, and audio interruption/restoration`
 208. `XR study recording/replay matrix across transforms, scene graph, sound, generic channels, recorder IDs, analysis queries, multimodal EEG/eye/head logs, and replay UI`
+209. `Face/eye tracking module matrix across VRCFT modules, Virtual Desktop, PICO, Tobii/BrokenEye, Omnicept, LiveLink, templates, binary parameters, OSC receivers, DIY camera input, smoothing, and privacy`
+210. `Wearable haptics router matrix across tact catalogs, dot/frame APIs, simulator telemetry, avatar camera triggers, Android AIDL services, Unreal pairing UI, device status, consent, and emergency stop`
+211. `Tilt/Open Brush creative asset pipeline matrix across .tilt parsing, stroke control points, brush IDs, geometry export, shader/material restoration, AR/Web display, Poly archive metadata, and provenance/license gates`
+212. `Gaussian splat XR rendering matrix across .ply/.spz/.spx/.sog/.splat import, source coordinates, GPU sorting, cutouts, runtime loading, VR controls, dynamic blocks, generated worlds, and external render buses`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

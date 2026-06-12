@@ -8767,6 +8767,161 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - LSL/Tobii/multimodal schema references;
 - replay and annotation UI prototypes.
 
+## Family 263: VRCFaceTracking face/eye tracking modules, templates, and receiver bridges
+
+This family covers VRCFaceTracking modules and avatar-facing tools that turn
+hardware or software face/eye input into unified expressions, avatar
+parameters, receiver streams, and setup templates. The reusable lesson is to
+separate source transport, schema normalization, smoothing, avatar preparation,
+and diagnostics.
+
+| Project | Status | Notes |
+|---|---|---|
+| `VRCFaceTracking/docs` | Studied in Wave 284 | Compatibility/setup taxonomy for hardware, addons, desktop/VR pages, and interface documentation |
+| `guygodin/VirtualDesktop.VRCFaceTracking` | Studied in Wave 284 | Memory-mapped Virtual Desktop face state, wait handle update cadence, tracking-state detection, and unified expression mapping |
+| `Adjerry91/VRCFaceTracking-Templates` | Studied with asset-heavy caveats in Wave 284 | VPM/avatar preparation templates for ARKit and Unified Expressions animation/parameter layout |
+| `hazre/VRCFTReceiver` | Studied in Wave 284 | FT/v2 OSC path parsing, avatar parameter request, UDP listen loop, and lazy ValueStream creation |
+| `regzo2/BinaryParameterTool` | Studied in Wave 284 | VRChat expression-cost guards, duplicate checks, generated parameters, and animator controller preparation |
+| `200Tigersbloxed/VRCFTOmniceptModule` | Studied in Wave 284 | HP Omnicept Glia subscription, eye-only conversion, smoothing worker lifecycle, and vendor SDK caveats |
+| `lonelyicer/VRCFTPicoModule` | Studied in Wave 284 | PICO dual UDP ports, legacy packets, disable flags, localization, updater helper, and partial support |
+| `ghostiam/VRCFTTobiiAdvanced` | Studied in Wave 284 | Tobii/BrokenEye fallback, channel handoff, low-pass filtering, pupil/openness handling, and config defaults |
+| `kusomaigo/VRCFaceTracking-LiveLink` | Studied in Wave 284 | Apple ARKit/LiveLink UDP ingress, configurable port, first-packet wait, and blendshape mapping |
+| `xverse-engine/XVRFaceTracking` | Studied with prototype caveats in Wave 284 | ESP32/camera plus Python ONNX mouth tracking with PyQt tuning UI, One Euro smoothing, and OSC output |
+
+### Consolidation note
+
+This family matters because face/eye tracking utilities should name:
+
+- hardware or software source;
+- transport and packet/shared-memory contract;
+- validity flags and partial support;
+- smoothing and coordinate conversion;
+- unified expression mapping;
+- avatar parameter and template setup;
+- receiver/diagnostic surface;
+- privacy, licensing, port, and version caveats.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VRCFT module compatibility matrices;
+- avatar-preparation wizards;
+- face-tracking receiver/diagnostic panels;
+- DIY camera-to-expression calibration references.
+
+## Family 264: bHaptics wearable haptics routers, simulator bridges, and Android service boundaries
+
+This family covers wearable haptics projects that route simulator, avatar,
+input, game, or service events into bHaptics player patterns and direct motor
+frames. The reusable lesson is to keep event capture, pattern selection,
+transport, device status, and safety policy separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `cercata/pysim2bhap` | Studied in Wave 285 | Simulator telemetry to `.tact` patterns with intensity/duration scaling, thresholds, and config presets |
+| `HerpDerpinstine/bHapticsLib` | Studied in Wave 285 | C# WebSocket player client with register/submit queues, pattern cache, reconnect policy, device status, and stop APIs |
+| `NovaVoidHowl/VRCBhapticsIntegration` | Studied with modding caveats in Wave 285 | VRChat avatar cameras/render textures parsed into bHaptics motor values plus Unity setup helpers |
+| `Team-Beef-Studios/HapticsService` | Studied in Wave 285 | Android AIDL service boundary for haptic events, updates, stops, frame ticks, enable/disable, and client binding |
+| `SeekND/YAWVR-and-BHaptics-addons` | Studied with script caveats in Wave 285 | Keyboard/mouse/joystick/simulator scripts using direct bHaptics dot submissions and user-tuned intensity |
+| `bhaptics/TactUnrealEngine4` | Studied with blueprint-heavy caveats in Wave 285 | Unreal package reference for pairing UI, device visualization, Android UI panels, and feedback assets |
+
+### Consolidation note
+
+This family matters because wearable haptics utilities should name:
+
+- event source and event schema;
+- pattern catalog and direct frame fallback;
+- intensity, duration, angle, and position scaling;
+- transport queue and reconnect policy;
+- device status and capability checks;
+- service binding and app identity;
+- enable/disable, cooldown, consent, and emergency stop.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- physical-output safety checklists;
+- bHaptics event-router prototypes;
+- cockpit/simulator haptic companions;
+- Quest/Android haptic service adapters.
+
+## Family 265: Tilt Brush/Open Brush creative asset pipelines, AR/Web display, and tilt parsers
+
+This family covers creative XR asset projects that preserve or display Tilt
+Brush/Open Brush style sketches, strokes, brush metadata, exported geometry,
+and public archive provenance. The reusable lesson is to separate authoring
+capture, file parsing, export, preview, shader restoration, and license
+metadata.
+
+| Project | Status | Notes |
+|---|---|---|
+| `weeeBox/TiltBrushFile` | Studied in Wave 286 | `.tilt` parser/writer with binary header, zipped sketch payload, metadata, thumbnail, strokes, and control points |
+| `MrMMu/tiltbrushfbxexport` | Studied with legacy caveats in Wave 286 | Tilt JSON-to-FBX exporter preserving brush grouping, vertex colors, normals, UVs, tangents, materials, and metadata |
+| `FusedVR/ARKitTiltBrush` | Studied in Wave 286 | ARFrame camera-position painting, particle strokes, color/reset modes, and point-distance thresholding |
+| `dogtownmedia/ARKit-SceneKit-Paint-Tiltbrush-Demo` | Studied in Wave 286 | SceneKit AR drawing with line nodes, color picker, world-tracking session, and interruption hooks |
+| `thijsvb/TiltBrushDisplay` | Studied in Wave 286 | Tiny Processing OBJ/shader viewer for exported brush geometry with rotation and axis display |
+| `arodic/polygone.art` | Archive/provenance reference in Wave 286 | Salvaged Google Poly assets, CC-BY framing, torrent/split downloads, and public preservation language |
+| `keijiro/Forestica` | Studied with asset-heavy caveats in Wave 286 | Unity Tilt Brush render/material/postprocess reference for preserving brush-art look |
+| `PushyPixels/WebVR-Poly-Framework` | Studied with package caveats in Wave 286 | Unity WebVR/Poly browser and presentation reference with dead-service replacement caveats |
+
+### Consolidation note
+
+This family matters because creative XR asset utilities should name:
+
+- stroke and control-point schema;
+- brush identity, color, size, and material;
+- archive metadata and thumbnail sidecars;
+- export format and geometry grouping;
+- shader/material restoration requirements;
+- preview/browser surface;
+- author, license, provenance, and dead-service caveats.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- `.tilt` inspection and conversion tools;
+- VR-native asset browsers;
+- provenance-first archive viewers;
+- lightweight creative sketch previewers.
+
+## Family 266: Gaussian splat XR Unity viewers, VR forks, and external render bus surfaces
+
+This family covers Gaussian splat projects that import, render, browse,
+generate, stream, or externally feed splat scenes into XR/Unity surfaces. The
+reusable lesson is to keep file import, GPU resources, sorting/cutouts, VR
+viewer UX, dynamic streaming, API generation, and external render transport as
+separate boundaries.
+
+| Project | Status | Notes |
+|---|---|---|
+| `wuyize25/gsplat-unity` | Studied in Wave 287 | `.ply`/`.spz` importer, source-coordinate conversion, cache keys, renderer registration, GPU resources, sorting, cutouts, and global draw |
+| `dylanebert/UnityGaussianSplatting` | Studied in Wave 287 | Compact `.splat` ScriptedImporter and SplatData starter baseline |
+| `HiFi-Human/DynGsplat-unity` | Studied in Wave 287 | Dynamic splat Addressables block streaming, frame assets, compute updates, codebooks, and cleanup |
+| `Enndee/Splatviewer_VR` | Studied in Wave 287 | Runtime splat loading, OpenXR controls, file browser/favorites, movie mode, desktop fallback, and file associations |
+| `ninjamode/Unity-VR-Gaussian-Splatting` | Studied with fork/sample caveats in Wave 287 | VR/URP splat project with package runtime/editor code, XR Interaction Toolkit samples, and scene scripts |
+| `ptc-lexvandersluijs/Unity3DGS_VR` | Studied with fork/sample caveats in Wave 287 | BIRP/VR splat project with package layout, XR Interaction Toolkit samples, and input side nodes |
+| `nigelhartman/worldlabs_unity` | Studied in Wave 287 | WorldLabs editor/API workflow, text/image/video prompts, `.spz`/`.ply` import, compression quality, scene placement, and env loader |
+| `RockyXu66/splatbus` | Studied in Wave 287 | Python OpenGL client, Unity native plugin, CUDA IPC, socket/JSON handshake, color/depth sharing, camera-pose messages, and cleanup caveats |
+| `roth-hex-lab/Multi-Layer-Anatomy-GS-Unity-Rendering` | Studied with specialization caveats in Wave 287 | Multi-layer anatomy Gaussian splat rendering reference |
+
+### Consolidation note
+
+This family matters because Gaussian splat XR utilities should name:
+
+- import formats and source coordinate frames;
+- compression/cache policy;
+- asset and GPU resource lifecycle;
+- sorting, cutout, and render-pipeline integration;
+- runtime file loading and file permissions;
+- VR locomotion, browser, favorites, and desktop fallback;
+- dynamic frame/block streaming;
+- API generation and secret handling;
+- external color/depth render transport and cleanup.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- splat import/rendering matrices;
+- VR-native spatial asset viewers;
+- generated-world import workbenches;
+- external renderer to XR-surface experiments.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

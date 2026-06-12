@@ -292,6 +292,10 @@ This file complements:
 - `vr-projects-wave-281-xr-hand-input-bare-hand-manipulation-and-hand-pose-transport-experiments.md`
 - `vr-projects-wave-282-spatial-audio-acoustic-accessibility-and-voice-presence-surfaces.md`
 - `vr-projects-wave-283-xr-study-recording-replay-analysis-and-multimodal-training-data.md`
+- `vr-projects-wave-284-vrcfacetracking-face-eye-tracking-modules-templates-and-receiver-bridges.md`
+- `vr-projects-wave-285-bhaptics-wearable-haptics-routers-simulator-bridges-and-android-service-boundaries.md`
+- `vr-projects-wave-286-tilt-brush-open-brush-creative-asset-pipelines-ar-web-display-and-tilt-parsers.md`
+- `vr-projects-wave-287-gaussian-splat-xr-unity-viewers-vr-forks-and-external-render-bus-surfaces.md`
 
 ## How to use this index
 

@@ -15557,3 +15557,189 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   XR recording adapters, replay/debug tools, study-analysis dashboards,
   multimodal data schemas, and privacy-first instrumentation references.
+
+## Method 729: Face/eye tracking module boundary across hardware drivers, expression schemas, smoothing, avatar parameters, and receiver bridges
+
+- What it is:
+  a face/eye tracking utility should separate device or software ingress,
+  schema normalization, smoothing, avatar authoring, receiver diagnostics, and
+  privacy/licensing caveats.
+- Good for:
+  VRCFaceTracking modules, avatar-preparation wizards, camera-to-expression
+  sidecars, OSC/LiveLink receivers, headset-specific face tracking, and
+  diagnostics panels.
+- Why it matters:
+  face tracking becomes brittle when hardware packets, expression maps, avatar
+  parameters, and smoothing rules are fused together. A reusable boundary makes
+  partial support, failure modes, and avatar readiness visible.
+- Source evidence:
+  `guygodin/VirtualDesktop.VRCFaceTracking`,
+  `lonelyicer/VRCFTPicoModule`, `ghostiam/VRCFTTobiiAdvanced`,
+  `200Tigersbloxed/VRCFTOmniceptModule`,
+  `kusomaigo/VRCFaceTracking-LiveLink`, `hazre/VRCFTReceiver`,
+  `regzo2/BinaryParameterTool`, `Adjerry91/VRCFaceTracking-Templates`,
+  `VRCFaceTracking/docs`, and `xverse-engine/XVRFaceTracking`.
+- Reusable core:
+  module lifecycle, support flags, hardware/source adapter, packet or
+  shared-memory ingress, validity flags, smoothing/filtering, coordinate
+  conversion, unified expression mapping, avatar expression budget checks,
+  generated parameters/templates, OSC/LiveLink receiver bridge, diagnostics,
+  and privacy/licensing notes.
+- Source evidence details:
+  Wave 284 includes memory-mapped Virtual Desktop face state, PICO dual UDP
+  ports and legacy packets, Tobii/BrokenEye fallback, Omnicept Glia
+  subscription, LiveLink ARKit UDP mapping, FT/v2 OSC receiver streams,
+  parameter-cost guards, avatar templates, and camera/ONNX/OSC mouth tracking.
+- Do not copy directly:
+  hardcoded ports without diagnostics, unversioned packet structs, blocking
+  waits as a universal update model, camera streams without privacy framing,
+  vendor SDK assumptions, or avatar parameter generation without rollback and
+  budget checks.
+- Strong references:
+  `VRCFTPicoModule`, `VirtualDesktop.VRCFaceTracking`, and
+  `VRCFTTobiiAdvanced` for module boundaries; `BinaryParameterTool` for
+  avatar-side preparation.
+- Maturity:
+  strong reusable method with vendor-specific caveats; production reuse must
+  verify packet versions, SDK terms, port conflicts, and avatar SDK limits.
+- Best fit for `VR-apps-lab`:
+  face-tracking compatibility matrices, avatar setup tools, receiver
+  diagnostics, and DIY camera-to-expression experiments.
+
+## Method 730: Wearable haptics router across event sources, tact patterns, player APIs, avatar triggers, Android services, and safety gates
+
+- What it is:
+  a wearable haptics utility should normalize events from simulators, avatars,
+  controllers, game ports, or services into a pattern/device transport with
+  explicit safety controls.
+- Good for:
+  bHaptics routers, cockpit/simulator feedback companions, avatar haptics,
+  Quest/Android haptic services, physical-output bridges, and wearable device
+  diagnostics.
+- Why it matters:
+  haptic feedback is physical output. The useful engineering pattern is not
+  merely "send vibration", but event schema, scaling, device routing, stop
+  behavior, user consent, and reconnect/device-status handling.
+- Source evidence:
+  `cercata/pysim2bhap`, `HerpDerpinstine/bHapticsLib`,
+  `NovaVoidHowl/VRCBhapticsIntegration`,
+  `Team-Beef-Studios/HapticsService`,
+  `SeekND/YAWVR-and-BHaptics-addons`, and `bhaptics/TactUnrealEngine4`.
+- Reusable core:
+  event source adapter, pattern catalog, tact-file registration, direct
+  dot/frame fallback, intensity/duration/angle scaling, position map,
+  register/submit queues, reconnect policy, device status, bound service API,
+  app/event identity, enable/disable gate, stop-all path, cooldown, consent,
+  and emergency stop.
+- Source evidence details:
+  Wave 285 includes simulator telemetry thresholds, `.tact` registration,
+  bHaptics WebSocket queues and pattern cache, VRChat avatar render-texture
+  motor parsing, Android AIDL haptic service calls, keyboard/joystick dot
+  scripts, and Unreal pairing/device UI assets.
+- Do not copy directly:
+  unbounded haptic spam loops, hardcoded weapon/game assumptions, mod hooks
+  without compatibility caveats, direct physical output without panic stop,
+  asset-only packages as complete architecture evidence, or service APIs
+  without permission/identity checks.
+- Strong references:
+  `HerpDerpinstine/bHapticsLib` for transport and
+  `Team-Beef-Studios/HapticsService` for Android service boundaries.
+- Maturity:
+  strong method with physical-output safety requirements; reuse should add
+  consent, cooldowns, emergency stop, and device capability checks.
+- Best fit for `VR-apps-lab`:
+  wearable haptic router prototypes, cockpit feedback tools, avatar haptics
+  references, and physical-output safety checklists.
+
+## Method 731: Creative XR asset pipeline across stroke capture, tilt parsing, brush metadata, export, preview, and provenance
+
+- What it is:
+  a creative XR asset utility should preserve authoring structure and
+  provenance across capture, file parsing, conversion, preview, and archive
+  browsing.
+- Good for:
+  Tilt/Open Brush inspectors, VR asset browsers, sketch converters, archive
+  viewers, creative WebXR/AR previewers, and provenance-first content tools.
+- Why it matters:
+  creative VR assets lose value if tools preserve only triangles while losing
+  brush identity, control points, thumbnails, metadata, shader look, and
+  author/license context.
+- Source evidence:
+  `weeeBox/TiltBrushFile`, `MrMMu/tiltbrushfbxexport`,
+  `FusedVR/ARKitTiltBrush`,
+  `dogtownmedia/ARKit-SceneKit-Paint-Tiltbrush-Demo`,
+  `thijsvb/TiltBrushDisplay`, `arodic/polygone.art`,
+  `keijiro/Forestica`, and `PushyPixels/WebVR-Poly-Framework`.
+- Reusable core:
+  stroke/control-point schema, brush index/GUID/name/color/size metadata,
+  archive reader/writer, thumbnail and metadata sidecars, geometry exporter,
+  material/shader restoration, lightweight preview surface, AR/WebXR viewer,
+  asset catalog schema, author/license fields, and provenance warnings.
+- Source evidence details:
+  Wave 286 includes `.tilt` header and zip payload parsing, brush stroke and
+  control point objects, FBX mesh grouping and layer export, ARKit camera
+  position strokes, SceneKit line drawing, Processing OBJ preview, Poly archive
+  license framing, and asset-heavy render/material references.
+- Do not copy directly:
+  obsolete Poly service assumptions, legacy FBX SDK pinning, temp extraction
+  without cleanup, asset archives without credit paths, particle strokes as
+  final geometry without conversion, or shaders/materials without provenance.
+- Strong references:
+  `weeeBox/TiltBrushFile` for `.tilt` structure and
+  `MrMMu/tiltbrushfbxexport` for export metadata and brush grouping.
+- Maturity:
+  useful method with legacy-service caveats; production reuse should test
+  Open Brush compatibility, license display, temp cleanup, and shader fallback.
+- Best fit for `VR-apps-lab`:
+  creative asset browsers, sketch validators, `.tilt` conversion tools,
+  archive/provenance viewers, and lightweight preview utilities.
+
+## Method 732: Gaussian splat XR rendering pipeline across import formats, GPU resources, VR viewers, dynamic sequences, generated worlds, and external render buses
+
+- What it is:
+  a Gaussian splat XR utility should separate asset import, compression/cache,
+  GPU resource lifecycle, sorting/cutouts, VR viewer controls, dynamic
+  streaming, generation/import APIs, and external render transport.
+- Good for:
+  VR-native splat viewers, spatial asset browsers, generated-world import
+  workbenches, dynamic volumetric playback, scientific/anatomy viewers, and
+  external renderer to XR-surface experiments.
+- Why it matters:
+  splat viewers mix heavy files, GPU buffers, render-pipeline constraints,
+  runtime file access, and user navigation. Reuse needs explicit boundaries so
+  viewer UX, import formats, and GPU lifecycles can evolve independently.
+- Source evidence:
+  `wuyize25/gsplat-unity`, `dylanebert/UnityGaussianSplatting`,
+  `HiFi-Human/DynGsplat-unity`, `Enndee/Splatviewer_VR`,
+  `ninjamode/Unity-VR-Gaussian-Splatting`,
+  `ptc-lexvandersluijs/Unity3DGS_VR`,
+  `nigelhartman/worldlabs_unity`, `RockyXu66/splatbus`, and
+  `roth-hex-lab/Multi-Layer-Anatomy-GS-Unity-Rendering`.
+- Reusable core:
+  scripted importer, source-coordinate conversion, cache key, asset resource
+  lifecycle, GPU buffers, sorter, cutouts, render-pipeline pass, runtime file
+  loader, file browser/favorites, desktop fallback, dynamic block streaming,
+  generated-world API import, environment-secret loader, external color/depth
+  render bus, camera-pose protocol, and cleanup/error policy.
+- Source evidence details:
+  Wave 287 includes `.ply`/`.spz` importers, `.splat` starter importer,
+  renderer registration and global sorting, cutout cadence, Addressables block
+  streaming, runtime `.ply`/`.spz`/`.spx`/`.sog` loading, OpenXR viewer
+  controls, WorldLabs prompt/import UI, `.env` loader, Unity native plugin
+  texture handles, CUDA IPC, socket/JSON handshakes, and Python OpenGL client
+  camera-pose transport.
+- Do not copy directly:
+  huge sample asset payloads, upstream fork code without lineage notes, secret
+  embedding without user control, CUDA/D3D/OpenGL interop without cleanup and
+  hardware checks, or viewer UX without file-permission and memory budgets.
+- Strong references:
+  `wuyize25/gsplat-unity` for import/runtime,
+  `HiFi-Human/DynGsplat-unity` for dynamic playback,
+  `Enndee/Splatviewer_VR` for VR viewer UX, and `RockyXu66/splatbus` for
+  advanced external-render bus experiments.
+- Maturity:
+  strong but hardware-sensitive method; production reuse needs GPU memory
+  budgets, XR stereo checks, file permission policy, and robust cleanup.
+- Best fit for `VR-apps-lab`:
+  splat import/render matrices, VR-native spatial viewers, generated-scene
+  workbenches, and external renderer surface prototypes.

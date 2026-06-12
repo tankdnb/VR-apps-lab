@@ -1274,6 +1274,26 @@ Use these files when you want to understand:
   and sound channels, analysis queries, radial replay UI, LSL/Tobii capture,
   and hand-pose training data.
 
+- `vr-projects-wave-284-vrcfacetracking-face-eye-tracking-modules-templates-and-receiver-bridges.md`
+  Next GitHub discovery wave focused on VRCFaceTracking modules, hardware and
+  software face/eye ingress, avatar preparation templates, parameter tools,
+  OSC/LiveLink receiver bridges, and DIY camera/ONNX input.
+
+- `vr-projects-wave-285-bhaptics-wearable-haptics-routers-simulator-bridges-and-android-service-boundaries.md`
+  Next GitHub discovery wave focused on bHaptics event routers, simulator
+  telemetry, avatar haptic triggers, WebSocket player APIs, Unreal package
+  references, and Android service boundaries.
+
+- `vr-projects-wave-286-tilt-brush-open-brush-creative-asset-pipelines-ar-web-display-and-tilt-parsers.md`
+  Next GitHub discovery wave focused on Tilt/Open Brush file parsing, stroke
+  and brush metadata, geometry export, AR/Web display, archive provenance, and
+  creative asset viewer boundaries.
+
+- `vr-projects-wave-287-gaussian-splat-xr-unity-viewers-vr-forks-and-external-render-bus-surfaces.md`
+  Next GitHub discovery wave focused on Gaussian splat importers, GPU runtime
+  renderers, VR viewers, dynamic splat streaming, generated-world import, and
+  external render buses.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

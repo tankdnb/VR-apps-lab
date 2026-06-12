@@ -2009,3 +2009,31 @@ repeatable way.
 
 - `github-research-wave-283-backlog.md`
   Executed backlog for the Wave 283 pass.
+
+- `github-research-wave-284-plan.md`
+  Wave 284 research plan focused on VRCFaceTracking face/eye tracking modules,
+  avatar templates, parameter tools, and receiver bridges.
+
+- `github-research-wave-284-backlog.md`
+  Executed backlog for the Wave 284 pass.
+
+- `github-research-wave-285-plan.md`
+  Wave 285 research plan focused on bHaptics wearable haptics routers,
+  simulator bridges, avatar triggers, and Android service boundaries.
+
+- `github-research-wave-285-backlog.md`
+  Executed backlog for the Wave 285 pass.
+
+- `github-research-wave-286-plan.md`
+  Wave 286 research plan focused on Tilt Brush/Open Brush creative asset
+  pipelines, AR/Web display, and tilt parsers.
+
+- `github-research-wave-286-backlog.md`
+  Executed backlog for the Wave 286 pass.
+
+- `github-research-wave-287-plan.md`
+  Wave 287 research plan focused on Gaussian splat XR Unity viewers, VR forks,
+  dynamic renderers, generated-world import, and external render buses.
+
+- `github-research-wave-287-backlog.md`
+  Executed backlog for the Wave 287 pass.
