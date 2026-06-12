@@ -3059,6 +3059,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 198. `VR performance tuning manager matrix across DLL replacement, runtime loader extraction, config schemas, version detection, backup/restore, and compatibility warnings`
 199. `Playspace safety intervention matrix across chaperone rects, follower capsules, guardian grids, passthrough windows, object/depth triggers, and logging`
 200. `VR launcher/startup orchestration matrix across hidden Android activities, SteamVR URI launch, stack profiles, app libraries, agents, game carousels, and rollback`
+201. `WebXR museum/gallery matrix across artifact manifests, exhibit schemas, photo slots, portal worlds, annotations, AR anchors, cleanup, and artifact hygiene`
+202. `VR rehabilitation treatment-loop matrix across calibration, hand/EEG/audio sensors, personalized difficulty, haptics, logging, therapist views, and clinical/privacy caveats`
+203. `Camera-to-VRM/avatar retargeting matrix across camera sources, landmarks, score thresholds, low-pass filters, bone maps, blendshapes, gaze, reset, and virtual camera output`
+204. `Remote/cloud VR streaming matrix across sensor uplink, WebRTC video tracks, signaling, SDK setup wizards, stage pools, frame queues, recording, and privacy gates`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

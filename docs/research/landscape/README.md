@@ -1234,6 +1234,26 @@ Use these files when you want to understand:
   launch paths, profile-driven startup stacks, background agents, app-library
   carousels, and rollback/side-effect caveats.
 
+- `vr-projects-wave-276-webxr-museum-guided-tour-and-artifact-gallery-surfaces.md`
+  Next GitHub discovery wave focused on WebXR museums, artifact manifests,
+  photo frames, generated-world portals, CanvasUI exhibit panels, AR/WebXR
+  viewers, and artifact-heavy repository caveats.
+
+- `vr-projects-wave-277-vr-rehabilitation-therapy-and-treatment-loop-prototypes.md`
+  Next GitHub discovery wave focused on calibration-first rehab loops, hand and
+  EEG input, voice-service loops, personalized difficulty, haptic/logging
+  modules, and clinical/privacy caveats.
+
+- `vr-projects-wave-278-camera-to-vrm-avatar-retargeting-and-virtual-camera-output.md`
+  Next GitHub discovery wave focused on camera-to-VRM retargeting, landmark
+  confidence, smoothing, bone/blendshape maps, gaze/reset behavior, virtual
+  camera output, and fork-lineage caveats.
+
+- `vr-projects-wave-279-remote-cloud-webrtc-vr-streaming-and-live-sdk-surfaces.md`
+  Next GitHub discovery wave focused on remote VR streaming, WebRTC signaling,
+  Quest video receivers, live SDK setup, cloud stage allocation, frame queues,
+  and privacy gates.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

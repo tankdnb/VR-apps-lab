@@ -1953,3 +1953,31 @@ repeatable way.
 
 - `github-research-wave-275-backlog.md`
   Executed backlog for the Wave 275 pass.
+
+- `github-research-wave-276-plan.md`
+  Wave 276 research plan focused on WebXR museum, guided-tour, and
+  artifact-gallery surfaces.
+
+- `github-research-wave-276-backlog.md`
+  Executed backlog for the Wave 276 pass.
+
+- `github-research-wave-277-plan.md`
+  Wave 277 research plan focused on VR rehabilitation, therapy, and
+  treatment-loop prototypes.
+
+- `github-research-wave-277-backlog.md`
+  Executed backlog for the Wave 277 pass.
+
+- `github-research-wave-278-plan.md`
+  Wave 278 research plan focused on camera-to-VRM avatar retargeting and
+  virtual-camera output.
+
+- `github-research-wave-278-backlog.md`
+  Executed backlog for the Wave 278 pass.
+
+- `github-research-wave-279-plan.md`
+  Wave 279 research plan focused on remote, cloud, WebRTC VR streaming, and
+  live SDK surfaces.
+
+- `github-research-wave-279-backlog.md`
+  Executed backlog for the Wave 279 pass.

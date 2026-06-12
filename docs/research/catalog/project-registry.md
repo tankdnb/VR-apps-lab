@@ -3650,6 +3650,64 @@ Primary docs:
 - `CactusVRStudios/Lambda1VR_Launcher` - `Studied with artifact caveat in Wave 275 as a Quest Unity launcher that detects /sdcard/xash game folders, writes commandline.txt, saves custom commands, launches com.drbeef.lambda1vr via Android PackageManager, and falls back to SideQuest`
 - `Bluscream/VRChatLauncher` - `Studied with deprecation caveats in Wave 275 as a historical VRChat launcher/workbench with argument parsing, vrchat:// URI handling, registry install/check, IPC singleton handoff, mod checks, INI config, and clipboard/process side effects`
 
+## 247. WebXR museum, guided-tour, and artifact-gallery surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-276-webxr-museum-guided-tour-and-artifact-gallery-surfaces.md`
+- `../landscape/project-families.md`
+
+- `artificialmuseum/sandbox` - `Studied with remote-engine caveat in Wave 276 as a compact artifact preview sandbox with artifact.js metadata, CustomScene lifecycle hooks, engine injection, skybox/model paths, and tick-driven model behavior`
+- `torashad99/xr-photo-museum` - `Studied in Wave 276 as a multiplayer WebXR photo museum with spatial frame slots, parallax portal frames, Socket.IO room state, annotations, strokes, voice notes, generated world polling, and privacy/API caveats`
+- `TashaGandevia/GamingMuseum_WebXR` - `Studied with engine caveats in Wave 276 as a Wonderland/WebXR gaming museum with console metadata records, CanvasUI panels, cursor events, haptic feedback, spatial sounds, scroll/input UI, and generated dependency caveats`
+- `rohanbk10/Museum` - `Studied in Wave 276 as a museum SPA with normalized collection schema, annotations, hash router cleanup, MindAR image tracking, WebXR hit-test placement, desktop 3D viewer, CSS2D pins, and dispose discipline`
+- `Shree-svg/Neural_Nexus-Virtual_3D_Museum` - `Source-light in Wave 276 as a minimal atmospheric virtual museum shell useful mainly for product framing and scene mood`
+- `UMN-VR/UMN-VR-Quest-2-App` - `Artifact-heavy reference in Wave 276 as a photogrammetry museum proof-of-concept with checked-in APK/Unity cache payload and limited clean source donor signal`
+
+## 248. VR rehabilitation, therapy, and treatment-loop prototypes
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-277-vr-rehabilitation-therapy-and-treatment-loop-prototypes.md`
+- `../landscape/project-families.md`
+
+- `mahmoud1yaser/VR-Therapist-Virtual-Mental-Health-Experience` - `Studied with medical/privacy caveats in Wave 277 as a Unity microphone-to-Flask voice loop with local wav upload, polling, STT, LLM response, AWS Polly TTS, avatar playback, and unsafe clinical/auth caveats`
+- `jessieyang0320/VHab` - `Partially studied in Wave 277 as a legacy web hand-rehab microgame suite with finger-angle, pinch-strength, grab-strength, selector, button, and whack-a-mole exercise controllers`
+- `reboot-corp/Reboot-Hackathon` - `Studied with prototype caveats in Wave 277 as a neurofeedback rehab prototype with LSL StreamInlet EEG ingress, BrainFlow/math references, Unity concentration ring fill, local serialization, and validation caveats`
+- `EyalMaoz/Pinch_Rehabilitation_VR_Personalized_Treatment` - `Studied in Wave 277 as a personalized pinch rehabilitation pipeline with OVR hand confidence, pinch classification, calibration steps, patient motion-range persistence, treatment plans, adaptive difficulty, and task object generation`
+- `TheBananaGuy/rehab-in-vr` - `Studied with source-light caveats in Wave 277 as an educational Leap/Oculus rehab prototype around sustained grab-and-hold frog targets`
+- `pcallej/ADHD-Unity` - `Studied with legacy caveats in Wave 277 as a GoogleVR attention-training project with train/path-following exercises, target counters, and vendor payload caveats`
+- `WestonBDev/Modules-for-Burn-Injury-Rehabilitation` - `Studied in Wave 277 as modular Unity rehab components with prolonged interaction trigger boxes, XR haptic intensity/frequency controls, controller-side selection, and CSV movement logging`
+- `songer1993/vr-cat-bath-study` - `Studied in Wave 277 as a gamified hand-strength rehab study with cat-care tasks, grasp/pinch strength indicators, timers, food/hair-dryer interactions, and optional capture hooks`
+- `harr-data/Simple-VR-Rehab` - `Source-light in Wave 277 as a browser rehab metric reference around target tracking, reflex response, memory sequence tasks, HUD metrics, stability index, and latency/deviation framing`
+
+## 249. Camera-to-VRM/avatar retargeting and virtual-camera output
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-278-camera-to-vrm-avatar-retargeting-and-virtual-camera-output.md`
+- `../landscape/project-families.md`
+
+- `Kariaro/VRigUnity` - `Studied with side-effect caveats in Wave 278 as a Unity camera/avatar output tool with camera capture settings, mirrored output, visualization/annotation modules, EVMC/VMC periphery, thread helper, and Windows virtual-camera install scripts`
+- `creativeIKEP/HolisticMotionCapture` - `Studied in Wave 278 as a camera-to-VRM retargeting package with MediaPipe-style holistic pipeline, max-FPS throttling, pose/hand/face renderers, score thresholds, low-pass filters, upper-body mode, VRM blendshapes, gaze, and reset behavior`
+- `zacharyguan/VRigUnity` - `Variant-only in Wave 278 as a fork/lineage node of Kariaro/VRigUnity without independent donor promotion in this pass`
+
+## 250. Remote, cloud, WebRTC VR streaming, and live SDK surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-279-remote-cloud-webrtc-vr-streaming-and-live-sdk-surfaces.md`
+- `../landscape/project-families.md`
+
+- `PierfrancescoSoffritti/RemoteVR_UnityServer` - `Studied with legacy caveats in Wave 279 as a Unity remote VR server with TCP/UDP abstraction, player lifecycle, gyro/touch input, initial rotation offset, client resolution negotiation, and rendered-image downlink`
+- `PierfrancescoSoffritti/RemoteVR_AndroidClient` - `Studied with legacy caveats in Wave 279 as an Android remote VR client with calibrated gyroscope quaternion integration, UDP session init, resolution handshake, image receive loop, and touch/gyro packet uplink`
+- `TheAnonymousMan/WebRTC-VR-Server` - `Studied in Wave 279 as a Unity-hosted WebRTC server with in-process WebSocket signaling, camera CaptureStreamTrack, peer connection, buffered ICE candidates, answer creation, data channel, and main-thread dispatch`
+- `GitEducaverse2024/com.educa360.live` - `Studied in Wave 279 as a Unity live-streaming SDK with LiveStreamManager, config asset validation, backend interface, WebGL/native selection, setup wizard, FPS monitor, Quest capture workaround, kill-switch settings, and portal dependency caveats`
+- `shinyoshiaki/quest-view` - `Studied with caveats in Wave 279 as a Quest WebRTC video receiver with Android peer-factory bridge, WebSocket signaling, I420 frame queue, YUV-to-RGBA texture conversion, data channel, and auth/signaling caveats`
+- `jlin3/substream-sdk` - `Studied with scope caveats in Wave 279 as a cloud streaming SDK/control plane with authenticated stream creation, platform whitelist, IVS stage allocation/release, WHIP provisioning, webhooks, recording/highlight architecture, and Unity streaming script families`
+- `kasimmj/vrcollab` - `Source-light architecture reference in Wave 279 as a VR collaboration server sketch with pose-frame protocol, docker services, SFU/spatial-audio claims, and code-depth caveats`
+- `jakubtom/UnityRenderStreaming_StereoWebcam` - `README-only reference in Wave 279 as a stereo webcam streaming concept using Unity Render Streaming for phone-in-headset viewing`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

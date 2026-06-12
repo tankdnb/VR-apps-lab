@@ -1177,6 +1177,10 @@ directions:
 192. `VR performance tuning manager matrix across DLL replacement, runtime loader extraction, config schemas, version detection, backup/restore, and compatibility warnings`
 193. `Playspace safety intervention matrix across chaperone rects, follower capsules, guardian grids, passthrough windows, object/depth triggers, and logging`
 194. `VR launcher/startup orchestration matrix across hidden Android activities, SteamVR URI launch, stack profiles, app libraries, agents, game carousels, and rollback`
+195. `WebXR museum/gallery matrix across artifact manifests, exhibit schemas, photo slots, portal worlds, annotations, AR anchors, cleanup, and artifact hygiene`
+196. `VR rehabilitation treatment-loop matrix across calibration, hand/EEG/audio sensors, personalized difficulty, haptics, logging, therapist views, and clinical/privacy caveats`
+197. `Camera-to-VRM/avatar retargeting matrix across camera sources, landmarks, score thresholds, low-pass filters, bone maps, blendshapes, gaze, reset, and virtual camera output`
+198. `Remote/cloud VR streaming matrix across sensor uplink, WebRTC video tracks, signaling, SDK setup wizards, stage pools, frame queues, recording, and privacy gates`
 
 ## Current repository-maintenance priorities
 

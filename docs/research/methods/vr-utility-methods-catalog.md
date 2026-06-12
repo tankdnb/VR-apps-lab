@@ -15215,3 +15215,179 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   VR app-library launchers, startup profile orchestrators, Quest companion
   launch surfaces, external-app handoff flows, and safety/rollback playbooks.
+
+## Method 721: Museum and gallery artifact surface pipeline across manifests, exhibit schemas, frame slots, annotations, portals, AR/WebXR viewers, and cleanup
+
+- What it is:
+  a spatial content browser should keep exhibit metadata, artifact manifests,
+  viewer adapters, collaboration state, and cleanup rules separate.
+- Good for:
+  WebXR museums, VR galleries, artifact preview sandboxes, photo rooms,
+  guided-tour tools, AR/WebXR collection viewers, and creator asset browsers.
+- Why it matters:
+  museum-like tools are useful beyond museums. The same shape can power VR
+  file browsers, knowledge bases, tutorial galleries, asset review rooms, and
+  collaborative media surfaces if content data is not trapped inside scene
+  code.
+- Source evidence:
+  `artificialmuseum/sandbox`, `torashad99/xr-photo-museum`,
+  `TashaGandevia/GamingMuseum_WebXR`, `rohanbk10/Museum`,
+  `Shree-svg/Neural_Nexus-Virtual_3D_Museum`, and
+  `UMN-VR/UMN-VR-Quest-2-App`.
+- Reusable core:
+  content schema, asset provenance, artifact manifest, frame/exhibit slot,
+  viewer adapter, annotation model, room or collaboration channel, generated
+  media service boundary, AR/WebXR placement adapter, dispose/cleanup rule, and
+  artifact-hygiene caveat.
+- Source evidence details:
+  Wave 276 includes an artifact preview sandbox, a multiplayer photo museum
+  with parallax/generated-world portals, a metadata-driven WebXR gaming museum
+  with CanvasUI panels, a schema-first museum SPA with MindAR/WebXR/desktop
+  viewers, a minimal atmospheric gallery, and a cautionary Quest photogrammetry
+  archive with heavy generated payload.
+- Do not copy directly:
+  remote-engine lock-in without fallback, unchecked photo uploads and generated
+  media cache, hardcoded exhibit content, large checked-in Unity cache/APK
+  payloads, or source-light atmosphere demos as architecture donors.
+- Strong references:
+  `torashad99/xr-photo-museum` for social media-room UX,
+  `rohanbk10/Museum` for schema-first multi-viewer structure, and
+  `artificialmuseum/sandbox` for artifact preview boundaries.
+- Maturity:
+  strong product-pattern method, with individual donors varying from robust
+  source to source-light or artifact-heavy references.
+- Best fit for `VR-apps-lab`:
+  VR content browsers, asset review rooms, WebXR media galleries, creator
+  preview sandboxes, and documentation examples for content-schema discipline.
+
+## Method 722: Rehabilitation treatment-loop boundary across calibration, sensor input, personalized difficulty, feedback, logging, and clinical caveats
+
+- What it is:
+  a VR rehab or therapy-adjacent tool should separate assessment, sensor input,
+  task generation, feedback, logs, operator control, and medical/privacy claims.
+- Good for:
+  hand rehab tasks, pinch/grasp training, exercise loops, neurofeedback
+  prototypes, voice assistant companions, therapist dashboards, and
+  accessibility-driven training tools.
+- Why it matters:
+  rehab prototypes often contain valuable engineering patterns but dangerous
+  product claims. Reuse should extract the interaction loop while preserving
+  consent, privacy, validation, and clinician-boundary warnings.
+- Source evidence:
+  `mahmoud1yaser/VR-Therapist-Virtual-Mental-Health-Experience`,
+  `jessieyang0320/VHab`, `reboot-corp/Reboot-Hackathon`,
+  `EyalMaoz/Pinch_Rehabilitation_VR_Personalized_Treatment`,
+  `TheBananaGuy/rehab-in-vr`, `pcallej/ADHD-Unity`,
+  `WestonBDev/Modules-for-Burn-Injury-Rehabilitation`,
+  `songer1993/vr-cat-bath-study`, and `harr-data/Simple-VR-Rehab`.
+- Reusable core:
+  calibration, sensor confidence, personalized range, difficulty parameters,
+  task generator, scoring, visual/audio/haptic feedback, session timer, data
+  log, therapist/operator view, consent boundary, and validation caveat.
+- Source evidence details:
+  Wave 277 includes a Unity voice-to-service loop, web hand-rehab microgames,
+  EEG/LSL neurofeedback, OVR pinch calibration and personalized treatment
+  generation, sustained grab tasks, GoogleVR attention games, modular burn
+  rehab components, gamified cat-care strength tasks, and a source-light web
+  metrics suite.
+- Do not copy directly:
+  unguarded AI therapist behavior, unauthenticated medical audio services,
+  raw patient files, hardcoded clinical paths, unvalidated EEG classifiers, or
+  therapy efficacy claims from prototypes.
+- Strong references:
+  `EyalMaoz/Pinch_Rehabilitation_VR_Personalized_Treatment` for
+  calibration-to-treatment architecture and
+  `WestonBDev/Modules-for-Burn-Injury-Rehabilitation` for modular rehab
+  microcomponents.
+- Maturity:
+  promising engineering method; any medical-adjacent reuse requires explicit
+  non-clinical framing, privacy design, and validation outside this repo.
+- Best fit for `VR-apps-lab`:
+  calibration-first exercise prototypes, accessibility training loops,
+  input-confidence visualizers, haptic feedback modules, and safety language
+  for medical-adjacent research.
+
+## Method 723: Camera-to-avatar retargeting pipeline across camera capture, landmark scores, smoothing, bone maps, blendshapes, gaze, reset, and virtual output
+
+- What it is:
+  a camera-driven avatar utility should isolate frame capture, inference,
+  confidence scoring, filtering, retargeting, avatar output, and publishing.
+- Good for:
+  VRM avatars, webcam mocap, virtual cameras, VMC/EVMC bridges, face/hand/body
+  retargeting tools, creator streaming utilities, and non-headset avatar
+  control.
+- Why it matters:
+  camera-to-avatar tools fail when tracking noise, partial visibility, output
+  side effects, and avatar-specific assumptions are blended into one layer. A
+  reusable pipeline makes confidence and output boundaries visible.
+- Source evidence:
+  `Kariaro/VRigUnity`, `creativeIKEP/HolisticMotionCapture`, and
+  `zacharyguan/VRigUnity`.
+- Reusable core:
+  camera source, privacy policy, inference/model boundary, landmark scores,
+  low-pass filters, body bone map, hand map, face blendshapes, gaze/look target,
+  upper-body mode, reset behavior, FPS throttle, avatar adapter, virtual camera
+  or streaming output, and fork-lineage caveat.
+- Source evidence details:
+  Wave 278 includes VRigUnity's camera/output utility and virtual-camera script
+  boundary, HolisticMotionCapture's VRM-focused pose/hand/face pipeline with
+  score gates and smoothing, and a duplicate VRigUnity fork retained only as a
+  lineage node.
+- Do not copy directly:
+  side-effectful virtual-camera installers without confirmation, platform-only
+  output assumptions, camera capture without privacy UX, threshold constants as
+  universal defaults, or forks without unique evidence.
+- Strong references:
+  `creativeIKEP/HolisticMotionCapture` for clean retargeting structure and
+  `Kariaro/VRigUnity` for capture/output utility framing.
+- Maturity:
+  strong reusable pipeline method, especially when connected with earlier VMC
+  and camera-inference bridge waves.
+- Best fit for `VR-apps-lab`:
+  camera-to-avatar tools, webcam mocap references, virtual camera outputs,
+  non-HMD avatar control, and VMC/OSC bridge experiments.
+
+## Method 724: Remote VR streaming lifecycle across sensor uplink, video downlink, WebRTC signaling, SDK setup, cloud stages, frame queues, and privacy gates
+
+- What it is:
+  a remote VR or live-streaming tool should separate capture, input uplink,
+  transport, signaling, backend session control, viewer output, and privacy
+  controls.
+- Good for:
+  Unity camera streaming, Quest receiver panels, phone-as-headset prototypes,
+  WebRTC operator dashboards, cloud live SDKs, collaboration servers, and
+  remote-assistance tools.
+- Why it matters:
+  streaming surfaces are high-risk because they combine device sensors,
+  rendered views, networks, cloud services, recording, and potentially private
+  spaces. Reuse needs lifecycle and safety boundaries, not just a video track.
+- Source evidence:
+  `PierfrancescoSoffritti/RemoteVR_UnityServer`,
+  `PierfrancescoSoffritti/RemoteVR_AndroidClient`,
+  `TheAnonymousMan/WebRTC-VR-Server`,
+  `GitEducaverse2024/com.educa360.live`, `shinyoshiaki/quest-view`,
+  `jlin3/substream-sdk`, `kasimmj/vrcollab`, and
+  `jakubtom/UnityRenderStreaming_StereoWebcam`.
+- Reusable core:
+  capture source, sensor packet, input uplink, video track or frame downlink,
+  signaling server, peer/session state, backend abstraction, resolution/FPS/
+  bitrate config, frame queue, auth/pairing, TLS expectation, kill-switch,
+  recording/webhook boundary, cleanup, and source-light caveat.
+- Source evidence details:
+  Wave 279 includes legacy TCP/UDP remote VR, Android gyro/touch clients,
+  Unity-hosted WebRTC signaling, a Quest WebRTC texture receiver, a guided
+  Unity live SDK with Quest capture workaround, a cloud streaming control plane,
+  and source-light collaboration/stereo-streaming references.
+- Do not copy directly:
+  unauthenticated UDP/WebSocket streams, fixed public ports without pairing,
+  brittle signaling strings, unbounded frame queues, cloud-stage allocation
+  without cleanup, or recording/live-viewing without explicit privacy controls.
+- Strong references:
+  `GitEducaverse2024/com.educa360.live` for SDK/setup architecture and
+  `TheAnonymousMan/WebRTC-VR-Server` for compact Unity-hosted WebRTC.
+- Maturity:
+  strong architecture method with mixed donor maturity; production reuse must
+  prioritize auth, pairing, TLS, privacy, and device-specific capture limits.
+- Best fit for `VR-apps-lab`:
+  remote viewing helpers, Unity WebRTC panels, Quest video receivers, live
+  support tools, streaming SDK references, and privacy-first capture checklists.

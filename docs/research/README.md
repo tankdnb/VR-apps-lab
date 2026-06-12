@@ -271,6 +271,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-273-vr-performance-tuning-fsr-and-fps-helper-surfaces.md`
 - `landscape/vr-projects-wave-274-playspace-chaperone-boundary-and-safety-awareness-utilities.md`
 - `landscape/vr-projects-wave-275-vr-launchers-startup-orchestration-and-app-library-surfaces.md`
+- `landscape/vr-projects-wave-276-webxr-museum-guided-tour-and-artifact-gallery-surfaces.md`
+- `landscape/vr-projects-wave-277-vr-rehabilitation-therapy-and-treatment-loop-prototypes.md`
+- `landscape/vr-projects-wave-278-camera-to-vrm-avatar-retargeting-and-virtual-camera-output.md`
+- `landscape/vr-projects-wave-279-remote-cloud-webrtc-vr-streaming-and-live-sdk-surfaces.md`
 
 ## Archive Navigation
 

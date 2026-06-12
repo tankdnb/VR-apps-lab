@@ -8481,6 +8481,152 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - external-process handoff and return-to-menu lifecycle;
 - launcher safety policy and rollback checklists.
 
+## Family 255: WebXR museum, guided-tour, and artifact-gallery surfaces
+
+This family covers museum, gallery, guided-tour, and artifact-viewing projects
+that turn content metadata into spatial exhibits, media frames, AR/WebXR
+viewers, annotations, and creator preview shells. The reusable lesson is to
+separate durable exhibit data from engine-specific viewer adapters.
+
+| Project | Status | Notes |
+|---|---|---|
+| `artificialmuseum/sandbox` | Studied with remote-engine caveat in Wave 276 | Artifact manifest, custom scene lifecycle hooks, injected engine boundary, skybox/model paths, and preview-shell behavior |
+| `torashad99/xr-photo-museum` | Studied in Wave 276 | Multiplayer WebXR photo museum with frame slots, parallax portals, generated-world polling, annotations, voice notes, strokes, and room state |
+| `TashaGandevia/GamingMuseum_WebXR` | Studied with engine caveats in Wave 276 | Wonderland museum with console metadata, CanvasUI panels, cursor events, haptics, spatial sounds, and generated dependency caveats |
+| `rohanbk10/Museum` | Studied in Wave 276 | Schema-first museum SPA with annotations, desktop 3D viewer, MindAR image targets, WebXR anchors, router lifecycle, and cleanup discipline |
+| `Shree-svg/Neural_Nexus-Virtual_3D_Museum` | Source-light reference in Wave 276 | Minimal atmospheric museum shell, useful mainly for product framing |
+| `UMN-VR/UMN-VR-Quest-2-App` | Artifact-heavy reference in Wave 276 | Photogrammetry museum proof-of-concept with APK/cache payload and repository-hygiene caveats |
+
+### Consolidation note
+
+This family matters because spatial content browsers should name:
+
+- content schema and asset provenance;
+- artifact or exhibit manifest;
+- frame, portal, or viewer slot lifecycle;
+- annotation, voice, drawing, or collaboration model;
+- desktop, AR, WebXR, and Quest fallback paths;
+- cleanup and disposal rules;
+- generated-asset and repository-hygiene caveats.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- reusable museum/gallery content schemas;
+- WebXR media-room and portal-surface experiments;
+- artifact preview sandboxes for creator workflows;
+- AR/WebXR viewer adapter comparisons;
+- documentation rules for artifact-heavy Unity/Quest archives.
+
+## Family 256: VR rehabilitation, therapy, and treatment-loop prototypes
+
+This family covers rehab, therapy, neurofeedback, and sensor-training projects
+that combine assessment, input confidence, task generation, feedback, and logs.
+The reusable lesson is to extract engineering loops while keeping medical,
+privacy, and validation claims explicit.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mahmoud1yaser/VR-Therapist-Virtual-Mental-Health-Experience` | Studied with medical/privacy caveats in Wave 277 | Unity mic capture to Flask STT/LLM/TTS loop with avatar playback and unsafe clinical/auth caveats |
+| `jessieyang0320/VHab` | Partially studied in Wave 277 | Legacy web hand-rehab microgames around finger angle, pinch, grab, selectors, buttons, and whack-a-mole tasks |
+| `reboot-corp/Reboot-Hackathon` | Studied with prototype caveats in Wave 277 | LSL/BrainFlow EEG ingress, Unity concentration feedback ring, local serialization, and validation caveats |
+| `EyalMaoz/Pinch_Rehabilitation_VR_Personalized_Treatment` | Studied in Wave 277 | OVR pinch classification, calibration, patient range persistence, treatment plans, adaptive difficulty, and task generation |
+| `TheBananaGuy/rehab-in-vr` | Studied with source-light caveats in Wave 277 | Leap/Oculus sustained grab-and-hold target loop |
+| `pcallej/ADHD-Unity` | Studied with legacy caveats in Wave 277 | GoogleVR attention-training path/target games and vendor payload caveats |
+| `WestonBDev/Modules-for-Burn-Injury-Rehabilitation` | Studied in Wave 277 | Timed trigger boxes, XR haptic configuration, accessibility module framing, and CSV motion logging |
+| `songer1993/vr-cat-bath-study` | Studied in Wave 277 | Gamified cat-care rehab tasks with grasp/pinch strength indicators, timers, and capture hooks |
+| `harr-data/Simple-VR-Rehab` | Source-light reference in Wave 277 | Browser task/metric suite around tracking, reflex, memory, stability, latency, and deviation |
+
+### Consolidation note
+
+This family matters because rehab utilities should name:
+
+- assessment and calibration flow;
+- input device, confidence, and sensor quality;
+- personalized range and difficulty;
+- task generator and scoring;
+- visual, audio, haptic, or avatar feedback;
+- session logs and therapist/operator views;
+- consent, privacy, validation, and medical-claim boundaries.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- calibration-first VR exercise loops;
+- reusable hand/pinch/grasp task kits;
+- biometric ingress to feedback surfaces;
+- therapist-facing session logs;
+- safety language for medical-adjacent VR tools.
+
+## Family 257: Camera-to-VRM/avatar retargeting and virtual-camera output
+
+This family covers projects that turn camera frames into avatar pose, hand,
+face, gaze, blendshape, and virtual-camera output. The reusable lesson is to
+keep capture, inference, retargeting, avatar output, and publishing as separate
+boundaries.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Kariaro/VRigUnity` | Studied with side-effect caveats in Wave 278 | Camera/avatar output utility with capture settings, mirrored output, annotation modules, EVMC/VMC periphery, thread helper, and Windows virtual-camera scripts |
+| `creativeIKEP/HolisticMotionCapture` | Studied in Wave 278 | Camera-to-VRM pipeline with holistic processing, score gates, smoothing filters, pose/hand/face renderers, blendshapes, gaze, upper-body mode, and reset |
+| `zacharyguan/VRigUnity` | Variant-only in Wave 278 | Fork/lineage node of `Kariaro/VRigUnity`, not promoted without unique donor evidence |
+
+### Consolidation note
+
+This family matters because avatar retargeting utilities should name:
+
+- camera frame source and privacy policy;
+- inference model and score thresholds;
+- smoothing/filter strategy;
+- body, hand, face, and gaze maps;
+- avatar-specific output layer;
+- virtual-camera or video publishing adapter;
+- reset, calibration, and platform side effects.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- camera-to-avatar retargeting matrices;
+- MediaPipe-to-VRM pipeline references;
+- virtual-camera output safety rules;
+- VMC/camera-inference bridge comparisons;
+- fork-lineage/dedupe handling for avatar tools.
+
+## Family 258: Remote, cloud, WebRTC VR streaming, and live SDK surfaces
+
+This family covers local and cloud streaming projects that connect input uplink,
+camera/video output, WebRTC or custom transport, signaling, session control,
+and viewer surfaces. The reusable lesson is to treat transport, capture,
+signaling, backend allocation, and privacy gates as separate components.
+
+| Project | Status | Notes |
+|---|---|---|
+| `PierfrancescoSoffritti/RemoteVR_UnityServer` | Studied with legacy caveats in Wave 279 | Unity TCP/UDP server with gyro/touch input, resolution negotiation, and rendered-image downlink |
+| `PierfrancescoSoffritti/RemoteVR_AndroidClient` | Studied with legacy caveats in Wave 279 | Android calibrated gyroscope client with UDP session init, image receive loop, and touch/gyro packets |
+| `TheAnonymousMan/WebRTC-VR-Server` | Studied in Wave 279 | Unity-hosted WebRTC/WebSocket signaling server with camera track, ICE buffering, answer creation, and data channel |
+| `GitEducaverse2024/com.educa360.live` | Studied in Wave 279 | Unity live-streaming SDK with config asset, backend abstraction, setup wizard, Quest capture workaround, FPS monitor, and kill-switch settings |
+| `shinyoshiaki/quest-view` | Studied with caveats in Wave 279 | Quest WebRTC video receiver with WebSocket signaling, I420 frame queue, YUV-to-texture conversion, and brittle signaling caveats |
+| `jlin3/substream-sdk` | Studied with scope caveats in Wave 279 | Cloud streaming SDK/control plane with auth, IVS stage allocation, WHIP provisioning, webhooks, recording/highlights, and Unity script families |
+| `kasimmj/vrcollab` | Source-light architecture reference in Wave 279 | Pose-frame, SFU, spatial-audio, and asset-service product sketch with thin inspected source |
+| `jakubtom/UnityRenderStreaming_StereoWebcam` | README-only reference in Wave 279 | Stereo webcam through Unity Render Streaming concept |
+
+### Consolidation note
+
+This family matters because streaming utilities should name:
+
+- capture source and output surface;
+- input uplink and sensor packet model;
+- signaling, pairing, and auth;
+- WebRTC, WHIP, UDP/TCP, or cloud-stage transport;
+- FPS, resolution, bitrate, and frame queue;
+- backend lifecycle, recording, and webhooks;
+- privacy, TLS, kill-switch, and cleanup.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Unity-hosted WebRTC camera streams;
+- Quest receiver texture pipelines;
+- streaming SDK setup-wizard patterns;
+- cloud stage/session lifecycle references;
+- privacy-first remote VR viewing checklists.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.
