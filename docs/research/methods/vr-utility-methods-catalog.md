@@ -14855,3 +14855,185 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   minimal overlay baselines, source-light overlay checklists, game-HUD demand
   references, MR image/annotation panel ideas, and vendor-heavy caveat rules.
+
+## Method 713: Measurement utility boundary across visual prompts, body state, camera taps, and remote assist
+
+- What it is:
+  a measurement utility should separate the observed signal from the user-facing
+  measurement workflow: visual prompt, captured point, body metric, unit
+  transform, persisted value, confidence, and correction path.
+- Good for:
+  IPD helpers, Godot XR body measurement services, browser/mobile camera
+  measurement companions, WebRTC-assisted inspection demos, and calibration
+  checklists.
+- Why it matters:
+  measurement tools often look precise while relying on hardcoded display
+  geometry, rough pixel scaling, device pitch, or estimated body values. Reuse
+  requires explicit confidence and fallback rules.
+- Source evidence:
+  `rlaboiss/ipd-vr-measure`, `AyOhEe/Godot-VR-Measurements`,
+  `maverickjimmx/webxr-measure`, and
+  `Vedant22-marda/webxr-measurement-app`, with
+  `leetarry/VR_Measure` and `NeosoftMadhuri/webxr-measure` as source-light
+  caution nodes.
+- Reusable core:
+  measurement target, signal source, prompt state, capture event, conversion
+  formula, calibration constant, persisted field, user override, confidence
+  label, privacy/network boundary, and source-light evidence status.
+- Source evidence details:
+  Wave 268 includes visual IPD target movement with pixel-to-mm conversion,
+  Godot autoload measurement state with body fallbacks and camera-rig offset
+  correction, mobile orientation coaching with sketch/signature capture, and a
+  camera/WebRTC tap-to-measure overlay with rough scaling.
+- Do not copy directly:
+  hardcoded monitor geometry, approximate pixel-distance constants presented as
+  medical/engineering truth, unauthenticated remote rooms, hardcoded submission
+  endpoints, or empty repositories as implementation evidence.
+- Strong references:
+  `Godot-VR-Measurements` for engine-local measurement state and
+  `ipd-vr-measure` for a compact visual prompt/capture loop, both requiring
+  clearer calibration metadata before production reuse.
+- Maturity:
+  practical extraction method for calibration helpers; implementation evidence
+  is mixed and should be paired with validation notes.
+- Best fit for `VR-apps-lab`:
+  calibration helper matrices, body measurement service prototypes, phone
+  companion measurement UX, and confidence-aware utility documentation.
+
+## Method 714: Input/action-to-command bridge with separated capture, gesture, target, and safety policy
+
+- What it is:
+  an input bridge should treat XR actions, hotkeys, generated bindings,
+  keyboard injection, OSC pulses, and shell commands as different stages rather
+  than one tangled callback.
+- Good for:
+  OpenXR action routers, UEVR touch-to-key plugins, Unity input facades,
+  VRChat OSC hotkeys, action diagnostic tools, and code-generated OpenXR
+  binding helpers.
+- Why it matters:
+  command bridges can execute shell commands, synthesize keyboard events, or
+  pulse avatar inputs. The donor-worthy part is the clear boundary between
+  input state, gesture detection, command target, feedback, and guard rails.
+- Source evidence:
+  `art0007i/openxr-command-runner`, `swirllyman/SimpleOpenXRInput`,
+  `gameflorist/uevr-touch-buttons-mapping-plugin`,
+  `germansmedia/openxr-actions-test`,
+  `danwillm/openxr-actions-tester`,
+  `brycehutchings/OpenXR-Action-Code-Generator`,
+  `tmddn0230/monado-input-system`, and `Somahc/VRCVoiceHotkey`.
+- Reusable core:
+  action schema, suggested binding, source device, state poll, gesture
+  recognizer, debounce/cooldown, output adapter, haptic/visible feedback,
+  command allowlist, diagnostics, generated-code boundary, and portability
+  caveat.
+- Source evidence details:
+  Wave 269 includes JSON5 command/action mapping, EXTX overlay session use,
+  Unity InputActionMap facade events, UEVR SendInput mapping, raw OpenXR FFI
+  harnesses, JSON action testers, C/C++ action code generation, runtime device
+  boundary evidence, and a Windows OSC voice hotkey.
+- Do not copy directly:
+  unconstrained shell execution, silent keyboard injection, hardcoded hotkeys
+  and ports, checked-in debug artifacts, Monado fork code without isolating the
+  unique diff, or static event lifecycles without cleanup.
+- Strong references:
+  `openxr-command-runner` for action-to-command mapping,
+  `openxr-actions-tester` for diagnostic action polling, and
+  `OpenXR-Action-Code-Generator` for generated binding surface design.
+- Maturity:
+  strong reusable method, but safety policy must be designed before any
+  prototype executes commands or synthesizes desktop input.
+- Best fit for `VR-apps-lab`:
+  safe VR command surfaces, OpenXR action diagnostics, OSC micro-control
+  bridges, generated action-binding helpers, and UEVR/Unity input routing
+  comparisons.
+
+## Method 715: Creator resource discovery surface across catalogs, graphs, DAM browsers, VPM listings, and templates
+
+- What it is:
+  a creator resource surface combines normalized metadata, preview/provenance,
+  filter/search UX, relationship browsing, package manifests, deep links, and
+  optional editor-side validation or cleanup helpers.
+- Good for:
+  VRChat asset catalogs, VPM package listings, graph-based resource maps,
+  VR-native DAM browsers, package templates, and creator workbench companion
+  tools.
+- Why it matters:
+  creator ecosystems need more than a list of links. The reusable pattern is a
+  trusted discovery path that tells users what the asset/package is, where it
+  comes from, how to install it, and what maintenance risks exist.
+- Source evidence:
+  `vanquish3r/vrchat-asset-browser`, `Fraxul/VRChatResources`,
+  `dark-swordsman/VRCRW`, `tiry/nuxeo-vr-assets-browser`,
+  `ElMoha943/valenvrc_package_listing`, `Purpzie/vpm`, and
+  `Limitex/vrchat-package-template`, with `marklibert404-eng/Obelisk` as a
+  rejected non-fit/security caution node.
+- Reusable core:
+  metadata schema, source/provenance field, preview URL, license/status, filter
+  and sort state, graph relation, package manifest, release index, deep-link
+  action, copy/share path, editor helper, and stale/non-fit rejection rule.
+- Source evidence details:
+  Wave 270 includes static JSON asset cards, scene/editor microtools, a
+  Mongo-backed graph resource UI, an A-Frame Nuxeo asset browser, VPM
+  source.json listings, generated add-repo pages, and a package template with
+  asmdef/sample/test structure.
+- Do not copy directly:
+  remote-content browser extensions, hardcoded DAM credentials, opaque
+  provenance, stale package indexes without generation rules, skeletal
+  templates presented as complete packages, or install deep links without
+  visible source and trust context.
+- Strong references:
+  `vrchat-asset-browser` for static catalog UX,
+  `VRChatResources` for editor helper adjacency, and `Purpzie/vpm` for package
+  listing/deep-link ergonomics.
+- Maturity:
+  solid product-pattern method; code donor value varies by project, but the UX
+  and information architecture lessons are strong.
+- Best fit for `VR-apps-lab`:
+  VRChat creator resource catalogs, VPM listing references, asset provenance
+  rules, graph-based discovery experiments, and creator workbench backlog
+  items.
+
+## Method 716: Annotation surface pipeline from rays or remote clicks to strokes, pixels, landmarks, and timeline notes
+
+- What it is:
+  an annotation surface should make the coordinate conversion and data model
+  explicit: input ray or remote click, hit surface, local UV or world point,
+  rendered mark, shared event, persistence/export, and late-join behavior.
+- Good for:
+  WebXR whiteboards, Unity texture boards, remote expert annotation, point-cloud
+  labeling, video annotation, in-room notes, and collaborative drawing tools.
+- Why it matters:
+  whiteboards and annotation tools are deceptively small. Their reusable value
+  is in the hit-to-mark pipeline, collaboration model, persistence format, and
+  license/artifact hygiene, not just in drawing a line.
+- Source evidence:
+  `jorisvddonk/drawplane`, `liuchen1701/VR-Whiteboard`,
+  `arcwhite/vr-whiteboard`, `yankanp/web-vr-annotation`,
+  `MichaeliusAChapelo/VR-Annotation-Scripts`,
+  `rafaelkuffner/VR-Annotator`, and `Danda420/vr-whiteboard`.
+- Reusable core:
+  target surface, input role, ray/pointer source, hit test, coordinate
+  conversion, stroke or pixel mutation, annotation object type, share transport,
+  persistence/export format, late-join sync, cleanup, license gate, and artifact
+  hygiene status.
+- Source evidence details:
+  Wave 271 includes A-Frame meshline strokes over PeerJS rooms, Unity Daydream
+  painter instantiation, Three.js barycentric hit-to-UV canvas textures,
+  WebSocket/WebRTC remote annotation roles, Unity landmark CSV import/export,
+  point-cloud/video annotation manager state, and textureCoord-based pixel
+  interpolation on Unity boards.
+- Do not copy directly:
+  no-permission licensed scripts, checked-in Unity Library/Temp/Logs payloads,
+  late-join-unsafe collaborative state, local-cert single-client assumptions,
+  legacy WebVR/Daydream APIs without migration notes, or dataset-heavy assets
+  as reusable code.
+- Strong references:
+  `drawplane` for browser collaborative stroke UX,
+  `web-vr-annotation` for remote expert bridge structure, and
+  `Danda420/vr-whiteboard` for texture-pixel drawing after artifact cleanup.
+- Maturity:
+  strong reusable method for surface tools; individual projects range from
+  tiny prototypes to artifact-heavy research apps.
+- Best fit for `VR-apps-lab`:
+  whiteboard surface prototypes, remote annotation tools, note-taking overlays,
+  dynamic texture drawing helpers, and point-cloud/video labeling references.

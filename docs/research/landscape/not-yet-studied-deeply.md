@@ -384,6 +384,19 @@ are follow-up themes rather than requests to rerun the same repositories.
 | `VRChat OSC micro-control safety matrix` | Newly surfaced by Wave 258 | Hotkeys, AFK state, controller axes, shell commands, MIDI, BLE heart rate, and typed OSC libraries need the same queue, cooldown, state, and release rules | High | High | Extract address contracts, port conflict behavior, queue/debounce/release semantics, privacy gates, and OSCQuery discovery fallbacks across microtools |
 | `Quest companion helper safety and capture matrix` | Newly surfaced by Wave 259 | Quest setup, capture, screenshot, screenrecord, hand/eye telemetry, registry edits, and camera workarounds should be documented as device-helper boundaries | High | High | Compare ADB/device discovery, storage permission, power/proximity changes, registry rollback, identity patch warnings, capture latency, and sensor stream schemas |
 
+## Priority batch Z: Waves 268-271 surfaced follow-up candidates
+
+These were surfaced while studying measurement utilities, OpenXR action bridges,
+VRChat resource discovery surfaces, and VR whiteboard or annotation tools. They
+are follow-up themes rather than requests to rerun the same repositories.
+
+| Project or cluster | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
+|---|---|---|---|---|---|
+| `measurement/calibration utility matrix` | Newly surfaced by Wave 268 | IPD prompts, Godot body measurements, mobile camera taps, phone orientation coaching, and WebRTC remote assist need one confidence-aware measurement boundary | High | High | Compare unit conversion, calibration constants, user overrides, persistence, privacy gates, and when a value should be labeled estimate versus measured |
+| `VR action/hotkey bridge safety matrix` | Newly surfaced by Wave 269 | OpenXR actions, generated bindings, UEVR keyboard injection, Unity events, desktop keyboard hooks, OSC pulses, and shell commands share one capture-to-command safety problem | High | High | Extract allowlists, cooldowns, visible feedback, haptics, release semantics, command classes, generated binding schemas, and conflict handling before prototype work |
+| `VRChat resource/package discovery matrix` | Newly surfaced by Wave 270 | Static catalogs, graph views, VR-native DAM browsers, VPM listings, and package templates should be compared as one creator discovery and trust surface | High | High | Normalize metadata, preview, provenance, license, dependency, release, add-to-VCC deep-link, graph relation, and stale-package rules |
+| `VR whiteboard/annotation surface matrix` | Newly surfaced by Wave 271 | Meshline strokes, dynamic canvas textures, Unity texture pixels, landmark dots, remote arrows/text, and video/point-cloud timeline notes share one hit-to-mark pipeline | High | High | Compare coordinate conversion, collaboration sync, late-join behavior, persistence/export, license gates, and artifact hygiene across browser and Unity donors |
+
 ## Family-level gaps that now deserve deeper passes
 
 These are larger than a single repo and should guide the next research wave.
@@ -3038,6 +3051,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 190. `XSOverlay notification relay matrix across UDP/WebSocket payloads, source adapters, privacy gates, and compatibility daemons`
 191. `VRChat OSC micro-control safety matrix across hotkeys, state mirrors, input pulses, MIDI/BLE sources, typed libraries, and port conflicts`
 192. `Quest companion helper matrix across ADB setup, capture paths, screenshots, screenrecord, sensor streams, registry/config patches, and rollback`
+193. `Measurement/calibration utility matrix across IPD, body values, camera taps, phone orientation, WebRTC remote assistance, and confidence metadata`
+194. `VR hotkey/action bridge safety matrix across OpenXR actions, generated bindings, UEVR keyboard injection, Unity events, keyboard hooks, OSC pulses, and command allowlists`
+195. `VRChat resource/package discovery matrix across static JSON catalogs, graph views, VR-native DAM browsers, VPM listings, package templates, provenance, and install deep links`
+196. `VR whiteboard/annotation matrix across meshline strokes, dynamic textures, texture pixels, landmark dots, remote arrows/text, timeline annotations, persistence, and license gates`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

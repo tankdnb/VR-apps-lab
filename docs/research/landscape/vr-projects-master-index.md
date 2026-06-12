@@ -276,6 +276,10 @@ This file complements:
 - `vr-projects-wave-265-vrchat-creator-user-utility-microtools-and-service-dev-helpers.md`
 - `vr-projects-wave-266-engine-browser-xr-utility-packages-input-and-locomotion-primitives.md`
 - `vr-projects-wave-267-source-light-openvr-steamvr-overlay-tweak-and-hud-variants.md`
+- `vr-projects-wave-268-vr-webxr-godot-measurement-and-body-distance-utilities.md`
+- `vr-projects-wave-269-openxr-action-input-command-and-hotkey-utility-bridges.md`
+- `vr-projects-wave-270-vrchat-asset-resource-package-discovery-and-listing-surfaces.md`
+- `vr-projects-wave-271-vr-whiteboard-annotation-and-note-taking-surfaces.md`
 
 ## How to use this index
 

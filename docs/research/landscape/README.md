@@ -1194,6 +1194,26 @@ Use these files when you want to understand:
   variants, minimal native texture submission, vendor-heavy Unity shells,
   README-only HUD ideas, and Quest MR image-panel references.
 
+- `vr-projects-wave-268-vr-webxr-godot-measurement-and-body-distance-utilities.md`
+  Next GitHub discovery wave focused on IPD/body/camera measurement helpers,
+  Godot XR measurement state, mobile orientation coaching, WebRTC-assisted
+  measurement demos, and source-light measurement-intent caveats.
+
+- `vr-projects-wave-269-openxr-action-input-command-and-hotkey-utility-bridges.md`
+  Next GitHub discovery wave focused on OpenXR action-to-command routing,
+  Unity input facades, UEVR keyboard injection, action testers, generated
+  bindings, runtime input boundaries, and VRChat OSC hotkeys.
+
+- `vr-projects-wave-270-vrchat-asset-resource-package-discovery-and-listing-surfaces.md`
+  Next GitHub discovery wave focused on VRChat asset catalogs, creator/editor
+  microtools, resource graph views, VR-native DAM browsing, VPM package
+  listings, add-to-VCC links, and package template caveats.
+
+- `vr-projects-wave-271-vr-whiteboard-annotation-and-note-taking-surfaces.md`
+  Next GitHub discovery wave focused on collaborative VR whiteboards, dynamic
+  texture drawing, WebRTC/WebSocket remote annotation, Unity landmark export,
+  point-cloud/video annotation, and artifact/license hygiene.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

@@ -8187,6 +8187,155 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - MR annotation panel UX;
 - vendor-heavy Unity overlay caveat rules.
 
+## Family 247: VR measurement, calibration, and body-distance utility surfaces
+
+This family covers small measurement helpers that turn headset, browser, phone,
+or engine state into user-facing calibration values. The useful lesson is not a
+single perfect measurement algorithm, but the boundary between visual prompts,
+captured points, body metrics, persistence, and caveats.
+
+| Project | Status | Notes |
+|---|---|---|
+| `leetarry/VR_Measure` | Source-light in Wave 268 | Empty measurement-intent repository with no donor evidence in the inspected branch |
+| `rlaboiss/ipd-vr-measure` | Studied in Wave 268 | Pygame visual IPD helper with converging/diverging targets, key-captured extrema, pixel-to-mm transform, and hardcoded display geometry |
+| `AyOhEe/Godot-VR-Measurements` | Studied in Wave 268 | Godot XR measurement autoload with persisted config, measurement-change signal, body-value estimation, and camera-rig tracked-offset correction |
+| `NeosoftMadhuri/webxr-measure` | Source-light in Wave 268 | Empty WebXR measurement-intent repository with no donor evidence in the inspected branch |
+| `maverickjimmx/webxr-measure` | Studied with caveats in Wave 268 | Browser/mobile inspection form with device-orientation coaching, camera view, point/vertical fields, canvas sketch/signature capture, and Apps Script submit |
+| `Vedant22-marda/webxr-measurement-app` | Studied with caveats in Wave 268 | Camera/WebRTC measurement demo with tap-to-measure overlay, rough pixel-distance scaling, SocketIO signaling, STUN, and unauthenticated default-room caveats |
+
+### Consolidation note
+
+This family matters because calibration helpers should name:
+
+- measurement primitive and confidence;
+- visual prompt or body-state source;
+- user correction and persistence path;
+- unit conversion assumptions;
+- privacy and camera/network caveats;
+- remote-assist or collaboration boundary;
+- source-light versus donor-ready evidence.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- IPD/body metric helper comparisons;
+- Godot XR measurement-state services;
+- phone/browser measurement companion UX;
+- remote-assist measurement privacy gates;
+- calibration confidence and fallback rules.
+
+## Family 248: OpenXR action, hotkey, OSC, and command bridges
+
+This family covers projects that translate XR actions or desktop hotkeys into
+commands, keyboard events, OSC pulses, generated bindings, or diagnostic action
+state. The central lesson is to keep input capture, gesture interpretation,
+target action, and safety policy separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `art0007i/openxr-command-runner` | Studied in Wave 269 | OpenXR input-to-command bridge with EXTX overlay session, JSON5 command/action config, suggested bindings, bool/float handling, and gesture detection |
+| `swirllyman/SimpleOpenXRInput` | Studied in Wave 269 | Unity OpenXR input facade with generated InputActionMap, static controller events, haptic helper assignment, and static-lifecycle caveats |
+| `gameflorist/uevr-touch-buttons-mapping-plugin` | Studied in Wave 269 | UEVR/OpenXR touch-to-keyboard plugin that maps unused touch inputs to SendInput key presses with per-key state and haptic feedback |
+| `germansmedia/openxr-actions-test` | Partially studied in Wave 269 | Raw Rust FFI OpenXR action/session harness with proc loading, diagnostics, and checked-in target/debug artifact caveats |
+| `danwillm/openxr-actions-tester` | Studied in Wave 269 | JSON-driven OpenXR action tester with headless extension setup, action sets, suggested bindings, bool/pose polling, and Vive tracker examples |
+| `brycehutchings/OpenXR-Action-Code-Generator` | Studied in Wave 269 | OpenXR action code generator for action manifests, helper structs, action states, subactions, action spaces, and suggested bindings |
+| `tmddn0230/monado-input-system` | Variant/reference in Wave 269 | Monado-scale fork useful for runtime input/device boundary evidence, but not a direct donor until unique diff is isolated |
+| `Somahc/VRCVoiceHotkey` | Studied with caveats in Wave 269 | Windows tray hotkey bridge mapping Ctrl+M to a VRChat OSC voice pulse with hardcoded hotkey/port and mojibake caveats |
+
+### Consolidation note
+
+This family matters because command bridges should name:
+
+- input source and runtime binding;
+- action schema or generated binding artifact;
+- gesture recognizer and debounce state;
+- command target and side effect class;
+- haptic or visible feedback;
+- safety confirmation, cooldown, and allowlist;
+- diagnostics and portability caveats.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenXR action-to-command bridge prototypes;
+- safe keyboard/OSC action routers;
+- generated OpenXR action binding helpers;
+- input diagnostics without a full app shell;
+- UEVR/Unity/OpenXR command-surface comparisons.
+
+## Family 249: VRChat resource, asset, and package discovery surfaces
+
+This family covers public-facing catalog and package-listing projects for
+VRChat creators. The reusable lesson is how discovery surfaces combine
+metadata normalization, preview UX, graph relationships, package manifests,
+deep links, provenance, and editor-side cleanup helpers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `vanquish3r/vrchat-asset-browser` | Studied in Wave 270 | Static free asset database with JSON normalization, category filters, search, sort, linkified notes, preview links, and theme persistence |
+| `marklibert404-eng/Obelisk` | Rejected/non-fit in Wave 270 | Browser VPN/proxy extension with remote-content injection behavior and no VRChat asset/tooling donor value |
+| `Fraxul/VRChatResources` | Studied in Wave 270 | VRChat creator/editor microtools for scene visibility filters, collision proxy visualization, GPU instancing checks, prefab static flags, triggers, and occlusion volumes |
+| `dark-swordsman/VRCRW` | Studied in Wave 270 | Next/Prisma/Mongo resource cards plus Pixi draggable graph view and experimental relationship UX |
+| `tiry/nuxeo-vr-assets-browser` | Studied in Wave 270 | A-Frame/WebVR DAM browser backed by Nuxeo auth, thumbnails/renditions, asset grid, paging, and zoom panel |
+| `ElMoha943/valenvrc_package_listing` | Studied in Wave 270 | VPM package listing with source.json release arrays, package-list-action workflow, production deploy branch, and CNAME support |
+| `Purpzie/vpm` | Studied in Wave 270 | Generated VPM listing page with search, copyable URLs, vcc://vpm/addRepo links, package modal, dependencies, and license display |
+| `Limitex/vrchat-package-template` | Studied with caveats in Wave 270 | VPM package template with package metadata, VPM dependencies, Editor/Runtime asmdefs, Samples/Tests/Documentation, and skeletal placeholder docs |
+
+### Consolidation note
+
+This family matters because creator discovery surfaces should name:
+
+- canonical metadata schema;
+- package index and release artifact;
+- preview/provenance/license fields;
+- filter, sort, graph, or VR-native browsing mode;
+- deep-link and copy/share path;
+- editor-side validation or cleanup helper;
+- stale, unsafe, or non-fit source caveats.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VRChat package-listing UX patterns;
+- asset catalog provenance and preview rules;
+- graph-based resource discovery;
+- VR-native asset browser experiments;
+- editor helper surfaces that pair discovery with cleanup.
+
+## Family 250: VR whiteboard, annotation, and note-taking surfaces
+
+This family covers drawing and annotation tools for VR rooms, WebVR/WebXR
+spaces, Unity/Oculus scenes, remote observers, and point-cloud/video datasets.
+The reusable lesson is how interaction rays become strokes, texture pixels,
+landmarks, shared events, or timeline annotations.
+
+| Project | Status | Notes |
+|---|---|---|
+| `jorisvddonk/drawplane` | Studied in Wave 271 | A-Frame collaborative blackboard with controller crayon raycasts, meshline stroke accumulation, PeerJS host/client sharing, and hash rooms |
+| `liuchen1701/VR-Whiteboard` | Studied with caveats in Wave 271 | Unity Daydream whiteboard prototype with controller raycast to named board and instantiated painter marks |
+| `arcwhite/vr-whiteboard` | Studied in Wave 271 | Three.js/WebVR dynamic texture whiteboard with Vive controllers, barycentric hit-to-UV conversion, canvas drawing, and WebVR-era caveats |
+| `yankanp/web-vr-annotation` | Studied in Wave 271 | WebSocket/WebRTC remote annotation bridge with VR/annotation roles, signaling relay, normalized clicks, Babylon picking rays, arrows, and floating text |
+| `MichaeliusAChapelo/VR-Annotation-Scripts` | Studied with license caveat in Wave 271 | Unity/Oculus annotation scripts with raycast dots, dominant-hand mapping, transform controls, CSV import/export, and explicit no-permission license |
+| `rafaelkuffner/VR-Annotator` | Studied with caveats in Wave 271 | Unity point-cloud/video annotation tool with modes, manager state, frame ingestion, skeleton playback, config parsing, and artifact payload caveats |
+| `Danda420/vr-whiteboard` | Studied with artifact caveat in Wave 271 | Unity texture whiteboard with board-owned Texture2D, pen textureCoord raycasts, pixel interpolation, and heavy checked-in Unity artifacts |
+
+### Consolidation note
+
+This family matters because annotation tools should name:
+
+- target surface type;
+- ray, hand, pointer, or remote input source;
+- coordinate conversion boundary;
+- stroke, pixel, landmark, text, or timeline data model;
+- collaboration and late-join state;
+- persistence/export format;
+- license and artifact hygiene caveats.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- collaborative WebXR whiteboard baselines;
+- dynamic texture drawing helpers;
+- remote expert annotation bridges;
+- point-cloud/video annotation tools;
+- note-taking and surface persistence checklists.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

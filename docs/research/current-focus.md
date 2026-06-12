@@ -232,6 +232,11 @@ These are the clearest current product and research lines:
     pipelines, VRChat editor/service/Udon/device helper surfaces, engine and
     browser XR primitive packages, and source-light overlay triage across
     README-only, vendor-heavy, minimal native, and Quest MR panel variants.
+44. `Measurement helpers, action command bridges, creator discovery surfaces, and annotation tools`
+    the repository now has fresh coverage of IPD/body/camera measurement
+    helpers, Godot XR measurement state, OpenXR action-to-command routing,
+    UEVR keyboard/OSC hotkey bridges, VRChat asset and VPM discovery surfaces,
+    and VR whiteboard/remote annotation pipelines.
 
 ## Most useful current docs
 
@@ -411,6 +416,10 @@ instead of full history:
 - `landscape/vr-projects-wave-265-vrchat-creator-user-utility-microtools-and-service-dev-helpers.md`
 - `landscape/vr-projects-wave-266-engine-browser-xr-utility-packages-input-and-locomotion-primitives.md`
 - `landscape/vr-projects-wave-267-source-light-openvr-steamvr-overlay-tweak-and-hud-variants.md`
+- `landscape/vr-projects-wave-268-vr-webxr-godot-measurement-and-body-distance-utilities.md`
+- `landscape/vr-projects-wave-269-openxr-action-input-command-and-hotkey-utility-bridges.md`
+- `landscape/vr-projects-wave-270-vrchat-asset-resource-package-discovery-and-listing-surfaces.md`
+- `landscape/vr-projects-wave-271-vr-whiteboard-annotation-and-note-taking-surfaces.md`
 
 ## Strong donor clusters right now
 
@@ -957,6 +966,12 @@ the strongest current clusters:
   for spatial-video pipeline decomposition, VRChat helper safety boundaries,
   engine/browser XR primitives, selector/component patterns, and minimal
   native OpenVR overlay texture submission.
+- `Godot-VR-Measurements`, `openxr-command-runner`,
+  `openxr-actions-tester`, `VRChatResources`, `vrchat-asset-browser`,
+  `drawplane`, `web-vr-annotation`, and `vr-whiteboard`
+  for measurement-state services, action-to-command bridges, diagnostic
+  action polling, creator resource discovery, collaborative whiteboards,
+  remote annotation, and texture-pixel drawing helpers.
 
 ## Highest-value next follow-up passes
 
@@ -1149,6 +1164,10 @@ directions:
 184. `VRChat helper risk matrix across editor, service, Udon, Quest dev, social monitor, and OSC controller surfaces`
 185. `Engine/browser XR primitive matrix across tracked devices, selectors, locomotion, projection components, and legacy APIs`
 186. `Source-light overlay evidence matrix across README-only, vendor-heavy, minimal native, and MR image-panel projects`
+187. `Measurement/calibration utility matrix across IPD, body values, camera taps, phone orientation, WebRTC remote assistance, and confidence metadata`
+188. `VR hotkey/action bridge safety matrix across OpenXR actions, generated bindings, UEVR keyboard injection, Unity events, keyboard hooks, OSC pulses, and command allowlists`
+189. `VRChat resource/package discovery matrix across static JSON catalogs, graph views, VR-native DAM browsers, VPM listings, package templates, provenance, and install deep links`
+190. `VR whiteboard/annotation matrix across meshline strokes, dynamic textures, texture pixels, landmark dots, remote arrows/text, timeline annotations, persistence, and license gates`
 
 ## Current repository-maintenance priorities
 

@@ -1897,3 +1897,31 @@ repeatable way.
 
 - `github-research-wave-267-backlog.md`
   Executed backlog for the Wave 267 pass.
+
+- `github-research-wave-268-plan.md`
+  Wave 268 research plan focused on VR/WebXR/Godot measurement and
+  body-distance utilities.
+
+- `github-research-wave-268-backlog.md`
+  Executed backlog for the Wave 268 pass.
+
+- `github-research-wave-269-plan.md`
+  Wave 269 research plan focused on OpenXR action/input command and hotkey
+  utility bridges.
+
+- `github-research-wave-269-backlog.md`
+  Executed backlog for the Wave 269 pass.
+
+- `github-research-wave-270-plan.md`
+  Wave 270 research plan focused on VRChat asset, resource, package discovery,
+  and listing surfaces.
+
+- `github-research-wave-270-backlog.md`
+  Executed backlog for the Wave 270 pass.
+
+- `github-research-wave-271-plan.md`
+  Wave 271 research plan focused on VR whiteboard, annotation, and note-taking
+  surfaces.
+
+- `github-research-wave-271-backlog.md`
+  Executed backlog for the Wave 271 pass.

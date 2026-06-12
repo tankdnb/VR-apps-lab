@@ -263,6 +263,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-265-vrchat-creator-user-utility-microtools-and-service-dev-helpers.md`
 - `landscape/vr-projects-wave-266-engine-browser-xr-utility-packages-input-and-locomotion-primitives.md`
 - `landscape/vr-projects-wave-267-source-light-openvr-steamvr-overlay-tweak-and-hud-variants.md`
+- `landscape/vr-projects-wave-268-vr-webxr-godot-measurement-and-body-distance-utilities.md`
+- `landscape/vr-projects-wave-269-openxr-action-input-command-and-hotkey-utility-bridges.md`
+- `landscape/vr-projects-wave-270-vrchat-asset-resource-package-discovery-and-listing-surfaces.md`
+- `landscape/vr-projects-wave-271-vr-whiteboard-annotation-and-note-taking-surfaces.md`
 
 ## Archive Navigation
 

@@ -3534,6 +3534,67 @@ Primary docs:
 - `JasonPKnoll/vr_overlay` - `Studied in Wave 267 as a minimal C/OpenVR/rawdraw overlay loop with overlay app initialization, function-table lookup, OpenGL texture creation, SetOverlayTexture submission, and controller-relative placement caveats`
 - `pouya-codes/VR_overlay` - `Studied with caveats in Wave 267 as a Quest MR H&E plus heatmap image overlay demo with layered images, CanvasGroup opacity, controller/hand toggles, passthrough layer setup, and mixed-doc/placeholder caveats`
 
+## 239. VR/WebXR/Godot measurement and body-distance utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-268-vr-webxr-godot-measurement-and-body-distance-utilities.md`
+- `../landscape/project-families.md`
+
+- `leetarry/VR_Measure` - `Source-light in Wave 268 as an empty measurement-intent repository with no donor evidence in the inspected branch`
+- `rlaboiss/ipd-vr-measure` - `Studied in Wave 268 as a tiny Pygame visual IPD measurement helper with converging/diverging targets, key-captured extrema, pixel-to-mm transform, and hardcoded display caveats`
+- `AyOhEe/Godot-VR-Measurements` - `Studied in Wave 268 as a Godot XR measurement autoload with config persistence, measurement-change signal, body-value estimation, and camera-rig tracked-offset correction`
+- `NeosoftMadhuri/webxr-measure` - `Source-light in Wave 268 as an empty WebXR measurement-intent repository with no donor evidence in the inspected branch`
+- `maverickjimmx/webxr-measure` - `Studied with caveats in Wave 268 as a browser/mobile inspection measurement form with device-orientation pitch coaching, camera view, point/vertical distance fields, canvas sketch/signature capture, progress gating, and hardcoded Google Apps Script submission`
+- `Vedant22-marda/webxr-measurement-app` - `Studied with caveats in Wave 268 as a camera/WebRTC measurement demo with environment-camera capture, tap-to-measure overlay canvas, rough pixel-distance scaling, Flask-SocketIO signaling, STUN config, and unauthenticated default-room caveats`
+
+## 240. OpenXR action/input command and hotkey utility bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-269-openxr-action-input-command-and-hotkey-utility-bridges.md`
+- `../landscape/project-families.md`
+
+- `art0007i/openxr-command-runner` - `Studied in Wave 269 as an OpenXR input-to-command bridge with EXTX overlay session, JSON5 command/action config, suggested bindings, bool/float input handling, single/double/long gesture detection, and shell-command safety caveats`
+- `swirllyman/SimpleOpenXRInput` - `Studied in Wave 269 as a Unity OpenXR input facade with generated InputActionMap, static controller events, left/right bindings, haptic helper assignment, and static-lifecycle caveats`
+- `gameflorist/uevr-touch-buttons-mapping-plugin` - `Studied in Wave 269 as a UEVR/OpenXR touch-to-keyboard plugin that maps unused touch inputs to SendInput key presses with per-key state and haptic feedback`
+- `germansmedia/openxr-actions-test` - `Partially studied in Wave 269 as a raw Rust FFI OpenXR action/session test harness with proc loading, diagnostics, and checked-in target/debug artifact caveats`
+- `danwillm/openxr-actions-tester` - `Studied in Wave 269 as a JSON-driven OpenXR action tester using headless extension setup, action sets, suggested bindings, bool/pose polling, and Vive tracker pose examples`
+- `brycehutchings/OpenXR-Action-Code-Generator` - `Studied in Wave 269 as an OpenXR action code generator that reads action manifests and emits C/C++ helper structs for action sets, action states, subactions, action spaces, and suggested bindings`
+- `tmddn0230/monado-input-system` - `Variant/reference in Wave 269 as a Monado-scale fork useful for runtime input/device boundary evidence such as xrt_device input/output structures, async hand tracking, and Xreal Air driver plumbing, but not a direct donor until unique diff is isolated`
+- `Somahc/VRCVoiceHotkey` - `Studied with caveats in Wave 269 as a Windows tray hotkey bridge that installs a low-level keyboard hook, maps Ctrl+M to a `/input/Voice` OSC 0->1->0 pulse over UDP, and carries hardcoded hotkey/port and mojibake caveats`
+
+## 241. VRChat asset, resource, package discovery, and listing surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-270-vrchat-asset-resource-package-discovery-and-listing-surfaces.md`
+- `../landscape/project-families.md`
+
+- `vanquish3r/vrchat-asset-browser` - `Studied in Wave 270 as a static VRChat free asset database with JSON normalization, category filters, search, sort, linkified notes, preview links, theme persistence, and provenance/license caveats`
+- `marklibert404-eng/Obelisk` - `Rejected/non-fit in Wave 270 as a browser VPN/proxy extension with remote-content injection behavior and no VRChat asset/tooling donor value`
+- `Fraxul/VRChatResources` - `Studied in Wave 270 as VRChat creator/editor microtools with scene visibility filters, collision proxy visualization, GPU instancing checks, prefab static-flag batch edits, player trigger occupancy, and manual occlusion volumes`
+- `dark-swordsman/VRCRW` - `Studied in Wave 270 as a Next/Prisma VRChat resources website with Mongo-backed resource cards, graph nodes/relations, Pixi draggable graph view, zoom interpolation, and experimental graph UX caveats`
+- `tiry/nuxeo-vr-assets-browser` - `Studied in Wave 270 as an A-Frame/WebVR DAM browser backed by Nuxeo auth, thumbnail/rendition selection, asset grid, fuse cursor, animated paging, and zoom panel with old-stack credential caveats`
+- `ElMoha943/valenvrc_package_listing` - `Studied in Wave 270 as a VRChat VPM package listing with source.json release arrays, website data copying, package-list-action build workflow, production-branch deploy, and CNAME support`
+- `Purpzie/vpm` - `Studied in Wave 270 as a generated VPM listing page with package search, copyable URLs, vcc://vpm/addRepo deep links, package info modal, dependency/license display, and templating caveats`
+- `Limitex/vrchat-package-template` - `Studied with caveats in Wave 270 as a VPM-ready VRChat package template with package metadata, VPM dependencies, Editor/Runtime asmdefs, Samples/Tests/Documentation folders, and skeletal placeholder-doc caveats`
+
+## 242. VR whiteboard, annotation, and note-taking surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-271-vr-whiteboard-annotation-and-note-taking-surfaces.md`
+- `../landscape/project-families.md`
+
+- `jorisvddonk/drawplane` - `Studied in Wave 271 as an A-Frame collaborative VR blackboard with controller crayon raycasts, meshline stroke accumulation, PeerJS host/client sharing, hash-based room identity, and late-join/persistence caveats`
+- `liuchen1701/VR-Whiteboard` - `Studied with caveats in Wave 271 as a Unity Daydream whiteboard prototype that raycasts from controller orientation to a named board and instantiates painter marks, with GoogleVR/vendor payload caveats`
+- `arcwhite/vr-whiteboard` - `Studied in Wave 271 as a Three.js/WebVR dynamic texture whiteboard with VR viewer shell, Vive controllers, barycentric hit-to-UV conversion, canvas drawing, and WebVR-era caveats`
+- `yankanp/web-vr-annotation` - `Studied in Wave 271 as a WebSocket/WebRTC remote annotation bridge with VR and annotation roles, offer/answer/ICE relay, normalized click coordinates, Babylon picking rays, temporary arrows, floating text planes, and local-cert/single-client caveats`
+- `MichaeliusAChapelo/VR-Annotation-Scripts` - `Studied with license caveat in Wave 271 as Unity/Oculus annotation scripts with raycast dots, dominant-hand input mapping, object transform controls, CSV import/export of positions/normals, and explicit no-permission license`
+- `rafaelkuffner/VR-Annotator` - `Studied with caveats in Wave 271 as a Unity point-cloud/video annotation tool with annotation modes, manager state, point-cloud frame ingestion, skeleton playback, config parsing, and large artifact/dataset payload caveats`
+- `Danda420/vr-whiteboard` - `Studied with artifact caveat in Wave 271 as a Unity texture whiteboard with board-owned Texture2D, pen raycast to textureCoord, pixel interpolation, and heavy checked-in Library/Temp/Logs/user-setting artifacts`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:
