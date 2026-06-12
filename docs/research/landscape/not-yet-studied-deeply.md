@@ -3055,6 +3055,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 194. `VR hotkey/action bridge safety matrix across OpenXR actions, generated bindings, UEVR keyboard injection, Unity events, keyboard hooks, OSC pulses, and command allowlists`
 195. `VRChat resource/package discovery matrix across static JSON catalogs, graph views, VR-native DAM browsers, VPM listings, package templates, provenance, and install deep links`
 196. `VR whiteboard/annotation matrix across meshline strokes, dynamic textures, texture pixels, landmark dots, remote arrows/text, timeline annotations, persistence, and license gates`
+197. `VR file/local asset browser matrix across runtime import, spatial shelves, extension filters, tag databases, copy/delete/move safety, permissions, and VRM import`
+198. `VR performance tuning manager matrix across DLL replacement, runtime loader extraction, config schemas, version detection, backup/restore, and compatibility warnings`
+199. `Playspace safety intervention matrix across chaperone rects, follower capsules, guardian grids, passthrough windows, object/depth triggers, and logging`
+200. `VR launcher/startup orchestration matrix across hidden Android activities, SteamVR URI launch, stack profiles, app libraries, agents, game carousels, and rollback`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

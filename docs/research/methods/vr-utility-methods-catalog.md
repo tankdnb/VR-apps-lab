@@ -15037,3 +15037,181 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   whiteboard surface prototypes, remote annotation tools, note-taking overlays,
   dynamic texture drawing helpers, and point-cloud/video labeling references.
+
+## Method 717: Local file and asset browser pipeline across filesystem, metadata, world shelves, filters, and runtime import
+
+- What it is:
+  a VR file or asset browser should separate the filesystem source, metadata
+  model, in-headset selection surface, preview/import action, and destructive
+  file operations.
+- Good for:
+  VRM import helpers, creator asset catalogs, in-headset file pickers, spatial
+  file shelves, local media selectors, and safe file-action utility prototypes.
+- Why it matters:
+  file browsers can quickly become unsafe in VR because selection, preview,
+  copy, move, delete, and import all look like simple interactions. Reuse needs
+  explicit boundaries around permissions, filters, previews, and side effects.
+- Source evidence:
+  `NaruAkitsuki/VrmFileManager`, `AkiMoriDev/VRC-Files-Manager`,
+  `SirSerl/VRFileManager`, `agoetschm/vr_file_browser`,
+  `Vode1969/vr-file-browser`, and `hunterdquant/Seeker`.
+- Reusable core:
+  root picker, allowed path scope, file/folder classifier, extension filter,
+  metadata/tag schema, category sync, preview adapter, runtime importer,
+  selection state, parent/back navigation, destructive-action confirmation,
+  platform path caveat, and source-evidence status.
+- Source evidence details:
+  Wave 272 includes a Unity runtime VRM import helper, a Rust/egui SQLite
+  asset catalog, a SteamVR spatial file cabinet with copy/trash/move behavior,
+  GoogleVR nested folder expansion, a compact Unity row-based file picker, and
+  a README-only local-file browser demand signal.
+- Do not copy directly:
+  hardcoded storage paths, destructive delete/move actions without confirmation
+  and undo, checked-in Unity vendor artifacts, legacy GoogleVR/SteamVR payloads,
+  full-file reads for large assets, or README-only repos as implementation
+  evidence.
+- Strong references:
+  `VRC-Files-Manager` for metadata/catalog shape, `VrmFileManager` for compact
+  runtime import flow, and `VRFileManager` for physical file-object UX after
+  safety and artifact cleanup.
+- Maturity:
+  strong reusable method with mixed code quality; every implementation should
+  add permission, confirmation, and rollback policy before shipping.
+- Best fit for `VR-apps-lab`:
+  local asset browsers, VRM import utilities, creator inventory tools, in-VR
+  file picker experiments, and file-action safety checklists.
+
+## Method 718: VR performance tuning manager boundary across discovery, backup, config schema, loader strategy, and FPS baselines
+
+- What it is:
+  a VR performance helper should separate target discovery, mod or loader
+  strategy, config schema, backup/restore state, compatibility warnings, and
+  user-facing tuning feedback.
+- Good for:
+  OpenVR FSR managers, VRPerfKit companions, foveation settings UIs, game DLL
+  patch helpers, performance profile tools, and engine FPS starter templates.
+- Why it matters:
+  rendering tuners often modify DLLs or inject runtime libraries. The reusable
+  part is not the risky file replacement itself, but the discovery, schema,
+  rollback, version tracking, and warning surface around it.
+- Source evidence:
+  `tappi287/openvr_fsr_app`, `LavaGang/ML_OpenVR_FSR`,
+  `komori/vrperfkit-ocq2`, and `GodotVR/godot_openvr_fps`.
+- Reusable core:
+  target resolver, selected binary path, original backup path, mod source
+  path, config schema, range/select/key-combo field types, version marker,
+  restore/reset flow, compatibility note, launch shortcut, FPS/comfort baseline,
+  and binary/source caveat.
+- Source evidence details:
+  Wave 273 includes Steam library scanning and DLL backup/restore, Vue/Eel
+  settings schema UI, MelonLoader resource extraction and NativeLibrary.Load,
+  binary-only VRPerfKit config reference, and a Godot/OpenVR FPS starter with
+  90Hz, movement vignette, and viewport-to-material UI.
+- Do not copy directly:
+  game DLL replacement without explicit backups, bundled binaries without
+  provenance, self-assuming compatibility, PowerShell/admin helpers without
+  warnings, or game-specific FPS code as a generic performance layer.
+- Strong references:
+  `openvr_fsr_app` for manager UX and schema design, `ML_OpenVR_FSR` for
+  runtime extraction strategy, and `godot_openvr_fps` for comfort/FPS starter
+  expectations.
+- Maturity:
+  useful method for tooling design; direct implementation remains high-risk
+  because it touches game/runtime files.
+- Best fit for `VR-apps-lab`:
+  safe performance-tuning companions, config-schema UIs, rollback checklists,
+  VRPerfKit/FSR manager references, and engine comfort baseline notes.
+
+## Method 719: Playspace safety intervention matrix across chaperone APIs, follower capsules, passthrough windows, detection/depth triggers, and logging
+
+- What it is:
+  a playspace safety utility should separate the boundary source, coordinate
+  frame, tracked object source, trigger condition, intervention style, and
+  evidence log.
+- Good for:
+  chaperone diagnostics, guardian-aware helpers, game-local safe-region
+  monitors, Quest passthrough safety studies, boundary visualization, and
+  safety experiment logging.
+- Why it matters:
+  safety features are only reusable when they explain what they know, how they
+  know it, and what action they take. A passthrough window, grid, follower
+  capsule, or detector must expose confidence and failure modes.
+- Source evidence:
+  `GiantSox/ChaperoneFail`,
+  `Graicc/Echo-Vr-Playspace-Abuse-Detector`,
+  `benpaddlejones/VR-Playspace`, and
+  `TXST-CS7389I-Spring-2026-Group-Project/DreamGuard`.
+- Reusable core:
+  boundary API or data file, coordinate transform, player/object feed, safe
+  volume, velocity or recenter rule, intervention style, passthrough blend,
+  detection/depth trigger, operator feedback, CSV/event log, and artifact or
+  vendor caveat.
+- Source evidence details:
+  Wave 274 includes unsafe OpenVR chaperone polling as a caution node, Echo VR
+  local API player feeds with follower playspace capsules, Unity/MRTK boundary
+  assets with checked-in chaperone data, and DreamGuard's Quest MR grid,
+  passthrough window, detection/depth styles, alpha-blend tricks, and study
+  logs.
+- Do not copy directly:
+  null chaperone pointers, fixed game-specific coordinate bounds, large
+  checked-in Unity Library/PackageCache payloads, vendor-specific passthrough
+  assumptions without fallback, or study prototypes as production safety
+  guarantees.
+- Strong references:
+  `DreamGuard` for safety intervention taxonomy and logging, and
+  `Echo-Vr-Playspace-Abuse-Detector` for a game-local follower-capsule monitor
+  pattern with clear caveats.
+- Maturity:
+  promising safety/research method; production reuse requires validation,
+  hardware/runtime fallback behavior, and honest confidence labels.
+- Best fit for `VR-apps-lab`:
+  playspace safety matrices, boundary diagnostics, Quest MR safety references,
+  safe-region monitors, and logging schemas for XR experiments.
+
+## Method 720: Launcher and startup orchestration surface across hidden intents, app registries, profile steps, agents, carousels, and rollback
+
+- What it is:
+  a VR launcher should model app identity, launch channel, profile/config
+  state, process lifecycle, background agent behavior, and rollback before
+  performing any launch or system mutation.
+- Good for:
+  Quest hidden-setting launchers, SteamVR/WMR launch tiles, app-library
+  carousels, profile-driven startup stacks, config variant launchers,
+  background agents, and external-process return-to-menu flows.
+- Why it matters:
+  launchers are deceptively powerful. They can open hidden system activities,
+  mutate configs, toggle devices, register URI handlers, start processes, or
+  stop/restart XR loaders. The reusable value is the orchestration contract and
+  safety policy.
+- Source evidence:
+  `ptrpaws/vrLauncher`, `conexto/vrLauncher`, `blakeblair/uvrl`,
+  `marianhlavac/immersion-vr-agent`, `dewaffled/vr-launcher`,
+  `Paladinleeds/PaladinVR-Launcher`,
+  `keithbphillips/vr-pinball-launcher`,
+  `CactusVRStudios/Lambda1VR_Launcher`, and
+  `Bluscream/VRChatLauncher`.
+- Reusable core:
+  app registry, launch URI or package, config location, profile step list,
+  validation, dry-run, backup/restore, process wait, open-url step, hidden
+  intent catalog, URI protocol handler, background runtime event poll, XR
+  stop/restart, return-to-menu, and side-effect warning.
+- Source evidence details:
+  Wave 275 includes Quest systemux intent launchers, a SQLite Universal VR
+  Launcher with profile steps and dry-run validation, an OpenVR background
+  agent, a WMR PnP toggle script, a UWP SteamVR tile, a Unity pinball carousel
+  that stops and restarts XR around external process launch, a Quest commandline
+  file contract, and a historical VRChat URI/IPC launcher.
+- Do not copy directly:
+  self-elevating device toggles, hardcoded hidden intents without version
+  checks, registry writes without user visibility, deprecated mod-launcher
+  assumptions, forced process kills, or storage/package paths without rollback.
+- Strong references:
+  `uvrl` for profile/schema/validation architecture,
+  `vr-pinball-launcher` for return-to-menu lifecycle, and the Quest launcher
+  variants for hidden-intent catalog caveats.
+- Maturity:
+  strong product-pattern method, but implementation must be deliberately
+  constrained because launcher side effects can be system-level.
+- Best fit for `VR-apps-lab`:
+  VR app-library launchers, startup profile orchestrators, Quest companion
+  launch surfaces, external-app handoff flows, and safety/rollback playbooks.

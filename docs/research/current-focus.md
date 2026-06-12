@@ -237,6 +237,11 @@ These are the clearest current product and research lines:
     helpers, Godot XR measurement state, OpenXR action-to-command routing,
     UEVR keyboard/OSC hotkey bridges, VRChat asset and VPM discovery surfaces,
     and VR whiteboard/remote annotation pipelines.
+45. `File and asset browsers, performance tuners, playspace safety, and launcher orchestration`
+    the repository now has fresh coverage of local VRM/file import, spatial
+    file shelves, metadata catalogs, FSR/VRPerfKit managers, chaperone and
+    player-safety monitors, passthrough study interventions, Quest/Steam/WMR
+    launchers, profile runners, and external-app return-to-menu lifecycles.
 
 ## Most useful current docs
 
@@ -1168,6 +1173,10 @@ directions:
 188. `VR hotkey/action bridge safety matrix across OpenXR actions, generated bindings, UEVR keyboard injection, Unity events, keyboard hooks, OSC pulses, and command allowlists`
 189. `VRChat resource/package discovery matrix across static JSON catalogs, graph views, VR-native DAM browsers, VPM listings, package templates, provenance, and install deep links`
 190. `VR whiteboard/annotation matrix across meshline strokes, dynamic textures, texture pixels, landmark dots, remote arrows/text, timeline annotations, persistence, and license gates`
+191. `VR file/local asset browser matrix across runtime import, spatial shelves, extension filters, tag databases, copy/delete/move safety, permissions, and VRM import`
+192. `VR performance tuning manager matrix across DLL replacement, runtime loader extraction, config schemas, version detection, backup/restore, and compatibility warnings`
+193. `Playspace safety intervention matrix across chaperone rects, follower capsules, guardian grids, passthrough windows, object/depth triggers, and logging`
+194. `VR launcher/startup orchestration matrix across hidden Android activities, SteamVR URI launch, stack profiles, app libraries, agents, game carousels, and rollback`
 
 ## Current repository-maintenance priorities
 

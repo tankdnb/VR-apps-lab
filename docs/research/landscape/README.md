@@ -1214,6 +1214,26 @@ Use these files when you want to understand:
   texture drawing, WebRTC/WebSocket remote annotation, Unity landmark export,
   point-cloud/video annotation, and artifact/license hygiene.
 
+- `vr-projects-wave-272-vr-file-local-asset-and-vrm-browser-surfaces.md`
+  Next GitHub discovery wave focused on VRM import helpers, local asset
+  catalogs, spatial file cabinets, nested folder objects, filtered file
+  pickers, and file-action safety caveats.
+
+- `vr-projects-wave-273-vr-performance-tuning-fsr-and-fps-helper-surfaces.md`
+  Next GitHub discovery wave focused on OpenVR FSR managers, VRPerfKit
+  wrappers, backup/restore and config-schema flows, binary-only caveats, and
+  FPS comfort starter baselines.
+
+- `vr-projects-wave-274-playspace-chaperone-boundary-and-safety-awareness-utilities.md`
+  Next GitHub discovery wave focused on chaperone and playspace safety
+  monitors, follower capsules, guardian-style interventions, passthrough
+  windows, and XR safety logging.
+
+- `vr-projects-wave-275-vr-launchers-startup-orchestration-and-app-library-surfaces.md`
+  Next GitHub discovery wave focused on hidden Quest launchers, SteamVR/WMR
+  launch paths, profile-driven startup stacks, background agents, app-library
+  carousels, and rollback/side-effect caveats.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

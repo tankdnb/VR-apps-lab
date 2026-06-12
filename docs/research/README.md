@@ -267,6 +267,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-269-openxr-action-input-command-and-hotkey-utility-bridges.md`
 - `landscape/vr-projects-wave-270-vrchat-asset-resource-package-discovery-and-listing-surfaces.md`
 - `landscape/vr-projects-wave-271-vr-whiteboard-annotation-and-note-taking-surfaces.md`
+- `landscape/vr-projects-wave-272-vr-file-local-asset-and-vrm-browser-surfaces.md`
+- `landscape/vr-projects-wave-273-vr-performance-tuning-fsr-and-fps-helper-surfaces.md`
+- `landscape/vr-projects-wave-274-playspace-chaperone-boundary-and-safety-awareness-utilities.md`
+- `landscape/vr-projects-wave-275-vr-launchers-startup-orchestration-and-app-library-surfaces.md`
 
 ## Archive Navigation
 

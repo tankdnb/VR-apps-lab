@@ -1925,3 +1925,31 @@ repeatable way.
 
 - `github-research-wave-271-backlog.md`
   Executed backlog for the Wave 271 pass.
+
+- `github-research-wave-272-plan.md`
+  Wave 272 research plan focused on VR file, local asset, and VRM browser
+  surfaces.
+
+- `github-research-wave-272-backlog.md`
+  Executed backlog for the Wave 272 pass.
+
+- `github-research-wave-273-plan.md`
+  Wave 273 research plan focused on VR performance tuning, FSR, and FPS helper
+  surfaces.
+
+- `github-research-wave-273-backlog.md`
+  Executed backlog for the Wave 273 pass.
+
+- `github-research-wave-274-plan.md`
+  Wave 274 research plan focused on playspace, chaperone, boundary, and
+  safety-awareness utilities.
+
+- `github-research-wave-274-backlog.md`
+  Executed backlog for the Wave 274 pass.
+
+- `github-research-wave-275-plan.md`
+  Wave 275 research plan focused on VR launchers, startup orchestration, and
+  app-library surfaces.
+
+- `github-research-wave-275-backlog.md`
+  Executed backlog for the Wave 275 pass.

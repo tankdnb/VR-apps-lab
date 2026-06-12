@@ -3595,6 +3595,61 @@ Primary docs:
 - `rafaelkuffner/VR-Annotator` - `Studied with caveats in Wave 271 as a Unity point-cloud/video annotation tool with annotation modes, manager state, point-cloud frame ingestion, skeleton playback, config parsing, and large artifact/dataset payload caveats`
 - `Danda420/vr-whiteboard` - `Studied with artifact caveat in Wave 271 as a Unity texture whiteboard with board-owned Texture2D, pen raycast to textureCoord, pixel interpolation, and heavy checked-in Library/Temp/Logs/user-setting artifacts`
 
+## 243. VR file, local asset, and VRM browser surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-272-vr-file-local-asset-and-vrm-browser-surfaces.md`
+- `../landscape/project-families.md`
+
+- `NaruAkitsuki/VrmFileManager` - `Studied with caveats in Wave 272 as a compact Unity runtime VRM import helper using VRMImporterContext, async load, parent assignment, collider/rigidbody/animator setup, and hardcoded resource/path caveats`
+- `AkiMoriDev/VRC-Files-Manager` - `Studied with caveats in Wave 272 as a Rust/egui local asset catalog with root folder selection, SQLite tags/categories/subcategories, filesystem category sync, search, and item folder packaging`
+- `SirSerl/VRFileManager` - `Studied with artifact and safety caveats in Wave 272 as a Unity/SteamVR spatial file manager with file-type prefabs, cabinet shelves, search/sort, image/audio previews, copy/trash/move tools, and destructive operation risks`
+- `agoetschm/vr_file_browser` - `Studied with caveats in Wave 272 as a Unity/GoogleVR spatial folder tree that expands directories into world objects, includes parent entries, and destroys unfocused branches`
+- `Vode1969/vr-file-browser` - `Studied with caveats in Wave 272 as a compact Unity VR file picker with logical-drive root, hidden/system filtering, extension filters, scroll windows, collider-backed row selection, and Windows-centric path caveats`
+- `hunterdquant/Seeker` - `Source-light in Wave 272 as a README-only Unity VR local-file browser intent for loading non-project local files`
+
+## 244. VR performance tuning, FSR, and FPS helper surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-273-vr-performance-tuning-fsr-and-fps-helper-surfaces.md`
+- `../landscape/project-families.md`
+
+- `tappi287/openvr_fsr_app` - `Studied with caveats in Wave 273 as a GUI mod manager for OpenVR FSR, foveated rendering, and VRPerfKit with Steam library scanning, selected DLL paths, original DLL backup/restore, config schema UI, settings reset, and compatibility caveats`
+- `LavaGang/ML_OpenVR_FSR` - `Studied with caveats in Wave 273 as a MelonLoader OpenVR FSR wrapper that extracts bundled DLL/config resources into UserData and NativeLibrary.Loads the mod before OpenVR starts`
+- `komori/vrperfkit-ocq2` - `Reference-only in Wave 273 as a binary/config VRPerfKit quality-tuning variant with no source donor evidence in the inspected branch`
+- `GodotVR/godot_openvr_fps` - `Studied with caveats in Wave 273 as a Godot OpenVR FPS starter baseline with OpenVR init, 90Hz assumptions, movement vignette, viewport-to-material UI, controller state, teleport/grab/throw interaction, and legacy stack caveats`
+
+## 245. Playspace, chaperone, boundary, and safety-awareness utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-274-playspace-chaperone-boundary-and-safety-awareness-utilities.md`
+- `../landscape/project-families.md`
+
+- `GiantSox/ChaperoneFail` - `Studied as a failure/caution reference in Wave 274 for OpenVR chaperone polling with unsafe null HmdQuad_t usage, no error handling, and minimal product logic`
+- `Graicc/Echo-Vr-Playspace-Abuse-Detector` - `Studied with caveats in Wave 274 as a Unity Echo VR local-API monitor with team/player DTOs, settings JSON, velocity-integrated follower playspace capsules, bounds containment abuse detection, and operator offender list`
+- `benpaddlejones/VR-Playspace` - `Partially studied with artifact caveat in Wave 274 as a Unity/MRTK playspace payload with boundary/teleport framework references, checked-in chaperone_info.vrchap, WMR controller assets, and limited original custom scripts`
+- `TXST-CS7389I-Spring-2026-Group-Project/DreamGuard` - `Studied with caveats in Wave 274 as a Quest MR safety study framework with passthrough window, grid/fragment/intervention styles, Unity room experiment flow, Godot XR alpha-blend management, and CSV study logging`
+
+## 246. VR launchers, startup orchestration, and app-library surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-275-vr-launchers-startup-orchestration-and-app-library-surfaces.md`
+- `../landscape/project-families.md`
+
+- `ptrpaws/vrLauncher` - `Studied as a variant in Wave 275 as a Kotlin Quest hidden-system launcher with hardcoded versioned systemux:// URI catalogs, GitHub release update check, searchable spinner UI, and explicit com.oculus.vrshell MainActivity launch`
+- `conexto/vrLauncher` - `Variant/fork-line in Wave 275 with the same Quest systemux:// hidden-surface launcher pattern as ptrpaws/vrLauncher`
+- `blakeblair/uvrl` - `Studied in Wave 275 as a Universal VR Launcher CLI with SQLite app/config/variant/backup/profile schema, discovery catalog, scanner, config backup/apply, profile validation, dry-run mode, Steam/Flatpak/native/script launch paths, waits/delays/URLs, and failure behavior`
+- `marianhlavac/immersion-vr-agent` - `Studied with caveats in Wave 275 as a WPF OpenVR background agent that initializes as VRApplication_Background, polls scene app and quit events, launches ImmersionVR tutorial/launcher processes, and tracks status`
+- `dewaffled/vr-launcher` - `Studied with safety caveats in Wave 275 as a self-elevating PowerShell micro-utility that enables or disables Windows Mixed Reality Holographic PnP devices`
+- `Paladinleeds/PaladinVR-Launcher` - `Studied with caveats in Wave 275 as an archived UWP Cliff House tile that launches SteamVR via steam://rungameid/250820 and exits`
+- `keithbphillips/vr-pinball-launcher` - `Studied with caveats in Wave 275 as a Unity VR app-library carousel for Visual Pinball with JSON config, table scanner, wheel image matching, world-space menu, external process launch/focus, XR stop/restart, and return-to-menu lifecycle`
+- `CactusVRStudios/Lambda1VR_Launcher` - `Studied with artifact caveat in Wave 275 as a Quest Unity launcher that detects /sdcard/xash game folders, writes commandline.txt, saves custom commands, launches com.drbeef.lambda1vr via Android PackageManager, and falls back to SideQuest`
+- `Bluscream/VRChatLauncher` - `Studied with deprecation caveats in Wave 275 as a historical VRChat launcher/workbench with argument parsing, vrchat:// URI handling, registry install/check, IPC singleton handoff, mod checks, INI config, and clipboard/process side effects`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:
