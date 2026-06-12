@@ -1294,6 +1294,25 @@ Use these files when you want to understand:
   renderers, VR viewers, dynamic splat streaming, generated-world import, and
   external render buses.
 
+- `vr-projects-wave-288-mruk-room-aware-mixed-reality-scene-data-and-panel-placement-utilities.md`
+  Next GitHub discovery wave focused on MRUK room-aware scene data, semantic
+  anchors, environment raycasts, world-locked panels, room export, and MR path
+  utilities.
+
+- `vr-projects-wave-289-webxr-spatial-ui-primitives-mesh-text-layout-and-fullstack-ui-shells.md`
+  Next GitHub discovery wave focused on WebXR canvas panels, mesh-native text
+  layout, A-Frame wrappers, controller raycasts, and socket-backed UI actions.
+
+- `vr-projects-wave-290-vr-assembly-maintenance-and-procedure-training-workflows.md`
+  Next GitHub discovery wave focused on VR assembly, maintenance procedures,
+  snap/socket systems, save/load, scoring, tool selection, and companion
+  dashboards.
+
+- `vr-projects-wave-291-mixed-reality-robotics-ros-unity-urdf-cad-and-digital-twin-control-surfaces.md`
+  Next GitHub discovery wave focused on MR robotics, ROS/Unity bridges,
+  URDF/CAD import, digital twins, trajectory teaching, and server-side safety
+  boundaries.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

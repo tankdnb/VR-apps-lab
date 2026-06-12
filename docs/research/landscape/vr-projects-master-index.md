@@ -296,6 +296,10 @@ This file complements:
 - `vr-projects-wave-285-bhaptics-wearable-haptics-routers-simulator-bridges-and-android-service-boundaries.md`
 - `vr-projects-wave-286-tilt-brush-open-brush-creative-asset-pipelines-ar-web-display-and-tilt-parsers.md`
 - `vr-projects-wave-287-gaussian-splat-xr-unity-viewers-vr-forks-and-external-render-bus-surfaces.md`
+- `vr-projects-wave-288-mruk-room-aware-mixed-reality-scene-data-and-panel-placement-utilities.md`
+- `vr-projects-wave-289-webxr-spatial-ui-primitives-mesh-text-layout-and-fullstack-ui-shells.md`
+- `vr-projects-wave-290-vr-assembly-maintenance-and-procedure-training-workflows.md`
+- `vr-projects-wave-291-mixed-reality-robotics-ros-unity-urdf-cad-and-digital-twin-control-surfaces.md`
 
 ## How to use this index
 

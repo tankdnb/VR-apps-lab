@@ -8922,6 +8922,146 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - generated-world import workbenches;
 - external renderer to XR-surface experiments.
 
+## Family 267: MRUK room-aware mixed reality scene data and panel placement utilities
+
+This family covers MRUK and scene-data projects that treat the user's room as a
+live utility substrate. The reusable lesson is to keep scene acquisition,
+semantic anchors, environment raycasts, panel placement, export, and diagnostics
+separate from the final app/game feature.
+
+| Project | Status | Notes |
+|---|---|---|
+| `oculus-samples/Unity-MRUtilityKitSample` | Studied in Wave 288 | Environment raycasts, panel magnetism, world-lock, wall anchors, QR tracking, room mesh/navmesh, and virtual-home samples |
+| `dilmerv/MixedRealityUtilityKitDemos` | Studied in Wave 288 | RoomCreatedEvent binding, current-room storage, wall-anchor prefab toggling, and logger feedback |
+| `oculus-samples/Unreal-MRUtilityKitSample` | Studied with blueprint/content caveats in Wave 288 | Unreal MRUK scene-data sample with VR pawn/game-state C++ entry points and blueprint-heavy decorators/widgets |
+| `VeksCZ/XRHouseDesignExport` | Studied with artifact-heavy caveats in Wave 288 | MRUK scene sync, semantic labels, JSON/report generation, OBJ/GLB export, per-room folders, and XR menu/logging |
+| `Luizfelm/FlightFollower` | Studied in Wave 288 | XR controller line drawing and checkpoint spawning along sampled LineRenderer paths |
+
+### Consolidation note
+
+This family matters because room-aware MR utilities should name:
+
+- permission and scene-load gates;
+- room, anchor, semantic, and global-mesh data;
+- environment raycast and placement solvers;
+- world-lock and smoothing policy;
+- panel/debug visualization;
+- room export and report formats;
+- storage, permission, and artifact hygiene caveats.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- MRUK scene doctors;
+- room-aware panel/overlay placement helpers;
+- anchor inventory and surface inspectors;
+- room export/report utilities.
+
+## Family 268: WebXR spatial UI primitives, mesh text layout, and fullstack UI shells
+
+This family covers browser-native spatial UI projects that create XR-safe UI
+inside Three.js or A-Frame scenes. The reusable lesson is to keep UI
+description, render backend, raycast input, widget state, update cadence, and
+transport actions separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `NikLever/CanvasUI` | Studied in Wave 289 | CanvasTexture panel mesh, widget config, controller raycasts, UV-to-pixel hit tests, hover/select/scroll, keyboard, sliders, and color picker |
+| `felixmariotto/three-mesh-ui` | Studied in Wave 289 | Mesh-native Object3D blocks/text, MSDF fonts, nested layout, keyboard examples, and deferred UpdateManager lifecycle |
+| `Retchut/aframe-mesh-ui-components` | Studied in Wave 289 | A-Frame declarative wrappers for three-mesh-ui blocks/text with schema mapping and recursive registration |
+| `shiveshjadon/webxr-fullstack-boilerplate` | Studied with boilerplate caveats in Wave 289 | React/Three/WebXR shell with ThreeMeshUI, VRControl selection states, VRButton, Express, and Socket.IO button events |
+
+### Consolidation note
+
+This family matters because WebXR UI utilities should name:
+
+- canvas texture versus mesh-native layout choice;
+- font and texture asset requirements;
+- raycast and UV hit-testing model;
+- hover, select, scroll, keyboard, and slider state;
+- update cadence and cleanup/dispose behavior;
+- declarative wrappers for scene authors;
+- optional server/socket command boundary.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- WebXR settings/debug panels;
+- spatial UI primitive comparison matrices;
+- browser-native operator surfaces;
+- socket-backed in-headset command panels.
+
+## Family 269: VR assembly, maintenance, and procedure training workflows
+
+This family covers assembly and maintenance projects that sequence physical
+interaction, snap validation, procedure steps, persistence, scoring, and
+instructor reporting. The reusable lesson is to keep manipulation, procedure
+logic, save/load, scoring, and dashboards separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `T0riU/VR-Assembly-Manager` | Studied in Wave 290 | Strong donor for parts, attach IDs, sockets, snap compatibility, forced release, visual affordances, JSON save/load, thumbnails, stats, and prefab registry |
+| `carlosMoragon/VR-Assembly-Simulator` | Studied with vendor/asset caveats in Wave 290 | Score decay, error penalties, matching-tag placement, and temporary grab disabling |
+| `NopparatSang/SCGVR2` | Studied with SDK-heavy caveats in Wave 290 | Maintenance process steps, tool validation, screw/bolt/locknut animations, object gates, timers, rankings, and OVR tool panels |
+| `JonyHM/VRDoorAssembly` | Studied in Wave 290 | Angular companion scoreboard with score table and GET/POST score service |
+| `lintglitch/vr-assembly` | Source-light in Wave 290 | Assembly environment/asset comparison node with limited custom logic visible |
+| `nyu-lgcoop/VRTrainingUnity` | Source-light in Wave 290 | Legacy training shell dominated by Standard Assets in inspected source |
+| `White-H-21/VR-assembly-system` | Skipped/no-source in Wave 290 | Empty/no-readable-content candidate in local study cache |
+
+### Consolidation note
+
+This family matters because procedure-training utilities should name:
+
+- part and attach-point schema;
+- socket compatibility and snap policy;
+- hand-release and grab disable behavior;
+- step/work-type controllers;
+- tool validation and active object gates;
+- score, timer, ranking, and feedback screens;
+- persistence and companion/instructor dashboards.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- reusable snap/socket samples;
+- procedure-authoring schemas;
+- training score dashboards;
+- assembly persistence and replay references.
+
+## Family 270: Mixed reality robotics, ROS/Unity, URDF/CAD, and digital twin control surfaces
+
+This family covers robotics and digital-twin projects that connect XR/MR
+interfaces to robot assets, state, commands, calibration, and safety policy.
+The reusable lesson is to keep asset import, digital-twin visualization, live
+state, command transport, calibration, and physical safety separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `2000222/Robotic-Arm-IK-in-Unity` | Studied in Wave 291 | Minimal gradient-descent IK baseline with per-joint axes, forward kinematics, and target distance gradients |
+| `sabeaussan/ROS_Unity` | Studied in Wave 291 | ROS Float32MultiArray joint subscriber, Unity joint rotation, launch files, and reacher scripts |
+| `KosmosisDire/UrdfUnityToolkit` | Studied in Wave 291 | Unity URDF/Xacro import, parse, clean menu actions, URDFBuilder entry point, and typed XML helpers |
+| `bernhard-42/three-cad-viewer` | Studied in Wave 291 | Hierarchical CAD Shapes tree, transforms, visibility states, tessellated geometry arrays, and viewer options |
+| `KKallas/manual-override` | Studied in Wave 291 | Server-authoritative robot control architecture, calibration/safety framing, SSE live-state helper, and Dobot TCP joint driver |
+| `mortenterhart/mixed-reality-robot-control` | Studied in Wave 291 | MRTK/MQTT digital-twin command surface with shelf selection, animator state, and store-in/out messages |
+| `MixedRealityETHZ/Mixed-Reality-Robotic-Grasp-Teacher` | Studied with prototype caveats in Wave 291 | MRTK pinch trajectory capture, trajectory spheres, position lists, and grasp-teaching shell |
+| `giuliano-97/mixed_reality_robots` | Studied with vendor-heavy caveats in Wave 291 | ROS launch/URDF examples, cmd_vel publisher baseline, and Unity mixed-reality shell overlap |
+
+### Consolidation note
+
+This family matters because robotics/XR utilities should name:
+
+- URDF/CAD import and coordinate conventions;
+- digital-twin hierarchy and part visibility states;
+- live joint/pose state transport;
+- command queue and transport protocol;
+- calibration between robot, camera, screen, and world frames;
+- server-authoritative speed limits, stale gates, and E-stop;
+- separation between visualization, simulation, and real hardware control.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- MR robot-control safety shells;
+- ROS/Unity digital twin inspectors;
+- CAD/URDF asset pipeline helpers;
+- hand/trajectory teaching and operator dashboards.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

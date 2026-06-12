@@ -3833,6 +3833,62 @@ Primary docs:
 - `RockyXu66/splatbus` - `Studied in Wave 287 as an external render bus with Python OpenGL client, Unity native plugin, CUDA IPC, socket/JSON handshake, color/depth buffer sharing, camera-pose messages, and cleanup caveats`
 - `roth-hex-lab/Multi-Layer-Anatomy-GS-Unity-Rendering` - `Studied with specialization caveats in Wave 287 as a domain-specific multi-layer anatomy Gaussian splat rendering reference`
 
+## 259. MRUK room-aware mixed reality scene data and panel placement utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-288-mruk-room-aware-mixed-reality-scene-data-and-panel-placement-utilities.md`
+- `../landscape/project-families.md`
+
+- `oculus-samples/Unity-MRUtilityKitSample` - `Studied in Wave 288 as an official MRUK Unity sample set with environment raycasts, panel magnetism, world-lock toggles, wall anchors, QR tracking, room mesh/navmesh, virtual-home, keyboard, relighting, and scene-aware utility behaviors`
+- `dilmerv/MixedRealityUtilityKitDemos` - `Studied in Wave 288 as a compact MRUK demo/debug surface with RoomCreatedEvent binding, current-room storage, wall-anchor prefab toggling, and spatial logger feedback`
+- `oculus-samples/Unreal-MRUtilityKitSample` - `Studied with blueprint/content caveats in Wave 288 as an Unreal MRUK scene-data sample with VR pawn/game-state C++ entry points and blueprint-heavy scene decoration/widgets`
+- `VeksCZ/XRHouseDesignExport` - `Studied with artifact-heavy caveats in Wave 288 as an MRUK room export utility with scene sync, room filtering, semantic labels, JSON dumps, reports, OBJ/GLB model export, per-room breakdowns, and in-headset menu/logging`
+- `Luizfelm/FlightFollower` - `Studied in Wave 288 as a small MR path-following utility with XR controller line drawing and checkpoint spawning along sampled LineRenderer paths`
+
+## 260. WebXR spatial UI primitives, mesh text layout, and fullstack UI shells
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-289-webxr-spatial-ui-primitives-mesh-text-layout-and-fullstack-ui-shells.md`
+- `../landscape/project-families.md`
+
+- `NikLever/CanvasUI` - `Studied in Wave 289 as a Three.js WebXR CanvasTexture panel system with offscreen canvas, plane mesh, config/content schema, controller raycasts, UV-to-pixel hit testing, hover/select/scroll states, keyboard, sliders, color picker, and texture invalidation`
+- `felixmariotto/three-mesh-ui` - `Studied in Wave 289 as a mesh-native Three.js UI layout library with Object3D blocks/text, MSDF fonts, nested layout, keyboard examples, and deferred parsing/layout/inner updates through UpdateManager`
+- `Retchut/aframe-mesh-ui-components` - `Studied in Wave 289 as an A-Frame wrapper around three-mesh-ui blocks/text with declarative schemas, recursive child registration, and tick-driven update calls`
+- `shiveshjadon/webxr-fullstack-boilerplate` - `Studied with boilerplate caveats in Wave 289 as a React/Three/WebXR starter with VRButton, VRControl, raycast UI states, ThreeMeshUI buttons, and Socket.IO button events`
+
+## 261. VR assembly, maintenance, and procedure training workflows
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-290-vr-assembly-maintenance-and-procedure-training-workflows.md`
+- `../landscape/project-families.md`
+
+- `T0riU/VR-Assembly-Manager` - `Studied in Wave 290 as a strong assembly donor with XRGrabInteractable parts, attach point IDs, socket compatibility, closest-candidate snap, forced hand release, attached/free/held states, visual affordances, JSON save/load, thumbnails, stats, and prefab registry`
+- `carlosMoragon/VR-Assembly-Simulator` - `Studied with vendor/asset caveats in Wave 290 as a procedure assembly training scenario with score decay, error penalties, final score display, matching-tag placement, and temporary grab disabling`
+- `NopparatSang/SCGVR2` - `Studied with SDK-heavy caveats in Wave 290 as a maintenance workflow with process steps, tool validation, screw/bolt/locknut animations, active/deactive object gates, timers, rankings, OVR tool panels, and tool staging`
+- `JonyHM/VRDoorAssembly` - `Studied in Wave 290 as a companion scoreboard/admin reference with Angular score table, route-resolved score response, and GET/POST score service`
+- `lintglitch/vr-assembly` - `Source-light in Wave 290 as an assembly environment/asset comparison node with limited clean custom logic visible in this pass`
+- `nyu-lgcoop/VRTrainingUnity` - `Source-light in Wave 290 as a legacy Unity training shell where inspected source was mostly Standard Assets rather than donor-quality training logic`
+- `White-H-21/VR-assembly-system` - `Skipped/no-source in Wave 290 because the local study clone had no usable checked-out repository content`
+
+## 262. Mixed reality robotics, ROS/Unity, URDF/CAD, and digital twin control surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-291-mixed-reality-robotics-ros-unity-urdf-cad-and-digital-twin-control-surfaces.md`
+- `../landscape/project-families.md`
+
+- `2000222/Robotic-Arm-IK-in-Unity` - `Studied in Wave 291 as a minimal Unity robotic-arm IK baseline with per-joint axes, start offsets, forward kinematics, finite-difference partial gradients, and local Euler angle updates`
+- `sabeaussan/ROS_Unity` - `Studied in Wave 291 as a ROS-to-Unity bridge with UnitySubscriber Float32MultiArray joint angles, per-axis rotation flags, stepped angle interpolation, ROS launch files, and reacher scripts`
+- `KosmosisDire/UrdfUnityToolkit` - `Studied in Wave 291 as a Unity URDF/Xacro import pipeline with editor menu import/parse/clean actions, Xacro conversion, URDFBuilder entry point, and typed XML attribute helpers`
+- `bernhard-42/three-cad-viewer` - `Studied in Wave 291 as a web CAD/digital-twin viewer with hierarchical Shapes tree, part IDs, transforms, bounding boxes, face/edge visibility states, tessellated geometry arrays, and viewer display options`
+- `KKallas/manual-override` - `Studied in Wave 291 as a server-authoritative robot-control architecture with game server, vision service, robot drivers, referee GUI, calibration frames, WebSocket/HTTP plans, SSE live-state helper, and Dobot TCP joint driver with feedback parsing and acceleration-limited ServoJ setpoints`
+- `mortenterhart/mixed-reality-robot-control` - `Studied in Wave 291 as an MR digital twin command surface with MQTT store-in/store-out commands, shelf selection, button color state, local robot animation triggers, and command UI caveats`
+- `MixedRealityETHZ/Mixed-Reality-Robotic-Grasp-Teacher` - `Studied with prototype caveats in Wave 291 as an MRTK hand trajectory/grasp teacher with pinch-threshold sampling, trajectory spheres, position lists, countdown text, and reset behavior`
+- `giuliano-97/mixed_reality_robots` - `Studied with vendor-heavy caveats in Wave 291 as a ROS/MRTK robotics integration reference with Jackal/Panda URDF and launch files, ROS cmd_vel publisher baseline, and Unity mixed-reality shell overlap`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

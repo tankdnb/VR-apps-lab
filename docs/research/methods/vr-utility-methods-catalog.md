@@ -15743,3 +15743,182 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   splat import/render matrices, VR-native spatial viewers, generated-scene
   workbenches, and external renderer surface prototypes.
+
+## Method 733: Room-aware MR utility boundary across scene data, semantic anchors, raycasts, panel placement, export, and path authoring
+
+- What it is:
+  a mixed-reality utility should treat the user's room as a structured data
+  source while keeping scene acquisition, semantic anchors, placement solvers,
+  UI panels, export, and diagnostics separate.
+- Good for:
+  MRUK scene doctors, room-aware overlay/panel placement, anchor inventories,
+  surface inspectors, room export tools, and MR path/waypoint utilities.
+- Why it matters:
+  room-aware MR tools fail when permission loading, semantic interpretation,
+  panel placement, and app-specific behavior are tangled together. A clean
+  boundary makes the same room data reusable across diagnostics, UI placement,
+  export, and gameplay.
+- Source evidence:
+  `oculus-samples/Unity-MRUtilityKitSample`,
+  `dilmerv/MixedRealityUtilityKitDemos`,
+  `oculus-samples/Unreal-MRUtilityKitSample`,
+  `VeksCZ/XRHouseDesignExport`, and `Luizfelm/FlightFollower`.
+- Reusable core:
+  scene permission/load gate, current-room binding, room/anchor/semantic model,
+  wall/floor/global-mesh access, environment raycast, surface-size and
+  collision validation, world-lock status, normal smoothing, raycast
+  visualization, panel magnetism, JSON/report/model export, session folder, and
+  path-to-waypoint sampling.
+- Source evidence details:
+  Wave 288 includes `EnvironmentPanelPlacement` surface raycasts and world-lock
+  status, `MRUKDemo` room/wall-anchor binding, Unreal MRUK scene-data samples,
+  `XRHouseDesignExport` MRUK scene sync and OBJ/GLB/report export, and
+  `FlightFollower` LineRenderer checkpoint placement.
+- Do not copy directly:
+  generated Android/Unity artifacts, SDK sample payloads as architecture,
+  semantic labels without fallback, room export without storage/permission
+  errors, or placement solvers without collision/size validation.
+- Strong references:
+  `Unity-MRUtilityKitSample` for room-aware placement and
+  `XRHouseDesignExport` for export/report utility boundaries.
+- Maturity:
+  strong method with platform/version caveats; production reuse should verify
+  MRUK permissions, storage paths, world-lock behavior, and mobile budgets.
+- Best fit for `VR-apps-lab`:
+  MRUK scene inspectors, room-aware utility panels, mixed-reality debug/export
+  tools, and placement helpers for future overlay-like MR surfaces.
+
+## Method 734: WebXR spatial UI primitive boundary across canvas panels, mesh layout, declarative wrappers, raycasts, and socket-backed actions
+
+- What it is:
+  a browser-native XR utility should separate UI description, render backend,
+  raycast input, widget state, update cadence, and any server/companion
+  transport.
+- Good for:
+  WebXR settings panels, in-headset control dashboards, spatial forms, browser
+  operator surfaces, A-Frame UI kits, and remote-control panels.
+- Why it matters:
+  DOM UI is not enough inside immersive WebXR sessions. Reuse depends on
+  choosing and isolating canvas texture panels, mesh-native layout, A-Frame
+  wrappers, input mapping, and command transport.
+- Source evidence:
+  `NikLever/CanvasUI`, `felixmariotto/three-mesh-ui`,
+  `Retchut/aframe-mesh-ui-components`, and
+  `shiveshjadon/webxr-fullstack-boilerplate`.
+- Reusable core:
+  panel mesh, canvas or mesh-text renderer, config/content schema, texture or
+  geometry update flag, UV-to-widget hit testing, controller raycaster,
+  hover/select/scroll state, keyboard/slider/picker widgets, deferred layout
+  update manager, A-Frame component wrapper, and optional socket/server command
+  bridge.
+- Source evidence details:
+  Wave 289 includes `CanvasUI` offscreen canvas and controller event handling,
+  `three-mesh-ui` `Block` and `UpdateManager`, A-Frame `mesh-block` component
+  registration, and a React/Three WebXR shell with Socket.IO button events.
+- Do not copy directly:
+  hardcoded localhost sockets, global mutable select state without cleanup,
+  canvas panels where real mesh text is needed, or mesh UI without font asset
+  and version planning.
+- Strong references:
+  `CanvasUI` for fast textured panels and `three-mesh-ui` for mesh-native
+  nested spatial layout.
+- Maturity:
+  useful method with browser/runtime caveats; production reuse should verify
+  HTTPS/WebXR requirements, asset loading, mobile headset performance, and
+  dispose behavior.
+- Best fit for `VR-apps-lab`:
+  browser-native utility panels, spatial UI comparisons, WebXR debug menus, and
+  socket-backed in-headset control surfaces.
+
+## Method 735: Assembly/procedure training workflow boundary across parts, sockets, steps, persistence, scoring, and dashboards
+
+- What it is:
+  an assembly or maintenance training utility should separate physical
+  manipulation, snap validation, procedure steps, save/load state, scoring, and
+  instructor/companion reporting.
+- Good for:
+  VR assembly trainers, maintenance simulations, guided repair tools, snap
+  authoring samples, training score dashboards, and procedure rehearsal apps.
+- Why it matters:
+  assembly trainers are easy to make as hardcoded scene scripts, but hard to
+  reuse. A reusable boundary makes parts, sockets, procedure state, persistence,
+  and scoring portable across different training domains.
+- Source evidence:
+  `T0riU/VR-Assembly-Manager`,
+  `carlosMoragon/VR-Assembly-Simulator`, `NopparatSang/SCGVR2`,
+  `JonyHM/VRDoorAssembly`, plus source-light/skipped evidence from
+  `lintglitch/vr-assembly`, `nyu-lgcoop/VRTrainingUnity`, and
+  `White-H-21/VR-assembly-system`.
+- Reusable core:
+  part state machine, attach point ID schema, socket compatibility filter,
+  closest-candidate snap, hand-release policy, snap transform alignment,
+  visual affordances, step/work-type controller, tool validation, active object
+  gates, score/timer/ranking loop, JSON assembly persistence, thumbnail,
+  prefab registry, and web companion score API.
+- Source evidence details:
+  Wave 290 includes `AssemblyPart`, `AssemblySocket`, and
+  `AssemblySaveSystem` from `VR-Assembly-Manager`, score/placement scripts from
+  `VR-Assembly-Simulator`, `SCGVR2` process/tool/timer systems, and Angular
+  score service/dashboard code from `VRDoorAssembly`.
+- Do not copy directly:
+  tag-only validation as a full assembly model, vendor SDK payloads, hidden
+  procedure data in GameObject names, hardcoded scene/object names, or score
+  dashboards without schema/versioning.
+- Strong references:
+  `T0riU/VR-Assembly-Manager` for snap/socket/persistence and
+  `SCGVR2` for procedure-step workflow ideas.
+- Maturity:
+  strong method; production reuse should add undo, authoring UI, validation
+  diagnostics, localization, score schema versioning, and analytics privacy.
+- Best fit for `VR-apps-lab`:
+  minimal assembly prototypes, snap/socket reusable samples, procedure
+  authoring schemas, and instructor dashboard references.
+
+## Method 736: Mixed-reality robotics/digital-twin boundary across URDF/CAD import, ROS state, command transport, calibration, and server-side safety
+
+- What it is:
+  an XR robotics utility should keep asset import, digital-twin visualization,
+  live robot state, command transport, calibration, and physical safety policy
+  as separate layers.
+- Good for:
+  MR robot-control surfaces, ROS/Unity visualizers, CAD/URDF inspectors,
+  operator dashboards, hand trajectory teachers, digital twins, and safe
+  physical-output bridges.
+- Why it matters:
+  robot control is physical-output work. Headset or browser UI should never be
+  allowed to bypass driver constraints, stale gates, calibration, speed limits,
+  or emergency stop behavior.
+- Source evidence:
+  `2000222/Robotic-Arm-IK-in-Unity`, `sabeaussan/ROS_Unity`,
+  `KosmosisDire/UrdfUnityToolkit`, `bernhard-42/three-cad-viewer`,
+  `KKallas/manual-override`,
+  `mortenterhart/mixed-reality-robot-control`,
+  `MixedRealityETHZ/Mixed-Reality-Robotic-Grasp-Teacher`, and
+  `giuliano-97/mixed_reality_robots`.
+- Reusable core:
+  URDF/Xacro import, CAD tree and part states, joint/pose data model, ROS
+  subscriber, MQTT/WebSocket/SSE transport, IK target baseline, hand trajectory
+  teaching, server-authoritative command validation, feedback parsing,
+  acceleration-limited setpoint streaming, calibration frames, E-stop, and
+  operator/referee dashboard.
+- Source evidence details:
+  Wave 291 includes Unity IK and joint axes, ROSSharp-style joint subscribers,
+  URDF importer menu actions, CAD `Shapes`/visibility state data model, MQTT
+  shelf commands, MRTK hand-trajectory capture, `manual-override` architecture,
+  SSE `LiveState`, and Dobot TCP feedback/ServoJ driver logic.
+- Do not copy directly:
+  UI-driven hardware commands without server-side safety, MQTT commands without
+  acknowledgements, naive IK as a real-hardware controller, fixed coordinate
+  frames, vendor payloads as architecture evidence, or planned docs as
+  implemented code without caveats.
+- Strong references:
+  `manual-override` for server-authoritative safety,
+  `UrdfUnityToolkit` for robot asset import, and `three-cad-viewer` for
+  inspectable digital-twin geometry.
+- Maturity:
+  strong but safety-critical method; production reuse must include command
+  validation, stale gates, calibration, speed/zone limits, E-stop, and dry-run
+  simulation mode.
+- Best fit for `VR-apps-lab`:
+  safe MR robot-control shell concepts, ROS/Unity digital twin inspectors,
+  URDF/CAD pipeline helpers, and physical-output safety checklists.

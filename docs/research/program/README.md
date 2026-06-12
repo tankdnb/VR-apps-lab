@@ -2037,3 +2037,32 @@ repeatable way.
 
 - `github-research-wave-287-backlog.md`
   Executed backlog for the Wave 287 pass.
+
+- `github-research-wave-288-plan.md`
+  Wave 288 research plan focused on MRUK room-aware scene data, semantic
+  anchors, environment raycasts, world-locked panels, room export, and MR path
+  utilities.
+
+- `github-research-wave-288-backlog.md`
+  Executed backlog for the Wave 288 pass.
+
+- `github-research-wave-289-plan.md`
+  Wave 289 research plan focused on WebXR spatial UI primitives, canvas panels,
+  mesh text/layout, A-Frame wrappers, and socket-backed UI shells.
+
+- `github-research-wave-289-backlog.md`
+  Executed backlog for the Wave 289 pass.
+
+- `github-research-wave-290-plan.md`
+  Wave 290 research plan focused on VR assembly, maintenance, procedure
+  training, snap/socket systems, scoring, and companion dashboards.
+
+- `github-research-wave-290-backlog.md`
+  Executed backlog for the Wave 290 pass.
+
+- `github-research-wave-291-plan.md`
+  Wave 291 research plan focused on mixed-reality robotics, ROS/Unity,
+  URDF/CAD, digital twins, trajectory teaching, and safety boundaries.
+
+- `github-research-wave-291-backlog.md`
+  Executed backlog for the Wave 291 pass.

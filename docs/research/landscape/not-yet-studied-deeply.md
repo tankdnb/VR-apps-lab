@@ -3071,6 +3071,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 210. `Wearable haptics router matrix across tact catalogs, dot/frame APIs, simulator telemetry, avatar camera triggers, Android AIDL services, Unreal pairing UI, device status, consent, and emergency stop`
 211. `Tilt/Open Brush creative asset pipeline matrix across .tilt parsing, stroke control points, brush IDs, geometry export, shader/material restoration, AR/Web display, Poly archive metadata, and provenance/license gates`
 212. `Gaussian splat XR rendering matrix across .ply/.spz/.spx/.sog/.splat import, source coordinates, GPU sorting, cutouts, runtime loading, VR controls, dynamic blocks, generated worlds, and external render buses`
+213. `MRUK room-aware utility matrix across scene permissions, room/anchor semantics, environment raycasts, world-lock panel placement, QR tracking, room export, reports, and storage caveats`
+214. `WebXR spatial UI primitive matrix across canvas textures, mesh-native text/layout, A-Frame wrappers, controller raycasts, widget state, update cadence, and socket-backed actions`
+215. `VR assembly/procedure workflow matrix across attach IDs, sockets, snap validation, hand-release, step controllers, tool validation, save/load, scoring, ranking, and companion dashboards`
+216. `Mixed-reality robotics/digital-twin matrix across URDF/CAD import, ROS state, MQTT/SSE/WebSocket transport, IK, trajectory teaching, calibration, and server-side safety gates`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.
