@@ -16098,3 +16098,189 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   calibration doctor concepts, tracker/avatar setup utilities, display surface
   alignment helpers, and body-profile onboarding tools.
+
+## Method 741: Spatial-anchor and persistent MR-space boundary across anchor lifecycle, alignment, sharing, persistence, and relocation
+
+- What it is:
+  an MR utility should treat spatial anchors, room anchors, world alignment,
+  content attachment, sharing, persistence, and relocation as explicit layers
+  instead of scene-local details.
+- Good for:
+  persistent MR panels, shared-space utilities, room scan tools, anchor
+  inventory/repair panels, experiment registration, anchored whiteboards, and
+  Quest launcher/workspace shells.
+- Why it matters:
+  spatial utilities become fragile when anchor UUIDs, room scans, origin
+  transforms, and shared-session state are hidden inside scenes. A reusable
+  boundary makes placement recoverable, shareable, and privacy-aware.
+- Source evidence:
+  `oculus-samples/Unity-SharedSpatialAnchors`,
+  `arghyasur1991/QuestRoomScan`,
+  `NirajArts/SpatialAnchorTracking_Meta`, `jamesdowzard/quest-launcher`,
+  `ftmghorbani/MX_Ink_2Ddrawing_Sample`, and
+  `abhinavazad/XR-Experiment-Design-Toolbox`.
+- Reusable core:
+  anchor source type, create/localize/save/load/erase/share actions,
+  remembered UUIDs, group/session discovery, MRUK fallback transform, world
+  origin realignment, anchor-relative content parent, package manifest,
+  relocation matrix, scene-object registry, and visible status/repair UI.
+- Source evidence details:
+  Wave 296 includes Meta shared-anchor alignment/group sharing, room scan
+  packages with `anchor.json`, OVRSpatialAnchor persistence, MRUK fallback,
+  relocation matrices, universal anchor setup UI, three-anchor stylus canvas,
+  Quest launcher shell, and Procrustes scene registration.
+- Do not copy directly:
+  anchor UUIDs without ownership/status metadata, hidden PlayerPrefs schemas,
+  cloud/group share paths without offline fallback, room scans without privacy
+  controls, absolute-path experiment loaders, or launcher actions without
+  package permission checks.
+- Strong references:
+  `Unity-SharedSpatialAnchors` for shared anchor workflow,
+  `QuestRoomScan` for persistent room packages, and
+  `XR-Experiment-Design-Toolbox` for explicit scene registration.
+- Maturity:
+  strong method with platform and privacy caveats; production reuse should add
+  permission checks, anchor inventory, localization failure recovery, export
+  controls, deletion policy, and user-visible repair steps.
+- Best fit for `VR-apps-lab`:
+  persistent MR utility shells, anchor/room diagnostics, shared-space setup
+  helpers, anchored drawing/reference panels, and spatial experiment tooling.
+
+## Method 742: XR caption and subtitle accessibility boundary across sources, timing, safe-area rendering, sync, and privacy
+
+- What it is:
+  caption utilities should isolate caption sources, timed text parsing, live
+  STT, timing clocks, render placement, safe-area policy, network sync, user
+  style settings, and privacy/consent.
+- Good for:
+  accessibility overlays, VR video subtitles, object labels, live captions,
+  source-direction hints, WebXR caption panels, and AR speaker-localized text.
+- Why it matters:
+  text in VR can easily become unreadable, nauseating, or privacy-invasive.
+  Reuse needs explicit layout, timing, source, contrast, scale, sync, and
+  consent boundaries.
+- Source evidence:
+  `XR-Access-Initiative/chirp-captions`, `A11YTK/A11YTK`,
+  `craigm26/LiveCaptionsXR`, `lavin-a/aframe-xr-access-design`,
+  `jayrosen-design/XR-Caption`, `jacklul/USharpVideo-Subtitles`, and
+  `Ikbenmathijs/VRC-ProTV-Subtitles`.
+- Reusable core:
+  caption source, timed caption model, SRT/VTT parser, live STT event stream,
+  renderer manager, headset/object/screen placement modes, safe-area/FOV
+  limits, source-direction arrows, video-time binding, chunked sync, user
+  styling options, confidence/timestamp fields, and privacy/model status.
+- Source evidence details:
+  Wave 297 includes Chirp caption render manager and safe-area arrows, A11YTK
+  SRT and renderer modes, LiveCaptionsXR service/native architecture,
+  A-Frame directional captions, web stereo caption layout, USharpVideo subtitle
+  parser/sync/styling, and ProTV current-time subtitle resync.
+- Do not copy directly:
+  captions without safe-area limits, unbounded per-frame parsing, live audio
+  capture without consent, hardcoded language/model assumptions, VRChat URL
+  sync without permissions, or text overlays without contrast/scale controls.
+- Strong references:
+  `chirp-captions` for XR-safe layout and direction arrows,
+  `A11YTK` for Unity subtitle placement modes, and
+  `USharpVideo-Subtitles` for VRChat/Udon constraints.
+- Maturity:
+  strong method with accessibility and privacy caveats; production reuse should
+  test readability, localization, font scale, source overload, latency,
+  permission prompts, and per-platform text rendering.
+- Best fit for `VR-apps-lab`:
+  caption renderer kits, safe-area text panels, VRChat subtitle helpers,
+  directional caption overlays, and live STT accessibility prototypes.
+
+## Method 743: Unity/OpenXR hand gesture boundary across joint sampling, normalization, recognition, feedback, and output transport
+
+- What it is:
+  hand utilities should separate runtime joint acquisition, coordinate
+  normalization, dataset recording, recognition, gesture state, feedback, and
+  side effects such as controller emulation or network streaming.
+- Good for:
+  gesture-driven VR tools, hand debug panels, sign-learning apps,
+  controller-free utilities, hand-to-command adapters, and teleoperation hand
+  bridges.
+- Why it matters:
+  hand tracking is noisy, hardware-dependent, and easy to overfit. Reusable
+  tools need visible thresholds, confidence, calibration, runtime/source
+  boundaries, and output safety.
+- Source evidence:
+  `HankunYu/Kuji-Kiri`, `Phlegmati/SimpleGestureRecorder`,
+  `TF-polygon/XR-SignQuest`, `Vin-meido/COM3D25_OpenXRHandsPOC`, and
+  `ARCLab-MIT/BeaVR-app`.
+- Reusable core:
+  XRHandSubsystem source, ordered joint schema, wrist-local snapshots,
+  feature vectors, static classifier, dynamic DTW window, gesture state machine,
+  hold/cooldown gates, editor recorder, visual threshold debugger,
+  sign-learning feedback surface, One Euro smoothing, command filters, and
+  network packet schema.
+- Source evidence details:
+  Wave 298 includes `Kuji-Kiri` MLP/DTW/state-machine pipeline,
+  `SimpleGestureRecorder` XRHandShape recorder, `XR-SignQuest` mirror-camera
+  ONNX sign feedback, `COM3D25_OpenXRHandsPOC` action filters/smoothing, and
+  `BeaVR-app` 26-joint NetMQ hand streams.
+- Do not copy directly:
+  fixed distance thresholds without calibration, package artifacts as source
+  evidence, per-frame tensor allocations without profiling, hand-to-controller
+  patching without user opt-in, or robot/OSC output without stale gates and
+  safety validation.
+- Strong references:
+  `Kuji-Kiri` for recognition pipeline depth,
+  `SimpleGestureRecorder` for authoring/debug UX, and
+  `BeaVR-app` for hand-data transport boundaries.
+- Maturity:
+  promising method with runtime and safety caveats; production reuse should
+  include hand-size calibration, validity/confidence, tracked-joint counts,
+  fallback input, output clamping, and latency/jitter diagnostics.
+- Best fit for `VR-apps-lab`:
+  Unity hand gesture recorder/debug tools, gesture adapter interfaces,
+  sign-learning feedback experiments, controller-free menu prototypes, and
+  hand-to-command or hand-to-robot bridge safety references.
+
+## Method 744: Voice-driven XR utility boundary across mic consent, recognition, command or agent pipeline, transport, and output surfaces
+
+- What it is:
+  voice utilities should separate microphone consent and capture, recognition,
+  command matching, agent/TTS services, transport, avatar/OSC/chat output,
+  visible status, cancellation, and privacy policy.
+- Good for:
+  speech command sidecars, VRChat OSC/chatbox tools, conversational agents,
+  transcription utilities, voice chat transport, speech bubbles, and VR
+  feedback recorders.
+- Why it matters:
+  voice features touch privacy, identity, moderation, and external side effects.
+  Reuse requires explicit consent, status, command validation, cancellation,
+  and output safety rather than always-on mic behavior.
+- Source evidence:
+  `oculus-samples/voicesdk-samples-whisperer`, `UCL-VR/ubiq-genie`,
+  `nikaera/MagicOnionExample-OculusMobileVoiceChat`,
+  `xiaolazhu/vrc-voice-params`, `Jurangren/VRC-Voicebridge`,
+  `Alchemishty/ExpressVR`, and `vr-the-feedback/vr-the-feedback-unity`.
+- Reusable core:
+  consent gate, mic level meter, audio ring buffer, STT adapter, command map,
+  service pipeline, text generation/TTS adapter, Opus encoder/decoder, OSC
+  chatbox/parameter output, networked speech bubble, status overlay, cancel
+  point, language setting, and privacy/export policy.
+- Source evidence details:
+  Wave 299 includes Voice SDK mic-level and product UX, Ubiq Genie
+  media/STT/text/TTS service orchestration, MagicOnion Opus voice chat,
+  Web Speech to VRChat OSC parameters, cancelable VRC translation/TTS pipeline,
+  desktop status overlay, and networked speech bubble/emote RPCs.
+- Do not copy directly:
+  always-on mic without consent, cloud STT/TTS without privacy messaging,
+  voice commands without confirmation for destructive actions, OSC writes
+  without type/path validation, voice chat without mute/room auth, or TTS
+  pipelines without cancellation and error states.
+- Strong references:
+  `ubiq-genie` for agent/STT/TTS service orchestration,
+  `MagicOnionExample-OculusMobileVoiceChat` for voice chat transport,
+  `VRC-Voicebridge` for cancelable VRChat speech sidecar, and
+  `vrc-voice-params` for command-to-OSC mapping.
+- Maturity:
+  strong method with privacy and platform caveats; production reuse should add
+  consent prompts, visible mic state, mute/cancel controls, command allowlists,
+  typed OSC validation, latency monitoring, and retention policy.
+- Best fit for `VR-apps-lab`:
+  speech command panels, VRChat voice sidecars, assistant overlays, voice chat
+  transport references, networked speech bubbles, and privacy-first voice UX
+  checklists.

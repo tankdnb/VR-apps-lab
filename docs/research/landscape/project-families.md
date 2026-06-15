@@ -9200,6 +9200,157 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - display/surface calibration tools;
 - body-measurement previews and profile import/export.
 
+## Family 275: Spatial anchors, colocation, persistent MR spaces, and room registration
+
+This family covers projects that use anchors, room data, or registration
+transforms to keep MR content stable across sessions, users, devices, or
+physical spaces. The reusable lesson is to keep anchor lifecycle, world
+alignment, content attachment, sharing, persistence, and repair/status UI
+separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `oculus-samples/Unity-SharedSpatialAnchors` | Deepened from partial in Wave 296 | Official Meta donor for anchor source typing, save/load/share, group discovery, origin alignment, Photon handoff, and MRUK world lock |
+| `oculus-samples/Unity-Discover` | Deepened from partial/source-heavy in Wave 296 | Larger MR product-composition reference rather than main anchor donor |
+| `arghyasur1991/QuestRoomScan` | Studied in Wave 296 | Persistent room scan packages, OVRSpatialAnchor persistence, MRUK fallback, relocation matrices, scene-object registry, and runtime guard |
+| `NirajArts/SpatialAnchorTracking_Meta` | Studied in Wave 296 | Universal anchor setup helper with create/delete/load/reset/reposition UI and transform application |
+| `jamesdowzard/quest-launcher` | Studied in Wave 296 | Quest MR launcher shell with Android helper bridge, model loader, HUD, and bootstrap split |
+| `ftmghorbani/MX_Ink_2Ddrawing_Sample` | Studied in Wave 296 | Anchored MX Ink stylus/canvas workflow with pressure, double-tap, three anchors, and drawing persistence |
+| `abhinavazad/XR-Experiment-Design-Toolbox` | Studied in Wave 296 | Procrustes scene re-registration, anchor JSON, prefab placement, replay, and experiment logs |
+
+### Consolidation note
+
+This family matters because persistent MR utilities should name:
+
+- local, cloud, shared, and room-anchor sources;
+- anchor create/localize/save/load/erase/share actions;
+- world-origin alignment and content parenting;
+- room/scene package manifests;
+- relocation matrices and registration error metrics;
+- anchor inventory, repair, deletion, and privacy controls.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- persistent MR utility shells;
+- anchor inventory and repair panels;
+- room scan export/import tools;
+- shared-space setup helpers;
+- spatial experiment registration utilities.
+
+## Family 276: XR captions, subtitles, accessibility text, and live caption surfaces
+
+This family covers projects that make speech, timed text, or source labels
+readable in VR/AR. The reusable lesson is to keep caption source, parser,
+timing clock, renderer, placement policy, sync, user settings, and privacy
+separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `XR-Access-Initiative/chirp-captions` | Studied in Wave 297 | Caption source/render manager split, timed captions, head-locked renderer, safe area, and source-direction arrows |
+| `A11YTK/A11YTK` | Studied in Wave 297 | SRT parser, subtitle source controllers, headset/object/screen renderers, VideoPlayer binding, and option assets |
+| `neogeek/a11ytk-rewrite` | Variant marker in Wave 297 | Rewrite/package-shape comparison node for the original A11YTK approach |
+| `craigm26/LiveCaptionsXR` | Studied in Wave 297 | Live AR/XR caption stack with stereo audio, STT, contextual enhancement, localization, anchors, and model management |
+| `lavin-a/aframe-xr-access-design` | Studied in Wave 297 | A-Frame directional caption controller and browser-native accessibility scene |
+| `jayrosen-design/XR-Caption` | Micro-reference in Wave 297 | Small Flask/web stereo caption layout reference |
+| `jacklul/USharpVideo-Subtitles` | Studied in Wave 297 | VRChat/Udon subtitle overlay with URL/text loading, chunk sync, parser budget, update cadence, and styling |
+| `Ikbenmathijs/VRC-ProTV-Subtitles` | Studied in Wave 297 | Minimal ProTV subtitle downloader/parser/current-time sync |
+
+### Consolidation note
+
+This family matters because caption/accessibility text utilities should name:
+
+- timed text versus live STT source;
+- parser format and parser budget;
+- source clock or video time;
+- head-locked, object, screen, directional, or anchored placement;
+- safe area, contrast, text scale, and background style;
+- sync, ownership, and privacy/consent rules.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- reusable caption renderer kits;
+- safe-area text panels;
+- directional caption helpers;
+- VRChat video subtitle utilities;
+- live STT accessibility overlays.
+
+## Family 277: OpenXR/Unity hand gesture recognition, sign learning, and hand data bridges
+
+This family covers Unity/OpenXR hand projects that turn raw hand joints into
+recognized gestures, sign-learning feedback, controller replacement, or remote
+hand-data streams. The reusable lesson is to keep joint sampling,
+normalization, recording/training, recognition, state transitions, feedback,
+and side effects separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `HankunYu/Kuji-Kiri` | Studied in Wave 298 | Strong donor for wrist-local hand snapshots, feature vectors, MLP static classifier, DTW dynamic recognizer, state machine, and editor training |
+| `Phlegmati/SimpleGestureRecorder` | Studied in Wave 298 | Compact XRHandShape recorder/debugger with timed capture, screenshots, jointsUpdated checks, hold gates, and distance debug |
+| `TF-polygon/XR-SignQuest` | Studied with asset/model caveats in Wave 298 | VR ASL learning reference with mirror-camera YOLO/ONNX feedback, confidence color, and memory discipline |
+| `ariesiitr/Hand-Tracking-VR` | Source-light/package reference in Wave 298 | Unitypackage hand-tracking demo marker for grab/pinch/point interaction |
+| `Vin-meido/COM3D25_OpenXRHandsPOC` | Studied in Wave 298 | OpenXR hands to legacy controller/game input adapter with InputAction filters and One Euro smoothing |
+| `ARCLab-MIT/BeaVR-app` | Studied in Wave 298 | Quest hand tracking to robot/server bridge with ordered XR Hands joints, NetMQ sockets, pinch toggles, and IP/port config |
+
+### Consolidation note
+
+This family matters because hand gesture utilities should name:
+
+- runtime hand source and joint ordering;
+- coordinate normalization and hand-size assumptions;
+- training/recording assets;
+- static, dynamic, threshold, or camera-inference recognizer;
+- hold/release/cooldown state;
+- feedback surface and confidence display;
+- output clamps, transport schema, and safety policy.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Unity hand gesture recorder/debug panels;
+- recognizer adapter interfaces;
+- sign-learning feedback prototypes;
+- hand-to-command bridge safety;
+- teleoperation hand-packet schemas.
+
+## Family 278: Voice-driven VR communication, control, agents, and speech surfaces
+
+This family covers voice projects that convert microphone input into commands,
+chat, avatar parameters, assistant responses, voice chat, speech bubbles, or
+feedback recordings. The reusable lesson is to keep mic consent, capture,
+recognition, command/agent pipeline, transport, output, and privacy controls
+separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `oculus-samples/voicesdk-samples-whisperer` | Studied with asset-heavy caveats in Wave 299 | Official Voice SDK product reference for consent, mic levels, listenable objects, speech bubbles, and voice UI |
+| `UCL-VR/ubiq-genie` | Studied in Wave 299 | Service-orchestrated agent and transcription stack with media receiver, STT, text generation, TTS, Unity receivers, and audio injection |
+| `vr-the-feedback/vr-the-feedback-unity` | Source-light legacy reference in Wave 299 | Grabbable mic and feedback recording flow with backend/project-key caveats |
+| `nikaera/MagicOnionExample-OculusMobileVoiceChat` | Studied in Wave 299 | Microphone ring buffer, Opus encode/decode, MagicOnion room hub, avatar transforms, and remote audio playback |
+| `xiaolazhu/vrc-voice-params` | Studied in Wave 299 | Web Speech to VRChat OSC avatar parameter sidecar with command CRUD, Go OSC sender, and debug receiver |
+| `Jurangren/VRC-Voicebridge` | Studied in Wave 299 | Cancelable STT/translation/TTS/OSC pipeline with local Whisper, chatbox/typing/voice paths, virtual mic playback, tray UI, and status overlay |
+| `Alchemishty/ExpressVR` | Studied in Wave 299 | Networked speech bubble/emote wheel with client registry, RPC broadcasts, settings, animation, and XR input abstraction |
+| `ahmedbegovic/VoiceInteractionVR` | Source-light puzzle reference in Wave 299 | Voice-interaction search marker; visible source is mostly puzzle/environment logic |
+
+### Consolidation note
+
+This family matters because voice-driven XR tools should name:
+
+- consent and mic activation status;
+- STT and command recognition source;
+- command registry and confirmation policy;
+- text generation/TTS service boundary;
+- voice chat codec and room transport;
+- OSC/chatbox/avatar output validation;
+- speech bubble/status overlay feedback;
+- privacy, cancellation, and error states.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- speech command sidecars;
+- VRChat OSC voice utilities;
+- conversational assistant surfaces;
+- voice chat transport references;
+- speech bubble accessibility and moderation patterns.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

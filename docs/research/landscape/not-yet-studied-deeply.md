@@ -3079,6 +3079,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 218. `Eye-tracking recorder/analytics matrix across vendor SDKs, calibration, validity/confidence, coordinate spaces, target tests, heatmaps, CSV schemas, and privacy`
 219. `WebXR hand utility matrix across XRHand joints, pose workers, gesture thresholds, palm menus, webcam emulation, Web MIDI/WebSocket output, and controller fallback`
 220. `Calibration/alignment helper matrix across device readiness, avatar scale, tracker assignment, surface corners, gaze calibration, points/normals profiles, validation, and rollback`
+221. `Spatial-anchor and persistent MR-space matrix across local/shared/cloud anchors, MRUK room anchors, origin alignment, content parenting, package manifests, relocation matrices, and privacy-aware cleanup`
+222. `XR caption/subtitle accessibility matrix across timed text, live STT, safe-area layout, object/headset/screen placement, directional arrows, video-time sync, and style/privacy settings`
+223. `Unity/OpenXR hand gesture matrix across XRHand joints, wrist-local features, MLP classifiers, DTW sequences, XRHandShape recorders, mirror-camera inference, controller adapters, and hand-data streams`
+224. `Voice-driven XR utility matrix across mic consent, STT, command registries, TTS/agent services, Opus voice chat, OSC/chatbox/avatar output, speech bubbles, cancellation, and privacy`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

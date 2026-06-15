@@ -1333,6 +1333,26 @@ Use these files when you want to understand:
   surface alignment, Pupil Labs calibration scripts, interactive-space
   calibration managers, and body-measurement helpers.
 
+- `vr-projects-wave-296-spatial-anchors-colocation-persistent-mr-spaces-and-room-registration.md`
+  Next GitHub discovery wave focused on Meta shared anchors, colocation
+  session groups, persistent room scan packages, universal anchor setup, Quest
+  launcher shells, anchored stylus canvases, and experiment registration.
+
+- `vr-projects-wave-297-xr-captions-subtitles-accessibility-text-and-live-caption-surfaces.md`
+  Next GitHub discovery wave focused on Unity captions, SRT/subtitle renderers,
+  head-locked safe areas, directional source arrows, live caption stacks,
+  A-Frame accessibility captions, and VRChat video subtitle overlays.
+
+- `vr-projects-wave-298-openxr-unity-hand-gesture-recognition-sign-learning-and-hand-data-bridges.md`
+  Next GitHub discovery wave focused on Unity/OpenXR hand gesture recognition,
+  XRHandShape recording, MLP/DTW classifiers, sign-learning feedback,
+  controller adapters, and hand-data teleoperation streams.
+
+- `vr-projects-wave-299-voice-driven-vr-communication-control-agents-and-speech-surfaces.md`
+  Next GitHub discovery wave focused on voice consent, STT/TTS/agent service
+  pipelines, Opus voice chat, VRChat OSC voice sidecars, command registries,
+  speech bubbles, and feedback recording.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

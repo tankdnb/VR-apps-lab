@@ -2094,3 +2094,31 @@ repeatable way.
 
 - `github-research-wave-295-backlog.md`
   Executed backlog for the Wave 295 pass.
+
+- `github-research-wave-296-plan.md`
+  Wave 296 research plan focused on spatial anchors, colocation, persistent MR
+  spaces, room registration, anchored stylus canvases, and Quest MR shells.
+
+- `github-research-wave-296-backlog.md`
+  Executed backlog for the Wave 296 pass.
+
+- `github-research-wave-297-plan.md`
+  Wave 297 research plan focused on XR captions, subtitles, accessibility text,
+  live caption surfaces, safe-area layout, and VRChat video subtitle overlays.
+
+- `github-research-wave-297-backlog.md`
+  Executed backlog for the Wave 297 pass.
+
+- `github-research-wave-298-plan.md`
+  Wave 298 research plan focused on OpenXR/Unity hand gesture recognition, sign
+  learning, hand recording, controller adapters, and hand-data bridges.
+
+- `github-research-wave-298-backlog.md`
+  Executed backlog for the Wave 298 pass.
+
+- `github-research-wave-299-plan.md`
+  Wave 299 research plan focused on voice-driven VR communication, control,
+  agents, voice chat, VRChat OSC sidecars, and speech surfaces.
+
+- `github-research-wave-299-backlog.md`
+  Executed backlog for the Wave 299 pass.

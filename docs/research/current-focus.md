@@ -1197,6 +1197,10 @@ directions:
 212. `Eye-tracking recorder/analytics matrix across vendor SDKs, calibration, validity/confidence, coordinate spaces, target tests, heatmaps, CSV schemas, and privacy`
 213. `WebXR hand utility matrix across XRHand joints, pose workers, gesture thresholds, palm menus, webcam emulation, Web MIDI/WebSocket output, and controller fallback`
 214. `Calibration/alignment helper matrix across device readiness, avatar scale, tracker assignment, surface corners, gaze calibration, points/normals profiles, validation, and rollback`
+215. `Spatial-anchor and persistent MR-space matrix across local/shared/cloud anchors, MRUK room anchors, origin alignment, content parenting, package manifests, relocation matrices, and privacy-aware cleanup`
+216. `XR caption/subtitle accessibility matrix across timed text, live STT, safe-area layout, object/headset/screen placement, directional arrows, video-time sync, and style/privacy settings`
+217. `Unity/OpenXR hand gesture matrix across XRHand joints, wrist-local features, MLP classifiers, DTW sequences, XRHandShape recorders, mirror-camera inference, controller adapters, and hand-data streams`
+218. `Voice-driven XR utility matrix across mic consent, STT, command registries, TTS/agent services, Opus voice chat, OSC/chatbox/avatar output, speech bubbles, cancellation, and privacy`
 
 ## Current repository-maintenance priorities
 

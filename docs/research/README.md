@@ -291,6 +291,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-293-eye-tracking-recorders-accuracy-tests-heatmaps-and-gaze-analytics.md`
 - `landscape/vr-projects-wave-294-webxr-hand-tracking-primitives-emulation-midi-and-hand-driven-utilities.md`
 - `landscape/vr-projects-wave-295-vr-calibration-overlays-rig-alignment-and-tracking-space-helpers.md`
+- `landscape/vr-projects-wave-296-spatial-anchors-colocation-persistent-mr-spaces-and-room-registration.md`
+- `landscape/vr-projects-wave-297-xr-captions-subtitles-accessibility-text-and-live-caption-surfaces.md`
+- `landscape/vr-projects-wave-298-openxr-unity-hand-gesture-recognition-sign-learning-and-hand-data-bridges.md`
+- `landscape/vr-projects-wave-299-voice-driven-vr-communication-control-agents-and-speech-surfaces.md`
 
 ## Archive Navigation
 
