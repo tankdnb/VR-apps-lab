@@ -1313,6 +1313,26 @@ Use these files when you want to understand:
   URDF/CAD import, digital twins, trajectory teaching, and server-side safety
   boundaries.
 
+- `vr-projects-wave-292-vr-comfort-tunnelling-cybersickness-scoring-and-comfort-profile-utilities.md`
+  Next GitHub discovery wave focused on VR comfort tunnelling, vignette
+  effects, cybersickness scoring, shared comfort profiles, foveated-rendering
+  controls, and source-light comfort caveats.
+
+- `vr-projects-wave-293-eye-tracking-recorders-accuracy-tests-heatmaps-and-gaze-analytics.md`
+  Next GitHub discovery wave focused on eye-tracking recorders, Pupil/FOVE/PICO
+  and SRanipal adapters, accuracy/FOV tests, heatmaps, CSV schemas, and gaze
+  privacy boundaries.
+
+- `vr-projects-wave-294-webxr-hand-tracking-primitives-emulation-midi-and-hand-driven-utilities.md`
+  Next GitHub discovery wave focused on WebXR hand joints, worker pose
+  recognition, webcam emulation, hand physics, hand-to-MIDI controls, palm
+  menus, and WSS/WebSocket experiments.
+
+- `vr-projects-wave-295-vr-calibration-overlays-rig-alignment-and-tracking-space-helpers.md`
+  Next GitHub discovery wave focused on avatar/tracker calibration, display
+  surface alignment, Pupil Labs calibration scripts, interactive-space
+  calibration managers, and body-measurement helpers.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

@@ -9062,6 +9062,144 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - CAD/URDF asset pipeline helpers;
 - hand/trajectory teaching and operator dashboards.
 
+## Family 271: VR comfort tunnelling, cybersickness scoring, and comfort profile utilities
+
+This family covers VR comfort projects that convert motion signals, user
+preferences, and rendering interventions into reusable comfort systems. The
+reusable lesson is to keep motion sensing, comfort scoring, intervention
+policy, visual effect rendering, and profile persistence separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `sigtrapgames/VrTunnellingPro-Unity` | Studied in Wave 292 | Rich tunnelling plugin with vignette, cage, window, portal, blur, masking, presets, and shaders |
+| `ExtendRealityLtd/Tilia.Visuals.Vignette.Unity` | Studied in Wave 292 | Facade/configurator split for velocity/angular-velocity vignette intensity and smoothing |
+| `BryanRalston/vr-comfort-framework` | Studied in Wave 292 | Comfort score, fold/recovery state machine, sustain timers, and post-recovery conservative window |
+| `Skyfall1235/VR-Player-Comfort-Profile-SDK` | Studied in Wave 292 | JSON comfort profile schema for locomotion, turning, vignette, subtitles, haptics, and controls |
+| `KRASAV4EK/BP_Foveated-Rendering-In-PC-VR` | Studied with asset-heavy caveats in Wave 292 | URP VRS feature, gaze marker, foveation toggles, mask/debug controls, and comfort/perception study framing |
+| `melisgokalp/Cybersickness` | Source-light in Wave 292 | Search candidate with no usable source tree in local pass |
+
+### Consolidation note
+
+This family matters because comfort utilities should name:
+
+- motion/velocity inputs;
+- comfort score and hysteresis state;
+- visual intervention renderer;
+- user profile schema and versioning;
+- foveation/performance controls;
+- safe defaults, consent, and user overrides.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- comfort settings panels;
+- adaptive vignette/tunnelling helpers;
+- shared comfort profile import/export;
+- comfort diagnostics and user-controlled intervention status.
+
+## Family 272: Eye-tracking recorders, accuracy tests, heatmaps, and gaze analytics
+
+This family covers VR eye-tracking projects that turn vendor gaze data into
+calibration tasks, target tests, heatmaps, logs, and analysis-ready exports.
+The reusable lesson is to keep vendor SDK ingress, calibration, sampling,
+visualization, analysis, and privacy policy separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `med-material/VREyeTrackingAccuracyTest` | Studied in Wave 293 | Pupil Labs target/FOV harness, gaze path capture, 50 ms logging loop, CSV writer, and display settings |
+| `RealBrandonChen/Unity-Eyetracking-Heatmap` | Studied in Wave 293 | Pupil request/subscription controllers, gaze/frame listeners, recording controls, and visualization scripts |
+| `simpleOmnia/sXR` | Studied in Wave 293 | SRanipal gaze recording, tagged eyetracker output, screen/gaze fixation, pupil/open fields, and dataframe helper |
+| `FoveHMD/UnityPlugin` | Studied in Wave 293 | FOVE gaze recorder, coordinate spaces, recording sync modes, gazable objects, and project checks |
+| `FoveHMD/FoveUnitySample` | Studied in Wave 293 | Minimal FOVE gaze ray cursor with per-eye access and combined-gaze fallback |
+| `n3urovirtual/PicoXR_EyeTracking_Demo` | Studied with source caveats in Wave 293 | Gaze selection/TTS product reference; visible source is mostly PICO SDK API surface |
+| `VR-HCI-Group/Unity-VR-EyeTracking` | Studied in Wave 293 | Vive SRanipal callback recorder with gaze, openness, pupil, and file output fields |
+| `caseycotes-turpin/EyeTrackingAnalysis` | Source-light in Wave 293 | README-only analysis search candidate |
+
+### Consolidation note
+
+This family matters because gaze utilities should name:
+
+- hardware/vendor adapter;
+- gaze ray, validity, and confidence;
+- calibration and target-test state;
+- coordinate space and timestamp schema;
+- heatmap/gaze visualization;
+- export consent and privacy boundaries.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- neutral gaze recorder adapters;
+- eye-tracking accuracy panels;
+- gaze heatmap/target-test utilities;
+- privacy-aware research export schemas.
+
+## Family 273: WebXR hand-tracking primitives, emulation, MIDI, and hand-driven utilities
+
+This family covers WebXR projects that use bare hands as input, UI, test data,
+physics bodies, or external command sources. The reusable lesson is to keep
+joint sampling, recognition, UI action mapping, emulation, and external output
+separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `AdaRoseCannon/handy-work` | Studied in Wave 294 | Worker-backed pose registry, A-Frame handy controls, fuse timings, controller fallback, and magnetic helpers |
+| `mrdoob/webxr-webcam-emulator` | Studied in Wave 294 | Chrome extension polyfill using MediaPipe face/hand landmarkers, smoothing, stereo toggle, and injected WebXR state |
+| `fcor/hand-tracking-butane` | Studied in Wave 294 | Three.js hands, Cannon hand bodies, atom bodies, molecular constraints, and hand-object physics |
+| `miguelppais/airbender-webxr-midi` | Studied in Wave 294 | WebXR hand-to-MIDI setup panel with output scan, channel, preset grid, mapping UI, and status LED |
+| `RichardMeng1/custom-hand-gaze-webxr` | Studied in Wave 294 | Handedness ordering, palm-up canvas menu, poke selection, gaze ray tests, game modes, and WSS relay |
+| `tatta-chotdog/webxr-hands-starter` | Studied in Wave 294 | Minimal scene/controller/hand manager split and wrist-distance gesture classifier |
+
+### Consolidation note
+
+This family matters because WebXR hand utilities should name:
+
+- XRHand joint acquisition;
+- gesture/pose schema and hysteresis;
+- controller fallback;
+- palm/wrist/poke UI;
+- headsetless emulation and camera privacy;
+- Web MIDI/WebSocket/external command safety.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- browser-native hand debug panels;
+- hand gesture event libraries;
+- WebXR emulator compatibility checks;
+- hand-to-command adapter prototypes.
+
+## Family 274: VR calibration overlays, rig alignment, and tracking-space helpers
+
+This family covers calibration and alignment projects that capture device,
+body, gaze, surface, or room values and turn them into validated configuration.
+The reusable lesson is to keep readiness checks, capture, solving, validation,
+persistence, and user feedback separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mika-sandbox/Unity-VRIK-Calibration` | Studied in Wave 295 | Avatar scale, HMD assignment, active tracker assignment, FinalIK targets, and VRIK root control |
+| `ahstevens/FishTankCalibrator` | Studied in Wave 295 | Four-corner display calibration, external DLL projection solve, XML output, and editor visualization |
+| `PeterWolf93/PupilLabs_VR_Calibration` | Studied in Wave 295 | Pupil data loading, validation grids, polynomial calibration, regression coefficients, masking, and plotting |
+| `TKorpXR/MooveoPlugin` | Studied in Wave 295 | Device checkers, tester prefabs, calibration state, points/normals config, UI events, and OpenVR tracker smoothing |
+| `CamsAvis/VRC-Calibration-Detection` | Source-light product reference in Wave 295 | VRChat avatar calibration-complete bool and setup guidance |
+| `Erimelowo/SlimeVR-Calibration` | Micro-utility in Wave 295 | Browser skeleton preview from body segment lengths for SlimeVR onboarding |
+
+### Consolidation note
+
+This family matters because calibration utilities should name:
+
+- device readiness and validity;
+- capture targets and measurement sources;
+- solving/calibration algorithm;
+- validation report;
+- persisted profile/config schema;
+- rollback and user feedback.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- calibration doctor surfaces;
+- tracker/avatar setup helpers;
+- display/surface calibration tools;
+- body-measurement previews and profile import/export.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

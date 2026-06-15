@@ -15922,3 +15922,179 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   safe MR robot-control shell concepts, ROS/Unity digital twin inspectors,
   URDF/CAD pipeline helpers, and physical-output safety checklists.
+
+## Method 737: VR comfort intervention boundary across motion sensing, scoring, tunnelling, profiles, and foveation controls
+
+- What it is:
+  a VR comfort utility should separate motion/velocity sensing, comfort scoring,
+  intervention policy, vignette/tunnelling rendering, profile persistence, and
+  user-facing override controls.
+- Good for:
+  comfort settings panels, adaptive vignette/tunnelling helpers, shared comfort
+  profiles, locomotion comfort diagnostics, and performance/perception tuning.
+- Why it matters:
+  comfort features are often buried in locomotion scripts. Reuse requires a
+  clear boundary between what is sensed, how discomfort risk is scored, what
+  intervention is applied, and which settings users can keep across apps.
+- Source evidence:
+  `sigtrapgames/VrTunnellingPro-Unity`,
+  `ExtendRealityLtd/Tilia.Visuals.Vignette.Unity`,
+  `BryanRalston/vr-comfort-framework`,
+  `Skyfall1235/VR-Player-Comfort-Profile-SDK`, and
+  `KRASAV4EK/BP_Foveated-Rendering-In-PC-VR`.
+- Reusable core:
+  velocity/angular-velocity source, comfort score, hysteresis state machine,
+  fold/recovery timers, vignette/tunnelling renderer, cage/window/portal modes,
+  presets, profile schema, foveation/debug mask controls, and explicit user
+  override UI.
+- Source evidence details:
+  Wave 292 includes VRTP tunnelling base/presets/shaders, Tilia
+  facade/configurator code, a comfort score/state machine, JSON player comfort
+  profiles, and a URP VRS feature with gaze marker/debug mask behavior.
+- Do not copy directly:
+  fixed thresholds without tuning, one-size-fits-all vignette defaults,
+  unversioned comfort profiles, symptom telemetry without consent, or
+  performance/foveation code without artifact validation.
+- Strong references:
+  `VrTunnellingPro-Unity` for renderer depth,
+  `Tilia.Visuals.Vignette.Unity` for package boundary, and
+  `VR-Player-Comfort-Profile-SDK` for portable user settings.
+- Maturity:
+  strong method with validation caveats; production reuse should test comfort
+  defaults, user overrides, accessibility needs, and render-pipeline support.
+- Best fit for `VR-apps-lab`:
+  comfort profile panels, adaptive vignette prototypes, locomotion safety
+  helpers, and user-facing comfort diagnostics.
+
+## Method 738: Eye-tracking recorder and analytics boundary across vendor ingress, calibration, visualization, export, and privacy
+
+- What it is:
+  a gaze utility should isolate vendor SDK access from calibration tasks,
+  sampling, coordinate-space conversion, visualization, logging, analysis, and
+  consent/privacy policy.
+- Good for:
+  gaze recorders, eye-tracking accuracy panels, heatmaps, gaze cursors,
+  research exports, accessibility selection tools, and multimodal study data.
+- Why it matters:
+  gaze data is sensitive and easy to misinterpret. Reusable tools need explicit
+  calibration, validity/confidence, timing, coordinate space, session metadata,
+  and export rules.
+- Source evidence:
+  `med-material/VREyeTrackingAccuracyTest`,
+  `RealBrandonChen/Unity-Eyetracking-Heatmap`, `simpleOmnia/sXR`,
+  `FoveHMD/UnityPlugin`, `FoveHMD/FoveUnitySample`,
+  `n3urovirtual/PicoXR_EyeTracking_Demo`, and
+  `VR-HCI-Group/Unity-VR-EyeTracking`.
+- Reusable core:
+  vendor adapter, gaze ray sampler, validity/confidence fields, calibration
+  targets, FOV/accuracy tasks, gaze path/heatmap visualization, recording
+  state, CSV/tagged-file schema, frame listener, session metadata, and analysis
+  hook.
+- Source evidence details:
+  Wave 293 includes Pupil Labs target/FOV logging, Pupil request/subscription
+  controllers, SRanipal tagged output, FOVE gaze recorder export settings and
+  gazable objects, PICO API caveats, and Vive SRanipal pupil/openness logging.
+- Do not copy directly:
+  hardcoded file paths, unclosed streams, raw vendor payloads as architecture,
+  source-light demos as implementation evidence, or gaze telemetry without
+  consent and schema/versioning.
+- Strong references:
+  `VREyeTrackingAccuracyTest` for target/FOV accuracy flow,
+  `Unity-Eyetracking-Heatmap` for Pupil controller boundaries, and
+  `FoveHMD/UnityPlugin` for SDK adapter behavior.
+- Maturity:
+  strong method with privacy and hardware caveats; production reuse should add
+  consent prompts, validity diagnostics, calibration status, and export schema
+  versioning.
+- Best fit for `VR-apps-lab`:
+  neutral gaze recorder adapters, eye-tracking diagnostics, gaze heatmaps, and
+  privacy-aware research data templates.
+
+## Method 739: WebXR hand utility boundary across joint sampling, gesture recognition, emulation, spatial UI, and command output
+
+- What it is:
+  a WebXR hand utility should separate XRHand joint acquisition, gesture/pose
+  recognition, hand-driven UI, headsetless emulation, and external side effects
+  such as MIDI or WebSocket commands.
+- Good for:
+  WebXR hand debug panels, gesture libraries, palm menus, hand-to-command
+  bridges, webcam emulators, hand physics demos, and browser-native utility
+  surfaces.
+- Why it matters:
+  hand tracking is noisy and browser-dependent. Reuse depends on isolating raw
+  joint data from recognition thresholds, UI actions, fallback input, and
+  external command transport.
+- Source evidence:
+  `AdaRoseCannon/handy-work`, `mrdoob/webxr-webcam-emulator`,
+  `fcor/hand-tracking-butane`, `miguelppais/airbender-webxr-midi`,
+  `RichardMeng1/custom-hand-gaze-webxr`, and
+  `tatta-chotdog/webxr-hands-starter`.
+- Reusable core:
+  XRHand joint sampler, pose registry, worker recognition, fuse/hysteresis
+  timing, controller fallback, palm/wrist menu, poke/pinch actions, hand
+  physics bodies, emulator/polyfill, Web MIDI/WebSocket output, and starter
+  scene/controller/hand managers.
+- Source evidence details:
+  Wave 294 includes `handy-work` worker and A-Frame controls,
+  MediaPipe-backed WebXR webcam emulation, Cannon hand bodies, MIDI setup UI,
+  palm-up canvas menus, gaze ray tests, WSS relay, and minimal gesture managers.
+- Do not copy directly:
+  raw finger-distance thresholds without calibration, camera emulation without
+  privacy UI, command output without clamping/backpressure, hardcoded local WSS
+  certificates, or physics interactions without scale/stability diagnostics.
+- Strong references:
+  `handy-work` for pose recognition, `webxr-webcam-emulator` for developer
+  emulation, and `custom-hand-gaze-webxr` for hand/gaze menu UX.
+- Maturity:
+  promising method with browser/runtime caveats; production reuse should test
+  headset browser support, permission flows, hand loss, thresholds, and
+  controller fallback.
+- Best fit for `VR-apps-lab`:
+  WebXR hand debug panels, gesture event adapters, headsetless test helpers,
+  and hand-to-command utility prototypes.
+
+## Method 740: Calibration and alignment helper boundary across readiness, capture, solving, validation, persistence, and feedback
+
+- What it is:
+  a calibration utility should isolate device readiness checks, measurement
+  capture, solving/calibration math, validation/reporting, persistence, and
+  user feedback.
+- Good for:
+  tracker/avatar setup helpers, display/surface calibration, eye-tracking
+  calibration, interactive-room calibration, body-measurement previews, and
+  calibration doctor surfaces.
+- Why it matters:
+  calibration failures are hard to debug when setup state lives inside scenes
+  or vendor tools. A reusable boundary makes calibration explainable, repeatable,
+  and safe to roll back.
+- Source evidence:
+  `mika-sandbox/Unity-VRIK-Calibration`, `ahstevens/FishTankCalibrator`,
+  `PeterWolf93/PupilLabs_VR_Calibration`, `TKorpXR/MooveoPlugin`,
+  `CamsAvis/VRC-Calibration-Detection`, and
+  `Erimelowo/SlimeVR-Calibration`.
+- Reusable core:
+  source device checker, HMD/tracker pose capture, avatar scale formula,
+  target assignment, surface corner capture, polynomial calibration, validation
+  plots, points/normals config, tracker smoothing, body measurement preview,
+  completion signal, and calibration profile persistence.
+- Source evidence details:
+  Wave 295 includes VRIK avatar scale/assignment, fish-tank corner collection
+  and XML output, Pupil Labs polynomial regression scripts, Mooveo device
+  checkers/config/UI events/OpenVR tracker smoothing, a VRChat calibration bool,
+  and SlimeVR body-length skeleton preview.
+- Do not copy directly:
+  hidden scene-only calibration state, missing validity checks, unversioned
+  XML/JSON/profile files, DLL-dependent math without source/license review,
+  tracker smoothing without diagnostics, or avatar booleans without clear setup
+  docs.
+- Strong references:
+  `MooveoPlugin` for calibration manager structure,
+  `Unity-VRIK-Calibration` for avatar/tracker sequence, and
+  `FishTankCalibrator` for display/surface alignment.
+- Maturity:
+  strong method with setup-specific caveats; production reuse should add
+  validation reports, profile versioning, rollback, hardware diagnostics, and
+  clear operator instructions.
+- Best fit for `VR-apps-lab`:
+  calibration doctor concepts, tracker/avatar setup utilities, display surface
+  alignment helpers, and body-profile onboarding tools.

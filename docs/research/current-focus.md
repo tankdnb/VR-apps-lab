@@ -1193,6 +1193,10 @@ directions:
 208. `WebXR spatial UI primitive matrix across canvas textures, mesh-native text/layout, A-Frame wrappers, controller raycasts, widget state, update cadence, and socket-backed actions`
 209. `VR assembly/procedure workflow matrix across attach IDs, sockets, snap validation, hand-release, step controllers, tool validation, save/load, scoring, ranking, and companion dashboards`
 210. `Mixed-reality robotics/digital-twin matrix across URDF/CAD import, ROS state, MQTT/SSE/WebSocket transport, IK, trajectory teaching, calibration, and server-side safety gates`
+211. `VR comfort intervention/profile matrix across motion inputs, comfort scoring, tunnelling/vignette modes, user profiles, foveation controls, and consent-aware symptom telemetry`
+212. `Eye-tracking recorder/analytics matrix across vendor SDKs, calibration, validity/confidence, coordinate spaces, target tests, heatmaps, CSV schemas, and privacy`
+213. `WebXR hand utility matrix across XRHand joints, pose workers, gesture thresholds, palm menus, webcam emulation, Web MIDI/WebSocket output, and controller fallback`
+214. `Calibration/alignment helper matrix across device readiness, avatar scale, tracker assignment, surface corners, gaze calibration, points/normals profiles, validation, and rollback`
 
 ## Current repository-maintenance priorities
 

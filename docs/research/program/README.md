@@ -2066,3 +2066,31 @@ repeatable way.
 
 - `github-research-wave-291-backlog.md`
   Executed backlog for the Wave 291 pass.
+
+- `github-research-wave-292-plan.md`
+  Wave 292 research plan focused on VR comfort tunnelling, cybersickness
+  scoring, shared comfort profiles, and foveated-rendering controls.
+
+- `github-research-wave-292-backlog.md`
+  Executed backlog for the Wave 292 pass.
+
+- `github-research-wave-293-plan.md`
+  Wave 293 research plan focused on eye-tracking recorders, accuracy tests,
+  heatmaps, gaze analytics, and privacy-aware exports.
+
+- `github-research-wave-293-backlog.md`
+  Executed backlog for the Wave 293 pass.
+
+- `github-research-wave-294-plan.md`
+  Wave 294 research plan focused on WebXR hand tracking, emulation, MIDI,
+  palm menus, hand physics, and hand-driven utility surfaces.
+
+- `github-research-wave-294-backlog.md`
+  Executed backlog for the Wave 294 pass.
+
+- `github-research-wave-295-plan.md`
+  Wave 295 research plan focused on VR calibration overlays, rig alignment,
+  tracking-space helpers, surface calibration, and body-measurement utilities.
+
+- `github-research-wave-295-backlog.md`
+  Executed backlog for the Wave 295 pass.

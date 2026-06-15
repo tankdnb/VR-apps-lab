@@ -287,6 +287,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-289-webxr-spatial-ui-primitives-mesh-text-layout-and-fullstack-ui-shells.md`
 - `landscape/vr-projects-wave-290-vr-assembly-maintenance-and-procedure-training-workflows.md`
 - `landscape/vr-projects-wave-291-mixed-reality-robotics-ros-unity-urdf-cad-and-digital-twin-control-surfaces.md`
+- `landscape/vr-projects-wave-292-vr-comfort-tunnelling-cybersickness-scoring-and-comfort-profile-utilities.md`
+- `landscape/vr-projects-wave-293-eye-tracking-recorders-accuracy-tests-heatmaps-and-gaze-analytics.md`
+- `landscape/vr-projects-wave-294-webxr-hand-tracking-primitives-emulation-midi-and-hand-driven-utilities.md`
+- `landscape/vr-projects-wave-295-vr-calibration-overlays-rig-alignment-and-tracking-space-helpers.md`
 
 ## Archive Navigation
 

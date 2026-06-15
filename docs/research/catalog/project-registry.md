@@ -3889,6 +3889,64 @@ Primary docs:
 - `MixedRealityETHZ/Mixed-Reality-Robotic-Grasp-Teacher` - `Studied with prototype caveats in Wave 291 as an MRTK hand trajectory/grasp teacher with pinch-threshold sampling, trajectory spheres, position lists, countdown text, and reset behavior`
 - `giuliano-97/mixed_reality_robots` - `Studied with vendor-heavy caveats in Wave 291 as a ROS/MRTK robotics integration reference with Jackal/Panda URDF and launch files, ROS cmd_vel publisher baseline, and Unity mixed-reality shell overlap`
 
+## 263. VR comfort tunnelling, cybersickness scoring, and comfort profile utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-292-vr-comfort-tunnelling-cybersickness-scoring-and-comfort-profile-utilities.md`
+- `../landscape/project-families.md`
+
+- `sigtrapgames/VrTunnellingPro-Unity` - `Studied in Wave 292 as a Unity tunnelling comfort plugin with motion-aware vignette/cage/window/portal modes, presets, masking, shaders, mobile variants, and runtime controls`
+- `ExtendRealityLtd/Tilia.Visuals.Vignette.Unity` - `Studied in Wave 292 as a Tilia/VRTK vignette prefab with facade/configurator split, velocity and angular-velocity sources, smoothing, magnitude limits, and prefab package boundaries`
+- `BryanRalston/vr-comfort-framework` - `Studied in Wave 292 as a comfort-score and cybersickness state-machine reference with locomotion/angular-velocity/frame-drop/session-duration scoring, fold/recovery hysteresis, and post-recovery conservative window`
+- `Skyfall1235/VR-Player-Comfort-Profile-SDK` - `Studied in Wave 292 as a shared player comfort profile SDK with JSON movement, turning, vignette, subtitles, haptics, grip, and trigger/grip swap preferences`
+- `KRASAV4EK/BP_Foveated-Rendering-In-PC-VR` - `Studied with asset-heavy caveats in Wave 292 as a foveated rendering comfort/perception reference with URP VRS render feature, ETFR/level/mask toggles, gaze marker, and user-study framing`
+- `melisgokalp/Cybersickness` - `Source-light in Wave 292 as a comfort experiment search candidate whose local clone did not expose a usable source tree`
+
+## 264. Eye-tracking recorders, accuracy tests, heatmaps, and gaze analytics
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-293-eye-tracking-recorders-accuracy-tests-heatmaps-and-gaze-analytics.md`
+- `../landscape/project-families.md`
+
+- `med-material/VREyeTrackingAccuracyTest` - `Studied in Wave 293 as a Pupil Labs accuracy/FOV test harness with target workflows, gaze path capture, 50 ms logging loop, CSV writer, PlayerPrefs display settings, FOV calibration, and Pupil plugin payload`
+- `RealBrandonChen/Unity-Eyetracking-Heatmap` - `Studied in Wave 293 as a Pupil Labs heatmap and recording shell with request/subscription controllers, gaze/frame listeners, recording controls, calibration scripts, and visualization components`
+- `simpleOmnia/sXR` - `Studied in Wave 293 as an experiment framework with SRanipal gaze recording, tagged eyetracker file output, screen/gaze fixation fields, pupil/openness data, dataframe helper, replay, and settings infrastructure`
+- `FoveHMD/UnityPlugin` - `Studied in Wave 293 as a FOVE Unity SDK reference with gaze recorder export settings, recording sync modes, coordinate spaces, gazable object registration, calibration/test scenes, and project checks`
+- `FoveHMD/FoveUnitySample` - `Studied in Wave 293 as a minimal FOVE gaze interaction sample with per-eye ray access, combined-gaze fallback, raycast cursor placement, and sample-scene behavior`
+- `n3urovirtual/PicoXR_EyeTracking_Demo` - `Studied with source caveats in Wave 293 as a PICO gaze-selection/TTS product reference whose README indicates app source was not released; visible code is mostly PICO SDK eye-tracking API surface`
+- `VR-HCI-Group/Unity-VR-EyeTracking` - `Studied in Wave 293 as a Vive SRanipal recorder with callback registration, combined/left/right gaze rays, openness, pupil diameter/position, gaze coordinates, and TXT/CSV output`
+- `caseycotes-turpin/EyeTrackingAnalysis` - `Source-light in Wave 293 as a README-only analysis search candidate and duplicate-search marker`
+
+## 265. WebXR hand-tracking primitives, emulation, MIDI, and hand-driven utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-294-webxr-hand-tracking-primitives-emulation-midi-and-hand-driven-utilities.md`
+- `../landscape/project-families.md`
+
+- `AdaRoseCannon/handy-work` - `Studied in Wave 294 as a worker-backed WebXR hand pose library with pose registry, A-Frame handy controls, controller fallback, fuse timing, joint normalization, and magnetic hand constraints`
+- `mrdoob/webxr-webcam-emulator` - `Studied in Wave 294 as a Chrome extension WebXR webcam emulator with MediaPipe face/hand landmarkers, injected polyfill, head/hand state, smoothing, depth scale, and popup toggles`
+- `fcor/hand-tracking-butane` - `Studied in Wave 294 as a WebXR hand physics demo with Three.js hands, Cannon world, hand sphere bodies, atom bodies, molecular constraints, and hand-object interaction framing`
+- `miguelppais/airbender-webxr-midi` - `Studied in Wave 294 as a WebXR hand-to-MIDI control surface with spatial setup panel, MIDI output scan, channel selector, preset grid, mapping UI, LED status, and Web MIDI/WebXR caveats`
+- `RichardMeng1/custom-hand-gaze-webxr` - `Studied in Wave 294 as a hand/gaze WebXR utility suite with handedness ordering, palm-up menu, right-index poke selection, gaze ray extraction, game modes, floating back button, and WSS relay test`
+- `tatta-chotdog/webxr-hands-starter` - `Studied in Wave 294 as a minimal WebXR hand starter with scene/controller/hand manager split, XRHand joint sampling, wrist-distance thresholds, and simple gesture classification`
+
+## 266. VR calibration overlays, rig alignment, and tracking-space helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-295-vr-calibration-overlays-rig-alignment-and-tracking-space-helpers.md`
+- `../landscape/project-families.md`
+
+- `mika-sandbox/Unity-VRIK-Calibration` - `Studied in Wave 295 as a SteamVR/VRIK avatar calibration baseline with avatar scale from player height/view position, HMD assignment, active tracker assignment, FinalIK targets, and VRIK root controller handoff`
+- `ahstevens/FishTankCalibrator` - `Studied in Wave 295 as a display/surface calibration utility with four-corner surface capture, ScreenCalibrator DLL calls, XML output, probe point workflow, and editor line visualization`
+- `PeterWolf93/PupilLabs_VR_Calibration` - `Studied in Wave 295 as a Pupil Labs calibration/validation script set with pupil data loading, validation grids, polynomial design matrix, linear regression coefficients, masking, plotting, and degree conversion`
+- `TKorpXR/MooveoPlugin` - `Studied in Wave 295 as an interactive-space calibration SDK with device checkers, tester prefabs, calibration state, point/normal persistence, UI events, calibration controllers, and OpenVR tracker smoothing`
+- `CamsAvis/VRC-Calibration-Detection` - `Studied as source-light product reference in Wave 295 for a VRChat avatar calibration-complete boolean and setup UX`
+- `Erimelowo/SlimeVR-Calibration` - `Studied as a micro-utility in Wave 295 with browser body-segment inputs, canvas skeleton preview, default lengths, and SlimeVR body-proportion onboarding value`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:
