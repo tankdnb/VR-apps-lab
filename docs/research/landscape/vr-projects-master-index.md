@@ -312,6 +312,10 @@ This file complements:
 - `vr-projects-wave-301-quest-passthrough-camera-wrappers-permissions-capture-and-qr-world-tracking.md`
 - `vr-projects-wave-302-quest-camera-cv-object-detection-segmentation-and-world-marker-pipelines.md`
 - `vr-projects-wave-303-embodied-locomotion-walking-in-place-redirected-walking-and-rdw-experiment-packaging.md`
+- `vr-projects-wave-304-in-vr-questionnaires-study-surveys-affect-ratings-and-remote-lab-overlays.md`
+- `vr-projects-wave-305-vr-wayfinding-navigation-guidance-and-spatial-navigation-study-tasks.md`
+- `vr-projects-wave-306-xr-testing-simulation-input-validation-and-performance-harnesses.md`
+- `vr-projects-wave-307-xr-gaze-pinch-dwell-onboarding-and-android-xr-interaction-samples.md`
 
 ## How to use this index
 

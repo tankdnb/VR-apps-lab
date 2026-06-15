@@ -16471,3 +16471,198 @@ When a new utility idea appears:
   embodied locomotion mode kits, walking-in-place calibration panels, comfort
   setting surfaces, RDW experiment metric schemas, and locomotion lineage
   cleanup.
+
+## Method 749: In-VR questionnaire and research-study overlay boundary across schema, UI generation, validation, export, replay, sync, and analysis
+
+- What it is:
+  study overlays should separate questionnaire schema, generated VR pages,
+  widget/input handling, required-answer validation, participant/session
+  metadata, feedback, export, replay alignment, remote sync, and offline
+  analysis.
+- Good for:
+  in-headset surveys, study prompts, subjective ratings, affect sliders,
+  consent/condition panels, training assessments, remote-lab studies, and
+  replay-aligned user research logs.
+- Why it matters:
+  research UI becomes hard to reuse when question data, page layout, haptics,
+  participant IDs, CSV writing, upload, replay, and networking are all inside
+  scene scripts. A boundary makes surveys portable and audit-friendly.
+- Source evidence:
+  `MartinFk/VRQuestionnaireToolkit`,
+  `JakobJoSchmidt/immersive-questionnaire-unity-vr`, `microsoft/Remote-Lab`,
+  `Pepn/SurveyToolkit`, and `afourcade/AffectTracker_validation`.
+- Reusable core:
+  question schema, page factory, answer widget registry, required-field gate,
+  feedback settings, participant/condition metadata, local answer store,
+  CSV/TXT writer, optional secure upload adapter, frame/location/time fields,
+  replay/UI-event bridge, remote synchronization adapter, and analysis import
+  path.
+- Source evidence details:
+  Wave 304 includes JSON page generation and export from
+  `VRQuestionnaireToolkit`, CSV/Likert/editing-time handling from
+  `immersive-questionnaire-unity-vr`, replay-aligned and Photon-synced
+  questionnaires from `Remote-Lab`, page validation and optional upload from
+  `SurveyToolkit`, and affect-rating validation/analysis from
+  `AffectTracker_validation`.
+- Do not copy directly:
+  hardcoded upload secrets, participant names in filenames without a consent
+  policy, old vendor input dependencies as core assumptions, unescaped CSV
+  output, hidden remote sync, or questionnaire answers that cannot be aligned
+  to the session timeline.
+- Strong references:
+  `VRQuestionnaireToolkit` for page generation,
+  `Remote-Lab` for replay/networked study context, and `SurveyToolkit` for
+  page validation/product simplicity.
+- Maturity:
+  strong method with privacy and security caveats; production reuse should add
+  consent copy, storage policy, CSV escaping, upload credential handling,
+  schema versioning, and export/replay tests.
+- Best fit for `VR-apps-lab`:
+  reusable survey panels, research-study overlay shells, participant metadata
+  helpers, replay-aligned answer logs, and affect/subjective-rating surfaces.
+
+## Method 750: VR wayfinding and navigation-study boundary across targets, guidance, movement adapters, room transitions, comfort, haptics, and telemetry
+
+- What it is:
+  navigation-study utilities should separate target/route state, movement
+  adapters, guidance or agent channels, haptic/comfort aids, room transitions,
+  condition randomization, decision capture, and telemetry export.
+- Good for:
+  wayfinding tasks, gaze navigation, city navigation studies, guided route
+  training, no-HMD/haptic boundary experiments, cybersickness aid evaluation,
+  and spatial orientation tools.
+- Why it matters:
+  navigation projects often mix route logic, movement implementation, hints,
+  comfort aids, NPC advice, and logs. Reuse needs logs and conditions that can
+  reconstruct what the user saw, chose, asked, and felt.
+- Source evidence:
+  `pepwuper/Google-Cardboard-VR-Navigation`,
+  `npresearchlab/NavCity_Toolkit`, `zcbtmfc/Wayfinding-Task`,
+  `maxleblanc/sightless-vr`, and `angsamuel/GingerVR`.
+- Reusable core:
+  target/waypoint list, active target state, destination source, movement
+  actuator, route/room loader, condition randomizer, guide/agent/hint channel,
+  haptic or proximity feedback channel, comfort preset, decision gate,
+  participant/session metadata, path/head-pose/time log, and derived metrics.
+- Source evidence details:
+  Wave 305 includes gaze cursor to NavMesh from
+  `Google-Cardboard-VR-Navigation`, target sequence and headset CSV logs from
+  `NavCity_Toolkit`, randomized room/agent/decision logs from
+  `Wayfinding-Task`, haptic/no-HMD navigation framing from `sightless-vr`, and
+  comfort/navigation aid taxonomy from `GingerVR`.
+- Do not copy directly:
+  global static target state without reset, `Application.dataPath` logs as the
+  only persistence path, comfort effects without opt-in, haptic boundaries
+  without safety checks, or guidance conditions that cannot be reconstructed
+  from logs.
+- Strong references:
+  `Wayfinding-Task` for condition/decision logging, `NavCity_Toolkit` for
+  simple path telemetry, and `Google-Cardboard-VR-Navigation` for minimal
+  gaze-to-destination movement.
+- Maturity:
+  useful method with research, comfort, and safety caveats; production reuse
+  should add target reset, participant privacy, comfort profile integration,
+  haptic safety gates, and export schemas.
+- Best fit for `VR-apps-lab`:
+  gaze navigation helpers, wayfinding experiment scaffolds, route telemetry
+  schemas, comfort-aware guidance panels, and haptic/no-HMD navigation
+  references.
+
+## Method 751: XR validation harness boundary across live inventory, scene repros, functional assertions, performance metadata, and simulation backends
+
+- What it is:
+  XR validation utilities should separate live device inventory, manual repro
+  scenes, automated functional assertions, haptic/display/input/audio probes,
+  performance sampling, metadata capture, result export, and editor simulation
+  backends.
+- Good for:
+  XR doctor tools, input and haptic debug panels, runtime capability reports,
+  repro scene packs, functional test matrices, performance dashboards, and
+  simulation-backed development.
+- Why it matters:
+  XR failures are hardware, runtime, package, and environment dependent. A
+  reusable harness should observe, reproduce, assert, measure, and simulate
+  without hiding the runtime context.
+- Source evidence:
+  `Unity-Technologies/XRInputTests`,
+  `Unity-Technologies/xr.sdk.functionaltests`,
+  `Unity-Technologies/com.unity.xr.test-framework.performance`, and
+  `needle-tools/ar-simulation`.
+- Reusable core:
+  device inventory, feature value reader, haptic capability panel, repro scene
+  driver, functional test base, runtime/platform skip gates, display/input/
+  device/audio assertions, profiler markers, sample group definitions,
+  build/player/runtime metadata, result JSON/XML, and editor simulation
+  provider.
+- Source evidence details:
+  Wave 306 includes live feature and haptic inspection from `XRInputTests`,
+  display/input/device/audio assertions from `xr.sdk.functionaltests`,
+  sample groups and metadata-rich result export from
+  `com.unity.xr.test-framework.performance`, and provider-level simulation
+  framing from `ar-simulation`.
+- Do not copy directly:
+  running device tests as documentation research, editor-only assumptions in
+  runtime code, perf samples without environment metadata, haptic triggers
+  without user consent, or simulations that silently ship in production builds.
+- Strong references:
+  `XRInputTests` for live/debug UX,
+  `xr.sdk.functionaltests` for assertion structure, and
+  `com.unity.xr.test-framework.performance` for result metadata.
+- Maturity:
+  strong method with device and package caveats; production reuse should add
+  explicit runtime support reporting, privacy-safe logs, simulator exclusion,
+  stable report schemas, and per-platform skip explanations.
+- Best fit for `VR-apps-lab`:
+  XR doctor reports, capability panels, input/haptic diagnostics, performance
+  report schemas, repro scene generators, and simulation-backed validation
+  references.
+
+## Method 752: Gaze, pinch, and dwell interaction boundary across ray source, reticle, confirmation, menus, onboarding, telemetry, and capability state
+
+- What it is:
+  gaze/pinch/dwell utilities should separate gaze or eye ray providers,
+  target interactable contracts, reticle/progress feedback, activation and
+  cancel/reset behavior, pinch/controller confirmation, menu layout,
+  onboarding, monitoring/export, and platform capability state.
+- Good for:
+  controller-free menus, gaze accessibility tools, eye-tracking dashboards,
+  dwell selection, hand+gaze interfaces, Android XR samples, onboarding cards,
+  and visual attention analytics.
+- Why it matters:
+  gaze interaction is easy to over-trigger and hard to debug when targeting,
+  feedback, confirmation, permissions, telemetry, and menus are tangled. A
+  boundary makes input mode, confidence, and user intent visible.
+- Source evidence:
+  `DFKI-Interactive-Machine-Learning/de.dfki-iml.xr-gaze-interaction-toolkit`,
+  `tomazsaraiva/unity-gaze-interaction`,
+  `microsoft/MixedReality-EyeTracking-Sample`, `holokit/holokit-unity-sdk`,
+  and `android/xr-unity-samples`.
+- Reusable core:
+  gaze/eye/camera ray provider, validity and capability state, interactable
+  interface, enter/stay/exit events, dwell timer, reticle/progress visual,
+  activation/reset state, pinch/controller confirmation adapter, radial/pie/
+  guide-card/dashboard menu layout, AOI/attention monitor, accuracy grid, CSV
+  export, permission panel, and user simulation settings.
+- Source evidence details:
+  Wave 307 includes GTK global gaze/interactable/menu/guide/accuracy/export
+  modules, a compact raycast+dwell+reticle package from
+  `unity-gaze-interaction`, HoloLens extended eye gaze conversion from
+  `MixedReality-EyeTracking-Sample`, HoloKit gaze+pinch/dwell samples, and
+  Android XR gaze+pinch, permission, dashboard, menu, and simulator samples.
+- Do not copy directly:
+  sample-only dwell decrement bugs, vendor eye-tracking DLL assumptions,
+  hidden permission prompts, gaze activation without cancel/reset UX, or
+  telemetry export without privacy boundaries.
+- Strong references:
+  `de.dfki-iml.xr-gaze-interaction-toolkit` for module breadth,
+  `unity-gaze-interaction` for minimal gaze/dwell shape, and
+  `android/xr-unity-samples` for capability/status/onboarding composition.
+- Maturity:
+  strong method with platform, license, and privacy caveats; production reuse
+  should add calibration, dwell threshold tuning, accidental activation
+  recovery, capability fallback, telemetry consent, and menu accessibility
+  tests.
+- Best fit for `VR-apps-lab`:
+  gaze/dwell interaction kits, controller-free menu prototypes, Android XR
+  status panels, gaze accuracy tools, guide-card onboarding, and AOI monitoring
+  references.

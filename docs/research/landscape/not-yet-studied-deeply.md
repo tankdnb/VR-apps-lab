@@ -3087,6 +3087,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 226. `Quest camera wrapper and world-tracking matrix across support gates, permissions, camera inventory, frame formats, metadata, QR/object detection, raycasts, marker lifecycle, and privacy`
 227. `Quest camera CV pipeline matrix across OpenCV/Sentis adapters, pose/intrinsics metadata, inference scheduling, object boxes, masks, world markers, tracked taxa, debug UI, and model provenance`
 228. `Embodied locomotion/RDW matrix across controller/tracker/body input adapters, WIP modes, movement managers, comfort presets, redirected-walking gains, room transitions, and experiment metrics`
+229. `In-VR questionnaire and remote-lab matrix across schema formats, page factories, validation, replay-aligned answers, Photon sync, upload security, affect-rating UX, and privacy`
+230. `VR wayfinding/navigation matrix across gaze-to-destination movement, target sequencing, randomized room/agent conditions, haptic boundaries, comfort aids, and reconstructable logs`
+231. `XR validation/simulation matrix across live input inventory, haptic probes, functional test scenes, performance metadata, result JSON, and editor simulation backends`
+232. `Gaze/pinch/dwell matrix across ray providers, target interfaces, reticles, dwell timers, pinch/controller confirmation, guide cards, attention monitoring, Android XR permissions, and user simulation`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

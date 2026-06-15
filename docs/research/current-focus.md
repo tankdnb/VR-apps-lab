@@ -1205,6 +1205,10 @@ directions:
 220. `Quest camera wrapper and world-tracking matrix across support gates, permissions, camera inventory, frame formats, metadata, QR/object detection, raycasts, marker lifecycle, and privacy`
 221. `Quest camera CV pipeline matrix across OpenCV/Sentis adapters, pose/intrinsics metadata, inference scheduling, object boxes, masks, world markers, tracked taxa, debug UI, and model provenance`
 222. `Embodied locomotion/RDW matrix across controller/tracker/body input adapters, WIP modes, movement managers, comfort presets, redirected-walking gains, room transitions, and experiment metrics`
+223. `In-VR questionnaire matrix across schema, page factories, required-field validation, feedback, CSV/export, remote replay, and analysis`
+224. `VR wayfinding study matrix across gaze destinations, target sequencing, agent guidance, haptic boundaries, comfort aids, room transitions, and telemetry`
+225. `XR validation harness matrix across device inventory, haptics, scene repros, functional tests, performance sample groups, metadata, and simulation`
+226. `Gaze/pinch/dwell interaction matrix across ray providers, target interfaces, reticles, confirmation triggers, menus, guide cards, monitoring, and permissions`
 
 ## Current repository-maintenance priorities
 

@@ -2150,3 +2150,31 @@ repeatable way.
 
 - `github-research-wave-303-backlog.md`
   Executed backlog for the Wave 303 pass.
+
+- `github-research-wave-304-plan.md`
+  Wave 304 research plan focused on in-VR questionnaires, study surveys,
+  affect ratings, and remote lab overlays.
+
+- `github-research-wave-304-backlog.md`
+  Executed backlog for the Wave 304 pass.
+
+- `github-research-wave-305-plan.md`
+  Wave 305 research plan focused on VR wayfinding, navigation guidance, and
+  spatial navigation study tasks.
+
+- `github-research-wave-305-backlog.md`
+  Executed backlog for the Wave 305 pass.
+
+- `github-research-wave-306-plan.md`
+  Wave 306 research plan focused on XR testing, simulation, input validation,
+  and performance harnesses.
+
+- `github-research-wave-306-backlog.md`
+  Executed backlog for the Wave 306 pass.
+
+- `github-research-wave-307-plan.md`
+  Wave 307 research plan focused on XR gaze, pinch, dwell, onboarding, and
+  Android XR interaction samples.
+
+- `github-research-wave-307-backlog.md`
+  Executed backlog for the Wave 307 pass.

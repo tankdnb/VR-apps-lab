@@ -1373,6 +1373,26 @@ Use these files when you want to understand:
   tracker allocation, locomotion managers, comfort presets, redirected-walking
   gains, room transitions, and experiment metrics.
 
+- `vr-projects-wave-304-in-vr-questionnaires-study-surveys-affect-ratings-and-remote-lab-overlays.md`
+  Next GitHub discovery wave focused on in-VR questionnaires, generated study
+  pages, validation, participant metadata, replay-aligned answers, remote sync,
+  and affect-analysis pipelines.
+
+- `vr-projects-wave-305-vr-wayfinding-navigation-guidance-and-spatial-navigation-study-tasks.md`
+  Next GitHub discovery wave focused on gaze navigation, target sequencing,
+  wayfinding conditions, agent guidance, haptic/no-HMD references, comfort
+  aids, and navigation telemetry.
+
+- `vr-projects-wave-306-xr-testing-simulation-input-validation-and-performance-harnesses.md`
+  Next GitHub discovery wave focused on XR input/debug panels, functional
+  assertions, performance metadata, repro scenes, result export, and editor
+  simulation backends.
+
+- `vr-projects-wave-307-xr-gaze-pinch-dwell-onboarding-and-android-xr-interaction-samples.md`
+  Next GitHub discovery wave focused on gaze/pinch/dwell interaction, reticles,
+  spatial menus, guide cards, eye-tracking samples, Android XR status panels,
+  permissions, and user simulation.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

@@ -9478,6 +9478,145 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - comfort profile integration;
 - redirected-walking experiment metrics and lineage cleanup.
 
+## Family 283: In-VR questionnaires, study surveys, affect ratings, and remote lab overlays
+
+This family covers VR research-study projects that collect questionnaires,
+survey answers, affect ratings, UI events, transforms, or remote-lab state
+inside an immersive session. The reusable lesson is to keep survey schema,
+generated UI, input feedback, validation, participant/session metadata, export,
+replay alignment, network sync, and privacy policy separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `MartinFk/VRQuestionnaireToolkit` | Studied in Wave 304 | JSON questionnaire metadata, prefab page factory, required validation, haptic/audio feedback, participant/condition setup, and CSV/TXT export |
+| `JakobJoSchmidt/immersive-questionnaire-unity-vr` | Studied in Wave 304 | CSV-driven service with Likert options, random inversion, editing-time output, verbal labels, and answer CSV generation |
+| `microsoft/Remote-Lab` | Studied in Wave 304 | ScriptableObject questionnaire content, replay-aligned answer logs, Photon sync, transform recording, OBS, UI events, and custom variables |
+| `Pepn/SurveyToolkit` | Studied in Wave 304 | Page/question data split, required highlighting, CSV export, persistent storage, and optional upload with security caveats |
+| `afourcade/AffectTracker_validation` | Analysis companion in Wave 304 | Continuous affect validation pipeline, preprocessing, BIDS formatting, plotting, modeling, and runtime follow-up marker |
+
+### Consolidation note
+
+This family matters because study overlays should name:
+
+- question schema and authoring format;
+- page factory and supported answer widgets;
+- required-answer validation and feedback;
+- participant/session metadata and timeline alignment;
+- local export, upload, replay, sync, and analysis boundaries;
+- consent, privacy, and upload-secret handling.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- reusable survey panels;
+- research-study overlay shells;
+- replay-aligned questionnaire logs;
+- participant metadata/privacy checklists;
+- affect and subjective-rating input surfaces.
+
+## Family 284: VR wayfinding, navigation guidance, and spatial navigation study tasks
+
+This family covers VR projects that test or support spatial navigation through
+targets, gaze destinations, city routes, room transitions, NPC/agent advice,
+haptic boundaries, or comfort aids. The reusable lesson is to separate
+movement, route state, guidance source, comfort/haptic aids, condition
+randomization, and telemetry.
+
+| Project | Status | Notes |
+|---|---|---|
+| `pepwuper/Google-Cardboard-VR-Navigation` | Studied in Wave 305 | Gaze cursor to NavMesh destination and player-following UI height preservation |
+| `npresearchlab/NavCity_Toolkit` | Studied in Wave 305 | Target sequencing, mission text, headset X/Z/rotation/time CSV logging, and participant ID caveats |
+| `zcbtmfc/Wayfinding-Task` | Studied in Wave 305 | Randomized wayfinding conditions, additive room loading, agent advice/audio, ask/distance/time logs, and decision capture |
+| `maxleblanc/sightless-vr` | Source-light product reference in Wave 305 | Haptic wearable/no-HMD architectural wayfinding and ghost-obstacle framing |
+| `angsamuel/GingerVR` | Source-light product reference in Wave 305 | Cybersickness/navigation aid taxonomy across rest frames, blur/FOV, dots, head snap, vision lock, and virtual CAVE |
+
+### Consolidation note
+
+This family matters because navigation tasks should name:
+
+- destination source and movement actuator;
+- target/waypoint state and route progression;
+- room/scene transition model;
+- guide, agent, hint, or haptic feedback source;
+- comfort intervention and opt-in state;
+- participant/session metadata and reconstructable logs.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- gaze-to-destination movement adapters;
+- wayfinding experiment scaffolds;
+- route/target telemetry schemas;
+- haptic boundary and no-HMD navigation references;
+- comfort-aware navigation UI.
+
+## Family 285: XR testing, simulation, input validation, and performance harnesses
+
+This family covers projects that inspect XR input/runtime state, create minimal
+repro scenes, assert device/display/audio behavior, collect performance
+samples, or simulate XR providers in editor. The reusable lesson is to separate
+live inspection, manual repros, automated assertions, performance metadata,
+result export, and simulation backends.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Unity-Technologies/XRInputTests` | Studied in Wave 306 | XR Tests view, scene driver, live feature TreeViews, haptic capability/impulse panels, and export/update workflows |
+| `Unity-Technologies/xr.sdk.functionaltests` | Studied in Wave 306 | Functional test base, display/input/device/audio assertions, runtime skips, and timing/refresh checks |
+| `Unity-Technologies/com.unity.xr.test-framework.performance` | Studied in Wave 306 | Sample groups, profiler markers, statistics, build/runtime metadata, TestRunner callbacks, and JSON/XML result output |
+| `needle-tools/ar-simulation` | Studied with package/license caveats in Wave 306 | ARFoundation/editor simulation backend for planes, point clouds, image tracking, touch, and provider-level simulation |
+
+### Consolidation note
+
+This family matters because XR validation utilities should name:
+
+- live device and feature inventory;
+- haptic/display/input/audio capability probes;
+- minimal repro scene packaging;
+- automated assertion scope and skip gates;
+- performance sample definitions and environment metadata;
+- simulation backend boundaries and production exclusion.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- XR doctor reports;
+- input and haptic debug panels;
+- functional test matrices;
+- performance-result schemas;
+- editor simulation and repro-scene helpers.
+
+## Family 286: XR gaze, pinch, dwell, onboarding, and Android XR interaction samples
+
+This family covers projects that use gaze, eye rays, camera-center rays, dwell,
+pinch, controller confirmation, onboarding cards, status dashboards, or user
+simulation to drive XR interactions. The reusable lesson is to keep ray
+source, interactable contract, reticle/progress, confirmation trigger, menu
+layout, onboarding, telemetry, and capability state separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `DFKI-Interactive-Machine-Learning/de.dfki-iml.xr-gaze-interaction-toolkit` | Studied in Wave 307 | Global gaze manager, gaze interactables, information displays, radial/pie menus, guide/questionnaire cards, attention monitoring, accuracy tests, and CSV export |
+| `tomazsaraiva/unity-gaze-interaction` | Studied in Wave 307 | Compact gaze raycast, enter/stay/exit/activated events, reticle scaling/alignment, dwell progress, and exit delay |
+| `microsoft/MixedReality-EyeTracking-Sample` | Studied in Wave 307 | HoloLens 2 extended eye-tracking provider with permissions, tracker watcher, SpatialGraphNode transforms, and left/right/combined gaze |
+| `holokit/holokit-unity-sdk` | Studied in Wave 307 | Gaze raycast interactable, gaze+pinch adapter, dwell button UI, hand tracking, stereo phone MR, and calibration/recording references |
+| `android/xr-unity-samples` | Studied in Wave 307 | Android XR gaze+pinch samples, gesture detector, status dashboard, permission request UI, menu tutorial, passthrough, and simulation assets |
+
+### Consolidation note
+
+This family matters because gaze and pinch utilities should name:
+
+- gaze/eye/camera ray provider and validity;
+- target interface and enter/stay/exit events;
+- reticle, progress, dwell, cancel, and reset behavior;
+- pinch/controller confirmation adapter;
+- radial, pie, guide-card, or dashboard menu surface;
+- permission, capability, simulation, telemetry, and privacy state.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- gaze/dwell interaction kits;
+- controller-free menu prototypes;
+- gaze accuracy and AOI monitoring tools;
+- Android XR permission/status panels;
+- onboarding cards for hand, gaze, and pinch input.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

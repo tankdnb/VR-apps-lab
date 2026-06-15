@@ -4060,6 +4060,57 @@ Primary docs:
 - `tmitro/ucf-ist-redirected-walking` - `Studied as source-light/fork-lineage node in Wave 303 for Vive/OpenVR redirected-walking framework packaging, RDWT artifact comparison, and vendored SteamVR/VRTK caveats`
 - `VRatPolito/CET-VR` - `Studied as product/reference node in Wave 303 for XRI dynamic move direction blending, joystick blocked state, visual arrow direction affordance, jump curve, and tunnelling comfort preset surfaces`
 
+## 275. In-VR questionnaires, study surveys, affect ratings, and remote lab overlays
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-304-in-vr-questionnaires-study-surveys-affect-ratings-and-remote-lab-overlays.md`
+- `../landscape/project-families.md`
+
+- `MartinFk/VRQuestionnaireToolkit` - `Studied in Wave 304 as a Unity/SteamVR questionnaire toolkit with JSON metadata, page prefab factory, required-question validation, haptic/audio feedback, participant/condition setup, local/server CSV/TXT export, and finish events`
+- `JakobJoSchmidt/immersive-questionnaire-unity-vr` - `Studied in Wave 304 as a CSV-driven immersive questionnaire service with intro/farewell pages, configurable Likert scales, random inversion, editing-time output, answer CSV generation, and display state tracking`
+- `microsoft/Remote-Lab` - `Studied in Wave 304 as a remote VR study toolkit with ScriptableObject questionnaire content, UI templates, validation, replay-aligned answer logs, Photon questionnaire sync, transform recording/replay, OBS, UI events, and custom variables`
+- `Pepn/SurveyToolkit` - `Studied in Wave 304 as a plug-and-play survey toolkit with page/question data split, required validation, incomplete-question highlighting, CSV export, persistent storage, and optional upload with security caveats`
+- `afourcade/AffectTracker_validation` - `Studied as analysis companion in Wave 304 for continuous valence/arousal validation, preprocessing, BIDS formatting, plotting, modeling, and follow-up runtime inspection`
+
+## 276. VR wayfinding, navigation guidance, and spatial navigation study tasks
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-305-vr-wayfinding-navigation-guidance-and-spatial-navigation-study-tasks.md`
+- `../landscape/project-families.md`
+
+- `pepwuper/Google-Cardboard-VR-Navigation` - `Studied in Wave 305 as a minimal gaze-to-NavMesh navigation reference with cursor destination selection, floor event trigger framing, and player-following UI height preservation`
+- `npresearchlab/NavCity_Toolkit` - `Studied in Wave 305 as a city navigation study toolkit with active target sequencing, mission text, headset position/rotation/time CSV logging, and participant ID caveats`
+- `zcbtmfc/Wayfinding-Task` - `Studied in Wave 305 as an HTC Vive wayfinding experiment with randomized conditions, additive room loading, agent advice/audio/animation, ask/distance/time logging, decision capture, and per-trial CSV output`
+- `maxleblanc/sightless-vr` - `Studied as source-light product reference in Wave 305 for haptic wearable/no-HMD architectural wayfinding and ghost-obstacle concepts`
+- `angsamuel/GingerVR` - `Studied as source-light product reference in Wave 305 for cybersickness and navigation aids including rest-frame noses, blur/FOV, dot effects, head snapping, vision lock, and virtual CAVE framing`
+
+## 277. XR testing, simulation, input validation, and performance harnesses
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-306-xr-testing-simulation-input-validation-and-performance-harnesses.md`
+- `../landscape/project-families.md`
+
+- `Unity-Technologies/XRInputTests` - `Studied in Wave 306 as an XR input repro/debug suite with editor test view, scene driver, device feature TreeViews, haptic capability/impulse panels, template creation, and export/update workflows`
+- `Unity-Technologies/xr.sdk.functionaltests` - `Studied in Wave 306 as a Unity XR functional test suite with reusable stage setup, frame skip, display/input/device/audio assertions, runtime/platform skip gates, and timing/refresh metrics`
+- `Unity-Technologies/com.unity.xr.test-framework.performance` - `Studied in Wave 306 as a Unity XR performance test framework with sample groups, profiler markers, statistics, metadata capture, build/runtime info, TestRunner callbacks, and JSON/XML result output`
+- `needle-tools/ar-simulation` - `Studied with package/license caveats in Wave 306 as a Unity XR simulation backend reference for ARFoundation/editor simulation, simulated planes/point clouds/images/touch, and non-invasive provider architecture`
+
+## 278. XR gaze, pinch, dwell, onboarding, and Android XR interaction samples
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-307-xr-gaze-pinch-dwell-onboarding-and-android-xr-interaction-samples.md`
+- `../landscape/project-families.md`
+
+- `DFKI-Interactive-Machine-Learning/de.dfki-iml.xr-gaze-interaction-toolkit` - `Studied in Wave 307 as a broad Unity gaze toolkit with global gaze manager, gaze interactables, information displays, radial/pie menus, guide cards, questionnaire cards, attention monitoring, accuracy tests, CSV export, and non-commercial license caveats`
+- `tomazsaraiva/unity-gaze-interaction` - `Studied in Wave 307 as a compact gaze/dwell package with raycast interactor, enter/stay/exit/activated events, reticle scaling/alignment, progress fill, exit delay, and resource-loaded prefab defaults`
+- `microsoft/MixedReality-EyeTracking-Sample` - `Studied in Wave 307 as a HoloLens 2 extended eye-tracking sample with permission flow, EyeGazeTrackerWatcher, highest-frame-rate tracker selection, SpatialGraphNode transforms, and left/right/combined gaze conversion`
+- `holokit/holokit-unity-sdk` - `Studied in Wave 307 as an optical MR SDK reference with gaze raycast interactables, gaze+pinch gesture adapter, dwell button UI, stereo phone MR framing, hand tracking, recording, calibration, and sample-only caveats`
+- `android/xr-unity-samples` - `Studied in Wave 307 as an Android XR Unity sample set with gaze+pinch plane selection, catapult interaction, gesture detector, permission/status dashboard, menu tutorial, passthrough status, and XR simulation assets`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:
