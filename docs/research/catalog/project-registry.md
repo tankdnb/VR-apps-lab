@@ -4008,6 +4008,58 @@ Primary docs:
 - `Alchemishty/ExpressVR` - `Studied in Wave 299 as a networked speech bubble and emote wheel package with bubble registry by client ID, settings-driven show/hide animation, emote sounds, ServerRpc/ClientRpc broadcasts, and XR input abstraction`
 - `ahmedbegovic/VoiceInteractionVR` - `Studied as source-light puzzle reference in Wave 299 where visible code is mostly puzzle activation/progression rather than reusable voice-recognition plumbing`
 
+## 271. XR text entry, keyboard variants, gaze, dictation, and query input surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-300-xr-text-entry-keyboard-variants-gaze-dictation-and-query-input-surfaces.md`
+- `../landscape/project-families.md`
+
+- `ViRGIS-Team/VR-Keyboard` - `Studied in Wave 300 as a compact Unity XR keyboard package with event-driven key output, upper/lower/other layers, XRUIInputModule setup, collider/direct interactor mapping, and hover-to-type caveats`
+- `magicleap/MagicLeapXRKeyboard` - `Studied with vendor/deprecation caveats in Wave 300 as a keyboard package reference with KeyboardManager, layout data, row/key builder, TMP input receiver, follow/recenter behavior, haptics, preview, and JSON-like authoring`
+- `fabio914/EyeTrackingKeyboard` - `Studied with prototype caveats in Wave 300 as a gaze/dwell keyboard with raycast selection, dwell timer, eye-height following, shift/secondary modes, highlight/audio feedback, and calibration caveats`
+- `vitrivr/vitrivr-vr` - `Studied in Wave 300 as a VR search/query app with static text router, physical keyboard generation, word/phrase insertion, dictation-adjacent controllers, and modular query-term providers`
+
+## 272. Quest passthrough camera wrappers, permissions, capture, and QR world tracking
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-301-quest-passthrough-camera-wrappers-permissions-capture-and-qr-world-tracking.md`
+- `../landscape/project-families.md`
+
+- `xrdevrob/QuestCameraKit` - `Studied as sample/common-layer reference in Wave 301 for marker pooling, marker transform/text update, idle hiding, and camera-detection label lifecycle`
+- `Uralstech/UXR.QuestCamera` - `Studied in Wave 301 as a native Quest camera wrapper package with HorizonOS/Quest support gates, camera permission constants, device discovery/cache, Camera2 callbacks, session/converter split, metadata, and explicit error taxonomy`
+- `HoloLabInc/QuestCameraTools-Unity` - `Studied in Wave 301 as a Quest camera tools package with WebCamTexture permission/support manager, cancellable QR decode loop, environment raycast placement, filters, anchor point selection, physical-size scaling, and detected/lost events`
+- `oculus-samples/Unity-SpatialLingo` - `Studied in Wave 301 as an official camera/object/speech MR sample with camera taxon tracker, GPU object classifier, face blur utilities, surface samples, reliability scoring, observe/miss counts, and add/update/remove detection events`
+
+## 273. Quest camera CV, object detection, segmentation, and world marker pipelines
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-302-quest-camera-cv-object-detection-segmentation-and-world-marker-pipelines.md`
+- `../landscape/project-families.md`
+
+- `demoPlz/Unity-MultiObjectDetection` - `Studied with fork/commented-code caveats in Wave 302 as a Quest camera object-detection sample with permission-aware menu, inference idle gate, layer-per-frame Sentis scheduling, environment raycast marker placement, class/distance de-dupe, and recenter cleanup`
+- `EnoxSoftware/QuestWithOpenCVForUnityExample` - `Studied with package/license caveats in Wave 302 as a Quest passthrough-to-OpenCV bridge with AsyncGPUReadback/Texture2D conversion, camera pose/intrinsics metadata, ArUco detection, YOLOX/Sentis toggles, ByteTrack, and debug/FPS controls`
+- `rikturnbull/xr-image-segmentation` - `Studied in Wave 302 as a Quest passthrough segmentation prototype with model-load idle gate, layer-scheduled executor state machine, async output requests, mask RawImage/texture reuse, box clipping, and confidence-colored masks`
+
+Overlap note: Wave 302 also cross-references `oculus-samples/Unity-SpatialLingo`
+for object-classifier scheduling, taxon reliability, world sampling, and
+face/object privacy boundaries; its canonical registry entry remains in section
+272.
+
+## 274. Embodied locomotion, walking-in-place, redirected walking, and RDW experiment packaging
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-303-embodied-locomotion-walking-in-place-redirected-walking-and-rdw-experiment-packaging.md`
+- `../landscape/project-families.md`
+
+- `singaporetech/immersification-wip-locomotion` - `Studied in Wave 303 as a strong walking-in-place locomotion donor with input manager, movement manager, stale-input reset, Vive tracker allocator, arm-swing/head-bob/leg-lift modules, acceleration/deceleration, smoothing, and mode requirements`
+- `DarkerQueenSara/ProjetoVR-V2` - `Studied with research/student caveats in Wave 303 as an RDW/impossible-space prototype with translation gain, rotation gain, room/portal factory, teleport room handoff, and detailed real/virtual/gain experiment CSV metrics`
+- `tmitro/ucf-ist-redirected-walking` - `Studied as source-light/fork-lineage node in Wave 303 for Vive/OpenVR redirected-walking framework packaging, RDWT artifact comparison, and vendored SteamVR/VRTK caveats`
+- `VRatPolito/CET-VR` - `Studied as product/reference node in Wave 303 for XRI dynamic move direction blending, joystick blocked state, visual arrow direction affordance, jump curve, and tunnelling comfort preset surfaces`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

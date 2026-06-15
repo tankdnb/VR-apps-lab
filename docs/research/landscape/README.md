@@ -1353,6 +1353,26 @@ Use these files when you want to understand:
   pipelines, Opus voice chat, VRChat OSC voice sidecars, command registries,
   speech bubbles, and feedback recording.
 
+- `vr-projects-wave-300-xr-text-entry-keyboard-variants-gaze-dictation-and-query-input-surfaces.md`
+  Next GitHub discovery wave focused on spatial keyboards, layout data,
+  direct/raycast/gaze input, dwell confirmation, dictation-adjacent routing,
+  query tokens, haptics, and privacy.
+
+- `vr-projects-wave-301-quest-passthrough-camera-wrappers-permissions-capture-and-qr-world-tracking.md`
+  Next GitHub discovery wave focused on Quest camera support gates, camera
+  permissions, capture sessions, frame conversion, metadata, QR/world tracking,
+  marker lifecycle, and camera privacy.
+
+- `vr-projects-wave-302-quest-camera-cv-object-detection-segmentation-and-world-marker-pipelines.md`
+  Next GitHub discovery wave focused on Quest camera CV, OpenCV/Sentis
+  adapters, object boxes, segmentation masks, world marker placement, tracked
+  taxa, debug surfaces, and model provenance.
+
+- `vr-projects-wave-303-embodied-locomotion-walking-in-place-redirected-walking-and-rdw-experiment-packaging.md`
+  Next GitHub discovery wave focused on walking-in-place input adapters,
+  tracker allocation, locomotion managers, comfort presets, redirected-walking
+  gains, room transitions, and experiment metrics.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

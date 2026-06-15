@@ -9351,6 +9351,133 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - voice chat transport references;
 - speech bubble accessibility and moderation patterns.
 
+## Family 279: XR text entry, keyboard variants, gaze, dictation, and query input surfaces
+
+This family covers projects that let users enter text, commands, search terms,
+or query tokens inside XR. The reusable lesson is to keep keyboard layout,
+interaction source, target receiver, accessibility mode, feedback, and privacy
+separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ViRGIS-Team/VR-Keyboard` | Studied in Wave 300 | Compact Unity XR keyboard with key events, layer state, XRUIInputModule setup, and collider/direct interactor mapping |
+| `magicleap/MagicLeapXRKeyboard` | Studied with vendor caveats in Wave 300 | Keyboard manager, layout data, row/key builder, TMP input receiver, follow/recenter behavior, haptics, and preview |
+| `fabio914/EyeTrackingKeyboard` | Prototype studied in Wave 300 | Gaze/dwell raycast keyboard with eye-height following, shift/secondary modes, highlight, and audio feedback |
+| `vitrivr/vitrivr-vr` | Studied in Wave 300 | Search/query app with static text router, physical keyboard generator, phrase insertion, dictation controllers, and query-term providers |
+
+### Consolidation note
+
+This family matters because XR text-entry utilities should name:
+
+- layout data and key semantics;
+- controller, direct hand, gaze, physical keyboard, and dictation input modes;
+- target text receiver or query model;
+- debounce, dwell, haptics, preview, and audio feedback;
+- privacy/password behavior and accidental input protection.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- reusable XR keyboard kits;
+- gaze/dwell accessibility text entry;
+- command-palette and search/query surfaces;
+- text-input diagnostics for focus, input modules, and target receivers.
+
+## Family 280: Quest camera wrappers, permissions, QR/world tracking, and camera observation state
+
+This family covers Quest camera projects that expose camera access, frame
+metadata, QR/object detections, world placement, and camera-derived state. The
+reusable lesson is to separate permission/support gates, capture, conversion,
+detection, placement, tracker state, and privacy.
+
+| Project | Status | Notes |
+|---|---|---|
+| `xrdevrob/QuestCameraKit` | Sample/common-layer reference in Wave 301 | Marker pool and marker controller for update/text/scale/idle-hide camera labels |
+| `Uralstech/UXR.QuestCamera` | Studied in Wave 301 | HorizonOS permissions, camera discovery, Camera2 callbacks, continuous/on-demand pipelines, YUV conversion, metadata, and error taxonomy |
+| `HoloLabInc/QuestCameraTools-Unity` | Studied in Wave 301 | WebCamTexture manager, QR detector/tracker, cancellation, environment raycast placement, filters, anchor selection, and tracking events |
+| `oculus-samples/Unity-SpatialLingo` | Studied in Wave 301 | Camera taxon tracker, object classifier, face blur, reliability scoring, observe/miss counts, and add/update/remove events |
+
+### Consolidation note
+
+This family matters because camera utilities should name:
+
+- platform support and permission state;
+- camera inventory, selected eye/source, and frame format;
+- pose, intrinsics, timestamp, and conversion metadata;
+- detection adapter and world raycast/placement;
+- marker/tracker lifecycle and lost-state policy;
+- privacy, face/object recognition, and debug UI.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Quest camera diagnostic panels;
+- QR/world-marker utilities;
+- camera permission and support doctors;
+- privacy-aware camera observation state.
+
+## Family 281: Quest camera CV, object detection, segmentation, and world marker pipelines
+
+This family covers camera-to-CV projects that run object detection,
+segmentation, ArUco/QR, or semantic tracking over Quest passthrough frames. The
+reusable lesson is to keep camera adapters, model execution, output parsing,
+world projection, marker/tracker state, and privacy/debug surfaces separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `demoPlz/Unity-MultiObjectDetection` | Studied with caveats in Wave 302 | Permission-aware object detection menu, inference idle gate, layer-per-frame scheduling, marker placement/de-dupe, and recenter cleanup |
+| `EnoxSoftware/QuestWithOpenCVForUnityExample` | Studied with package/license caveats in Wave 302 | Passthrough-to-OpenCV Mat helper, camera pose/intrinsics, ArUco, YOLOX/Sentis, ByteTrack, and debug/FPS controls |
+| `rikturnbull/xr-image-segmentation` | Studied in Wave 302 | Quest segmentation prototype with inference executor state machine, async output requests, mask renderer, and confidence thresholds |
+| `oculus-samples/Unity-SpatialLingo` | Cross-wave reference in Wave 302 | Official object classifier and reliability-aware taxon tracker overlap with Wave 301 |
+
+### Consolidation note
+
+This family matters because camera-CV utilities should name:
+
+- frame adapter and ownership;
+- pose/intrinsics metadata;
+- model scheduler and backpressure;
+- detector/segmenter output schema;
+- world projection, marker de-dupe, and tracked entity lifecycle;
+- confidence, debug status, privacy, and model provenance.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- camera-CV debug surfaces;
+- object-label and marker-placement utilities;
+- segmentation-assisted accessibility overlays;
+- calibration-aware OpenCV helper packages.
+
+## Family 282: Embodied locomotion, walking-in-place, redirected walking, and comfort/experiment packaging
+
+This family covers projects that turn controllers, trackers, body movement,
+redirected-walking gains, or room transitions into locomotion. The reusable
+lesson is to keep input-source adapters, movement application, comfort
+mitigation, RDW world transforms, and metrics separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `singaporetech/immersification-wip-locomotion` | Studied in Wave 303 | Strong WIP donor with input manager, movement manager, tracker allocator, arm/head/leg movement modules, stale reset, and smoothing |
+| `DarkerQueenSara/ProjetoVR-V2` | Studied with research caveats in Wave 303 | RDW gains, room/portal generation, teleport handoff, and real/virtual/gain CSV metrics |
+| `tmitro/ucf-ist-redirected-walking` | Source-light/fork-lineage in Wave 303 | Vive/OpenVR redirected-walking framework marker with vendored SteamVR/VRTK and RDWT artifact caveats |
+| `VRatPolito/CET-VR` | Product/reference node in Wave 303 | XRI dynamic movement direction, joystick blocked state, arrow affordance, jump curve, and tunnelling comfort preset surfaces |
+
+### Consolidation note
+
+This family matters because locomotion utilities should name:
+
+- raw input source and tracker allocation;
+- normalized movement magnitude/direction;
+- movement manager and stale-input reset;
+- calibration/tuning UI and fallback mode;
+- comfort vignette/tunnelling/preset controls;
+- RDW gain/world transform, room transitions, and experiment metrics.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- embodied locomotion mode kits;
+- walking-in-place calibration/debug panels;
+- comfort profile integration;
+- redirected-walking experiment metrics and lineage cleanup.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

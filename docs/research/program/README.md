@@ -2122,3 +2122,31 @@ repeatable way.
 
 - `github-research-wave-299-backlog.md`
   Executed backlog for the Wave 299 pass.
+
+- `github-research-wave-300-plan.md`
+  Wave 300 research plan focused on XR text entry, keyboard variants, gaze,
+  dictation, and query input surfaces.
+
+- `github-research-wave-300-backlog.md`
+  Executed backlog for the Wave 300 pass.
+
+- `github-research-wave-301-plan.md`
+  Wave 301 research plan focused on Quest passthrough camera wrappers,
+  permissions, capture sessions, and QR/world tracking.
+
+- `github-research-wave-301-backlog.md`
+  Executed backlog for the Wave 301 pass.
+
+- `github-research-wave-302-plan.md`
+  Wave 302 research plan focused on Quest camera CV, object detection,
+  segmentation, and world marker pipelines.
+
+- `github-research-wave-302-backlog.md`
+  Executed backlog for the Wave 302 pass.
+
+- `github-research-wave-303-plan.md`
+  Wave 303 research plan focused on embodied locomotion, walking-in-place,
+  redirected walking, comfort controls, and RDW experiment packaging.
+
+- `github-research-wave-303-backlog.md`
+  Executed backlog for the Wave 303 pass.

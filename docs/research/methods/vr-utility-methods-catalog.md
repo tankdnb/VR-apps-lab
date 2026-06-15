@@ -16284,3 +16284,190 @@ When a new utility idea appears:
   speech command panels, VRChat voice sidecars, assistant overlays, voice chat
   transport references, networked speech bubbles, and privacy-first voice UX
   checklists.
+
+## Method 745: XR text-entry boundary across keyboard layout, input source, target receiver, gaze/dwell mode, and query routing
+
+- What it is:
+  text-entry utilities should separate keyboard layout, key semantics, input
+  source, target text receiver, gaze/dwell mode, phrase/dictation routing,
+  query-token composition, feedback, and privacy behavior.
+- Good for:
+  spatial keyboards, settings panels, command palettes, search tools,
+  accessibility text entry, VR library browsers, query builders, and
+  controller-free fallback surfaces.
+- Why it matters:
+  text entry is a recurring utility need in XR, but it becomes brittle when
+  keys directly mutate one scene-local input field. A reusable boundary makes
+  keyboard packages portable across ray, direct, gaze, dictation, and query
+  surfaces.
+- Source evidence:
+  `ViRGIS-Team/VR-Keyboard`, `magicleap/MagicLeapXRKeyboard`,
+  `fabio914/EyeTrackingKeyboard`, and `vitrivr/vitrivr-vr`.
+- Reusable core:
+  keyboard manager, row/key layout data, active key layer, key event stream,
+  text receiver adapter, input-module guard, direct/raycast/gaze interactor,
+  dwell confirmation, word/phrase insertion, query-term provider, haptics/audio
+  feedback, follow/recenter behavior, and privacy mode.
+- Source evidence details:
+  Wave 300 includes `VR-Keyboard` key events and direct interactor,
+  `MagicLeapXRKeyboard` manager/layout/TMP receiver split, `EyeTrackingKeyboard`
+  gaze ray/dwell typing, and `vitrivr-vr` text manager plus physical keyboard
+  and query-term providers.
+- Do not copy directly:
+  hover-to-type without debounce, fixed dwell thresholds without calibration,
+  vendor-specific keyboard code without support/license review, hidden mobile
+  keyboard suppression without fallback, or direct text-field mutation from
+  every key.
+- Strong references:
+  `MagicLeapXRKeyboard` for package shape, `VR-Keyboard` for compact event
+  semantics, and `vitrivr-vr` for text/query routing.
+- Maturity:
+  strong method with accessibility and package caveats; production reuse should
+  add localization, focus diagnostics, accidental-input protection, password
+  mode, controller/hand/gaze parity, and target receiver tests.
+- Best fit for `VR-apps-lab`:
+  reusable keyboard kits, gaze/dwell accessibility panels, command palettes,
+  search/query input surfaces, and text-entry diagnostics.
+
+## Method 746: Quest camera wrapper and world-tracking boundary across permission, capture, conversion, detection, placement, and privacy
+
+- What it is:
+  Quest camera utilities should separate platform support checks, permissions,
+  camera inventory, capture sessions, frame conversion, frame metadata,
+  detection adapters, world placement, marker/tracker state, debug UI, and
+  privacy policy.
+- Good for:
+  QR tracking, camera diagnostics, object labels, calibration markers, MR
+  setup helpers, camera-aware overlays, and world-anchored observation tools.
+- Why it matters:
+  camera access on Quest has platform, permission, frame-format, metadata, and
+  privacy constraints. Reuse needs explicit layers so detections do not become
+  hidden side effects of a camera sample script.
+- Source evidence:
+  `xrdevrob/QuestCameraKit`, `Uralstech/UXR.QuestCamera`,
+  `HoloLabInc/QuestCameraTools-Unity`, and
+  `oculus-samples/Unity-SpatialLingo`.
+- Reusable core:
+  support gate, headset/camera permission constants, camera inventory and
+  selected eye/source, WebCamTexture or native Camera2 session, YUV conversion,
+  frame timestamp, pose/intrinsics metadata, marker pool, QR/object detector,
+  environment raycast, tracked entity reliability, detected/lost events, debug
+  surface, and privacy gate.
+- Source evidence details:
+  Wave 301 includes `UXR.QuestCamera` permission/device/session/converter
+  layers, `QuestCameraTools-Unity` QR decode/raycast/filter/tracker flow,
+  `QuestCameraKit` marker pooling, and `Unity-SpatialLingo` camera taxon
+  reliability and face/object privacy utilities.
+- Do not copy directly:
+  camera reads without visible consent, hardcoded camera resolution/eye
+  assumptions, detections without lost state, raycast placement without
+  confidence, face/object recognition without privacy defaults, or package APIs
+  hidden inside product logic.
+- Strong references:
+  `UXR.QuestCamera` for capture wrapper boundaries,
+  `QuestCameraTools-Unity` for QR/world tracking, and `Unity-SpatialLingo` for
+  tracked semantic camera observations.
+- Maturity:
+  strong method with platform and privacy caveats; production reuse should add
+  permission denial UI, support diagnostics, frame ownership rules, model/source
+  disclosure, and deletion/retention policy for camera-derived data.
+- Best fit for `VR-apps-lab`:
+  Quest camera doctors, QR/world-marker utilities, camera permission panels,
+  and camera observation state helpers.
+
+## Method 747: Quest camera CV pipeline boundary across frame adapter, inference scheduler, output parser, world projection, marker state, and privacy
+
+- What it is:
+  camera-CV utilities should isolate frame adapters, pose/intrinsics metadata,
+  model scheduling, detector/segmenter output parsing, world projection,
+  marker/tracker lifecycle, display surfaces, debug status, and privacy policy.
+- Good for:
+  object detection overlays, segmentation-assisted accessibility, ArUco/QR
+  calibration, world labels, camera-CV diagnostics, and MR assistant
+  perception modules.
+- Why it matters:
+  object detection and segmentation demos are easy to overfit to one model or
+  scene. A reusable method keeps camera frames, inference, and world effects
+  inspectable and replaceable.
+- Source evidence:
+  `demoPlz/Unity-MultiObjectDetection`,
+  `EnoxSoftware/QuestWithOpenCVForUnityExample`,
+  `rikturnbull/xr-image-segmentation`, and
+  `oculus-samples/Unity-SpatialLingo`.
+- Reusable core:
+  camera frame adapter, frame pose/intrinsics/timestamp metadata, inference
+  idle gate, layer-per-frame scheduler, asynchronous output requests,
+  confidence/NMS, detector or segmenter adapter, OpenCV Mat conversion,
+  environment raycast, marker de-dupe, tracked taxon/reliability state, mask
+  renderer, debug FPS/status, and privacy gate.
+- Source evidence details:
+  Wave 302 includes permission-aware object detection and marker placement in
+  `Unity-MultiObjectDetection`, calibration-aware OpenCV Mat conversion and
+  ArUco/YOLOX/ByteTrack paths in `QuestWithOpenCVForUnityExample`,
+  state-machine segmentation readbacks and mask rendering in
+  `xr-image-segmentation`, and reliability-aware semantic tracking in
+  `Unity-SpatialLingo`.
+- Do not copy directly:
+  inference loops without idle/backpressure gates, raw boxes without confidence
+  or de-dupe, OpenCV/package-locked code without license review, frames without
+  pose/intrinsics metadata, random mask displays without accessibility policy,
+  or recognition without consent and model provenance.
+- Strong references:
+  `QuestWithOpenCVForUnityExample` for camera-to-CV adapter depth,
+  `xr-image-segmentation` for executor/display separation, and
+  `Unity-SpatialLingo` for tracked semantic world state.
+- Maturity:
+  promising method with platform, model, and license caveats; production reuse
+  should include performance telemetry, privacy copy, model source disclosure,
+  confidence tuning, and graceful fallback when scene/camera permissions fail.
+- Best fit for `VR-apps-lab`:
+  camera-CV debug panels, marker-placement helpers, segmentation overlays,
+  calibration-aware CV adapters, and model/runtime comparison matrices.
+
+## Method 748: Embodied locomotion and redirected-walking boundary across input adapters, movement manager, comfort controls, gains, and metrics
+
+- What it is:
+  locomotion utilities should separate raw controller/tracker/body inputs,
+  normalized movement magnitude/direction, movement application, calibration,
+  comfort mitigation, redirected-walking gains, room/portal transitions, and
+  experiment telemetry.
+- Good for:
+  walking-in-place modes, embodied movement helpers, comfort-aware training
+  apps, redirected-walking experiments, locomotion settings panels, and
+  tracker-aware accessibility controls.
+- Why it matters:
+  locomotion affects comfort and safety. Reuse should expose the input source,
+  tuning values, blocked/safety state, comfort mode, and measurement evidence
+  instead of hiding them inside scene scripts.
+- Source evidence:
+  `singaporetech/immersification-wip-locomotion`,
+  `DarkerQueenSara/ProjetoVR-V2`, `tmitro/ucf-ist-redirected-walking`, and
+  `VRatPolito/CET-VR`.
+- Reusable core:
+  input source adapter, normalized magnitude/direction event, tracker
+  allocator, stale-input reset, movement manager, direction reference selector,
+  blocked/safety state, comfort preset, translation/rotation gain module,
+  room/portal graph, teleport handoff, real/virtual pose log, gain metric log,
+  and calibration/tuning UI.
+- Source evidence details:
+  Wave 303 includes WIP input adapters and Vive tracker allocation from
+  `immersification-wip-locomotion`, translation/rotation gains and room/portal
+  metrics from `ProjetoVR-V2`, RDWT lineage caveats from
+  `ucf-ist-redirected-walking`, and movement-direction/blocked/comfort preset
+  references from `CET-VR`.
+- Do not copy directly:
+  tracker render-model assumptions without fallback, fixed thresholds without
+  calibration, RDW gains without safety and metrics, vendored package trees as
+  donor evidence, or comfort modes without user-visible controls.
+- Strong references:
+  `immersification-wip-locomotion` for input adapter boundaries,
+  `ProjetoVR-V2` for RDW metrics, and `CET-VR` for product-facing locomotion
+  and comfort controls.
+- Maturity:
+  useful method with comfort, hardware, and research caveats; production reuse
+  should add calibration UI, comfort profile integration, seated/fallback modes,
+  safety limits, telemetry disclosure, and participant/user consent handling.
+- Best fit for `VR-apps-lab`:
+  embodied locomotion mode kits, walking-in-place calibration panels, comfort
+  setting surfaces, RDW experiment metric schemas, and locomotion lineage
+  cleanup.

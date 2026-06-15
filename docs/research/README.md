@@ -295,6 +295,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-297-xr-captions-subtitles-accessibility-text-and-live-caption-surfaces.md`
 - `landscape/vr-projects-wave-298-openxr-unity-hand-gesture-recognition-sign-learning-and-hand-data-bridges.md`
 - `landscape/vr-projects-wave-299-voice-driven-vr-communication-control-agents-and-speech-surfaces.md`
+- `landscape/vr-projects-wave-300-xr-text-entry-keyboard-variants-gaze-dictation-and-query-input-surfaces.md`
+- `landscape/vr-projects-wave-301-quest-passthrough-camera-wrappers-permissions-capture-and-qr-world-tracking.md`
+- `landscape/vr-projects-wave-302-quest-camera-cv-object-detection-segmentation-and-world-marker-pipelines.md`
+- `landscape/vr-projects-wave-303-embodied-locomotion-walking-in-place-redirected-walking-and-rdw-experiment-packaging.md`
 
 ## Archive Navigation
 

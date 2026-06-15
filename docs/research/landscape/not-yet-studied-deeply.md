@@ -3083,6 +3083,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 222. `XR caption/subtitle accessibility matrix across timed text, live STT, safe-area layout, object/headset/screen placement, directional arrows, video-time sync, and style/privacy settings`
 223. `Unity/OpenXR hand gesture matrix across XRHand joints, wrist-local features, MLP classifiers, DTW sequences, XRHandShape recorders, mirror-camera inference, controller adapters, and hand-data streams`
 224. `Voice-driven XR utility matrix across mic consent, STT, command registries, TTS/agent services, Opus voice chat, OSC/chatbox/avatar output, speech bubbles, cancellation, and privacy`
+225. `XR text-entry matrix across keyboard layout data, target receivers, direct/raycast/gaze input, dwell confirmation, dictation, query tokens, haptics, and privacy`
+226. `Quest camera wrapper and world-tracking matrix across support gates, permissions, camera inventory, frame formats, metadata, QR/object detection, raycasts, marker lifecycle, and privacy`
+227. `Quest camera CV pipeline matrix across OpenCV/Sentis adapters, pose/intrinsics metadata, inference scheduling, object boxes, masks, world markers, tracked taxa, debug UI, and model provenance`
+228. `Embodied locomotion/RDW matrix across controller/tracker/body input adapters, WIP modes, movement managers, comfort presets, redirected-walking gains, room transitions, and experiment metrics`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.
