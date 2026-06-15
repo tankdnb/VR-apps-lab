@@ -16666,3 +16666,187 @@ When a new utility idea appears:
   gaze/dwell interaction kits, controller-free menu prototypes, Android XR
   status panels, gaze accuracy tools, guide-card onboarding, and AOI monitoring
   references.
+
+## Method 753: VR annotation and point-cloud labeling boundary across spatial target, label schema, geometry handle, persistence, navigation, and provenance
+
+- What it is:
+  annotation and labeling utilities should separate dataset import, spatial
+  target identity, geometry query/manipulation, label schema, taxonomy UI,
+  persistence, revisit navigation, and provenance.
+- Good for:
+  point-cloud labeling, architectural walkthrough notes, spatial QA, issue
+  review tours, dataset curation, training annotations, and in-headset
+  inspection tools.
+- Why it matters:
+  VR annotation tools become hard to reuse when raw dataset loading, geometry
+  operations, note text, target identity, save format, and review navigation
+  are all bundled together. A boundary lets the same UX work against point
+  clouds, scene objects, linked-data targets, or remote annotation stores.
+- Source evidence:
+  `ahstevens/VR-Point-Cloud-Editor`, `florianwirth/PointAtMe`, and
+  `framefield/vr-annotate`.
+- Reusable core:
+  data source adapter, target selector, geometry query service, label/annotation
+  schema, controller handle, taxonomy dialog, track/provenance metadata,
+  local/remote persistence adapter, and viewport recall/navigation command.
+- Source evidence details:
+  Wave 308 includes native point-cloud plugin boundaries and closest-point/
+  outlier operations from `VR-Point-Cloud-Editor`, point-cloud/image sequence
+  labeling and bounding-box metadata from `PointAtMe`, and linked-data
+  annotation records with local/REST persistence and viewport recall from
+  `vr-annotate`.
+- Do not copy directly:
+  hardcoded workstation paths, unauthenticated localhost REST assumptions,
+  native plugin lock-in, legacy OVR/SteamVR dependencies, asset-heavy scenes,
+  or annotation records without schema/version/provenance fields.
+- Strong references:
+  `VR-Point-Cloud-Editor` for geometry-service boundary,
+  `PointAtMe` for in-VR labeling workflow, and `vr-annotate` for linked-data
+  annotation shape.
+- Maturity:
+  promising method with dataset, dependency, storage, and auth caveats;
+  production reuse should add schema versioning, permission/auth policy,
+  conflict handling, export tests, and storage location controls.
+- Best fit for `VR-apps-lab`:
+  spatial note tools, point-cloud inspection shells, annotation schema
+  templates, geometry-service adapters, and QA/review tour prototypes.
+
+## Method 754: VR motion capture and pose recording boundary across live trackers, avatar retargeting, sampling, compression, playback, export, and calibration
+
+- What it is:
+  mocap utilities should separate live tracker APIs, tracker inventory,
+  confidence/calibration state, avatar retargeting, pose/controller sampling,
+  recording schema, compression, playback provider, and export format.
+- Good for:
+  avatar motion capture, QA replay, body-tracker diagnostics, tracker setup
+  panels, motion export tools, training capture, and bridge/interchange
+  experiments.
+- Why it matters:
+  motion capture can look simple when it is just transforms, but useful reuse
+  depends on knowing which device produced which sample, how it was retargeted,
+  whether it was valid, how it can be replayed, and what format owns the
+  exported motion.
+- Source evidence:
+  `alexismorin/OpenMocap`, `andrewjc/VRRecorder`,
+  `emilianavt/BVHTools`, `gree/MuscleCompressor`, and
+  `Pico-Developer/PICOMotionTrackerSample-Unity`.
+- Reusable core:
+  tracker inventory, pose sampler, controller-state sampler, confidence and
+  calibration state, avatar retargeting layer, keyframe stream, schema/version,
+  playback device provider, compression adapter, export writer, and
+  recording/session UI.
+- Source evidence details:
+  Wave 309 includes roomscale humanoid IK and Unity Recorder coupling from
+  `OpenMocap`, SteamVR pose/state text logs and playback injection from
+  `VRRecorder`, BVH hierarchy/parser/export boundaries from `BVHTools`,
+  muscle-space compression workflow from `MuscleCompressor`, and PICO tracker
+  inventory/confidence/calibration/body-joint samples from
+  `PICOMotionTrackerSample-Unity`.
+- Do not copy directly:
+  old SteamVR/XR APIs, unversioned text logs, hidden recording gates,
+  dependency-heavy vendor trees, compression claims without isolated schema,
+  or calibration UI that does not expose tracker validity.
+- Strong references:
+  `BVHTools` for interchange separation, `PICOMotionTrackerSample-Unity` for
+  tracker state surfaces, and `VRRecorder` for compact record/playback shape.
+- Maturity:
+  strong method with hardware, vendor, schema, and privacy caveats; production
+  reuse should add sample clocks, schema versioning, privacy policy, replay
+  validation, missing-sample handling, and calibration status reporting.
+- Best fit for `VR-apps-lab`:
+  tracker diagnostics dashboards, pose record/replay harnesses, BVH/VMC/OSC
+  comparison matrices, body tracker calibration panels, and motion export
+  helpers.
+
+## Method 755: Game-specific VR retrofit boundary across runtime bootstrap, render bridge, input remapping, world-space UI, comfort modes, and compatibility gates
+
+- What it is:
+  VR retrofit work should separate runtime/session bootstrap, graphics bridge,
+  action/input remapping, legacy input output, patch modules, world-space UI,
+  keyboard/input prompts, comfort modes, compatibility gates, and setup/support
+  documentation.
+- Good for:
+  game retrofit studies, world-space UI conversion, mod architecture, virtual
+  keyboard/input prompt adapters, runtime bootstraps, comfort UX, and support
+  checklists for advanced VR utilities.
+- Why it matters:
+  retrofits are risky because they touch graphics, input, UI, runtime loading,
+  and game internals at once. Reuse needs a clear line between general VR
+  conversion techniques and game-specific patches that should not be copied.
+- Source evidence:
+  `ethanporcaro/BF2VR-Alpha`, `DrBibop/RoR2VRMod`,
+  `Raicuparta/nomai-vr`, `Raicuparta/two-forks-vr`, and
+  `LukeRoss00/gta5-real-mod`.
+- Reusable core:
+  runtime bootstrap, graphics/session bridge, action map, virtual gamepad or
+  legacy input adapter, patch module graph, body/tool adapter, UI surface
+  classifier, virtual keyboard, recenter/comfort mode layer, compatibility
+  report, and setup/rollback guide.
+- Source evidence details:
+  Wave 310 includes native OpenXR/D3D11 plus ViGEm boundaries from
+  `BF2VR-Alpha`, Unity OpenXR loader bootstrap and body-specific motion
+  controls from `RoR2VRMod`, ordered SteamVR module/action/keyboard patterns
+  from `nomai-vr`, canvas-to-world-space UI conversion from `two-forks-vr`,
+  and comfort/setup product discipline from `gta5-real-mod`.
+- Do not copy directly:
+  process injection, game-specific hooks, unbounded Harmony patches,
+  unsupported binary distribution patterns, GPL-constrained code without
+  review, or comfort modes that users cannot understand and control.
+- Strong references:
+  `nomai-vr` for module graph/input maps, `two-forks-vr` for UI conversion,
+  and `RoR2VRMod` for Unity OpenXR bootstrap shape.
+- Maturity:
+  strategic method with legal, support, safety, and compatibility caveats;
+  production reuse should include explicit risk notes, safe mode, backup/
+  restore, compatibility checks, support copy, and user comfort controls.
+- Best fit for `VR-apps-lab`:
+  world-space UI migration references, virtual keyboard adapters, runtime
+  bootstrap checklists, comfort/setup templates, and retrofit risk matrices.
+
+## Method 756: Rust/Bevy/Godot OpenXR app-shell boundary across instance/session lifecycle, graphics binding, swapchains, frame loop, actions, and platform adapters
+
+- What it is:
+  OpenXR app shells should make instance/session lifecycle, graphics binding,
+  reference spaces, swapchain images, frame timing, texture handoff, input
+  action resources, engine runner/plugin boundaries, and platform adapters
+  explicit.
+- Good for:
+  Rust XR prototypes, Bevy plugin experiments, Godot/Rust extensions, engine
+  bring-up, minimal OpenXR samples, performance harnesses, and app-shell
+  templates.
+- Why it matters:
+  many XR samples hide the hardest part: who owns the graphics device, when
+  frames start/end, how swapchain images reach the engine renderer, and how
+  input actions enter normal app code. Naming those seams makes future
+  prototypes safer to port.
+- Source evidence:
+  `blaind/bevy_openxr`, `MalekiRe/bevy_openxr_android`,
+  `occuros/bevy_openxr_performance_test`,
+  `richardanaya/godot_openxr__rust`, and `TheHellBox/SlashMania`.
+- Reusable core:
+  instance/session creator, graphics binding, view configuration, reference
+  spaces, swapchain images, event polling, frame wait/begin/end, texture-view
+  handoff, action/controller resources, plugin/runner boundary, and
+  platform-specific adapter/packaging.
+- Source evidence details:
+  Wave 311 includes WGPU/OpenXR handoff and custom Bevy runner from
+  `bevy_openxr`, Quest/Android typed controller resources from
+  `bevy_openxr_android`, manual Bevy render replacement and left/right
+  texture views from `bevy_openxr_performance_test`, Godot Rust controller-node
+  logic from `godot_openxr__rust`, and hand-rolled OpenGL OpenXR frame streams
+  from `SlashMania`.
+- Do not copy directly:
+  unsafe global handoff without lifecycle guards, panic-heavy session handling,
+  engine-version-specific APIs without compatibility checks, unbounded render
+  loop assumptions, or Android packaging treated as an afterthought.
+- Strong references:
+  `occuros/bevy_openxr_performance_test` for frame-loop/render boundary,
+  `blaind/bevy_openxr` for resource/runner split, and `SlashMania` for minimal
+  native OpenXR module shape.
+- Maturity:
+  useful method with engine, platform, and sample-maturity caveats; production
+  reuse should add lifecycle guards, session-loss handling, action profile
+  fallback, graphics backend tests, and explicit Android packaging docs.
+- Best fit for `VR-apps-lab`:
+  Rust OpenXR shell templates, Bevy XR matrices, Godot/Rust bridge notes,
+  swapchain/frame-loop diagrams, and engine app-shell risk checklists.

@@ -3091,6 +3091,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 230. `VR wayfinding/navigation matrix across gaze-to-destination movement, target sequencing, randomized room/agent conditions, haptic boundaries, comfort aids, and reconstructable logs`
 231. `XR validation/simulation matrix across live input inventory, haptic probes, functional test scenes, performance metadata, result JSON, and editor simulation backends`
 232. `Gaze/pinch/dwell matrix across ray providers, target interfaces, reticles, dwell timers, pinch/controller confirmation, guide cards, attention monitoring, Android XR permissions, and user simulation`
+233. `VR annotation and point-cloud labeling matrix across linked-data notes, point-cloud geometry services, bounding-box labels, class/quality taxonomy, local/REST persistence, and viewport recall`
+234. `VR mocap/pose/BVH/muscle/PICO tracker matrix across live trackers, retargeting, recording clocks, replay injection, BVH channels, muscle streams, confidence, calibration, and battery UI`
+235. `Game-specific VR retrofit matrix across OpenXR/SteamVR bootstrap, D3D/Unity render bridges, virtual gamepads, action manifests, world-space UI conversion, virtual keyboards, HUD comfort, and setup warnings`
+236. `Rust/Bevy/Godot OpenXR app-shell matrix across WGPU/OpenXR handoff, Bevy render replacement, manual texture views, Godot Rust extensions, OpenGL frame streams, actions, and Android packaging`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

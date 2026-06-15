@@ -1393,6 +1393,26 @@ Use these files when you want to understand:
   spatial menus, guide cards, eye-tracking samples, Android XR status panels,
   permissions, and user simulation.
 
+- `vr-projects-wave-308-vr-3d-annotation-point-cloud-labeling-and-linked-data-note-surfaces.md`
+  Next GitHub discovery wave focused on VR/3D annotation, point-cloud labeling,
+  geometry services, linked-data notes, persistence, provenance, and revisit
+  navigation.
+
+- `vr-projects-wave-309-vr-motion-capture-pose-recording-bvh-muscle-compression-and-body-tracker-samples.md`
+  Next GitHub discovery wave focused on VR motion capture, pose recording, BVH
+  export, muscle compression, body trackers, confidence, calibration, and
+  playback/export boundaries.
+
+- `vr-projects-wave-310-game-specific-vr-retrofit-mods-openxr-steamvr-ui-patches-and-comfort-product-lessons.md`
+  Next GitHub discovery wave focused on game-specific VR retrofit mods,
+  OpenXR/SteamVR bootstrap, render/input bridges, world-space UI conversion,
+  virtual keyboards, comfort modes, and setup guidance.
+
+- `vr-projects-wave-311-rust-bevy-godot-openxr-bring-up-variants-app-shells-and-input-rendering-boundaries.md`
+  Next GitHub discovery wave focused on Rust, Bevy, and Godot OpenXR app
+  shells, graphics binding, swapchains, frame loops, texture handoff, input
+  resources, and platform adapters.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

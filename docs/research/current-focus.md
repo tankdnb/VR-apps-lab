@@ -1209,6 +1209,10 @@ directions:
 224. `VR wayfinding study matrix across gaze destinations, target sequencing, agent guidance, haptic boundaries, comfort aids, room transitions, and telemetry`
 225. `XR validation harness matrix across device inventory, haptics, scene repros, functional tests, performance sample groups, metadata, and simulation`
 226. `Gaze/pinch/dwell interaction matrix across ray providers, target interfaces, reticles, confirmation triggers, menus, guide cards, monitoring, and permissions`
+227. `VR annotation and point-cloud labeling matrix across target IDs, geometry services, label schemas, taxonomy dialogs, persistence, provenance, and revisit navigation`
+228. `VR motion capture and pose recording matrix across tracker inventory, confidence/calibration, retargeting, keyframe schemas, playback, export, and compression`
+229. `Game-specific VR retrofit matrix across runtime bootstrap, render bridges, input remapping, world-space UI conversion, virtual keyboards, comfort modes, and support gates`
+230. `Rust/Bevy/Godot OpenXR app-shell matrix across instance/session lifecycle, graphics binding, swapchains, manual texture handoff, frame loops, actions, and platform adapters`
 
 ## Current repository-maintenance priorities
 

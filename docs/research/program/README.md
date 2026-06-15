@@ -2178,3 +2178,33 @@ repeatable way.
 
 - `github-research-wave-307-backlog.md`
   Executed backlog for the Wave 307 pass.
+
+- `github-research-wave-308-plan.md`
+  Wave 308 research plan focused on VR/3D annotation, point-cloud labeling,
+  linked-data note surfaces, persistence, provenance, and revisit navigation.
+
+- `github-research-wave-308-backlog.md`
+  Executed backlog for the Wave 308 pass.
+
+- `github-research-wave-309-plan.md`
+  Wave 309 research plan focused on VR motion capture, pose recording, BVH,
+  muscle compression, body trackers, calibration, playback, and export.
+
+- `github-research-wave-309-backlog.md`
+  Executed backlog for the Wave 309 pass.
+
+- `github-research-wave-310-plan.md`
+  Wave 310 research plan focused on game-specific VR retrofit mods,
+  OpenXR/SteamVR bootstrap, UI patches, input remapping, comfort modes, and
+  setup/product lessons.
+
+- `github-research-wave-310-backlog.md`
+  Executed backlog for the Wave 310 pass.
+
+- `github-research-wave-311-plan.md`
+  Wave 311 research plan focused on Rust, Bevy, and Godot OpenXR app shells,
+  graphics binding, swapchains, frame loops, input resources, and platform
+  adapters.
+
+- `github-research-wave-311-backlog.md`
+  Executed backlog for the Wave 311 pass.

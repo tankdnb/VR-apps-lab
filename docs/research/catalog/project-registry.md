@@ -4111,6 +4111,56 @@ Primary docs:
 - `holokit/holokit-unity-sdk` - `Studied in Wave 307 as an optical MR SDK reference with gaze raycast interactables, gaze+pinch gesture adapter, dwell button UI, stereo phone MR framing, hand tracking, recording, calibration, and sample-only caveats`
 - `android/xr-unity-samples` - `Studied in Wave 307 as an Android XR Unity sample set with gaze+pinch plane selection, catapult interaction, gesture detector, permission/status dashboard, menu tutorial, passthrough status, and XR simulation assets`
 
+## 279. VR/3D annotation, point-cloud labeling, and linked-data note surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-308-vr-3d-annotation-point-cloud-labeling-and-linked-data-note-surfaces.md`
+- `../landscape/project-families.md`
+
+- `ahstevens/VR-Point-Cloud-Editor` - `Studied in Wave 308 as a Unity/native-plugin point-cloud editor with LAZ import/export, point-cloud metadata, miniature reset, LOD/frustum culling, closest-point and sphere queries, outlier highlight/delete, undo, and editor/runtime manager boundaries`
+- `florianwirth/PointAtMe` - `Studied in Wave 308 as an in-VR point-cloud labeling tool with point-cloud/image sequence navigation, 65k-point mesh chunking, bounding-box labels, track IDs, class/quality/priority/direction dialogs, controller box manipulation, and hardcoded-path caveats`
+- `framefield/vr-annotate` - `Studied in Wave 308 as a linked-data architectural annotation package with annotation manager, target node selectors, viewport recall, local/REST persistence, W3C-style JSON-LD records, author/time provenance, and annotation tour navigation`
+
+## 280. VR motion capture, pose recording, BVH, muscle compression, and body tracker samples
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-309-vr-motion-capture-pose-recording-bvh-muscle-compression-and-body-tracker-samples.md`
+- `../landscape/project-families.md`
+
+- `alexismorin/OpenMocap` - `Studied in Wave 309 as a Unity roomscale mocap baseline with HMD/controller sampling, humanoid IK, hip/head offset, Unity Recorder integration, trigger start/stop recording, and old XR API caveats`
+- `andrewjc/VRRecorder` - `Studied in Wave 309 as a SteamVR pose/controller-state recorder with 0.01-second keyframes, HMD/controller matrix logs, button/axis state, playback device proxies, and fragile unversioned text schema caveats`
+- `emilianavt/BVHTools` - `Studied in Wave 309 as a Unity BVH recorder/parser with humanoid bone mapping, bone renaming, skeleton hierarchy generation, Blender axis mode, frame/channel parsing, and transform/rest-pose caveats`
+- `gree/MuscleCompressor` - `Partially studied in Wave 309 as a Unity Humanoid muscle-space compression reference with recording/loading/conversion workflow, StreamingAssets motion data, bytes-to-animation conversion, and dependency-heavy core-isolation gaps`
+- `Pico-Developer/PICOMotionTrackerSample-Unity` - `Studied in Wave 309 as a PICO motion/body tracker sample with serial-number inventory, confidence feedback, connected tracker manager, calibration/battery UI, 24-joint body poses, CSV playback, recording UI, and bone-length updates`
+
+## 281. Game-specific VR retrofit mods, OpenXR/SteamVR bootstrap, UI patches, and comfort product lessons
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-310-game-specific-vr-retrofit-mods-openxr-steamvr-ui-patches-and-comfort-product-lessons.md`
+- `../landscape/project-families.md`
+
+- `ethanporcaro/BF2VR-Alpha` - `Studied in Wave 310 as an archived native C++ OpenXR/D3D11 game retrofit with existing-device session binding, stereo swapchains, D3D11 render target views, OpenXR action setup, ViGEm virtual X360 output, and injection/GPL caveats`
+- `DrBibop/RoR2VRMod` - `Studied in Wave 310 as a Unity/BepInEx OpenXR runtime bootstrap mod with dynamic XR loader setup, controller profiles, asset-bundle hands, body-specific motion controls, wrist/watch HUD, haptics, recentering, and config gates`
+- `Raicuparta/nomai-vr` - `Studied in Wave 310 as a SteamVR/OWML VR conversion with ordered module activation, SteamVR action manifest/bindings, mode-aware input maps, tools/hands/HUD modules, virtual keyboard patching, and compatibility checks`
+- `Raicuparta/two-forks-vr` - `Studied in Wave 310 as a SteamVR/BepInEx Firewatch VR mod with Harmony patching, screen-space canvas conversion into static/interactive world-space UI, laser pointer, attached UI surfaces, settings menu, and ignore/disable lists`
+- `LukeRoss00/gta5-real-mod` - `Studied as source-light product reference in Wave 310 for VR retrofit setup discipline, settings backup/restore, fixed/headlocked HUD behavior, headshake recenter, gamepad/head aiming, cutscene comfort modes, and detailed support guidance`
+
+## 282. Rust, Bevy, and Godot OpenXR bring-up variants, app shells, and input/rendering boundaries
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-311-rust-bevy-godot-openxr-bring-up-variants-app-shells-and-input-rendering-boundaries.md`
+- `../landscape/project-families.md`
+
+- `blaind/bevy_openxr` - `Studied in Wave 311 as a Bevy OpenXR plugin/core experiment with WGPU/OpenXR handoff, one-shot XrInstance storage, custom XR runner, device/event/hand-tracking/swapchain/render-graph modules, and lifecycle caveats`
+- `MalekiRe/bevy_openxr_android` - `Studied in Wave 311 as an Android/Quest Bevy OpenXR sample with DefaultXrPlugins, typed Oculus controller resources, frame/session/input resources, hand gizmos, trigger/button visual feedback, and Android packaging follow-up gaps`
+- `occuros/bevy_openxr_performance_test` - `Studied in Wave 311 as a Bevy OpenXR performance/plugin boundary with manual RenderPlugin replacement, FutureXrResources handoff, left/right ManualTextureViews, xr_begin_frame/post_frame/end_frame systems, swapchain image lifecycle, and action-set resources`
+- `richardanaya/godot_openxr__rust` - `Studied in Wave 311 as a Godot XR plus Rust GDExtension sample with a Rust class reading parent XRController3D trigger state and mutating sibling MeshInstance3D material, mirroring a tiny GDScript controller sample`
+- `TheHellBox/SlashMania` - `Studied in Wave 311 as a Rust OpenXR rhythm-game experiment with Specs ECS loop, OpenGL OpenXR instance/session, stereo swapchain, reference spaces, event polling, locate views, frame-stream begin/end, and hand-rolled app-shell caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

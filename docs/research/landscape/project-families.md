@@ -9617,6 +9617,142 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - Android XR permission/status panels;
 - onboarding cards for hand, gaze, and pinch input.
 
+## Family 287: VR/3D annotation, point-cloud labeling, and linked-data note surfaces
+
+This family covers projects that let users annotate scenes, label point clouds,
+attach notes to spatial targets, revisit annotation viewpoints, or persist
+label records locally/remotely. The reusable lesson is to keep dataset import,
+geometry services, label/annotation schema, manipulation handles, persistence,
+navigation, and provenance separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ahstevens/VR-Point-Cloud-Editor` | Studied in Wave 308 | Native point-cloud plugin boundary, LAZ import/export, LOD/culling, closest-point/sphere queries, outlier highlight/delete, undo, and editor/runtime manager |
+| `florianwirth/PointAtMe` | Studied in Wave 308 | Point-cloud/image sequence labeling, 65k mesh chunking, bounding-box labels, track IDs, class/quality dialogs, and controller manipulation |
+| `framefield/vr-annotate` | Studied in Wave 308 | Linked-data annotation manager, target node selectors, local/REST persistence, W3C-style annotation JSON, viewport recall, and annotation tours |
+
+### Consolidation note
+
+This family matters because annotation utilities should name:
+
+- dataset source and import/export adapter;
+- spatial target identity and geometry query service;
+- label/annotation schema and taxonomy dialogs;
+- controller manipulation and review navigation;
+- provenance fields such as author, time, target ID, and viewport pose;
+- local/remote storage adapter, sync, auth, and conflict boundaries.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- spatial review and issue-tracking tools;
+- point-cloud inspection and labeling shells;
+- annotation schema templates;
+- linked-data note surfaces;
+- dataset QA and revisit/tour workflows.
+
+## Family 288: VR motion capture, pose recording, BVH, muscle compression, and body tracker samples
+
+This family covers projects that capture HMD/controller/body tracker poses,
+retarget them to avatars, record/replay tracking streams, export motion
+formats, compress humanoid motion, or surface tracker state. The reusable
+lesson is to keep live device APIs, retargeting, recording schema, playback,
+export, compression, and diagnostics separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `alexismorin/OpenMocap` | Studied in Wave 309 | Roomscale HMD/controller sampling, humanoid IK, hip/head offset, and Unity Recorder coupling |
+| `andrewjc/VRRecorder` | Studied in Wave 309 | SteamVR matrix/controller-state keyframes, text logs, HMD/controller recorder proxies, and playback device injection |
+| `emilianavt/BVHTools` | Studied in Wave 309 | BVH recorder/parser, humanoid bone mapping, bone renaming, skeleton hierarchy, Blender axis mode, and channel parsing |
+| `gree/MuscleCompressor` | Partially studied in Wave 309 | Muscle-space Humanoid compression workflow, motion `.data` storage, bytes-to-animation conversion, and core-isolation follow-up |
+| `Pico-Developer/PICOMotionTrackerSample-Unity` | Studied in Wave 309 | PICO tracker inventory, serial numbers, confidence, calibration/battery UI, 24-joint body pose, CSV playback, and bone-length updates |
+
+### Consolidation note
+
+This family matters because mocap and tracker utilities should name:
+
+- live tracker/device inventory and confidence state;
+- sample clock, pose schema, and controller-state schema;
+- avatar retargeting and calibration;
+- recording and playback provider boundaries;
+- export/interchange format and compression adapter;
+- battery, calibration, assisted-role, and vendor fallback UI.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- tracker diagnostics overlays;
+- pose recording and replay harnesses;
+- avatar motion export helpers;
+- BVH/muscle/OSC/VMC interchange comparison;
+- body tracker calibration and confidence dashboards.
+
+## Family 289: Game-specific VR retrofit mods, runtime bootstrap, UI patches, and comfort product lessons
+
+This family covers projects that retrofit existing games with OpenXR/SteamVR,
+motion controls, input remapping, world-space UI, virtual keyboards, comfort
+modes, and setup/support guidance. The reusable lesson is to separate the
+general retrofit boundary from the game-specific patch layer.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ethanporcaro/BF2VR-Alpha` | Studied in Wave 310 | Native C++ OpenXR/D3D11 session binding, swapchains, render-target views, action setup, and ViGEm virtual gamepad output |
+| `DrBibop/RoR2VRMod` | Studied in Wave 310 | Unity/BepInEx OpenXR loader bootstrap, controller profiles, body-specific hand/tool mapping, wrist/watch HUD, and haptics |
+| `Raicuparta/nomai-vr` | Studied in Wave 310 | Ordered SteamVR module graph, action manifests, mode-aware input maps, virtual keyboard, tools/hands/HUD, and compatibility checks |
+| `Raicuparta/two-forks-vr` | Studied in Wave 310 | Harmony patches that convert screen-space canvases into static/interactive world-space UI surfaces with laser-pointer affordances |
+| `LukeRoss00/gta5-real-mod` | Source-light product reference in Wave 310 | Setup discipline, settings backup/restore, fixed/headlocked HUD, headshake recenter, gamepad/head aiming, and cutscene comfort modes |
+
+### Consolidation note
+
+This family matters because retrofit utilities should name:
+
+- runtime/session bootstrap and graphics bridge;
+- action maps, virtual gamepad, keyboard, and legacy input adapters;
+- game-patch modules and compatibility gates;
+- UI surface classification and world-space conversion;
+- recentering, comfort modes, cutscene modes, and HUD behavior;
+- setup/support docs, backup/restore, and legal/support boundaries.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- world-space UI migration patterns;
+- virtual keyboard/input prompt adapters;
+- comfort/setup documentation templates;
+- runtime bootstrap risk checklists;
+- retrofit-safe module graphs and compatibility reports.
+
+## Family 290: Rust, Bevy, and Godot OpenXR bring-up variants, app shells, and input/rendering boundaries
+
+This family covers Rust, Bevy, Godot, and hand-rolled OpenXR experiments that
+make instance/session lifecycle, graphics binding, swapchains, frame-loop
+systems, texture handoff, input resources, and platform adapters visible. The
+reusable lesson is to treat the app shell itself as a donor pattern.
+
+| Project | Status | Notes |
+|---|---|---|
+| `blaind/bevy_openxr` | Studied in Wave 311 | WGPU/OpenXR handoff, one-shot XrInstance storage, custom runner, and separated device/event/hand/swapchain/render graph modules |
+| `MalekiRe/bevy_openxr_android` | Studied in Wave 311 | Quest/Android Bevy sample with DefaultXrPlugins, typed controller resources, frame/session/input resources, and controller gizmos |
+| `occuros/bevy_openxr_performance_test` | Studied in Wave 311 | Manual RenderPlugin replacement, FutureXrResources, manual texture views, XR frame systems, and swapchain image lifecycle |
+| `richardanaya/godot_openxr__rust` | Studied in Wave 311 | Godot XR scene plus Rust GDExtension controller logic that reads `XRController3D` and updates mesh material |
+| `TheHellBox/SlashMania` | Studied in Wave 311 | Rust Specs/OpenGL OpenXR game loop with explicit instance/session/swapchain/reference-space/frame-stream module |
+
+### Consolidation note
+
+This family matters because engine app shells should name:
+
+- instance, system, session, and reference-space lifecycle;
+- graphics backend binding and ownership handoff;
+- swapchain image acquire/wait/release/end semantics;
+- render texture or manual texture view handoff;
+- action/controller resources and ECS/Godot node boundaries;
+- Android/Quest packaging and platform adapter assumptions.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- Rust OpenXR app-shell templates;
+- Bevy XR render/input boundary matrices;
+- Godot Rust extension micro-patterns;
+- swapchain/frame-loop diagrams;
+- engine-version and platform-adapter risk notes.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

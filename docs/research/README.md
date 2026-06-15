@@ -303,6 +303,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-305-vr-wayfinding-navigation-guidance-and-spatial-navigation-study-tasks.md`
 - `landscape/vr-projects-wave-306-xr-testing-simulation-input-validation-and-performance-harnesses.md`
 - `landscape/vr-projects-wave-307-xr-gaze-pinch-dwell-onboarding-and-android-xr-interaction-samples.md`
+- `landscape/vr-projects-wave-308-vr-3d-annotation-point-cloud-labeling-and-linked-data-note-surfaces.md`
+- `landscape/vr-projects-wave-309-vr-motion-capture-pose-recording-bvh-muscle-compression-and-body-tracker-samples.md`
+- `landscape/vr-projects-wave-310-game-specific-vr-retrofit-mods-openxr-steamvr-ui-patches-and-comfort-product-lessons.md`
+- `landscape/vr-projects-wave-311-rust-bevy-godot-openxr-bring-up-variants-app-shells-and-input-rendering-boundaries.md`
 
 ## Archive Navigation
 
