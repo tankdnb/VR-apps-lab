@@ -16850,3 +16850,185 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   Rust OpenXR shell templates, Bevy XR matrices, Godot/Rust bridge notes,
   swapchain/frame-loop diagrams, and engine app-shell risk checklists.
+
+## Method 757: Vendor-specific VRCFaceTracking module boundary across shared memory, vendor DLLs, loopback transport, stale gating, and slot coexistence
+
+- What it is:
+  vendor VRCFT modules should separate headset capture ownership, transport
+  ingestion, signal normalization, smoothing/fallback, stale-state handling,
+  and eye/expression slot publication.
+- Good for:
+  VRCFT vendor modules, eye-tracking bridges, local tracker sidecars,
+  shared-memory consumers, UDP/JSON loopback modules, and multi-module face
+  tracking stacks.
+- Why it matters:
+  vendor tracking integrations are fragile when capture, vendor SDK lifetime,
+  fallback heuristics, and VRCFT publication are fused together. Reuse gets
+  much stronger when transport and slot publication are explicit seams.
+- Source evidence:
+  `BigscreenVR/VRCFT-Beyond`, `benaclejames/VRCFTPimaxModule`, and
+  `UikaMisumi/DreamAirTracking.VrcftModule`.
+- Reusable core:
+  vendor signal producer, transport adapter, schema parser, normalization
+  layer, smoothing and fallback policy, stale-data detector, eye/expression
+  publisher, and module coexistence gates.
+- Source evidence details:
+  Wave 312 includes a shared-memory eye-only consumer from `VRCFT-Beyond`, a
+  vendor-DLL and JSON-config smoothing/fallback stack from `VRCFTPimaxModule`,
+  and a loopback UDP/JSON bridge with stale neutralization and optional
+  expression publication from `DreamAirTracking.VrcftModule`.
+- Do not copy directly:
+  hidden assumptions about an already-running producer, silent vendor DLL
+  extraction without diagnostics, blocking sleeps as the only pacing mechanism,
+  config-load bugs, or slot claims that ignore other active modules.
+- Strong references:
+  `VRCFTPimaxModule` for fallback heuristics,
+  `DreamAirTracking.VrcftModule` for loopback bridge shape, and
+  `VRCFT-Beyond` for the minimal shared-memory consumer line.
+- Maturity:
+  strong method with vendor, schema, and slot-contention caveats; production
+  reuse should add explicit diagnostics, schema versioning, confidence/status
+  surfacing, and clearer module-arbitration rules.
+- Best fit for `VR-apps-lab`:
+  vendor face-tracking bridge templates, shared-memory/UDP transport adapters,
+  eye-loss fallback experiments, and coexistence guidelines for multiple VRCFT
+  modules.
+
+## Method 758: VRCFaceTracking downstream bridge and avatar-setup boundary across protocol translation, companion GUIs, simulation state, and generated animator assets
+
+- What it is:
+  downstream VRCFT tooling should separate upstream parameter ingest, consumer
+  protocol translation, local control/simulation surfaces, persistent session
+  state, and editor-time avatar asset generation.
+- Good for:
+  VMC/PerfectSync bridges, app-specific consumer plugins, manual face-tracking
+  simulators, named-pipe test harnesses, avatar setup wizards, and metadata
+  driven animator generators.
+- Why it matters:
+  once tracking exists, teams quickly need translation, testing, monitoring,
+  and avatar setup automation. Those tasks are reusable only when the bridge,
+  GUI, and asset-generation layers are not tangled together.
+- Source evidence:
+  `tkns3/VRCFTtoVMCP`, `Toys0125/VirtualFaceTracking`,
+  `LumKitty/VRCFTnyan`, `ImTiara/FaceTrackingSetup`, and
+  `benaclejames/VRCFTSetupUtility`.
+- Reusable core:
+  upstream parameter store, downstream schema mapper, local discovery/avatar
+  handoff, named-pipe or local IPC state channel, manual/simulated control UI,
+  persistent config/state, param metadata, renderer diff capture, generated
+  animations, and generated animator layers.
+- Source evidence details:
+  Wave 313 includes VRCFT-to-VMC translation and OSC JSON/discovery glue from
+  `VRCFTtoVMCP`, a module-plus-GUI named-pipe harness from
+  `VirtualFaceTracking`, a VNyan plugin consumer line from `VRCFTnyan`, and
+  two editor setup generators ranging from guided inspector mapping to
+  param-meta-driven animation/layer synthesis.
+- Do not copy directly:
+  hardcoded avatar IDs without lifecycle explanation, duplicated mapping code
+  across bridges, auto-start assumptions without diagnostics, or editor
+  generators that hide the consequences of produced animator assets.
+- Strong references:
+  `VirtualFaceTracking` for companion state and simulation,
+  `VRCFTSetupUtility` for metadata-driven asset generation, and
+  `VRCFTtoVMCP` for downstream protocol translation.
+- Maturity:
+  strong method with compatibility, asset, and UX caveats; production reuse
+  should add more explicit versioning, contract tests, generated-asset review
+  surfaces, and compatibility matrices across downstream consumers.
+- Best fit for `VR-apps-lab`:
+  VRCFT bridge templates, simulation/control harnesses, avatar setup wizards,
+  param metadata schemas, and creator-facing automation references.
+
+## Method 759: PSVR2 toolkit downstream client boundary across gaze capture, haptic relays, reversible driver patching, and game-state IPC consumers
+
+- What it is:
+  PSVR2 toolkit clients should separate toolkit/runtime ownership from narrow
+  client surfaces such as image capture, haptic output, driver-state
+  management, and game-specific trigger-effect policy.
+- Good for:
+  vendor runtime companions, eye-image consumers, OSC/WebSocket haptic relays,
+  signed-driver patch managers, adaptive-trigger clients, and toolkit health
+  utilities.
+- Why it matters:
+  vendor runtime stacks are difficult to reuse when every consumer embeds its
+  own install, haptic, and IPC assumptions. A boundary lets narrow utilities
+  stay small while still inheriting shared runtime behavior.
+- Source evidence:
+  `BnuuySolutions/PSVR2Toolkit.Baballonia`,
+  `tabithamoon/PSVR2HeadpatHaptics`,
+  `MaidScientistIzutsumiMarin/psvr2toolkit-installer`, and
+  `Kingoooooooo/Pistol-Whip-Adaptive-Triggers`.
+- Reusable core:
+  native toolkit client boundary, local TCP or C API, capture-provider adapter,
+  network relay endpoint, driver validation and rollback logic, release-update
+  checker, consumer-side policy logic, and explicit haptic/trigger command
+  vocabulary.
+- Source evidence details:
+  Wave 314 includes a gaze-image capture provider in
+  `PSVR2Toolkit.Baballonia`, an OSCQuery/WebSocket rumble relay in
+  `PSVR2HeadpatHaptics`, an Authenticode-aware driver installer and rollback
+  manager in `psvr2toolkit-installer`, and a MelonLoader consumer of local
+  toolkit IPC in `Pistol-Whip-Adaptive-Triggers`.
+- Do not copy directly:
+  silent driver swaps, unauthenticated public haptic endpoints, hardcoded
+  polling/logging loops, or game-specific trigger policies presented as generic
+  toolkit abstractions.
+- Strong references:
+  `psvr2toolkit-installer` for reversible driver management,
+  `PSVR2HeadpatHaptics` for tiny network-facing haptic surfaces, and
+  `PSVR2Toolkit.Baballonia` for narrow capture-provider adaptation.
+- Maturity:
+  strong method with platform, safety, and runtime-dependency caveats;
+  production reuse should add auth, cooldowns, rollback verification, and
+  clearer capability/version reporting.
+- Best fit for `VR-apps-lab`:
+  vendor-runtime client templates, haptic relay sidecars, rollback-safe patch
+  managers, and trigger-policy adapters for advanced VR utilities.
+
+## Method 760: Smart-glasses companion boundary across IMU transport, virtual displays, helper permissions, and display-triggered micro-automations
+
+- What it is:
+  smart-glasses companions should separate IMU transport, packet parsing,
+  calibration, virtual-display identity/lifecycle, privileged helper
+  operations, and narrow user-value automations.
+- Good for:
+  smart-glasses workspace managers, native IMU drivers, Android companion
+  helpers, head-tracked desktop surfaces, diagnostics-heavy AR shells, and
+  platform-specific display automations.
+- Why it matters:
+  smart-glasses utilities often span fragile seams such as network sensor
+  transports, private display APIs, helper privileges, and tiny convenience
+  features. Reuse depends on keeping those seams visible instead of hiding them
+  inside one monolith.
+- Source evidence:
+  `dripster82/ar_workspace_manager_for_xreal`,
+  `SamiMitwalli/One-Pro-IMU-Retriever-Demo`,
+  `rohitsangwan01/xreal_one_driver`, `shugi12345/xreal-show-taps`, and
+  `DeskUnreal/xreal-vio-vr`.
+- Reusable core:
+  IMU transport reader, sample parser, bias/mount/drift calibration, workspace
+  and screen schema, stable display identity strategy, create/reuse/destroy
+  display lifecycle, diagnostics/churn telemetry, privileged helper or sidecar
+  service, and display-triggered micro-automation.
+- Source evidence details:
+  Wave 315 includes a full smart-glasses workspace manager with modular IMU and
+  display subsystems from `ar_workspace_manager_for_xreal`, lightweight Python
+  and Rust IMU readers from `One-Pro-IMU-Retriever-Demo` and
+  `xreal_one_driver`, a Shizuku-backed Android micro-helper from
+  `xreal-show-taps`, and Linux stack/patch framing from `xreal-vio-vr`.
+- Do not copy directly:
+  platform-private display tricks without fallback notes, over-broad helper
+  privileges, placeholder stack claims treated as finished donors, or
+  display-trigger logic that silently fires on unrelated hardware.
+- Strong references:
+  `ar_workspace_manager_for_xreal` for display/diagnostics architecture,
+  `xreal_one_driver` for a tight native sensor core, and `xreal-show-taps` for
+  narrow Android helper automation.
+- Maturity:
+  strategic method with platform-fragility and private-API caveats; production
+  reuse should add fallback paths, capability reporting, permission recovery,
+  and explicit statements where a project is still mostly a stack marker.
+- Best fit for `VR-apps-lab`:
+  smart-glasses HUD/runtime notes, IMU driver cores, virtual-display lifecycle
+  guidance, display-trigger helpers, and cross-platform companion architecture
+  references.

@@ -4161,6 +4161,55 @@ Primary docs:
 - `richardanaya/godot_openxr__rust` - `Studied in Wave 311 as a Godot XR plus Rust GDExtension sample with a Rust class reading parent XRController3D trigger state and mutating sibling MeshInstance3D material, mirroring a tiny GDScript controller sample`
 - `TheHellBox/SlashMania` - `Studied in Wave 311 as a Rust OpenXR rhythm-game experiment with Specs ECS loop, OpenGL OpenXR instance/session, stereo swapchain, reference spaces, event polling, locate views, frame-stream begin/end, and hand-rolled app-shell caveats`
 
+## 283. VRCFaceTracking vendor modules, shared memory, vendor SDKs, and loopback bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-312-vrcfacetracking-vendor-modules-shared-memory-vendor-sdks-and-loopback-bridges.md`
+- `../landscape/project-families.md`
+
+- `BigscreenVR/VRCFT-Beyond` - `Studied in Wave 312 as a very thin shared-memory VRCFT eye module with a `VRCFTMemmapData` schema, 3D-to-2D gaze conversion, eyelid-closure-to-openness mapping, and external-producer ownership caveats`
+- `benaclejames/VRCFTPimaxModule` - `Studied in Wave 312 as a Pimax eye-tracking VRCFT module with embedded vendor DLL extraction, JSON-tuned smoothing, blink/wink timers, eye-loss fallback, and normalization into UnifiedTracking eye data`
+- `UikaMisumi/DreamAirTracking.VrcftModule` - `Studied in Wave 312 as a Dream Air loopback UDP/JSON VRCFT module with stale timeout, neutralization, pupil and optional expression output, and explicit coexistence with another lip/face module`
+
+## 284. VRCFaceTracking downstream bridges, simulation panels, and avatar setup automation
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-313-vrcfacetracking-downstream-bridges-simulation-panels-and-avatar-setup-automation.md`
+- `../landscape/project-families.md`
+
+- `tkns3/VRCFTtoVMCP` - `Studied in Wave 313 as a VRCFT-to-VMC/PerfectSync bridge with OSC receive, VMC bundle send, local OSC JSON service, avatar-change orchestration, JSON config, and downstream schema translation`
+- `Toys0125/VirtualFaceTracking` - `Studied in Wave 313 as a VRCFT module plus companion GUI with named-pipe state snapshots, diagnostics, manual controls, simulation engine, persistent JSON state, and GUI auto-launch`
+- `LumKitty/VRCFTnyan` - `Studied in Wave 313 as a VNyan consumer-side VRCFT adapter with config-file loading, plugin button/trigger entry points, avatar JSON handoff, and direct downstream blendshape-override framing`
+- `ImTiara/FaceTrackingSetup` - `Studied in Wave 313 as an inspector-driven Unity setup helper with blendshape search, ARKit auto-fill, eye/blink/pupil/mouth authoring fields, thresholds, toggles, and generated output-folder workflow`
+- `benaclejames/VRCFTSetupUtility` - `Studied in Wave 313 as a metadata-driven avatar setup generator with renderer save states, param-meta JSON, diff capture, animation asset generation, and linear/binary FX layer builders`
+
+## 285. PSVR2Toolkit downstream clients, gaze capture, haptics, and installer microtools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-314-psvr2toolkit-downstream-clients-gaze-capture-haptics-and-installer-microtools.md`
+- `../landscape/project-families.md`
+
+- `BnuuySolutions/PSVR2Toolkit.Baballonia` - `Studied in Wave 314 as a PSVR2 gaze-image capture adapter that initializes the toolkit C API, validates a fixed image header, copies BC4 eye-image payloads into OpenCV mats, and exposes a narrow Baballonia capture-provider boundary`
+- `tabithamoon/PSVR2HeadpatHaptics` - `Studied in Wave 314 as a headset-rumble relay with CLI flags, OSCQuery endpoint publication, optional WebSocket server, velocity-derived rumble, and direct `SetHmdRumble` frequency mapping`
+- `MaidScientistIzutsumiMarin/psvr2toolkit-installer` - `Studied in Wave 314 as a NiceGUI installer/rollback tool with Steam path resolution, Authenticode-based driver validation, reversible signed/unsigned driver swapping, release checks, and eyelid-estimation toggles`
+- `Kingoooooooo/Pistol-Whip-Adaptive-Triggers` - `Studied in Wave 314 as a game-specific PSVR2 adaptive-trigger client with MelonLoader bootstrap, local IPC handshake, trigger-effect command structs, and gun-state-driven feedback profiles`
+
+## 286. XREAL One companions, virtual displays, IMU readers, and display-triggered microhelpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-315-xreal-one-companions-virtual-displays-imu-readers-and-display-triggered-microhelpers.md`
+- `../landscape/project-families.md`
+
+- `dripster82/ar_workspace_manager_for_xreal` - `Studied in Wave 315 as a high-value smart-glasses workspace donor with modular IMU transport, drift/mount calibration, virtual-display identity reuse, diagnostics/churn telemetry, HUD/media/voice subsystems, and helper-service boundaries`
+- `SamiMitwalli/One-Pro-IMU-Retriever-Demo` - `Studied in Wave 315 as a Python XREAL One Pro IMU proof-of-access with TCP packet framing, six-float decode, callback reader, 500-sample gyro calibration, complementary filter, and zero-view controls`
+- `rohitsangwan01/xreal_one_driver` - `Studied in Wave 315 as a Rust plus C FFI driver core with buffer framing, sanity guards, axis remap, timestamp extraction, and a minimal `xo_new`/`xo_next`/`xo_free` ABI`
+- `shugi12345/xreal-show-taps` - `Studied in Wave 315 as an Android display-trigger helper with a foreground `DisplayManager` listener, restore-state persistence, Shizuku permission flow, and AIDL-backed `show_touches` sidecar control`
+- `DeskUnreal/xreal-vio-vr` - `Studied in Wave 315 primarily as Linux smart-glasses stack framing and patch evidence, with Basalt `Fisheye624` patches, a headset-as-ground-reference FSM concept, and mostly skeletal OpenVR/bridge/runtime code`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

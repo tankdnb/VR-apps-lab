@@ -1213,6 +1213,10 @@ directions:
 228. `VR motion capture and pose recording matrix across tracker inventory, confidence/calibration, retargeting, keyframe schemas, playback, export, and compression`
 229. `Game-specific VR retrofit matrix across runtime bootstrap, render bridges, input remapping, world-space UI conversion, virtual keyboards, comfort modes, and support gates`
 230. `Rust/Bevy/Godot OpenXR app-shell matrix across instance/session lifecycle, graphics binding, swapchains, manual texture handoff, frame loops, actions, and platform adapters`
+231. `Vendor VRCFT module matrix across shared memory, vendor DLL bootstraps, loopback JSON/UDP, stale gates, slot coexistence, and eye-loss fallback`
+232. `VRCFT downstream bridge and setup-automation matrix across OSC translation, named-pipe GUI companions, simulation state, avatar handoff, and generated animator layers`
+233. `PSVR2 toolkit downstream utility matrix across gaze-image CAPI, OSC/WebSocket haptics, signed-driver patch managers, local IPC trigger effects, and game-specific consumers`
+234. `Smart-glasses companion matrix across stable virtual displays, HID/network IMU transport, Shizuku display listeners, Rust/C FFI drivers, diagnostics, and Linux VIO stack maturity`
 
 ## Current repository-maintenance priorities
 

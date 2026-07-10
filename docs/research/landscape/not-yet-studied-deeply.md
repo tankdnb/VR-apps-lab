@@ -3095,6 +3095,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 234. `VR mocap/pose/BVH/muscle/PICO tracker matrix across live trackers, retargeting, recording clocks, replay injection, BVH channels, muscle streams, confidence, calibration, and battery UI`
 235. `Game-specific VR retrofit matrix across OpenXR/SteamVR bootstrap, D3D/Unity render bridges, virtual gamepads, action manifests, world-space UI conversion, virtual keyboards, HUD comfort, and setup warnings`
 236. `Rust/Bevy/Godot OpenXR app-shell matrix across WGPU/OpenXR handoff, Bevy render replacement, manual texture views, Godot Rust extensions, OpenGL frame streams, actions, and Android packaging`
+237. `Vendor VRCFT module follow-up across Quest/PICO/Omnicept/Pimax/Beyond/Dream Air transport, confidence, blink handling, stale gates, and slot coexistence`
+238. `VRCFT downstream bridge follow-up across VMC/PerfectSync, VNyan, named-pipe simulators, OSC JSON discovery, avatar handoff, and editor automation`
+239. `PSVR2 toolkit downstream client follow-up across gaze capture, headset rumble relays, reversible driver lifecycle, eyelid-estimation toggles, and adaptive-trigger policy`
+240. `Smart-glasses companion follow-up across AR workspace managers, IMU network/HID drivers, Android display-trigger helpers, stable virtual-display identity, and Linux VIO maturity`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

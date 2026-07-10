@@ -2208,3 +2208,33 @@ repeatable way.
 
 - `github-research-wave-311-backlog.md`
   Executed backlog for the Wave 311 pass.
+
+- `github-research-wave-312-plan.md`
+  Wave 312 research plan focused on VRCFaceTracking vendor modules,
+  shared-memory ingest, vendor DLL bootstrap, loopback bridges, and slot
+  coexistence.
+
+- `github-research-wave-312-backlog.md`
+  Executed backlog for the Wave 312 pass.
+
+- `github-research-wave-313-plan.md`
+  Wave 313 research plan focused on VRCFaceTracking downstream bridges,
+  simulation/control panels, avatar handoff, and editor setup automation.
+
+- `github-research-wave-313-backlog.md`
+  Executed backlog for the Wave 313 pass.
+
+- `github-research-wave-314-plan.md`
+  Wave 314 research plan focused on PSVR2Toolkit downstream clients,
+  gaze-image capture, haptics, reversible driver patching, and trigger-effect
+  consumers.
+
+- `github-research-wave-314-backlog.md`
+  Executed backlog for the Wave 314 pass.
+
+- `github-research-wave-315-plan.md`
+  Wave 315 research plan focused on XREAL One companions, virtual displays,
+  IMU readers, helper services, and display-triggered micro-automations.
+
+- `github-research-wave-315-backlog.md`
+  Executed backlog for the Wave 315 pass.

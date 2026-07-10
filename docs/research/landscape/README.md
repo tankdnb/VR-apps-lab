@@ -1413,6 +1413,26 @@ Use these files when you want to understand:
   shells, graphics binding, swapchains, frame loops, texture handoff, input
   resources, and platform adapters.
 
+- `vr-projects-wave-312-vrcfacetracking-vendor-modules-shared-memory-vendor-sdks-and-loopback-bridges.md`
+  Next GitHub discovery wave focused on vendor-specific VRCFaceTracking
+  modules, shared-memory ingest, vendor DLL bootstrap, UDP/JSON loopback, eye
+  fallback, and slot coexistence.
+
+- `vr-projects-wave-313-vrcfacetracking-downstream-bridges-simulation-panels-and-avatar-setup-automation.md`
+  Next GitHub discovery wave focused on VRCFaceTracking downstream bridges,
+  named-pipe simulation/control panels, avatar handoff, and editor-time setup
+  automation.
+
+- `vr-projects-wave-314-psvr2toolkit-downstream-clients-gaze-capture-haptics-and-installer-microtools.md`
+  Next GitHub discovery wave focused on PSVR2Toolkit downstream clients,
+  gaze-image capture, OSC/WebSocket haptics, reversible driver patching, and
+  game-specific trigger consumers.
+
+- `vr-projects-wave-315-xreal-one-companions-virtual-displays-imu-readers-and-display-triggered-microhelpers.md`
+  Next GitHub discovery wave focused on XREAL One companions, virtual-display
+  lifecycle, IMU readers, Shizuku/display-trigger helpers, and Linux
+  smart-glasses stack maturity.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

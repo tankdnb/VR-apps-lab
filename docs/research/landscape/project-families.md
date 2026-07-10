@@ -9753,6 +9753,141 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - swapchain/frame-loop diagrams;
 - engine-version and platform-adapter risk notes.
 
+## Family 291: VRCFaceTracking vendor modules, shared memory, vendor SDKs, and loopback bridges
+
+This family covers vendor-specific VRCFaceTracking modules that ingest eye or
+face data through shared memory, vendor SDK DLLs, or local UDP/JSON bridges.
+The reusable lesson is to keep headset/vendor capture ownership, transport
+parsing, smoothing/fallback, stale-state handling, and VRCFT slot publication
+separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `BigscreenVR/VRCFT-Beyond` | Studied in Wave 312 | Thin shared-memory eye-only module with a fixed gaze/openness schema and 3D-to-2D gaze conversion |
+| `benaclejames/VRCFTPimaxModule` | Studied in Wave 312 | Embedded vendor DLL extraction, JSON smoothing config, blink/wink timing, and one-eye fallback |
+| `UikaMisumi/DreamAirTracking.VrcftModule` | Studied in Wave 312 | Loopback UDP/JSON bridge with stale timeout, neutralization, optional pupil/expression output, and coexistence notes |
+
+### Consolidation note
+
+This family matters because vendor VRCFT modules should name:
+
+- headset/vendor capture ownership versus module ownership;
+- transport shape such as memory map, callback DLL, or loopback UDP;
+- normalization, smoothing, and tracking-loss fallback;
+- stale timeout and neutral output policy;
+- eye-only versus eye-plus-expression slot claims;
+- coexistence rules with other active modules.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- vendor module comparison matrices;
+- loopback/shared-memory bridge templates;
+- eye-loss fallback heuristics;
+- slot-coexistence guidance for multi-module stacks;
+- transport/schema diagnostics for tracking bridges.
+
+## Family 292: VRCFaceTracking downstream bridges, simulation panels, and avatar setup automation
+
+This family covers tools that receive VRCFaceTracking output, translate it into
+another avatar/runtime ecosystem, simulate or manually override tracking, or
+generate avatar assets and animator layers. The reusable lesson is to keep
+upstream tracking transport, downstream translation, control/simulation UI, and
+creator-time asset generation separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `tkns3/VRCFTtoVMCP` | Studied in Wave 313 | OSC ingest, VMC/PerfectSync translation, avatar-change orchestration, and local discovery/service advertisement |
+| `Toys0125/VirtualFaceTracking` | Studied in Wave 313 | VRCFT module plus named-pipe GUI companion, diagnostics, simulation engine, and persistent session state |
+| `LumKitty/VRCFTnyan` | Studied in Wave 313 | VNyan-facing plugin adapter with config, triggers, avatar JSON handoff, and downstream blendshape ownership |
+| `ImTiara/FaceTrackingSetup` | Studied in Wave 313 | Inspector-driven face-tracking setup flow with searchable blendshape mapping and guided authoring |
+| `benaclejames/VRCFTSetupUtility` | Studied in Wave 313 | Param-metadata-driven renderer diff capture, animation generation, and FX layer synthesis |
+
+### Consolidation note
+
+This family matters because downstream VRCFT tools should name:
+
+- upstream parameter ingest and storage;
+- downstream protocol or consumer-specific mapping;
+- local discovery, avatar handoff, and lifecycle coordination;
+- manual/simulated control surfaces and diagnostics;
+- persistent session/config state;
+- metadata-driven animation and animator-layer generation.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VRCFT downstream compatibility matrices;
+- named-pipe or local companion harnesses;
+- manual face-tracking test surfaces;
+- avatar-setup generators and param-meta templates;
+- creator onboarding flows that replace long manual checklists.
+
+## Family 293: PSVR2Toolkit downstream clients, gaze capture, haptics, and installer microtools
+
+This family covers downstream utilities built around PSVR2Toolkit rather than
+the toolkit core itself. The reusable lesson is to separate toolkit/runtime
+ownership from narrow client surfaces such as eye-image capture, haptic relays,
+driver patch management, and game-specific trigger consumers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `BnuuySolutions/PSVR2Toolkit.Baballonia` | Studied in Wave 314 | Thin C API gaze-image adapter that copies a fixed PSVR2 image payload into an OpenCV capture surface |
+| `tabithamoon/PSVR2HeadpatHaptics` | Studied in Wave 314 | OSCQuery/WebSocket headset-rumble relay with velocity-derived intensity mapping |
+| `MaidScientistIzutsumiMarin/psvr2toolkit-installer` | Studied in Wave 314 | Signed-driver validation, reversible install/uninstall, release checks, and config toggles |
+| `Kingoooooooo/Pistol-Whip-Adaptive-Triggers` | Studied in Wave 314 | MelonLoader consumer of local toolkit IPC for adaptive trigger profiles |
+
+### Consolidation note
+
+This family matters because toolkit-adjacent utilities should name:
+
+- native C API or local IPC client boundaries;
+- capture-provider or physical-output consumer shape;
+- driver-state validation, rollback, and update logic;
+- hardware command vocabularies versus game-specific policy;
+- safety, auth, and cooldown expectations for haptics;
+- release/update assumptions for runtime-adjacent installers.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- vendor-runtime client adapters;
+- haptic relay and safety-policy sidecars;
+- reversible driver patch managers;
+- game-state-to-hardware policy layers;
+- diagnostics around toolkit availability and version drift.
+
+## Family 294: XREAL One companions, virtual displays, IMU readers, and display-triggered microhelpers
+
+This family covers XREAL One and adjacent smart-glasses companions that expose
+IMU transport, virtual-display lifecycle, helper-service boundaries, or small
+platform automations. The reusable lesson is to separate sensor transport,
+display lifecycle, privileged operations, and narrow user-value automations.
+
+| Project | Status | Notes |
+|---|---|---|
+| `dripster82/ar_workspace_manager_for_xreal` | Studied in Wave 315 | Full smart-glasses workspace manager with IMU transport split, stable display identity, diagnostics, widgets, media, and helper services |
+| `SamiMitwalli/One-Pro-IMU-Retriever-Demo` | Studied in Wave 315 | Small network IMU reader with calibration and complementary-filter head tracking |
+| `rohitsangwan01/xreal_one_driver` | Studied in Wave 315 | Rust driver core plus C ABI around XREAL One IMU packet parsing |
+| `shugi12345/xreal-show-taps` | Studied in Wave 315 | Android foreground service that toggles a privileged system setting on external display attach/detach |
+| `DeskUnreal/xreal-vio-vr` | Studied in Wave 315 as a stack marker | Linux VIO/OpenXR/overlay direction marker with useful patches but still mostly skeletal runtime code |
+
+### Consolidation note
+
+This family matters because smart-glasses utilities should name:
+
+- transport source such as HID-like versus network IMU access;
+- packet framing, sanity guards, drift and mount calibration;
+- virtual-display identity and churn-management strategy;
+- diagnostics for private/platform-fragile display behavior;
+- helper-service or permissioned sidecar boundaries;
+- narrow display-triggered automations on mobile/desktop platforms.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- smart-glasses workspace-shell design notes;
+- runtime-neutral IMU driver cores;
+- stable virtual-display identity guidance;
+- Android display-trigger utilities;
+- cautious Linux stack framing with patch-level evidence and maturity caveats.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.
