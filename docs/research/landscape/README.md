@@ -1433,6 +1433,26 @@ Use these files when you want to understand:
   lifecycle, IMU readers, Shizuku/display-trigger helpers, and Linux
   smart-glasses stack maturity.
 
+- `vr-projects-wave-316-xr-webview-browser-panels-native-webview-event-bridges-and-input-surfaces.md`
+  Next GitHub discovery wave focused on XR WebView/browser panels, native
+  Android page hosts, texture transport, browser callback surfaces, and XRI or
+  Meta integration seams.
+
+- `vr-projects-wave-317-vr-notification-chat-overlays-and-local-message-relay-sidecars.md`
+  Next GitHub discovery wave focused on VR notification and chat overlays,
+  privacy filters, bounded queues, OpenVR/XSOverlay sinks, and local relay
+  sidecars.
+
+- `vr-projects-wave-318-runtime-launch-sidecars-overlay-autostart-and-session-operator-helpers.md`
+  Next GitHub discovery wave focused on runtime launch helpers, overlay
+  autostart, task orchestration, runtime switching, file-coupled overlay
+  companions, and session bring-up UX.
+
+- `vr-projects-wave-319-stereo-display-surface-viewers-depth-conversion-and-spatial-display-runtimes.md`
+  Next GitHub discovery wave focused on desktop-to-stereo viewers, shared
+  control planes, spatial-display runtimes, explicit display geometry, and
+  layered 2D composition surfaces.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

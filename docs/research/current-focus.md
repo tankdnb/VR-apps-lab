@@ -1217,6 +1217,10 @@ directions:
 232. `VRCFT downstream bridge and setup-automation matrix across OSC translation, named-pipe GUI companions, simulation state, avatar handoff, and generated animator layers`
 233. `PSVR2 toolkit downstream utility matrix across gaze-image CAPI, OSC/WebSocket haptics, signed-driver patch managers, local IPC trigger effects, and game-specific consumers`
 234. `Smart-glasses companion matrix across stable virtual displays, HID/network IMU transport, Shizuku display listeners, Rust/C FFI drivers, diagnostics, and Linux VIO stack maturity`
+235. `XR WebView/browser surface follow-up across native page hosts, texture transport, keyboard focus, browser callbacks, and XR interaction adapters`
+236. `VR notification relay follow-up across phone/chat/desktop sources, privacy filters, bounded queues, overlay sinks, and local relay transports`
+237. `Runtime operator sidecar follow-up across autostart hooks, task orchestration, runtime switching, file-coupled helpers, and session bring-up UX`
+238. `Stereo/display-surface viewer follow-up across desktop ingress, depth-to-stereo transforms, live control planes, display geometry, and layered 2D composition`
 
 ## Current repository-maintenance priorities
 

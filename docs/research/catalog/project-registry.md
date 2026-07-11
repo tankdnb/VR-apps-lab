@@ -4210,6 +4210,54 @@ Primary docs:
 - `shugi12345/xreal-show-taps` - `Studied in Wave 315 as an Android display-trigger helper with a foreground `DisplayManager` listener, restore-state persistence, Shizuku permission flow, and AIDL-backed `show_touches` sidecar control`
 - `DeskUnreal/xreal-vio-vr` - `Studied in Wave 315 primarily as Linux smart-glasses stack framing and patch evidence, with Basalt `Fisheye624` patches, a headset-as-ground-reference FSM concept, and mostly skeletal OpenVR/bridge/runtime code`
 
+## 287. XR WebView browser panels, native WebView bridges, and input surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-316-xr-webview-browser-panels-native-webview-event-bridges-and-input-surfaces.md`
+- `../landscape/project-families.md`
+
+- `rwpersson/OpenWebView-Unity` - `Studied in Wave 316 as a high-value Unity/Quest browser donor with Android `WebView` hosting through `Presentation` and `VirtualDisplay`, explicit texture transport, broad browser callback/policy surfaces, and clear browser-core versus XR panel boundaries`
+- `t-34400/SimpleUnity3DWebView` - `Studied in Wave 316 as a compact Android/Quest browser-panel baseline with manager, pointer source, Java bridge, texture updater, and lightweight 3D browser integration seams`
+- `vuplex/meta-xr-webview-example` - `Studied as a source-light Meta XR integration sample in Wave 316 for prefab-level browser-panel setup and runtime-specific scene wiring rather than browser-core donor value`
+- `vuplex/xr-interaction-webview-example` - `Studied in Wave 316 as a source-light XRI browser-panel integration reference for tracked-device raycaster, event-camera, and world-space browser wiring expectations`
+
+## 288. VR notification, chat overlays, and local message relay sidecars
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-317-vr-notification-chat-overlays-and-local-message-relay-sidecars.md`
+- `../landscape/project-families.md`
+
+- `BOLL7708/TwitchVRNotifications` - `Studied in Wave 317 as a Twitch-chat-to-SteamVR notification bridge with reconnect behavior, auth and local-secret handling, card rendering, avatar/image handling, and explicit OpenVR notification emission`
+- `balazs565/PhoneNotificationsVR` - `Studied in Wave 317 as a high-value phone notification overlay donor with layered architecture, `INotificationSource`, bounded `Channel` dispatch, filter/history policy, overlay anchoring, and supervisor loops`
+- `tyunta/notifyxsoverlay` - `Studied in Wave 317 as a Windows-notification-to-XSOverlay sidecar with WinRT ingest, dedupe, allow/block and learning-mode filters, config hygiene, manifest/startup helpers, and WebSocket relay transport`
+- `NekoSuneProjects/vrnotications` - `Studied in Wave 317 as a small multi-target notification wrapper with XSOverlay/OVR Toolkit/desktop targets and reusable image normalization across payload forms`
+
+## 289. Runtime launch sidecars, overlay autostart, and session operator helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-318-runtime-launch-sidecars-overlay-autostart-and-session-operator-helpers.md`
+- `../landscape/project-families.md`
+
+- `dreiekk/OpenVR-Autostarter` - `Studied in Wave 318 as an OpenVR background helper with manifest registration, runtime polling, start/stop task orchestration, graceful-close versus force-kill policy, and hidden/autostart operation`
+- `Eidenz/monadeck` - `Studied in Wave 318 as a Linux XR operator shell with backup-safe OpenXR runtime switching, Steam library and compatdata inspection, game/orchestrator inventory, and shared core for desktop plus in-headset control surfaces`
+- `Eidenz/monado-frame` - `Studied in Wave 318 as a Monado overlay companion with file-decoupled screenshot and gesture-config contracts, runtime-aware wrist panels, async processing, and libmonado-based input arbitration`
+- `EllieWasteland/CaronteLauncherVR` - `Studied as a source-light product-reference shell in Wave 318 for runtime choice, capture-path choice, profile/addon loading, and operator-facing session bring-up wizard UX`
+
+## 290. Stereo display-surface viewers, depth conversion, and spatial-display runtimes
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-319-stereo-display-surface-viewers-depth-conversion-and-spatial-display-runtimes.md`
+- `../landscape/project-families.md`
+
+- `Bastian-Noel/DepthVistaXR` - `Studied in Wave 319 as a desktop-capture-to-stereo viewer with backend ladder, depth-estimation stage, threaded OpenXR output, controller-to-desktop input synthesis, and live Dear PyGui control surfaces`
+- `BerZerker96/Osiris-Vr-Viewer` - `Studied in Wave 319 as a stereo viewer with persistent presets, shared-memory live control plane, in-VR control panel, source hot-swap framing, and explicit viewer-versus-GUI process split`
+- `DisplayXR/displayxr-unity` - `Studied in Wave 319 as a spatial-display Unity runtime plugin with camera-centric versus display-centric rigs, provider tunables, explicit view-rig ownership, and a strong local-2D composition layer`
+- `DisplayXR/displayxr-demo-gaussiansplat` - `Studied in Wave 319 as a compact display-centric viewer with runtime-owned display geometry, focus/pivot/orbit controls, transparent layering, and small-viewer product lessons`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

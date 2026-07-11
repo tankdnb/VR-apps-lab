@@ -3099,6 +3099,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 238. `VRCFT downstream bridge follow-up across VMC/PerfectSync, VNyan, named-pipe simulators, OSC JSON discovery, avatar handoff, and editor automation`
 239. `PSVR2 toolkit downstream client follow-up across gaze capture, headset rumble relays, reversible driver lifecycle, eyelid-estimation toggles, and adaptive-trigger policy`
 240. `Smart-glasses companion follow-up across AR workspace managers, IMU network/HID drivers, Android display-trigger helpers, stable virtual-display identity, and Linux VIO maturity`
+241. `XR WebView/browser panel follow-up across native Quest WebView GPU paths, keyboard/focus ownership, file chooser/download flows, and engine-neutral browser shells`
+242. `VR notification overlay follow-up across ANCS/Windows/Twitch source adapters, privacy filters, queue semantics, overlay targets, and relay security`
+243. `Runtime operator helper follow-up across OpenVR autostart, OpenXR runtime switching, overlay/file-watched companions, input arbitration, and recovery/rollback UX`
+244. `Stereo/display-surface viewer follow-up across depth-estimated desktops, shared-memory control planes, explicit view-rig runtimes, and 2D-on-3D composition`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

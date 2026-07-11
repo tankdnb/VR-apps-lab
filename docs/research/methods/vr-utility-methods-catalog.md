@@ -17032,3 +17032,179 @@ When a new utility idea appears:
   smart-glasses HUD/runtime notes, IMU driver cores, virtual-display lifecycle
   guidance, display-trigger helpers, and cross-platform companion architecture
   references.
+
+## Method 761: XR WebView/browser surface boundary across native page host, texture transport, input routing, browser policy callbacks, and engine integration
+
+- What it is:
+  XR browser panels should separate native page hosting, texture transport,
+  pointer and keyboard routing, browser callback/policy surfaces, and the
+  engine-side panel or interaction adapter.
+- Good for:
+  world-space browser panels, Quest/Android browser shells, in-headset docs and
+  dashboards, remote-control surfaces, and browser-backed operator tools.
+- Why it matters:
+  browser panels become brittle when page host, focus, and input ownership are
+  hidden inside a prefab with platform assumptions. Reuse gets much stronger
+  when the browser core and XR integration seam stay explicit.
+- Source evidence:
+  `rwpersson/OpenWebView-Unity`, `t-34400/SimpleUnity3DWebView`,
+  `vuplex/meta-xr-webview-example`, and
+  `vuplex/xr-interaction-webview-example`.
+- Reusable core:
+  native page host, texture capture or transport path, panel surface manager,
+  pointer-to-UV mapper, keyboard/focus owner, JS/app message bridge, page
+  policy callbacks, and XR interaction-stack adapter.
+- Source evidence details:
+  Wave 316 includes Android `WebView` hosting through
+  `Presentation`/`VirtualDisplay`, broad callback/policy surfaces, and explicit
+  browser core versus XR panel seams from `OpenWebView-Unity`; a thinner
+  manager/pointer/Java/texture split from `SimpleUnity3DWebView`; and Meta XR
+  plus XRI integration checklists from the two Vuplex sample repos.
+- Do not copy directly:
+  browser prefabs that hide focus ownership, vendor sample wiring treated as a
+  complete browser architecture, or Android/Quest assumptions pushed into
+  product logic without capability checks and fallback notes.
+- Strong references:
+  `OpenWebView-Unity` for browser-core and callback breadth,
+  `SimpleUnity3DWebView` for a smaller minimal bridge, and
+  `xr-interaction-webview-example` for interaction-stack setup.
+- Maturity:
+  strong method with platform and engine caveats; production reuse should add
+  explicit keyboard/focus policy, download/file chooser recovery, capability
+  detection, and transport-path performance notes.
+- Best fit for `VR-apps-lab`:
+  browser-backed operator panels, docs/dashboards, world-space web tools, and
+  cross-wave text-entry or interaction studies that need a clean browser seam.
+
+## Method 762: VR notification relay boundary across source adapters, privacy filters, bounded queueing, message rendering, and overlay or WebSocket sinks
+
+- What it is:
+  notification utilities should separate source ingestion, privacy/filter
+  policy, queue and history semantics, payload/card rendering, and sink
+  transport into OpenVR, XSOverlay, OVR Toolkit, or similar targets.
+- Good for:
+  phone-notification overlays, audience/chat HUDs, desktop-status relays,
+  small event sidecars, and operator-facing glanceable panels.
+- Why it matters:
+  message tools become noisy and unsafe when source-specific logic, privacy
+  rules, queue semantics, and sink transport are fused together. Naming the
+  seams makes it easier to reuse the event pipeline for other VR microtools.
+- Source evidence:
+  `BOLL7708/TwitchVRNotifications`, `balazs565/PhoneNotificationsVR`,
+  `tyunta/notifyxsoverlay`, and `NekoSuneProjects/vrnotications`.
+- Reusable core:
+  notification source contract, source merger, allow/block or learning-mode
+  filter, bounded queue, history store, card/payload renderer, overlay or relay
+  sink adapter, startup/runtime supervisor, and settings/config surface.
+- Source evidence details:
+  Wave 317 includes reconnect-aware Twitch chat plus OpenVR notification
+  emission from `TwitchVRNotifications`, a layered source/dispatcher/overlay
+  architecture with bounded `Channel` queue and anchor modes from
+  `PhoneNotificationsVR`, WinRT ingest and XSOverlay relay with config hygiene
+  from `notifyxsoverlay`, and multi-target payload/image normalization from
+  `vrnotications`.
+- Do not copy directly:
+  hidden queue-drop behavior, notification access without privacy framing,
+  unauthenticated relay endpoints treated as safe defaults, or sink-specific
+  payload shaping duplicated across unrelated source adapters.
+- Strong references:
+  `PhoneNotificationsVR` for the cleanest architecture,
+  `notifyxsoverlay` for a thin sidecar relay, and
+  `TwitchVRNotifications` for message-source and card-builder framing.
+- Maturity:
+  strong method with privacy and transport caveats; production reuse should add
+  more explicit retention defaults, auth/trust notes, sink capability matrices,
+  and careful user-facing filter UX.
+- Best fit for `VR-apps-lab`:
+  notification overlays, event-to-overlay sidecars, privacy-aware micro-panels,
+  and bounded event-pipeline helpers for other VR utility families.
+
+## Method 763: Runtime operator sidecar boundary across runtime detection, autostart hooks, task orchestration, runtime switching, file-coupled helpers, and session bring-up UX
+
+- What it is:
+  runtime-adjacent helpers should separate runtime observation, manifest or
+  activation hooks, process/task policy, runtime switching, helper UI, and
+  operator-facing bring-up or recovery flows.
+- Good for:
+  OpenVR/OpenXR launch coordinators, runtime switchers, background helpers,
+  overlay-sidecar operator tools, session bring-up wizards, and small
+  desktop-plus-in-headset control shells.
+- Why it matters:
+  operator tools tend to grow unstable when runtime polling, process control,
+  rollback, and helper UI are fused together. Keeping the seams explicit makes
+  launch and recovery flows reusable across runtimes and product shapes.
+- Source evidence:
+  `dreiekk/OpenVR-Autostarter`, `Eidenz/monadeck`,
+  `Eidenz/monado-frame`, and `EllieWasteland/CaronteLauncherVR`.
+- Reusable core:
+  runtime watcher, activation hook or manifest registration, task registry,
+  start/stop policy, runtime switcher with backup/restore, library or session
+  inventory, overlay/helper UI, file-based companion contract, input
+  arbitration, and operator-facing setup wizard.
+- Source evidence details:
+  Wave 318 includes OpenVR runtime polling and task start/stop logic from
+  `OpenVR-Autostarter`, backup-safe `active_runtime.json` switching plus game
+  inventory/orchestration from `monadeck`, file-watched screenshot and
+  gesture-config overlay helper patterns plus libmonado input arbitration from
+  `monado-frame`, and source-light runtime/capture/profile/addon bring-up UX
+  from `CaronteLauncherVR`.
+- Do not copy directly:
+  runtime-switch writes without backup/restore, hidden kill behavior for
+  managed tasks, input blocking driven only by process names when better runtime
+  state exists, or product-copy UX presented as if it were the full
+  implementation boundary.
+- Strong references:
+  `OpenVR-Autostarter` for runtime lifecycle hooks,
+  `monadeck` for rollback-safe runtime switching, and
+  `monado-frame` for file-coupled overlay helpers and input arbitration.
+- Maturity:
+  strong method with platform and runtime caveats; production reuse should add
+  better dependency ordering, failure reporting, rollback verification, and
+  clearer operator diagnostics across runtime loss or partial startup.
+- Best fit for `VR-apps-lab`:
+  runtime helpers, launch coordinators, operator panels, file-coupled overlay
+  companions, and setup/recovery wizards for future VR utility stacks.
+
+## Method 764: Stereo/display-surface viewer boundary across source ingress, transform pipeline, live control plane, display geometry ownership, and layered 2D composition
+
+- What it is:
+  viewer-style XR tools should separate content ingress, transform stages such
+  as depth or stereo conversion, runtime output loops, live control channels,
+  display/view-rig geometry, and secondary 2D or HUD composition layers.
+- Good for:
+  desktop-to-VR viewers, stereo media or retrofit companions, spatial-display
+  runtimes, single-surface XR viewers, and explicit view-rig utility shells.
+- Why it matters:
+  display-surface viewers become hard to extend when capture, projection,
+  control UI, and runtime geometry are entangled. Explicit seams make it easier
+  to swap sources, display models, or control surfaces.
+- Source evidence:
+  `Bastian-Noel/DepthVistaXR`, `BerZerker96/Osiris-Vr-Viewer`,
+  `DisplayXR/displayxr-unity`, and
+  `DisplayXR/displayxr-demo-gaussiansplat`.
+- Reusable core:
+  source ingress adapter, transform stage such as depth or stereo conversion,
+  runtime output loop, persistent preset store, live override transport,
+  display/view-rig geometry model, local 2D or HUD composition layer, and
+  viewer interaction controls such as orbit, focus, zoom, and recenter.
+- Source evidence details:
+  Wave 319 includes desktop capture plus depth-estimation and threaded OpenXR
+  output from `DepthVistaXR`, persistent preset plus shared-memory live override
+  split from `Osiris-Vr-Viewer`, explicit camera-centric versus display-centric
+  rig and local-2D composition layers from `displayxr-unity`, and compact
+  display-centric viewer controls from `displayxr-demo-gaussiansplat`.
+- Do not copy directly:
+  unversioned shared-memory schemas without compatibility notes, display-rig
+  assumptions hidden inside content logic, or control UIs that mutate rendering
+  internals without a stable viewer-facing contract.
+- Strong references:
+  `DepthVistaXR` for ingress plus transform plus output-loop separation,
+  `Osiris-Vr-Viewer` for control-plane split, and
+  `displayxr-unity` for explicit display geometry and 2D composition.
+- Maturity:
+  strong method with runtime and viewer-specific caveats; production reuse
+  should add control-plane versioning, capability reporting, and clearer
+  separation between experimental transforms and stable display-surface shells.
+- Best fit for `VR-apps-lab`:
+  desktop and media viewers, spatial-display runtime notes, display-centric
+  utility surfaces, and layered control/UI patterns over XR-rendered content.

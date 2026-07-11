@@ -324,6 +324,10 @@ This file complements:
 - `vr-projects-wave-313-vrcfacetracking-downstream-bridges-simulation-panels-and-avatar-setup-automation.md`
 - `vr-projects-wave-314-psvr2toolkit-downstream-clients-gaze-capture-haptics-and-installer-microtools.md`
 - `vr-projects-wave-315-xreal-one-companions-virtual-displays-imu-readers-and-display-triggered-microhelpers.md`
+- `vr-projects-wave-316-xr-webview-browser-panels-native-webview-event-bridges-and-input-surfaces.md`
+- `vr-projects-wave-317-vr-notification-chat-overlays-and-local-message-relay-sidecars.md`
+- `vr-projects-wave-318-runtime-launch-sidecars-overlay-autostart-and-session-operator-helpers.md`
+- `vr-projects-wave-319-stereo-display-surface-viewers-depth-conversion-and-spatial-display-runtimes.md`
 
 ## How to use this index
 

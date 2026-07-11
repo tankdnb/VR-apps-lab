@@ -9888,6 +9888,139 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - Android display-trigger utilities;
 - cautious Linux stack framing with patch-level evidence and maturity caveats.
 
+## Family 295: XR WebView browser panels, native WebView bridges, and input surfaces
+
+This family covers XR browser-panel implementations where a native WebView or
+browser surface is hosted by one layer, rendered into a texture or panel by
+another, and connected to XR input and focus management through explicit
+adapters. The reusable lesson is to keep browser core, transport, and
+interaction wiring separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `rwpersson/OpenWebView-Unity` | Studied in Wave 316 | Android `WebView` via `Presentation`/`VirtualDisplay`, texture transport, broad event/policy callbacks, and browser-core versus XR panel split |
+| `t-34400/SimpleUnity3DWebView` | Studied in Wave 316 | Compact browser manager with pointer source, Java bridge, and texture updater for a minimal 3D browser panel |
+| `vuplex/meta-xr-webview-example` | Source-light integration sample in Wave 316 | Meta XR browser-panel scene wiring and prefab-level setup rather than browser-core donor logic |
+| `vuplex/xr-interaction-webview-example` | Source-light integration sample in Wave 316 | XRI tracked-device raycaster, event-camera, and world-space browser wiring expectations |
+
+### Consolidation note
+
+This family matters because XR browser surfaces should name:
+
+- native page host versus engine-facing panel ownership;
+- texture capture or transport path;
+- pointer-to-UV and keyboard/focus routing;
+- JS/app message and browser callback surfaces;
+- browser permissions, downloads, file chooser, and external-link policy;
+- XR interaction-stack adapters rather than implicit prefab assumptions.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- native Quest/Android browser shells;
+- keyboard/focus ownership patterns for world-space browser panels;
+- XRI and other engine/browser integration checklists;
+- transport-layer comparisons such as CPU copy versus GPU/zero-copy paths;
+- browser utility panels for docs, operators, dashboards, and remote control.
+
+## Family 296: VR notification, chat overlays, and local message relay sidecars
+
+This family covers VR notification utilities that ingest phone, desktop, or
+chat events and relay them into OpenVR, XSOverlay, OVR Toolkit, or similar
+surfaces. The reusable lesson is to separate source adapters, privacy policy,
+delivery queue, renderer, and target sink.
+
+| Project | Status | Notes |
+|---|---|---|
+| `BOLL7708/TwitchVRNotifications` | Studied in Wave 317 | Twitch chat ingest, reconnect behavior, auth/local-secret handling, card rendering, and OpenVR notification emission |
+| `balazs565/PhoneNotificationsVR` | Studied in Wave 317 | Layered source contract, bounded queue, filter/history policy, overlay anchoring, and supervisor loops |
+| `tyunta/notifyxsoverlay` | Studied in Wave 317 | WinRT notification ingest, dedupe, learning-mode filters, config hygiene, startup manifest helpers, and XSOverlay WebSocket relay |
+| `NekoSuneProjects/vrnotications` | Studied in Wave 317 | Minimal XSOverlay/OVR Toolkit/desktop adapters and reusable image normalization across payload forms |
+
+### Consolidation note
+
+This family matters because notification tools should name:
+
+- event-source contract and source-merging policy;
+- allow/block or learning-mode privacy filters;
+- queue/drop semantics and history retention;
+- card/payload rendering versus sink transport;
+- startup/autostart/runtime supervision;
+- trust and auth assumptions for local relay endpoints.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- notification-source adapters for phone, desktop, and audience/chat inputs;
+- privacy-aware relay defaults and filter UX;
+- bounded event-queue helpers for overlays and micro-panels;
+- OpenVR versus XSOverlay target capability comparisons;
+- small message-to-overlay bridges for situational HUDs and operator tools.
+
+## Family 297: Runtime launch sidecars, overlay autostart, and session operator helpers
+
+This family covers runtime-adjacent helpers that watch VR runtime state, start
+or stop supporting processes, switch runtimes safely, expose operator surfaces,
+or guide session bring-up. The reusable lesson is to separate runtime
+observation, task policy, runtime switching, and operator-facing helper UX.
+
+| Project | Status | Notes |
+|---|---|---|
+| `dreiekk/OpenVR-Autostarter` | Studied in Wave 318 | OpenVR runtime polling, manifest registration, autostart, and configurable start/stop task policy |
+| `Eidenz/monadeck` | Studied in Wave 318 | Backup-safe OpenXR runtime switching, Steam/game inventory, install/orchestration helpers, and shared desktop plus in-headset control shell |
+| `Eidenz/monado-frame` | Studied in Wave 318 | File-decoupled screenshot/gesture helper, overlay UI, async processing, and libmonado-based input arbitration |
+| `EllieWasteland/CaronteLauncherVR` | Source-light product reference in Wave 318 | Runtime selection, capture-path selection, profile/addon loading, and bring-up wizard framing |
+
+### Consolidation note
+
+This family matters because runtime operator helpers should name:
+
+- runtime detection and activation hooks;
+- manifest/autostart registration versus session polling;
+- task registry plus start/stop/kill policy;
+- backup/restore and rollback-safe runtime switching;
+- file-coupled overlay or helper contracts;
+- operator-facing wizard or control-panel UX for bring-up and recovery.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- runtime lifecycle watchers and launch coordinators;
+- backup-safe OpenXR runtime switchers;
+- overlay-sidecar helpers that watch files or runtime state;
+- operator bring-up wizards for capture/runtime/profile selection;
+- input-arbitration patterns tied to runtime client state instead of app-name heuristics.
+
+## Family 298: Stereo display-surface viewers, depth conversion, and spatial-display runtimes
+
+This family covers viewer-style utilities that ingest flat or stereo content,
+apply depth or display transforms, and present it through explicit runtime or
+display-geometry models. The reusable lesson is to separate content ingress,
+transform pipeline, live control plane, and display/view-rig ownership.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Bastian-Noel/DepthVistaXR` | Studied in Wave 319 | Desktop/window ingress, depth-estimation stage, threaded OpenXR output, backend ladder, and live controls |
+| `BerZerker96/Osiris-Vr-Viewer` | Studied in Wave 319 | Persistent preset plus shared-memory live override split and viewer-versus-GUI process boundary |
+| `DisplayXR/displayxr-unity` | Studied in Wave 319 | Camera-centric versus display-centric rigs, provider tunables, explicit display geometry, and local-2D composition layer |
+| `DisplayXR/displayxr-demo-gaussiansplat` | Studied in Wave 319 | Compact display-centric viewer with focus/orbit controls, transparent layering, and runtime-owned display geometry |
+
+### Consolidation note
+
+This family matters because display-surface viewers should name:
+
+- source ingress such as desktop capture, stereo input, or runtime-native content;
+- transform stage such as depth estimation, stereo conversion, or display-rig projection;
+- persistent preset store versus live override/control channel;
+- explicit display/view-rig geometry ownership;
+- 2D/HUD composition layered over 3D content;
+- viewer interaction controls such as orbit, focus, zoom, and recenter.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- desktop-to-VR viewer shells and backend fallback ladders;
+- shared-memory or other control-plane patterns for viewer utilities;
+- spatial-display runtime notes and `XR_EXT_view_rig`-style abstractions;
+- local 2D-over-3D composition helpers;
+- display-centric product references for single-surface XR utilities.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

@@ -2238,3 +2238,31 @@ repeatable way.
 
 - `github-research-wave-315-backlog.md`
   Executed backlog for the Wave 315 pass.
+
+- `github-research-wave-316-plan.md`
+  Wave 316 research plan focused on XR WebView/browser panels, native WebView
+  bridges, texture transport, browser callbacks, and XR interaction seams.
+
+- `github-research-wave-316-backlog.md`
+  Executed backlog for the Wave 316 pass.
+
+- `github-research-wave-317-plan.md`
+  Wave 317 research plan focused on VR notification/chat overlays, privacy
+  filters, bounded queues, OpenVR/XSOverlay sinks, and local relay sidecars.
+
+- `github-research-wave-317-backlog.md`
+  Executed backlog for the Wave 317 pass.
+
+- `github-research-wave-318-plan.md`
+  Wave 318 research plan focused on runtime launch helpers, overlay autostart,
+  task orchestration, runtime switching, and session operator surfaces.
+
+- `github-research-wave-318-backlog.md`
+  Executed backlog for the Wave 318 pass.
+
+- `github-research-wave-319-plan.md`
+  Wave 319 research plan focused on stereo/display-surface viewers, depth
+  conversion, spatial-display runtimes, and layered 2D composition.
+
+- `github-research-wave-319-backlog.md`
+  Executed backlog for the Wave 319 pass.
