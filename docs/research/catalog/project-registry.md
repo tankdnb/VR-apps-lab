@@ -4437,6 +4437,54 @@ Primary docs:
 - `dilmerv/XRToolKitPlayerController` - `Studied in Wave 335 as a minimal Unity XR player controller baseline with XRNode device lookup, joystick movement, jump gating, rigidbody/capsule setup, and scene/component existence tests`
 - `traggett/UnityXRInteractionToolkitExtensions` - `Rejected in Wave 335 as an empty repository with no current code donor value`
 
+## 307. Headsetless OpenXR, Godot, Bevy, and runtime simulator harnesses
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-336-headsetless-openxr-godot-bevy-and-runtime-simulator-harnesses.md`
+- `../landscape/project-families.md`
+
+- `jrng/openxr_simulator` - `Studied in Wave 336 as a runtime-level OpenXR simulator with loader negotiation, session/view/swapchain stubs, D3D11/OpenGL paths, stereo view config, keyboard/mouse HMD motion, and runtime registration caveats`
+- `Cafezinhu/godot-vr-simulator` - `Studied in Wave 336 as a Godot editor autoload that injects XRCamera3D/XRController3D tracker poses and OpenXR action-map inputs from keyboard, mouse, scroll, and controller-selection keys`
+- `sanky369/OpenXRSim` - `Studied in Wave 336 as an Unreal XR simulator plugin with HMD/input-device modules, shared simulator state, Slate panel, room JSON, XInput, UDP forwarding, and JSON record/replay`
+- `kcking/bevy_xr_app` - `Studied in Wave 336 as a Bevy OpenXR starter template with simulator/editor/Quest/PCVR mode separation and headsetless WASD/mouse development framing`
+- `demonixis/OpenXR-OSX` - `Studied in Wave 336 as a broad OXRSys runtime/operator reference with runtime JSON selection, Home apps, Quest/PICO client telemetry, Unity editor helper, macOS loader postprocessor, and simulator windows`
+
+## 308. OpenVR notification primitives, overlay wrappers, and Windows toast bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-337-openvr-notification-primitives-overlay-wrappers-and-windows-toast-bridges.md`
+- `../landscape/project-families.md`
+
+- `AlexMcArdle/openvr-notifications` - `Checked in Wave 337 as a thin README-level OpenVR notification direction marker with no current code donor value`
+- `BOLL7708/OpenVRNotificationTest` - `Studied in Wave 337 as a minimal C# OpenVR notification primitive with background init, overlay creation, bitmap channel preparation, NotificationBitmap_t, and IVRNotifications.CreateNotification`
+- `erenoa-6621/vr-notification-overlay` - `Studied in Wave 337 as a Windows notification to OpenVR overlay app with listener permission, queue/filter/history/settings pipeline, Skia renderer, dashboard settings, SteamVR manifest, and installer/portable packaging`
+- `OVRTools/OVRSharp` - `Studied in Wave 337 as a C# OpenVR overlay wrapper with application-type init, dashboard/normal overlays, texture submission, tracked-device transforms, curvature/alpha/mouse scale, and event polling`
+
+## 309. Browser VR video players, projection modes, and in-headset media libraries
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-338-browser-vr-video-players-projection-modes-and-in-headset-media-libraries.md`
+- `../landscape/project-families.md`
+
+- `TimoWilhelm/vr-player` - `Studied in Wave 338 as a modern WebXR 180/360 player with mono/top-bottom/left-right layout enums, drag/drop and URL input, worker-assisted video layout recognition, requestVideoFrameCallback texture upload, and split debug/VR renderers`
+- `Bivrost/360WebPlayer` - `Studied in Wave 338 as a mature embeddable browser 360 player with declarative player tags, mono/stereo video and picture support, HLS, touch/keyboard/gyro/WebVR input, browser matrix, CORS/HTTPS caveats, and older WebVR constraints`
+- `michal-repo/web_vr_video_player` - `Studied in Wave 338 as an in-headset WebXR media-library player with JSON media catalogs, filename projection tags, generated thumbnails, search/sort, VR keyboard, draggable panels, controller shortcuts, and screen/projection switching`
+
+## 310. Unreal vendor OpenXR interaction samples, hand tracking, and MR feature bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-339-unreal-vendor-openxr-interaction-samples-hand-tracking-and-mr-feature-bridges.md`
+- `../landscape/project-families.md`
+
+- `picoxr/PICO_UE5_OpenXRSample` - `Studied in Wave 339 as a PICO Unreal OpenXR sample with hub scene, controller interaction, locomotion, teleport, UI, grab/remote grab, haptics, hand gestures, pinch grab, V-gesture return, and full-body avatar tracking`
+- `oculus-samples/Unreal-InteractionSDK-Sample` - `Studied in Wave 339 as a Meta Unreal Interaction SDK sample with explicit Meta XR/Interaction SDK dependency boundaries, C++ sample plugin helpers, setup docs, and license constraints`
+- `demonixis/FSOpenXRHandTracking` - `Studied in Wave 339 as an Unreal OpenXR hand tracking plugin with FXRMotionControllerData updates, instanced/wireframe rendering, pinch detection, Enhanced Input hooks, lagged hand rays, and MetaXR skeleton bridge`
+- `varjocom/VarjoUnrealOpenXRExamples` - `Studied in Wave 339 as a Varjo Unreal OpenXR example project for pass-through MR, depth occlusion, foveated rendering, markers, eye tracking, hand tracking, branch/version policy, and vendor hardware caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

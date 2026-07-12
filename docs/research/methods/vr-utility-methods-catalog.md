@@ -17830,3 +17830,162 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   experiment templates, telemetry tools, training/evaluation apps, and
   reusable study-data scaffolds.
+
+## Method 781: No-headset XR simulator harness
+
+- What it is:
+  simulator support for XR apps should be a distinct harness with explicit
+  simulated device state, input adapters, runtime/editor registration, and
+  replay/forwarding boundaries.
+- Good for:
+  headsetless development, demo capture, repeatable tests, XR doctors,
+  controller input validation, room fixtures, and onboarding templates.
+- Why it matters:
+  VR utility iteration is slow when every change requires a headset; simulator
+  harnesses make utility logic easier to inspect and document.
+- Source evidence:
+  `jrng/openxr_simulator`, `Cafezinhu/godot-vr-simulator`,
+  `sanky369/OpenXRSim`, `kcking/bevy_xr_app`, and `demonixis/OpenXR-OSX`.
+- Reusable core:
+  simulator boundary, HMD pose model, controller pose/action model,
+  keyboard/mouse/gamepad adapters, optional UDP/external pose forwarding,
+  room fixture, record/replay schema, status/editor panel, runtime manifest or
+  plugin toggle, and clear simulated-versus-real labelling.
+- Source evidence details:
+  Wave 336 includes OpenXR runtime loader negotiation, Godot tracker/action
+  injection, Unreal XR system/input-device split, Slate simulator panel, room
+  JSON, XInput, UDP forwarding, Bevy mode separation, and OXRSys runtime
+  selector helpers.
+- Do not copy directly:
+  full unofficial runtimes, hardcoded controller profiles, hidden runtime
+  registration, replay formats without schemas, or simulator state that
+  diverges from real action paths.
+- Strong references:
+  `sanky369/OpenXRSim` for engine-plugin simulation and
+  `jrng/openxr_simulator` for runtime-level boundaries.
+- Maturity:
+  strong method; production reuse should add schema/version metadata, device
+  profile declarations, and rollback for runtime registration.
+- Best fit for `VR-apps-lab`:
+  simulator-first prototypes, diagnostics, no-HMD workflows, and repeatable
+  overlay/input tests.
+
+## Method 782: OS notification to VR overlay pipeline
+
+- What it is:
+  notification utilities should separate source permissions, notification
+  domain cards, filter/DND policy, queue/history, rendering, OpenVR overlay
+  calls, dashboard settings, and packaging.
+- Good for:
+  Windows notification overlays, phone-to-VR relays, accessibility alerts,
+  dashboard status cards, replayable notification history, and privacy-safe
+  source filtering.
+- Why it matters:
+  the hard part of notification overlays is not only drawing a card; it is
+  consent, filtering, prioritization, history, and lifecycle clarity.
+- Source evidence:
+  `BOLL7708/OpenVRNotificationTest`,
+  `erenoa-6621/vr-notification-overlay`, and `OVRTools/OVRSharp`;
+  `AlexMcArdle/openvr-notifications` is a thin direction marker only.
+- Reusable core:
+  source adapter, permission check, notification event/card model, filter
+  chain, priority resolver, DND profile, bounded queue, history store, card
+  renderer, overlay manager, dashboard/settings UI, SteamVR manifest, and
+  diagnostics.
+- Source evidence details:
+  Wave 337 includes minimal `IVRNotifications.CreateNotification`, bitmap
+  channel preparation, OVRSharp overlay wrappers, Windows notification listener
+  capability, dependency-injected pipeline services, dashboard overlay,
+  settings/history/filter models, and installer/autolaunch pieces.
+- Do not copy directly:
+  raw notification capture without consent UX, unbounded history, fragile
+  bitmap conversion without validation, wrapper APIs that hide lifecycle
+  failures, or installer scripts without review.
+- Strong references:
+  `erenoa-6621/vr-notification-overlay` for product pipeline and
+  `BOLL7708/OpenVRNotificationTest` for the minimal OpenVR primitive.
+- Maturity:
+  strong method with Windows/OpenVR specificity; production reuse should define
+  a privacy-safe card schema and error/reporting model.
+- Best fit for `VR-apps-lab`:
+  notification overlays, accessibility alerts, dashboard cards, and
+  companion-message relays.
+
+## Method 783: Projection-aware browser VR media surface
+
+- What it is:
+  browser VR media tools should model media source, projection, stereo layout,
+  renderer, source discovery, and in-headset controls as separate parts.
+- Good for:
+  180/360 video players, 3D video viewers, media-library browsers, WebXR
+  display surfaces, CORS/HTTPS preflights, and browser media diagnostics.
+- Why it matters:
+  VR media utilities fail quickly when projection/layout metadata is implicit
+  or mixed into monolithic player UI code.
+- Source evidence:
+  `TimoWilhelm/vr-player`, `Bivrost/360WebPlayer`, and
+  `michal-repo/web_vr_video_player`.
+- Reusable core:
+  media descriptor, projection/layout enum, stereo UV mapping, eye-layer
+  assignment, frame-aware video texture upload, WebXR renderer, debug/flat
+  renderer, file/URL/catalog input, thumbnail metadata, VR file browser,
+  search/sort, draggable controls, controller shortcuts, and CORS/HTTPS checks.
+- Source evidence details:
+  Wave 338 includes mono/SBS/TB layout enums, worker-assisted video layout
+  detection, `requestVideoFrameCallback` texture upload, embeddable player
+  configuration, HLS support, JSON catalogs, filename projection tags, VR
+  keyboard/search, draggable panels, and projection switching.
+- Do not copy directly:
+  stale WebVR assumptions, hardcoded filename parsing without schema, media
+  paths without trust/CORS checks, analytics without consent, or one-folder
+  media library assumptions.
+- Strong references:
+  `TimoWilhelm/vr-player` for modern WebXR renderer split and
+  `michal-repo/web_vr_video_player` for in-headset media-library UX.
+- Maturity:
+  strong browser method; production reuse should add schema versioning,
+  browser capability reports, and privacy notes for local file/media access.
+- Best fit for `VR-apps-lab`:
+  WebXR media surfaces, 3D video players, browser display tools, and
+  projection/capability diagnostics.
+
+## Method 784: Unreal vendor OpenXR interaction sample decomposition
+
+- What it is:
+  Unreal/vendor samples should be decomposed into hub routing, interaction
+  scenes, tracked-data adapters, hand/body/eye/MR feature surfaces, and vendor
+  dependency gates.
+- Good for:
+  Unreal XR utility samples, hand-only controls, body tracking demos, MR
+  feature labs, vendor-support matrices, and plugin-boundary documentation.
+- Why it matters:
+  vendor samples often contain useful UX and architecture lessons even when
+  their assets and plugins are not reusable.
+- Source evidence:
+  `picoxr/PICO_UE5_OpenXRSample`,
+  `oculus-samples/Unreal-InteractionSDK-Sample`,
+  `demonixis/FSOpenXRHandTracking`, and
+  `varjocom/VarjoUnrealOpenXRExamples`.
+- Reusable core:
+  hub scene, feature cards, controller scene, hand-only scene, body/eye/MR
+  scenes, input action assets, vendor adapter, tracked-data component,
+  gesture/pinch/ray layer, debug rendering, setup docs, and explicit
+  dependency/license/hardware gates.
+- Source evidence details:
+  Wave 339 includes PICO hub/controller/hand/body scenes, Meta Interaction SDK
+  dependency boundaries, `UFSInstancedHand` rendering/pinch/hand-ray/MetaXR
+  bridge, and Varjo pass-through/depth/foveation/marker/eye/hand feature
+  framing.
+- Do not copy directly:
+  vendor assets, binary Unreal content without source evidence,
+  hardware-specific assumptions, license-restricted plugin code, or sample hub
+  UX that hides unsupported devices.
+- Strong references:
+  `demonixis/FSOpenXRHandTracking` for bounded source-level hand tracking and
+  `picoxr/PICO_UE5_OpenXRSample` for product hub organization.
+- Maturity:
+  useful method; production reuse should create engine-neutral support labels
+  and avoid importing vendor sample assets by default.
+- Best fit for `VR-apps-lab`:
+  Unreal XR prototypes, vendor capability matrices, hand/pinch/ray utilities,
+  and MR feature sample documentation.

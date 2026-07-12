@@ -1237,6 +1237,10 @@ directions:
 252. `Browser XR capability/pass-through follow-up across WebXR/WebGPU/WebRTC/media probes, report schemas, permission side effects, GL pass-through planes, and headset browser metadata`
 253. `Godot XR interaction/surface follow-up across hand pose resources, radial menus, wrist SubViewport input, spatial entity persistence, Android surfaces, and notification plugin maturity`
 254. `Unity XR research scaffold follow-up across TXR player/data/scene managers, CSV schemas, calibration, session/trial flow, Meta coexistence, and minimal controller baselines`
+255. `Headsetless XR simulator follow-up across OpenXR runtime shims, Godot/Unreal/Bevy simulator adapters, runtime JSON selection, room fixtures, UDP pose forwarding, and replay schemas`
+256. `VR notification overlay pipeline follow-up across OpenVR notification primitives, OVRSharp wrappers, Windows listener permissions, filters, DND, history, dashboard settings, and installer security`
+257. `Browser VR media surface follow-up across projection/layout descriptors, WebXR renderer split, file/URL/catalog inputs, thumbnails, draggable controls, and CORS/HTTPS preflight`
+258. `Unreal vendor OpenXR sample follow-up across hub/menu scenes, hand/pinch/ray components, body/eye/MR feature adapters, vendor plugin gates, and asset/license boundaries`
 
 ## Current repository-maintenance priorities
 
@@ -1248,7 +1252,29 @@ Besides new research waves, the main repository-maintenance work now is:
 - reduce archive pressure in front-door docs;
 - preserve wave history without making every entry document chronological.
 
-## Current additions from Waves 332-335
+## Current additions from Waves 336-339
+
+Recent research adds four useful donor clusters:
+
+- `headsetless XR simulator harnesses`
+  from openxr_simulator, godot-vr-simulator, OpenXRSim, bevy_xr_app, and
+  OXRSys: runtime/editor simulator boundaries, pose/action injection, room
+  fixtures, UDP forwarding, record/replay, and runtime selector helpers.
+- `VR notification overlay pipelines`
+  from OpenVRNotificationTest, VRNotify, OVRSharp, and a thin
+  openvr-notifications marker: native OpenVR notification primitives, wrapper
+  ergonomics, Windows notification consent, filters, history, dashboard
+  settings, and packaging boundaries.
+- `browser VR media surfaces`
+  from vr-player, 360WebPlayer, and web_vr_video_player: projection/layout
+  metadata, WebXR video rendering, frame-aware texture upload, media catalogs,
+  thumbnails, in-headset search/sort, draggable panels, and CORS/HTTPS caveats.
+- `Unreal/vendor OpenXR interaction samples`
+  from PICO UE5 OpenXR, Meta Interaction SDK sample, FSOpenXRHandTracking, and
+  Varjo OpenXR examples: hub scenes, controller/hand/body/MR feature demos,
+  pinch/ray hand input, and explicit vendor dependency gates.
+
+## Previous additions from Waves 332-335
 
 Recent research adds four useful donor clusters:
 

@@ -2378,3 +2378,31 @@ repeatable way.
 
 - `github-research-wave-335-backlog.md`
   Executed backlog for the Wave 335 pass.
+
+- `github-research-wave-336-plan.md`
+  Wave 336 research plan focused on headsetless OpenXR, Godot, Bevy, and
+  runtime simulator harnesses.
+
+- `github-research-wave-336-backlog.md`
+  Executed backlog for the Wave 336 pass.
+
+- `github-research-wave-337-plan.md`
+  Wave 337 research plan focused on OpenVR notification primitives, overlay
+  wrappers, and Windows toast bridges.
+
+- `github-research-wave-337-backlog.md`
+  Executed backlog for the Wave 337 pass.
+
+- `github-research-wave-338-plan.md`
+  Wave 338 research plan focused on browser VR video players, projection modes,
+  and in-headset media libraries.
+
+- `github-research-wave-338-backlog.md`
+  Executed backlog for the Wave 338 pass.
+
+- `github-research-wave-339-plan.md`
+  Wave 339 research plan focused on Unreal vendor OpenXR interaction samples,
+  hand tracking, and MR feature bridges.
+
+- `github-research-wave-339-backlog.md`
+  Executed backlog for the Wave 339 pass.

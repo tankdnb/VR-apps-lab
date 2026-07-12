@@ -1111,3 +1111,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-335-unity-xr-research-templates-data-logging-scene-flow-and-controller-baselines.md`
   Unity XR research templates, telemetry/data managers, scene flow, Meta
   coexistence, minimal controller baselines, and empty-candidate handling.
+- `vr-projects-wave-336-headsetless-openxr-godot-bevy-and-runtime-simulator-harnesses.md`
+  No-headset simulator harnesses, runtime/editor pose injection, room fixtures,
+  runtime selectors, and replay/forwarding boundaries.
+- `vr-projects-wave-337-openvr-notification-primitives-overlay-wrappers-and-windows-toast-bridges.md`
+  OpenVR notification primitives, C# overlay wrappers, Windows notification
+  listeners, filters, history, dashboard settings, and packaging boundaries.
+- `vr-projects-wave-338-browser-vr-video-players-projection-modes-and-in-headset-media-libraries.md`
+  Browser VR media players, projection/layout descriptors, WebXR renderers,
+  media catalogs, thumbnails, and in-headset source-browser UX.
+- `vr-projects-wave-339-unreal-vendor-openxr-interaction-samples-hand-tracking-and-mr-feature-bridges.md`
+  Unreal/vendor OpenXR samples, hand tracking, body/eye/MR feature surfaces,
+  hand rays, plugin gates, and asset/license boundaries.

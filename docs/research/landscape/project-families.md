@@ -10497,6 +10497,91 @@ branch around:
 - session/trial/round flow managers;
 - lightweight controller and smoke-test baselines.
 
+## Family 315: Headsetless XR simulator harnesses and runtime/operator workflows
+
+This family covers no-headset XR development support across runtime-level
+OpenXR simulators, engine/editor simulator plugins, starter templates, and
+runtime selector/operator surfaces. The reusable lesson is to keep simulated
+device state, input adapters, runtime/engine registration, replay, and app
+logic separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `jrng/openxr_simulator` | Studied in Wave 336 | Runtime-level OpenXR simulator with loader negotiation, stereo views, swapchains, D3D11/OpenGL, keyboard/mouse pose driving |
+| `Cafezinhu/godot-vr-simulator` | Studied in Wave 336 | Godot editor autoload that injects XRCamera3D/XRController3D tracker poses and OpenXR action-map inputs |
+| `sanky369/OpenXRSim` | Studied in Wave 336 | Unreal simulator plugin with XR system/input-device split, Slate panel, room JSON, XInput, UDP forwarding, and record/replay |
+| `kcking/bevy_xr_app` | Studied in Wave 336 | Bevy starter template with simulator/editor/Quest/PCVR mode separation |
+| `demonixis/OpenXR-OSX` | Architecture reference in Wave 336 | OXRSys runtime/operator surface with runtime JSON selection, Home apps, headset clients, Unity helper, and simulator windows |
+
+### Consolidation note
+
+This family matters because simulator support can become a repeatable
+development and diagnostics utility branch. It suggests a stronger branch
+around no-headset XR doctors, pose/action replay schemas, editor/runtime
+registration safety, and live forwarded tracker/controller input.
+
+## Family 316: OpenVR notification primitives, overlay wrappers, and OS notification bridges
+
+This family covers the path from minimal `IVRNotifications` samples to full
+Windows notification overlay applications. The reusable lesson is to separate
+source permissions, notification policy, queue/history, rendering, OpenVR
+overlay calls, dashboard settings, and packaging.
+
+| Project | Status | Notes |
+|---|---|---|
+| `AlexMcArdle/openvr-notifications` | Thin marker in Wave 337 | README-level phone-to-OpenVR direction; no current implementation donor |
+| `BOLL7708/OpenVRNotificationTest` | Studied in Wave 337 | Minimal C# OpenVR notification primitive with overlay handle, bitmap preparation, and `CreateNotification` |
+| `erenoa-6621/vr-notification-overlay` | Studied in Wave 337 | Windows notification listener to OpenVR overlay pipeline with filters, queue, history, settings, dashboard overlay, and packaging |
+| `OVRTools/OVRSharp` | Studied in Wave 337 | C# OpenVR overlay wrapper for app init, overlay handles, transforms, textures, alpha/curvature/mouse scale, and events |
+
+### Consolidation note
+
+This family matters because notification utilities need privacy-safe product
+logic as much as overlay rendering. It suggests a branch around OS notification
+consent/filter policy, persistent cards versus transient notifications,
+dashboard settings panels, and OpenVR wrapper ergonomics.
+
+## Family 317: Browser VR video players, projection modes, and media-library surfaces
+
+This family covers WebXR/WebVR media players, projection metadata, stereo
+layout handling, source catalogs, and in-headset media-library UX. The reusable
+lesson is to keep media metadata, projection rendering, source discovery,
+catalog generation, controls, and browser capability checks separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `TimoWilhelm/vr-player` | Studied in Wave 338 | Modern WebXR player with mono/SBS/TB layout enums, worker layout detection, file/URL input, and frame-aware texture upload |
+| `Bivrost/360WebPlayer` | Studied in Wave 338 | Mature embeddable 360 player with declarative config, mono/stereo pictures/video, HLS, input modules, and compatibility matrix |
+| `michal-repo/web_vr_video_player` | Studied in Wave 338 | In-headset media library with JSON catalogs, thumbnails, search/sort, VR keyboard, draggable panels, and projection switching |
+
+### Consolidation note
+
+This family matters because media/viewer utilities often need projection
+correctness and source browsing before advanced features. It suggests a branch
+around projection-aware media descriptors, WebXR video surface renderers,
+in-headset file/source browsers, and browser CORS/HTTPS preflight UX.
+
+## Family 318: Unreal vendor OpenXR interaction samples and feature bridges
+
+This family covers Unreal/vendor sample projects for controller, hand, body,
+eye, and mixed-reality feature surfaces. The reusable lesson is to keep vendor
+plugin setup, tracked data acquisition, interaction semantics, rendering/debug
+visualization, scene routing, and sample content separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `picoxr/PICO_UE5_OpenXRSample` | Studied in Wave 339 | PICO UE5 sample with hub, controller interactions, hand gestures, pinch grab, haptics, and full-body avatar tracking |
+| `oculus-samples/Unreal-InteractionSDK-Sample` | Studied in Wave 339 | Meta Unreal Interaction SDK sample with explicit plugin/dependency and license boundaries |
+| `demonixis/FSOpenXRHandTracking` | Studied in Wave 339 | Unreal hand tracking plugin with instanced/wireframe rendering, pinch, Enhanced Input, hand rays, and MetaXR skeleton bridge |
+| `varjocom/VarjoUnrealOpenXRExamples` | Studied in Wave 339 | Varjo OpenXR example for pass-through, depth, foveation, markers, eye tracking, and hand tracking |
+
+### Consolidation note
+
+This family matters because vendor demos can teach feature decomposition even
+when their assets are not reusable. It suggests a branch around Unreal XR
+feature-demo hubs, hand-ray and pinch interaction components, vendor adapter
+boundaries, and explicit hardware/license support labelling.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

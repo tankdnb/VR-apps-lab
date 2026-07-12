@@ -3119,6 +3119,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 258. `Browser XR capability/pass-through follow-up across WebXR/WebGPU/WebRTC/media probes, report schemas, permission side effects, GL pass-through planes, and headset browser metadata`
 259. `Godot XR interaction/surface follow-up across hand pose resources, radial menus, wrist SubViewport input, spatial entity persistence, Android surfaces, and notification plugin maturity`
 260. `Unity XR research scaffold follow-up across TXR player/data/scene managers, CSV schemas, calibration, session/trial flow, Meta coexistence, and minimal controller baselines`
+261. `Headsetless XR simulator follow-up across runtime registration, simulated action profiles, room fixtures, UDP pose forwarding, replay schemas, and rollback UX`
+262. `VR notification overlay pipeline follow-up across native OpenVR notifications, persistent overlay cards, consent, filters, history, dashboard settings, and packaging security`
+263. `Browser VR media surface follow-up across media descriptor schemas, projection/layout metadata, WebXR Layers, CORS/HTTPS validation, thumbnails, and in-headset source browsers`
+264. `Unreal vendor OpenXR sample follow-up across hub scenes, hand rays, pinch events, body/eye/MR feature adapters, plugin dependency gates, and asset/license boundaries`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

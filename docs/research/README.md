@@ -331,6 +331,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-333-webxr-capability-probes-pass-through-testbeds-and-utility-labs.md`
 - `landscape/vr-projects-wave-334-godot-xr-hand-poses-spatial-entities-wrist-ui-and-android-surfaces.md`
 - `landscape/vr-projects-wave-335-unity-xr-research-templates-data-logging-scene-flow-and-controller-baselines.md`
+- `landscape/vr-projects-wave-336-headsetless-openxr-godot-bevy-and-runtime-simulator-harnesses.md`
+- `landscape/vr-projects-wave-337-openvr-notification-primitives-overlay-wrappers-and-windows-toast-bridges.md`
+- `landscape/vr-projects-wave-338-browser-vr-video-players-projection-modes-and-in-headset-media-libraries.md`
+- `landscape/vr-projects-wave-339-unreal-vendor-openxr-interaction-samples-hand-tracking-and-mr-feature-bridges.md`
 
 ## Archive Navigation
 

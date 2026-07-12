@@ -1527,6 +1527,23 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on Unity XR research templates,
   telemetry/data managers, scene flow, and minimal controller baselines.
 
+- `vr-projects-wave-336-headsetless-openxr-godot-bevy-and-runtime-simulator-harnesses.md`
+  Next GitHub discovery wave focused on no-headset simulator harnesses,
+  runtime/editor pose injection, runtime selectors, and replay/forwarding.
+
+- `vr-projects-wave-337-openvr-notification-primitives-overlay-wrappers-and-windows-toast-bridges.md`
+  Next GitHub discovery wave focused on OpenVR notification primitives,
+  overlay wrappers, Windows notification listeners, filters, and dashboard
+  settings.
+
+- `vr-projects-wave-338-browser-vr-video-players-projection-modes-and-in-headset-media-libraries.md`
+  Next GitHub discovery wave focused on browser VR video players, projection
+  metadata, media catalogs, thumbnails, and in-headset media-library UX.
+
+- `vr-projects-wave-339-unreal-vendor-openxr-interaction-samples-hand-tracking-and-mr-feature-bridges.md`
+  Next GitHub discovery wave focused on Unreal/vendor OpenXR interaction
+  samples, hand tracking, body/eye/MR features, and plugin dependency gates.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
