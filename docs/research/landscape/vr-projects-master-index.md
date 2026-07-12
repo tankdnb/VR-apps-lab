@@ -1099,3 +1099,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-331-overlay-surface-proxies-dashboard-notifications-hand-redirection-and-tracker-recording-utilities.md`
   VR-capturable proxy surfaces, dashboard notifications, hand redirection, and
   tracker recording utilities.
+- `vr-projects-wave-332-aframe-vr-ui-primitives-dom-surfaces-and-input-widgets.md`
+  A-Frame HTML surfaces, mesh-native layout, text input, virtual keyboards, and
+  dialog popups.
+- `vr-projects-wave-333-webxr-capability-probes-pass-through-testbeds-and-utility-labs.md`
+  Browser XR capability probes, report/export pages, pass-through WebGL planes,
+  and lightweight WebXR utility labs.
+- `vr-projects-wave-334-godot-xr-hand-poses-spatial-entities-wrist-ui-and-android-surfaces.md`
+  Godot XR hand pose recognition, radial and wrist UI, spatial entities,
+  persistent anchors, Android surfaces, and notification bridge gaps.
+- `vr-projects-wave-335-unity-xr-research-templates-data-logging-scene-flow-and-controller-baselines.md`
+  Unity XR research templates, telemetry/data managers, scene flow, Meta
+  coexistence, minimal controller baselines, and empty-candidate handling.

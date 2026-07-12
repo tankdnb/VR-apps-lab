@@ -2350,3 +2350,31 @@ repeatable way.
 
 - `github-research-wave-331-backlog.md`
   Executed backlog for the Wave 331 pass.
+
+- `github-research-wave-332-plan.md`
+  Wave 332 research plan focused on A-Frame VR UI primitives, DOM surfaces,
+  in-scene input widgets, keyboards, and dialogs.
+
+- `github-research-wave-332-backlog.md`
+  Executed backlog for the Wave 332 pass.
+
+- `github-research-wave-333-plan.md`
+  Wave 333 research plan focused on WebXR capability probes, pass-through
+  testbeds, and lightweight utility labs.
+
+- `github-research-wave-333-backlog.md`
+  Executed backlog for the Wave 333 pass.
+
+- `github-research-wave-334-plan.md`
+  Wave 334 research plan focused on Godot XR hand poses, spatial entities,
+  wrist UI, radial menus, and Android surface bridges.
+
+- `github-research-wave-334-backlog.md`
+  Executed backlog for the Wave 334 pass.
+
+- `github-research-wave-335-plan.md`
+  Wave 335 research plan focused on Unity XR research templates, telemetry
+  scaffolds, scene flow, and minimal controller baselines.
+
+- `github-research-wave-335-backlog.md`
+  Executed backlog for the Wave 335 pass.

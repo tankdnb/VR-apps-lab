@@ -1233,6 +1233,10 @@ directions:
 248. `SteamVR operation microtool follow-up across typed settings APIs, raw config patches, process kill policies, dry-run/rollback UX, and recovery target previews`
 249. `SteamVR hardware/resource patcher follow-up across dongle flashing target identity, base-station serial diagnostics, icon/render-model backup/restore, and provenance`
 250. `Proxy surface and tracker data follow-up across HWND/DWM/chroma-key capture, dashboard overlay lifecycle, hand redirection algorithms, tracker serial mapping, and replay schemas`
+251. `Browser-native VR UI primitive follow-up across DOM-to-plane rendering, mesh-native layout, text input, keyboards, dialog lifecycle, focus cleanup, and update budgets`
+252. `Browser XR capability/pass-through follow-up across WebXR/WebGPU/WebRTC/media probes, report schemas, permission side effects, GL pass-through planes, and headset browser metadata`
+253. `Godot XR interaction/surface follow-up across hand pose resources, radial menus, wrist SubViewport input, spatial entity persistence, Android surfaces, and notification plugin maturity`
+254. `Unity XR research scaffold follow-up across TXR player/data/scene managers, CSV schemas, calibration, session/trial flow, Meta coexistence, and minimal controller baselines`
 
 ## Current repository-maintenance priorities
 
@@ -1244,7 +1248,30 @@ Besides new research waves, the main repository-maintenance work now is:
 - reduce archive pressure in front-door docs;
 - preserve wave history without making every entry document chronological.
 
-## Current additions from Waves 328-331
+## Current additions from Waves 332-335
+
+Recent research adds four useful donor clusters:
+
+- `browser-native VR UI primitives`
+  from aframe-htmlembed, aframe-xylayout, aframe-keyboard, and dialog-popup:
+  HTML-to-plane surfaces, ray-to-coordinate input, flex-like in-scene layout,
+  text entry, virtual keyboards, and contextual dialogs.
+- `browser XR diagnostics and pass-through testbeds`
+  from i5-Toolkit-for-WebXR, WebXR-utils, and webvrdev-labs: capability
+  matrices, spec-linked checks, JSON report export, AR hit-test helpers, and
+  WebGL pass-through/video plane experiments.
+- `Godot XR gestures, menus, spatial entities, and Android surfaces`
+  from GodotXRHandPoseDetector, Godot-XR-AH, spatial-entities-demo, Android
+  surface example, and notification plugin check: hand pose resources, radial
+  menus, wrist SubViewport input, persistent anchors, Android surface handoff,
+  and notification bridge gaps.
+- `Unity XR research scaffolds`
+  from TAUXR templates, XRToolKitPlayerController, and the empty extension
+  candidate: base scene/player/data/scene manager split, CSV telemetry,
+  calibration/experiment flow, Meta coexistence, minimal controller baseline,
+  and rejected empty-repo handling.
+
+## Previous additions from Waves 328-331
 
 Recent research adds four useful donor clusters:
 

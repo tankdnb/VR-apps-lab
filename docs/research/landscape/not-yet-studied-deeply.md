@@ -3115,6 +3115,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 254. `SteamVR operation microtool follow-up across IVRSettings transactions, dry-run config patches, runtime folder toggles, recovery target previews, and rollback UX`
 255. `SteamVR hardware/resource patcher follow-up across dongle flash target identity, base-station serial diagnostics, icon/render-model backups, and firmware/resource provenance`
 256. `Proxy surface and tracker data follow-up across HWND/DWM/chroma-key capture, dashboard overlay lifecycle, hand-redirection algorithms, tracker serial mapping, and replay schemas`
+257. `Browser-native VR UI primitive follow-up across DOM-to-plane rendering, mesh-native layout, text input, keyboards, dialog lifecycle, focus cleanup, and update budgets`
+258. `Browser XR capability/pass-through follow-up across WebXR/WebGPU/WebRTC/media probes, report schemas, permission side effects, GL pass-through planes, and headset browser metadata`
+259. `Godot XR interaction/surface follow-up across hand pose resources, radial menus, wrist SubViewport input, spatial entity persistence, Android surfaces, and notification plugin maturity`
+260. `Unity XR research scaffold follow-up across TXR player/data/scene managers, CSV schemas, calibration, session/trial flow, Meta coexistence, and minimal controller baselines`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

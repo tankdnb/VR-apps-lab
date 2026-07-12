@@ -4389,6 +4389,54 @@ Primary docs:
 - `AndreZenner/hand-redirection-toolkit` - `Studied in Wave 331 as a Unity hand redirection research toolkit with RedirectionManager, HandRedirector subclasses, real/virtual target links, edit-mode analysis, threshold visualization, optional Leap/SRAnipal packages, and movement logging`
 - `Avdbergnmf/SteamVR-Utils` - `Studied in Wave 331 as Unity SteamVR utilities for tracker serial mapping, tracker assignment UI, threaded pose recording, circular queues, UXF integration seams, and replay scaffolding`
 
+## 303. A-Frame VR UI primitives, DOM surfaces, and in-scene input widgets
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-332-aframe-vr-ui-primitives-dom-surfaces-and-input-widgets.md`
+- `../landscape/project-families.md`
+
+- `supereggbert/aframe-htmlembed-component` - `Studied in Wave 332 as an A-Frame HTML-to-plane surface with DOM mutation redraws, SVG/canvas texture rendering, raycaster pixel mapping, mouse/focus/input forwarding, and CSS hover/active/focus hacks`
+- `binzume/aframe-xylayout` - `Studied in Wave 332 as an A-Frame flex-like layout and widget system with xycontainer, xyinput, rounded rects, text/canvas fallback, caret/copy/paste handling, keyboard request events, and hover haptics`
+- `WandererOU/aframe-keyboard` - `Studied in Wave 332 as a compact A-Frame virtual keyboard with template rendering, desktop key forwarding, VR click forwarding, locale hooks, and button hover/press feedback`
+- `EditVR/aframe-dialog-popup-component` - `Studied in Wave 332 as an A-Frame dialog popup component with configurable opener/close icons, title/body/image composition, visibility toggles, and camera-facing placement`
+
+## 304. WebXR capability probes, pass-through testbeds, and lightweight utility labs
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-333-webxr-capability-probes-pass-through-testbeds-and-utility-labs.md`
+- `../landscape/project-families.md`
+
+- `rwth-acis/i5-Toolkit-for-WebXR` - `Studied in Wave 333 as a WebXR helper toolkit with AR hit-test placement helper, boundary/edit reticle helper, loading indicator microclass, and render-hook based Three.js integration`
+- `gareth-morgan-nv/WebXR-utils` - `Studied in Wave 333 as a browser XR capability probe and pass-through testbed with spec-linked feature checks, timeout wrappers, JSON report export, WebXR/WebGPU/media/WebRTC probes, and WebGL2 video/static plane rendering`
+- `webvrdev/webvrdev-labs` - `Studied as a thin Wave 333 reference for a public WebXR utility lab index; current clone contains only README/license and no donor code yet`
+
+## 305. Godot XR hand poses, spatial entities, wrist UI, and Android surface bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-334-godot-xr-hand-poses-spatial-entities-wrist-ui-and-android-surfaces.md`
+- `../landscape/project-families.md`
+
+- `Malcolmnixon/GodotXRHandPoseDetector` - `Studied in Wave 334 as a Godot XR hand pose recognizer with pose resources, hand tracker lookup, fitness functions, palm tracking gates, hold/release hysteresis, and pose started/ended signals`
+- `Godot-Dojo/Godot-XR-AH` - `Studied in Wave 334 as a Godot XR auto-hand/radial-menu/spatial-anchor add-on set with controller/hand fallback, OpenXR joint-to-skeleton mapping, radial menu ray selection, and FB scene manager glue`
+- `BastiaanOlij/spatial-entities-demo` - `Studied in Wave 334 as a Godot OpenXR spatial entities demo with tracker-to-scene management, persistent UUID-to-scene mapping, anchor child scenes, wrist SubViewport UI, and 3D touch-to-mouse injection`
+- `GodotVR/godot-openxr-android-surface-plugin-example` - `Studied in Wave 334 as a Godot OpenXR Android surface composition-layer example with Android plugin export wiring, get_android_surface handoff, Kotlin MediaPlayer surface update, and media-surface caveats`
+- `yelrom0/godot-openxr-notification-handler-plugin` - `Checked in Wave 334 as a low-maturity Godot Android notification plugin experiment; current source remains close to the plugin template and is not a donor implementation yet`
+
+## 306. Unity XR research templates, data logging, scene flow, and minimal controller baselines
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-335-unity-xr-research-templates-data-logging-scene-flow-and-controller-baselines.md`
+- `../landscape/project-families.md`
+
+- `TAU-XR/TAUXR-Research-Template` - `Studied in Wave 335 as a Unity XR research template with base scene, TXR player singleton, data manager, scene manager, continuous CSV logging, hand/eye/face tracking surfaces, calibration, and Meta Interaction SDK coexistence notes`
+- `TAU-XR/TAUXR-OpenTemplate` - `Studied in Wave 335 as an open Unity XR template variant reinforcing the TXR base-scene/data-manager/scene-manager structure with sample scenes, Quest settings, and third-party package caveats`
+- `dilmerv/XRToolKitPlayerController` - `Studied in Wave 335 as a minimal Unity XR player controller baseline with XRNode device lookup, joystick movement, jump gating, rigidbody/capsule setup, and scene/component existence tests`
+- `traggett/UnityXRInteractionToolkitExtensions` - `Rejected in Wave 335 as an empty repository with no current code donor value`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

@@ -327,6 +327,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-329-steamvr-runtime-settings-recovery-and-wmr-patch-microtools.md`
 - `landscape/vr-projects-wave-330-steamvr-device-provisioning-base-station-diagnostics-and-visual-asset-patchers.md`
 - `landscape/vr-projects-wave-331-overlay-surface-proxies-dashboard-notifications-hand-redirection-and-tracker-recording-utilities.md`
+- `landscape/vr-projects-wave-332-aframe-vr-ui-primitives-dom-surfaces-and-input-widgets.md`
+- `landscape/vr-projects-wave-333-webxr-capability-probes-pass-through-testbeds-and-utility-labs.md`
+- `landscape/vr-projects-wave-334-godot-xr-hand-poses-spatial-entities-wrist-ui-and-android-surfaces.md`
+- `landscape/vr-projects-wave-335-unity-xr-research-templates-data-logging-scene-flow-and-controller-baselines.md`
 
 ## Archive Navigation
 

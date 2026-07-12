@@ -10398,6 +10398,105 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - hand-retargeting/interaction evaluation tools;
 - tracker recording and replay helpers.
 
+## Family 311: A-Frame VR UI primitives, DOM surfaces, and in-scene input widgets
+
+This family covers browser-native UI primitives for WebXR/A-Frame utilities:
+HTML surfaces, layout widgets, text entry, virtual keyboards, and contextual
+dialogs. The reusable lesson is to keep surface rendering, layout, input
+capture, keyboard dispatch, popup lifecycle, and application data separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `supereggbert/aframe-htmlembed-component` | Studied in Wave 332 | HTML-to-canvas/texture A-Frame surface with raycaster coordinate mapping, DOM mutation redraws, focus/input forwarding, and CSS state hacks |
+| `binzume/aframe-xylayout` | Studied in Wave 332 | A-Frame flex-like layout and widgets with xycontainer, xyinput, labels, rounded rects, copy/paste, caret, keyboard request events, and haptic hover cues |
+| `WandererOU/aframe-keyboard` | Studied in Wave 332 | Compact virtual keyboard with template rendering, desktop/VR event forwarding, locale hooks, and button feedback |
+| `EditVR/aframe-dialog-popup-component` | Studied in Wave 332 | Configurable dialog popup with opener/close icons, title/body/image composition, and camera-facing placement |
+
+### Consolidation note
+
+This family matters because WebXR utilities often need overlay-like panels
+without native overlay APIs. It suggests a stronger branch around:
+
+- browser-native utility panels;
+- reusable VR text-entry surfaces;
+- contextual help and annotation dialogs;
+- WebXR settings/debug panels.
+
+## Family 312: WebXR capability probes, pass-through testbeds, and utility labs
+
+This family covers static browser-side XR doctors, capability report pages, AR
+placement helpers, pass-through/video plane experiments, and thin utility lab
+surfaces. The reusable lesson is to separate feature collection, report/export,
+rendering experiments, and product-lab positioning.
+
+| Project | Status | Notes |
+|---|---|---|
+| `rwth-acis/i5-Toolkit-for-WebXR` | Studied in Wave 333 | WebXR helper toolkit with hit-test placement, boundary/edit helper, and loading indicator classes |
+| `gareth-morgan-nv/WebXR-utils` | Studied in Wave 333 | Browser capability matrix with spec links, timeout checks, JSON export, and WebGL pass-through plane testbed |
+| `webvrdev/webvrdev-labs` | Thin reference in Wave 333 | Public lab positioning reference; no donor code in current clone |
+
+### Consolidation note
+
+This family matters because browser XR capability pages can become a lightweight
+preflight diagnostic layer before native tooling. It suggests a branch around:
+
+- headset browser capability reports;
+- WebXR pass-through/video surface experiments;
+- browser-only XR doctors;
+- public utility lab indexes.
+
+## Family 313: Godot XR hand poses, menus, spatial entities, and Android surface bridges
+
+This family covers Godot OpenXR interaction and surface utilities: semantic hand
+pose recognition, auto hand tracking, radial menus, wrist UIs, spatial entities,
+persistent anchors, and Android surface/plugin bridges. The reusable lesson is
+to keep tracker discovery, semantic gesture state, UI selection, spatial
+persistence, native Android work, and app content separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Malcolmnixon/GodotXRHandPoseDetector` | Studied in Wave 334 | Hand pose resources with fitness functions, palm tracking gates, hold/release timing, and semantic pose signals |
+| `Godot-Dojo/Godot-XR-AH` | Studied in Wave 334 | Auto hand tracker, controller fallback, OpenXR joint mapping, radial menu ray selection, and spatial anchor glue |
+| `BastiaanOlij/spatial-entities-demo` | Studied in Wave 334 | Spatial entity manager, persistent UUID-to-scene mapping, anchor child scenes, and wrist SubViewport touch UI |
+| `GodotVR/godot-openxr-android-surface-plugin-example` | Studied in Wave 334 | Android surface composition-layer example with Godot plugin/Kotlin MediaPlayer handoff |
+| `yelrom0/godot-openxr-notification-handler-plugin` | Thin/low maturity in Wave 334 | Notification plugin idea, but current code remains close to Android plugin template |
+
+### Consolidation note
+
+This family matters because Godot can support serious XR utility surfaces when
+gestures, menus, spatial persistence, and Android native surfaces are treated as
+separate layers. It suggests a branch around:
+
+- Godot hand-only utility controls;
+- radial and wrist menu patterns;
+- persistent spatial annotation tools;
+- Android media/notification surface bridges.
+
+## Family 314: Unity XR research templates, telemetry scaffolds, and controller baselines
+
+This family covers Unity XR research scaffolds, base scenes, player/data/scene
+manager splits, continuous logging, experiment flow, and minimal controller
+baselines. The reusable lesson is to keep player state, data collection, scene
+flow, calibration, experiment flow, and vendor SDK integration separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `TAU-XR/TAUXR-Research-Template` | Studied in Wave 335 | Unity XR research template with TXR player, data manager, scene manager, continuous CSV logging, hand/eye/face data, calibration, and Meta Interaction SDK coexistence |
+| `TAU-XR/TAUXR-OpenTemplate` | Studied in Wave 335 | Open template variant with the same base-scene/data-manager shape plus sample scenes and Quest/vendor package caveats |
+| `dilmerv/XRToolKitPlayerController` | Studied in Wave 335 | Minimal XR player controller with XRNode device lookup, joystick movement, jump gating, rigidbody/capsule setup, and scene/component tests |
+| `traggett/UnityXRInteractionToolkitExtensions` | Rejected in Wave 335 | Empty repository; no code donor value |
+
+### Consolidation note
+
+This family matters because research-oriented VR apps need reusable telemetry
+and scene-flow scaffolding before the actual experiment logic. It suggests a
+branch around:
+
+- experiment-ready base scenes;
+- transform/eye/face/event CSV logging;
+- session/trial/round flow managers;
+- lightweight controller and smoke-test baselines.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

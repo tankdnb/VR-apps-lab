@@ -17680,3 +17680,153 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   VR-capturable desktop proxies, dashboard overlays, hand/interaction studies,
   tracker diagnostics, and pose recording/replay helpers.
+
+## Method 777: Browser-native VR UI primitive layering
+
+- What it is:
+  WebXR/A-Frame utility panels should separate surface rendering, layout,
+  labels/widgets, keyboard dispatch, focus/caret state, popup lifecycle, and
+  application state.
+- Good for:
+  WebXR settings panels, debug inspectors, documentation panels, text-entry
+  overlays, object annotations, and contextual help dialogs.
+- Why it matters:
+  browser XR utilities can get overlay-like UI without native OpenVR/OpenXR
+  overlay APIs if the UI primitives are layered cleanly.
+- Source evidence:
+  `supereggbert/aframe-htmlembed-component`, `binzume/aframe-xylayout`,
+  `WandererOU/aframe-keyboard`, and `EditVR/aframe-dialog-popup-component`.
+- Reusable core:
+  HTML/canvas or mesh-native surface, layout container, widget theme, label
+  renderer, ray-to-coordinate bridge, focus/caret state, keyboard request
+  event, virtual keyboard, popup open/close lifecycle, and update throttling.
+- Source evidence details:
+  Wave 332 includes DOM-to-canvas texture rendering, flex-like layout,
+  `xyinput` text editing, keyboard event forwarding, and generated dialog
+  entities.
+- Do not copy directly:
+  old bundling assumptions, global events without cleanup, direct DOM mutation
+  redraws without rate limits, or monolithic UI packages that mix app data with
+  widgets.
+- Strong references:
+  `aframe-htmlembed-component` for HTML surfaces and `aframe-xylayout` for
+  mesh-native layout/input widgets.
+- Maturity:
+  strong conceptual method with browser/CSS caveats; production reuse should
+  add focus cleanup, accessibility notes, and performance budgets.
+- Best fit for `VR-apps-lab`:
+  WebXR utility panels, lightweight in-headset forms, captions/settings
+  surfaces, and contextual annotation UIs.
+
+## Method 778: Browser XR capability and pass-through testbed
+
+- What it is:
+  a browser-only XR doctor should separate feature checks, permission-sensitive
+  probes, report/export formatting, and optional rendering experiments.
+- Good for:
+  headset browser diagnostics, WebXR support preflights, media capability
+  checks, pass-through experiments, and public utility lab pages.
+- Why it matters:
+  many XR workflows fail because browser support, permissions, codecs, WebGL,
+  WebGPU, WebRTC, or WebXR feature flags differ by headset and browser version.
+- Source evidence:
+  `gareth-morgan-nv/WebXR-utils`, `rwth-acis/i5-Toolkit-for-WebXR`, and
+  `webvrdev/webvrdev-labs`.
+- Reusable core:
+  static entry page, grouped checks, timeout wrapper, spec/source links,
+  permission-aware results, JSON export, WebXR session checks, media/WebRTC
+  probes, WebGL pass-through plane test, and clear summary.
+- Source evidence details:
+  Wave 333 includes spec-linked capability rows, exportable reports, WebXR/
+  WebGPU/media/WebRTC checks, AR hit-test helpers, and pass-through video plane
+  rendering.
+- Do not copy directly:
+  unversioned reports, silent permission prompts, hardcoded media assumptions,
+  or README-only lab positioning as implementation evidence.
+- Strong references:
+  `WebXR-utils` for diagnostics and `i5-Toolkit-for-WebXR` for microhelpers.
+- Maturity:
+  useful method; production reuse should define report schema, browser/device
+  metadata, and privacy notes for permission probes.
+- Best fit for `VR-apps-lab`:
+  WebXR doctor pages, capability matrices, headset browser preflight tools, and
+  pass-through/video surface experiments.
+
+## Method 779: Godot XR gesture, menu, spatial, and Android surface boundary
+
+- What it is:
+  Godot XR utilities should keep raw tracker discovery, semantic gesture state,
+  menu selection, spatial persistence, native Android service/surface work, and
+  app content separate.
+- Good for:
+  hand-only controls, radial menus, wrist panels, spatial annotations, persistent
+  anchors, Android media surfaces, and notification bridge experiments.
+- Why it matters:
+  Godot can host serious XR utilities when gesture recognition, UI, spatial
+  anchors, and platform-native bridges are modular instead of scene-script
+  monoliths.
+- Source evidence:
+  `Malcolmnixon/GodotXRHandPoseDetector`, `Godot-Dojo/Godot-XR-AH`,
+  `BastiaanOlij/spatial-entities-demo`, and
+  `GodotVR/godot-openxr-android-surface-plugin-example`.
+- Reusable core:
+  XR tracker resolver, pose resource model, fitness scoring, hold/release
+  hysteresis, semantic pose signals, radial menu disk, raycast selection,
+  SubViewport wrist UI, touch-to-mouse injection, spatial entity manager, UUID
+  persistence, Android export plugin, and surface handoff API.
+- Source evidence details:
+  Wave 334 includes hand pose resources, auto hand tracking, radial menu
+  selection, wrist SubViewport input, persistent anchor scene mapping, and
+  Android surface composition layer handoff.
+- Do not copy directly:
+  template Android plugins, debug-only tracker assumptions, persistent anchors
+  without schema/version metadata, hardwired media paths, or unfinished
+  notification bridge code.
+- Strong references:
+  `GodotXRHandPoseDetector` for gestures, `spatial-entities-demo` for
+  persistent spatial objects, and `godot-openxr-android-surface-plugin-example`
+  for Android surfaces.
+- Maturity:
+  strong method with platform-specific caveats; production reuse should add
+  feature gates, lifecycle handling, and permissions/metadata.
+- Best fit for `VR-apps-lab`:
+  Godot XR utility menus, hand gesture controls, persistent annotations, media
+  planes, and Android companion bridges.
+
+## Method 780: XR research template and telemetry scaffold
+
+- What it is:
+  research-oriented XR apps should separate base scene, player references,
+  data collection, scene flow, calibration, experiment flow, and vendor SDK
+  integration.
+- Good for:
+  training tools, user studies, evaluation labs, questionnaire flows, telemetry
+  recorders, and reusable XR experiment templates.
+- Why it matters:
+  research apps repeatedly need hand/head/eye/face data, event logs, scene
+  transitions, and session/trial structure before experiment logic begins.
+- Source evidence:
+  `TAU-XR/TAUXR-Research-Template`, `TAU-XR/TAUXR-OpenTemplate`, and
+  `dilmerv/XRToolKitPlayerController`.
+- Reusable core:
+  base scene, player singleton, hand/controller/eye/face accessors, data
+  manager, continuous writer, event logger, CSV export, scene manager, additive
+  scene switching, calibration state, session/trial/round managers, minimal
+  controller baseline, and smoke-test scene checks.
+- Source evidence details:
+  Wave 335 includes TXR player/data/scene manager docs, continuous CSV logging,
+  face expression exporter, Meta Interaction SDK coexistence, and a minimal
+  XRNode controller/test baseline.
+- Do not copy directly:
+  large vendor package payloads, Quest-only assumptions without adapters,
+  unreviewed third-party assets, old `XRRig` assumptions, or empty extension
+  repositories.
+- Strong references:
+  `TAUXR-Research-Template` for research architecture and
+  `XRToolKitPlayerController` for a minimal controller/test baseline.
+- Maturity:
+  strong architecture/product method; production reuse should define a smaller
+  engine-neutral checklist and avoid copying vendor assets.
+- Best fit for `VR-apps-lab`:
+  experiment templates, telemetry tools, training/evaluation apps, and
+  reusable study-data scaffolds.

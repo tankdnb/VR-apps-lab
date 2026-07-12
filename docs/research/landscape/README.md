@@ -1511,6 +1511,22 @@ Use these files when you want to understand:
   dashboard notifications, hand redirection toolkits, and tracker recording
   utilities.
 
+- `vr-projects-wave-332-aframe-vr-ui-primitives-dom-surfaces-and-input-widgets.md`
+  Next GitHub discovery wave focused on A-Frame HTML surfaces, mesh-native
+  layout, text input, virtual keyboards, and dialog popups.
+
+- `vr-projects-wave-333-webxr-capability-probes-pass-through-testbeds-and-utility-labs.md`
+  Next GitHub discovery wave focused on browser XR capability probes,
+  report/export pages, pass-through WebGL planes, and lightweight WebXR labs.
+
+- `vr-projects-wave-334-godot-xr-hand-poses-spatial-entities-wrist-ui-and-android-surfaces.md`
+  Next GitHub discovery wave focused on Godot XR hand poses, auto hands,
+  radial/wrist UI, spatial entities, persistent anchors, and Android surfaces.
+
+- `vr-projects-wave-335-unity-xr-research-templates-data-logging-scene-flow-and-controller-baselines.md`
+  Next GitHub discovery wave focused on Unity XR research templates,
+  telemetry/data managers, scene flow, and minimal controller baselines.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
