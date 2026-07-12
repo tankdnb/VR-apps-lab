@@ -1229,6 +1229,10 @@ directions:
 244. `SteamVR hardware provisioning follow-up across USB autolaunch, Watchman dongle flashing, irreversible warnings, hardware artifacts, and firmware provenance`
 245. `KAT/OpenXR locomotion HUD follow-up across hardware parser, locomotion model, shared-memory bus, OpenXR layer composition, and wrist tuning UX`
 246. `Window mirror/capture surface follow-up across DWM mirror workers, virtual display sinks, ownership markers, watchdog repair, and remixable channel schemas`
+247. `VRChat communication companion follow-up across self/peer channel separation, provider privacy, chatbox/subtitle routing, avatar notification reset semantics, and OSC rate limits`
+248. `SteamVR operation microtool follow-up across typed settings APIs, raw config patches, process kill policies, dry-run/rollback UX, and recovery target previews`
+249. `SteamVR hardware/resource patcher follow-up across dongle flashing target identity, base-station serial diagnostics, icon/render-model backup/restore, and provenance`
+250. `Proxy surface and tracker data follow-up across HWND/DWM/chroma-key capture, dashboard overlay lifecycle, hand redirection algorithms, tracker serial mapping, and replay schemas`
 
 ## Current repository-maintenance priorities
 
@@ -1240,7 +1244,29 @@ Besides new research waves, the main repository-maintenance work now is:
 - reduce archive pressure in front-door docs;
 - preserve wave history without making every entry document chronological.
 
-## Current additions from Waves 324-327
+## Current additions from Waves 328-331
+
+Recent research adds four useful donor clusters:
+
+- `communication channel separation`
+  from HOSCY, PuriPuly, SpotifyOSC, and vrc-osc-discord-band: STT/translation
+  modules, self-versus-peer routing, subtitle overlays, chatbox/media output,
+  and avatar notification wearables.
+- `SteamVR operation microtools`
+  from SteamVREnabler, ovr-update-settings, Crash Recovery, and ez-wmr: runtime
+  path discovery, typed settings mutation, process recovery, last-world
+  relaunch, and WMR config patch caveats.
+- `hardware/resource patchers`
+  from Viva Dongle Flasher, BaseStation diagnostics, IconsSwitcher, and
+  RenderModelSwitcher: prerequisite-gated flashing, serial diagnostic queues,
+  SteamVR resource customization, and provenance/backup needs.
+- `proxy surfaces and interaction data`
+  from KugouLyricsMirror, tempest-overlay, hand-redirection-toolkit, and
+  SteamVR-Utils: VR-capturable proxy windows, OpenVR dashboard texture
+  submission, hand redirection managers, tracker serial mapping, and pose
+  recording.
+
+## Previous additions from Waves 324-327
 
 Recent research adds four useful donor clusters:
 

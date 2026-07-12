@@ -17520,3 +17520,163 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   reference-window overlays, desktop streaming helpers, virtual-display
   utilities, and future channelized VR session capture concepts.
+
+## Method 773: Channel-separated VRChat communication companion
+
+- What it is:
+  VRChat communication tools should separate input sources, provider calls,
+  routing policy, chatbox output, subtitle/overlay output, and avatar-parameter
+  output.
+- Good for:
+  STT/TTS tools, translation companions, accessibility captions, media-status
+  senders, avatar notification wearables, and social VR communication helpers.
+- Why it matters:
+  speech and translation tools can leak private or peer content if every output
+  is treated as "send to chatbox". Channel separation makes privacy, UX, and
+  provider behavior explicit.
+- Source evidence:
+  `PaciStardust/HOSCY`, `kapitalismho/PuriPuly-heart`,
+  `VespeiProjects/SpotifyOSC`, and `shadorki/vrc-osc-discord-band`.
+- Reusable core:
+  source adapters, recognition/provider modules, translation/context module,
+  output preprocessor, self/peer router, chatbox sink, subtitle/overlay sink,
+  avatar-parameter sink, OSCQuery discovery, config migration, rate limits,
+  provider privacy notes, and visible operator toggles.
+- Source evidence details:
+  Wave 328 includes HOSCY's modular OSC/recognition/output services and
+  Whisper IPC, PuriPuly's self-versus-peer subtitle/chatbox split, SpotifyOSC's
+  media/status chatbox microtool, and vrc-osc-discord-band's Windows
+  notification to avatar bracelet flow.
+- Do not copy directly:
+  peer speech to public chatbox, cloud provider use without consent/privacy
+  notes, unbounded chatbox sends, hardcoded ports without config, or avatar
+  parameter pulses without reset/debounce.
+- Strong references:
+  `PuriPuly-heart` for self/peer channel rules and `HOSCY` for modular service
+  boundaries.
+- Maturity:
+  strong method with privacy/provider caveats; production reuse should add
+  explicit consent states, local/cloud provider badges, and clear output
+  preview.
+- Best fit for `VR-apps-lab`:
+  accessibility text tools, speech/translation companions, avatar notification
+  utilities, and safe chatbox composers.
+
+## Method 774: Reversible SteamVR operation microtool
+
+- What it is:
+  tiny SteamVR maintenance utilities should keep runtime/path discovery,
+  process control, typed settings mutation, config patching, recovery actions,
+  and operator feedback separate.
+- Good for:
+  runtime toggles, config patchers, crash-recovery helpers, WMR/OpenVR settings
+  utilities, and SteamVR doctor tools.
+- Why it matters:
+  small SteamVR tools often perform high-risk actions. Reuse depends on making
+  target identity, mutation type, rollback, and caveats visible.
+- Source evidence:
+  `demonixis/SteamVREnabler`, `ZipFile/ovr-update-settings`,
+  `Raphiiko/Raphiis-SteamVR-Crash-Recovery`, and `Burnt-Delta/ez-wmr`.
+- Reusable core:
+  runtime/path discovery, process inventory, typed settings API, config
+  mutation layer, dry-run, backup, restore, graceful shutdown policy, forced
+  kill fallback, visible status, and exact warning copy.
+- Source evidence details:
+  Wave 329 includes `openvrpaths.vrpath` runtime discovery and process kill
+  lists, `IVRSettings` get/set/delete/add/neg operations, VRChat latest-world
+  log relaunch, and WMR `default.vrsettings` thumbstick toggles.
+- Do not copy directly:
+  hardcoded paths, raw config seek writes, silent process kills, folder renames
+  without restore checks, or log-derived relaunch without a user-visible target.
+- Strong references:
+  `ovr-update-settings` for low-level settings API boundaries and
+  `Raphiis-SteamVR-Crash-Recovery` for session-continuity framing.
+- Maturity:
+  useful but safety-sensitive; production reuse should add dry-run, backups,
+  restore verification, privilege checks, and target previews.
+- Best fit for `VR-apps-lab`:
+  config patch microtools, runtime doctors, crash recovery utilities, and
+  operator-side SteamVR helpers.
+
+## Method 775: Target-aware SteamVR hardware provisioning and resource patcher
+
+- What it is:
+  hardware and resource patchers should expose physical/resource target
+  identity, prerequisites, provenance, disabled actions, backups, diagnostics,
+  and irreversible-action warnings.
+- Good for:
+  Watchman dongle flashers, base-station diagnostics, SteamVR resource
+  patchers, tracker setup tools, and device identity customization utilities.
+- Why it matters:
+  provisioning and patching tools can damage hardware state or SteamVR folders
+  if the wrong device or resource path is selected.
+- Source evidence:
+  `jaki-gh/Viva-Dongle-Flasher`,
+  `TerayTech/SteamVR_BaseStation2.0_Diagnostic_Tool`,
+  `nicolas-riera/SteamVR-IconsSwitcher`, and
+  `nicolas-riera/SteamVR-RenderModelSwitcher`.
+- Reusable core:
+  device/runtime discovery, explicit target selector, prerequisite checks,
+  disabled action buttons, generated artifact path, checksum/provenance, backup
+  folder, restore action, serial/log parser, bounded UI logs, category/status
+  model, and irreversible-action warning copy.
+- Source evidence details:
+  Wave 330 includes UF2 generation/flash staging and drive selection, serial
+  worker queues and base-station telemetry classification, Steam registry path
+  lookup, current icon/render-model state detection, and resource copy/restore
+  caveats.
+- Do not copy directly:
+  flash-all behavior, ambiguous removable-drive selection, resource replacement
+  without backup, unverified firmware/assets, or diagnostics thresholds without
+  hardware/version context.
+- Strong references:
+  `Viva-Dongle-Flasher` for staged GUI gating and
+  `SteamVR_BaseStation2.0_Diagnostic_Tool` for hardware diagnostic categories.
+- Maturity:
+  useful method with irreversible-action risk; production reuse should add
+  checksums, target previews, explicit backup/restore, and firmware/resource
+  provenance display.
+- Best fit for `VR-apps-lab`:
+  SteamVR hardware doctors, provisioning checklists, dongle utilities, and
+  reversible resource patchers.
+
+## Method 776: Proxy-surface and interaction-data utility boundary
+
+- What it is:
+  overlay-adjacent utilities should keep source discovery, capture/render
+  backend, output surface, runtime manifest, remote transport, interaction
+  algorithm, tracker identity, and recording/replay schema separate.
+- Good for:
+  desktop-to-VR proxy windows, lyrics/subtitle/reference surfaces, dashboard
+  notifications, hand redirection tools, tracker recorders, and lab utilities.
+- Why it matters:
+  surface and tracker utilities become reusable when capture/rendering and
+  interaction/data ownership are not fused into one monolithic loop.
+- Source evidence:
+  `Eldon27232/KugouLyricsMirror`, `ZephyrVR/tempest-overlay`,
+  `AndreZenner/hand-redirection-toolkit`, and
+  `Avdbergnmf/SteamVR-Utils`.
+- Reusable core:
+  source resolver, capture/proxy backend, compatibility preview sink, overlay
+  render bridge, remote event source, manifest lifecycle, interaction manager,
+  provider add-ons, tracker serial map, threaded sampler, bounded queues,
+  recording schema, replay scaffold, and analysis visualization.
+- Source evidence details:
+  Wave 331 includes HWND/PrintWindow/BitBlt/DWM/region proxy modes,
+  Qt Quick-to-OpenVR texture submission, Socket.IO notification rooms,
+  RedirectionManager/HandRedirector algorithm boundaries, tracker serial
+  mapping, threaded SteamVR pose recording, and replay scaffolding.
+- Do not copy directly:
+  vendor-binary payloads, stale Qt/OpenVR assumptions, direct desktop capture
+  without compatibility notes, tracker index ordering as identity, or replay
+  features without schema/version metadata.
+- Strong references:
+  `KugouLyricsMirror` for proxy-window compatibility and `SteamVR-Utils` for
+  tracker identity/recording utilities.
+- Maturity:
+  strong conceptual method with platform/dependency caveats; production reuse
+  should add schema metadata, runtime capability checks, and explicit
+  compatibility notes.
+- Best fit for `VR-apps-lab`:
+  VR-capturable desktop proxies, dashboard overlays, hand/interaction studies,
+  tracker diagnostics, and pose recording/replay helpers.

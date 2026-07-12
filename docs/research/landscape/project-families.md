@@ -10268,6 +10268,136 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - launch ownership markers for session helpers;
 - channelized VR session recording and remix concepts.
 
+## Family 307: VRChat communication, translation, media, and notification OSC companions
+
+This family covers VRChat companion tools that route speech, translation,
+media state, desktop notifications, and avatar parameters through explicit
+communication channels. The reusable lesson is to separate source adapters,
+provider calls, routing policy, chatbox output, subtitle/overlay output, and
+avatar-parameter output.
+
+| Project | Status | Notes |
+|---|---|---|
+| `PaciStardust/HOSCY` | Studied in Wave 328 | Modular communication/OSC companion with recognition providers, Whisper subprocess IPC, OSC routing/OSCQuery, output preprocessors, counters, AFK, TTS, and legacy-config migration |
+| `kapitalismho/PuriPuly-heart` | Studied in Wave 328 | LLM two-way translator with self/peer channel separation, subtitle overlay, provider routing, brokered key flow, cost framing, and privacy caveats |
+| `VespeiProjects/SpotifyOSC` | Studied in Wave 328 | WPF Spotify/status-to-chatbox microtool with process polling, settings, prefix/save options, and system-stat fallback |
+| `shadorki/vrc-osc-discord-band` | Studied in Wave 328 | Windows notification to avatar bracelet OSC utility with Discord classification, port config, and Unity avatar setup |
+
+### Consolidation note
+
+This family matters because VR communication helpers should name:
+
+- source adapter and microphone/notification/media privacy;
+- provider module and cloud/local boundary;
+- self versus peer output channel;
+- chatbox, subtitle, overlay, and avatar-parameter sinks;
+- OSCQuery/OSC routing and rate limits;
+- config migration and operator toggles.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- accessibility subtitle companions;
+- safe chatbox composers;
+- avatar-wearable notification tools;
+- provider-pluggable speech and translation utilities.
+
+## Family 308: SteamVR runtime settings, recovery, and WMR patch microtools
+
+This family covers tiny SteamVR maintenance utilities that toggle runtimes,
+patch settings, recover sessions, or edit driver configuration. The reusable
+lesson is to keep discovery, mutation, process control, recovery, config
+persistence, and rollback/operator feedback separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `demonixis/SteamVREnabler` | Studied in Wave 329 | WinForms SteamVR runtime folder toggle and process kill switch based on `openvrpaths.vrpath` |
+| `ZipFile/ovr-update-settings` | Studied in Wave 329 | OpenVR `IVRSettings` CLI for get/set/delete/add/neg operations with type inference |
+| `Raphiiko/Raphiis-SteamVR-Crash-Recovery` | Studied in Wave 329 | Rust SteamVR/VRChat crash recovery helper with latest-world log parsing and relaunch |
+| `Burnt-Delta/ez-wmr` | Studied in Wave 329 | WMR SteamVR driver settings patcher for thumbstick controls with direct config writes |
+
+### Consolidation note
+
+This family matters because runtime/config microtools should name:
+
+- runtime and path discovery;
+- target process/config identity;
+- typed settings API versus raw file patching;
+- graceful shutdown and forced-kill policy;
+- dry-run, backup, restore, and rollback;
+- visible target/relaunch feedback.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- SteamVR config patch safety checklists;
+- recovery operators for VR sessions;
+- typed settings CLIs;
+- runtime/path doctor tools.
+
+## Family 309: SteamVR device provisioning, base-station diagnostics, and visual asset patchers
+
+This family covers SteamVR hardware and resource helpers for dongle flashing,
+base-station diagnostics, and icon/render-model replacement. The reusable
+lesson is to expose target identity, action prerequisites, provenance,
+diagnostics, backup, restore, and irreversible-action warnings.
+
+| Project | Status | Notes |
+|---|---|---|
+| `jaki-gh/Viva-Dongle-Flasher` | Studied in Wave 330 | Python GUI Watchman dongle flasher with SteamVR firmware zip lookup, UF2 generation, drive selection, and disabled flash actions until prerequisites exist |
+| `TerayTech/SteamVR_BaseStation2.0_Diagnostic_Tool` | Studied in Wave 330 | Base-station serial diagnostic viewer with worker queues, parser categories, status thresholds, and bounded logs |
+| `nicolas-riera/SteamVR-IconsSwitcher` | Studied in Wave 330 | SteamVR icon resource patcher with registry path lookup, current-state detection, and update-overwrite caveats |
+| `nicolas-riera/SteamVR-RenderModelSwitcher` | Studied in Wave 330 | SteamVR render-model resource patcher with Quest/Vive asset trees, state detection, and destructive replacement caveats |
+
+### Consolidation note
+
+This family matters because hardware/resource patchers should name:
+
+- physical target and removable-drive identity;
+- firmware/resource provenance;
+- disabled actions until prerequisites are satisfied;
+- serial diagnostics and bounded logs;
+- backup/restore and update overwrite handling;
+- irreversible operation copy.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- SteamVR hardware doctor surfaces;
+- target-aware firmware/provisioning helpers;
+- reversible SteamVR resource patchers;
+- visual device-identity customization notes.
+
+## Family 310: Overlay surface proxies, dashboard notifications, hand redirection, and tracker recording utilities
+
+This family covers utilities that proxy desktop surfaces into VR-compatible
+windows, render dashboard notifications, redirect hand targets, or record
+tracker data. The reusable lesson is to keep source discovery, render/capture
+backend, output surface, runtime manifest, remote transport, interaction
+algorithm, tracker identity, and recording/replay separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Eldon27232/KugouLyricsMirror` | Studied in Wave 331 | Desktop lyrics/window proxy with HWND capture, PrintWindow/BitBlt fallback, DWM proxy mode, chroma-key/region fallback, and normal top-level VR capture target |
+| `ZephyrVR/tempest-overlay` | Studied in Wave 331 | Older Qt/OpenVR dashboard overlay with manifest/autolaunch, QML-to-FBO texture submission, overlay events, keyboard integration, token watching, and Socket.IO notifications |
+| `AndreZenner/hand-redirection-toolkit` | Studied in Wave 331 | Unity hand redirection toolkit with RedirectionManager, HandRedirector classes, real/virtual target links, edit-mode analysis, visualization, packages, and movement logging |
+| `Avdbergnmf/SteamVR-Utils` | Studied in Wave 331 | Unity SteamVR tracker utilities with serial mapping, assignment UI, threaded pose recording, circular queues, UXF seams, and replay scaffolding |
+
+### Consolidation note
+
+This family matters because proxy/interaction/data utilities should name:
+
+- source resolver and output sink;
+- capture/render backend and compatibility rules;
+- manifest/autolaunch and remote event transport;
+- interaction algorithm and provider add-ons;
+- tracker identity and assignment UI;
+- recording schema, replay maturity, and analysis visualization.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- VR-capturable desktop proxy windows;
+- dashboard notification overlays;
+- hand-retargeting/interaction evaluation tools;
+- tracker recording and replay helpers.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

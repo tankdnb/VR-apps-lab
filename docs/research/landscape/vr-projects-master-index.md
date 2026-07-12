@@ -1087,3 +1087,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-327-window-mirror-managers-capture-remix-surfaces-and-stream-safe-overlay-pipelines.md`
   DWM window mirror workers, stream-safe ownership markers, watchdog repair,
   and channelized capture/remix concepts.
+- `vr-projects-wave-328-vrchat-communication-translation-media-and-notification-osc-companions.md`
+  VRChat communication companions, self/peer translation channels, chatbox
+  media status, and avatar notification wearables.
+- `vr-projects-wave-329-steamvr-runtime-settings-recovery-and-wmr-patch-microtools.md`
+  SteamVR runtime toggles, settings mutation, recovery helpers, and WMR config
+  patchers.
+- `vr-projects-wave-330-steamvr-device-provisioning-base-station-diagnostics-and-visual-asset-patchers.md`
+  Watchman dongle flashing, base-station diagnostics, icon patchers, and
+  render-model patchers.
+- `vr-projects-wave-331-overlay-surface-proxies-dashboard-notifications-hand-redirection-and-tracker-recording-utilities.md`
+  VR-capturable proxy surfaces, dashboard notifications, hand redirection, and
+  tracker recording utilities.

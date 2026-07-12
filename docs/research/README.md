@@ -323,6 +323,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-325-steamvr-hardware-provisioning-session-autolaunch-and-watchman-dongle-utilities.md`
 - `landscape/vr-projects-wave-326-kat-walk-linux-locomotion-overlay-and-openxr-layer-split.md`
 - `landscape/vr-projects-wave-327-window-mirror-managers-capture-remix-surfaces-and-stream-safe-overlay-pipelines.md`
+- `landscape/vr-projects-wave-328-vrchat-communication-translation-media-and-notification-osc-companions.md`
+- `landscape/vr-projects-wave-329-steamvr-runtime-settings-recovery-and-wmr-patch-microtools.md`
+- `landscape/vr-projects-wave-330-steamvr-device-provisioning-base-station-diagnostics-and-visual-asset-patchers.md`
+- `landscape/vr-projects-wave-331-overlay-surface-proxies-dashboard-notifications-hand-redirection-and-tracker-recording-utilities.md`
 
 ## Archive Navigation
 

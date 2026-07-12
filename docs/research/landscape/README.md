@@ -1493,6 +1493,24 @@ Use these files when you want to understand:
   stream-safe launch ownership, watchdog repair loops, and channelized
   capture/remix surface concepts.
 
+- `vr-projects-wave-328-vrchat-communication-translation-media-and-notification-osc-companions.md`
+  Next GitHub discovery wave focused on VRChat OSC communication companions,
+  self/peer translation channels, media-status chatbox output, and avatar
+  notification wearables.
+
+- `vr-projects-wave-329-steamvr-runtime-settings-recovery-and-wmr-patch-microtools.md`
+  Next GitHub discovery wave focused on SteamVR runtime toggles, settings CLI
+  mutation, crash recovery, and WMR driver config patchers.
+
+- `vr-projects-wave-330-steamvr-device-provisioning-base-station-diagnostics-and-visual-asset-patchers.md`
+  Next GitHub discovery wave focused on Watchman dongle flashing, base-station
+  serial diagnostics, SteamVR icon patchers, and render-model patchers.
+
+- `vr-projects-wave-331-overlay-surface-proxies-dashboard-notifications-hand-redirection-and-tracker-recording-utilities.md`
+  Next GitHub discovery wave focused on VR-capturable proxy windows, OpenVR
+  dashboard notifications, hand redirection toolkits, and tracker recording
+  utilities.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

@@ -2322,3 +2322,31 @@ repeatable way.
 
 - `github-research-wave-327-backlog.md`
   Executed backlog for the Wave 327 pass.
+
+- `github-research-wave-328-plan.md`
+  Wave 328 research plan focused on VRChat communication, translation, media,
+  and notification OSC companions.
+
+- `github-research-wave-328-backlog.md`
+  Executed backlog for the Wave 328 pass.
+
+- `github-research-wave-329-plan.md`
+  Wave 329 research plan focused on SteamVR runtime settings, recovery, and WMR
+  patch microtools.
+
+- `github-research-wave-329-backlog.md`
+  Executed backlog for the Wave 329 pass.
+
+- `github-research-wave-330-plan.md`
+  Wave 330 research plan focused on SteamVR device provisioning, base-station
+  diagnostics, and visual asset patchers.
+
+- `github-research-wave-330-backlog.md`
+  Executed backlog for the Wave 330 pass.
+
+- `github-research-wave-331-plan.md`
+  Wave 331 research plan focused on overlay surface proxies, dashboard
+  notifications, hand redirection, and tracker recording utilities.
+
+- `github-research-wave-331-backlog.md`
+  Executed backlog for the Wave 331 pass.

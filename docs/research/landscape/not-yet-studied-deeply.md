@@ -3111,6 +3111,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 250. `SteamVR hardware provisioning follow-up across stable device IDs, dry-run target selection, firmware provenance, rollback impossibility warnings, and dongle hardware artifacts`
 251. `KAT/OpenXR locomotion HUD follow-up across shared-memory schema versioning, layer lifecycle, input coexistence, wrist HUD interaction, and N=1 hardware diagnostics`
 252. `Window mirror/capture surface follow-up across DWM thumbnail limits, virtual-display sinks, ownership markers, watchdog repair, input forwarding, and channelized remix schemas`
+253. `VRChat communication companion follow-up across self/peer channel separation, chatbox versus subtitle output, provider privacy, consent, and avatar notification reset semantics`
+254. `SteamVR operation microtool follow-up across IVRSettings transactions, dry-run config patches, runtime folder toggles, recovery target previews, and rollback UX`
+255. `SteamVR hardware/resource patcher follow-up across dongle flash target identity, base-station serial diagnostics, icon/render-model backups, and firmware/resource provenance`
+256. `Proxy surface and tracker data follow-up across HWND/DWM/chroma-key capture, dashboard overlay lifecycle, hand-redirection algorithms, tracker serial mapping, and replay schemas`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

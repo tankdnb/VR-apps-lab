@@ -4341,6 +4341,54 @@ Primary docs:
 - `aguirretim/apollo-mirror-manager` - `Studied in Wave 327 as a stream-safe DWM window mirror manager for Apollo/Moonlight with persistent WinForms mirror worker, DWM thumbnail registration, virtual-display detection, target handoff file, debounced teardown, PID/watchdog repair, tile manager, apps.json backups, and ownership-marker close policy`
 - `PhotonIO/RemixPlayer` - `Studied in Wave 327 as a source-light channelized capture/remix product concept for audio, video, VR, overlays, replay files, graphics captures, FPS, and performance metrics`
 
+## 299. VRChat communication, translation, media, and notification OSC companions
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-328-vrchat-communication-translation-media-and-notification-osc-companions.md`
+- `../landscape/project-families.md`
+
+- `PaciStardust/HOSCY` - `Studied in Wave 328 as a modular VRChat communication companion with recognition providers, Whisper subprocess IPC, OSC routing/OSCQuery, output preprocessors, counters, AFK, TTS, media controls, and legacy-config migration`
+- `kapitalismho/PuriPuly-heart` - `Studied in Wave 328 as an LLM two-way VRChat translator with self-versus-peer channel separation, native subtitle overlay, provider routing, brokered key flow, context-aware prompts, cost framing, and privacy caveats`
+- `VespeiProjects/SpotifyOSC` - `Studied in Wave 328 as a narrow WPF Spotify/status-to-chatbox sidecar with process polling, settings persistence, `/chatbox/input` OSC sends, prefix/save options, and system-stat fallback`
+- `shadorki/vrc-osc-discord-band` - `Studied in Wave 328 as a Windows notification to avatar bracelet OSC utility with Discord notification classification, config-file port override, Unity package setup, and avatar-parameter output`
+
+## 300. SteamVR runtime settings, recovery, and WMR patch microtools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-329-steamvr-runtime-settings-recovery-and-wmr-patch-microtools.md`
+- `../landscape/project-families.md`
+
+- `demonixis/SteamVREnabler` - `Studied in Wave 329 as a WinForms SteamVR runtime folder toggle and kill-switch microtool using openvrpaths.vrpath, known SteamVR process names, and fragile folder rename semantics`
+- `ZipFile/ovr-update-settings` - `Studied in Wave 329 as an OpenVR IVRSettings CLI with get/set/delete/add/neg operations, type inference, VRApplication_Utility init, and transaction/rollback gaps`
+- `Raphiiko/Raphiis-SteamVR-Crash-Recovery` - `Studied in Wave 329 as a Rust SteamVR/VRChat crash recovery helper with process detection, latest VRChat log parsing, SteamVR relaunch, and vrchat://launch?id=... last-world restore`
+- `Burnt-Delta/ez-wmr` - `Studied in Wave 329 as a WMR SteamVR driver settings patcher for thumbstick controls with direct default.vrsettings seek writes, local config persistence, and backup/JSON-parser caveats`
+
+## 301. SteamVR device provisioning, base-station diagnostics, and visual asset patchers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-330-steamvr-device-provisioning-base-station-diagnostics-and-visual-asset-patchers.md`
+- `../landscape/project-families.md`
+
+- `jaki-gh/Viva-Dongle-Flasher` - `Studied in Wave 330 as a Python GUI Watchman dongle flasher with SteamVR firmware zip lookup, UF2 generation, device/drive selection, disabled flash buttons until prerequisites exist, and irreversible-action caveats`
+- `TerayTech/SteamVR_BaseStation2.0_Diagnostic_Tool` - `Studied in Wave 330 as a base-station serial diagnostic viewer with worker queues, bounded logs, telemetry parsing, category/status classification, thresholds, and localization/validation caveats`
+- `nicolas-riera/SteamVR-IconsSwitcher` - `Studied in Wave 330 as a Python SteamVR icon resource patcher with registry Steam path lookup, current-state detection, custom/default icon sets, and update-overwrite/backup caveats`
+- `nicolas-riera/SteamVR-RenderModelSwitcher` - `Studied in Wave 330 as a Python SteamVR render-model resource patcher with current-model detection, Quest/Vive asset trees, copy/restore flows, and destructive directory replacement caveats`
+
+## 302. Overlay surface proxies, dashboard notifications, hand redirection, and tracker recording utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-331-overlay-surface-proxies-dashboard-notifications-hand-redirection-and-tracker-recording-utilities.md`
+- `../landscape/project-families.md`
+
+- `Eldon27232/KugouLyricsMirror` - `Studied in Wave 331 as a desktop lyrics/window proxy tool for VR capture with HWND capture, PrintWindow/BitBlt fallback, DWM proxy mode, chroma-key/region fallback, click-through/no-focus preview, and normal top-level capture target`
+- `ZephyrVR/tempest-overlay` - `Studied in Wave 331 as an older Qt/OpenVR dashboard overlay with manifest/autolaunch helpers, QML-to-FBO texture submission, overlay event polling, keyboard integration, token file watching, Socket.IO notification rooms, and GPL/vendor caveats`
+- `AndreZenner/hand-redirection-toolkit` - `Studied in Wave 331 as a Unity hand redirection research toolkit with RedirectionManager, HandRedirector subclasses, real/virtual target links, edit-mode analysis, threshold visualization, optional Leap/SRAnipal packages, and movement logging`
+- `Avdbergnmf/SteamVR-Utils` - `Studied in Wave 331 as Unity SteamVR utilities for tracker serial mapping, tracker assignment UI, threaded pose recording, circular queues, UXF integration seams, and replay scaffolding`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:
