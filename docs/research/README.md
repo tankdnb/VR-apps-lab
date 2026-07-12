@@ -315,6 +315,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-317-vr-notification-chat-overlays-and-local-message-relay-sidecars.md`
 - `landscape/vr-projects-wave-318-runtime-launch-sidecars-overlay-autostart-and-session-operator-helpers.md`
 - `landscape/vr-projects-wave-319-stereo-display-surface-viewers-depth-conversion-and-spatial-display-runtimes.md`
+- `landscape/vr-projects-wave-320-declarative-overlay-frameworks-free-overlay-shells-and-spatial-manipulation-clients.md`
+- `landscape/vr-projects-wave-321-steamvr-performance-huds-sensor-fan-in-and-overlay-qol-patch-packs.md`
+- `landscape/vr-projects-wave-322-xsoverlay-companion-bridges-phone-notifications-and-translation-control-sidecars.md`
+- `landscape/vr-projects-wave-323-narrow-openxr-api-layers-cockpit-anchors-inline-profilers-and-game-injection-toolkits.md`
 
 ## Archive Navigation
 

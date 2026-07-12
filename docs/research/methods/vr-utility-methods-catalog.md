@@ -17208,3 +17208,155 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   desktop and media viewers, spatial-display runtime notes, display-centric
   utility surfaces, and layered control/UI patterns over XR-rendered content.
+
+## Method 765: Declarative overlay/spatial shell boundary across UI tree, render layers, runtime overlay identity, placement mode, and input manipulation adapters
+
+- What it is:
+  overlay utilities should separate UI/widget composition, render-object and
+  layer trees, render-thread texture submission, runtime overlay identity,
+  placement mode, and input or spatial manipulation adapters.
+- Good for:
+  SteamVR dashboard apps, world-space panels, controller/wrist overlays,
+  notification cards, headset companion shells, and StardustXR-style spatial
+  manipulation clients.
+- Why it matters:
+  overlay projects are more reusable when OpenVR/OpenXR submission is not
+  fused with app UI state, renderer internals, placement policy, or source data.
+- Source evidence:
+  `sumx21t-3310/FloatSoda`, `DelfinVT-uwu/FreeOverlay`, and
+  `Schmarni-Dev/absolute-solver`.
+- Reusable core:
+  declarative UI model, render object tree, layer tree, render-thread GPU
+  bridge, overlay identity, placement type, event/input dispatcher, data-source
+  adapters, and optional spatial object selection/mover flow.
+- Source evidence details:
+  Wave 320 includes FloatSoda's widget/render/layer/OpenVR split and
+  dashboard/world/device-tracked windows, FreeOverlay's compact companion-shell
+  feature bundle, and absolute-solver's StardustXR hand/ray selection plus
+  object mover flow.
+- Do not copy directly:
+  monolithic overlay scripts, source/privacy logic hidden inside render loops,
+  broad exception swallowing, or spatial manipulation coupled to one visual
+  marker without a stable selection/mover boundary.
+- Strong references:
+  `FloatSoda` for framework architecture and `absolute-solver` for spatial
+  manipulation flow.
+- Maturity:
+  strong method with prototype caveats; production reuse should add lifecycle
+  guards, privacy settings, capability reporting, and source-adapter contracts.
+- Best fit for `VR-apps-lab`:
+  reusable overlay app shells, wrist/dashboard utility panels, spatial
+  manipulation helpers, and future overlay framework comparisons.
+
+## Method 766: VR performance/operator HUD fan-in across sensor providers, metric aggregation, rendering, overlay placement, and tray/settings control
+
+- What it is:
+  performance and operator HUDs should keep sensor providers, reading
+  normalization, configured metric selection, headset rendering, runtime
+  overlay lifecycle, and settings/tray controls separate.
+- Good for:
+  performance overlays, device monitors, battery/status panels, runtime
+  diagnostics HUDs, and operator-facing session tools.
+- Why it matters:
+  telemetry overlays become brittle when provider-specific reading rules,
+  renderer layout, OpenVR lifecycle, and settings are entangled.
+- Source evidence:
+  `Karlan-Trade/VR-Performance-Profiler` and `chaixshot/xsoverlay-tweak`.
+- Reusable core:
+  provider adapters, reading validator, category preference scoring, metric
+  selection config, renderer, overlay manager, readiness probe, settings/tray
+  surface, and friction taxonomy from patch packs.
+- Source evidence details:
+  Wave 321 includes HWiNFO/MSI/SteamVR fan-in and OpenVR overlay management
+  from `VR-Performance-Profiler`, plus XSOverlay pointer/wrist/keyboard/haptic
+  and WebView friction evidence from `xsoverlay-tweak`.
+- Do not copy directly:
+  app-internal patches as stable APIs, hidden provider precedence, or HUDs that
+  fail silently when SteamVR or sensor providers are unavailable.
+- Strong references:
+  `VR-Performance-Profiler` for provider fan-in and overlay management;
+  `xsoverlay-tweak` for friction taxonomy.
+- Maturity:
+  strong method with runtime and patch-fragility caveats; production reuse
+  should add provider health reporting, permissions, and update compatibility
+  warnings.
+- Best fit for `VR-apps-lab`:
+  headset performance dashboards, device inventory overlays, diagnostics HUDs,
+  and operator-control microtools.
+
+## Method 767: XSOverlay companion bridge boundary across source permissions, local relay, payload mapping, reconnect policy, tray status, and privacy defaults
+
+- What it is:
+  XSOverlay companion bridges should separate source app permissions, local
+  transport, payload/icon normalization, overlay sink delivery, reconnect
+  supervision, tray/operator UI, and privacy/logging policy.
+- Good for:
+  phone notification bridges, translation/caption sidecars, event relays,
+  stream/chat utilities, and local control companions.
+- Why it matters:
+  companion tools are safer and easier to adapt when sensitive source access,
+  local relay trust, payload shaping, and operator control are explicit.
+- Source evidence:
+  `jonreeve/NotifyXso` and `Daniel81i/YncneoXSOBridge`.
+- Reusable core:
+  source adapter, filter/config repository, HTTP/WebSocket/UDP relay, payload
+  mapper, icon/media normalizer, reconnect supervisor, tray/status controller,
+  structured logs, and retention/privacy defaults.
+- Source evidence details:
+  Wave 322 includes Android notification access plus Ktor-to-UDP XSOverlay
+  mapping from `NotifyXso`, and registry port discovery, WebSocket reconnects,
+  tray control, and translation logging from `YncneoXSOBridge`.
+- Do not copy directly:
+  unauthenticated relays without trust notes, global mutable state as the main
+  architecture, raw notification/translation logs without retention policy, or
+  sink-specific payload code duplicated across source adapters.
+- Strong references:
+  `NotifyXso` for clean source/relay/sink split and `YncneoXSOBridge` for tray
+  and external-tool discovery ideas.
+- Maturity:
+  useful method with security/privacy caveats; production reuse should add auth
+  or local trust boundaries, schema versioning, reconnect backoff, and user
+  control over retained data.
+- Best fit for `VR-apps-lab`:
+  notification/caption/translation overlays, event sidecars, and local
+  companion templates.
+
+## Method 768: Narrow OpenXR/game-layer helper boundary across runtime hooks, external data, calibration/profiling state, persistent config, and bypass controls
+
+- What it is:
+  invasive runtime/game helpers should keep hook points narrow and separate
+  external data, calibration or anchor state, profiling probes, persistence,
+  operator feedback, and bypass/rollback controls.
+- Good for:
+  OpenXR input remappers, cockpit anchor tools, API-layer profilers, vendor
+  enhancement layers, and game-specific VR retrofit helpers.
+- Why it matters:
+  runtime layers are risky when they own too much policy or do heavy work in
+  the target process. Reuse improves when hook boundaries and escape hatches
+  are explicit.
+- Source evidence:
+  `Majed6/KATOXR`, `robogears/cockpit-anchor`, `mledour/xrprof`, and
+  `AndrewAltimit/game-mods`.
+- Reusable core:
+  intercepted API functions, external device/daemon source, action or
+  reference-space mapping, calibration/anchor/profiling state, persistent
+  config files, hotkey/audio/operator feedback, IPC/shared-memory transport,
+  and bypass/rollback paths.
+- Source evidence details:
+  Wave 323 includes KAT treadmill-to-stick action remapping, STAGE-space cockpit
+  anchor capture and LOCAL-space rebasing, inline CPU/GPU layer profiling, and
+  a Rust minimal-injection toolkit with daemon/injector/overlay separation.
+- Do not copy directly:
+  global API-layer state without lifecycle guards, hidden input overrides,
+  unbounded injected-process work, or game/runtime workarounds presented as
+  general behavior without capability gates.
+- Strong references:
+  `cockpit-anchor` for calibration and operator feedback, `xrprof` for
+  profiling hooks, and `game-mods` for externalized processing architecture.
+- Maturity:
+  strong but high-risk method; production reuse should add capability gates,
+  safety/bypass UX, version checks, and clear statements about runtime/game
+  specificity.
+- Best fit for `VR-apps-lab`:
+  API-layer experiments, seated calibration helpers, profiling tools,
+  vendor-device adapters, and future game-retrofit architecture references.

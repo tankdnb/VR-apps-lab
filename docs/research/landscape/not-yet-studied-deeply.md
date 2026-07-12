@@ -3103,6 +3103,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 242. `VR notification overlay follow-up across ANCS/Windows/Twitch source adapters, privacy filters, queue semantics, overlay targets, and relay security`
 243. `Runtime operator helper follow-up across OpenVR autostart, OpenXR runtime switching, overlay/file-watched companions, input arbitration, and recovery/rollback UX`
 244. `Stereo/display-surface viewer follow-up across depth-estimated desktops, shared-memory control planes, explicit view-rig runtimes, and 2D-on-3D composition`
+245. `Declarative overlay framework follow-up across widget/render/layer trees, OpenVR texture bridges, device-tracked windows, and StardustXR manipulation clients`
+246. `VR performance/operator HUD follow-up across HWiNFO/MSI/SteamVR providers, metric preference scoring, overlay placement, tray controls, and XSOverlay friction patches`
+247. `XSOverlay companion bridge follow-up across Android notification access, HTTP/UDP/WebSocket relays, translation profiles, tray status, reconnect supervisors, and privacy policy`
+248. `Narrow OpenXR/game-layer follow-up across treadmill input remapping, seated cockpit anchors, inline layer profiling, IPC/shared-memory split, and minimal-injection budgets`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

@@ -1453,6 +1453,26 @@ Use these files when you want to understand:
   control planes, spatial-display runtimes, explicit display geometry, and
   layered 2D composition surfaces.
 
+- `vr-projects-wave-320-declarative-overlay-frameworks-free-overlay-shells-and-spatial-manipulation-clients.md`
+  Next GitHub discovery wave focused on declarative overlay frameworks, free
+  overlay shells, OpenVR texture submission, and StardustXR manipulation
+  clients.
+
+- `vr-projects-wave-321-steamvr-performance-huds-sensor-fan-in-and-overlay-qol-patch-packs.md`
+  Next GitHub discovery wave focused on SteamVR performance HUDs, sensor
+  providers, metric aggregation, overlay placement, and XSOverlay friction
+  patch packs.
+
+- `vr-projects-wave-322-xsoverlay-companion-bridges-phone-notifications-and-translation-control-sidecars.md`
+  Next GitHub discovery wave focused on XSOverlay companion bridges, phone
+  notification relays, translation sidecars, tray controls, and reconnect
+  policies.
+
+- `vr-projects-wave-323-narrow-openxr-api-layers-cockpit-anchors-inline-profilers-and-game-injection-toolkits.md`
+  Next GitHub discovery wave focused on narrow OpenXR API layers, cockpit
+  anchors, inline layer profiling, and minimal-injection game retrofit
+  toolkits.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

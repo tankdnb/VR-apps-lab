@@ -328,6 +328,10 @@ This file complements:
 - `vr-projects-wave-317-vr-notification-chat-overlays-and-local-message-relay-sidecars.md`
 - `vr-projects-wave-318-runtime-launch-sidecars-overlay-autostart-and-session-operator-helpers.md`
 - `vr-projects-wave-319-stereo-display-surface-viewers-depth-conversion-and-spatial-display-runtimes.md`
+- `vr-projects-wave-320-declarative-overlay-frameworks-free-overlay-shells-and-spatial-manipulation-clients.md`
+- `vr-projects-wave-321-steamvr-performance-huds-sensor-fan-in-and-overlay-qol-patch-packs.md`
+- `vr-projects-wave-322-xsoverlay-companion-bridges-phone-notifications-and-translation-control-sidecars.md`
+- `vr-projects-wave-323-narrow-openxr-api-layers-cockpit-anchors-inline-profilers-and-game-injection-toolkits.md`
 
 ## How to use this index
 

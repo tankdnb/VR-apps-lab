@@ -1221,6 +1221,10 @@ directions:
 236. `VR notification relay follow-up across phone/chat/desktop sources, privacy filters, bounded queues, overlay sinks, and local relay transports`
 237. `Runtime operator sidecar follow-up across autostart hooks, task orchestration, runtime switching, file-coupled helpers, and session bring-up UX`
 238. `Stereo/display-surface viewer follow-up across desktop ingress, depth-to-stereo transforms, live control planes, display geometry, and layered 2D composition`
+239. `Declarative overlay shell follow-up across widget/render/layer trees, OpenVR texture submission, dashboard/world/device-tracked windows, and spatial manipulation adapters`
+240. `Performance/operator HUD follow-up across sensor-provider fan-in, metric aggregation, overlay placement, tray/settings controls, and XSOverlay friction evidence`
+241. `XSOverlay companion bridge follow-up across phone notifications, translation sidecars, relay transports, payload mapping, reconnects, and privacy/trust defaults`
+242. `Narrow OpenXR/game-layer follow-up across action remapping, cockpit anchors, inline profiling, minimal injection, IPC/shared-memory transport, and bypass controls`
 
 ## Current repository-maintenance priorities
 

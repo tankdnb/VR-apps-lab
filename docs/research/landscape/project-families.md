@@ -10021,6 +10021,130 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - local 2D-over-3D composition helpers;
 - display-centric product references for single-surface XR utilities.
 
+## Family 299: Declarative overlay frameworks, free overlay shells, and spatial manipulation clients
+
+This family covers overlay and spatial UI shells that expose reusable
+composition boundaries instead of only shipping one finished utility. The
+reusable lesson is to keep UI composition, render/layer trees, runtime overlay
+submission, placement mode, and spatial manipulation adapters separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `sumx21t-3310/FloatSoda` | Studied in Wave 320 | Flutter-like SteamVR overlay framework with widget/render/layer separation and dashboard/world/device-tracked window types |
+| `DelfinVT-uwu/FreeOverlay` | Studied in Wave 320 with maturity caveats | Free/open overlay shell with themes, media, notifications, calendar/reminders, and monolithic Python-script caveats |
+| `Schmarni-Dev/absolute-solver` | Studied in Wave 320 | StardustXR spatial manipulation client with hand/tip selection rays, object capture, mover flow, and model/line feedback |
+
+### Consolidation note
+
+This family matters because overlay shells should name:
+
+- declarative UI/widget model versus runtime overlay identity;
+- render object/layer tree versus GPU texture submission;
+- dashboard, world-space, device-tracked, or spatial-object placement mode;
+- input dispatch and controller/hand/ray adapters;
+- theme, persistence, media, and notification source boundaries;
+- maturity caveats for compact prototype shells.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- reusable SteamVR overlay UI frameworks;
+- headset companion shells with explicit source adapters;
+- StardustXR-style spatial manipulation clients;
+- overlay framework comparisons across retained, immediate, and declarative
+  approaches.
+
+## Family 300: SteamVR performance HUDs, sensor fan-in, and overlay QoL patch packs
+
+This family covers small operator overlays and patch packs that reveal how VR
+users monitor and tune their sessions. The reusable lesson is to keep telemetry
+providers, metric aggregation, HUD rendering, overlay placement, settings, and
+patch-friction evidence separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Karlan-Trade/VR-Performance-Profiler` | Studied in Wave 321 | SteamVR HUD with HWiNFO/MSI/SteamVR providers, metric aggregation, OpenVR overlay manager, D3D/Direct2D rendering, and settings/tray split |
+| `chaixshot/xsoverlay-tweak` | Studied in Wave 321 | XSOverlay BepInEx/Harmony patch pack mapping pointer, wrist, keyboard, haptic, overlay attach, WebView, and refresh-rate friction |
+
+### Consolidation note
+
+This family matters because operator HUDs and overlay patches should name:
+
+- sensor provider contracts and fallback behavior;
+- metric normalization, preference scoring, and configured selection;
+- renderer versus runtime overlay manager ownership;
+- tray/settings surfaces and SteamVR readiness checks;
+- UX friction evidence from patch packs;
+- version fragility for app-internal patches.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- performance and device-monitor overlay panels;
+- provider fan-in libraries for headset HUDs;
+- XSOverlay friction matrices;
+- operator-facing settings/tray controls for VR utilities.
+
+## Family 301: XSOverlay companion bridges, phone notifications, and translation-control sidecars
+
+This family covers companion apps that bridge external events, phone
+notifications, translation state, or desktop controls into XSOverlay-facing
+workflows. The reusable lesson is to separate source permissions, local relay,
+payload mapping, reconnect policy, privacy, and tray/operator UI.
+
+| Project | Status | Notes |
+|---|---|---|
+| `jonreeve/NotifyXso` | Studied in Wave 322 | Android notification listener plus Ktor HTTP relay and UDP XSOverlay message mapper |
+| `Daniel81i/YncneoXSOBridge` | Studied in Wave 322 | Translation/control bridge with registry port discovery, WebSocket reconnect handling, tray status, logging, and global-state caveats |
+
+### Consolidation note
+
+This family matters because XSOverlay companions should name:
+
+- source app permission and privacy boundary;
+- local HTTP/WebSocket/UDP relay contract;
+- payload and icon normalization;
+- reconnect and stale-state handling;
+- tray/status/operator controls;
+- log retention and trust assumptions.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- phone-to-overlay relay scaffolds;
+- translation and caption companion bridges;
+- XSOverlay payload/transport comparisons;
+- privacy-aware local sidecar templates.
+
+## Family 302: Narrow OpenXR API layers, cockpit anchors, inline profilers, and game injection toolkits
+
+This family covers invasive but bounded runtime/game-layer tools that add one
+clear capability while keeping hook points and heavy processing explicit. The
+reusable lesson is to keep runtime interception narrow and move policy, UI,
+logging, profiling, or media processing into separated components.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Majed6/KATOXR` | Studied in Wave 323 | OpenXR treadmill-to-stick micro-layer with action interception, HMD-relative remapping, calibration, and trailing stop |
+| `robogears/cockpit-anchor` | Studied in Wave 323 | Seated cockpit anchoring API layer with STAGE anchor capture, LOCAL rebasing, hotkeys, audio feedback, and per/shared anchor files |
+| `mledour/xrprof` | Studied in Wave 323 | Inline API-layer profiler with CPU/GPU RAII scopes, D3D11/D3D12 attach points, frame commit, and CSV output |
+| `AndrewAltimit/game-mods` | Studied in Wave 323 | Minimal-injection toolkit with daemon/injector/overlay split, IPC, shared memory, video decode, and hook templates |
+
+### Consolidation note
+
+This family matters because runtime/game-layer helpers should name:
+
+- exact API hook/interception points;
+- external data or daemon source;
+- calibration, anchor, or profiling state;
+- persistent files and bypass/rollback controls;
+- injected-process budget and crash-isolation policy;
+- diagnostics, logs, and operator feedback.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenXR input remapping micro-layers;
+- seated/cockpit anchoring and calibration helpers;
+- API-layer profiling utilities;
+- minimal-injection game overlay architectures.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

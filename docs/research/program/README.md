@@ -2266,3 +2266,31 @@ repeatable way.
 
 - `github-research-wave-319-backlog.md`
   Executed backlog for the Wave 319 pass.
+
+- `github-research-wave-320-plan.md`
+  Wave 320 research plan focused on declarative overlay frameworks, free
+  overlay shells, and StardustXR spatial manipulation clients.
+
+- `github-research-wave-320-backlog.md`
+  Executed backlog for the Wave 320 pass.
+
+- `github-research-wave-321-plan.md`
+  Wave 321 research plan focused on SteamVR performance HUDs, sensor fan-in,
+  and XSOverlay quality-of-life patch packs.
+
+- `github-research-wave-321-backlog.md`
+  Executed backlog for the Wave 321 pass.
+
+- `github-research-wave-322-plan.md`
+  Wave 322 research plan focused on XSOverlay companion bridges, phone
+  notifications, and translation-control sidecars.
+
+- `github-research-wave-322-backlog.md`
+  Executed backlog for the Wave 322 pass.
+
+- `github-research-wave-323-plan.md`
+  Wave 323 research plan focused on narrow OpenXR API layers, cockpit anchors,
+  inline profilers, and game injection toolkits.
+
+- `github-research-wave-323-backlog.md`
+  Executed backlog for the Wave 323 pass.

@@ -4258,6 +4258,49 @@ Primary docs:
 - `DisplayXR/displayxr-unity` - `Studied in Wave 319 as a spatial-display Unity runtime plugin with camera-centric versus display-centric rigs, provider tunables, explicit view-rig ownership, and a strong local-2D composition layer`
 - `DisplayXR/displayxr-demo-gaussiansplat` - `Studied in Wave 319 as a compact display-centric viewer with runtime-owned display geometry, focus/pivot/orbit controls, transparent layering, and small-viewer product lessons`
 
+## 291. Declarative overlay frameworks, free overlay shells, and spatial manipulation clients
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-320-declarative-overlay-frameworks-free-overlay-shells-and-spatial-manipulation-clients.md`
+- `../landscape/project-families.md`
+
+- `sumx21t-3310/FloatSoda` - `Studied in Wave 320 as a declarative SteamVR overlay framework with widget/render/layer tree separation, render-thread OpenGL texture submission, OpenVR overlay wrappers, and dashboard/world/device-tracked window types`
+- `DelfinVT-uwu/FreeOverlay` - `Studied with maturity caveats in Wave 320 as a free/open XSOverlay-like desktop companion shell with OpenVR/GLFW/PIL rendering, themes, media controls, notifications, calendar reminders, and monolithic-script caveats`
+- `Schmarni-Dev/absolute-solver` - `Studied in Wave 320 as a StardustXR spatial manipulation client with hand/tip selection rays, object capture into mover logic, ring input, line/model feedback, and accent-color integration`
+
+## 292. SteamVR performance HUDs, sensor fan-in, and overlay QoL patch packs
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-321-steamvr-performance-huds-sensor-fan-in-and-overlay-qol-patch-packs.md`
+- `../landscape/project-families.md`
+
+- `Karlan-Trade/VR-Performance-Profiler` - `Studied in Wave 321 as a SteamVR performance HUD with HWiNFO/MSI/SteamVR provider fan-in, metric aggregation, OpenVR overlay manager, D3D/Direct2D rendering, settings, tray UI, and SteamVR readiness probing`
+- `chaixshot/xsoverlay-tweak` - `Studied in Wave 321 as an XSOverlay BepInEx/Harmony QoL patch pack covering refresh rate, pointer/cursor, wrist panel, keyboard, haptics, overlay attach, WebView stability, and patch-fragility caveats`
+
+## 293. XSOverlay companion bridges, phone notifications, and translation-control sidecars
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-322-xsoverlay-companion-bridges-phone-notifications-and-translation-control-sidecars.md`
+- `../landscape/project-families.md`
+
+- `jonreeve/NotifyXso` - `Studied in Wave 322 as an Android-to-XSOverlay notification bridge with notification-listener source, filter/config repository, HTTP/Ktor relay, UDP XSOverlay payload mapping, capped icon handling, and datagram-size guard`
+- `Daniel81i/YncneoXSOBridge` - `Studied in Wave 322 as a translation/control XSOverlay companion with registry port discovery, WebSocket reconnect surfaces, tray status/menu controller, translation logging, PyInstaller resource handling, and global-state caveats`
+
+## 294. Narrow OpenXR API layers, cockpit anchors, inline profilers, and game injection toolkits
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-323-narrow-openxr-api-layers-cockpit-anchors-inline-profilers-and-game-injection-toolkits.md`
+- `../landscape/project-families.md`
+
+- `Majed6/KATOXR` - `Studied in Wave 323 as a narrow OpenXR treadmill-to-stick micro-layer with action/binding interception, KAT device polling, HMD-relative velocity conversion, calibration, trailing stop, and OpenComposite compatibility hooks`
+- `robogears/cockpit-anchor` - `Studied in Wave 323 as a seated cockpit anchoring OpenXR API layer with STAGE-space anchor capture, LOCAL-space rebasing, shared/per-game anchor files, hotkey/audio feedback, bypass mode, and Virtual Desktop workaround caveats`
+- `mledour/xrprof` - `Studied in Wave 323 as an inline OpenXR API-layer profiling library with per-session probes, CPU/GPU RAII scopes, D3D11/D3D12 attachment seams, live enable toggles, frame commit, and layer-owned CSV output`
+- `AndrewAltimit/game-mods` - `Studied in Wave 323 as a Rust minimal-injection game retrofit toolkit with launcher/daemon/injector/overlay split, IPC, single-writer shared memory, protocol crates, video decode, Vulkan/OpenVR hook framing, and crash-isolation constraints`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:
