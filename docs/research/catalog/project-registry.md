@@ -174,7 +174,7 @@ Primary docs:
 - `BOLL7708/OpenVR2Key` - `Already studied`
 - `Raphiiko/OyasumiVR` - `Already studied`
 - `I5UCC/SteaMeeter` - `Already studied`
-- `I5UCC/ParameterSaveStates` - `Not studied deeply`
+- `I5UCC/ParameterSaveStates` - `Deepened in Wave 324`
 - `hai-vr/h-view` - `Already studied`
 - `MeroFune/GOpy` - `Already studied as OSC gesture-parameter to HMD-relative overlay icon bridge`
 
@@ -4300,6 +4300,46 @@ Primary docs:
 - `robogears/cockpit-anchor` - `Studied in Wave 323 as a seated cockpit anchoring OpenXR API layer with STAGE-space anchor capture, LOCAL-space rebasing, shared/per-game anchor files, hotkey/audio feedback, bypass mode, and Virtual Desktop workaround caveats`
 - `mledour/xrprof` - `Studied in Wave 323 as an inline OpenXR API-layer profiling library with per-session probes, CPU/GPU RAII scopes, D3D11/D3D12 attachment seams, live enable toggles, frame commit, and layer-owned CSV output`
 - `AndrewAltimit/game-mods` - `Studied in Wave 323 as a Rust minimal-injection game retrofit toolkit with launcher/daemon/injector/overlay split, IPC, single-writer shared memory, protocol crates, video decode, Vulkan/OpenVR hook framing, and crash-isolation constraints`
+
+## 295. VRChat parameter state dashboards and local web control mirrors
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-324-vrchat-parameter-state-dashboards-and-local-web-control-mirrors.md`
+- `../landscape/project-families.md`
+
+- `I5UCC/ParameterSaveStates` - `Studied in Wave 324 as a SteamVR dashboard and local Web UI for VRChat per-avatar parameter profiles, with OSCQuery discovery, typed parameter cache/replay, profile folders, apply filters, auto-sync settings, export/import, SSE web updates, tray/browser fallback, and SteamVR manifest registration`
+
+## 296. SteamVR hardware provisioning, session autolaunch, and Watchman dongle utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-325-steamvr-hardware-provisioning-session-autolaunch-and-watchman-dongle-utilities.md`
+- `../landscape/project-families.md`
+
+- `The-Graze/PSVR2-SteamVR-AutoLaunch` - `Studied in Wave 325 as a PSVR2 USB-triggered SteamVR autolaunch tray microhelper with single-instance guard, WMI Win32_USBControllerDevice watcher, device-name match, manual tray launch, and steam://run/250820 startup`
+- `ykeara/SteamVR-Dongle-Flash` - `Studied in Wave 325 as a source-light Watchman dongle provisioning guide/script with SteamVR lighthouse_watchman_update.exe reuse, default-path batch file, flash-all risk, and permanent-firmware warning copy`
+- `ugokutennp/flowing-dongle-ccd` - `Studied in Wave 325 as a DIY multi-device Watchman dongle hardware/product reference with nRF52840 plus USB hub design, KiCad PCB, case models, JLCPCB artifacts, firmware-source notes, and licensing/provenance caveats`
+
+## 297. KAT Walk Linux locomotion overlay and OpenXR layer split
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-326-kat-walk-linux-locomotion-overlay-and-openxr-layer-split.md`
+- `../landscape/project-families.md`
+
+- `BBPSBB/katwalk-linux` - `Studied in Wave 326 as a Linux KAT Walk C2+ treadmill utility with USB frame parser, locomotion model, body/HMD fusion, daemon web tuner, shared-memory stick/HUD/laser buses, pure-Pillow wrist HUD, OpenXR implicit layer for input/HUD composition, and N=1 hardware caveats`
+- `Kiichiuwu/WTVFSVR-war-thunder-virtual-flight-stick-for-vr` - `Checked in Wave 326 as an empty/source-light virtual flight-stick overlay placeholder; no donor code found`
+
+## 298. Window mirror managers, capture/remix surfaces, and stream-safe overlay pipelines
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-327-window-mirror-managers-capture-remix-surfaces-and-stream-safe-overlay-pipelines.md`
+- `../landscape/project-families.md`
+
+- `aguirretim/apollo-mirror-manager` - `Studied in Wave 327 as a stream-safe DWM window mirror manager for Apollo/Moonlight with persistent WinForms mirror worker, DWM thumbnail registration, virtual-display detection, target handoff file, debounced teardown, PID/watchdog repair, tile manager, apps.json backups, and ownership-marker close policy`
+- `PhotonIO/RemixPlayer` - `Studied in Wave 327 as a source-light channelized capture/remix product concept for audio, video, VR, overlays, replay files, graphics captures, FPS, and performance metrics`
 
 ## Registry maintenance rule
 

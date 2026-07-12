@@ -1225,6 +1225,10 @@ directions:
 240. `Performance/operator HUD follow-up across sensor-provider fan-in, metric aggregation, overlay placement, tray/settings controls, and XSOverlay friction evidence`
 241. `XSOverlay companion bridge follow-up across phone notifications, translation sidecars, relay transports, payload mapping, reconnects, and privacy/trust defaults`
 242. `Narrow OpenXR/game-layer follow-up across action remapping, cockpit anchors, inline profiling, minimal injection, IPC/shared-memory transport, and bypass controls`
+243. `VRChat parameter dashboard follow-up across OSCQuery identity, profile persistence, web mirror APIs, import/export safety, and typed replay`
+244. `SteamVR hardware provisioning follow-up across USB autolaunch, Watchman dongle flashing, irreversible warnings, hardware artifacts, and firmware provenance`
+245. `KAT/OpenXR locomotion HUD follow-up across hardware parser, locomotion model, shared-memory bus, OpenXR layer composition, and wrist tuning UX`
+246. `Window mirror/capture surface follow-up across DWM mirror workers, virtual display sinks, ownership markers, watchdog repair, and remixable channel schemas`
 
 ## Current repository-maintenance priorities
 
@@ -1235,6 +1239,23 @@ Besides new research waves, the main repository-maintenance work now is:
 - keep `not-yet-studied-deeply.md` focused on active queueing;
 - reduce archive pressure in front-door docs;
 - preserve wave history without making every entry document chronological.
+
+## Current additions from Waves 324-327
+
+Recent research adds four useful donor clusters:
+
+- `dashboard state profiles`
+  from `I5UCC/ParameterSaveStates`: per-avatar/runtime state snapshots,
+  typed replay, filters, local web mirrors, and headset dashboard controls.
+- `hardware/session microhelpers`
+  from PSVR2 autolaunch and Watchman dongle projects: device-triggered launch,
+  irreversible-action warnings, and hardware artifact provenance.
+- `OpenXR hardware HUD/layer split`
+  from `BBPSBB/katwalk-linux`: daemon-owned hardware parsing, shared-memory
+  bus, pure HUD renderer, OpenXR layer composition, and wrist tuning UX.
+- `stream-safe mirror workers`
+  from `aguirretim/apollo-mirror-manager`: DWM mirror surface, target handoff,
+  launch ownership markers, watchdog repair, and tile/source manager patterns.
 
 ## If you need deeper history
 

@@ -85,7 +85,7 @@ notification behavior.
 | `WiiPlayer2/VnotifieR` | Already studied | Local HTTP notification server with config-driven overlay placement and fade behavior |
 | `BOLL7708/OpenVR2WS` | Already studied | Broader runtime I/O and settings bridge |
 | `I5UCC/SteaMeeter` | Already studied | Dashboard bridge into an external audio/control system |
-| `I5UCC/ParameterSaveStates` | Not studied deeply | Related automation/control-surface family node |
+| `I5UCC/ParameterSaveStates` | Deepened in Wave 324 | SteamVR dashboard and local Web UI for VRChat per-avatar parameter profiles |
 | `hai-vr/h-view` | Already studied | Desktop-plus-overlay utility host with OSCQuery tooling, hardware views, and strong overlay-management slices |
 | `MeroFune/GOpy` | Already studied as OSC gesture-parameter to HMD-relative overlay icon bridge | Additional control/integration utility candidate now promoted through Wave 153 |
 
@@ -10144,6 +10144,129 @@ It suggests a stronger branch inside `VR-apps-lab` around:
 - seated/cockpit anchoring and calibration helpers;
 - API-layer profiling utilities;
 - minimal-injection game overlay architectures.
+
+## Family 303: VRChat parameter state dashboards and local web control mirrors
+
+This family covers dashboard utilities that persist runtime/avatar state and
+mirror the same control model into a local browser surface. The reusable lesson
+is to keep runtime discovery, typed state snapshots, profile persistence,
+dashboard controls, and local web APIs separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `I5UCC/ParameterSaveStates` | Studied in Wave 324 | SteamVR dashboard plus local Web UI for VRChat per-avatar parameter profiles with OSCQuery discovery, typed replay, filters, auto-sync, export/import, and SSE updates |
+
+### Consolidation note
+
+This family matters because state/profile dashboards should name:
+
+- runtime discovery and current-object identity;
+- typed state snapshot and replay;
+- profile persistence and ordering;
+- apply filters, exclusions, and auto-sync policy;
+- headset dashboard versus browser/control mirror;
+- export/import and destructive-action safeguards.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- reusable VR utility state/profile managers;
+- dashboard plus local-web companion shells;
+- profile import/export safety patterns;
+- runtime object identity and typed-setting replay.
+
+## Family 304: SteamVR hardware provisioning, session autolaunch, and Watchman dongle utilities
+
+This family covers small hardware/session helpers that make VR runtime bring-up
+or device provisioning easier. The reusable lesson is to separate hardware
+detection, target selection, command execution, irreversible warnings,
+firmware/artifact provenance, and operator fallback controls.
+
+| Project | Status | Notes |
+|---|---|---|
+| `The-Graze/PSVR2-SteamVR-AutoLaunch` | Studied in Wave 325 | PSVR2 USB-triggered SteamVR tray autolaunch helper with WMI watcher, single-instance guard, manual launch, and SteamVR URI startup |
+| `ykeara/SteamVR-Dongle-Flash` | Studied in Wave 325 | Source-light Watchman dongle flashing guide/script with permanent-action warnings and hardcoded default SteamVR path caveats |
+| `ugokutennp/flowing-dongle-ccd` | Studied in Wave 325 as hardware reference | DIY multi-device Watchman dongle artifact bundle with nRF52840/USB hub hardware, PCB/case/BOM outputs, and firmware-source caveats |
+
+### Consolidation note
+
+This family matters because VR hardware helpers should name:
+
+- stable device identification and inventory;
+- launch/provision action and manual fallback;
+- dry-run or explicit target selection;
+- destructive or irreversible action warnings;
+- firmware, PCB, case, and BOM provenance;
+- path/runtime assumptions and diagnostics.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- session bring-up microhelpers;
+- SteamVR hardware provisioning safety checklists;
+- dongle/tracker hardware artifact comparisons;
+- operator-facing readiness and rollback UX.
+
+## Family 305: KAT Walk Linux locomotion overlay and OpenXR layer split
+
+This family covers hardware sensor utilities that split device IO, locomotion
+logic, HUD rendering, and OpenXR runtime integration into separate components.
+The reusable lesson is to keep the daemon and HUD brain outside the game
+process while using a narrow OpenXR layer for injection, poses, composition,
+and click transport.
+
+| Project | Status | Notes |
+|---|---|---|
+| `BBPSBB/katwalk-linux` | Studied in Wave 326 | Linux KAT Walk C2+ daemon plus OpenXR implicit layer with USB parser, locomotion fusion, shared-memory buses, web tuner, pure-Pillow HUD, wrist placement, and laser/click return path |
+| `Kiichiuwu/WTVFSVR-war-thunder-virtual-flight-stick-for-vr` | Empty/source-light in Wave 326 | Virtual flight-stick overlay product-intent marker with no donor code found |
+
+### Consolidation note
+
+This family matters because hardware locomotion/HUD tools should name:
+
+- hardware reader and protocol parser;
+- locomotion or control model;
+- head/body/reference fusion;
+- daemon control plane and web tuner;
+- shared-memory transport schema;
+- pure HUD renderer versus OpenXR composition/input layer;
+- N=1 hardware and runtime/container caveats.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- OpenXR-first utility HUDs without SteamVR overlays;
+- hardware sensor daemon architectures;
+- shared-memory layer/daemon protocols;
+- in-VR tuning panels with clear operator feedback.
+
+## Family 306: Window mirror managers, capture/remix surfaces, and stream-safe overlay pipelines
+
+This family covers utilities that manage live desktop/window surfaces for
+streaming, reference views, or remixable capture channels. The reusable lesson
+is to keep the mirror worker, launch ownership, sink/tile registration,
+watchdog, and manager UI separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `aguirretim/apollo-mirror-manager` | Studied in Wave 327 | PowerShell/WinForms DWM mirror manager with persistent mirror surface, virtual-display detection, target handoff file, debounced teardown, watchdog/PID fallback, Apollo tile manager, and ownership markers |
+| `PhotonIO/RemixPlayer` | Source-light in Wave 327 | README-only capture/remix concept for VR, overlays, replay files, graphics captures, FPS, and performance metrics as separate viewer-remix channels |
+
+### Consolidation note
+
+This family matters because mirror/capture surface tools should name:
+
+- source window/process resolver;
+- persistent mirror or capture surface;
+- virtual display or overlay sink;
+- launch and close ownership policy;
+- watchdog and health/repair controls;
+- config backup and tile/source registration;
+- channel/schema model for recorded overlay/session data.
+
+It suggests a stronger branch inside `VR-apps-lab` around:
+
+- stream-safe reference-window utilities;
+- desktop/window mirror workers for VR companion panels;
+- launch ownership markers for session helpers;
+- channelized VR session recording and remix concepts.
 
 ## Recommended synthesis path for `VR-apps-lab`
 

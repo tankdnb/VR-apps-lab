@@ -2294,3 +2294,31 @@ repeatable way.
 
 - `github-research-wave-323-backlog.md`
   Executed backlog for the Wave 323 pass.
+
+- `github-research-wave-324-plan.md`
+  Wave 324 research plan focused on VRChat parameter state dashboards and
+  local web control mirrors.
+
+- `github-research-wave-324-backlog.md`
+  Executed backlog for the Wave 324 pass.
+
+- `github-research-wave-325-plan.md`
+  Wave 325 research plan focused on SteamVR hardware provisioning, session
+  autolaunch, and Watchman dongle utilities.
+
+- `github-research-wave-325-backlog.md`
+  Executed backlog for the Wave 325 pass.
+
+- `github-research-wave-326-plan.md`
+  Wave 326 research plan focused on KAT Walk Linux locomotion, shared-memory
+  HUD buses, and OpenXR layer splits.
+
+- `github-research-wave-326-backlog.md`
+  Executed backlog for the Wave 326 pass.
+
+- `github-research-wave-327-plan.md`
+  Wave 327 research plan focused on window mirror managers, capture/remix
+  surfaces, and stream-safe overlay pipelines.
+
+- `github-research-wave-327-backlog.md`
+  Executed backlog for the Wave 327 pass.

@@ -121,7 +121,7 @@ kept for the next deeper inspection round.
 
 | Project | Current status in `VR-apps-lab` | Interesting idea | Code donor value | Product reference value | What to inspect next |
 |---|---|---|---|---|---|
-| `I5UCC/ParameterSaveStates` | Not studied deeply | VRChat or control-surface state management that may complement remote-control overlays | Medium | Medium | State model, persistence approach, OSC or app-integration flow, overlap with `SteaMeeter` |
+| `I5UCC/ParameterSaveStates` | Studied in Wave 324 | VRChat parameter state dashboard with local web-control mirror | High | High | No active deep-pass needed; compare only when designing reusable profile/state managers |
 | `MeroFune/GOpy` | Already studied in Wave 153 | OSC gesture-parameter to HMD-relative overlay icon bridge | Medium | Medium | No urgent follow-up; compare only inside an OSC-to-overlay bridge matrix |
 
 ## Priority batch E: Wave 11 follow-up candidates
@@ -3107,6 +3107,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 246. `VR performance/operator HUD follow-up across HWiNFO/MSI/SteamVR providers, metric preference scoring, overlay placement, tray controls, and XSOverlay friction patches`
 247. `XSOverlay companion bridge follow-up across Android notification access, HTTP/UDP/WebSocket relays, translation profiles, tray status, reconnect supervisors, and privacy policy`
 248. `Narrow OpenXR/game-layer follow-up across treadmill input remapping, seated cockpit anchors, inline layer profiling, IPC/shared-memory split, and minimal-injection budgets`
+249. `VRChat parameter state dashboard follow-up across profile diff UX, import/export safety, local web trust, OSCQuery identity, and destructive action confirmations`
+250. `SteamVR hardware provisioning follow-up across stable device IDs, dry-run target selection, firmware provenance, rollback impossibility warnings, and dongle hardware artifacts`
+251. `KAT/OpenXR locomotion HUD follow-up across shared-memory schema versioning, layer lifecycle, input coexistence, wrist HUD interaction, and N=1 hardware diagnostics`
+252. `Window mirror/capture surface follow-up across DWM thumbnail limits, virtual-display sinks, ownership markers, watchdog repair, input forwarding, and channelized remix schemas`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

@@ -17360,3 +17360,163 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   API-layer experiments, seated calibration helpers, profiling tools,
   vendor-device adapters, and future game-retrofit architecture references.
+
+## Method 769: Dashboard state-profile manager with local web-control mirror
+
+- What it is:
+  stateful VR utility dashboards should separate runtime discovery, typed state
+  snapshot/replay, profile persistence, headset controls, and local web-control
+  mirrors.
+- Good for:
+  VRChat avatar utilities, runtime preference dashboards, headset companion
+  settings panels, profile managers, and utility control surfaces that need
+  both in-headset and desktop/browser access.
+- Why it matters:
+  dashboard utilities become much more reusable when the profile/state model is
+  not tied directly to one UI surface or one runtime callback.
+- Source evidence:
+  `I5UCC/ParameterSaveStates`.
+- Reusable core:
+  runtime/service discovery, current-object identity, typed parameter cache,
+  named profile persistence, profile ordering, apply filters, dashboard action
+  handlers, local HTTP API, update/event stream, tray/browser fallback, and
+  export/import.
+- Source evidence details:
+  Wave 324 includes SteamVR dashboard lifecycle and manifest registration,
+  OSCQuery-based VRChat discovery, typed `/avatar/parameters/...` caching,
+  per-avatar profile folders, exclusion filters, auto-sync settings, local
+  `HttpListener` API routes, SSE updates, and archive export/import.
+- Do not copy directly:
+  runtime-specific paths as generic state keys, destructive profile operations
+  without confirmation, local web mutation APIs without trust notes, or
+  import/auto-sync behavior without rollback and preview UX.
+- Strong references:
+  `ParameterSaveStates` for dashboard plus local web mirror architecture.
+- Maturity:
+  strong method with VRChat-specific caveats; production reuse should add
+  schema/version metadata, diff previews, local trust boundaries, and
+  destructive-action confirmations.
+- Best fit for `VR-apps-lab`:
+  utility profile managers, dashboard settings tools, local companion panels,
+  and future runtime-state notebooks.
+
+## Method 770: VR hardware/session microhelper boundary across device detection, target selection, command execution, warnings, and artifact provenance
+
+- What it is:
+  small VR hardware/session helpers should separate device detection,
+  user-visible target selection, launch or provisioning command execution,
+  warnings, rollback policy, and firmware/hardware artifact provenance.
+- Good for:
+  headset autolaunch tools, SteamVR dongle helpers, tracker provisioning,
+  device readiness panels, and hardware setup checklists.
+- Why it matters:
+  VR hardware helpers are often tiny, but they can perform irreversible or
+  fragile actions. Reuse depends on making target identity, risk, and
+  provenance explicit.
+- Source evidence:
+  `The-Graze/PSVR2-SteamVR-AutoLaunch`,
+  `ykeara/SteamVR-Dongle-Flash`, and `ugokutennp/flowing-dongle-ccd`.
+- Reusable core:
+  hardware watcher, stable ID matching, device inventory, manual fallback,
+  command launcher, dry-run, explicit target selector, warning copy, rollback
+  or no-rollback statement, path/runtime discovery, BOM/PCB/case/firmware
+  provenance, and logs.
+- Source evidence details:
+  Wave 325 includes WMI USB insertion watching and SteamVR URI launch from
+  `PSVR2-SteamVR-AutoLaunch`, SteamVR `lighthouse_watchman_update.exe` reuse
+  and permanent-flash warnings from `SteamVR-Dongle-Flash`, and nRF52840 plus
+  USB-hub Watchman hardware artifacts from `flowing-dongle-ccd`.
+- Do not copy directly:
+  display-name-only device matching, hardcoded SteamVR paths, flash-all
+  scripts, silent firmware operations, or bundled hardware/firmware artifacts
+  without provenance and license notes.
+- Strong references:
+  `PSVR2-SteamVR-AutoLaunch` for tiny session autolaunch shape,
+  `SteamVR-Dongle-Flash` for warning copy, and `flowing-dongle-ccd` for
+  hardware artifact packaging.
+- Maturity:
+  useful method with safety caveats; production reuse should add explicit
+  device inventories, confirmations, dry-runs, and recovery documentation.
+- Best fit for `VR-apps-lab`:
+  session bring-up helpers, hardware readiness utilities, provisioning
+  checklists, and dongle/tracker setup notes.
+
+## Method 771: Hardware sensor daemon plus OpenXR HUD/layer split
+
+- What it is:
+  hardware sensor utilities can keep device IO, parsing, control/locomotion
+  models, and tuning outside the game process while a narrow OpenXR layer owns
+  runtime input injection, HUD composition, poses, and click transport.
+- Good for:
+  treadmill adapters, body-device bridges, OpenXR-first HUDs, vendor-device
+  helpers, and Linux runtime utilities that should avoid SteamVR overlays.
+- Why it matters:
+  runtime-layer code is high-risk, but hardware utilities still need in-VR
+  status and tuning. A split architecture reduces injected-process burden and
+  keeps diagnostics accessible.
+- Source evidence:
+  `BBPSBB/katwalk-linux`.
+- Reusable core:
+  hardware reader, protocol parser, locomotion/control model, head/body fusion,
+  daemon HTTP/control plane, shared-memory transport, pure HUD renderer,
+  OpenXR implicit layer, composition quad, controller ray-cast/click return,
+  placement config, capture/debug tooling, and capability gates.
+- Source evidence details:
+  Wave 326 includes KAT USB frame parsing, grounded-foot slip locomotion,
+  body-relative stick fusion, web tuner, shared-memory stick/HUD/laser paths,
+  pure-Pillow HUD rendering, `hud.conf` placement/gating, OpenXR layer HUD
+  upload/composition, and Proton/container notes.
+- Do not copy directly:
+  unversioned shared-memory schemas, N=1 hardware assumptions as general
+  support, hidden input injection, or `/tmp` transport without sandbox and
+  permission notes.
+- Strong references:
+  `katwalk-linux` for daemon/HUD/OpenXR split and wrist-HUD interaction.
+- Maturity:
+  strong donor but early hardware-specific method; production reuse should add
+  schema versioning, runtime capability reporting, lifecycle guards, and
+  per-device diagnostics.
+- Best fit for `VR-apps-lab`:
+  OpenXR utility HUD prototypes, hardware bridges, locomotion/control helpers,
+  and shared-memory runtime helper experiments.
+
+## Method 772: Stream-safe window mirror worker with target handoff, ownership markers, watchdog repair, and manager UI
+
+- What it is:
+  window/reference-surface utilities should separate the persistent mirror
+  worker, target selection, launch ownership, sink/tile registration, watchdog,
+  and manager/repair UI.
+- Good for:
+  desktop-in-VR panels, reference window utilities, Moonlight/Apollo streaming
+  helpers, virtual-display tools, capture surfaces, and overlay-adjacent
+  session managers.
+- Why it matters:
+  mirroring a live app is not just capture. A good utility must avoid moving
+  real windows, avoid killing user-owned sessions, recover from stale workers,
+  and keep stream/display sinks configurable.
+- Source evidence:
+  `aguirretim/apollo-mirror-manager`, with `PhotonIO/RemixPlayer` as
+  source-light channelized capture/remix framing.
+- Reusable core:
+  persistent mirror surface, mirror backend such as DWM thumbnails, virtual
+  display detection, target handoff file, process/window resolver, debounced
+  teardown, re-pointing on handle changes, ownership marker, close policy,
+  watchdog/PID fallback, health/repair GUI, source/tile manager, config backup,
+  and channel/schema framing for recorded surfaces.
+- Source evidence details:
+  Wave 327 includes PowerShell/WinForms DWM mirror worker design, Apollo tile
+  registration, launch/close ownership markers, PID-file watchdog fallback,
+  health repair controls, and source-light capture/remix channel framing.
+- Do not copy directly:
+  exclusive-fullscreen assumptions, force-closing apps the user launched
+  manually, duplicate watcher processes, app-config edits without backups, or
+  capture channels without timestamps/schema contracts.
+- Strong references:
+  `apollo-mirror-manager` for mirror-worker and launch ownership architecture.
+- Maturity:
+  strong Windows-specific method; production reuse should add DPI/multi-monitor
+  testing, input-forwarding decisions, auth/trust notes, and sink capability
+  reporting.
+- Best fit for `VR-apps-lab`:
+  reference-window overlays, desktop streaming helpers, virtual-display
+  utilities, and future channelized VR session capture concepts.

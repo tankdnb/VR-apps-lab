@@ -1473,6 +1473,26 @@ Use these files when you want to understand:
   anchors, inline layer profiling, and minimal-injection game retrofit
   toolkits.
 
+- `vr-projects-wave-324-vrchat-parameter-state-dashboards-and-local-web-control-mirrors.md`
+  Next GitHub discovery wave focused on VRChat parameter state dashboards,
+  per-avatar profiles, OSCQuery discovery, typed replay, and local web-control
+  mirrors.
+
+- `vr-projects-wave-325-steamvr-hardware-provisioning-session-autolaunch-and-watchman-dongle-utilities.md`
+  Next GitHub discovery wave focused on SteamVR hardware provisioning,
+  PSVR2 USB-triggered autolaunch, Watchman dongle flashing, and DIY dongle
+  hardware artifacts.
+
+- `vr-projects-wave-326-kat-walk-linux-locomotion-overlay-and-openxr-layer-split.md`
+  Next GitHub discovery wave focused on KAT Walk Linux locomotion, sensor
+  parsing, shared-memory OpenXR HUDs, wrist tuning panels, and runtime-layer
+  splits.
+
+- `vr-projects-wave-327-window-mirror-managers-capture-remix-surfaces-and-stream-safe-overlay-pipelines.md`
+  Next GitHub discovery wave focused on DWM window mirror managers,
+  stream-safe launch ownership, watchdog repair loops, and channelized
+  capture/remix surface concepts.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

@@ -319,6 +319,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-321-steamvr-performance-huds-sensor-fan-in-and-overlay-qol-patch-packs.md`
 - `landscape/vr-projects-wave-322-xsoverlay-companion-bridges-phone-notifications-and-translation-control-sidecars.md`
 - `landscape/vr-projects-wave-323-narrow-openxr-api-layers-cockpit-anchors-inline-profilers-and-game-injection-toolkits.md`
+- `landscape/vr-projects-wave-324-vrchat-parameter-state-dashboards-and-local-web-control-mirrors.md`
+- `landscape/vr-projects-wave-325-steamvr-hardware-provisioning-session-autolaunch-and-watchman-dongle-utilities.md`
+- `landscape/vr-projects-wave-326-kat-walk-linux-locomotion-overlay-and-openxr-layer-split.md`
+- `landscape/vr-projects-wave-327-window-mirror-managers-capture-remix-surfaces-and-stream-safe-overlay-pipelines.md`
 
 ## Archive Navigation
 

@@ -1072,3 +1072,18 @@ future tools:
 
 That is a stronger and more realistic direction for `VR-apps-lab` than continuing to
 bet everything on unsupported vendor passthrough paths.
+
+## Latest Wave Additions
+
+- `vr-projects-wave-324-vrchat-parameter-state-dashboards-and-local-web-control-mirrors.md`
+  VRChat parameter profiles, OSCQuery identity, dashboard controls, and local
+  web-control mirrors.
+- `vr-projects-wave-325-steamvr-hardware-provisioning-session-autolaunch-and-watchman-dongle-utilities.md`
+  PSVR2 USB-triggered SteamVR autolaunch, Watchman dongle flashing, and DIY
+  dongle hardware artifacts.
+- `vr-projects-wave-326-kat-walk-linux-locomotion-overlay-and-openxr-layer-split.md`
+  KAT Walk Linux sensor parsing, shared-memory HUD/control buses, wrist tuning
+  panels, and OpenXR layer composition.
+- `vr-projects-wave-327-window-mirror-managers-capture-remix-surfaces-and-stream-safe-overlay-pipelines.md`
+  DWM window mirror workers, stream-safe ownership markers, watchdog repair,
+  and channelized capture/remix concepts.
