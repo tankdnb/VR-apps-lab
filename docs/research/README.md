@@ -371,6 +371,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-373-tilia-pointers-spatial-targets-and-pointer-grabbers.md`
 - `landscape/vr-projects-wave-374-tilia-interactables-snap-zones-locomotion-and-camera-rigs.md`
 - `landscape/vr-projects-wave-375-tilia-haptics-pseudobody-hand-visuals-and-collision-faders.md`
+- `landscape/vr-projects-wave-376-tilia-spatial-buttons-highlighters-and-world-ui-state.md`
+- `landscape/vr-projects-wave-377-tilia-controllables-teleport-targets-and-locomotion-assist-modules.md`
+- `landscape/vr-projects-wave-378-openxr-vendor-camera-rig-and-passthrough-adapter-packages.md`
+- `landscape/vr-projects-wave-379-zinnia-core-primitives-and-vrtk-tutorial-composition-substrate.md`
 
 ## Archive Navigation
 

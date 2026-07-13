@@ -19383,3 +19383,138 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   overlay feedback layers, safety/comfort helpers, body proxies, hand visual
   baselines, and diagnostics alert surfaces.
+
+## Method 821: spatial UI state module
+
+- What it is:
+  in-world controls should expose explicit button and highlight state rather
+  than scattering style and focus logic across feature scripts.
+- Good for:
+  overlay settings panels, wrist menus, diagnostics toggles, calibration
+  choices, mode selectors, object inspectors, and training props.
+- Why it matters:
+  VR utility UI needs visible enabled, hover, active, disabled, selected, and
+  blocked states that can be reused across pointer, hand, and controller input.
+- Source evidence:
+  `ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity` and
+  `ExtendRealityLtd/Tilia.Visuals.InteractableHighlighter.Unity`.
+- Reusable core:
+  button state, style record, text style, mesh/material style, disabled state,
+  hover state, active state, option group, spatial target bridge, interactable
+  highlighter, validity rule, highlight/unhighlight event, restore path, and
+  accessibility alternative.
+- Source evidence details:
+  Wave 376 includes `SpatialButtonFacade.ButtonStyle`, enabled/hover/active/
+  disabled style groups, click/toggle/option button framing, and
+  `InteractableHighlighterFacade` material, interactor validity, and events.
+- Do not copy directly:
+  opaque prefab-only command routing, color-only feedback, material changes
+  without restore policy, or disabled states that still accept commands.
+- Maturity:
+  strong UI method; needs a small `VR-apps-lab` state vocabulary.
+- Best fit for `VR-apps-lab`:
+  spatial menus, overlay controls, diagnostics panels, calibration panels, and
+  accessibility-aware world UI.
+
+## Method 822: constrained control and locomotion assist module set
+
+- What it is:
+  physical controls and movement helpers should be packaged as modules with
+  explicit axes, limits, target values, mode, and comfort labels.
+- Good for:
+  sliders, levers, knobs, cockpit controls, calibration panels, movement
+  helpers, climbing prototypes, teleport destinations, and collider proxies.
+- Why it matters:
+  constrained VR controls and locomotion helpers are reusable only when physics,
+  transform, comfort, and value output boundaries are documented.
+- Source evidence:
+  `ExtendRealityLtd/Tilia.Interactions.Controllables.Unity`,
+  `ExtendRealityLtd/Tilia.Locomotors.TeleportTargets.Unity`,
+  `ExtendRealityLtd/Tilia.Locomotors.Climbing.Unity`,
+  `ExtendRealityLtd/Tilia.Locomotors.MovementAmplifier.Unity`, and
+  `ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity`.
+- Reusable core:
+  drive axis, drive limit, target value, threshold, joint mode, transform mode,
+  editor/prefab creator, point/area teleport target, climb release multiplier,
+  source/target movement amplifier, ignored radius, collider follower,
+  snap-to-source, and comfort/safety caveat.
+- Source evidence details:
+  Wave 377 includes linear/angular drive facades and drive implementations,
+  teleport target prefab creators, `ClimbableFacade`,
+  `MovementAmplifierFacade`, and `ColliderFollowerFacade`.
+- Do not copy directly:
+  hardcoded drive limits, hidden physics/transform mode, movement amplification
+  without comfort labeling, or invisible collider repair behavior.
+- Maturity:
+  useful method; needs a neutral value schema and haptic/telemetry hooks.
+- Best fit for `VR-apps-lab`:
+  VR settings controls, cockpit tools, calibration utilities, accessibility
+  locomotion helpers, and comfort experiments.
+
+## Method 823: vendor capability adapter behind rig/device records
+
+- What it is:
+  runtime/vendor-specific features should be exposed through rig/device
+  capability records rather than feature-level SDK calls.
+- Good for:
+  passthrough toggles, device inventory panels, runtime diagnostics, controller
+  state views, haptic capability checks, and vendor feature gates.
+- Why it matters:
+  OpenXR and vendor SDKs differ in passthrough, connectivity, hand priority,
+  and runtime profile behavior; utility tools need one capability surface.
+- Source evidence:
+  `ExtendRealityLtd/Tilia.CameraRigs.OpenXR.Unity`,
+  `ExtendRealityLtd/Tilia.SDK.PicoIntegration.Unity`, and
+  `ExtendRealityLtd/Tilia.SDK.WaveXR.Unity`.
+- Reusable core:
+  rig record, node type, connected state, priority, passthrough manager,
+  enable/disable lifecycle, runtime validity probe, vendor-controller mapping,
+  dominant-hand priority, haptic wrapper, profile switcher, and unsupported
+  state label.
+- Source evidence details:
+  Wave 378 includes `OpenXRNodeRecord`, PICO `PXRDeviceDetailsRecord`,
+  runtime-gated Vive underlay passthrough sample, SDK prefab creators, and
+  WaveXR wrapper package direction.
+- Do not copy directly:
+  vendor APIs in feature scripts, runtime-name checks without fallback UI,
+  passthrough toggles without capability/permission state, or irreversible
+  profile changes.
+- Maturity:
+  strong adapter method; needs a repository-local capability record schema.
+- Best fit for `VR-apps-lab`:
+  platform diagnostics, passthrough helpers, runtime feature probes, and
+  vendor-neutral utility shells.
+
+## Method 824: Unity component primitive substrate
+
+- What it is:
+  reusable Unity XR utilities benefit from a small vocabulary of process,
+  rule, transform, action, cast, collection, and event-proxy primitives.
+- Good for:
+  prototype architecture, overlay frameworks, input pipelines, validation
+  rules, transform conversions, event routing, testable utility modules, and
+  tutorial scene organization.
+- Why it matters:
+  many Tilia packages are understandable only after separating package-level
+  facades from lower-level composition primitives.
+- Source evidence:
+  `ExtendRealityLtd/Zinnia.Unity` and
+  `ExtendRealityLtd/VRTK.Tutorials.YouTube`.
+- Reusable core:
+  process moment, process list, rule container, observable list, transformer,
+  converter, action source, cast source, event proxy, typed event, test fixture,
+  sample scene, package importer, and composition documentation.
+- Source evidence details:
+  Wave 379 includes `MomentProcessor`, `RuleContainer`, `Vector2ToAngle`,
+  broad Zinnia runtime/test layout, and VRTK Tutorials folders such as
+  `GlobalResources`, `Samples`, `Scenes`, `VRTK.Tilia.Package.Importer`, and
+  `XR`.
+- Do not copy directly:
+  whole framework dependency, tutorial scene assumptions, unnamed component
+  graphs, or primitive layers without debug naming.
+- Maturity:
+  strategic substrate method; needs a lightweight local vocabulary before code
+  adoption.
+- Best fit for `VR-apps-lab`:
+  research-to-prototype translation, reusable utility samples, toolkit-neutral
+  docs, and future pattern extraction.

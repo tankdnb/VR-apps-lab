@@ -3160,6 +3160,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 298. `Pointer target primitive follow-up across ray sources, curved/straight visuals, hover/activation state, source/target validity, target groups, pointer-grab conflicts, disabled state, and accessibility logging`
 299. `Prefab module architecture follow-up across facade/configurator boundaries, interactable providers, snap/dock states, locomotion offsets, camera-rig aliases, headsetless simulator adapters, and prefab diagrams`
 300. `VR feedback and body-safety follow-up across haptic intent schemas, profile intensity, queued/cancelled feedback, pseudo-body divergence, collision fades, hand visuals, and user-facing explanation state`
+301. `Spatial UI state follow-up across button style records, click/toggle/option groups, disabled/blocked states, highlight validity, material restore, command routing, and accessibility alternatives`
+302. `Constrained control and locomotion assist follow-up across drive axes, joint versus transform mode, value thresholds, teleport target areas, climbing release multipliers, movement amplification, collider proxies, and comfort labels`
+303. `Vendor rig capability follow-up across OpenXR node records, passthrough managers, runtime validity probes, PICO/WaveXR controller mapping, dominant-hand priority, haptic wrappers, and unsupported-state UX`
+304. `Unity component primitive substrate follow-up across process moments, rule containers, observable lists, transformers, actions, casts, event proxies, tests, tutorial scene organization, and debug naming`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

@@ -1693,6 +1693,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on haptic routing, pseudo-body safety,
   hand visuals, and collision-triggered camera fade modules.
 
+- `vr-projects-wave-376-tilia-spatial-buttons-highlighters-and-world-ui-state.md`
+  Next GitHub discovery wave focused on spatial buttons, grouped options,
+  UI state styles, and interactable highlight feedback.
+
+- `vr-projects-wave-377-tilia-controllables-teleport-targets-and-locomotion-assist-modules.md`
+  Next GitHub discovery wave focused on constrained controls, teleport target
+  helpers, climbing, movement amplification, and collider following.
+
+- `vr-projects-wave-378-openxr-vendor-camera-rig-and-passthrough-adapter-packages.md`
+  Next GitHub discovery wave focused on OpenXR/vendor camera rig records,
+  passthrough managers, PICO/WaveXR wrappers, and capability surfaces.
+
+- `vr-projects-wave-379-zinnia-core-primitives-and-vrtk-tutorial-composition-substrate.md`
+  Next GitHub discovery wave focused on Zinnia process/rule/transform/action
+  primitives and VRTK tutorial project composition.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

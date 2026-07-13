@@ -17,6 +17,25 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 376-379
+
+- `Tilia spatial buttons, highlighters, and world UI state`
+  add spatial UI state coverage around click/toggle/option buttons, button style
+  records, enabled/hover/active/disabled visuals, grouped choices, material
+  highlights, interactor validity, and world-control feedback.
+- `Tilia controllables, teleport targets, and locomotion assist modules`
+  add constrained-control and movement-helper coverage around linear/angular
+  drives, joint versus transform modes, teleport target prefabs, climbing
+  release multipliers, movement amplification, and collider following.
+- `OpenXR vendor camera rig and passthrough adapter packages`
+  add vendor capability coverage around OpenXR node records, passthrough
+  managers, PICO controller mapping, connectivity, dominant-hand priority,
+  WaveXR/PICO wrapper boundaries, and runtime-validity caveats.
+- `Zinnia core primitives and VRTK tutorial composition substrate`
+  add a substrate branch around process moments, rule containers, observable
+  lists, transformers, actions, casts, event proxies, tests, and tutorial scene
+  organization.
+
 ## Current additions from Waves 372-375
 
 - `Tilia input adapters and action composition packages`

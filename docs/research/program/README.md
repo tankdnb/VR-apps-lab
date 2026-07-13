@@ -2658,3 +2658,31 @@ repeatable way.
 
 - `github-research-wave-375-backlog.md`
   Executed backlog for the Wave 375 pass.
+
+- `github-research-wave-376-plan.md`
+  Wave 376 research plan focused on Tilia spatial buttons, highlighters, and
+  world UI state.
+
+- `github-research-wave-376-backlog.md`
+  Executed backlog for the Wave 376 pass.
+
+- `github-research-wave-377-plan.md`
+  Wave 377 research plan focused on Tilia controllables, teleport targets, and
+  locomotion assist modules.
+
+- `github-research-wave-377-backlog.md`
+  Executed backlog for the Wave 377 pass.
+
+- `github-research-wave-378-plan.md`
+  Wave 378 research plan focused on OpenXR vendor camera rig and passthrough
+  adapter packages.
+
+- `github-research-wave-378-backlog.md`
+  Executed backlog for the Wave 378 pass.
+
+- `github-research-wave-379-plan.md`
+  Wave 379 research plan focused on Zinnia core primitives and VRTK tutorial
+  composition substrate.
+
+- `github-research-wave-379-backlog.md`
+  Executed backlog for the Wave 379 pass.

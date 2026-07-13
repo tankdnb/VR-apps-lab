@@ -11309,6 +11309,74 @@ This family matters because utility overlays and lab scenes need explicit
 feedback, body-safety, and comfort modules that do not depend on one avatar or
 camera implementation.
 
+## Family 355: Spatial UI buttons highlighters and world-control state
+
+This family covers spatial click/toggle/option buttons, state styles, grouped
+options, interactable highlighting, validity-gated focus, and world-space UI
+feedback.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity` | Studied in Wave 376 | Spatial button state, `ButtonStyle`, enabled/hover/active/disabled styling, and option groups |
+| `ExtendRealityLtd/Tilia.Visuals.InteractableHighlighter.Unity` | Studied in Wave 376 | Interactable highlight material, interactor validity, and highlight/unhighlight events |
+
+### Consolidation note
+
+This family matters because VR menus and utility panels need explicit state
+vocabulary and feedback instead of ad-hoc color or material changes.
+
+## Family 356: Constrained controls and locomotion assist modules
+
+This family covers physical UI controls and movement helpers: linear/angular
+drives, teleport target helpers, climbing release behavior, movement
+amplification, and collider following.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ExtendRealityLtd/Tilia.Interactions.Controllables.Unity` | Studied in Wave 377 | Linear/angular joint and transform drives with axis limits and target values |
+| `ExtendRealityLtd/Tilia.Locomotors.TeleportTargets.Unity` | Studied in Wave 377 | Point/area teleport target prefab creators |
+| `ExtendRealityLtd/Tilia.Locomotors.Climbing.Unity` | Studied in Wave 377 | Climbable/climbing facade and release velocity multiplier |
+| `ExtendRealityLtd/Tilia.Locomotors.MovementAmplifier.Unity` | Studied in Wave 377 | Source-to-target movement amplification with ignored radius and multiplier |
+| `ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity` | Studied in Wave 377 | Source-following collider tracker with snap-to-source |
+
+### Consolidation note
+
+This family matters because sliders, levers, movement assists, and collider
+proxies are reusable primitives for settings, calibration, accessibility, and
+comfort tools.
+
+## Family 357: OpenXR vendor rig and passthrough capability adapters
+
+This family covers camera rig records, device details, vendor SDK wrappers,
+runtime validity checks, passthrough managers, and capability surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ExtendRealityLtd/Tilia.CameraRigs.OpenXR.Unity` | Studied in Wave 378 | OpenXR node records, passthrough manager boundary, and Vive OpenXR sample |
+| `ExtendRealityLtd/Tilia.SDK.PicoIntegration.Unity` | Studied in Wave 378 | PICO controller mapping, connection checks, dominant hand priority, and see-through toggles |
+| `ExtendRealityLtd/Tilia.SDK.WaveXR.Unity` | Studied in Wave 378 | WaveXR SDK wrapper and vendor rig integration marker |
+
+### Consolidation note
+
+This family matters because generic VR utilities should consume capability
+records instead of embedding vendor SDK calls in feature code.
+
+## Family 358: Zinnia and VRTK composition substrate
+
+This family covers low-level Unity component primitives and tutorial
+composition layers below Tilia packages.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ExtendRealityLtd/Zinnia.Unity` | Studied in Wave 379 | Process moments, rules, observable lists, transformers, actions, casts, event proxies, and tests |
+| `ExtendRealityLtd/VRTK.Tutorials.YouTube` | Studied in Wave 379 | Tutorial scene/project composition for Tilia package integration |
+
+### Consolidation note
+
+This family matters because package-level findings need a clear lower-level
+primitive vocabulary for process, rule, transform, action, cast, and event
+composition.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

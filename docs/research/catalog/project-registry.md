@@ -4940,6 +4940,50 @@ Primary docs:
 - `ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity` - `Studied in Wave 375 as lightweight hand/controller visual package boundary for presence without owning a full avatar stack`
 - `ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity` - `Studied in Wave 375 as collision-triggered camera overlay/fade module with source follower, camera validity, collision validity, fade/unfade events, and diagnostics caveat`
 
+## 347. Tilia spatial buttons highlighters and world UI state
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-376-tilia-spatial-buttons-highlighters-and-world-ui-state.md`
+- `../landscape/project-families.md`
+
+- `ExtendRealityLtd/Tilia.Interactions.SpatialButtons.Unity` - `Studied in Wave 376 as spatial click/toggle/option button prefabs with ButtonStyle records, enabled/hover/active/disabled state, text/mesh styling, and group dispatcher direction`
+- `ExtendRealityLtd/Tilia.Visuals.InteractableHighlighter.Unity` - `Studied in Wave 376 as interactable highlight module with material overrides, interactor validity, highlight/unhighlight events, and touch/grab event routing`
+
+## 348. Tilia controllables teleport targets and locomotion assist modules
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-377-tilia-controllables-teleport-targets-and-locomotion-assist-modules.md`
+- `../landscape/project-families.md`
+
+- `ExtendRealityLtd/Tilia.Interactions.Controllables.Unity` - `Studied in Wave 377 as linear/angular constrained controls with joint/transform drive modes, axis limits, target values, editor creators, and slider/lever product value`
+- `ExtendRealityLtd/Tilia.Locomotors.TeleportTargets.Unity` - `Studied in Wave 377 as point/area teleport target prefab package with editor creator boundary and destination helper value`
+- `ExtendRealityLtd/Tilia.Locomotors.Climbing.Unity` - `Studied in Wave 377 as climbable/climbing module with climbing facade link and release velocity multiplier`
+- `ExtendRealityLtd/Tilia.Locomotors.MovementAmplifier.Unity` - `Studied in Wave 377 as source-to-target movement amplification module with ignored radius, multiplier, and stabilization caveats`
+- `ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity` - `Studied in Wave 377 as source-following collider tracker with snap-on-enable and snap-to-source behavior`
+
+## 349. OpenXR vendor camera rig and passthrough adapter packages
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-378-openxr-vendor-camera-rig-and-passthrough-adapter-packages.md`
+- `../landscape/project-families.md`
+
+- `ExtendRealityLtd/Tilia.CameraRigs.OpenXR.Unity` - `Studied in Wave 378 as OpenXR rig adapter with node records, passthrough manager boundary, runtime-specific samples, and profile-switching direction`
+- `ExtendRealityLtd/Tilia.SDK.PicoIntegration.Unity` - `Studied in Wave 378 as PICO SDK wrapper with XRNode-to-PXR controller mapping, connectivity, dominant-hand priority, passthrough toggles, and haptics direction`
+- `ExtendRealityLtd/Tilia.SDK.WaveXR.Unity` - `Studied in Wave 378 as HTC WaveXR SDK wrapper package and vendor rig integration marker`
+
+## 350. Zinnia core primitives and VRTK tutorial composition substrate
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-379-zinnia-core-primitives-and-vrtk-tutorial-composition-substrate.md`
+- `../landscape/project-families.md`
+
+- `ExtendRealityLtd/Zinnia.Unity` - `Studied in Wave 379 as core Unity component primitive substrate with process moments, rule containers, observable lists, transformers, actions, casts, event proxies, and tests`
+- `ExtendRealityLtd/VRTK.Tutorials.YouTube` - `Studied in Wave 379 as tutorial composition project with GlobalResources, Samples, Scenes, Tilia package importer, XR setup, and reference-scene caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:
