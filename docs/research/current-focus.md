@@ -17,6 +17,27 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 416-419
+
+- `XR testbeds, conformance runners, and reproducible packaging`
+  add reliability-system coverage around ILLIXR profile/plugin dataflow,
+  Monado/headless/native/offload modes, Nix XR package overlays, source pins,
+  package overrides, OpenXR-CTS manifests/generated dispatch, test runtimes,
+  and small CTS runner UI shells.
+- `WebXR capture, avatar, and micro editor surfaces`
+  add browser-XR coverage around hosted companion elements, model-viewer AR
+  capture, camera-access feature gates, frame hooks, capture provider lifecycle,
+  preview/share UI, static avatar pages, and thin WebXR editor deployments.
+- `VRChat OSC micro-apps and distribution sidecars`
+  add avatar-sidecar coverage around Rust/Python/WPF OSC app shapes, parameter
+  modules, config models, chat/data/settings pages, desktop entries, PKGBUILDs,
+  and cross-distro package hygiene.
+- `VR retrofit launcher and hand layer edge cases`
+  add retrofit/capability coverage around Unreal loader/launcher separation,
+  D3D11/OpenXR/UE service boundaries, pipe IPC, empty launcher placeholders,
+  archived hand-tracking API-layer caveats, service timeouts, active-state
+  reporting, and conformance feedback.
+
 ## Current additions from Waves 412-415
 
 - `Lightweight OpenXR render framework adapters`

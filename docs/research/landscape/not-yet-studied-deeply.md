@@ -3200,6 +3200,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 338. `Runtime substrate follow-up across game retrofit, DIY headset drivers, SLAM calibration, Monado library discovery, render engine components, interaction verbs, and compatibility modes`
 339. `Spatial asset viewer follow-up across PLY/SOG/splat formats, cameras.json, saved alignment profiles, VR grip transforms, local WebXR preview servers, and cleanup lifecycle`
 340. `XR utility automation follow-up across in-headset command surfaces, phase-state automation, desktop-overlay IPC, scripting bindings, privacy gates, and unsafe-command allowlists`
+341. `XR validation/package harness follow-up across profile schemas, plugin manifests, source pins, package overrides, runtime/layer discovery, external runner state, result artifacts, and update provenance`
+342. `Hosted WebXR companion follow-up across host resolution, private hook warnings, camera-access/session feature gates, frame hooks, capture lifecycle, preview/share flows, and browser regression workarounds`
+343. `OSC micro-sidecar follow-up across avatar parameter schemas, config files, GUI page boundaries, Python/Rust/WPF entry points, desktop wrappers, PKGBUILDs, and cross-distro distribution hygiene`
+344. `Retrofit launcher/capability layer follow-up across profile UI, injected loader IPC, graphics/runtime/game-engine service boundaries, feature claims, service connection state, conformance feedback, and placeholder replacement`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

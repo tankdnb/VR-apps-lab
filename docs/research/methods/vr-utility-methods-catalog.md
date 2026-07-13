@@ -20696,3 +20696,128 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   overlay operators, diagnostic scripts, comfort automation, and future
   in-headset authoring consoles.
+
+## Method 861: XR validation and packaging harness
+
+- What it is:
+  treat XR runtime/tool reliability as a combination of profile selection,
+  source pinning, package overrides, external validation runners, subsystem
+  manifests, and small operator UIs.
+- Good for:
+  XR doctors, runtime setup helpers, Linux XR stacks, conformance wrappers,
+  reproducible toolchains, lab testbeds, and compatibility reports.
+- Why it matters:
+  VR utility bugs often come from environment drift, runtime/layer mismatches,
+  missing packages, and unclear validation state rather than app code alone.
+- Source evidence:
+  `ILLIXR/ILLIXR`, `nix-community/nixpkgs-xr`,
+  `KhronosGroup/OpenXR-CTS`, and `rpavlik/openxr-cts-runner`.
+- Reusable core:
+  profile files, plugin/subsystem manifests, package source pins, patch
+  provenance, runtime/layer discovery, test-runner config, process state,
+  artifact/result grouping, and user-facing status.
+- Source evidence details:
+  ILLIXR `profiles/*.yaml` and plugin docs, nixpkgs-xr overlay/source
+  manifests, OpenXR-CTS generated manifests/dispatch/test runtimes, and
+  cts-runner config/process/state split.
+- Do not copy directly:
+  full conformance scope, distro-specific assumptions, or research-testbed
+  complexity into a small helper.
+- Maturity:
+  strong synthesis method; ready for a future `XR environment report` design.
+- Best fit for `VR-apps-lab`:
+  runtime setup docs, diagnostic runners, Linux XR packaging notes, and
+  repeatable lab profiles.
+
+## Method 862: Hosted WebXR companion surface
+
+- What it is:
+  attach a WebXR feature as a companion element or thin page around an existing
+  host viewer/editor, with explicit feature checks, lifecycle cleanup, and
+  compatibility warnings.
+- Good for:
+  AR screenshot capture, model viewers, avatar previews, browser docs panels,
+  WebXR editors, and lightweight spatial media demos.
+- Why it matters:
+  browser XR utilities are often most useful when they extend an existing host
+  surface without forking it.
+- Source evidence:
+  `k1pp0/model-viewer-webxr-capture`, `voyagerD/webxr-avatar`, and
+  `Damfino1970/quest2-webxr-editor`.
+- Reusable core:
+  companion custom element, host resolution, feature injection, frame hook,
+  provider lifecycle, preview/share/download UI, static page deployment, asset
+  bundle, and compatibility warning.
+- Source evidence details:
+  model-viewer host bridge and WebXR capture provider, avatar GLB asset page,
+  and one-file Quest/WebXR editor page.
+- Do not copy directly:
+  private host-symbol reflection, global monkey patches, or browser workarounds
+  without version gates and failure messages.
+- Maturity:
+  strong donor from `model-viewer-webxr-capture`; thinner micro-demos support
+  product shape only.
+- Best fit for `VR-apps-lab`:
+  WebXR capture helpers, browser-based preview tools, and companion surfaces.
+
+## Method 863: OSC micro-sidecar with packaging shell
+
+- What it is:
+  model avatar/OSC utilities as small apps with a clear parameter schema,
+  optional GUI pages, config, desktop/package wrapper, and distribution notes.
+- Good for:
+  VRChat avatar controls, accessibility outputs, chat/text senders, tiny
+  automation tools, Linux package collections, and Windows desktop companions.
+- Why it matters:
+  many OSC utilities are intentionally small; their reuse value lives in
+  parameter/config boundaries and distribution hygiene.
+- Source evidence:
+  `99oblivius/Livi-s-VRChatOSC-Tools`, `theepicsnail/vrchat_osc_app`,
+  `niwaniwa/VRChat-OSC-app`, and `noideaman/ArchOSCApps`.
+- Reusable core:
+  OSC parameter module, Python or Rust entry point, WPF/MVVM shell, config
+  model, chat/data/settings pages, desktop entries, wrapper scripts, PKGBUILDs,
+  and upstream-source references.
+- Source evidence details:
+  Rust `osc_inputs.rs`, Python package entry module, WPF pages/services/models,
+  and Arch package recipes for multiple OSC apps.
+- Do not copy directly:
+  hard-coded avatar parameters, checked-in build artifacts, or distro-specific
+  package metadata without upstream/license freshness checks.
+- Maturity:
+  practical micro-utility method; needs a neutral parameter schema before
+  implementation.
+- Best fit for `VR-apps-lab`:
+  avatar/OSC helper notes, packaging references, and small sidecar blueprints.
+
+## Method 864: Retrofit launcher and capability-injection boundary
+
+- What it is:
+  split user-facing launcher/profile state from injected loader/layer services,
+  and treat runtime capability claims as dynamic state rather than static labels.
+- Good for:
+  flatscreen-to-VR retrofits, OpenXR/OpenVR launchers, injected loaders,
+  hand-tracking layers, game-specific helpers, and compatibility warnings.
+- Why it matters:
+  retrofit utilities can overpromise easily unless launcher UX, injected code,
+  runtime services, and capability reporting are separated.
+- Source evidence:
+  `TheNewJavaman/unreal-vr`, `gamenew09/RobloxVRLauncher`, and
+  `ultraleap/OpenXRHandTracking`.
+- Reusable core:
+  launcher/profile UI, injected loader, graphics/runtime/game-engine service
+  interfaces, IPC pipe, hook boundary, placeholder/product-signal labels,
+  extension request gating, active-state reporting, service timeout, logs, and
+  conformance feedback.
+- Source evidence details:
+  UnrealVR loader/launcher/services, empty Roblox launcher placeholder, and
+  Ultraleap archived layer changelog caveats.
+- Do not copy directly:
+  binary-hook offsets, empty placeholders as donors, archived distribution
+  paths, or always-true capability reporting without device-active semantics.
+- Maturity:
+  useful boundary method; implementation would require much stricter safety and
+  support labels.
+- Best fit for `VR-apps-lab`:
+  retrofit research, launcher UX, capability injection caveats, and support
+  boundary checklists.

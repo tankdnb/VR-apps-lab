@@ -415,6 +415,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-413-runtime-retrofit-slam-and-openxr-engine-substrates.md`
 - `landscape/vr-projects-wave-414-gaussian-splat-and-spatial-asset-viewer-pipelines.md`
 - `landscape/vr-projects-wave-415-xr-utility-automation-authoring-and-scripting-surfaces.md`
+- `landscape/vr-projects-wave-416-xr-testbeds-conformance-runners-and-reproducible-packaging.md`
+- `landscape/vr-projects-wave-417-webxr-capture-avatar-and-micro-editor-surfaces.md`
+- `landscape/vr-projects-wave-418-vrchat-osc-micro-apps-and-distribution-sidecars.md`
+- `landscape/vr-projects-wave-419-vr-retrofit-launcher-and-hand-layer-edge-cases.md`
 
 ## Archive Navigation
 

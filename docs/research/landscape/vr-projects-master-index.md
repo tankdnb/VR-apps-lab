@@ -1307,3 +1307,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-415-xr-utility-automation-authoring-and-scripting-surfaces.md`
   XR automation and scripting surfaces with in-headset command UIs,
   desktop-overlay IPC, phase-state utilities, SDK wrappers, and Python OpenXR.
+- `vr-projects-wave-416-xr-testbeds-conformance-runners-and-reproducible-packaging.md`
+  XR testbeds, conformance runners, package overlays, source pins, validation
+  shells, and reproducible runtime/toolchain distribution.
+- `vr-projects-wave-417-webxr-capture-avatar-and-micro-editor-surfaces.md`
+  WebXR capture companion elements, avatar preview pages, browser editor
+  micro-surfaces, feature gates, frame hooks, and preview/share UI.
+- `vr-projects-wave-418-vrchat-osc-micro-apps-and-distribution-sidecars.md`
+  VRChat OSC micro-apps, Rust/Python/WPF sidecars, parameter/config models,
+  desktop entries, PKGBUILDs, and package wrapper hygiene.
+- `vr-projects-wave-419-vr-retrofit-launcher-and-hand-layer-edge-cases.md`
+  Flatscreen-to-VR retrofit launchers, injected loaders, OpenXR hand capability
+  layers, placeholder launcher notes, and support-boundary caveats.

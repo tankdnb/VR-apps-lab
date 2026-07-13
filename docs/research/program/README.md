@@ -2952,3 +2952,31 @@ repeatable way.
 
 - `github-research-wave-415-backlog.md`
   Executed backlog for the Wave 415 pass.
+
+- `github-research-wave-416-plan.md`
+  Wave 416 research plan focused on XR testbeds, conformance runners, and
+  reproducible packaging.
+
+- `github-research-wave-416-backlog.md`
+  Executed backlog for the Wave 416 pass.
+
+- `github-research-wave-417-plan.md`
+  Wave 417 research plan focused on WebXR capture, avatar, and micro editor
+  surfaces.
+
+- `github-research-wave-417-backlog.md`
+  Executed backlog for the Wave 417 pass.
+
+- `github-research-wave-418-plan.md`
+  Wave 418 research plan focused on VRChat OSC micro-apps and distribution
+  sidecars.
+
+- `github-research-wave-418-backlog.md`
+  Executed backlog for the Wave 418 pass.
+
+- `github-research-wave-419-plan.md`
+  Wave 419 research plan focused on VR retrofit launcher and hand layer edge
+  cases.
+
+- `github-research-wave-419-backlog.md`
+  Executed backlog for the Wave 419 pass.

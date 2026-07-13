@@ -5393,6 +5393,52 @@ Primary docs:
 - `Phantomxm2021/ARMOD-Framework` - `Studied in Wave 415 as broad AR/XR capability-wrapper SDK with visual configuration, session management, platform mutation, light estimation, docs/tutorials, and quota/support caveats`
 - `drypy/openxr.py` - `Studied in Wave 415 as Python ctypes OpenXR binding with package/tests/examples value for scripting diagnostics and runtime probes`
 
+## 387. XR testbeds conformance runners and reproducible packaging
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-416-xr-testbeds-conformance-runners-and-reproducible-packaging.md`
+- `../landscape/project-families.md`
+
+- `ILLIXR/ILLIXR` - `Studied in Wave 416 as modular XR research testbed with plugin profiles, switchboard dataflow, Monado/headless/native/offload modes, hand/lighthouse/timewarp/OpenWarp/ZED components, and subsystem docs`
+- `nix-community/nixpkgs-xr` - `Studied in Wave 416 as reproducible XR package overlay with source pins, NixOS module wiring, package overrides, Monado/WiVRn/WayVR/OpenComposite/xrizer grouping, and update metadata`
+- `KhronosGroup/OpenXR-CTS` - `Deepened in Wave 416 as official conformance harness model with generated dispatch, manifests, test runtimes, conformance layer generation, CLI runner, and platform artifacts`
+- `rpavlik/openxr-cts-runner` - `Studied in Wave 416 as experimental GUI wrapper for CTS execution with config, process management, state model, and runner UI separation`
+
+## 388. WebXR capture avatar and micro editor surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-417-webxr-capture-avatar-and-micro-editor-surfaces.md`
+- `../landscape/project-families.md`
+
+- `k1pp0/model-viewer-webxr-capture` - `Studied in Wave 417 as model-viewer companion custom element adding WebXR AR screenshot capture via host bridge, camera-access injection, frame hooks, capture provider, preview UI, and Chrome workaround gates`
+- `voyagerD/webxr-avatar` - `Studied in Wave 417 as thin WebXR avatar preview with GLB animation assets and static browser deployment`
+- `Damfino1970/quest2-webxr-editor` - `Studied in Wave 417 as small Quest/WebXR editor page with one-file browser deployment and limited source depth`
+
+## 389. VRChat OSC micro apps and distribution sidecars
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-418-vrchat-osc-micro-apps-and-distribution-sidecars.md`
+- `../landscape/project-families.md`
+
+- `99oblivius/Livi-s-VRChatOSC-Tools` - `Studied in Wave 418 as small Rust VRChat OSC tool with explicit osc_inputs module and compiled micro-sidecar shape`
+- `theepicsnail/vrchat_osc_app` - `Studied in Wave 418 as minimal Python VRChat OSC app package with setup entry point and app module`
+- `niwaniwa/VRChat-OSC-app` - `Studied in Wave 418 as WPF/WPF UI/R3 OSC desktop shell with dashboard/chat/data/settings pages, config model, services, MVVM structure, and Rug.Osc dependency`
+- `noideaman/ArchOSCApps` - `Studied in Wave 418 as Arch Linux package collection for VRChat OSC apps with PKGBUILDs, desktop entries, wrapper scripts, config files, and upstream references`
+
+## 390. VR retrofit launcher and hand layer edge cases
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-419-vr-retrofit-launcher-and-hand-layer-edge-cases.md`
+- `../landscape/project-families.md`
+
+- `TheNewJavaman/unreal-vr` - `Studied in Wave 419 as flatscreen Unreal-to-VR retrofit with launcher/profile UI, injected loader, D3D11/OpenXR/UE4 services, hooks, shaders, pipes, and reverse-engineering notes`
+- `gamenew09/RobloxVRLauncher` - `Reviewed in Wave 419 as empty OpenVR dashboard launcher placeholder with product-reference value only and no code donor value`
+- `ultraleap/OpenXRHandTracking` - `Deepened in Wave 419 as archived implicit hand-tracking API layer with extension gating, service timeout, active-state caveats, conformance fixes, layer-init issues, UWP/WebXR notes, and installer/logging caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

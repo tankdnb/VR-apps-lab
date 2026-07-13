@@ -1871,6 +1871,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on in-headset command surfaces,
   desktop-overlay IPC, scripting bindings, and automation safety boundaries.
 
+- `vr-projects-wave-416-xr-testbeds-conformance-runners-and-reproducible-packaging.md`
+  Next GitHub discovery wave focused on XR research testbeds, conformance
+  runners, package overlays, source pins, and reproducible runtime stacks.
+
+- `vr-projects-wave-417-webxr-capture-avatar-and-micro-editor-surfaces.md`
+  Next GitHub discovery wave focused on WebXR capture plugins, avatar preview
+  pages, and tiny browser editor surfaces.
+
+- `vr-projects-wave-418-vrchat-osc-micro-apps-and-distribution-sidecars.md`
+  Next GitHub discovery wave focused on VRChat OSC micro-apps, desktop shells,
+  parameter/config models, and package sidecars.
+
+- `vr-projects-wave-419-vr-retrofit-launcher-and-hand-layer-edge-cases.md`
+  Next GitHub discovery wave focused on flatscreen-to-VR retrofit launchers,
+  injected loaders, capability layers, and support-boundary caveats.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

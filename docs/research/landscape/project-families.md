@@ -12025,6 +12025,79 @@ This family matters because useful XR utilities often need a safe command
 surface: what can run in-headset, what must stay in a companion app, which
 actions are automated, and which operations need explicit trust boundaries.
 
+## Family 395: XR testbeds validation runners and reproducible package overlays
+
+This family covers modular XR research harnesses, conformance runner shells,
+package overlays, source pinning, profile files, and distribution metadata for
+runtime/helper ecosystems.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ILLIXR/ILLIXR` | Studied in Wave 416 | Modular XR testbed with plugin profiles, switchboard dataflow, Monado/headless/native/offload modes, and subsystem docs |
+| `nix-community/nixpkgs-xr` | Studied in Wave 416 | Reproducible XR package overlay with source pins, NixOS module, package overrides, and runtime-tool grouping |
+| `KhronosGroup/OpenXR-CTS` | Deepened in Wave 416 | Official conformance harness model with generated dispatch, manifests, test runtimes, conformance layers, and artifacts |
+| `rpavlik/openxr-cts-runner` | Studied in Wave 416 | Experimental GUI wrapper for CTS with config, process runner, state, and UI separation |
+
+### Consolidation note
+
+This family matters because future XR utility reliability depends on profile
+selection, package provenance, capability validation, and operator-facing test
+runners as much as it depends on application code.
+
+## Family 396: Hosted WebXR companion capture avatar and editor surfaces
+
+This family covers browser-first XR companion elements, AR capture plugins,
+avatar preview pages, thin scene editors, and static deployment surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `k1pp0/model-viewer-webxr-capture` | Studied in Wave 417 | Companion custom element for model-viewer with camera-access injection, frame hooks, capture provider, preview UI, and version caveats |
+| `voyagerD/webxr-avatar` | Studied in Wave 417 | Thin WebXR avatar preview with GLB animation assets and static browser deployment |
+| `Damfino1970/quest2-webxr-editor` | Studied in Wave 417 | Small Quest/WebXR editor page with one-file browser deployment and limited source depth |
+
+### Consolidation note
+
+This family matters because web XR utilities can be shipped as companion
+surfaces around an existing viewer/editor, but private host hooks and browser
+feature gates must be documented honestly.
+
+## Family 397: VRChat OSC micro apps and package sidecars
+
+This family covers small avatar/OSC utilities, Python/Rust/WPF sidecars,
+parameter/config models, desktop entries, distro package recipes, and wrapper
+scripts.
+
+| Project | Status | Notes |
+|---|---|---|
+| `99oblivius/Livi-s-VRChatOSC-Tools` | Studied in Wave 418 | Small Rust OSC tool with explicit input module and compiled sidecar shape |
+| `theepicsnail/vrchat_osc_app` | Studied in Wave 418 | Minimal Python VRChat OSC app with package entry point and app module |
+| `niwaniwa/VRChat-OSC-app` | Studied in Wave 418 | WPF/WPF UI/R3 desktop shell with dashboard/chat/data/settings pages, config model, and Rug.Osc |
+| `noideaman/ArchOSCApps` | Studied in Wave 418 | Arch package collection for OSC apps with PKGBUILDs, desktop entries, wrappers, config, and upstream references |
+
+### Consolidation note
+
+This family matters because many useful avatar tools are micro-sidecars. Their
+long-term value comes from parameter schemas, config, desktop/package wrappers,
+and clear distribution notes rather than large app architecture.
+
+## Family 398: Retrofit launchers injected loaders and capability layers
+
+This family covers flatscreen-to-VR launchers, injected loader services,
+runtime capability layers, placeholder launch ideas, and support-boundary
+caveats.
+
+| Project | Status | Notes |
+|---|---|---|
+| `TheNewJavaman/unreal-vr` | Studied in Wave 419 | Unreal flatscreen-to-VR retrofit with launcher/profile UI, injected loader, D3D11/OpenXR/UE4 services, hooks, shaders, and IPC |
+| `gamenew09/RobloxVRLauncher` | Reviewed in Wave 419 | Empty OpenVR dashboard launcher placeholder; product idea only, no code donor value |
+| `ultraleap/OpenXRHandTracking` | Deepened in Wave 419 | Archived implicit hand-tracking API layer with extension gating, active-state caveats, service timeouts, conformance fixes, and installer/log notes |
+
+### Consolidation note
+
+This family matters because retrofit and capability-injection tools need a hard
+boundary between launcher/profile UX, injected code, runtime service state, and
+the support claims made to users.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.
