@@ -2686,3 +2686,31 @@ repeatable way.
 
 - `github-research-wave-379-backlog.md`
   Executed backlog for the Wave 379 pass.
+
+- `github-research-wave-380-plan.md`
+  Wave 380 research plan focused on Godot Quest interaction toolkits, saber
+  game composition, and hand rigging pipeline.
+
+- `github-research-wave-380-backlog.md`
+  Executed backlog for the Wave 380 pass.
+
+- `github-research-wave-381-plan.md`
+  Wave 381 research plan focused on Godot XR networking, social avatar, and
+  WebRTC world shells.
+
+- `github-research-wave-381-backlog.md`
+  Executed backlog for the Wave 381 pass.
+
+- `github-research-wave-382-plan.md`
+  Wave 382 research plan focused on Godot cross-device OpenXR, Samsung XR,
+  AVP, and legacy backend experiments.
+
+- `github-research-wave-382-backlog.md`
+  Executed backlog for the Wave 382 pass.
+
+- `github-research-wave-383-plan.md`
+  Wave 383 research plan focused on Godot VR retrofit, modloader, game
+  profiles, and AI NPC tooling.
+
+- `github-research-wave-383-backlog.md`
+  Executed backlog for the Wave 383 pass.

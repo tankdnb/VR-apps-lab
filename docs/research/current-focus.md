@@ -17,6 +17,25 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 380-383
+
+- `Godot Quest interaction toolkits, saber game, and hand rigging pipeline`
+  add a Godot/Quest toolkit branch around OQ Toolkit lineage, reusable demo
+  scenes, OpenXR action maps, saber timing/game composition, and hand rigging
+  provenance.
+- `Godot XR networking, social avatar, and WebRTC world shells`
+  add Godot-specific shared-room coverage around main scenes, avatar presence,
+  WebRTC folders, object authority, social-world shells, deprecated avatar
+  lineage, and privacy/error caveats.
+- `Godot cross-device OpenXR, Samsung XR, AVP, and legacy backend experiments`
+  add platform-experiment coverage around Samsung XR probes, Apple Vision Pro
+  engine patch envelopes, test-project/capture provenance, and legacy Godot 3
+  OpenXR migration boundaries.
+- `Godot VR retrofit, modloader, game profiles, and AI NPC tooling`
+  add retrofit/assistant coverage around XR injectors, override configs,
+  per-game profile stores, modloader graft points, reversible patcher safety,
+  and AI provider/privacy boundaries.
+
 ## Current additions from Waves 376-379
 
 - `Tilia spatial buttons, highlighters, and world UI state`

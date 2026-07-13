@@ -4984,6 +4984,52 @@ Primary docs:
 - `ExtendRealityLtd/Zinnia.Unity` - `Studied in Wave 379 as core Unity component primitive substrate with process moments, rule containers, observable lists, transformers, actions, casts, event proxies, and tests`
 - `ExtendRealityLtd/VRTK.Tutorials.YouTube` - `Studied in Wave 379 as tutorial composition project with GlobalResources, Samples, Scenes, Tilia package importer, XR setup, and reference-scene caveats`
 
+## 351. Godot Quest interaction toolkits saber game and hand rigging pipeline
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-380-godot-quest-interaction-toolkits-saber-game-and-hand-rigging-pipeline.md`
+- `../landscape/project-families.md`
+
+- `NeoSpark314/godot_oculus_quest_toolkit` - `Studied in Wave 380 as Quest-focused Godot toolkit lineage with OQ_Toolkit, demos, utilities, GameMain shell, and older platform-assumption caveats`
+- `arpruss/OpenSaberPlus` - `Studied in Wave 380 as Godot VR saber/rhythm game composition with OQ Toolkit assets, action map, game folder, Android/export boundary, and timing-loop donor value`
+- `ClonedPuppy/Blender_OpenXR_Hand_Rigging` - `Studied in Wave 380 as narrow Blender-to-Godot OpenXR hand rigging pipeline with assets, scenes, scripts, and skeleton/import provenance questions`
+
+## 352. Godot XR networking social avatar and WebRTC world shells
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-381-godot-xr-networking-social-avatar-and-webrtc-world-shells.md`
+- `../landscape/project-families.md`
+
+- `goatchurchprime/Godot_XR_networking` - `Studied in Wave 381 as minimal Godot XR networking shell with Main scene/script, avatars, plug glue, action map, and authority/packet follow-up`
+- `teddybear082/Godot_XR_Networking-Plus-Game` - `Studied in Wave 381 as expanded Godot XR networking/game variant with WebRTC, objects, scenes, and ownership/fallback questions`
+- `zodiepupper/barkvr` - `Studied in Wave 381 as larger Godot VR social/world shell with barkvr-system, WebRTC, Android/export boundaries, and identity/privacy caveats`
+- `Godot-Dojo/Deprecated-Godot-XR-Avatar` - `Studied in Wave 381 as deprecated Godot XR avatar/interactable lineage with hand, pickup, highlight, snap-zone, and interaction component taxonomy`
+
+## 353. Godot cross-device OpenXR platform experiments
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-382-godot-cross-device-openxr-samsung-avp-and-legacy-backend-experiments.md`
+- `../landscape/project-families.md`
+
+- `Jax-Danger/Godot-Samsung-XR` - `Studied in Wave 382 as compact Samsung/OpenXR Godot device experiment with Level, Player, scripts, action map, export preset, and artifact provenance caveat`
+- `ibrews/godot-avp-cascade` - `Studied in Wave 382 as Apple Vision Pro-oriented Godot experiment envelope with engine-patches, test-project, tools, docs, captures, and patch-provenance lessons`
+- `GodotVR/godot_openxr_for_godot_3.x` - `Deepened in Wave 382 as legacy Godot 3 OpenXR backend comparison node with src, Android samples, demo, action/session/space plumbing, and migration caveats`
+
+## 354. Godot VR retrofit modloader profiles and AI NPC tooling
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-383-godot-vr-retrofit-modloader-game-profiles-and-ai-npc-tooling.md`
+- `../landscape/project-families.md`
+
+- `teddybear082/UGVR` - `Studied in Wave 383 as Godot VR retrofit/injector shell with xr_injector, overridecfg, project shell, and rollback/profile safety follow-up`
+- `teddybear082/UGVR_game_profiles` - `Studied in Wave 383 as per-game retrofit profile collection with game-named folders and target/version/provenance schema lessons`
+- `teddybear082/CrueltySquadVR-Modloader` - `Studied in Wave 383 as modloader-style VR patch project with install scripts, modloader.gd, override.cfg, XR Tools graft points, and dry-run safety caveats`
+- `teddybear082/godot-ai-npc-example` - `Studied in Wave 383 as Godot AI NPC example envelope with scripts, demo, assets, addons, fonts, and provider/privacy boundary questions`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

@@ -375,6 +375,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-377-tilia-controllables-teleport-targets-and-locomotion-assist-modules.md`
 - `landscape/vr-projects-wave-378-openxr-vendor-camera-rig-and-passthrough-adapter-packages.md`
 - `landscape/vr-projects-wave-379-zinnia-core-primitives-and-vrtk-tutorial-composition-substrate.md`
+- `landscape/vr-projects-wave-380-godot-quest-interaction-toolkits-saber-game-and-hand-rigging-pipeline.md`
+- `landscape/vr-projects-wave-381-godot-xr-networking-social-avatar-and-webrtc-world-shells.md`
+- `landscape/vr-projects-wave-382-godot-cross-device-openxr-samsung-avp-and-legacy-backend-experiments.md`
+- `landscape/vr-projects-wave-383-godot-vr-retrofit-modloader-game-profiles-and-ai-npc-tooling.md`
 
 ## Archive Navigation
 

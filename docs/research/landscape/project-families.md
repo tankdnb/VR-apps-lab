@@ -11377,6 +11377,76 @@ This family matters because package-level findings need a clear lower-level
 primitive vocabulary for process, rule, transform, action, cast, and event
 composition.
 
+## Family 359: Godot Quest interaction toolkit and hand asset pipeline
+
+This family covers Quest-era Godot interaction toolkits, game-level
+composition, OpenXR action maps, and hand rigging/asset pipeline references.
+
+| Project | Status | Notes |
+|---|---|---|
+| `NeoSpark314/godot_oculus_quest_toolkit` | Studied in Wave 380 | OQ Toolkit, demos, utilities, and Quest-focused toolkit lineage |
+| `arpruss/OpenSaberPlus` | Studied in Wave 380 | Saber/rhythm game composition using toolkit assets and OpenXR action maps |
+| `ClonedPuppy/Blender_OpenXR_Hand_Rigging` | Studied in Wave 380 | Blender-to-Godot hand rigging and OpenXR hand visualization pipeline |
+
+### Consolidation note
+
+This family matters because Godot VR utilities need reusable interaction
+assets, action maps, and hand visuals that stay separate from game rules and
+old headset-specific assumptions.
+
+## Family 360: Godot XR networking social avatar and WebRTC shells
+
+This family covers minimal networked XR rooms, avatar presence, WebRTC/game
+expansions, social-world shells, and deprecated avatar framework lineage.
+
+| Project | Status | Notes |
+|---|---|---|
+| `goatchurchprime/Godot_XR_networking` | Studied in Wave 381 | Minimal main-scene/avatar/networking shell |
+| `teddybear082/Godot_XR_Networking-Plus-Game` | Studied in Wave 381 | WebRTC/game expansion around a Godot XR networking base |
+| `zodiepupper/barkvr` | Studied in Wave 381 | Larger Godot VR social/world shell with WebRTC and system folders |
+| `Godot-Dojo/Deprecated-Godot-XR-Avatar` | Studied in Wave 381 | Deprecated avatar/interactable component taxonomy |
+
+### Consolidation note
+
+This family matters because collaborative VR utilities need room/session,
+avatar, object authority, transport-health, and privacy boundaries before
+product-specific tools are layered in.
+
+## Family 361: Godot cross-device OpenXR platform experiments
+
+This family covers Samsung/OpenXR probes, Apple Vision Pro engine patch
+experiments, and legacy Godot OpenXR backend comparison nodes.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Jax-Danger/Godot-Samsung-XR` | Studied in Wave 382 | Compact Samsung/OpenXR project with Level, Player, scripts, action map, and export preset |
+| `ibrews/godot-avp-cascade` | Studied in Wave 382 | AVP-oriented engine patches, test project, tools, docs, and captures |
+| `GodotVR/godot_openxr_for_godot_3.x` | Deepened in Wave 382 | Legacy Godot 3 OpenXR backend, Android samples, and native action/session/space plumbing |
+
+### Consolidation note
+
+This family matters because platform experiments should be documented as
+provenance-rich envelopes with action maps, test scenes, patch history, and
+clear migration caveats.
+
+## Family 362: Godot VR retrofit profiles modloaders and AI NPC tooling
+
+This family covers Godot VR retrofit shells, injector/profile splits,
+modloader-style patching, game profile stores, and AI NPC adapter surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `teddybear082/UGVR` | Studied in Wave 383 | XR injector and override config retrofit envelope |
+| `teddybear082/UGVR_game_profiles` | Studied in Wave 383 | Per-game profile folders for retrofit compatibility knowledge |
+| `teddybear082/CrueltySquadVR-Modloader` | Studied in Wave 383 | Modloader scripts, override config, and XR Tools graft points |
+| `teddybear082/godot-ai-npc-example` | Studied in Wave 383 | AI NPC example envelope with scripts, demo, assets, and provider caveats |
+
+### Consolidation note
+
+This family matters because retrofit and assistant tooling must separate
+target-specific profiles, installer/injector behavior, reusable XR assets, and
+privacy/safety state.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

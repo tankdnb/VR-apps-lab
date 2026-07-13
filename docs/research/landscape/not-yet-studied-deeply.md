@@ -3164,6 +3164,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 302. `Constrained control and locomotion assist follow-up across drive axes, joint versus transform mode, value thresholds, teleport target areas, climbing release multipliers, movement amplification, collider proxies, and comfort labels`
 303. `Vendor rig capability follow-up across OpenXR node records, passthrough managers, runtime validity probes, PICO/WaveXR controller mapping, dominant-hand priority, haptic wrappers, and unsupported-state UX`
 304. `Unity component primitive substrate follow-up across process moments, rule containers, observable lists, transformers, actions, casts, event proxies, tests, tutorial scene organization, and debug naming`
+305. `Godot Quest interaction toolkit follow-up across OQ Toolkit versus godot-xr-tools conventions, action-map schemas, hand asset provenance, controller fallback, saber timing windows, and export caveats`
+306. `Godot XR networking follow-up across ENet/WebRTC transport schemas, avatar presence minimums, object authority, reconnect/error UI, identity/privacy labels, and social-world service assumptions`
+307. `Godot cross-device OpenXR follow-up across Samsung XR and AVP action/input assumptions, engine patch provenance, test-project validation, artifact policy, and legacy Godot 3 migration caveats`
+308. `Godot retrofit and AI NPC tooling follow-up across injector dry-runs, profile schemas, target version matching, rollback backups, class-registration manifests, AI provider boundaries, privacy, and credential hygiene`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

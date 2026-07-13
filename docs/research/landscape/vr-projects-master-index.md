@@ -1169,6 +1169,8 @@ bet everything on unsupported vendor passthrough paths.
   state-aware AI tutor labs, chemistry/biology activities, medical procedure
   familiarization, safety/failure gates, and reset loops.
 - `vr-projects-wave-355-mr-digital-twin-safety-drone-robot-and-industrial-control-surfaces.md`
+  MR digital twins, JSON/API/IoT adapters, VPS/SSA anchoring, dashboards,
+  annotations, drone/robot panels, and command-safety surfaces.
 - `vr-projects-wave-356-guided-breathing-meditation-wellness-and-stress-protocol-vr.md`
 - `vr-projects-wave-357-vr-music-instruments-hand-tracked-piano-drums-and-biosignal-audiovisual-tools.md`
 - `vr-projects-wave-358-vr-creative-authoring-sculpting-painting-modeling-and-content-retrieval-tools.md`
@@ -1193,5 +1195,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-377-tilia-controllables-teleport-targets-and-locomotion-assist-modules.md`
 - `vr-projects-wave-378-openxr-vendor-camera-rig-and-passthrough-adapter-packages.md`
 - `vr-projects-wave-379-zinnia-core-primitives-and-vrtk-tutorial-composition-substrate.md`
-  MR digital twins, JSON/API/IoT adapters, VPS/SSA anchoring, dashboards,
-  annotations, drone/robot panels, and command-safety surfaces.
+- `vr-projects-wave-380-godot-quest-interaction-toolkits-saber-game-and-hand-rigging-pipeline.md`
+  Godot Quest toolkit lineage, saber-game composition, OpenXR action maps, and
+  hand rigging provenance.
+- `vr-projects-wave-381-godot-xr-networking-social-avatar-and-webrtc-world-shells.md`
+  Godot networked rooms, avatar presence, WebRTC/social-world shells, and
+  deprecated avatar component lineage.
+- `vr-projects-wave-382-godot-cross-device-openxr-samsung-avp-and-legacy-backend-experiments.md`
+  Samsung XR probes, Apple Vision Pro patch envelopes, and legacy Godot OpenXR
+  backend migration comparison.
+- `vr-projects-wave-383-godot-vr-retrofit-modloader-game-profiles-and-ai-npc-tooling.md`
+  Godot VR retrofit injectors, game profiles, modloader patching, and AI NPC
+  provider/privacy boundaries.

@@ -1709,6 +1709,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on Zinnia process/rule/transform/action
   primitives and VRTK tutorial project composition.
 
+- `vr-projects-wave-380-godot-quest-interaction-toolkits-saber-game-and-hand-rigging-pipeline.md`
+  Next GitHub discovery wave focused on Godot Quest toolkit lineage, saber-game
+  composition, OpenXR action maps, and hand rigging provenance.
+
+- `vr-projects-wave-381-godot-xr-networking-social-avatar-and-webrtc-world-shells.md`
+  Next GitHub discovery wave focused on Godot networked rooms, avatar presence,
+  WebRTC/social-world shells, and deprecated avatar component lineage.
+
+- `vr-projects-wave-382-godot-cross-device-openxr-samsung-avp-and-legacy-backend-experiments.md`
+  Next GitHub discovery wave focused on Samsung XR, Apple Vision Pro patch
+  envelopes, and legacy Godot OpenXR backend comparison.
+
+- `vr-projects-wave-383-godot-vr-retrofit-modloader-game-profiles-and-ai-npc-tooling.md`
+  Next GitHub discovery wave focused on Godot VR retrofit injectors, per-game
+  profiles, modloader patching, and AI NPC adapter boundaries.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

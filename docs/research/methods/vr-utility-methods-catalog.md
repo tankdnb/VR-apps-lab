@@ -19518,3 +19518,137 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   research-to-prototype translation, reusable utility samples, toolkit-neutral
   docs, and future pattern extraction.
+
+## Method 825: Godot Quest interaction toolkit and hand asset pipeline
+
+- What it is:
+  organize Godot VR interaction work as reusable toolkit assets, OpenXR action
+  maps, demo scenes, and hand asset provenance instead of one monolithic app.
+- Good for:
+  Quest/Godot prototypes, hand-menu tests, controller/hand fallback scenes,
+  rhythm/skill loops, action-map examples, and reusable interaction demos.
+- Why it matters:
+  small VR utilities need repeatable interaction assets and hand visuals, but
+  game rules and headset-specific export settings should stay outside the
+  reusable layer.
+- Source evidence:
+  `NeoSpark314/godot_oculus_quest_toolkit`, `arpruss/OpenSaberPlus`, and
+  `ClonedPuppy/Blender_OpenXR_Hand_Rigging`.
+- Reusable core:
+  toolkit folder, demo scene, entry shell, OpenXR action map, hand rig asset,
+  import scene, controller fallback note, hit/timing detector, export boundary,
+  and asset provenance checklist.
+- Source evidence details:
+  Wave 380 includes `OQ_Toolkit`, `demo_scenes`, `GameMain.gd`,
+  OpenSaberPlus `game` and Android/export folders, and Blender hand-rigging
+  `blender/assets/scenes/scripts`.
+- Do not copy directly:
+  older Quest-only assumptions, rhythm-game scoring as generic input code, hand
+  rigs without skeleton/import provenance, or export artifacts as source truth.
+- Maturity:
+  useful Godot toolkit method; needs comparison with modern `godot-xr-tools`.
+- Best fit for `VR-apps-lab`:
+  Godot XR samples, hand UI experiments, action-map documentation, and
+  interaction microtool prototypes.
+
+## Method 826: Godot XR multiplayer social/avatar shell
+
+- What it is:
+  start shared Godot VR tools from a room/session shell with avatars, action
+  maps, network transport, object authority, and visible transport/privacy
+  state.
+- Good for:
+  collaborative utility rooms, remote assistance, shared whiteboards,
+  multiplayer diagnostics, social VR prototypes, and avatar-presence baselines.
+- Why it matters:
+  networking examples become reusable only when transport, avatar assets,
+  object authority, identity, and error states are separated.
+- Source evidence:
+  `goatchurchprime/Godot_XR_networking`,
+  `teddybear082/Godot_XR_Networking-Plus-Game`, `zodiepupper/barkvr`, and
+  `Godot-Dojo/Deprecated-Godot-XR-Avatar`.
+- Reusable core:
+  main scene, avatar prefab/resource, OpenXR action map, transport adapter,
+  WebRTC/signaling folder, object authority rule, room shell, reconnect state,
+  privacy label, and deprecated-lineage warning.
+- Source evidence details:
+  Wave 381 includes `Main.gd`, `Main.tscn`, `avatars`, `plug.gd`, `webrtc`,
+  `objects`, `barkvr-system`, and avatar component classes for hands,
+  interactables, pickups, highlights, and snap zones.
+- Do not copy directly:
+  deprecated avatar framework code, service credentials, implicit authority
+  rules, multiplayer demos without privacy/error UI, or game state as network
+  substrate.
+- Maturity:
+  good architecture method; needs a transport-neutral packet/session schema.
+- Best fit for `VR-apps-lab`:
+  collaborative VR utilities, shared diagnostics rooms, social tool shells, and
+  multiplayer testbeds.
+
+## Method 827: Godot cross-device OpenXR platform experiment wrapper
+
+- What it is:
+  document platform-specific Godot XR work as an experiment envelope containing
+  device probe scenes, action maps, patches, tools, captures, and migration
+  caveats.
+- Good for:
+  Samsung XR probes, Apple Vision Pro/visionOS experiments, vendor runtime
+  trials, legacy backend migration notes, and device-specific capability tests.
+- Why it matters:
+  platform experiments are risky donor material unless patch provenance,
+  validation scenes, artifact policy, and legacy/current boundaries are clear.
+- Source evidence:
+  `Jax-Danger/Godot-Samsung-XR`, `ibrews/godot-avp-cascade`, and
+  `GodotVR/godot_openxr_for_godot_3.x`.
+- Reusable core:
+  device probe scene, player rig, action map, export preset, engine patch
+  folder, test project, tool script, capture evidence, backend comparison note,
+  artifact provenance, and migration warning.
+- Source evidence details:
+  Wave 382 includes Samsung XR `Level/Player/scripts/openxr_action_map.tres`,
+  AVP `engine-patches/test-project/tools/docs/captures`, and Godot 3 OpenXR
+  `src/android/android_samples/demo/scripts`.
+- Do not copy directly:
+  packaged APKs as source evidence, engine patches without provenance, legacy
+  backend assumptions as modern guidance, or platform probes without capability
+  fallback UI.
+- Maturity:
+  strategic experiment-documentation method; needs a local provenance checklist.
+- Best fit for `VR-apps-lab`:
+  platform probes, vendor capability research, migration notes, and
+  source-first experiment envelopes.
+
+## Method 828: VR retrofit profile/modloader and AI NPC adapter shell
+
+- What it is:
+  separate retrofit target profiles, injector/modloader behavior, reusable XR
+  assets, and AI provider adapters into explicit safety/privacy boundaries.
+- Good for:
+  VR retrofit utilities, reversible patchers, per-game profile stores,
+  modloader research, in-world assistants, AI NPC demos, and training helpers.
+- Why it matters:
+  retrofit and assistant tools can affect user installs or private data; they
+  need dry-runs, rollback, target identity, provider boundaries, and credential
+  hygiene from the start.
+- Source evidence:
+  `teddybear082/UGVR`, `teddybear082/UGVR_game_profiles`,
+  `teddybear082/CrueltySquadVR-Modloader`, and
+  `teddybear082/godot-ai-npc-example`.
+- Reusable core:
+  injector shell, override config, game profile folder, target identity,
+  dry-run target preview, backup/rollback, toolkit graft point,
+  class-registration manifest, AI provider adapter, prompt/state boundary, and
+  privacy/credential caveat.
+- Source evidence details:
+  Wave 383 includes UGVR `xr_injector/overridecfg`, UGVR game profile folders,
+  CrueltySquadVR `Install-Modloader.ps1`, `override.cfg`, `modloader.gd`,
+  `cs-vr-mod-xr-tools`, and AI NPC `scripts/demo/assets/addons`.
+- Do not copy directly:
+  installer scripts without dry-run, target-specific patches as generic code,
+  hidden backups, checked-in secrets, or cloud NPC behavior without consent and
+  privacy labels.
+- Maturity:
+  strong safety-oriented method; needs a reversible patcher/profile schema.
+- Best fit for `VR-apps-lab`:
+  runtime helper design, retrofit research, profile stores, local assistant
+  prototypes, and AI utility surfaces.
