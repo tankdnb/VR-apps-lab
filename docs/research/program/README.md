@@ -2434,3 +2434,31 @@ repeatable way.
 
 - `github-research-wave-343-backlog.md`
   Executed backlog for the Wave 343 pass.
+
+- `github-research-wave-344-plan.md`
+  Wave 344 research plan focused on molecular scientific visualization and
+  interactive simulation viewers.
+
+- `github-research-wave-344-backlog.md`
+  Executed backlog for the Wave 344 pass.
+
+- `github-research-wave-345-plan.md`
+  Wave 345 research plan focused on CAD, BIM, industrial XR, and training
+  workflows.
+
+- `github-research-wave-345-backlog.md`
+  Executed backlog for the Wave 345 pass.
+
+- `github-research-wave-346-plan.md`
+  Wave 346 research plan focused on accessibility, low-vision, audio/haptics,
+  and sign-language VR tools.
+
+- `github-research-wave-346-backlog.md`
+  Executed backlog for the Wave 346 pass.
+
+- `github-research-wave-347-plan.md`
+  Wave 347 research plan focused on NeRF, Gaussian splat, and light-field VR
+  viewers.
+
+- `github-research-wave-347-backlog.md`
+  Executed backlog for the Wave 347 pass.

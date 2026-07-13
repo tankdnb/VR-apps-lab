@@ -3127,6 +3127,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 266. `visionOS Unity adapter follow-up across Apple.Core build steps, PHASE/CoreHaptics/Accessibility bridge surfaces, WebView input/keyboard ownership, controller migration maps, and plist mutation auditability`
 267. `Spectator/MRC capture follow-up across minimal spectator rigs, calibration artifact provenance, marker/anchor localization, compositor transport, recording services, and observer-role authority boundaries`
 268. `Hand interaction/capture follow-up across physics hand force limits, two-hand attach constraints, XR Hands capture/playback schemas, WebXR hand capability checks, and debug visualizers`
+269. `Scientific XR viewer follow-up across domain file parsers, normalized atom/particle models, trajectory queues, simulation service discovery, measurement widgets, and provenance`
+270. `CAD/BIM XR round-trip follow-up across object IDs, metadata CSV/JSON schemas, edit logs, coordinate/unit conversion, transaction apply-back, rollback, and LLM safety`
+271. `VR accessibility/sign-language follow-up across magnifier shaders, audio/haptic cue routing, hand-pose schemas, gesture sequence matching, validation thresholds, consent, and capability fallbacks`
+272. `Neural spatial media viewer follow-up across NeRF native plug-ins, external textures, PLY/splat loaders, GPU sorting/culling, file browsers, LOD, and light-field playback caveats`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

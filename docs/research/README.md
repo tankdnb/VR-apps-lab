@@ -339,6 +339,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-341-visionos-unity-plugin-bridges-webview-surfaces-and-controller-adapters.md`
 - `landscape/vr-projects-wave-342-spectator-cameras-mixed-reality-capture-and-multiplayer-observer-roles.md`
 - `landscape/vr-projects-wave-343-physics-hands-two-hand-interaction-and-hand-data-capture-baselines.md`
+- `landscape/vr-projects-wave-344-molecular-scientific-visualization-and-interactive-simulation-viewers.md`
+- `landscape/vr-projects-wave-345-cad-bim-industrial-xr-and-training-workflows.md`
+- `landscape/vr-projects-wave-346-accessibility-low-vision-audio-haptics-and-sign-language-vr-tools.md`
+- `landscape/vr-projects-wave-347-nerf-gaussian-splat-and-light-field-vr-viewers.md`
 
 ## Archive Navigation
 

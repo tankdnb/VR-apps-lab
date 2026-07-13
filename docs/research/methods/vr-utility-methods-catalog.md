@@ -18155,3 +18155,163 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   hand-control prototypes, gesture diagnostics, two-hand tool interactions, and
   replayable hand input tests.
+
+## Method 789: scientific VR data/viewer decomposition
+
+- What it is:
+  scientific XR viewers should separate domain import, normalized data models,
+  molecular/scientific representation, trajectory/session updates, measurement,
+  selection, scripting, and VR manipulation.
+- Good for:
+  molecule viewers, simulation stream clients, scientific training tools,
+  remote-lab viewers, and domain-data inspection utilities.
+- Why it matters:
+  scientific visualization quickly becomes unmaintainable when parser logic,
+  rendering representations, live simulation state, and XR controls are tied
+  together.
+- Source evidence:
+  `LBT-CNRS/UnityMol-Releases`, `ur-whitelab/simview`,
+  `kwstanths/MRend`, `WangLabforComputationalBiology/VisionMol`,
+  `RBVI/LookSee`, and `IRL2/nanover-imd-vr`.
+- Reusable core:
+  file/session adapter, normalized atom/particle/scene model, representation
+  switcher, trajectory/frame queue, interpolation, measurement tools,
+  selection/query language, save/load, simulation transport, calibration and
+  passthrough gates, and VR manipulation UI.
+- Source evidence details:
+  Wave 344 includes UnityMol's parser/API/workbench breadth, simview's
+  HOOMD/ZeroMQ queue and GPU update paths, MRend's minimal PDB parser,
+  VisionMol's measurement and representation UI, LookSee's ChimeraX GLTF
+  handoff, and NanoVer's service/session/controller split.
+- Do not copy directly:
+  heavy scientific assets, old GoogleVR/SteamVR/Oculus package assumptions,
+  hardcoded paths, undocumented domain schemas, or live transport code without
+  reconnection and provenance.
+- Strong references:
+  `UnityMol-Releases` for workbench breadth, `simview` for streamed
+  trajectories, and `nanover-imd-vr` for interactive simulation sessions.
+- Maturity:
+  strong method with dependency and domain-data caveats.
+- Best fit for `VR-apps-lab`:
+  scientific viewer prototypes, domain-data import experiments, measurement
+  widgets, and remote simulation control surfaces.
+
+## Method 790: CAD/BIM XR round-trip utility decomposition
+
+- What it is:
+  engineering XR tools should separate geometry import, metadata mapping,
+  inspect/slice/annotate tools, training state, assistant panels, edit logs,
+  and external CAD/BIM application adapters.
+- Good for:
+  CAD inspection, AEC walkthroughs, BIM review, industrial training, digital
+  twins, headset-side annotations, and safe edit-apply workflows.
+- Why it matters:
+  VR model manipulation is only useful professionally if metadata and writeback
+  are explicit, auditable, and reversible.
+- Source evidence:
+  `LukeA25/vrCadViewer`, `UnityCommunity/CADImportExport`,
+  `giorgosfatouros/XR2IND-VR`, `krishnahsanghani-netizen/visualyze-core`,
+  `isaddiq/BIMUniXchange`, and `game4automation/realvirtual-WEB`.
+- Reusable core:
+  runtime model importer, metadata table, object ID map, slice/explode/draw
+  tools, pointer/annotation surface, task validator, voice assistant panel,
+  edit-log schema, unit/coordinate conversion, authoring-tool transaction
+  applier, rollback/confirmation UX, and HMI tooltip layer.
+- Source evidence details:
+  Wave 345 includes vrCadViewer's slicer/tool-mode UX, CADImportExport's
+  runtime import/export direction, XR2IND's STT/LLM task panels, Visualyze's
+  Revit edit applier, BIMUniXchange's Archicad/Revit metadata export, and
+  realvirtual-WEB's HMI/annotation surfaces.
+- Do not copy directly:
+  hardcoded edit paths, raw JSON request construction, hidden API keys,
+  unverified LLM instructions, proprietary CAD package blobs, or destructive
+  model mutation without previews.
+- Strong references:
+  `visualyze-core` for edit-log apply-back and `BIMUniXchange` for metadata
+  export workflow.
+- Maturity:
+  strong product-method candidate; needs schema and rollback hardening before
+  production use.
+- Best fit for `VR-apps-lab`:
+  XR engineering workbenches, BIM review prototypes, industrial training
+  surfaces, and model annotation tools.
+
+## Method 791: VR accessibility affordance and gesture-training decomposition
+
+- What it is:
+  accessibility and gesture-learning tools should isolate input sensing,
+  accessibility adaptation, gesture/pose validation, feedback channels,
+  training data, output routing, and consent/privacy settings.
+- Good for:
+  low-vision magnifiers, audio/haptic alternatives, sign-language training,
+  gesture-to-text surfaces, accessible games, and capability-aware assistive
+  overlays.
+- Why it matters:
+  accessibility features need reusable affordances and honest limitations, not
+  one-off app hacks.
+- Source evidence:
+  `microsoft/SeeingVRtoolkit`, `SuHCI/MagniVR`, `xability/punch-pulse`,
+  `hojats7731/VRSignify`, `dillondrum70/ASL-Passthrough`, and
+  `cpvrlab/vrTrainingFingerAlphabet`.
+- Reusable core:
+  accessibility profile, magnifier/post-process adapter, audio/haptic cue
+  router, target metadata, hand-pose schema, pose capture tool, gesture
+  sequence matcher, validation thresholds, feedback surface, output adapter,
+  capability fallback, and privacy/consent defaults.
+- Source evidence details:
+  Wave 346 includes SeeingVR/MagniVR magnification assets, Punch Pulse audio
+  and haptic cues, ASL-Passthrough gesture stacks and editor pose capture,
+  VRSignify ASL-to-text framing, and vrTrainingFingerAlphabet weighted hand
+  validation.
+- Do not copy directly:
+  unsupported efficacy claims, vendor-only tracking without fallback, raw
+  microphone/gesture capture without consent, hardcoded thresholds, or hidden
+  ML classifiers without evaluation.
+- Strong references:
+  `ASL-Passthrough` for gesture sequence matching and
+  `vrTrainingFingerAlphabet` for validation scoring.
+- Maturity:
+  strong UX/method branch; production reuse needs user testing, consent, and
+  device capability gates.
+- Best fit for `VR-apps-lab`:
+  accessibility overlays, hand-sign learning tools, gesture diagnostics, and
+  alternative feedback surfaces.
+
+## Method 792: neural spatial media viewer decomposition
+
+- What it is:
+  NeRF, Gaussian splat, and light-field viewers should share a viewer shell
+  while isolating format-specific loaders, renderers, native plug-ins, GPU
+  sorting/culling, stereo texture output, and quality controls.
+- Good for:
+  spatial media viewers, Quest splat browsers, NeRF workbenches, light-field
+  playback experiments, and mixed spatial-media libraries.
+- Why it matters:
+  nonstandard spatial media formats evolve quickly, so reusable browsing,
+  navigation, cleanup, and performance UX should outlive any one renderer.
+- Source evidence:
+  `uhhhci/immersive-ngp`, `alexwing/nerf_Unity_VR`,
+  `zachdrouin/GaussianSplatViewer`, and `julienkay/LightfieldVideoUnity`.
+- Reusable core:
+  spatial-media descriptor, source/file browser, async loader, metadata parser,
+  native plug-in or compute renderer adapter, left/right texture handoff,
+  camera-pose update, depth sort/culling, LOD/streaming, locomotion,
+  crop/FoV tools, capability labels, memory/performance budgets, and cleanup
+  lifecycle.
+- Source evidence details:
+  Wave 347 includes immersive-ngp's `ngp_shared` native wrapper and external
+  textures, GaussianSplatViewer's Burst PLY loader and GPU sorter,
+  nerf_Unity_VR's thin scene shell, and LightfieldVideoUnity's release-only
+  playback caveat.
+- Do not copy directly:
+  native plug-ins without provenance, hardcoded model paths, unbounded GPU
+  memory use, proprietary playback dependencies, or demos without per-device
+  performance labels.
+- Strong references:
+  `immersive-ngp` for native texture handoff and `GaussianSplatViewer` for
+  Quest-oriented modular splat viewing.
+- Maturity:
+  strong follow-up method with renderer-specific caveats.
+- Best fit for `VR-apps-lab`:
+  spatial media viewers, splat/NeRF browser shells, projection-aware viewer
+  comparisons, and performance/capability diagnostics.

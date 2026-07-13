@@ -242,6 +242,12 @@ These are the clearest current product and research lines:
     file shelves, metadata catalogs, FSR/VRPerfKit managers, chaperone and
     player-safety monitors, passthrough study interventions, Quest/Steam/WMR
     launchers, profile runners, and external-app return-to-menu lifecycles.
+46. `Scientific XR viewers, CAD/BIM round trips, accessibility/sign-language tools, and neural spatial media`
+    the repository now has fresh coverage of molecular workbenches,
+    simulation-stream viewers, CAD/BIM metadata pipelines, headset-side edit
+    logs, low-vision magnifiers, audio/haptic accessibility cues, ASL and
+    finger-alphabet gesture validation, NeRF native texture handoff, Quest
+    splat viewers, and light-field playback caveats.
 
 ## Most useful current docs
 
@@ -1255,6 +1261,31 @@ Besides new research waves, the main repository-maintenance work now is:
 - keep `not-yet-studied-deeply.md` focused on active queueing;
 - reduce archive pressure in front-door docs;
 - preserve wave history without making every entry document chronological.
+
+## Current additions from Waves 344-347
+
+Recent research adds four useful donor clusters:
+
+- `scientific XR data/viewer decomposition`
+  from UnityMol, simview, MRend, VisionMol, LookSee, and NanoVer IMD:
+  domain file import, normalized molecular/particle models, trajectory queues,
+  simulation service discovery, representation switching, measurement widgets,
+  and VR manipulation boundaries.
+- `CAD/BIM XR round-trip utility workflows`
+  from vrCadViewer, CADImportExport, XR2IND-VR, Visualyze, BIMUniXchange, and
+  realvirtual-WEB: inspect/slice/explode/draw tools, metadata extraction,
+  task whiteboards, STT/LLM panels, VR edit logs, Revit transaction appliers,
+  HMI annotations, and safe apply-back caveats.
+- `accessibility and gesture-training layers`
+  from SeeingVRtoolkit, MagniVR, Punch Pulse, VRSignify, ASL-Passthrough, and
+  vrTrainingFingerAlphabet: magnification shaders, physical magnifier
+  metaphors, directional audio/haptics, ASL product framing, pose stacks,
+  gesture sequence matching, and weighted hand-form validation.
+- `neural spatial media viewer shells`
+  from immersive-ngp, nerf_Unity_VR, GaussianSplatViewer, and
+  LightfieldVideoUnity: NeRF native plug-in texture handoff, stereo camera
+  updates, Quest PLY/splat loading, GPU sorting/culling, VR file browsers,
+  LOD/streaming, and light-field release-only caveats.
 
 ## Current additions from Waves 340-343
 

@@ -4533,6 +4533,60 @@ Primary docs:
 - `needle-mirror/com.unity.xr.hands` - `Studied in Wave 343 as Unity XR Hands package reference with XRHandSubsystem/provider APIs, joints/mesh/MetaAim/common gestures, skeleton driver, tracking events, OpenXR feature drawers, hand capture recording blobs, frame buffers, playback providers, time controllers, and coordinate transforms`
 - `sketchpunklabs/xrhand` - `Studied in Wave 343 as a WebXR/Three.js hand prototype lab with XRManager, XRInputManager, XRController, XRHand, XRSlideLocomotion, dynamic mesh/debug helpers, GLTF utilities, hand model prototypes, and browser/device support caveats`
 
+## 315. Molecular scientific visualization and interactive simulation viewers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-344-molecular-scientific-visualization-and-interactive-simulation-viewers.md`
+- `../landscape/project-families.md`
+
+- `LBT-CNRS/UnityMol-Releases` - `Studied in Wave 344 as a large Unity molecular workbench with PDB/mmCIF/GRO/MOL2/SDF/XYZ import, trajectory support, selection language, Python console, save/load commands, HyperBalls, surfaces, and VR scenes`
+- `ur-whitelab/simview` - `Studied in Wave 344 as a HOOMD/ZeroMQ molecular simulation viewer with frame queues, interpolated positions, particle names, bonds, GPU molecule system, VR/AR scenes, and instructor view`
+- `kwstanths/MRend` - `Studied in Wave 344 as a compact Unity PDB parser/render baseline with ATOM/HETATM parsing, Angstrom-to-nanometer conversion, atom spawning, and mock-HMD settings`
+- `WangLabforComputationalBiology/VisionMol` - `Studied in Wave 344 as a Quest-oriented protein viewer with multiple molecular representations, labels, distance measurement, molecule merging/splicing, residue coloring, and VR manipulation`
+- `RBVI/LookSee` - `Studied in Wave 344 as a Quest molecular/cell scene viewer that receives GLTF scenes exported from UCSF ChimeraX and uses GLTFast plus Oculus/OpenXR loaders`
+- `IRL2/nanover-imd-vr` - `Studied in Wave 344 as an interactive molecular dynamics client with service discovery, WebSocket/autoconnect paths, controller manager, simulation-space manipulation, passthrough, calibration, and user commands`
+
+## 316. CAD BIM industrial XR and training workflows
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-345-cad-bim-industrial-xr-and-training-workflows.md`
+- `../landscape/project-families.md`
+
+- `LukeA25/vrCadViewer` - `Studied in Wave 345 as a Quest CAD viewer with grab, slice, explode, draw, pointer tools, mode switching, EzySlice integration, and original-position mapping`
+- `UnityCommunity/CADImportExport` - `Studied in Wave 345 as a source-light runtime CAD import/export direction marker for Unity desktop and Quest/Android targets`
+- `giorgosfatouros/XR2IND-VR` - `Studied in Wave 345 as an industrial VR training app with tutorial/assembly/troubleshooting rooms, task whiteboards, interactive network-equipment models, STT, LLM assistant REST calls, and RAG/manual dependency`
+- `krishnahsanghani-netizen/visualyze-core` - `Studied in Wave 345 as a Visualyze MVP with Unity VR client plus Revit edit applier that reads JSON edit logs and moves elements inside a transaction`
+- `isaddiq/BIMUniXchange` - `Studied in Wave 345 as a BIM-to-Unity pipeline with Archicad Python metadata extraction, Revit/Archicad/Unity documentation, CSV samples, and export summaries`
+- `game4automation/realvirtual-WEB` - `Studied in Wave 345 as a web industrial digital-twin/HMI surface with React/TypeScript annotation panels, tooltips, sim-controller toolbar, layout planner, MCP bridge, and Teams shell`
+
+## 317. Accessibility low-vision audio haptics and sign-language VR tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-346-accessibility-low-vision-audio-haptics-and-sign-language-vr-tools.md`
+- `../landscape/project-families.md`
+
+- `microsoft/SeeingVRtoolkit` - `Studied in Wave 346 as an accessibility toolkit with magnification shaders, post-processing tools, SteamVR bindings, and low-vision support framing`
+- `SuHCI/MagniVR` - `Studied in Wave 346 as a magnifier-focused VR prototype that builds on SeeingVR-style tools, render textures, hand-held magnifier prefabs, and challenge scenes`
+- `xability/punch-pulse` - `Studied in Wave 346 as an accessible VR boxing game with audio-direction cues, boundary collision sounds, menu toggles, haptics/Bhaptics assets, and audio mixers`
+- `hojats7731/VRSignify` - `Studied in Wave 346 as a source-light Quest 3 ASL-to-text product direction marker with hand tracking and custom ML claims but limited visible donor scripts`
+- `dillondrum70/ASL-Passthrough` - `Studied in Wave 346 as a Quest hand tracking and passthrough ASL/spell gesture recognizer with HandPose/HandGesture assets, pose stack, hold times, null-time tolerance, two-hand gestures, and editor pose capture`
+- `cpvrlab/vrTrainingFingerAlphabet` - `Studied in Wave 346 as an Oculus Quest finger alphabet trainer with saved hand forms, finger-angle/tip-distance/wrist-orientation scoring, debug canvas, virtual hand feedback, and German documentation`
+
+## 318. NeRF Gaussian splat and light-field VR viewers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-347-nerf-gaussian-splat-and-light-field-vr-viewers.md`
+- `../landscape/project-families.md`
+
+- `uhhhci/immersive-ngp` - `Studied in Wave 347 as a Unity/instant-ngp stereo NeRF renderer with native plug-in wrapper, external textures, OpenGL/OpenVR/MRTK setup, DLSS support, 6DoF locomotion, volume slices, crop/FoV/edit concepts, and Magic NeRF Lens branch`
+- `alexwing/nerf_Unity_VR` - `Studied in Wave 347 as a smaller Unity NeRF VR experiment with camera/depth/scene scripts, Quest/URP project settings, and source-light but useful scene-shell evidence`
+- `zachdrouin/GaussianSplatViewer` - `Studied in Wave 347 as a Quest 3 Gaussian splat viewer with async binary PLY loader, Burst jobs, Gaussian data model, compute shaders, radix sort, culling, LOD/streaming managers, VR file browser, and locomotion`
+- `julienkay/LightfieldVideoUnity` - `Studied in Wave 347 as a release-only light-field video viewer concept for Quest/Rift with compiled releases and explicit Unity/proprietary playback caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

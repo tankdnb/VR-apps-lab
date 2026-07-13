@@ -1560,6 +1560,23 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on physics hands, two-hand interactions,
   XR Hands capture/playback, and WebXR hand prototypes.
 
+- `vr-projects-wave-344-molecular-scientific-visualization-and-interactive-simulation-viewers.md`
+  Next GitHub discovery wave focused on molecular/scientific viewers, file
+  parsers, trajectories, live simulation sessions, measurement, and
+  manipulation.
+
+- `vr-projects-wave-345-cad-bim-industrial-xr-and-training-workflows.md`
+  Next GitHub discovery wave focused on CAD/BIM inspection, import/export,
+  industrial training, metadata pipelines, edit logs, and HMI annotations.
+
+- `vr-projects-wave-346-accessibility-low-vision-audio-haptics-and-sign-language-vr-tools.md`
+  Next GitHub discovery wave focused on low-vision tools, audio/haptic cues,
+  sign-language recognition, hand-pose validation, and accessibility caveats.
+
+- `vr-projects-wave-347-nerf-gaussian-splat-and-light-field-vr-viewers.md`
+  Next GitHub discovery wave focused on NeRF, Gaussian splat, and light-field
+  VR viewer shells.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

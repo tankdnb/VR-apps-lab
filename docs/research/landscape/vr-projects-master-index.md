@@ -1135,3 +1135,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-343-physics-hands-two-hand-interaction-and-hand-data-capture-baselines.md`
   physics hands, two-hand object constraints, XR Hands capture/playback, and
   WebXR hand prototypes.
+- `vr-projects-wave-344-molecular-scientific-visualization-and-interactive-simulation-viewers.md`
+  molecular/scientific viewers, domain import, trajectories, simulation
+  sessions, measurement, and manipulation.
+- `vr-projects-wave-345-cad-bim-industrial-xr-and-training-workflows.md`
+  CAD/BIM inspection, metadata pipelines, industrial training, edit logs,
+  authoring-tool apply-back, and HMI annotations.
+- `vr-projects-wave-346-accessibility-low-vision-audio-haptics-and-sign-language-vr-tools.md`
+  accessibility magnifiers, directional audio/haptics, ASL/finger alphabet
+  gesture validation, and consent/capability caveats.
+- `vr-projects-wave-347-nerf-gaussian-splat-and-light-field-vr-viewers.md`
+  NeRF native texture handoff, Quest splat viewers, GPU sorting/culling, VR
+  file browsers, and light-field playback caveats.

@@ -10680,6 +10680,97 @@ gestures, and grab rules. It suggests:
 - physics-hand safety notes;
 - browser/native hand data comparison matrices.
 
+## Family 323: Molecular scientific visualization and interactive simulation viewers
+
+This family covers scientific XR viewers that import domain files, render
+molecular or scientific structures, play or stream trajectories, and expose
+measurement or manipulation tools. The reusable lesson is to keep domain data
+adapters, representation layers, simulation/session transport, VR input, and
+measurement UI separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `LBT-CNRS/UnityMol-Releases` | Studied in Wave 344 | Large molecular workbench with many file parsers, trajectory support, selection language, Python console, representations, save/load, and VR scenes |
+| `ur-whitelab/simview` | Studied in Wave 344 | HOOMD/ZeroMQ viewer with frame queues, interpolated positions, particle names, bonds, GPU molecule updates, VR/AR scenes, and instructor view |
+| `kwstanths/MRend` | Studied in Wave 344 | Minimal PDB parser/spawner baseline with ATOM/HETATM parsing and Angstrom-to-nanometer conversion |
+| `WangLabforComputationalBiology/VisionMol` | Studied in Wave 344 | Quest protein viewer with representations, labels, distance measurement, molecule splicing, residue coloring, and VR manipulation |
+| `RBVI/LookSee` | Studied in Wave 344 | ChimeraX-to-Quest GLTF handoff model using GLTFast and Oculus/OpenXR loaders |
+| `IRL2/nanover-imd-vr` | Studied in Wave 344 | Interactive molecular dynamics client with service discovery, WebSocket/autoconnect, controller manager, passthrough, calibration, and commands |
+
+### Consolidation note
+
+This family matters because scientific VR tools need a reusable viewer shell
+that can swap parser/transport modules without rewriting the interaction model.
+It suggests a branch around domain-data adapters, measurement widgets,
+trajectory/session playback, and remote simulation controls.
+
+## Family 324: CAD BIM industrial XR and training workflows
+
+This family covers engineering and industrial XR flows across model inspection,
+CAD import/export, BIM metadata extraction, Revit/Archicad handoffs, task-based
+training, LLM/STT assistant panels, and HMI dashboards. The reusable lesson is
+to treat geometry, metadata, task state, annotations, edit logs, and
+authoring-tool mutation as separate layers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `LukeA25/vrCadViewer` | Studied in Wave 345 | Quest CAD inspection app with grab, slice, explode, draw, pointer tools, EzySlice, and mode switching |
+| `UnityCommunity/CADImportExport` | Source-light marker in Wave 345 | Runtime CAD import/export direction for Unity desktop and Quest/Android targets |
+| `giorgosfatouros/XR2IND-VR` | Studied in Wave 345 | Industrial training with classrooms, task whiteboards, interactive routers/switches, STT, LLM REST panel, and RAG/manual dependency |
+| `krishnahsanghani-netizen/visualyze-core` | Studied in Wave 345 | VR-to-Revit edit-log workflow with JSON edits, coordinate conversion, confirmation, and Revit transaction application |
+| `isaddiq/BIMUniXchange` | Studied in Wave 345 | Revit/Archicad/Unity BIM pipeline with Archicad metadata extraction, CSV samples, and export summaries |
+| `game4automation/realvirtual-WEB` | Studied in Wave 345 | Industrial HMI web surface with annotations, tooltips, sim controls, layout planner, MCP bridge, and Teams shell |
+
+### Consolidation note
+
+This family matters because XR engineering tools should be safe workbenches,
+not direct destructive editors. It suggests a product branch around inspect,
+slice, annotate, validate, write edit logs, and apply them through explicit
+CAD/BIM adapters with rollback and provenance.
+
+## Family 325: Accessibility low-vision audio haptics and sign-language VR tools
+
+This family covers low-vision magnification, audio and haptic substitution,
+accessibility game feedback, ASL/sign recognition, and finger alphabet
+training. The reusable lesson is to keep capability sensing, accessibility
+transforms, gesture validation, output surfaces, and privacy/consent separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `microsoft/SeeingVRtoolkit` | Studied in Wave 346 | Accessibility toolkit with magnification shaders, post-process tools, bindings, and low-vision support framing |
+| `SuHCI/MagniVR` | Studied in Wave 346 | Hand-held magnifier prototype with render textures, manager/prefab wiring, and SeeingVR-style tools |
+| `xability/punch-pulse` | Studied in Wave 346 | Accessible boxing game with directional audio cues, boundary audio, menu toggles, haptics assets, and audio mixers |
+| `hojats7731/VRSignify` | Source-light marker in Wave 346 | Quest 3 ASL-to-text direction with hand tracking and custom ML framing but limited visible donor scripts |
+| `dillondrum70/ASL-Passthrough` | Studied in Wave 346 | HandPose/HandGesture assets, pose stack, hold/null-time gesture matching, two-hand gestures, and editor pose capture |
+| `cpvrlab/vrTrainingFingerAlphabet` | Studied in Wave 346 | Finger alphabet trainer with saved hand forms, weighted orientation/finger/tip scoring, debug canvas, and virtual hand feedback |
+
+### Consolidation note
+
+This family matters because accessibility should be a reusable system layer.
+It suggests a branch around magnifier surfaces, audio/haptic alternatives,
+gesture-to-text pipelines, sign-learning validators, and explicit capability
+and privacy defaults.
+
+## Family 326: NeRF Gaussian splat and light-field VR viewers
+
+This family covers nonstandard spatial media viewers where the main challenge
+is separating asset discovery, loading, GPU/native rendering, stereo output,
+locomotion, quality scaling, and platform caveats.
+
+| Project | Status | Notes |
+|---|---|---|
+| `uhhhci/immersive-ngp` | Studied in Wave 347 | Unity/instant-ngp stereo NeRF renderer with native plug-in wrapper, external textures, GL plugin events, DLSS, locomotion, crop/FoV/edit concepts |
+| `alexwing/nerf_Unity_VR` | Studied in Wave 347 | Smaller Unity NeRF VR scene shell with camera/depth scripts and Quest/URP settings |
+| `zachdrouin/GaussianSplatViewer` | Studied in Wave 347 | Quest splat viewer with async PLY loader, Burst jobs, compute shaders, radix sort, culling, LOD/streaming, VR file browser, and locomotion |
+| `julienkay/LightfieldVideoUnity` | Release-only marker in Wave 347 | Light-field video viewer concept for Quest/Rift with compiled releases and explicit proprietary playback caveats |
+
+### Consolidation note
+
+This family matters because spatial media viewers should share browsing,
+navigation, capability, and performance shells even when the renderer changes.
+It suggests a branch around a generic spatial-media descriptor and pluggable
+NeRF/splat/light-field/panoramic render adapters.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.
