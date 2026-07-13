@@ -5526,6 +5526,48 @@ Primary docs:
 - `Rufus31415/MixedRealityToolkit-Unity-WebXR` - `Studied with deprecation caveat in Wave 427 as MRTK WebXR/WebGL POC with transparent Unity canvas, Three.js/WebXR camera bridge, SendMessage transform JSON, and hard-coded calibration caveats`
 - `Rufus31415/HPTK-Sample-WebXR` - `Studied in Wave 427 as HPTK/SimpleWebXR hand-joint adapter with session/availability confidence gates, WebXR-to-HPTK rotation conversion, bone mapping, and editor fixtures`
 
+## 399. PCVR launch profile and Quest operator companion tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-428-pcvr-launch-profile-and-quest-operator-companion-tools.md`
+- `../landscape/project-families.md`
+
+- `harryeffinpotter/VRL` - `Studied in Wave 428 as Windows PCVR launch-profile generator with Unity/Unreal target detection, Virtual Desktop/Link/Oculus launch templates, AppData settings, and generated shortcut/wrapper caveats`
+- `MesmerPrism/Rusty-XR-Companion-Apps` - `Studied in Wave 428 as Quest operator companion with shared WPF/CLI/MCP operation catalog, safety-gated command planning, managed tooling, app/runtime profiles, diagnostics bundles, and profile caveats`
+
+## 400. Quest hand pose streaming and ADB telemetry companions
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-429-quest-hand-pose-streaming-and-adb-telemetry-companions.md`
+- `../landscape/project-families.md`
+
+- `MOVIN3D/MOVIN-MetaQuest-APK` - `Studied in Wave 429 as APK-only Quest hand-streaming companion reference with ADB install, developer-mode setup, controller-only UI, Wi-Fi host discovery, manual IP fallback, reconnect state, and product/setup caveat`
+- `rail-berkeley/oculus_reader` - `Studied in Wave 429 as Quest pose/button telemetry bridge with APK bootstrap, ADB USB/TCP transport, tagged logcat parser, transform/button cache, ROS option, and active-fork caveat`
+
+## 401. WebXR hand gesture avatar and browser interaction microtools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-430-webxr-hand-gesture-avatar-and-browser-interaction-microtools.md`
+- `../landscape/project-families.md`
+
+- `AlbertoElias/webxr-hand-tracking` - `Studied in Wave 430 as WebXR hand/avatar model adapter harness with three.js hand/controller setup, pinch-to-cycle model switching, and controller fallback rays`
+- `kimbanica/aframe-libras` - `Studied in Wave 430 as A-Frame/WebXR gesture trainer with capability checks, joint markers, thumb-index distance threshold, dwell timer, target gesture, and calibration caveats`
+- `Phocidae-dev/Kinetic-Swarm` - `Studied in Wave 430 as WebXR hand interaction microgame with gesture hints, input-source processing, orb state machine, lift/freeze/push/draw interactions, and single-file prototype caveats`
+
+## 402. Domain-specific VR game timer overlays and helper microtools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-431-domain-specific-vr-game-timer-overlays-and-helper-microtools.md`
+- `../landscape/project-families.md`
+
+- `84z0r/PhasmoTimer` - `Studied in Wave 431 as external no-memory-reading Phasmophobia timer overlay with foreground gating, global hotkeys, JSON config, feature toggles, UI styling, and domain-data freshness caveats`
+- `SteveMarkhamGIT/PhasmoTimer` - `Studied in Wave 431 as bitmap-rendered timer surface with resource layers, digit glyph loader, hover/touch masks, output image buffer, and OpenVR texture-surface follow-up`
+- `DrBrad/phastimer` - `Studied in Wave 431 as browser/OBS-friendly Phasmophobia timer helper with DOM controls, 16 ms update loop, smudge/Obambo/ghost-speed state, and no native VR integration caveat`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

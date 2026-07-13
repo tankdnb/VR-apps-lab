@@ -12239,6 +12239,76 @@ This family matters because many Unity interaction systems can become
 browser-delivered XR surfaces if browser session plumbing, data providers, and
 toolkit interaction code remain cleanly separated.
 
+## Family 407: PCVR launch profiles and Quest operator companions
+
+This family covers launcher generators, runtime profile shortcuts, Quest app
+catalogs, managed ADB/Meta tooling, diagnostics bundles, and safety-gated
+operator surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `harryeffinpotter/VRL` | Studied in Wave 428 | Windows PCVR launch-profile generator with Unity/Unreal target detection, Virtual Desktop/Link/Oculus launch templates, AppData settings, and generated wrappers |
+| `MesmerPrism/Rusty-XR-Companion-Apps` | Studied in Wave 428 | Quest operator companion with shared WPF/CLI/MCP operation catalog, command planning, managed tools, app/runtime profiles, and diagnostics bundles |
+
+### Consolidation note
+
+This family matters because many VR utilities fail before runtime: the user needs
+the right launch mode, package id, tool path, device status, and rollback path.
+Future helper apps should treat those details as visible profiles, not hidden
+commands.
+
+## Family 408: Quest hand pose and ADB telemetry companions
+
+This family covers Quest-side companions, pose/button telemetry, hand-streaming
+setup, ADB install/bootstrap, Wi-Fi host discovery, logcat/TCP transports, and
+connection-state UX.
+
+| Project | Status | Notes |
+|---|---|---|
+| `MOVIN3D/MOVIN-MetaQuest-APK` | Studied in Wave 429 | APK-only Quest hand-streaming setup reference with controller-only UI, Wi-Fi host discovery, manual IP fallback, reconnect state, and permission checklist |
+| `rail-berkeley/oculus_reader` | Studied in Wave 429 | Quest pose/button telemetry bridge with APK bootstrap, ADB USB/TCP transport, tagged logcat parser, and latest transform/button cache |
+
+### Consolidation note
+
+This family matters because headset/controller/hand data can be useful to desktop
+tools without becoming a full runtime integration. Transport, schema, permission,
+and consent boundaries need to be explicit.
+
+## Family 409: WebXR hand gesture avatar and browser interaction labs
+
+This family covers WebXR hand-joint sampling, browser capability gates, gesture
+training, avatar hand model adapters, direct hand manipulation, gesture hints,
+and browser-first interaction experiments.
+
+| Project | Status | Notes |
+|---|---|---|
+| `AlbertoElias/webxr-hand-tracking` | Studied in Wave 430 | three.js/WebXR hand/avatar adapter harness with pinch-to-cycle model switching and controller fallback rays |
+| `kimbanica/aframe-libras` | Studied in Wave 430 | A-Frame/WebXR gesture trainer with joint markers, thumb-index threshold, dwell acceptance, and target gesture UX |
+| `Phocidae-dev/Kinetic-Swarm` | Studied in Wave 430 | WebXR hand microgame with gesture hints, input-source processing, orb state machine, and lift/freeze/push/draw interactions |
+
+### Consolidation note
+
+This family matters because hand tracking becomes reusable only when raw joints,
+target gestures, confidence/dwell rules, visual feedback, and model adapters can
+be inspected separately.
+
+## Family 410: Domain-specific VR game timer and helper overlays
+
+This family covers narrow game-helper timers, no-memory-reading policies,
+foreground/hotkey gates, bitmap or browser timer surfaces, domain-state models,
+and freshness labels for game-specific data.
+
+| Project | Status | Notes |
+|---|---|---|
+| `84z0r/PhasmoTimer` | Studied in Wave 431 | External Phasmophobia timer overlay with no-memory policy, foreground checks, global hotkeys, JSON config, and timer/UI settings |
+| `SteveMarkhamGIT/PhasmoTimer` | Studied in Wave 431 | Bitmap-rendered timer surface with image layers, digit glyph resources, hover/touch masks, and output texture buffer |
+| `DrBrad/phastimer` | Studied in Wave 431 | Browser/OBS-friendly timer helper with smudge/Obambo/ghost-speed state and simple web-panel portability |
+
+### Consolidation note
+
+This family matters because a tiny domain tool can be valuable in VR when it is
+transparent, focus-aware, reversible, and honest about game-data freshness.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

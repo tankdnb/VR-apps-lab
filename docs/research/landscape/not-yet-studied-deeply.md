@@ -3212,6 +3212,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 350. `Vendor OpenXR sensing setup follow-up across scoped registries, loader/feature toggles, permissions, gaze/plane capability probes, setup mutation audit logs, and cross-vendor fallback labels`
 351. `Pose solver/tracker pipeline follow-up across neutral body/face/hand schemas, confidence/stale metadata, OSC/WebSocket/UDP adapters, avatar binding maps, recording/session artifacts, and privacy labels`
 352. `WebXR toolkit retrofit follow-up across Unity WebGL host pages, transparent canvas layers, browser hand/camera schemas, coordinate conversion, WebXR feature gates, and maintained adapter comparisons`
+353. `PCVR launch/operator companion follow-up across transparent launcher outputs, runtime/profile schemas, Virtual Desktop/Link/OpenXR mode mapping, managed tool provenance, command plans, and rollback UX`
+354. `Quest hand/pose telemetry companion follow-up across source-available APKs, WebSocket/OSC/BLE transports, packet schema versions, timestamps, consent, coordinate frames, and reconnect state`
+355. `WebXR hand interaction lab follow-up across modular gesture classifiers, calibration thresholds, hand model adapters, joint debug layers, confidence labels, and browser runtime comparisons`
+356. `Domain-specific timer overlay follow-up across non-Phasmophobia game helpers, no-memory policies, focus gates, global-hotkey ownership, event timer schemas, and data freshness labels`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

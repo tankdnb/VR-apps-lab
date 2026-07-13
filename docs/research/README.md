@@ -427,6 +427,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-425-magic-leap-openxr-sensing-gaze-plane-and-setup-samples.md`
 - `landscape/vr-projects-wave-426-mocap-pose-solving-avatar-tracking-and-research-recording-donors.md`
 - `landscape/vr-projects-wave-427-webxr-toolkit-retrofit-bridges-for-mrtk-and-hptk.md`
+- `landscape/vr-projects-wave-428-pcvr-launch-profile-and-quest-operator-companion-tools.md`
+- `landscape/vr-projects-wave-429-quest-hand-pose-streaming-and-adb-telemetry-companions.md`
+- `landscape/vr-projects-wave-430-webxr-hand-gesture-avatar-and-browser-interaction-microtools.md`
+- `landscape/vr-projects-wave-431-domain-specific-vr-game-timer-overlays-and-helper-microtools.md`
 
 ## Archive Navigation
 

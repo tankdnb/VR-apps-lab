@@ -21081,3 +21081,128 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   WebXR prototypes, browser-hosted utility panels, toolkit portability notes,
   and neutral hand/camera schema work.
+
+## Method 873: PCVR launch profile and operator companion surface
+
+- What it is:
+  make headset/runtime launch modes, Quest app profiles, tool paths, and
+  diagnostics actions visible as profiles and planned operations.
+- Good for:
+  PCVR launchers, Quest companion apps, ADB helpers, runtime switchers,
+  diagnostics launchers, and safe automation surfaces.
+- Why it matters:
+  many VR workflows fail because the wrong launcher, runtime flag, package id, or
+  tool path is used before the actual app starts.
+- Source evidence:
+  `harryeffinpotter/VRL` and `MesmerPrism/Rusty-XR-Companion-Apps`.
+- Reusable core:
+  target discovery, launch-mode templates, generated or transparent shortcuts,
+  app/runtime catalog, managed tool locator, device/app status, command plan,
+  safety gate, CLI/UI/MCP operation surface, and diagnostics bundle.
+- Source evidence details:
+  `VRL` scans Unity/Unreal game folders and emits Virtual Desktop/Link/Oculus
+  wrappers; `Rusty-XR Companion Apps` shares operation ids across WPF, CLI, and
+  MCP while exposing side-effect plans and app/runtime profiles.
+- Do not copy directly:
+  opaque generated binaries, bundled tool converters without provenance,
+  project-specific package ids, or side-effect automation without a visible
+  command plan.
+- Maturity:
+  strong product pattern; needs a small neutral profile schema before reuse.
+- Best fit for `VR-apps-lab`:
+  launcher helpers, Quest operator consoles, diagnostics panels, and runtime
+  setup tools.
+
+## Method 874: Quest hand pose and ADB telemetry companion
+
+- What it is:
+  expose headset/controller/hand telemetry from Quest to desktop tools through a
+  companion app plus an explicit transport and parser.
+- Good for:
+  mocap helpers, robotics/teleoperation readers, tracker bridges, calibration
+  tools, hand-streaming companions, and desktop diagnostics.
+- Why it matters:
+  desktop utilities often need Quest pose or hand state without becoming a full
+  headset app or runtime layer.
+- Source evidence:
+  `MOVIN3D/MOVIN-MetaQuest-APK` and `rail-berkeley/oculus_reader`.
+- Reusable core:
+  install/bootstrap path, permission checklist, controller-only setup when hands
+  are captured, host discovery/manual IP fallback, connection/reconnect state,
+  transport mode, packet schema, parser, latest-state cache, and stop command.
+- Source evidence details:
+  MOVIN documents Quest APK setup, local network permissions, host discovery, and
+  hand-tracking status; `oculus_reader` starts a Quest APK via ADB, tails tagged
+  logcat records, and parses transforms/buttons into Python state.
+- Do not copy directly:
+  APK-only binaries as code donors, unversioned logcat records as production
+  transport, or hand/controller telemetry without privacy and consent framing.
+- Maturity:
+  useful bridge pattern; needs protocol/versioning and non-ADB transport
+  comparison.
+- Best fit for `VR-apps-lab`:
+  Quest telemetry sidecars, pose readers, hand-streaming experiments, and
+  bridge diagnostics.
+
+## Method 875: WebXR hand gesture and avatar interaction lab
+
+- What it is:
+  browser-first hand tooling that makes WebXR capability, joints, gesture
+  thresholds, avatar models, and direct manipulation visible and tunable.
+- Good for:
+  hand tracking demos, gesture trainers, avatar hand model comparisons,
+  accessibility experiments, browser panels, and WebXR interaction prototypes.
+- Why it matters:
+  hand interactions are hard to reuse when raw joints, visual feedback, target
+  gestures, and recognition thresholds are hidden inside one demo.
+- Source evidence:
+  `AlbertoElias/webxr-hand-tracking`, `kimbanica/aframe-libras`, and
+  `Phocidae-dev/Kinetic-Swarm`.
+- Reusable core:
+  WebXR capability gate, hand/controller fallback, joint sampling, marker layer,
+  target gesture, threshold and dwell logic, gesture cooldown, model adapter,
+  gesture hint layer, and object state machine.
+- Source evidence details:
+  `webxr-hand-tracking` cycles hand/avatar models on pinch; `aframe-libras`
+  samples joints and validates a dwell gesture; `Kinetic-Swarm` maps hand states
+  into orb lift/freeze/push/draw interactions.
+- Do not copy directly:
+  magic thresholds, one-hand-only assumptions, CDN/runtime choices without
+  provenance, or monolithic hackathon single-file structure.
+- Maturity:
+  strong interaction-lab pattern; needs modular gesture definitions and
+  calibration work.
+- Best fit for `VR-apps-lab`:
+  WebXR hand-joint visualizers, gesture tuning samples, avatar hand comparisons,
+  and browser-based XR input labs.
+
+## Method 876: Domain-specific VR game helper timer overlay
+
+- What it is:
+  turn a narrow game or activity rule set into a focus-aware timer/helper panel
+  without reading game memory or pretending to be a full mod.
+- Good for:
+  VR game helpers, manual event timers, stream/OBS panels, overlay reminders,
+  cooldown trackers, and niche one-value utilities.
+- Why it matters:
+  small domain helpers can be highly useful in-headset if they are transparent,
+  configurable, and honest about data freshness.
+- Source evidence:
+  `84z0r/PhasmoTimer`, `SteveMarkhamGIT/PhasmoTimer`, and `DrBrad/phastimer`.
+- Reusable core:
+  explicit domain timer model, no-memory policy, process/focus gate, hotkeys or
+  simple UI controls, reset modes, warning thresholds, visual timer surface,
+  JSON/config data, browser fallback, and freshness/source labels.
+- Source evidence details:
+  `84z0r/PhasmoTimer` defines foreground gates, hotkeys, JSON config, and timer
+  constants; `SteveMarkhamGIT/PhasmoTimer` renders timer panels as bitmap layers;
+  `phastimer` implements a browser-panel timer loop and ghost-speed controls.
+- Do not copy directly:
+  hard-coded game constants without freshness labels, global hotkeys outside
+  focus ownership, or domain imagery/resources as reusable assets.
+- Maturity:
+  practical micro-utility pattern; needs a neutral data schema for timers and
+  warnings.
+- Best fit for `VR-apps-lab`:
+  overlay microtools, domain timer panels, stream-friendly helpers, and
+  small-value VR utility prototypes.

@@ -1343,3 +1343,16 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-427-webxr-toolkit-retrofit-bridges-for-mrtk-and-hptk.md`
   WebXR toolkit retrofits with Unity WebGL host pages, transparent canvases,
   browser camera bridges, hand-joint providers, and toolkit adapter boundaries.
+- `vr-projects-wave-428-pcvr-launch-profile-and-quest-operator-companion-tools.md`
+  PCVR launch-profile generators and Quest operator companions with runtime
+  launch modes, shared operation catalogs, safety gates, managed tools, and
+  diagnostics bundles.
+- `vr-projects-wave-429-quest-hand-pose-streaming-and-adb-telemetry-companions.md`
+  Quest hand/pose telemetry companions with APK setup, controller-only capture
+  UI, host discovery, ADB USB/TCP transport, logcat parsing, and schema caveats.
+- `vr-projects-wave-430-webxr-hand-gesture-avatar-and-browser-interaction-microtools.md`
+  WebXR hand gesture and avatar labs with joint markers, dwell gestures, pinch
+  model switching, gesture hints, and hand-driven object state machines.
+- `vr-projects-wave-431-domain-specific-vr-game-timer-overlays-and-helper-microtools.md`
+  Domain-specific timer helpers with no-memory overlays, focus/hotkey gates,
+  bitmap timer panels, browser fallback, and freshness labels.

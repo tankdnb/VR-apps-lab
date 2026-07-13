@@ -1919,6 +1919,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on Unity WebGL/WebXR toolkit retrofits,
   transparent canvas composition, camera bridges, and WebXR hand data providers.
 
+- `vr-projects-wave-428-pcvr-launch-profile-and-quest-operator-companion-tools.md`
+  Next GitHub discovery wave focused on PCVR launch-profile generation, Quest
+  operator companions, safety-gated command plans, and diagnostics bundles.
+
+- `vr-projects-wave-429-quest-hand-pose-streaming-and-adb-telemetry-companions.md`
+  Next GitHub discovery wave focused on Quest hand/pose telemetry, APK setup,
+  ADB/logcat bridges, host discovery, and permission/status UX.
+
+- `vr-projects-wave-430-webxr-hand-gesture-avatar-and-browser-interaction-microtools.md`
+  Next GitHub discovery wave focused on WebXR hand joints, gesture trainers,
+  avatar model adapters, and browser-first hand interaction labs.
+
+- `vr-projects-wave-431-domain-specific-vr-game-timer-overlays-and-helper-microtools.md`
+  Next GitHub discovery wave focused on domain-specific timer overlays, no-memory
+  game helpers, hotkey gates, bitmap panels, and browser fallback timers.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

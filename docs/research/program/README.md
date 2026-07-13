@@ -3036,3 +3036,31 @@ repeatable way.
 
 - `github-research-wave-427-backlog.md`
   Executed backlog for the Wave 427 pass.
+
+- `github-research-wave-428-plan.md`
+  Wave 428 research plan focused on PCVR launch profiles and Quest operator
+  companion tools.
+
+- `github-research-wave-428-backlog.md`
+  Executed backlog for the Wave 428 pass.
+
+- `github-research-wave-429-plan.md`
+  Wave 429 research plan focused on Quest hand/pose streaming and ADB telemetry
+  companions.
+
+- `github-research-wave-429-backlog.md`
+  Executed backlog for the Wave 429 pass.
+
+- `github-research-wave-430-plan.md`
+  Wave 430 research plan focused on WebXR hand gesture, avatar, and browser
+  interaction microtools.
+
+- `github-research-wave-430-backlog.md`
+  Executed backlog for the Wave 430 pass.
+
+- `github-research-wave-431-plan.md`
+  Wave 431 research plan focused on domain-specific VR game timer overlays and
+  helper microtools.
+
+- `github-research-wave-431-backlog.md`
+  Executed backlog for the Wave 431 pass.

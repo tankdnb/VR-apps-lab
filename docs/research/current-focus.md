@@ -17,6 +17,27 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 428-431
+
+- `PCVR launch profile and Quest operator companion tools`
+  add launch/setup coverage around Unity/Unreal executable discovery, Virtual
+  Desktop/Link/Oculus launch templates, generated shortcut caveats, shared
+  WPF/CLI/MCP operation catalogs, safety-gated command plans, managed tools,
+  app/runtime profiles, and diagnostics bundles.
+- `Quest hand/pose streaming and ADB telemetry companions`
+  add headset telemetry coverage around APK install/bootstrap, developer-mode
+  setup, controller-only hand-streaming UI, local Wi-Fi host discovery, manual
+  IP fallback, ADB USB/TCP transport, logcat packet parsing, and consent/schema
+  caveats.
+- `WebXR hand gesture, avatar, and browser interaction microtools`
+  add browser-hand coverage around WebXR capability gates, joint markers,
+  thumb/index dwell gestures, avatar model adapter switching, controller
+  fallback rays, gesture hints, and direct hand-driven object state machines.
+- `Domain-specific VR game timer overlays and helper microtools`
+  add micro-utility coverage around no-memory-reading overlays, foreground and
+  global-hotkey gates, JSON timer config, bitmap-rendered timer panels,
+  browser/OBS fallback panels, and domain-data freshness labels.
+
 ## Current additions from Waves 424-427
 
 - `OpenVR chaperone debug, boundary safety, and geometry IO microtools`
