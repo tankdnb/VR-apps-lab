@@ -17,6 +17,28 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 420-423
+
+- `VR media, cockpit library, and social audio panels`
+  add companion-panel coverage around Jellyfin VR theater state, MPV playback,
+  cockpit chart/map/manual tablets, simulator command bindings, music
+  recognition overlays, SteamVR/XSOverlay/OVR Toolkit notifications, VRChat
+  ChatBox output, local track libraries, and service-link consent.
+- `Lighthouse base-station and home automation bridges`
+  add VR-room automation coverage around BLE base-station identity, Home
+  Assistant switch entities, grouped devices, Rust CLI targeting, retries,
+  scan timeouts, permission caveats, and safe all-device command design.
+- `Unity OpenVR tracker and input utility facades`
+  add Unity utility coverage around direct OpenVR pose access, tracker serial
+  lookup, battery/screenshot/device inventory helpers, fake tracker managers,
+  calibration persistence, no-HMD workflows, UI pointer modules, and keyboard
+  prefabs.
+- `VR comfort, text entry, and compositor microtools`
+  add focused UX-helper coverage around SteamVR-era locomotion modules, ready
+  player prefabs, dynamic colliders, predictive VR keyboards, dictionary
+  generation, compositor supersample patching, overlay-app registration, and
+  rollback/backup needs.
+
 ## Current additions from Waves 416-419
 
 - `XR testbeds, conformance runners, and reproducible packaging`

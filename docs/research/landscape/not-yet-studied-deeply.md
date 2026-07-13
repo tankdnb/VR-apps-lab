@@ -3204,6 +3204,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 342. `Hosted WebXR companion follow-up across host resolution, private hook warnings, camera-access/session feature gates, frame hooks, capture lifecycle, preview/share flows, and browser regression workarounds`
 343. `OSC micro-sidecar follow-up across avatar parameter schemas, config files, GUI page boundaries, Python/Rust/WPF entry points, desktop wrappers, PKGBUILDs, and cross-distro distribution hygiene`
 344. `Retrofit launcher/capability layer follow-up across profile UI, injected loader IPC, graphics/runtime/game-engine service boundaries, feature claims, service connection state, conformance feedback, and placeholder replacement`
+345. `VR media/cockpit companion follow-up across provider descriptors, panel placement, focus/keyboard rules, playback/document state, notification routers, local history, consent, and service fallback`
+346. `Base-station automation follow-up across BLE target discovery, stable identifiers, dry-run previews, Home Assistant config-flow migration, ESPHome gateways, retries, permissions, and safe all-device commands`
+347. `Unity tracker/input facade follow-up across OpenVR/OpenXR provider records, stable serial schemas, calibration persistence, fake managers, no-HMD mode, UI pointer modules, and diagnostic labels`
+348. `Comfort text/compositor microtool follow-up across locomotion comfort labels, prediction dictionary provenance, keyboard focus, SteamVR settings backup/restore, overlay-app registration, and rollback UX`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

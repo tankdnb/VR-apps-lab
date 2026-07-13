@@ -12098,6 +12098,76 @@ This family matters because retrofit and capability-injection tools need a hard
 boundary between launcher/profile UX, injected code, runtime service state, and
 the support claims made to users.
 
+## Family 399: VR media cockpit library and social audio panels
+
+This family covers in-headset companion panels for media libraries, cockpit
+documents, maps, recognition results, social notifications, and external service
+outputs.
+
+| Project | Status | Notes |
+|---|---|---|
+| `VersaYT/JellyVR` | Studied in Wave 420 | Godot/OpenXR Jellyfin theater with MPV playback, floating controls, server/login/content states, and keyboard/menu toggles |
+| `fpw/avitab` | Studied in Wave 420 | X-Plane cockpit tablet with chart/map/manual/notes apps, simulator command bindings, and native window/VR panel lifecycle |
+| `Soapwood/VXMusic` | Studied in Wave 420 | Social-VR music recognition companion with HUD notifications, VRChat ChatBox output, service links, logs, and SteamVR plugin install |
+
+### Consolidation note
+
+This family matters because many useful VR tools are companion panels: their
+value comes from provider adapters, placement/focus behavior, notification
+routing, local logs, and clear boundaries around social sharing.
+
+## Family 400: Lighthouse base-station and VR-room automation bridges
+
+This family covers base-station discovery, BLE power commands, grouped hardware
+state, Home Assistant integration, CLI automation, retries, and permission
+caveats.
+
+| Project | Status | Notes |
+|---|---|---|
+| `jariz/homeassistant-basestation` | Studied with archive caveat in Wave 421 | Home Assistant BLE switch entity for Valve Index Base Stations with polling, writes, grouping, and automation ideas |
+| `ShayBox/Lighthouse` | Studied in Wave 421 | Rust CLI/library for Lighthouse V1/V2 power states with target matching, retries, scan timeout, and logging |
+
+### Consolidation note
+
+This family matters because VR-room readiness is not only an app concern. Base
+stations, room presence, smart-home state, SteamVR launch, and shutdown flows
+need a safe hardware automation boundary.
+
+## Family 401: Unity tracker input and VR UI utility facades
+
+This family covers Unity-facing wrappers for OpenVR/OpenXR device poses,
+tracker identity, calibration, simulated modes, UI pointers, keyboards, and
+interaction modules.
+
+| Project | Status | Notes |
+|---|---|---|
+| `gpsnmeajp/EasyOpenVRUtil` | Studied in Wave 422 | Direct OpenVR Unity helper for tracker/controller poses, serials, batteries, screenshots, inventory, and non-VR pose access |
+| `ebadier/ViveTrackers` | Deepened in Wave 422 | Compact Unity Vive Tracker library with manager/list model, fake manager, calibration, CSV serials, and pogo-pin events |
+| `VRMADA/ultimatexr-unity` | Studied in Wave 422 | Broad Unity VR framework with UI pointers, keyboard prefabs, interaction, locomotion, haptics, avatars, and platform guides |
+
+### Consolidation note
+
+This family matters because future tracker and utility prototypes need a stable
+Unity component surface over low-level runtime data, plus simulator/no-HMD
+paths for development and diagnostics.
+
+## Family 402: VR comfort text-entry and compositor microtools
+
+This family covers focused utilities for locomotion comfort, VR text entry,
+prediction keyboards, compositor clarity, and runtime settings patching.
+
+| Project | Status | Notes |
+|---|---|---|
+| `MoonMotionProject/MoonMotion` | Studied in Wave 423 | SteamVR-era Unity locomotion toolkit with ready player, locomotion modules, camera smoothing, dynamic colliders, and project template |
+| `rjth/Punchkeyboard` | Studied in Wave 423 | Unity VR keyboard with autocomplete, next-word prediction, corpora/dictionary generation, and physical key feedback |
+| `elvissteinjr/SteamVR-ForceCompositorScale` | Studied in Wave 423 | Tiny SteamVR compositor-scale patcher with overlay-app registration, settings mutation, restart caveats, and backup warning |
+
+### Consolidation note
+
+This family matters because small daily-use problems often deserve small tools.
+The reusable lesson is a narrow value proposition, visible settings, explicit
+compatibility labels, and safe rollback when runtime config is mutated.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

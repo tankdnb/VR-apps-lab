@@ -1319,3 +1319,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-419-vr-retrofit-launcher-and-hand-layer-edge-cases.md`
   Flatscreen-to-VR retrofit launchers, injected loaders, OpenXR hand capability
   layers, placeholder launcher notes, and support-boundary caveats.
+- `vr-projects-wave-420-vr-media-cockpit-library-and-social-audio-panels.md`
+  Media/library panels, cockpit tablets, social-VR audio recognition overlays,
+  notification routing, provider adapters, and local history surfaces.
+- `vr-projects-wave-421-lighthouse-base-station-and-home-automation-bridges.md`
+  Lighthouse/base-station BLE control, Home Assistant switch entities, Rust CLI
+  automation, retries, target matching, and VR-room readiness boundaries.
+- `vr-projects-wave-422-unity-openvr-tracker-and-input-utility-facades.md`
+  Unity OpenVR utility facades, tracker inventory, serial stability,
+  calibration, fake managers, no-HMD mode, UI pointers, and keyboard modules.
+- `vr-projects-wave-423-vr-comfort-text-entry-and-compositor-microtools.md`
+  Locomotion comfort, predictive VR keyboards, runtime compositor-scale
+  patching, overlay-app registration, compatibility labels, and rollback needs.

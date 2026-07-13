@@ -2980,3 +2980,31 @@ repeatable way.
 
 - `github-research-wave-419-backlog.md`
   Executed backlog for the Wave 419 pass.
+
+- `github-research-wave-420-plan.md`
+  Wave 420 research plan focused on VR media, cockpit library, and social audio
+  panels.
+
+- `github-research-wave-420-backlog.md`
+  Executed backlog for the Wave 420 pass.
+
+- `github-research-wave-421-plan.md`
+  Wave 421 research plan focused on Lighthouse base-station and home automation
+  bridges.
+
+- `github-research-wave-421-backlog.md`
+  Executed backlog for the Wave 421 pass.
+
+- `github-research-wave-422-plan.md`
+  Wave 422 research plan focused on Unity OpenVR tracker and input utility
+  facades.
+
+- `github-research-wave-422-backlog.md`
+  Executed backlog for the Wave 422 pass.
+
+- `github-research-wave-423-plan.md`
+  Wave 423 research plan focused on VR comfort, text entry, and compositor
+  microtools.
+
+- `github-research-wave-423-backlog.md`
+  Executed backlog for the Wave 423 pass.

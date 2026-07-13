@@ -20821,3 +20821,131 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   retrofit research, launcher UX, capability injection caveats, and support
   boundary checklists.
+
+## Method 865: VR media/cockpit companion panel
+
+- What it is:
+  model media, document, cockpit, recognition, or social-session helpers as
+  provider-backed in-headset panels with explicit placement, focus, notification,
+  and local history boundaries.
+- Good for:
+  media libraries, cockpit tablets, chart/document viewers, recognition
+  overlays, social-VR companions, notification routers, and lightweight
+  session-side panels.
+- Why it matters:
+  users often need useful side information inside VR without turning a helper
+  into the whole application.
+- Source evidence:
+  `VersaYT/JellyVR`, `fpw/avitab`, and `Soapwood/VXMusic`.
+- Reusable core:
+  provider adapter, panel lifecycle, spatial placement, input/focus adapter,
+  playback or document state, notification router, local library/log export,
+  companion startup, settings, and consent gates.
+- Source evidence details:
+  JellyVR OpenXR/Godot state machine and MPV controls, AviTab app launcher and
+  simulator command/window lifecycle, and VXMusic recognition, notification,
+  VRChat, service-link, update, and log flows.
+- Do not copy directly:
+  service-specific credentials, simulator-only APIs, social broadcast defaults,
+  or early-development provider assumptions without privacy and fallback labels.
+- Maturity:
+  strong product pattern; ready to inform future overlay and companion-panel
+  designs.
+- Best fit for `VR-apps-lab`:
+  overlay panels, media/document utilities, social companion tools, and cockpit
+  or operator surfaces.
+
+## Method 866: Base-station automation bridge
+
+- What it is:
+  expose Lighthouse/base-station power state as a small hardware automation
+  surface with discovery, stable identifiers, safe target selection, retries,
+  and higher-level room or launch integration.
+- Good for:
+  VR-room startup/shutdown helpers, Home Assistant integrations, SteamVR launch
+  companions, CLI hardware microtools, and smart-room state orchestration.
+- Why it matters:
+  VR readiness includes external hardware; base-station state should be visible,
+  controllable, and recoverable instead of hidden in manual rituals.
+- Source evidence:
+  `jariz/homeassistant-basestation` and `ShayBox/Lighthouse`.
+- Reusable core:
+  BLE adapter, device discovery, stable ID normalization, state command mapping,
+  availability polling, write retries, grouped control, logging, target preview,
+  and automation hooks.
+- Source evidence details:
+  Home Assistant `SwitchEntity`/Bleak characteristic reads and writes, YAML
+  group automation, Rust `btleplug` adapter scans, V1/V2 UUID selection, target
+  matching, retry loop, and failure aggregation.
+- Do not copy directly:
+  archived integration assumptions, blind all-device writes, raw BLE commands
+  without warnings, or config mutation without user-visible recovery.
+- Maturity:
+  practical microtool method; needs dry-run/list-device UX before implementation.
+- Best fit for `VR-apps-lab`:
+  hardware helpers, room-readiness dashboards, launcher preflight checks, and
+  automation sidecars.
+
+## Method 867: Unity tracker/input utility facade
+
+- What it is:
+  hide low-level OpenVR/OpenXR device reads behind Unity-facing records,
+  components, managers, simulated modes, calibration, and UI pointer modules.
+- Good for:
+  tracker bridges, no-HMD utilities, calibration tools, diagnostics, Unity
+  prototypes, input visualizers, and spatial UI panels.
+- Why it matters:
+  many VR tools need tracker/controller/UI data but do not need the weight or
+  assumptions of a full app framework.
+- Source evidence:
+  `gpsnmeajp/EasyOpenVRUtil`, `ebadier/ViveTrackers`, and
+  `VRMADA/ultimatexr-unity`.
+- Reusable core:
+  runtime adapter, device inventory, stable serials, pose polling, battery and
+  screenshot commands, calibration persistence, fake/simulator mode, button
+  events, Unity component wrappers, pointer modules, and keyboard/UI prefabs.
+- Source evidence details:
+  EasyOpenVRUtil direct OpenVR capabilities, ViveTrackers manager/fake manager
+  calibration and CSV serial flow, and UltimateXR UI pointer/input/keyboard
+  module organization.
+- Do not copy directly:
+  old SteamVR plugin assumptions, full framework scope, bundled samples, or
+  tracker serial policies without diagnostics and migration.
+- Maturity:
+  strong implementation pattern; needs OpenXR action-set comparison and neutral
+  tracker schema.
+- Best fit for `VR-apps-lab`:
+  tracker utilities, Unity samples, diagnostic panels, input abstractions, and
+  no-HMD development flows.
+
+## Method 868: Focused comfort text and compositor microtool
+
+- What it is:
+  solve one daily VR usability pain with a small, visible, reversible helper:
+  locomotion comfort, text entry, or runtime compositor clarity.
+- Good for:
+  locomotion modules, VR keyboards, prediction text panels, SteamVR settings
+  patchers, overlay clarity fixes, and small comfort helpers.
+- Why it matters:
+  narrow utilities can improve VR sessions dramatically, but they must be
+  honest about compatibility, comfort risk, and settings side effects.
+- Source evidence:
+  `MoonMotionProject/MoonMotion`, `rjth/Punchkeyboard`, and
+  `elvissteinjr/SteamVR-ForceCompositorScale`.
+- Reusable core:
+  bounded user pain, prefab/module packaging, prediction dictionary or settings
+  model, user feedback, startup/registration path, dry-run/backup when patching
+  runtime config, compatibility labels, and rollback instructions.
+- Source evidence details:
+  Moon Motion locomotion/player/collider template, Punchkeyboard n-gram and
+  Levenshtein prediction keyboard assets, and ForceCompositorScale compositor
+  supersample setting patch plus overlay-app registration.
+- Do not copy directly:
+  outdated Unity/SteamVR assumptions, corpora without provenance review,
+  silent runtime config edits, or comfort defaults without user explanation.
+- Maturity:
+  practical product pattern; each microtool needs modern compatibility checks
+  before implementation.
+- Best fit for `VR-apps-lab`:
+  comfort helpers, text-entry overlays, SteamVR microtools, and UX friction
+  reducers.

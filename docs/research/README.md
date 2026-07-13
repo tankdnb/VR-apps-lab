@@ -419,6 +419,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-417-webxr-capture-avatar-and-micro-editor-surfaces.md`
 - `landscape/vr-projects-wave-418-vrchat-osc-micro-apps-and-distribution-sidecars.md`
 - `landscape/vr-projects-wave-419-vr-retrofit-launcher-and-hand-layer-edge-cases.md`
+- `landscape/vr-projects-wave-420-vr-media-cockpit-library-and-social-audio-panels.md`
+- `landscape/vr-projects-wave-421-lighthouse-base-station-and-home-automation-bridges.md`
+- `landscape/vr-projects-wave-422-unity-openvr-tracker-and-input-utility-facades.md`
+- `landscape/vr-projects-wave-423-vr-comfort-text-entry-and-compositor-microtools.md`
 
 ## Archive Navigation
 

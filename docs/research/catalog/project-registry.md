@@ -5439,6 +5439,49 @@ Primary docs:
 - `gamenew09/RobloxVRLauncher` - `Reviewed in Wave 419 as empty OpenVR dashboard launcher placeholder with product-reference value only and no code donor value`
 - `ultraleap/OpenXRHandTracking` - `Deepened in Wave 419 as archived implicit hand-tracking API layer with extension gating, service timeout, active-state caveats, conformance fixes, layer-init issues, UWP/WebXR notes, and installer/logging caveats`
 
+## 391. VR media cockpit library and social audio panels
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-420-vr-media-cockpit-library-and-social-audio-panels.md`
+- `../landscape/project-families.md`
+
+- `VersaYT/JellyVR` - `Studied in Wave 420 as Godot/OpenXR Jellyfin VR theater with controller menu toggles, floating MPV playback controls, server/login/content state machine, keyboard panel, and provider caveats`
+- `fpw/avitab` - `Studied in Wave 420 as X-Plane VR cockpit tablet with chart/map/manual/notes app launcher, simulator command bindings, native window/VR panel lifecycle, placement persistence, and provider routing`
+- `Soapwood/VXMusic` - `Studied in Wave 420 as social-VR music recognition companion with Shazam recognition, SteamVR/XSOverlay/OVR Toolkit notifications, VRChat ChatBox output, Spotify/Last.fm links, logs, and SteamVR plugin install`
+
+## 392. Lighthouse base station and home automation bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-421-lighthouse-base-station-and-home-automation-bridges.md`
+- `../landscape/project-families.md`
+
+- `jariz/homeassistant-basestation` - `Studied with archive caveat in Wave 421 as Home Assistant BLE switch entity for Valve Index Base Stations with MAC config, availability polling, power writes, grouping, and automation ideas`
+- `ShayBox/Lighthouse` - `Studied in Wave 421 as Rust Lighthouse power-management CLI/library with V1/V2 UUID handling, scan timeouts, target matching, write retries, logging, and small release-binary profile`
+
+## 393. Unity OpenVR tracker and input utility facades
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-422-unity-openvr-tracker-and-input-utility-facades.md`
+- `../landscape/project-families.md`
+
+- `gpsnmeajp/EasyOpenVRUtil` - `Studied in Wave 422 as Unity direct-OpenVR utility facade for tracker/controller poses, serial lookup, battery, screenshots, device inventory, and non-VR pose access`
+- `ebadier/ViveTrackers` - `Deepened in Wave 422 as compact Unity Vive Tracker library with manager/list model, fake manager, calibration save/load, CSV serial stability, pogo-pin events, test scene, and no-HMD setup docs`
+- `VRMADA/ultimatexr-unity` - `Studied in Wave 422 as broad Unity VR framework reference with modular UI pointers, keyboard prefabs, interaction, locomotion, haptics, avatars, platform guides, and framework-scope caveats`
+
+## 394. VR comfort text entry and compositor microtools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-423-vr-comfort-text-entry-and-compositor-microtools.md`
+- `../landscape/project-families.md`
+
+- `MoonMotionProject/MoonMotion` - `Studied in Wave 423 as SteamVR-era Unity locomotion toolkit with ready VR player, locomotion modules, object interactivity, camera smoothing, dynamic colliders, project template, and version caveats`
+- `rjth/Punchkeyboard` - `Studied in Wave 423 as Unity VR keyboard with autocomplete, next-word prediction, corpora/dictionary generation, Levenshtein matching, keyboard mesh, key feedback, and personalization caveats`
+- `elvissteinjr/SteamVR-ForceCompositorScale` - `Studied in Wave 423 as tiny OpenVR/SteamVR compositor-scale patcher with overlay-app registration, supersample setting mutation, restart caveat, JSON backup warning, and rollback needs`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

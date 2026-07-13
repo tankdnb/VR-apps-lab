@@ -1887,6 +1887,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on flatscreen-to-VR retrofit launchers,
   injected loaders, capability layers, and support-boundary caveats.
 
+- `vr-projects-wave-420-vr-media-cockpit-library-and-social-audio-panels.md`
+  Next GitHub discovery wave focused on media/library panels, cockpit tablets,
+  social-VR recognition overlays, notification routing, and provider boundaries.
+
+- `vr-projects-wave-421-lighthouse-base-station-and-home-automation-bridges.md`
+  Next GitHub discovery wave focused on Lighthouse/base-station BLE control,
+  Home Assistant bridges, CLI automation, retries, and safe target selection.
+
+- `vr-projects-wave-422-unity-openvr-tracker-and-input-utility-facades.md`
+  Next GitHub discovery wave focused on Unity OpenVR tracker utilities, device
+  inventory, calibration, no-HMD modes, UI pointers, and input facades.
+
+- `vr-projects-wave-423-vr-comfort-text-entry-and-compositor-microtools.md`
+  Next GitHub discovery wave focused on locomotion comfort, predictive VR
+  keyboards, compositor clarity patchers, and small reversible UX helpers.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
