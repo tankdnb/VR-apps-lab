@@ -3176,3 +3176,31 @@ repeatable way.
 
 - `github-research-wave-447-backlog.md`
   Executed backlog for the Wave 447 pass.
+
+- `github-research-wave-448-plan.md`
+  Wave 448 research plan focused on SteamVR dashboard overlay control and
+  domain panel surfaces.
+
+- `github-research-wave-448-backlog.md`
+  Executed backlog for the Wave 448 pass.
+
+- `github-research-wave-449-plan.md`
+  Wave 449 research plan focused on spatial audio SDK packages and acoustic
+  simulation boundaries.
+
+- `github-research-wave-449-backlog.md`
+  Executed backlog for the Wave 449 pass.
+
+- `github-research-wave-450-plan.md`
+  Wave 450 research plan focused on haptic pattern libraries and device
+  feedback routing.
+
+- `github-research-wave-450-backlog.md`
+  Executed backlog for the Wave 450 pass.
+
+- `github-research-wave-451-plan.md`
+  Wave 451 research plan focused on VR remote desktop and desktop streaming
+  bridges.
+
+- `github-research-wave-451-backlog.md`
+  Executed backlog for the Wave 451 pass.

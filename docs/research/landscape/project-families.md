@@ -12589,6 +12589,74 @@ This family matters because learning repos can expose many practical affordance
 patterns, but each one must be extracted as a small primitive with provenance
 and dependency boundaries.
 
+## Family 427: SteamVR dashboard domain panels
+
+This family covers in-headset dashboard overlays that expose one external
+desktop/service domain with explicit command bounds, connection state, input
+routing, and overlay lifecycle.
+
+| Project | Status | Notes |
+|---|---|---|
+| `haolink/VRCOSCAvatarScaleOverlay` | Studied in Wave 448 | Unity SteamVR dashboard overlay for VRChat avatar scale/eye-height control via OSC/OSCQuery with RenderTexture and OpenVR keyboard plumbing |
+| `Mon-Ouie/mpris-openvr-overlay` | Deepened in Wave 448 | Rust/egui OpenVR dashboard overlay for Linux MPRIS media control with texture submission and event polling |
+
+### Consolidation note
+
+This family matters because dashboard overlays are strongest when they are
+narrow, inspectable control panels over one service instead of general-purpose
+floating app dumps.
+
+## Family 428: Spatial audio SDK package boundaries
+
+This family covers VR spatial audio packages, listener/source components, room
+models, material maps, occlusion, reverb, HRTF, ambisonics, and engine/audio
+middleware adapters.
+
+| Project | Status | Notes |
+|---|---|---|
+| `resonance-audio/resonance-audio-unity-sdk` | Studied in Wave 449 | Unity spatial audio SDK with listener/source/room/reverb/acoustic-mesh components, editor tooling, and migration/build caveats |
+| `ValveSoftware/steam-audio` | Studied in Wave 449 | Cross-engine SDK with core DSP/acoustic simulation, HRTF lifecycle, Unity/FM0D/Wwise adapters, and license/binary caveats |
+
+### Consolidation note
+
+This family matters because spatial audio should be documented as a provider
+capability matrix with scene components and runtime caveats, not just as an
+AudioSource checkbox.
+
+## Family 429: Haptic pattern libraries and device routing
+
+This family covers authored haptic pattern assets, event-to-feedback routing,
+device/body-part targets, dynamic dot/path feedback, provider players, and
+fallback labels.
+
+| Project | Status | Notes |
+|---|---|---|
+| `bhaptics/haptic-guide` | Studied in Wave 450 | Pattern/game-event catalog with `.tact` assets, directional feedback examples, and Unity/Unreal integration pointers |
+| `bhaptics/haptic-library` | Deepened in Wave 450 | Playback SDK with HapticPlayer APIs, Unity plugin samples, device target enums, and player/service dependency |
+
+### Consolidation note
+
+This family matters because tactile feedback is reusable only when event intent,
+device routing, pattern assets, and provider availability are separated.
+
+## Family 430: VR remote desktop and desktop streaming bridges
+
+This family covers browser/WebXR/WebVR desktop viewers, Bigscreen agents,
+capture/encode/transport/input stacks, audio/mic routing, web control surfaces,
+and privacy/permission caveats.
+
+| Project | Status | Notes |
+|---|---|---|
+| `player1537/vrdp` | Studied in Wave 451 | Minimal WebRTC/WebVR remote desktop viewer with Docker server, localhost/HTTPS constraints, and virtual monitor placement intent |
+| `gonsp/DesktopVR` | Studied in Wave 451 | Legacy Cardboard/Leap Motion remote desktop controller reference |
+| `nextime/bsdrX` | Studied in Wave 451 | Bigscreen remote desktop agent with capture/encode/input injection, web UI, audio/mic routing, Android notes, terminal source, and privacy helpers |
+| `dolit/DRTStreamer` | Studied in Wave 451 | Browser desktop/application streaming product reference with off-screen rendering, custom resolution, H.265, bidirectional messages, and management vocabulary |
+
+### Consolidation note
+
+This family matters because desktop-in-VR is a multi-channel system: video,
+audio, input, permissions, status, and recovery all need first-class records.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

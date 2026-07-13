@@ -460,6 +460,14 @@ If you need recent examples instead of the full chronology, start with:
 
 - `landscape/vr-projects-wave-447-unity-xri-interaction-learning-and-affordance-baselines.md`
 
+- `landscape/vr-projects-wave-448-steamvr-dashboard-overlay-control-and-domain-panel-surfaces.md`
+
+- `landscape/vr-projects-wave-449-spatial-audio-sdk-packages-and-acoustic-simulation-boundaries.md`
+
+- `landscape/vr-projects-wave-450-haptic-pattern-libraries-and-device-feedback-routing.md`
+
+- `landscape/vr-projects-wave-451-vr-remote-desktop-and-desktop-streaming-bridges.md`
+
 ## Archive Navigation
 
 Use these when you need the full historical record rather than the short

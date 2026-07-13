@@ -21732,3 +21732,86 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   reusable interaction primitive notes, prototype checklists, and future XRI
   sample curation.
+
+## Method 893: SteamVR dashboard domain panel
+
+- What it is:
+  a dashboard overlay that renders a focused control UI and bridges it to one
+  external domain service.
+- Good for:
+  media controls, VRChat OSC utilities, timer controls, accessibility toggles,
+  runtime switchers, and narrow service dashboards.
+- Source evidence:
+  `haolink/VRCOSCAvatarScaleOverlay` and `Mon-Ouie/mpris-openvr-overlay`.
+- Reusable core:
+  overlay manifest/autolaunch, dashboard and thumbnail handles, render target,
+  texture submission, mouse/keyboard/input routing, event polling, service
+  adapter, domain entity cache, command bounds, connection state, and cancel or
+  rollback behavior.
+- Do not copy directly:
+  domain-specific OSC addresses, MPRIS-only assumptions, overlay keys, or
+  platform-specific texture APIs without abstraction.
+- Maturity:
+  strong overlay utility method; needs a generic domain-panel template.
+
+## Method 894: Spatial audio scene component package
+
+- What it is:
+  package spatial audio as listener/source/room/material/reverb/HRTF components
+  plus provider adapter and editor/runtime caveats.
+- Good for:
+  VR tools with sound-source cues, accessibility audio, spatial diagnostics,
+  museum/guide apps, social rooms, and immersive media utilities.
+- Source evidence:
+  `resonance-audio/resonance-audio-unity-sdk` and
+  `ValveSoftware/steam-audio`.
+- Reusable core:
+  listener profile, source directivity, near-field control, occlusion,
+  room/material model, reverb probe or bake, ambisonics, HRTF resource,
+  provider capability matrix, editor visualization, and build/runtime checks.
+- Do not copy directly:
+  heavy SDK internals, old Unity assumptions, licensed middleware code, or
+  unreviewed binary/plugin build systems.
+- Maturity:
+  high-value component pattern; needs provider-neutral capability matrix.
+
+## Method 895: Haptic event routing and pattern library
+
+- What it is:
+  map semantic events to tactile pattern assets and provider-specific device
+  playback APIs while preserving fallback and availability state.
+- Good for:
+  controller haptics, bHaptics vests/arms/head/gloves, combat/training tools,
+  accessibility cues, and embodied diagnostics.
+- Source evidence:
+  `bhaptics/haptic-guide` and `bhaptics/haptic-library`.
+- Reusable core:
+  haptic intent name, target body/device, source direction, pattern asset id,
+  intensity, duration, loop/stop mode, provider client, register/submit path,
+  active-device query, and absent-device fallback.
+- Do not copy directly:
+  proprietary pattern assets, provider-locked vocabulary, obsolete SDK versions,
+  or tactile-effect claims without user validation.
+- Maturity:
+  practical method; needs a provider-neutral haptic intent schema.
+
+## Method 896: VR remote desktop streaming bridge
+
+- What it is:
+  stream a desktop/application/source into a VR/browser surface and return input
+  through a documented transport and permission model.
+- Good for:
+  desktop-in-VR, virtual monitor tools, browser companion panels, cloud VR,
+  remote operations, and headset productivity utilities.
+- Source evidence:
+  `player1537/vrdp`, `gonsp/DesktopVR`, `nextime/bsdrX`, and
+  `dolit/DRTStreamer`.
+- Reusable core:
+  source selector, capture backend, encoder, transport/signaling, display
+  placement, input return schema, injector backend, audio/mic path, control UI,
+  stream status, permission/consent labels, privacy blanking, and recovery.
+- Do not copy directly:
+  reverse-engineered protocol secrets, proprietary latency claims, old WebVR
+  paths, or raw input injection assumptions without permission boundaries.
+- Maturity:
+  strong system pattern; needs provider-neutral bridge schema and safety labels.

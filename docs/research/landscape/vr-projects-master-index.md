@@ -1409,3 +1409,23 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-447-unity-xri-interaction-learning-and-affordance-baselines.md`
   Unity XRI learning baselines with knobs, sockets, room-scale correction, hand
   animation, validation, gaze fallback, and provenance boundaries.
+
+- `vr-projects-wave-448-steamvr-dashboard-overlay-control-and-domain-panel-surfaces.md`
+  SteamVR dashboard domain panels with RenderTexture overlay submission, event
+  polling, keyboard routing, OSC/OSCQuery avatar controls, MPRIS media controls,
+  and autolaunch caveats.
+
+- `vr-projects-wave-449-spatial-audio-sdk-packages-and-acoustic-simulation-boundaries.md`
+  Spatial audio SDK packages with source/listener/room schemas, HRTF resources,
+  material maps, occlusion/reflection/reverb controls, engine adapters, and
+  provider caveats.
+
+- `vr-projects-wave-450-haptic-pattern-libraries-and-device-feedback-routing.md`
+  Haptic libraries with event-to-pattern routing, `.tact` assets, device/body
+  targets, directional feedback, register/submit playback APIs, and fallback
+  labels.
+
+- `vr-projects-wave-451-vr-remote-desktop-and-desktop-streaming-bridges.md`
+  VR remote desktop bridges with capture/encode/transport/input surfaces,
+  WebRTC/browser viewers, Bigscreen-style agents, audio/mic routing, privacy
+  blanking, and proprietary or reverse-engineering caveats.

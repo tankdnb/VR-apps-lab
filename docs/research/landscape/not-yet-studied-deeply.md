@@ -3232,6 +3232,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 370. `XR radial hand menu follow-up across command schemas, activation poses, hand/controller fallback, item-count limits, angular deadzones, submenu/cancel behavior, hover/commit feedback, animation preference, and accessibility labels`
 371. `Comfort vignette and visual-field reducer follow-up across trigger sources, render-pipeline paths, UI/transparent inclusion, mask/stencil exclusions, mobile performance, severity profiles, persistence, user disable settings, and medical/comfort caveats`
 372. `XRI interaction affordance baseline follow-up across course-original versus imported sample provenance, grab/socket/knob/hand/gaze primitives, required package/component records, validation rules, simulator fallback, and copy-scope boundaries`
+373. `SteamVR dashboard domain-panel follow-up across overlay lifecycle, texture submission, event polling, keyboard routing, service adapters, command bounds, connection status, and autolaunch manifests`
+374. `Spatial audio package follow-up across listener/source/room schemas, material maps, HRTF resources, occlusion/reflection/reverb toggles, provider capability matrices, editor visualization, and performance/license caveats`
+375. `Haptic pattern routing follow-up across provider-neutral event intents, pattern asset IDs, body/device targets, directional transforms, loop/stop semantics, active-device detection, OpenXR/controller comparison, and consent/fallback labels`
+376. `VR remote desktop bridge follow-up across capture backends, encoders, WebRTC/RTP/Bigscreen/CloudXR transports, input injection schemas, audio/mic routing, monitor placement, permission UX, privacy blanking, and recovery state`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

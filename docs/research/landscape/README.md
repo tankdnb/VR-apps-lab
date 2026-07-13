@@ -1999,6 +1999,26 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on XRI learning repositories, interaction
   primitives, sockets, knobs, hands, validation, gaze fallback, and provenance.
 
+- `vr-projects-wave-448-steamvr-dashboard-overlay-control-and-domain-panel-surfaces.md`
+  Next GitHub discovery wave focused on SteamVR dashboard overlays, domain
+  panel commands, OpenVR event/keyboard routing, OSC service adapters, and
+  MPRIS media-control surfaces.
+
+- `vr-projects-wave-449-spatial-audio-sdk-packages-and-acoustic-simulation-boundaries.md`
+  Next GitHub discovery wave focused on spatial audio SDK component packages,
+  HRTF resources, room/reverb/material abstractions, engine adapters, and
+  acoustic-simulation caveats.
+
+- `vr-projects-wave-450-haptic-pattern-libraries-and-device-feedback-routing.md`
+  Next GitHub discovery wave focused on haptic pattern catalogs, event routing,
+  body/device targets, directional feedback, playback APIs, and provider
+  dependency labels.
+
+- `vr-projects-wave-451-vr-remote-desktop-and-desktop-streaming-bridges.md`
+  Next GitHub discovery wave focused on VR remote desktop viewers, browser and
+  WebRTC bridges, capture/encode/input routes, audio/mic routing, and privacy
+  or reverse-engineering caveats.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

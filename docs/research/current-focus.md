@@ -17,6 +17,26 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 448-451
+
+- `SteamVR dashboard overlay control and domain panel surfaces`
+  add domain-panel coverage around SteamVR dashboard overlays, Unity
+  RenderTexture-to-overlay submission, OpenVR event polling, dashboard keyboard
+  routing, OSC/OSCQuery service adapters, avatar scale/height commands,
+  Linux MPRIS media controls, and autolaunch manifest caveats.
+- `Spatial audio SDK packages and acoustic simulation boundaries`
+  add audio-package coverage around listener/source/room/reverb components,
+  HRTF resources, material maps, occlusion/reflection/reverb toggles, Unity
+  editor/build processors, FMOD/Wwise adapters, and provider/license caveats.
+- `Haptic pattern libraries and device feedback routing`
+  add tactile-feedback coverage around event-to-pattern routing, `.tact`
+  pattern assets, body/device targets, directional transforms, loop/stop
+  semantics, active-device detection, and vendor-player fallback labels.
+- `VR remote desktop and desktop streaming bridges`
+  add streaming-bridge coverage around capture backends, WebRTC/browser/VR
+  viewer constraints, Bigscreen-style agents, web management UI, audio/mic
+  routing, input injection, privacy blanking, and reverse-engineering caveats.
+
 ## Current additions from Waves 444-447
 
 - `OpenXR runtime switchers and input diagnostic utilities`

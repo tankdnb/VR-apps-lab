@@ -5740,6 +5740,48 @@ Primary docs:
 
 - `mattdway/CreateWithVR` - `Studied in Wave 447 as large Unity/XRI learning repository with XR knobs, key/lock sockets, tag/auto sockets, room-scale controller fix, animated/physics hands, starter validation, gaze fallback, and asset/imported-sample provenance caveats`
 
+## 419. SteamVR dashboard overlay control and domain panel surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-448-steamvr-dashboard-overlay-control-and-domain-panel-surfaces.md`
+- `../landscape/project-families.md`
+
+- `haolink/VRCOSCAvatarScaleOverlay` - `Studied in Wave 448 as Unity SteamVR dashboard overlay for VRChat avatar eye-height/scale control via OSC/OSCQuery with RenderTexture overlay submission, OpenVR keyboard, avatar metadata cache, gradual scaling, and domain-specific caveats`
+- `Mon-Ouie/mpris-openvr-overlay` - `Deepened in Wave 448 as Rust/egui OpenVR dashboard media-control overlay with MPRIS service adapter, player selector, volume/position sliders, transport buttons, OpenGL texture submission, event polling, and Linux-service caveat`
+
+## 420. Spatial audio SDK packages and acoustic simulation boundaries
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-449-spatial-audio-sdk-packages-and-acoustic-simulation-boundaries.md`
+- `../landscape/project-families.md`
+
+- `resonance-audio/resonance-audio-unity-sdk` - `Studied in Wave 449 as Unity spatial audio SDK with listener/source/room/reverb-probe/acoustic-mesh components, occlusion, near-field gain, material maps, ambisonics, editor/build processors, and legacy-version caveats`
+- `ValveSoftware/steam-audio` - `Studied in Wave 449 as cross-engine spatial audio SDK with core DSP/acoustic simulation, HRTF lifecycle, geometry/material scenes, Unity/FM0D/Wwise adapters, source registration, benchmarks, and license/binary caveats`
+
+## 421. Haptic pattern libraries and device feedback routing
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-450-haptic-pattern-libraries-and-device-feedback-routing.md`
+- `../landscape/project-families.md`
+
+- `bhaptics/haptic-guide` - `Studied in Wave 450 as haptic pattern and game-event catalog with .tact assets, attack/shooting/recoil/footstep/healing/low-health/directional feedback examples, Unity/Unreal pointers, and asset/provenance caveats`
+- `bhaptics/haptic-library` - `Deepened in Wave 450 as bHaptics playback SDK/sample set with Windows player dependency, Unity plugin, Quest VR Player path, HapticPlayer register/submit/SubmitRegistered APIs, device target enums, and provider-lock caveats`
+
+## 422. VR remote desktop and desktop streaming bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-451-vr-remote-desktop-and-desktop-streaming-bridges.md`
+- `../landscape/project-families.md`
+
+- `player1537/vrdp` - `Studied in Wave 451 as minimal WebRTC/WebVR remote desktop viewer with Docker server, localhost/HTTPS WebRTC constraints, virtual monitor placement intent, and WebVR legacy caveat`
+- `gonsp/DesktopVR` - `Studied in Wave 451 as Cardboard-era remote desktop controller with Leap Motion/control assumptions and legacy-device caveats`
+- `nextime/bsdrX` - `Studied in Wave 451 as Bigscreen remote desktop agent with capture/encode/transport/input injection, web UI, terminal source, audio/mic routing, screen blanking, Android MediaProjection/AccessibilityService notes, replay/debug hooks, and reverse-engineering caveats`
+- `dolit/DRTStreamer` - `Studied in Wave 451 as browser-based desktop/application/3D-engine streaming product reference with off-screen rendering, custom resolution, H.265, bidirectional messages, management/routing vocabulary, and proprietary-claim caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:
