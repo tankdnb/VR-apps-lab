@@ -11106,6 +11106,71 @@ This family matters because voice features need a neutral command registry with
 mic consent, transcript feedback, recognizer adapters, parameter resolution,
 action safety, and vendor/offline fallback boundaries.
 
+## Family 343: Body-anchored equipment sockets and inventory shells
+
+This family covers body-relative tool belts, holsters, item slots, controller
+data helpers, hand visibility, and starter interaction templates.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Isabela-Tellez/InventarioArmasVR` | Studied in Wave 364 | Inventory ScriptableObjects, item slots, UI buttons, collectables, and XRI starter overlap |
+| `Fist-Full-of-Shrimp/FFOS-VR-Tutorial-Resources` | Studied in Wave 364 | HMD-relative body sockets, controller data, flashlight, FPS, and weapon snippets |
+| `Fist-Full-of-Shrimp/FFOS-Unity-VR-Template` | Partially studied in Wave 364 | HMD height, hand visibility on select, and teleport ray baseline |
+
+### Consolidation note
+
+This family matters because many utility tools need fast body-relative access to
+diagnostics, tools, settings, or capture controls without becoming flat menus.
+
+## Family 344: Navigation target catalogs route cues and recenter helpers
+
+This family covers waypoint arrows, destination catalogs, route lines, QR/marker
+recentering, floor/context switching, and route visibility controls.
+
+| Project | Status | Notes |
+|---|---|---|
+| `bhartinderjoshi/Waypoint_Arrow` | Studied in Wave 365 | Minimal target-facing arrow cue |
+| `nlalert/AR-Indoor-Navigation` | Studied in Wave 365 | JSON target catalog, target facades, dropdown selection, NavMesh route lines, QR recentering, and floor switching |
+
+### Consolidation note
+
+This family matters because route guidance should separate target metadata,
+visual cues, path calculation, and world-origin repair.
+
+## Family 345: Embodiment calibration mirrored bodies and movement study harnesses
+
+This family covers self-avatar calibration, mirrored-body mapping, tool-use
+tasks, universe alignment, tracker capture, and movement-study pipelines.
+
+| Project | Status | Notes |
+|---|---|---|
+| `JashoBell/vr-tool-use` | Studied in Wave 366 | Participant/avatar/universe calibration, task generation, UXF logging, VRPN/Manus/OpenVR tracking, and filters |
+| `eric-cornellvel/VR-MirrorTherapy` | Studied in Wave 366 | Mirror rig, hand tracking, transform/object follow, sphere tasks, save data, and Oculus SDK caveats |
+
+### Consolidation note
+
+This family matters because embodiment tools need validated calibration state,
+task flow, and telemetry before avatar or mirror effects can be trusted.
+
+## Family 346: XR analytics action telemetry and immersive data surfaces
+
+This family covers action descriptors, telemetry SDKs, assessment/objective
+events, object/system tracking, storage, dashboards, and in-headset data
+visualization.
+
+| Project | Status | Notes |
+|---|---|---|
+| `yoonsang0910/ExplainableXR` | Studied in Wave 367 | UAD action recorder, continuous/discrete actions, context/referent capture, processor, and dashboard direction |
+| `ArborXR/abxrlib-for-unity` | Studied in Wave 367 | Assessment/objective events, telemetry, storage, device/org metadata, QR, and backend protocol surfaces |
+| `informXR/iXRLibForUnity` | Studied in Wave 367 | Event tracking, input/object/system trackers, debug window, exit poll, keyboard, and config tooling |
+| `stonecodecs/visiograph` | Studied in Wave 367 | TCP batch ingestion and main-thread 3D datapoint creation |
+| `eliaCandela/Optimizing-Data-Visualization-Through-Virtual-Reality` | Source-light marker in Wave 367 | Business metrics VR dashboard and alert direction |
+
+### Consolidation note
+
+This family matters because XR analytics should understand spatial context,
+referents, duration, hardware state, privacy, and export/dashboard boundaries.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

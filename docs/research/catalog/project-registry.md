@@ -4807,6 +4807,50 @@ Primary docs:
 - `ajinkyasatuse/Enchantress_AR` - `Studied in Wave 363 as a Unity AR voice-command prototype using Windows KeywordRecognizer, command dictionary, AR raycast placement, summon/fight/fly actions, and fallback spawn logic`
 - `wit-ai/wit-unity` - `Studied in Wave 363 as a voice SDK substrate with VoiceService, request/transcription events, Conduit parameter mapping, intent/entity handlers, TTS/cache/audio, and lipsync boundaries`
 
+## 335. VR inventory equipment sockets holsters and starter interaction templates
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-364-vr-inventory-equipment-sockets-holsters-and-starter-interaction-templates.md`
+- `../landscape/project-families.md`
+
+- `Isabela-Tellez/InventarioArmasVR` - `Studied in Wave 364 as a Unity/XRI inventory and weapon project with Inventory ScriptableObjects, SlotInventory, item UI buttons, collectables, controller manager, and large XRI sample overlap caveat`
+- `Fist-Full-of-Shrimp/FFOS-VR-Tutorial-Resources` - `Studied in Wave 364 as a tutorial resource pack with BodySocketInventory, HMD-relative socket heights, controller input display, flashlight, FPS display, and weapon/fire snippets`
+- `Fist-Full-of-Shrimp/FFOS-Unity-VR-Template` - `Partially studied in Wave 364 as a starter VR template with HMD character-controller height updates, hand visibility on select, and teleportation ray toggles`
+
+## 336. VR AR wayfinding waypoint arrows QR recentering and route cues
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-365-vr-ar-wayfinding-waypoint-arrows-qr-recentering-and-route-cues.md`
+- `../landscape/project-families.md`
+
+- `bhartinderjoshi/Waypoint_Arrow` - `Studied in Wave 365 as a minimal target-facing waypoint arrow using Quaternion.LookRotation`
+- `nlalert/AR-Indoor-Navigation` - `Studied in Wave 365 as an AR navigation shell with JSON target catalog, generated target facades, dropdown target selection, NavMesh path lines, QR code recentering, and floor/context switching`
+
+## 337. Avatar embodiment mirror therapy tool use calibration and movement study harnesses
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-366-avatar-embodiment-mirror-therapy-tool-use-calibration-and-movement-study-harnesses.md`
+- `../landscape/project-families.md`
+
+- `JashoBell/vr-tool-use` - `Studied in Wave 366 as a dissertation-grade embodiment/tool-use study harness with participant calibration, avatar IK target calibration, SteamVR universe alignment, UXF task flow, VRPN/Manus/OpenVR tracking, and One Euro filters`
+- `eric-cornellvel/VR-MirrorTherapy` - `Studied in Wave 366 as a mirror-therapy Unity project with custom mirror rig scripts, hand tracking, transform/object following, sphere spawning/detection tasks, save data helpers, and Oculus SDK caveats`
+
+## 338. XR analytics action recording telemetry SDKs and immersive data surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-367-xr-analytics-action-recording-telemetry-sdks-and-immersive-data-surfaces.md`
+- `../landscape/project-families.md`
+
+- `yoonsang0910/ExplainableXR` - `Studied in Wave 367 as an XR action recorder and analytics framework with UserActionDescriptor, discrete/continuous actions, microphone/image/object capture, UAD output, processor, and dashboard direction`
+- `ArborXR/abxrlib-for-unity` - `Studied in Wave 367 as an open XR analytics SDK with assessment/objective/interaction events, telemetry, storage, modules, device/org metadata, QR scanner, editor config, and backend protocol framing`
+- `informXR/iXRLibForUnity` - `Studied in Wave 367 as an XR analytics SDK with authentication, event tracking, object/system/input tracking, debug window, exit poll, keyboard UI, and post-build/config tooling`
+- `stonecodecs/visiograph` - `Studied in Wave 367 as a Unity VR data visualizer with TCP batch ingestion, async data transfer, main-thread 3D datapoint creation, camera/player input, teleport markers, and collider gating`
+- `eliaCandela/Optimizing-Data-Visualization-Through-Virtual-Reality` - `Source-light marker in Wave 367 as a business-metrics VR data visualization direction with alert-aware dashboard framing but little source in the cloned tree`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

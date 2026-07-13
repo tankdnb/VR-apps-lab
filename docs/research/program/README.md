@@ -2574,3 +2574,31 @@ repeatable way.
 
 - `github-research-wave-363-backlog.md`
   Executed backlog for the Wave 363 pass.
+
+- `github-research-wave-364-plan.md`
+  Wave 364 research plan focused on VR inventory, equipment sockets, holsters,
+  and starter interaction templates.
+
+- `github-research-wave-364-backlog.md`
+  Executed backlog for the Wave 364 pass.
+
+- `github-research-wave-365-plan.md`
+  Wave 365 research plan focused on VR/AR wayfinding, waypoint arrows, QR
+  recentering, and route cues.
+
+- `github-research-wave-365-backlog.md`
+  Executed backlog for the Wave 365 pass.
+
+- `github-research-wave-366-plan.md`
+  Wave 366 research plan focused on avatar embodiment, mirror therapy,
+  tool-use calibration, and movement study harnesses.
+
+- `github-research-wave-366-backlog.md`
+  Executed backlog for the Wave 366 pass.
+
+- `github-research-wave-367-plan.md`
+  Wave 367 research plan focused on XR analytics, action recording, telemetry
+  SDKs, and immersive data surfaces.
+
+- `github-research-wave-367-backlog.md`
+  Executed backlog for the Wave 367 pass.

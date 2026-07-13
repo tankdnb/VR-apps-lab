@@ -18953,3 +18953,149 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   voice command layers, accessibility-adjacent utility controls, XR assistants,
   speech-to-overlay actions, and action dispatcher prototypes.
+
+## Method 809: body-anchored equipment socket and inventory slot shell
+
+- What it is:
+  VR equipment access should separate body-relative socket placement, inventory
+  data, item quantity, UI rendering, hand visibility, and tool activation.
+- Good for:
+  tool belts, holsters, diagnostic tool trays, capture controls, quick settings,
+  weapon/tool prototypes, and body-anchored utility panels.
+- Why it matters:
+  equipment is more usable when it follows the user consistently without
+  becoming a flat menu or hardcoded scene object.
+- Source evidence:
+  `Isabela-Tellez/InventarioArmasVR`,
+  `Fist-Full-of-Shrimp/FFOS-VR-Tutorial-Resources`, and
+  `Fist-Full-of-Shrimp/FFOS-Unity-VR-Template`.
+- Reusable core:
+  HMD pose reader, body root follow transform, socket list, per-socket height
+  ratios, item data asset, slot quantity, collectable intake, icon/count UI,
+  hand visibility policy, controller data monitor, and teleport/character
+  baseline.
+- Source evidence details:
+  Wave 364 includes FFOS `BodySocketInventory`, InventarioArmasVR's
+  `Inventory`, `SlotInventory`, `Item`, and `ButtonInventory`, plus FFOS
+  template hand visibility and teleport ray support.
+- Do not copy directly:
+  sample art, weapon-only metaphors, duplicated XRI starter assets, old package
+  assumptions, or body sockets without seated/standing mode checks.
+- Strong references:
+  `FFOS-VR-Tutorial-Resources` for minimal body socket placement and
+  `InventarioArmasVR` for data/UI inventory split.
+- Maturity:
+  useful microtool method; needs persistence and comfort/handedness rules.
+- Best fit for `VR-apps-lab`:
+  body-mounted utility tools, quick-access overlay controls, and reusable
+  equipment panels.
+
+## Method 810: target catalog route cue and recentering boundary
+
+- What it is:
+  navigation helpers should separate destination metadata, route calculation,
+  cue rendering, and world-origin recentering.
+- Good for:
+  indoor guidance, calibration aids, wayfinding overlays, route helpers,
+  destination selectors, and QR/marker recenter utilities.
+- Why it matters:
+  target arrows and path lines are brittle unless they know when the origin,
+  floor, target, or route is stale.
+- Source evidence:
+  `bhartinderjoshi/Waypoint_Arrow` and `nlalert/AR-Indoor-Navigation`.
+- Reusable core:
+  target data model, generated target facade, target selector, current
+  destination, route/path calculator, line cue, arrow cue, vertical offset,
+  QR/marker scanner, recenter adapter, scan state, floor/context switch, and
+  visibility toggle.
+- Source evidence details:
+  Wave 365 includes Waypoint_Arrow's target-facing `LookRotation`, plus
+  AR-Indoor-Navigation's `Target`, `TargetWrapper`, `TargetHandler`,
+  `NavigationController`, and `QRCodeRecenter`.
+- Do not copy directly:
+  always-on camera scanning, hardcoded floor arrays, per-frame heavy path
+  recalculation without throttling, or route visuals without stale-state UX.
+- Strong references:
+  `nlalert/AR-Indoor-Navigation` for target/catalog/recenter structure and
+  `bhartinderjoshi/Waypoint_Arrow` for the minimum cue.
+- Maturity:
+  useful method; needs route freshness and permission UX before product use.
+- Best fit for `VR-apps-lab`:
+  navigation overlays, calibration helpers, route panels, and spatial task
+  guidance.
+
+## Method 811: embodiment calibration and mirrored-body study shell
+
+- What it is:
+  embodiment tools should turn tracker inventory, universe alignment, avatar
+  target offsets, mirror mapping, and task flow into explicit calibrated state.
+- Good for:
+  avatar setup, mirror therapy prototypes, tool-use studies, movement capture,
+  body-scale calibration, and embodied feedback utilities.
+- Why it matters:
+  avatar or mirror effects are not reusable until calibration, validation,
+  offsets, and telemetry are separate from the task content.
+- Source evidence:
+  `JashoBell/vr-tool-use` and `eric-cornellvel/VR-MirrorTherapy`.
+- Reusable core:
+  participant setup, tracker inventory, universe alignment, avatar selection,
+  IK target finder, target offset persistence, mirrored body mapper, task
+  generator, instruction/audio channel, movement recorder, signal filter,
+  save/export layer, and manual override path.
+- Source evidence details:
+  Wave 366 includes vr-tool-use `ParticipantCalibration`, `AvatarCalibration`,
+  `ExperimentCalibration`, `AvatarHandler`, VRPN/OpenVR/Manus trackers, task
+  scripts, and One Euro filters; VR-MirrorTherapy contributes mirror rig, hand
+  tracking, task objects, and save helpers.
+- Do not copy directly:
+  clinical claims, participant data assumptions, paid SDK requirements,
+  hardcoded PlayerPrefs keys, or mirrored-limb behavior without ethics/safety
+  labels.
+- Strong references:
+  `JashoBell/vr-tool-use` for calibration depth and
+  `eric-cornellvel/VR-MirrorTherapy` for mirrored-body task framing.
+- Maturity:
+  strong research method; product use needs hardware abstraction and ethics
+  boundaries.
+- Best fit for `VR-apps-lab`:
+  avatar calibration helpers, embodiment labs, movement-study harnesses, and
+  mirrored-body prototypes.
+
+## Method 812: XR action telemetry and analytics event schema
+
+- What it is:
+  XR analytics should log spatial actions, referents, context, duration,
+  telemetry, assessments, storage, and consent as a backend-neutral schema.
+- Good for:
+  training analytics, user studies, diagnostic event logs, session replay,
+  dashboards, LLM-assisted analysis, and in-headset data surfaces.
+- Why it matters:
+  XR behavior is spatial and continuous; flat web-style button events lose the
+  important context.
+- Source evidence:
+  `yoonsang0910/ExplainableXR`, `ArborXR/abxrlib-for-unity`,
+  `informXR/iXRLibForUnity`, `stonecodecs/visiograph`, and
+  `eliaCandela/Optimizing-Data-Visualization-Through-Virtual-Reality`.
+- Reusable core:
+  session/user ID, device metadata, discrete/continuous action IDs, action
+  verb, intent, trigger source, pose/location, referent object, referent
+  transform, context capture, audio/image/object artifacts, assessment events,
+  objective events, telemetry channel, storage, debug panel, exit poll,
+  export/upload adapter, and dashboard/processor boundary.
+- Source evidence details:
+  Wave 367 includes ExplainableXR `UserActionDescriptor`, microphone/image/
+  object capture, and processor/dashboard split; ABXR assessment/objective/
+  telemetry/storage/device APIs; iXR object/system/input trackers and debug/exit
+  poll surfaces; and visiograph TCP data ingestion into 3D points.
+- Do not copy directly:
+  tokens, always-on capture, backend lock-in, unclear consent, per-frame logging
+  without sampling policy, or dashboards without anonymization/export rules.
+- Strong references:
+  `yoonsang0910/ExplainableXR` for action schema, `ArborXR/abxrlib-for-unity`
+  for event taxonomy, and `informXR/iXRLibForUnity` for debug/operator UX.
+- Maturity:
+  strong method; needs a neutral schema and privacy policy before prototype
+  implementation.
+- Best fit for `VR-apps-lab`:
+  analytics backbones, research recorders, replay/export tools, and
+  dashboard-ready telemetry utilities.

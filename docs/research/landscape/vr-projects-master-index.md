@@ -1177,5 +1177,9 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-361-physics-locomotion-drag-scale-climb-and-bounds-based-xr-interaction-microtools.md`
 - `vr-projects-wave-362-collaborative-classrooms-whiteboards-avatar-rooms-and-ai-learning-surfaces.md`
 - `vr-projects-wave-363-voice-intent-command-spellcasting-and-speech-to-xr-action-adapters.md`
+- `vr-projects-wave-364-vr-inventory-equipment-sockets-holsters-and-starter-interaction-templates.md`
+- `vr-projects-wave-365-vr-ar-wayfinding-waypoint-arrows-qr-recentering-and-route-cues.md`
+- `vr-projects-wave-366-avatar-embodiment-mirror-therapy-tool-use-calibration-and-movement-study-harnesses.md`
+- `vr-projects-wave-367-xr-analytics-action-recording-telemetry-sdks-and-immersive-data-surfaces.md`
   MR digital twins, JSON/API/IoT adapters, VPS/SSA anchoring, dashboards,
   annotations, drone/robot panels, and command-safety surfaces.

@@ -3148,6 +3148,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 286. `Physics locomotion microtool follow-up across body rigs, drag/rotate/scale input, climbing, fixed-joint grabs, bounds buttons, input conflicts, and comfort/safety labels`
 287. `Collaborative classroom surface follow-up across room/session managers, avatars, board stroke schemas, pen texture writers, AI tutor adapters, network authority, and credential/privacy hygiene`
 288. `Voice-to-XR action follow-up across mic consent, local/cloud recognizers, transcripts, command registries, entity parameters, TTS/lipsync output, cooldowns, and offline/vendor fallbacks`
+289. `Body equipment socket follow-up across HMD-relative socket roots, seated/standing modes, handedness, item persistence, quantity UI, hand occlusion, and tool activation safety`
+290. `Navigation route helper follow-up across target catalogs, arrows, route lines, QR/marker recentering, floor switches, stale destinations, and camera permission UX`
+291. `Embodiment calibration follow-up across avatar IK offsets, tracker inventory, universe alignment, mirrored-body mapping, movement tasks, filters, exports, and ethics/clinical caveats`
+292. `XR analytics schema follow-up across action descriptors, assessment/objective events, telemetry, storage, artifact capture, consent, anonymization, dashboards, and backend-neutral adapters`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

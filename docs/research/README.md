@@ -359,6 +359,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-361-physics-locomotion-drag-scale-climb-and-bounds-based-xr-interaction-microtools.md`
 - `landscape/vr-projects-wave-362-collaborative-classrooms-whiteboards-avatar-rooms-and-ai-learning-surfaces.md`
 - `landscape/vr-projects-wave-363-voice-intent-command-spellcasting-and-speech-to-xr-action-adapters.md`
+- `landscape/vr-projects-wave-364-vr-inventory-equipment-sockets-holsters-and-starter-interaction-templates.md`
+- `landscape/vr-projects-wave-365-vr-ar-wayfinding-waypoint-arrows-qr-recentering-and-route-cues.md`
+- `landscape/vr-projects-wave-366-avatar-embodiment-mirror-therapy-tool-use-calibration-and-movement-study-harnesses.md`
+- `landscape/vr-projects-wave-367-xr-analytics-action-recording-telemetry-sdks-and-immersive-data-surfaces.md`
 
 ## Archive Navigation
 

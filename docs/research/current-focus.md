@@ -39,6 +39,26 @@ The repository is no longer trying to act like one hidden main application.
   adapters, command registries, parameter resolution, action dispatch, TTS/
   lipsync boundaries, and offline/vendor fallbacks.
 
+## Current additions from Waves 364-367
+
+- `VR inventory, equipment sockets, holsters, and starter interaction templates`
+  add a body-anchored equipment branch around HMD-relative sockets,
+  ScriptableObject inventory data, slot quantity UI, controller data, hand
+  visibility, and teleport/character baselines.
+- `VR/AR wayfinding, waypoint arrows, QR recentering, and route cues`
+  add a navigation-helper branch around target catalogs, target-facing arrows,
+  NavMesh route lines, QR/marker recentering, floor switches, and visibility
+  toggles.
+- `Avatar embodiment, mirror therapy, tool-use calibration, and movement study
+  harnesses`
+  add calibration-heavy direction around avatar IK target offsets, universe
+  alignment, mirrored-body mapping, task sequencing, movement trackers, filters,
+  and save/export boundaries.
+- `XR analytics, action recording, telemetry SDKs, and immersive data surfaces`
+  add an analytics backbone branch around action descriptors, telemetry,
+  assessment/objective events, context/referent capture, storage, debug/exit
+  poll tools, dashboards, and backend-neutral adapters.
+
 ## Current additions from Waves 356-359
 
 - `Guided breathing, meditation, wellness, and stress-protocol VR`

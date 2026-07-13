@@ -1645,6 +1645,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on voice intent, spellcasting, command
   registries, speech-to-XR action dispatch, TTS, and lipsync boundaries.
 
+- `vr-projects-wave-364-vr-inventory-equipment-sockets-holsters-and-starter-interaction-templates.md`
+  Next GitHub discovery wave focused on body-anchored equipment sockets,
+  inventory slots, holsters, and starter interaction baselines.
+
+- `vr-projects-wave-365-vr-ar-wayfinding-waypoint-arrows-qr-recentering-and-route-cues.md`
+  Next GitHub discovery wave focused on target catalogs, waypoint arrows,
+  NavMesh route lines, QR recentering, and floor-aware route cues.
+
+- `vr-projects-wave-366-avatar-embodiment-mirror-therapy-tool-use-calibration-and-movement-study-harnesses.md`
+  Next GitHub discovery wave focused on avatar embodiment, mirror therapy,
+  calibration, tool-use tasks, and movement study harnesses.
+
+- `vr-projects-wave-367-xr-analytics-action-recording-telemetry-sdks-and-immersive-data-surfaces.md`
+  Next GitHub discovery wave focused on XR analytics, action recording,
+  telemetry SDKs, dashboards, and immersive data visualization surfaces.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
