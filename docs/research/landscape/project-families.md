@@ -12657,6 +12657,79 @@ and privacy/permission caveats.
 This family matters because desktop-in-VR is a multi-channel system: video,
 audio, input, permissions, status, and recovery all need first-class records.
 
+## Family 431: Privacy-gated XR analytics and telemetry SDKs
+
+This family covers XR analytics SDKs, session telemetry, gaze/dynamic-object/
+sensor/event batches, engine adapters, exit polls, remote controls, and
+privacy-category gates.
+
+| Project | Status | Notes |
+|---|---|---|
+| `CognitiveVR/cvr-sdk-unity` | Studied in Wave 452 | Unity analytics SDK with setup/feature builder, session manager, gaze/fixation, dynamic objects, sensors, exit polls, room capture, remote controls, and active-session view |
+| `CognitiveVR/xrprivacyframework-unity` | Studied in Wave 452 | Consent framework with hardware/spatial/location/social/bio/audio/room-capture categories, null-deny default, event notification, and configurable popup UI |
+| `CognitiveVR/c3d-sdk-webxr` | Studied in Wave 452 | WebXR analytics SDK with TypeScript modules, engine adapters, session lifecycle, batching, controller/boundary/profiler utilities, and reference-space fallback |
+| `CognitiveVR/cvr-sdk-unreal` | Studied in Wave 452 | Unreal analytics SDK/plugin comparison node with C++/Blueprint support, editor/runtime modules, and engine-version migration scripts |
+
+### Consolidation note
+
+This family matters because telemetry can be useful only when collector modules,
+session lifecycle, privacy categories, backend transport, and operator debug
+state are explicit rather than hidden in background logging.
+
+## Family 432: WebXR exported interaction bridges
+
+This family covers Unity/WebXR/MRTK interaction samples, browser-hosted XR
+builds, WebGL templates, WebXR loaders, bridge plugins, raycast UI, hand
+interaction demos, and generated-build provenance.
+
+| Project | Status | Notes |
+|---|---|---|
+| `AnderSystems/WebXR-Interactions` | Studied in Wave 453 | Unity WebXR project with WebXR loader/settings assets, WebGL bridge plugin, templates, URP setup, raycast/UI interaction framing, and demo assets |
+| `calebcram/WebXR-MRTK-HandInteraction` | Studied in Wave 453 | Hosted MRTK/WebXR hand-interaction build reference with cross-device browser framing and generated-build caveats |
+| `Rufus31415/MixedRealityToolkit-Unity-WebXR` | Existing overlap reference | Earlier studied POC with transparent Unity canvas, Three.js/WebXR camera bridge, and SendMessage transform JSON |
+
+### Consolidation note
+
+This family matters because WebXR export should document browser session,
+Unity scene, input mapping, generated artifacts, and source-quality boundaries.
+
+## Family 433: Immersive data visualization and graph exploration
+
+This family covers VR/XR visualization grammars, data-to-mark mappings, graph
+exploration, SPARQL/Linked Data, educational visualization, dataset provenance,
+layout algorithms, and save/export paths.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ronellsicat/DxR` | Studied in Wave 454 | Unity immersive visualization toolkit with data-to-mark/channel mappings, runtime GUI, JSON/programming interface, and extensible marks |
+| `molgenis/Graph2VR` | Studied in Wave 454 | VR graph/SPARQL explorer with endpoint settings, visual query patterns, graph expansion, layouts, comparison, and N-Triples export |
+| `VRcheology/VRcheology.github.io` | Studied in Wave 454 | Data-backed archaeology VR visualization with provenience/artifact metadata and excavation/reveal metaphor |
+| `detjonmataj/Data-Structure-and-Algorithms-Visualization-in-VR` | Studied in Wave 454 | Quest educational data-structure/algorithm visualization with menu/animation scenes and spatial node/edge/label prefabs |
+
+### Consolidation note
+
+This family matters because data-heavy VR utilities need schemas for records,
+marks, channels, operations, provenance, and export instead of one-off scenes.
+
+## Family 434: Hybrid point-cloud annotation and cleaning tools
+
+This family covers point-cloud import/export, dense rendering, brush/selection
+tools, semantic labels, counting, file browsers, hybrid desktop/VR workflows,
+and native-performance rewrites.
+
+| Project | Status | Notes |
+|---|---|---|
+| `velaboratory/DataFoldvr-Virtual-Reality-Point-Cloud-Annotation` | Studied in Wave 455 | Hybrid VR/desktop point-cloud annotation with `.pcd` framing, point painting, counting, compute-shader performance angle, file browser, and menu tablet |
+| `SherryJYC/VR-3D-Annotation-Tool` | Studied in Wave 455 | Semantic indoor-scene labeling tool with dynamic walking/static seated modes, dataset setup, tutorial/user-study material, and SteamVR-era caveats |
+| `Azzinoth/VR-PointCloud-Editor` | Studied in Wave 455 | Native/Focal Engine point-cloud cleaning editor with large-dataset rendering/memory benchmark framing and proof-of-concept caveats |
+| `ahstevens/VR-Point-Cloud-Editor` | Existing overlap reference | Earlier Unity/native-plugin point-cloud editor family member studied in Wave 308 |
+
+### Consolidation note
+
+This family matters because dense 3D annotation needs one data model that can
+serve VR, desktop, rendering, selection, labeling, export, and performance
+diagnostics.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

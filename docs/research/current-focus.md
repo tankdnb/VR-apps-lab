@@ -17,6 +17,28 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 452-455
+
+- `XR analytics privacy and session telemetry SDKs`
+  add telemetry coverage around CognitiveVR Unity/WebXR/Unreal SDK boundaries,
+  session lifecycle, scene/version metadata, gaze/fixation, dynamic objects,
+  custom events, sensors, controller/boundary/profiler modules, exit polls,
+  feature setup UI, and XR privacy category gates.
+- `WebXR MRTK and Unity interaction bridge samples`
+  add hosted-WebXR coverage around WebXR loaders, WebGL templates, bridge
+  plugins, browser/session lifecycle, Unity scene ownership, raycast UI,
+  hand/controller mapping, generated-build provenance, and device support
+  labels.
+- `Immersive data visualization and graph exploration tools`
+  add data-utility coverage around data-to-mark/channel mappings, graph/SPARQL
+  exploration, visual query patterns, layout algorithms, artifact/domain reveal
+  metaphors, educational scenes, save/export paths, and dataset provenance.
+- `VR point-cloud annotation and cleaning tools`
+  add dense-data coverage around hybrid VR/desktop point-cloud annotation,
+  `.pcd` import/export framing, brush/select/delete tools, semantic labels,
+  class palettes, file browsers, compute/native rendering boundaries, and
+  performance caveats.
+
 ## Current additions from Waves 448-451
 
 - `SteamVR dashboard overlay control and domain panel surfaces`

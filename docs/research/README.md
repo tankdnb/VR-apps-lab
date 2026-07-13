@@ -468,6 +468,14 @@ If you need recent examples instead of the full chronology, start with:
 
 - `landscape/vr-projects-wave-451-vr-remote-desktop-and-desktop-streaming-bridges.md`
 
+- `landscape/vr-projects-wave-452-xr-analytics-privacy-and-session-telemetry-sdks.md`
+
+- `landscape/vr-projects-wave-453-webxr-mrtk-and-unity-interaction-bridge-samples.md`
+
+- `landscape/vr-projects-wave-454-immersive-data-visualization-and-graph-exploration-tools.md`
+
+- `landscape/vr-projects-wave-455-vr-point-cloud-annotation-and-cleaning-tools.md`
+
 ## Archive Navigation
 
 Use these when you need the full historical record rather than the short

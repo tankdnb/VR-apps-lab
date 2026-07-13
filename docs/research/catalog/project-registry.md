@@ -5782,6 +5782,51 @@ Primary docs:
 - `nextime/bsdrX` - `Studied in Wave 451 as Bigscreen remote desktop agent with capture/encode/transport/input injection, web UI, terminal source, audio/mic routing, screen blanking, Android MediaProjection/AccessibilityService notes, replay/debug hooks, and reverse-engineering caveats`
 - `dolit/DRTStreamer` - `Studied in Wave 451 as browser-based desktop/application/3D-engine streaming product reference with off-screen rendering, custom resolution, H.265, bidirectional messages, management/routing vocabulary, and proprietary-claim caveats`
 
+## 423. XR analytics privacy and session telemetry SDKs
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-452-xr-analytics-privacy-and-session-telemetry-sdks.md`
+- `../landscape/project-families.md`
+
+- `CognitiveVR/cvr-sdk-unity` - `Studied in Wave 452 as Unity XR analytics SDK with project setup, feature builder, session lifecycle, dynamic objects, gaze/fixation, sensors, exit polls, room capture, remote controls, active-session view, privacy-aware collectors, and provider/backend caveats`
+- `CognitiveVR/xrprivacyframework-unity` - `Studied in Wave 452 as small Unity XR privacy consent framework with data categories, null-deny defaults, agreement-changed event, configurable popup UI, and legal/compliance caveats`
+- `CognitiveVR/c3d-sdk-webxr` - `Studied in Wave 452 as TypeScript/WebXR analytics SDK with engine adapters, singleton core, session lifecycle, gaze/custom-event/dynamic-object/sensor batches, controller/boundary/profiler modules, WebXR reference-space fallback, and provider caveats`
+- `CognitiveVR/cvr-sdk-unreal` - `Studied in Wave 452 as Unreal analytics SDK/plugin comparison node with C++/Blueprint support, editor/runtime modules, version migration scripts, and cross-engine adapter value`
+
+## 424. WebXR MRTK and Unity interaction bridge samples
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-453-webxr-mrtk-and-unity-interaction-bridge-samples.md`
+- `../landscape/project-families.md`
+
+- `AnderSystems/WebXR-Interactions` - `Studied in Wave 453 as Unity WebXR interaction sample with WebXR loader/settings assets, WebGL bridge plugin, WebGL templates, raycast/UI interaction framing, URP/WebXR scene setup, and asset-heavy demo caveats`
+- `calebcram/WebXR-MRTK-HandInteraction` - `Studied in Wave 453 as hosted WebXR MRTK hand-interaction build/reference with cross-device browser framing, WebXR bootstrap, generated Unity build artifacts, and source-donor limitations`
+
+## 425. Immersive data visualization and graph exploration tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-454-immersive-data-visualization-and-graph-exploration-tools.md`
+- `../landscape/project-families.md`
+
+- `ronellsicat/DxR` - `Studied in Wave 454 as Unity immersive visualization toolkit with data-to-mark/channel mappings, runtime GUI, JSON/programming interface, Vega-Lite/Polestar inspiration, custom mark extensibility, and research-prototype caveats`
+- `molgenis/Graph2VR` - `Studied in Wave 454 as Unity VR graph/SPARQL explorer with endpoint settings, node expansion, visual query patterns, layout algorithms, side-by-side comparison, N-Triples save/export, Quest/Windows packaging, and LGPL/dataset caveats`
+- `VRcheology/VRcheology.github.io` - `Studied in Wave 454 as hackathon-era data-backed archaeology VR visualization with open dataset/provenience framing, artifact reveal/excavation metaphor, educational UX value, and old-stack caveats`
+- `detjonmataj/Data-Structure-and-Algorithms-Visualization-in-VR` - `Studied in Wave 454 as Quest-oriented Unity educational visualization project with menu/animation scenes, spatial node/edge/label prefabs, Oculus/XR settings, and course-demo caveats`
+
+## 426. VR point-cloud annotation and cleaning tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-455-vr-point-cloud-annotation-and-cleaning-tools.md`
+- `../landscape/project-families.md`
+
+- `velaboratory/DataFoldvr-Virtual-Reality-Point-Cloud-Annotation` - `Studied in Wave 455 as hybrid VR/desktop point-cloud annotation system with .pcd import/export framing, point painting, counting, compute-shader performance angle, file browser, menu tablet, label/color layers, and study-specific caveats`
+- `SherryJYC/VR-3D-Annotation-Tool` - `Studied in Wave 455 as SteamVR-era semantic indoor-scene labeling tool with dynamic walking and static seated modes, 2D3Ds dataset setup, tutorial/user-study material, and old Unity/OpenVR caveats`
+- `Azzinoth/VR-PointCloud-Editor` - `Studied in Wave 455 as native/Focal Engine proof-of-concept point-cloud cleaning editor with large-dataset rendering/memory benchmark framing, selection/deletion utility direction, CMake/submodule shell, and performance-claim caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

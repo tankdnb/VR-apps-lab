@@ -21815,3 +21815,94 @@ When a new utility idea appears:
   paths, or raw input injection assumptions without permission boundaries.
 - Maturity:
   strong system pattern; needs provider-neutral bridge schema and safety labels.
+
+## Method 897: Privacy-gated XR telemetry SDK
+
+- What it is:
+  collect XR session telemetry through explicit modules that are gated by
+  privacy categories and visible session lifecycle.
+- Good for:
+  analytics, research logging, operator dashboards, training assessment,
+  quality diagnostics, and consent-aware instrumentation.
+- Source evidence:
+  `CognitiveVR/cvr-sdk-unity`, `CognitiveVR/xrprivacyframework-unity`,
+  `CognitiveVR/c3d-sdk-webxr`, and `CognitiveVR/cvr-sdk-unreal`.
+- Reusable core:
+  scene/version metadata, session id, participant/session properties, collector
+  modules, gaze/fixation, dynamic objects, custom events, sensors, controller
+  input, boundary, exit polls, audio/room capture gates, batch queues, flush
+  lifecycle, feature setup UI, and privacy category checks.
+- Do not copy directly:
+  provider endpoints, credentials, dashboard-specific payloads, legal copy, or
+  hidden always-on collectors.
+- Maturity:
+  high-value telemetry pattern; needs provider-neutral payload and consent
+  matrix.
+
+## Method 898: WebXR exported interaction bridge
+
+- What it is:
+  bridge Unity/MRTK interaction scenes into browser-hosted WebXR by separating
+  page/session lifecycle, Unity scene ownership, and input/pose translation.
+- Good for:
+  WebXR demos, hosted XR utilities, source-to-browser interaction prototypes,
+  cross-device hand/controller samples, and lightweight public previews.
+- Source evidence:
+  `AnderSystems/WebXR-Interactions`,
+  `calebcram/WebXR-MRTK-HandInteraction`, and
+  `Rufus31415/MixedRealityToolkit-Unity-WebXR`.
+- Reusable core:
+  WebXR loader, WebGL template, browser bootstrap, Unity bridge plugin,
+  reference-space/camera handoff, hand/controller input map, raycast UI, build
+  artifact provenance, device support labels, and fallback page UI.
+- Do not copy directly:
+  generated Unity build outputs, obsolete WebXR/MRTK assumptions, hard-coded
+  calibration, or demo assets.
+- Maturity:
+  useful bridge pattern; needs source-quality classification for WebXR repos.
+
+## Method 899: Immersive data visualization grammar
+
+- What it is:
+  map structured data into spatial marks, channels, graphs, labels, and
+  interaction verbs that can be explored in VR/XR.
+- Good for:
+  dashboards, scientific data viewers, graph exploration, educational
+  visualizations, archaeology/domain datasets, and spatial query tools.
+- Source evidence:
+  `ronellsicat/DxR`, `molgenis/Graph2VR`,
+  `VRcheology/VRcheology.github.io`, and
+  `detjonmataj/Data-Structure-and-Algorithms-Visualization-in-VR`.
+- Reusable core:
+  dataset descriptor, field schema, mark type, channel mapping, layout
+  algorithm, graph node/edge records, query/search, compare, reveal/explain UI,
+  save/export, and provenance labels.
+- Do not copy directly:
+  domain assets, old hackathon code, LGPL code into incompatible modules, or
+  dataset-specific assumptions.
+- Maturity:
+  strong product-method direction; needs compact schema examples.
+
+## Method 900: Hybrid point-cloud annotation workspace
+
+- What it is:
+  a dense 3D data workspace where VR and desktop interfaces share one
+  point-cloud renderer, annotation model, and export path.
+- Good for:
+  point-cloud labeling, object/plant/scene annotation, cleaning noisy scans,
+  counting tasks, dataset QA, and scientific spatial review.
+- Source evidence:
+  `velaboratory/DataFoldvr-Virtual-Reality-Point-Cloud-Annotation`,
+  `SherryJYC/VR-3D-Annotation-Tool`, `Azzinoth/VR-PointCloud-Editor`, and the
+  existing `ahstevens/VR-Point-Cloud-Editor` overlap family.
+- Reusable core:
+  point-cloud file descriptor, renderer backend, brush/select/delete tool,
+  class palette, label layer, count markers, VR/desktop input adapters, file
+  browser, progress/timer UI, dataset provenance, export schema, and
+  performance metrics.
+- Do not copy directly:
+  large research datasets, old SteamVR/OpenVR project bulk, preview XRI
+  packages, or unvalidated performance claims.
+- Maturity:
+  high-value data-tool pattern; needs export-schema comparison and performance
+  evidence matrix.

@@ -2019,6 +2019,26 @@ Use these files when you want to understand:
   WebRTC bridges, capture/encode/input routes, audio/mic routing, and privacy
   or reverse-engineering caveats.
 
+- `vr-projects-wave-452-xr-analytics-privacy-and-session-telemetry-sdks.md`
+  Next GitHub discovery wave focused on privacy-gated XR telemetry, analytics
+  SDK modules, session lifecycle, gaze/dynamic-object/sensor batches, engine
+  adapters, and consent categories.
+
+- `vr-projects-wave-453-webxr-mrtk-and-unity-interaction-bridge-samples.md`
+  Next GitHub discovery wave focused on WebXR/MRTK interaction exports, browser
+  session boundaries, WebGL templates, bridge plugins, raycast UI, and
+  generated-build provenance.
+
+- `vr-projects-wave-454-immersive-data-visualization-and-graph-exploration-tools.md`
+  Next GitHub discovery wave focused on immersive visualization grammars,
+  graph/SPARQL exploration, data-to-mark mappings, layout algorithms, save
+  paths, and dataset provenance.
+
+- `vr-projects-wave-455-vr-point-cloud-annotation-and-cleaning-tools.md`
+  Next GitHub discovery wave focused on hybrid VR/desktop point-cloud
+  annotation, semantic labels, brush/select/delete tools, dense rendering,
+  export schemas, and performance caveats.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

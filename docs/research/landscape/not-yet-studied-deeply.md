@@ -3236,6 +3236,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 374. `Spatial audio package follow-up across listener/source/room schemas, material maps, HRTF resources, occlusion/reflection/reverb toggles, provider capability matrices, editor visualization, and performance/license caveats`
 375. `Haptic pattern routing follow-up across provider-neutral event intents, pattern asset IDs, body/device targets, directional transforms, loop/stop semantics, active-device detection, OpenXR/controller comparison, and consent/fallback labels`
 376. `VR remote desktop bridge follow-up across capture backends, encoders, WebRTC/RTP/Bigscreen/CloudXR transports, input injection schemas, audio/mic routing, monitor placement, permission UX, privacy blanking, and recovery state`
+377. `Privacy-gated XR telemetry follow-up across payload schemas, consent persistence, offline queues, retry/flush state, retention/deletion, data-category matrix, and cross-provider comparisons`
+378. `WebXR exported interaction bridge follow-up across source-quality labels, generated-build provenance, browser session lifecycle, hand/controller input maps, raycast UI, reference-space fallback, and device support dates`
+379. `Immersive data visualization grammar follow-up across data schema, mark/channel mappings, graph operation verbs, layout algorithms, visual query builders, save/export formats, and dataset provenance`
+380. `Hybrid point-cloud annotation follow-up across .pcd/ply import/export, brush semantics, label layers, class palettes, VR/desktop adapters, compute/native renderer boundaries, and benchmark labels`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

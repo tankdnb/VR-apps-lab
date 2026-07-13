@@ -1429,3 +1429,23 @@ bet everything on unsupported vendor passthrough paths.
   VR remote desktop bridges with capture/encode/transport/input surfaces,
   WebRTC/browser viewers, Bigscreen-style agents, audio/mic routing, privacy
   blanking, and proprietary or reverse-engineering caveats.
+
+- `vr-projects-wave-452-xr-analytics-privacy-and-session-telemetry-sdks.md`
+  Privacy-gated XR telemetry SDKs with session lifecycle, gaze/dynamic-object/
+  sensor batches, engine adapters, exit polls, remote controls, and consent
+  category gates.
+
+- `vr-projects-wave-453-webxr-mrtk-and-unity-interaction-bridge-samples.md`
+  WebXR/MRTK interaction bridge samples with browser session boundaries, WebGL
+  templates, bridge plugins, raycast UI, hand/controller mapping, and
+  generated-build provenance.
+
+- `vr-projects-wave-454-immersive-data-visualization-and-graph-exploration-tools.md`
+  Immersive visualization and graph exploration tools with data-to-mark/channel
+  mappings, SPARQL graphs, layout algorithms, educational reveal metaphors,
+  save/export paths, and dataset provenance.
+
+- `vr-projects-wave-455-vr-point-cloud-annotation-and-cleaning-tools.md`
+  VR point-cloud annotation and cleaning tools with hybrid VR/desktop adapters,
+  `.pcd` import/export, brush/select/delete tools, semantic labels, dense
+  rendering, and performance caveats.

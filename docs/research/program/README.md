@@ -3204,3 +3204,31 @@ repeatable way.
 
 - `github-research-wave-451-backlog.md`
   Executed backlog for the Wave 451 pass.
+
+- `github-research-wave-452-plan.md`
+  Wave 452 research plan focused on XR analytics privacy and session telemetry
+  SDKs.
+
+- `github-research-wave-452-backlog.md`
+  Executed backlog for the Wave 452 pass.
+
+- `github-research-wave-453-plan.md`
+  Wave 453 research plan focused on WebXR MRTK and Unity interaction bridge
+  samples.
+
+- `github-research-wave-453-backlog.md`
+  Executed backlog for the Wave 453 pass.
+
+- `github-research-wave-454-plan.md`
+  Wave 454 research plan focused on immersive data visualization and graph
+  exploration tools.
+
+- `github-research-wave-454-backlog.md`
+  Executed backlog for the Wave 454 pass.
+
+- `github-research-wave-455-plan.md`
+  Wave 455 research plan focused on VR point-cloud annotation and cleaning
+  tools.
+
+- `github-research-wave-455-backlog.md`
+  Executed backlog for the Wave 455 pass.
