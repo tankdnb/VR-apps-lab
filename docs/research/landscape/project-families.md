@@ -11728,6 +11728,76 @@ This family matters because robust VR research utilities need repeatable task
 conditions, calibrated inputs, objective metrics, physiological/event streams,
 and export pipelines that can be audited later.
 
+## Family 379: VR welding and industrial procedure trainers
+
+This family covers VR skill trainers where the user learns a physical procedure
+through guided steps, ghost-path reference motion, part discovery, contextual
+errors, gauges, quizzes, and attempt summaries.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Marcel-Castro/VR-Welding` | Studied with caveats in Wave 400 | Welding workstation prototype with gauges, lessons, attachments, and MRTK-heavy package surface |
+| `stjakubi/VR-SLM-printer` | Studied in Wave 400 | Metal 3D-printer operation trainer with part discovery, contextual errors, labels, and learning progress |
+| `NandiniDevraj/WeldingSimulationSpline` | Studied in Wave 400 | Spline/ghost-path welding trainer with distance, angle, speed, guided/exam, HUD, and summary metrics |
+
+### Consolidation note
+
+This family matters because many future VR utilities can reuse the same
+skill-practice envelope even when the domain is not welding: ideal movement,
+live correction, hidden-hint exam mode, and post-attempt evidence.
+
+## Family 380: VR chemistry and laboratory learning scenarios
+
+This family covers educational lab environments where domain objects, scenario
+validators, grabbable/sampleable affordances, and environment consequences make
+the learning task legible in 3D.
+
+| Project | Status | Notes |
+|---|---|---|
+| `chemistry-lab/chemistry-lab-vr` | Studied in Wave 401 | Chemistry lab scenario toolkit with molecule packs, grabbables, atom interactions, goal validators, and visible consequence feedback |
+| `alinaduca/BachelorsThesis-UnityLab` | Studied with caveats in Wave 401 | Chemistry reaction learning app with thesis/demo route, AI tutor surfaces, and vendor/sample-code caveats |
+
+### Consolidation note
+
+This family matters because lab-like VR utilities need more than a quiz: they
+need object metadata, visible state changes, explanation surfaces, and reusable
+task validators.
+
+## Family 381: VR surgery and precision-task training
+
+This family covers careful-manipulation trainers where score depends on path
+accuracy, touch discipline, velocity thresholds, containment state, and
+completion gates.
+
+| Project | Status | Notes |
+|---|---|---|
+| `UoA-eResearch/SurgeryQuest` | Studied with caveats in Wave 402 | Quest surgery simulator reference with hand/controller fallback and simple cut interactions |
+| `IsaacYu15/VR-Surgery` | Studied in Wave 402 | Surgery robot lessons for grabbing, cutting, and suturing with accuracy, touch, velocity, and completion scoring |
+
+### Consolidation note
+
+This family matters as a non-clinical precision-task pattern: repair, lab,
+accessibility practice, and industrial training can reuse the same carefulness
+penalties without copying medical claims.
+
+## Family 382: VR drone robot and operator-control testbeds
+
+This family covers VR operator-control systems with movement baselines,
+control-mode dispatch, subject/session configuration, external signal ingress,
+and trial-grade telemetry.
+
+| Project | Status | Notes |
+|---|---|---|
+| `vkrishnan998/UnityVR-Drone-Simulation` | Studied with caveats in Wave 403 | Thin VR drone movement/user-study baseline |
+| `GTamilSelvan07/Unity_VR_Drone_Simulator` | Studied in Wave 403 | Compact drone-control scripts with speed, battery, power-up, and penalty state |
+| `MPI-IS/ArmSym` | Studied in Wave 403 | Assistive robotic-arm research harness with trials, control modes, biosignal ingress, and preallocated telemetry logging |
+
+### Consolidation note
+
+This family matters because robot, drone, tracker, and external-control VR
+utilities need clean separation between input adapters, device models, trial
+protocols, and data writers.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

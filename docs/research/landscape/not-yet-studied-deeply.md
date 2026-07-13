@@ -3184,6 +3184,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 322. `XR file/media intake follow-up across provider matrices, Android SAF, iOS Photos/Documents, desktop dialogs, MIME/UTI filters, persistent copies, thumbnail generation, headset focus, and fallback UX`
 323. `Anchored spatial layout follow-up across room-source schemas, scene labels, placement previews, anchor UUIDs, relative transforms, model cache keys, material state, layout migration, recovery UI, and provenance`
 324. `VR task testbed follow-up across scenario selectors, calibration artifacts, input adapters, recording toggles, object/action events, predicate schemas, RGB/depth/segmentation exports, trial CSVs, physiology streams, scoring, and replay`
+325. `VR welding and industrial procedure follow-up across ideal-path authoring, strict tolerance policy, quiz flow, contextual error catalog, equipment state machines, SenseGlove boundary, and validated safety labels`
+326. `VR laboratory scenario follow-up across molecule metadata schemas, reaction authoring, sampleable object flows, tutor privacy/offline fallback, environment consequence bundles, and reusable lab-task validators`
+327. `VR precision-task scoring follow-up across cut-path inaccuracy, ring/rope detection, velocity penalty tuning, touch-counter semantics, hand-tracking loss UX, and non-clinical careful-manipulation reuse`
+328. `VR operator-control testbed follow-up across control-mode adapters, subject/session JSON schemas, LSL/biosignal ingress, robot/drone abstraction, preallocated telemetry, per-trial folder hygiene, and replay dashboards`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

@@ -2826,3 +2826,31 @@ repeatable way.
 
 - `github-research-wave-399-backlog.md`
   Executed backlog for the Wave 399 pass.
+
+- `github-research-wave-400-plan.md`
+  Wave 400 research plan focused on VR welding and industrial procedure
+  training.
+
+- `github-research-wave-400-backlog.md`
+  Executed backlog for the Wave 400 pass.
+
+- `github-research-wave-401-plan.md`
+  Wave 401 research plan focused on VR chemistry and laboratory learning
+  scenarios.
+
+- `github-research-wave-401-backlog.md`
+  Executed backlog for the Wave 401 pass.
+
+- `github-research-wave-402-plan.md`
+  Wave 402 research plan focused on VR surgery task scoring and medical
+  simulation.
+
+- `github-research-wave-402-backlog.md`
+  Executed backlog for the Wave 402 pass.
+
+- `github-research-wave-403-plan.md`
+  Wave 403 research plan focused on VR drone, robot, and operator-control
+  testbeds.
+
+- `github-research-wave-403-backlog.md`
+  Executed backlog for the Wave 403 pass.

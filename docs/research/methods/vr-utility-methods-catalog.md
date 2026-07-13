@@ -20175,3 +20175,127 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   dataset recorders, locomotion test harnesses, embodied task analytics, and
   replayable XR study tools.
+
+## Method 845: Ghost-path skill trainer with attempt summary
+
+- What it is:
+  teach a physical VR skill by comparing the user's pose stream against an
+  ideal path, showing guidance during practice, hiding hints during exam mode,
+  and summarizing the attempt.
+- Good for:
+  welding, drawing, repair, lab handling, precise tool use, therapy exercises,
+  and controller/hand skill onboarding.
+- Why it matters:
+  many VR utilities need continuous motor feedback, not just discrete task
+  completion.
+- Source evidence:
+  `NandiniDevraj/WeldingSimulationSpline`, `stjakubi/VR-SLM-printer`, and
+  `Marcel-Castro/VR-Welding`.
+- Reusable core:
+  ideal pose stream, user pose sampler, tangent frame, lateral error,
+  orientation error, speed error, tolerance policy, weighted score, live HUD,
+  guided/exam modes, summary panel, and optional part-discovery progress.
+- Source evidence details:
+  `UserAccuracyTracer` computes distance/angle/speed errors; `LessonManagerSimple`
+  separates guided and exam attempts and accumulates mean score/green time;
+  `LearningManager` auto-counts discoverable printer parts.
+- Do not copy directly:
+  full vendor SDK bundles, scene-specific object names, unclear tolerance
+  semantics, or safety-training claims without validation.
+- Maturity:
+  donor-worthy pattern; strong for future skill trainers.
+- Best fit for `VR-apps-lab`:
+  guided motor-skill overlays, training helpers, and reusable scoring modules.
+
+## Method 846: Lab scenario goal with visible consequence feedback
+
+- What it is:
+  validate a lab/science task through object metadata and trigger predicates,
+  then show success by changing the environment rather than only a score label.
+- Good for:
+  chemistry labs, safety training, repair scenarios, museum interactives,
+  diagnostics tutorials, and educational mini-tools.
+- Why it matters:
+  VR learning becomes clearer when the world responds to the user's correct
+  action.
+- Source evidence:
+  `chemistry-lab/chemistry-lab-vr` and `alinaduca/BachelorsThesis-UnityLab`.
+- Reusable core:
+  domain object metadata, trigger/goal validator, correct-object predicate,
+  environment response list, particle/material state changes, delayed scene
+  transition, grabbable/sampleable affordances, and optional tutor surface.
+- Source evidence details:
+  `LakeGoal` validates a `MoleculePack`, fades dirty objects, stops particles,
+  changes water material, and loads a scene; `Grabbable` separates pickup,
+  drop, and throw behaviour from scenario validation.
+- Do not copy directly:
+  full MRTK/Inworld package surface, hard-coded one-off scene names, or cloud
+  tutor dependencies without privacy and offline fallback.
+- Maturity:
+  generalizable education/training pattern.
+- Best fit for `VR-apps-lab`:
+  lab-style tutorials, visible diagnostic workflows, and scenario validators.
+
+## Method 847: Precision-task scoring with carefulness penalties
+
+- What it is:
+  score careful VR manipulation through accuracy, collision discipline, speed
+  limits, and completion state.
+- Good for:
+  surgery-like task practice, repair, lab work, accessibility training,
+  delicate-object handling, and fine motor calibration.
+- Why it matters:
+  carefulness is a reusable UX metric when success depends on how a user acts,
+  not only whether they finish.
+- Source evidence:
+  `IsaacYu15/VR-Surgery` and `UoA-eResearch/SurgeryQuest`.
+- Reusable core:
+  task lesson manager, target/containment state, random or authored path, touch
+  counters, velocity threshold, inaccuracy metric, object completion gate, score
+  floor, result display, and explicit input-mode fallback.
+- Source evidence details:
+  `lessonCuttingGameManager` scores cut accuracy after pieces reach a tray;
+  `sutureLessonGameManager` deducts for mesh contact and excessive needle
+  velocity while checking ring pass-through; `HandManager` toggles hands versus
+  controllers depending on tracking state.
+- Do not copy directly:
+  medical validation claims, old Oculus packages, vendor deployment helpers, or
+  surgery-specific assets.
+- Maturity:
+  task-training pattern; useful outside medicine.
+- Best fit for `VR-apps-lab`:
+  precise manipulation trainers, calibration tasks, and careful-input scoring.
+
+## Method 848: Operator-control testbed with pluggable control modes and trial logger
+
+- What it is:
+  compare VR operator-control strategies while preserving trial state,
+  participant configuration, live control data, optional external signals, and
+  replayable telemetry.
+- Good for:
+  robot/drone control, tracker bridges, external-device operators, assistive
+  control research, and study-grade XR dashboards.
+- Why it matters:
+  operator tools need auditable data and swappable control modes before they can
+  become reliable utilities.
+- Source evidence:
+  `MPI-IS/ArmSym`, `GTamilSelvan07/Unity_VR_Drone_Simulator`, and
+  `vkrishnan998/UnityVR-Drone-Simulation`.
+- Reusable core:
+  session JSON, subject/config data, practice/trial switch, control-mode index,
+  delegate/strategy dispatch, controller pose sampling, optional biosignal
+  ingress, robot/device abstraction, preallocated telemetry buffer, per-trial
+  folder, and CSV/JSON output.
+- Source evidence details:
+  `AAExperimentMasterScript` owns trial progression and session/subject files;
+  `armsym_controlmodes` dispatches multiple robot control strategies and logs
+  each frame; `armsym_logger` preallocates rows and writes joint/controller
+  telemetry.
+- Do not copy directly:
+  hard-coded relative data paths, old SteamVR dependency assumptions,
+  keyboard-only movement mappings, or assistive/clinical claims without study
+  context.
+- Maturity:
+  research-harness pattern; strong for control/telemetry utilities.
+- Best fit for `VR-apps-lab`:
+  robot/drone operator helpers, external-control dashboards, and trial loggers.

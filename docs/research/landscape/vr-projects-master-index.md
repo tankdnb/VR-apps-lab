@@ -1255,3 +1255,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-399-vr-task-dataset-locomotion-and-behavioral-testbeds.md`
   Annotated VR task datasets, behavioral/eye-tracking studies, locomotion
   evaluation scenarios, calibration, logging, scoring, and replay.
+- `vr-projects-wave-400-vr-welding-and-industrial-procedure-training.md`
+  Welding and industrial procedure trainers with ghost-path accuracy, guided
+  and exam modes, part discovery, contextual errors, and summaries.
+- `vr-projects-wave-401-vr-chemistry-and-laboratory-learning-scenarios.md`
+  Chemistry/lab scenarios with molecule metadata, grabbable/sampleable objects,
+  visible environment consequences, and tutor/explanation surfaces.
+- `vr-projects-wave-402-vr-surgery-task-scoring-and-medical-simulation.md`
+  Surgery and precision-task simulators with cutting/suturing scores,
+  carefulness penalties, completion gates, and hand/controller fallback.
+- `vr-projects-wave-403-vr-drone-robot-and-operator-control-testbeds.md`
+  Drone and robotic-arm operator testbeds with control modes, trials, subject
+  data, biosignal ingress, and preallocated telemetry logs.

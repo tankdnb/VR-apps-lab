@@ -395,6 +395,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-397-unity-file-media-picker-and-import-export-surfaces.md`
 - `landscape/vr-projects-wave-398-spatial-room-layout-furniture-placement-and-design-persistence.md`
 - `landscape/vr-projects-wave-399-vr-task-dataset-locomotion-and-behavioral-testbeds.md`
+- `landscape/vr-projects-wave-400-vr-welding-and-industrial-procedure-training.md`
+- `landscape/vr-projects-wave-401-vr-chemistry-and-laboratory-learning-scenarios.md`
+- `landscape/vr-projects-wave-402-vr-surgery-task-scoring-and-medical-simulation.md`
+- `landscape/vr-projects-wave-403-vr-drone-robot-and-operator-control-testbeds.md`
 
 ## Archive Navigation
 

@@ -17,6 +17,26 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 400-403
+
+- `VR welding and industrial procedure training`
+  add applied skill-trainer coverage around ghost paths, torch pose error,
+  distance/angle/speed scoring, guided/exam modes, attempt summaries,
+  industrial part discovery, contextual workflow errors, and quiz-ready
+  learning flows.
+- `VR chemistry and laboratory learning scenarios`
+  add lab-education coverage around molecule metadata, scenario goal
+  validators, grabbable/sampleable affordances, visible environment
+  consequences, delayed scene transitions, and tutor/explanation surfaces.
+- `VR surgery task scoring and medical simulation`
+  add precision-task coverage around cutting, suturing, grabbing, containment
+  checks, touch penalties, velocity thresholds, random/authored paths,
+  completion gates, and hand/controller fallback.
+- `VR drone, robot, and operator-control testbeds`
+  add operator-harness coverage around drone movement baselines, control-mode
+  dispatch, trial/session JSON, biosignal ingress, robot kinematics,
+  preallocated telemetry buffers, per-trial folders, and CSV/JSON exports.
+
 ## Current additions from Waves 396-399
 
 - `VR research toolkits, posture, and retrospective experience measurement`

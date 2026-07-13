@@ -1790,6 +1790,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on annotated task datasets, behavioral
   study apps, locomotion evaluation, calibration, logging, and replay.
 
+- `vr-projects-wave-400-vr-welding-and-industrial-procedure-training.md`
+  Next GitHub discovery wave focused on welding, industrial workflow guidance,
+  ghost-path scoring, part discovery, contextual errors, and attempt summaries.
+
+- `vr-projects-wave-401-vr-chemistry-and-laboratory-learning-scenarios.md`
+  Next GitHub discovery wave focused on chemistry/lab scenarios, molecule
+  metadata, goal validators, visible consequences, and tutor surfaces.
+
+- `vr-projects-wave-402-vr-surgery-task-scoring-and-medical-simulation.md`
+  Next GitHub discovery wave focused on surgery-task scoring, carefulness
+  penalties, cutting/suturing lessons, and hand/controller fallback.
+
+- `vr-projects-wave-403-vr-drone-robot-and-operator-control-testbeds.md`
+  Next GitHub discovery wave focused on drone/robot operator testbeds, control
+  modes, trials, biosignal ingress, and telemetry logging.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

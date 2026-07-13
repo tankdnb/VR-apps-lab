@@ -5207,6 +5207,48 @@ Primary docs:
 - `JohnBacho/VIBES-Lab-Project2` - `Studied in Wave 399 as eye-tracked VR behavioral study app with gambling task conditions, wallets, tutorial flow, trial CSV, pupil metrics, SRanipal, and ethics/privacy caveats`
 - `VRatPolito/LET-VR` - `Studied in Wave 399 as OpenXR locomotion evaluation testbed with scenarios, configuration file, calibration artifact, locomotion manager, input wrapper, statistics loggers, and weighted scoring material`
 
+## 371. VR welding and industrial procedure training
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-400-vr-welding-and-industrial-procedure-training.md`
+- `../landscape/project-families.md`
+
+- `Marcel-Castro/VR-Welding` - `Studied with caveats in Wave 400 as an MRTK welding lab prototype with lesson objects, equipment attachments, gauges, regulator/valve scripts, and workstation composition value`
+- `stjakubi/VR-SLM-printer` - `Studied in Wave 400 as a metal 3D-printer procedure trainer with part discovery, progress UI, contextual workflow errors, controller labels, and quiz-ready learning flow`
+- `NandiniDevraj/WeldingSimulationSpline` - `Studied in Wave 400 as a spline-guided welding accuracy trainer with ghost/user pose comparison, distance/angle/speed scoring, guided/exam modes, HUD, summary, and ML-Agents hooks`
+
+## 372. VR chemistry and laboratory learning scenarios
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-401-vr-chemistry-and-laboratory-learning-scenarios.md`
+- `../landscape/project-families.md`
+
+- `chemistry-lab/chemistry-lab-vr` - `Studied in Wave 401 as a chemistry lab scenario toolkit with molecule/atom packs, grabbables, sampleable objects, scenario goal validators, scene transitions, and environment consequence feedback`
+- `alinaduca/BachelorsThesis-UnityLab` - `Studied with caveats in Wave 401 as a chemistry education app with VR reactions, thesis/demo material, AI tutor/chatbot framing, book/canvas surfaces, and large vendor sample bundles`
+
+## 373. VR surgery task scoring and medical simulation
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-402-vr-surgery-task-scoring-and-medical-simulation.md`
+- `../landscape/project-families.md`
+
+- `UoA-eResearch/SurgeryQuest` - `Studied with caveats in Wave 402 as a Quest surgery simulator reference with hand/controller fallback and simple cutting interaction scripts`
+- `IsaacYu15/VR-Surgery` - `Studied in Wave 402 as a surgery robot task simulator with cutting, grabbing, suturing, random cut paths, ring/rope checks, touch counters, velocity penalties, and score displays`
+
+## 374. VR drone robot and operator-control testbeds
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-403-vr-drone-robot-and-operator-control-testbeds.md`
+- `../landscape/project-families.md`
+
+- `vkrishnan998/UnityVR-Drone-Simulation` - `Studied with caveats in Wave 403 as a small VR drone/user-study movement baseline with rigidbody player control and camera-follow scripts`
+- `GTamilSelvan07/Unity_VR_Drone_Simulator` - `Studied in Wave 403 as a compact drone-control prototype with movement methods, max-speed state, battery/player behaviour, collision-triggered power-ups, and penalty modifiers`
+- `MPI-IS/ArmSym` - `Studied in Wave 403 as a VR assistive robotic-arm experiment harness with session/subject JSON, practice/trial progression, control-mode delegates, biosignal ingress, and preallocated CSV telemetry`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:
