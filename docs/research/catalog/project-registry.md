@@ -5608,6 +5608,46 @@ Primary docs:
 - `Purecon/Hololens-SphereDefender-` - `Studied in Wave 435 as MRTK/OpenXR sphere-defense microgame with ScriptableObject enemy waves, sphere-surface spawning, central objective, hand-touch hook, and incomplete tutorial-code caveats`
 - `nikolajIvanov/MRTK-Tutorial` - `Studied in Wave 435 as thin HoloLens MRTK/OpenXR setup reference with scene-only project, local MRTK package archives, manifest snapshot, and low code-donor value`
 
+## 407. Unity coordinate calibration and Cardboard profile micro-libraries
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-436-unity-coordinate-calibration-and-cardboard-profile-micro-libraries.md`
+- `../landscape/project-families.md`
+
+- `MaxHeimbrock/KabschCalibrationUnity` - `Studied in Wave 436 as Unity coordinate-space calibration micro-library with source/target point capture, Kabsch solver, mean-distance error, tooltip calibration, editor point authoring, and JSON transform persistence`
+- `epyyny/google_cardboard_calibration_unity_plugin` - `Studied in Wave 436 as modified Cardboard XR package with ruler/DPI calibration, safe-area/orientation recalculation, XRLoader screen-parameter handoff, Android/OpenGLES caveats, and upstream-fork provenance needs`
+
+## 408. VR accessibility visibility and design playground samples
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-437-vr-accessibility-visibility-and-design-playground-samples.md`
+- `../landscape/project-families.md`
+
+- `hai-vr/let-me-see` - `Studied in Wave 437 as Unity editor-driven VR visibility harness with XR lifecycle control, SceneView/local camera modes, user height/rescale settings, OpenXR force mode, repaint/restore hooks, and editor-hack caveats`
+- `GuillemD/VRDesignPlayground` - `Studied in Wave 437 as Unity accessibility design playground with height manager, locomotion activation threshold, hand presence, offset grabs, custom throw, physics buttons, and sample-scale caveats`
+
+## 409. Inclusive VR wheelchair and impairment simulation tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-438-inclusive-vr-wheelchair-and-impairment-simulation-tools.md`
+- `../landscape/project-families.md`
+
+- `rehabnj/vr-wheelchair-simulator` - `Studied in Wave 438 as wheelchair accessibility awareness simulation with captions, brightness overlay, audio preference persistence, imported XRI/URP sample caveats, and scenario-framing value`
+- `VlasiosKasapakis/VR4ALL` - `Studied in Wave 438 as impairment-simulation product/reference node with visual/motor condition profile switching, Unity/XR Toolkit asset framing, external asset caveats, and no public source donor value in the inspected tree`
+
+## 410. Modern XRI template and OpenXR multiplayer setup samples
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-439-modern-xri-template-and-openxr-multiplayer-setup-samples.md`
+- `../landscape/project-families.md`
+
+- `Fist-Full-of-Shrimp/Shrimp-XRI-Template` - `Studied in Wave 439 as Unity 6/XRI 3.x template baseline with OpenXR/XR Hands/accessibility package manifest, template scripts, teleport/callout/knob/video controls, validation rules, and Unity-sample provenance caveats`
+- `BanQingTian/MultiPlayer_Unity_OpenXR` - `Reviewed in Wave 439 as README-only OpenXR multiplayer setup placeholder with no Assets/Packages/scripts in the inspected public tree and no code donor value`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

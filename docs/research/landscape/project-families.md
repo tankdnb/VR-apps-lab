@@ -12377,6 +12377,72 @@ This family matters because small repros and micro-samples are useful when they
 preserve exact package versions, visible runtime state, and honest donor-scope
 labels.
 
+## Family 415: Unity calibration micro-libraries
+
+This family covers coordinate-space alignment, viewer/screen profile
+calibration, visible calibration error, tooltip/controller-tip calibration,
+screen DPI/safe-area correction, and transform/profile persistence.
+
+| Project | Status | Notes |
+|---|---|---|
+| `MaxHeimbrock/KabschCalibrationUnity` | Studied in Wave 436 | Unity Kabsch calibration package with source/target point capture, mean-distance error, tooltip calibration, editor point authoring, and JSON transform persistence |
+| `epyyny/google_cardboard_calibration_unity_plugin` | Studied in Wave 436 | Cardboard XR fork adding ruler/DPI calibration and XRLoader screen-parameter handoff with Android/OpenGLES caveats |
+
+### Consolidation note
+
+This family matters because calibration is a reusable utility layer when sample
+capture, solver/measurement boundaries, error labels, runtime parameter handoff,
+and saved artifacts are explicit.
+
+## Family 416: VR accessibility visibility and design playgrounds
+
+This family covers editor-to-headset visibility tools, accessibility review
+surfaces, height/scale controls, locomotion toggles, hand/interaction variants,
+and small scenes for comparing comfort/accessibility choices.
+
+| Project | Status | Notes |
+|---|---|---|
+| `hai-vr/let-me-see` | Studied in Wave 437 | Unity editor-driven VR visibility harness with XR lifecycle control, camera alignment modes, user height/rescale settings, and repaint/restore hooks |
+| `GuillemD/VRDesignPlayground` | Studied in Wave 437 | Unity accessibility design playground with height, locomotion, hand presence, offset grab, custom throw, and physics button primitives |
+
+### Consolidation note
+
+This family matters because accessibility work needs both reviewer visibility
+and small comparable design knobs, not only final-app settings menus.
+
+## Family 417: Inclusive VR impairment and mobility simulations
+
+This family covers wheelchair navigation scenarios, impairment profile switching,
+visual/motor condition filters, educational empathy framing, support settings,
+and caveat labels that keep simulation claims honest.
+
+| Project | Status | Notes |
+|---|---|---|
+| `rehabnj/vr-wheelchair-simulator` | Studied in Wave 438 | Wheelchair accessibility awareness simulation with captions, brightness overlay, audio preference persistence, and scenario/product framing |
+| `VlasiosKasapakis/VR4ALL` | README/thin source pass in Wave 438 | Impairment simulation reference with profile switching for visual and motor conditions, Unity/XR Toolkit asset framing, and external source caveats |
+
+### Consolidation note
+
+This family matters because inclusive-design simulations are useful when profile
+taxonomy, support UI, scenario tasks, and educational caveats are separated from
+unvalidated medical or lived-experience claims.
+
+## Family 418: Modern XRI templates and setup-scope labels
+
+This family covers Unity/XRI/OpenXR starter baselines, package manifests,
+template asset grouping, validation scripts, small reusable controls, and
+explicit labels for README-only or setup-only repos.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Fist-Full-of-Shrimp/Shrimp-XRI-Template` | Studied in Wave 439 | Unity 6/XRI 3.x template with OpenXR, XR Hands, accessibility module, validation rules, teleport/callout/knob/video controls, and Unity-sample provenance caveats |
+| `BanQingTian/MultiPlayer_Unity_OpenXR` | README-only pass in Wave 439 | Placeholder repo with no inspected Assets/Packages/scripts and no code donor value despite useful title keywords |
+
+### Consolidation note
+
+This family matters because templates are only reusable when package versions,
+sample provenance, removable scope, and donor value are visible.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

@@ -17,6 +17,28 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 436-439
+
+- `Unity coordinate calibration and Cardboard profile micro-libraries`
+  add calibration coverage around 3D correspondence capture, Kabsch solving,
+  tooltip calibration, mean-distance error, JSON transform persistence,
+  ruler/DPI screen calibration, safe-area/orientation recalculation, and
+  runtime screen-parameter handoff caveats.
+- `VR accessibility visibility and design playground samples`
+  add accessibility-review coverage around editor-to-headset visibility,
+  SceneView/local camera alignment, user height/rescale settings, XR lifecycle
+  controls, locomotion thresholds, hand presence, offset grabs, and small
+  comparable design primitives.
+- `Inclusive VR wheelchair and impairment simulation tools`
+  add inclusive-design coverage around wheelchair navigation awareness,
+  caption triggers, brightness/audio preferences, impairment profile switching,
+  visual/motor condition labels, educational framing, and source/caveat
+  boundaries.
+- `Modern XRI template and OpenXR multiplayer setup samples`
+  add template-baseline coverage around Unity 6/XRI 3.x/OpenXR/XR Hands package
+  manifests, validation rules, teleport/callout/knob/video controls, sample
+  provenance, and honest README-only donor labels.
+
 ## Current additions from Waves 432-435
 
 - `Unity XRI controller event emitter microtool`

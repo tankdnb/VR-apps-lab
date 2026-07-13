@@ -1951,6 +1951,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on HoloLens tracking repros, MRTK microgames,
   package setup references, and visible runtime state labels.
 
+- `vr-projects-wave-436-unity-coordinate-calibration-and-cardboard-profile-micro-libraries.md`
+  Next GitHub discovery wave focused on Unity coordinate calibration, Kabsch
+  solving, tooltip calibration, viewer/screen DPI correction, and persistence.
+
+- `vr-projects-wave-437-vr-accessibility-visibility-and-design-playground-samples.md`
+  Next GitHub discovery wave focused on editor-to-headset visibility, accessibility
+  review surfaces, height/scale settings, and small interaction design knobs.
+
+- `vr-projects-wave-438-inclusive-vr-wheelchair-and-impairment-simulation-tools.md`
+  Next GitHub discovery wave focused on wheelchair accessibility awareness,
+  impairment profile switching, educational framing, and simulation caveats.
+
+- `vr-projects-wave-439-modern-xri-template-and-openxr-multiplayer-setup-samples.md`
+  Next GitHub discovery wave focused on modern Unity/XRI/OpenXR template baselines,
+  package manifests, validation rules, sample provenance, and setup-only labels.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

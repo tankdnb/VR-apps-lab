@@ -21327,3 +21327,130 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   diagnostics, runtime bug notes, HoloLens setup references, and small
   interaction samples.
+
+## Method 881: Calibration micro-library with visible error and persistence
+
+- What it is:
+  a small calibration component that captures physical or screen/profile samples,
+  solves or measures an alignment, shows error/scale feedback, and saves a
+  reusable artifact.
+- Good for:
+  tracker-to-world alignment, room/object calibration, controller-tip
+  calibration, mobile viewer profiles, screen DPI correction, and runtime setup
+  utilities.
+- Why it matters:
+  VR tools often fail because coordinate systems or viewer parameters are hidden
+  assumptions; a micro-library makes calibration explicit and reusable.
+- Source evidence:
+  `MaxHeimbrock/KabschCalibrationUnity` and
+  `epyyny/google_cardboard_calibration_unity_plugin`.
+- Reusable core:
+  sample capture, solver/measurement boundary, point/profile ordering, error
+  metric, runtime parameter handoff, save/load artifact, and device/runtime
+  caveat labels.
+- Source evidence details:
+  `KabschCalibrationUnity` uses source/target points, `KabschSolver`, mean
+  distance error, tooltip calibration, and JSON transform persistence; the
+  Cardboard fork adds ruler/DPI calibration and `XRLoader` screen-parameter
+  handoff.
+- Do not copy directly:
+  old input bindings, full upstream plugin forks, native binaries without
+  provenance, or object-name persistence without stable IDs.
+- Maturity:
+  strong micro-utility pattern; needs a neutral calibration artifact schema.
+- Best fit for `VR-apps-lab`:
+  calibration helpers, diagnostics, viewer setup tools, and reusable alignment
+  samples.
+
+## Method 882: Accessibility visibility and design playground
+
+- What it is:
+  expose VR content to reviewers/testers and isolate accessibility interaction
+  choices into small comparable controls or scenes.
+- Good for:
+  editor-to-headset review, accessibility audits, height/scale controls,
+  locomotion alternatives, hand/input comparisons, and comfort experiments.
+- Why it matters:
+  accessibility improvements are easier to evaluate when content is visible to
+  non-runtime reviewers and interaction options are separated into clear knobs.
+- Source evidence:
+  `hai-vr/let-me-see` and `GuillemD/VRDesignPlayground`.
+- Reusable core:
+  review surface, XR lifecycle gate, camera alignment modes, user height/rescale
+  settings, locomotion/interaction toggles, playground scenes, and caveat labels.
+- Source evidence details:
+  `let-me-see` maps SceneView/local camera modes into VR and controls XR
+  subsystems from an editor window; `VRDesignPlayground` includes height,
+  locomotion, hand, grab, throw, and physics-button primitives.
+- Do not copy directly:
+  Unity Editor hacks as runtime design, automatic package mutation without
+  consent, or old input helper assumptions without action-map review.
+- Maturity:
+  useful accessibility review pattern; needs a checklist and cross-wave matrix.
+- Best fit for `VR-apps-lab`:
+  accessibility review tools, headset mirror utilities, design playgrounds, and
+  comfort-setting prototypes.
+
+## Method 883: Inclusive simulation profile loop
+
+- What it is:
+  structure educational VR simulations around explicit mobility, perception, or
+  motor-condition profiles with support UI and clear caveats.
+- Good for:
+  wheelchair navigation awareness, low-vision simulation, tremor/motor
+  constraints, inclusive-design training, accessibility education, and empathy
+  workshops.
+- Why it matters:
+  impairment simulations can be useful for design discussion only when they are
+  framed as educational aids, not medical validation or lived-experience
+  replacement.
+- Source evidence:
+  `rehabnj/vr-wheelchair-simulator` and `VlasiosKasapakis/VR4ALL`.
+- Reusable core:
+  condition/profile registry, constrained scenario task, support settings,
+  explanatory labels, persisted preferences, reflection/export materials, and
+  medical/validation caveats.
+- Source evidence details:
+  the wheelchair simulator includes captions, brightness overlay, audio
+  preference, and accessibility-awareness framing; VR4ALL documents switchable
+  visual and motor impairment profiles for inclusive-design education.
+- Do not copy directly:
+  external assets, unvalidated impairment effects, clinical claims, APK links,
+  or imported sample folders as original donor logic.
+- Maturity:
+  strong product framing pattern; needs source-available effect components and
+  a caveat template.
+- Best fit for `VR-apps-lab`:
+  accessibility simulations, design education prototypes, comfort/support UI,
+  and inclusive-design documentation.
+
+## Method 884: Modern XRI utility template baseline with donor-scope labels
+
+- What it is:
+  keep a current Unity/XRI/OpenXR starter baseline with visible package versions,
+  sample provenance, reusable controls, and explicit labels for what is or is
+  not donor-worthy.
+- Good for:
+  quick VR utility prototypes, hand/controller baselines, OpenXR package setup,
+  template comparison, validation checklists, and pruning guides.
+- Why it matters:
+  starter templates save time only when they are inspectable and scoped; empty
+  or setup-only repos should not be treated as architecture donors.
+- Source evidence:
+  `Fist-Full-of-Shrimp/Shrimp-XRI-Template` and
+  `BanQingTian/MultiPlayer_Unity_OpenXR`.
+- Reusable core:
+  pinned manifest, interaction samples, hand/controller support, validation
+  scripts, small controls, sample-code provenance, and donor-scope labels.
+- Source evidence details:
+  `Shrimp-XRI-Template` pins Unity 6/XRI 3.x/OpenXR/XR Hands/accessibility
+  packages and includes teleport/callout/knob/video/template scripts; the
+  multiplayer repo contained only a README in the inspected tree.
+- Do not copy directly:
+  full broad templates without pruning, imported Unity samples as original
+  donor code, or repository titles without source evidence.
+- Maturity:
+  practical baseline pattern; needs a starter-template evaluation checklist.
+- Best fit for `VR-apps-lab`:
+  prototype scaffolding, package baseline research, interaction-template
+  comparisons, and setup-reference labeling.

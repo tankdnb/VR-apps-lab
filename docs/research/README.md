@@ -436,6 +436,14 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-434-xr-educational-model-annotation-and-passthrough-retrofit-samples.md`
 - `landscape/vr-projects-wave-435-hololens-openxr-repro-and-mrtk-gameplay-micro-samples.md`
 
+- `landscape/vr-projects-wave-436-unity-coordinate-calibration-and-cardboard-profile-micro-libraries.md`
+
+- `landscape/vr-projects-wave-437-vr-accessibility-visibility-and-design-playground-samples.md`
+
+- `landscape/vr-projects-wave-438-inclusive-vr-wheelchair-and-impairment-simulation-tools.md`
+
+- `landscape/vr-projects-wave-439-modern-xri-template-and-openxr-multiplayer-setup-samples.md`
+
 ## Archive Navigation
 
 Use these when you need the full historical record rather than the short

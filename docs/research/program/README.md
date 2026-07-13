@@ -3092,3 +3092,31 @@ repeatable way.
 
 - `github-research-wave-435-backlog.md`
   Executed backlog for the Wave 435 pass.
+
+- `github-research-wave-436-plan.md`
+  Wave 436 research plan focused on Unity coordinate calibration and Cardboard
+  profile micro-libraries.
+
+- `github-research-wave-436-backlog.md`
+  Executed backlog for the Wave 436 pass.
+
+- `github-research-wave-437-plan.md`
+  Wave 437 research plan focused on VR accessibility visibility and design
+  playground samples.
+
+- `github-research-wave-437-backlog.md`
+  Executed backlog for the Wave 437 pass.
+
+- `github-research-wave-438-plan.md`
+  Wave 438 research plan focused on inclusive VR wheelchair and impairment
+  simulation tools.
+
+- `github-research-wave-438-backlog.md`
+  Executed backlog for the Wave 438 pass.
+
+- `github-research-wave-439-plan.md`
+  Wave 439 research plan focused on modern XRI template and OpenXR multiplayer
+  setup samples.
+
+- `github-research-wave-439-backlog.md`
+  Executed backlog for the Wave 439 pass.

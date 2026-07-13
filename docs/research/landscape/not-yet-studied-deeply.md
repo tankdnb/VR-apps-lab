@@ -3220,6 +3220,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 358. `Scientific spatial annotation follow-up across dataset ids, coordinate frames, label schemas, gaze/controller/hand selection metrics, undo/redo provenance, native-plugin boundaries, and export formats`
 359. `Educational XR model annotation follow-up across part metadata, callout layout, exploded transforms, quiz/progress state, large-asset checksums, passthrough retrofit diffs, and runtime capability labels`
 360. `HoloLens/OpenXR repro follow-up across anchors, spatial mesh, remoting, permissions, tracking recovery, exact package versions, visible state labels, and standard repro-note templates`
+361. `Calibration micro-library follow-up across tracker/world/camera/viewer calibration, artifact schemas, sample provenance, solver error, runtime parameter handoff, and stable persistence IDs`
+362. `Accessibility visibility/playground follow-up across editor/headset review, camera alignment modes, height/scale settings, interaction knobs, checklist surfaces, and cross-wave accessibility matrix`
+363. `Inclusive simulation follow-up across wheelchair/tremor/low-vision/hearing-loss source components, condition profile registries, support UI, educational framing, consent, and caveat templates`
+364. `Modern XRI template follow-up across source-available multiplayer baselines, package manifests, input maps, hand/controller support, accessibility modules, validation rules, and sample-code provenance`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

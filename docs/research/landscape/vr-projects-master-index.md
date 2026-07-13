@@ -1368,3 +1368,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-435-hololens-openxr-repro-and-mrtk-gameplay-micro-samples.md`
   HoloLens OpenXR repros and MRTK micro-samples with package manifests, visible
   tracking state, sphere-defense loops, and thin setup references.
+- `vr-projects-wave-436-unity-coordinate-calibration-and-cardboard-profile-micro-libraries.md`
+  Unity calibration micro-libraries with Kabsch point alignment, tooltip
+  calibration, error metrics, persistence, and Cardboard DPI/profile correction.
+- `vr-projects-wave-437-vr-accessibility-visibility-and-design-playground-samples.md`
+  Accessibility visibility and playground samples with editor-to-headset review,
+  camera alignment, height/scale settings, and small interaction primitives.
+- `vr-projects-wave-438-inclusive-vr-wheelchair-and-impairment-simulation-tools.md`
+  Inclusive simulation tools with wheelchair awareness, captions, brightness and
+  audio settings, impairment profile framing, and source/caveat boundaries.
+- `vr-projects-wave-439-modern-xri-template-and-openxr-multiplayer-setup-samples.md`
+  Modern XRI template/setup samples with OpenXR/XR Hands manifests, reusable
+  controls, validation rules, sample provenance, and README-only labels.
