@@ -12730,6 +12730,84 @@ This family matters because dense 3D annotation needs one data model that can
 serve VR, desktop, rendering, selection, labeling, export, and performance
 diagnostics.
 
+## Family 435: BIM/IFC spatial model review kernels
+
+This family covers IFC/BIM viewer kernels, property trees, object/class/storey
+explorers, measurements, clipping/sectioning, project lists, server-backed
+models, and export adapters that can inform future VR spatial review tools.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ThatOpen/web-ifc-viewer` | Studied in Wave 456 | IFC.js viewer facade with context, IFC manager, clipping, floor plans, dimensions, selection, and export adapters |
+| `xeokit/xeokit-bim-viewer` | Studied in Wave 456 | BIM review shell with explorer tabs, toolbar tools, measurement/context menus, property inspector, server abstraction, and web-component embedding |
+| `aothms/BIMsurfer` | Studied in Wave 456 | BIMServer/glTF viewer lineage with login/revision loading, id mapping, metadata tree, geometry loader, and event forwarding |
+| `thingraph/bim-viewer` | Studied in Wave 456 | Vue/Three project browser with sample/custom projects, upload flow, public config, and bundled IFCLoader/web-ifc assets |
+
+### Consolidation note
+
+This family matters because model-review VR utilities need a stable service
+boundary for load, inspect, measure, section, export, and project switching.
+
+## Family 436: A-Frame/WebXR interaction microcomponents
+
+This family covers small browser-XR components that normalize input, menus,
+camera transforms, controller rays, fallback buttons, remote-phone controls,
+peripherals, and interaction hotspots.
+
+| Project | Status | Notes |
+|---|---|---|
+| `fernandojsg/aframe-camera-transform-controls-component` | Studied in Wave 457 | Two-hand camera-rig pan/scale/rotate component with scale hint and enable/reset lifecycle |
+| `bryik/aframe-controller-cursor-component` | Studied in Wave 457 | Controller ray cursor mapping raycaster intersections to pointer-like events |
+| `kfarr/aframe-select-bar-component` | Studied in Wave 457 | Controller-attached select/menu bar from optgroup/option markup with icon previews |
+| `DougReeder/aframe-button-controls` | Studied in Wave 457 | Fallback-first button adapter for pointer/touch/mouse/WebXR select/squeeze/gamepad sources |
+| `polats/aframe-polats-extras` | Studied in Wave 457 | Remote-phone/Daydream control bridge with pair-code overlay and brokered connection |
+| `3DRudder/aframe-3dRudder` | Studied in Wave 457 | Foot-controller adapter for A-Frame peripheral input |
+| `inplayo-com/aframe-interactive-areas` | Studied in Waves 457/459 | Declarative interaction-zone sample with model/audio hooks |
+
+### Consolidation note
+
+This family matters because utility UI should consume normalized pointer,
+button, menu, transform, and remote-control events instead of binding directly
+to each device class.
+
+## Family 437: Quest ADB and device-operator sidecars
+
+This family covers Quest developer/operator helpers: ADB enablement, mDNS
+discovery, privileged-setting gates, foreground watchdogs, accessibility risks,
+desktop command menus, package lists, keepalive loops, and dependency provenance.
+
+| Project | Status | Notes |
+|---|---|---|
+| `thedroidgeek/oculus-wireless-adb` | Studied in Wave 458 | Quest-side wireless ADB activator with Settings.Global toggle, JmDNS discovery, tcpip mode, status/copy UI, and Termux handoff |
+| `project-SIMPLE/adb-auto-enable` | Studied in Wave 458 | Foreground watchdog and accessibility popup automation service for persistent wireless ADB |
+| `DevOculus-Meta-Quest/QuestADBServices` | Lightly studied in Wave 458 | Thin Kotlin Quest ADB service variant needing deeper behavior review |
+| `mitchv2020/QuestToolbox` | Studied in Wave 458 | Windows batch toolbox with ADB/scrcpy/ffmpeg, package, mirror, keepalive, and update helper commands |
+| `SideQuestVR/SideQuest` | Existing overlap reference | Larger Quest operator ecosystem already tracked separately |
+
+### Consolidation note
+
+This family matters because headset-operator tooling must separate safe status
+views from privileged mutations and provide explicit dry-run, rollback, and
+dependency labels.
+
+## Family 438: WebXR HMD display test and controller diagnostics tools
+
+This family covers portable WebXR/A-Frame test scenes for HMD display quality,
+controller compatibility, pattern JSON, scene collections, diagnostic hotspots,
+and reproducible report artifacts.
+
+| Project | Status | Notes |
+|---|---|---|
+| `DIDSR/WebXR-tools` | Studied in Wave 459 | WebXR HMD image-quality pattern creator with editable JSON patterns, scene collections, TCA, compatibility scenes, and controller visualizers |
+| `inplayo-com/aframe-interactive-areas` | Studied in Wave 459 | Small interaction-zone sample useful for diagnostic hotspots and guided test areas |
+| `bryik/aframe-controller-cursor-component` | Cross-wave reference | Pointer/ray diagnostic component from Wave 457 |
+| `polats/aframe-polats-extras` | Cross-wave reference | Remote-control and pair-code diagnostic surface from Wave 457 |
+
+### Consolidation note
+
+This family matters because display/input QA should be portable, schema-backed,
+and reproducible instead of locked to one engine build.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

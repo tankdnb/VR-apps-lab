@@ -3240,6 +3240,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 378. `WebXR exported interaction bridge follow-up across source-quality labels, generated-build provenance, browser session lifecycle, hand/controller input maps, raycast UI, reference-space fallback, and device support dates`
 379. `Immersive data visualization grammar follow-up across data schema, mark/channel mappings, graph operation verbs, layout algorithms, visual query builders, save/export formats, and dataset provenance`
 380. `Hybrid point-cloud annotation follow-up across .pcd/ply import/export, brush semantics, label layers, class palettes, VR/desktop adapters, compute/native renderer boundaries, and benchmark labels`
+381. `BIM/IFC spatial review follow-up across model/project descriptors, IFC property schemas, GUID/object id maps, class/storey trees, clipping/section persistence, measurements, BCF/viewpoints, wasm deployment, and VR review adapters`
+382. `A-Frame/WebXR microcomponent follow-up across modern input profiles, pointer/button/menu event schemas, controller-attached menu accessibility, phone/peripheral adapters, camera transform comfort limits, and fallback labels`
+383. `Quest operator sidecar follow-up across ADB transport state, mDNS discovery, privileged-setting safety gates, dry-run command catalogs, rollback/disable actions, dependency provenance, and accessibility automation alternatives`
+384. `Portable WebXR HMD test scene follow-up across pattern JSON schema, scene collections, controller compatibility panels, report artifacts, device/date labels, display-quality caveats, and reproducible sharing paths`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

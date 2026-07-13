@@ -476,6 +476,14 @@ If you need recent examples instead of the full chronology, start with:
 
 - `landscape/vr-projects-wave-455-vr-point-cloud-annotation-and-cleaning-tools.md`
 
+- `landscape/vr-projects-wave-456-bim-ifc-viewer-kernels-for-spatial-review-tools.md`
+
+- `landscape/vr-projects-wave-457-aframe-controller-menu-and-remote-interaction-microcomponents.md`
+
+- `landscape/vr-projects-wave-458-quest-adb-device-operator-sidecars.md`
+
+- `landscape/vr-projects-wave-459-webxr-hmd-display-test-and-controller-diagnostics-tools.md`
+
 ## Archive Navigation
 
 Use these when you need the full historical record rather than the short

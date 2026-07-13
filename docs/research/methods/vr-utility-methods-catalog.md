@@ -21906,3 +21906,102 @@ When a new utility idea appears:
 - Maturity:
   high-value data-tool pattern; needs export-schema comparison and performance
   evidence matrix.
+
+## Method 901: Spatial model review kernel
+
+- What it is:
+  a viewer/service boundary for loading structured spatial models and exposing
+  review tools such as properties, selection, class/storey trees, measurements,
+  clipping, sections, exports, and project switching.
+- Good for:
+  BIM/IFC review, industrial walkthroughs, architectural QA, training overlays,
+  scan/model comparison, and future VR spatial review utilities.
+- Source evidence:
+  `ThatOpen/web-ifc-viewer`, `xeokit/xeokit-bim-viewer`,
+  `aothms/BIMsurfer`, and `thingraph/bim-viewer`.
+- Reusable core:
+  model descriptor, loader/wasm path, scene context, object id map, property
+  tree, class/storey explorer, selection controller, measurement tools,
+  clipping/section tools, export adapters, project registry, busy/progress UI,
+  and deployment/version labels.
+- Do not copy directly:
+  vendor SDK internals, bundled wasm/assets, old RequireJS/xeogl code,
+  deprecated APIs, Dropbox/server specifics, or unvalidated performance
+  thresholds.
+- Maturity:
+  strong product-method direction; needs neutral model/project descriptor and
+  VR interaction adapter.
+
+## Method 902: Input-neutral WebXR microcomponent
+
+- What it is:
+  a small browser-XR component that converts one device-specific interaction
+  source into stable pointer, button, menu, transform, or command events.
+- Good for:
+  lightweight WebXR tools, headsetless demos, controller fallbacks, menu bars,
+  phone-as-controller modes, peripheral adapters, and reusable interaction labs.
+- Source evidence:
+  `fernandojsg/aframe-camera-transform-controls-component`,
+  `bryik/aframe-controller-cursor-component`,
+  `kfarr/aframe-select-bar-component`,
+  `DougReeder/aframe-button-controls`, `polats/aframe-polats-extras`,
+  `3DRudder/aframe-3dRudder`, and `inplayo-com/aframe-interactive-areas`.
+- Reusable core:
+  component schema, input-source adapter, state cache, event normalization,
+  visual affordance, enable/pause/remove lifecycle, fallback path, debug labels,
+  and command/menu payload.
+- Do not copy directly:
+  old WebVR/A-Frame assumptions, hard-coded controller ids, public broker URLs,
+  fixed menu layouts, or legacy Daydream/GearVR/trackpad mappings.
+- Maturity:
+  useful micro-pattern; needs modern WebXR input-source/profile mapping and
+  accessibility labels.
+
+## Method 903: Quest operator sidecar with explicit safety gates
+
+- What it is:
+  a headset/desktop companion pattern for enabling, discovering, connecting to,
+  and inspecting Quest devices through visible state, command catalogs, and
+  risk-labelled operations.
+- Good for:
+  developer-mode helpers, ADB enablement, device discovery, package/mirror
+  tools, telemetry sidecars, lab operator dashboards, and repeatable setup.
+- Source evidence:
+  `thedroidgeek/oculus-wireless-adb`, `project-SIMPLE/adb-auto-enable`,
+  `DevOculus-Meta-Quest/QuestADBServices`, `mitchv2020/QuestToolbox`, and
+  existing Quest operator companion overlap.
+- Reusable core:
+  permission checklist, device discovery, ADB transport state, command catalog,
+  dry-run/preview, foreground status, user-visible notification, dependency
+  provenance, safety labels, rollback/disable action, and cache/log hygiene.
+- Do not copy directly:
+  bundled binaries, blind accessibility popup automation, silent privileged
+  setting writes, opaque batch side effects, or commands without rollback.
+- Maturity:
+  high-utility operator pattern; must be designed with safety gates before code
+  reuse.
+
+## Method 904: Portable WebXR HMD test scene
+
+- What it is:
+  a WebXR-delivered display/input diagnostic scene whose patterns, controller
+  checks, scene groups, and reports are represented as shareable artifacts.
+- Good for:
+  HMD image-quality checks, controller compatibility diagnostics, QA labs,
+  cross-headset comparison, accessibility/display review, and reproducible
+  test scenes.
+- Source evidence:
+  `DIDSR/WebXR-tools`, `inplayo-com/aframe-interactive-areas`,
+  `bryik/aframe-controller-cursor-component`, and
+  `polats/aframe-polats-extras`.
+- Reusable core:
+  test-pattern JSON, scene/group collection, entity primitives, sliders/inputs,
+  import/export/share path, compatibility panel, controller input visualizer,
+  device labels, report notes, and caveat/disclaimer block.
+- Do not copy directly:
+  medical/regulatory claims, bundled libraries, jQuery-era UI shell,
+  source-specific disclaimers, or display-quality conclusions without measured
+  procedure.
+- Maturity:
+  strong diagnostics direction; needs explicit schema and report artifact
+  definition.

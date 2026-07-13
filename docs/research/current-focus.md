@@ -17,6 +17,28 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 456-459
+
+- `BIM/IFC viewer kernels for spatial review tools`
+  add spatial-model review coverage around IFC loaders, WebAssembly deployment,
+  property trees, object/class/storey explorers, measurements, clipping,
+  sectioning, project upload lists, export adapters, and model-review kernel
+  boundaries.
+- `A-Frame controller, menu, and remote interaction microcomponents`
+  add browser-XR microcomponent coverage around controller cursors, pointer
+  event normalization, controller-attached select bars, fallback buttons,
+  phone-as-controller bridges, foot-controller adapters, and declarative
+  interaction zones.
+- `Quest ADB device-operator sidecars`
+  add operator-tool coverage around on-device ADB enablement, mDNS/JmDNS
+  discovery, privileged settings, foreground watchdogs, accessibility popup
+  automation risks, desktop batch toolboxes, bundled dependency provenance, and
+  explicit safety gates.
+- `WebXR HMD display test and controller diagnostics tools`
+  add portable QA coverage around HMD test-pattern authoring, JSON
+  scene/pattern packages, WebXR/A-Frame delivery, controller compatibility
+  panels, diagnostic hotspots, reproducible report artifacts, and claim caveats.
+
 ## Current additions from Waves 452-455
 
 - `XR analytics privacy and session telemetry SDKs`

@@ -5827,6 +5827,55 @@ Primary docs:
 - `SherryJYC/VR-3D-Annotation-Tool` - `Studied in Wave 455 as SteamVR-era semantic indoor-scene labeling tool with dynamic walking and static seated modes, 2D3Ds dataset setup, tutorial/user-study material, and old Unity/OpenVR caveats`
 - `Azzinoth/VR-PointCloud-Editor` - `Studied in Wave 455 as native/Focal Engine proof-of-concept point-cloud cleaning editor with large-dataset rendering/memory benchmark framing, selection/deletion utility direction, CMake/submodule shell, and performance-claim caveats`
 
+## 427. BIM/IFC viewer kernels for spatial review tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-456-bim-ifc-viewer-kernels-for-spatial-review-tools.md`
+- `../landscape/project-families.md`
+
+- `ThatOpen/web-ifc-viewer` - `Studied in Wave 456 as IFC.js viewer kernel with context facade, IFC manager, clipping, floor plans, dimensions, grid/axes, selection window, glTF/PDF/DXF export, edge projection, and wasm/deprecated-API caveats`
+- `xeokit/xeokit-bim-viewer` - `Studied in Wave 456 as BIM review shell with model/object/class/storey explorers, toolbar modes, measurements, sections, property inspector, server abstraction, web component embedding, and SDK/CSS caveats`
+- `aothms/BIMsurfer` - `Studied in Wave 456 as BIMServer/glTF viewer lineage with login/revision loading, GUID/id mapping, metadata/tree renderers, geometry loader, and old RequireJS/xeogl caveats`
+- `thingraph/bim-viewer` - `Studied in Wave 456 as Vue/Three BIM project browser with sample/custom project cards, upload service, split-method setting, public config files, bundled IFCLoader/web-ifc assets, and placeholder-product caveats`
+
+## 428. A-Frame controller, menu, and remote interaction microcomponents
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-457-aframe-controller-menu-and-remote-interaction-microcomponents.md`
+- `../landscape/project-families.md`
+
+- `fernandojsg/aframe-camera-transform-controls-component` - `Studied in Wave 457 as two-hand A-Frame camera-rig transform component with one-hand pan, two-hand scale/rotate, scale hint, enable/reset lifecycle, custom event names, and hard-coded hand-id caveats`
+- `bryik/aframe-controller-cursor-component` - `Studied in Wave 457 as controller ray cursor component mapping raycaster intersections to hover/down/up/click events with beam geometry, state tracking, and old A-Frame caveats`
+- `kfarr/aframe-select-bar-component` - `Studied in Wave 457 as controller-attached select/menu bar built from optgroup/option markup with icon previews, looped selection, group switching, trackpad/trigger handlers, and fixed-layout caveats`
+- `DougReeder/aframe-button-controls` - `Studied in Wave 457 as fallback-first WebXR/A-Frame button adapter mapping pointer/touch/mouse/select/squeeze/gamepad sources to buttondown/buttonup events with permission/debug caveats`
+- `polats/aframe-polats-extras` - `Studied in Wave 457 as remote phone/Daydream/WebRTC control package with pair-code overlay, broker URL, orientation state, ray target, debug surface, and obsolete broker/device caveats`
+- `3DRudder/aframe-3dRudder` - `Studied in Wave 457 as foot-controller A-Frame adapter with plugin/dist/example structure and peripheral-input reuse value`
+- `inplayo-com/aframe-interactive-areas` - `Studied in Waves 457/459 as declarative interactive-area WebXR sample with hotspot/audio/model hooks and demo-asset caveats`
+
+## 429. Quest ADB device-operator sidecars
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-458-quest-adb-device-operator-sidecars.md`
+- `../landscape/project-families.md`
+
+- `thedroidgeek/oculus-wireless-adb` - `Studied in Wave 458 as Quest-side wireless ADB activator with WRITE_SECURE_SETTINGS gate, adb_wifi_enabled toggle, JmDNS discovery, tcpip option, command copy, Termux handoff, and bundled-libadb caveats`
+- `project-SIMPLE/adb-auto-enable` - `Studied in Wave 458 as foreground ADB watchdog with settings/network hooks, periodic fallback, boot receiver, accessibility VrUsb popup automation, and sensitive-automation caveats`
+- `DevOculus-Meta-Quest/QuestADBServices` - `Lightly studied in Wave 458 as thin Kotlin Quest ADB service variant with app/manifest shell and follow-up needed for distinct behavior`
+- `mitchv2020/QuestToolbox` - `Studied in Wave 458 as Windows batch Quest operator toolbox with ADB/scrcpy/ffmpeg dependencies, packages/keepalive/update helpers, menu command surface, and bundled-binary caveats`
+
+## 430. WebXR HMD display test and controller diagnostics tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-459-webxr-hmd-display-test-and-controller-diagnostics-tools.md`
+- `../landscape/project-families.md`
+
+- `DIDSR/WebXR-tools` - `Studied in Wave 459 as FDA/OSEL WebXR HMD image-quality pattern creator with A-Frame/Three.js scenes, JSON pattern/collection import-export, TCA and compatibility tools, controller visualizers, and regulatory-claim caveats`
+- `inplayo-com/aframe-interactive-areas` - `Cross-listed from Waves 457/459 as small A-Frame interaction-zone sample useful for diagnostic hotspots, audio instructions, and declarative scene annotations`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

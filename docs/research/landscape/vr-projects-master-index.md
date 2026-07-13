@@ -1449,3 +1449,23 @@ bet everything on unsupported vendor passthrough paths.
   VR point-cloud annotation and cleaning tools with hybrid VR/desktop adapters,
   `.pcd` import/export, brush/select/delete tools, semantic labels, dense
   rendering, and performance caveats.
+
+- `vr-projects-wave-456-bim-ifc-viewer-kernels-for-spatial-review-tools.md`
+  BIM/IFC viewer kernels with property trees, class/storey explorers,
+  measurements, clipping/sectioning, exports, project lists, and WebAssembly
+  deployment caveats.
+
+- `vr-projects-wave-457-aframe-controller-menu-and-remote-interaction-microcomponents.md`
+  A-Frame/WebXR interaction microcomponents with controller cursors, camera
+  transforms, select bars, fallback buttons, remote-phone controls, peripheral
+  adapters, and event-normalization boundaries.
+
+- `vr-projects-wave-458-quest-adb-device-operator-sidecars.md`
+  Quest ADB operator sidecars with secure-settings gates, mDNS discovery,
+  foreground watchdogs, accessibility popup risks, desktop command toolboxes,
+  and safety-gated operation catalogs.
+
+- `vr-projects-wave-459-webxr-hmd-display-test-and-controller-diagnostics-tools.md`
+  WebXR HMD test and controller diagnostics tools with portable pattern JSON,
+  scene collections, controller visualizers, diagnostic hotspots, report
+  artifacts, and display-quality caveats.

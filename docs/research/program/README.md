@@ -3232,3 +3232,30 @@ repeatable way.
 
 - `github-research-wave-455-backlog.md`
   Executed backlog for the Wave 455 pass.
+
+- `github-research-wave-456-plan.md`
+  Wave 456 research plan focused on BIM/IFC viewer kernels for spatial review
+  tools.
+
+- `github-research-wave-456-backlog.md`
+  Executed backlog for the Wave 456 pass.
+
+- `github-research-wave-457-plan.md`
+  Wave 457 research plan focused on A-Frame controller, menu, and remote
+  interaction microcomponents.
+
+- `github-research-wave-457-backlog.md`
+  Executed backlog for the Wave 457 pass.
+
+- `github-research-wave-458-plan.md`
+  Wave 458 research plan focused on Quest ADB device-operator sidecars.
+
+- `github-research-wave-458-backlog.md`
+  Executed backlog for the Wave 458 pass.
+
+- `github-research-wave-459-plan.md`
+  Wave 459 research plan focused on WebXR HMD display test and controller
+  diagnostics tools.
+
+- `github-research-wave-459-backlog.md`
+  Executed backlog for the Wave 459 pass.

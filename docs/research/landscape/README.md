@@ -2039,6 +2039,26 @@ Use these files when you want to understand:
   annotation, semantic labels, brush/select/delete tools, dense rendering,
   export schemas, and performance caveats.
 
+- `vr-projects-wave-456-bim-ifc-viewer-kernels-for-spatial-review-tools.md`
+  Next GitHub discovery wave focused on BIM/IFC viewer kernels, property trees,
+  measurements, clipping, export adapters, project lists, and spatial-review
+  boundaries.
+
+- `vr-projects-wave-457-aframe-controller-menu-and-remote-interaction-microcomponents.md`
+  Next GitHub discovery wave focused on A-Frame controller cursors, transform
+  controls, select bars, fallback buttons, remote-phone controls, peripherals,
+  and interaction-zone microcomponents.
+
+- `vr-projects-wave-458-quest-adb-device-operator-sidecars.md`
+  Next GitHub discovery wave focused on Quest wireless ADB helpers, mDNS
+  discovery, foreground watchdogs, accessibility automation risks, desktop
+  operator menus, and explicit safety gates.
+
+- `vr-projects-wave-459-webxr-hmd-display-test-and-controller-diagnostics-tools.md`
+  Next GitHub discovery wave focused on WebXR HMD display test patterns,
+  controller compatibility panels, diagnostic hotspots, JSON scene artifacts,
+  and report caveats.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
