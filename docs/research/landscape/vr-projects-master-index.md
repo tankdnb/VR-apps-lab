@@ -1356,3 +1356,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-431-domain-specific-vr-game-timer-overlays-and-helper-microtools.md`
   Domain-specific timer helpers with no-memory overlays, focus/hotkey gates,
   bitmap timer panels, browser fallback, and freshness labels.
+- `vr-projects-wave-432-unity-xri-controller-event-emitter-microtool.md`
+  Unity XRI input facade with per-hand feature polling, typed controller events,
+  demo subscribers, and static lifecycle caveats.
+- `vr-projects-wave-433-vr-scientific-annotation-point-cloud-and-slice-stack-tools.md`
+  Scientific annotation tools with point-cloud PCL bridges, gaze/controller/box
+  selection, image-slice stacks, annotation graphs, and export schemas.
+- `vr-projects-wave-434-xr-educational-model-annotation-and-passthrough-retrofit-samples.md`
+  Educational model callouts, external asset hydration, OpenXR/XRI learning apps,
+  and Quest passthrough retrofit caveats.
+- `vr-projects-wave-435-hololens-openxr-repro-and-mrtk-gameplay-micro-samples.md`
+  HoloLens OpenXR repros and MRTK micro-samples with package manifests, visible
+  tracking state, sphere-defense loops, and thin setup references.

@@ -21206,3 +21206,124 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   overlay microtools, domain timer panels, stream-friendly helpers, and
   small-value VR utility prototypes.
+
+## Method 877: XR controller feature event facade
+
+- What it is:
+  expose low-level XR controller feature state as typed events for small Unity
+  utility prototypes.
+- Good for:
+  teaching projects, quick VR prototypes, controller diagnostics, simple overlay
+  controls, and event-driven sample scenes.
+- Why it matters:
+  many small tools do not need a full input abstraction, but they still need
+  readable and lifecycle-safe input signals.
+- Source evidence:
+  `Volorf/XR-Emitter`.
+- Reusable core:
+  per-hand input provider, feature-to-event map, typed payloads, subscription
+  examples, missing-device warnings, change detection, unsubscribe guidance, and
+  action-map compatibility notes.
+- Source evidence details:
+  `XREmitterR.cs` polls `XRController.inputDevice` for `CommonUsages` trigger,
+  grip, buttons, touches, and axis values, then publishes static C# events.
+- Do not copy directly:
+  duplicated left/right classes, global static events without reset, and
+  per-frame firehose events without change filtering.
+- Maturity:
+  simple useful micro-pattern; should be modernized for action-based XRI.
+- Best fit for `VR-apps-lab`:
+  input diagnostics, simple utility samples, and headsetless/simulator-friendly
+  controller facades.
+
+## Method 878: Scientific spatial annotation workbench
+
+- What it is:
+  turn dense scientific datasets into selectable, labelable, editable spatial
+  objects with exportable annotation records.
+- Good for:
+  point clouds, medical/scientific volumes, image stacks, neuron tracing, spatial
+  labeling, and research study tools.
+- Why it matters:
+  VR annotation value comes from repeatable selection, labels, provenance, and
+  export, not only from immersive visualization.
+- Source evidence:
+  `RMonica/vr_hand_gaze_annotation` and `newgen211/Vr-axion`.
+- Reusable core:
+  dataset adapter, spatial proxy renderer, input modes, selection ray/volume,
+  label palette, editable point/line graph, undo/redo, metrics, save/load, and
+  export schema with coordinate-frame metadata.
+- Source evidence details:
+  `vr_hand_gaze_annotation` bridges Unity to a PCL DLL for PCD load/save and
+  point searches; `Vr-axion` renders image slices as quads and exports traced
+  annotation points to JSON.
+- Do not copy directly:
+  one-off native plugin boundaries, committed Unity cache folders, keyboard-only
+  controls, or exports without dataset and coordinate provenance.
+- Maturity:
+  strong research-tool pattern; needs a neutral annotation schema.
+- Best fit for `VR-apps-lab`:
+  annotation prototypes, scientific visualization utilities, dataset inspection,
+  and export-schema design.
+
+## Method 879: Educational XR model callout and retrofit flow
+
+- What it is:
+  structure educational model viewers around part metadata, callouts, exploded
+  state, large-asset hydration, and runtime capability/retrofit labels.
+- Good for:
+  training apps, museum/education viewers, anatomy tools, engineering model
+  inspection, and legacy VR-to-MR migrations.
+- Why it matters:
+  model education tools become reusable when labels, asset provenance, and
+  runtime setup are data-driven rather than scene-only.
+- Source evidence:
+  `Chinmay-HS/AeroVerse-XR-Headsets` and
+  `MixedRealityDevelopment-CalebCram/Neuroanatomy_Passthrough_Quest2`.
+- Reusable core:
+  part registry, annotation entries, callout prefab, camera-facing line labels,
+  scale/avoidance logic, model selection cleanup, exploded-view metadata,
+  external asset hydration, build workflow, and passthrough retrofit checklist.
+- Source evidence details:
+  AeroVerse has dynamic callouts keyed by part names and external model/video
+  setup; Neuroanatomy Passthrough documents a legacy scene retrofit and exposes
+  OVRInput brain-part interaction scripts.
+- Do not copy directly:
+  unverified AI claims, scene-only passthrough changes, Google Drive assets
+  without checksums, or legacy `SendMessage` interaction routing.
+- Maturity:
+  practical product pattern; needs a model metadata schema.
+- Best fit for `VR-apps-lab`:
+  model viewers, educational annotation utilities, passthrough retrofit audits,
+  and asset-provenance playbooks.
+
+## Method 880: XR repro and micro-sample harness
+
+- What it is:
+  preserve small XR bugs or interaction ideas as minimal projects with exact
+  package versions, visible runtime state, and bounded scope.
+- Good for:
+  HoloLens/OpenXR repros, tracking-state diagnostics, permission/meshing issues,
+  MRTK hand-touch samples, and package compatibility notes.
+- Why it matters:
+  small repros prevent knowledge loss when a runtime issue is hard to describe
+  but easy to demonstrate with a minimal scene.
+- Source evidence:
+  `camnewnham/Unity-Repro-OpenXR-TrackingLoss`,
+  `Purecon/Hololens-SphereDefender-`, and `nikolajIvanov/MRTK-Tutorial`.
+- Reusable core:
+  device/runtime label, package manifest, reproduction steps, expected/actual
+  behavior, visible state text, minimal scene, micro-interaction loop, and donor
+  scope label.
+- Source evidence details:
+  tracking-loss repro shows ARSession/head/center-eye state in scene; SphereDefender
+  uses sphere-surface spawning and MRTK touch hooks; MRTK-Tutorial preserves a
+  package/scene setup snapshot.
+- Do not copy directly:
+  incomplete tutorial code, package archives without provenance, or issue-specific
+  assumptions promoted as general methods.
+- Maturity:
+  useful documentation pattern; should become a standard repro-note template.
+- Best fit for `VR-apps-lab`:
+  diagnostics, runtime bug notes, HoloLens setup references, and small
+  interaction samples.

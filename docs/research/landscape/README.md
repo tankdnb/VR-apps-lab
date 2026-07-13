@@ -1935,6 +1935,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on domain-specific timer overlays, no-memory
   game helpers, hotkey gates, bitmap panels, and browser fallback timers.
 
+- `vr-projects-wave-432-unity-xri-controller-event-emitter-microtool.md`
+  Next GitHub discovery wave focused on Unity XRI controller event facades,
+  feature polling, typed event streams, and lifecycle caveats.
+
+- `vr-projects-wave-433-vr-scientific-annotation-point-cloud-and-slice-stack-tools.md`
+  Next GitHub discovery wave focused on scientific point-cloud and image-stack
+  annotation, gaze/controller selection, labels, native plugins, and export.
+
+- `vr-projects-wave-434-xr-educational-model-annotation-and-passthrough-retrofit-samples.md`
+  Next GitHub discovery wave focused on educational model callouts, asset
+  hydration, exploded-view framing, and legacy VR-to-passthrough retrofits.
+
+- `vr-projects-wave-435-hololens-openxr-repro-and-mrtk-gameplay-micro-samples.md`
+  Next GitHub discovery wave focused on HoloLens tracking repros, MRTK microgames,
+  package setup references, and visible runtime state labels.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

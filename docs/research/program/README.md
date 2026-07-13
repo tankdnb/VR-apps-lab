@@ -3064,3 +3064,31 @@ repeatable way.
 
 - `github-research-wave-431-backlog.md`
   Executed backlog for the Wave 431 pass.
+
+- `github-research-wave-432-plan.md`
+  Wave 432 research plan focused on a Unity XRI controller event emitter
+  microtool.
+
+- `github-research-wave-432-backlog.md`
+  Executed backlog for the Wave 432 pass.
+
+- `github-research-wave-433-plan.md`
+  Wave 433 research plan focused on VR scientific annotation point-cloud and
+  slice-stack tools.
+
+- `github-research-wave-433-backlog.md`
+  Executed backlog for the Wave 433 pass.
+
+- `github-research-wave-434-plan.md`
+  Wave 434 research plan focused on XR educational model annotation and
+  passthrough retrofit samples.
+
+- `github-research-wave-434-backlog.md`
+  Executed backlog for the Wave 434 pass.
+
+- `github-research-wave-435-plan.md`
+  Wave 435 research plan focused on HoloLens OpenXR repro and MRTK gameplay
+  micro-samples.
+
+- `github-research-wave-435-backlog.md`
+  Executed backlog for the Wave 435 pass.

@@ -3216,6 +3216,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 354. `Quest hand/pose telemetry companion follow-up across source-available APKs, WebSocket/OSC/BLE transports, packet schema versions, timestamps, consent, coordinate frames, and reconnect state`
 355. `WebXR hand interaction lab follow-up across modular gesture classifiers, calibration thresholds, hand model adapters, joint debug layers, confidence labels, and browser runtime comparisons`
 356. `Domain-specific timer overlay follow-up across non-Phasmophobia game helpers, no-memory policies, focus gates, global-hotkey ownership, event timer schemas, and data freshness labels`
+357. `Unity XR input event facade follow-up across action-based XRI, OpenXR action maps, simulator/headsetless input, lifecycle-safe subscriptions, change detection, and stale-device diagnostics`
+358. `Scientific spatial annotation follow-up across dataset ids, coordinate frames, label schemas, gaze/controller/hand selection metrics, undo/redo provenance, native-plugin boundaries, and export formats`
+359. `Educational XR model annotation follow-up across part metadata, callout layout, exploded transforms, quiz/progress state, large-asset checksums, passthrough retrofit diffs, and runtime capability labels`
+360. `HoloLens/OpenXR repro follow-up across anchors, spatial mesh, remoting, permissions, tracking recovery, exact package versions, visible state labels, and standard repro-note templates`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

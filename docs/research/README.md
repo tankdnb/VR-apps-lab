@@ -431,6 +431,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-429-quest-hand-pose-streaming-and-adb-telemetry-companions.md`
 - `landscape/vr-projects-wave-430-webxr-hand-gesture-avatar-and-browser-interaction-microtools.md`
 - `landscape/vr-projects-wave-431-domain-specific-vr-game-timer-overlays-and-helper-microtools.md`
+- `landscape/vr-projects-wave-432-unity-xri-controller-event-emitter-microtool.md`
+- `landscape/vr-projects-wave-433-vr-scientific-annotation-point-cloud-and-slice-stack-tools.md`
+- `landscape/vr-projects-wave-434-xr-educational-model-annotation-and-passthrough-retrofit-samples.md`
+- `landscape/vr-projects-wave-435-hololens-openxr-repro-and-mrtk-gameplay-micro-samples.md`
 
 ## Archive Navigation
 

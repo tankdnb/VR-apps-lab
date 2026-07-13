@@ -5568,6 +5568,46 @@ Primary docs:
 - `SteveMarkhamGIT/PhasmoTimer` - `Studied in Wave 431 as bitmap-rendered timer surface with resource layers, digit glyph loader, hover/touch masks, output image buffer, and OpenVR texture-surface follow-up`
 - `DrBrad/phastimer` - `Studied in Wave 431 as browser/OBS-friendly Phasmophobia timer helper with DOM controls, 16 ms update loop, smudge/Obambo/ghost-speed state, and no native VR integration caveat`
 
+## 403. Unity XRI controller event emitter microtool
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-432-unity-xri-controller-event-emitter-microtool.md`
+- `../landscape/project-families.md`
+
+- `Volorf/XR-Emitter` - `Studied in Wave 432 as Unity XR Interaction Toolkit controller event facade with per-hand feature polling, static typed events for trigger/grip/buttons/2D axis, demo subscribers, and static-lifecycle caveats`
+
+## 404. VR scientific annotation point-cloud and slice-stack tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-433-vr-scientific-annotation-point-cloud-and-slice-stack-tools.md`
+- `../landscape/project-families.md`
+
+- `RMonica/vr_hand_gaze_annotation` - `Studied in Wave 433 as Quest Pro point-cloud annotation tool with eye/controller/box modes, PCL native plugin bridge, label palette, cone/radius selection, bounding-box search, and export caveats`
+- `newgen211/Vr-axion` - `Studied in Wave 433 as Unity neuron image-stack annotation tool with z-spaced textured quads, raycast point placement, line connections, move/annotate/connect modes, JSON export, and cache/provenance caveats`
+
+## 405. XR educational model annotation and passthrough retrofit samples
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-434-xr-educational-model-annotation-and-passthrough-retrofit-samples.md`
+- `../landscape/project-families.md`
+
+- `Chinmay-HS/AeroVerse-XR-Headsets` - `Studied in Wave 434 as OpenXR/XRI educational model inspection app with part-name callouts, dynamic label scaling/avoidance, model selection, external asset hydration, and AI/product-claim caveats`
+- `MixedRealityDevelopment-CalebCram/Neuroanatomy_Passthrough_Quest2` - `Studied in Wave 434 as legacy neuroanatomy VR-to-Quest-passthrough retrofit with OVRInput brain-part interactions, laser SendMessage routing, scene/background retrofit notes, and legacy-code caveats`
+
+## 406. HoloLens OpenXR repro and MRTK gameplay micro-samples
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-435-hololens-openxr-repro-and-mrtk-gameplay-micro-samples.md`
+- `../landscape/project-families.md`
+
+- `camnewnham/Unity-Repro-OpenXR-TrackingLoss` - `Studied in Wave 435 as HoloLens OpenXR/ARFoundation tracking-loss repro with exact package versions, sensor-cover movement steps, ARSession/head/center-eye state text, and repro-scope caveats`
+- `Purecon/Hololens-SphereDefender-` - `Studied in Wave 435 as MRTK/OpenXR sphere-defense microgame with ScriptableObject enemy waves, sphere-surface spawning, central objective, hand-touch hook, and incomplete tutorial-code caveats`
+- `nikolajIvanov/MRTK-Tutorial` - `Studied in Wave 435 as thin HoloLens MRTK/OpenXR setup reference with scene-only project, local MRTK package archives, manifest snapshot, and low code-donor value`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

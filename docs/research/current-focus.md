@@ -17,6 +17,25 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 432-435
+
+- `Unity XRI controller event emitter microtool`
+  adds input-facade coverage around per-hand controller feature polling,
+  trigger/grip/button/axis event streams, demo subscribers, missing-controller
+  warnings, and static lifecycle caveats.
+- `VR scientific annotation point-cloud and slice-stack tools`
+  add research annotation coverage around eye/controller/box point-cloud
+  selection, PCL native plugin bridges, label palettes, bounding-box searches,
+  z-spaced image slices, raycast tracing, connection graphs, and JSON export.
+- `XR educational model annotation and passthrough retrofit samples`
+  add learning-model coverage around part-name callouts, dynamic label scaling,
+  collision avoidance, external asset hydration, release-build asset setup,
+  legacy OVRInput interactions, and Quest passthrough retrofit caveats.
+- `HoloLens OpenXR repro and MRTK gameplay micro-samples`
+  add micro-reference coverage around tracking-loss repro steps, ARSession/head
+  state labels, package manifests, sphere-defense wave spawning, MRTK hand-touch
+  hooks, and thin setup-reference labeling.
+
 ## Current additions from Waves 428-431
 
 - `PCVR launch profile and Quest operator companion tools`

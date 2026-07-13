@@ -12309,6 +12309,74 @@ and freshness labels for game-specific data.
 This family matters because a tiny domain tool can be valuable in VR when it is
 transparent, focus-aware, reversible, and honest about game-data freshness.
 
+## Family 411: Unity XR input event facades
+
+This family covers small Unity/XRI wrappers that convert controller feature
+state into reusable event streams for prototypes, teaching projects, and helper
+tools.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Volorf/XR-Emitter` | Studied in Wave 432 | Unity XRI per-hand controller event facade with trigger/grip/button/2D-axis static events and demo subscribers |
+
+### Consolidation note
+
+This family matters because small VR utility prototypes benefit from readable
+input events, but the facade must make lifecycle, device ownership, and action
+map compatibility explicit.
+
+## Family 412: Scientific VR annotation workbenches
+
+This family covers point-cloud annotation, image-stack tracing, gaze/controller
+selection, label palettes, bounding boxes, annotation graphs, native dataset
+adapters, and export schemas.
+
+| Project | Status | Notes |
+|---|---|---|
+| `RMonica/vr_hand_gaze_annotation` | Studied in Wave 433 | Quest Pro point-cloud annotation with eye/controller/box modes, PCL native plugin, label colors, and point search/export |
+| `newgen211/Vr-axion` | Studied in Wave 433 | Neuron image-stack annotation with z-spaced quads, raycast point placement, line connections, edit modes, and JSON export |
+
+### Consolidation note
+
+This family matters because scientific VR tools need data provenance, coordinate
+frames, interaction mode labels, and export schemas as first-class product
+features.
+
+## Family 413: Educational XR model annotation and passthrough retrofits
+
+This family covers educational model viewers, part labels, callouts, exploded
+views, large-asset setup, learning modes, and migration of legacy VR scenes into
+mixed-reality passthrough contexts.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Chinmay-HS/AeroVerse-XR-Headsets` | Studied in Wave 434 | OpenXR/XRI educational model viewer with dynamic annotations, model selection, external asset hydration, and build workflow notes |
+| `MixedRealityDevelopment-CalebCram/Neuroanatomy_Passthrough_Quest2` | Studied in Wave 434 | Legacy neuroanatomy VR app retrofitted for Quest passthrough with OVRInput interactions and scene/background caveats |
+
+### Consolidation note
+
+This family matters because reusable education tools need a clear split between
+model metadata, callout behavior, asset provenance, runtime capabilities, and
+legacy retrofit caveats.
+
+## Family 414: HoloLens OpenXR repro and MRTK micro-samples
+
+This family covers minimal HoloLens repro projects, tracking-state displays,
+OpenXR/MRTK package snapshots, hand-touch microgames, and thin tutorial/setup
+references.
+
+| Project | Status | Notes |
+|---|---|---|
+| `camnewnham/Unity-Repro-OpenXR-TrackingLoss` | Studied in Wave 435 | Minimal HoloLens tracking-loss repro with package versions, steps, ARSession/head/center-eye text, and spatial mesh expectation |
+| `Purecon/Hololens-SphereDefender-` | Studied in Wave 435 | MRTK/OpenXR sphere-defense microgame with ScriptableObject waves, sphere-surface spawning, and hand-touch hook |
+| `nikolajIvanov/MRTK-Tutorial` | Thin setup pass in Wave 435 | Scene/package setup reference with local MRTK archives and Microsoft Mixed Reality OpenXR manifest |
+
+### Consolidation note
+
+This family matters because small repros and micro-samples are useful when they
+preserve exact package versions, visible runtime state, and honest donor-scope
+labels.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.
