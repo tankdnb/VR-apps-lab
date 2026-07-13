@@ -3148,3 +3148,31 @@ repeatable way.
 
 - `github-research-wave-443-backlog.md`
   Executed backlog for the Wave 443 pass.
+
+- `github-research-wave-444-plan.md`
+  Wave 444 research plan focused on OpenXR runtime switchers and input
+  diagnostic utilities.
+
+- `github-research-wave-444-backlog.md`
+  Executed backlog for the Wave 444 pass.
+
+- `github-research-wave-445-plan.md`
+  Wave 445 research plan focused on XR radial hand menu controls and marking
+  menu primitives.
+
+- `github-research-wave-445-backlog.md`
+  Executed backlog for the Wave 445 pass.
+
+- `github-research-wave-446-plan.md`
+  Wave 446 research plan focused on VR comfort vignette and visual-field
+  reducer tools.
+
+- `github-research-wave-446-backlog.md`
+  Executed backlog for the Wave 446 pass.
+
+- `github-research-wave-447-plan.md`
+  Wave 447 research plan focused on Unity XRI interaction learning and
+  affordance baselines.
+
+- `github-research-wave-447-backlog.md`
+  Executed backlog for the Wave 447 pass.

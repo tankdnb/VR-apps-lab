@@ -1983,6 +1983,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on colorblind filters, render-pipeline
   accessibility layers, runtime profiles, persistence, and validation caveats.
 
+- `vr-projects-wave-444-openxr-runtime-switchers-and-input-diagnostic-utilities.md`
+  Next GitHub discovery wave focused on OpenXR runtime switchers, manifest
+  validation, tray/status UX, shortcut switching, and input/session diagnostics.
+
+- `vr-projects-wave-445-xr-radial-hand-menu-controls-and-marking-menu-primitives.md`
+  Next GitHub discovery wave focused on radial/hand menus, angular selection,
+  submenus, hand activation, hover/commit states, and fallback input.
+
+- `vr-projects-wave-446-vr-comfort-vignette-and-visual-field-reducer-tools.md`
+  Next GitHub discovery wave focused on comfort vignettes, visual-field
+  reducers, tunnelling, presets, masks, mobile paths, and caveat labels.
+
+- `vr-projects-wave-447-unity-xri-interaction-learning-and-affordance-baselines.md`
+  Next GitHub discovery wave focused on XRI learning repositories, interaction
+  primitives, sockets, knobs, hands, validation, gaze fallback, and provenance.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

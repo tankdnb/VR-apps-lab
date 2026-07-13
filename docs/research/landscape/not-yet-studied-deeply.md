@@ -3228,6 +3228,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 366. `Tracking provider pipeline follow-up across Meta Movement, MediaPipe, low-sensor avatar prediction, landmark schemas, confidence/timestamps, calibration, sidecar transports, retargeting outputs, and privacy`
 367. `Vendor OpenXR platform workflow follow-up across Android XR, VIVE, Meta Quest, SteamVR/Linux, ALVR, feature matrices, loader/layer diagnostics, validation tasks, and troubleshooting templates`
 368. `Visual accessibility filter follow-up across colorblind simulation/correction, URP/HDRP/built-in render boundaries, XR stereo modes, UI inclusion, controller settings, persistence, preview charts, and validation caveats`
+369. `OpenXR runtime/input operator follow-up across runtime manifest records, 32-bit versus 64-bit registry views, manifest validation, rollback, tray status, launch-profile switching, API-layer observation, and controller action diagnostics`
+370. `XR radial hand menu follow-up across command schemas, activation poses, hand/controller fallback, item-count limits, angular deadzones, submenu/cancel behavior, hover/commit feedback, animation preference, and accessibility labels`
+371. `Comfort vignette and visual-field reducer follow-up across trigger sources, render-pipeline paths, UI/transparent inclusion, mask/stencil exclusions, mobile performance, severity profiles, persistence, user disable settings, and medical/comfort caveats`
+372. `XRI interaction affordance baseline follow-up across course-original versus imported sample provenance, grab/socket/knob/hand/gaze primitives, required package/component records, validation rules, simulator fallback, and copy-scope boundaries`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

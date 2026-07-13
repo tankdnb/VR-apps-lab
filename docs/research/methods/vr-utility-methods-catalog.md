@@ -21595,3 +21595,140 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   visual accessibility modules, settings panels, accessibility audits, and
   low-vision/color filter prototypes.
+
+## Method 889: OpenXR runtime/input operator surface
+
+- What it is:
+  a small operator-facing tool that makes OpenXR active runtime, candidate
+  manifests, switch actions, and controller/session input state visible.
+- Good for:
+  runtime switchers, OpenXR doctors, launch-profile helpers, controller input
+  probes, support screenshots, and headsetless setup diagnostics.
+- Why it matters:
+  OpenXR runtime state is global, hidden, and easy to break; users need a safe
+  surface that shows what is active and why input/session bring-up fails.
+- Source evidence:
+  `philip0000000/OpenXR-Input-Explorer`,
+  `Teqqles/OpenXRRuntimeSwitcher`, `Ybalrid/OpenXR-Runtime-Manager`, and
+  `jonyrh/OXR_Switcher`.
+- Reusable core:
+  active-runtime readout, available-runtime inventory, manifest JSON parsing,
+  DLL/path validation, friendly runtime labels/icons, custom runtime records,
+  safe switch action, registry-view caveat, tray/status indicator, shortcut mode,
+  and optional OpenXR session/action/controller state probe.
+- Source evidence details:
+  OpenXR Input Explorer exposes WPF/Silk.NET session/input bring-up; Teqqles
+  validates manifests and tracks registry changes; Ybalrid documents HKLM
+  switching and known manifest paths; OXR_Switcher adds x32/x64 and shortcut
+  runtime-number switching.
+- Do not copy directly:
+  vendor icons, local manifest presets, admin-elevation assumptions, index-only
+  switching, or SteamVR-only diagnostic assumptions.
+- Maturity:
+  strong utility pattern; needs a neutral runtime manifest record and rollback
+  checklist.
+- Best fit for `VR-apps-lab`:
+  OpenXR doctor, setup assistant, runtime launch profiles, and controller input
+  diagnostics.
+
+## Method 890: XR radial hand menu primitive
+
+- What it is:
+  a compact spatial command menu with explicit activation, item schema,
+  angle/pose selection, hover state, commit/cancel, and hand/controller fallback.
+- Good for:
+  overlay command palettes, wrist menus, quick settings, radial tool wheels,
+  accessibility-friendly command surfaces, and controller-light utilities.
+- Why it matters:
+  VR utilities often need fast commands without covering the scene with large
+  panels; radial/hand menus work only when selection grammar and escape routes
+  are explicit.
+- Source evidence:
+  `connorpugh/XRRadialMarkingMenu`,
+  `jesuisse/godot-radial-menu-control`, `Oyshoboy/RadialMenuVR`, and
+  `NovaUI-Unity/XRHandMenuSample`.
+- Reusable core:
+  activation gate, menu center/anchor, item registry, radius/arc/deadzone,
+  angle-to-item mapping, hover versus commit, cancel/back/submenu boundary,
+  item-count limit, animation preference, theme/visual feedback, hand pose gate,
+  and controller/gamepad fallback.
+- Source evidence details:
+  Godot radial menu documents item dictionaries, signals, geometry properties,
+  submenus, gamepad input, and usability caveats; Nova hand menu uses palm/head
+  angle activation and panel state; Unity radial samples supply lightweight
+  angle-selection references.
+- Do not copy directly:
+  engine-specific UI nodes, asset-store dependencies, hard-coded item counts,
+  or hand-only assumptions without fallback.
+- Maturity:
+  practical UI primitive; needs a command-schema-first reusable design note.
+- Best fit for `VR-apps-lab`:
+  overlay tools, debug menus, quick toggles, runtime switchers, calibration
+  tools, and accessibility settings.
+
+## Method 891: Comfort vignette and visual-field reducer
+
+- What it is:
+  a parameterized visual-field effect for comfort, accessibility preview, or
+  educational simulation with explicit trigger, aperture, mask, user setting,
+  render path, and caveat labels.
+- Good for:
+  locomotion comfort, vignette/tunnelling, low-vision previews, symptom
+  education, safety reviews, and comfort settings panels.
+- Why it matters:
+  edge darkening, tunnel vision, blur, scotomas, and masks are easy to render
+  but risky to present without user control, pipeline boundaries, and claims
+  caveats.
+- Source evidence:
+  `RaniaMostafa0/Virtual-Reality-Simulation-of-Retinal-Diseases`,
+  `SixWays/UnityVrTunnelling`, `ExtendRealityLtd/Tilia.Visuals.Vignette.Unity`,
+  and `sigtrapgames/VrTunnellingPro-Unity`.
+- Reusable core:
+  trigger source, severity/intensity, coverage/aperture, feather/easing, effect
+  profile, mask/stencil exclusions, preset assets, mobile/performance path,
+  transparent/UI inclusion label, user disable option, persistence, and
+  medical/comfort validation caveat.
+- Source evidence details:
+  retinal simulation maps disease profiles to blur/scotoma/tunnel/haze effects;
+  UnityVrTunnelling is a camera/shader reference; Tilia frames vignette as a
+  package component; VR Tunnelling Pro provides presets, masking, mobile
+  variants, stencil details, and user-option guidance.
+- Do not copy directly:
+  clinical mappings, medical claims, old image-effect assumptions, or
+  one-size-fits-all comfort defaults.
+- Maturity:
+  strong reusable effect pattern; needs a render-pipeline-neutral schema.
+- Best fit for `VR-apps-lab`:
+  comfort prototypes, accessibility filters, low-vision previews, and settings
+  panels.
+
+## Method 892: XRI interaction learning baseline
+
+- What it is:
+  treat large Unity/XRI learning repositories as indexes of small interaction
+  primitives, each documented with component, input source, lifecycle hook,
+  state model, affordance, validation, and provenance.
+- Good for:
+  grab/socket/knob primitives, hand animation, teleport validation, room-scale
+  correction, gaze fallback, controller samples, and teaching-derived utilities.
+- Why it matters:
+  learning repos are full of useful fragments but are often too asset-heavy and
+  dependency-mixed to reuse wholesale.
+- Source evidence:
+  `mattdway/CreateWithVR`.
+- Reusable core:
+  primitive record, required packages, component dependencies, input/action
+  source, interaction lifecycle, constraint schema, feedback affordance,
+  validation/fix rule, simulator/headset fallback, and source provenance label.
+- Source evidence details:
+  inspected scripts include XRI knobs, key/lock sockets, tag/auto sockets,
+  room-scale controller correction, animated/physics hands, starter validation,
+  gaze fallback, and imported Unity/Oculus sample code.
+- Do not copy directly:
+  imported sample bulk, Oculus SDK assets, course scene layout, generated assets,
+  or scripts whose provenance is unclear.
+- Maturity:
+  useful extraction pattern; needs a smaller affordance matrix.
+- Best fit for `VR-apps-lab`:
+  reusable interaction primitive notes, prototype checklists, and future XRI
+  sample curation.

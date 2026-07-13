@@ -17,6 +17,28 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 444-447
+
+- `OpenXR runtime switchers and input diagnostic utilities`
+  add operator-surface coverage around active-runtime registry state, manifest
+  JSON validation, runtime inventories, custom runtime persistence, tray/status
+  UI, shortcut switching, D3D11 OpenXR session bring-up, controller pose/action
+  state, and runtime/input doctor caveats.
+- `XR radial hand menu controls and marking-menu primitives`
+  add spatial menu coverage around radial item schemas, angular selection,
+  hover/commit/cancel signals, submenus, arc/radius/deadzone settings,
+  hand/palm activation, launcher-to-panel flows, physical push buttons, and
+  hand/controller fallback.
+- `VR comfort vignette and visual-field reducer tools`
+  add comfort/accessibility effect coverage around dynamic FOV reduction,
+  symptom severity profiles, blur/scotoma/tunnel/haze effects, coverage/feather,
+  presets, masks/stencil, mobile paths, user disable settings, and medical or
+  comfort-claim caveats.
+- `Unity XRI interaction learning and affordance baselines`
+  add affordance extraction coverage around asset-heavy learning repos, XR
+  knobs, key/tag sockets, room-scale controller correction, animated/physics
+  hands, starter validation, gaze fallback, and provenance/copy-scope labels.
+
 ## Current additions from Waves 440-443
 
 - `Unity VR multiplayer baselines and room-state micro-loops`

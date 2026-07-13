@@ -5695,6 +5695,51 @@ Primary docs:
 - `SOHNE/Colorblindness` - `Studied in Wave 443 as runtime URP/HDRP colorblind profile manager with enum profiles, PlayerPrefs persistence, F1 cycling, async VolumeProfile resource loading, scene reapply behavior, and validation caveat`
 - `macabrett/BrettMStory.Unity.ColorBlind` - `Studied in Wave 443 as minimal camera component simulator with enum/dropdown selection, shader-folder install path, and prototype-only camera-effect caveats`
 
+## 415. OpenXR runtime switchers and input diagnostic utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-444-openxr-runtime-switchers-and-input-diagnostic-utilities.md`
+- `../landscape/project-families.md`
+
+- `philip0000000/OpenXR-Input-Explorer` - `Studied in Wave 444 as .NET/WPF Silk.NET OpenXR input explorer with runtime/session/D3D11 bring-up, controller pose/action state, diagnostic UI value, and SteamVR/prototype caveats`
+- `Teqqles/OpenXRRuntimeSwitcher` - `Studied in Wave 444 as modern Windows OpenXR runtime switcher with registry active-runtime read/write, manifest JSON validation, DLL checks, custom runtime persistence, tray status, hotkeys/startup service, and admin/Windows caveats`
+- `Ybalrid/OpenXR-Runtime-Manager` - `Deepened in Wave 444 as compact OpenXR runtime manager with HKLM active-runtime switching, standard enumeration plus known manifest paths, and 32-bit registry-view caveat`
+- `jonyrh/OXR_Switcher` - `Deepened in Wave 444 as x32/x64 OpenXR runtime switcher with installed runtime list, vendor icons, shortcut-number switching, demo mode, and validation caveat`
+
+## 416. XR radial hand menu controls and marking menu primitives
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-445-xr-radial-hand-menu-controls-and-marking-menu-primitives.md`
+- `../landscape/project-families.md`
+
+- `connorpugh/XRRadialMarkingMenu` - `Studied in Wave 445 as Unity/XR radial marking-menu reference with spatial command palette framing, angular selection donor value, and command-schema separation caveat`
+- `jesuisse/godot-radial-menu-control` - `Studied in Wave 445 as Godot 4 radial/pie menu Control with item dictionaries, submenu actions, exported geometry, signals, gamepad/mouse input, theme hooks, item-count warnings, and animation/accessibility caveats`
+- `Oyshoboy/RadialMenuVR` - `Deepened in Wave 445 as compact Unity VR radial menu micro-reference with angle-to-item selection, hover/confirm wiring, and hard-coded/prototype caveats`
+- `NovaUI-Unity/XRHandMenuSample` - `Deepened in Wave 445 as hand-attached XR menu sample with palm/head angle activation, hand-tracking gate, launcher-to-panel state, push buttons, sliders/toggles, and Nova/OVR dependency caveats`
+
+## 417. VR comfort vignette and visual-field reducer tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-446-vr-comfort-vignette-and-visual-field-reducer-tools.md`
+- `../landscape/project-families.md`
+
+- `RaniaMostafa0/Virtual-Reality-Simulation-of-Retinal-Diseases` - `Studied in Wave 446 as educational Quest/Unity visual-field simulation with condition profiles, severity slider, disease panel, informational popups, blur/scotoma/tunnel/haze effects, low-clutter UI, and medical-claim caveats`
+- `SixWays/UnityVrTunnelling` - `Studied in Wave 446 as simple Unity VR tunnelling camera effect with reference transform, dynamic FOV reduction during rotation, stereo matrices, shader/material path, cubemap cage option, and deprecated image-effect caveat`
+- `ExtendRealityLtd/Tilia.Visuals.Vignette.Unity` - `Deepened in Wave 446 as package-level vignette visual component with prefab/module value and Tilia/Zinnia dependency caveat`
+- `sigtrapgames/VrTunnellingPro-Unity` - `Deepened in Wave 446 as advanced VR tunnelling toolkit with post-process/opaque/mobile variants, ScriptableObject presets, coverage/feather, masking/stencil, background/blur/cage modes, user disable recommendation, and pipeline/comfort-claim caveats`
+
+## 418. Unity XRI interaction learning and affordance baselines
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-447-unity-xri-interaction-learning-and-affordance-baselines.md`
+- `../landscape/project-families.md`
+
+- `mattdway/CreateWithVR` - `Studied in Wave 447 as large Unity/XRI learning repository with XR knobs, key/lock sockets, tag/auto sockets, room-scale controller fix, animated/physics hands, starter validation, gaze fallback, and asset/imported-sample provenance caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

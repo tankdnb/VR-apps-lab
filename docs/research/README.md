@@ -452,6 +452,14 @@ If you need recent examples instead of the full chronology, start with:
 
 - `landscape/vr-projects-wave-443-colorblind-and-visual-accessibility-filter-libraries.md`
 
+- `landscape/vr-projects-wave-444-openxr-runtime-switchers-and-input-diagnostic-utilities.md`
+
+- `landscape/vr-projects-wave-445-xr-radial-hand-menu-controls-and-marking-menu-primitives.md`
+
+- `landscape/vr-projects-wave-446-vr-comfort-vignette-and-visual-field-reducer-tools.md`
+
+- `landscape/vr-projects-wave-447-unity-xri-interaction-learning-and-affordance-baselines.md`
+
 ## Archive Navigation
 
 Use these when you need the full historical record rather than the short

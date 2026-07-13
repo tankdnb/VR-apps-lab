@@ -12517,6 +12517,78 @@ This family matters because visual accessibility should become a reusable layer
 with settings, preview, persistence, and caveats, not a one-off shader pasted
 into a scene.
 
+## Family 423: OpenXR runtime switchers and input diagnostic utilities
+
+This family covers OpenXR active-runtime visibility, manifest inventory,
+registry switching, manifest validation, tray/status surfaces, shortcut launch
+switching, and controller/session input probes.
+
+| Project | Status | Notes |
+|---|---|---|
+| `philip0000000/OpenXR-Input-Explorer` | Studied in Wave 444 | WPF/Silk.NET input explorer with OpenXR initialization, D3D11 session setup, controller pose/action state, and diagnostic UI value |
+| `Teqqles/OpenXRRuntimeSwitcher` | Studied in Wave 444 | Windows runtime switcher with registry/manifest parsing, custom runtime persistence, validation, tray state, hotkeys, startup task, and tests |
+| `Ybalrid/OpenXR-Runtime-Manager` | Deepened in Wave 444 | Compact runtime manager using HKLM active-runtime switching, standard enumeration, known manifest paths, and 32-bit registry caveat |
+| `jonyrh/OXR_Switcher` | Deepened in Wave 444 | x32/x64 runtime switcher with installed runtime list, vendor icons, shortcut-number switching, and demo mode |
+
+### Consolidation note
+
+This family matters because OpenXR runtime state is hidden global state. A good
+tool should show the active runtime, validate candidate manifests, explain
+switching risk, and connect that state to session/input diagnostics.
+
+## Family 424: XR radial hand menu and marking-menu primitives
+
+This family covers wrist/palm/radial menu activation, angular selection, item
+schemas, submenu/cancel behavior, hover versus commit, hand/controller fallback,
+and compact spatial command palettes.
+
+| Project | Status | Notes |
+|---|---|---|
+| `connorpugh/XRRadialMarkingMenu` | Studied in Wave 445 | Unity/XR radial marking-menu reference for fast spatial command selection |
+| `jesuisse/godot-radial-menu-control` | Studied in Wave 445 | Godot 4 Control-based radial menu with exported geometry, submenus, signals, themes, gamepad input, and usability caveats |
+| `Oyshoboy/RadialMenuVR` | Deepened in Wave 445 | Compact Unity VR radial menu micro-reference with angle-to-item selection and prototype caveats |
+| `NovaUI-Unity/XRHandMenuSample` | Deepened in Wave 445 | Hand menu sample with palm/head angle activation, launcher-to-panel flow, push buttons, sliders, and hand-relative placement |
+
+### Consolidation note
+
+This family matters because VR utilities need command surfaces that are quick,
+cancelable, and usable with hands or controllers without becoming giant floating
+settings panels.
+
+## Family 425: Comfort vignette and visual-field reducer tools
+
+This family covers locomotion comfort vignettes, tunnelling, severity-driven
+visual-field reducers, mask/stencil exclusions, preset assets, mobile paths, and
+medical/accessibility caveats.
+
+| Project | Status | Notes |
+|---|---|---|
+| `RaniaMostafa0/Virtual-Reality-Simulation-of-Retinal-Diseases` | Studied in Wave 446 | Educational visual-field simulation with condition profiles, severity slider, blur/scotoma/tunnel/haze effects, and low-clutter UI |
+| `SixWays/UnityVrTunnelling` | Studied in Wave 446 | Simple dynamic FOV reduction effect with camera component, reference transform, stereo matrices, shader, and cage option |
+| `ExtendRealityLtd/Tilia.Visuals.Vignette.Unity` | Deepened in Wave 446 | Package-level vignette visual component with prefab/module boundary and Tilia dependency caveat |
+| `sigtrapgames/VrTunnellingPro-Unity` | Deepened in Wave 446 | Advanced tunnelling toolkit with post-process/opaque/mobile paths, presets, masks, stencil, blur/cage/background modes, and user-disable recommendation |
+
+### Consolidation note
+
+This family matters because comfort and visual accessibility effects need
+settings, render-pipeline boundaries, user preference, and caveats instead of a
+single hard-coded edge-darkening shader.
+
+## Family 426: Unity XRI learning and affordance baselines
+
+This family covers large Unity/XRI learning repositories used as maps of small
+interaction primitives rather than wholesale import targets.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mattdway/CreateWithVR` | Studied in Wave 447 | Asset-heavy Unity/XRI course workspace with XR knobs, key/tag sockets, room-scale controller fix, animated hands, starter validation, gaze fallback, and imported-sample caveats |
+
+### Consolidation note
+
+This family matters because learning repos can expose many practical affordance
+patterns, but each one must be extracted as a small primitive with provenance
+and dependency boundaries.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

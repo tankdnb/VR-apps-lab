@@ -1392,3 +1392,20 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-443-colorblind-and-visual-accessibility-filter-libraries.md`
   Colorblind and visual accessibility filter libraries with image effects, URP
   renderer features, runtime profiles, shader provenance, and caveats.
+
+- `vr-projects-wave-444-openxr-runtime-switchers-and-input-diagnostic-utilities.md`
+  OpenXR runtime switchers and input diagnostics with active runtime state,
+  manifest validation, tray/status UI, shortcut switching, and controller input
+  bring-up.
+
+- `vr-projects-wave-445-xr-radial-hand-menu-controls-and-marking-menu-primitives.md`
+  XR radial and hand menus with angular selection, submenus, hand activation,
+  hover/commit states, and fallback/caveat labels.
+
+- `vr-projects-wave-446-vr-comfort-vignette-and-visual-field-reducer-tools.md`
+  Comfort vignette and visual-field reducers with tunnelling, severity profiles,
+  presets, masks/stencil, mobile paths, and caveats.
+
+- `vr-projects-wave-447-unity-xri-interaction-learning-and-affordance-baselines.md`
+  Unity XRI learning baselines with knobs, sockets, room-scale correction, hand
+  animation, validation, gaze fallback, and provenance boundaries.
