@@ -5162,6 +5162,51 @@ Primary docs:
 - `leonkoech/AutismDetector` - `Studied in Wave 395 as Magic Leap eye-tracking sensory-overload SDK with fixation/gaze features, demo scenes, EEG context, and clinical caveats`
 - `mvidaldp/unity_htcvivepro_et_calibration` - `Studied in Wave 395 as Unity/SteamVR Vive Pro Eye calibration project with calibration harness structure and bundled asset caveats`
 
+## 367. VR research toolkits posture and retrospective experience measurement
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-396-vr-research-toolkits-posture-and-retrospective-experience-measurement.md`
+- `../landscape/project-families.md`
+
+- `MPIB/arc-vr` - `Studied in Wave 396 as package-based Unity VR research toolbox with core/motion/ui/avatar/phys/net package split, settings, dev console, logger, and GPL caveats`
+- `immersivecognition/posture-assessment-vr` - `Studied in Wave 396 as UXF-backed posture/balance measurement app with session/trial lifecycle, operator UI, participant CSV updates, raw HMD motion logs, and analysis recipe`
+- `revealcentre/retrosketch` - `Studied in Wave 396 as retrospective emotion/presence annotation tool with video replay, keypoints, continuous rating curves, text annotations, validation, and export flow`
+
+## 368. Unity file media picker and import export surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-397-unity-file-media-picker-and-import-export-surfaces.md`
+- `../landscape/project-families.md`
+
+- `yasirkula/UnitySimpleFileBrowser` - `Studied in Wave 397 as runtime uGUI file browser with filters, quick links, multi-select, coroutine/callback APIs, Android SAF support, Quest caveats, and recycled-list performance`
+- `yasirkula/UnityNativeFilePicker` - `Studied in Wave 397 as Android/iOS document picker and export bridge with MIME/UTI filters, async callbacks, permission flow, native bridges, and persistent-copy caveats`
+- `yasirkula/UnityNativeGallery` - `Studied in Wave 397 as Android/iOS gallery/photos media bridge with image/video/audio picking, save-to-gallery APIs, thumbnail loading, permission modes, and retention caveats`
+- `gkngkc/UnityStandaloneFileBrowser` - `Studied in Wave 397 as desktop native open/save dialog wrapper for Windows/Mac/Linux with extension filters, async callbacks, and desktop-vs-headset ownership caveats`
+
+## 369. Spatial room layout furniture placement and design persistence
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-398-spatial-room-layout-furniture-placement-and-design-persistence.md`
+- `../landscape/project-families.md`
+
+- `TeamFWS/room-designer` - `Studied in Wave 398 as Quest MR room design app with MRUK room import, ray furniture placement, OVR spatial anchors, layout JSON, IKEA model loader, wall painting, and manual room grid`
+- `pnlt/VNE5T-SolutionForAVR` - `Studied in Wave 398 as VR interior-design product reference with object manipulation, material swapping, measurement/annotation/snapshot/export claims, AI framing, and research-use caveats`
+- `lakshmikosre/Elite-In-Decora` - `Studied lightly in Wave 398 as AR interior-design requirements/reference with catalog, gallery, product recommendation, cart, ARCore framing, and thin VR donor value`
+
+## 370. VR task dataset locomotion and behavioral testbeds
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-399-vr-task-dataset-locomotion-and-behavioral-testbeds.md`
+- `../landscape/project-families.md`
+
+- `michaelkoller/vacesimulator` - `Studied in Wave 399 as annotated VR kitchen dataset simulator with recipe HUD, recording toggle, object/action events, RGB/depth/segmentation renders, predicates, playback, and postprocess mode`
+- `JohnBacho/VIBES-Lab-Project2` - `Studied in Wave 399 as eye-tracked VR behavioral study app with gambling task conditions, wallets, tutorial flow, trial CSV, pupil metrics, SRanipal, and ethics/privacy caveats`
+- `VRatPolito/LET-VR` - `Studied in Wave 399 as OpenXR locomotion evaluation testbed with scenarios, configuration file, calibration artifact, locomotion manager, input wrapper, statistics loggers, and weighted scoring material`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

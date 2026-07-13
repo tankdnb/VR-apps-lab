@@ -2798,3 +2798,31 @@ repeatable way.
 
 - `github-research-wave-395-backlog.md`
   Executed backlog for the Wave 395 pass.
+
+- `github-research-wave-396-plan.md`
+  Wave 396 research plan focused on VR research toolkits, posture, and
+  retrospective experience measurement.
+
+- `github-research-wave-396-backlog.md`
+  Executed backlog for the Wave 396 pass.
+
+- `github-research-wave-397-plan.md`
+  Wave 397 research plan focused on Unity file, media picker, and import/export
+  surfaces.
+
+- `github-research-wave-397-backlog.md`
+  Executed backlog for the Wave 397 pass.
+
+- `github-research-wave-398-plan.md`
+  Wave 398 research plan focused on spatial room layout, furniture placement,
+  and design persistence.
+
+- `github-research-wave-398-backlog.md`
+  Executed backlog for the Wave 398 pass.
+
+- `github-research-wave-399-plan.md`
+  Wave 399 research plan focused on VR task dataset, locomotion, and
+  behavioral testbeds.
+
+- `github-research-wave-399-backlog.md`
+  Executed backlog for the Wave 399 pass.

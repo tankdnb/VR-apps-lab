@@ -20038,3 +20038,140 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   gaze diagnostics, calibration UIs, accessibility safety experiments, and
   comfort-aware scene adaptation research.
+
+## Method 841: VR research session and retrospective annotation loop
+
+- What it is:
+  structure a VR study around reusable package modules, participant/session
+  state, trial conditions, operator controls, raw measurement streams,
+  replay/annotation tools, and analysis exports.
+- Good for:
+  research apps, participant studies, posture/balance tools, usability tests,
+  retrospective experience annotation, and study companion utilities.
+- Why it matters:
+  VR research value depends on repeatability and traceability; scene content
+  alone is not enough if participant metadata, conditions, logs, annotations,
+  and exports are ad hoc.
+- Source evidence:
+  `MPIB/arc-vr`, `immersivecognition/posture-assessment-vr`, and
+  `revealcentre/retrosketch`.
+- Reusable core:
+  package module, settings service, participant row, session/block/trial
+  lifecycle, operator UI, measurement condition, raw motion stream, timeline
+  replay, keypoint annotation, text note, export artifact, and analysis script.
+- Source evidence details:
+  Wave 396 includes ARC-VR `com.avr.*` packages, `AVR_Settings`,
+  `AVR_DevConsole`, `AVR_Logger`, posture assessment `ExperimentManager` and
+  UXF session/trial code, and RetroSketch video replay plus annotation flow.
+- Do not copy directly:
+  clinical claims, GPL/AGPL code, private participant data flows, or old
+  hardware assumptions without clear validation labels.
+- Maturity:
+  strong research-utility method; needs a local schema for participant/session
+  artifacts.
+- Best fit for `VR-apps-lab`:
+  experiment scaffolds, operator dashboards, study logging helpers, and
+  post-session analysis tools.
+
+## Method 842: XR file and media intake boundary
+
+- What it is:
+  wrap file, document, gallery, and desktop dialog providers behind a common
+  intake service with capability labels, filters, permission state, callbacks,
+  persistence rules, and preview/export handling.
+- Good for:
+  media viewers, model importers, config loaders, dataset tools, screenshot
+  exporters, study-log import/export, and desktop companion apps.
+- Why it matters:
+  VR utilities often need external files, but Android SAF, iOS Photos,
+  desktop dialogs, and in-app browsers all have different path and permission
+  semantics.
+- Source evidence:
+  `yasirkula/UnitySimpleFileBrowser`, `yasirkula/UnityNativeFilePicker`,
+  `yasirkula/UnityNativeGallery`, and `gkngkc/UnityStandaloneFileBrowser`.
+- Reusable core:
+  provider type, permission status, file/media type filter, picker mode,
+  multi-select flag, cancel callback, busy guard, quick links, persistent-copy
+  rule, thumbnail loader, export callback, and platform capability label.
+- Source evidence details:
+  Wave 397 includes SimpleFileBrowser filters/quick links/SAF, NativeFilePicker
+  MIME/UTI pick/export APIs, NativeGallery media save/pick and thumbnails, and
+  StandaloneFileBrowser desktop open/save wrappers.
+- Do not copy directly:
+  raw file path assumptions, hidden permission prompts, unsupported Quest file
+  browsing, or blocking desktop dialogs inside headset-only flows.
+- Maturity:
+  strong substrate method; needs a VR-facing picker shell and provider matrix.
+- Best fit for `VR-apps-lab`:
+  spatial media loaders, config import/export helpers, dataset browsers, and
+  companion file-transfer utilities.
+
+## Method 843: anchored spatial layout persistence
+
+- What it is:
+  save room-aware object layouts as durable records that combine room source,
+  placement ray, anchor identity, relative transform, model cache key,
+  material state, and recovery UI.
+- Good for:
+  interior design tools, MR dashboards, spatial notes, object-placement
+  utilities, room setup assistants, and persistent layout prototypes.
+- Why it matters:
+  placed objects are only useful if the app can explain where they came from,
+  how they are anchored, how to recover missing anchors, and how to migrate the
+  layout document.
+- Source evidence:
+  `TeamFWS/room-designer`, `pnlt/VNE5T-SolutionForAVR`, and
+  `lakshmikosre/Elite-In-Decora`.
+- Reusable core:
+  room source, scene labels, placement preview, furniture record, anchor UUID,
+  relative transform, model ID, model cache, material/paint state, layout JSON,
+  save/load service, localization failure UI, snapshot/export affordance, and
+  catalog provenance.
+- Source evidence details:
+  Wave 398 includes Room Designer `MRInitialization`, `RaySpawner`,
+  `RoomLayoutManager`, `MRAnchoredLayoutData`, `SaveDataSerializer`, and IKEA
+  model loader, plus interior-design product/requirements references.
+- Do not copy directly:
+  scraped product assets without provenance, broad AI/design claims, shopping
+  flows unless needed, or silent anchor-localization failures.
+- Maturity:
+  useful spatial-authoring method; needs a schema and recovery checklist.
+- Best fit for `VR-apps-lab`:
+  room layout helpers, anchored object dashboards, spatial setup tools, and MR
+  utility persistence experiments.
+
+## Method 844: VR task testbed and dataset recorder
+
+- What it is:
+  build a repeatable VR testbed with participant/config state, scenario
+  selection, calibration, input adapters, task events, recording toggles,
+  objective metrics, trial CSVs, replay, and postprocess exports.
+- Good for:
+  dataset capture, locomotion evaluation, behavioral studies, training task
+  analytics, robot/AI demonstration capture, and physiological measurement
+  studies.
+- Why it matters:
+  VR experiments need auditability: task events, sensor streams, scene state,
+  calibration, and scoring must survive after the session ends.
+- Source evidence:
+  `michaelkoller/vacesimulator`, `JohnBacho/VIBES-Lab-Project2`, and
+  `VRatPolito/LET-VR`.
+- Reusable core:
+  participant config, scenario selector, calibration artifact, input wrapper,
+  recording toggle, object/action event schema, predicate records,
+  RGB/depth/segmentation export, trial CSV, physiology stream, logger sampling
+  rate, scoring material, replay mode, and postprocess pipeline.
+- Source evidence details:
+  Wave 399 includes VACE recipe/recording/postprocess scripts, VIBES
+  trial/pupil CSV framing and SRanipal/gaze integration, and LET-VR
+  `LocomotionManager`, `InputManagement`, `Calibration`, and statistics
+  loggers.
+- Do not copy directly:
+  gambling content, medical/behavioral claims without protocol context, legacy
+  SDK bundles, excluded treadmill SDK assumptions, or identifiable participant
+  data handling.
+- Maturity:
+  strong research/dataset method; needs event schema normalization.
+- Best fit for `VR-apps-lab`:
+  dataset recorders, locomotion test harnesses, embodied task analytics, and
+  replayable XR study tools.

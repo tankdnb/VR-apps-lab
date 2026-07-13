@@ -1243,3 +1243,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-395-eye-tracking-sensory-overload-and-calibration-safety.md`
   Eye-tracking sensory-overload research, Vive calibration harnesses,
   adaptation policy, consent, and clinical caveats.
+- `vr-projects-wave-396-vr-research-toolkits-posture-and-retrospective-experience-measurement.md`
+  VR research package scaffolds, posture/balance measurement, raw HMD motion,
+  retrospective emotion/presence annotation, and export artifacts.
+- `vr-projects-wave-397-unity-file-media-picker-and-import-export-surfaces.md`
+  Runtime file browsers, Android/iOS document and gallery pickers, desktop
+  dialogs, permission semantics, filters, and persistent-copy rules.
+- `vr-projects-wave-398-spatial-room-layout-furniture-placement-and-design-persistence.md`
+  MR room layouts, furniture placement, spatial anchors, model caches, wall
+  painting/material state, and layout JSON.
+- `vr-projects-wave-399-vr-task-dataset-locomotion-and-behavioral-testbeds.md`
+  Annotated VR task datasets, behavioral/eye-tracking studies, locomotion
+  evaluation scenarios, calibration, logging, scoring, and replay.

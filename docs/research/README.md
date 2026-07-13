@@ -391,6 +391,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-393-low-vision-nonvisual-and-haptic-accessibility-toolkits.md`
 - `landscape/vr-projects-wave-394-sign-language-hand-pose-and-gesture-recognition-training.md`
 - `landscape/vr-projects-wave-395-eye-tracking-sensory-overload-and-calibration-safety.md`
+- `landscape/vr-projects-wave-396-vr-research-toolkits-posture-and-retrospective-experience-measurement.md`
+- `landscape/vr-projects-wave-397-unity-file-media-picker-and-import-export-surfaces.md`
+- `landscape/vr-projects-wave-398-spatial-room-layout-furniture-placement-and-design-persistence.md`
+- `landscape/vr-projects-wave-399-vr-task-dataset-locomotion-and-behavioral-testbeds.md`
 
 ## Archive Navigation
 

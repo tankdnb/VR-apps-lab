@@ -3180,6 +3180,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 318. `Low-vision/nonvisual accessibility follow-up across magnifier lenses, focus targets, contrast settings, audio cue taxonomy, haptic semantics, nonvisual menu navigation, tutorial steps, fallback modes, and accessibility contribution tests`
 319. `Hand-pose/sign-language follow-up across pose asset schemas, saved hand forms, angle/tip/orientation features, hold timers, confidence labels, reference media, quiz state, recognizer training, calibration, and community validation`
 320. `Eye-tracking safety follow-up across calibration targets, sample quality metrics, fixation/velocity features, overload signals, adaptation policies, user overrides, consent labels, clinical caveats, and eye-data retention boundaries`
+321. `VR research session follow-up across package modules, participant/session/trial schemas, operator controls, raw motion logs, retrospective replay, annotation validation, export artifacts, consent, and analysis scripts`
+322. `XR file/media intake follow-up across provider matrices, Android SAF, iOS Photos/Documents, desktop dialogs, MIME/UTI filters, persistent copies, thumbnail generation, headset focus, and fallback UX`
+323. `Anchored spatial layout follow-up across room-source schemas, scene labels, placement previews, anchor UUIDs, relative transforms, model cache keys, material state, layout migration, recovery UI, and provenance`
+324. `VR task testbed follow-up across scenario selectors, calibration artifacts, input adapters, recording toggles, object/action events, predicate schemas, RGB/depth/segmentation exports, trial CSVs, physiology streams, scoring, and replay`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

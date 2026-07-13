@@ -17,6 +17,26 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 396-399
+
+- `VR research toolkits, posture, and retrospective experience measurement`
+  add study-scaffold coverage around package modules, participant/session/trial
+  state, operator UIs, raw HMD motion logs, retrospective replay, emotion and
+  presence keypoints, annotation validation, and export artifacts.
+- `Unity file, media picker, and import/export surfaces`
+  add file/media intake coverage around runtime browsers, Android SAF, iOS
+  document/photo providers, desktop dialogs, MIME/UTI filters, permissions,
+  persistent-copy rules, thumbnails, and platform fallback labels.
+- `Spatial room layout, furniture placement, and design persistence`
+  add spatial-authoring coverage around MRUK room import, manual room grids,
+  placement previews, OVR spatial anchors, layout JSON, model cache keys,
+  material/paint state, and anchor recovery UX.
+- `VR task dataset, locomotion, and behavioral testbeds`
+  add repeatable testbed coverage around scenario selectors, calibration
+  artifacts, recording toggles, object/action events, predicates, RGB/depth/
+  segmentation exports, trial CSVs, physiology streams, statistics loggers,
+  scoring materials, and replay/postprocess modes.
+
 ## Current additions from Waves 392-395
 
 - `Caption, voice, and descriptive accessibility surfaces`

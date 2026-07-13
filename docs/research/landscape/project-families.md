@@ -11654,6 +11654,80 @@ This family matters because gaze-based accessibility or safety tools must make
 calibration quality, signal confidence, adaptation authority, consent, and
 medical-claim boundaries explicit.
 
+## Family 375: VR research session and annotation toolkits
+
+This family covers study package scaffolds, participant/session/trial state,
+operator UIs, posture measurement, raw motion logs, retrospective annotation,
+and exportable analysis artifacts.
+
+| Project | Status | Notes |
+|---|---|---|
+| `MPIB/arc-vr` | Studied in Wave 396 | Package-based Unity VR research toolbox with settings, logger, dev console, and modular package split |
+| `immersivecognition/posture-assessment-vr` | Studied in Wave 396 | UXF-backed posture/balance measurement with operator UI, participant CSV, and raw HMD motion logs |
+| `revealcentre/retrosketch` | Studied in Wave 396 | Retrospective video replay with emotion/presence curves, keypoints, annotations, validation, and export |
+
+### Consolidation note
+
+This family matters because VR research tools need reusable study lifecycle,
+operator control, measurement, replay, annotation, export, and consent
+boundaries instead of one-off experiment scenes.
+
+## Family 376: File and media intake surfaces
+
+This family covers runtime file browsers, native mobile document pickers,
+gallery/photo/video bridges, desktop open/save dialogs, permissions, filters,
+callbacks, and platform capability labels.
+
+| Project | Status | Notes |
+|---|---|---|
+| `yasirkula/UnitySimpleFileBrowser` | Studied in Wave 397 | Runtime uGUI file browser with filters, quick links, multi-select, Android SAF, and Quest caveats |
+| `yasirkula/UnityNativeFilePicker` | Studied in Wave 397 | Android/iOS document picker/export bridge with MIME/UTI filters and async permission flow |
+| `yasirkula/UnityNativeGallery` | Studied in Wave 397 | Gallery/photos media bridge for image/video/audio picking, saving, thumbnails, and permissions |
+| `gkngkc/UnityStandaloneFileBrowser` | Studied in Wave 397 | Desktop native open/save dialogs with filters, async callbacks, and platform plugins |
+
+### Consolidation note
+
+This family matters because VR utilities often need external media, models,
+configs, logs, or datasets, and that requires explicit provider, permission,
+path, persistence, and fallback boundaries.
+
+## Family 377: Spatial room layout and anchored design persistence
+
+This family covers MR room import, manual room grids, furniture catalogs,
+placement rays, spatial anchors, relative transforms, layout JSON, material
+changes, snapshots, exports, and product catalog caveats.
+
+| Project | Status | Notes |
+|---|---|---|
+| `TeamFWS/room-designer` | Studied in Wave 398 | Quest MR room designer with MRUK, placement ray, OVR anchors, layout JSON, IKEA loader, and wall paint |
+| `pnlt/VNE5T-SolutionForAVR` | Studied in Wave 398 | VR interior design product reference with manipulation, material, measurement, annotation, export, and AI claims |
+| `lakshmikosre/Elite-In-Decora` | Lightly studied in Wave 398 | AR interior design requirements node around catalog, gallery, recommendations, cart, and ARCore framing |
+
+### Consolidation note
+
+This family matters because spatial authoring utilities need a durable layout
+document, recovery-aware anchors, model provenance, and clear separation
+between room geometry, object catalog, and user arrangement state.
+
+## Family 378: VR task testbeds and dataset recorders
+
+This family covers annotated task simulators, behavioral study apps,
+locomotion evaluation scenarios, calibration artifacts, participant configs,
+event/predicate schemas, trial CSVs, statistics loggers, and replay/postprocess
+flows.
+
+| Project | Status | Notes |
+|---|---|---|
+| `michaelkoller/vacesimulator` | Studied in Wave 399 | Annotated VR kitchen simulator with recipe HUD, object/action events, predicates, RGB/depth/segmentation, and replay |
+| `JohnBacho/VIBES-Lab-Project2` | Studied in Wave 399 | Eye-tracked gambling behavior study with tutorial flow, wallets, trial CSV, pupil metrics, and SRanipal |
+| `VRatPolito/LET-VR` | Studied in Wave 399 | OpenXR locomotion evaluation testbed with scenarios, configuration, calibration, input wrapper, and statistics loggers |
+
+### Consolidation note
+
+This family matters because robust VR research utilities need repeatable task
+conditions, calibrated inputs, objective metrics, physiological/event streams,
+and export pipelines that can be audited later.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

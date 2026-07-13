@@ -1774,6 +1774,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on eye tracking, sensory-overload
   adaptation, gaze calibration, and safety/privacy caveats.
 
+- `vr-projects-wave-396-vr-research-toolkits-posture-and-retrospective-experience-measurement.md`
+  Next GitHub discovery wave focused on VR study scaffolds, posture/balance
+  measurement, and retrospective emotion/presence annotation.
+
+- `vr-projects-wave-397-unity-file-media-picker-and-import-export-surfaces.md`
+  Next GitHub discovery wave focused on runtime file browsers, native document
+  pickers, gallery/media bridges, and desktop import/export dialogs.
+
+- `vr-projects-wave-398-spatial-room-layout-furniture-placement-and-design-persistence.md`
+  Next GitHub discovery wave focused on MR room layout, furniture placement,
+  spatial anchors, model caches, material changes, and layout JSON.
+
+- `vr-projects-wave-399-vr-task-dataset-locomotion-and-behavioral-testbeds.md`
+  Next GitHub discovery wave focused on annotated task datasets, behavioral
+  study apps, locomotion evaluation, calibration, logging, and replay.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
