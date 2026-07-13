@@ -2490,3 +2490,31 @@ repeatable way.
 
 - `github-research-wave-351-backlog.md`
   Executed backlog for the Wave 351 pass.
+
+- `github-research-wave-352-plan.md`
+  Wave 352 research plan focused on astronomy, planetarium, dome projection,
+  and archaeoastronomy viewers.
+
+- `github-research-wave-352-backlog.md`
+  Executed backlog for the Wave 352 pass.
+
+- `github-research-wave-353-plan.md`
+  Wave 353 research plan focused on scientific exhibition, gallery, museum,
+  and depth-aware media spaces.
+
+- `github-research-wave-353-backlog.md`
+  Executed backlog for the Wave 353 pass.
+
+- `github-research-wave-354-plan.md`
+  Wave 354 research plan focused on VR education, AI tutors, chemistry,
+  biology, and medical procedure training.
+
+- `github-research-wave-354-backlog.md`
+  Executed backlog for the Wave 354 pass.
+
+- `github-research-wave-355-plan.md`
+  Wave 355 research plan focused on MR digital twins, safety training, drone,
+  robot, and industrial control surfaces.
+
+- `github-research-wave-355-backlog.md`
+  Executed backlog for the Wave 355 pass.

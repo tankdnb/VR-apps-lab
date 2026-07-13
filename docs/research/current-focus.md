@@ -17,6 +17,21 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 352-355
+
+- `Scientific dome, planetarium, and projection-surface viewers`
+  add a clearer branch for Stellarium-style external sky providers, local
+  astronomy engines, dome/fisheye projection adapters, and exhibit interaction.
+- `Workshop-grade exhibition and gallery scaffolds`
+  add reusable direction around content manifests, handouts, setup dialogs,
+  local/cloud/depth-aware media adapters, and beginner-friendly exhibit shells.
+- `AI-assisted education and procedure-training loops`
+  add a stronger pattern for deterministic task state plus AI/RAG/STT/TTS
+  guidance, safety/failure gates, reset managers, and validation caveats.
+- `MR digital twins and safety-first control surfaces`
+  add fresh coverage for JSON/API/IoT twins, VPS/SSA anchoring, mode systems,
+  dashboards, annotations, drone/robot/industrial panels, and command safety.
+
 ## Strongest active directions
 
 These are the clearest current product and research lines:

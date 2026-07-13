@@ -347,6 +347,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-349-rehabilitation-biofeedback-olfactory-and-vestibular-training-prototypes.md`
 - `landscape/vr-projects-wave-350-xr-robotics-teleoperation-hand-pose-streaming-and-operator-datasets.md`
 - `landscape/vr-projects-wave-351-multisensory-hardware-feedback-olfactory-thermal-vibration-and-drag-haptics.md`
+- `landscape/vr-projects-wave-352-astronomy-planetarium-dome-and-archaeoastronomy-viewers.md`
+- `landscape/vr-projects-wave-353-scientific-exhibition-gallery-museum-and-depth-aware-media-spaces.md`
+- `landscape/vr-projects-wave-354-vr-education-ai-tutor-chemistry-biology-and-medical-procedure-training.md`
+- `landscape/vr-projects-wave-355-mr-digital-twin-safety-drone-robot-and-industrial-control-surfaces.md`
 
 ## Archive Navigation
 

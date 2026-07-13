@@ -10863,6 +10863,93 @@ the same time. It suggests a reusable sensory event router with capability
 labels, intensity/cooldown limits, device health, fallback cues, and explicit
 consent.
 
+## Family 331: Scientific dome planetarium and projection-surface viewers
+
+This family covers VR/dome systems that combine sky or scientific data with
+projection adapters, time/location state, and exhibit interaction. The reusable
+lesson is to separate the domain provider from headset, dome, fisheye, or live
+skybox output.
+
+| Project | Status | Notes |
+|---|---|---|
+| `arcAstroVR/arcAstroVR` | Studied in Wave 352 | Stellarium bridge, watched skybox files, GIS/location conversion, marker/line editing, and domemaster output |
+| `mymess/Planetarium` | Studied in Wave 352 | Local astronomy algorithms, sky/star models, and date/location/settings editors |
+| `imclab/VR-Planetarium` | Studied in Wave 352 | Legacy Leap Motion planetarium with arm HUD, joyball interaction, constellation labels, and video toggles |
+| `At-Bristol/DEV0006-DataDomeUnityToolkit` | Studied in Wave 352 | Dome toolkit with world/projection cameras, fisheye shader, cubemap capture, hotkeys, and settings persistence |
+
+### Consolidation note
+
+This family matters because scientific viewers often need multiple output
+surfaces. It suggests adapters for sky providers, local astronomy engines,
+projection rigs, and operator controls.
+
+## Family 332: Workshop-grade exhibition gallery and depth-aware media spaces
+
+This family covers VR exhibitions, galleries, museums, and content surfaces that
+should be assembled from reusable rigs, templates, content adapters, and media
+schemas rather than one-off scenes.
+
+| Project | Status | Notes |
+|---|---|---|
+| `eisclimber/ExPresS-XR` | Studied in Wave 353 | Scientific OpenXR toolkit with rig, movement, interactions, hand/wrist menus, data gathering, questionnaires, debug console, localization, and setup dialogs |
+| `eisclimber/VRMuseumTemplate` | Studied in Wave 353 | Beginner workshop template with handout and completed exhibit |
+| `Hempp/street-art-gallery` | Studied in Wave 353 | Compact spatial art gallery reference |
+| `Kilamper/Art-Museum-VR` | Studied in Wave 353 | VR art room with creative object interaction, pixel canvas, and floating instructions |
+| `ericyoondotcom/OculusGooglePhotos` | Studied in Wave 353 | Personal media gallery direction marker |
+| `usmanbutt-dev/VR-DepthAPI-Gallery` | Studied in Wave 353 | Quest local image gallery with file browser, opacity, movable panels, and Depth API occlusion |
+| `echo3Dco/Unity-Oculus-echo3D-demo-VR-Zoo-Explorer` | Studied in Wave 353 | Cloud-managed VR zoo using echo3D metadata and project keys |
+
+### Consolidation note
+
+This family matters because galleries are valuable as reusable utility shells.
+It suggests an exhibit manifest plus local, cloud, and depth-aware media
+adapters.
+
+## Family 333: AI-assisted education labs and procedure-training loops
+
+This family covers science/medical training projects where task state, safety,
+reset, tutor guidance, quiz, and validation caveats are part of the product
+architecture.
+
+| Project | Status | Notes |
+|---|---|---|
+| `kenny2077/ChemAI` | Studied in Wave 354 | Quest chemistry lab with free-order stations, voice AI, live state, safety warnings, failures, reset, and credential hygiene |
+| `2227500/Team-Chem-Training-VR-App` | Studied in Wave 354 | Chemistry onboarding/safety/lab/quiz training sequence |
+| `37743/Classroom-VR` | Studied in Wave 354 | AI tutor classroom with RAG/curriculum framing |
+| `VR-Biomolecules/HandsOnDNA` | Studied in Wave 354 | DNA outreach experience with scale transition and sequenced activities |
+| `CRISPGroup/Mission-Control-MRI-VR` | Studied in Wave 354 | MRI familiarization app with story, bed/glide metaphor, movement feedback, caregiver role, and non-validated caveat |
+
+### Consolidation note
+
+This family matters because AI should assist a validated task model, not replace
+it. It suggests deterministic state hubs, tutor adapters, safety/failure gates,
+and teacher/caregiver roles.
+
+## Family 334: MR digital twin control surfaces and safety dashboards
+
+This family covers MR/VR systems that visualize and sometimes control real-world
+spaces, devices, robots, drones, safety scenarios, or industrial processes. The
+reusable lesson is to expose state, authority, and safety before commands.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mr-talukdar/Pyrosafe-Game` | Studied in Wave 355 | Fire/safety training direction marker |
+| `limasantoss/fabrica-segura-vr` | Studied in Wave 355 | Smart-factory safety microtraining with emergency-stop feedback |
+| `Kreline1993/gardsbriller` | Studied in Wave 355 | Quest MR garden digital twin with JSON plants, VPS, modes, wrist UI, LOD icons, and localization toasts |
+| `ACROSS-Lab/HoanKiemAirVR-Unity` | Studied in Wave 355 | Environmental/air VR direction marker |
+| `ACROSS-Lab/Rac-VR` | Studied in Wave 355 | Environmental/city VR direction marker with external source hygiene caveat |
+| `ototadana/TyDrone` | Studied in Wave 355 | Quest MR drone cockpit with Android plugin and passthrough control framing |
+| `AndreasFranke5/TwinCity` | Studied in Wave 355 | Collaborative city twin with Cesium/3D Tiles, SSA, Photon, markers, water simulation, and planning controls |
+| `Mukheem/TwinTurbine` | Studied in Wave 355 | Physical/MR turbine twin with IoT/API data, dashboard, avatar onboarding, SSA, and Photon |
+| `Infinity-Spark/Infinity-Spark-App` | Studied in Wave 355 | HoloLens/ABB robot monitoring/control dashboard direction |
+| `SL-thws/Mixed-Reality-for-Training-in-Human-Robot-Collaboration` | Studied in Wave 355 | Human-robot collaboration training direction marker |
+
+### Consolidation note
+
+This family matters because MR control tools can affect real hardware or
+real-world procedures. It suggests a safety-first control surface with anchors,
+data adapters, command envelopes, connection health, and emergency stop states.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

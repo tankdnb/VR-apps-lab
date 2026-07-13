@@ -1159,3 +1159,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-351-multisensory-hardware-feedback-olfactory-thermal-vibration-and-drag-haptics.md`
   semantic sensory event routing to olfactory, thermal, tactile, drag, and
   robotic hardware with consent and safety gates.
+- `vr-projects-wave-352-astronomy-planetarium-dome-and-archaeoastronomy-viewers.md`
+  Stellarium-style sky bridges, local astronomy engines, dome/fisheye
+  projection surfaces, arm HUDs, and scientific exhibit interaction.
+- `vr-projects-wave-353-scientific-exhibition-gallery-museum-and-depth-aware-media-spaces.md`
+  workshop-grade exhibit scaffolds, VR museum templates, local/cloud gallery
+  adapters, and depth-aware Quest media panels.
+- `vr-projects-wave-354-vr-education-ai-tutor-chemistry-biology-and-medical-procedure-training.md`
+  state-aware AI tutor labs, chemistry/biology activities, medical procedure
+  familiarization, safety/failure gates, and reset loops.
+- `vr-projects-wave-355-mr-digital-twin-safety-drone-robot-and-industrial-control-surfaces.md`
+  MR digital twins, JSON/API/IoT adapters, VPS/SSA anchoring, dashboards,
+  annotations, drone/robot panels, and command-safety surfaces.

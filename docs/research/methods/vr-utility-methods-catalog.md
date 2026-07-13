@@ -18491,3 +18491,160 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   multisensory utility prototypes, accessibility cues, rehab feedback,
   hardware-output bridges, and capability-labeled physical feedback labs.
+
+## Method 797: scientific dome and planetarium viewer boundary
+
+- What it is:
+  scientific sky and dome viewers should split astronomy data, time/location
+  state, content datasets, projection output, and interaction UI into explicit
+  adapters.
+- Good for:
+  planetarium viewers, archaeoastronomy tools, dome output, live-sky providers,
+  scientific exhibits, and headset/dome dual-mode viewers.
+- Why it matters:
+  a sky model, a Stellarium bridge, and a fisheye renderer have different
+  failure modes; coupling them makes scientific tools hard to reuse.
+- Source evidence:
+  `arcAstroVR/arcAstroVR`, `mymess/Planetarium`, `imclab/VR-Planetarium`, and
+  `At-Bristol/DEV0006-DataDomeUnityToolkit`.
+- Reusable core:
+  astronomy provider, date/time/location state, dataset loader, external app
+  bridge, local skybox cache, file watcher, projection adapter, dome/fisheye
+  camera rig, hand/arm HUD, marker/line editing, and capability labels.
+- Source evidence details:
+  Wave 352 includes arcAstroVR's Stellarium HTTP and watched skybox pipeline,
+  Planetarium's local sky/star models, VR-Planetarium's arm HUD and joyball
+  interactions, and Data Dome's world/projection camera split.
+- Do not copy directly:
+  hardcoded local Stellarium paths, old Leap-only interaction assumptions,
+  unbounded per-frame cubemap costs, or projection shaders without capability
+  and fallback labels.
+- Strong references:
+  `arcAstroVR/arcAstroVR` for external-provider integration and
+  `At-Bristol/DEV0006-DataDomeUnityToolkit` for dome projection boundaries.
+- Maturity:
+  strong reusable method; modern render-pipeline adapters would need fresh
+  implementation.
+- Best fit for `VR-apps-lab`:
+  scientific viewers, dome-output helpers, astronomy exhibits, and projection
+  adapter prototypes.
+
+## Method 798: workshop-grade exhibition/gallery template boundary
+
+- What it is:
+  VR galleries should be scaffolded around reusable rigs, content manifests,
+  display slots, media adapters, and onboarding docs rather than one-off scenes.
+- Good for:
+  museums, science exhibits, local image galleries, cloud-managed 3D content,
+  zoo/gallery demos, depth-aware photo panels, and educational workshops.
+- Why it matters:
+  small VR exhibits are common and valuable, but they become hard to maintain
+  when content, interactions, and rig setup are fused together.
+- Source evidence:
+  `eisclimber/ExPresS-XR`, `eisclimber/VRMuseumTemplate`,
+  `Hempp/street-art-gallery`, `Kilamper/Art-Museum-VR`,
+  `ericyoondotcom/OculusGooglePhotos`, `usmanbutt-dev/VR-DepthAPI-Gallery`, and
+  `echo3Dco/Unity-Oculus-echo3D-demo-VR-Zoo-Explorer`.
+- Reusable core:
+  exhibit manifest, room/display schema, content adapter, media provenance,
+  local folder scanner, cloud metadata adapter, depth-aware display controller,
+  quiz/tour/narration hooks, hand/wrist menu, setup wizard, handout, and export
+  route.
+- Source evidence details:
+  Wave 353 includes ExPresS-XR's setup dialogs/data gathering/interactions,
+  VRMuseumTemplate's workshop handout, VR-DepthAPI-Gallery's local storage and
+  depth occlusion, and echo3D Zoo's cloud metadata/project-key pattern.
+- Do not copy directly:
+  hardcoded cloud API keys, cloud-only galleries without fallback, unrelated UI
+  asset-store skins, or workshop-specific assumptions without public docs.
+- Strong references:
+  `eisclimber/ExPresS-XR` for reusable scientific XR scaffolding and
+  `usmanbutt-dev/VR-DepthAPI-Gallery` for local/depth-aware media surfaces.
+- Maturity:
+  strong product-method branch; needs a small neutral manifest before turning
+  into a reusable prototype.
+- Best fit for `VR-apps-lab`:
+  exhibit builders, gallery utilities, local media panels, science demos, and
+  workshop templates.
+
+## Method 799: AI-assisted educational lab and procedure-training loop
+
+- What it is:
+  educational VR should keep task state, safety, reset, assessment, and
+  validation independent from any AI tutor or voice layer.
+- Good for:
+  chemistry labs, biology outreach, classroom tutors, medical familiarization,
+  industrial education, and procedure training.
+- Why it matters:
+  AI can improve guidance, but correctness and safety must come from a
+  deterministic domain model.
+- Source evidence:
+  `kenny2077/ChemAI`, `2227500/Team-Chem-Training-VR-App`,
+  `37743/Classroom-VR`, `VR-Biomolecules/HandsOnDNA`, and
+  `CRISPGroup/Mission-Control-MRI-VR`.
+- Reusable core:
+  curriculum graph, station/task state hub, deterministic hint layer, AI/RAG
+  adapter, STT/TTS adapters, safety/failure gate, reset manager, quiz/checkpoint
+  module, caregiver/teacher role, credential hygiene, telemetry/export, and
+  validation/privacy labels.
+- Source evidence details:
+  Wave 354 includes ChemAI's live lab state and Azure OpenAI STT/chat/TTS
+  pipeline, Team-Chem's onboarding/safety/lab/quiz flow, HandsOnDNA's sequenced
+  scale-shift activities, and Mission Control MRI's caregiver/movement feedback
+  and non-validated caveat.
+- Do not copy directly:
+  live API credentials, unsupported medical claims, AI-only correctness, safety
+  warnings without deterministic triggers, or training scenes without reset and
+  failure recovery.
+- Strong references:
+  `kenny2077/ChemAI` for state-aware voice tutoring and
+  `CRISPGroup/Mission-Control-MRI-VR` for caregiver/procedure caveats.
+- Maturity:
+  strong reusable method; requires careful privacy, prompt, and domain safety
+  design.
+- Best fit for `VR-apps-lab`:
+  training labs, tutor overlays, simulation state inspectors, science education
+  tools, and validated-procedure scaffolds.
+
+## Method 800: MR digital twin control and safety surface
+
+- What it is:
+  MR digital twins should expose physical alignment, data freshness, command
+  authority, connection health, and safety state before allowing control.
+- Good for:
+  garden/farm twins, city planning tables, turbine dashboards, drone cockpits,
+  factory safety training, industrial robot panels, and human-robot
+  collaboration training.
+- Why it matters:
+  MR control surfaces sit close to real environments and sometimes hardware;
+  unsafe command defaults can turn a demo pattern into a hazard.
+- Source evidence:
+  `Kreline1993/gardsbriller`, `AndreasFranke5/TwinCity`,
+  `Mukheem/TwinTurbine`, `ototadana/TyDrone`, `limasantoss/fabrica-segura-vr`,
+  `Infinity-Spark/Infinity-Spark-App`, `mr-talukdar/Pyrosafe-Game`,
+  `ACROSS-Lab/HoanKiemAirVR-Unity`, `ACROSS-Lab/Rac-VR`, and
+  `SL-thws/Mixed-Reality-for-Training-in-Human-Robot-Collaboration`.
+- Reusable core:
+  anchor/VPS/SSA boundary, JSON/API/IoT data adapter, twin generator, runtime
+  database, mode state machine, dashboard, annotation layer, operator role,
+  command envelope, multi-user sync, connection health, dry-run mode, emergency
+  stop, and caveat labels.
+- Source evidence details:
+  Wave 355 includes Gardsbriller's JSON plant twin and mode system, TwinCity's
+  Cesium/SSA/Photon markers and water simulation, TwinTurbine's physical
+  turbine/API/dashboard flow, TyDrone's MR cockpit/plugin boundary, and factory
+  emergency-stop microtraining.
+- Do not copy directly:
+  live drone/robot commands without safety gates, hardcoded API/cloud keys,
+  opaque anchor state, command buttons without authority, or external source
+  trees with case-colliding folder layouts.
+- Strong references:
+  `Kreline1993/gardsbriller` for JSON-driven MR twins,
+  `AndreasFranke5/TwinCity` for collaborative city planning, and
+  `Mukheem/TwinTurbine` for physical/digital twin dashboards.
+- Maturity:
+  strong strategic method; production work needs safety-first command envelopes
+  and explicit user authority.
+- Best fit for `VR-apps-lab`:
+  MR dashboards, digital-twin overlays, safety microtraining, operator panels,
+  and dry-run control surface prototypes.

@@ -3135,6 +3135,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 274. `Rehabilitation biofeedback follow-up across patient profiles, hardware capability checks, calibration, difficulty schemas, hand/foot/biosignal ingress, progress graphs, therapist summaries, and clinical caveat labels`
 275. `XR robotics operator cockpit follow-up across hand/head/controller packet schemas, video downlinks, WebRTC/UDP/TCP/DDS/ROSBridge adapters, robot safety state, recording metadata, and replay/export`
 276. `Multisensory output router follow-up across sender/receiver/device abstractions, scent/thermal/vibration/drag adapters, intensity/cooldown limits, calibration, consent, and emergency disable`
+277. `Scientific dome/planetarium follow-up across Stellarium bridges, local astronomy engines, GIS/time/location state, skybox file watching, dome/fisheye output, and operator controls`
+278. `VR exhibition/gallery follow-up across exhibit manifests, local/cloud/depth-aware media adapters, handouts, setup dialogs, questionnaires, provenance, and comfort`
+279. `AI-assisted education lab follow-up across deterministic task state, tutor/RAG adapters, STT/TTS, safety/failure gates, reset managers, caregiver/teacher roles, and validation labels`
+280. `MR digital twin control-surface follow-up across anchors/VPS/SSA, JSON/API/IoT adapters, mode systems, dashboards, annotations, command authority, connection health, and emergency stop`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

@@ -1593,6 +1593,24 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on multisensory hardware output routers
   for scent, thermal, vibration, drag, and robotic haptics.
 
+- `vr-projects-wave-352-astronomy-planetarium-dome-and-archaeoastronomy-viewers.md`
+  Next GitHub discovery wave focused on astronomy/planetarium viewers,
+  Stellarium bridges, local sky models, dome/fisheye projection, and scientific
+  exhibit interaction.
+
+- `vr-projects-wave-353-scientific-exhibition-gallery-museum-and-depth-aware-media-spaces.md`
+  Next GitHub discovery wave focused on VR exhibition scaffolds, gallery media
+  surfaces, local/cloud content adapters, and depth-aware Quest image panels.
+
+- `vr-projects-wave-354-vr-education-ai-tutor-chemistry-biology-and-medical-procedure-training.md`
+  Next GitHub discovery wave focused on AI-assisted educational labs,
+  chemistry/biology activities, medical procedure familiarization, and safety
+  state.
+
+- `vr-projects-wave-355-mr-digital-twin-safety-drone-robot-and-industrial-control-surfaces.md`
+  Next GitHub discovery wave focused on MR digital twins, safety training,
+  drone/robot cockpits, industrial dashboards, anchors, and command surfaces.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

@@ -4645,6 +4645,64 @@ Primary docs:
 - `amarqu88/Multisensory-Proximity-and-Transition-Cues` - `Studied in Wave 351 as a VR/AR limited-FOV awareness study with visual/audio/tactile proximity and transition cues, Steam Audio, extOSC, Raspberry Pi vibration setup, and study logging`
 - `AndreZenner/dragon` - `Studied in Wave 351 as Drag:on, a DIY VR controller with air-resistance and weight-shift haptics, Arduino firmware, Unity serial package, circuit, 3D-print files, Vive Tracker alignment, and patent caveat`
 
+## 323. Astronomy planetarium dome and archaeoastronomy viewers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-352-astronomy-planetarium-dome-and-archaeoastronomy-viewers.md`
+- `../landscape/project-families.md`
+
+- `arcAstroVR/arcAstroVR` - `Studied in Wave 352 as an archaeoastronomy Unity viewer with Stellarium HTTP bridge, file-watched six-sided skybox updates, GIS/location conversion, dataset selection, marker/line editing, and domemaster output`
+- `mymess/Planetarium` - `Studied in Wave 352 as a Unity planetarium with local astronomy algorithms, sky/star models, and date/location/settings editor tooling`
+- `imclab/VR-Planetarium` - `Studied in Wave 352 as a legacy Leap Motion planetarium with arm HUD, joyball hand interaction, constellation labels, video manager, and data-binding toggles`
+- `At-Bristol/DEV0006-DataDomeUnityToolkit` - `Studied in Wave 352 as a dome projection toolkit with world/projection camera split, fisheye shader, cubemap capture, operator hotkeys, settings persistence, and FPS feedback`
+
+## 324. Scientific exhibition gallery museum and depth-aware media spaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-353-scientific-exhibition-gallery-museum-and-depth-aware-media-spaces.md`
+- `../landscape/project-families.md`
+
+- `eisclimber/ExPresS-XR` - `Studied in Wave 353 as a scientific OpenXR toolkit with rig setup, movement modes, interactions, hand/wrist menus, data gathering, questionnaires, debug console, localization, and setup dialogs`
+- `eisclimber/VRMuseumTemplate` - `Studied in Wave 353 as a beginner-oriented VR exhibition workshop template with handout and completed exhibit structure on top of ExPresS-XR`
+- `Hempp/street-art-gallery` - `Studied in Wave 353 as a compact gallery reference for spatial art display and simple room/media framing`
+- `Kilamper/Art-Museum-VR` - `Studied in Wave 353 as a Spanish VR art room with creative 3D object interaction, pixel-art canvas, and floating instructions`
+- `ericyoondotcom/OculusGooglePhotos` - `Studied in Wave 353 as an Oculus/Google Photos direction marker for external personal-media gallery ingestion`
+- `usmanbutt-dev/VR-DepthAPI-Gallery` - `Studied in Wave 353 as a Quest gallery with local storage scanning, image display, opacity slider, movable panels, file browser, and Meta Depth API occlusion`
+- `echo3Dco/Unity-Oculus-echo3D-demo-VR-Zoo-Explorer` - `Studied in Wave 353 as a cloud-managed VR zoo with echo3D project keys, scene metadata, model indexes, and audio/video project separation`
+
+## 325. VR education AI tutor chemistry biology and medical procedure training
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-354-vr-education-ai-tutor-chemistry-biology-and-medical-procedure-training.md`
+- `../landscape/project-families.md`
+
+- `kenny2077/ChemAI` - `Studied in Wave 354 as a Quest 3 chemistry lab with free-order stations, state-aware voice AI assistant, Azure OpenAI STT/chat/TTS, station failures, safety warnings, reset manager, and credential hygiene`
+- `2227500/Team-Chem-Training-VR-App` - `Studied in Wave 354 as a chemistry training flow with onboarding, safety room, lab room, manual evaporator experiment, and quiz`
+- `37743/Classroom-VR` - `Studied in Wave 354 as an AI tutor classroom direction with RAG/curriculum framing and teacher/persona structure`
+- `VR-Biomolecules/HandsOnDNA` - `Studied in Wave 354 as a DNA outreach experience with lab-to-cell/atomic scale transition and sequenced interactive biomolecular activities`
+- `CRISPGroup/Mission-Control-MRI-VR` - `Studied in Wave 354 as a Quest MRI familiarization app with story mission, bed/glide metaphor, movement feedback, caregiver controller role, and non-validated medical caveat`
+
+## 326. MR digital twin safety drone robot and industrial control surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-355-mr-digital-twin-safety-drone-robot-and-industrial-control-surfaces.md`
+- `../landscape/project-families.md`
+
+- `mr-talukdar/Pyrosafe-Game` - `Studied in Wave 355 as a fire/safety training direction marker for procedural safety scenarios and hazard-response framing`
+- `limasantoss/fabrica-segura-vr` - `Studied in Wave 355 as a smart-factory safety microtraining with production-line navigation, emergency-stop interaction, and visible feedback`
+- `Kreline1993/gardsbriller` - `Studied in Wave 355 as a Quest MR garden digital twin with JSON plant rows, MultiSet VPS localization, mode state machine, overview/picking/weeding modes, info panels, wrist menu, LOD/clustering icons, and localization toasts`
+- `ACROSS-Lab/HoanKiemAirVR-Unity` - `Studied in Wave 355 as an environmental/air VR direction marker for city/environment monitoring surfaces`
+- `ACROSS-Lab/Rac-VR` - `Studied in Wave 355 as an environmental/city VR direction marker with Windows case-collision hygiene caveats in the external source layout`
+- `ototadana/TyDrone` - `Studied in Wave 355 as a Quest MR virtual cockpit for Tello drone using Android plugin notes, passthrough, hand/controller setup, and restored MRTK-style cockpit features`
+- `AndreasFranke5/TwinCity` - `Studied in Wave 355 as a collaborative MR city digital twin with Cesium/Google 3D Tiles, Shared Spatial Anchors, Photon Fusion, markers, water-level simulation, map controls, and emergency-planning framing`
+- `Mukheem/TwinTurbine` - `Studied in Wave 355 as a collaborative MR turbine digital twin with physical turbine, servo/generator/photoresistor data, SMHI API, dashboard, avatar guidance, Shared Spatial Anchors, Photon, and Proxima/debug surfaces`
+- `Infinity-Spark/Infinity-Spark-App` - `Studied in Wave 355 as a HoloLens/ABB RobotStudio industrial robot monitoring/control dashboard direction`
+- `SL-thws/Mixed-Reality-for-Training-in-Human-Robot-Collaboration` - `Studied in Wave 355 as a human-robot collaboration training direction marker for safety and role-based MR procedure design`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:
