@@ -387,6 +387,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-389-mr-templates-world-transform-and-scene-aware-game-samples.md`
 - `landscape/vr-projects-wave-390-mr-robot-slam-user-study-and-passthrough-analysis-dashboards.md`
 - `landscape/vr-projects-wave-391-hand-interaction-packages-social-tabletop-and-escape-room-samples.md`
+- `landscape/vr-projects-wave-392-caption-voice-and-descriptive-accessibility-surfaces.md`
+- `landscape/vr-projects-wave-393-low-vision-nonvisual-and-haptic-accessibility-toolkits.md`
+- `landscape/vr-projects-wave-394-sign-language-hand-pose-and-gesture-recognition-training.md`
+- `landscape/vr-projects-wave-395-eye-tracking-sensory-overload-and-calibration-safety.md`
 
 ## Archive Navigation
 

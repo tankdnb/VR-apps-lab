@@ -2770,3 +2770,31 @@ repeatable way.
 
 - `github-research-wave-391-backlog.md`
   Executed backlog for the Wave 391 pass.
+
+- `github-research-wave-392-plan.md`
+  Wave 392 research plan focused on caption, voice, and descriptive
+  accessibility surfaces.
+
+- `github-research-wave-392-backlog.md`
+  Executed backlog for the Wave 392 pass.
+
+- `github-research-wave-393-plan.md`
+  Wave 393 research plan focused on low-vision, nonvisual, and haptic
+  accessibility toolkits.
+
+- `github-research-wave-393-backlog.md`
+  Executed backlog for the Wave 393 pass.
+
+- `github-research-wave-394-plan.md`
+  Wave 394 research plan focused on sign-language, hand-pose, and gesture
+  recognition training.
+
+- `github-research-wave-394-backlog.md`
+  Executed backlog for the Wave 394 pass.
+
+- `github-research-wave-395-plan.md`
+  Wave 395 research plan focused on eye tracking, sensory overload, and
+  calibration safety.
+
+- `github-research-wave-395-backlog.md`
+  Executed backlog for the Wave 395 pass.

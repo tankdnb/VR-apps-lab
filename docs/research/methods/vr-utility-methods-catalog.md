@@ -19904,3 +19904,137 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   hand-driven utilities, social MR tools, tabletop/session helpers, and puzzle
   or task-flow prototypes.
+
+## Method 837: accessible caption voice and descriptive surface
+
+- What it is:
+  route captions, voice commands, object descriptions, and TTS feedback through
+  explicit source adapters, renderer preferences, safe-area rules, listening
+  state, and privacy labels.
+- Good for:
+  subtitle overlays, caption panels, voice-command helpers, descriptive object
+  menus, accessibility companions, and remote speech/TTS adapters.
+- Why it matters:
+  communication accessibility becomes fragile when caption timing, source
+  direction, voice consent, cloud credentials, and object-description metadata
+  are hidden inside one scene.
+- Source evidence:
+  `XR-Access-Initiative/chirp-captions`,
+  `XR-Access-Initiative/voicesdk-samples-whisperer-captions`, and
+  `JustinMorera/VR-Accessibility-SDK`.
+- Reusable core:
+  caption source, timed caption model, renderer selector, safe-area placement,
+  sound-source cue, speak gesture, listening indicator, command grammar, TTS
+  cache, object-description record, readable menu, and privacy label.
+- Source evidence details:
+  Wave 392 includes chirp caption runtime/package docs, Whisperer
+  `Assets/Whisperer` voice/TTS sample flow, and the partial-vision descriptive
+  menu package setup.
+- Do not copy directly:
+  cloud speech credentials, hardcoded command grammars, raw transcripts without
+  retention rules, or one-size-fits-all caption placement.
+- Maturity:
+  strong accessibility surface method; needs a small schema for caption and
+  description sources.
+- Best fit for `VR-apps-lab`:
+  overlay captions, voice-control companions, accessibility menus, and
+  descriptive object helper tools.
+
+## Method 838: low-vision and nonvisual feedback loop
+
+- What it is:
+  combine magnification, focus targets, contrast settings, spatial audio,
+  haptic semantics, accessible menus, tutorial steps, and fallback modes as one
+  user-facing accessibility loop.
+- Good for:
+  low-vision utility overlays, blind/low-vision games, nonvisual navigation,
+  accessible menus, and haptic/audio tutorial systems.
+- Why it matters:
+  visual-only fixes are not enough; users need redundant cues, learnable
+  interaction state, comfort limits, and fallback channels.
+- Source evidence:
+  `XR-Access-Initiative/Vision-Accessibility-Toolkit`, `SuHCI/MagniVR`, and
+  `xability/punch-pulse`.
+- Reusable core:
+  magnifier lens, focus target, contrast preference, audio cue taxonomy,
+  spatial audio source, haptic intent, nonvisual menu, tutorial manager,
+  fallback channel, comfort label, and accessibility contribution checklist.
+- Source evidence details:
+  Wave 393 includes the Vision Accessibility Toolkit FirstHand-derived scene
+  base, MagniVR prototype assets, and Punch Pulse spatial-audio/haptic/menu
+  requirements.
+- Do not copy directly:
+  research prototype tuning, gameplay-specific cue mappings, or vendor sample
+  bulk without isolating the accessibility primitives.
+- Maturity:
+  useful accessibility loop method; needs reusable cue taxonomy and haptic
+  intent records.
+- Best fit for `VR-apps-lab`:
+  low-vision overlays, nonvisual UI experiments, haptic helper libraries, and
+  accessibility test harnesses.
+
+## Method 839: hand-pose learning and gesture-recognition loop
+
+- What it is:
+  represent hand signs or gestures as pose assets with feature extraction,
+  tolerance/scoring, hold-to-confirm timing, confidence feedback, reference
+  media, and training/quiz state.
+- Good for:
+  sign-language trainers, gesture-command systems, hand-pose onboarding,
+  recognizer calibration, and cross-engine gesture adapters.
+- Why it matters:
+  hand-tracking features become reusable only when the pose schema, confidence,
+  calibration, and user-variation assumptions are visible.
+- Source evidence:
+  `Somanyloopholes/SignPoseVR`, `cpvrlab/vrTrainingFingerAlphabet`, and
+  `MARUI-PlugIn/MiVRy`.
+- Reusable core:
+  pose asset, saved hand form, feature extractor, finger-angle score,
+  fingertip-distance score, wrist-orientation check, hold timer, confidence
+  label, reference prompt, quiz state, feedback glow, recognizer adapter, and
+  validation caveat.
+- Source evidence details:
+  Wave 394 includes SignPoseVR learn/quiz flow, vrTrainingFingerAlphabet
+  handform tables/debug helpers, and MiVRy Unity/Unreal/native package
+  boundaries.
+- Do not copy directly:
+  fixed sign vocabularies, unvalidated thresholds, binary plugin assumptions,
+  or language-specific sign data as a universal model.
+- Maturity:
+  strong interaction-learning method; needs a repository-local pose asset
+  schema and validation checklist.
+- Best fit for `VR-apps-lab`:
+  gesture-driven menus, hand-pose tutorials, accessibility trainers, and
+  confidence-aware hand command tools.
+
+## Method 840: gaze safety and calibration loop
+
+- What it is:
+  treat eye tracking as a calibrated safety signal with source adapters,
+  sample-quality metrics, fixation or velocity features, adaptation policy,
+  user override, consent labels, and clinical caveats.
+- Good for:
+  eye-tracking diagnostics, calibration helpers, sensory-overload research
+  tools, gaze-aware comfort utilities, and accessibility dashboards.
+- Why it matters:
+  gaze data is sensitive and noisy; adapting an XR scene from it requires
+  explicit confidence, calibration state, override, and medical-claim limits.
+- Source evidence:
+  `leonkoech/AutismDetector` and
+  `mvidaldp/unity_htcvivepro_et_calibration`.
+- Reusable core:
+  gaze source, calibration target, sample quality, fixation/velocity feature,
+  overload signal, adaptation rule, user override, consent label, clinical
+  caveat, eye-data retention boundary, and calibration artifact.
+- Source evidence details:
+  Wave 395 includes `Autiment SDK/SymptomDetector.cs`, Magic Leap eye actions,
+  EEG/demo context, and the Vive Pro Eye calibration Unity project structure.
+- Do not copy directly:
+  clinical detection claims, EEG/eye-data storage without consent, adaptation
+  rules without override, or bundled SteamVR/Vive assets as donor code.
+- Maturity:
+  important safety method; needs stricter validation and privacy checklist
+  before becoming prototype code.
+- Best fit for `VR-apps-lab`:
+  gaze diagnostics, calibration UIs, accessibility safety experiments, and
+  comfort-aware scene adaptation research.

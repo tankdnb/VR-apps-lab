@@ -17,6 +17,26 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 392-395
+
+- `Caption, voice, and descriptive accessibility surfaces`
+  add accessibility communication coverage around timed caption sources,
+  renderer preferences, safe-area placement, sound-source cues, speak gestures,
+  listening state, TTS/cache adapters, object-description metadata, and privacy
+  labels.
+- `Low-vision, nonvisual, and haptic accessibility toolkits`
+  add low-vision/nonvisual feedback coverage around magnifier lenses, focus
+  targets, spatial audio, haptic semantics, accessible menus, tutorials,
+  fallback channels, and accessibility contribution checks.
+- `Sign language, hand-pose, and gesture recognition training`
+  add hand-learning coverage around saved hand forms, angle/tip/orientation
+  features, hold-to-confirm scoring, reference prompts, confidence labels,
+  recognizer adapters, and validation caveats.
+- `Eye tracking, sensory overload, and calibration safety`
+  add gaze safety coverage around calibration targets, sample quality,
+  fixation/velocity features, overload signals, adaptation policies, user
+  overrides, consent labels, clinical caveats, and eye-data retention.
+
 ## Current additions from Waves 388-391
 
 - `Quest passthrough camera capture, vision streaming, and detection bridges`

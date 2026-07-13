@@ -1758,6 +1758,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on hand packages, social MR tabletop,
   shared anchors, and puzzle/task interaction samples.
 
+- `vr-projects-wave-392-caption-voice-and-descriptive-accessibility-surfaces.md`
+  Next GitHub discovery wave focused on caption, voice, TTS, and descriptive
+  accessibility surfaces for XR.
+
+- `vr-projects-wave-393-low-vision-nonvisual-and-haptic-accessibility-toolkits.md`
+  Next GitHub discovery wave focused on low-vision magnification, nonvisual
+  feedback, spatial audio, and haptic accessibility loops.
+
+- `vr-projects-wave-394-sign-language-hand-pose-and-gesture-recognition-training.md`
+  Next GitHub discovery wave focused on sign-language trainers, hand-pose
+  scoring, and gesture recognition package boundaries.
+
+- `vr-projects-wave-395-eye-tracking-sensory-overload-and-calibration-safety.md`
+  Next GitHub discovery wave focused on eye tracking, sensory-overload
+  adaptation, gaze calibration, and safety/privacy caveats.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

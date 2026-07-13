@@ -3176,6 +3176,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 314. `MR template/world-transform follow-up across runtime action bindings, MRUK recenter policy, scene mesh alignment, passthrough state, provider/service fallback, voice trigger boundaries, and vendor sample dependency minimization`
 315. `MR robot and user-study dashboard follow-up across robot/user identity, topic freshness, map/stat decimation, command authority, replay logs, remote tracking sources, consent labels, retention policy, and stale-data indicators`
 316. `Hand package/social tabletop follow-up across skeleton drivers, pose-to-action maps, hand joystick samples, contextual board placement, shared-anchor lifecycle, room UI, player disconnect state, puzzle gates, and fallback input`
+317. `Accessible communication follow-up across caption source schemas, renderer preferences, safe-area placement, sound-source cues, speak gestures, listening indicators, TTS/cache adapters, object description metadata, and privacy labels`
+318. `Low-vision/nonvisual accessibility follow-up across magnifier lenses, focus targets, contrast settings, audio cue taxonomy, haptic semantics, nonvisual menu navigation, tutorial steps, fallback modes, and accessibility contribution tests`
+319. `Hand-pose/sign-language follow-up across pose asset schemas, saved hand forms, angle/tip/orientation features, hold timers, confidence labels, reference media, quiz state, recognizer training, calibration, and community validation`
+320. `Eye-tracking safety follow-up across calibration targets, sample quality metrics, fixation/velocity features, overload signals, adaptation policies, user overrides, consent labels, clinical caveats, and eye-data retention boundaries`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

@@ -5119,6 +5119,49 @@ Primary docs:
 - `oculus-samples/Unity-SpiritSling` - `Studied in Wave 391 as official social MR tabletop sample with contextual board placement, shared anchors, avatars, networking, hand grabs, and LFS-heavy caveat`
 - `francesctr4/EscapeRoomVR` - `Studied in Wave 391 as compact Unity VR escape-room reference with puzzle/object interaction structure and task-state follow-up`
 
+## 363. Caption voice and descriptive accessibility surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-392-caption-voice-and-descriptive-accessibility-surfaces.md`
+- `../landscape/project-families.md`
+
+- `XR-Access-Initiative/chirp-captions` - `Deepened in Wave 392 as caption runtime/package reference with renderer switching, timed captions, head-locked safe area, and source-direction cue lessons`
+- `XR-Access-Initiative/voicesdk-samples-whisperer-captions` - `Studied in Wave 392 as Voice SDK accessible command sample with speak gesture, object commands, TTS/cache, prompts, and Wit.ai privacy caveats`
+- `JustinMorera/VR-Accessibility-SDK` - `Studied in Wave 392 as compact partial-vision accessibility package with object targeting, descriptive text menus, prefab setup, and Input System command binding`
+
+## 364. Low vision nonvisual and haptic accessibility toolkits
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-393-low-vision-nonvisual-and-haptic-accessibility-toolkits.md`
+- `../landscape/project-families.md`
+
+- `XR-Access-Initiative/Vision-Accessibility-Toolkit` - `Studied in Wave 393 as FirstHand-derived visual accessibility toolkit/reference with hand-interaction scene base, audio cues, and vendor-sample extraction caveats`
+- `SuHCI/MagniVR` - `Studied in Wave 393 as low-vision magnification research prototype with VR room, model, UI prototype, and lens/comfort follow-up`
+- `xability/punch-pulse` - `Studied in Wave 393 as accessible VR boxing app for blind/low-vision users with spatial audio, haptic feedback, accessible menus, tutorial flow, and contribution checklist`
+
+## 365. Sign language hand pose and gesture recognition training
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-394-sign-language-hand-pose-and-gesture-recognition-training.md`
+- `../landscape/project-families.md`
+
+- `Somanyloopholes/SignPoseVR` - `Studied in Wave 394 as Quest ASL alphabet/digit trainer with learn/quiz modes, reference prompts, hand tracking, glow feedback, and hold-to-confirm scoring`
+- `cpvrlab/vrTrainingFingerAlphabet` - `Deepened in Wave 394 as explainable finger alphabet trainer with saved hand forms, angle/tip/orientation scoring, debug canvas, and VRUI editor helpers`
+- `MARUI-PlugIn/MiVRy` - `Studied in Wave 394 as multi-engine gesture recognition plugin with Unity, Unreal, Android, Windows, Linux, macOS, and UWP package boundaries`
+
+## 366. Eye tracking sensory overload and calibration safety
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-395-eye-tracking-sensory-overload-and-calibration-safety.md`
+- `../landscape/project-families.md`
+
+- `leonkoech/AutismDetector` - `Studied in Wave 395 as Magic Leap eye-tracking sensory-overload SDK with fixation/gaze features, demo scenes, EEG context, and clinical caveats`
+- `mvidaldp/unity_htcvivepro_et_calibration` - `Studied in Wave 395 as Unity/SteamVR Vive Pro Eye calibration project with calibration harness structure and bundled asset caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

@@ -11583,6 +11583,77 @@ This family matters because colocated MR and hand-driven apps need reusable
 hand commands, session/anchor state, player presence, puzzle gates, and
 fallback input boundaries.
 
+## Family 371: Accessibility communication surfaces
+
+This family covers captions, voice-command surfaces, descriptive object menus,
+safe-area placement, sound-source cues, and privacy boundaries for speech or
+caption providers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `XR-Access-Initiative/chirp-captions` | Deepened in Wave 392 | Caption runtime/package reference with timed captions, renderer choices, safe areas, and source cues |
+| `XR-Access-Initiative/voicesdk-samples-whisperer-captions` | Studied in Wave 392 | Voice SDK sample with speak gesture, object commands, prompts, TTS/cache, and Wit.ai caveats |
+| `JustinMorera/VR-Accessibility-SDK` | Studied in Wave 392 | Partial-vision object targeting with descriptive text menus and Input System binding |
+
+### Consolidation note
+
+This family matters because accessible communication utilities need source
+adapters, renderer preferences, object-description metadata, feedback state,
+and privacy labels before they can become reusable overlays or helpers.
+
+## Family 372: Low-vision and nonvisual accessibility feedback loops
+
+This family covers magnification, focus targets, spatial audio, haptic cue
+semantics, nonvisual menus, tutorial flow, and accessibility contribution
+requirements.
+
+| Project | Status | Notes |
+|---|---|---|
+| `XR-Access-Initiative/Vision-Accessibility-Toolkit` | Studied in Wave 393 | FirstHand-derived accessibility toolkit/reference with hand interaction base and audio cues |
+| `SuHCI/MagniVR` | Studied in Wave 393 | Low-vision magnification research prototype with VR room, models, and UI prototype |
+| `xability/punch-pulse` | Studied in Wave 393 | Blind/low-vision boxing app with spatial audio, haptics, accessible menus, and tutorial guidance |
+
+### Consolidation note
+
+This family matters because low-vision and blind-user VR tools need a feedback
+loop that spans visual magnification, nonvisual routing, haptics, onboarding,
+fallbacks, and comfort constraints.
+
+## Family 373: Sign-language and gesture recognition training
+
+This family covers hand-pose learning, saved hand forms, angle/distance
+features, hold-to-confirm scoring, confidence labels, gesture recognizers, and
+quiz/training state.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Somanyloopholes/SignPoseVR` | Studied in Wave 394 | Quest ASL trainer with learn/quiz modes, reference prompts, hand tracking, and glow feedback |
+| `cpvrlab/vrTrainingFingerAlphabet` | Deepened in Wave 394 | German finger alphabet trainer with saved hand forms, explainable scoring, and debug/UI helpers |
+| `MARUI-PlugIn/MiVRy` | Studied in Wave 394 | Multi-engine gesture recognition plugin with Unity, Unreal, native, and mobile package boundaries |
+
+### Consolidation note
+
+This family matters because sign-language and gesture tools need explainable
+pose schemas, calibration, tolerance, confidence, and user-variation caveats,
+not only a pass/fail hand-tracking check.
+
+## Family 374: Eye-tracking safety and calibration
+
+This family covers gaze source adapters, calibration harnesses, fixation or
+velocity signals, overload detection, adaptation policies, user override, and
+clinical/privacy caveats.
+
+| Project | Status | Notes |
+|---|---|---|
+| `leonkoech/AutismDetector` | Studied in Wave 395 | Magic Leap eye-tracking sensory-overload SDK with demos, EEG context, and clinical caveats |
+| `mvidaldp/unity_htcvivepro_et_calibration` | Studied in Wave 395 | Vive Pro Eye calibration project with Unity/SteamVR harness structure and bundled asset caveats |
+
+### Consolidation note
+
+This family matters because gaze-based accessibility or safety tools must make
+calibration quality, signal confidence, adaptation authority, consent, and
+medical-claim boundaries explicit.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

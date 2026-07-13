@@ -1231,3 +1231,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-391-hand-interaction-packages-social-tabletop-and-escape-room-samples.md`
   OpenXR hand packages, social MR tabletop, shared anchors, room/session UI,
   and puzzle/task interaction samples.
+- `vr-projects-wave-392-caption-voice-and-descriptive-accessibility-surfaces.md`
+  Caption runtime surfaces, voice-command samples, descriptive object menus,
+  TTS/cache adapters, and speech privacy boundaries.
+- `vr-projects-wave-393-low-vision-nonvisual-and-haptic-accessibility-toolkits.md`
+  Low-vision magnification, nonvisual spatial audio, haptic cue semantics,
+  accessible menus, and tutorial/fallback loops.
+- `vr-projects-wave-394-sign-language-hand-pose-and-gesture-recognition-training.md`
+  Sign-language trainers, saved hand forms, pose scoring, hold-to-confirm
+  feedback, and gesture recognition adapters.
+- `vr-projects-wave-395-eye-tracking-sensory-overload-and-calibration-safety.md`
+  Eye-tracking sensory-overload research, Vive calibration harnesses,
+  adaptation policy, consent, and clinical caveats.
