@@ -20562,3 +20562,137 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   creator-facing VR utilities, capture helpers, live avatar tooling, and
   production dashboards.
+
+## Method 857: Tiny XR render-framework adapter
+
+- What it is:
+  wrap OpenXR or OpenVR session, swapchain, view, input, haptic, and mirror
+  responsibilities behind a small facade that fits a lightweight render
+  framework loop.
+- Good for:
+  diagnostics, minimal viewers, XR samples, asset preview tools, educational
+  examples, headset bring-up, and small utilities that do not need a full game
+  engine.
+- Why it matters:
+  many VR utilities need a reliable XR shell but should not inherit a large
+  engine architecture just to draw a panel, controller ray, or debug object.
+- Source evidence:
+  `FireFlyForLife/rlOpenXR`, `caszuu/rlxr`, `branchpanic/raylib-openvr`, and
+  `geefr/vsgvr`.
+- Reusable core:
+  instance/session bootstrap, graphics binding adapter, swapchain acquire/wait/
+  release, per-eye view state, reference/view spaces, action-set sync,
+  suggested bindings, pose/action accessors, haptic dispatch, and desktop mirror
+  ownership.
+- Source evidence details:
+  Raylib `InitXr`/`UpdateXr`/`BeginXrMode` style APIs, `rlxr.h` action/binding
+  facade, OpenVR HMD/controller tracking prototype, and VSG OpenXR extension and
+  coordinate-space handling.
+- Do not copy directly:
+  WIP controller assumptions, old OpenVR-only paths, framework forks, or hidden
+  coordinate conversions without diagnostics.
+- Maturity:
+  strong reusable adapter pattern; should become a small reference architecture
+  before code is copied.
+- Best fit for `VR-apps-lab`:
+  minimal OpenXR/OpenVR utility shells, diagnostics viewers, and source-reading
+  examples for future prototype code.
+
+## Method 858: Runtime substrate boundary map
+
+- What it is:
+  document the explicit boundaries between runtime retrofit, driver/SLAM
+  substrate, graphics engine, scene components, and user interaction before
+  turning an XR prototype into a reusable tool.
+- Good for:
+  game retrofits, DIY headset experiments, Monado driver work, SLAM tracking
+  bring-up, custom OpenXR/Vulkan engines, and hardware/software integration
+  notes.
+- Why it matters:
+  runtime projects become hard to reuse when game code, hardware assumptions,
+  tracking configuration, scene resources, and interaction logic are all tangled.
+- Source evidence:
+  `mcxr-org/MCXR`, `alexstrei/Custom-VR`, `CIFASIS/basalt-xr`, and
+  `Adrian-Hirt/XRe`.
+- Reusable core:
+  compatibility boundary, non-VR/server mode, driver or loader path, calibration
+  config, dataset replay/debug mode, graphics backend adapter, resource manager,
+  scene/component layer, interaction verbs, and hardware caveat labels.
+- Source evidence details:
+  MCXR core/play split, Custom-VR Monado/Basalt hardware stack, Basalt-XR
+  dataset and debug flags, and XRe application/resources/scene component
+  boundary.
+- Do not copy directly:
+  archived mod hooks, headset-specific assumptions, calibration files without
+  provenance, or experimental engine code as if it were production substrate.
+- Maturity:
+  synthesis method; best used as a checklist before deeper code extraction.
+- Best fit for `VR-apps-lab`:
+  future runtime helpers, headsetless workflows, Monado notes, and engine
+  substrate references.
+
+## Method 859: Spatial asset viewer with alignment profile
+
+- What it is:
+  treat VR asset viewing as an import/preview/alignment pipeline with explicit
+  source format, camera context, transform controls, saved alignment, and viewer
+  cleanup lifecycle.
+- Good for:
+  Gaussian splat viewers, point-cloud inspectors, capture review tools,
+  photogrammetry previews, training-data viewers, and local WebXR asset
+  previews.
+- Why it matters:
+  spatial assets are rarely useful in VR until the user can scale, rotate, align,
+  compare against cameras or SfM context, and resume the same placement later.
+- Source evidence:
+  `warpgatelabs/RSR`, `hyperlogic/splatapult`,
+  `jacobvanbeets/splat-vr-viewer`, and `eleanor-studio/photon.editor`.
+- Reusable core:
+  file/import adapter, format capability labels, VR toggle, scene transform
+  verbs, grip-based translate/rotate/scale, camera/frustum context, alignment
+  profile file, localhost or embedded preview lifecycle, and cleanup on close.
+- Source evidence details:
+  RSR PLY/SOG viewer controls, splatapult `vr.json` and `cameras.json` flow,
+  LichtFeld export-to-localhost WebXR plugin, and photon.editor reactive scene
+  controls.
+- Do not copy directly:
+  viewer-specific shader stacks, vendor acceleration assumptions, temporary
+  local servers without cleanup, or asset transforms hidden in UI state only.
+- Maturity:
+  strong product pattern; good candidate for a future reusable asset-viewer
+  blueprint.
+- Best fit for `VR-apps-lab`:
+  spatial media utilities, capture review, photogrammetry/splat workflows, and
+  local asset preview tools.
+
+## Method 860: XR utility automation and scripting surface
+
+- What it is:
+  expose XR utility behavior through a bounded command surface that separates
+  in-headset controls, companion-app authority, persisted config, IPC, and unsafe
+  scripting or automation actions.
+- Good for:
+  sleep/comfort utilities, overlay automation, WebXR scene editing, scripting
+  probes, capability-wrapper SDKs, VRChat/OSC helpers, and operator consoles.
+- Why it matters:
+  automation inside VR is powerful but risky; reusable tools need clear command
+  vocabulary, state synchronization, privacy gates, and trust boundaries.
+- Source evidence:
+  `RangerMauve/dat-xr-scene-ide`, `Eidenz/NemuriXR`,
+  `Phantomxm2021/ARMOD-Framework`, and `drypy/openxr.py`.
+- Reusable core:
+  command registry, scene/config mutation API, desktop-overlay IPC, phase/state
+  machine, persisted config, scripting binding, capability wrapper, privacy
+  labels, allowlist/denylist, and status feedback.
+- Source evidence details:
+  A-Frame terminal commands including `write` and `eval`, NemuriXR shared
+  config/Unix-socket IPC/phase automation, ARMOD visual configuration and
+  session controls, and Python ctypes OpenXR binding for scripts/probes.
+- Do not copy directly:
+  arbitrary eval surfaces, personal automation defaults, quota-limited SDK
+  assumptions, or scripting access without explicit safety framing.
+- Maturity:
+  strong cross-family method; needs safety checklist before implementation.
+- Best fit for `VR-apps-lab`:
+  overlay operators, diagnostic scripts, comfort automation, and future
+  in-headset authoring consoles.

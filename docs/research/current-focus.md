@@ -17,6 +17,29 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 412-415
+
+- `Lightweight OpenXR render framework adapters`
+  add minimal-XR-shell coverage around OpenXR/OpenVR session bootstrap,
+  swapchain lifecycle, per-eye views, action binding, haptics, platform graphics
+  bindings, coordinate-space conversion, desktop mirrors, and render-framework
+  loops for Raylib, OpenVR prototypes, and VulkanSceneGraph.
+- `Runtime retrofit, SLAM, and OpenXR engine substrates`
+  add runtime-substrate coverage around game retrofits, non-VR/server
+  boundaries, DIY headset hardware, Monado driver paths, Basalt SLAM
+  calibration/debug flags, OpenXR/Vulkan scene resources, grab/teleport
+  interactions, and hardware caveat labels.
+- `Gaussian splat and spatial asset viewer pipelines`
+  add spatial-media coverage around PLY/SOG/splat import, VR toggles, folder
+  navigation, camera/frustum context, saved `vr.json` alignment profiles,
+  grip-based transform controls, localhost WebXR preview servers, and cleanup
+  lifecycle.
+- `XR utility automation, authoring, and scripting surfaces`
+  add command-surface coverage around WebXR/A-Frame terminal editing,
+  desktop-plus-overlay IPC, phase-state comfort automation, OSC/VRChat bridges,
+  visual SDK configuration, Python OpenXR scripting, privacy gates, and unsafe
+  command allowlists.
+
 ## Current additions from Waves 408-411
 
 - `Spatial UI widgets, layouts, and input-neutral panels`

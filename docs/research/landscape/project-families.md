@@ -11949,6 +11949,82 @@ This family matters because creator utilities often combine a data receive path
 with an operator control path. The reusable part is a bounded control plane
 around capture, camera, actor, prop, face, recording, and calibration state.
 
+## Family 391: Tiny OpenXR and OpenVR render-framework adapters
+
+This family covers small framework adapters that bring XR session, swapchain,
+view, input, haptic, and mirror-window ownership into lightweight render loops
+without forcing a full game-engine dependency.
+
+| Project | Status | Notes |
+|---|---|---|
+| `FireFlyForLife/rlOpenXR` | Deepened in Wave 412 | Raylib-facing OpenXR binding with rlgl backend, head/hand state, examples, and WIP controller caveats |
+| `caszuu/rlxr` | Studied in Wave 412 | Single-header Raylib OpenXR module with platform graphics bindings, swapchain lifecycle, actions, bindings, and haptics |
+| `branchpanic/raylib-openvr` | Studied in Wave 412 | OpenVR/Raylib prototype with HMD/controller tracking and stereo rendering |
+| `geefr/vsgvr` | Studied in Wave 412 | VulkanSceneGraph OpenXR integration with rendering, input, tracking, extension handling, coordinate-space notes, and desktop mirror |
+
+### Consolidation note
+
+This family matters because many future VR utilities need a small XR shell, not
+a full engine. The reusable boundary is framework render loop in one direction,
+and XR instance/session/swapchain/action ownership in the other.
+
+## Family 392: Runtime retrofit SLAM and OpenXR engine substrates
+
+This family covers projects that retrofit XR into existing runtimes, provide
+DIY hardware or SLAM tracking substrate, or build a reusable OpenXR/Vulkan scene
+engine boundary.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mcxr-org/MCXR` | Studied in Wave 413 | Archived Minecraft OpenXR/Fabric retrofit with core/play split, non-VR/server boundary, and game integration caveats |
+| `alexstrei/Custom-VR` | Studied in Wave 413 | DIY 3D-printable headset with BOM, assembly docs, Monado driver fork, and Basalt dependency |
+| `CIFASIS/basalt-xr` | Studied in Wave 413 | Basalt-for-Monado tracking backend with dataset replay, calibration/config paths, debug GUI flags, and library discovery |
+| `Adrian-Hirt/XRe` | Studied in Wave 413 | WIP OpenXR/Vulkan engine substrate with resources, scene components, grab/teleport/highlight, and hand tracking |
+
+### Consolidation note
+
+This family matters because runtime bring-up is usually a boundary problem:
+game loop, driver stack, SLAM config, graphics backend, scene state, and user
+interaction should be separable instead of fused into one prototype.
+
+## Family 393: Gaussian splat and spatial asset viewer pipelines
+
+This family covers VR viewers for Gaussian splats, point clouds, camera paths,
+spatial asset previews, and editor-to-viewer pipelines with saved alignment
+state.
+
+| Project | Status | Notes |
+|---|---|---|
+| `warpgatelabs/RSR` | Studied in Wave 414 | D3D12/OpenXR splat viewer with PLY/SOG, runtime VR toggle, folder navigation, DLSS option, and grip transforms |
+| `hyperlogic/splatapult` | Studied in Wave 414 | OpenGL/OpenXR splat viewer with cameras.json, vr.json alignment persistence, SfM toggle, frustums, and Quest caveats |
+| `jacobvanbeets/splat-vr-viewer` | Studied in Wave 414 | LichtFeld plugin exporting PLY to localhost PlayCanvas WebXR viewer with panel state, HTTP lifecycle, and cleanup |
+| `eleanor-studio/photon.editor` | Studied in Wave 414 | Browser editor playground with reactive controls, GLB/GLTF loader, environment/camera controls, and WebXR preview value |
+
+### Consolidation note
+
+This family matters because spatial asset tools become more useful when import,
+preview, VR alignment, camera context, and cleanup are first-class workflow
+states rather than hidden viewer side effects.
+
+## Family 394: XR utility automation authoring and scripting surfaces
+
+This family covers in-headset command surfaces, desktop-plus-overlay utilities,
+phase-state automation, scripting bindings, WebXR editors, and broad XR
+capability wrappers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `RangerMauve/dat-xr-scene-ide` | Studied in Wave 415 | WebXR/A-Frame terminal editor with DOM scene commands, curved terminal surface, write/mkdir/eval commands, and safety caveats |
+| `Eidenz/NemuriXR` | Studied in Wave 415 | Linux/Monado sleep utility with desktop app, OpenXR overlay, Unix-socket IPC, VRChat/OSC automation, and phase state |
+| `Phantomxm2021/ARMOD-Framework` | Studied in Wave 415 | AR/XR capability wrapper with visual configuration, session management, light estimation, platform mutation, and docs |
+| `drypy/openxr.py` | Studied in Wave 415 | Python ctypes OpenXR binding with package/tests/examples value for scripting diagnostics and probes |
+
+### Consolidation note
+
+This family matters because useful XR utilities often need a safe command
+surface: what can run in-headset, what must stay in a companion app, which
+actions are automated, and which operations need explicit trust boundaries.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

@@ -5345,6 +5345,54 @@ Primary docs:
 - `pnmocap/Neuron_Mocap_Live_Unity` - `Studied in Wave 411 as Axis Studio/Perception Neuron Unity live-link bridge with TCP/UDP sessions, actor/tracker model, skeleton branching, and Animator/Transform/Rigidbody targets`
 - `Rokoko/rokoko-studio-live-unity` - `Studied in Wave 411 as Rokoko Studio Unity live plugin with UDP JSON v3 frames, actors, props, face blendshapes, prefab pooling, and Command API controls`
 
+## 383. Lightweight OpenXR render framework adapters
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-412-lightweight-openxr-render-framework-adapters.md`
+- `../landscape/project-families.md`
+
+- `FireFlyForLife/rlOpenXR` - `Deepened in Wave 412 from not-studied-deeply status as Raylib-facing OpenXR binding with rlgl backend, head/hand pose state, examples, and Windows/WIP caveats`
+- `caszuu/rlxr` - `Studied in Wave 412 as single-header Raylib OpenXR module with session/render/action/binding APIs, swapchain lifecycle, platform graphics bindings, and haptics`
+- `branchpanic/raylib-openvr` - `Studied in Wave 412 as OpenVR/Raylib prototype with HMD/controller tracking, stereo rendering, examples, and fork/submodule caveats`
+- `geefr/vsgvr` - `Studied in Wave 412 as VulkanSceneGraph OpenXR integration with rendering/input/controller tracking, extension handling, coordinate-space notes, and desktop mirror`
+
+## 384. Runtime retrofit SLAM and OpenXR engine substrates
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-413-runtime-retrofit-slam-and-openxr-engine-substrates.md`
+- `../landscape/project-families.md`
+
+- `mcxr-org/MCXR` - `Studied in Wave 413 as archived Minecraft OpenXR/Fabric mod with core/play split, non-VR/server boundary, LWJGL OpenXR structs, and game-retrofit caveats`
+- `alexstrei/Custom-VR` - `Studied in Wave 413 as DIY 3D-printable VR headset project with BOM, assembly docs, Monado driver fork, Basalt dependency, and hardware caveats`
+- `CIFASIS/basalt-xr` - `Studied in Wave 413 as Basalt-for-Monado tracking backend with dataset replay, calibration/config paths, debug GUI flags, and Monado library discovery`
+- `Adrian-Hirt/XRe` - `Studied in Wave 413 as WIP OpenXR/Vulkan engine substrate with app/render split, resources, scene components, grab/teleport/highlight, and hand tracking`
+
+## 385. Gaussian splat and spatial asset viewer pipelines
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-414-gaussian-splat-and-spatial-asset-viewer-pipelines.md`
+- `../landscape/project-families.md`
+
+- `warpgatelabs/RSR` - `Studied in Wave 414 as D3D12/OpenXR Gaussian splat viewer with PLY/SOG, runtime VR toggle, folder navigation, DLSS option, and VR grip transform controls`
+- `hyperlogic/splatapult` - `Studied in Wave 414 as C++/OpenGL/OpenXR Gaussian splat viewer with cameras.json, vr.json alignment persistence, SfM point-cloud toggle, camera frustums, and Quest caveats`
+- `jacobvanbeets/splat-vr-viewer` - `Studied in Wave 414 as LichtFeld Studio plugin exporting PLY to localhost PlayCanvas WebXR viewer with panel state, HTTP server lifecycle, config, and cleanup`
+- `eleanor-studio/photon.editor` - `Studied in Wave 414 as browser editor playground with reactive UI-to-engine binding, GLB/GLTF loader, camera/environment controls, and Three.js/WebXR preview value`
+
+## 386. XR utility automation authoring and scripting surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-415-xr-utility-automation-authoring-and-scripting-surfaces.md`
+- `../landscape/project-families.md`
+
+- `RangerMauve/dat-xr-scene-ide` - `Studied in Wave 415 as WebXR/A-Frame in-headset terminal editor with DOM scene commands, curved terminal surface, write/mkdir/eval commands, and safety caveats`
+- `Eidenz/NemuriXR` - `Studied in Wave 415 as Linux/Monado sleep utility with desktop app, OpenXR overlay, shared config, Unix-socket IPC, VRChat/OSC automation, brightness/audio/fan phases, and privacy caveats`
+- `Phantomxm2021/ARMOD-Framework` - `Studied in Wave 415 as broad AR/XR capability-wrapper SDK with visual configuration, session management, platform mutation, light estimation, docs/tutorials, and quota/support caveats`
+- `drypy/openxr.py` - `Studied in Wave 415 as Python ctypes OpenXR binding with package/tests/examples value for scripting diagnostics and runtime probes`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

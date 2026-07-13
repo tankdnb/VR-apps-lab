@@ -407,6 +407,14 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-405-vr-math-geometry-visualization-and-classroom-games.md`
 - `landscape/vr-projects-wave-406-vr-anatomy-volume-dissection-and-medical-learning-objects.md`
 - `landscape/vr-projects-wave-407-vr-museum-ai-guide-exhibition-analytics-and-web-exhibit-spaces.md`
+- `landscape/vr-projects-wave-408-spatial-ui-widgets-layouts-and-input-neutral-panels.md`
+- `landscape/vr-projects-wave-409-webview-browser-panel-bridges-and-texture-backed-web-surfaces.md`
+- `landscape/vr-projects-wave-410-cloudxr-immersive-streaming-runtime-and-client-adapters.md`
+- `landscape/vr-projects-wave-411-vr-capture-remote-mocap-and-live-production-helpers.md`
+- `landscape/vr-projects-wave-412-lightweight-openxr-render-framework-adapters.md`
+- `landscape/vr-projects-wave-413-runtime-retrofit-slam-and-openxr-engine-substrates.md`
+- `landscape/vr-projects-wave-414-gaussian-splat-and-spatial-asset-viewer-pipelines.md`
+- `landscape/vr-projects-wave-415-xr-utility-automation-authoring-and-scripting-surfaces.md`
 
 ## Archive Navigation
 

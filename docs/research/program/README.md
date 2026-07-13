@@ -2896,3 +2896,59 @@ repeatable way.
 
 - `github-research-wave-407-backlog.md`
   Executed backlog for the Wave 407 pass.
+
+- `github-research-wave-408-plan.md`
+  Wave 408 research plan focused on spatial UI widgets, layouts, and
+  input-neutral panels.
+
+- `github-research-wave-408-backlog.md`
+  Executed backlog for the Wave 408 pass.
+
+- `github-research-wave-409-plan.md`
+  Wave 409 research plan focused on WebView browser panel bridges and
+  texture-backed web surfaces.
+
+- `github-research-wave-409-backlog.md`
+  Executed backlog for the Wave 409 pass.
+
+- `github-research-wave-410-plan.md`
+  Wave 410 research plan focused on CloudXR immersive streaming runtime and
+  client adapters.
+
+- `github-research-wave-410-backlog.md`
+  Executed backlog for the Wave 410 pass.
+
+- `github-research-wave-411-plan.md`
+  Wave 411 research plan focused on VR capture remote, mocap, and live
+  production helpers.
+
+- `github-research-wave-411-backlog.md`
+  Executed backlog for the Wave 411 pass.
+
+- `github-research-wave-412-plan.md`
+  Wave 412 research plan focused on lightweight OpenXR render framework
+  adapters.
+
+- `github-research-wave-412-backlog.md`
+  Executed backlog for the Wave 412 pass.
+
+- `github-research-wave-413-plan.md`
+  Wave 413 research plan focused on runtime retrofit, SLAM, and OpenXR engine
+  substrates.
+
+- `github-research-wave-413-backlog.md`
+  Executed backlog for the Wave 413 pass.
+
+- `github-research-wave-414-plan.md`
+  Wave 414 research plan focused on Gaussian splat and spatial asset viewer
+  pipelines.
+
+- `github-research-wave-414-backlog.md`
+  Executed backlog for the Wave 414 pass.
+
+- `github-research-wave-415-plan.md`
+  Wave 415 research plan focused on XR utility automation, authoring, and
+  scripting surfaces.
+
+- `github-research-wave-415-backlog.md`
+  Executed backlog for the Wave 415 pass.

@@ -1839,6 +1839,38 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on exhibit-aware AI guides, gaze/room
   analytics, structured exports, catalogs, and web exhibit surfaces.
 
+- `vr-projects-wave-408-spatial-ui-widgets-layouts-and-input-neutral-panels.md`
+  Next GitHub discovery wave focused on spatial widgets, layout systems,
+  physical interaction surfaces, and input-neutral panel primitives.
+
+- `vr-projects-wave-409-webview-browser-panel-bridges-and-texture-backed-web-surfaces.md`
+  Next GitHub discovery wave focused on native WebViews, WebView2 bridges,
+  texture-backed browser panels, JavaScript callbacks, and synthetic input.
+
+- `vr-projects-wave-410-cloudxr-immersive-streaming-runtime-and-client-adapters.md`
+  Next GitHub discovery wave focused on CloudXR, WebXR/WebRTC clients, headset
+  receiver apps, tracking uplink, stream metrics, pairing, and reconnect state.
+
+- `vr-projects-wave-411-vr-capture-remote-mocap-and-live-production-helpers.md`
+  Next GitHub discovery wave focused on Quest capture remotes, mixed-reality
+  spectator cameras, live mocap bridges, actor/prop frames, and command APIs.
+
+- `vr-projects-wave-412-lightweight-openxr-render-framework-adapters.md`
+  Next GitHub discovery wave focused on small OpenXR/OpenVR render-framework
+  adapters, swapchains, action bindings, haptics, and mirror windows.
+
+- `vr-projects-wave-413-runtime-retrofit-slam-and-openxr-engine-substrates.md`
+  Next GitHub discovery wave focused on game retrofits, DIY headset stacks,
+  Monado/Basalt SLAM substrate, and OpenXR/Vulkan scene-engine boundaries.
+
+- `vr-projects-wave-414-gaussian-splat-and-spatial-asset-viewer-pipelines.md`
+  Next GitHub discovery wave focused on Gaussian splat viewers, camera context,
+  VR alignment profiles, grip transforms, and local WebXR preview pipelines.
+
+- `vr-projects-wave-415-xr-utility-automation-authoring-and-scripting-surfaces.md`
+  Next GitHub discovery wave focused on in-headset command surfaces,
+  desktop-overlay IPC, scripting bindings, and automation safety boundaries.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

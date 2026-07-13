@@ -1283,3 +1283,27 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-407-vr-museum-ai-guide-exhibition-analytics-and-web-exhibit-spaces.md`
   Museum and exhibition systems with local AI guides, gaze/room logs, RAG,
   survey exports, catalog scripts, and web/data-driven exhibit surfaces.
+- `vr-projects-wave-408-spatial-ui-widgets-layouts-and-input-neutral-panels.md`
+  Spatial UI widgets, layouts, interaction surfaces, SubViewport panels, native
+  widget planes, and input-neutral command surfaces.
+- `vr-projects-wave-409-webview-browser-panel-bridges-and-texture-backed-web-surfaces.md`
+  WebView/browser bridges with native overlay lifecycle, WebView2 rectangle
+  sync, JavaScript callbacks, texture-backed Android frames, and synthetic input.
+- `vr-projects-wave-410-cloudxr-immersive-streaming-runtime-and-client-adapters.md`
+  CloudXR and remote-rendering clients with runtime startup, device profiles,
+  tracking uplink, frame/audio downlink, pairing, metrics, and reconnect state.
+- `vr-projects-wave-411-vr-capture-remote-mocap-and-live-production-helpers.md`
+  Creator capture remotes, mixed-reality spectator cameras, mocap live-link
+  receivers, actor/prop/face frames, media pull, and command APIs.
+- `vr-projects-wave-412-lightweight-openxr-render-framework-adapters.md`
+  Tiny OpenXR/OpenVR render-framework adapters with session/swapchain handling,
+  action bindings, haptics, graphics bindings, coordinate spaces, and mirrors.
+- `vr-projects-wave-413-runtime-retrofit-slam-and-openxr-engine-substrates.md`
+  Runtime retrofit, DIY headset, Monado/Basalt SLAM, and OpenXR/Vulkan
+  scene-engine substrate boundaries.
+- `vr-projects-wave-414-gaussian-splat-and-spatial-asset-viewer-pipelines.md`
+  Gaussian splat and spatial asset viewers with PLY/SOG import, camera context,
+  saved alignment profiles, grip transforms, and local WebXR preview pipelines.
+- `vr-projects-wave-415-xr-utility-automation-authoring-and-scripting-surfaces.md`
+  XR automation and scripting surfaces with in-headset command UIs,
+  desktop-overlay IPC, phase-state utilities, SDK wrappers, and Python OpenXR.

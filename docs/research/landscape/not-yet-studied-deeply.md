@@ -3196,6 +3196,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 334. `VR WebView surface follow-up across native overlay versus texture-backed ownership, JavaScript bridge schemas, keyboard/focus rules, permissions, file/download flows, and Android/WebView2 adapters`
 335. `CloudXR streaming client follow-up across device profiles, tracking uplink, frame/audio downlink, pairing identity, opaque data channels, reconnect/pause state, and stream metrics`
 336. `Creator capture and live mocap follow-up across Quest recorder commands, spectator camera layers, actor/prop/face frame schemas, command APIs, media pull, licensing, and vendor-adapter boundaries`
+337. `Tiny XR render-framework adapter follow-up across session lifecycle, swapchains, action binding, haptics, graphics binding, coordinate spaces, framework render-loop boundaries, and mirror-window ownership`
+338. `Runtime substrate follow-up across game retrofit, DIY headset drivers, SLAM calibration, Monado library discovery, render engine components, interaction verbs, and compatibility modes`
+339. `Spatial asset viewer follow-up across PLY/SOG/splat formats, cameras.json, saved alignment profiles, VR grip transforms, local WebXR preview servers, and cleanup lifecycle`
+340. `XR utility automation follow-up across in-headset command surfaces, phase-state automation, desktop-overlay IPC, scripting bindings, privacy gates, and unsafe-command allowlists`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.
