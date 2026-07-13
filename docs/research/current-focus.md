@@ -17,6 +17,27 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 368-371
+
+- `XR network cybersecurity visualization and Wi-Fi mappers`
+  add a spatial diagnostics branch around node/edge cybersecurity graphs,
+  service drill-down, collaborative presenter state, wand probes, Wi-Fi
+  SSID/BSSID/RSSI scanning, signal/security pillars, hidden-network notes, and
+  scan history caveats.
+- `Quest robot pose teleoperation and localization bridges`
+  add a pose-bus branch around ZMQ keypoints, Unity/ROS pose topics,
+  NetworkTables pose/heartbeat/battery topics, calibration, coordinate
+  conversion, gripper/action mapping, and safety boundaries.
+- `Medical volume XR viewers, DICOM/VRDF, and hand-AI interfaces`
+  add a scientific volume branch around REST/WebSocket study state, VRDF
+  loaders, DICOM/NRRD/NIFTI import, 3D textures, URP raymarch shaders,
+  segmentation sliders, hand/controller menus, voice/AI assistants, progress,
+  and Quest reload caveats.
+- `Redirected-walking path configurators and obstacle-aware redirectors`
+  add an RDW authoring branch around editor path assets, joint/curve/
+  intersection models, tracking-space dimensions, gain fields, waypoint
+  policies, obstacle-aware redirectors, and OpenRDW2 variant caveats.
+
 ## Current additions from Waves 360-363
 
 - `World switching, hand/controller transition interfaces, and interaction

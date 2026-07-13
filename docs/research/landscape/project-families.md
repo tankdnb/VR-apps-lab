@@ -11171,6 +11171,74 @@ visualization.
 This family matters because XR analytics should understand spatial context,
 referents, duration, hardware state, privacy, and export/dashboard boundaries.
 
+## Family 347: Spatial network cybersecurity maps and Wi-Fi diagnostics
+
+This family covers network/security state that is rendered as spatial objects:
+node/edge graphs, service drill-down, Wi-Fi signal markers, scan history,
+security filters, and collaborative inspection.
+
+| Project | Status | Notes |
+|---|---|---|
+| `danieljharris/PARSEC` | Studied in Wave 368 | Collaborative VR cybersecurity network graph with filters, probes, presenter state, and perspective scaling |
+| `Orgzales/Unity-XR-NetworkMapper-Project` | Studied in Wave 368 | Quest wireless mapper with Android Wi-Fi metadata, signal pillars, hidden SSID notes, and scan database concepts |
+
+### Consolidation note
+
+This family matters because future diagnostics tools need a neutral data
+adapter, spatial marker schema, filter policy, and permission/privacy labels
+before network/security state can be trusted in XR.
+
+## Family 348: XR pose to robot command and localization bridges
+
+This family covers headset, controller, and hand pose streams used for robot
+teleoperation, localization, gripper control, data collection, and health
+monitoring.
+
+| Project | Status | Notes |
+|---|---|---|
+| `aadhithya14/Open-Teach` | Studied in Wave 369 | Quest teleoperation stack with ZMQ keypoints, hand-frame transforms, robot operators, camera streams, and data collection |
+| `paulonhantumbojr/sawyer_vr_teleop` | Studied in Wave 369 | Quest-to-Sawyer ROS bridge with pose topics, desired trajectory, velocity control, and gripper mapping |
+| `MARSProgramming/QuestNavTest` | Studied in Wave 369 | QuestNav FRC localization with NT4 topics, heartbeat, battery state, zeroing, and wired/power constraints |
+
+### Consolidation note
+
+This family matters because XR pose should become robot intent only after
+calibration, coordinate conversion, transport health, heartbeat, command limits,
+and explicit safety/authority gates.
+
+## Family 349: Medical and scientific volume XR viewers
+
+This family covers medical/scientific volume pipelines: study manifests, DICOM
+or VRDF import, 3D textures, raymarch shaders, labels, segmentation, progress,
+and hand/controller/voice UI.
+
+| Project | Status | Notes |
+|---|---|---|
+| `cassandra-stack/CASSANDRA-XR` | Studied in Wave 370 | REST/WebSocket/VRDF medical volume platform with URP raymarching, XR hands, brain menus, and Gemini/voice assistant |
+| `SitronX/FNO-Hololens2-visualisation` | Studied in Wave 370 | HoloLens/PCVR viewer with DICOM/NRRD/NIFTI import, labels, segmentation sliders, async loading, and transform persistence |
+
+### Consolidation note
+
+This family matters because volume viewers must keep data import, rendering,
+segmentation, XR manipulation, metadata, and clinical caveats separate.
+
+## Family 350: Redirected-walking authoring and obstacle policy variants
+
+This family covers redirected-walking tools that extend or surround core RDW
+frameworks with path authoring, curve configuration, obstacle policies, and
+fork-lineage lessons.
+
+| Project | Status | Notes |
+|---|---|---|
+| `klngbhn/RDW_CurvedPathConfigurator` | Studied in Wave 371 | Unity editor path configurator with joints, curves, intersections, gain, tracking-space dimensions, and path assets |
+| `omegafantasy/Bypassing-Obstacles` | Studied as variant in Wave 371 | OpenRDW2-derived obstacle-bypass redirector with waypoint/VE path and gain-policy lessons |
+
+### Consolidation note
+
+This family matters because RDW comparison requires explicit authoring assets,
+physical-space constraints, redirector policies, reset behavior, and experiment
+metadata instead of hardcoded scene paths.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

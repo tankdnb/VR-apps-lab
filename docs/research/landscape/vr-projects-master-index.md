@@ -1181,5 +1181,9 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-365-vr-ar-wayfinding-waypoint-arrows-qr-recentering-and-route-cues.md`
 - `vr-projects-wave-366-avatar-embodiment-mirror-therapy-tool-use-calibration-and-movement-study-harnesses.md`
 - `vr-projects-wave-367-xr-analytics-action-recording-telemetry-sdks-and-immersive-data-surfaces.md`
+- `vr-projects-wave-368-xr-network-cybersecurity-visualization-and-wifi-mappers.md`
+- `vr-projects-wave-369-quest-robot-pose-teleoperation-and-localization-bridges.md`
+- `vr-projects-wave-370-medical-volume-xr-viewers-dicom-vrdf-and-hand-ai-interfaces.md`
+- `vr-projects-wave-371-redirected-walking-path-configurators-and-obstacle-aware-redirectors.md`
   MR digital twins, JSON/API/IoT adapters, VPS/SSA anchoring, dashboards,
   annotations, drone/robot panels, and command-safety surfaces.

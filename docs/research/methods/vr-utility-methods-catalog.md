@@ -19099,3 +19099,143 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   analytics backbones, research recorders, replay/export tools, and
   dashboard-ready telemetry utilities.
+
+## Method 813: spatial network security map and probe shell
+
+- What it is:
+  network/security state should be collected through a data adapter, normalized
+  into node/link/signal records, and rendered as filterable spatial objects
+  with probes and drill-down panels.
+- Good for:
+  cybersecurity training, Wi-Fi surveys, device inventory maps, diagnostics
+  dashboards, incident rooms, and physical-space network education.
+- Why it matters:
+  XR network tools are only reusable if scanning, security scoring, spatial
+  placement, collaboration, and privacy/permission policy are separated.
+- Source evidence:
+  `danieljharris/PARSEC` and
+  `Orgzales/Unity-XR-NetworkMapper-Project`.
+- Reusable core:
+  network data adapter, node/service schema, edge schema, SSID/BSSID/RSSI
+  record, security classifier, spatial marker factory, filter registry, probe
+  tool, drill-down panel, scan history, presenter/authority state, anchor/origin
+  binding, stale-state cleanup, and caveat labels.
+- Source evidence details:
+  Wave 368 includes PARSEC `ConnectionGroup`, `NodeList`, `NodeSpecs`, menu
+  filters, `NetworkWand`, `Presenter`, networked rig/player scripts, and
+  perspective scaling; OX-r TRAIL contributes Android Wi-Fi manager calls,
+  scan-result parsing, signal/security thresholds, hidden SSID notes, and
+  spatial signal pillar concepts.
+- Do not copy directly:
+  credentials, live network assumptions, vendor assets, demo randomizers as real
+  diagnostics, or security claims without permission and false-positive UX.
+- Maturity:
+  useful method; needs permission handling, schema normalization, and export
+  before prototype use.
+- Best fit for `VR-apps-lab`:
+  spatial diagnostics maps, network inventory overlays, Wi-Fi survey helpers,
+  and security training surfaces.
+
+## Method 814: headset pose to robot command bridge with safety state
+
+- What it is:
+  HMD/controller/hand poses should become robot inputs through a calibrated,
+  health-checked transport and command boundary rather than direct scene object
+  movement.
+- Good for:
+  robot teleoperation, headset-mounted localization, manipulation data
+  collection, gripper/action mapping, remote labs, and operator cockpits.
+- Why it matters:
+  robot bridges need explicit calibration, coordinate conversion, heartbeat,
+  battery/connection health, command limits, and safety authority.
+- Source evidence:
+  `aadhithya14/Open-Teach`, `paulonhantumbojr/sawyer_vr_teleop`, and
+  `MARSProgramming/QuestNavTest`.
+- Reusable core:
+  XR pose source, hand/controller topic schema, coordinate converter,
+  initial-frame calibration, scale/resolution mode, pause/enable gesture,
+  transport adapter, robot operator, heartbeat, battery/connection health,
+  command limits, gripper/action mapper, video/graph downlink, data recorder,
+  and reset/zero routines.
+- Source evidence details:
+  Wave 369 includes Open-Teach ZMQ keypoint streams and robot operators,
+  Sawyer ROS TCP pose publishing and `/desired_trajectory` flow, and QuestNav
+  NT4 pose/quaternion/euler/battery/heartbeat/zeroing topics.
+- Do not copy directly:
+  hardware IPs, robot-specific velocity defaults, unsafe commands, headset
+  mounting assumptions, or datasets without provenance/consent.
+- Maturity:
+  strong research method; product use needs hardware-specific safety policies.
+- Best fit for `VR-apps-lab`:
+  pose buses, robotics operator helpers, localization bridges, and teleop
+  schema prototypes.
+
+## Method 815: medical volume XR pipeline with dataset and modality boundaries
+
+- What it is:
+  medical/scientific volume viewers should split study discovery, dataset
+  import, texture generation, shader rendering, segmentation, manipulation,
+  metadata, and clinical caveats into separate layers.
+- Good for:
+  DICOM/NRRD/NIFTI viewers, scientific volume tools, segmentation inspection,
+  anatomy teaching, MR study browsers, and AI-assisted explanation panels.
+- Why it matters:
+  volume rendering becomes brittle when data loading, shader state, UI,
+  networking, and clinical claims are fused.
+- Source evidence:
+  `cassandra-stack/CASSANDRA-XR` and
+  `SitronX/FNO-Hololens2-visualisation`.
+- Reusable core:
+  study manifest, modality mapper, downloader/cache, volume decoder, 3D
+  texture/gradient/label texture generation, transfer function, raymarch
+  shader, clipping/threshold controls, hand/controller menu, metadata panel,
+  segmentation sliders, progress/error reporting, transform persistence, reload
+  debounce, and non-diagnostic caveat labels.
+- Source evidence details:
+  Wave 370 includes CASSANDRA `StudyService`, `PusherClient`,
+  `SessionDataController`, `VRDFLoader`, `VolumeDVR`, URP shaders, XR hands,
+  brain menus, and voice/AI interface; FnO contributes `VolumeDataControl`,
+  async DICOM/NRRD/NIFTI/import handling, label textures, segmentation sliders,
+  downscale/flip/regenerate flows, and save/reset transforms.
+- Do not copy directly:
+  patient data, API keys, hospital-specific workflows, always-on voice, clinical
+  claims, or synchronous mobile reloads.
+- Maturity:
+  strong method; needs privacy, provenance, and performance gating before use.
+- Best fit for `VR-apps-lab`:
+  scientific viewers, medical-volume prototypes, study browsers, and
+  segmentation/metadata panels.
+
+## Method 816: redirected-walking path authoring and obstacle policy layer
+
+- What it is:
+  redirected-walking systems should expose path authoring, physical-space
+  constraints, gain policy, obstacle handling, reset behavior, and experiment
+  metadata as inspectable assets.
+- Good for:
+  RDW research labs, locomotion comfort studies, room-fit path tools,
+  obstacle-aware navigation, and policy comparison harnesses.
+- Why it matters:
+  RDW variants are hard to compare when path layouts and redirector policies
+  are hidden inside scenes or forks.
+- Source evidence:
+  `klngbhn/RDW_CurvedPathConfigurator` and
+  `omegafantasy/Bypassing-Obstacles`.
+- Reusable core:
+  physical-space profile, joint/curve/intersection model, virtual paths, safety
+  distance, walking radius, gain fields, editor visualization toggles, path
+  asset persistence, redirector registry, waypoint progress, obstacle polygons,
+  gain clamps, reset integration, experiment metadata, and provenance notes.
+- Source evidence details:
+  Wave 371 includes `PathGeneratorWindow`, `RedirectionDataStructure`,
+  `EditorPrefs`, `Assets/Resources/data.asset`, joint/curve/path creation, and
+  tracking-space parameters; Bypassing-Obstacles contributes OpenRDW2-derived
+  obstacle/waypoint redirector policy and gain-injection calculations.
+- Do not copy directly:
+  entire OpenRDW/OpenRDW2 vendor trees, hardcoded room assumptions, old
+  Photon/RockVR assets, or gain values without comfort thresholds.
+- Maturity:
+  promising method; needs modern XR rig integration and validation metrics.
+- Best fit for `VR-apps-lab`:
+  locomotion labs, RDW authoring utilities, comfort research, and path-policy
+  comparison tools.

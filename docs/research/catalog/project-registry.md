@@ -4851,6 +4851,47 @@ Primary docs:
 - `stonecodecs/visiograph` - `Studied in Wave 367 as a Unity VR data visualizer with TCP batch ingestion, async data transfer, main-thread 3D datapoint creation, camera/player input, teleport markers, and collider gating`
 - `eliaCandela/Optimizing-Data-Visualization-Through-Virtual-Reality` - `Source-light marker in Wave 367 as a business-metrics VR data visualization direction with alert-aware dashboard framing but little source in the cloned tree`
 
+## 339. XR network cybersecurity visualization and Wi-Fi mappers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-368-xr-network-cybersecurity-visualization-and-wifi-mappers.md`
+- `../landscape/project-families.md`
+
+- `danieljharris/PARSEC` - `Studied in Wave 368 as a collaborative VR cybersecurity network visualizer with node/edge graphs, service drill-down, wand probes, menu filters, presenter state, Photon Fusion networking, and perspective scaling`
+- `Orgzales/Unity-XR-NetworkMapper-Project` - `Studied in Wave 368 as a Quest/Unity wireless network mapper with Android Wi-Fi API snippets, SSID/BSSID/RSSI/security metadata, signal pillars, hidden-network scan notes, scan history, passthrough markers, and HUD/database concepts`
+
+## 340. Quest robot pose teleoperation and localization bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-369-quest-robot-pose-teleoperation-and-localization-bridges.md`
+- `../landscape/project-families.md`
+
+- `aadhithya14/Open-Teach` - `Studied in Wave 369 as a Meta Quest teleoperation and data-collection stack with Unity VR apps, ZMQ keypoint streams, hand-frame transforms, gesture pause/gripper mapping, robot operators, camera streams, configs, and datasets`
+- `paulonhantumbojr/sawyer_vr_teleop` - `Studied in Wave 369 as a Quest 2 to Sawyer ROS teleoperation bridge with ROS TCP Connector, HMD/controller pose topics, desired trajectory generation, velocity control, gripper mapping, and safety caveats`
+- `MARSProgramming/QuestNavTest` - `Studied in Wave 369 as a QuestNav FRC localization bridge with NetworkTables 4 topics, heartbeat, battery/connection state, pose/yaw zeroing, mount offset compensation, and wired/power adapter operational notes`
+
+## 341. Medical volume XR viewers DICOM VRDF and hand AI interfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-370-medical-volume-xr-viewers-dicom-vrdf-and-hand-ai-interfaces.md`
+- `../landscape/project-families.md`
+
+- `cassandra-stack/CASSANDRA-XR` - `Studied in Wave 370 as a mixed-reality medical volume platform with REST study service, WebSocket status changes, VRDF loader, URP raymarch shaders, XR hand manipulation, brain menus, Gemini/voice assistant, and Quest reload-performance caveat`
+- `SitronX/FNO-Hololens2-visualisation` - `Studied in Wave 370 as a HoloLens/PCVR volume viewer using UnityVolumeRendering, dataset folders, DICOM/NRRD/NIFTI/image sequence import, labels/segmentation sliders, hand/controller menus, async loading, progress handlers, and transform persistence`
+
+## 342. Redirected walking path configurators and obstacle-aware redirectors
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-371-redirected-walking-path-configurators-and-obstacle-aware-redirectors.md`
+- `../landscape/project-families.md`
+
+- `klngbhn/RDW_CurvedPathConfigurator` - `Studied in Wave 371 as a Unity editor tool for curve-based redirected-walking path layouts with joint points, curves, intersections, gain, tracking-space side length, safety distance, walking radius, and ScriptableObject persistence`
+- `omegafantasy/Bypassing-Obstacles` - `Studied as an OpenRDW2 variant in Wave 371 for obstacle-aware redirected walking, bypass redirector policy, waypoint/VE path logic, curvature/rotation/translation gain reasoning, and fork-lineage caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

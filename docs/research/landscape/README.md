@@ -1661,6 +1661,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on XR analytics, action recording,
   telemetry SDKs, dashboards, and immersive data visualization surfaces.
 
+- `vr-projects-wave-368-xr-network-cybersecurity-visualization-and-wifi-mappers.md`
+  Next GitHub discovery wave focused on XR network/cybersecurity graphs, Wi-Fi
+  signal/security mappers, spatial filters, probes, and diagnostics.
+
+- `vr-projects-wave-369-quest-robot-pose-teleoperation-and-localization-bridges.md`
+  Next GitHub discovery wave focused on Quest pose to robot teleoperation and
+  localization bridges with transport health and safety state.
+
+- `vr-projects-wave-370-medical-volume-xr-viewers-dicom-vrdf-and-hand-ai-interfaces.md`
+  Next GitHub discovery wave focused on medical volume XR viewers, DICOM/VRDF
+  pipelines, segmentation, hand UI, and AI/voice interfaces.
+
+- `vr-projects-wave-371-redirected-walking-path-configurators-and-obstacle-aware-redirectors.md`
+  Next GitHub discovery wave focused on RDW path authoring, obstacle-aware
+  redirectors, gains, and variant provenance.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

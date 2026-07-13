@@ -2602,3 +2602,31 @@ repeatable way.
 
 - `github-research-wave-367-backlog.md`
   Executed backlog for the Wave 367 pass.
+
+- `github-research-wave-368-plan.md`
+  Wave 368 research plan focused on XR network cybersecurity visualization and
+  Wi-Fi mappers.
+
+- `github-research-wave-368-backlog.md`
+  Executed backlog for the Wave 368 pass.
+
+- `github-research-wave-369-plan.md`
+  Wave 369 research plan focused on Quest robot pose teleoperation and
+  localization bridges.
+
+- `github-research-wave-369-backlog.md`
+  Executed backlog for the Wave 369 pass.
+
+- `github-research-wave-370-plan.md`
+  Wave 370 research plan focused on medical volume XR viewers, DICOM/VRDF
+  pipelines, and hand/AI interfaces.
+
+- `github-research-wave-370-backlog.md`
+  Executed backlog for the Wave 370 pass.
+
+- `github-research-wave-371-plan.md`
+  Wave 371 research plan focused on redirected-walking path configurators and
+  obstacle-aware redirectors.
+
+- `github-research-wave-371-backlog.md`
+  Executed backlog for the Wave 371 pass.
