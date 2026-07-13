@@ -2742,3 +2742,31 @@ repeatable way.
 
 - `github-research-wave-387-backlog.md`
   Executed backlog for the Wave 387 pass.
+
+- `github-research-wave-388-plan.md`
+  Wave 388 research plan focused on Quest passthrough camera capture, vision
+  streaming, and detection bridges.
+
+- `github-research-wave-388-backlog.md`
+  Executed backlog for the Wave 388 pass.
+
+- `github-research-wave-389-plan.md`
+  Wave 389 research plan focused on MR templates, world transform, and
+  scene-aware game samples.
+
+- `github-research-wave-389-backlog.md`
+  Executed backlog for the Wave 389 pass.
+
+- `github-research-wave-390-plan.md`
+  Wave 390 research plan focused on MR robot, SLAM, user study, and passthrough
+  analysis dashboards.
+
+- `github-research-wave-390-backlog.md`
+  Executed backlog for the Wave 390 pass.
+
+- `github-research-wave-391-plan.md`
+  Wave 391 research plan focused on hand interaction packages, social tabletop,
+  and escape room samples.
+
+- `github-research-wave-391-backlog.md`
+  Executed backlog for the Wave 391 pass.

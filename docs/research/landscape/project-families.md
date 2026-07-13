@@ -11517,6 +11517,72 @@ This family matters because application examples reveal reusable menu, task,
 placement, filter, and session patterns that are easy to miss in toolkit-only
 research.
 
+## Family 367: Quest passthrough vision bridges
+
+This family covers Quest camera capture, external inference streams, object
+detection results, 3D bounding boxes, and spatial marker placement.
+
+| Project | Status | Notes |
+|---|---|---|
+| `samuelm2/OpenQuestCapture` | Studied in Wave 388 | Quest camera wrapper, native library, 3D reconstruction, docs, rebuild script |
+| `danieloquelis/Unity-QuestVisionStream` | Studied in Wave 388 | Passthrough Camera API package with WebRTC server/offload split |
+| `sandeepv6/questvision` | Studied in Wave 388 | MR object detection with server inference, 2D/3D boxes, and scene raycasts |
+
+### Consolidation note
+
+This family matters because MR vision utility value depends on a safe camera
+permission, frame transport, inference, spatial projection, and privacy split.
+
+## Family 368: MR templates and world transform envelopes
+
+This family covers Quest MR templates, MRUK setup caveats, AI world transform
+services, official MR sample composition, and vendor dependency boundaries.
+
+| Project | Status | Notes |
+|---|---|---|
+| `noritsune/quest-mr-template` | Studied in Wave 389 | Compact MRUK template with runtime action bindings and recenter caveat |
+| `DecartAI/Decart-XR` | Studied in Wave 389 | Quest AI world transformation with Unity/service/WebRTC/voice boundary |
+| `oculus-samples/Unity-TheWorldBeyond` | Studied in Wave 389 | Scene API, Passthrough, Voice SDK, Interaction SDK, Audio Spatializer, and MRUK sample |
+
+### Consolidation note
+
+This family matters because MR app templates need setup rules, scene mesh
+alignment, provider/service boundaries, and fallback UX before product logic.
+
+## Family 369: MR robot SLAM and user-study dashboards
+
+This family covers MR robot dashboards, SLAM map summaries, user-study
+record/replay, remote tracking, network health, and consent/safety state.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mustafizur-r/WalkerProject` | Studied in Wave 390 | MR gait rehab robot walker with MRUK, Photon, MQTT, and tracking feedback |
+| `prakash-aryan/MR-SLAM` | Studied in Wave 390 | Quest/Unity dashboard over ROS2 multi-robot SLAM, map merge, Nav2, and stats topics |
+| `danieljtrujillo/The-Future-is-Chrome-MIT-Reality-Hack-2026` | Studied in Wave 390 | Hackathon MR/robot app with Unity, robot-server, docs, and Booster SDK assets |
+| `mi2lab/mrat-passthrough-quest` | Studied in Wave 390 | Passthrough MR user-testing toolkit with recording/replay and cross-device tracking |
+
+### Consolidation note
+
+This family matters because operator/research dashboards need scene context,
+identity, topic freshness, replay, authority, and data-retention labels.
+
+## Family 370: Hand packages social tabletop and puzzle tasks
+
+This family covers lightweight hand packages, pose-to-action mapping, social MR
+tabletop sessions, shared anchors, room UI, and puzzle/task flow references.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Extrys/XRMasterHands` | Studied in Wave 391 | OpenXR hand package with Runtime/Editor/Samples and pose-to-action samples |
+| `oculus-samples/Unity-SpiritSling` | Studied in Wave 391 | Social MR tabletop with contextual board placement, anchors, avatars, networking, and hand grabs |
+| `francesctr4/EscapeRoomVR` | Studied in Wave 391 | Compact escape-room app reference for puzzle/object task state |
+
+### Consolidation note
+
+This family matters because colocated MR and hand-driven apps need reusable
+hand commands, session/anchor state, player presence, puzzle gates, and
+fallback input boundaries.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

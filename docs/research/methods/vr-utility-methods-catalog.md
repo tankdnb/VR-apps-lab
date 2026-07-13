@@ -19776,3 +19776,131 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   product ideation, menu systems, task-driven utilities, spatial analysis tools,
   and UX pattern reuse.
+
+## Method 833: Quest passthrough vision capture and inference bridge
+
+- What it is:
+  split MR vision tools into camera capture, frame transport, inference,
+  result schema, spatial projection, and privacy/reconnect state.
+- Good for:
+  Quest camera utilities, object detection overlays, spatial annotation tools,
+  remote GPU inference, reconstruction experiments, and camera diagnostics.
+- Why it matters:
+  passthrough camera access is sensitive and latency-bound; utilities need
+  explicit permission, metadata, provider, and marker reliability boundaries.
+- Source evidence:
+  `samuelm2/OpenQuestCapture`, `danieloquelis/Unity-QuestVisionStream`, and
+  `sandeepv6/questvision`.
+- Reusable core:
+  camera wrapper, permission gate, native/library boundary, frame metadata,
+  WebRTC/WebSocket transport, server processor, detection result schema,
+  spatial raycast, marker/box lifetime, reconnect state, and privacy label.
+- Source evidence details:
+  Wave 388 includes `QuestCameraLib`, `quest-3d-reconstruction`,
+  `com.questvisionstream`, `QuestVisionStreamServer`, `webrtc_server.py`,
+  `video_processor.py`, `ObjectDetection`, and `ObjectDetectionServer`.
+- Do not copy directly:
+  raw cloud streaming without consent UI, native binaries without rebuild
+  provenance, or 2D detections without spatial reliability labels.
+- Maturity:
+  strong bridge method; needs a repository-local frame/result schema.
+- Best fit for `VR-apps-lab`:
+  MR camera utilities, object-label overlays, spatial diagnostics, and
+  privacy-aware inference bridges.
+
+## Method 834: MR template and world-transformation envelope
+
+- What it is:
+  package MR app startup as a template with action bindings, MRUK scene setup,
+  recenter policy, passthrough state, provider/service boundaries, and fallback
+  UX.
+- Good for:
+  Quest MR starter projects, live world filters, voice-triggered MR tools,
+  vendor sample distillation, and mixed-reality utility baselines.
+- Why it matters:
+  MR apps break when scene mesh alignment, recentering, runtime bindings, or
+  provider latency/fallback rules are implicit.
+- Source evidence:
+  `noritsune/quest-mr-template`, `DecartAI/Decart-XR`, and
+  `oculus-samples/Unity-TheWorldBeyond`.
+- Reusable core:
+  MR template, runtime action bindings, MRUK scene bootstrap, recenter policy,
+  room mesh caveat, world transform service, WebRTC pipeline, voice trigger,
+  scene anchor map, and dependency gate.
+- Source evidence details:
+  Wave 389 includes `quest-mr-template` `RuntimeActionBindings.json`, Decart
+  Quest Unity/service folders, and The World Beyond documentation/project
+  layout.
+- Do not copy directly:
+  hidden recenter behavior, service credentials, full vendor sample bulk, or
+  world-transform claims without latency/fallback labels.
+- Maturity:
+  strategic MR starter method; needs a minimal template checklist.
+- Best fit for `VR-apps-lab`:
+  Quest MR utility starters, passthrough/world-filter experiments, and
+  scene-aware setup documentation.
+
+## Method 835: MR robot and user-study dashboard with replay
+
+- What it is:
+  design MR dashboards around scene context, robot/user identity, topic
+  freshness, network health, command authority, recording, replay, and consent.
+- Good for:
+  robot operator dashboards, multi-robot SLAM viewers, gait/rehab MR tools,
+  user-testing capture, remote tracking, and replay analysis.
+- Why it matters:
+  dashboards can look simple while hiding unsafe robot authority or sensitive
+  participant data retention.
+- Source evidence:
+  `mustafizur-r/WalkerProject`, `prakash-aryan/MR-SLAM`,
+  `danieljtrujillo/The-Future-is-Chrome-MIT-Reality-Hack-2026`, and
+  `mi2lab/mrat-passthrough-quest`.
+- Reusable core:
+  MR scene context, robot/user identity, topic/namespace map, lightweight stats
+  channel, command authority, replay log, remote tracking source, connection
+  health, consent label, and stale-data indicator.
+- Source evidence details:
+  Wave 390 includes WalkerProject README, MR-SLAM ROS2 launch/stats files,
+  Future-is-Chrome `robot-server/docs/Assets`, and MRAT
+  `Documents/MRAT-release` plus README.
+- Do not copy directly:
+  clinical/robot claims without validation, whole vendor SDK dumps, raw maps
+  without decimation, or recording without consent metadata.
+- Maturity:
+  strong dashboard method; needs schema alignment with telemetry and robotics
+  operator methods.
+- Best fit for `VR-apps-lab`:
+  MR robot control surfaces, SLAM dashboards, replay tools, and participant
+  study instrumentation.
+
+## Method 836: hand-command package and social tabletop interaction envelope
+
+- What it is:
+  combine hand pose-to-action packages with contextual placement, shared
+  anchors, session UI, player presence, and puzzle/task gates.
+- Good for:
+  hand menus, colocated MR tabletop tools, shared-anchor utilities, puzzle/task
+  authoring, and lightweight OpenXR hand input packages.
+- Why it matters:
+  hand input becomes reusable when gesture mapping is separate from game rules
+  and when social MR state has anchor/session/fallback boundaries.
+- Source evidence:
+  `Extrys/XRMasterHands`, `oculus-samples/Unity-SpiritSling`, and
+  `francesctr4/EscapeRoomVR`.
+- Reusable core:
+  hand skeleton driver, pose-to-action map, gesture sample, hand joystick,
+  contextual board placement, shared anchor lifecycle, room UI, player
+  disconnect state, puzzle state, object gate, and hint/reset surface.
+- Source evidence details:
+  Wave 391 includes `XRMasterHands` `Runtime/Editor/Samples~`,
+  `Sample_HandJoystick.cs`, SpiritSling `Documentation` and networking scripts,
+  and EscapeRoomVR Unity project structure.
+- Do not copy directly:
+  LFS-heavy official sample bulk, platform app IDs, puzzle content as framework
+  code, or hand gestures without fallback input.
+- Maturity:
+  useful interaction-envelope method; needs shared-anchor and fallback-input
+  checklists.
+- Best fit for `VR-apps-lab`:
+  hand-driven utilities, social MR tools, tabletop/session helpers, and puzzle
+  or task-flow prototypes.

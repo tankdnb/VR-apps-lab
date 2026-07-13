@@ -383,6 +383,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-385-xr-robot-teleoperation-control-loops-and-dataset-recorders.md`
 - `landscape/vr-projects-wave-386-xr-hardware-runtime-templates-and-omniverse-openxr-extension-bindings.md`
 - `landscape/vr-projects-wave-387-spatial-application-ux-patterns-for-science-rehab-and-strategy-tools.md`
+- `landscape/vr-projects-wave-388-quest-passthrough-camera-capture-vision-streaming-and-detection-bridges.md`
+- `landscape/vr-projects-wave-389-mr-templates-world-transform-and-scene-aware-game-samples.md`
+- `landscape/vr-projects-wave-390-mr-robot-slam-user-study-and-passthrough-analysis-dashboards.md`
+- `landscape/vr-projects-wave-391-hand-interaction-packages-social-tabletop-and-escape-room-samples.md`
 
 ## Archive Navigation
 

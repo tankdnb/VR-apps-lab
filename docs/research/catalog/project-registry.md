@@ -5074,6 +5074,51 @@ Primary docs:
 - `WallerTheDeveloper/vr-tower-defense` - `Studied in Wave 387 as Quest passthrough strategy game reference with wrist tower menu, pinch gestures, factories, commands, state machines, pooling, and spatial UI lessons`
 - `vladyslav-tsalko/REMIRE` - `Deepened in Wave 387 as MR rehabilitation task/grab-rule reference with MRUK, Meta XR Hands, adaptive placement, difficulty levels, grip strength, and missing LFS APK caveat`
 
+## 359. Quest passthrough camera capture vision streaming and detection bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-388-quest-passthrough-camera-capture-vision-streaming-and-detection-bridges.md`
+- `../landscape/project-families.md`
+
+- `samuelm2/OpenQuestCapture` - `Studied in Wave 388 as Quest camera capture and 3D reconstruction package with QuestCameraLib, Unity wrapper, docs, rebuild script, and native-library provenance caveats`
+- `danieloquelis/Unity-QuestVisionStream` - `Studied in Wave 388 as Unity Passthrough Camera API package with WebRTC streaming to external inference server and package/server split`
+- `sandeepv6/questvision` - `Studied in Wave 388 as Quest 3 MR object detection sample with camera frames, server-side inference, 2D/3D bounding boxes, scene raycasts, and marker reliability questions`
+
+## 360. MR templates world transform and scene-aware game samples
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-389-mr-templates-world-transform-and-scene-aware-game-samples.md`
+- `../landscape/project-families.md`
+
+- `noritsune/quest-mr-template` - `Studied in Wave 389 as compact Meta Quest MR Unity template with MRUK setup, runtime action bindings, and recenter/scene-mesh caveats`
+- `DecartAI/Decart-XR` - `Studied in Wave 389 as Quest real-time AI world-transformation app with Unity/service/WebRTC/voice boundary and provider privacy caveats`
+- `oculus-samples/Unity-TheWorldBeyond` - `Studied in Wave 389 as official MR sample composition reference with Scene API, Passthrough, Voice SDK, Interaction SDK, Audio Spatializer, and MRUK`
+
+## 361. MR robot SLAM user study and passthrough analysis dashboards
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-390-mr-robot-slam-user-study-and-passthrough-analysis-dashboards.md`
+- `../landscape/project-families.md`
+
+- `mustafizur-r/WalkerProject` - `Studied in Wave 390 as MR gait rehab robot walker serious game with MRUK, Photon Fusion, MQTT robot coordination, patient/robot tracking, and safety caveats`
+- `prakash-aryan/MR-SLAM` - `Studied in Wave 390 as Unity/Quest multi-robot SLAM dashboard with ROS2 map merge, Nav2 launch files, stats publisher, and namespace/freshness lessons`
+- `danieljtrujillo/The-Future-is-Chrome-MIT-Reality-Hack-2026` - `Studied in Wave 390 as MR/robot hackathon app with Unity assets, robot-server, docs, Booster Robotics SDK assets, and vendor-drop caveats`
+- `mi2lab/mrat-passthrough-quest` - `Studied in Wave 390 as MRAT passthrough user-testing toolkit with local/online recording, replay, live head/hand tracking, and consent/retention follow-up`
+
+## 362. Hand interaction packages social tabletop and escape room samples
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-391-hand-interaction-packages-social-tabletop-and-escape-room-samples.md`
+- `../landscape/project-families.md`
+
+- `Extrys/XRMasterHands` - `Studied in Wave 391 as Unity OpenXR hand tracking package with Runtime, Editor, Samples, skeleton driver, gesture samples, and hand pose-to-action mapping`
+- `oculus-samples/Unity-SpiritSling` - `Studied in Wave 391 as official social MR tabletop sample with contextual board placement, shared anchors, avatars, networking, hand grabs, and LFS-heavy caveat`
+- `francesctr4/EscapeRoomVR` - `Studied in Wave 391 as compact Unity VR escape-room reference with puzzle/object interaction structure and task-state follow-up`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

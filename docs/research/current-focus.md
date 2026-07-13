@@ -17,6 +17,25 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 388-391
+
+- `Quest passthrough camera capture, vision streaming, and detection bridges`
+  add MR vision bridge coverage around Quest camera wrappers, native-library
+  provenance, WebRTC/WebSocket offload, external inference servers, 2D/3D
+  bounding boxes, spatial marker placement, reconnect state, and privacy UX.
+- `MR templates, world transform, and scene-aware game samples`
+  add starter/template coverage around runtime action bindings, MRUK setup,
+  recenter and scene-mesh caveats, AI world transformation services, voice
+  triggers, and vendor sample dependency gates.
+- `MR robot, SLAM, user study, and passthrough analysis dashboards`
+  add dashboard/replay coverage around robot/user identity, SLAM stats and map
+  merge, MQTT/Photon/ROS2 boundaries, user-study recording/replay, remote
+  head/hand tracking, consent labels, and stale-data indicators.
+- `Hand interaction packages, social tabletop, and escape room samples`
+  add interaction-envelope coverage around OpenXR hand packages, pose-to-action
+  maps, hand joystick samples, contextual board placement, shared anchors,
+  room/session UI, player disconnects, puzzle gates, and fallback input.
+
 ## Current additions from Waves 384-387
 
 - `Quest hand streaming, steering, and ROS bridge utilities`

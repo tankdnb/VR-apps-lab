@@ -1742,6 +1742,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on spatial app UX patterns for scientific
   visualization, passthrough strategy, and rehabilitation tasks.
 
+- `vr-projects-wave-388-quest-passthrough-camera-capture-vision-streaming-and-detection-bridges.md`
+  Next GitHub discovery wave focused on Quest camera capture, WebRTC vision
+  streaming, external inference, and spatial detection results.
+
+- `vr-projects-wave-389-mr-templates-world-transform-and-scene-aware-game-samples.md`
+  Next GitHub discovery wave focused on MR templates, recenter/scene mesh
+  caveats, AI world transforms, and official scene-aware samples.
+
+- `vr-projects-wave-390-mr-robot-slam-user-study-and-passthrough-analysis-dashboards.md`
+  Next GitHub discovery wave focused on MR robot dashboards, SLAM summaries,
+  user-study recording, replay, and passthrough analysis.
+
+- `vr-projects-wave-391-hand-interaction-packages-social-tabletop-and-escape-room-samples.md`
+  Next GitHub discovery wave focused on hand packages, social MR tabletop,
+  shared anchors, and puzzle/task interaction samples.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

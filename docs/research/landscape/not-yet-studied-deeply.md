@@ -3172,6 +3172,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 310. `XR robot teleoperation console follow-up across robot adapter records, camera feed metadata, discovery broadcasts, operator body calibration, episode writer schema, headsetless tracker roles, stop/recovery state, and ROS mode boundaries`
 311. `XR hardware runtime template follow-up across plugin versions, headset setting profiles, sample scenes, action subscription lifecycle, haptics, GUI launchers, native binary provenance, and fallback paths`
 312. `Spatial application UX follow-up across wrist/radial menu vocabulary, object-driven grab/task rules, command undo, factory/pool boundaries, adaptive placement, dataset filters, annotations, desktop mirroring, and session-state schemas`
+313. `Quest passthrough vision bridge follow-up across camera permissions, frame metadata, native wrapper provenance, WebRTC/WebSocket latency, inference result schemas, 3D box reliability, marker lifetime, reconnect state, and privacy UX`
+314. `MR template/world-transform follow-up across runtime action bindings, MRUK recenter policy, scene mesh alignment, passthrough state, provider/service fallback, voice trigger boundaries, and vendor sample dependency minimization`
+315. `MR robot and user-study dashboard follow-up across robot/user identity, topic freshness, map/stat decimation, command authority, replay logs, remote tracking sources, consent labels, retention policy, and stale-data indicators`
+316. `Hand package/social tabletop follow-up across skeleton drivers, pose-to-action maps, hand joystick samples, contextual board placement, shared-anchor lifecycle, room UI, player disconnect state, puzzle gates, and fallback input`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

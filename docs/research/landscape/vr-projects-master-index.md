@@ -1219,3 +1219,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-387-spatial-application-ux-patterns-for-science-rehab-and-strategy-tools.md`
   Spatial app UX patterns for scientific visualization, passthrough strategy,
   rehabilitation tasks, wrist/radial menus, and session state.
+- `vr-projects-wave-388-quest-passthrough-camera-capture-vision-streaming-and-detection-bridges.md`
+  Quest camera capture, WebRTC vision streaming, external inference, spatial
+  detection results, and privacy/reconnect state.
+- `vr-projects-wave-389-mr-templates-world-transform-and-scene-aware-game-samples.md`
+  MR templates, recenter/scene mesh caveats, AI world transforms, scene-aware
+  samples, and provider fallback boundaries.
+- `vr-projects-wave-390-mr-robot-slam-user-study-and-passthrough-analysis-dashboards.md`
+  MR robot dashboards, SLAM summaries, user-study recording/replay, remote
+  tracking, and consent/freshness labels.
+- `vr-projects-wave-391-hand-interaction-packages-social-tabletop-and-escape-room-samples.md`
+  OpenXR hand packages, social MR tabletop, shared anchors, room/session UI,
+  and puzzle/task interaction samples.
