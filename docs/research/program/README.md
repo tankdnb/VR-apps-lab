@@ -2406,3 +2406,31 @@ repeatable way.
 
 - `github-research-wave-339-backlog.md`
   Executed backlog for the Wave 339 pass.
+
+- `github-research-wave-340-plan.md`
+  Wave 340 research plan focused on visionOS native spatial rendering, WebXR
+  probes, and XR provider boundaries.
+
+- `github-research-wave-340-backlog.md`
+  Executed backlog for the Wave 340 pass.
+
+- `github-research-wave-341-plan.md`
+  Wave 341 research plan focused on visionOS Unity plugin bridges, WebView
+  surfaces, and controller adapters.
+
+- `github-research-wave-341-backlog.md`
+  Executed backlog for the Wave 341 pass.
+
+- `github-research-wave-342-plan.md`
+  Wave 342 research plan focused on spectator cameras, mixed-reality capture,
+  and multiplayer observer roles.
+
+- `github-research-wave-342-backlog.md`
+  Executed backlog for the Wave 342 pass.
+
+- `github-research-wave-343-plan.md`
+  Wave 343 research plan focused on physics hands, two-hand interaction, and
+  hand data capture baselines.
+
+- `github-research-wave-343-backlog.md`
+  Executed backlog for the Wave 343 pass.

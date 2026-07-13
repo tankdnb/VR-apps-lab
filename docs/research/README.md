@@ -335,6 +335,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-337-openvr-notification-primitives-overlay-wrappers-and-windows-toast-bridges.md`
 - `landscape/vr-projects-wave-338-browser-vr-video-players-projection-modes-and-in-headset-media-libraries.md`
 - `landscape/vr-projects-wave-339-unreal-vendor-openxr-interaction-samples-hand-tracking-and-mr-feature-bridges.md`
+- `landscape/vr-projects-wave-340-visionos-native-spatial-rendering-webxr-probes-and-xr-provider-boundaries.md`
+- `landscape/vr-projects-wave-341-visionos-unity-plugin-bridges-webview-surfaces-and-controller-adapters.md`
+- `landscape/vr-projects-wave-342-spectator-cameras-mixed-reality-capture-and-multiplayer-observer-roles.md`
+- `landscape/vr-projects-wave-343-physics-hands-two-hand-interaction-and-hand-data-capture-baselines.md`
 
 ## Archive Navigation
 

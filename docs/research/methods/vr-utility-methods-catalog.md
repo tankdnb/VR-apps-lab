@@ -17989,3 +17989,169 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   Unreal XR prototypes, vendor capability matrices, hand/pinch/ray utilities,
   and MR feature sample documentation.
+
+## Method 785: visionOS compositor/provider decomposition
+
+- What it is:
+  visionOS utility projects should separate immersive-space state, AR/world
+  tracking, compositor frame lifecycle, per-view rendering, provider APIs,
+  resource build processors, and validation rules.
+- Good for:
+  visionOS platform gates, native renderer notes, Unity visionOS diagnostics,
+  simulator/device checks, WebXR browser probes, and Apple Vision Pro utility
+  prototypes.
+- Why it matters:
+  visionOS projects can fail because of permissions, app mode, LayerRenderer
+  readiness, ARSession requirements, or build settings before any product logic
+  runs.
+- Source evidence:
+  `metal-by-example/metal-spatial-rendering`,
+  `needle-mirror/com.unity.xr.visionos`,
+  `chrisdubya/avp-threejs-webxr-test`, and
+  `IvanCampos/visionOS-examples`.
+- Reusable core:
+  immersive-space readiness, AR/world-tracking provider, LayerRenderer handle,
+  predicted frame timing, drawable lifecycle, per-view pose constants,
+  dedicated/shared/layered render mode, frame-repeat/performance policy,
+  authorization events, project validation rules, resource build processors,
+  simulator/device flags, and capability probe UI.
+- Source evidence details:
+  Wave 340 includes CompositorServices render loop and vertex amplification,
+  Unity provider APIs and validation rules, WebXR pinch/audio probe behavior,
+  and SwiftUI/RealityKit microapp patterns.
+- Do not copy directly:
+  platform-specific native pointers without readiness checks, hidden build
+  mutations, microphone capture without consent UX, or sample microapps without
+  support labels.
+- Strong references:
+  `metal-spatial-rendering` for the native compositor boundary and
+  `com.unity.xr.visionos` for provider/validation packaging.
+- Maturity:
+  strong platform-boundary method; production reuse should add explicit
+  permission states, simulator/device diagnostics, and rollback for build
+  setting mutations.
+- Best fit for `VR-apps-lab`:
+  visionOS utility docs, platform capability checkers, native renderer notes,
+  and Unity visionOS setup diagnostics.
+
+## Method 786: visionOS Unity adapter package
+
+- What it is:
+  Unity visionOS integrations should be packaged as adapter layers with native
+  interop wrappers, build profiles, plist/Xcode postprocessors, input API
+  migration maps, feature packages, and setup checklists.
+- Good for:
+  Apple framework bridges, WebView/browser panels, third-party controllers,
+  PHASE/CoreHaptics/Accessibility experiments, and platform template docs.
+- Why it matters:
+  without adapter boundaries, Unity visionOS projects become fragile bundles of
+  project settings, vendor SDK calls, native plugins, and undocumented build
+  edits.
+- Source evidence:
+  `apple/unityplugins`, `vuplex/visionos-metal-webview-example`,
+  `surreal-interactive/SDK`, and `TonGarcia/UnityVisionVRTemplate`.
+- Reusable core:
+  shared core package, native wrappers, availability gates, build profiles,
+  signing/Xcode command wrappers, plist postprocessors, feature-specific
+  packages, world-space surface prefab, tracked-device raycaster, input API
+  migration map, haptic/controller adapters, simulator/device checklist, and
+  dependency/license labels.
+- Source evidence details:
+  Wave 341 includes Apple.Core build steps, Accessibility/CoreHaptics/PHASE and
+  SpatialController package surfaces, Vuplex Metal WebView integration,
+  Surreal Touch OVR-style mapping and Bluetooth postprocessing, and a Unity
+  visionOS template checklist.
+- Do not copy directly:
+  commercial native package assumptions, hidden plist mutations,
+  vendor-controller coupling without fallback, or stale Unity/Xcode version
+  checklists.
+- Strong references:
+  `apple/unityplugins` for package/build architecture and
+  `surreal-interactive/SDK` for input migration mapping.
+- Maturity:
+  useful platform-adapter method; production reuse should make every build
+  mutation auditable and every vendor requirement explicit.
+- Best fit for `VR-apps-lab`:
+  Unity visionOS adapter notes, WebView prototypes, controller compatibility
+  layers, and setup validation docs.
+
+## Method 787: spectator/MRC capture decomposition
+
+- What it is:
+  outside-the-headset views should separate simple spectator cameras,
+  calibrated MRC capture, companion tooling, spatial alignment, networking,
+  recording, and multiplayer observer roles.
+- Good for:
+  demo spectator windows, streaming/presenter cameras, MRC compositors, remote
+  operator views, training observers, and replay/capture tools.
+- Why it matters:
+  VR tools need shareable and debuggable views, but a full MRC stack has very
+  different requirements than a simple spectator camera.
+- Source evidence:
+  `Unity-Technologies/VR-Spectator-Sample`,
+  `microsoft/MixedReality-SpectatorView`,
+  `Microsoft/MixedRealityCompanionKit`, and
+  `spatialos/sdk-for-unity-vr-starter-project`.
+- Reusable core:
+  spectator camera rig, overlay-only UI camera, camera attach points, preview
+  displays, calibration artifact, intrinsics/extrinsics, coordinate service,
+  marker/anchor localization, pose provider, pose cache, time sync, compositor
+  adapter, texture manager, network connection manager, recording service,
+  setup/debug docs, and observer-role input/authority model.
+- Source evidence details:
+  Wave 342 includes Unity's minimal two-camera sample, Microsoft SpectatorView
+  calibration/compositor/network/recording stack, CompanionKit remoting and
+  asset/spatial helpers, and SpatialOS player-versus-spectator role separation.
+- Do not copy directly:
+  old HoloToolkit/SpatialOS dependencies, camera pipelines without calibration
+  provenance, hidden native compositor requirements, or spectators that share
+  player authority.
+- Strong references:
+  `MixedReality-SpectatorView` for full calibrated capture and
+  `VR-Spectator-Sample` for a minimal demo spectator rig.
+- Maturity:
+  strong architecture method with legacy caveats; production reuse should
+  modernize transport and explicitly version calibration artifacts.
+- Best fit for `VR-apps-lab`:
+  demo capture, operator surfaces, observer modes, MRC comparisons, and
+  reusable spectator-camera components.
+
+## Method 788: hand interaction and capture decomposition
+
+- What it is:
+  hand utilities should separate tracking providers, hand data models, physics
+  following, gesture semantics, grab rules, two-hand constraints, recording,
+  playback, and debug visualization.
+- Good for:
+  hand-only controls, physics hands, two-hand tools, calibration handles,
+  gesture authoring, hand-data diagnostics, WebXR hand labs, and replayable
+  input tests.
+- Why it matters:
+  hand interaction becomes fragile when raw joint data, physical collision,
+  semantic gestures, and tool-specific behavior are all coupled.
+- Source evidence:
+  `oxters168/VRPhysicsHands`, `emilyslouie/xri-two-hands`,
+  `needle-mirror/com.unity.xr.hands`, and `sketchpunklabs/xrhand`.
+- Reusable core:
+  hand provider/subsystem, joint and mesh data model, pose validity, input
+  adapter, bone manipulator, physics follower, collision/grab bridge,
+  primary/secondary attach model, constraint/pull measurement, gesture
+  authoring, hand capture recorder, playback/interpolation, coordinate
+  transform, debug visualizer, and platform fallback labels.
+- Source evidence details:
+  Wave 343 includes VRPhysicsHands force/joint hands and input adapters,
+  xri-two-hands dynamic attach and bow/tool interactions, Unity XR Hands
+  subsystem/recording/playback package, and WebXR hand manager prototypes.
+- Do not copy directly:
+  vendor-only input assumptions, unstable force constants, imported asset/plugin
+  blobs, gesture rules without recording evidence, or browser demos without
+  capability checks.
+- Strong references:
+  `com.unity.xr.hands` for package/capture boundaries and `VRPhysicsHands` for
+  physical hand following.
+- Maturity:
+  strong method; production reuse should add safety limits, capability checks,
+  recording fixtures, and clear fallback behavior.
+- Best fit for `VR-apps-lab`:
+  hand-control prototypes, gesture diagnostics, two-hand tool interactions, and
+  replayable hand input tests.

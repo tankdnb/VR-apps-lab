@@ -10582,6 +10582,104 @@ when their assets are not reusable. It suggests a branch around Unreal XR
 feature-demo hubs, hand-ray and pinch interaction components, vendor adapter
 boundaries, and explicit hardware/license support labelling.
 
+## Family 319: visionOS native rendering, WebXR probes, and XR provider boundaries
+
+This family covers native and Unity/package-level visionOS projects that expose
+compositor-facing rendering, ARKit world tracking, WebXR browser probes,
+provider APIs, build processors, and validation rules. The reusable lesson is
+to keep OS permission state, compositor lifecycle, rendering, browser probes,
+resource packaging, and product microapps separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `metal-by-example/metal-spatial-rendering` | Studied in Wave 340 | ARKit world tracking, CompositorServices frame timing, render thread, dedicated/layered drawables, per-view pose constants, vertex amplification, and mixed immersion |
+| `chrisdubya/avp-threejs-webxr-test` | Studied in Wave 340 | Three.js WebXR hand/controller probe, pinch object spawn/grab/scale, fingertip collisions, and MediaRecorder microphone capture |
+| `needle-mirror/com.unity.xr.visionos` | Studied in Wave 340 | Unity visionOS provider package with LayerRenderer access, authorization events, build processors, AR resource packaging, and project validation |
+| `IvanCampos/visionOS-examples` | Studied in Wave 340 | SwiftUI/RealityKit microapps for head anchoring, battery/status, hand tracking, controllers, WebSocket feeds, chat/search, and music/countdown surfaces |
+
+### Consolidation note
+
+This family matters because visionOS utility work needs platform gates as much
+as scene UI. It suggests a branch around:
+
+- visionOS validation checklists;
+- compositor/provider boundary notes;
+- WebXR-on-visionOS capability probes;
+- SwiftUI/RealityKit utility microapp references.
+
+## Family 320: visionOS Unity plugin bridges, WebView surfaces, and controller adapters
+
+This family covers Unity projects that adapt Apple framework plug-ins, web
+panels, external controllers, and setup templates to Apple Vision Pro. The
+reusable lesson is to keep native framework wrappers, build mutation, surface
+UI, input adapters, permissions, and onboarding checklists separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `apple/unityplugins` | Studied in Wave 341 | Apple.Core build/postprocess and native-wrapper architecture plus Accessibility, CoreHaptics, GameController, GameKit, PHASE, and SpatialController packages |
+| `vuplex/visionos-metal-webview-example` | Studied in Wave 341 | Unity Metal-mode visionOS WebView scene with world-space Canvas, tracked-device raycaster, passthrough toggle, XR loaders, and mock editor fallback |
+| `surreal-interactive/SDK` | Studied in Wave 341 | Surreal Touch controller SDK with OVR-style API mapping, SVRCameraRig, SVRInput layers, hand/controller mode switch, haptics, and Bluetooth plist postprocessor |
+| `TonGarcia/UnityVisionVRTemplate` | Studied in Wave 341 | Unity visionOS checklist/template for ARKit/OpenXR/XR Hands/XRI/PolySpatial setup, URP/foveation/depth notes, and simulator workflow |
+
+### Consolidation note
+
+This family matters because platform-specific Unity utilities should be built
+as adapter packages, not undocumented project mutations. It suggests:
+
+- reusable platform-adapter checklists;
+- visionOS WebView/browser-panel prototypes;
+- Apple PHASE/CoreHaptics bridge comparisons;
+- controller migration maps for non-hand input.
+
+## Family 321: Spectator cameras, mixed-reality capture, and observer roles
+
+This family covers simple spectator cameras, calibrated MRC stacks, companion
+capture kits, and multiplayer observer roles. The reusable lesson is to keep
+demo spectator views, calibrated capture, companion tooling, network transport,
+recording, and observer authority separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Unity-Technologies/VR-Spectator-Sample` | Studied in Wave 342 | Minimal two-camera spectator rig with overlay-only UI camera, movable spectator camera, attachment points, preview displays, and replaceable visuals |
+| `microsoft/MixedReality-SpectatorView` | Studied in Wave 342 | Calibration/intrinsics/extrinsics, spatial coordinates, QR/ArUco/ASA localization, compositor, pose cache, time sync, networking, and recording services |
+| `Microsoft/MixedRealityCompanionKit` | Studied in Wave 342 | Companion toolkit with remoting, KinectIPD, remote compositor, spectator view, commander, asset bundler, spatial mapping, network state, and calibration zones |
+| `spatialos/sdk-for-unity-vr-starter-project` | Studied in Wave 342 | Multiplayer VR starter with headset-player and spectator roles, replicated peripheral offsets, teleport, and server-validated grabbing |
+
+### Consolidation note
+
+This family matters because utility demos, streams, and operator tools need a
+clear outside-the-headset view. It suggests:
+
+- minimal spectator-camera components;
+- MRC calibration provenance docs;
+- observer/operator role models;
+- capture stack comparison between legacy HoloLens and Vision Pro/iPhone flows.
+
+## Family 322: Physics hands, two-hand interaction, and hand data capture
+
+This family covers force/joint-driven hands, two-hand object interactions,
+cross-platform hand subsystem APIs, hand capture/playback, and WebXR hand
+prototype labs. The reusable lesson is to keep tracking source, hand
+representation, physical actuation, semantic interaction, two-hand object
+logic, capture/playback, and debug UI separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `oxters168/VRPhysicsHands` | Studied in Wave 343 | Unity/Oculus physics hands controlled by forces/joints with bone values, emulator, input adapters, and grabber bridge |
+| `emilyslouie/xri-two-hands` | Studied in Wave 343 | XRI two-hand prototypes with dynamic attach points, multi-grabbable objects, bow/arrow, staff/stick tools, pull measurement, and custom interaction manager |
+| `needle-mirror/com.unity.xr.hands` | Studied in Wave 343 | Unity XR Hands package with subsystem/provider APIs, joints/mesh data, OpenXR features, gestures, recording, playback, coordinate transforms, and editor tooling |
+| `sketchpunklabs/xrhand` | Studied in Wave 343 | WebXR hand prototype lab with input managers, controller/hand classes, slide locomotion, dynamic debug meshes, GLTF helpers, and prototype pages |
+
+### Consolidation note
+
+This family matters because hand utilities should not mix raw tracking, physics,
+gestures, and grab rules. It suggests:
+
+- two-hand tool interaction checklists;
+- hand capture/replay diagnostics;
+- physics-hand safety notes;
+- browser/native hand data comparison matrices.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

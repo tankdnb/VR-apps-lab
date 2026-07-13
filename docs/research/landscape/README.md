@@ -1544,6 +1544,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on Unreal/vendor OpenXR interaction
   samples, hand tracking, body/eye/MR features, and plugin dependency gates.
 
+- `vr-projects-wave-340-visionos-native-spatial-rendering-webxr-probes-and-xr-provider-boundaries.md`
+  Next GitHub discovery wave focused on visionOS native compositor rendering,
+  WebXR probes, Unity provider boundaries, and platform validation.
+
+- `vr-projects-wave-341-visionos-unity-plugin-bridges-webview-surfaces-and-controller-adapters.md`
+  Next GitHub discovery wave focused on Apple framework Unity plug-ins,
+  visionOS WebView panels, controller adapters, and setup templates.
+
+- `vr-projects-wave-342-spectator-cameras-mixed-reality-capture-and-multiplayer-observer-roles.md`
+  Next GitHub discovery wave focused on spectator cameras, MRC calibration,
+  companion capture kits, and multiplayer observer roles.
+
+- `vr-projects-wave-343-physics-hands-two-hand-interaction-and-hand-data-capture-baselines.md`
+  Next GitHub discovery wave focused on physics hands, two-hand interactions,
+  XR Hands capture/playback, and WebXR hand prototypes.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

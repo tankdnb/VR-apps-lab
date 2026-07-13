@@ -1123,3 +1123,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-339-unreal-vendor-openxr-interaction-samples-hand-tracking-and-mr-feature-bridges.md`
   Unreal/vendor OpenXR samples, hand tracking, body/eye/MR feature surfaces,
   hand rays, plugin gates, and asset/license boundaries.
+- `vr-projects-wave-340-visionos-native-spatial-rendering-webxr-probes-and-xr-provider-boundaries.md`
+  visionOS native compositor rendering, WebXR probes, Unity provider
+  boundaries, validation rules, and SwiftUI/RealityKit microapps.
+- `vr-projects-wave-341-visionos-unity-plugin-bridges-webview-surfaces-and-controller-adapters.md`
+  Apple framework Unity plug-ins, visionOS Metal WebView panels, controller
+  adapters, haptics, and setup templates.
+- `vr-projects-wave-342-spectator-cameras-mixed-reality-capture-and-multiplayer-observer-roles.md`
+  spectator cameras, MRC calibration/compositing, companion capture kits, and
+  observer-role separation.
+- `vr-projects-wave-343-physics-hands-two-hand-interaction-and-hand-data-capture-baselines.md`
+  physics hands, two-hand object constraints, XR Hands capture/playback, and
+  WebXR hand prototypes.

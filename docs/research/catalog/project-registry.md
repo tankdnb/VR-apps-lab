@@ -4485,6 +4485,54 @@ Primary docs:
 - `demonixis/FSOpenXRHandTracking` - `Studied in Wave 339 as an Unreal OpenXR hand tracking plugin with FXRMotionControllerData updates, instanced/wireframe rendering, pinch detection, Enhanced Input hooks, lagged hand rays, and MetaXR skeleton bridge`
 - `varjocom/VarjoUnrealOpenXRExamples` - `Studied in Wave 339 as a Varjo Unreal OpenXR example project for pass-through MR, depth occlusion, foveated rendering, markers, eye tracking, hand tracking, branch/version policy, and vendor hardware caveats`
 
+## 311. visionOS native spatial rendering, WebXR probes, and XR provider boundaries
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-340-visionos-native-spatial-rendering-webxr-probes-and-xr-provider-boundaries.md`
+- `../landscape/project-families.md`
+
+- `metal-by-example/metal-spatial-rendering` - `Studied in Wave 340 as a native visionOS Metal/CompositorServices renderer with ARKit world tracking, render thread, predicted frame timing, device-anchor queries, dedicated versus layered drawable paths, per-view pose constants, vertex amplification, mixed/full immersion behavior, and platform-specific caveats`
+- `chrisdubya/avp-threejs-webxr-test` - `Studied in Wave 340 as a small WebXR/Three.js Apple Vision Pro probe with hand/controller setup, pinchstart/pinchend object spawn/grab/scale, fingertip collision checks, MediaRecorder microphone capture, and permission/browser-support caveats`
+- `needle-mirror/com.unity.xr.visionos` - `Studied in Wave 340 as Unity's visionOS XR provider package reference with LayerRenderer access, immersive-space readiness, simulator detection, authorization events, frame-repeat API, XR subsystems, build processors, AR image/object resource packaging, and project validation rules`
+- `IvanCampos/visionOS-examples` - `Studied in Wave 340 as a SwiftUI/RealityKit visionOS microapp gallery with head anchoring, battery widgets, hand tracking, controller input, WebSocket/social feed examples, chat/search surfaces, music/countdown apps, and broad sample-maturity caveats`
+
+## 312. visionOS Unity plugin bridges, WebView surfaces, and controller adapters
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-341-visionos-unity-plugin-bridges-webview-surfaces-and-controller-adapters.md`
+- `../landscape/project-families.md`
+
+- `apple/unityplugins` - `Studied in Wave 341 as Apple framework bridge packages for Unity with Apple.Core build profiles/postprocess steps, native wrappers, signing/Xcode command wrappers, Accessibility nodes, CoreHaptics, GameController, GameKit, PHASE, and SpatialController package surfaces`
+- `vuplex/visionos-metal-webview-example` - `Studied in Wave 341 as a visionOS Metal-mode Unity WebView integration sample with world-space Canvas WebView, event camera, Tracked Device Graphic Raycaster, passthrough toggle, PolySpatial/XR loader settings, mock editor fallback, and commercial native package caveat`
+- `surreal-interactive/SDK` - `Studied in Wave 341 as a Surreal Touch visionOS controller SDK with Oculus-style input API mapping, SVRCameraRig, SVRInput manager/controller/device layers, hand/controller tracking-mode switch, haptic API, grab/distance-grab scripts, and Bluetooth plist postprocessor`
+- `TonGarcia/UnityVisionVRTemplate` - `Studied in Wave 341 as a Unity visionOS setup template/checklist with ARKit/OpenXR/XR Hands/XRI/PolySpatial package guidance, simulator workflow, URP/foveation/depth notes, VolumeCamera concepts, hand expression captures, and version-fragile docs caveat`
+
+## 313. Spectator cameras, mixed-reality capture, and multiplayer observer roles
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-342-spectator-cameras-mixed-reality-capture-and-multiplayer-observer-roles.md`
+- `../landscape/project-families.md`
+
+- `Unity-Technologies/VR-Spectator-Sample` - `Studied in Wave 342 as a minimal Unity spectator-camera sample with overlay-only spectator view camera, movable spectator camera, attachment-point cycling, preview displays, visual/UI object naming, and old-sample caveats`
+- `microsoft/MixedReality-SpectatorView` - `Studied in Wave 342 as a mature HoloLens/MRC spectator stack with calibration data providers, camera intrinsics/extrinsics, spatial coordinate services, Azure Spatial Anchors and QR/ArUco marker localization, compositor wrapper, pose cache, time sync, texture manager, TCP networking, and mobile recording services`
+- `Microsoft/MixedRealityCompanionKit` - `Studied in Wave 342 as a legacy MR companion toolkit with remoting host, KinectIPD, remote compositor, spectator view, commander, asset bundler, stage/menu managers, network state, calibration zones, persistence, spatial mapping, and HoloToolkit-era caveats`
+- `spatialos/sdk-for-unity-vr-starter-project` - `Studied in Wave 342 as a multiplayer VR starter reference with headset-player versus mouse/keyboard spectator roles, replicated HMD/controller offsets, teleport targeting, server-validated grabbing, grabbable transform/rigidbody handlers, and obsolete SpatialOS SDK caveat`
+
+## 314. Physics hands, two-hand interaction, and hand data capture baselines
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-343-physics-hands-two-hand-interaction-and-hand-data-capture-baselines.md`
+- `../landscape/project-families.md`
+
+- `oxters168/VRPhysicsHands` - `Studied in Wave 343 as a Unity/Oculus physics-hand baseline with force/joint-driven hands, BoneId/BonePart/HandBoneValues, hand emulator, input-to-bone manipulator interface, Oculus hand/touch input adapters, grabber bridge, and Quest/Oculus dependency caveats`
+- `emilyslouie/xri-two-hands` - `Studied in Wave 343 as an XRI two-hand interaction prototype set with dynamic attach points, multi-grabbable objects, CustomInteractionManager, ObjectManipulator, VirtualTransformChild, bow/arrow/notch/quiver/pull scripts, staff/stick/cymbal/lawn tools, and Hackweek asset-heavy caveats`
+- `needle-mirror/com.unity.xr.hands` - `Studied in Wave 343 as Unity XR Hands package reference with XRHandSubsystem/provider APIs, joints/mesh/MetaAim/common gestures, skeleton driver, tracking events, OpenXR feature drawers, hand capture recording blobs, frame buffers, playback providers, time controllers, and coordinate transforms`
+- `sketchpunklabs/xrhand` - `Studied in Wave 343 as a WebXR/Three.js hand prototype lab with XRManager, XRInputManager, XRController, XRHand, XRSlideLocomotion, dynamic mesh/debug helpers, GLTF utilities, hand model prototypes, and browser/device support caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

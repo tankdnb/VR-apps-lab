@@ -1241,6 +1241,10 @@ directions:
 256. `VR notification overlay pipeline follow-up across OpenVR notification primitives, OVRSharp wrappers, Windows listener permissions, filters, DND, history, dashboard settings, and installer security`
 257. `Browser VR media surface follow-up across projection/layout descriptors, WebXR renderer split, file/URL/catalog inputs, thumbnails, draggable controls, and CORS/HTTPS preflight`
 258. `Unreal vendor OpenXR sample follow-up across hub/menu scenes, hand/pinch/ray components, body/eye/MR feature adapters, vendor plugin gates, and asset/license boundaries`
+259. `visionOS compositor/provider follow-up across LayerRenderer readiness, ARSession requirements, simulator/device gates, authorization state, resource build processors, and WebXR browser permission probes`
+260. `visionOS Unity adapter follow-up across Apple.Core build steps, PHASE/CoreHaptics/Accessibility bridge surfaces, WebView input/keyboard ownership, controller migration maps, and plist mutation auditability`
+261. `Spectator/MRC capture follow-up across minimal spectator rigs, calibration artifact provenance, marker/anchor localization, compositor transport, recording services, and observer-role authority boundaries`
+262. `Hand interaction/capture follow-up across physics hand force limits, two-hand attach constraints, XR Hands capture/playback schemas, WebXR hand capability checks, and debug visualizers`
 
 ## Current repository-maintenance priorities
 
@@ -1251,6 +1255,31 @@ Besides new research waves, the main repository-maintenance work now is:
 - keep `not-yet-studied-deeply.md` focused on active queueing;
 - reduce archive pressure in front-door docs;
 - preserve wave history without making every entry document chronological.
+
+## Current additions from Waves 340-343
+
+Recent research adds four useful donor clusters:
+
+- `visionOS compositor/provider boundaries`
+  from metal-spatial-rendering, avp-threejs-webxr-test,
+  com.unity.xr.visionos, and visionOS-examples: ARKit world tracking,
+  CompositorServices frame timing, LayerRenderer readiness, Unity provider and
+  validation rules, WebXR pinch/audio probes, and SwiftUI/RealityKit microapp
+  patterns.
+- `visionOS Unity adapter packages`
+  from Apple Unity Plug-Ins, Vuplex visionOS Metal WebView example, Surreal
+  Touch SDK, and UnityVisionVRTemplate: Apple framework wrappers, build steps,
+  plist/Xcode postprocessing, world-space web panels, OVR-style controller
+  migration, haptics, and setup checklists.
+- `spectator and MRC capture stacks`
+  from Unity VR-Spectator-Sample, Microsoft MixedReality-SpectatorView,
+  MixedRealityCompanionKit, and SpatialOS VR starter: simple spectator cameras,
+  calibration artifacts, spatial alignment, marker localization, compositor
+  transport, recording services, and observer-role separation.
+- `physics hands and hand capture`
+  from VRPhysicsHands, xri-two-hands, Unity XR Hands, and xrhand: force/joint
+  hand following, two-hand attach constraints, XRHandSubsystem data surfaces,
+  hand capture/playback, gesture tooling, and WebXR hand prototype managers.
 
 ## Current additions from Waves 336-339
 

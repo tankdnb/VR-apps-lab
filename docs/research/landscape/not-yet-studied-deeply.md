@@ -3123,6 +3123,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 262. `VR notification overlay pipeline follow-up across native OpenVR notifications, persistent overlay cards, consent, filters, history, dashboard settings, and packaging security`
 263. `Browser VR media surface follow-up across media descriptor schemas, projection/layout metadata, WebXR Layers, CORS/HTTPS validation, thumbnails, and in-headset source browsers`
 264. `Unreal vendor OpenXR sample follow-up across hub scenes, hand rays, pinch events, body/eye/MR feature adapters, plugin dependency gates, and asset/license boundaries`
+265. `visionOS compositor/provider follow-up across LayerRenderer readiness, ARSession requirements, simulator/device gates, authorization state, resource build processors, and WebXR browser permission probes`
+266. `visionOS Unity adapter follow-up across Apple.Core build steps, PHASE/CoreHaptics/Accessibility bridge surfaces, WebView input/keyboard ownership, controller migration maps, and plist mutation auditability`
+267. `Spectator/MRC capture follow-up across minimal spectator rigs, calibration artifact provenance, marker/anchor localization, compositor transport, recording services, and observer-role authority boundaries`
+268. `Hand interaction/capture follow-up across physics hand force limits, two-hand attach constraints, XR Hands capture/playback schemas, WebXR hand capability checks, and debug visualizers`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.
