@@ -423,6 +423,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-421-lighthouse-base-station-and-home-automation-bridges.md`
 - `landscape/vr-projects-wave-422-unity-openvr-tracker-and-input-utility-facades.md`
 - `landscape/vr-projects-wave-423-vr-comfort-text-entry-and-compositor-microtools.md`
+- `landscape/vr-projects-wave-424-openvr-chaperone-debug-boundary-safety-and-geometry-io-microtools.md`
+- `landscape/vr-projects-wave-425-magic-leap-openxr-sensing-gaze-plane-and-setup-samples.md`
+- `landscape/vr-projects-wave-426-mocap-pose-solving-avatar-tracking-and-research-recording-donors.md`
+- `landscape/vr-projects-wave-427-webxr-toolkit-retrofit-bridges-for-mrtk-and-hptk.md`
 
 ## Archive Navigation
 

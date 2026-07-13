@@ -1331,3 +1331,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-423-vr-comfort-text-entry-and-compositor-microtools.md`
   Locomotion comfort, predictive VR keyboards, runtime compositor-scale
   patching, overlay-app registration, compatibility labels, and rollback needs.
+- `vr-projects-wave-424-openvr-chaperone-debug-boundary-safety-and-geometry-io-microtools.md`
+  OpenVR chaperone geometry IO, play-area debug maps, tracked-device pose
+  visualization, boundary proximity warnings, and room-safety diagnostics.
+- `vr-projects-wave-425-magic-leap-openxr-sensing-gaze-plane-and-setup-samples.md`
+  Magic Leap/OpenXR sensing samples with scoped registry setup, spatial mapping,
+  plane queries, eye-tracking permissions, gaze dwell UI, and pre-GA caveats.
+- `vr-projects-wave-426-mocap-pose-solving-avatar-tracking-and-research-recording-donors.md`
+  Mocap and pose pipelines with MediaPipe/Kalidokit solving, avatar binding,
+  WebXR/OBS/UDP forwarding, sidecar trackers, and recording/session workflows.
+- `vr-projects-wave-427-webxr-toolkit-retrofit-bridges-for-mrtk-and-hptk.md`
+  WebXR toolkit retrofits with Unity WebGL host pages, transparent canvases,
+  browser camera bridges, hand-joint providers, and toolkit adapter boundaries.

@@ -3008,3 +3008,31 @@ repeatable way.
 
 - `github-research-wave-423-backlog.md`
   Executed backlog for the Wave 423 pass.
+
+- `github-research-wave-424-plan.md`
+  Wave 424 research plan focused on OpenVR chaperone debug, boundary safety,
+  and geometry IO microtools.
+
+- `github-research-wave-424-backlog.md`
+  Executed backlog for the Wave 424 pass.
+
+- `github-research-wave-425-plan.md`
+  Wave 425 research plan focused on Magic Leap OpenXR sensing, gaze, plane, and
+  setup samples.
+
+- `github-research-wave-425-backlog.md`
+  Executed backlog for the Wave 425 pass.
+
+- `github-research-wave-426-plan.md`
+  Wave 426 research plan focused on mocap, pose solving, avatar tracking, and
+  research recording donors.
+
+- `github-research-wave-426-backlog.md`
+  Executed backlog for the Wave 426 pass.
+
+- `github-research-wave-427-plan.md`
+  Wave 427 research plan focused on WebXR toolkit retrofit bridges for MRTK and
+  HPTK.
+
+- `github-research-wave-427-backlog.md`
+  Executed backlog for the Wave 427 pass.

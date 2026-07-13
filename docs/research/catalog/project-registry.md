@@ -5482,6 +5482,50 @@ Primary docs:
 - `rjth/Punchkeyboard` - `Studied in Wave 423 as Unity VR keyboard with autocomplete, next-word prediction, corpora/dictionary generation, Levenshtein matching, keyboard mesh, key feedback, and personalization caveats`
 - `elvissteinjr/SteamVR-ForceCompositorScale` - `Studied in Wave 423 as tiny OpenVR/SteamVR compositor-scale patcher with overlay-app registration, supersample setting mutation, restart caveat, JSON backup warning, and rollback needs`
 
+## 395. OpenVR chaperone debug boundary safety and geometry IO microtools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-424-openvr-chaperone-debug-boundary-safety-and-geometry-io-microtools.md`
+- `../landscape/project-families.md`
+
+- `zodsoft/openvr_chaperone_io` - `Studied in Wave 424 as compact chaperone universe parser/writer surface for boundary backup, preview, migration, and rollback-oriented tools`
+- `Dawars/processing_openvr_debug` - `Studied in Wave 424 as Processing/OpenVR play-area and tracked-device debug visualizer with chaperone event refresh and top-down device map value`
+- `systemofapwne/VRGuard` - `Studied in Wave 424 as Python/pyopenvr chaperone proximity monitor with controller pose polling, height filtering, distance thresholds, and audio warning routing`
+
+## 396. Magic Leap OpenXR sensing gaze plane and setup samples
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-425-magic-leap-openxr-sensing-gaze-plane-and-setup-samples.md`
+- `../landscape/project-families.md`
+
+- `dilmerv/MagicLeapPlaneDetection` - `Studied in Wave 425 as Unity/Magic Leap OpenXR plane-detection sample with scoped registry setup, spatial mapping permission, subsystem query flags, and semantic/min-area filters`
+- `dilmerv/MagicLeapEyeTracking` - `Studied in Wave 425 as Unity/Magic Leap eye-tracking sample with permission gate, gaze pose adapter, dwell passcode interaction, progress material, and callback flow`
+- `magicleap/MixedRealityToolkit-Unity-PreGA` - `Studied in Wave 425 as Magic Leap-oriented MRTK fork/reference with cross-platform interaction primitives, OpenXR support context, and pre-GA support-boundary caveats`
+
+## 397. Mocap pose-solving avatar tracking and research recording donors
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-426-mocap-pose-solving-avatar-tracking-and-research-recording-donors.md`
+- `../landscape/project-families.md`
+
+- `xianfei/SysMocap` - `Studied in Wave 426 as Electron/Vue/MediaPipe/Kalidokit/three-vrm avatar mocap app with VRM/FBX binding, OBS/WebXR forwarding, Socket.IO transport, and recording caveats`
+- `yeemachine/kalidokit` - `Studied in Wave 426 as solver library turning face/pose/hand landmarks into VRM/Live2D-friendly rotations, blendshapes, and stabilization outputs`
+- `emilianavt/OpenSeeFace` - `Studied in Wave 426 as CPU face/facial landmark tracker sidecar with UDP transport, Unity receiver, calibration/expression flow, and launcher/process-supervision value`
+- `freemocap/freemocap` - `Studied in Wave 426 as open-source research-grade motion capture platform reference for recording/session pipeline, hardware-agnostic capture, and export/provenance follow-up`
+
+## 398. WebXR toolkit retrofit bridges for MRTK and HPTK
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-427-webxr-toolkit-retrofit-bridges-for-mrtk-and-hptk.md`
+- `../landscape/project-families.md`
+
+- `Rufus31415/MixedRealityToolkit-Unity-WebXR` - `Studied with deprecation caveat in Wave 427 as MRTK WebXR/WebGL POC with transparent Unity canvas, Three.js/WebXR camera bridge, SendMessage transform JSON, and hard-coded calibration caveats`
+- `Rufus31415/HPTK-Sample-WebXR` - `Studied in Wave 427 as HPTK/SimpleWebXR hand-joint adapter with session/availability confidence gates, WebXR-to-HPTK rotation conversion, bone mapping, and editor fixtures`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

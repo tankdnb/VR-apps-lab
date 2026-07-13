@@ -12168,6 +12168,77 @@ This family matters because small daily-use problems often deserve small tools.
 The reusable lesson is a narrow value proposition, visible settings, explicit
 compatibility labels, and safe rollback when runtime config is mutated.
 
+## Family 403: OpenVR chaperone boundary safety and debug geometry microtools
+
+This family covers chaperone universe IO, play-area debug maps, tracked-device
+pose visualizers, boundary proximity warnings, and room-safety diagnostics.
+
+| Project | Status | Notes |
+|---|---|---|
+| `zodsoft/openvr_chaperone_io` | Studied in Wave 424 | Compact C++ chaperone universe parse/write surface for backup, preview, diff, and rollback-oriented utilities |
+| `Dawars/processing_openvr_debug` | Studied in Wave 424 | Processing/OpenVR play-area and device debug visualizer with chaperone event refresh |
+| `systemofapwne/VRGuard` | Studied in Wave 424 | Python/pyopenvr boundary monitor with controller pose polling, distance thresholds, height filtering, and audio warnings |
+
+### Consolidation note
+
+This family matters because tracked-space safety tools need to make runtime
+boundary state visible, reversible, and actionable without sending users back
+through a full room-setup flow.
+
+## Family 404: Vendor OpenXR sensing setup and permission samples
+
+This family covers vendor OpenXR setup flows, scoped package registries,
+loader/feature toggles, permission gates, capability probes, gaze signals,
+plane queries, and sample-scene validation.
+
+| Project | Status | Notes |
+|---|---|---|
+| `dilmerv/MagicLeapPlaneDetection` | Studied in Wave 425 | Magic Leap Unity/OpenXR plane-detection sample with spatial mapping permission and semantic query flags |
+| `dilmerv/MagicLeapEyeTracking` | Studied in Wave 425 | Magic Leap eye-tracking sample with permission gate, gaze pose adapter, dwell progress, and callback flow |
+| `magicleap/MixedRealityToolkit-Unity-PreGA` | Studied in Wave 425 | Magic Leap-oriented MRTK fork/reference with broad interaction primitives and pre-GA support caveats |
+
+### Consolidation note
+
+This family matters because vendor sensing features are usually blocked by
+setup, permission, and capability state before product UX begins. Future tools
+need visible feature doctors rather than hidden sample-project assumptions.
+
+## Family 405: Mocap pose solving avatar tracking and recording pipelines
+
+This family covers capture sources, landmark providers, pose/face/hand solvers,
+avatar rig binding, tracker sidecars, UDP/WebXR/Socket.IO transports, recording
+sessions, and privacy/performance boundaries.
+
+| Project | Status | Notes |
+|---|---|---|
+| `xianfei/SysMocap` | Studied in Wave 426 | Electron/Vue/MediaPipe/Kalidokit/three-vrm mocap app with model binding, recording, OBS, and WebXR forwarding |
+| `yeemachine/kalidokit` | Studied in Wave 426 | Pose/face/hand solver library producing avatar-friendly rotations and blendshape data |
+| `emilianavt/OpenSeeFace` | Studied in Wave 426 | CPU face tracker sidecar with UDP transport, Unity receiver, calibration, and process launcher |
+| `freemocap/freemocap` | Studied in Wave 426 | Research-grade motion capture platform reference for session/recording/export workflows |
+
+### Consolidation note
+
+This family matters because pose data becomes more reusable when detection,
+solving, transport, avatar binding, and recording are independent pipeline
+stages with explicit privacy and confidence metadata.
+
+## Family 406: WebXR toolkit retrofit bridges for Unity interaction stacks
+
+This family covers Unity WebGL/WebXR host pages, browser-to-engine pose bridges,
+transparent canvas composition, WebXR hand-joint providers, toolkit bone maps,
+and browser feature fallback labels.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Rufus31415/MixedRealityToolkit-Unity-WebXR` | Studied with deprecation caveat in Wave 427 | MRTK WebXR/WebGL POC with Three.js camera bridge, transparent Unity canvas, and SendMessage transform JSON |
+| `Rufus31415/HPTK-Sample-WebXR` | Studied in Wave 427 | HPTK/SimpleWebXR sample mapping WebXR hand joints into toolkit bones with session gates and rotation conversion |
+
+### Consolidation note
+
+This family matters because many Unity interaction systems can become
+browser-delivered XR surfaces if browser session plumbing, data providers, and
+toolkit interaction code remain cleanly separated.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

@@ -17,6 +17,27 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 424-427
+
+- `OpenVR chaperone debug, boundary safety, and geometry IO microtools`
+  add tracked-space safety coverage around chaperone universe parsing/writing,
+  play-area debug maps, tracked-device pose visualization, chaperone event
+  refresh, controller proximity thresholds, height filtering, audio warning
+  routing, and backup/rollback needs.
+- `Magic Leap OpenXR sensing, gaze, plane, and setup samples`
+  add vendor sensing coverage around scoped package registries, loader/feature
+  setup, spatial mapping permission, plane query flags, eye-tracking device
+  discovery, gaze pose adapters, dwell progress UI, and pre-GA toolkit caveats.
+- `Mocap pose-solving, avatar tracking, and research recording donors`
+  add pose-pipeline coverage around MediaPipe/Kalidokit solving, VRM/FBX model
+  binding, WebXR/OBS forwarding, UDP face-tracker sidecars, Unity receivers,
+  recording/session workflows, and neutral schema follow-up.
+- `WebXR toolkit retrofit bridges for MRTK and HPTK`
+  add browser-retrofit coverage around Unity WebGL/WebXR host pages,
+  transparent canvas composition, Three.js camera bridges, JSON transform
+  handoff, SimpleWebXR hand-joint providers, session gates, and toolkit bone
+  maps.
+
 ## Current additions from Waves 420-423
 
 - `VR media, cockpit library, and social audio panels`

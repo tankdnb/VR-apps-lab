@@ -20949,3 +20949,135 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   comfort helpers, text-entry overlays, SteamVR microtools, and UX friction
   reducers.
+
+## Method 869: Chaperone boundary safety monitor
+
+- What it is:
+  make tracked-space boundary data readable, visual, reversible, and usable for
+  warning policies.
+- Good for:
+  chaperone doctors, room-safety overlays, boundary backup/diff tools,
+  controller proximity warnings, and runtime debug panels.
+- Why it matters:
+  boundary mistakes are both usability and safety problems; helpers should show
+  what the runtime sees before changing or warning on it.
+- Source evidence:
+  `zodsoft/openvr_chaperone_io`, `Dawars/processing_openvr_debug`, and
+  `systemofapwne/VRGuard`.
+- Reusable core:
+  chaperone geometry adapter, parser/writer with backup, event-aware runtime
+  cache, play-area map, tracked-device pose polling, distance/height filters,
+  warning router, stale-state labels, and rollback path.
+- Source evidence details:
+  `parseFile`/`writeToFile` API, Processing `GetPlayAreaRect`/device debug
+  map with chaperone event refresh, and pyopenvr controller-distance audio
+  warning loop.
+- Do not copy directly:
+  blind boundary writes, rectangle-only assumptions, fixed thresholds, audio-only
+  safety feedback, or stale chaperone caches.
+- Maturity:
+  practical microtool method; needs modern OpenXR bounds comparison before a
+  reusable implementation.
+- Best fit for `VR-apps-lab`:
+  room diagnostics, safety overlays, calibration previews, and chaperone backup
+  utilities.
+
+## Method 870: Vendor OpenXR sensing feature setup
+
+- What it is:
+  treat vendor sensing features as setup-plus-runtime capabilities with package,
+  loader, permission, signal, and fallback state all visible.
+- Good for:
+  gaze, planes, scene understanding, hands, passthrough, anchors, and
+  vendor-specific OpenXR feature bring-up.
+- Why it matters:
+  feature samples often fail because setup or permissions are wrong, not because
+  app logic is wrong.
+- Source evidence:
+  `dilmerv/MagicLeapPlaneDetection`,
+  `dilmerv/MagicLeapEyeTracking`, and
+  `magicleap/MixedRealityToolkit-Unity-PreGA`.
+- Reusable core:
+  scoped registry/package record, setup checklist, loader/feature toggle,
+  permission request, capability polling, sample signal visualizer, gaze/plane
+  adapter, validation messages, and support/maturity labels.
+- Source evidence details:
+  Magic Leap SDK manifest, spatial mapping permission and plane query flags,
+  eye-tracking permission/device/gaze usages, gaze dwell passcode, and MRTK
+  vendor toolkit support context.
+- Do not copy directly:
+  one-vendor assumptions, silent project-setting mutation, gaze data retention,
+  or pre-GA support claims without caveats.
+- Maturity:
+  strong documentation and setup pattern; implementation needs a cross-vendor
+  capability schema.
+- Best fit for `VR-apps-lab`:
+  feature doctors, vendor sample audits, gaze/plane helpers, and setup
+  checklists.
+
+## Method 871: Pose solver and tracker data pipeline
+
+- What it is:
+  split mocap/tracker systems into capture, landmark/tracker inference, solver,
+  normalized output, transport, avatar binding, and recording stages.
+- Good for:
+  OSC/WebSocket/UDP tracker bridges, avatar helpers, body/face/hand tracking,
+  live production, research recording, replay, and diagnostics.
+- Why it matters:
+  pose data is reusable only when confidence, stale state, coordinate frames,
+  transport, and avatar binding are explicit.
+- Source evidence:
+  `xianfei/SysMocap`, `yeemachine/kalidokit`,
+  `emilianavt/OpenSeeFace`, and `freemocap/freemocap`.
+- Reusable core:
+  capture source, landmark provider, solver layer, normalized rig/blendshape
+  records, confidence/stale metadata, transport adapters, avatar binding map,
+  recording/session artifacts, privacy labels, and process supervision.
+- Source evidence details:
+  MediaPipe/Kalidokit/three-vrm/WebXR forwarding in SysMocap, Kalidokit solver
+  APIs, OpenSeeFace UDP sidecar and Unity receiver/launcher, and FreeMoCap
+  research-grade recording orientation.
+- Do not copy directly:
+  insecure Electron defaults, deprecated solver assumptions, unversioned UDP
+  packets, duplicated renderer logic, or research claims without calibration
+  labels.
+- Maturity:
+  high-value architecture method; next step is a neutral pose/tracker schema.
+- Best fit for `VR-apps-lab`:
+  tracker bridges, avatar utilities, OSC/WebSocket adapters, mocap diagnostics,
+  and session recording tools.
+
+## Method 872: WebXR toolkit retrofit adapter
+
+- What it is:
+  adapt an existing Unity XR toolkit to browser/WebXR by isolating host session,
+  WebGL surface, pose/hand data provider, coordinate conversion, and fallback
+  logic.
+- Good for:
+  browser-delivered demos, WebXR utility panels, Unity WebGL XR tools, MRTK/HPTK
+  experiments, and toolkit portability studies.
+- Why it matters:
+  a full toolkit fork is fragile; a thin adapter keeps browser plumbing and
+  interaction logic separable.
+- Source evidence:
+  `Rufus31415/MixedRealityToolkit-Unity-WebXR` and
+  `Rufus31415/HPTK-Sample-WebXR`.
+- Reusable core:
+  WebXR host/session layer, Unity WebGL build profile, transparent canvas or
+  surface composition, browser-to-engine data provider, camera/hand schema,
+  coordinate conversion, session/availability confidence, editor fixtures, and
+  deprecation/migration labels.
+- Source evidence details:
+  MRTK WebXR transparent WebGL canvas, Three.js camera bridge, JSON
+  `SendMessage` transform receiver, and HPTK WebXR hand-joint provider mapping
+  SimpleWebXR joints into toolkit bones.
+- Do not copy directly:
+  abandoned full forks, hard-coded device calibration, heavy per-frame JSON
+  bridges, package-cache modifications, or Oculus-heavy sample dependencies
+  when only the provider pattern is needed.
+- Maturity:
+  useful adapter pattern; should be compared against maintained WebXR export
+  packages before implementation.
+- Best fit for `VR-apps-lab`:
+  WebXR prototypes, browser-hosted utility panels, toolkit portability notes,
+  and neutral hand/camera schema work.

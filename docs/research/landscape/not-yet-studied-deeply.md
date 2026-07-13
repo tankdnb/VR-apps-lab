@@ -3208,6 +3208,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 346. `Base-station automation follow-up across BLE target discovery, stable identifiers, dry-run previews, Home Assistant config-flow migration, ESPHome gateways, retries, permissions, and safe all-device commands`
 347. `Unity tracker/input facade follow-up across OpenVR/OpenXR provider records, stable serial schemas, calibration persistence, fake managers, no-HMD mode, UI pointer modules, and diagnostic labels`
 348. `Comfort text/compositor microtool follow-up across locomotion comfort labels, prediction dictionary provenance, keyboard focus, SteamVR settings backup/restore, overlay-app registration, and rollback UX`
+349. `Chaperone boundary safety follow-up across OpenVR/OpenXR bounds, geometry backup/diff, room map previews, controller proximity thresholds, haptic/audio/overlay cues, stale-state labels, and rollback UX`
+350. `Vendor OpenXR sensing setup follow-up across scoped registries, loader/feature toggles, permissions, gaze/plane capability probes, setup mutation audit logs, and cross-vendor fallback labels`
+351. `Pose solver/tracker pipeline follow-up across neutral body/face/hand schemas, confidence/stale metadata, OSC/WebSocket/UDP adapters, avatar binding maps, recording/session artifacts, and privacy labels`
+352. `WebXR toolkit retrofit follow-up across Unity WebGL host pages, transparent canvas layers, browser hand/camera schemas, coordinate conversion, WebXR feature gates, and maintained adapter comparisons`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

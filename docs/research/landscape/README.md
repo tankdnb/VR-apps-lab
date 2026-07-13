@@ -1903,6 +1903,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on locomotion comfort, predictive VR
   keyboards, compositor clarity patchers, and small reversible UX helpers.
 
+- `vr-projects-wave-424-openvr-chaperone-debug-boundary-safety-and-geometry-io-microtools.md`
+  Next GitHub discovery wave focused on OpenVR chaperone geometry IO, boundary
+  debug maps, controller proximity warnings, and room-safety diagnostics.
+
+- `vr-projects-wave-425-magic-leap-openxr-sensing-gaze-plane-and-setup-samples.md`
+  Next GitHub discovery wave focused on vendor OpenXR setup, Magic Leap plane
+  detection, gaze permissions, dwell interactions, and feature-gating caveats.
+
+- `vr-projects-wave-426-mocap-pose-solving-avatar-tracking-and-research-recording-donors.md`
+  Next GitHub discovery wave focused on mocap pipelines, pose solvers, avatar
+  binding, tracker sidecars, WebXR/UDP forwarding, and recording sessions.
+
+- `vr-projects-wave-427-webxr-toolkit-retrofit-bridges-for-mrtk-and-hptk.md`
+  Next GitHub discovery wave focused on Unity WebGL/WebXR toolkit retrofits,
+  transparent canvas composition, camera bridges, and WebXR hand data providers.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
