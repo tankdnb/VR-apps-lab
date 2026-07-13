@@ -17,6 +17,28 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 460-463
+
+- `OpenXR mixed-reality sample bring-up and runtime diagnostics`
+  add sample-bring-up coverage around runtime/plugin version labels, display
+  opacity/render/depth mode, head/hand tracking state, visible Unity logs,
+  feature-specific sample scenes, passthrough setup, manifest checks, build
+  scripts, and device/version caveats.
+- `Browser VR locomotion and nav-mesh components`
+  add locomotion coverage around target/reference rig split, axis input,
+  snap/smooth turning, nav-mesh movement approval, fall policies, velocity
+  contributors, teleport markers, and comfort fade/vignette helpers.
+- `VR whiteboard drawing and collaborative canvas tools`
+  add whiteboard coverage around UV-to-canvas texture painting, room-based
+  realtime draw/erase events, Yjs document schemas, z-order, text/connectors,
+  image uploads, persistence, physical-board detection, and hand-tracked board
+  creation.
+- `WebXR classroom and educational scene kits`
+  add education-scene coverage around routeable lessons, saved scene state,
+  loader queues, exercise win/lose conditions, feedback panels, physics
+  sandboxes, embedded 3D viewers, classroom assets, and lesson/provenance
+  caveats.
+
 ## Current additions from Waves 456-459
 
 - `BIM/IFC viewer kernels for spatial review tools`

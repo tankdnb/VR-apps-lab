@@ -484,6 +484,14 @@ If you need recent examples instead of the full chronology, start with:
 
 - `landscape/vr-projects-wave-459-webxr-hmd-display-test-and-controller-diagnostics-tools.md`
 
+- `landscape/vr-projects-wave-460-openxr-mixed-reality-sample-bringup-and-runtime-diagnostics.md`
+
+- `landscape/vr-projects-wave-461-browser-vr-locomotion-and-navmesh-components.md`
+
+- `landscape/vr-projects-wave-462-vr-whiteboard-drawing-and-collaborative-canvas-tools.md`
+
+- `landscape/vr-projects-wave-463-webxr-classroom-and-educational-scene-kits.md`
+
 ## Archive Navigation
 
 Use these when you need the full historical record rather than the short

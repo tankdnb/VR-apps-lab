@@ -2059,6 +2059,24 @@ Use these files when you want to understand:
   controller compatibility panels, diagnostic hotspots, JSON scene artifacts,
   and report caveats.
 
+- `vr-projects-wave-460-openxr-mixed-reality-sample-bringup-and-runtime-diagnostics.md`
+  Next GitHub discovery wave focused on OpenXR/MR sample bring-up, runtime
+  labels, logs, feature scenes, passthrough setup, and version/device caveats.
+
+- `vr-projects-wave-461-browser-vr-locomotion-and-navmesh-components.md`
+  Next GitHub discovery wave focused on browser VR locomotion, nav meshes,
+  turning, gravity/fall policy, teleport markers, and comfort helpers.
+
+- `vr-projects-wave-462-vr-whiteboard-drawing-and-collaborative-canvas-tools.md`
+  Next GitHub discovery wave focused on VR/WebXR whiteboards, texture painting,
+  realtime rooms, Yjs board schemas, persistence, and hand/physical board
+  references.
+
+- `vr-projects-wave-463-webxr-classroom-and-educational-scene-kits.md`
+  Next GitHub discovery wave focused on WebXR classrooms, routeable lessons,
+  exercise components, physics sandboxes, embedded 3D content, and asset
+  provenance.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

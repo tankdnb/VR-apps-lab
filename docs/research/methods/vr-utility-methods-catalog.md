@@ -22005,3 +22005,96 @@ When a new utility idea appears:
 - Maturity:
   strong diagnostics direction; needs explicit schema and report artifact
   definition.
+
+## Method 905: OpenXR feature bring-up cockpit
+
+- What it is:
+  a sample/debug shell that makes runtime, plugin, display, tracking, logs,
+  device support, and feature-scene state visible while bringing up OpenXR/MR
+  capabilities.
+- Good for:
+  runtime diagnostics, mixed-reality samples, passthrough setup, hand/eye/camera
+  feature probes, anchors, remoting, ARFoundation/OpenXR compatibility, and
+  operator-facing troubleshooting.
+- Source evidence:
+  `microsoft/OpenXR-Unity-MixedReality-Samples` and
+  `olir/mr-openxr-unity-meta-passthrough-sample`.
+- Reusable core:
+  feature matrix, sample scene registry, runtime/plugin version label, display
+  mode label, tracking-state label, log panel, setup version matrix, manifest
+  check, build/deploy scripts, test artifacts, and feature caveats.
+- Do not copy directly:
+  vendor sample assets, Git LFS bulk, generated artifacts, build scripts,
+  trademark/docs wording, or version recommendations without date labels.
+- Maturity:
+  strong diagnostic pattern; needs provider-neutral feature matrix.
+
+## Method 906: Browser XR locomotion policy layer
+
+- What it is:
+  an explicit movement policy layer that separates input, rig motion, reference
+  orientation, nav-mesh approval, turning, gravity/fall behavior, teleport, and
+  comfort visuals.
+- Good for:
+  WebXR utilities, browser VR labs, A-Frame tools, educational scenes,
+  headsetless demos, comfort-sensitive movement, and navigation prototypes.
+- Source evidence:
+  `mrxz/aframe-locomotion`, `msub2/aframe-vr-character-controller`,
+  `disasteroftheuniverse/SuperQuest`, and prior teleport/comfort overlap.
+- Reusable core:
+  rig target, reference orientation, motion input adapter, rotation input
+  adapter, nav-mesh strategy, fall policy, velocity contributors, teleport
+  marker, comfort fade/vignette, post-motion hooks, and motion events.
+- Do not copy directly:
+  old controller event names, hard-coded selectors, universal comfort defaults,
+  or locomotion without explicit user settings and accessibility labels.
+- Maturity:
+  useful browser-XR substrate; needs modern WebXR input-profile mapping.
+
+## Method 907: Collaborative spatial whiteboard substrate
+
+- What it is:
+  a shared board/canvas/document substrate that lets desktop, mobile, and VR
+  clients create, sync, persist, and render strokes, text, connectors, images,
+  and board operations.
+- Good for:
+  collaboration tools, meeting utilities, classroom boards, design review,
+  annotation surfaces, training rooms, and in-headset planning tools.
+- Source evidence:
+  `marlon360/whiteboard-vr`, `donth77/komuboard`,
+  `MarekMarchlewicz/Painting`, `Zuehlke/SharedWhiteboard`,
+  `alpercanberk/Handtracking-Whiteboard-Oculus`, and `Haczar/InfiniteWBVR`.
+- Reusable core:
+  room id, board object schema, z-order, stroke points, text/connectors/images,
+  brush settings, eraser/clear-all, UV/ray mapping, local/remote replay,
+  presence, persistence, corrupt-state policy, upload limits, and accessibility
+  checks.
+- Do not copy directly:
+  unauthenticated realtime rooms, raw Socket.IO schemas, bundled assets,
+  provider-specific worker hosting, or physical-board calibration assumptions.
+- Maturity:
+  high-value product method; needs a provider-neutral board document schema.
+
+## Method 908: Browser XR lesson scene pack
+
+- What it is:
+  a routeable collection of educational XR scenes with loader state, saved scene
+  state, exercises, feedback panels, embedded content, and asset provenance.
+- Good for:
+  classrooms, tutorials, demos, onboarding labs, physics sandboxes, model
+  explainers, small training utilities, and WebXR curriculum tools.
+- Source evidence:
+  `Utopiah/WebXR_edu_components`,
+  `Group-47-Capstone-2019/Immersive-Web-VR-AR`,
+  `ManishRShetty/classroom-webxr`,
+  `RuiqingCHEN/webxr-interactive-classroom`,
+  `elinsprojects/AnimalClassroom-WebXR`, and `disasteroftheuniverse/SuperQuest`.
+- Reusable core:
+  route map, scene base class, loader queue, saved scene state, welcome/loading
+  UI, instruction panels, exercise conditions, feedback state, asset manifest,
+  embedded model viewer, controller adapter, and lesson export hooks.
+- Do not copy directly:
+  course assets, external model ids, bundled vendor libraries, rough global
+  state, or lesson claims without scoring/export schemas.
+- Maturity:
+  useful education/product pattern; needs asset manifest and lesson schema.

@@ -1469,3 +1469,23 @@ bet everything on unsupported vendor passthrough paths.
   WebXR HMD test and controller diagnostics tools with portable pattern JSON,
   scene collections, controller visualizers, diagnostic hotspots, report
   artifacts, and display-quality caveats.
+
+- `vr-projects-wave-460-openxr-mixed-reality-sample-bringup-and-runtime-diagnostics.md`
+  OpenXR/MR sample bring-up with runtime/plugin/display/tracking labels, visible
+  logs, feature scenes, passthrough setup, manifest checks, build scripts, and
+  version/device caveats.
+
+- `vr-projects-wave-461-browser-vr-locomotion-and-navmesh-components.md`
+  Browser VR locomotion components with target/reference rig split, axis input,
+  nav-mesh approval, fall policies, snap/smooth turning, teleport markers, and
+  comfort helpers.
+
+- `vr-projects-wave-462-vr-whiteboard-drawing-and-collaborative-canvas-tools.md`
+  VR whiteboard and collaborative canvas tools with UV texture painting, room
+  sync, Yjs schemas, persistence, physical-board detection, and hand-tracked
+  board references.
+
+- `vr-projects-wave-463-webxr-classroom-and-educational-scene-kits.md`
+  WebXR classroom kits with routeable lessons, saved scene state, exercise
+  conditions, loader queues, physics sandboxes, embedded 3D content, and asset
+  provenance caveats.

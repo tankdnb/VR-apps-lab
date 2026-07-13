@@ -3244,6 +3244,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 382. `A-Frame/WebXR microcomponent follow-up across modern input profiles, pointer/button/menu event schemas, controller-attached menu accessibility, phone/peripheral adapters, camera transform comfort limits, and fallback labels`
 383. `Quest operator sidecar follow-up across ADB transport state, mDNS discovery, privileged-setting safety gates, dry-run command catalogs, rollback/disable actions, dependency provenance, and accessibility automation alternatives`
 384. `Portable WebXR HMD test scene follow-up across pattern JSON schema, scene collections, controller compatibility panels, report artifacts, device/date labels, display-quality caveats, and reproducible sharing paths`
+385. `OpenXR feature bring-up follow-up across feature matrices, runtime/plugin/display labels, tracking state, visible log panels, manifest checks, remoting/passthrough gates, build artifacts, and version/date labels`
+386. `Browser XR locomotion follow-up across input profile mapping, nav-mesh strategies, fall policy, teleport marker UX, snap/smooth turn settings, comfort fades/vignettes, and accessibility labels`
+387. `Collaborative spatial whiteboard follow-up across Yjs/Socket schemas, board object models, UV/ray/hand input mapping, room lifecycle, persistence/corrupt-state policy, upload limits, undo/redo, and privacy/rate-limit gates`
+388. `Browser XR lesson scene pack follow-up across route maps, scene base classes, saved state, exercise schemas, scoring/export, embedded content permissions, asset manifests, and provenance labels`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

@@ -5876,6 +5876,54 @@ Primary docs:
 - `DIDSR/WebXR-tools` - `Studied in Wave 459 as FDA/OSEL WebXR HMD image-quality pattern creator with A-Frame/Three.js scenes, JSON pattern/collection import-export, TCA and compatibility tools, controller visualizers, and regulatory-claim caveats`
 - `inplayo-com/aframe-interactive-areas` - `Cross-listed from Waves 457/459 as small A-Frame interaction-zone sample useful for diagnostic hotspots, audio instructions, and declarative scene annotations`
 
+## 431. OpenXR mixed-reality sample bring-up and runtime diagnostics
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-460-openxr-mixed-reality-sample-bringup-and-runtime-diagnostics.md`
+- `../landscape/project-families.md`
+
+- `microsoft/OpenXR-Unity-MixedReality-Samples` - `Studied in Wave 460 as OpenXR/MR Unity sample suite with feature scenes, runtime/plugin/display/tracking labels, Unity log panel, hand/eye/camera/ARFoundation/remoting/anchor samples, Git LFS caveats, and version matrix`
+- `olir/mr-openxr-unity-meta-passthrough-sample` - `Deepened in Wave 460 as Quest OpenXR passthrough sample with OpenXR settings, manifest verification, build/sideload scripts, test artifacts, passthrough safety notes, and device-scope caveats`
+
+## 432. Browser VR locomotion and nav-mesh components
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-461-browser-vr-locomotion-and-navmesh-components.md`
+- `../landscape/project-families.md`
+
+- `mrxz/aframe-locomotion` - `Studied in Wave 461 as typed A-Frame locomotion package with locomotion/nav-mesh systems, smooth locomotion, snap/smooth turn, gravity, fall policies, nav-mesh strategies, fades/vignettes, and comfort caveats`
+- `msub2/aframe-vr-character-controller` - `Studied in Wave 461 as compact A-Frame character controller with head-relative movement, snap/smooth turning, primitive mappings, grab/control bundling, and hard-coded selector caveats`
+- `disasteroftheuniverse/SuperQuest` - `Studied in Waves 461/463 as Quest A-Frame helper kit with teleporter controls, haptics, hands, lite physics, portals/extras, and old-A-Frame caveats`
+
+## 433. VR whiteboard drawing and collaborative canvas tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-462-vr-whiteboard-drawing-and-collaborative-canvas-tools.md`
+- `../landscape/project-families.md`
+
+- `marlon360/whiteboard-vr` - `Studied in Wave 462 as WebXR collaborative whiteboard with canvas texture painting, raycaster UV strokes, Socket.IO room draw/erase events, color/size/eraser controls, desktop/touch fallback, and old dependency caveats`
+- `donth77/komuboard` - `Studied in Wave 462 as realtime collaborative board with Yjs object/order schema, stroke/text/connector/stamp/image records, room id sanitizer, persistence/corrupt-doc policy, upload limits, a11y tests, and provider caveats`
+- `MarekMarchlewicz/Painting` - `Studied in Wave 462 as Unity VR whiteboard painting prototype with board materials, paint texture, shader-on-top hints, preview artifacts, and Unity asset caveats`
+- `Zuehlke/SharedWhiteboard` - `Studied in Wave 462 as HoloLens/WebApp shared whiteboard with physical-board detection, rectangle/corner/dark-area extraction, session service tests, and calibration caveats`
+- `alpercanberk/Handtracking-Whiteboard-Oculus` - `Studied in Wave 462 as Quest hand-tracking whiteboard reference with Unity/XR project structure and follow-up needed for hand input scripts`
+- `Haczar/InfiniteWBVR` - `Lightly studied in Wave 462 as SteamVR infinite whiteboard concept with legacy Unity/SteamVR project structure and broad follow-up caveats`
+
+## 434. WebXR classroom and educational scene kits
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-463-webxr-classroom-and-educational-scene-kits.md`
+- `../landscape/project-families.md`
+
+- `Utopiah/WebXR_edu_components` - `Studied in Wave 463 as tiny A-Frame exercise component with win/lose conditions, timer, color matching, instruction/feedback text, click sources, and rough-global-state caveats`
+- `Group-47-Capstone-2019/Immersive-Web-VR-AR` - `Studied in Wave 463 as WebXR classroom scene pack with route-to-scene map, saved scene state, loader queue, welcome/loading UI, physics sandbox, guide text, and course-asset caveats`
+- `ManishRShetty/classroom-webxr` - `Studied in Wave 463 as Next.js classroom shell with Sketchfab embed, XR iframe permissions, container/deploy shape, and external-model caveats`
+- `RuiqingCHEN/webxr-interactive-classroom` - `Studied in Wave 463 as Three.js classroom environment with VRButton, controller models, GLTF/video/audio assets, spatial media, and bundled-library caveats`
+- `elinsprojects/AnimalClassroom-WebXR` - `Studied in Wave 463 as WebXR animal classroom scene with Three.js/VRButton assets, educational theme, and asset provenance caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

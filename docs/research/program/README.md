@@ -3259,3 +3259,30 @@ repeatable way.
 
 - `github-research-wave-459-backlog.md`
   Executed backlog for the Wave 459 pass.
+
+- `github-research-wave-460-plan.md`
+  Wave 460 research plan focused on OpenXR mixed-reality sample bring-up and
+  runtime diagnostics.
+
+- `github-research-wave-460-backlog.md`
+  Executed backlog for the Wave 460 pass.
+
+- `github-research-wave-461-plan.md`
+  Wave 461 research plan focused on browser VR locomotion and nav-mesh
+  components.
+
+- `github-research-wave-461-backlog.md`
+  Executed backlog for the Wave 461 pass.
+
+- `github-research-wave-462-plan.md`
+  Wave 462 research plan focused on VR whiteboard drawing and collaborative
+  canvas tools.
+
+- `github-research-wave-462-backlog.md`
+  Executed backlog for the Wave 462 pass.
+
+- `github-research-wave-463-plan.md`
+  Wave 463 research plan focused on WebXR classroom and educational scene kits.
+
+- `github-research-wave-463-backlog.md`
+  Executed backlog for the Wave 463 pass.

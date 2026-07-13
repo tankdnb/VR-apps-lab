@@ -12808,6 +12808,81 @@ and reproducible report artifacts.
 This family matters because display/input QA should be portable, schema-backed,
 and reproducible instead of locked to one engine build.
 
+## Family 439: OpenXR mixed-reality sample bring-up and diagnostics
+
+This family covers Unity/OpenXR sample suites, runtime labels, visible logs,
+feature scenes, passthrough setup, remoting, anchors, ARFoundation compatibility,
+manifest checks, and build/deploy helper boundaries.
+
+| Project | Status | Notes |
+|---|---|---|
+| `microsoft/OpenXR-Unity-MixedReality-Samples` | Studied in Wave 460 | Official OpenXR/MR sample suite with runtime/plugin/display/tracking labels, log panel, feature scenes, and version matrix |
+| `olir/mr-openxr-unity-meta-passthrough-sample` | Deepened in Wave 460 | Quest OpenXR passthrough sample with settings, scripts, manifest verification, and device-scope caveats |
+
+### Consolidation note
+
+This family matters because XR utilities need visible bring-up state before
+users can trust feature-specific behavior.
+
+## Family 440: Browser XR locomotion policy components
+
+This family covers browser VR locomotion, smooth movement, snap/smooth turns,
+nav-mesh constraints, fall policy, teleport markers, comfort fades, and
+controller-axis adapters.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mrxz/aframe-locomotion` | Studied in Wave 461 | Typed locomotion/nav-mesh package with systems, movement components, strategies, gravity, fades, and vignettes |
+| `msub2/aframe-vr-character-controller` | Studied in Wave 461 | Compact character controller with head-relative movement and snap/smooth turning |
+| `disasteroftheuniverse/SuperQuest` | Studied in Wave 461 | Quest helper kit with teleporter controls, shared marker, two-hand UI handling, haptics, and hands |
+| `c-frame/aframe-cursor-teleport` | Existing overlap reference | Earlier cursor teleport fallback already studied |
+
+### Consolidation note
+
+This family matters because locomotion should be a configurable policy layer,
+not scattered controller event code.
+
+## Family 441: Collaborative spatial whiteboards and board documents
+
+This family covers VR/WebXR/Unity whiteboards, texture painting, room sync,
+Yjs/canvas schemas, persistence, physical-board detection, hand-tracked board
+creation, and infinite board concepts.
+
+| Project | Status | Notes |
+|---|---|---|
+| `marlon360/whiteboard-vr` | Studied in Wave 462 | WebXR collaborative whiteboard with UV canvas painting, Socket.IO draw/erase rooms, and desktop/touch fallback |
+| `donth77/komuboard` | Studied in Wave 462 | Realtime board with Yjs schema, order array, object types, persistence, uploads, and accessibility tests |
+| `MarekMarchlewicz/Painting` | Studied in Wave 462 | Unity VR board painting prototype with board texture/material references |
+| `Zuehlke/SharedWhiteboard` | Studied in Wave 462 | HoloLens/WebApp shared board with physical-board detection and session service tests |
+| `alpercanberk/Handtracking-Whiteboard-Oculus` | Studied in Wave 462 | Quest hand-tracking whiteboard reference |
+| `Haczar/InfiniteWBVR` | Lightly studied in Wave 462 | SteamVR infinite whiteboard concept |
+| `SimonCzy/Whiteboard-UnityXR` | Existing overlap reference | Earlier Oculus/Photon/Meta Avatar whiteboard studied in Wave 362 |
+
+### Consolidation note
+
+This family matters because a strong whiteboard tool needs a shared document
+schema, not just a paint-on-texture trick.
+
+## Family 442: WebXR classroom and lesson scene kits
+
+This family covers WebXR educational scene packs, lesson routing, saved scene
+state, exercise components, feedback panels, embedded model viewers, physics
+sandboxes, and classroom asset provenance.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Utopiah/WebXR_edu_components` | Studied in Wave 463 | Tiny A-Frame exercise component with win/lose/timer/feedback conditions |
+| `Group-47-Capstone-2019/Immersive-Web-VR-AR` | Studied in Wave 463 | WebXR physics classroom app with router, scene state, loader, and kinematics/planets/laser/pendulum scenes |
+| `ManishRShetty/classroom-webxr` | Studied in Wave 463 | Next.js classroom shell with Sketchfab XR iframe embed |
+| `RuiqingCHEN/webxr-interactive-classroom` | Studied in Wave 463 | Three.js classroom environment with VRButton, controller models, GLTF/video/audio assets |
+| `elinsprojects/AnimalClassroom-WebXR` | Studied in Wave 463 | WebXR animal classroom scene and asset bundle |
+| `disasteroftheuniverse/SuperQuest` | Cross-wave reference | Quest/A-Frame helper kit useful for education scenes |
+
+### Consolidation note
+
+This family matters because educational XR is most reusable when lessons are
+routeable, stateful, asset-provenance aware, and validation-ready.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.
