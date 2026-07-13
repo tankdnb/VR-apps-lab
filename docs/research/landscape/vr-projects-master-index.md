@@ -231,6 +231,10 @@ This file complements:
 - `vr-projects-wave-220-world-locking-spatial-coordinate-stabilization-and-anchor-sharing.md`
 - `vr-projects-wave-221-vendor-openxr-extension-stacks-feature-wrappers-and-sample-matrices.md`
 - `vr-projects-wave-222-cockpit-hand-clicking-calibration-observer-and-passthrough-microhelpers.md`
+- `vr-projects-wave-408-spatial-ui-widgets-layouts-and-input-neutral-panels.md`
+- `vr-projects-wave-409-webview-browser-panel-bridges-and-texture-backed-web-surfaces.md`
+- `vr-projects-wave-410-cloudxr-immersive-streaming-runtime-and-client-adapters.md`
+- `vr-projects-wave-411-vr-capture-remote-mocap-and-live-production-helpers.md`
 - `vr-projects-wave-223-xr-creator-cad-ui-workbenches-and-legacy-unity-interaction-donors.md`
 - `vr-projects-wave-224-xr-research-data-lifecycle-templates-validation-and-analysis-pipelines.md`
 - `vr-projects-wave-225-webrtc-webxr-remote-surfaces-camera-streams-and-spatial-panels.md`

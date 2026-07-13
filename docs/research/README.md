@@ -61,6 +61,10 @@ Use this path if you want useful context without reopening the whole archive:
 
 If you need recent examples instead of the full chronology, start with:
 
+- `landscape/vr-projects-wave-408-spatial-ui-widgets-layouts-and-input-neutral-panels.md`
+- `landscape/vr-projects-wave-409-webview-browser-panel-bridges-and-texture-backed-web-surfaces.md`
+- `landscape/vr-projects-wave-410-cloudxr-immersive-streaming-runtime-and-client-adapters.md`
+- `landscape/vr-projects-wave-411-vr-capture-remote-mocap-and-live-production-helpers.md`
 - `landscape/vr-projects-wave-64-openxr-sample-apps-rendering-baselines-and-bring-up-references.md`
 - `landscape/vr-projects-wave-67-openvr-tracking-export-recording-and-robotics-bridge-tooling.md`
 - `landscape/vr-projects-wave-68-vmt-adapters-osc-action-compilers-and-skeletal-validation-utilities.md`

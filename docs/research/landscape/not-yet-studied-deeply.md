@@ -3192,6 +3192,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 330. `VR math learning follow-up across custom question schemas, spatial object mappers, correctness validators, teacher analytics exports, WebXR geometry controls, and data-board performance`
 331. `Anatomy learning object follow-up across part registries, label metadata, slice/volume controls, snap tolerances, reset flows, asset provenance, and clinical caveat labels`
 332. `VR museum guide analytics follow-up across exhibit manifests, room/gaze IDs, dwell thresholds, RAG prompt enrichment, STT/TTS adapters, survey/log schemas, consent, retention, and curator reports`
+333. `Input-neutral spatial UI panel follow-up across layout schemas, widget state, ray/hand/collider/synthetic mouse adapters, feedback payloads, focus, and accessibility alternatives`
+334. `VR WebView surface follow-up across native overlay versus texture-backed ownership, JavaScript bridge schemas, keyboard/focus rules, permissions, file/download flows, and Android/WebView2 adapters`
+335. `CloudXR streaming client follow-up across device profiles, tracking uplink, frame/audio downlink, pairing identity, opaque data channels, reconnect/pause state, and stream metrics`
+336. `Creator capture and live mocap follow-up across Quest recorder commands, spectator camera layers, actor/prop/face frame schemas, command APIs, media pull, licensing, and vendor-adapter boundaries`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

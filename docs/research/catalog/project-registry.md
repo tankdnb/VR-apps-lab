@@ -5297,6 +5297,54 @@ Primary docs:
 - `christian-acuna/react-vr-museum` - `Studied in Wave 407 as a React/Web museum shell with art-object, collection, session, user-collection, search, token, and profile/client architecture`
 - `VIRTUE-DBIS/vre-mixnhack19` - `Studied in Wave 407 as a data-driven WebVR exhibition reference with database/server/Cineast media-query configuration and manifest follow-up`
 
+## 379. Spatial UI widgets layouts and input-neutral panels
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-408-spatial-ui-widgets-layouts-and-input-neutral-panels.md`
+- `../landscape/project-families.md`
+
+- `artflow-vr/vr-ui` - `Studied in Wave 408 as Three.js spatial UI layout/widget framework with Object3D input registration, grid/linear layouts, view primitives, and discontinued-project caveats`
+- `csiro-scientific-computing/vr-ui` - `Studied in Wave 408 as Unity VR UI toolkit with interaction surfaces, interaction volumes, collider/rigidbody affordances, haptics, sliders, radial dials, and SteamVR-era caveats`
+- `MT-ZD/Godot-3D-VR-UI` - `Studied in Wave 408 as Godot SubViewport-to-3D-panel bridge with Area3D/RayCast3D hit conversion and synthetic mouse events`
+- `Squareys/magnum-vr-ui` - `Studied in Wave 408 as native C++ Magnum UI/Oculus/Leap reference for widget planes and hand/pointer adaptation`
+
+## 380. WebView browser panel bridges and texture-backed web surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-409-webview-browser-panel-bridges-and-texture-backed-web-surfaces.md`
+- `../landscape/project-families.md`
+
+- `gree/unity-webview` - `Studied in Wave 409 as cross-platform Unity WebView wrapper with callbacks, native overlay lifecycle, WebView2 texture notes, and 3D-surface caveats`
+- `umetaman/UnityWebView2` - `Studied in Wave 409 as minimal Unity/Windows WebView2 bridge with RectTransform-to-native-bound synchronization`
+- `olegmrzv/UnityWebViewInEditor` - `Studied in Wave 409 as Unity Editor WebView/JavaScript bridge using hidden editor APIs and script-object callbacks`
+- `t-34400/UnityWebViewLib` - `Studied in Wave 409 as Android texture-backed WebView bridge for Unity with frame bytes, synthetic touch input, JavaScript bridge, and lifecycle manager`
+
+## 381. CloudXR immersive streaming runtime and client adapters
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-410-cloudxr-immersive-streaming-runtime-and-client-adapters.md`
+- `../landscape/project-families.md`
+
+- `NVIDIA/cloudxr-lovr-sample` - `Studied in Wave 410 as LÖVR CloudXR runtime plugin with pre-OpenXR service startup, opaque data channels, audio streaming, device profiles, and runtime adapter caveats`
+- `NVIDIA/cloudxr-js-samples` - `Studied in Wave 410 as WebXR/WebRTC CloudXR browser client with device profiles, tracking uplink, streamed video rendering, and connection-state UI`
+- `picoxr/OpenXR_CloudXR_Client_Demo` - `Studied in Wave 410 as PICO OpenXR CloudXR client with tracking-state assembly, framebuffer latch/blit/release, pause/resume, and stream metrics`
+- `apple/StreamingSession` - `Studied in Wave 410 as Apple visionOS/iOS remote streaming session reference with pairing, mDNS/TCP/QR identity, CloudXR launch, and framework boundary caveats`
+
+## 382. VR capture remote mocap and live production helpers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-411-vr-capture-remote-mocap-and-live-production-helpers.md`
+- `../landscape/project-families.md`
+
+- `GregMadison/quest-capture-remote` - `Studied in Wave 411 as Android/Compose Quest capture companion using wireless ADB, capture presets, internal recorder service commands, capture listing, and MP4 pull flow`
+- `LIV/BoneworksLIV` - `Studied in Wave 411 as MelonLoader LIV mixed-reality capture integration with spectator camera prefab, layer masks, player visibility, audio capture, and game-specific mod caveats`
+- `pnmocap/Neuron_Mocap_Live_Unity` - `Studied in Wave 411 as Axis Studio/Perception Neuron Unity live-link bridge with TCP/UDP sessions, actor/tracker model, skeleton branching, and Animator/Transform/Rigidbody targets`
+- `Rokoko/rokoko-studio-live-unity` - `Studied in Wave 411 as Rokoko Studio Unity live plugin with UDP JSON v3 frames, actors, props, face blendshapes, prefab pooling, and Command API controls`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

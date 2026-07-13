@@ -17,6 +17,29 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 408-411
+
+- `Spatial UI widgets, layouts, and input-neutral panels`
+  add panel-substrate coverage around Three.js layout widgets, Unity
+  interaction surfaces/volumes, Godot SubViewport-to-quad panels, native C++
+  widget planes, hit regions, focus, feedback payloads, and input adapters for
+  ray, hand, collider, synthetic mouse, or native pointer sources.
+- `WebView/browser panel bridges and texture-backed web surfaces`
+  add browser-surface coverage around native WebView lifecycle, WebView2
+  rectangle synchronization, Unity Editor JavaScript callbacks, Android
+  frame-byte texture paths, synthetic touch injection, permissions, focus,
+  keyboard ownership, and native-overlay versus in-world-surface caveats.
+- `CloudXR immersive streaming runtime and client adapters`
+  add remote-rendering coverage around pre-OpenXR runtime startup, service
+  lifecycle, device profiles, WebXR/WebRTC clients, tracking uplink,
+  framebuffer latch/blit/release, stream metrics, opaque data channels,
+  pairing identity, and reconnect/pause state.
+- `VR capture remote, mocap, and live production helpers`
+  add creator-tool coverage around Quest wireless-ADB capture presets, recorder
+  service commands, media pull, LIV spectator/MR camera layers, Neuron
+  TCP/UDP actor/tracker sessions, Rokoko JSON live frames, face blendshapes,
+  Command API controls, and vendor/license boundaries.
+
 ## Current additions from Waves 404-407
 
 - `VR physics interaction, grab joints, and hand templates`

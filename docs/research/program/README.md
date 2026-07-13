@@ -62,6 +62,20 @@ repeatable way.
 - `github-research-wave-8-backlog.md`  
   Fully executed backlog for the same wave.
 
+- `github-research-wave-408-plan.md` / `github-research-wave-408-backlog.md`
+  Executed wave for spatial UI widgets, layouts, and input-neutral panels.
+
+- `github-research-wave-409-plan.md` / `github-research-wave-409-backlog.md`
+  Executed wave for WebView/browser panel bridges and texture-backed web
+  surfaces.
+
+- `github-research-wave-410-plan.md` / `github-research-wave-410-backlog.md`
+  Executed wave for CloudXR immersive streaming runtime and client adapters.
+
+- `github-research-wave-411-plan.md` / `github-research-wave-411-backlog.md`
+  Executed wave for VR capture remotes, mocap live-link bridges, and live
+  production helpers.
+
 - `github-research-wave-9-plan.md`  
   Follow-up GitHub research wave centered on runtime intelligence, overlay
   hosts, dashboard micro-utilities, and dev helpers.

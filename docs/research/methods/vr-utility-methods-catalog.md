@@ -20433,3 +20433,132 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   AI-guided exhibit utilities, gaze/room analytics, journey reports, and
   reusable museum/gallery shells.
+
+## Method 853: Input-neutral spatial UI panel grammar
+
+- What it is:
+  define a VR panel as layout, widget state, hit regions, command events, and
+  feedback payloads, then bind ray, hand, collider, synthetic mouse, or native
+  pointer adapters separately.
+- Good for:
+  settings panels, overlay menus, diagnostic dashboards, spatial workbenches,
+  in-world forms, education tools, and browser/viewport panels.
+- Why it matters:
+  VR utilities should not rewrite UI every time the input source changes.
+- Source evidence:
+  `artflow-vr/vr-ui`, `csiro-scientific-computing/vr-ui`,
+  `MT-ZD/Godot-3D-VR-UI`, and `Squareys/magnum-vr-ui`.
+- Reusable core:
+  panel root, layout schema, widget records, hit target IDs, focus state,
+  command event bus, hover/active/release state, feedback payloads, and input
+  adapters for rays, contact surfaces, SubViewport coordinates, or native
+  widget pointers.
+- Source evidence details:
+  Three.js `GridLayout`/view classes, Unity `InteractionSurface` state payloads,
+  Godot `SubViewport` synthetic mouse bridge, and Magnum native widget plane.
+- Do not copy directly:
+  discontinued packages, old SteamVR/Oculus/Leap dependencies, or hidden
+  coordinate conversions that make focus/debugging opaque.
+- Maturity:
+  strong cross-engine pattern; needs a small neutral schema before prototyping.
+- Best fit for `VR-apps-lab`:
+  reusable overlay/menu primitives and engine-neutral utility panels.
+
+## Method 854: Texture-backed WebView panel bridge with synthetic input
+
+- What it is:
+  render native/browser web content into a texture or frame buffer and drive it
+  with synthetic touch, mouse, keyboard, and JavaScript callback channels.
+- Good for:
+  dashboards, logs, help panels, OAuth/pairing screens, device setup pages,
+  local documentation browsers, media controls, and remote admin surfaces.
+- Why it matters:
+  Web UI can be the fastest way to build rich VR utility panels, but native
+  overlay ownership and true in-world texture ownership must be separated.
+- Source evidence:
+  `gree/unity-webview`, `umetaman/UnityWebView2`,
+  `olegmrzv/UnityWebViewInEditor`, and `t-34400/UnityWebViewLib`.
+- Reusable core:
+  browser lifecycle facade, URL/HTML load, JS evaluate/callback bridge,
+  native/texture placement, frame update budget, touch/mouse/key injection,
+  focus/keyboard ownership, permissions, file/download handling, and platform
+  adapter.
+- Source evidence details:
+  `WebViewObject` callback/lifecycle matrix, WebView2 P/Invoke rectangle sync,
+  Unity Editor `DefineScriptObject`, and Android `WebViewUnityBridge` frame/touch
+  APIs.
+- Do not copy directly:
+  native mobile overlays as if they were 3D panels, fragile hidden editor APIs,
+  WebView permission defaults, or platform-specific browser ownership.
+- Maturity:
+  practical donor pattern; Android and Windows variants need adapter boundaries.
+- Best fit for `VR-apps-lab`:
+  browser-backed overlay utilities, settings panels, and local docs/debug views.
+
+## Method 855: CloudXR remote rendering client lifecycle and device profile
+
+- What it is:
+  model remote XR streaming as profile selection, runtime/session startup,
+  tracking uplink, frame/audio downlink, pairing/security, metrics, and
+  reconnect/pause state.
+- Good for:
+  remote-rendering clients, headset diagnostics, streamed operator tools,
+  browser/WebXR endpoints, CloudXR adapters, and low-latency visualization
+  surfaces.
+- Why it matters:
+  streaming utilities fail when they hide connection state, device assumptions,
+  or frame delivery metrics.
+- Source evidence:
+  `NVIDIA/cloudxr-lovr-sample`, `NVIDIA/cloudxr-js-samples`,
+  `picoxr/OpenXR_CloudXR_Client_Demo`, and `apple/StreamingSession`.
+- Reusable core:
+  device profile, capability check, runtime/service bootstrap, signaling/pairing
+  identity, tracking packet builder, video/audio receiver, framebuffer lifecycle,
+  opaque data channel, pause/resume, reconnect state, and diagnostics counters.
+- Source evidence details:
+  CloudXR LÖVR runtime manager, JavaScript device profiles and session loop,
+  PICO `cloudXRClient.cpp` tracking/frame/metrics flow, and Apple
+  StreamingSession pairing/session readiness notes.
+- Do not copy directly:
+  vendor SDK binaries, runtime replacement assumptions, hard-coded server
+  addresses, or security identity as an invisible implementation detail.
+- Maturity:
+  strong system pattern; needs neutral profile and diagnostics schemas.
+- Best fit for `VR-apps-lab`:
+  remote VR client references, stream health dashboards, and operator tools.
+
+## Method 856: Creator capture control plane and live mocap bridge
+
+- What it is:
+  expose capture, spectator camera, mocap actor, prop, face, recording, and
+  calibration controls as a bounded operator surface while isolating vendor
+  commands behind adapters.
+- Good for:
+  Quest capture companions, mixed-reality spectator tools, live mocap previews,
+  streamer utilities, event production, calibration panels, and recording
+  dashboards.
+- Why it matters:
+  creator tools need both data receive paths and command/control paths, with
+  clear authority and user feedback.
+- Source evidence:
+  `GregMadison/quest-capture-remote`, `LIV/BoneworksLIV`,
+  `pnmocap/Neuron_Mocap_Live_Unity`, and
+  `Rokoko/rokoko-studio-live-unity`.
+- Reusable core:
+  command preset schema, device/session connection state, media list/pull,
+  spectator camera adapter, layer/visibility policy, mocap transport session,
+  actor/prop/face frame model, prefab/target binding, command API client, and
+  licensing/vendor boundary labels.
+- Source evidence details:
+  Quest ADB capture properties and recorder service flow, LIV camera/layer
+  setup, Neuron TCP/UDP actor/tracker event model, and Rokoko UDP JSON plus HTTP
+  command API.
+- Do not copy directly:
+  raw headset properties without capability checks, game-specific mod hooks,
+  vendor SDK assumptions, or LGPL/vendor code into a permissive core.
+- Maturity:
+  strong product-pattern direction; split into capture companion and live mocap
+  schema follow-ups.
+- Best fit for `VR-apps-lab`:
+  creator-facing VR utilities, capture helpers, live avatar tooling, and
+  production dashboards.

@@ -11874,6 +11874,81 @@ This family matters because exhibition utilities need both visitor-facing
 interpretation and operator-facing evidence: exhibit metadata, attention logs,
 journey narratives, chat transcripts, and consent-aware exports.
 
+## Family 387: Input-neutral spatial UI panels
+
+This family covers 3D widget systems, spatial layouts, viewport panels,
+physical/contact surfaces, ray or hand input adapters, and native widget planes.
+
+| Project | Status | Notes |
+|---|---|---|
+| `artflow-vr/vr-ui` | Studied in Wave 408 | Three.js spatial UI with layout classes, view primitives, Object3D input registration, and discontinued-project caveats |
+| `csiro-scientific-computing/vr-ui` | Studied in Wave 408 | Unity interaction surfaces/volumes with collider affordances, haptics, sliders, radial dials, and state payloads |
+| `MT-ZD/Godot-3D-VR-UI` | Studied in Wave 408 | Godot SubViewport-to-quad panel with raycast coordinate conversion and synthetic mouse input |
+| `Squareys/magnum-vr-ui` | Studied in Wave 408 | Native C++ Magnum/Oculus/Leap widget-plane reference |
+
+### Consolidation note
+
+This family matters because future overlay and utility panels should separate
+widget/layout state from input origin. Ray, hand, collider, synthetic mouse, and
+native pointer adapters should feed the same command surface.
+
+## Family 388: Browser-backed and WebView VR surfaces
+
+This family covers native WebView wrappers, WebView2 bridges, editor web panels,
+texture-backed Android browser surfaces, JavaScript callbacks, permissions,
+focus, and synthetic touch/mouse input.
+
+| Project | Status | Notes |
+|---|---|---|
+| `gree/unity-webview` | Studied in Wave 409 | Cross-platform Unity WebView wrapper with callback/lifecycle matrix and native overlay caveats |
+| `umetaman/UnityWebView2` | Studied in Wave 409 | Minimal Unity/Windows WebView2 bridge with UI rectangle synchronization |
+| `olegmrzv/UnityWebViewInEditor` | Studied in Wave 409 | Unity Editor WebView and JS callback bridge over hidden editor APIs |
+| `t-34400/UnityWebViewLib` | Studied in Wave 409 | Android texture-backed WebView bridge with frame bytes, synthetic touch, JS bridge, and lifecycle manager |
+
+### Consolidation note
+
+This family matters because web content is often the fastest path to useful VR
+dashboards, but native-overlay and true 3D texture-surface ownership have very
+different UX, focus, keyboard, and rendering constraints.
+
+## Family 389: CloudXR and immersive remote-rendering clients
+
+This family covers CloudXR runtime adapters, WebXR streaming clients, headset
+receiver apps, device profiles, pose uplink, video/audio downlink, pairing,
+metrics, and reconnect/pause state.
+
+| Project | Status | Notes |
+|---|---|---|
+| `NVIDIA/cloudxr-lovr-sample` | Studied in Wave 410 | LÖVR CloudXR plugin with pre-OpenXR runtime startup, service properties, opaque data channels, and audio streaming |
+| `NVIDIA/cloudxr-js-samples` | Studied in Wave 410 | WebXR/WebRTC CloudXR browser client with device profiles, tracking uplink, render loop, and connection settings |
+| `picoxr/OpenXR_CloudXR_Client_Demo` | Studied in Wave 410 | PICO OpenXR CloudXR client with tracking assembly, framebuffer lifecycle, pause/resume, and stream metrics |
+| `apple/StreamingSession` | Studied in Wave 410 | Apple remote streaming session reference with mDNS/TCP/QR pairing and CloudXR launch/session readiness |
+
+### Consolidation note
+
+This family matters because remote VR utility clients need an explicit
+lifecycle around profile selection, runtime/session startup, tracking uplink,
+frame delivery, diagnostics, pairing, and security identity.
+
+## Family 390: Creator capture remotes and live mocap production bridges
+
+This family covers Quest capture remotes, mixed-reality spectator camera
+injection, mocap live-link receivers, actor/prop/face mapping, media pull, and
+operator command APIs.
+
+| Project | Status | Notes |
+|---|---|---|
+| `GregMadison/quest-capture-remote` | Studied in Wave 411 | Android Quest recorder remote with wireless ADB, capture presets, internal recorder commands, and media pull |
+| `LIV/BoneworksLIV` | Studied in Wave 411 | LIV mixed-reality capture mod with spectator camera prefab, layer masks, body visibility, and audio capture |
+| `pnmocap/Neuron_Mocap_Live_Unity` | Studied in Wave 411 | Axis Studio/Perception Neuron live-link bridge with TCP/UDP sessions, actor/tracker model, and Animator/Transform/Rigidbody targets |
+| `Rokoko/rokoko-studio-live-unity` | Studied in Wave 411 | Rokoko Studio Unity live plugin with UDP JSON frames, actors, props, face blendshapes, prefab pooling, and Command API |
+
+### Consolidation note
+
+This family matters because creator utilities often combine a data receive path
+with an operator control path. The reusable part is a bounded control plane
+around capture, camera, actor, prop, face, recording, and calibration state.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

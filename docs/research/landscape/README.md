@@ -15,6 +15,23 @@ Use these files when you want to understand:
 - `vr-projects-master-index.md`  
   Broad combined index of tracked and historically added waves.
 
+- `vr-projects-wave-408-spatial-ui-widgets-layouts-and-input-neutral-panels.md`
+  GitHub research wave focused on spatial UI widgets, layout grammars,
+  SubViewport panels, contact/ray/hand input adapters, and native widget planes.
+
+- `vr-projects-wave-409-webview-browser-panel-bridges-and-texture-backed-web-surfaces.md`
+  GitHub research wave focused on browser-backed utility panels, WebView
+  lifecycle bridges, JavaScript callbacks, texture-backed frames, and synthetic
+  input.
+
+- `vr-projects-wave-410-cloudxr-immersive-streaming-runtime-and-client-adapters.md`
+  GitHub research wave focused on CloudXR/WebXR/OpenXR remote rendering
+  clients, device profiles, tracking uplink, stream metrics, and pairing.
+
+- `vr-projects-wave-411-vr-capture-remote-mocap-and-live-production-helpers.md`
+  GitHub research wave focused on Quest capture control, LIV spectator capture,
+  mocap live-link bridges, and production command APIs.
+
 - `vr-projects-foundational-waves-1-7-retro-normalization.md`
   Canonical repeat deep-pass that normalizes the foundational `waves 1-7`
   corpus to the same standard used by the later GitHub waves.
