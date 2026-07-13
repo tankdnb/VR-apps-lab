@@ -1967,6 +1967,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on modern Unity/XRI/OpenXR template baselines,
   package manifests, validation rules, sample provenance, and setup-only labels.
 
+- `vr-projects-wave-440-unity-vr-multiplayer-baselines-and-room-state-micro-loops.md`
+  Next GitHub discovery wave focused on Unity VR multiplayer baselines, LAN/cloud
+  transport choices, network avatars, room setup, and shared-object state loops.
+
+- `vr-projects-wave-441-body-face-hand-tracking-and-avatar-motion-donor-stack.md`
+  Next GitHub discovery wave focused on body/face/hand tracking, MediaPipe
+  sidecars, low-sensor avatar motion, graph runners, calibration, and retargeting.
+
+- `vr-projects-wave-442-vendor-openxr-setup-packages-and-linux-android-xr-workflows.md`
+  Next GitHub discovery wave focused on Android XR, VIVE OpenXR, Linux/Quest
+  setup workflows, feature matrices, runtime layers, and troubleshooting.
+
+- `vr-projects-wave-443-colorblind-and-visual-accessibility-filter-libraries.md`
+  Next GitHub discovery wave focused on colorblind filters, render-pipeline
+  accessibility layers, runtime profiles, persistence, and validation caveats.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

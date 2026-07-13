@@ -12443,6 +12443,80 @@ explicit labels for README-only or setup-only repos.
 This family matters because templates are only reusable when package versions,
 sample provenance, removable scope, and donor value are visible.
 
+## Family 419: Unity VR multiplayer baselines and shared state micro-loops
+
+This family covers Unity VR room/session baselines, local/remote rig splits,
+network avatar glue, LAN/cloud transport choices, and small synchronized
+interaction objects.
+
+| Project | Status | Notes |
+|---|---|---|
+| `TomH1004/unity-vr-multiplayer-fusion-convai` | Studied in Wave 440 | Fusion shared-mode bootstrapper with Ready Player Me, Final IK, XRI, optional ConvAI UI, VR/desktop fallback, and hand input facade |
+| `italovisconti/VR-Local-MP` | Studied in Wave 440 | LAN-oriented Unity VR Multiplayer Template retrofit with Netcode/Network Discovery framing and editor-side network inventory helpers |
+| `Skaper/Multiplayer-VR-ROOM` | Studied in Wave 440 | Photon PUN/XRI two-chair room with ScriptableObject room settings, custom sit anchor, network avatar, and buffered chair occupancy RPC |
+
+### Consolidation note
+
+This family matters because many VR utilities need a small collaborative session
+and a few reliable shared states, not a whole social platform.
+
+## Family 420: Tracking provider to avatar and motion pipelines
+
+This family covers vendor body/face/eye tracking, HMD/controller motion
+prediction, MediaPipe sidecars, graph runners, landmarks, calibration,
+smoothing, confidence/status labels, and retargeting boundaries.
+
+| Project | Status | Notes |
+|---|---|---|
+| `oculus-samples/Unity-Movement` | Studied in Wave 441 | Meta body/face/eye tracking package with setup validation, retargeting helpers, runtime fidelity/joint-set toggles, and vendor caveats |
+| `UPC-ViRVIG/MMVR` | Studied in Wave 441 | Low-sensor avatar motion system with HMD/controller features, projected direction prediction, calibration, motion matching, and dataset caveats |
+| `TesseraktZero/UnityHandTrackingWithMediapipe` | Studied in Wave 441 | Android MediaPipe sidecar streaming hand landmarks to Unity via ADB reverse TCP/protobuf with filtering and rig adapters |
+| `homuler/MediaPipeUnityPlugin` | Studied in Wave 441 | General MediaPipe Unity graph/task runner with image-source abstraction, asset loading, CPU/GPU mode, and packet timestamps |
+
+### Consolidation note
+
+This family matters because tracking is reusable only when provider ingress,
+normalized schema, calibration, prediction/retargeting, and diagnostics are
+separated.
+
+## Family 421: Vendor OpenXR setup packages and platform workflows
+
+This family covers Android XR, VIVE OpenXR, Linux/Quest workflows, feature
+matrices, package dependencies, setup validation, runtime/layer diagnostics,
+sample import paths, and troubleshooting matrices.
+
+| Project | Status | Notes |
+|---|---|---|
+| `android/android-xr-unity-package` | Studied in Wave 442 | Android XR Unity extension package with feature groups, sample metadata, validation workflow, extension support checks, and prerelease churn caveats |
+| `ViveSoftware/VIVE-OpenXR-Sample-Unity` | Studied in Wave 442 | VIVE OpenXR sample workflow with plugin install, feature enablement, MR/performance docs, passthrough/foveation controls, and sample import route |
+| `Stridemann/Unity-XR-on-Linux-for-Meta-Quest` | Studied in Wave 442 | Linux Quest OpenXR compatibility playbook with bionic/glibc shims, OpenXR/Vulkan layers, fake JVM, loader patch, launch script, and troubleshooting |
+
+### Consolidation note
+
+This family matters because XR setup failures are usually workflow failures:
+versions, loaders, feature toggles, runtime support, and known fixes need to be
+visible.
+
+## Family 422: Colorblind and visual accessibility filter libraries
+
+This family covers colorblind simulation/correction filters, render-pipeline
+integration, shader provenance, runtime profiles, persistence, preview scenes,
+and validation caveats for visual accessibility.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mariosubspace/colorblind-unity` | Studied in Wave 443 | Built-in image-effect simulator with test scene, material/editor controls, error mask/blink options, and linear color-space caveat |
+| `am1goo/unity-srp-colorblindness` | Studied in Wave 443 | URP renderer feature and Volume override package with eight modes, render-pass activation, and overlay UI limitation |
+| `taqu/UnityColorblind` | Studied in Wave 443 | Compact shader algorithm reference with LMS matrices, optional HCIRN path, and license/provenance warning |
+| `SOHNE/Colorblindness` | Studied in Wave 443 | Runtime URP/HDRP profile manager with PlayerPrefs persistence, hotkey cycling, async VolumeProfile loading, and scene reapply |
+| `macabrett/BrettMStory.Unity.ColorBlind` | Studied in Wave 443 | Minimal camera component simulator with enum/dropdown selector and prototype-only caveats |
+
+### Consolidation note
+
+This family matters because visual accessibility should become a reusable layer
+with settings, preview, persistence, and caveats, not a one-off shader pasted
+into a scene.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

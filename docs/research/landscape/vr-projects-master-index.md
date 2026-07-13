@@ -1380,3 +1380,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-439-modern-xri-template-and-openxr-multiplayer-setup-samples.md`
   Modern XRI template/setup samples with OpenXR/XR Hands manifests, reusable
   controls, validation rules, sample provenance, and README-only labels.
+- `vr-projects-wave-440-unity-vr-multiplayer-baselines-and-room-state-micro-loops.md`
+  Unity VR multiplayer baselines with Fusion, Netcode/LAN, Photon PUN, network
+  avatars, room config, and shared-object occupancy state.
+- `vr-projects-wave-441-body-face-hand-tracking-and-avatar-motion-donor-stack.md`
+  Body/face/hand tracking and avatar motion donors with Meta Movement, MMVR,
+  MediaPipe sidecars, graph runners, calibration, and retargeting boundaries.
+- `vr-projects-wave-442-vendor-openxr-setup-packages-and-linux-android-xr-workflows.md`
+  Vendor OpenXR setup workflows for Android XR, VIVE, and Linux/Quest with
+  feature matrices, validation, runtime layers, and troubleshooting.
+- `vr-projects-wave-443-colorblind-and-visual-accessibility-filter-libraries.md`
+  Colorblind and visual accessibility filter libraries with image effects, URP
+  renderer features, runtime profiles, shader provenance, and caveats.

@@ -21454,3 +21454,144 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   prototype scaffolding, package baseline research, interaction-template
   comparisons, and setup-reference labeling.
+
+## Method 885: VR multiplayer baseline and shared object state loop
+
+- What it is:
+  a small collaborative VR room/session baseline with explicit transport,
+  local/remote rig split, avatar/state synchronization, and synchronized
+  interaction objects.
+- Good for:
+  shared diagnostics rooms, collaborative utility panels, classroom tools,
+  synchronized calibration sessions, multiplayer prototypes, and room-state
+  microtools.
+- Why it matters:
+  many useful VR tools need just enough multiplayer to share presence and a few
+  objects; treating this as a micro-pattern avoids overbuilding a social stack.
+- Source evidence:
+  `TomH1004/unity-vr-multiplayer-fusion-convai`, `italovisconti/VR-Local-MP`,
+  and `Skaper/Multiplayer-VR-ROOM`.
+- Reusable core:
+  provider/transport label, room/session config, local/remote rig boundary,
+  avatar transform sync, shared resource state, late-join replay, disconnect
+  behavior, status UI, and offline/LAN fallback.
+- Source evidence details:
+  Fusion bootstrapper exposes room/avatar/VR setup defaults; `VR-Local-MP`
+  frames a LAN Netcode/Network Discovery retrofit and network object inventory;
+  `Multiplayer-VR-ROOM` uses a Photon buffered RPC for chair occupancy.
+- Do not copy directly:
+  provider credentials, imported template bulk, scene-specific object names, or
+  a full dependency stack when a smaller transport will do.
+- Maturity:
+  strong utility pattern; needs cross-provider comparison with Netcode, Photon,
+  Fusion, Mirror, and Normcore.
+- Best fit for `VR-apps-lab`:
+  shared VR utility prototypes, room-state experiments, collaborative debugging,
+  and networked accessibility/education tools.
+
+## Method 886: Tracking provider to avatar and motion pipeline
+
+- What it is:
+  normalize vendor tracking, external landmarks, HMD/controller samples, and
+  motion prediction into an inspectable avatar/diagnostics pipeline.
+- Good for:
+  avatar retargeting, hand/body diagnostics, low-sensor embodiment, camera
+  tracking sidecars, motion recording, and accessibility input adapters.
+- Why it matters:
+  tracking sources are fragmented; a reusable pipeline keeps provider ingress,
+  schema, calibration, confidence, prediction, and retargeting separate.
+- Source evidence:
+  `oculus-samples/Unity-Movement`, `UPC-ViRVIG/MMVR`,
+  `TesseraktZero/UnityHandTrackingWithMediapipe`, and
+  `homuler/MediaPipeUnityPlugin`.
+- Reusable core:
+  provider label, timestamped samples, confidence/status flags, landmark/body
+  schema, smoothing, calibration, resource/model readiness, retargeting boundary,
+  prediction boundary, and visible diagnostics.
+- Source evidence details:
+  Meta Movement exposes setup validation and runtime body toggles; MMVR converts
+  HMD/controller features into predicted direction/motion; TesseraktZero streams
+  MediaPipe hand landmarks through ADB reverse TCP/protobuf; homuler manages
+  MediaPipe graphs, images, packets, and resources.
+- Do not copy directly:
+  vendor SDK internals, licensed datasets, sample avatars, hard-coded sidecar
+  app names, or native plugin build systems without review.
+- Maturity:
+  high-value architecture pattern; needs a neutral provider schema.
+- Best fit for `VR-apps-lab`:
+  tracking diagnostics, avatar helpers, hand/face/body bridges, recorder tools,
+  and provider-comparison matrices.
+
+## Method 887: Vendor OpenXR setup package and platform workflow note
+
+- What it is:
+  document platform XR setup as a reproducible operator workflow with feature
+  matrix, package versions, validation route, runtime/layer diagnostics, and
+  troubleshooting.
+- Good for:
+  Android XR setup, VIVE/OpenXR samples, Meta Quest workflows, SteamVR/ALVR
+  paths, Linux editor play mode, vendor feature probes, and runtime doctors.
+- Why it matters:
+  XR failures often come from hidden setup state rather than application code;
+  operator workflows make the assumptions inspectable.
+- Source evidence:
+  `android/android-xr-unity-package`,
+  `ViveSoftware/VIVE-OpenXR-Sample-Unity`, and
+  `Stridemann/Unity-XR-on-Linux-for-Meta-Quest`.
+- Reusable core:
+  platform label, dependency snapshot, feature matrix, package import path,
+  OpenXR feature toggles, validation/fix route, extension support checks,
+  sample import route, runtime/layer inventory, environment variables, and
+  known-issue table.
+- Source evidence details:
+  Android XR package lists extension APIs and samples; VIVE sample docs show
+  plugin install, feature enablement, and passthrough/foveation controls; the
+  Linux Quest workflow documents shims, layers, loader patches, launch script,
+  and symptom-to-fix mapping.
+- Do not copy directly:
+  pre-release assumptions, vendor SDK internals, binary shims, local absolute
+  paths, or proof-of-concept claims without validation.
+- Maturity:
+  strong documentation/playbook pattern; needs a standard platform workflow
+  template.
+- Best fit for `VR-apps-lab`:
+  setup docs, runtime diagnostics, platform support matrices, and operator
+  troubleshooting tools.
+
+## Method 888: Colorblind visual accessibility filter library
+
+- What it is:
+  package visual accessibility filters as render-pipeline-aware profiles with
+  algorithm provenance, runtime settings, persistence, preview surfaces, and
+  honest caveats.
+- Good for:
+  colorblind simulation/correction, low-vision previews, accessibility settings
+  panels, contrast/filter experiments, and educational accessibility demos.
+- Why it matters:
+  accessibility filters are easy to paste as shaders but hard to trust unless
+  render pipeline, source algorithm, UI coverage, and validation status are
+  explicit.
+- Source evidence:
+  `mariosubspace/colorblind-unity`, `am1goo/unity-srp-colorblindness`,
+  `taqu/UnityColorblind`, `SOHNE/Colorblindness`, and
+  `macabrett/BrettMStory.Unity.ColorBlind`.
+- Reusable core:
+  deficiency/profile registry, simulation-versus-correction label, algorithm
+  source citation, render-pipeline boundary, runtime setting, controller/UI
+  access, persistence, preview/test content, color-space note, and validation
+  warning.
+- Source evidence details:
+  `colorblind-unity` provides image-effect controls and linear color caveat;
+  `unity-srp-colorblindness` uses URP renderer feature plus Volume override;
+  `UnityColorblind` keeps LMS math and license warnings near shader code;
+  `SOHNE/Colorblindness` persists and reapplies runtime profiles; the BrettMStory
+  component is a minimal camera/dropdown prototype.
+- Do not copy directly:
+  matrices without attribution, HCIRN code without license review, old camera
+  image effects as final XR architecture, keyboard-only toggles, or unvalidated
+  effectiveness claims.
+- Maturity:
+  practical accessibility layer pattern; needs XR stereo and UI-inclusion tests.
+- Best fit for `VR-apps-lab`:
+  visual accessibility modules, settings panels, accessibility audits, and
+  low-vision/color filter prototypes.

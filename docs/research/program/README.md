@@ -3120,3 +3120,31 @@ repeatable way.
 
 - `github-research-wave-439-backlog.md`
   Executed backlog for the Wave 439 pass.
+
+- `github-research-wave-440-plan.md`
+  Wave 440 research plan focused on Unity VR multiplayer baselines and shared
+  room-state micro-loops.
+
+- `github-research-wave-440-backlog.md`
+  Executed backlog for the Wave 440 pass.
+
+- `github-research-wave-441-plan.md`
+  Wave 441 research plan focused on body/face/hand tracking and avatar motion
+  donor stacks.
+
+- `github-research-wave-441-backlog.md`
+  Executed backlog for the Wave 441 pass.
+
+- `github-research-wave-442-plan.md`
+  Wave 442 research plan focused on vendor OpenXR setup packages and Linux/Android
+  XR workflows.
+
+- `github-research-wave-442-backlog.md`
+  Executed backlog for the Wave 442 pass.
+
+- `github-research-wave-443-plan.md`
+  Wave 443 research plan focused on colorblind and visual accessibility filter
+  libraries.
+
+- `github-research-wave-443-backlog.md`
+  Executed backlog for the Wave 443 pass.

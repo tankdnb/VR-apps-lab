@@ -5648,6 +5648,53 @@ Primary docs:
 - `Fist-Full-of-Shrimp/Shrimp-XRI-Template` - `Studied in Wave 439 as Unity 6/XRI 3.x template baseline with OpenXR/XR Hands/accessibility package manifest, template scripts, teleport/callout/knob/video controls, validation rules, and Unity-sample provenance caveats`
 - `BanQingTian/MultiPlayer_Unity_OpenXR` - `Reviewed in Wave 439 as README-only OpenXR multiplayer setup placeholder with no Assets/Packages/scripts in the inspected public tree and no code donor value`
 
+## 411. Unity VR multiplayer baselines and room-state micro-loops
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-440-unity-vr-multiplayer-baselines-and-room-state-micro-loops.md`
+- `../landscape/project-families.md`
+
+- `TomH1004/unity-vr-multiplayer-fusion-convai` - `Studied in Wave 440 as Unity VR multiplayer bootstrapper combining Photon Fusion shared mode, Ready Player Me, Final IK, XRI, optional ConvAI UI, VR/desktop fallback, hand polling, and provider-stack caveats`
+- `italovisconti/VR-Local-MP` - `Studied in Wave 440 as LAN-oriented Unity VR Multiplayer Template retrofit with Netcode/Network Discovery framing, imported template caveats, and editor-side NetworkObject/NetworkBehaviour inventory helpers`
+- `Skaper/Multiplayer-VR-ROOM` - `Studied in Wave 440 as Photon PUN/XRI two-chair room with ScriptableObject room settings, player spawning, network avatar glue, custom sit anchor, and buffered RPC chair occupancy state`
+
+## 412. Body face hand tracking and avatar motion donor stack
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-441-body-face-hand-tracking-and-avatar-motion-donor-stack.md`
+- `../landscape/project-families.md`
+
+- `oculus-samples/Unity-Movement` - `Studied in Wave 441 as Meta body/face/eye tracking package with setup validation tasks, permission/fidelity/joint-set requirements, retargeting helpers, runtime tracking toggles, and vendor-license caveats`
+- `UPC-ViRVIG/MMVR` - `Studied in Wave 441 as low-sensor avatar motion system with HMD/controller feature vectors, projected body direction, velocity smoothing, Barracuda direction prediction, height calibration, motion matching, dataset and Final IK caveats`
+- `TesseraktZero/UnityHandTrackingWithMediapipe` - `Studied in Wave 441 as Android MediaPipe hand-tracking sidecar with ADB reverse TCP/protobuf transport, landmark cache, Kalman filtering, wrist orientation, depth calibration, and hard-coded companion caveats`
+- `homuler/MediaPipeUnityPlugin` - `Studied in Wave 441 as Unity MediaPipe native plugin/graph runner with image-source abstraction, asset/resource loader, CPU/GPU fallback, timestamped packet flow, task samples, and native dependency caveats`
+
+## 413. Vendor OpenXR setup packages and Linux Android XR workflows
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-442-vendor-openxr-setup-packages-and-linux-android-xr-workflows.md`
+- `../landscape/project-families.md`
+
+- `android/android-xr-unity-package` - `Studied in Wave 442 as Android XR Unity extension package with session/tracking/meshing/passthrough/body/fine-eye/streaming/gesture features, package sample metadata, validation workflow, extension checks, and prerelease churn caveats`
+- `ViveSoftware/VIVE-OpenXR-Sample-Unity` - `Studied in Wave 442 as VIVE OpenXR sample project with plugin install flow, VIVE XR Support feature enablement, MR/performance docs, passthrough/foveation control scripts, sample import workflow, and HTC license caveats`
+- `Stridemann/Unity-XR-on-Linux-for-Meta-Quest` - `Studied in Wave 442 as Linux Quest OpenXR compatibility workflow with bionic/glibc shims, OpenXR Android-extension stripping layer, Vulkan timeline layer, fake JVM, loader patch, launch script, and troubleshooting matrix`
+
+## 414. Colorblind and visual-accessibility filter libraries
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-443-colorblind-and-visual-accessibility-filter-libraries.md`
+- `../landscape/project-families.md`
+
+- `mariosubspace/colorblind-unity` - `Studied in Wave 443 as built-in Unity image-effect colorblind simulation package with test scene, material/editor controls, error mask/blink options, linear color-space requirement, and algorithm-source caveats`
+- `am1goo/unity-srp-colorblindness` - `Studied in Wave 443 as URP renderer feature and Volume override package for eight colorblind modes with render-pass activation, package layout, MSAA/native-render-pass requirements, and overlay UI limitation`
+- `taqu/UnityColorblind` - `Studied in Wave 443 as compact portable shader reference with LMS matrices, protan/deutan/tritan modes, optional HCIRN path, and algorithm/license provenance warnings`
+- `SOHNE/Colorblindness` - `Studied in Wave 443 as runtime URP/HDRP colorblind profile manager with enum profiles, PlayerPrefs persistence, F1 cycling, async VolumeProfile resource loading, scene reapply behavior, and validation caveat`
+- `macabrett/BrettMStory.Unity.ColorBlind` - `Studied in Wave 443 as minimal camera component simulator with enum/dropdown selection, shader-folder install path, and prototype-only camera-effect caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

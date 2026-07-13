@@ -3224,6 +3224,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 362. `Accessibility visibility/playground follow-up across editor/headset review, camera alignment modes, height/scale settings, interaction knobs, checklist surfaces, and cross-wave accessibility matrix`
 363. `Inclusive simulation follow-up across wheelchair/tremor/low-vision/hearing-loss source components, condition profile registries, support UI, educational framing, consent, and caveat templates`
 364. `Modern XRI template follow-up across source-available multiplayer baselines, package manifests, input maps, hand/controller support, accessibility modules, validation rules, and sample-code provenance`
+365. `VR multiplayer baseline follow-up across Netcode, Photon, Fusion, Mirror, Normcore, LAN discovery, room/session config, network avatar schemas, shared-object occupancy, late-join state, and offline fallback`
+366. `Tracking provider pipeline follow-up across Meta Movement, MediaPipe, low-sensor avatar prediction, landmark schemas, confidence/timestamps, calibration, sidecar transports, retargeting outputs, and privacy`
+367. `Vendor OpenXR platform workflow follow-up across Android XR, VIVE, Meta Quest, SteamVR/Linux, ALVR, feature matrices, loader/layer diagnostics, validation tasks, and troubleshooting templates`
+368. `Visual accessibility filter follow-up across colorblind simulation/correction, URP/HDRP/built-in render boundaries, XR stereo modes, UI inclusion, controller settings, persistence, preview charts, and validation caveats`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

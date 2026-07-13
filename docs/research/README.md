@@ -444,6 +444,14 @@ If you need recent examples instead of the full chronology, start with:
 
 - `landscape/vr-projects-wave-439-modern-xri-template-and-openxr-multiplayer-setup-samples.md`
 
+- `landscape/vr-projects-wave-440-unity-vr-multiplayer-baselines-and-room-state-micro-loops.md`
+
+- `landscape/vr-projects-wave-441-body-face-hand-tracking-and-avatar-motion-donor-stack.md`
+
+- `landscape/vr-projects-wave-442-vendor-openxr-setup-packages-and-linux-android-xr-workflows.md`
+
+- `landscape/vr-projects-wave-443-colorblind-and-visual-accessibility-filter-libraries.md`
+
 ## Archive Navigation
 
 Use these when you need the full historical record rather than the short

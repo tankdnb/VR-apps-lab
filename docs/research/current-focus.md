@@ -17,6 +17,29 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 440-443
+
+- `Unity VR multiplayer baselines and room-state micro-loops`
+  add collaborative-utility coverage around Fusion shared-mode bootstrapping,
+  LAN/Netcode template retrofits, Photon PUN room setup, network avatar glue,
+  custom sit anchors, buffered shared-object occupancy state, and provider
+  stack caveats.
+- `Body face hand tracking and avatar motion donor stack`
+  add tracking-provider coverage around Meta body/face/eye setup validation,
+  HMD/controller motion-prediction features, MediaPipe hand landmark sidecars,
+  ADB reverse TCP/protobuf transport, graph runners, timestamps, smoothing,
+  calibration, and retargeting boundaries.
+- `Vendor OpenXR setup packages and Linux Android XR workflows`
+  add platform-workflow coverage around Android XR extension packages, VIVE
+  OpenXR sample import paths, feature matrices, validation fixes, passthrough
+  and foveation controls, Linux/Quest compatibility shims, runtime layers,
+  loader patches, and troubleshooting tables.
+- `Colorblind and visual accessibility filter libraries`
+  add visual-accessibility coverage around built-in image effects, URP renderer
+  features, Volume overrides, shader algorithm provenance, runtime profile
+  cycling, PlayerPrefs persistence, color-space/render-pipeline caveats, and
+  validation warnings.
+
 ## Current additions from Waves 436-439
 
 - `Unity coordinate calibration and Cardboard profile micro-libraries`
