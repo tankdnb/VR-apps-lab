@@ -4587,6 +4587,64 @@ Primary docs:
 - `zachdrouin/GaussianSplatViewer` - `Studied in Wave 347 as a Quest 3 Gaussian splat viewer with async binary PLY loader, Burst jobs, Gaussian data model, compute shaders, radix sort, culling, LOD/streaming managers, VR file browser, and locomotion`
 - `julienkay/LightfieldVideoUnity` - `Studied in Wave 347 as a release-only light-field video viewer concept for Quest/Rift with compiled releases and explicit Unity/proprietary playback caveats`
 
+## 319. Gaze eye analytics, saccade/fixation analysis, and XR behavior telemetry
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-348-gaze-eye-analytics-saccade-fixation-and-xr-behavior-telemetry.md`
+- `../landscape/project-families.md`
+
+- `MotorControlLearning/SaccadeVR-mobile` - `Source-light marker in Wave 348 as a mobile/Vive Pro Eye saccade study direction that reinforces protocol/detector/logging separation`
+- `pupil-labs/hmd-eyes` - `Studied in Wave 348 as a Unity/Pupil eye-tracking plug-in with network request/subscription layers, gaze/pupil listeners, calibration flow, time sync, recording, annotations, screencast, and eye-frame visualization`
+- `AndreZenner/saccade-detection` - `Studied in Wave 348 as a Vive Pro Eye online saccade/blink detector with velocity/acceleration/noise thresholds, inspector tuning, Unity events, test scenarios, and CSV logging`
+- `ViveSoftware/VRS-Studio-OpenXR` - `Studied in Wave 348 as an HTC OpenXR vendor sample bundle with eye gaze, facial/body tracking, Ultimate Tracker, spectator camera, hand interaction, and capability-gating value`
+- `Robertson-Lab/vrGazeCore-Toolbox` - `Studied in Wave 348 as a MATLAB/Python VR gaze analytics toolbox with raw-data parsing, confidence filtering, fixation detection, duration/time-segmented heatmaps, GIF outputs, and headset parameters`
+- `GossipAnalyticsXR/Gossip_Analytics_Unity-SDK` - `Studied in Wave 348 as a Unity XR analytics SDK with auto tracker deployment, heatmaps, eye/hand/controller/session/device/performance trackers, environment keys, build checks, and uninstall tooling`
+
+## 320. Rehabilitation biofeedback olfactory and vestibular training prototypes
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-349-rehabilitation-biofeedback-olfactory-and-vestibular-training-prototypes.md`
+- `../landscape/project-families.md`
+
+- `praggam/REVIRE` - `Partially studied in Wave 349 as a Quest rehabilitation prototype with recording folders and LSL script evidence; queued for deeper session/telemetry inspection`
+- `vladyslav-tsalko/REMIRE` - `Partially studied in Wave 349 as a Quest rehabilitation app marker with APK/docs/source layout and follow-up value for exercise flow and logging`
+- `omarrayyann/A-Fine-Day` - `Studied in Wave 349 as a stroke rehab minigame suite with Oculus Rift, Ultraleap hand tracking, Whack-A-Mole/Baskets exercises, calibration, menu delay UX, velocity/acceleration graphs, and therapist progress framing`
+- `aneall/NeuroScent` - `Studied in Wave 349 as a multimodal mental-wellbeing/biofeedback VR concept combining OpenBCI Galea, Varjo Aero, Project Nebula-style olfactory output, and scent/vision/biosignal setup notes`
+- `soheilbr82/Mind-Controlled-Virtual-Car` - `Studied in Wave 349 as a Unity virtual car controlled by EEG/MATLAB signals using SSVEP direction selection, SMR move/stop gating, asynchronous command transport, and multi-camera feedback`
+- `JDGuldager/AR-and-VR-Application-for-Vestibular-Dysfunction-in-Elderly` - `Studied in Wave 349 as a Quest 3 vestibular rehab prototype with foot-mounted controllers, frog/lily-pad stepping guidance, VR versus passthrough AR modes, difficulty timing/distance, and safety/user-acceptance evaluation`
+
+## 321. XR robotics teleoperation hand pose streaming and operator datasets
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-350-xr-robotics-teleoperation-hand-pose-streaming-and-operator-datasets.md`
+- `../landscape/project-families.md`
+
+- `arghyasur1991/synth-vr` - `Studied in Wave 350 as a Quest MR humanoid/robot package with Meta Building Blocks validation, hand-tracked MuJoCo bodies, MRUK room colliders, passthrough rendering, scene wizard, performance manager, lighting estimation, and permission checks`
+- `unitreerobotics/xr_teleoperate` - `Studied in Wave 350 as a Unitree XR teleoperation framework with AVP/PICO/Quest support, Vuer/WebRTC/HTTPS setup, hand/controller modes, robot/end-effector selection, simulation/physical deployment, recording, IPC, and safety notes`
+- `Improbable-AI/VisionProTeleop` - `Studied in Wave 350 as a Vision Pro robotics ecosystem with hand/head streaming, video/audio/simulation return streams, MuJoCo/Isaac AR scene streaming, egocentric dataset recording, cloud sync, calibration, and companion app`
+- `XR-Robotics/XRoboToolkit-Unity-Client-Quest` - `Studied in Wave 350 as a Quest Unity teleoperation client with network/tracking/video/recording/log UI, pose channel toggles, A-button pause, remote stereo vision, data collection, JNI/Android video plugin, and QoS split`
+- `GeneralTrajectory/dex-teleop` - `Studied in Wave 350 as a VR dexterous teleoperation stack with Vive Tracker to xArm, Quest hand tracking to Inspire hands, bimanual support, HDF5 synchronized recording, workspace limits, collision checks, and smooth re-engagement`
+- `h2r/GHOST` - `Studied in Wave 350 as a Unity/Quest half of a Spot teleoperation system with immersive point-cloud visualization, gesture controls, URDF via ROSBridge, and ros_reality dependency`
+- `wengmister/quest-wrist-tracker` - `Studied in Wave 350 as a Quest hand/wrist telemetry app with 21 landmarks, 6DoF wrist pose, UDP/TCP streaming, in-headset configuration, HUD/logs, phantom hand visualization, video streaming, and Python SDK`
+
+## 322. Multisensory hardware feedback, olfactory, thermal, vibration, and drag haptics
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-351-multisensory-hardware-feedback-olfactory-thermal-vibration-and-drag-haptics.md`
+- `../landscape/project-families.md`
+
+- `mimuc/RoboThermalHaptics` - `Studied in Wave 351 as an encountered-type thermal haptic display with Kinova cobot, Vive Pro Eye, Ultraleap, VR/robot calibration, and Cobity dependency`
+- `Ultimatonium/sensoricFramework` - `Studied in Wave 351 as a Unity multisensory sender/receiver/device framework for tactile, thermal, olfactory, bHaptics, Cilia, ThermoReal, manager singleton, modifiers, and Doxygen docs`
+- `egekaraca/Multisensory-VR-Gardens` - `Source-light marker in Wave 351 as a multisensory garden/therapy direction pending richer source evidence`
+- `CUXR/Olfactory-Display` - `Studied in Wave 351 as a scent-generating hardware reference with PCB/Gerber/parts list around Seeed XIAO Sense, MOSFETs, atomizers, converter, headers, and batteries`
+- `jdthamores/BioEssence` - `Studied in Wave 351 as a physio-olfactory wearable display with cardio-respiratory sensing, up to three simultaneous scents, PCB/electronics/case/Android app framing, and clinical research positioning`
+- `amarqu88/Multisensory-Proximity-and-Transition-Cues` - `Studied in Wave 351 as a VR/AR limited-FOV awareness study with visual/audio/tactile proximity and transition cues, Steam Audio, extOSC, Raspberry Pi vibration setup, and study logging`
+- `AndreZenner/dragon` - `Studied in Wave 351 as Drag:on, a DIY VR controller with air-resistance and weight-shift haptics, Arduino firmware, Unity serial package, circuit, 3D-print files, Vive Tracker alignment, and patent caveat`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

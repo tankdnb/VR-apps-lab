@@ -1577,6 +1577,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on NeRF, Gaussian splat, and light-field
   VR viewer shells.
 
+- `vr-projects-wave-348-gaze-eye-analytics-saccade-fixation-and-xr-behavior-telemetry.md`
+  Next GitHub discovery wave focused on gaze analytics, saccade/fixation
+  processing, XR behavior telemetry, and privacy-aware heatmaps.
+
+- `vr-projects-wave-349-rehabilitation-biofeedback-olfactory-and-vestibular-training-prototypes.md`
+  Next GitHub discovery wave focused on rehab task loops, biofeedback, scent,
+  BCI control, vestibular stepping, and therapist progress artifacts.
+
+- `vr-projects-wave-350-xr-robotics-teleoperation-hand-pose-streaming-and-operator-datasets.md`
+  Next GitHub discovery wave focused on headset robot operator cockpits,
+  hand/head streams, video downlinks, safety state, and dataset recording.
+
+- `vr-projects-wave-351-multisensory-hardware-feedback-olfactory-thermal-vibration-and-drag-haptics.md`
+  Next GitHub discovery wave focused on multisensory hardware output routers
+  for scent, thermal, vibration, drag, and robotic haptics.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

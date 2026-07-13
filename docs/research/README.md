@@ -343,6 +343,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-345-cad-bim-industrial-xr-and-training-workflows.md`
 - `landscape/vr-projects-wave-346-accessibility-low-vision-audio-haptics-and-sign-language-vr-tools.md`
 - `landscape/vr-projects-wave-347-nerf-gaussian-splat-and-light-field-vr-viewers.md`
+- `landscape/vr-projects-wave-348-gaze-eye-analytics-saccade-fixation-and-xr-behavior-telemetry.md`
+- `landscape/vr-projects-wave-349-rehabilitation-biofeedback-olfactory-and-vestibular-training-prototypes.md`
+- `landscape/vr-projects-wave-350-xr-robotics-teleoperation-hand-pose-streaming-and-operator-datasets.md`
+- `landscape/vr-projects-wave-351-multisensory-hardware-feedback-olfactory-thermal-vibration-and-drag-haptics.md`
 
 ## Archive Navigation
 

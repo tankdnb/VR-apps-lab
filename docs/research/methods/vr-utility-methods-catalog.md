@@ -18315,3 +18315,179 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   spatial media viewers, splat/NeRF browser shells, projection-aware viewer
   comparisons, and performance/capability diagnostics.
+
+## Method 793: XR gaze analytics boundary
+
+- What it is:
+  gaze-oriented VR utilities should separate eye-provider ingress,
+  calibration, confidence filtering, online events, offline analysis, product
+  analytics, and privacy policy.
+- Good for:
+  gaze diagnostics, attention heatmaps, saccade/blink triggers, study
+  pipelines, UX analytics, eye-tracking overlays, and privacy-aware telemetry
+  dashboards.
+- Why it matters:
+  gaze is both technically noisy and privacy-sensitive; reusable tools need a
+  normalized boundary before gaze signals are used for UX or analytics.
+- Source evidence:
+  `pupil-labs/hmd-eyes`, `AndreZenner/saccade-detection`,
+  `ViveSoftware/VRS-Studio-OpenXR`, `Robertson-Lab/vrGazeCore-Toolbox`,
+  `GossipAnalyticsXR/Gossip_Analytics_Unity-SDK`, and
+  `MotorControlLearning/SaccadeVR-mobile`.
+- Reusable core:
+  provider adapter, calibration controller, confidence/mapping-context filter,
+  gaze ray/fixation/event schema, saccade/blink detector, timestamp converter,
+  recorder and annotation channel, offline fixation/heatmap batch job, tracker
+  registry, play-area metadata, capability labels, consent and retention
+  policy, and dashboard/export adapter.
+- Source evidence details:
+  Wave 348 includes hmd-eyes' request/subscription/listener layers,
+  saccade-detection's thresholded events and logging, vrGazeCore's
+  fixation/heatmap outputs, VRS Studio's OpenXR/vendor capability bundle, and
+  Gossip's auto tracker/heatmap instrumentation.
+- Do not copy directly:
+  raw gaze uploads without consent, production screenshot capture without
+  explicit policy, fixed thresholds, hidden hosted-dashboard lock-in,
+  vendor-only APIs without fallback, or calibration state that cannot be
+  inspected.
+- Strong references:
+  `pupil-labs/hmd-eyes` for live provider/calibration boundaries,
+  `Robertson-Lab/vrGazeCore-Toolbox` for offline analysis, and
+  `GossipAnalyticsXR/Gossip_Analytics_Unity-SDK` for instrumentation UX.
+- Maturity:
+  strong reusable method with privacy and device-support caveats.
+- Best fit for `VR-apps-lab`:
+  gaze diagnostics, XR analytics helpers, study tooling, attention heatmaps,
+  and event-driven gaze interaction prototypes.
+
+## Method 794: rehabilitation biofeedback task loop
+
+- What it is:
+  rehabilitation and biofeedback experiences should be organized around a
+  calibrated task loop that guides a user, collects body/biosignal data,
+  adapts difficulty, and produces progress artifacts.
+- Good for:
+  stroke rehab games, vestibular stepping tasks, biofeedback scenes, BCI
+  training, therapist dashboards, scent-assisted wellbeing tools, and
+  exercise-study prototypes.
+- Why it matters:
+  therapy-oriented VR can be motivating, but without explicit calibration,
+  logging, safety, and claim boundaries it is not reusable or trustworthy.
+- Source evidence:
+  `omarrayyann/A-Fine-Day`, `JDGuldager/AR-and-VR-Application-for-Vestibular-Dysfunction-in-Elderly`,
+  `aneall/NeuroScent`, `soheilbr82/Mind-Controlled-Virtual-Car`,
+  `praggam/REVIRE`, and `vladyslav-tsalko/REMIRE`.
+- Reusable core:
+  patient/profile setup, hardware capability check, calibration warm-up, task
+  definition, difficulty parameters, body/hand/foot/biosignal ingress,
+  decoder/gating logic, motivational feedback, progress graph, session log,
+  therapist summary, safety mode, consent, and clinical caveat label.
+- Source evidence details:
+  Wave 349 includes A Fine Day's hand-motion graphs and menu delay UX,
+  VRStepulake's foot-controller stepping and VR/AR safety comparison,
+  NeuroScent's biosignal-to-scent/vision framing, and Mind-Controlled Virtual
+  Car's EEG-gated Unity command loop.
+- Do not copy directly:
+  unsupported clinical efficacy claims, fixed difficulty ramps, unsafe
+  foot-mounted hardware assumptions, raw biosignal capture without consent,
+  proprietary SDK requirements without fallback, or accidental menu activation
+  after UI spawn.
+- Strong references:
+  `omarrayyann/A-Fine-Day` for patient progress artifacts and
+  `JDGuldager/AR-and-VR-Application-for-Vestibular-Dysfunction-in-Elderly` for
+  safety-oriented AR/VR modality comparison.
+- Maturity:
+  useful product-method branch; production work needs clinical validation and
+  data-governance design.
+- Best fit for `VR-apps-lab`:
+  rehab utilities, study scaffolds, biofeedback prototypes, therapist review
+  surfaces, and safe adaptive-training loops.
+
+## Method 795: XR robotics operator cockpit
+
+- What it is:
+  headset-driven robot operation should split headset tracking, operator UI,
+  video/simulation feedback, robot adapters, safety state, recording, and
+  replay/export into independent modules.
+- Good for:
+  robot teleoperation, hand-pose streaming, mixed-reality simulation control,
+  remote robot video panels, imitation-learning data capture, and safety-gated
+  operator HUDs.
+- Why it matters:
+  robot teleoperation is latency-sensitive and physically risky; the VR side
+  should never bypass explicit safety and transport boundaries.
+- Source evidence:
+  `arghyasur1991/synth-vr`, `unitreerobotics/xr_teleoperate`,
+  `Improbable-AI/VisionProTeleop`, `XR-Robotics/XRoboToolkit-Unity-Client-Quest`,
+  `GeneralTrajectory/dex-teleop`, `h2r/GHOST`, and
+  `wengmister/quest-wrist-tracker`.
+- Reusable core:
+  headset capability profile, tracking channel selectors, hand/controller/head
+  packet schema, video source descriptor, WebRTC/UDP/TCP/DDS/ROSBridge
+  transport adapters, robot/end-effector profile, simulator/physical mode
+  switch, safety state machine, emergency pause, recording metadata, operator
+  HUD, calibration/alignment tools, and replay/export path.
+- Source evidence details:
+  Wave 350 includes XRoboToolkit's operator panel toggles, xr_teleoperate's
+  robot/end-effector and simulation/physical modes, VisionProTeleop's
+  bidirectional tracking/video/simulation streams, dex-teleop's HDF5 recorder
+  and safety gates, and quest-wrist-tracker's standalone hand telemetry app.
+- Do not copy directly:
+  live robot execution defaults, hardcoded lab IP/certificate assumptions,
+  robot commands without dry-run, proprietary camera permissions without
+  fallback, cloud recording without explicit ownership, or teleop flows without
+  visible pause/stop state.
+- Strong references:
+  `XR-Robotics/XRoboToolkit-Unity-Client-Quest` for operator UI,
+  `Improbable-AI/VisionProTeleop` for bidirectional AVP streaming, and
+  `GeneralTrajectory/dex-teleop` for safety-gated recording.
+- Maturity:
+  strong reusable method but high-risk; needs safety-first defaults before any
+  runnable prototype.
+- Best fit for `VR-apps-lab`:
+  headset telemetry micro-utilities, robot video surfaces, operator dashboards,
+  dry-run teleop labs, and dataset-capture tooling.
+
+## Method 796: multisensory output router
+
+- What it is:
+  VR scenes should emit semantic sensory events that route through capability,
+  safety, intensity, and device adapters before reaching scent, thermal,
+  tactile, drag, or robotic haptic hardware.
+- Good for:
+  olfactory displays, thermal feedback, tactile/vibration cues, bHaptics/Cilia
+  bridges, drag/air-resistance controllers, accessibility cues, and rehab or
+  training multisensory feedback.
+- Why it matters:
+  physical sensory output is powerful but device-specific and safety-sensitive;
+  scene logic should not hardcode hardware commands.
+- Source evidence:
+  `Ultimatonium/sensoricFramework`, `AndreZenner/dragon`,
+  `amarqu88/Multisensory-Proximity-and-Transition-Cues`,
+  `mimuc/RoboThermalHaptics`, `CUXR/Olfactory-Display`,
+  `jdthamores/BioEssence`, and `egekaraca/Multisensory-VR-Gardens`.
+- Reusable core:
+  sensory event schema, sender/source component, receiver/body target,
+  modifier/intensity stack, capability manifest, device adapter, transport
+  adapter, calibration state, latency/cooldown limits, safety stop, consent and
+  onboarding UI, fallback cue, and logging channel.
+- Source evidence details:
+  Wave 351 includes sensoricFramework's manager/sender/receiver/device split,
+  Drag:on hardware/Arduino/Unity serial/tracker alignment, Multisensory
+  Proximity's visual/audio/tactile cue taxonomy with OSC vibration, BioEssence
+  and Olfactory-Display scent hardware references, and RoboThermalHaptics'
+  robot/thermal encounter constraints.
+- Do not copy directly:
+  patented mechanisms for commercial use, unbounded thermal or scent exposure,
+  robot movement without safety zones, hardcoded Raspberry Pi IPs, proprietary
+  plugins without fallback, or sensory output without consent and emergency
+  disable.
+- Strong references:
+  `Ultimatonium/sensoricFramework` for event routing and `AndreZenner/dragon`
+  for hardware/software split.
+- Maturity:
+  strong abstraction candidate; individual device adapters need safety and
+  hardware validation.
+- Best fit for `VR-apps-lab`:
+  multisensory utility prototypes, accessibility cues, rehab feedback,
+  hardware-output bridges, and capability-labeled physical feedback labs.

@@ -3131,6 +3131,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 270. `CAD/BIM XR round-trip follow-up across object IDs, metadata CSV/JSON schemas, edit logs, coordinate/unit conversion, transaction apply-back, rollback, and LLM safety`
 271. `VR accessibility/sign-language follow-up across magnifier shaders, audio/haptic cue routing, hand-pose schemas, gesture sequence matching, validation thresholds, consent, and capability fallbacks`
 272. `Neural spatial media viewer follow-up across NeRF native plug-ins, external textures, PLY/splat loaders, GPU sorting/culling, file browsers, LOD, and light-field playback caveats`
+273. `XR gaze analytics follow-up across Pupil/OpenXR/Vive providers, calibration state, confidence/mapping context, online saccade events, offline fixation heatmaps, tracker registries, and privacy-aware dashboards`
+274. `Rehabilitation biofeedback follow-up across patient profiles, hardware capability checks, calibration, difficulty schemas, hand/foot/biosignal ingress, progress graphs, therapist summaries, and clinical caveat labels`
+275. `XR robotics operator cockpit follow-up across hand/head/controller packet schemas, video downlinks, WebRTC/UDP/TCP/DDS/ROSBridge adapters, robot safety state, recording metadata, and replay/export`
+276. `Multisensory output router follow-up across sender/receiver/device abstractions, scent/thermal/vibration/drag adapters, intensity/cooldown limits, calibration, consent, and emergency disable`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

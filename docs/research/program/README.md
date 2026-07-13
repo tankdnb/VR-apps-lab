@@ -2462,3 +2462,31 @@ repeatable way.
 
 - `github-research-wave-347-backlog.md`
   Executed backlog for the Wave 347 pass.
+
+- `github-research-wave-348-plan.md`
+  Wave 348 research plan focused on gaze analytics, saccade/fixation
+  processing, and XR behavior telemetry.
+
+- `github-research-wave-348-backlog.md`
+  Executed backlog for the Wave 348 pass.
+
+- `github-research-wave-349-plan.md`
+  Wave 349 research plan focused on rehabilitation, biofeedback, olfactory, and
+  vestibular training prototypes.
+
+- `github-research-wave-349-backlog.md`
+  Executed backlog for the Wave 349 pass.
+
+- `github-research-wave-350-plan.md`
+  Wave 350 research plan focused on XR robotics teleoperation, hand/pose
+  streaming, and operator datasets.
+
+- `github-research-wave-350-backlog.md`
+  Executed backlog for the Wave 350 pass.
+
+- `github-research-wave-351-plan.md`
+  Wave 351 research plan focused on multisensory hardware feedback across
+  olfactory, thermal, vibration, and drag haptics.
+
+- `github-research-wave-351-backlog.md`
+  Executed backlog for the Wave 351 pass.

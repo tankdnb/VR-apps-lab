@@ -1262,6 +1262,31 @@ Besides new research waves, the main repository-maintenance work now is:
 - reduce archive pressure in front-door docs;
 - preserve wave history without making every entry document chronological.
 
+## Current additions from Waves 348-351
+
+Recent research adds four useful donor clusters:
+
+- `XR gaze analytics boundaries`
+  from hmd-eyes, saccade-detection, VRS-Studio-OpenXR, vrGazeCore, and
+  Gossip Analytics: provider adapters, calibration controllers, confidence
+  filtering, online saccade/blink events, timestamp conversion, recording,
+  offline fixation/heatmap generation, tracker registries, and privacy gates.
+- `rehabilitation and biofeedback task loops`
+  from A Fine Day, NeuroScent, Mind-Controlled Virtual Car, VRStepulake,
+  REVIRE, and REMIRE: calibration, hand/foot/biosignal ingress, adaptive
+  difficulty, motion graphs, therapist progress artifacts, modality safety,
+  and clinical caveat labels.
+- `XR robotics operator cockpits`
+  from synth-vr, xr_teleoperate, VisionProTeleop, XRoboToolkit Quest,
+  dex-teleop, GHOST, and quest-wrist-tracker: hand/head/controller streams,
+  video/simulation feedback, robot/end-effector profiles, safety state,
+  operator HUDs, and dataset recording.
+- `multisensory hardware output routers`
+  from RoboThermalHaptics, sensoricFramework, Olfactory-Display, BioEssence,
+  Multisensory Proximity and Transition Cues, Drag:on, and Multisensory VR
+  Gardens: semantic event routing to scent, thermal, tactile, drag, and
+  robotic hardware with device adapters, cooldowns, consent, and safety stops.
+
 ## Current additions from Waves 344-347
 
 Recent research adds four useful donor clusters:

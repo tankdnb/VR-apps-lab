@@ -10771,6 +10771,98 @@ navigation, capability, and performance shells even when the renderer changes.
 It suggests a branch around a generic spatial-media descriptor and pluggable
 NeRF/splat/light-field/panoramic render adapters.
 
+## Family 327: Gaze eye analytics and XR behavior telemetry
+
+This family covers live eye-tracker ingress, calibration, saccade/blink events,
+offline fixation analysis, heatmaps, and product analytics. The reusable lesson
+is to separate provider APIs, confidence filtering, event detection, local
+analysis, hosted dashboards, and privacy gates.
+
+| Project | Status | Notes |
+|---|---|---|
+| `MotorControlLearning/SaccadeVR-mobile` | Source-light marker in Wave 348 | Saccade study direction that reinforces protocol/detector/logging separation |
+| `pupil-labs/hmd-eyes` | Studied in Wave 348 | Unity/Pupil network plug-in with request/subscription layers, calibration, gaze/pupil listeners, time sync, recording, annotations, screencast, and eye-frame display |
+| `AndreZenner/saccade-detection` | Studied in Wave 348 | Vive Pro Eye saccade/blink detector with threshold tuning, events, test scenarios, logging, and replay/simulation hooks |
+| `ViveSoftware/VRS-Studio-OpenXR` | Studied in Wave 348 | HTC OpenXR sample bundle with eye gaze plus facial/body tracking, Ultimate Tracker, spectator camera, and hand interaction |
+| `Robertson-Lab/vrGazeCore-Toolbox` | Studied in Wave 348 | MATLAB/Python fixation and heatmap pipeline with confidence/headset parameters and time-segmented outputs |
+| `GossipAnalyticsXR/Gossip_Analytics_Unity-SDK` | Studied in Wave 348 | Unity XR analytics package with auto trackers, heatmaps, device/session/performance trackers, settings, build checks, and uninstall flow |
+
+### Consolidation note
+
+This family matters because gaze telemetry can easily become privacy-sensitive
+and vendor-locked. It suggests a branch around normalized gaze events, local
+recording, offline heatmaps, UX diagnostics, and explicit consent/capability
+labels.
+
+## Family 328: Rehabilitation biofeedback and vestibular training loops
+
+This family covers therapy-oriented VR/MR prototypes where body motion,
+feet/controllers, EEG/biosignals, scent, and game tasks become progress and
+training artifacts. The reusable lesson is the patient-task loop: calibrate,
+guide, adapt, log, review, and keep claims bounded.
+
+| Project | Status | Notes |
+|---|---|---|
+| `praggam/REVIRE` | Partially studied in Wave 349 | Quest rehab prototype with recording and LSL clues; queued for session/telemetry follow-up |
+| `vladyslav-tsalko/REMIRE` | Partially studied in Wave 349 | Quest rehab app marker with APK/docs/source layout and exercise/logging follow-up value |
+| `omarrayyann/A-Fine-Day` | Studied in Wave 349 | Stroke rehab minigames with Ultraleap, calibration, menu delay, motion graphs, and therapist progress framing |
+| `aneall/NeuroScent` | Studied in Wave 349 | Multimodal biofeedback concept with OpenBCI Galea, Varjo Aero, scent output, and mental-wellbeing framing |
+| `soheilbr82/Mind-Controlled-Virtual-Car` | Studied in Wave 349 | EEG/MATLAB-to-Unity control with SSVEP direction selection, SMR gating, command transport, and visual feedback |
+| `JDGuldager/AR-and-VR-Application-for-Vestibular-Dysfunction-in-Elderly` | Studied in Wave 349 | Quest 3 vestibular rehab with foot-mounted controllers, frog/lily-pad stepping, VR/AR comparison, difficulty control, and safety evaluation |
+
+### Consolidation note
+
+This family matters because rehab tools need therapist-visible progress and
+safety constraints, not only engaging scenes. It suggests reusable schemas for
+calibration, difficulty, signal capture, progress graphs, and modality safety.
+
+## Family 329: XR robotics operator cockpits and hand-pose streams
+
+This family covers headset-driven robot operation across hand/head/controller
+uplink, video/simulation downlink, robot adapters, safety gates, and
+demonstration recording. The reusable lesson is that headset apps, transport,
+robot SDKs, and recording pipelines should remain separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `arghyasur1991/synth-vr` | Studied in Wave 350 | Quest MR humanoid package with hand-tracked MuJoCo bodies, MRUK colliders, passthrough, scene wizard, performance and permissions |
+| `unitreerobotics/xr_teleoperate` | Studied in Wave 350 | Unitree AVP/PICO/Quest teleop framework with Vuer/WebRTC, robot/end-effector modes, simulation/physical deployment, recording, IPC, and safety |
+| `Improbable-AI/VisionProTeleop` | Studied in Wave 350 | AVP hand/head streaming, video/audio/simulation return streams, MuJoCo/Isaac AR scenes, egocentric recording, cloud sync, and calibration |
+| `XR-Robotics/XRoboToolkit-Unity-Client-Quest` | Studied in Wave 350 | Quest operator UI with network/tracking/video/recording/log controls, pause toggle, remote stereo vision, JNI/Android video plugin, and QoS split |
+| `GeneralTrajectory/dex-teleop` | Studied in Wave 350 | Vive/Quest to xArm/Inspire teleop with bimanual support, HDF5 recording, workspace limits, collisions, and smooth re-engagement |
+| `h2r/GHOST` | Studied in Wave 350 | Quest/Unity Spot teleop half with point-cloud visualization, gesture controls, URDF via ROSBridge, and ros_reality dependency |
+| `wengmister/quest-wrist-tracker` | Studied in Wave 350 | Quest hand/wrist streaming appliance with 21 landmarks, 6DoF wrist pose, UDP/TCP, HUD/logs, video streaming, and Python SDK |
+
+### Consolidation note
+
+This family matters because robot operation is high-risk and latency-sensitive.
+It suggests product branches around headset telemetry appliances, operator HUDs,
+video panels, dry-run defaults, safety state machines, and dataset recorders.
+
+## Family 330: Multisensory hardware feedback and output routers
+
+This family covers VR/MR systems that route semantic scene events to scent,
+thermal, tactile, drag/air-resistance, and robotic haptic hardware. The
+reusable lesson is to keep event semantics, body targets, modifiers, device
+adapters, safety limits, and consent separate.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mimuc/RoboThermalHaptics` | Studied in Wave 351 | Encountered-type thermal display with Kinova cobot, Vive Pro Eye, Ultraleap, VR/robot calibration, and Cobity dependency |
+| `Ultimatonium/sensoricFramework` | Studied in Wave 351 | Unity sender/receiver/device framework for tactile, thermal, olfactory, bHaptics, Cilia, ThermoReal, manager singleton, and modifiers |
+| `egekaraca/Multisensory-VR-Gardens` | Source-light marker in Wave 351 | Garden/therapy multisensory direction pending richer source evidence |
+| `CUXR/Olfactory-Display` | Studied in Wave 351 | PCB/BOM scent display reference with XIAO Sense, MOSFETs, atomizers, converter, headers, batteries, and Gerbers |
+| `jdthamores/BioEssence` | Studied in Wave 351 | Physio-olfactory wearable with cardio-respiratory sensing, three-scent output, electronics/case/app framing, and research positioning |
+| `amarqu88/Multisensory-Proximity-and-Transition-Cues` | Studied in Wave 351 | Limited-FOV awareness study with visual/audio/tactile proximity and transition cues, Steam Audio, extOSC, Raspberry Pi vibration, and logs |
+| `AndreZenner/dragon` | Studied in Wave 351 | Drag:on DIY controller with air-resistance/weight-shift haptics, Arduino, Unity serial package, circuit, 3D prints, tracker alignment, and patent caveat |
+
+### Consolidation note
+
+This family matters because physical feedback can be immersive and risky at
+the same time. It suggests a reusable sensory event router with capability
+labels, intensity/cooldown limits, device health, fallback cues, and explicit
+consent.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

@@ -1147,3 +1147,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-347-nerf-gaussian-splat-and-light-field-vr-viewers.md`
   NeRF native texture handoff, Quest splat viewers, GPU sorting/culling, VR
   file browsers, and light-field playback caveats.
+- `vr-projects-wave-348-gaze-eye-analytics-saccade-fixation-and-xr-behavior-telemetry.md`
+  gaze provider adapters, calibration, saccade/blink events, fixation
+  heatmaps, tracker registries, and analytics/privacy boundaries.
+- `vr-projects-wave-349-rehabilitation-biofeedback-olfactory-and-vestibular-training-prototypes.md`
+  rehab calibration, hand/foot/biosignal ingress, adaptive difficulty,
+  progress graphs, scent output, BCI control, and safety/caveat labels.
+- `vr-projects-wave-350-xr-robotics-teleoperation-hand-pose-streaming-and-operator-datasets.md`
+  headset operator cockpits, hand/head/controller streaming, video/simulation
+  downlinks, robot safety state, and dataset recording.
+- `vr-projects-wave-351-multisensory-hardware-feedback-olfactory-thermal-vibration-and-drag-haptics.md`
+  semantic sensory event routing to olfactory, thermal, tactile, drag, and
+  robotic hardware with consent and safety gates.
