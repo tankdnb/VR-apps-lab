@@ -4762,6 +4762,51 @@ Primary docs:
 - `ticahere/VIRD-demo` - `Partially studied in Wave 359 as a movement/training demo marker for future sensor, rehab, or drill-loop inspection`
 - `oculus-samples/Unity-UltimateGloveBall` - `Studied in Wave 359 as a Meta multiplayer sports sample with local/remote player entities, gloves, UI hover ownership, arena services, Photon/Netcode-style package boundaries, and voice/network caveats`
 
+## 331. World switching hand controller transition interfaces and interaction showcases
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-360-world-switching-hand-controller-transition-interfaces-and-interaction-showcases.md`
+- `../landscape/project-families.md`
+
+- `mott-lab/WorldSwitchUI` - `Studied in Wave 360 as CHI 2026 transition-interface software with portal/gallery/wheel/palette/WIM world previews, separated display and interaction controllers, target managers, study logging, and hand/controller fallback`
+- `oculus-samples/Unity-NorthStar` - `Studied in Wave 360 as a Meta Quest showcase with debug menus, scene loaders, IK/retarget helpers, editor hygiene utilities, subtitle/dialogue surfaces, and vendor-sample caveats`
+- `alexismorin/Unity-VR-Hand-Tracking-Template` - `Source-light marker in Wave 360 as a Quest hand-tracking bootstrap with performance-oriented Unity/Oculus setup notes and modular kit framing`
+- `Corysia/Unity-Oculus-Example` - `Source-light marker in Wave 360 as an Oculus Integration starter recipe for animated hands, locomotion, collision, grabbing, Android/Quest graphics settings, and credential caveats`
+
+## 332. Physics locomotion drag scale climb and bounds based XR interaction microtools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-361-physics-locomotion-drag-scale-climb-and-bounds-based-xr-interaction-microtools.md`
+- `../landscape/project-families.md`
+
+- `KavanBahrami/XRDrag` - `Studied in Wave 361 as an Unreal VR drag locomotion component for controller-driven move, rotate, scale, input mappings, plane locks, and grip-conflict caveats`
+- `pierricklyons/real-motion-vr` - `Studied in Wave 361 as a Unity physics body locomotion rig with locomotion sphere, hexabody/capsule model, spring spine, crouch, jump preload, grabbing, and climbing`
+- `DuckiesGaems/EasyXR` - `Studied in Wave 361 as lightweight Unity XR microtools with bounds buttons, cooldowns, editor/debug helpers, XR input climbing, layer checks, and non-rigidbody fallback`
+
+## 333. Collaborative classrooms whiteboards avatar rooms and AI learning surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-362-collaborative-classrooms-whiteboards-avatar-rooms-and-ai-learning-surfaces.md`
+- `../landscape/project-families.md`
+
+- `SimonCzy/Whiteboard-UnityXR` - `Studied in Wave 362 as an Oculus/Photon/Meta Avatar whiteboard with creation gesture, pen texture writing, poke/grab interaction, reset/debug controls, avatar spawner, connection manager, and entitlement gate`
+- `AnnavarapuGanesh/VR-CLASSROOM` - `Studied in Wave 362 as a Unity classroom with Gemini AI tutor adapter, prompt/history classes, room/lobby scripts, board/text framing, and credential hygiene caveats`
+- `AnnavarapuGanesh/VR-CLASSROOM-MULTIPLAYER` - `Partially studied in Wave 362 as a multiplayer classroom variant with Photon room/avatar direction, virtual board, AI tutor framing, and follow-up value for authority/sync inspection`
+
+## 334. Voice intent command spellcasting and speech to XR action adapters
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-363-voice-intent-command-spellcasting-and-speech-to-xr-action-adapters.md`
+- `../landscape/project-families.md`
+
+- `eugenek07/hairy-otter` - `Studied in Wave 363 as a Meta/Wit.ai VR spellcasting prototype with voice activation, transcript UI, Conduit intent mapping, command validation, and spell dispatcher`
+- `ajinkyasatuse/Enchantress_AR` - `Studied in Wave 363 as a Unity AR voice-command prototype using Windows KeywordRecognizer, command dictionary, AR raycast placement, summon/fight/fly actions, and fallback spawn logic`
+- `wit-ai/wit-unity` - `Studied in Wave 363 as a voice SDK substrate with VoiceService, request/transcription events, Conduit parameter mapping, intent/entity handlers, TTS/cache/audio, and lipsync boundaries`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

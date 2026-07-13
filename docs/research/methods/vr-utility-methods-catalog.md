@@ -18799,3 +18799,157 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   sports utilities, training drills, movement feedback panels, and fitness
   microgames.
+
+## Method 805: world-transition interface and preview-palette boundary
+
+- What it is:
+  VR world, mode, dataset, or workspace switching should separate destination
+  catalog, preview UI, input activation, transition execution, and logging.
+- Good for:
+  VR launchers, lab workspaces, scene switchers, dataset viewers, environment
+  galleries, mode palettes, and onboarding tours.
+- Why it matters:
+  changing worlds is a high-context action; users need previews, reversible
+  activation, and input fallback rather than hidden scene-load buttons.
+- Source evidence:
+  `mott-lab/WorldSwitchUI`, `oculus-samples/Unity-NorthStar`,
+  `alexismorin/Unity-VR-Hand-Tracking-Template`, and
+  `Corysia/Unity-Oculus-Example`.
+- Reusable core:
+  world target catalog, destination metadata, transition UI manager, display
+  interface, interaction handler, hand gesture adapter, controller button
+  adapter, portal/gallery/palette/WIM preview, confirmation/cancel path, state
+  handoff, debug menu, and transition/session logging.
+- Source evidence details:
+  Wave 360 includes WorldSwitchUI's `TransitionInterfaces`,
+  `InteractionControllers`, `TransitionManager`, `TransitionUIManager`,
+  `WorldTargetManager`, and study logging; Unity-NorthStar adds debug menus,
+  scene-loader, IK/editor utilities, and subtitle/showcase support surfaces.
+- Do not copy directly:
+  paid assets, experiment-only coin tasks, vendor sample content, hardcoded
+  study scenes, or old SDK setup recipes.
+- Strong references:
+  `mott-lab/WorldSwitchUI` for transition UI variants and
+  `oculus-samples/Unity-NorthStar` for showcase/debug support boundaries.
+- Maturity:
+  strong strategic method; needs a neutral destination schema before prototype
+  work.
+- Best fit for `VR-apps-lab`:
+  world switchers, overlay/workspace launchers, lab scene browsers, and
+  dataset/mode navigation utilities.
+
+## Method 806: physics locomotion and bounds interaction microtool boundary
+
+- What it is:
+  movement-heavy VR tools should treat body physics, drag/scale movement,
+  climbing, grabbing, and bounds buttons as separate microtools with shared
+  input and comfort rules.
+- Good for:
+  locomotion labs, tabletop navigation, climbing prototypes, Gorilla-style
+  interaction experiments, physics-body tools, and reusable player rigs.
+- Why it matters:
+  movement code becomes risky when input, forces, collisions, grabbing, and UI
+  activation are fused into one prefab.
+- Source evidence:
+  `KavanBahrami/XRDrag`, `pierricklyons/real-motion-vr`, and
+  `DuckiesGaems/EasyXR`.
+- Reusable core:
+  input adapter, body/rig model, movement target, head/camera delta,
+  controller delta, external force channel, spring/spine damping, crouch/jump
+  modules, climb detector, fixed-joint grab, drag/rotate/scale component,
+  bounds button, cooldown, debug visualization, haptic hooks, input-conflict
+  matrix, and safety labels.
+- Source evidence details:
+  Wave 361 includes real-motion-vr's `MovementController`, `PhysicsRig`,
+  `SpineController`, `CrouchController`, `JumpController`, and
+  `SimpleFixedJointGrab`; EasyXR's `XRButton` and `XREasyGrab`; and XRDrag's
+  component framing for grip-driven move/rotate/scale.
+- Do not copy directly:
+  raw force values, grip bindings that collide with grabbing/shooting,
+  Blueprint-only assets, collider-free activation without debug affordances, or
+  comfort-sensitive movement without warnings.
+- Strong references:
+  `pierricklyons/real-motion-vr` for physics-body decomposition and
+  `DuckiesGaems/EasyXR` for compact interaction microtools.
+- Maturity:
+  useful method; product work requires comfort, conflict, and safety gates.
+- Best fit for `VR-apps-lab`:
+  locomotion experiments, reusable interaction widgets, climb/grab helpers, and
+  movement-control comparison prototypes.
+
+## Method 807: collaborative classroom and whiteboard surface shell
+
+- What it is:
+  collaborative learning VR should separate room/session state, participant
+  presence, board surfaces, pen strokes, AI tutor requests, voice/network
+  channels, and privacy/credentials.
+- Good for:
+  shared whiteboards, classroom labs, AI tutor rooms, collaborative annotation,
+  lecture surfaces, and remote training spaces.
+- Why it matters:
+  classroom projects often mix board drawing, networking, avatars, and AI calls;
+  reuse requires a neutral board/session schema first.
+- Source evidence:
+  `SimonCzy/Whiteboard-UnityXR`, `AnnavarapuGanesh/VR-CLASSROOM`, and
+  `AnnavarapuGanesh/VR-CLASSROOM-MULTIPLAYER`.
+- Reusable core:
+  room/session manager, participant/avatar spawner, entitlement gate, board
+  creation gesture, board object model, pen/touch sampler, texture/stroke
+  writer, reset/debug controls, network authority, voice channel, AI tutor
+  adapter, prompt/response history, and privacy/credential labels.
+- Source evidence details:
+  Wave 362 includes Whiteboard-UnityXR's `Pen`, `NetworkAvatarSpawner`,
+  `ConnectionManager`, and entitlement scripts; VR-CLASSROOM's Gemini
+  request/response data classes and Photon room utilities; and the multiplayer
+  variant as a shared-classroom direction marker.
+- Do not copy directly:
+  service keys, vendor package trees, duplicated typo scripts, hardcoded room
+  names, or AI/network claims without failure and privacy states.
+- Strong references:
+  `SimonCzy/Whiteboard-UnityXR` for board creation and pen texture writing, and
+  `AnnavarapuGanesh/VR-CLASSROOM` for AI tutor adapter framing.
+- Maturity:
+  promising method; needs a neutral stroke/session schema and authority model.
+- Best fit for `VR-apps-lab`:
+  collaborative board utilities, learning surfaces, annotation rooms, and
+  AI-assisted classroom prototypes.
+
+## Method 808: voice intent to XR action dispatcher
+
+- What it is:
+  voice-controlled XR tools should convert microphone input into validated
+  command intents before spatial actions, TTS, lipsync, or object control
+  consume them.
+- Good for:
+  hands-busy utilities, accessibility-adjacent commands, spellcasting metaphors,
+  AI assistants, object spawning, room controls, and voice-driven overlays.
+- Why it matters:
+  voice systems touch privacy and authority; command execution must be separate
+  from recognition, transcripts, credentials, and feedback.
+- Source evidence:
+  `eugenek07/hairy-otter`, `ajinkyasatuse/Enchantress_AR`, and
+  `wit-ai/wit-unity`.
+- Reusable core:
+  mic activation/deactivation, consent state, cooldown, transcript UI,
+  recognizer/intent adapter, command registry, entity/parameter resolver,
+  spatial target resolver, action dispatcher, feedback channel,
+  unrecognized-command path, credentials/privacy labels, and offline/vendor
+  fallback.
+- Source evidence details:
+  Wave 363 includes hairy-otter's `VoiceController`, `Spells`, and Conduit
+  command mapping; Enchantress_AR's `KeywordRecognizer` command dictionary and
+  AR raycast/fallback placement; and wit-unity's `VoiceService`, transcription
+  events, intent/entity handlers, TTS cache, audio, and lipsync boundaries.
+- Do not copy directly:
+  always-on mic capture, cloud credentials, debug-only feedback, hardcoded
+  magic words as final UX, or destructive actions without confirmation.
+- Strong references:
+  `eugenek07/hairy-otter` for cloud intent spell dispatch,
+  `ajinkyasatuse/Enchantress_AR` for local keyword action mapping, and
+  `wit-ai/wit-unity` for SDK boundary vocabulary.
+- Maturity:
+  strong reusable method; production use needs consent, privacy, fallback, and
+  safety policy.
+- Best fit for `VR-apps-lab`:
+  voice command layers, accessibility-adjacent utility controls, XR assistants,
+  speech-to-overlay actions, and action dispatcher prototypes.

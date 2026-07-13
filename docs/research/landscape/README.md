@@ -1628,6 +1628,23 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on sports/fitness skill loops, hand-hit
   scoring, badminton/racket markers, tutorials, results, and safety labels.
 
+- `vr-projects-wave-360-world-switching-hand-controller-transition-interfaces-and-interaction-showcases.md`
+  Next GitHub discovery wave focused on world-switching previews,
+  hand/controller transition interfaces, debug/showcase shells, and starter
+  interaction baselines.
+
+- `vr-projects-wave-361-physics-locomotion-drag-scale-climb-and-bounds-based-xr-interaction-microtools.md`
+  Next GitHub discovery wave focused on physics locomotion, drag/rotate/scale,
+  climbing, fixed-joint grabbing, and bounds-based XR interaction microtools.
+
+- `vr-projects-wave-362-collaborative-classrooms-whiteboards-avatar-rooms-and-ai-learning-surfaces.md`
+  Next GitHub discovery wave focused on collaborative classrooms, whiteboards,
+  avatars, AI tutor adapters, and shared board/room surfaces.
+
+- `vr-projects-wave-363-voice-intent-command-spellcasting-and-speech-to-xr-action-adapters.md`
+  Next GitHub discovery wave focused on voice intent, spellcasting, command
+  registries, speech-to-XR action dispatch, TTS, and lipsync boundaries.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

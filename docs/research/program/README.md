@@ -2546,3 +2546,31 @@ repeatable way.
 
 - `github-research-wave-359-backlog.md`
   Executed backlog for the Wave 359 pass.
+
+- `github-research-wave-360-plan.md`
+  Wave 360 research plan focused on world switching, hand/controller transition
+  interfaces, and XR interaction showcases.
+
+- `github-research-wave-360-backlog.md`
+  Executed backlog for the Wave 360 pass.
+
+- `github-research-wave-361-plan.md`
+  Wave 361 research plan focused on physics locomotion, drag/scale/climb, and
+  bounds-based XR interaction microtools.
+
+- `github-research-wave-361-backlog.md`
+  Executed backlog for the Wave 361 pass.
+
+- `github-research-wave-362-plan.md`
+  Wave 362 research plan focused on collaborative classrooms, whiteboards,
+  avatar rooms, and AI learning surfaces.
+
+- `github-research-wave-362-backlog.md`
+  Executed backlog for the Wave 362 pass.
+
+- `github-research-wave-363-plan.md`
+  Wave 363 research plan focused on voice intent, command spellcasting, and
+  speech-to-XR action adapters.
+
+- `github-research-wave-363-backlog.md`
+  Executed backlog for the Wave 363 pass.

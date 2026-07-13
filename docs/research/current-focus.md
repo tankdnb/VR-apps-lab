@@ -1,6 +1,6 @@
 # Current Focus
 
-- Date: `2026-06-12`
+- Date: `2026-07-13`
 - Purpose: give a short `what matters now` view of `VR-apps-lab` without
   forcing a new session or visitor through the full wave archive.
 
@@ -16,6 +16,28 @@ for VR utilities, overlays, diagnostics, tracking helpers, runtime tools, and
 experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
+
+## Current additions from Waves 360-363
+
+- `World switching, hand/controller transition interfaces, and interaction
+  showcases`
+  add a world-transition branch around destination catalogs, portal/gallery/
+  palette/WIM previews, activation gestures, controller fallback, debug menus,
+  and transition logging.
+- `Physics locomotion, drag/scale/climb, and bounds-based XR interaction
+  microtools`
+  add reusable boundaries for physics body rigs, movement spheres,
+  drag/rotate/scale components, climbing, fixed-joint grabs, cooldown buttons,
+  input-conflict matrices, and comfort labels.
+- `Collaborative classrooms, whiteboards, avatar rooms, and AI learning
+  surfaces`
+  add a shared-learning surface branch around rooms, avatars, board creation,
+  pen/stroke writers, AI tutor adapters, network authority, and privacy/
+  credential hygiene.
+- `Voice intent, command spellcasting, and speech-to-XR action adapters`
+  add a voice-command branch around mic consent, transcripts, recognizer
+  adapters, command registries, parameter resolution, action dispatch, TTS/
+  lipsync boundaries, and offline/vendor fallbacks.
 
 ## Current additions from Waves 356-359
 

@@ -11036,6 +11036,76 @@ This family matters because sport/fitness mechanics can be reused as neutral
 drill loops: valid hit, speed/pose gate, score, tutorial, results, reset, and
 playspace safety.
 
+## Family 339: World transition previews and interaction showcase shells
+
+This family covers world switching, destination preview, hand/controller
+transition, debug/showcase tooling, and starter interaction baselines.
+
+| Project | Status | Notes |
+|---|---|---|
+| `mott-lab/WorldSwitchUI` | Studied in Wave 360 | Portal, gallery, wheel, palette, and WIM transition interfaces separated from interaction controllers |
+| `oculus-samples/Unity-NorthStar` | Studied in Wave 360 | Meta showcase with debug menus, scene loading, IK/editor helpers, subtitles, and vendor boundaries |
+| `alexismorin/Unity-VR-Hand-Tracking-Template` | Source-light marker in Wave 360 | Quest hand-tracking starter and performance setup reference |
+| `Corysia/Unity-Oculus-Example` | Source-light marker in Wave 360 | Oculus Integration starter for hands, locomotion, collision, grabbing, and setup caveats |
+
+### Consolidation note
+
+This family matters because future launchers, labs, dataset viewers, and
+utility suites need a neutral destination catalog, preview surface, activation
+adapter, transition service, and logging/debug shell.
+
+## Family 340: Physics locomotion and XR interaction microtools
+
+This family covers small reusable locomotion and interaction components:
+physics rigs, drag/rotate/scale, climbing, fixed-joint grabs, and bounds-based
+buttons.
+
+| Project | Status | Notes |
+|---|---|---|
+| `KavanBahrami/XRDrag` | Studied in Wave 361 | Unreal drag locomotion component for moving, rotating, and scaling the VR pawn |
+| `pierricklyons/real-motion-vr` | Studied in Wave 361 | Unity physics locomotion rig with movement sphere, spine, crouch, jump, grab, and climb modules |
+| `DuckiesGaems/EasyXR` | Studied in Wave 361 | Lightweight bounds button and climbing microtools with cooldown/debug boundaries |
+
+### Consolidation note
+
+This family matters because movement modules should expose input, forces,
+comfort, and conflict states instead of hiding them inside one player prefab.
+
+## Family 341: Collaborative classroom whiteboard and learning surfaces
+
+This family covers shared rooms, whiteboards, avatar presence, AI tutor adapters,
+voice/network packages, and classroom collaboration shells.
+
+| Project | Status | Notes |
+|---|---|---|
+| `SimonCzy/Whiteboard-UnityXR` | Studied in Wave 362 | Whiteboard creation gesture, pen texture writing, reset/debug controls, avatars, voice, and Photon |
+| `AnnavarapuGanesh/VR-CLASSROOM` | Studied in Wave 362 | Gemini AI tutor wrapper, classroom shell, room/lobby scripts, and board/text framing |
+| `AnnavarapuGanesh/VR-CLASSROOM-MULTIPLAYER` | Partially studied in Wave 362 | Multiplayer classroom variant for avatar/room/AI/board sync comparison |
+
+### Consolidation note
+
+This family matters because collaborative learning tools should separate room
+state, participant presence, board strokes, AI responses, networking, and
+privacy/credential handling.
+
+## Family 342: Voice intent command and speech-to-XR action adapters
+
+This family covers voice-controlled XR actions, spellcasting metaphors, local
+keyword recognizers, cloud intent systems, transcripts, TTS, and command
+dispatchers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `eugenek07/hairy-otter` | Studied in Wave 363 | Wit.ai VR spellcasting with activation state, transcript UI, Conduit intent mapping, and spell dispatcher |
+| `ajinkyasatuse/Enchantress_AR` | Studied in Wave 363 | Windows keyword command dictionary, AR raycast placement, summon/fight/fly actions, and fallback spawn |
+| `wit-ai/wit-unity` | Studied as substrate in Wave 363 | VoiceService, transcription events, Conduit, intent/entity handlers, TTS/cache/audio, and lipsync boundaries |
+
+### Consolidation note
+
+This family matters because voice features need a neutral command registry with
+mic consent, transcript feedback, recognizer adapters, parameter resolution,
+action safety, and vendor/offline fallback boundaries.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

@@ -355,6 +355,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-357-vr-music-instruments-hand-tracked-piano-drums-and-biosignal-audiovisual-tools.md`
 - `landscape/vr-projects-wave-358-vr-creative-authoring-sculpting-painting-modeling-and-content-retrieval-tools.md`
 - `landscape/vr-projects-wave-359-vr-sports-fitness-movement-training-badminton-and-reaction-games.md`
+- `landscape/vr-projects-wave-360-world-switching-hand-controller-transition-interfaces-and-interaction-showcases.md`
+- `landscape/vr-projects-wave-361-physics-locomotion-drag-scale-climb-and-bounds-based-xr-interaction-microtools.md`
+- `landscape/vr-projects-wave-362-collaborative-classrooms-whiteboards-avatar-rooms-and-ai-learning-surfaces.md`
+- `landscape/vr-projects-wave-363-voice-intent-command-spellcasting-and-speech-to-xr-action-adapters.md`
 
 ## Archive Navigation
 
