@@ -1611,6 +1611,23 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on MR digital twins, safety training,
   drone/robot cockpits, industrial dashboards, anchors, and command surfaces.
 
+- `vr-projects-wave-356-guided-breathing-meditation-wellness-and-stress-protocol-vr.md`
+  Next GitHub discovery wave focused on breath phase schedulers, meditation
+  shells, AI wellness interactions, and stress-protocol task loops.
+
+- `vr-projects-wave-357-vr-music-instruments-hand-tracked-piano-drums-and-biosignal-audiovisual-tools.md`
+  Next GitHub discovery wave focused on hand-tracked instruments, piano/drum hit
+  events, Leap lessons, biosignal audiovisual tools, and input-to-sound
+  boundaries.
+
+- `vr-projects-wave-358-vr-creative-authoring-sculpting-painting-modeling-and-content-retrieval-tools.md`
+  Next GitHub discovery wave focused on VR painting, sculpting, sketching,
+  OBJ import/export, voxel/SDF backends, and retrieval-backed modeling.
+
+- `vr-projects-wave-359-vr-sports-fitness-movement-training-badminton-and-reaction-games.md`
+  Next GitHub discovery wave focused on sports/fitness skill loops, hand-hit
+  scoring, badminton/racket markers, tutorials, results, and safety labels.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

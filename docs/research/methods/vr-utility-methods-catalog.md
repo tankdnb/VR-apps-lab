@@ -18648,3 +18648,154 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   MR dashboards, digital-twin overlays, safety microtraining, operator panels,
   and dry-run control surface prototypes.
+
+## Method 801: guided wellness session and stress-protocol loop
+
+- What it is:
+  breath, meditation, and stress-protocol VR should expose session timing as
+  phase events consumed by visuals, audio, haptics, environment responders,
+  logging, and task modules.
+- Good for:
+  breathing exercises, meditation shells, mindfulness apps, non-clinical
+  wellness microtools, research protocols, and calm-down utility overlays.
+- Why it matters:
+  wellness UX can overclaim quickly; separating phase logic from cue rendering
+  makes it easier to add caveats, privacy, and validation boundaries.
+- Source evidence:
+  `Mohit-Bagri/windmill-vr`,
+  `InderSinghMehrok/breatheEase--CS-458-Project`,
+  `Roseburgendy/VR_Breathing_Intervention`, `luffy-yu/FloatMind`, and
+  `MIEC/vr-tsst`.
+- Reusable core:
+  session catalog, phase scheduler, cue renderer, breath visualizer,
+  hand/movement validator, scene transition, session data, protocol task
+  module, participant/session ID, reset, telemetry/export, and caveat labels.
+- Source evidence details:
+  Wave 356 includes windmill-vr's `BreathControl` and windmill feedback,
+  breatheEase's cards/session data/breath variants, VR_Breathing_Intervention's
+  rhythm/pacer/effect modules, FloatMind's AI gesture wellness flow, and
+  vr-tsst's participant/task/timer/NPC protocol scripts.
+- Do not copy directly:
+  medical claims, stress-induction defaults, AI mood analysis without privacy
+  labels, hardcoded phase timings, or visual-only guidance without comfort and
+  accessibility alternatives.
+- Strong references:
+  `Roseburgendy/VR_Breathing_Intervention` for breath-event world response and
+  `Mohit-Bagri/windmill-vr` for a compact microtool.
+- Maturity:
+  strong reusable method; product work needs careful claim, privacy, and ethics
+  framing.
+- Best fit for `VR-apps-lab`:
+  wellness session shells, guided breathing utilities, research-task harnesses,
+  and calm-down overlay concepts.
+
+## Method 802: embodied VR instrument input-to-sound boundary
+
+- What it is:
+  VR instruments should convert hand/controller/Leap/biosignal input into
+  neutral note or hit events before audio, visuals, haptics, or lessons consume
+  them.
+- Good for:
+  hand-tracked piano, drums, MIDI/OSC bridges, biosignal visual music,
+  teaching instruments, and accessibility audio feedback.
+- Why it matters:
+  instrument prototypes become reusable when input confidence, surface mapping,
+  timing, and sound output are split cleanly.
+- Source evidence:
+  `SeungWon0927/VR_Piano`, `JustinLin905/Pear-Piano`,
+  `HackTheBrain/B-vr`, `krebsm249/Vr-LeapMotion-playing-a-Piano`,
+  `magicinthesky/VR-Drumming`, and `kahogeoff/vr-war-drum`.
+- Reusable core:
+  input provider, playable surface map, hit/key detector, velocity/confidence
+  gate, note/hit event schema, audio adapter, visual feedback, lesson/teacher
+  track, calibration, latency display, and fallback input.
+- Source evidence details:
+  Wave 357 includes VR_Piano's `PianoKeyScript` and semitone pitch offsets, Leap
+  piano's CSV/teacher/menu layer, and B-vr's EEG/OpenViBE-to-Unity audiovisual
+  architecture.
+- Do not copy directly:
+  brittle per-key scripts, SDK trees, lighting-sensitive hand tracking without
+  confidence feedback, EEG interpretation claims, or collision-only note events
+  without debouncing.
+- Strong references:
+  `SeungWon0927/VR_Piano` for a compact key-to-audio example and
+  `krebsm249/Vr-LeapMotion-playing-a-Piano` for lesson/data separation.
+- Maturity:
+  useful method; needs a neutral note/hit schema before implementation.
+- Best fit for `VR-apps-lab`:
+  audio tools, MIDI/OSC sidecars, embodied sound surfaces, and instrument
+  teaching prototypes.
+
+## Method 803: VR creative authoring stroke mesh and export pipeline
+
+- What it is:
+  VR creative tools should treat strokes, meshes, voxels, object transforms,
+  materials, export/import, and retrieval metadata as a document pipeline.
+- Good for:
+  painting tools, sculpting workbenches, line/tube sketchers, OBJ exporters,
+  retrieval-backed 3D search, and creator utility panels.
+- Why it matters:
+  creative tools are only reusable when authored content survives the session
+  and carries provenance.
+- Source evidence:
+  `eman2XR/Virtual-Studio`, `DhruvaRawal/SculpIt`,
+  `johnsandiego/PolySculpt`, `not-surt/CarveVR`, `E-BAO/3D-VR-Painting`,
+  `Rowl1ng/SketchyVR`, and `SamuelBoerlin/3D-VR-Modelling-and-Vitrivr`.
+- Reusable core:
+  tool mode, brush/material/color state, stroke sampler, line/tube/mesh/voxel
+  backend, grabbable object layer, save/export/import, query/retrieval adapter,
+  provenance metadata, undo/reset, and performance budgets.
+- Source evidence details:
+  Wave 358 includes Virtual-Studio's palette/brush/eraser/extrusion/OBJ export,
+  SketchyVR's managers/tube renderer/save/export/import, and
+  3D-VR-Modelling-and-Vitrivr's voxel/SDF sculpting plus Cineast query adapter.
+- Do not copy directly:
+  old vendor interaction systems, scene-hardcoded save paths, abandoned code
+  without provenance, export without material/license metadata, or retrieval
+  integrations without service-failure states.
+- Strong references:
+  `SamuelBoerlin/3D-VR-Modelling-and-Vitrivr` for retrieval-backed sculpting
+  and `Rowl1ng/SketchyVR` for compact sketch/export flow.
+- Maturity:
+  strong method; needs a repository-neutral creative document schema.
+- Best fit for `VR-apps-lab`:
+  VR authoring utilities, annotation tools, export/import helpers, and creative
+  workbench prototypes.
+
+## Method 804: VR sports skill loop and movement-feedback shell
+
+- What it is:
+  VR sports and fitness tools should separate movement input, valid-hit gates,
+  drill state, scoring, tutorials, results, safety, and multiplayer authority.
+- Good for:
+  fitness targets, racket sports, ball games, reaction drills, training loops,
+  rehab-adjacent practice, and multiplayer sport prototypes.
+- Why it matters:
+  physical movement tools need explicit hit validity, miss semantics, playspace
+  safety, and feedback; raw collisions are not enough.
+- Source evidence:
+  `oculus-samples/Unity-MoveFast`,
+  `oculus-samples/Unity-UltimateGloveBall`, `partharora1105/Badminton_VR`,
+  `rishidevde/Badminton_Computer_Graphics`, `LittleQBerry/REVERIE-Sports`, and
+  `ticahere/VIRD-demo`.
+- Reusable core:
+  equipment proxy, target/ball object, valid-hit detector, pose/velocity gate,
+  target zone, drill timeline, score/combo/result service, tutorial state,
+  feedback spawner, session metrics, reset, safety labels, and optional
+  multiplayer authority.
+- Source evidence details:
+  Wave 359 includes MoveFast's `HandHitDetector`, `TriggerZone`,
+  `ScoreIncrementer`, `ScoreKeeper`, `ComboBreaker`, `Tutorial`, and results UI,
+  plus UltimateGloveBall's local/remote player and glove service boundaries.
+- Do not copy directly:
+  sample art/assets, network assumptions, unbounded physical motions, score-only
+  feedback without misses, or exercises without comfort and space warnings.
+- Strong references:
+  `oculus-samples/Unity-MoveFast` for fitness/drill scoring and
+  `oculus-samples/Unity-UltimateGloveBall` for multiplayer sport boundaries.
+- Maturity:
+  strong reusable method; requires safety and comfort constraints before
+  product use.
+- Best fit for `VR-apps-lab`:
+  sports utilities, training drills, movement feedback panels, and fitness
+  microgames.

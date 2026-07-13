@@ -4703,6 +4703,65 @@ Primary docs:
 - `Infinity-Spark/Infinity-Spark-App` - `Studied in Wave 355 as a HoloLens/ABB RobotStudio industrial robot monitoring/control dashboard direction`
 - `SL-thws/Mixed-Reality-for-Training-in-Human-Robot-Collaboration` - `Studied in Wave 355 as a human-robot collaboration training direction marker for safety and role-based MR procedure design`
 
+## 327. Guided breathing meditation wellness and stress protocol VR
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-356-guided-breathing-meditation-wellness-and-stress-protocol-vr.md`
+- `../landscape/project-families.md`
+
+- `Mohit-Bagri/windmill-vr` - `Studied in Wave 356 as a compact Quest/Unity breathing microtool with coroutine phase loop, countdown text, rounds, text fading, and windmill exhale feedback`
+- `InderSinghMehrok/breatheEase--CS-458-Project` - `Studied in Wave 356 as a multi-exercise wellness shell with box breathing, 4-7-8/10-second variants, meditation cards, session data, scene fades, orb pulse, yoga, and qigong modules`
+- `Roseburgendy/VR_Breathing_Intervention` - `Studied in Wave 356 as a breath-driven narrative intervention with rhythm controller, breath pacer, beam segments, movement patterns, hand tracking, haptics, phase managers, and environmental responders`
+- `IrtazaDevs/VR-Meditation` - `Source-light marker in Wave 356 as a mystical forest Quest meditation reference with dynamic perspectives, spline movement, optimized environment, guided breathing cues, and settings framing`
+- `luffy-yu/FloatMind` - `Studied in Wave 356 as an AI-powered AR/VR meditation product reference with STT/TTS/LLM mood analysis, hand gestures, emotion bubbles, portal transitions, scene blending, and controller-free flow`
+- `kalpthakkar/MindFit-Realm` - `Source-light marker in Wave 356 as a mindfulness/wellness direction queued for deeper guided-activity and emotional-state UX inspection`
+- `MIEC/vr-tsst` - `Studied in Wave 356 as a VR Trier Social Stress Test protocol with participant IDs, NBack/Stroop tasks, NPC gaze/head behavior, timers, panels, and research-session management`
+
+## 328. VR music instruments and embodied sound tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-357-vr-music-instruments-hand-tracked-piano-drums-and-biosignal-audiovisual-tools.md`
+- `../landscape/project-families.md`
+
+- `SeungWon0927/VR_Piano` - `Studied in Wave 357 as a Quest hand-tracked piano where finger/key collisions trigger audio with semitone pitch offsets and README-noted lighting/tracking caveats`
+- `JustinLin905/Pear-Piano` - `Studied in Wave 357 as an Oculus Interaction-heavy piano direction for comparing modern hand interaction substrate against simple collision-key approaches`
+- `waltzaround/Matter-VR` - `Partially studied in Wave 357 as an embodied/physics music direction marker pending deeper instrument-surface inspection`
+- `magicinthesky/VR-Drumming` - `Partially studied in Wave 357 as a drum-hit interaction marker for timing, collision, and percussive feedback comparison`
+- `kahogeoff/vr-war-drum` - `Partially studied in Wave 357 as a war-drum/percussion marker with vendor-heavy source layout and follow-up value for hit-surface triage`
+- `HackTheBrain/B-vr` - `Studied in Wave 357 as an EEG/OpenViBE-driven visual music architecture where alpha/beta/theta and trained parameters shape audio/visual state`
+- `krebsm249/Vr-LeapMotion-playing-a-Piano` - `Studied in Wave 357 as a Leap Motion piano lesson/reference with CSV reader, teacher scripts, menu loaders, and Leap Interaction Engine physics UI`
+
+## 329. VR creative authoring sculpting painting modeling and retrieval tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-358-vr-creative-authoring-sculpting-painting-modeling-and-content-retrieval-tools.md`
+- `../landscape/project-families.md`
+
+- `eman2XR/Virtual-Studio` - `Studied in Wave 358 as a Unity VR painting/design toolkit with color picker, paint palette, eraser, paint brush, mesh extrusion, grabbables, networked brush traces, transform saver, and OBJ exporter`
+- `DhruvaRawal/SculpIt` - `Studied in Wave 358 as a thin sculpt/draw reference with camera-rig spawning and line drawing scripts`
+- `johnsandiego/PolySculpt` - `Partially studied in Wave 358 as a Poly/SteamVR sculpting direction queued for deeper custom script and VRTK-era interaction comparison`
+- `not-surt/CarveVR` - `Partially studied in Wave 358 as a voxel sculpting direction marker for comparing abandoned/minimal sculpting implementations`
+- `E-BAO/3D-VR-Painting` - `Partially studied in Wave 358 as an Oculus-era 3D painting direction marker for brush/stroke comparison`
+- `Rowl1ng/SketchyVR` - `Studied in Wave 358 as a sketching pipeline with color manager, line/point managers, mesh line renderer, tube renderer, save sketch logic, OBJ exporter, and OBJ import loader`
+- `SamuelBoerlin/3D-VR-Modelling-and-Vitrivr` - `Studied in Wave 358 as VR sculpting integrated with Vitrivr/Cineast retrieval, CSG/SDF/voxel components, query plates/results, JSON converter, OBJ loader, and API adapter`
+
+## 330. VR sports fitness movement training badminton and reaction games
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-359-vr-sports-fitness-movement-training-badminton-and-reaction-games.md`
+- `../landscape/project-families.md`
+
+- `oculus-samples/Unity-MoveFast` - `Studied in Wave 359 as a Meta fitness sample with hand-hit detectors, pose gates, target zones, velocity scoring, combo breakers, tutorial flow, results UI, and 90 FPS setting`
+- `partharora1105/Badminton_VR` - `Partially studied in Wave 359 as a badminton direction marker for racket/shuttle interaction, scoring, and sport-specific movement comparison`
+- `rishidevde/Badminton_Computer_Graphics` - `Partially studied in Wave 359 as a Quest 3 badminton direction marker with XR Interaction Toolkit, racket interaction, XR movement, and gameplay mechanics framing`
+- `LittleQBerry/REVERIE-Sports` - `Partially studied in Wave 359 as a sports-learning/training direction marker for future drill and coaching comparison`
+- `ticahere/VIRD-demo` - `Partially studied in Wave 359 as a movement/training demo marker for future sensor, rehab, or drill-loop inspection`
+- `oculus-samples/Unity-UltimateGloveBall` - `Studied in Wave 359 as a Meta multiplayer sports sample with local/remote player entities, gloves, UI hover ownership, arena services, Photon/Netcode-style package boundaries, and voice/network caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

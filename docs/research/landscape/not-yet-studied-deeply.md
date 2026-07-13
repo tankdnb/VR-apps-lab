@@ -3140,5 +3140,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 279. `AI-assisted education lab follow-up across deterministic task state, tutor/RAG adapters, STT/TTS, safety/failure gates, reset managers, caregiver/teacher roles, and validation labels`
 280. `MR digital twin control-surface follow-up across anchors/VPS/SSA, JSON/API/IoT adapters, mode systems, dashboards, annotations, command authority, connection health, and emergency stop`
 
+281. `Guided wellness session follow-up across breath phase schedulers, cue channels, hand/movement validators, AI mood adapters, participant/task protocols, privacy, and claims caveats`
+282. `Embodied VR instrument follow-up across input providers, note/hit schemas, hand tracking confidence, debounce/latency, lesson CSV/MIDI/OSC adapters, and biosignal calibration`
+283. `VR creative authoring follow-up across stroke/mesh document models, tool modes, save/export/import, OBJ/material provenance, voxel/SDF backends, and retrieval metadata`
+284. `VR sports skill-loop follow-up across equipment proxies, valid-hit detectors, pose/velocity gates, target timelines, score/combo/result services, tutorials, reset, and playspace safety`
+
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

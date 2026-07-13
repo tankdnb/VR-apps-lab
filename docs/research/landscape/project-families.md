@@ -10950,6 +10950,92 @@ This family matters because MR control tools can affect real hardware or
 real-world procedures. It suggests a safety-first control surface with anchors,
 data adapters, command envelopes, connection health, and emergency stop states.
 
+## Family 335: Guided wellness session loops and stress-protocol VR
+
+This family covers breath, meditation, mindfulness, and stress-protocol projects
+that turn phase timing into visual, audio, haptic, environmental, or task
+feedback. The reusable lesson is to separate session timing from cue rendering
+and claims.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Mohit-Bagri/windmill-vr` | Studied in Wave 356 | Four-phase breathing loop with countdown, rounds, text fade, and windmill exhale feedback |
+| `InderSinghMehrok/breatheEase--CS-458-Project` | Studied in Wave 356 | Multi-exercise wellness shell with cards, session data, breathing variants, orb pulse, yoga, and qigong |
+| `Roseburgendy/VR_Breathing_Intervention` | Studied in Wave 356 | Breath rhythm events drive beams, hand movement paths, haptics, phase progression, crystals, fog, and seasons |
+| `IrtazaDevs/VR-Meditation` | Source-light marker in Wave 356 | Mystical forest guided-breathing reference |
+| `luffy-yu/FloatMind` | Studied in Wave 356 | AI/hand-gesture wellness reference with emotion bubbles, STT/TTS/LLM adapter, portal transition, and scene blending |
+| `kalpthakkar/MindFit-Realm` | Source-light marker in Wave 356 | Mindfulness/wellness marker pending deeper guided-activity inspection |
+| `MIEC/vr-tsst` | Studied in Wave 356 | Research stress protocol with participant IDs, cognitive tasks, NPC behavior, timers, and panels |
+
+### Consolidation note
+
+This family matters because wellness tools can be useful while also easy to
+overclaim. It suggests a reusable session shell with phase events, cue channels,
+privacy/ethics labels, and non-clinical boundaries.
+
+## Family 336: Embodied VR instruments and input-to-sound tools
+
+This family covers hand-tracked, Leap-driven, controller, percussion, piano, and
+biosignal projects where embodied input becomes audio or audiovisual feedback.
+
+| Project | Status | Notes |
+|---|---|---|
+| `SeungWon0927/VR_Piano` | Studied in Wave 357 | Quest hand-tracked piano with collision-based key/audio and semitone pitch offsets |
+| `JustinLin905/Pear-Piano` | Studied in Wave 357 | Oculus Interaction-heavy piano comparison node |
+| `waltzaround/Matter-VR` | Partially studied in Wave 357 | Embodied/physics music marker |
+| `magicinthesky/VR-Drumming` | Partially studied in Wave 357 | Drum-hit interaction marker |
+| `kahogeoff/vr-war-drum` | Partially studied in Wave 357 | War-drum/percussion marker with vendor-heavy source |
+| `HackTheBrain/B-vr` | Studied in Wave 357 | EEG/OpenViBE-driven visual music architecture |
+| `krebsm249/Vr-LeapMotion-playing-a-Piano` | Studied in Wave 357 | Leap piano with CSV reader, teacher scripts, menu flow, and physics UI |
+
+### Consolidation note
+
+This family matters because input source, note/hit event, sound adapter, and
+lesson logic should be reusable separately. It suggests a neutral event schema
+for hand, controller, Leap, MIDI, OSC, or biosignal instruments.
+
+## Family 337: VR creative authoring and export workbenches
+
+This family covers painting, sketching, sculpting, modeling, export/import, and
+retrieval-backed creative workflows.
+
+| Project | Status | Notes |
+|---|---|---|
+| `eman2XR/Virtual-Studio` | Studied in Wave 358 | VR painting/design toolkit with palette, brush, eraser, mesh extrusion, grabbables, networking markers, transform saver, and OBJ exporter |
+| `DhruvaRawal/SculpIt` | Studied in Wave 358 | Thin rig-spawn and line-drawing reference |
+| `johnsandiego/PolySculpt` | Partially studied in Wave 358 | Poly/SteamVR sculpting marker |
+| `not-surt/CarveVR` | Partially studied in Wave 358 | Voxel sculpting marker |
+| `E-BAO/3D-VR-Painting` | Partially studied in Wave 358 | Oculus-era 3D painting marker |
+| `Rowl1ng/SketchyVR` | Studied in Wave 358 | Line/tube sketching with save logic, OBJ export, and OBJ import |
+| `SamuelBoerlin/3D-VR-Modelling-and-Vitrivr` | Studied in Wave 358 | VR sculpting plus Cineast/Vitrivr retrieval, voxel/SDF backend, JSON conversion, and OBJ loader |
+
+### Consolidation note
+
+This family matters because creative VR utilities need a document model: tool
+state, stroke/mesh geometry, persistence, export/import, provenance, and optional
+retrieval should not be fused into one scene.
+
+## Family 338: VR sports skill loops and movement-feedback shells
+
+This family covers sports, fitness, drill, and reaction projects where target
+hits, equipment proxies, movement validation, scoring, tutorials, results, and
+safety matter.
+
+| Project | Status | Notes |
+|---|---|---|
+| `oculus-samples/Unity-MoveFast` | Studied in Wave 359 | Hand-hit fitness sample with pose gates, trigger zones, velocity scoring, combos, tutorial, and results |
+| `partharora1105/Badminton_VR` | Partially studied in Wave 359 | Badminton racket/shuttle direction marker |
+| `rishidevde/Badminton_Computer_Graphics` | Partially studied in Wave 359 | Quest/XRI badminton direction marker |
+| `LittleQBerry/REVERIE-Sports` | Partially studied in Wave 359 | Sports learning/training marker |
+| `ticahere/VIRD-demo` | Partially studied in Wave 359 | Movement/training demo marker |
+| `oculus-samples/Unity-UltimateGloveBall` | Studied in Wave 359 | Multiplayer glove-ball sample with player/glove services, UI ownership, and network/voice boundaries |
+
+### Consolidation note
+
+This family matters because sport/fitness mechanics can be reused as neutral
+drill loops: valid hit, speed/pose gate, score, tutorial, results, reset, and
+playspace safety.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

@@ -17,6 +17,25 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 356-359
+
+- `Guided breathing, meditation, wellness, and stress-protocol VR`
+  adds a session-loop branch for phase schedulers, cue channels, breath-driven
+  environment responders, AI/mood wellness surfaces, participant/task protocol
+  modules, and explicit claim/ethics caveats.
+- `Embodied VR music instruments and input-to-sound tools`
+  adds reusable direction around hand-tracked piano keys, Leap lesson data,
+  drum/percussion hit surfaces, EEG/OpenViBE visual music, note/hit events,
+  latency, confidence, and calibration.
+- `VR creative authoring, sculpting, painting, modeling, and retrieval tools`
+  adds a clearer creative-workbench branch around brush modes, line/tube
+  renderers, voxel/SDF sculpting, OBJ import/export, save logic, and
+  retrieval-backed modeling.
+- `VR sports, fitness, movement training, badminton, and reaction games`
+  adds drill-loop coverage for valid-hit gates, pose/velocity scoring, target
+  zones, combo/results services, tutorials, equipment proxies, multiplayer
+  sport boundaries, and playspace safety labels.
+
 ## Current additions from Waves 352-355
 
 - `Scientific dome, planetarium, and projection-surface viewers`
@@ -263,6 +282,13 @@ These are the clearest current product and research lines:
     logs, low-vision magnifiers, audio/haptic accessibility cues, ASL and
     finger-alphabet gesture validation, NeRF native texture handoff, Quest
     splat viewers, and light-field playback caveats.
+
+47. `Wellness sessions, embodied instruments, creative workbenches, and sports skill loops`
+    the repository now has fresh coverage of breath phase schedulers,
+    breath-driven world responders, AI/mood wellness flows, stress-protocol task
+    shells, hand/Leap/biosignal instruments, note/hit event boundaries,
+    sketch/sculpt/export pipelines, retrieval-backed modeling, hand-hit fitness
+    scoring, and multiplayer sports service boundaries.
 
 ## Most useful current docs
 

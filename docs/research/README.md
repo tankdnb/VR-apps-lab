@@ -351,6 +351,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-353-scientific-exhibition-gallery-museum-and-depth-aware-media-spaces.md`
 - `landscape/vr-projects-wave-354-vr-education-ai-tutor-chemistry-biology-and-medical-procedure-training.md`
 - `landscape/vr-projects-wave-355-mr-digital-twin-safety-drone-robot-and-industrial-control-surfaces.md`
+- `landscape/vr-projects-wave-356-guided-breathing-meditation-wellness-and-stress-protocol-vr.md`
+- `landscape/vr-projects-wave-357-vr-music-instruments-hand-tracked-piano-drums-and-biosignal-audiovisual-tools.md`
+- `landscape/vr-projects-wave-358-vr-creative-authoring-sculpting-painting-modeling-and-content-retrieval-tools.md`
+- `landscape/vr-projects-wave-359-vr-sports-fitness-movement-training-badminton-and-reaction-games.md`
 
 ## Archive Navigation
 

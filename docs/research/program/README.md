@@ -2518,3 +2518,31 @@ repeatable way.
 
 - `github-research-wave-355-backlog.md`
   Executed backlog for the Wave 355 pass.
+
+- `github-research-wave-356-plan.md`
+  Wave 356 research plan focused on guided breathing, meditation, wellness, and
+  stress-protocol VR.
+
+- `github-research-wave-356-backlog.md`
+  Executed backlog for the Wave 356 pass.
+
+- `github-research-wave-357-plan.md`
+  Wave 357 research plan focused on VR music instruments, hand-tracked piano,
+  drums, and biosignal audiovisual tools.
+
+- `github-research-wave-357-backlog.md`
+  Executed backlog for the Wave 357 pass.
+
+- `github-research-wave-358-plan.md`
+  Wave 358 research plan focused on VR creative authoring, sculpting, painting,
+  modeling, and content retrieval.
+
+- `github-research-wave-358-backlog.md`
+  Executed backlog for the Wave 358 pass.
+
+- `github-research-wave-359-plan.md`
+  Wave 359 research plan focused on VR sports, fitness, movement training,
+  badminton, and reaction games.
+
+- `github-research-wave-359-backlog.md`
+  Executed backlog for the Wave 359 pass.

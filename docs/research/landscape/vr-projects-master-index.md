@@ -1169,5 +1169,9 @@ bet everything on unsupported vendor passthrough paths.
   state-aware AI tutor labs, chemistry/biology activities, medical procedure
   familiarization, safety/failure gates, and reset loops.
 - `vr-projects-wave-355-mr-digital-twin-safety-drone-robot-and-industrial-control-surfaces.md`
+- `vr-projects-wave-356-guided-breathing-meditation-wellness-and-stress-protocol-vr.md`
+- `vr-projects-wave-357-vr-music-instruments-hand-tracked-piano-drums-and-biosignal-audiovisual-tools.md`
+- `vr-projects-wave-358-vr-creative-authoring-sculpting-painting-modeling-and-content-retrieval-tools.md`
+- `vr-projects-wave-359-vr-sports-fitness-movement-training-badminton-and-reaction-games.md`
   MR digital twins, JSON/API/IoT adapters, VPS/SSA anchoring, dashboards,
   annotations, drone/robot panels, and command-safety surfaces.
