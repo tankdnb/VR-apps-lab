@@ -19239,3 +19239,147 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   locomotion labs, RDW authoring utilities, comfort research, and path-policy
   comparison tools.
+
+## Method 817: input backend adapter plus action-composition graph
+
+- What it is:
+  input backends should be wrapped into neutral typed action streams before
+  they reach overlay, locomotion, diagnostics, or tool features.
+- Good for:
+  overlay controls, radial menus, accessibility remaps, locomotion modes,
+  diagnostic hotkeys, simulator controls, and cross-SDK utility samples.
+- Why it matters:
+  VR utilities become easier to reuse when project/vendor input stays behind an
+  adapter and feature code consumes named commands or typed action values.
+- Source evidence:
+  `ExtendRealityLtd/Tilia.Input.UnityInputManager`,
+  `ExtendRealityLtd/Tilia.Input.UnityInputSystem`, and
+  `ExtendRealityLtd/Tilia.Input.CombinedActions.Unity`.
+- Reusable core:
+  backend reader, typed action stream, source enable lifecycle, callback
+  conversion, value transformer, velocity tracker, action combiner, command
+  name, binding preset, debug label, and override/remap path.
+- Source evidence details:
+  Wave 372 includes legacy input action wrappers, Input System callback and
+  property transformers, `InputActionPropertyVelocityTracker`, GenericXR sample
+  direction, and CombinedActions axes/angle/boolean/double-click components.
+- Do not copy directly:
+  project-specific binding names, opaque prefab graphs, vendor-specific
+  assumptions, or deep dependency chains without a visible command/debug layer.
+- Maturity:
+  strong method; needs a lightweight `VR-apps-lab` command schema before code
+  reuse.
+- Best fit for `VR-apps-lab`:
+  overlay control schemas, input remapping utilities, headsetless simulator
+  controls, and future reusable VR tool templates.
+
+## Method 818: pointer target dispatch shell
+
+- What it is:
+  world-space pointer interaction should be split into pointer source, cast
+  policy, target state, validity rules, event dispatch, and command behavior.
+- Good for:
+  VR overlay windows, in-world menus, desktop-in-VR panels, diagnostics nodes,
+  remote object controls, object inspectors, and accessibility target tuning.
+- Why it matters:
+  pointing/hover/activation behavior is too central to hide inside each tool's
+  feature script.
+- Source evidence:
+  `ExtendRealityLtd/Tilia.Indicators.ObjectPointers.Unity`,
+  `ExtendRealityLtd/Tilia.Indicators.SpatialTargets.Unity`, and
+  `ExtendRealityLtd/Tilia.Interactions.PointerInteractors.Unity`.
+- Reusable core:
+  pointer source, ray/curve visual, cursor/destination, surface payload,
+  pointer component extractor, hover state, activation state, source validity,
+  target validity, group deselection, target dispatcher, pointer-grab bridge,
+  disabled state, and feedback hook.
+- Source evidence details:
+  Wave 373 includes ObjectPointers caster/origin/segment/destination
+  extraction, `SpatialTargetFacade` hover/activation flags, source/collidable
+  validity, dispatcher checks, and `PointerGrabberFacade` raycast and target
+  validity boundary.
+- Do not copy directly:
+  hardcoded line styles, target flags without visible state, pointer grabs that
+  bypass interaction authority, or raycast rules hidden from the user.
+- Maturity:
+  strong method; needs a compact overlay-control primitive spec.
+- Best fit for `VR-apps-lab`:
+  overlay/menu interaction modules, pointer diagnostics, target accessibility,
+  and remote activation helpers.
+
+## Method 819: facade-configurator prefab module with rig and locomotion adapters
+
+- What it is:
+  reusable VR modules should expose a small public facade while scene hierarchy,
+  rig details, physics providers, and prefab internals stay behind
+  configurators/adapters.
+- Good for:
+  interactables, snap docks, tool sockets, teleport/axis locomotion helpers,
+  camera-rig adapters, simulator rigs, and reusable lab scenes.
+- Why it matters:
+  utility features remain portable when interaction, locomotion, rig identity,
+  and placement logic are not embedded directly in feature scripts.
+- Source evidence:
+  `ExtendRealityLtd/Tilia.Interactions.Interactables.Unity`,
+  `ExtendRealityLtd/Tilia.Interactions.SnapZone.Unity`,
+  `ExtendRealityLtd/Tilia.Locomotors.Teleporter.Unity`,
+  `ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity`,
+  `ExtendRealityLtd/Tilia.CameraRigs.XRPluginFramework.Unity`, and
+  `ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity`.
+- Reusable core:
+  public facade, internal configurator, typed events, validity rules,
+  provider/receiver boundary, attach points, snap states, transition policy,
+  locomotion target, offset, camera validity, rig alias, prefab creator,
+  simulator adapter, and conflict policy.
+- Source evidence details:
+  Wave 374 includes `InteractorFacade`, `InteractableFacade`,
+  `SnapZoneFacade`, `TeleporterFacade`, `AxisMoveFacade`,
+  `XRFrameworkNodeRecord`, and editor prefab creator scripts.
+- Do not copy directly:
+  whole vendor package trees, opaque prefab graphs without diagrams, locomotion
+  defaults without comfort/collision checks, or rig-specific assumptions inside
+  feature code.
+- Maturity:
+  strong architecture method; needs repository-local module checklist and
+  diagrams before implementation.
+- Best fit for `VR-apps-lab`:
+  reusable prototype modules, interaction samples, docking/holster tools,
+  locomotion helpers, and headsetless workflows.
+
+## Method 820: feedback and body-safety module shell
+
+- What it is:
+  haptics, body proxies, hand visuals, collision fade overlays, and safety
+  feedback should be modeled as modules fed by feature-level feedback intent.
+- Good for:
+  overlay button feedback, diagnostics alerts, collision warnings, body-relative
+  tools, comfort gates, onboarding scenes, simulator rigs, and accessibility
+  confirmation channels.
+- Why it matters:
+  feedback and safety behavior is easy to over-couple to controllers, avatars,
+  or cameras; reusable tools need a device/body/camera boundary.
+- Source evidence:
+  `ExtendRealityLtd/Tilia.Output.InteractorHaptics.Unity`,
+  `ExtendRealityLtd/Tilia.Trackers.PseudoBody.Unity`,
+  `ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity`, and
+  `ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity`.
+- Reusable core:
+  feedback intent, interactor-to-device mapper, haptic profile, intensity,
+  queue/cancel path, body proxy source/offset, external mutator list,
+  divergence detector, collision validity, ignored objects, grounding events,
+  hand visual boundary, camera overlay boundary, fade/unfade events, and
+  explanation state.
+- Source evidence details:
+  Wave 375 includes `InteractorHapticsFacade` tracked alias and queued
+  interactor routing, `PseudoBodyFacade` source/offset/collision/divergence
+  settings, BasicHand package boundary, and `CollisionFaderFacade` source,
+  camera validity, collision validity, and overlay containers.
+- Do not copy directly:
+  vibration-heavy defaults, hidden body correction, avatar assumptions, camera
+  fading without user explanation, or device-specific haptic calls in feature
+  code.
+- Maturity:
+  useful method; needs intensity guidelines and a minimal haptic intent schema.
+- Best fit for `VR-apps-lab`:
+  overlay feedback layers, safety/comfort helpers, body proxies, hand visual
+  baselines, and diagnostics alert surfaces.

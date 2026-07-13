@@ -17,6 +17,26 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 372-375
+
+- `Tilia input adapters and action composition packages`
+  add a neutral-command branch around legacy Unity Input Manager wrappers,
+  Unity Input System callback/property transformers, velocity sources,
+  axes/angle/boolean/double-click action composition, binding templates, and
+  debug-visible command grammar.
+- `Tilia pointers, spatial targets, and pointer grabbers`
+  add a pointer-target branch around straight/curved rays, pointer payload
+  extraction, hover/activation target state, source/target validity, dispatchers,
+  distance grabbers, and overlay/menu control primitives.
+- `Tilia interactables, snap zones, locomotion, and camera rigs`
+  add a prefab-module branch around facade/configurator boundaries,
+  interactor/interactable state, snap/dock zones, teleport offsets, axis movement,
+  camera-rig adapters, and spatial simulator/headsetless workflow direction.
+- `Tilia haptics, pseudo-body, hand visuals, and collision faders`
+  add a feedback/body-safety branch around interactor haptics, queued feedback,
+  pseudo-body divergence, collision prevention, basic hand visuals, camera fade
+  overlays, and user-facing comfort explanations.
+
 ## Current additions from Waves 368-371
 
 - `XR network cybersecurity visualization and Wi-Fi mappers`

@@ -11239,6 +11239,76 @@ This family matters because RDW comparison requires explicit authoring assets,
 physical-space constraints, redirector policies, reset behavior, and experiment
 metadata instead of hardcoded scene paths.
 
+## Family 351: Unity XR input adapters and action composition
+
+This family covers backend input readers, typed action streams, callback
+conversion, command composition, velocity sources, and binding-template
+boundaries for Unity XR utilities.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ExtendRealityLtd/Tilia.Input.UnityInputManager` | Studied in Wave 372 | Legacy Unity Input Manager wrapper into neutral action streams |
+| `ExtendRealityLtd/Tilia.Input.UnityInputSystem` | Studied in Wave 372 | Input System callback/property transformers, typed actions, GenericXR sample direction, and velocity tracker |
+| `ExtendRealityLtd/Tilia.Input.CombinedActions.Unity` | Studied in Wave 372 | Axes/angle/boolean/double-click action grammar primitives |
+
+### Consolidation note
+
+This family matters because VR utilities should consume neutral named commands
+rather than binding every feature directly to one Unity input backend.
+
+## Family 352: Pointer spatial target and remote grab primitives
+
+This family covers object pointers, ray/cursor payloads, hover/activation
+targets, dispatchers, validity rules, and pointer-to-interactor bridges.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ExtendRealityLtd/Tilia.Indicators.ObjectPointers.Unity` | Studied in Wave 373 | Straight/curved pointer prefabs, ray payloads, and pointer component extractors |
+| `ExtendRealityLtd/Tilia.Indicators.SpatialTargets.Unity` | Studied in Wave 373 | Hover/activation target state, flags, source validity, collidable objects, and dispatchers |
+| `ExtendRealityLtd/Tilia.Interactions.PointerInteractors.Unity` | Studied in Wave 373 | Pointer/distance grabber layer with raycast rules and target validity |
+
+### Consolidation note
+
+This family matters because overlay windows, in-world menus, diagnostics nodes,
+and remote object controls need reusable aim/hover/activate primitives.
+
+## Family 353: Prefab interaction docking locomotion and rig adapter modules
+
+This family covers facade/configurator packages for interactables, snap zones,
+locomotion targets, camera rig adapters, and headsetless simulator boundaries.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ExtendRealityLtd/Tilia.Interactions.Interactables.Unity` | Studied in Wave 374 | Interactor/interactable facades, touch/grab events, attach points, velocity, and provider/receiver boundaries |
+| `ExtendRealityLtd/Tilia.Interactions.SnapZone.Unity` | Studied in Wave 374 | Snap zone states, validity, transition, scale/highlight policy, and thrown-object auto-snap |
+| `ExtendRealityLtd/Tilia.Locomotors.Teleporter.Unity` | Studied in Wave 374 | Teleport target/offset/floor-snap/fade module with target/camera validity |
+| `ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity` | Studied in Wave 374 | Axis movement facade with target, forward offset, rotation pivot, camera rules, and events |
+| `ExtendRealityLtd/Tilia.CameraRigs.XRPluginFramework.Unity` | Studied in Wave 374 | XR node records, rig prefab creator, and camera-rig adapter boundary |
+| `ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity` | Studied in Wave 374 | Spatial simulator package direction for editor/headsetless interaction |
+
+### Consolidation note
+
+This family matters because reusable VR lab tools need modular interaction,
+docking, locomotion, and rig boundaries instead of one-off scene scripts.
+
+## Family 354: Haptics pseudo-body hand visuals and collision comfort modules
+
+This family covers feedback intent routing, haptic profiles, body proxies,
+basic hand/controller visuals, collision rules, and camera fade overlays.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ExtendRealityLtd/Tilia.Output.InteractorHaptics.Unity` | Studied in Wave 375 | Interactor-to-controller haptic routing with tracked alias, queued interactor, profile, and intensity |
+| `ExtendRealityLtd/Tilia.Trackers.PseudoBody.Unity` | Studied in Wave 375 | Source-following pseudo-body with collision prevention, divergence, grounding, and ignored-object policy |
+| `ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity` | Studied in Wave 375 | Lightweight hand/controller visual package boundary |
+| `ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity` | Studied in Wave 375 | Collision-triggered camera overlay/fade with source, camera validity, collision validity, and fade events |
+
+### Consolidation note
+
+This family matters because utility overlays and lab scenes need explicit
+feedback, body-safety, and comfort modules that do not depend on one avatar or
+camera implementation.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

@@ -1185,5 +1185,9 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-369-quest-robot-pose-teleoperation-and-localization-bridges.md`
 - `vr-projects-wave-370-medical-volume-xr-viewers-dicom-vrdf-and-hand-ai-interfaces.md`
 - `vr-projects-wave-371-redirected-walking-path-configurators-and-obstacle-aware-redirectors.md`
+- `vr-projects-wave-372-tilia-input-adapters-and-action-composition-packages.md`
+- `vr-projects-wave-373-tilia-pointers-spatial-targets-and-pointer-grabbers.md`
+- `vr-projects-wave-374-tilia-interactables-snap-zones-locomotion-and-camera-rigs.md`
+- `vr-projects-wave-375-tilia-haptics-pseudobody-hand-visuals-and-collision-faders.md`
   MR digital twins, JSON/API/IoT adapters, VPS/SSA anchoring, dashboards,
   annotations, drone/robot panels, and command-safety surfaces.

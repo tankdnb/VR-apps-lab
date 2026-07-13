@@ -2630,3 +2630,31 @@ repeatable way.
 
 - `github-research-wave-371-backlog.md`
   Executed backlog for the Wave 371 pass.
+
+- `github-research-wave-372-plan.md`
+  Wave 372 research plan focused on Tilia input adapters and action
+  composition packages.
+
+- `github-research-wave-372-backlog.md`
+  Executed backlog for the Wave 372 pass.
+
+- `github-research-wave-373-plan.md`
+  Wave 373 research plan focused on Tilia pointers, spatial targets, and
+  pointer grabbers.
+
+- `github-research-wave-373-backlog.md`
+  Executed backlog for the Wave 373 pass.
+
+- `github-research-wave-374-plan.md`
+  Wave 374 research plan focused on Tilia interactables, snap zones,
+  locomotion, and camera rigs.
+
+- `github-research-wave-374-backlog.md`
+  Executed backlog for the Wave 374 pass.
+
+- `github-research-wave-375-plan.md`
+  Wave 375 research plan focused on Tilia haptics, pseudo-body, hand visuals,
+  and collision faders.
+
+- `github-research-wave-375-backlog.md`
+  Executed backlog for the Wave 375 pass.

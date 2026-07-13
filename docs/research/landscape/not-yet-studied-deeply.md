@@ -3156,6 +3156,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 294. `XR pose robot bridge follow-up across headset/controller/hand topic schemas, coordinate conversion, calibration, heartbeat, battery/connection health, command limits, safety authority, and replay datasets`
 295. `Medical volume XR follow-up across study manifests, DICOM/NRRD/NIFTI/VRDF import, 3D texture generation, transfer functions, segmentation labels, reload debounce, progress UX, and clinical caveat labels`
 296. `Redirected-walking authoring follow-up across path assets, tracking-space profiles, gain thresholds, obstacle polygons, waypoint policies, resetters, experiment metrics, and fork-lineage provenance`
+297. `Unity XR input adapter follow-up across backend readers, typed action streams, command schemas, binding presets, velocity sources, remap UI, debug labels, and OpenXR action-set comparison`
+298. `Pointer target primitive follow-up across ray sources, curved/straight visuals, hover/activation state, source/target validity, target groups, pointer-grab conflicts, disabled state, and accessibility logging`
+299. `Prefab module architecture follow-up across facade/configurator boundaries, interactable providers, snap/dock states, locomotion offsets, camera-rig aliases, headsetless simulator adapters, and prefab diagrams`
+300. `VR feedback and body-safety follow-up across haptic intent schemas, profile intensity, queued/cancelled feedback, pseudo-body divergence, collision fades, hand visuals, and user-facing explanation state`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

@@ -4892,6 +4892,54 @@ Primary docs:
 - `klngbhn/RDW_CurvedPathConfigurator` - `Studied in Wave 371 as a Unity editor tool for curve-based redirected-walking path layouts with joint points, curves, intersections, gain, tracking-space side length, safety distance, walking radius, and ScriptableObject persistence`
 - `omegafantasy/Bypassing-Obstacles` - `Studied as an OpenRDW2 variant in Wave 371 for obstacle-aware redirected walking, bypass redirector policy, waypoint/VE path logic, curvature/rotation/translation gain reasoning, and fork-lineage caveats`
 
+## 343. Tilia input adapters and action composition packages
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-372-tilia-input-adapters-and-action-composition-packages.md`
+- `../landscape/project-families.md`
+
+- `ExtendRealityLtd/Tilia.Input.UnityInputManager` - `Studied in Wave 372 as a legacy Unity Input Manager wrapper into neutral Zinnia-style Boolean/Float/Vector action streams`
+- `ExtendRealityLtd/Tilia.Input.UnityInputSystem` - `Studied in Wave 372 as Unity Input System callback/property transformers, typed action conversion, GenericXR sample direction, and velocity tracker source`
+- `ExtendRealityLtd/Tilia.Input.CombinedActions.Unity` - `Studied in Wave 372 as action-composition utilities for axes-to-vector, axes-to-angle, angle ranges, boolean-to-axis, double-click, and command grammar primitives`
+
+## 344. Tilia pointers spatial targets and pointer grabbers
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-373-tilia-pointers-spatial-targets-and-pointer-grabbers.md`
+- `../landscape/project-families.md`
+
+- `ExtendRealityLtd/Tilia.Indicators.ObjectPointers.Unity` - `Studied in Wave 373 as straight/curved object pointer prefabs with caster/origin/segment/destination extraction, ray visuals, and event payload boundaries`
+- `ExtendRealityLtd/Tilia.Indicators.SpatialTargets.Unity` - `Studied in Wave 373 as hover/activation spatial target state with flags, source validity, collidable objects, dispatchers, and target override behavior`
+- `ExtendRealityLtd/Tilia.Interactions.PointerInteractors.Unity` - `Studied in Wave 373 as pointer and distance grabber layer connecting object pointers, raycast rules, target validity, and interactable output`
+
+## 345. Tilia interactables snap zones locomotion and camera rigs
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-374-tilia-interactables-snap-zones-locomotion-and-camera-rigs.md`
+- `../landscape/project-families.md`
+
+- `ExtendRealityLtd/Tilia.Interactions.Interactables.Unity` - `Studied in Wave 374 as interactor/interactable facade model with touch/grab events, attach points, velocity trackers, provider/receiver boundaries, and conflict caveats`
+- `ExtendRealityLtd/Tilia.Interactions.SnapZone.Unity` - `Studied in Wave 374 as snap zone state machine with validity, transition duration, scale policy, highlight state, initial snaps, and thrown-object auto-snap option`
+- `ExtendRealityLtd/Tilia.Locomotors.Teleporter.Unity` - `Studied in Wave 374 as teleport target/offset/floor-snap/fade module with target validity, destination rotation, camera validity, and blink threshold settings`
+- `ExtendRealityLtd/Tilia.Locomotors.AxisMove.Unity` - `Studied in Wave 374 as action-axis movement facade with target, forward offset, rotation pivot, scene-camera rules, multipliers, and movement events`
+- `ExtendRealityLtd/Tilia.CameraRigs.XRPluginFramework.Unity` - `Studied in Wave 374 as XR Plugin Framework camera-rig package with node records, prefab creator, and rig adapter boundary`
+- `ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity` - `Studied in Wave 374 as spatial simulator package direction for headsetless/editor spatial interaction and rig abstraction`
+
+## 346. Tilia haptics pseudo-body hand visuals and collision faders
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-375-tilia-haptics-pseudobody-hand-visuals-and-collision-faders.md`
+- `../landscape/project-families.md`
+
+- `ExtendRealityLtd/Tilia.Output.InteractorHaptics.Unity` - `Studied in Wave 375 as interactor-to-controller haptic routing with tracked alias, left/right interactors, queued interactor, profile, intensity, and cancel flows`
+- `ExtendRealityLtd/Tilia.Trackers.PseudoBody.Unity` - `Studied in Wave 375 as collidable pseudo-body tracker with source/offset, external mutators, collision prevention, divergence thresholds, grounding, jump, and ignored-object policy`
+- `ExtendRealityLtd/Tilia.Visuals.BasicHand.Unity` - `Studied in Wave 375 as lightweight hand/controller visual package boundary for presence without owning a full avatar stack`
+- `ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity` - `Studied in Wave 375 as collision-triggered camera overlay/fade module with source follower, camera validity, collision validity, fade/unfade events, and diagnostics caveat`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

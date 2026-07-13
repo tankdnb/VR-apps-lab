@@ -1677,6 +1677,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on RDW path authoring, obstacle-aware
   redirectors, gains, and variant provenance.
 
+- `vr-projects-wave-372-tilia-input-adapters-and-action-composition-packages.md`
+  Next GitHub discovery wave focused on Tilia input adapters, typed action
+  streams, Unity Input System transformers, and command-composition primitives.
+
+- `vr-projects-wave-373-tilia-pointers-spatial-targets-and-pointer-grabbers.md`
+  Next GitHub discovery wave focused on object pointers, spatial targets,
+  hover/activation state, validity rules, and pointer grabber bridges.
+
+- `vr-projects-wave-374-tilia-interactables-snap-zones-locomotion-and-camera-rigs.md`
+  Next GitHub discovery wave focused on interactable facades, snap zones,
+  teleport/axis locomotion, camera rig adapters, and spatial simulator packages.
+
+- `vr-projects-wave-375-tilia-haptics-pseudobody-hand-visuals-and-collision-faders.md`
+  Next GitHub discovery wave focused on haptic routing, pseudo-body safety,
+  hand visuals, and collision-triggered camera fade modules.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.
