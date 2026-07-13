@@ -19652,3 +19652,127 @@ When a new utility idea appears:
 - Best fit for `VR-apps-lab`:
   runtime helper design, retrofit research, profile stores, local assistant
   prototypes, and AI utility surfaces.
+
+## Method 829: Quest hand telemetry bridge to ROS actuators and virtual inputs
+
+- What it is:
+  capture Quest/OpenXR hand data once, then adapt it into explicit packet,
+  ROS, actuator, or virtual-device outputs.
+- Good for:
+  hand telemetry appliances, robot hand demos, steering bridges, ROS pose
+  publishers, gesture diagnostics, and hand-tracking calibration utilities.
+- Why it matters:
+  hand tracking is not reusable until confidence, packet schema, coordinate
+  conversion, output mapping, and safety/fallback states are documented.
+- Source evidence:
+  `NU-MECH-ENG-495/vr-hand-tracking`, `minsley/avatar-quest`,
+  `yefeblgn/VR-Hand-Steering-Bridge`, and `lts0429/teleoperation`.
+- Reusable core:
+  hand source, joint/curl calculator, confidence gate, packet schema, transport
+  adapter, coordinate converter, output adapter, debug HUD, calibration profile,
+  and safety/fallback state.
+- Source evidence details:
+  Wave 384 includes `HandTrackerQuest.cpp`, `JointAngleVisualizer.cpp`,
+  `avatar-quest/src/main.cpp`, `VR-Hand-Steering-Bridge/Program.cs`, and
+  `teleoperation/udp_client.cpp`.
+- Do not copy directly:
+  hardcoded IPs, binary APK artifacts, unversioned packet strings, hidden
+  steering assumptions, or pose conversion without frame labels.
+- Maturity:
+  strong bridge method; needs a neutral packet schema and safety labels.
+- Best fit for `VR-apps-lab`:
+  tracking helpers, robot bridges, input remappers, diagnostics, and
+  hand-tracking utility prototypes.
+
+## Method 830: XR robot teleoperation control loop with dataset recorder
+
+- What it is:
+  structure teleoperation as a control loop with separable XR input, camera
+  feeds, robot adapters, simulation/headless modes, recording, and calibration.
+- Good for:
+  operator cockpits, robot labs, replay datasets, remote manipulation, softbot
+  control, and headsetless tracker instrumentation.
+- Why it matters:
+  robot control is high-risk; the UI and data model must expose target,
+  connection, calibration, mode, recording, and stop/recovery state.
+- Source evidence:
+  `fiveages-sim/xr_teleoperate_ocs2_ros2`,
+  `IIT-SoftBots/UnitySoftbotsTeleopRelease`, and `stex2005/Unity-HTC`.
+- Reusable core:
+  input-source selector, robot adapter record, end-effector adapter, camera
+  shared memory, discovery broadcast, calibration prompt, connection state,
+  record toggle, episode writer, safety limits, and tracker role map.
+- Source evidence details:
+  Wave 385 includes `teleop_hand_and_arm.py`, `EpisodeWriter`, IIT architecture
+  modules, robot prefabs/ROS folders, and Unity-HTC Null Driver tracker roles.
+- Do not copy directly:
+  hardware-specific controllers as generic logic, recording without metadata,
+  tracker roles without serial identity, or robot control without stop state.
+- Maturity:
+  strategic operator-console method; needs schema alignment with telemetry
+  catalog work.
+- Best fit for `VR-apps-lab`:
+  robotics operator tools, calibration dashboards, pose bridges, dataset
+  recorders, and safety-first teleoperation references.
+
+## Method 831: XR hardware runtime bootstrap template
+
+- What it is:
+  package hardware/runtime setup as templates with sample scenes, settings,
+  lifecycle, action APIs, haptics, and provenance caveats.
+- Good for:
+  SenseGlove/hand hardware onboarding, Omniverse/Isaac Sim XR, OpenXR
+  extension wrappers, haptic samples, and setup-heavy lab templates.
+- Why it matters:
+  many XR hardware failures are setup failures; reusable templates need
+  documented plugin versions, headset settings, runtime loops, and fallback
+  paths.
+- Source evidence:
+  `Adjuvo/Unity-Template` and `Toni-SM/semu.xr.openxr`.
+- Reusable core:
+  template project, sample scene, hardware setting profile, interaction
+  checklist, extension manifest, action subscription, stereo render setup,
+  haptic output, GUI launcher, version caveat, and native-binary provenance.
+- Source evidence details:
+  Wave 386 includes SenseGlove template scenes/settings and
+  `semu.xr.openxr` `exts`, `extension.toml`, Python bindings, UI extension,
+  tests, and `src/xr.cpp`.
+- Do not copy directly:
+  plug-in binaries without provenance, hardware settings as universal defaults,
+  or runtime loops without enable/disable lifecycle.
+- Maturity:
+  useful bootstrap method; needs a standard hardware-template checklist.
+- Best fit for `VR-apps-lab`:
+  hardware lab templates, runtime extension experiments, haptic demos, and
+  workbench XR integration.
+
+## Method 832: spatial application UX pattern extraction
+
+- What it is:
+  extract reusable menu, task, placement, filter, command, and session-state
+  patterns from full VR/MR applications without copying their domain content.
+- Good for:
+  wrist/radial menus, scientific analysis surfaces, rehab task systems,
+  passthrough strategy interactions, object-driven rules, and desktop/VR
+  collaboration.
+- Why it matters:
+  application repos often contain the strongest UX lessons even when their
+  code is domain-specific or not reusable as a library.
+- Source evidence:
+  `Superkart/Immersive_Cosmology_Explorer`,
+  `WallerTheDeveloper/vr-tower-defense`, and `vladyslav-tsalko/REMIRE`.
+- Reusable core:
+  radial menu, wrist menu, pinch/hover feedback, object rule asset,
+  command/undo action, factory/pool, adaptive placement, dataset filter,
+  annotation/session state, desktop mirror, and caveat label.
+- Source evidence details:
+  Wave 387 includes ICE README/assets layout, tower-defense architecture README,
+  and REMIRE README interaction/task sections plus LFS artifact failure caveat.
+- Do not copy directly:
+  domain claims, game combat systems, clinical flows without validation, LFS
+  artifacts, or desktop collaboration without conflict state.
+- Maturity:
+  product-reference method; needs a common wrist/radial/task vocabulary.
+- Best fit for `VR-apps-lab`:
+  product ideation, menu systems, task-driven utilities, spatial analysis tools,
+  and UX pattern reuse.

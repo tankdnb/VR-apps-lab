@@ -2714,3 +2714,31 @@ repeatable way.
 
 - `github-research-wave-383-backlog.md`
   Executed backlog for the Wave 383 pass.
+
+- `github-research-wave-384-plan.md`
+  Wave 384 research plan focused on Quest hand streaming, steering, and ROS
+  bridge utilities.
+
+- `github-research-wave-384-backlog.md`
+  Executed backlog for the Wave 384 pass.
+
+- `github-research-wave-385-plan.md`
+  Wave 385 research plan focused on XR robot teleoperation control loops and
+  dataset recorders.
+
+- `github-research-wave-385-backlog.md`
+  Executed backlog for the Wave 385 pass.
+
+- `github-research-wave-386-plan.md`
+  Wave 386 research plan focused on XR hardware runtime templates and
+  Omniverse OpenXR extension bindings.
+
+- `github-research-wave-386-backlog.md`
+  Executed backlog for the Wave 386 pass.
+
+- `github-research-wave-387-plan.md`
+  Wave 387 research plan focused on spatial application UX patterns for
+  science, rehab, and strategy tools.
+
+- `github-research-wave-387-backlog.md`
+  Executed backlog for the Wave 387 pass.

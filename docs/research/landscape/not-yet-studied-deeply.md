@@ -3168,6 +3168,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 306. `Godot XR networking follow-up across ENet/WebRTC transport schemas, avatar presence minimums, object authority, reconnect/error UI, identity/privacy labels, and social-world service assumptions`
 307. `Godot cross-device OpenXR follow-up across Samsung XR and AVP action/input assumptions, engine patch provenance, test-project validation, artifact policy, and legacy Godot 3 migration caveats`
 308. `Godot retrofit and AI NPC tooling follow-up across injector dry-runs, profile schemas, target version matching, rollback backups, class-registration manifests, AI provider boundaries, privacy, and credential hygiene`
+309. `Quest hand telemetry bridge follow-up across packet schemas, timestamps, confidence gates, curl normalization, OpenXR loader fallback, coordinate frames, actuator safety, and virtual-input calibration`
+310. `XR robot teleoperation console follow-up across robot adapter records, camera feed metadata, discovery broadcasts, operator body calibration, episode writer schema, headsetless tracker roles, stop/recovery state, and ROS mode boundaries`
+311. `XR hardware runtime template follow-up across plugin versions, headset setting profiles, sample scenes, action subscription lifecycle, haptics, GUI launchers, native binary provenance, and fallback paths`
+312. `Spatial application UX follow-up across wrist/radial menu vocabulary, object-driven grab/task rules, command undo, factory/pool boundaries, adaptive placement, dataset filters, annotations, desktop mirroring, and session-state schemas`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

@@ -1207,3 +1207,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-383-godot-vr-retrofit-modloader-game-profiles-and-ai-npc-tooling.md`
   Godot VR retrofit injectors, game profiles, modloader patching, and AI NPC
   provider/privacy boundaries.
+- `vr-projects-wave-384-quest-hand-streaming-steering-and-ros-bridge-utilities.md`
+  Quest/OpenXR hand telemetry bridges, UDP/ROS2 pose packets, actuator streams,
+  and virtual-input steering.
+- `vr-projects-wave-385-xr-robot-teleoperation-control-loops-and-dataset-recorders.md`
+  XR robot teleoperation loops, shared-memory camera feeds, robot adapters,
+  episode recorders, and headsetless tracker roles.
+- `vr-projects-wave-386-xr-hardware-runtime-templates-and-omniverse-openxr-extension-bindings.md`
+  SenseGlove Unity templates and Omniverse OpenXR extension bindings with
+  action/haptic/render loops.
+- `vr-projects-wave-387-spatial-application-ux-patterns-for-science-rehab-and-strategy-tools.md`
+  Spatial app UX patterns for scientific visualization, passthrough strategy,
+  rehabilitation tasks, wrist/radial menus, and session state.

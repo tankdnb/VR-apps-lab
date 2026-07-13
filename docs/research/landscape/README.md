@@ -1725,6 +1725,23 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on Godot VR retrofit injectors, per-game
   profiles, modloader patching, and AI NPC adapter boundaries.
 
+- `vr-projects-wave-384-quest-hand-streaming-steering-and-ros-bridge-utilities.md`
+  Next GitHub discovery wave focused on Quest/OpenXR hand telemetry bridges,
+  UDP/ROS2 pose packets, actuator streams, and virtual-input steering.
+
+- `vr-projects-wave-385-xr-robot-teleoperation-control-loops-and-dataset-recorders.md`
+  Next GitHub discovery wave focused on XR robot teleoperation loops,
+  shared-memory camera feeds, robot adapters, episode recorders, and tracker
+  roles.
+
+- `vr-projects-wave-386-xr-hardware-runtime-templates-and-omniverse-openxr-extension-bindings.md`
+  Next GitHub discovery wave focused on SenseGlove Unity templates and
+  Omniverse OpenXR extension bindings with action/haptic/render loops.
+
+- `vr-projects-wave-387-spatial-application-ux-patterns-for-science-rehab-and-strategy-tools.md`
+  Next GitHub discovery wave focused on spatial app UX patterns for scientific
+  visualization, passthrough strategy, and rehabilitation tasks.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

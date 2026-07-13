@@ -17,6 +17,25 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 384-387
+
+- `Quest hand streaming, steering, and ROS bridge utilities`
+  add a hand-telemetry branch around Quest/OpenXR joint capture, curl
+  normalization, UDP packet schemas, OpenXR loader fallback, ROS2 pose topics,
+  TF frames, vJoy steering, debug HUDs, and actuator safety caveats.
+- `XR robot teleoperation control loops and dataset recorders`
+  add operator-console coverage around TeleVuer-style XR input, shared-memory
+  camera feeds, robot/end-effector adapters, ROS1/ROS2 modes, discovery,
+  operator body calibration, episode recording, and headsetless tracker roles.
+- `XR hardware runtime templates and Omniverse OpenXR extension bindings`
+  add hardware/runtime bootstrap coverage around SenseGlove scene templates,
+  headset settings, gesture teleport, Omniverse OpenXR Python bindings, GUI
+  launchers, action subscription, haptics, and native-binary provenance.
+- `Spatial application UX patterns for science, rehab, and strategy tools`
+  add product-level UX references around scientific VR/desktop analysis,
+  wrist/radial menus, passthrough strategy placement, object-driven rehab grab
+  rules, command/factory/pool patterns, adaptive placement, and session state.
+
 ## Current additions from Waves 380-383
 
 - `Godot Quest interaction toolkits, saber game, and hand rigging pipeline`

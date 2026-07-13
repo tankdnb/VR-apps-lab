@@ -5030,6 +5030,50 @@ Primary docs:
 - `teddybear082/CrueltySquadVR-Modloader` - `Studied in Wave 383 as modloader-style VR patch project with install scripts, modloader.gd, override.cfg, XR Tools graft points, and dry-run safety caveats`
 - `teddybear082/godot-ai-npc-example` - `Studied in Wave 383 as Godot AI NPC example envelope with scripts, demo, assets, addons, fonts, and provider/privacy boundary questions`
 
+## 355. Quest hand streaming steering and ROS bridge utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-384-quest-hand-streaming-steering-and-ros-bridge-utilities.md`
+- `../landscape/project-families.md`
+
+- `NU-MECH-ENG-495/vr-hand-tracking` - `Studied in Wave 384 as Unity/Meta Quest hand-joint capture plus UDP and ROS2 receiver/visualizer with launch and packet-schema follow-up`
+- `minsley/avatar-quest` - `Studied in Wave 384 as native Quest OpenXR hand curl to ESP32 UDP stream with passthrough, TinyUI/debug overlay, extension setup, and hardcoded endpoint caveat`
+- `yefeblgn/VR-Hand-Steering-Bridge` - `Studied in Wave 384 as PC OpenXR hand-joint reader mapping Quest/Virtual Desktop hand pose to vJoy steering with loader discovery and Kalman/config caveats`
+- `lts0429/teleoperation` - `Studied in Wave 384 as Quest UDP pose bridge to ROS2 headset/left_hand/right_hand topics and TF frames with Unity-to-ROS coordinate conversion`
+
+## 356. XR robot teleoperation control loops and dataset recorders
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-385-xr-robot-teleoperation-control-loops-and-dataset-recorders.md`
+- `../landscape/project-families.md`
+
+- `fiveages-sim/xr_teleoperate_ocs2_ros2` - `Studied in Wave 385 as XR teleoperation control loop with TeleVuer, shared-memory image feeds, arm/end-effector adapters, simulation/headless flags, and episode recorder`
+- `IIT-SoftBots/UnitySoftbotsTeleopRelease` - `Studied in Wave 385 as Unity soft-robot teleoperation shell with Movement SDK body calibration, ROS1/ROS2 compatibility, broadcast discovery, UI modules, and license/completeness caveats`
+- `stex2005/Unity-HTC` - `Studied in Wave 385 as SteamVR Null Driver headsetless tracker setup with tracker-to-object binding, logical roles, dynamic swapping, and serial persistence follow-up`
+
+## 357. XR hardware runtime templates and Omniverse OpenXR bindings
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-386-xr-hardware-runtime-templates-and-omniverse-openxr-extension-bindings.md`
+- `../landscape/project-families.md`
+
+- `Adjuvo/Unity-Template` - `Studied in Wave 386 as SenseGlove Unity template with example interactions, headset-specific settings, gesture teleport, and hardware/plugin provenance caveats`
+- `Toni-SM/semu.xr.openxr` - `Studied in Wave 386 as Omniverse OpenXR extension with Python binding, GUI launcher, action subscription, haptics, stereo rendering, native bins, and extension lifecycle lessons`
+
+## 358. Spatial application UX patterns for science rehab and strategy tools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-387-spatial-application-ux-patterns-for-science-rehab-and-strategy-tools.md`
+- `../landscape/project-families.md`
+
+- `Superkart/Immersive_Cosmology_Explorer` - `Studied in Wave 387 as Unity VR/desktop scientific visualization workbench with point-cloud filtering, radial menus, session state, collaboration framing, and asset provenance caveats`
+- `WallerTheDeveloper/vr-tower-defense` - `Studied in Wave 387 as Quest passthrough strategy game reference with wrist tower menu, pinch gestures, factories, commands, state machines, pooling, and spatial UI lessons`
+- `vladyslav-tsalko/REMIRE` - `Deepened in Wave 387 as MR rehabilitation task/grab-rule reference with MRUK, Meta XR Hands, adaptive placement, difficulty levels, grip strength, and missing LFS APK caveat`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

@@ -11447,6 +11447,76 @@ This family matters because retrofit and assistant tooling must separate
 target-specific profiles, installer/injector behavior, reusable XR assets, and
 privacy/safety state.
 
+## Family 363: Quest hand telemetry bridges
+
+This family covers Quest/OpenXR hand tracking as a data source for ROS,
+actuators, virtual desktop/game input, and teleoperation utilities.
+
+| Project | Status | Notes |
+|---|---|---|
+| `NU-MECH-ENG-495/vr-hand-tracking` | Studied in Wave 384 | Unity hand-joint sender plus ROS2 receiver/visualizer |
+| `minsley/avatar-quest` | Studied in Wave 384 | Native Quest OpenXR hand curl to ESP32 UDP stream with passthrough/debug overlay |
+| `yefeblgn/VR-Hand-Steering-Bridge` | Studied in Wave 384 | OpenXR hand pose to vJoy steering bridge with loader discovery |
+| `lts0429/teleoperation` | Studied in Wave 384 | Quest UDP headset/hand pose packets to ROS2 topics and TF frames |
+
+### Consolidation note
+
+This family matters because hand tracking becomes reusable only when packet
+schemas, confidence, coordinate conversion, output adapters, and safety states
+are explicit.
+
+## Family 364: XR robot teleoperation control loops
+
+This family covers XR operator consoles, camera downlinks, robot adapters,
+simulation/headless modes, discovery, calibration, recording, and headsetless
+tracker roles.
+
+| Project | Status | Notes |
+|---|---|---|
+| `fiveages-sim/xr_teleoperate_ocs2_ros2` | Studied in Wave 385 | TeleVuer, shared-memory images, arm/hand adapters, sim/headless flags, episode writer |
+| `IIT-SoftBots/UnitySoftbotsTeleopRelease` | Studied in Wave 385 | Unity softbot teleop shell with Movement SDK calibration, ROS1/ROS2, discovery, UI modules |
+| `stex2005/Unity-HTC` | Studied in Wave 385 | SteamVR Null Driver headsetless tracker workflow and logical tracker roles |
+
+### Consolidation note
+
+This family matters because teleoperation utilities need operator-mode
+selection, connection health, calibration, recording, and safety before any
+robot-specific control code is trusted.
+
+## Family 365: XR hardware runtime bootstrap templates
+
+This family covers hardware-specific Unity templates, OpenXR extension
+bindings, GUI launchers, action subscription, haptics, and setup caveats.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Adjuvo/Unity-Template` | Studied in Wave 386 | SenseGlove Unity template with interaction scenes and headset settings |
+| `Toni-SM/semu.xr.openxr` | Studied in Wave 386 | Omniverse OpenXR Python binding, UI launcher, action/haptic/render loop |
+
+### Consolidation note
+
+This family matters because hardware/runtime onboarding should be captured as
+template scenes, settings, lifecycle, and provenance rather than hidden setup
+steps.
+
+## Family 366: Spatial application UX patterns
+
+This family covers product-level UX references for scientific analysis,
+passthrough strategy interactions, rehabilitation task systems, radial/wrist
+menus, object-driven rules, and session state.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Superkart/Immersive_Cosmology_Explorer` | Studied in Wave 387 | Scientific VR/desktop visualization with filtering, radial menus, annotations, and session state |
+| `WallerTheDeveloper/vr-tower-defense` | Studied in Wave 387 | Passthrough tower defense with wrist menu, pinch gestures, factories, commands, and pooling |
+| `vladyslav-tsalko/REMIRE` | Deepened in Wave 387 | MR rehab tasks with MRUK, hand tracking, object-driven grab rules, difficulty, and LFS caveat |
+
+### Consolidation note
+
+This family matters because application examples reveal reusable menu, task,
+placement, filter, and session patterns that are easy to miss in toolkit-only
+research.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

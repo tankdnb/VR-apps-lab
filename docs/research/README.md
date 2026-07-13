@@ -379,6 +379,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-381-godot-xr-networking-social-avatar-and-webrtc-world-shells.md`
 - `landscape/vr-projects-wave-382-godot-cross-device-openxr-samsung-avp-and-legacy-backend-experiments.md`
 - `landscape/vr-projects-wave-383-godot-vr-retrofit-modloader-game-profiles-and-ai-npc-tooling.md`
+- `landscape/vr-projects-wave-384-quest-hand-streaming-steering-and-ros-bridge-utilities.md`
+- `landscape/vr-projects-wave-385-xr-robot-teleoperation-control-loops-and-dataset-recorders.md`
+- `landscape/vr-projects-wave-386-xr-hardware-runtime-templates-and-omniverse-openxr-extension-bindings.md`
+- `landscape/vr-projects-wave-387-spatial-application-ux-patterns-for-science-rehab-and-strategy-tools.md`
 
 ## Archive Navigation
 
