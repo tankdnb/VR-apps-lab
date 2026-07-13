@@ -17,6 +17,25 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 404-407
+
+- `VR physics interaction, grab joints, and hand templates`
+  add interaction-substrate coverage around physical hand proxies, rigidbody
+  velocity matching, attach points, drop thresholds, joint constraints,
+  hover/highlight state, release impulses, and Godot/Unity engine boundaries.
+- `VR math, geometry visualization, and classroom games`
+  add embodied-learning coverage around equation generators, custom question
+  data, timed actions, teacher analytics, matrix/FFT spatial boards,
+  WebVR/WebXR controller abstractions, and geometry visualization adapters.
+- `VR anatomy, volume dissection, and medical learning objects`
+  add medical-learning-object coverage around part registries, labels,
+  dissection/slice controls, snapping puzzles, volume rendering controllers,
+  MRTK data/UX shells, provenance, and clinical caveats.
+- `VR museum AI guide, exhibition analytics, and web exhibit spaces`
+  add exhibit-system coverage around gaze/room logs, dwell thresholds, local
+  RAG guides, STT/TTS adapters, chat transcripts, survey exports, catalog
+  surfaces, web collection shells, and curator-facing analytics.
+
 ## Current additions from Waves 400-403
 
 - `VR welding and industrial procedure training`

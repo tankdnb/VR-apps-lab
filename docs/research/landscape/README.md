@@ -1806,6 +1806,22 @@ Use these files when you want to understand:
   Next GitHub discovery wave focused on drone/robot operator testbeds, control
   modes, trials, biosignal ingress, and telemetry logging.
 
+- `vr-projects-wave-404-vr-physics-interaction-grab-joint-and-hand-templates.md`
+  Next GitHub discovery wave focused on physics hand interaction, grab joints,
+  attach/drop thresholds, release impulses, and Unity/Godot hand templates.
+
+- `vr-projects-wave-405-vr-math-geometry-visualization-and-classroom-games.md`
+  Next GitHub discovery wave focused on embodied math games, spatial
+  matrix/FFT boards, geometry rendering, and teacher analytics.
+
+- `vr-projects-wave-406-vr-anatomy-volume-dissection-and-medical-learning-objects.md`
+  Next GitHub discovery wave focused on anatomy labels, dissection, snapping
+  puzzles, volume rendering, and medical learning object UI shells.
+
+- `vr-projects-wave-407-vr-museum-ai-guide-exhibition-analytics-and-web-exhibit-spaces.md`
+  Next GitHub discovery wave focused on exhibit-aware AI guides, gaze/room
+  analytics, structured exports, catalogs, and web exhibit surfaces.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

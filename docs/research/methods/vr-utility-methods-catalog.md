@@ -20299,3 +20299,137 @@ When a new utility idea appears:
   research-harness pattern; strong for control/telemetry utilities.
 - Best fit for `VR-apps-lab`:
   robot/drone operator helpers, external-control dashboards, and trial loggers.
+
+## Method 849: Physics-based hand interaction envelope
+
+- What it is:
+  model VR grabbing through a physical hand/controller envelope with attach
+  points, hover state, joint or velocity constraints, collision feedback, and
+  explicit drop/release rules.
+- Good for:
+  object manipulation, tool handles, levers, dials, inventory grabs, puzzle
+  objects, training props, and engine-neutral interaction templates.
+- Why it matters:
+  believable interaction is a reusable utility substrate; users need objects
+  to collide, resist, attach, detach, and throw predictably.
+- Source evidence:
+  `TomorrowTodayLabs/NewtonVR`, `JScott/ViveGrip`,
+  `JLPM22/VRPhysicsInteractionUnity`, and
+  `jtnicholl/godot4-vr-physics-template`.
+- Reusable core:
+  tracked controller anchor, physical hand proxy, candidate hover/highlight,
+  attach point, attach/drop thresholds, velocity matching, angular velocity
+  matching, collision material state, release impulse, two-hand averaging, and
+  runtime adapter boundary.
+- Source evidence details:
+  `NVRInteractableItem` drives rigidbody velocity toward hand targets;
+  `NVRAttachJoint` pulls attach points and detaches on distance;
+  Godot `vr_hand.gd` uses `RigidBody3D` integration for physical hands;
+  `pickup.gd` freezes/reparents held objects and applies release impulse.
+- Do not copy directly:
+  old vendor SDK bindings, hard-coded controller mappings, example-scene object
+  names, or transform-only grabbing that hides collision state.
+- Maturity:
+  strong reusable interaction substrate; should be normalized across engines.
+- Best fit for `VR-apps-lab`:
+  reusable hand/object interaction samples, tool affordances, and future
+  overlay or utility controls that need physical manipulation.
+
+## Method 850: Abstract problem to embodied action learning loop
+
+- What it is:
+  turn abstract learning content into spatial objects, user actions,
+  correctness feedback, and exportable learning evidence.
+- Good for:
+  math games, classroom visualizations, graph/science explainers, spatial
+  quizzes, teacher dashboards, and embodied training prompts.
+- Why it matters:
+  VR education works best when the user acts on a concept, sees immediate
+  feedback, and leaves behind evidence that can be reviewed.
+- Source evidence:
+  `Rud156/MathSaber`, `PNCaruana/VR-Classroom`, `mtwoodard/hypVR-Ray`, and
+  `jmacd/grraph`.
+- Reusable core:
+  content schema, problem generator, spatial object mapper, timed interaction,
+  correctness validator, feedback object, score/analytics record,
+  teacher/operator export, optional data board, and visualization adapter.
+- Source evidence details:
+  `MathSaber` separates equation generation, spawners, blocks, analytics, and
+  custom question data; `VR-Classroom` maps matrix values to bar scale/color;
+  `hypVR-Ray` separates controller polling from mathematical rendering.
+- Do not copy directly:
+  rhythm-game assets, obsolete WebVR APIs, hard-coded matrices, or learning
+  claims without validation data.
+- Maturity:
+  useful education-method pattern; needs schema examples before prototyping.
+- Best fit for `VR-apps-lab`:
+  educational utility prototypes, spatial data explainers, and training loops
+  that need evidence exports.
+
+## Method 851: Anatomy learning object with inspect isolate slice and solve modes
+
+- What it is:
+  expose anatomy or medical data as a controllable learning object with labels,
+  part isolation, slice/volume controls, puzzle/snapping tasks, and clear
+  clinical caveats.
+- Good for:
+  anatomy education, medical imaging explainers, rehabilitation education,
+  museum/science exhibits, and non-clinical 3D learning tools.
+- Why it matters:
+  complex anatomical data needs inspectable modes and metadata, not just
+  imported meshes or unsupported medical claims.
+- Source evidence:
+  `chrislarkee/VR-Neuroanatomy`, `asemahassan/3DPuzzleVR`,
+  `malyalar/vr-volume-renderer`, and `auroey/mr-IMVA-unity`.
+- Reusable core:
+  anatomical part registry, label metadata, part visibility, slice/volume
+  controls, grab/rotate controls, snap target/tolerance, learner task state,
+  data-bound sliders/dialogs, reset flow, and clinical caveat label.
+- Source evidence details:
+  `VR-Neuroanatomy` exposes brain parts, labels, menus, and slicing;
+  `3DPuzzleVR` includes snapping, distance, wand, physics/no-gravity object
+  paths; `vr-volume-renderer` includes volume rendering controllers; MRTK data
+  and UI scripts show shell patterns for filters/layers/dialogs.
+- Do not copy directly:
+  clinical claims, patient-data assumptions, old SDK bundles, unlicensed
+  medical assets, or full MRTK package bulk when only a UI shell is needed.
+- Maturity:
+  promising domain-learning method; needs normalized metadata and asset
+  provenance rules.
+- Best fit for `VR-apps-lab`:
+  anatomy/science learning objects, sliceable viewers, and educational
+  inspection tools.
+
+## Method 852: Exhibit-aware AI guide with visitor analytics export
+
+- What it is:
+  combine exhibit metadata, room/gaze sensing, local or cloud guide adapters,
+  chat/voice interaction, and structured exports for post-visit analysis.
+- Good for:
+  VR museums, galleries, training exhibits, onboarding walkthroughs, product
+  demos, science explainers, and research installations.
+- Why it matters:
+  exhibit systems need a dual loop: visitor-facing interpretation during the
+  session and curator/operator-facing evidence afterwards.
+- Source evidence:
+  `KuhakuNeko/VR-AI-Museum`, `doktorfrag/museum-experience-vr`,
+  `christian-acuna/react-vr-museum`, and `VIRTUE-DBIS/vre-mixnhack19`.
+- Reusable core:
+  exhibit manifest, room registry, gaze target IDs, dwell-time threshold, room
+  transition logger, visitor session ID, chat transcript, prompt context
+  enrichment, RAG adapter, STT/TTS adapters, survey export, narrative journey
+  log, CSV/JSON export, and privacy/retention controls.
+- Source evidence details:
+  `VR-AI-Museum` documents gaze CSV, journey TXT, chat TXT, survey JSON/CSV,
+  `GazeSense`, `RoomSense`, `PositionSense`, `OllamaIntegration`,
+  `WhisperControl`, and `ChatbotLogger`; companion museum projects add catalog,
+  location, collection, search, and backend-media-query boundaries.
+- Do not copy directly:
+  hard-coded artwork assumptions, non-commercial assets, cloud uploads without
+  consent, Windows-only TTS as the only output path, or outdated WebVR runtime
+  details.
+- Maturity:
+  strong product/system pattern; needs privacy defaults and adapter contracts.
+- Best fit for `VR-apps-lab`:
+  AI-guided exhibit utilities, gaze/room analytics, journey reports, and
+  reusable museum/gallery shells.

@@ -11798,6 +11798,82 @@ This family matters because robot, drone, tracker, and external-control VR
 utilities need clean separation between input adapters, device models, trial
 protocols, and data writers.
 
+## Family 383: Physics hand interaction and grab joints
+
+This family covers VR interaction systems where tracked controller input is
+mediated through physical hands, rigidbodies, attach points, joint constraints,
+hover/highlight state, drop thresholds, and release impulses.
+
+| Project | Status | Notes |
+|---|---|---|
+| `TomorrowTodayLabs/NewtonVR` | Studied in Wave 404 | Unity physics interaction toolkit with velocity matching, attach points, levers, sliders, buttons, and SDK adapters |
+| `JScott/ViveGrip` | Studied in Wave 404 | ConfigurableJoint grab abstraction with highlights, weighted objects, levers, dials, guns, and examples |
+| `JLPM22/VRPhysicsInteractionUnity` | Studied with caveats in Wave 404 | Quest physics interaction prototype with nearby-object highlight and trigger grab |
+| `jtnicholl/godot4-vr-physics-template` | Studied in Wave 404 | Godot 4 physical hand template with RigidBody3D hand proxies and pickup/release scripts |
+
+### Consolidation note
+
+This family matters because reusable VR utilities often need robust object
+handling before they need app-specific features: hover, attach, pull, collide,
+drop, throw, and recover should be explicit interaction states.
+
+## Family 384: VR math and embodied learning visualization
+
+This family covers math/geometry learning tools where equations, matrices,
+graphs, or abstract spaces become embodied actions, spatial boards, controller
+experiments, and analytics-friendly learning loops.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Rud156/MathSaber` | Studied in Wave 405 | Equation practice game with generated blocks, custom questions, slicing action, analytics, and logs |
+| `PNCaruana/VR-Classroom` | Studied in Wave 405 | Matrix/FFT classroom visualization with generated 3D bars and color scaling |
+| `mtwoodard/hypVR-Ray` | Studied in Wave 405 | WebVR hyperbolic raymarching with controller abstraction and display fallback |
+| `jmacd/grraph` | Lightly studied in Wave 405 | Thin VR graph/math playground reference |
+
+### Consolidation note
+
+This family matters because education utilities need a reusable path from
+abstract content to spatial representation, user action, correctness feedback,
+and exportable evidence.
+
+## Family 385: Anatomy and medical learning objects
+
+This family covers anatomy/medical education projects that expose domain
+objects through labels, isolation, slicing, volume rendering, snapping puzzles,
+and data-bound UI controls.
+
+| Project | Status | Notes |
+|---|---|---|
+| `chrislarkee/VR-Neuroanatomy` | Studied in Wave 406 | Brain learning object with labelled/parcellated anatomy, part scripts, labels, menus, and slicing |
+| `asemahassan/3DPuzzleVR` | Studied in Wave 406 | Anatomy puzzle with snapping, distance checks, wand control, and laser UI |
+| `malyalar/vr-volume-renderer` | Studied in Wave 406 | Medical volume rendering learning object with volume controllers and slice/rotate exploration |
+| `auroey/mr-IMVA-unity` | Studied with caveats in Wave 406 | MRTK data/UX shell with data controllers, item placers, dialogs, sliders, and layered UI examples |
+
+### Consolidation note
+
+This family matters because medical learning objects should separate domain
+data, inspect/isolate/slice controls, task state, clinical caveats, and UI
+shells rather than hiding everything inside one scene.
+
+## Family 386: VR museums exhibitions and guide analytics
+
+This family covers exhibit-centric VR systems with room/exhibit manifests,
+catalogs, gaze and dwell tracking, AI or scripted guides, web collection
+surfaces, and curatorial analytics exports.
+
+| Project | Status | Notes |
+|---|---|---|
+| `KuhakuNeko/VR-AI-Museum` | Studied in Wave 407 | Local AI museum guide with gaze/room logs, RAG, voice adapters, survey/export files, and privacy framing |
+| `doktorfrag/museum-experience-vr` | Studied in Wave 407 | Museum prototype with catalog entries, picture/statue scripts, location detection, and catalog UI |
+| `christian-acuna/react-vr-museum` | Studied in Wave 407 | React/Web museum shell with art objects, collections, sessions, search, and profile flows |
+| `VIRTUE-DBIS/vre-mixnhack19` | Studied in Wave 407 | Data-driven WebVR exhibition reference with backend/media-query configuration |
+
+### Consolidation note
+
+This family matters because exhibition utilities need both visitor-facing
+interpretation and operator-facing evidence: exhibit metadata, attention logs,
+journey narratives, chat transcripts, and consent-aware exports.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

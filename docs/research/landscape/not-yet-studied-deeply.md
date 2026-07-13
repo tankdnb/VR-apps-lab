@@ -3188,6 +3188,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 326. `VR laboratory scenario follow-up across molecule metadata schemas, reaction authoring, sampleable object flows, tutor privacy/offline fallback, environment consequence bundles, and reusable lab-task validators`
 327. `VR precision-task scoring follow-up across cut-path inaccuracy, ring/rope detection, velocity penalty tuning, touch-counter semantics, hand-tracking loss UX, and non-clinical careful-manipulation reuse`
 328. `VR operator-control testbed follow-up across control-mode adapters, subject/session JSON schemas, LSL/biosignal ingress, robot/drone abstraction, preallocated telemetry, per-trial folder hygiene, and replay dashboards`
+329. `Physics hand interaction follow-up across controller anchors, physical hand proxies, attach/drop thresholds, two-hand averaging, release impulses, hover/highlight state, and engine-neutral grab adapters`
+330. `VR math learning follow-up across custom question schemas, spatial object mappers, correctness validators, teacher analytics exports, WebXR geometry controls, and data-board performance`
+331. `Anatomy learning object follow-up across part registries, label metadata, slice/volume controls, snap tolerances, reset flows, asset provenance, and clinical caveat labels`
+332. `VR museum guide analytics follow-up across exhibit manifests, room/gaze IDs, dwell thresholds, RAG prompt enrichment, STT/TTS adapters, survey/log schemas, consent, retention, and curator reports`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

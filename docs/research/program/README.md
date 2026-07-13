@@ -2854,3 +2854,31 @@ repeatable way.
 
 - `github-research-wave-403-backlog.md`
   Executed backlog for the Wave 403 pass.
+
+- `github-research-wave-404-plan.md`
+  Wave 404 research plan focused on VR physics interaction, grab joints, and
+  hand templates.
+
+- `github-research-wave-404-backlog.md`
+  Executed backlog for the Wave 404 pass.
+
+- `github-research-wave-405-plan.md`
+  Wave 405 research plan focused on VR math, geometry visualization, and
+  classroom games.
+
+- `github-research-wave-405-backlog.md`
+  Executed backlog for the Wave 405 pass.
+
+- `github-research-wave-406-plan.md`
+  Wave 406 research plan focused on VR anatomy, volume dissection, and medical
+  learning objects.
+
+- `github-research-wave-406-backlog.md`
+  Executed backlog for the Wave 406 pass.
+
+- `github-research-wave-407-plan.md`
+  Wave 407 research plan focused on VR museum AI guide, exhibition analytics,
+  and web exhibit spaces.
+
+- `github-research-wave-407-backlog.md`
+  Executed backlog for the Wave 407 pass.

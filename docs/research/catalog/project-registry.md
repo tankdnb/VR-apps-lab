@@ -5249,6 +5249,54 @@ Primary docs:
 - `GTamilSelvan07/Unity_VR_Drone_Simulator` - `Studied in Wave 403 as a compact drone-control prototype with movement methods, max-speed state, battery/player behaviour, collision-triggered power-ups, and penalty modifiers`
 - `MPI-IS/ArmSym` - `Studied in Wave 403 as a VR assistive robotic-arm experiment harness with session/subject JSON, practice/trial progression, control-mode delegates, biosignal ingress, and preallocated CSV telemetry`
 
+## 375. VR physics interaction grab joints and hand templates
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-404-vr-physics-interaction-grab-joint-and-hand-templates.md`
+- `../landscape/project-families.md`
+
+- `TomorrowTodayLabs/NewtonVR` - `Studied in Wave 404 as a Unity physics interaction toolkit with rigidbody velocity matching, attach points, hand abstractions, levers, sliders, buttons, and SDK adapters`
+- `JScott/ViveGrip` - `Studied in Wave 404 as a ConfigurableJoint-based VR grab abstraction with highlights, weighted objects, levers, dials, guns, and example-driven affordances`
+- `JLPM22/VRPhysicsInteractionUnity` - `Studied with caveats in Wave 404 as a Quest physics interaction course project with nearby-object highlighting, lateral-trigger grab, and vendor bundle caveats`
+- `jtnicholl/godot4-vr-physics-template` - `Studied in Wave 404 as a Godot 4 physical hand template with RigidBody3D hands, collision-blocked controller anchors, pickup/release scripts, and throw impulses`
+
+## 376. VR math geometry visualization and classroom games
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-405-vr-math-geometry-visualization-and-classroom-games.md`
+- `../landscape/project-families.md`
+
+- `Rud156/MathSaber` - `Studied in Wave 405 as a Beat-Saber-like math practice game with equation generators, block controllers, custom question data, analytics, and text-file logging`
+- `PNCaruana/VR-Classroom` - `Studied in Wave 405 as a VR classroom visualization prototype with matrix-to-bar board graphs, color scaling, complex helpers, and 2D FFT utilities`
+- `mtwoodard/hypVR-Ray` - `Studied in Wave 405 as a WebVR hyperbolic raymarching experiment with controller abstraction, display fallback, pose transforms, and shader-driven geometry`
+- `jmacd/grraph` - `Lightly studied in Wave 405 as a thin Unity VR graph/math playground reference with follow-up needed for scene-level object models`
+
+## 377. VR anatomy volume dissection and medical learning objects
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-406-vr-anatomy-volume-dissection-and-medical-learning-objects.md`
+- `../landscape/project-families.md`
+
+- `chrislarkee/VR-Neuroanatomy` - `Studied in Wave 406 as a brain learning object with labelled/parcellated anatomy, brain part scripts, label toggles, slicing, laser/menu interaction, and dissection framing`
+- `asemahassan/3DPuzzleVR` - `Studied in Wave 406 as an anatomy education puzzle with wand control, snapping, distance checks, physics/no-gravity variants, laser UI, and task reset follow-up`
+- `malyalar/vr-volume-renderer` - `Studied in Wave 406 as a medical volume-rendering learning object with volume rendering controllers, slice/rotate exploration, and legacy mobile VR caveats`
+- `auroey/mr-IMVA-unity` - `Studied with caveats in Wave 406 as an MRTK data/UX shell reference with data controllers, item placers, dialogs, sliders, pressable buttons, and layered UI examples`
+
+## 378. VR museum AI guide exhibition analytics and web exhibit spaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-407-vr-museum-ai-guide-exhibition-analytics-and-web-exhibit-spaces.md`
+- `../landscape/project-families.md`
+
+- `KuhakuNeko/VR-AI-Museum` - `Studied in Wave 407 as a local AI museum guide with gaze/room tracking, Ollama/RAG integration, Whisper/TTS adapters, chat logging, survey/export files, and privacy-first framing`
+- `doktorfrag/museum-experience-vr` - `Studied in Wave 407 as a museum experience prototype with catalog entries, picture/statue scripts, location detection, UI catalog management, and VRTK caveats`
+- `christian-acuna/react-vr-museum` - `Studied in Wave 407 as a React/Web museum shell with art-object, collection, session, user-collection, search, token, and profile/client architecture`
+- `VIRTUE-DBIS/vre-mixnhack19` - `Studied in Wave 407 as a data-driven WebVR exhibition reference with database/server/Cineast media-query configuration and manifest follow-up`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

@@ -399,6 +399,10 @@ If you need recent examples instead of the full chronology, start with:
 - `landscape/vr-projects-wave-401-vr-chemistry-and-laboratory-learning-scenarios.md`
 - `landscape/vr-projects-wave-402-vr-surgery-task-scoring-and-medical-simulation.md`
 - `landscape/vr-projects-wave-403-vr-drone-robot-and-operator-control-testbeds.md`
+- `landscape/vr-projects-wave-404-vr-physics-interaction-grab-joint-and-hand-templates.md`
+- `landscape/vr-projects-wave-405-vr-math-geometry-visualization-and-classroom-games.md`
+- `landscape/vr-projects-wave-406-vr-anatomy-volume-dissection-and-medical-learning-objects.md`
+- `landscape/vr-projects-wave-407-vr-museum-ai-guide-exhibition-analytics-and-web-exhibit-spaces.md`
 
 ## Archive Navigation
 

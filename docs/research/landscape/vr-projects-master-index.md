@@ -1267,3 +1267,15 @@ bet everything on unsupported vendor passthrough paths.
 - `vr-projects-wave-403-vr-drone-robot-and-operator-control-testbeds.md`
   Drone and robotic-arm operator testbeds with control modes, trials, subject
   data, biosignal ingress, and preallocated telemetry logs.
+- `vr-projects-wave-404-vr-physics-interaction-grab-joint-and-hand-templates.md`
+  Physics hand interaction packages and templates with rigidbody hand proxies,
+  attach points, joint constraints, hover state, and release impulses.
+- `vr-projects-wave-405-vr-math-geometry-visualization-and-classroom-games.md`
+  VR math and classroom projects with equation-action loops, analytics,
+  spatial matrix/FFT boards, and controller-driven geometry visualization.
+- `vr-projects-wave-406-vr-anatomy-volume-dissection-and-medical-learning-objects.md`
+  Anatomy and medical learning objects with labels, dissection, snapping
+  puzzles, volume rendering, data-bound UI shells, and clinical caveats.
+- `vr-projects-wave-407-vr-museum-ai-guide-exhibition-analytics-and-web-exhibit-spaces.md`
+  Museum and exhibition systems with local AI guides, gaze/room logs, RAG,
+  survey exports, catalog scripts, and web/data-driven exhibit surfaces.
