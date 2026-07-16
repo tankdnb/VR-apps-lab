@@ -492,6 +492,14 @@ If you need recent examples instead of the full chronology, start with:
 
 - `landscape/vr-projects-wave-463-webxr-classroom-and-educational-scene-kits.md`
 
+- `landscape/vr-projects-wave-464-webxr-ar-measurement-and-triangulation-microtools.md`
+
+- `landscape/vr-projects-wave-465-vive-openxr-utility-samples-and-accessibility-surfaces.md`
+
+- `landscape/vr-projects-wave-466-xr-telepresence-video-and-robot-overlay-stacks.md`
+
+- `landscape/vr-projects-wave-467-browser-vr-gaussian-splat-components-and-viewer-variants.md`
+
 ## Archive Navigation
 
 Use these when you need the full historical record rather than the short

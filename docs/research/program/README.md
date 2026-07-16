@@ -3286,3 +3286,31 @@ repeatable way.
 
 - `github-research-wave-463-backlog.md`
   Executed backlog for the Wave 463 pass.
+
+- `github-research-wave-464-plan.md`
+  Wave 464 research plan focused on WebXR AR measurement and triangulation
+  microtools.
+
+- `github-research-wave-464-backlog.md`
+  Executed backlog for the Wave 464 pass.
+
+- `github-research-wave-465-plan.md`
+  Wave 465 research plan focused on VIVE OpenXR utility samples and
+  accessibility surfaces.
+
+- `github-research-wave-465-backlog.md`
+  Executed backlog for the Wave 465 pass.
+
+- `github-research-wave-466-plan.md`
+  Wave 466 research plan focused on XR telepresence video and robot overlay
+  stacks.
+
+- `github-research-wave-466-backlog.md`
+  Executed backlog for the Wave 466 pass.
+
+- `github-research-wave-467-plan.md`
+  Wave 467 research plan focused on browser VR Gaussian splat components and
+  viewer variants.
+
+- `github-research-wave-467-backlog.md`
+  Executed backlog for the Wave 467 pass.

@@ -17,6 +17,29 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 464-467
+
+- `WebXR AR measurement and triangulation microtools`
+  add measurement-utility coverage around WebXR hit-test reticles, anchor-backed
+  endpoints, provisional/final lines, DOM/CSS2D labels, metric/imperial unit
+  output, history lists, triangulation fallback, baseline/miss/angle quality
+  feedback, and accuracy caveats.
+- `VIVE OpenXR utility samples and accessibility surfaces`
+  add vendor-sample coverage around SRT subtitle parsing, StreamingAssets
+  caption files, mobile hand-tracking setup, eye/teleprompter content cells,
+  scene perception plane/mesh anchors, passthrough/permission helpers,
+  controller action displays, haptics, and scoped package registries.
+- `XR telepresence video and robot overlay stacks`
+  add telepresence coverage around Node/HTTPS relay servers, WebRTC signaling,
+  browser 360 broadcasters, Unity VR viewers, HoloLens local AR overlays,
+  robot command sidecars, peer ids, event polling, MR-WebRTC caveats, and
+  hardware-specific safety boundaries.
+- `Browser VR Gaussian splat components and viewer variants`
+  add browser-spatial-asset coverage around A-Frame Gaussian splat components,
+  declarative `src`/pixel-ratio/XR-framebuffer controls, data textures, shader
+  uniforms, worker sorting, progressive fetch, depth/discard knobs, and asset
+  provenance caveats.
+
 ## Current additions from Waves 460-463
 
 - `OpenXR mixed-reality sample bring-up and runtime diagnostics`

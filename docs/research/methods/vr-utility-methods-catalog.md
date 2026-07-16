@@ -22098,3 +22098,104 @@ When a new utility idea appears:
   state, or lesson claims without scoring/export schemas.
 - Maturity:
   useful education/product pattern; needs asset manifest and lesson schema.
+
+## Method 909: Browser AR measurement confidence loop
+
+- What it is:
+  a browser AR utility loop that makes hit-test endpoints, lines, labels,
+  units, history, and measurement confidence visible to the user.
+- Good for:
+  room setup, calibration helpers, AR measuring tapes, spatial review tools,
+  accessibility placement checks, whiteboard sizing, and model/scene QA.
+- Source evidence:
+  `woll-an/WebXR-Measure`, `Narendra-Kamath/webxr-measuring-tape`,
+  `cs-util-com/ARTapeMeasure.js`, and existing `rtkCode/Sizer` overlap.
+- Reusable core:
+  WebXR support gate, hit-test source lifecycle, reticle, endpoint pair,
+  provisional/final line, screen-space or CSS2D label, unit formatter,
+  measurement history, optional anchor, optional ray-triangulation fallback,
+  baseline/miss/angle classifier, and accept/redo/cancel UX.
+- Do not copy directly:
+  bundled framework snapshots, demo-only global state, GPL code into
+  incompatible modules, precision claims, or AR measurement without confidence
+  and device/runtime caveats.
+- Maturity:
+  strong utility primitive; needs neutral measurement schema and provider
+  comparison.
+
+## Method 910: Vendor capability sample cockpit
+
+- What it is:
+  a small sample/debug shell that turns vendor XR feature setup into visible
+  package, loader, permission, input, scene, and device-state evidence.
+- Good for:
+  OpenXR onboarding, controller diagnostics, haptics, hand/eye samples,
+  subtitles, scene perception, passthrough setup, and feature bring-up docs.
+- Source evidence:
+  `ViveDeveloperRelations/SubtitlesDemo`,
+  `ViveDeveloperRelations/HandTracking_OpenXR_Mobile`,
+  `ViveDeveloperRelations/Eye_Scroller`,
+  `ViveDeveloperRelations/ScenePerceptionDemo`, and
+  `ViveDeveloperRelations/CosmosOpenXRSampleProject`.
+- Reusable core:
+  package/version matrix, scoped registry label, loader/settings assets,
+  sample scene inventory, action-to-display adapters, haptic action hook,
+  subtitle/parser sample, permission helper, feature manager, visible
+  no-device/no-permission state, and vendor/runtime caveats.
+- Do not copy directly:
+  vendor sample bulk, local/private package paths, binary archives, old package
+  versions, or unlabelled runtime support assumptions.
+- Maturity:
+  useful setup/diagnostics pattern; should be provider-neutral before code
+  reuse.
+
+## Method 911: XR telepresence relay stack
+
+- What it is:
+  a multi-process telepresence architecture that separates media capture,
+  signaling, event relay, VR viewer, local AR overlay, robot command sidecar,
+  and safety/hardware state.
+- Good for:
+  remote operator tools, robot telepresence, 360 camera viewers, meeting
+  overlays, avatar-over-robot prototypes, remote assistance, and lab
+  supervision dashboards.
+- Source evidence:
+  `microsoft/Virtual-Robot-Overlay-for-Online-Meetings`,
+  `microsoft/MixedReality-WebRTC`, and `epiception/Virtual-Telepresence`, with
+  cross-wave comparison to `unitreerobotics/xr_teleoperate` and
+  `aadhithya14/Open-Teach`.
+- Reusable core:
+  component inventory, HTTPS/static media broadcaster, WebRTC signaling, event
+  queue, peer ids, polling/push transport, VR viewer, AR local overlay,
+  robot-command adapter, status labels, permissions, and hardware caveats.
+- Do not copy directly:
+  unauthenticated polling, hard-coded peer ids, old WMR/HoloLens/Unity
+  binaries, deprecated WebRTC dependency choices, or equipment-specific robot
+  commands without safety gates.
+- Maturity:
+  strong architecture pattern; needs safe command schema and modern transport
+  comparison.
+
+## Method 912: Declarative WebXR splat preview component
+
+- What it is:
+  a browser XR component that embeds Gaussian splat preview into a scene through
+  declarative attributes rather than a full custom viewer application.
+- Good for:
+  lightweight spatial capture previews, WebXR documentation demos, asset
+  review panels, scan QA, education scenes, and browser-based model galleries.
+- Source evidence:
+  `quadjr/aframe-gaussian-splatting` and
+  `3DStreet/aframe-gaussian-splatting`, compared with existing Unity/OpenXR
+  splat viewer families.
+- Reusable core:
+  component schema, splat source descriptor, pixel ratio, XR framebuffer scale,
+  render knobs, data texture upload, instanced splat quads, shader uniforms,
+  progressive fetch, worker sorting, loading/performance labels, and asset
+  provenance.
+- Do not copy directly:
+  demo assets, hosted sample URLs, shader assumptions without provenance
+  review, silent retries, or unbounded memory/vertex counts without device
+  labels.
+- Maturity:
+  useful browser-component pattern; needs performance/device caveat matrix.

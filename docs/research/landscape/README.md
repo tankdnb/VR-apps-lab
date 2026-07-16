@@ -2077,6 +2077,26 @@ Use these files when you want to understand:
   exercise components, physics sandboxes, embedded 3D content, and asset
   provenance.
 
+- `vr-projects-wave-464-webxr-ar-measurement-and-triangulation-microtools.md`
+  Next GitHub discovery wave focused on WebXR AR measurement, hit-test
+  reticles, anchor endpoints, unit labels, triangulation fallback, and
+  confidence UX.
+
+- `vr-projects-wave-465-vive-openxr-utility-samples-and-accessibility-surfaces.md`
+  Next GitHub discovery wave focused on VIVE/OpenXR utility samples, subtitles,
+  hand/eye/scene-perception samples, controller diagnostics, haptics, and
+  vendor package caveats.
+
+- `vr-projects-wave-466-xr-telepresence-video-and-robot-overlay-stacks.md`
+  Next GitHub discovery wave focused on XR telepresence stacks, WebRTC relays,
+  360 broadcasters, VR viewers, AR overlays, robot command sidecars, and safety
+  caveats.
+
+- `vr-projects-wave-467-browser-vr-gaussian-splat-components-and-viewer-variants.md`
+  Next GitHub discovery wave focused on A-Frame/WebXR Gaussian splat
+  components, declarative render controls, worker sorting, and browser preview
+  caveats.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

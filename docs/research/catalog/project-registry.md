@@ -5924,6 +5924,59 @@ Primary docs:
 - `RuiqingCHEN/webxr-interactive-classroom` - `Studied in Wave 463 as Three.js classroom environment with VRButton, controller models, GLTF/video/audio assets, spatial media, and bundled-library caveats`
 - `elinsprojects/AnimalClassroom-WebXR` - `Studied in Wave 463 as WebXR animal classroom scene with Three.js/VRButton assets, educational theme, and asset provenance caveats`
 
+## 435. WebXR AR measurement and triangulation microtools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-464-webxr-ar-measurement-and-triangulation-microtools.md`
+- `../landscape/project-families.md`
+
+- `woll-an/WebXR-Measure` - `Studied in Wave 464 as compact Three.js/WebXR AR measurement tool with required hit-test session, reticle matrix, controller select endpoints, provisional line, centimetre labels, and screen-space label projection`
+- `Narendra-Kamath/webxr-measuring-tape` - `Studied in Wave 464 as Babylon.js WebXR measuring tape with support gate, enter-AR GUI, WebXR hit test, anchor-backed endpoints, line refresh, and metric/imperial/centimetre readout`
+- `benmoussa96/ar-tape-measure` - `Lightly studied in Wave 464 as Three.js AR tape measure variant with local dependency bundle and packaging/provenance caveats`
+- `cs-util-com/ARTapeMeasure.js` - `Studied in Wave 464 as modern WebXR tape measure with measurement records, unit persistence, CSS2D labels, triangulate-rays fallback, baseline guidance, quality chips, accept/redo/cancel UX, and tests`
+- `rtkCode/Sizer` - `Existing overlap reference from Wave 243 for WebXR distance/angle measurement plus modelling/projection`
+
+## 436. VIVE OpenXR utility samples and accessibility surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-465-vive-openxr-utility-samples-and-accessibility-surfaces.md`
+- `../landscape/project-families.md`
+
+- `ViveDeveloperRelations/SubtitlesDemo` - `Studied in Wave 465 as compact caption sample with SRT parser, SubtitleBlock, language file matrix, StreamingAssets file loading, TextMesh/TextMeshPro display coroutine, and minimal accessibility caveats`
+- `ViveDeveloperRelations/HandTracking_OpenXR_Mobile` - `Partially studied in Wave 465 as mobile OpenXR hand-tracking sample with Wave/OpenXR/Oculus loader settings, XRI starter assets, joint/hand scripts, interactable hooks, and debug-console sample bulk`
+- `ViveDeveloperRelations/Eye_Scroller` - `Partially studied in Wave 465 as eye/teleprompter sample with text-cell ScriptableObjects, scroll prefabs, Android manifest, ADB-over-Wi-Fi editor helpers, and local package path caveats`
+- `ViveDeveloperRelations/ScenePerceptionDemo` - `Studied in Wave 465 as VIVE scene-perception sample with plane/mesh anchor demos, ScenePerception manager, generated plane/mesh containers, passthrough and permission helpers, Wave packages, and runtime caveats`
+- `ViveDeveloperRelations/CosmosOpenXRSampleProject` - `Studied in Wave 465 as OpenXR controller utility sample with action-to-button/slider/visibility/haptics adapters, device name/id/usages display, tracking mode scripts, and package archive caveats`
+
+## 437. XR telepresence video and robot overlay stacks
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-466-xr-telepresence-video-and-robot-overlay-stacks.md`
+- `../landscape/project-families.md`
+
+- `microsoft/Virtual-Robot-Overlay-for-Online-Meetings` - `Studied in Wave 466 as VROOM multi-component XR telepresence prototype with Node HTTPS/static server, DSS/event relay, browser 360 broadcaster, Unity WMR VR viewer, HoloLens local AR overlay, robot controller sidecar, peer ids, polling, and research-prototype caveats`
+- `microsoft/MixedReality-WebRTC` - `Studied in Wave 466 as deprecated MR WebRTC infrastructure reference with C++/C#/Unity layers, signaling interface, Unity NodeDSS UI, UWP examples, MRC/HoloLens caveats, and provider/deprecation warning`
+- `epiception/Virtual-Telepresence` - `Lightly studied in Wave 466 as old Cardboard/Raspberry Pi/Firebird telepresence stack with hardware manifest, UV4L/App dependencies, Python robot tests, servo/camera gimbal control, and historical caveats`
+- `unitreerobotics/xr_teleoperate` - `Existing cross-wave reference from Wave 350 for modern XR robot teleoperation`
+- `aadhithya14/Open-Teach` - `Existing cross-wave reference from Wave 369 for Quest robot teleoperation and data collection`
+
+## 438. Browser VR Gaussian splat components and viewer variants
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-467-browser-vr-gaussian-splat-components-and-viewer-variants.md`
+- `../landscape/project-families.md`
+
+- `quadjr/aframe-gaussian-splatting` - `Studied in Wave 467 as A-Frame Gaussian splat component with declarative src/pixelRatio/xrPixelRatio schema, DataTexture upload, instanced quad shader, covariance/color textures, progressive fetch, worker sorting, and WebXR preview caveats`
+- `3DStreet/aframe-gaussian-splatting` - `Studied in Wave 467 as fork/variant adding depthWrite and discardFilter controls, transparency/cutout demos, nested splat entities, hosted asset references, and sorting/performance caveats`
+- `clarte53/GaussianSplattingVRViewerUnity` - `Existing cross-wave native CUDA/OpenXR Unity splat viewer reference`
+- `Enndee/Splatviewer_VR` - `Existing cross-wave VR splat viewer reference with runtime loading and OpenXR controls`
+- `hyperlogic/splatapult` - `Existing cross-wave OpenGL/OpenXR splat viewer reference`
+- `jacobvanbeets/splat-vr-viewer` - `Existing cross-wave WebXR PlayCanvas splat viewer reference`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

@@ -12883,6 +12883,87 @@ sandboxes, and classroom asset provenance.
 This family matters because educational XR is most reusable when lessons are
 routeable, stateful, asset-provenance aware, and validation-ready.
 
+## Family 443: Browser AR measurement confidence tools
+
+This family covers browser-delivered AR measuring tools, hit-test reticles,
+point pairs, anchor endpoints, line/label rendering, unit conversion, history,
+triangulation fallback, and measurement confidence feedback.
+
+| Project | Status | Notes |
+|---|---|---|
+| `woll-an/WebXR-Measure` | Studied in Wave 464 | Three.js/WebXR hit-test measuring loop with reticle, two-tap endpoints, line, and DOM labels |
+| `Narendra-Kamath/webxr-measuring-tape` | Studied in Wave 464 | Babylon.js WebXR measuring tape with anchor system, GUI label, pair list, and multi-unit output |
+| `benmoussa96/ar-tape-measure` | Lightly studied in Wave 464 | Three.js AR tape measure variant mostly useful as self-contained packaging/caveat reference |
+| `cs-util-com/ARTapeMeasure.js` | Studied in Wave 464 | WebXR tape measure with unit persistence, triangulation fallback, baseline guidance, quality chips, and tests |
+| `rtkCode/Sizer` | Existing overlap reference | Wave 243 measure/model/project donor with distance/angle capture and modelling toolbar |
+
+### Consolidation note
+
+This family matters because measurement utilities need explicit confidence,
+unit, endpoint, and fallback state instead of pretending every AR hit-test is
+equally trustworthy.
+
+## Family 444: Vendor OpenXR utility sample cockpits
+
+This family covers small vendor sample projects that expose capability setup,
+subtitles, hands, eyes, scene perception, controller action diagnostics,
+haptics, package registries, and visible device/runtime state.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ViveDeveloperRelations/SubtitlesDemo` | Studied in Wave 465 | SRT parser, language file matrix, StreamingAssets captions, TextMeshPro display coroutine |
+| `ViveDeveloperRelations/HandTracking_OpenXR_Mobile` | Partially studied in Wave 465 | Mobile OpenXR hand sample with loader settings, XRI starter assets, joint scripts, and debug console bulk |
+| `ViveDeveloperRelations/Eye_Scroller` | Partially studied in Wave 465 | Eye/teleprompter sample with text-cell assets and ADB-over-Wi-Fi editor helper |
+| `ViveDeveloperRelations/ScenePerceptionDemo` | Studied in Wave 465 | Scene perception planes/meshes, permission/passthrough helpers, generated mesh materials, and Wave packages |
+| `ViveDeveloperRelations/CosmosOpenXRSampleProject` | Studied in Wave 465 | OpenXR controller action-to-UI/haptics/device-info sample |
+
+### Consolidation note
+
+This family matters because future diagnostics and setup tools can reuse the
+sample-cockpit pattern while avoiding vendor sample bulk and stale package
+assumptions.
+
+## Family 445: XR telepresence relay and robot overlay stacks
+
+This family covers telepresence systems that split browser capture, signaling,
+media transport, VR viewing, AR local overlay, avatar/robot representation,
+event polling, and robot command sidecars.
+
+| Project | Status | Notes |
+|---|---|---|
+| `microsoft/Virtual-Robot-Overlay-for-Online-Meetings` | Studied in Wave 466 | VROOM multi-component stack with Node server, DSS/event relay, browser 360 broadcaster, Unity VR viewer, HoloLens AR overlay, and robot controller |
+| `microsoft/MixedReality-WebRTC` | Studied in Wave 466 | Deprecated but useful MR WebRTC architecture reference with C++/C#/Unity layers, signaling, NodeDSS UI, and MRC caveats |
+| `epiception/Virtual-Telepresence` | Lightly studied in Wave 466 | Historical Cardboard/Raspberry Pi robot telepresence stack with hardware and command-script caveats |
+| `unitreerobotics/xr_teleoperate` | Existing overlap reference | Modern Unitree XR teleoperation stack from Wave 350 |
+| `aadhithya14/Open-Teach` | Existing overlap reference | Quest teleoperation/data collection stack from Wave 369 |
+
+### Consolidation note
+
+This family matters because telepresence utilities are multi-process systems;
+the reusable lesson is the relay/sidecar boundary plus explicit safety and
+hardware caveats.
+
+## Family 446: Browser WebXR Gaussian splat preview components
+
+This family covers browser and A-Frame Gaussian splat components, declarative
+scene attributes, data-texture upload, shader/render knobs, worker sorting,
+progressive loading, and relation to heavier native/Unity/OpenXR splat viewers.
+
+| Project | Status | Notes |
+|---|---|---|
+| `quadjr/aframe-gaussian-splatting` | Studied in Wave 467 | A-Frame component with `src`, pixel ratio, XR framebuffer scale, data textures, shader uniforms, streaming fetch, and worker sorting |
+| `3DStreet/aframe-gaussian-splatting` | Studied as fork/variant in Wave 467 | Adds `depthWrite`, `discardFilter`, transparency/cutout demos, and hosted sample asset references |
+| `clarte53/GaussianSplattingVRViewerUnity` | Existing overlap reference | Native CUDA/OpenXR Unity VR splat viewer |
+| `Enndee/Splatviewer_VR` | Existing overlap reference | VR splat viewer with runtime file loading and OpenXR controls |
+| `hyperlogic/splatapult` | Existing overlap reference | C++/OpenGL/OpenXR splat viewer |
+| `jacobvanbeets/splat-vr-viewer` | Existing overlap reference | WebXR PlayCanvas viewer launched from LichtFeld Studio |
+
+### Consolidation note
+
+This family matters because not every spatial asset preview needs a full native
+viewer; a declarative browser component can be a lighter donor for demos,
+documentation, and WebXR utility panels.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

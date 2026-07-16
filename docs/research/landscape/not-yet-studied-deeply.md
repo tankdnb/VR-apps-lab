@@ -3248,6 +3248,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 386. `Browser XR locomotion follow-up across input profile mapping, nav-mesh strategies, fall policy, teleport marker UX, snap/smooth turn settings, comfort fades/vignettes, and accessibility labels`
 387. `Collaborative spatial whiteboard follow-up across Yjs/Socket schemas, board object models, UV/ray/hand input mapping, room lifecycle, persistence/corrupt-state policy, upload limits, undo/redo, and privacy/rate-limit gates`
 388. `Browser XR lesson scene pack follow-up across route maps, scene base classes, saved state, exercise schemas, scoring/export, embedded content permissions, asset manifests, and provenance labels`
+389. `Browser AR measurement follow-up across endpoint schemas, units, confidence/error fields, hit-test versus anchor versus ray-triangulation source modes, history/export, label occlusion, and device/browser caveats`
+390. `Vendor capability sample cockpit follow-up across package registries, loader settings, feature matrices, permission helpers, no-device states, action-to-UI adapters, haptics, sample scene inventory, and stale package labels`
+391. `XR telepresence relay follow-up across media/signaling/event schemas, peer identity, command authorization, robot adapter boundaries, local AR overlay alignment, status panels, safety gates, and hardware provenance`
+392. `WebXR splat component follow-up across splat source descriptors, format support, progressive loading, worker sorting, render knobs, memory limits, Quest/browser performance labels, and asset provenance`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

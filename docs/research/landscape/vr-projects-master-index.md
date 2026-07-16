@@ -1489,3 +1489,23 @@ bet everything on unsupported vendor passthrough paths.
   WebXR classroom kits with routeable lessons, saved scene state, exercise
   conditions, loader queues, physics sandboxes, embedded 3D content, and asset
   provenance caveats.
+
+- `vr-projects-wave-464-webxr-ar-measurement-and-triangulation-microtools.md`
+  WebXR AR measurement tools with hit-test reticles, endpoint pairs,
+  anchor-backed dots, unit labels, history, triangulation fallback, quality
+  chips, and browser/device caveats.
+
+- `vr-projects-wave-465-vive-openxr-utility-samples-and-accessibility-surfaces.md`
+  VIVE/OpenXR utility samples with SRT captions, hand/eye/scene-perception
+  samples, controller action displays, haptics, scoped registries, and stale
+  package caveats.
+
+- `vr-projects-wave-466-xr-telepresence-video-and-robot-overlay-stacks.md`
+  XR telepresence stacks with Node/WebRTC signaling, browser 360 broadcasters,
+  Unity VR viewers, HoloLens local AR overlays, robot controller sidecars, and
+  safety boundaries.
+
+- `vr-projects-wave-467-browser-vr-gaussian-splat-components-and-viewer-variants.md`
+  Browser VR Gaussian splat components with A-Frame attributes, data textures,
+  shader uniforms, worker sorting, render knobs, and spatial asset provenance
+  caveats.
