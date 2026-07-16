@@ -3252,6 +3252,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 390. `Vendor capability sample cockpit follow-up across package registries, loader settings, feature matrices, permission helpers, no-device states, action-to-UI adapters, haptics, sample scene inventory, and stale package labels`
 391. `XR telepresence relay follow-up across media/signaling/event schemas, peer identity, command authorization, robot adapter boundaries, local AR overlay alignment, status panels, safety gates, and hardware provenance`
 392. `WebXR splat component follow-up across splat source descriptors, format support, progressive loading, worker sorting, render knobs, memory limits, Quest/browser performance labels, and asset provenance`
+393. `Hand gesture adapter follow-up across WebXR Hand Input, OpenXR hand joints, OVR hand confidence, pinch thresholds, gesture schemas, controller fallback, accessibility affordances, and debug visualizers`
+394. `Avatar asset pipeline follow-up across VRM optimizer metrics, MToon atlas visual diffs, KTX2/Basis provenance, saved avatar libraries, VRMA compatibility, project-level license resolution, and performance budgets`
+395. `Virtual display sidecar follow-up across driver install/status/error schemas, monitor layout coordinates, virtual display teardown, capture backend choices, AR-glasses pinning, pointer mismatch, and Windows security gates`
+396. `Device camera operator surface follow-up across Magic Leap, Galaxy XR, XREAL, Quest camera, WebRTC signaling, ROS endpoints, AI vision consent, latest-frame cadence, and robot command safety gates`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

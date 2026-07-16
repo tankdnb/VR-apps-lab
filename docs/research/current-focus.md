@@ -17,6 +17,28 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 468-471
+
+- `WebXR hand gesture adapters and controller-free interactions`
+  add hand-input coverage around WebXR hand joints, pinch/point detectors,
+  OBB/SAT hand colliders, semantic grab/drag/drop/stretch events, hand/controller
+  parity, VRTK action mapping, teleport/snap-turn gestures, confidence and
+  threshold caveats, and controller fallback.
+- `WebXR VRM avatar optimization and companion viewer microtools`
+  add avatar-utility coverage around VRM/MToon optimization, atlas materials,
+  packed parameter textures, KTX2/Basis compression, debug viewers, saved avatar
+  libraries, VRMA actions, rest-pose/idle/gaze behavior, and asset provenance
+  registries.
+- `Virtual display and spatial desktop sidecars`
+  add display-surface coverage around Windows virtual display drivers, driver
+  install/status/error gates, monitor inventory, display layout coordinates,
+  desktop capture textures, XR monitor placement, AR-glasses pinning, and
+  privileged-operation caveats.
+- `Device camera WebRTC AI and ROS operator surfaces`
+  add camera/operator coverage around Magic Leap WebRTC signaling, device/editor
+  camera providers, Galaxy XR camera-to-AI queries, XREAL raw/processed camera
+  layers, ROS camera/audio/hands/lidar/TF panels, and privacy/safety gates.
+
 ## Current additions from Waves 464-467
 
 - `WebXR AR measurement and triangulation microtools`

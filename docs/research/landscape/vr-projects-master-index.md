@@ -1509,3 +1509,23 @@ bet everything on unsupported vendor passthrough paths.
   Browser VR Gaussian splat components with A-Frame attributes, data textures,
   shader uniforms, worker sorting, render knobs, and spatial asset provenance
   caveats.
+
+- `vr-projects-wave-468-webxr-hand-gesture-adapters-and-controller-free-interactions.md`
+  WebXR hand gesture adapters with hand joints, pinch/point detectors,
+  hand/controller parity, semantic interactables, teleport/snap-turn mappings,
+  and confidence/threshold caveats.
+
+- `vr-projects-wave-469-webxr-vrm-avatar-optimization-and-companion-viewer-microtools.md`
+  WebXR VRM avatar utilities with optimizer packages, MToon atlas materials,
+  texture compression, debug viewers, saved avatar libraries, VRMA actions, and
+  provenance registries.
+
+- `vr-projects-wave-470-virtual-display-and-spatial-desktop-sidecars.md`
+  Virtual display and spatial desktop sidecars with driver lifecycle, monitor
+  inventory, desktop capture, XR monitor placement, AR-glasses pinning, and
+  safety caveats.
+
+- `vr-projects-wave-471-device-camera-webrtc-ai-and-ros-operator-surfaces.md`
+  Device camera operator surfaces with WebRTC signaling, Galaxy XR AI vision,
+  XREAL raw/processed camera layers, ROS sensor panels, and privacy/safety
+  gates.

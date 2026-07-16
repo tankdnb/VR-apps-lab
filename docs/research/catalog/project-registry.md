@@ -5977,6 +5977,56 @@ Primary docs:
 - `hyperlogic/splatapult` - `Existing cross-wave OpenGL/OpenXR splat viewer reference`
 - `jacobvanbeets/splat-vr-viewer` - `Existing cross-wave WebXR PlayCanvas splat viewer reference`
 
+## 439. WebXR hand gesture adapters and controller-free interactions
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-468-webxr-hand-gesture-adapters-and-controller-free-interactions.md`
+- `../landscape/project-families.md`
+
+- `rjimenezz/aframe-free-hands-component` - `Studied in Wave 468 as A-Frame bare-hand interaction library with hand joint sampling, pinch/point detectors, OBB/SAT colliders, grabbable/hoverable/draggable/droppable/stretchable reactions, debug examples, and threshold caveats`
+- `FireDragonGameStudio/WebXR-DePanther-VRTK` - `Studied in Wave 468 as Unity WebXR Export plus VRTK hand/controller template with index-pinch grab, middle-finger teleport, pinky snap turn, state indicators, and sample-maintenance caveats`
+- `FusedVR/Oculus-Quest-VRTK` - `Studied in Wave 468 as legacy Quest/VRTK adapter mapping OVR hand pinches and pinch strength into controller-like button/axis calls with active controller switching and OVR caveats`
+
+## 440. WebXR VRM avatar optimization and companion viewer microtools
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-469-webxr-vrm-avatar-optimization-and-companion-viewer-microtools.md`
+- `../landscape/project-families.md`
+
+- `WebXR-JP/avatar-optimizer` - `Studied in Wave 469 as VRM/WebGL optimization monorepo with avatar optimizer, MToon atlas material, KTX2/Basis texture compression, debug viewer, Spector hooks, skeleton/springbone helpers, tests, and WASM/provenance caveats`
+- `chrisdubya/vrm-webxr` - `Studied in Wave 469 as minimal React/Three/WebXR VRM loader baseline with VRMLoaderPlugin, VRMUtils cleanup/rotation, and per-frame update loop`
+- `royalkingjoey/YumeVRM` - `Studied in Wave 469 as browser VRM companion with saved avatar library, VRMA animation upload/preview, rest-pose/idle/gaze behavior, speech/lip-sync hooks, settings persistence, and API/cloud caveats`
+- `ToxSam/open-source-avatars` - `Studied in Wave 469 as metadata-first VRM avatar registry with project-level licenses, avatar_data_file indirection, model_file_url, thumbnails, optional FBX alternates, Mixamo/VRM 0.x helpers, and VRM 1.0 caveats`
+- `pixiv/three-vrm` - `Existing overlap reference from Wave 142 for core Three.js VRM runtime composition`
+
+## 441. Virtual display and spatial desktop sidecars
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-470-virtual-display-and-spatial-desktop-sidecars.md`
+- `../landscape/project-families.md`
+
+- `StevenRice99/Virtual-Monitors` - `Studied in Wave 470 as Unity XR monitor viewer using WindowsDisplayAPI and uWindowCapture to enumerate displays, cache layout positions, create desktop texture panels, center multi-monitor layouts, and document virtual monitor driver scripts`
+- `arigandores/AirPin` - `Studied in Wave 470 as AR-glasses screen pinning sidecar with DXGI desktop duplication, IMU head tracking, 1:1 orthographic OpenGL rendering, capture-proof transparent overlay, and duplicate-mode/click-mismatch caveats`
+- `KtzeAbyss/Easy-Virtual-Display` - `Studied in Wave 470 as managed virtual display host with admin CLI, driver install/uninstall/status checks, display inventory contracts, supported mode summaries, error mapper, and privileged-operation caveats`
+- `timminator/Virtual-Display-Driver` - `Studied in Wave 470 as Windows indirect display driver reference with adapter selection, monitor count/modes, EDID/monitor descriptors, swap-chain processing, config files, logs, and driver/install caveats`
+- `wheaney/breezy-desktop` - `Existing overlap reference for XR-glasses desktop workspace shells`
+- `lc700x/desktop2stereo` - `Existing overlap reference for desktop/video-to-stereo workflows`
+
+## 442. Device camera WebRTC AI and ROS operator surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-471-device-camera-webrtc-ai-and-ros-operator-surfaces.md`
+- `../landscape/project-families.md`
+
+- `magicleap/MagicLeap2UnityWebRTCExample` - `Studied in Wave 471 as Magic Leap 2 Unity WebRTC sample with camera provider choice, permission/microphone managers, WebRTC controller, world-space IP UI, Python signaling server, offers/answers/ICE endpoints, and local-network caveats`
+- `hyunaseo/OpenAI-for-Galaxy-XR` - `Studied in Wave 471 as Galaxy XR OpenXR/Android XR sample combining microphone input, latest egocentric camera JPEG, OpenAI realtime/responses calls, base64 image events, streamed audio callback, and privacy/API-key caveats`
+- `takatronix/xreal_ai_cam` - `Studied in Wave 471 as XREAL Unity camera prototype with ARCameraManager frame subscription, XRCpuImage acquisition, raw camera layer, processed image layer, layer manager, object detection controller, alpha/toggle controls, and placeholder-AI caveats`
+- `leggedrobotics/unity_ros_teleoperation` - `Studied in Wave 471 as Quest/OpenXR ROS teleoperation surface with ROS endpoint boundary, camera/stereo/audio/hands/haptics/lidar/marker/TF panels, VR streamer, menu connection state, and robot safety/version caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

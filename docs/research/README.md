@@ -500,6 +500,14 @@ If you need recent examples instead of the full chronology, start with:
 
 - `landscape/vr-projects-wave-467-browser-vr-gaussian-splat-components-and-viewer-variants.md`
 
+- `landscape/vr-projects-wave-468-webxr-hand-gesture-adapters-and-controller-free-interactions.md`
+
+- `landscape/vr-projects-wave-469-webxr-vrm-avatar-optimization-and-companion-viewer-microtools.md`
+
+- `landscape/vr-projects-wave-470-virtual-display-and-spatial-desktop-sidecars.md`
+
+- `landscape/vr-projects-wave-471-device-camera-webrtc-ai-and-ros-operator-surfaces.md`
+
 ## Archive Navigation
 
 Use these when you need the full historical record rather than the short

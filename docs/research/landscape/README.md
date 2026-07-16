@@ -2097,6 +2097,26 @@ Use these files when you want to understand:
   components, declarative render controls, worker sorting, and browser preview
   caveats.
 
+- `vr-projects-wave-468-webxr-hand-gesture-adapters-and-controller-free-interactions.md`
+  Next GitHub discovery wave focused on WebXR hand joints, pinch/point
+  detectors, controller-free interactables, VRTK hand/controller parity, and
+  threshold/confidence caveats.
+
+- `vr-projects-wave-469-webxr-vrm-avatar-optimization-and-companion-viewer-microtools.md`
+  Next GitHub discovery wave focused on VRM optimization, MToon atlases,
+  texture compression, debug viewers, avatar libraries, VRMA actions, and asset
+  provenance.
+
+- `vr-projects-wave-470-virtual-display-and-spatial-desktop-sidecars.md`
+  Next GitHub discovery wave focused on virtual display drivers, monitor
+  inventory, desktop capture surfaces, AR-glasses screen pinning, and driver
+  lifecycle caveats.
+
+- `vr-projects-wave-471-device-camera-webrtc-ai-and-ros-operator-surfaces.md`
+  Next GitHub discovery wave focused on device camera capture, WebRTC
+  signaling, AI vision queries, XREAL camera layers, ROS sensor panels, and
+  operator safety/privacy gates.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

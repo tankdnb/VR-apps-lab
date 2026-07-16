@@ -3314,3 +3314,31 @@ repeatable way.
 
 - `github-research-wave-467-backlog.md`
   Executed backlog for the Wave 467 pass.
+
+- `github-research-wave-468-plan.md`
+  Wave 468 research plan focused on WebXR hand gesture adapters and
+  controller-free interactions.
+
+- `github-research-wave-468-backlog.md`
+  Executed backlog for the Wave 468 pass.
+
+- `github-research-wave-469-plan.md`
+  Wave 469 research plan focused on WebXR VRM avatar optimization and companion
+  viewer microtools.
+
+- `github-research-wave-469-backlog.md`
+  Executed backlog for the Wave 469 pass.
+
+- `github-research-wave-470-plan.md`
+  Wave 470 research plan focused on virtual display and spatial desktop
+  sidecars.
+
+- `github-research-wave-470-backlog.md`
+  Executed backlog for the Wave 470 pass.
+
+- `github-research-wave-471-plan.md`
+  Wave 471 research plan focused on device camera WebRTC AI and ROS operator
+  surfaces.
+
+- `github-research-wave-471-backlog.md`
+  Executed backlog for the Wave 471 pass.

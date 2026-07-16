@@ -12964,6 +12964,90 @@ This family matters because not every spatial asset preview needs a full native
 viewer; a declarative browser component can be a lighter donor for demos,
 documentation, and WebXR utility panels.
 
+## Family 447: Hand gesture adapters for controller-free interactions
+
+This family covers WebXR and Quest hand-tracking adapters that convert raw hand
+joints, pinch distances, gesture confidence, and active input mode into semantic
+utility interactions such as grab, drag, click, stretch, teleport, snap turn,
+and controller-like button/axis values.
+
+| Project | Status | Notes |
+|---|---|---|
+| `rjimenezz/aframe-free-hands-component` | Studied in Wave 468 | A-Frame free-hands component with pinch/point detectors, OBB/SAT colliders, and semantic interactables |
+| `FireDragonGameStudio/WebXR-DePanther-VRTK` | Studied in Wave 468 | WebXR Export plus VRTK template with hand/controller mappings for grab, teleport, snap turn, and state indicators |
+| `FusedVR/Oculus-Quest-VRTK` | Studied as legacy comparison in Wave 468 | Quest/VRTK adapter mapping OVR hand pinches into button/axis input |
+| `google/xrblocks` | Existing overlap reference | Earlier broad WebXR SDK with gestures and hand estimators |
+| `AlbertoElias/webxr-hand-tracking` | Existing overlap reference | Earlier WebXR hand/avatar adapter harness |
+
+### Consolidation note
+
+This family matters because controller-free VR utilities need a reusable
+gesture adapter layer rather than one-off pinch checks scattered through object
+scripts.
+
+## Family 448: Browser VRM avatar optimization preview and provenance tools
+
+This family covers VRM/three-vrm browser utilities that separate avatar asset
+provenance, optimization, material/texture budgets, animation compatibility,
+viewer diagnostics, saved libraries, and companion UI behavior.
+
+| Project | Status | Notes |
+|---|---|---|
+| `WebXR-JP/avatar-optimizer` | Studied in Wave 469 | Optimizer monorepo with MToon atlas, texture compression, debug viewer, Spector hooks, and tests |
+| `chrisdubya/vrm-webxr` | Studied in Wave 469 | Minimal React/Three/WebXR VRM loading baseline |
+| `royalkingjoey/YumeVRM` | Studied in Wave 469 | Browser VRM companion with saved avatars, VRMA actions, rest-pose/idle/gaze behavior, speech/lip-sync, and settings |
+| `ToxSam/open-source-avatars` | Studied in Wave 469 | Metadata-first VRM avatar registry with project licenses, avatar files, thumbnails, FBX alternates, and VRM version caveats |
+| `pixiv/three-vrm` | Existing overlap reference | Core Three.js VRM runtime already studied |
+| `xianfei/SysMocap` | Existing overlap reference | Browser/avatar mocap app with three-vrm and WebXR forwarding |
+
+### Consolidation note
+
+This family matters because avatar utilities become reusable when asset
+provenance, optimization, runtime loading, animation, and companion UI are kept
+as separate modules.
+
+## Family 449: Virtual display sidecars and XR desktop surface plumbing
+
+This family covers virtual display drivers, monitor inventories, display mode
+contracts, desktop capture, AR-glasses screen pinning, and XR multi-monitor
+surface placement.
+
+| Project | Status | Notes |
+|---|---|---|
+| `StevenRice99/Virtual-Monitors` | Studied in Wave 470 | Unity XR monitor viewer with WindowsDisplayAPI layout caching and uWindowCapture desktop textures |
+| `arigandores/AirPin` | Studied in Wave 470 | AR-glasses duplicate-screen pinning sidecar with DXGI capture, IMU offset, and transparent overlay |
+| `KtzeAbyss/Easy-Virtual-Display` | Studied in Wave 470 | Managed virtual display host with admin CLI, driver status, display contracts, and error taxonomy |
+| `timminator/Virtual-Display-Driver` | Studied in Wave 470 | Windows indirect display driver reference with adapter/mode/monitor-count config |
+| `wheaney/breezy-desktop` | Existing overlap reference | XR-glasses workspace shell |
+| `lc700x/desktop2stereo` | Existing overlap reference | Desktop/video-to-stereo workflow |
+
+### Consolidation note
+
+This family matters because many overlay and desktop-in-VR tools depend on a
+lower-level display sidecar: create or identify the display, capture it, place
+it, and explain driver safety.
+
+## Family 450: Device camera AI WebRTC and ROS operator surfaces
+
+This family covers headset/device camera capture, WebRTC signaling, AI vision
+queries, raw/processed camera layers, ROS sensor panels, and operator state
+surfaces.
+
+| Project | Status | Notes |
+|---|---|---|
+| `magicleap/MagicLeap2UnityWebRTCExample` | Studied in Wave 471 | Magic Leap 2 Unity WebRTC sample with camera provider choice, permissions, microphone, WebRTC controller, and Python signaling server |
+| `hyunaseo/OpenAI-for-Galaxy-XR` | Studied in Wave 471 | Galaxy XR sample combining microphone input, egocentric JPEG frames, OpenAI responses/realtime, streamed audio, and in-world output |
+| `takatronix/xreal_ai_cam` | Studied in Wave 471 | XREAL camera prototype with raw/processed image layers, layer manager, object-detection shell, and processing controls |
+| `leggedrobotics/unity_ros_teleoperation` | Studied in Wave 471 | Quest/OpenXR ROS operator surface with camera/stereo/audio/hands/haptics/lidar/markers/TF panels and VR streaming |
+| `microsoft/Virtual-Robot-Overlay-for-Online-Meetings` | Existing overlap reference | Earlier telepresence relay/robot overlay stack |
+| `samuelm2/OpenQuestCapture` | Existing overlap reference | Earlier Quest camera wrapper and reconstruction package |
+
+### Consolidation note
+
+This family matters because camera/operator tools are sensitive pipelines; the
+reusable design is the gated capture, transport, inference, preview, and safety
+state, not the device-specific sample code.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

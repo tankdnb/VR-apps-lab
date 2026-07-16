@@ -22199,3 +22199,109 @@ When a new utility idea appears:
   labels.
 - Maturity:
   useful browser-component pattern; needs performance/device caveat matrix.
+
+## Method 913: Hand gesture adapter layer for controller-free utility interactions
+
+- What it is:
+  a hand-input adapter that converts raw hand joints, pinch distances, point
+  posture, confidence, and active input mode into semantic events and
+  controller-like values for utility scenes.
+- Good for:
+  controller-free WebXR tools, hand-first object manipulation, setup panels,
+  educational scenes, in-headset editors, locomotion helpers, and fallback
+  controller parity.
+- Source evidence:
+  `rjimenezz/aframe-free-hands-component`,
+  `FireDragonGameStudio/WebXR-DePanther-VRTK`, and
+  `FusedVR/Oculus-Quest-VRTK`.
+- Reusable core:
+  support gate, hand joint sampler, pinch/point detector, hysteresis
+  thresholds, confidence labels, hand collider/proxy, semantic events,
+  interactable reactions, controller fallback, active input mode, debug
+  indicators, and device caveats.
+- Do not copy directly:
+  fixed gesture thresholds, provider-specific controller names, unmaintained
+  VRTK/OVR assumptions, sample assets, or finger-overloaded locomotion controls
+  without user settings.
+- Maturity:
+  strong input-method pattern; needs provider-neutral schema and modern WebXR
+  input profile comparison.
+
+## Method 914: Avatar asset pipeline with optimizer previewer and provenance registry
+
+- What it is:
+  a browser avatar pipeline that separates asset provenance, VRM loading,
+  optimization, material/texture budgets, animation compatibility, preview
+  diagnostics, and saved user libraries.
+- Good for:
+  WebXR avatar viewers, social/companion tools, sample avatar galleries,
+  performance-sensitive browser scenes, avatar diagnostics, and reusable
+  character test fixtures.
+- Source evidence:
+  `WebXR-JP/avatar-optimizer`, `chrisdubya/vrm-webxr`,
+  `royalkingjoey/YumeVRM`, `ToxSam/open-source-avatars`, and existing
+  `pixiv/three-vrm` coverage.
+- Reusable core:
+  avatar registry, project/license indirection, loader plugin, runtime update
+  loop, optimizer, material/texture atlas, packed parameter texture, KTX2/Basis
+  compression, debug viewer, Spector capture hooks, saved avatar library,
+  VRMA animation library, rest-pose/idle/gaze behavior, and performance labels.
+- Do not copy directly:
+  sample avatars without license review, bundled WASM/shaders without
+  provenance, cloud/API-key assumptions, local file persistence without
+  security labels, or unbounded avatar complexity without budgets.
+- Maturity:
+  high-value avatar utility pattern; needs cross-wave avatar asset checklist.
+
+## Method 915: Virtual display sidecar with monitor inventory driver lifecycle and XR capture surface
+
+- What it is:
+  a sidecar architecture that manages virtual display dependencies, enumerates
+  monitors, captures desktop surfaces, and exposes them as XR/spatial panels
+  with safe driver lifecycle and cleanup status.
+- Good for:
+  VR desktop shells, multi-monitor dashboards, AR-glasses pinned screens,
+  operator workspaces, virtual monitor setup tools, remote desktop helpers, and
+  capture-backed overlays.
+- Source evidence:
+  `StevenRice99/Virtual-Monitors`, `arigandores/AirPin`,
+  `KtzeAbyss/Easy-Virtual-Display`, `timminator/Virtual-Display-Driver`, and
+  earlier `breezy-desktop`/remote-desktop overlap.
+- Reusable core:
+  dependency label, install/uninstall gate, driver status, display inventory,
+  supported/current modes, layout coordinates, capture backend, XR panel
+  placement, error taxonomy, safety warnings, and teardown instructions.
+- Do not copy directly:
+  privileged batch scripts, driver binaries, certificates, bundled DLLs,
+  Windows-only assumptions without labels, or pointer/input mismatch hidden
+  from the user.
+- Maturity:
+  strong operator-side method; needs provider-neutral virtual display status
+  schema.
+
+## Method 916: Device-camera operator surface with capture inference transport and status gates
+
+- What it is:
+  a gated operator pipeline that separates headset/device camera capture,
+  permission, latest-frame caching, media transport, AI/vision inference,
+  preview panels, audio/sensor streams, and command safety state.
+- Good for:
+  passthrough helpers, remote assistance, WebRTC camera relays, "ask what I
+  see" tools, robot teleoperation, visual QA overlays, inspection utilities,
+  and accessibility assistants.
+- Source evidence:
+  `magicleap/MagicLeap2UnityWebRTCExample`,
+  `hyunaseo/OpenAI-for-Galaxy-XR`, `takatronix/xreal_ai_cam`, and
+  `leggedrobotics/unity_ros_teleoperation`.
+- Reusable core:
+  camera provider interface, permission gate, latest-frame cache, image encode
+  path, signaling or ROS endpoint, world-space preview, inference/query
+  adapter, audio stream, sensor panels, connection state, warning labels,
+  privacy gates, and safety authorization boundary.
+- Do not copy directly:
+  unauthenticated signaling, cloud API calls without consent, embedded API-key
+  assumptions, device-specific camera code, or robot teleoperation commands
+  without safety gates.
+- Maturity:
+  important cross-family method; needs a privacy/safety checklist and shared
+  operator connection status model.
