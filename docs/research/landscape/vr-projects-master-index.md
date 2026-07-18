@@ -1549,3 +1549,20 @@ bet everything on unsupported vendor passthrough paths.
   XR file/model/media intake with local GLB services, browser point clouds,
   Unity WebSocket video/GLB bridges, local WebXR model viewers, and provenance
   boundaries.
+
+- `vr-projects-wave-476-gaze-eye-tracking-and-gaze-analysis-utility-surfaces.md`
+  Gaze and eye-tracking utility surfaces with provider confidence, dwell
+  targets, reticles, fixation/saccade analysis, semantic labels, and privacy
+  boundaries.
+
+- `vr-projects-wave-477-webxr-spatial-audio-listening-and-audio-reactive-surfaces.md`
+  WebXR spatial audio surfaces with AR placement, user-gesture unlock,
+  scene-config audio actors, analyser references, and listening-story graphs.
+
+- `vr-projects-wave-478-haptic-feedback-microtools-and-diy-peripheral-bridges.md`
+  Haptic feedback microtools with OpenXR managers, XRI routers, hover/UI
+  retrofits, Meta haptic clips, DIY glove references, and safety profiles.
+
+- `vr-projects-wave-479-vrm-glb-pose-scene-authoring-and-downstream-generator-adapters.md`
+  VRM/GLB authoring adapters with ComfyUI pose/scene editors, capture channels,
+  browser pose conversion, and Unity WebXR packaging references.

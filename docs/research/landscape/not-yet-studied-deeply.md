@@ -3260,6 +3260,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 398. `Wayfinding guidance follow-up across waypoint schemas, navmesh/graph route solvers, path rail/arrow renderers, map-placement conditions, semantic simplification modes, head/position telemetry, blocked-route scenarios, and immersive deep-link safety`
 399. `Quest camera visual-search follow-up across passthrough permission state, camera intrinsics, controller-to-camera calibration, bounded frame bursts, bbox/mask/label/pose result schemas, sidecar auth, cloud-key handling, and privacy consent`
 400. `XR file media intake follow-up across desktop file dialogs, Android SAF, browser file input, local HTTPS, WebSocket command bridges, format whitelists, MIME types, thumbnails, provenance labels, file-size budgets, and cleanup lifecycle`
+401. `Gaze interaction follow-up across gaze sample schemas, provider confidence, calibration state, dwell targets, semantic labels, fixation/saccade artifacts, privacy consent, retention, and headset/browser capability matrices`
+402. `WebXR spatial audio follow-up across source descriptors, listener ownership, user-gesture unlock, analyser outputs, story/proximity graphs, asset provenance, CORS/HTTPS, and media performance budgets`
+403. `Haptic intent router follow-up across semantic event names, amplitude/duration/envelope profiles, overlap/cooldown policy, device capability checks, DIY peripheral safety, accessibility fallbacks, and pattern asset catalogs`
+404. `VRM GLB authoring adapter follow-up across pose schemas, bone maps, capture channels, thumbnail metadata, ComfyUI route write-scope policies, generator-node previews, WebXR package provenance, and Unity/browser split`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

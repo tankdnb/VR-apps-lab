@@ -516,6 +516,14 @@ If you need recent examples instead of the full chronology, start with:
 
 - `landscape/vr-projects-wave-475-xr-file-model-media-intake-and-local-viewer-surfaces.md`
 
+- `landscape/vr-projects-wave-476-gaze-eye-tracking-and-gaze-analysis-utility-surfaces.md`
+
+- `landscape/vr-projects-wave-477-webxr-spatial-audio-listening-and-audio-reactive-surfaces.md`
+
+- `landscape/vr-projects-wave-478-haptic-feedback-microtools-and-diy-peripheral-bridges.md`
+
+- `landscape/vr-projects-wave-479-vrm-glb-pose-scene-authoring-and-downstream-generator-adapters.md`
+
 ## Archive Navigation
 
 Use these when you need the full historical record rather than the short

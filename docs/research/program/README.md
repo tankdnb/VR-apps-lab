@@ -3370,3 +3370,31 @@ repeatable way.
 
 - `github-research-wave-475-backlog.md`
   Executed backlog for the Wave 475 pass.
+
+- `github-research-wave-476-plan.md`
+  Wave 476 research plan focused on gaze, eye-tracking, and gaze-analysis
+  utility surfaces.
+
+- `github-research-wave-476-backlog.md`
+  Executed backlog for the Wave 476 pass.
+
+- `github-research-wave-477-plan.md`
+  Wave 477 research plan focused on WebXR spatial audio listening and
+  audio-reactive surfaces.
+
+- `github-research-wave-477-backlog.md`
+  Executed backlog for the Wave 477 pass.
+
+- `github-research-wave-478-plan.md`
+  Wave 478 research plan focused on haptic feedback microtools and DIY
+  peripheral bridges.
+
+- `github-research-wave-478-backlog.md`
+  Executed backlog for the Wave 478 pass.
+
+- `github-research-wave-479-plan.md`
+  Wave 479 research plan focused on VRM/GLB pose-scene authoring and downstream
+  generator adapters.
+
+- `github-research-wave-479-backlog.md`
+  Executed backlog for the Wave 479 pass.

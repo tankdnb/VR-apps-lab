@@ -22413,3 +22413,113 @@ When a new utility idea appears:
 - Maturity:
   strong practical utility pattern; needs an intake-provider matrix and
   file-safety checklist.
+
+## Method 921: Gaze interaction and analysis pipeline with confidence and semantic target evidence
+
+- What it is:
+  a gaze utility method that separates live gaze input, dwell target lifecycle,
+  sample quality, fixation analysis, semantic labels, and privacy/retention
+  boundaries.
+- Good for:
+  gaze menus, accessibility input, eye-gaze diagnostics, attention dashboards,
+  research session analysis, calibration QA, and hands-free microtools.
+- Source evidence:
+  `Haddley/vision-eye-tracking`, `Adkaros/VR-GazeControl`,
+  `eman2XR/VR-Gaze-pointer-and-buttons`, `xyethan/OcuShape`, and
+  `ni1o1/vr-gaze-pipeline`.
+- Reusable core:
+  gaze provider, coordinate space, timestamp, confidence, stale gate, target
+  enter/leave/complete events, dwell timer, reticle/progress/audio feedback,
+  fixation detector, saccade marker, semantic target label, aggregate attention
+  output, export scope, and consent/retention labels.
+- Do not copy directly:
+  simulated gaze as real tracking, hidden eye-data collection, old Unity caches,
+  tag-only button assumptions, or semantic attention conclusions without
+  calibration and consent.
+- Maturity:
+  strong cross-cutting method; needs a shared gaze sample schema and privacy
+  checklist before prototype reuse.
+
+## Method 922: WebXR spatial audio surface with source placement analyser and listening-story state
+
+- What it is:
+  a browser XR audio method that treats audio as spatial source actors with
+  user-gesture unlock, listener ownership, optional analyser visuals, and
+  story/proximity state.
+- Good for:
+  VR music players, audio tours, accessibility listening aids, spatial
+  soundboards, audio-reactive demos, dome/planetarium tools, and media
+  companion panels.
+- Source evidence:
+  `kimuracoki/webxr-audio-ar`, `CtrlZ-Music/webxr-audio-vr`,
+  `dome-vr/dome-vr.github.io`,
+  `GunnLogan/webxr-audio-experience_SoundStorytelling`, and prior audio
+  visualizer references.
+- Reusable core:
+  audio source descriptor, global/positional mode, listener attached to camera,
+  playback state, user activation button, source marker, volume/loop/rate,
+  analyser output, proximity/tap trigger, one-active-audio rule, story graph,
+  asset provenance, and platform fallback label.
+- Do not copy directly:
+  autoplay attempts, bundled generated/vendor folders, local cert/key artifacts,
+  missing-source README claims, or unbounded media assets without provenance and
+  performance labels.
+- Maturity:
+  useful media-utility method; needs a source descriptor schema and asset
+  cleanup checklist.
+
+## Method 923: Haptic feedback microtool with event intent routing profile and peripheral safety boundary
+
+- What it is:
+  a haptic feedback method that maps semantic utility events to controller or
+  peripheral targets through profiles, envelopes, cooldowns, overlap policy,
+  and visible safety/fallback state.
+- Good for:
+  overlay feedback, spatial UI affordances, accessibility cues, controller
+  diagnostics, haptic training, DIY glove bridges, and tactile calibration
+  tools.
+- Source evidence:
+  `nafraus/openxr-hapticsmanagerpro`, `nafraus/openxr-haptics-manager`,
+  `Valsvirtuals/ProtoGlove`, `UetaKento/VRHackathon_HapticsApp`,
+  `kunalchitkara010/VR-Haptics`, and prior LucidGloves/haptic bridge coverage.
+- Reusable core:
+  event intent, pattern id, side/device target, capability check, amplitude,
+  duration, envelope curve, active impulse registry, add/multiply/override
+  policy, cooldown/debounce, `.haptic` clip reference, peripheral capability
+  record, disabled state, and non-haptic fallback.
+- Do not copy directly:
+  hidden strong vibrations, repeated hover spam, singleton-only Unity managers,
+  unvalidated DIY hardware assumptions, sample-package bulk, or feedback
+  without accessibility intensity profiles.
+- Maturity:
+  strong feedback-router method; needs provider-neutral haptic intent schema and
+  safety defaults.
+
+## Method 924: Browser VRM GLB pose scene adapter with downstream generator export
+
+- What it is:
+  an authoring method where a browser or plugin-hosted 3D editor turns
+  VRM/GLB/GLTF scene state into downstream artifacts such as image, mask,
+  depth, normal, openpose, pose JSON, `.vroidpose`, thumbnail, or WebXR package
+  evidence.
+- Good for:
+  avatar pose tools, AI image/generator adapters, documentation screenshots,
+  synthetic dataset capture, scene staging, WebXR demo packaging, and local
+  creator microtools.
+- Source evidence:
+  `ketle-man/comfyui-vrm-pose-editor`,
+  `hidenoji1/comfyui-vrm-scene-editor`, `k3peta/web-vrm-poser`, and
+  `Module-Code/WebXR_DePanther`.
+- Reusable core:
+  model intake whitelist, object URL lifecycle, pose schema, humanoid bone map,
+  GUI sliders/presets, background/lighting controls, capture/timer action,
+  output channel registry, live preview event, artifact route, path traversal
+  guard, thumbnail/meta store, format conversion, tensor/image export, and
+  package/version provenance.
+- Do not copy directly:
+  vendor bundles, generated Unity projects, local write routes without policy,
+  CDN-only production dependencies, single-file editor sprawl, or unrestricted
+  model libraries without provenance labels.
+- Maturity:
+  high-value creator-tool method; needs capture artifact schema, write-scope
+  policy, and Unity WebXR packaging checklist.

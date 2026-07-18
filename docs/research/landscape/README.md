@@ -2137,6 +2137,26 @@ Use these files when you want to understand:
   HTTPS/WebSocket sidecars, WebXR model viewers, point clouds, video players,
   and provenance/security boundaries.
 
+- `vr-projects-wave-476-gaze-eye-tracking-and-gaze-analysis-utility-surfaces.md`
+  Next GitHub discovery wave focused on gaze input, eye-tracking providers,
+  dwell targets, confidence/stale state, semantic labels, and privacy-aware
+  gaze artifacts.
+
+- `vr-projects-wave-477-webxr-spatial-audio-listening-and-audio-reactive-surfaces.md`
+  Next GitHub discovery wave focused on WebXR spatial audio placement,
+  user-gesture unlock, scene-config audio actors, analyser feedback, and
+  listening-story graphs.
+
+- `vr-projects-wave-478-haptic-feedback-microtools-and-diy-peripheral-bridges.md`
+  Next GitHub discovery wave focused on haptic intent routing, OpenXR/XRI
+  feedback managers, hover retrofits, `.haptic` clips, and DIY peripheral
+  safety/capability boundaries.
+
+- `vr-projects-wave-479-vrm-glb-pose-scene-authoring-and-downstream-generator-adapters.md`
+  Next GitHub discovery wave focused on VRM/GLB authoring adapters, ComfyUI
+  capture nodes, multi-channel generator outputs, browser pose conversion, and
+  Unity WebXR packaging references.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

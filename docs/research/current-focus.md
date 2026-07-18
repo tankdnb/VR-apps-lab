@@ -17,6 +17,28 @@ experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
 
+## Current additions from Waves 476-479
+
+- `Gaze eye-tracking and gaze-analysis utility surfaces`
+  add gaze coverage around WebXR eye-gaze shims, simulated/WebSocket providers,
+  confidence and stale-sample gates, visible gaze cursors, dwell reticles,
+  Unity gaze buttons, 3D fixation/saccade analysis, KNN semantic labels, and
+  privacy/retention boundaries.
+- `WebXR spatial audio listening and audio-reactive surfaces`
+  add browser audio coverage around AR hit-test placement, user-gesture audio
+  unlock, scene-config audio actors, global/positional audio factories,
+  analyser/audio-reactive references, proximity/tap listening nodes, and
+  story-graph state.
+- `Haptic feedback microtools and DIY peripheral bridges`
+  add haptic coverage around Unity OpenXR haptic managers, active impulse
+  registries, curve/data assets, minimal XRI routers, hover/UI haptic retrofits,
+  Meta `.haptic` clips, DIY glove hardware modules, and safety/accessibility
+  caveats.
+- `VRM/GLB pose-scene authoring and downstream generator adapters`
+  add creator-tool coverage around ComfyUI VRM/GLB pose editors, standalone
+  scene capture studios, multi-channel image/mask/depth/normal/openpose
+  outputs, browser `.vroidpose` conversion, and Unity WebXR packaging evidence.
+
 ## Current additions from Waves 472-475
 
 - `In-VR questionnaires, study forms, and biosignal experiment templates`

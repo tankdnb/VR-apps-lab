@@ -13129,6 +13129,92 @@ This family matters because content intake is a product surface: format scope,
 transport scope, loading/error UX, security, and provenance are as important as
 the renderer.
 
+## Family 455: Gaze eye-tracking and gaze-analysis utility surfaces
+
+This family covers gaze input, eye-tracking providers, dwell target lifecycle,
+confidence/stale sample state, fixation segmentation, semantic attention
+labels, and privacy-aware gaze artifacts.
+
+| Project | Status | Notes |
+|---|---|---|
+| `Haddley/vision-eye-tracking` | Studied in Wave 476 | WebXR eye-gaze shim/trainer with provider split, confidence, stale gates, cursor, and metrics |
+| `Adkaros/VR-GazeControl` | Studied in Wave 476 | Minimal Unity camera-forward dwell raycast manager and target events |
+| `eman2XR/VR-Gaze-pointer-and-buttons` | Studied in Wave 476 | Unity gaze pointer prefab with reticle, dwell loader, hover/click audio, and UnityEvent hooks |
+| `xyethan/OcuShape` | Source-light reference in Wave 476 | Robust eye-ellipse concept, no confirmed code donor surface |
+| `ni1o1/vr-gaze-pipeline` | Studied in Wave 476 | Offline 3D gaze pipeline with visual cone, fixations, saccades, KNN semantic labels, and attention shares |
+| `Robertson-Lab/vrGazeCore-Toolbox` | Existing overlap reference | Earlier gaze research/toolbox line |
+| `Project-Babble/BabbleCalibration` | Existing overlap reference | Earlier eye/face calibration utility line |
+
+### Consolidation note
+
+This family matters because gaze utilities need a shared contract for provider,
+target intent, confidence, semantic labels, and privacy instead of treating gaze
+as only a raycast click.
+
+## Family 456: WebXR spatial audio listening and audio-reactive surfaces
+
+This family covers browser XR audio actors, spatial source placement, listener
+attachment, user-gesture audio unlock, analyser-driven visuals, and
+story/proximity listening graphs.
+
+| Project | Status | Notes |
+|---|---|---|
+| `kimuracoki/webxr-audio-ar` | Studied in Wave 477 | WebXR AR placement shell with DOM overlay, hit-test reticle, and placeable media plane |
+| `CtrlZ-Music/webxr-audio-vr` | Source-light reference in Wave 477 | README-level multichannel spatial audio and analyser concept |
+| `dome-vr/dome-vr.github.io` | Studied in Wave 477 | Scene-config audio actors, startAudio gate, global/positional factories, and cache/cycle buffers |
+| `GunnLogan/webxr-audio-experience_SoundStorytelling` | Studied in Wave 477 | A-Frame spatial story graph with proximity/tap triggers and one-active-audio state |
+| `shift/webxr-audio-visualizer` | Existing comparison reference | Earlier browser audio visualizer line |
+| `Alex-DG/vite-three-webxr-audio-visualizer` | Existing comparison reference | Earlier Vite/Three audio-reactive WebXR reference |
+
+### Consolidation note
+
+This family matters because audio utilities need source provenance, unlock
+state, placement, feedback, and story state before they become reliable VR
+listening surfaces.
+
+## Family 457: Haptic feedback microtools and DIY peripheral bridges
+
+This family covers haptic intent routing, controller/device targets,
+amplitude-duration-envelope profiles, overlap/cooldown policy, hover/UI
+retrofits, `.haptic` assets, and DIY peripheral safety/capability labels.
+
+| Project | Status | Notes |
+|---|---|---|
+| `nafraus/openxr-hapticsmanagerpro` | Studied in Wave 478 | Unity OpenXR manager with active impulse registry, layers, curves, and typed data assets |
+| `nafraus/openxr-haptics-manager` | Studied in Wave 478 | Minimal Unity XRI haptic router for controller/interactor/interactable targets |
+| `Valsvirtuals/ProtoGlove` | Hardware reference in Wave 478 | Modular DIY glove/haptic hardware shell with printable part taxonomy |
+| `UetaKento/VRHackathon_HapticsApp` | Studied in Wave 478 | Meta XR Haptics tactile matching game using `.haptic` clips |
+| `kunalchitkara010/VR-Haptics` | Studied in Wave 478 | Unity hover/UI haptics retrofit scripts |
+| `LucidVR/lucidgloves` | Existing overlap reference | Earlier DIY glove runtime bridge family |
+| `Z4urce/VRC-Haptic-Pancake` | Existing overlap reference | Earlier haptic bridge utility |
+
+### Consolidation note
+
+This family matters because haptics should be documented as semantic feedback
+intents with visible limits and fallback policy, not hidden one-off controller
+pulses.
+
+## Family 458: VRM GLB pose-scene authoring and downstream generator adapters
+
+This family covers browser/ComfyUI VRM and GLB authoring surfaces whose output
+is a downstream artifact: rendered image, mask, depth, normal, openpose, pose
+JSON, `.vroidpose`, thumbnail metadata, or WebXR package evidence.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ketle-man/comfyui-vrm-pose-editor` | Studied in Wave 479 | ComfyUI node-local VRM/GLB pose editor with capture, pose/light libraries, and image tensor output |
+| `hidenoji1/comfyui-vrm-scene-editor` | Studied in Wave 479 | Standalone ComfyUI VRM scene studio with multi-camera channel registry and live node preview |
+| `k3peta/web-vrm-poser` | Studied in Wave 479 | Browser-only VRM poser and `.vroidpose`/Three.js Euler converter |
+| `Module-Code/WebXR_DePanther` | Packaging reference in Wave 479 | Unity WebXR Export project showing package, loader, template, and simulator setup |
+| `WebXR-JP/avatar-optimizer` | Existing overlap reference | Earlier browser VRM optimization and provenance tooling |
+| `pixiv/three-vrm` | Existing overlap reference | Core Three.js VRM runtime |
+
+### Consolidation note
+
+This family matters because creator-oriented VR utilities can be artifact
+adapters for AI/generator pipelines and browser demos, not only standalone
+runtime scenes.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

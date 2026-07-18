@@ -6076,6 +6076,56 @@ Primary docs:
 - `lxseguin/local-vr-viewer` - `Studied in Wave 475 as Python HTTPS micro-server plus Three.js/WebXR viewer for local GLB/GLTF/OBJ/STL files with model-info endpoint, MIME types, auto-fit, floor/scale controls, teleport, and self-signed cert caveats`
 - `jjhna/UnityBrowserAssetsVR` - `Lightly studied in Wave 475 as older HTML/JS browser-panel asset set with URL navigation, tab controls, resize fields, HUD demos, and stale dependency/missing Unity bridge caveats`
 
+## 447. Gaze eye-tracking and gaze-analysis utility surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-476-gaze-eye-tracking-and-gaze-analysis-utility-surfaces.md`
+- `../landscape/project-families.md`
+
+- `Haddley/vision-eye-tracking` - `Studied in Wave 476 as WebXR eye-gaze shim/trainer with patched requestSession, getEyeGazes(baseSpace), simulated/WebSocket providers, confidence/sample time/stale gates, visible gaze cursor, local export, and fixation/saccade metrics`
+- `Adkaros/VR-GazeControl` - `Studied in Wave 476 as minimal Unity camera-forward gaze raycast manager with dwell progress fill, SendMessage target lifecycle, and old Unity/cache plus target-leave caveats`
+- `eman2XR/VR-Gaze-pointer-and-buttons` - `Studied in Wave 476 as Unity gaze pointer/button prefab with hit reticle, tag-filtered button lifecycle, dwell loader, hover/click audio, UnityEvent hooks, and singleton/tag caveats`
+- `xyethan/OcuShape` - `Source-light reference in Wave 476 for robust eye-ellipse/gaze-estimation preprocessing, with no confirmed code donor surface`
+- `ni1o1/vr-gaze-pipeline` - `Studied in Wave 476 as offline 3D gaze-analysis pipeline with visual-cone expansion, EGP computation, 3D I-DT fixations, saccades, KNN semantic labels, aggregate attention shares, schemas, and research/offline caveats`
+
+## 448. WebXR spatial audio listening and audio-reactive surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-477-webxr-spatial-audio-listening-and-audio-reactive-surfaces.md`
+- `../landscape/project-families.md`
+
+- `kimuracoki/webxr-audio-ar` - `Studied in Wave 477 as WebXR AR placement shell with immersive-ar, DOM overlay, required hit-test, viewer hit-test source, reticle matrix, controller select, and media-plane placement; audio donor path is thin`
+- `CtrlZ-Music/webxr-audio-vr` - `Source-light reference in Wave 477 for 8.1 multichannel spatial audio, point-source spheres, analyser/GUI/audio-reactive concept, with no confirmed code donor files in the clone`
+- `dome-vr/dome-vr.github.io` - `Studied in Wave 477 as scene-config audio actor system with startAudio user gesture gate, THREE.AudioListener, GlobalAudio/Pointaudio factories, buffer cache/cycling, and generated/vendor/cert caveats`
+- `GunnLogan/webxr-audio-experience_SoundStorytelling` - `Studied in Wave 477 as A-Frame spatial audio story graph with audio-context unlock, proximity/tap nodes, one-active-audio invariant, PATH_GRAPH branch spawning, and platform/global-state caveats`
+
+## 449. Haptic feedback microtools and DIY peripheral bridges
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-478-haptic-feedback-microtools-and-diy-peripheral-bridges.md`
+- `../landscape/project-families.md`
+
+- `nafraus/openxr-hapticsmanagerpro` - `Studied in Wave 478 as Unity OpenXR haptics manager with left/right/both targets, active impulse registry, FixedUpdate processing, add/multiply/override intent, curve/data assets, and singleton/layer caveats`
+- `nafraus/openxr-haptics-manager` - `Studied in Wave 478 as minimal Unity XR Interaction Toolkit haptic router with controller/interactor/interactable overloads, side routing, amplitude/duration helpers, and no concurrency/capability caveats`
+- `Valsvirtuals/ProtoGlove` - `Studied in Wave 478 as hardware reference for modular DIY glove/haptic platform with baseplates, mounts, finger guides, LRA options, snap-fit rails, STL-heavy assets, and no runtime bridge code`
+- `UetaKento/VRHackathon_HapticsApp` - `Studied in Wave 478 as Meta XR Haptics tactile matching game with .haptic clips, left/right HapticClipPlayer usage, label matching, trigger judgment, and sample-bulk caveats`
+- `kunalchitkara010/VR-Haptics` - `Studied in Wave 478 as Unity hover-haptics retrofit with object/UI event adapters, XRBaseControllerInteractor impulses, XRI UI pointer lookup, component scanner, and cooldown/accessibility caveats`
+
+## 450. VRM GLB pose-scene authoring and downstream generator adapters
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-479-vrm-glb-pose-scene-authoring-and-downstream-generator-adapters.md`
+- `../landscape/project-families.md`
+
+- `ketle-man/comfyui-vrm-pose-editor` - `Studied in Wave 479 as ComfyUI node-local VRM/GLB/GLTF browser pose editor with capture/timer/background controls, pose/light libraries, thumbnail routes, path guards, PIL-to-torch output, and vendor/write caveats`
+- `hidenoji1/comfyui-vrm-scene-editor` - `Studied in Wave 479 as standalone ComfyUI VRM scene studio with launcher button, backend model/capture routes, channel registry, vrm_capture live preview, multi-camera image/mask/depth/normal/openpose outputs, GLB thumbnail extraction, and local-write caveats`
+- `k3peta/web-vrm-poser` - `Studied in Wave 479 as serverless browser VRM poser and .vroidpose converter with three-vrm loader, humanoid bone maps, lil-gui sliders, hand presets, Euler/Unity quaternion conversion, drag/drop intake, code copy/download, and single-file/CDN caveats`
+- `Module-Code/WebXR_DePanther` - `Studied in Wave 479 as Unity WebXR packaging reference with De-Panther WebXR packages, OpenUPM scoped registry, WebXR settings/loader assets, WebGL Enter VR/AR template, XRI simulator assets, and generated-project caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:
