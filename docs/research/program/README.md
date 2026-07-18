@@ -3342,3 +3342,31 @@ repeatable way.
 
 - `github-research-wave-471-backlog.md`
   Executed backlog for the Wave 471 pass.
+
+- `github-research-wave-472-plan.md`
+  Wave 472 research plan focused on in-VR questionnaires, study forms, and
+  biosignal experiment templates.
+
+- `github-research-wave-472-backlog.md`
+  Executed backlog for the Wave 472 pass.
+
+- `github-research-wave-473-plan.md`
+  Wave 473 research plan focused on VR/WebXR wayfinding, navigation guidance,
+  and semantic simplification.
+
+- `github-research-wave-473-backlog.md`
+  Executed backlog for the Wave 473 pass.
+
+- `github-research-wave-474-plan.md`
+  Wave 474 research plan focused on Quest camera CV inference and
+  controller-defined visual search utilities.
+
+- `github-research-wave-474-backlog.md`
+  Executed backlog for the Wave 474 pass.
+
+- `github-research-wave-475-plan.md`
+  Wave 475 research plan focused on XR file/model/media intake and local viewer
+  surfaces.
+
+- `github-research-wave-475-backlog.md`
+  Executed backlog for the Wave 475 pass.

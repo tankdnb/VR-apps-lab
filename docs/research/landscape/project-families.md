@@ -13048,6 +13048,87 @@ This family matters because camera/operator tools are sensitive pipelines; the
 reusable design is the gated capture, transport, inference, preview, and safety
 state, not the device-specific sample code.
 
+## Family 451: In-VR research questionnaires and biosignal experiment forms
+
+This family covers in-headset study forms, participant result stores,
+questionnaire schemas, additive form scenes, and biosignal/event-marker gates.
+
+| Project | Status | Notes |
+|---|---|---|
+| `jkalliok/VRQuestionnaire` | Studied in Wave 472 | Additive SSQ questionnaire scene with receiver callback and CSV output |
+| `leebrien/O-VR-HEAR-Forms` | Studied in Wave 472 | JSON-driven SSQ/NASA-TLX/UEQ-S form sequence with participant result store |
+| `CodeLavi/eeg-vr-unity-survey` | Lightly studied in Wave 472 | Public EEG/VR study-flow page with consent/privacy framing |
+| `NEUROSPEC-AG/VR-EEG-Sample-Experiment` | Studied in Wave 472 | VR neuroscience sample with serial MMBT-S trigger-box scripts |
+| `JakobJoSchmidt/immersive-questionnaire-unity-vr` | Existing overlap reference | Earlier in-VR questionnaire baseline |
+
+### Consolidation note
+
+This family matters because research utilities need reusable participant,
+questionnaire, export, and trigger-marker plumbing instead of one-off study
+scenes.
+
+## Family 452: VR WebXR wayfinding navigation guidance and semantic simplification
+
+This family covers route graphs, path rails, map-placement studies, semantic
+display conditions, accessibility wayfinding, and browser immersive navigation
+handoff constraints.
+
+| Project | Status | Notes |
+|---|---|---|
+| `renatezhang/wayfinding-prototype` | Lightly studied in Wave 473 | Map-placement and blocked-route study prototype with telemetry plan |
+| `TheStarTiger/vr-navigation-trails` | Studied in Wave 473 | Thumbstick-driven NavMesh path rail, vignette, velocity, and sickness scripts |
+| `bionicvisionlab/2025-VRST-SmartRaster` | Studied in Wave 473 | Bionic-vision wayfinding experiment with SmartRaster conditions and subject-seeded scenarios |
+| `FireFlyDeveloper/webxr-indoor-nav-demo4-react` | Studied in Wave 473 | WebXR waypoint graph, A* pathfinding, AR arrows, and arrival state |
+| `immersive-web/navigation` | Design reference in Wave 473 | UA/browser-controlled immersive session navigation notes |
+| `hlfshell/aframe-maze-component` | Existing overlap reference | Earlier browser VR maze/navigation reference |
+
+### Consolidation note
+
+This family matters because navigation helpers combine spatial intent, guidance
+rendering, comfort, accessibility, and telemetry; these pieces should stay
+separable.
+
+## Family 453: Quest camera CV inference and region-query utility surfaces
+
+This family covers headset camera capture, controller-defined visual regions,
+sidecar inference endpoints, bbox/mask/label result contracts, and privacy or
+calibration gates.
+
+| Project | Status | Notes |
+|---|---|---|
+| `daninloops/Quest3-Flask-Server-YOLO-Detection` | Studied in Wave 474 | Minimal Flask/YOLO latest-detection polling sidecar |
+| `SemyanovVisuals/gigafind` | Studied in Wave 474 | Quest passthrough frame burst plus controller bbox projection, FastAPI/SAM2 mask, and LLM label |
+| `imranbsh13/autosim-ai` | Lightly studied in Wave 474 | Early Unity/Quest CV simulation roadmap and XR input shell |
+| `WestCoastGod/XR-CV-Forceps-Tracking-Unity` | Existing comparison reference | Earlier marker/tool-pose tracking camera CV line |
+| `samuelm2/OpenQuestCapture` | Existing overlap reference | Earlier Quest camera wrapper and reconstruction package |
+
+### Consolidation note
+
+This family matters because visual-search utilities should analyze bounded,
+user-declared regions and expose calibration/privacy state rather than silently
+streaming broad camera feeds.
+
+## Family 454: XR file model media intake and local viewer surfaces
+
+This family covers local file/folder intake, HTTPS and WebSocket media
+sidecars, WebXR model viewers, Unity import bridges, point-cloud/image viewers,
+and browser-control panels.
+
+| Project | Status | Notes |
+|---|---|---|
+| `ClassOutside/WebXR-Model-Viewer` | Studied in Wave 475 | React host, Unity WebGL iframe, HTTPS GLB folder browser, and media streaming service |
+| `Betakontext/rgbtoxyzpointcloud` | Studied in Wave 475 | A-Frame image upload/URL resolver to RGB/XYZ point-cloud VR viewer |
+| `immerse-zhaw/VR_Video_Player_GLB` | Studied in Wave 475 | Unity WebSocket command bridge for 2D/360 video and GLB import |
+| `lxseguin/local-vr-viewer` | Studied in Wave 475 | Local Python HTTPS model server with Three.js/WebXR GLB/GLTF/OBJ/STL viewer |
+| `jjhna/UnityBrowserAssetsVR` | Lightly studied in Wave 475 | Older HTML browser-panel controls for Unity/VR surfaces |
+| `Enndee/Splatviewer_VR` | Existing overlap reference | Earlier local spatial asset viewer reference |
+
+### Consolidation note
+
+This family matters because content intake is a product surface: format scope,
+transport scope, loading/error UX, security, and provenance are as important as
+the renderer.
+
 ## Recommended synthesis path for `VR-apps-lab`
 
 The next useful step is not another long unsorted list.

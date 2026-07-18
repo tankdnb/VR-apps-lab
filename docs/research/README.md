@@ -508,6 +508,14 @@ If you need recent examples instead of the full chronology, start with:
 
 - `landscape/vr-projects-wave-471-device-camera-webrtc-ai-and-ros-operator-surfaces.md`
 
+- `landscape/vr-projects-wave-472-in-vr-questionnaires-study-forms-and-biosignal-experiment-templates.md`
+
+- `landscape/vr-projects-wave-473-vr-webxr-wayfinding-navigation-guidance-and-semantic-simplification.md`
+
+- `landscape/vr-projects-wave-474-quest-camera-cv-inference-and-controller-defined-visual-search-utilities.md`
+
+- `landscape/vr-projects-wave-475-xr-file-model-media-intake-and-local-viewer-surfaces.md`
+
 ## Archive Navigation
 
 Use these when you need the full historical record rather than the short

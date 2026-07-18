@@ -1529,3 +1529,23 @@ bet everything on unsupported vendor passthrough paths.
   Device camera operator surfaces with WebRTC signaling, Galaxy XR AI vision,
   XREAL raw/processed camera layers, ROS sensor panels, and privacy/safety
   gates.
+
+- `vr-projects-wave-472-in-vr-questionnaires-study-forms-and-biosignal-experiment-templates.md`
+  In-VR study forms with additive questionnaires, SSQ/NASA-TLX/UEQ-S schemas,
+  participant result stores, public study-flow framing, and biosignal trigger
+  markers.
+
+- `vr-projects-wave-473-vr-webxr-wayfinding-navigation-guidance-and-semantic-simplification.md`
+  VR/WebXR navigation guidance with map-placement studies, path rails, semantic
+  display conditions, waypoint graphs, AR arrows, arrival state, and immersive
+  handoff caveats.
+
+- `vr-projects-wave-474-quest-camera-cv-inference-and-controller-defined-visual-search-utilities.md`
+  Quest camera CV utilities with YOLO polling, controller-defined passthrough
+  regions, SAM2 segmentation masks, LLM labels, calibration, and privacy/key
+  caveats.
+
+- `vr-projects-wave-475-xr-file-model-media-intake-and-local-viewer-surfaces.md`
+  XR file/model/media intake with local GLB services, browser point clouds,
+  Unity WebSocket video/GLB bridges, local WebXR model viewers, and provenance
+  boundaries.

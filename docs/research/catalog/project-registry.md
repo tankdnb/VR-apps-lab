@@ -6027,6 +6027,55 @@ Primary docs:
 - `takatronix/xreal_ai_cam` - `Studied in Wave 471 as XREAL Unity camera prototype with ARCameraManager frame subscription, XRCpuImage acquisition, raw camera layer, processed image layer, layer manager, object detection controller, alpha/toggle controls, and placeholder-AI caveats`
 - `leggedrobotics/unity_ros_teleoperation` - `Studied in Wave 471 as Quest/OpenXR ROS teleoperation surface with ROS endpoint boundary, camera/stereo/audio/hands/haptics/lidar/marker/TF panels, VR streamer, menu connection state, and robot safety/version caveats`
 
+## 443. In-VR questionnaires study forms and biosignal experiment templates
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-472-in-vr-questionnaires-study-forms-and-biosignal-experiment-templates.md`
+- `../landscape/project-families.md`
+
+- `jkalliok/VRQuestionnaire` - `Studied in Wave 472 as additive Unity questionnaire scene with SSQ prefabs, basePath/userID receiver callback, multi/slider/text prefabs, CSV output modes, and OnGUI/static-global caveats`
+- `leebrien/O-VR-HEAR-Forms` - `Studied in Wave 472 as schema-driven VR questionnaire sequence with SSQ/NASA-TLX/UEQ-S JSON instruments, controller/model/view split, participant JSON store, and placeholder participant/privacy caveats`
+- `CodeLavi/eeg-vr-unity-survey` - `Lightly studied in Wave 472 as static EEG/VR public study page with consent/onboarding/questionnaire/debrief/privacy framing and low code-donor value`
+- `NEUROSPEC-AG/VR-EEG-Sample-Experiment` - `Studied in Wave 472 as Unity neuroscience VR sample with welcome/trial/end scenes, MMBT-S serial trigger box, COM-port UI, TTL trigger send/reset loop, and hardware-specific caveats`
+
+## 444. VR WebXR wayfinding navigation guidance and semantic simplification
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-473-vr-webxr-wayfinding-navigation-guidance-and-semantic-simplification.md`
+- `../landscape/project-families.md`
+
+- `renatezhang/wayfinding-prototype` - `Lightly studied in Wave 473 as Unity wayfinding study prototype around map placement, blocked-route replanning, SUS/NASA-TLX telemetry plan, and headset-not-tested caveats`
+- `TheStarTiger/vr-navigation-trails` - `Studied in Wave 473 as Unity micro-script set for thumbstick-driven NavMesh path rails, input-responsive vignette/opacity, locomotion velocity, and rough sickness telemetry`
+- `bionicvisionlab/2025-VRST-SmartRaster` - `Studied in Wave 473 as bionic-vision wayfinding experiment with SmartRaster/SmartEdges conditions, subject-seeded scenarios, prompt/question controller, path rebuilds, and hardcoded research-scene caveats`
+- `FireFlyDeveloper/webxr-indoor-nav-demo4-react` - `Studied in Wave 473 as WebXR/Three route helper with waypoint graph, A* pathfinding, DOM destination UI, world-space arrows, arrival state, and local-floor calibration caveats`
+- `immersive-web/navigation` - `Studied in Wave 473 as standards/design reference for UA-controlled immersive navigation, session-grant handoff, interstitial/security UI, cross-origin privacy, and fallback constraints`
+
+## 445. Quest camera CV inference and controller defined visual search utilities
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-474-quest-camera-cv-inference-and-controller-defined-visual-search-utilities.md`
+- `../landscape/project-families.md`
+
+- `daninloops/Quest3-Flask-Server-YOLO-Detection` - `Studied in Wave 474 as minimal Flask/YOLO sidecar with webcam capture loop, latest bbox/conf state, /detection JSON endpoint, class/conf filter, and unauthenticated/runtime-download caveats`
+- `SemyanovVisuals/gigafind` - `Studied in Wave 474 as Quest 3 controller-defined visual search pipeline with passthrough frames, camera intrinsics, two-corner bbox projection, UnityWebRequest multipart upload, FastAPI/SAM2 mask crop, LLM description header, and hardcoded key/IP caveats`
+- `imranbsh13/autosim-ai` - `Lightly studied in Wave 474 as early Unity/Quest CV simulation roadmap with Unity Perception, YOLO/DeepLab, Kalman fusion, Sentis/ONNX target, XR bindings, and mostly future-phase implementation caveats`
+
+## 446. XR file model media intake and local viewer surfaces
+
+Primary docs:
+
+- `../landscape/vr-projects-wave-475-xr-file-model-media-intake-and-local-viewer-surfaces.md`
+- `../landscape/project-families.md`
+
+- `ClassOutside/WebXR-Model-Viewer` - `Studied in Wave 475 as React/Unity WebGL host plus HTTPS media service with GLB folder pagination, streamed model endpoint, Unity SendMessage base URL bridge, and filesystem-scope caveats`
+- `Betakontext/rgbtoxyzpointcloud` - `Studied in Wave 475 as A-Frame image-to-point-cloud viewer with file/URL intake, Wikimedia thumbnail resolver, Cache API RGB8 storage, localStorage backup, fit-to-view, and Quest performance/CORS caveats`
+- `immerse-zhaw/VR_Video_Player_GLB` - `Studied in Wave 475 as Unity XR media/import surface with WebSocket JSON commands, main-thread queue, 2D/360 video mode, SampleVids list, GLTFast GLB import, grabbable models, and unauthenticated file-path caveats`
+- `lxseguin/local-vr-viewer` - `Studied in Wave 475 as Python HTTPS micro-server plus Three.js/WebXR viewer for local GLB/GLTF/OBJ/STL files with model-info endpoint, MIME types, auto-fit, floor/scale controls, teleport, and self-signed cert caveats`
+- `jjhna/UnityBrowserAssetsVR` - `Lightly studied in Wave 475 as older HTML/JS browser-panel asset set with URL navigation, tab controls, resize fields, HUD demos, and stale dependency/missing Unity bridge caveats`
+
 ## Registry maintenance rule
 
 Any future repository added to `VR-apps-lab` should update:

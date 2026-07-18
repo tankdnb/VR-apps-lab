@@ -2117,6 +2117,26 @@ Use these files when you want to understand:
   signaling, AI vision queries, XREAL camera layers, ROS sensor panels, and
   operator safety/privacy gates.
 
+- `vr-projects-wave-472-in-vr-questionnaires-study-forms-and-biosignal-experiment-templates.md`
+  Next GitHub discovery wave focused on in-VR questionnaires, study-form
+  schemas, participant result stores, public consent/privacy framing, and
+  biosignal trigger markers.
+
+- `vr-projects-wave-473-vr-webxr-wayfinding-navigation-guidance-and-semantic-simplification.md`
+  Next GitHub discovery wave focused on VR/WebXR wayfinding, path rails,
+  route graphs, semantic scene simplification, map-placement studies, and
+  immersive navigation caveats.
+
+- `vr-projects-wave-474-quest-camera-cv-inference-and-controller-defined-visual-search-utilities.md`
+  Next GitHub discovery wave focused on Quest camera/CV utilities,
+  controller-defined regions, YOLO/SAM2 sidecars, masks, labels, calibration,
+  and privacy gates.
+
+- `vr-projects-wave-475-xr-file-model-media-intake-and-local-viewer-surfaces.md`
+  Next GitHub discovery wave focused on XR local file/model/media intake,
+  HTTPS/WebSocket sidecars, WebXR model viewers, point clouds, video players,
+  and provenance/security boundaries.
+
 - `not-yet-studied-deeply.md`  
   Prioritized list of projects that are either missing from `VR-apps-lab` or only
   lightly covered so far, with suggested next inspection angles.

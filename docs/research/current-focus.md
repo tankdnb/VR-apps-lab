@@ -1,6 +1,6 @@
 # Current Focus
 
-- Date: `2026-07-13`
+- Date: `2026-07-18`
 - Purpose: give a short `what matters now` view of `VR-apps-lab` without
   forcing a new session or visitor through the full wave archive.
 
@@ -16,6 +16,29 @@ for VR utilities, overlays, diagnostics, tracking helpers, runtime tools, and
 experimental XR integrations.
 
 The repository is no longer trying to act like one hidden main application.
+
+## Current additions from Waves 472-475
+
+- `In-VR questionnaires, study forms, and biosignal experiment templates`
+  add research-tool coverage around additive questionnaire scenes,
+  schema-driven SSQ/NASA-TLX/UEQ-S forms, participant JSON/CSV stores,
+  completion callbacks, public study-flow consent/privacy framing, and serial
+  trigger-box event markers.
+- `VR/WebXR wayfinding, navigation guidance, and semantic simplification`
+  add navigation coverage around map-placement studies, blocked-route
+  replanning, thumbstick-driven NavMesh rails, semantic bionic-vision display
+  conditions, WebXR waypoint graphs, A* routes, AR arrows, arrival state, and
+  immersive navigation security caveats.
+- `Quest camera CV inference and controller-defined visual search utilities`
+  add camera/CV coverage around minimal YOLO polling sidecars, Quest
+  passthrough frame bursts, controller-to-camera bbox projection, FastAPI/SAM2
+  segmentation masks, short LLM descriptions, and calibration/privacy/key
+  caveats.
+- `XR file/model/media intake and local viewer surfaces`
+  add local content-intake coverage around HTTPS GLB folder services, A-Frame
+  image-to-point-cloud viewers, Unity WebSocket media/GLB import bridges,
+  single-file Python WebXR model viewers, browser control panels, and
+  filesystem/provenance boundaries.
 
 ## Current additions from Waves 468-471
 

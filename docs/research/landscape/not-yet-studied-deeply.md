@@ -3256,6 +3256,10 @@ If `VR-apps-lab` continues this research, the next most valuable deep-pass order
 394. `Avatar asset pipeline follow-up across VRM optimizer metrics, MToon atlas visual diffs, KTX2/Basis provenance, saved avatar libraries, VRMA compatibility, project-level license resolution, and performance budgets`
 395. `Virtual display sidecar follow-up across driver install/status/error schemas, monitor layout coordinates, virtual display teardown, capture backend choices, AR-glasses pinning, pointer mismatch, and Windows security gates`
 396. `Device camera operator surface follow-up across Magic Leap, Galaxy XR, XREAL, Quest camera, WebRTC signaling, ROS endpoints, AI vision consent, latest-frame cadence, and robot command safety gates`
+397. `In-VR study form follow-up across participant/session/trial schemas, SSQ/NASA-TLX/UEQ-S adapters, answer validation, timestamps, consent/retention labels, CSV/JSON export, callback lifecycle, and serial/LSL/OSC trigger providers`
+398. `Wayfinding guidance follow-up across waypoint schemas, navmesh/graph route solvers, path rail/arrow renderers, map-placement conditions, semantic simplification modes, head/position telemetry, blocked-route scenarios, and immersive deep-link safety`
+399. `Quest camera visual-search follow-up across passthrough permission state, camera intrinsics, controller-to-camera calibration, bounded frame bursts, bbox/mask/label/pose result schemas, sidecar auth, cloud-key handling, and privacy consent`
+400. `XR file media intake follow-up across desktop file dialogs, Android SAF, browser file input, local HTTPS, WebSocket command bridges, format whitelists, MIME types, thumbnails, provenance labels, file-size budgets, and cleanup lifecycle`
 
 For the longer-range family backlog beyond this shorter priority order, use the
 `Family-level gaps` section below.

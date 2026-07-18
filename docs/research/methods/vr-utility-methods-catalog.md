@@ -22305,3 +22305,111 @@ When a new utility idea appears:
 - Maturity:
   important cross-family method; needs a privacy/safety checklist and shared
   operator connection status model.
+
+## Method 917: In-VR questionnaire sequence and study-form result store
+
+- What it is:
+  a research utility module that collects participant answers inside VR and
+  stores them as structured study records with optional task callbacks and
+  biosignal/event markers.
+- Good for:
+  SSQ, NASA-TLX, UEQ-S, custom study forms, training evaluations, comfort
+  prompts, participant onboarding, debrief screens, and experiment phase gates.
+- Source evidence:
+  `jkalliok/VRQuestionnaire`, `leebrien/O-VR-HEAR-Forms`,
+  `CodeLavi/eeg-vr-unity-survey`, and
+  `NEUROSPEC-AG/VR-EEG-Sample-Experiment`.
+- Reusable core:
+  participant/session id, questionnaire schema, additive scene or panel,
+  title/question states, slider/radio/multiple-choice widgets, required-answer
+  validation, timestamped answer records, JSON/CSV export, completion callback,
+  consent/privacy labels, trigger-provider adapter, and no-device/no-port state.
+- Do not copy directly:
+  `OnGUI`, static globals, unchecked CSV, hard-coded participant ids, raw COM
+  port assumptions, sample study text, or data storage without retention and
+  deletion labels.
+- Maturity:
+  strong research-tool pattern; needs provider-neutral form and marker schemas.
+
+## Method 918: Wayfinding guidance graph and semantic navigation study loop
+
+- What it is:
+  a route-guidance method that links destination graphs, visual path hints,
+  map/semantic-display conditions, comfort hooks, and telemetry into a reusable
+  navigation helper.
+- Good for:
+  indoor wayfinding, museum guides, training paths, accessibility navigation,
+  low-vision experiments, blocked-route studies, and WebXR route overlays.
+- Source evidence:
+  `renatezhang/wayfinding-prototype`,
+  `TheStarTiger/vr-navigation-trails`,
+  `bionicvisionlab/2025-VRST-SmartRaster`,
+  `FireFlyDeveloper/webxr-indoor-nav-demo4-react`, and
+  `immersive-web/navigation`.
+- Reusable core:
+  waypoint/destination schema, route solver, path rail or arrow renderer,
+  next-step and arrival state, map-placement or semantic-display condition,
+  subject/session randomization, head/position/time logs, comfort vignette,
+  blocked-route scenario, and visible immersive navigation handoff state.
+- Do not copy directly:
+  hard-coded maps, old controller axes, unvalidated study conditions, global
+  browser state, hidden calibration offsets, or immersive entry without
+  user/browser status.
+- Maturity:
+  useful spatial-utility pattern; needs route schema, calibration labels, and
+  accessibility guidance checklist.
+
+## Method 919: Controller-defined camera CV inference sidecar and result surface
+
+- What it is:
+  a camera/CV utility pipeline where the user declares a region in headset
+  space, the system projects it into camera pixels, sends bounded evidence to an
+  inference sidecar, and renders typed results back in VR.
+- Good for:
+  object lookup, component identification, training inspection, accessibility
+  "what is this" tools, lab visual search, segmentation-assisted annotation,
+  and camera-CV diagnostics.
+- Source evidence:
+  `daninloops/Quest3-Flask-Server-YOLO-Detection`,
+  `SemyanovVisuals/gigafind`, `imranbsh13/autosim-ai`, and existing
+  `WestCoastGod/XR-CV-Forceps-Tracking-Unity` comparison coverage.
+- Reusable core:
+  camera permission gate, camera intrinsics, controller-to-camera projection,
+  region capture intent, frame burst, encoded multipart upload, sidecar endpoint
+  status, bbox/mask/label/pose result schema, confidence/calibration offsets,
+  in-headset texture/text panel, request throttling, and privacy/consent labels.
+- Do not copy directly:
+  embedded cloud API keys, hard-coded LAN IPs, unauthenticated endpoints,
+  unbounded camera uploads, MPS-only inference assumptions, silent server-side
+  projection offsets, or cloud vision without explicit consent.
+- Maturity:
+  high-value camera utility pattern; needs security, calibration, and typed CV
+  result schema before prototype reuse.
+
+## Method 920: Local XR file and media intake surface
+
+- What it is:
+  a local content-intake method that exposes models, images, point clouds, or
+  videos to XR viewers through scoped file discovery, local transport, loading
+  UX, viewer controls, and provenance/security labels.
+- Good for:
+  model review, scan QA, local media players, training video kiosks, asset
+  galleries, browser point-cloud experiments, WebXR demos, and Unity import
+  utilities.
+- Source evidence:
+  `ClassOutside/WebXR-Model-Viewer`, `Betakontext/rgbtoxyzpointcloud`,
+  `immerse-zhaw/VR_Video_Player_GLB`, `lxseguin/local-vr-viewer`, and
+  `jjhna/UnityBrowserAssetsVR`.
+- Reusable core:
+  provider/scope descriptor, format whitelist, local HTTPS or WebSocket sidecar,
+  model-info endpoint, file/media list, correct MIME types, loading/progress and
+  error states, auto-fit/floor/scale controls, WebXR enter state, Unity
+  main-thread command bridge, persistent asset folders, provenance labels, and
+  cleanup/security boundaries.
+- Do not copy directly:
+  unrestricted filesystem browsing, unauthenticated LAN servers, raw file
+  paths, embedded cert/key assumptions, CDN-only dependencies, stale browser
+  assets, or unbounded asset complexity without device labels.
+- Maturity:
+  strong practical utility pattern; needs an intake-provider matrix and
+  file-safety checklist.
